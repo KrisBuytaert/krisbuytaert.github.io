@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Upgrading from MacOS 8.6 to Ubuntu Hoary Hedgehog with a broken CD Drive</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"></HEAD
+><BODY
+CLASS="ARTICLE"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="ARTICLE"
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="TITLE"
+><A
+NAME="AEN2"
+>Upgrading from MacOS 8.6 to Ubuntu Hoary Hedgehog with a broken CD Drive</A
+></H1
+><HR
+WIDTH="75%"
+ALIGN="CENTER"
+COLOR="#000000"
+SIZE="1"></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+><A
+HREF="#AEN11"
+>My Imac and its problems</A
+></DT
+><DT
+><A
+HREF="#AEN25"
+>Netboot</A
+></DT
+><DT
+><A
+HREF="#AEN33"
+>Ubuntu</A
+></DT
+><DT
+><A
+HREF="#AEN38"
+>Ubuntu LinuxPPC First impressions</A
+></DT
+></DL
+></DIV
+><DIV
+CLASS="SECT1"
+><H2
+CLASS="SECT1"
+><A
+NAME="AEN11"
+>My Imac and its problems</A
+></H2
+><P
+>I have an m5521 type of iMac <A
+HREF="http://www.lowendmac.com/imacs/blue.shtml"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://www.lowendmac.com/imacs/blue.shtml</I
+></A
+>
+
+
+And it is currently terribly, but really terribly slow.  I really need to scratch it and put an operating system on it again.  Guess it's loaded with viruses and stuff.</P
+><P
+>Actually , first of all after it boots it takes about 60 seconds before it becomes usable.   No clue what it is ding whatsoever (and probably never will) </P
+><P
+>Secondly the CD Drive is broken, and the moment you accidentally drop in a CD the machines goes crazy.  It starts to become extremely slow and you can't work with it anymore.  So I had to tear it apart and remove the CD from the drive.
+I used the information from 
+
+<A
+HREF="http://www.nelsonbc.ca/mactech_supprt_html/imac_hard_drive_replace/imac_replace_hard_drive.html"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://www.nelsonbc.ca/mactech_supprt_html/imac_hard_drive_replace/imac_replace_hard_drive.html</I
+></A
+>
+to actually get the CD out of the drive.
+Getting the CD out of my faulty drive solved the speed problem, however it still left me with a MacOS 8.6 platform with antique software, while being a Linux type of guy I wanted to install Linux on the machine,  my favorite distro of the week is Ubuntu so I wanted to try a LinuxPPC version of Ubuntu on the machine.
+But how to install that with a broken CD Drive ?</P
+><P
+>My first idea was to connect a different ATAPI CD-ROM to install Ubuntu , however the internal Slimline CD ROM uses a 50 pin connector, for the hard disk It's only a 40 pin connector.  I either need a cable with multiple 40 pin connectors or a Slimline CD drive with a 50 pin connector.&#13;</P
+><P
+>My next idea was to get to the open firmware and start from there, but no matter what I tried I never got to see an open firmware prompt , or at least something similar to what I saw once on my PPC7200 , </P
+><P
+>Since the internal CD wasn't working I decided to try with an external USB CD-Rom.  So I brought an external USB CD from a client (I'll bring it back on Monday !!) and   attached it to the Imac.  I can read CD's now.  However it complains about the Apple CD not being attached :(  </P
+><P
+>Let's try burning the Ubuntu ISO Image and read them first with the CD before booting, lots of people on the forums  were talking about not being able to boot mainly caused by wrongly burned CD's.
+I can read documents that are on the CD.  However I can't boot from the external USB drive :(</P
+><P
+>I actually already decided to stick with MacOS 8.6 for a while
+till ..... </P
+></DIV
+><DIV
+CLASS="SECT1"
+><HR><H2
+CLASS="SECT1"
+><A
+NAME="AEN25"
+>Netboot</A
+></H2
+><P
+>I was browsing trough the system config of the Mac when I suddenly ran into the StartupDisk option,  hmm. it seems like I had enabled Netboot on the mac which caused a 1 minute delay at bootup, I must have enabled it during my multiple tries to get into the openFirmware.   Let's see what it tries to request from the network :)
+Hmmmm it's actually sending out bootp requests !!!</P
+><P
+> 
+So I configured a dhcpd and tftp server according to the art of the game,  
+my server now is giving out an Ip address and information regarding which files to boot from to my Imac.
+
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>subnet 10.0.11.0 netmask 255.255.255.0 {
+  range  10.0.11.200 10.0.11.254;
+  option domain-name "hs62.be";
+  option routers 10.0.11.1;
+}
+
+host iMac {
+        filename "yaboot";
+        server-name "iMac";
+        next-server 10.0.11.89;
+        hardware ethernet 00:0A:27:7C:CF:50;
+        fixed-address 10.0.11.123;
+}&#13;</PRE
+></TD
+></TR
+></TABLE
+>
+
+The next task was finding the correct boot images , the Ubuntu documentation kept referring to a yaboot-netboot.conf file which wasn't anywhere so I wrote one my own.
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>## This yaboot.conf is for CD booting only, do not use as reference.
+## Ubuntu PowerPC (hoary)
+
+# It is important not to have a comma after cd:
+device=enet:
+partition=0
+default=live-nfs
+
+
+message=/install/boot.msg
+
+image=vmlinux
+        label=live-nfs
+        initrd=initrd.gz
+        append="devfs=mount,dall init=/linuxrc--"
+        initrd-size=10240</PRE
+></TD
+></TR
+></TABLE
+>
+The initrd and the vmlinuz file are coming from :
+
+<A
+HREF="http://archive.ubuntu.com/ubuntu/dists/hoary/main/installer-powerpc/current//images/powerpc/netboot/"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://archive.ubuntu.com/ubuntu/dists/hoary/main/installer-powerpc/current//images/powerpc/netboot/</I
+></A
+>
+
+And of we went with the actual Netboot.</P
+></DIV
+><DIV
+CLASS="SECT1"
+><HR><H2
+CLASS="SECT1"
+><A
+NAME="AEN33"
+>Ubuntu</A
+></H2
+><P
+>The first error I ran into was the fact that we couldn't reach any of the apt repositories.  A quick look showed that DNS lookups weren't working , strange.  I manually had to modify /etc/resolv.conf using <I
+CLASS="EMPHASIS"
+>echo "nameserver 10.0.11.1"&#62; /etc/resolv.conf</I
+> to get it working.  </P
+><P
+>Then an error that the MultiSeat configuration could not be done, not really a problem  but I had to look up what the actual tool was supposed to do ..
+I too quickly wanted to  go on however at that stage my hard disk had not been detected yet.  So I reran the hardware detection tool and 20 seconds later a proposal for a new partition schema was ready.</P
+></DIV
+><DIV
+CLASS="SECT1"
+><HR><H2
+CLASS="SECT1"
+><A
+NAME="AEN38"
+>Ubuntu LinuxPPC First impressions</A
+></H2
+><P
+>My first reaction .. where's my root password,  I didn't' have to configure it anywhere .. strange..  however <I
+CLASS="EMPHASIS"
+>sudo bash </I
+> solves that problem completely.
+Ubuntu really looks great,  playing avi files from a website is working by default, this really is a distribution for the.  Strange however that evolution wasn't installed by default. But that gave me the opportunity to have a look at Synaptic as a package manager,  and I appreciated it .. OK give me apt-get or yum on a clue but for a new user Synaptic is nice.  </P
+><P
+>Integration with my iMac's features was just great, it boots smooth into Linux,  all the hardware is recognized and when I shut it down it also powers down nicely.   Ubuntu made a really nice impression on me for it's first install.It's been a while since a new distribution surprised me that much but Hoary HedgeHog gained my sympathy.</P
+><P
+>The only strange thing that during the installation I never got the opportunity to set a root password.   Ubuntu doesn't care.. it leaves the root password empty.
+However it asks you for the default user with more permissions on the machine and gives sudo access to that user.  From there sudo su -  is a quick step to actual root access.</P
+><P
+>Ubuntu also surprised me regarding peripheral detection.  A couple of months ago I bought myself an extremely cheap webcam based on the sn9c102 chipset.  I tried getting it to work with gnome-meeting a couple of times but there were some issues with the Bayer encoding.  I actually didn't have time anymore to test it on more recent versions. But by just plugging it in and installing gnome-meeting the device worked.   This is how it should work for an end user.   &#13;</P
+><P
+>Playing MP3's and other media is,as the Ubuntu Wiki documents on <A
+HREF=" http://www.ubuntulinux.org/wiki/RestrictedFormats"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://www.ubuntulinux.org/wiki/RestrictedFormats</I
+></A
+>
+ , a matter of adding the right repositories to synaptic/apt,  Synaptic proves to be one of the better graphical package managers that easily let me ad the Universe and Multiverse repositories.
+(vi /etc/apt/sourcers.list also does the trick btw :))</P
+><P
+>After adding those new repositories other tools such as vlc are also available of the shelve.</P
+><P
+>After this install the only thing left for me was to add more Ram to my iMac in order to actually make it fast enough to work on daily :)</P
+><P
+>So I ordered a 2x 254Mb of PC100 ram and boosted my iMac to 512Mb of RAM.  It flies now.. </P
+></DIV
+></DIV
+></BODY
+></HTML
+>

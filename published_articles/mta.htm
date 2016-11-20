@@ -1,0 +1,464 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Email Update</title>
+<base target="Contents Frame">
+<style>
+<!--
+basefont     { font-family: Helvetica }
+.breakquote  { font-family: Times; padding-left: 35; padding-right: 35 }
+table        { font-family: Helvetica }
+frame        { font-family: Helvetica }
+h1
+	{margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	margin-left:0in; margin-right:0in; margin-top:0in}
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black; margin-left:0in; margin-right:0in; margin-top:0in}
+h2
+	{margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	font-weight:normal; margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" width="100%" style="border-collapse: collapse" bordercolor="#111111">
+    <tr>
+      <td bgcolor="#FFFFFF" width="10">&nbsp;</td>
+      <td bgcolor="#FFFFFF"><font size="7">EMAIL ARCHITECTURE:</font><font style="font-size: 42pt"><br>
+      </font><font size="5">A ROUNDUP OF MTAs AND IMAP ALTERNATIVES</font></td>
+      <td bgcolor="#FFFFFF" width="10">
+      <img border="0" src="../../../Structure_GIFs/w10_blank.gif" width="10" height="10"></td>
+      <td bgcolor="#FFFFFF">
+      <img border="0" src="GIFs/EMAIL_PLANET.gif" width="140" height="180"></td>
+      <td bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFFFF" width="10">&nbsp;</td>
+      <td bgcolor="#FFFFFF">
+      <p class="MsoNormal"><span style="font-family: Helvetica">By Kris Buytaert, 
+      senior consultant, Stone-IT</span></td>
+      <td bgcolor="#FFFFFF" width="10">&nbsp;</td>
+      <td bgcolor="#FFFFFF">&nbsp;</td>
+      <td bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111">
+  <tr>
+    <td bgcolor="#FFFFFF" height="18">&nbsp;</td>
+    <td bgcolor="#FFFFFF" height="18">&nbsp;</td>
+    <td valign="top" bgcolor="#FFFFFF" height="18">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">
+    <p style="text-indent: 10"><font size="5" color="#CC6600"><b>A</b></font>s 
+    e-mail grows in usage and complexity, so have mail applications, including 
+    POP and IMAP servers. One serious challenge for systems administration is 
+    simply that there are so many different mail solutions around. Consider this 
+    brief overview of advantages and disadvantages of various message transfer 
+    agents (MTAs), IMAP alternatives, and ways to move toward what we try to 
+    define as a zero administration setup.</p>
+    <p style="text-indent: 10"><span style="font-family: Helvetica">In the old 
+    days people read their mail from a file in /var/spool/mail. The mail was 
+    delivered to that file by the MTAs and user applications read that file. As 
+    this was the only file where mail was stored, corruption of the file meant 
+    loss of mail. Concurrent read and write operations could generate problems, 
+    as using NFS could create locking issues. Therefore a new system for 
+    delivering mail was developed by qmail, called Maildir. </span></p>
+    <p class="MsoNormal" style="text-indent: 10">
+    <span style="font-family: Helvetica">In this setup, mail is no longer 
+    delivered to one file but to a directory in which each mail represents a 
+    separate file. An MTA this way can read and delete messages while other mail 
+    is still being delivered. The biggest advantage of this format is &quot;NO 
+    LOCKS.&quot; Maildir even works without trouble over NFS, which is a big 
+    advantage for distributed environments and environments where mail is being 
+    left on the server for backup.</span></p>
+    <p class="MsoNormal" style="text-indent: 10">
+    <span style="font-family: Helvetica">Along with single-file mail stores, the 
+    old way of storing users in /etc/passwd is becoming obsolete. More and more 
+    people are using virtual users, domains, or aliases stored in LDAP or MySQL. 
+    Users are no longer being created locally on a machine, which gives one 
+    central point for administration and an easier integration with billing and 
+    human resources tools.</span></p>
+    <p class="MsoNormal" style="text-indent: 10">
+    <span style="font-family: Helvetica">Depending on your needs you may want to 
+    separate out two functionalities: Some business environments need a mail 
+    relay that sits in the DMZ, scans mails for viruses, and relays the mails 
+    further on to the local network where the actual mail-server is located. 
+    Other business environments want their actual mail-server to be in the DMZ. 
+    If you want to go for a low-maintenance architecture, integration with 
+    either LDAP or MySQL is a must. </span></p>
+    <p class="MsoNormal" style="text-indent: 10">
+    <span style="font-family: Helvetica">The Lightweight Directory Access 
+    Protocol (LDAP) is a protocol for accessing online directory services. It 
+    runs directly over TCP, and can be used to access a standalone LDAP 
+    directory service or directory service back-ended by X.500. LDAP is becoming 
+    the central user management repository for the enterprise. More and more 
+    environments are relying on LDAP for user and resource management; MTAs and 
+    other applications get user information not from the old /etc/passwd but 
+    from a database, which in this case is an LDAP-based database. </span></p>
+    <p class="MsoNormal" style="text-indent: 10">
+    <span style="font-family: Helvetica">MySQL Integration is easy to combine 
+    with billing infrastructures. You might even want to hand a part of the user 
+    administration to clients themselves by defining a web-based maintenance 
+    application.</span></p>
+    <p class="MsoNormal" style="text-indent: 10">
+    <span style="font-family: Helvetica">Unfortunately, the documentation that 
+    typically comes with an MTA is often less than desirable. It may appear 
+    cryptic and you need to know what you are looking for before you can even 
+    begin searching for the correct syntax. Working with Sendmail? The general 
+    rule is that you need the bat book from O'Reilly. Looking for more about 
+    qmail? Then you need to read the FAQ and to try to find bits and parts on a 
+    chaotic website. If you are after exim, the better news is that exim has 
+    good basic installation documentation, but you’re on your own for the more 
+    complex stuff. As for postfix, you can learn the most from the README files 
+    that are delivered with the product.</span></p>
+    <p class="MsoNormal" style="text-indent: 10">
+    <span style="font-family: Helvetica">Systems administrators know one thing 
+    to be very clear about MTAs: Security is a big hassle. MTAs are one of the 
+    most fragile services on the Internet. Remote exploits for MTAs have 
+    produced some of the biggest problems for system administrators. It was no 
+    surprise that people would eventually get tired of the security holes in 
+    Sendmail and try to offer something better. Security expert <b>Wietse Venema 
+    developed his own MTA, released under the name of </b></span><b>
+    <span style="font-family: Helvetica; color: windowtext">postfix</span><span style="font-family: Helvetica">, 
+    and Dan Bernstein came up with qmail. </span></b>
+    <span style="font-family: Helvetica">Venema and Bernstein have since 
+    discussed different security architectures in their MTA and both have made 
+    strong points about security design. Both postfix and qmail are 
+    comparatively secure products. </span></p>
+    <p class="MsoNormal" style="text-indent: 10">
+    <span style="font-family: Helvetica">Knowing about the popularity of mail 
+    servers lends a clear sign of how much support will be available. Earlier 
+    this year, I did a search on the Google site on the four servers, postfix, 
+    qmail, exim, and sendmail, just to get an idea of which was being discussed 
+    the most. </span></p>
+    <p class="MsoNormal"><span style="font-family: Helvetica">Google Linux</span></p>
+    <ul style="margin-top: 0in; margin-bottom: 0in" type="disc">
+      <li class="MsoNormal"><span style="font-family: Helvetica">postfix : 
+      56,500</span></li>
+      <li class="MsoNormal"><span style="font-family: Helvetica">qmail : 84,300</span></li>
+      <li class="MsoNormal"><span style="font-family: Helvetica">exim&nbsp; : 
+      25,500 </span></li>
+      <li class="MsoNormal"><span style="font-family: Helvetica">sendmail : 
+      188,000 </span></li>
+    </ul>
+    <p class="MsoNormal"><span style="font-family: Helvetica">Google </span></p>
+    <ul style="margin-top: 0in; margin-bottom: 0in" type="disc">
+      <li class="MsoNormal"><span style="font-family: Helvetica">postfix : 
+      525,000</span></li>
+      <li class="MsoNormal"><span style="font-family: Helvetica">qmail: 581,000</span></li>
+      <li class="MsoNormal"><span style="font-family: Helvetica">exim : 390,000</span></li>
+      <li class="MsoNormal"><span style="font-family: Helvetica">sendmail : 
+      1,230,000</span></li>
+    </ul>
+    <p class="MsoNormal" style="text-indent: 10">
+    <span style="font-family: Helvetica">This shows that sendmail, with all the 
+    talk about security holes, still is the most discussed MTA around. 
+    Nonetheless, the numbers also show that use of both postfix and qmail are 
+    widespread. </span></p>
+    <p class="MsoNormal" style="text-indent: 10">
+    <span style="font-family: Helvetica">It’s always possible to configure an 
+    environment to test the actual performance of these mail-servers. For 
+    purposes of staying within the scope of this document, we can instead note a 
+    study that was performed by Matthias Andree which actually shows that 
+    postfix is the faster MTA available. See </span>
+    <a target="_blank" href="http://www-dt.e-technik.uni-dortmund.de/%7ema/postfix/bench2.html">
+    <u><span style="font-family: Helvetica; color: blue">
+    http://www-dt.e-technik.uni-dortmund.de/~ma/postfix/bench2.html</span></u><span style="font-family: Helvetica">
+    </span></a></p>
+    <p class="MsoNormal">
+    <span style="font-size: 12.0pt; font-family: Helvetica">Here are some 
+    thumbnail summaries of the various MTA and IMAP solutions:</span></td>
+    <td valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+</table>
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" id="AutoNumber1">
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td bgcolor="#E7EBED">
+      <p class="MsoNormal"><b><span style="font-family: Helvetica">Sendmail</span></b></p>
+      <p class="MsoNormal"><i><span style="font-family: Helvetica">Current 
+      Version : 8.12.1</span></i></p>
+      <p class="MsoNormal"><i><span style="font-family: Helvetica">License : 
+      Open Source or Commercial License</span></i><span style="font-family: Helvetica">
+      </span></p>
+      <p class="MsoNormal"><span style="font-family: Helvetica">&nbsp;</span></p>
+      <p class="MsoNormal"><span style="font-family: Helvetica">The oldest and 
+      best known MTA around is sendmail, written by Eric Allman. Sendmail is 
+      available in an open and commercial license and is widely deployed. In its 
+      years of existence, some of the numerous security issues were fixed 
+      quickly, some later on. The fact that sendmail has so many features is 
+      also one of the reasons why there are security issues. </span></p>
+      <p>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td bgcolor="#CED7DB">
+      <p class="MsoNormal"><b><span style="font-family: Helvetica">postfix</span></b></p>
+      <p class="MsoNormal"><i><span style="font-family: Helvetica">Current 
+      stable version is 20010228 Patch-level 08, experimental is 20011121 </span>
+      </i></p>
+      <p class="MsoNormal"><i><span style="font-family: Helvetica">License: IBM 
+      PUBLIC LICENSE </span></i></p>
+      <p class="MsoNormal"><span style="font-family: Helvetica">&nbsp;Postfix, 
+      formerly known as Vmailer, was developed by Wietse Venema, author of TCP 
+      Wrapper and Satan, both well-known security tools. Released by the end of 
+      1998 as the IBM Secure Mailer, it has since lived on as postfix. As with 
+      qmail, postfix was written with security in mind. Postfix outperforms exim 
+      by a small margin. </span></p>
+      <ul style="margin-top: 0in; margin-bottom: 0in" type="disc">
+        <li class="MsoNormal"><span style="font-family: Helvetica">Modular
+        </span></li>
+        <li class="MsoNormal"><span style="font-family: Helvetica">Resembles 
+        sendmail in configuration concept, not syntax </span></li>
+        <li class="MsoNormal"><span style="font-family: Helvetica">Good LDAP, 
+        MySQL, and anti-SPAM integration </span></li>
+      </ul>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td bgcolor="#E7EBED">
+      <p class="MsoNormal"><b><span style="font-family: Helvetica">qmail</span></b></p>
+      <p class="MsoNormal"><i><span style="font-family: Helvetica">Current 
+      version is 1.03</span></i></p>
+      <p class="MsoNormal"><i><span style="font-family: Helvetica">License: Own 
+      License, free with restrictions</span></i><span style="font-family: Helvetica">
+      </span></p>
+      <p class="MsoNormal"><span style="font-family: Helvetica">Developed by Dan 
+      Bernstein who was sick of the security holes in sendmail and other MTAs, 
+      qmail features security not just as a goal but as a requirement. The 
+      operating theory is that mail delivery is critical for users; it cannot be 
+      turned off, and it must be completely secure. Qmail also supports Maildir, 
+      a format where mail is not stored in one big file but in separate files in 
+      one directory. </span></p>
+      <p class="MsoNormal"><span style="font-family: Helvetica">Since qmail has 
+      its own way of distributing mail in a parallel way, it makes an ideal 
+      server for mailing lists that need fast outgoing email. According to the 
+      qmail site : &quot;On a Pentium under BSD/OS, qmail can easily sustain 200,000 
+      local messages per day. That’s separate messages injected and delivered to 
+      mailboxes in a real test! Although remote deliveries are inherently 
+      limited by the slowness of DNS and SMTP, qmail overlaps 20 simultaneous 
+      deliveries by default, so it zooms quickly through mailing lists.”</span></p>
+      <p class="MsoNormal" style="border: medium none; padding: 0in">
+      <span style="font-family: Helvetica">The qmail website, while chaotic, has 
+      lots of plug-ins available, some supported, some not.</span>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td bgcolor="#CED7DB">
+      <p class="MsoNormal"><b><span style="font-family: Helvetica">exim</span></b></p>
+      <p class="MsoNormal"><i><span style="font-family: Helvetica">Current 
+      Version : 3.32</span></i></p>
+      <p class="MsoNormal"><i><span style="font-family: Helvetica">License: GPL</span></i><span style="font-family: Helvetica">
+      </span></p>
+      <p class="MsoNormal"><span style="font-family: Helvetica">As the lesser 
+      known child on the block, exim has good features but less support 
+      available. It started out as a university project seeking more elegant 
+      code. Exim is an MTA that was developed at the University of Cambridge for 
+      use on Unix systems connected to the Internet. It is freely available 
+      under the terms of the GNU General Public License. In style, it is similar 
+      to Smail 3, but its facilities are more extensive. In particular, it has 
+      some defenses against mail bombs and unsolicited junk mail in the form of 
+      options for refusing messages from particular hosts, networks, or senders. 
+      Its author is Philip Hazel.</span></p>
+      <ul style="margin-top: 0in; margin-bottom: 0in" type="disc">
+        <li class="MsoNormal"><span style="font-family: Helvetica">Modular
+        </span></li>
+      </ul>
+      <ul style="margin-top: 0in; margin-bottom: 0in" type="disc">
+        <li class="MsoNormal"><span style="font-family: Helvetica">Simple 
+        configuration</span></li>
+      </ul>
+      <ul style="margin-top: 0in; margin-bottom: 0in" type="disc">
+        <li class="MsoNormal"><span style="font-family: Helvetica">Filtering 
+        functionality (integrated Perl)</span></li>
+      </ul>
+      <ul style="margin-top: 0in; margin-bottom: 0in" type="disc">
+        <li class="MsoNormal"><span style="font-family: Helvetica">Regular 
+        expressions are available in a number of configuration parameters</span></li>
+        <li class="MsoNormal"><span style="font-family: Helvetica">Integration 
+        with LDAP</span></li>
+      </ul>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td bgcolor="#E7EBED"><b><span style="font-family: Helvetica">Cyrus IMAP</span></b><p>
+      <i><span style="font-family: Helvetica">Current Version : 2.1.0 BETA</span></i><span style="font-family: Helvetica">
+      </span></p>
+      <p><i><span style="font-family: Helvetica">License : free for 
+      non-commercial use</span></i></p>
+      <p><span style="font-family: Helvetica">The Cyrus IMAP is generally 
+      intended to be run on sealed servers, where normal users are not permitted 
+      to log in. The mailbox database is stored in parts of the file-system that 
+      are private to the Cyrus IMAP system. All user access to mail is through 
+      the IMAP, POP3, or KPOP protocols. The private mailbox database design 
+      gives the server large advantages in efficiency and scalability. Multiple 
+      concurrent read/write connections to the same mailbox are permitted.
+      </span></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td bgcolor="#CED7DB">
+      <p class="MsoNormal"><b><span style="font-family: Helvetica">WU-IMAP</span></b></p>
+      <p class="MsoNormal"><i><span style="font-family: Helvetica">Current 
+      Version : 2001a</span></i><span style="font-family: Helvetica"> </span>
+      </p>
+      <p class="MsoNormal"><i><span style="font-family: Helvetica">License : 
+      University of Washington's Free-Fork License</span></i></p>
+      <p class="MsoNormal"><span style="font-family: Helvetica">WU IMAP is 
+      probably the most used IMAP / POP3 toolkit, installed as a default in 
+      Linux Red Hat distributions, amongst others. It has basic POP3 and IMAP 
+      functionality. It`s a straightforward installation with few options 
+      available. If you have a 10-user system with no LDAP or MySQL integration, 
+      you probably won't need an alternative. </span></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td bgcolor="#E7EBED">
+      <p class="MsoNormal"><b><span style="font-family: Helvetica">Courier IMAP</span></b></p>
+      <p class="MsoNormal"><i><span style="font-family: Helvetica">Current 
+      Version : 1.4.0</span></i><span style="font-family: Helvetica"> </span>
+      </p>
+      <p class="MsoNormal"><span style="font-family: Helvetica"><i>License : GPL</i>
+      </span></p>
+      <p class="MsoNormal"><span style="font-family: Helvetica">Courier is the 
+      most flexible Maildir -based IMAP server available. It supports abstract 
+      authentication modules. Authentication of login user-id and password is 
+      wrapped up into a completely stand-alone module. Several modules are 
+      provided to authenticate using the traditional password/shadow files, via 
+      the PAM library, from a table on a MySQL server, or from an LDAP server 
+      (requires MySQL or Open-LDAP). An experimental authentication module for 
+      PostgreSQL is also available. You can write your own custom 
+      user-id/password validation program. A &quot;custom&quot; authentication module is 
+      included, which authenticates absolutely nothing. Add your own code to it 
+      in order to implement a site-specific authentication mechanism. Courier-IMAP 
+      is a server that provides IMAP access to Maildirs. This IMAP server does 
+      NOT handle traditional mailbox files (/var/spool/mail, and derivatives), 
+      it was written for the specific purpose of providing IMAP access to 
+      Maildirs. </span></p>
+      <p class="MsoNormal"><span style="font-family: Helvetica">The overall 
+      design goal of Courier-IMAP is to provide IMAP services to maildirs with 
+      the least amount of resources. For this reason there are many parameters 
+      that can be tuned during initial configuration and at runtime. Unwanted 
+      components can be removed completely, and they will not take up any 
+      resources. Few sites need the ability to search messages in 20 different 
+      character sets, so there's no need to waste memory storing large character 
+      set mapping tables. Sites that need multilingual searching and sorting 
+      abilities can selectively choose which character set tables will be 
+      supported by the server, individually. If SSL support is needed, it is 
+      available. If not, the SSL wrapper does not have to be installed at all. 
+      If the server does not have the sufficient resources to sort large 
+      folders, the server-based IMAP sorting function can be turned off. Courier 
+      does POP3 (+SSL) as well as being part of an integrated suite.</span><img border="0" src="../../../Structure_GIFs/end_open.gif" width="14" height="14"><span style="font-family: Helvetica">
+      </span></p>
+      <ul>
+        <li>
+        <p class="MsoNormal"><span style="font-family: Helvetica">Only Maildir 
+        support</span></li>
+        <li>
+        <p class="MsoNormal"><span style="font-family: Helvetica">Integrated 
+        Courier suite</span></li>
+        <li><span style="font-family: Helvetica">Extremely small footprint</span></li>
+        <li><span style="font-family: Helvetica">Support directories</span></li>
+        <li><span style="font-family: Helvetica">Support virtual mailboxes</span></li>
+        <li><span style="font-family: Helvetica">Good LDAP integration</span></li>
+        <li><span style="font-family: Helvetica">Good MySQL integration</span></li>
+      </ul>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+      <ul>
+        <li>
+        <p class="MsoNormal"><b><span style="font-family: Helvetica">Links</span></b></li>
+        <li>
+        <p class="MsoNormal"><u>
+        <span style="font-family: Helvetica; color: blue">
+        <a target="_blank" href="http://www.postfix.org">www.postfix.org</a></span></u><span style="font-family: Helvetica">
+        </span></li>
+        <li>
+        <p class="MsoNormal"><u>
+        <span style="font-family: Helvetica; color: blue">
+        <a target="_blank" href="http://www.sendmail.org">www.sendmail.org</a></span></u><span style="font-family: Helvetica">
+        </span></li>
+        <li>
+        <p class="MsoNormal"><u>
+        <span style="font-family: Helvetica; color: blue">
+        <a target="_blank" href="http://www.sendmail.com">www.sendmail.com</a></span></u><span style="font-family: Helvetica">&nbsp;
+        </span></li>
+        <li>
+        <p class="MsoNormal"><u>
+        <span style="font-family: Helvetica; color: blue">
+        <a target="_blank" href="http://www.exim.org">www.exim.org</a></span></u><span style="font-family: Helvetica">
+        </span></li>
+        <li>
+        <p class="MsoNormal"><u>
+        <span style="font-family: Helvetica; color: blue">
+        <a target="_blank" href="http://www.qmail.org">www.qmail.org</a></span></u><span style="font-family: Helvetica"><a target="_blank" href="http://www.qmail.org">
+        </a>&nbsp;</span></li>
+        <li>
+        <p class="MsoNormal"><u>
+        <span style="font-family: Helvetica; color: blue">
+        <a target="_blank" href="http://asg.web.cmu.edu/cyrus/">
+        http://asg.web.cmu.edu/cyrus/</a></span></u><span style="font-family: Helvetica">
+        </span></li>
+        <li>
+        <p class="MsoNormal"><u>
+        <span style="font-family: Helvetica; color: blue">
+        <a target="_blank" href="http://www.inter7.com/courierimap/">
+        http://www.inter7.com/courierimap/</a></span></u><span style="font-family: Helvetica"><a target="_blank" href="http://www.inter7.com/courierimap/">
+        </a></span></li>
+        <li>
+        <p class="MsoNormal">
+        <a target="_blank" href="http://www.courier-mta.org">
+        http://www.courier-mta.org</a></li>
+        <li>
+        <p class="MsoNormal"><u>
+        <span style="font-family: Helvetica; color: blue">
+        <a target="_blank" href="http://www.washington.edu/imap/">
+        http://www.washington.edu/imap/</a></span></u><span style="font-family: Helvetica"><a href="http://www.washington.edu/imap/">
+        </a></span></li>
+      </ul>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+
+</html>

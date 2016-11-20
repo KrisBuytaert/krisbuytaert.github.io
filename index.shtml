@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <link rel="openid.server" href="http://openid.krisbuytaert.be/index.php">
+   <link rel="openid.delegate" href="http://openid.krisbuytaert.be/index.php">
+
+
+<title>Homepage of Kris Buytaert </title>
+ <meta name="ICBM" content="51.169 , 4.407"> <meta name="DC.title" content="Kris Buytaert">
+
+</head>
+<body bgcolor="#ffffff">
+<!--#include virtual="./menu.html" -->
+[<a href="#howto">HOWTO's</a>]
+[<a href="#papers">Papers & Articles</a>]
+[<a href="#presentations">Presentations</a>]
+<br>
+
+<!--#include virtual="./bio_content.html" -->
+<p>
+<!--#include virtual="./presentations.html" -->
+
+<center><h4>Writings by Kris Buytaert</h4></center>
+<!--#include virtual="./publications.html" -->
+<a name="howto"><b>Howto - FAQ</b></a><br>
+<p>
+<ul>
+ <li><a href="http://krisbuytaert.be/howto/openMosix-HOWTO/index.html">openMosix
+HOWTO</a>
+
+    <li><a href="http://krisbuytaert.be/howto/NC-HOWTO/">Linux Netstation
+mini-HOWTO</a>
+    <li><a href="http://krisbuytaert.be/howto/NCD-HOWTO/">Linux NCD mini-HOWTO</a>
+    <li><a href="http://krisbuytaert.be/howto/Neostation-HOWTO/index.html">NeoLinux HOWTO 
+Collection</a> (DRAFT)
+     <li><a href="http://krisbuytaert.be/howto/INN-Suck-HOWTO/index.html">INN and
+Suck Mini Howto</a> (DRAFT)
+    <li><a href="Articles/NotesTroubleShooting.html">Notes
+Troubleshooting Faq on Linux</a>
+<li><a href="http://krisbuytaert.be/howto/FireWire-DV-Camera-HOWTO/">FireWire DV
+Camera HOWTO </a> (DRAFT)
+
+<li><a href="http://krisbuytaert.be/howto/Proximus-GPRS-HOWTO/index.html">Proximus GPRS  Howto</a> (DRAFT)
+<li><a href="http://www.krisbuytaert.be/Articles/k700i.html">Linux and the SonyEricsson K700i</a> (DRAFT)
+
+</ul>
+
+
+<p>
+<a href="mailto:KrisdotBuytaertatgmaildotcom">contact me</a>
+</p>
+<p>
+If you would like to send me a gift for any reason, here is my 
+<a href="http://www.amazon.co.uk/exec/obidos/registry/I4Q3BS7AAO5L/ref=wl_em_to">
+<!-- <a
+href="http://www.amazon.co.uk/exec/obidos/wishlist/I4Q3BS7AAO5L/ref%3Dwl%5Fem%5Fto/202-5693009-8403816"> -->
+Wish
+List</a> <p>
+    <a href="http://validator.w3.org/check/referer"><img border="0"
+        src="http://www.w3.org/Icons/valid-html401"
+        alt="Valid HTML 4.01!" height="31" width="88"></a>
+  </p>
+
+
+<p align=right>
+        <em>
+                <script language="JavaScript" type="text/javascript">
+                <!--  hide script from old browsers
+                        document.write("Last changes:")
+                        document.write(document.lastModified)
+                // end hiding contents -->
+                </script>
+</em>
+
+</p>
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.krisbuytaert.be/piwik/" : "http://www.krisbuytaert.be/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script>
+<!-- End Piwik Tag -->
+</body>
+
+</html>

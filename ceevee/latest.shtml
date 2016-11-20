@@ -1,0 +1,461 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.1 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Curriculum Vitae , Kris Buytaert</title></head>
+
+
+<body bgcolor="#ffffff" > 
+
+<center><h1>Curriculum Vitae</h1></center>
+<center><h3>Kris Buytaert</h3></center>
+                   
+
+<p>
+<h2><b>Summary</b></h2>
+<!-- 
+<p>
+Kris Buytaert is a long time Linux, Security and Open Source consultant, He 
+has consulting and development experience with multiple enterprise level 
+clients and government agencies. Next to his high level technical 
+experience he is a team leader who likes to deliver his projects on time. 
+He is a contributor to the Linux Documentation Project and author of 
+different technical publications. Kris is a Red Hat Certified Engineer.
+Kris is the  Co-Author of <a href="http://www.amazon.co.uk/Virtualization-Xen-In
+cluding-Xenenterprise-Xenexpress/dp/1597491675/ref=pd_bbs_sr_1/002-0083558-47880
+61?ie=UTF8&s=books&qid=1179251994&sr=8-1">Virtualization with Xen</a>
+and also maintains the openMosix HOWTO.
+Kris is also a frequent speaker at Linux and OpenSource conferences.
+He is currently focusssing  Linux Clustering (both HA and HPC), Virtualisation and Large Infrastructure Management.
+</p>
+--> 
+<!--#include virtual="../bio_content.html" -->
+
+<!---
+<font size=-2>
+<h2><B>Summary (in Dutch)</B></h2>
+
+<p>
+In een interview met <a href="http://www.banco.be">Banco</a> enkele jaren
+geleden werd ik een Netterkundige genoemd.  Dat is waarschijnlijk de
+korste omschrijving die mijn persoon toch redelijk correct bepaald.  Reeds
+in het prille begin van mijn computergebruik ging mijn intresse
+voornamelijk uit naar Computer graphics en voornamelijk naar Netwerking,
+het is dan ook niet te verwonderen dat deze 2 deelgebieden van de
+informatica mijn twee sterkste troeven zijn.  De afgelopen 5 jaar heb ik
+mij voornamelijk toegelegd op networking.  Daar waar ik in eerste
+instantie enkele <a href="http://www.larix.com">kleine</a><a
+ href="http://www.reference.be"> websites</a> bouwde evolueerde ik al snel
+naar het ontwerpen van complete intranets tot zelfs het opstarten van een
+volledige
+<a href="http://www.digibel.be/">Internet Provider</a>,  en dit alles
+voornamelijk in <a href="http://www.linux.org/">een UNiX omgeving </a>.
+Het is dus niet verwonderlijk dat ik een grondige kennis heb van TCP/IP,
+Intranets, Network Security en  UNiX, en dat ik mij binnen deze branche
+van de Informatica sector verder wens te ontwikkelen.
+</p>
+</font>
+-->
+
+<hr>
+<H2><B>Personalia</B></H2>
+<HR> <table border=0 width="80%"> <tr> <td><i>Naam / Name</i></td>  
+<td>Kris Buytaert</td></tr>
+<tr>
+<td><i>Geboortedatum / Birth Date</i></td> 
+<td>31 December 1975</td></tr>
+<tr>
+<td><i>Geboorteplaats / Place of Birth</i></td>
+<td>Wilrijk</td></tr>
+<tr>
+<td><i>Nationaliteit / Nationality </i></td> 
+<td>Belg</td></tr>
+<tr>
+<td><i>GSM / Mobile</i></td>
+<td>+32-475-961221</td></tr>
+<TR>
+<td><i>E-mail</i></td>
+<td><A
+href="mailto:buytaertatinuitsdotbe">buytaertatinuitsdotcountrybelgium</A></td>
+</tr>
+</table>
+<hr>
+
+
+<h2>Werkervaring / Work Experience</h2>
+<hr>
+
+<table>
+    
+<tr><td><b>Periode 
+/ Period </b></td><td><b>Plaats
+/ Place </b></td><td><b>Functie / Function
+</b></td><td><b>Type</b></td></tr>
+<tr><td>September 2007 - now</td><td><a href="http://www.inuits.be/">Inuits</a></td><td>Senior Consultant </td><td></td></tr>
+<tr><td>July 2003 - July 2011</td><td>Newtec</td><td>Linux Expert </td><td>Consultant</td></tr>
+<tr><td>February 2008 - now</td><td>Virtualization.com</td><td>Guest Editor</td></tr>
+<tr><td>Dec 2003 - August 2007</td><td>X-Tend</td><td>Founder and CTO </td><td></td></tr>
+<tr><td>Feb 2001 - Nov 2003</td><td>
+           Stone-IT Belgium
+</td><td>Senior Consultant </td><td>Full Time Employee</td></tr>
+
+
+<tr><td>13 Oct 1997 - Jan 2001</td><td>>Real Software (No Limits)</td><td>Unix, Networking and Open Source
+Consultant </td><td>Full Time Employee</td></tr>
+
+<tr><td>Aug 1998 - Dec 2003</td><td>IP Net Generation</td><td>Unix Project
+Manager</td><td>Part
+Time</td></tr>
+
+<tr><td>July 1997</td><td>Riverland</td><td>Firefly Development</td><td>Summer Job </td></tr>
+
+
+
+<tr><td>July 1996</td><td>The
+Reference </td><td>Programmeur / Programmer</td><td>Summer
+Job</td></tr>
+
+
+    
+
+<tr><td>Maart 1996 -
+June 1996 </td><td>The Reference
+<td>Web Development</td><td>Part Time</td></tr>
+<tr><td>Jan 1996 - Maart 1996  
+</td><td>Larix  </td><td>
+Web Development </td><td>Part Time</td></tr>
+
+</table>
+
+
+<hr>
+
+
+<h2>
+<B>Opleiding / Education</B> 
+</h2>
+<HR>
+  
+<TABLE border=0 width="90%">
+    
+    <TR>
+<td><b>Lagere School / Primary School</b></td>
+<tr><td>1981-1984</td>
+<td>Hofke Van Thijs Hoboken</td>
+<tr>
+<td>1984-1987</td>
+<td>Sint-Jan Berchmans College Malle</td>
+</tr>
+    <TR>
+<td><b>Humaniora / Secondary School</b></td>
+<tr>
+<td>1987-1990</td>
+<td>Moderne Humaniora, Sint-Jan Berchmans College Malle</td>
+<tr>
+<td>1990-1994</td>
+<td>Wetenschappelijke A, Sint-Jan Berchmans College Malle<br>
+Maths / Science</td>
+<tr>
+<td><b>Universiteit / University </b></td>
+<tr>
+<td>1994-1996</td> 
+<td>1e Kandidatuur Informatica - KULeuven
+<br>1st year Computer Science</td> 
+</tr>
+<tr><td>1996-1997</td><td>Afzonderlijke vakken Wijsbegeerte -
+KULeuven<br>1e jaar Toegepaste Informatica - KHL </td>
+</tr>
+    
+</TABLE>
+
+
+<hr>
+<h2><b>Additional Training / Certification </b></h2>
+<hr>
+<center>
+<table border=0>
+<tr><td>24 - 26 November 1998</td><td>Broadvision Hands On 
+: Core Application Development</td><td> BroadVision BV Utrecht
+(NL)</td></tr>
+<tr><td>12 - 15 October 1999</td><td>Oracle Web Application Server :
+Administration</td><td>Oracle Education Belgium</td></tr>
+<tr><td>24 - 28 January 2000</td><td>Orbix Web : Corba for
+Java Programmers</td><td>IONA Professional
+Services , Dublin(IE)</td></tr>
+<tr><td>15 - 17 August  2000</td><td>
+Netscape Directory Services : Analysis and Planning 4.X</td><td>
+Sun Educational Services , London (UK)</td></tr>
+<tr><td>25 - 26 August  2000</td><td>
+XML Quickstart
+</td><td>
+IT Works, Kontich, Belgium</td></tr>
+<tr><td>July  2001</td><td>
+RedHat Certification Fast Track</td><td>
+Syntegra/ Stone-IT , Zoetermeer(NL)</td></tr>
+<tr><td>13 July  2001</td><td> Redhat RHCE</td><td> Syntegra/ Stone-IT , Zoetermeer(NL)</td></tr>
+ 
+<!--
+  I. Debug Lab Exam:                                     100%
+ II. Multiple Choice Exam:                               92%
+III. Server Install and Network Services Setup Lab Exam: 84%
+
+     Exam Average:                                       92%
+
+     RHCE Certification:                                 PASS
+
+Congratulations! You are now certified as a Red Hat Certified Engineer!
+Your RHCE Certificate number is 807101035303424.
+
+
+--> 
+<tr><td>7-11 February  2005</td><td>Using and Managing MySQL</td><td> MySQL, London(UK)</td></tr> 
+<tr><td>20-21  december  2005</td><td>JBoss for Administrators</td><td>BSG Education Services, London(UK)</td></tr> 
+<tr><td>September  2006</td><td>XenEnterprise, Xen Certified Professional</td><td>XenSource, Frankfurt(DE)</td></tr> 
+</table>
+</center>
+
+<hr>
+<a name="stoneexp"></a>
+
+<H2>Experiences  / Projects </H2>
+
+<hr>
+
+<center><B>Some Consultancy Projects </B></center>
+<p>This is far from an exhaustive list, it however shows a variety of 
+typical projects we work on</p>
+<table border=1>
+
+<tr><td valign=top>Large Scale Installations</td><td>
+Kris helped designing, implemented and deployed 
+the servers responsible for the management and monitoring for a Telco Environment.
+This involved designing a system to install and maintain a large amount of servers . Kris is also responsible for the security and the redundancy of these higly critical  environments.
+The environment  consists  of multiple JBoss ,MySQL  and Xen Clusters.
+</td></tr>
+<tr><td valign=top>Open Source Projects</td><td>As an opensource developer I am  active within different Open Source projects, e.g openCRM, openMosix, openQRM etc.
+</td></tr>
+<tr><td valign=top>Security</td><td>Kris did the design and 
+implementation of various  security infrastructures.  These consist of 
+Firewalls , IDS , VPN solutions etc. 
+</td></tr>
+<tr><td valign=top>Infrastructure Architecture</td><td>As a consultant, Kris    designed , implemented and 
+supports the 
+infrastructure for several clients.  Next to the security 
+tracks, Kris designs and implements 
+migrations from  NT environment to Linux, migrations  of several business critical 
+machines to an external datacenter, Notes on AS400 migrations to Linux, and a complete 
+network management solutions.  Kris was involved in the overall design of 
+different new 
+architectures,  the implementation of the security tracks, and the general 
+project managment.</td></tr>
+<tr><td valign=top>Application Migration</td><td>In his role a an IT Intrasctructure Architect Kris was  involve the migration  different
+applications 
+from a HP/UX  to a Linux environment.  Kris advised the 
+customer on the changes that had to be made to both the Application and System level in order to have a stable environment.  Together with the client he  drafts a planning and 
+a project roadmap for these kind of  projects. </td></tr>
+<tr><td valign=top>Multimedia</td><td>Design and Project managment for the 
+development of the 
+Final Scratch installation CD.  Final Scratch is a Linux based product for 
+the DJ 
+industry.  N2IT has demanded Stone-IT to develop an easy to use 
+installation and upgrade 
+procedure for their software.  This included creating a Debian based Linux 
+distribution 
+that was tuned specifically for the application.  Together with a 'no 
+hands/brains 
+needed'  installation CD.  </td></tr>
+
+</table>
+
+<hr>
+<a name="rlsexp"></a>
+
+<a href="oldprojects.html">Older Projects</a>
+	
+  
+<hr>
+<h2>Ervaring / Experience  (Technologies)</h2>
+<hr>
+
+
+<table>
+<tr><td colspan=3><center><B>Besturingssystemen / Operating Systems</B> :</center></td></tr>
+
+<tr><td><i>System Administrator Knowledge</i></td>
+<!-- 	   <td><i>User Knowledge</i></td>
+	   <td><i>Notions</i></td>
+i-->
+      </tr>
+<tr><td valign=top>
+<ul>  
+<li><a href="http://www.linux.org">Linux</a>, since 0.98<br>
+CentOS,RedHat, Suse, Slackware, Debian, Gentoo, Ubuntu, Fedora,
+</ul>
+</td>
+
+<!-- 
+<td valign=top>
+<p>
+<ul>
+<li>MacOS (System 7, System 8)
+<li>Palm OS 
+<li>OSF 
+</ul>
+</td>
+<td valign=top>
+<ul>
+<li>Domain OS
+<li>Irix
+<li>Clix
+<li>SunOS / Solaris   2.5, 2.6, 2.7, 8.0
+<li>HP/UX 9.X , 10.X
+<li>AIX (3.X, 4.X)
+</ul>
+</td>
+-->
+
+</tr>
+<tr><td colspan=3>
+
+
+One of my hobbies is collecting Collecting  hardware, eg HP 9000/715, Sun
+Sparcstation IPX, Sparcstation SLC
+Decstation 3000, SGI Iris 3030, IBM RS6000 250, Dec Multia, PPC7200, etc and using Linux on those platforms.
+<hr>
+</td></tr>
+
+
+<tr><td colspan=3><center><b>Technical Knowledge</b> ,
+</center></td></tr>
+<tr>
+
+<td valign=top> <i>Linux / Unix Systems</i>: <ul> <li>Mass System Installs (SystemImager,Oscar) <li>HPC Configurations using openMosix etc.  <li>Clustermanagement , openMosixView, Ganglia, etc <li>Filesystems: general Linux (xfs,jfs,reiser,ext(2,3)fs, ) <br>Clustering (oMFS, etc) <li>internet services : Apache, bind, ftp, sshd, openldap, squid etc <li>network services: samba, X , tcp/ip , routing <li>mail services: sendmail, qmail, postfix,exim <li>shell Programming <li>Linux security <li>Linux High Availability, Clustering MySQL, Apache, Squid, & Custom Applications <li>Virtualisation : Xen, KVM
+</ul> </td>
+
+<!-- 
+<td valign=top><i>Programming Languages</i>:<br>
+<i>programming/scripting  languages</i>
+ <ul><li>Perl
+ <li>HTML
+ <li>Bash 
+ <li>(PL-)SQL
+ <li>Csh
+ <li>Ksh 
+ <li>JavaScript
+ <li>Pascal 
+ <li>C
+ <li>PHP
+ <li>ProC
+ <li>...
+</ul>
+<p>
+
+
+</td>
+
+
+
+
+<td valign=top>
+ <i>Databases</i>
+<br>
+<ul>
+<li>Oracle (7.x,8.x)  :  PL-SQL, OWS  , (3.0 , 4.x) 
+<li>MySQL ( Clustering ) 
+<li>Postgres
+</ul>
+<p>
+</td>
+</tr>
+
+--> 
+
+<!--- <tr><td colspan=3><p align=right><a
+href="http://www.brainbench.com/transcript.jsp?pid=436927"><img src="mytranscript.jpg" alt="BrainBench Transcript" border="0"></a></p></td></tr>
+-->
+
+<tr><td colspan=3>	
+<!-- 
+
+<hr>
+<center> <B>Projects  / Events / Committees </B></center>
+<br>
+<center>
+<table>
+<tr><td>1988-now</td><td><A href="democeevee.html">Active</a> in the  international demoscene</td></tr>
+<tr><td>1992-2000</td><td>System administrator The Velvet Demosite</td></tr>
+<tr><td>1991-1999</td><td> Fidonode from 1991 (2:292/877) till 1999</td></tr>
+<tr><td>1990-1998</td><td>Founder and  organizer of the Natives (Belgian democrew)</td></tr>
+<tr><td>1997-1998</td><td>Founding member <a href="http://ace.ulyssis.student.kuleuven.ac.be/~venturis/uptime/">Uptime</a> an organization for improvement of general Internet and Linux usage. </td></tr>
+<tr><td>1997</td><td><a href="http://www.digibel.be/">Digibel</a> Setup &amp; System administrator of a Start Up  Internet Provider </td></tr>
+<tr><td>1997</td><td>Technical Project Leader <a href="http://ace.ulyssis.student.kuleuven.ac.be/~venturis/24.htm">Cyber 24 hour run KULeuven</a></td></tr>
+<tr><td>1994-1997</td><td>System Administrator <a href="http://www.ulyssis.org">Ulyssis</a> (different Unix Systems)</td></tr>
+<tr><td>1995-1997</td><td>Organizer <A
+href="http://www.people.pctrading.be/wired/" >Wired</a> demoparty in
+Mons, responsible for Network and Linux Competition </td></tr>
+
+<tr><td>1995-1997</td><td>Head Technical Committee  <a href="http://hal.ulyssis.student.kuleuven.ac.be/org/ulyssis">Ulyssis</a>, a student organization for improvement of Computer and Internet usage. </td>
+<tr>
+<td>1993-1996</td><td>Coordinator GSN Netwerk Belgium </td></tr>
+<tr><td>1993-1996</td><td>Coordinator <a href="http://www.vision.auc.dk/~rvc/dgi/"> DGi Network Belgium Belgie</a></td>
+
+
+</table>
+
+</center>
+-->
+ <hr>
+
+</td></tr>
+
+
+</table>
+
+<p>
+<h2>Talen / Languages</h2>
+<hr>
+<CENTER><TABLE BORDER=0 WIDTH ="80%">
+<TR VALIGN=middle><TD><P>Nederlands /
+Dutch</td><td>heel
+goed, schriftelijk en mondeling / mothertongue</td>
+</tr>
+
+<tr><td>Engels / English </td><td>heel 
+
+goed, schriftelijk en mondeling, / excellent both written and
+spoken</td></tr> <tr><td>Frans / French </TD> <TD> goed, schriftelijk en
+mondeling / good both written and spoken</TR> </TABLE></CENTER> <hr>
+
+
+<h2>Publications & Presentations</h2> 
+
+
+<hr> <p>Next to his contributions to the Linux Documentation project 
+Kris has published a lot of articles both in printed and
+online magazines.  A complete list of his publications is available on <a
+href="http://www.krisbuytaert.be/">http://www.krisbuytaert.be</a>
+He can often be found speaking at different international Unix and OpenSource Conferences.
+
+</p>
+<!--#include virtual="../publications.html" -->
+
+
+
+<!-- <h2>Varia</h2>
+
+<hr>
+Ik beschik over een rijbewijs  / drivers license B <p>
+--> 
+<hr>
+ <i>Key Words</i>: Open Source , Linux, Technical Web-Development , Security, Architecture Design
+
+<p>
+    <a href="http://validator.w3.org/check/referer"><img border="0"
+        src="http://www.w3.org/Icons/valid-html401"
+        alt="Valid HTML 4.01!" height="31" width="88"></a>
+  </p>
+</body>
+</HTML>
+
+	

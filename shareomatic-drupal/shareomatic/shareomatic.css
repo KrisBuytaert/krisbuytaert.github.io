@@ -1,0 +1,9 @@
+/*
+  Version info
+  $Id: shareomatic.css,v 1.1.1.1 2008/03/21 22:27:03 sdog Exp $
+*/
+
+div.shareomatic_button {
+margin:5px;
+width:150px;
+}

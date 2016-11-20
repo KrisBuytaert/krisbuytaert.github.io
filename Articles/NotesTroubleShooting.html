@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>
+Troubleshooting Lotus Notes On Linux
+</title>
+</head>
+<body bgcolor="#ffffff">
+
+<center><h1>Troubleshooting Lotus Notes On Linux</h1></center>
+
+<p align=right>
+<BR>
+<BR>
+<B>Author: </B>Kris Buytaert
+<BR>
+<B>Email: </B><a
+href="mailto:kris.buytaert@nospam.gmail.com">kb@nospam.ipng.be</a>
+<BR>
+<B>Date: </B> 18/10/2001<BR>
+<b>Updated: </B> 22/04/2003<br>
+</p>
+
+<p>
+The following list provides you with some info on problems that can occur 
+when trying to install Lotus Notes on a RedHat 7.1 box.
+</p>
+<p>People often mail me about issues on RedHat 8.0 or RedHat 9, so far we
+have not been able to get Notes working on those version, ( we didn't try
+that much yet either ;)) , we have most version up and running on RedHat
+7.3 however.
+</p>
+
+
+<h1>NIC.pm</h1>
+<p>
+During the installation you get the following error.
+<pre>
+An unexpected error occured during post-install processing:
+Died at (eval 34) line 2.
+        ...propagated at (eval 33) line 231.
+/home/notes/linux/tools/lib/NIC.pm line 727
+The installation failed for the local host.
+</pre>
+<p>
+Notes Installation does NOT like symlinks.. so if you wanted so keep the 
+default settings however you did not enough diskspace  and created 
+symlinks for the /opt/notes and /local/notesdata this is what happens.
+</p><P>
+Try running the install with other directories again and you won`t have 
+the same problem.
+
+
+</p>
+
+
+<h1>libstdc++-libc6.1-1.so.2</h1>
+<p>
+I get the following error when starting 
+</p>
+<pre>
+[notes@dhcp97 notesdata]$ /opt/lotus/bin/http httpsetup
+/opt/lotus/notes/latest/linux/http: error while loading shared libraries: 
+libstdc++-libc6.1-1.so.2: cannot load shared object file: No such file or 
+directory
+</pre>
+<p>
+you have a wrong verscion of libstdc check in your /usr/lib if you have a 
+file with a different version number, e.g. 
+</p>
+<pre>
+ln -s  libstdc++-libc6.2-2.so.3  libstdc++-libc6.1-1.so.2
+</pre>
+
+<h1>libjitc.so</h1>
+<p>
+
+
+
+I get the following error when starting 
+<pre>
+[notes@dhcp97 notesdata]$ /opt/lotus/bin/http httpsetup
+
+
+10/18/2001 11:58:12 AM  Created new log file as /usr/local/notesdata/log.nsf
+10/18/2001 11:58:12 AM  
+*****************************************
+*      Lotus Domino Server Setup        *
+* To setup this server, please connect  *
+*     your web browser to port 8081     *
+* Example: http://this.server.com:8081  *
+*****************************************
+libjitc.so: cannot open shared object file: No such file or directory (libjitc.so)
+</pre>
+<p>
+This means that notes does not find its Java Libraries.  Either they are not installed or you have to 
+include them in your  /etc/ld.so.conf and run ldconfig  afterwards.
+
+</p>
+
+<h1><a name="sigsev">--- SIGSEGV (Segmentation fault) ---</a></h1>
+<p>
+When starting http httpsetup it stops just after 
+
+<pre>
+[notes@dhcp97 notesdata]$ /opt/lotus/bin/http httpsetup
+10/18/2001 01:43:53 PM  
+*****************************************
+*      Lotus Domino Server Setup        *
+* To setup this server, please connect  *
+*     your web browser to port 8081     *
+* Example: http://this.server.com:8081  *
+*****************************************
+</pre>
+
+This is again a Java library problem 
+You can verify this by running strace -p $pidofnotes 
+you should normally then get a list of 
+
+
+<pre>
+--- SIGSEGV (Segmentation fault) ---
+--- SIGSEGV (Segmentation fault) ---
+--- SIGSEGV (Segmentation fault) ---
+--- SIGSEGV (Segmentation fault) ---
+--- SIGSEGV (Segmentation fault) ---
+--- SIGSEGV (Segmentation fault) ---
+--- SIGSEGV (Segmentation fault) ---</pre>
+
+
+This has everything to do with your JDK.
+Let`s tackle this problem step by step.
+remove the file libjava.so in /opt/lotus/notes/latest/linux
+
+now try starting the httpsetup again you should see a listing like this
+<pre>
+[notes@dhcp97 notesdata]$ /opt/lotus/bin/http httpsetup
+10/18/2001 01:43:53 PM  
+*****************************************
+*      Lotus Domino Server Setup        *
+* To setup this server, please connect  *
+*     your web browser to port 8081     *
+* Example: http://this.server.com:8081  *
+*****************************************
+10/18/2001 01:43:53 PM  JVM: The JVM runtime library could not be found.
+10/18/2001 01:43:53 PM  JVM: Java Virtual Machine failed to start
+10/18/2001 01:43:53 PM  HTTP server error, could not load the Java VM
+10/18/2001 01:43:53 PM  HTTP Web Server started
+</pre>
+<p>
+As you can see this works but you don`t have a JVM available.
+</p>
+
+
+<p>
+Recently I have discovered that with the java versions that are currently
+included with Notes there are less problems.
+</p>
+<pre>
+[root@linnotes linux]# more /etc/redhat-release 
+Red Hat Linux release 7.3 (Valhalla)
+[root@linnotes linux]# ./java -version 
+java.bin version "1.1.8"
+[root@linnotes linux]# pwd
+/opt/lotus/notes/50100/linux
+</pre>
+
+<p>
+No problem there .. but we use the java version included with Notes .
+
+
+</p>
+
+<h1>Lotus Notes: error 0x102</h1>
+<p>
+
+
+You get Error : Lotus Notes: error 0x102
+this basically is a permission problem, make sure you run 
+chown -R notes.notes /opt/lotus , this should normally solve the problem.
+</p>
+
+<h1>Segfaulting on RH 9</h1>
+<p>When trying to install Domino on RH9 , we encountered frequrens segmentation faults. 
+</p>
+<pre>export LD_ASSUME_KERNEL=2.2.5</pre>
+<p>
+Solves these segfaults
+
+</p>
+<p align=right>
+        <em>
+                <script language="JavaScript" type="text/javascript">
+                <!--  hide script from old browsers
+                        document.write("Last changes:")
+                        document.write(document.lastModified)
+                // end hiding contents -->
+                </script>
+</em>
+
+</p>
+
+
+    <p>
+      <a href="http://validator.w3.org/check/referer"><img border="0"
+          src="http://www.w3.org/Icons/valid-html401"
+          alt="Valid HTML 4.01!" height="31" width="88"></a>
+    </p>
+    
+</body>
+</html>

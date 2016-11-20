@@ -1,0 +1,5 @@
+name =  Shareomatic
+description = "Display a Shareomatic  button in nodes of enabled types. "
+version = "5.x-0.98."
+project = "Shareomatic"
+datestamp = "200803212141"
