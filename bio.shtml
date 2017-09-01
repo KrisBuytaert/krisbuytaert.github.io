@@ -2,7 +2,12 @@
 <head><title>Bio</title>
 </head>
 <body bgcolor="#ffffff">
-<!--#include virtual="./menu.html" -->
+
+[<a href="blog/">Blog</a>]
+[<a href="http://www.linkedin.com/in/krisbuytaert">My LinkedIn Profile</a>]
+[<a href="http://github.com/KrisBuytaert/">Kris on Github</a>]
+[<a href="http://twitter.com/KrisBuytaert/">Kris on Twitter</a>]
+
 
 <center>
 <table><tr><td>
@@ -14,7 +19,23 @@
 </td><td>
 <center>
 
-<!--#include virtual="./bio_content.html" -->
+<p>
+Kris Buytaert is a long time Linux and Open Source Consultant. He's one of instigators of the devops movement, currently working for Inuits</p>
+
+<p>
+He is frequently speaking at, or organizing different international conferences and has written  about the same subjects in different Books, Papers and Articles
+</p>
+
+<p>
+He spends most of his time working on bridging the gap between developers and operations 
+<br>
+with a strong focus on High Availability, Scalability , Virtualisation and Large Infrastructure Management projects 
+<br>
+hence trying to build infrastructures that can survive the 10th floor test, better known today as the cloud while actively promoting the devops idea !
+</p>
+
+<p>His blog titled "Everything is a Freaking DNS Problem" can be found at  <a href="http://www.krisbuytaert.be/blog/">http://www.krisbuytaert.be/blog/</a>
+
 
 </center>
 
