@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - drush</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1350/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Packaging Drush</title>
+ <link>http://127.0.0.1:8080/blog/packaging-drush</link>
+ <description>&lt;p&gt;A couple of weeks ago I was once again manually installing Drush as there were no packages for CentOS / EPEL or whatever,   apart from the &lt;a href=&quot;http://drupal.org/node/502452&quot; rel=&quot;nofollow&quot;&gt;needed patch &lt;/a&gt; to get it running on a 5.1.X RHEL php&lt;/p&gt;
+&lt;p&gt;I had found &lt;a href=&quot;http://drupal.org/node/508086&quot; rel=&quot;nofollow&quot;&gt;this&lt;/a&gt; thread on Drupal.org mentioning that a package already exists&lt;br /&gt;
+however David had not answered the exact location yet&lt;br /&gt;
+So I created a drush package with a with the above mentionned patch and sent it to  Jon Ciesla again he gave some suprising  feedback ;)&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;br /&gt;
+Drush itself might need to be modified in Fedora.   It seems&lt;br /&gt;
+like one of the major functions of drush is to install and update&lt;br /&gt;
+modules.  That&#039;s great for modules we don&#039;t ship as rpms, but we can&#039;t&lt;br /&gt;
+allow drush to modify modules that we ship.&lt;br /&gt;
+&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;This feedback pretty much leaves me with 3 options.&lt;/p&gt;
+&lt;p&gt;The first one is the easiest one,  I just forget about packaging drush for Fedora.&lt;/p&gt;
+&lt;p&gt;The second one would require me to patch Drush so that for all existing drupal modules that have been packaged for Fedora,  Drush will call yum to install them.  This obviously would create a lot of work  maintaining this excludelist.&lt;/p&gt;
+&lt;p&gt;The third one would be to disable the download functionality for Drush in a Fedora/Rhel enviornment,  Jon suggested that this would probably be the saftest path.&lt;/p&gt;
+&lt;p&gt;(Jon also suggested a fourth option, namely removing all drupal modules from fedora and add a prohibition to package them in the Packaging Guidelines, which he immediately called ridiculous.)&lt;/p&gt;
+&lt;p&gt;I once again understand the problem of the Distribution maintainer,  but on the other hand if I were the upstream Drush developer I wouldn&#039;t want to see my software severely disabled in a distribution.&lt;/p&gt;
+&lt;p&gt;So what do you folks think, disable the functionality  or not ?&lt;/p&gt;
+&lt;p&gt;PS.  Yes I&#039;ve contacted upstream , but I haven&#039;t gotten a reply yet.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/packaging-drush#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/drush">drush</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Sun, 20 Dec 2009 20:41:10 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">973 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

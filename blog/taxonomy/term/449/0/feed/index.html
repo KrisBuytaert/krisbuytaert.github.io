@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - ha</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/449/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>High Availability MySQL Cookbook , the review</title>
+ <link>http://127.0.0.1:8080/blog/high-availability-mysql-cookbook-review</link>
+ <description>&lt;p&gt;When I read on the internetz that Alex Davies was about the publish a &lt;a href=&quot;https://www.packtpub.com/high-availability-mysql-cookbook/book&quot; rel=&quot;nofollow&quot;&gt;Packt book on MySQL HA&lt;/a&gt;  I pinged my contacts at Packt and suggested that I&#039;d review the book .&lt;/p&gt;
+&lt;p&gt;I&#039;ve ran into &lt;a href=&quot;https://sites.google.com/a/davz.net/alex-davies/&quot; rel=&quot;nofollow&quot;&gt;Alex&lt;/a&gt; at some UKUUG conferences before and he&#039;s got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.&lt;/p&gt;
+&lt;p&gt;Alex starts of with a couple of indepth chapters on MySQL Cluster,  he does mention that it&#039;s not a fit for all problems, but I&#039;d hoped he did it a bit more prominently ...    an upfront chapter outlining the different approaches and when which approach is a match could have been better.    The avid reader now might be 80 pages into MySQL cluster before he realizes it&#039;s not going to be a match for his problem.&lt;/p&gt;
+&lt;p&gt;I really loved the part where Alex correcly mentions that you should probably be using Puppet or so to manage the config files of your environment, rather than scp them around your different boxes ..&lt;/p&gt;
+&lt;p&gt;Alex then goes on to describe setting up MySQL replication and Multi Master replication with the different approaches one can take here,  he gives some nice tips on using LVM to reduce the downtime of your MySQL when having to transfer the dataset of an already existing MySQL setup, good stuff.&lt;/p&gt;
+&lt;p&gt;He then goes on to describe MySQL with shared storage ...   if you only mount your redundant sandisk once on your MySQL nodes my preference would probably be a Pacemaker stack  rather than a RedHat Cluster based setup,  but his setup seems to work too.   Alex quickly touches on using GFS to have your data disk mounted simultaneously on both nodes (keep in mind with only 1 active MySQLd)  and then goes on to describe a full DRBD based MySQL HA setup&lt;/p&gt;
+&lt;p&gt;The last chapter titled Performance tuning gives some very nice tips on both tuning your regular storage, as your&lt;br /&gt;
+GFS setup but also the tuning parameters for MySQL Cluster&lt;/p&gt;
+&lt;p&gt;I was also really happy to see the Appendixes on the basic installation where he advocates the use of Cobbler , Kickstart and LVM ..&lt;/p&gt;
+&lt;p&gt;One of the better books I read the past couple of years .. certainly the best book from Packt so far , I hope there is more quality stuff coming from that direction !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/high-availability-mysql-cookbook-review#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/cobbler">cobbler</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/899">drbd</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pacemaker">pacemaker</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Wed, 03 Nov 2010 23:07:18 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1022 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>MySQL HA , an alternative approach</title>
+ <link>http://127.0.0.1:8080/blog/mysql-ha-alternative-approach</link>
+ <description>&lt;p&gt;For those who&#039;ve seen my presentation on MySQL HA, you already know that I often use a multimaster setup with a meta OCF resource  that groups my favoured MySQL instance with the service ip ,  using a meta resource means that pacemaker monitors mysql, but it doesn&#039;t actually manage it.  It&#039;s an approach that works for us.&lt;/p&gt;
+&lt;p&gt;One of the other approaches I will be looking at soon is the freshly released OCF resource that &lt;a href=&quot;http://fghaas.wordpress.com/2010/04/21/mysql-masterslave-support-now-merged-into-linux-ha/&quot; rel=&quot;nofollow&quot;&gt;Florian&lt;/a&gt; announced last week.&lt;/p&gt;
+&lt;p&gt;Back in the days our approach meant we didn&#039;t have to use clone resources, which you might remember being pretty buggy in the v2 era,  not wanting to use clons resources isn&#039;t really a valid reason anymore these days .  I&#039;ve also frequently mentioned the combination of using DRBD and MultiMaster replication,  using this set of OCF resource makes that a lot more easy ..&lt;/p&gt;
+&lt;p&gt;Now all I need to do is find me some time to validate this setup.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/mysql-ha-alternative-approach#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/433">cluster</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <pubDate>Wed, 28 Apr 2010 21:17:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1001 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Linux Open Administration Days 2010</title>
+ <link>http://127.0.0.1:8080/blog/linux-open-administration-days-2010</link>
+ <description>&lt;p&gt;So about 4 monts ago &lt;a href=&quot;http://blog.bdesmet.be/?p=272&quot; rel=&quot;nofollow&quot;&gt;there was the crazy idea&lt;/a&gt; to start a new FOSS event in Belgium targeted  at sysadmins.&lt;/p&gt;
+&lt;p&gt;What started out as an event for local people to meet local people with some local speakers actually ended up being a small local event with some top international speakers on onfiguration mananagement and system administration mixed with a bunch of good local ones !&lt;/p&gt;
+&lt;p&gt;I had the honour to open the conference with an extremely short version of the Devops talk I gave earlier last year..  extremely short as I knew that over the course of the weekend the topic would reoccur a lot.&lt;/p&gt;
+&lt;p&gt;We had the first european talk on &lt;a href=&quot;http://wiki.opscode.com/display/chef/Home&quot; rel=&quot;nofollow&quot;&gt;Chef&lt;/a&gt;, by Joshua Timberman,  and we had Puppet talks amongst by Dan Bode from Puppetlabs and CFengine talks ,  devops was a frequently dropped word,&lt;/p&gt;
+&lt;p&gt;We had a book raffle where we handed out O&#039;Reilly&#039;s .. we had a great free pizza party (got the idea from the saturday pizza event at LCA 2005) ,  and we had some free beer.      Sounds like a good combination for a geeky weekend.&lt;/p&gt;
+&lt;p&gt;Apart from the regular talks there were plenty of Open Spaces where interesting topics were discussed ... we had spaces on Open Source vs Open Core , strong voices were heard when we discussed what we should do with the Open Core companies that claim to value Open Source , some people think we should actually list the fauxpensource ones somewhere and make sure the world knows about them&lt;/p&gt;
+&lt;p&gt;We had an awesome configuration management discussion session  discussing Chef vs Puppet vs CFengine . And much much more ...&lt;/p&gt;
+&lt;p&gt;Some people owe me plenty of Sushi as I had to do my MySQL HA talk before their Managing MySQL talk  , but other than that .. things just went fine..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/linux-open-administration-days-2010#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/cfengine">cfengine</category>
+ <category domain="http://127.0.0.1:8080/blog/category/chef">chef</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/455">conference</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/category/load">load</category>
+ <category domain="http://127.0.0.1:8080/blog/category/loadays">loadays</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/mysql-ha">mysql ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Tue, 20 Apr 2010 19:43:05 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">998 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>UKUUG Spring Conference 2010</title>
+ <link>http://127.0.0.1:8080/blog/ukuug-spring-conference-2010</link>
+ <description>&lt;p&gt;Last week I was in Manchester for the 2010 UKUUG Spring Conference, right .. make that 2 weeks ago , :) &lt;/p&gt;
+&lt;p&gt;The UKUUG usually hosts the more interesting conferences around ... , it&#039;s not just the schedule that attrackts me , yes there&#039;s the strong focus towards Larger Scale Unix (and mostly Linux) deployments and how to manage them, but there&#039;s also the opportunity to chat in real life with the Devops from across the chunnel.&lt;/p&gt;
+&lt;p&gt;Spending time with &lt;a href=&quot;http://www.devco.net/&quot;&gt;R.I.Pienaar&lt;/a&gt;, &lt;a href=&quot;http://www.build-doctor.com/2010/03/26/ukuug-spring-conference-2010/&quot;&gt;Julian Simpson&lt;/a&gt;,  &lt;a href=&quot;http://twitter.com/simonxwilkinson&quot;&gt;Simon Wilkinson&lt;/a&gt; , &lt;a href=&quot;https://sites.google.com/a/davz.net/alex-davies/&quot;&gt;Alex Davies&lt;/a&gt; , &lt;a href=&quot;http://database-explorer.blogspot.com/&quot;&gt;Simon Riggs&lt;/a&gt; , Josette, and many others is always fun .&lt;/p&gt;
+&lt;p&gt;As I was in town early I went to the preconference beer meetup and met with a lot of people and chatted about config management, virtualization   and lots of other stuff ...  after the pub the plan was to go for curries nearby .. and while walking to the , ahem  Bus stop, I managed to recognise &lt;a href=&quot;http://monkeyiq.blogspot.com/&quot;&gt;Ben Martin&lt;/a&gt; from meeting him back ages ago in Hamburg for LinuxKongress , always fun ..&lt;/p&gt;
+&lt;p&gt;Apart from having to jump on a bus and our group being split at the curry place , rather than being able to tell the latecomers where to walk to and being seeted upstairs with the whole group , the curries were interesting and fun.&lt;/p&gt;
+&lt;p&gt;As I had been pushing &lt;a href=&quot;http://blog.gardeviance.org/&quot;&gt;Simon Wardley&lt;/a&gt; on Twitter to submit a talk for the conference it was really great to finally see him present ..  His talk was the perfect soft introduction to the conference ...&lt;/p&gt;
+&lt;p&gt;Simon&#039;s talk  was followed   by a talk on Security for the virtual datacenters,  after I questionned the speaker  if anyone actualy uses TPM outside an academic lab the talk suddenly changed into a commercial presentation for a Quack, nuff said.&lt;/p&gt;
+&lt;p&gt;The Ever energetic &lt;a href=&quot;http://www.shadowcat.co.uk/blog/matt-s-trout/&quot;&gt;Matt S Trout&lt;/a&gt; talked about 21st century perl before Simon &quot;Life is to short for SELinux&quot; Wilkinson talked about his experiences in getting the openAFS crowd  on Git.&lt;/p&gt;
+&lt;p&gt;Bummer Thierry Carrez didn&#039;t show us the real juice of UEC and just the installations of  a Cloud Controller and a Node Controller , but he managed to do so in approx 30 minutes as promised .&lt;/p&gt;
+&lt;p&gt;A talk titled Coherent and Integrated Configuration of Virtual Infrastructures always cathces my eye.. however when that talk turns out to be a Coherent and Integrated configuration only within the Univerity of Edinborough  (aka lcfg2) talk I`m dissapointed,  specially since it pretty  much didn&#039;t introduce any new concepts from the ones I introduced back in  my Durham UKUUG presentation&lt;/p&gt;
+&lt;p&gt;Luckily Andrew Stribblehill gave a very interesting talk on MySQL scalability,  in which I promised him some answers to his questions for the next day :)&lt;/p&gt;
+&lt;p&gt;The Conference dinner was without a doubt the best UKUUG dinner so far ,  no typical english &quot;food&quot;,  no weird location (Old Trafford, an abandoned warship) , but just a big chinese place and plenty of food !&lt;/p&gt;
+&lt;p&gt;I started thurday morning in the wrong track,  I assumed to be in the Virtualization track, but I ended up in the Sun thinclient and Abusing Linux to serve weird desktops under the Green computing umbrella track, not my favourites ..&lt;/p&gt;
+&lt;p&gt;When Patrick and Julian started their Hudson hit my Puppet with a Cucumber talk (which featured some aweseom #devops content) I was a afraid that we&#039;d had to look for a replacment PostgreSQL talk as Simon hadn&#039;t arrived yet ..  Luckily he arrived in time for his presentation and he explained us about the new replication features that are slowly making it into PostgreSQL,   one way ... log shipping ...  not really up to par with other alternatives yet :(&lt;/p&gt;
+&lt;p&gt;So with no further ado .. here&#039;s the presentation I gave&lt;/p&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_3582666&quot;&gt;&lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/mysql-ha-with-pacemaker&quot; title=&quot;MySQL HA with  PaceMaker&quot;&gt;MySQL HA with  PaceMaker&lt;/a&gt;&lt;/strong&gt;
+&lt;object width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mysql-pacemaker-100329022737-phpapp01&amp;stripped_title=mysql-ha-with-pacemaker&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mysql-pacemaker-100329022737-phpapp01&amp;stripped_title=mysql-ha-with-pacemaker&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;padding:5px 0 12px&quot;&gt;View more &lt;a href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;PS.  If at a Ukuug event and not sure about a person&#039;s name ... try Simon.. pretty good chance you&#039;re correct :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/ukuug-spring-conference-2010#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/455">conference</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/category/manchester">manchester</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/simon">simon</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/427">ukuug</category>
+ <pubDate>Wed, 07 Apr 2010 17:16:20 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">997 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Better days Arrive when Dev Meet Ops</title>
+ <link>http://127.0.0.1:8080/blog/better-days-arrive-when-dev-meet-ops</link>
+ <description>&lt;p&gt;A couple of weeks a go &lt;a href=&quot;http://twitter.com/LinuxScribe&quot; rel=&quot;nofollow&quot;&gt;Brian Profitt&lt;/a&gt; pinged me for a chat about  Devops ,  the result of that chat , his article can now be found on the Zenoss blog, it&#039;s  titled &lt;a href=&quot;http://community.zenoss.org/blogs/zenossblog/2010/03/05/datacenter-barometer-better-days-arrive-when-dev-meets-ops&quot; rel=&quot;nofollow&quot;&gt;Datacenter Barometer: Better days arrive when dev meets ops&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It&#039;s a very nice read with some pointers to places regular readers of my blog should already know ;)&lt;br /&gt;
+So with lots of leading Open Source infrastructure companies  on different levels, such as config management (OpsCode and Reductive Labs) , monitoring (Zenoss) , deployment (openQRM, RPath, and obviously &lt;a href=&quot;http://www.inuits.be&quot;&gt;Consultancy&lt;/a&gt; companies  , the upcoming Devops conferences around the planet promise to be a lot of fun ! ;)&lt;/p&gt;
+&lt;p&gt;Oh, and apparently there is some more on the  story on &lt;a href=&quot;http://slashdot.org/submission/1186968/&quot; rel=&quot;nofollow&quot;&gt;/.&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/better-days-arrive-when-dev-meet-ops#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/707">krisbuytaert</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/888">zenoss</category>
+ <pubDate>Sat, 06 Mar 2010 13:03:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">991 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Disabling DHCP on a LibVirt setup</title>
+ <link>http://127.0.0.1:8080/blog/disabling-dhcp-libvirt-setup</link>
+ <description>&lt;p&gt;So you have this libvirt setup and you  want to have a dhcp server on the virtual machines you are playing with , or you want to have all static IP&#039;s.&lt;/p&gt;
+&lt;p&gt;Libvirt uses dnsmasq to provide dhcp services etc and when you  generate a config from the gui it will look like&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;network&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;name&amp;gt;piponet&amp;lt;/name&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;uuid&amp;gt;e87d3bf1-a2e7-96ca-e131-7ae51ac033f9&amp;lt;/uuid&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;bridge name=&#039;virbr2&#039; stp=&#039;on&#039; delay=&#039;0&#039; /&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;ip address=&#039;192.168.100.1&#039; netmask=&#039;255.255.255.0&#039;&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    &amp;lt;dhcp&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;      &amp;lt;range start=&#039;192.168.100.128&#039; end=&#039;192.168.100.254&#039; /&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    &amp;lt;/dhcp&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;/ip&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;/network&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;
+If you  fully remove the dhcp  section, then restart libvirt you&#039;ll notice dnsmasq running with no dhcpd on that subnet so you&#039;ll have full control again :)&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;network&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;name&amp;gt;piponet&amp;lt;/name&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;uuid&amp;gt;e87d3bf1-a2e7-96ca-e131-7ae51ac033f9&amp;lt;/uuid&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;bridge name=&#039;virbr2&#039; stp=&#039;on&#039; delay=&#039;0&#039; /&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;ip address=&#039;192.168.100.1&#039; netmask=&#039;255.255.255.0&#039;&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;     &amp;lt;/ip&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;/network&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/disabling-dhcp-libvirt-setup#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/dhcp">dhcp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/category/libvirt">libvirt</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Fri, 04 Dec 2009 18:43:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">967 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Got Interviewed</title>
+ <link>http://127.0.0.1:8080/blog/got-interviewed</link>
+ <description>&lt;p&gt;by &lt;a href=&quot;http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/&quot;&gt;@botchagalupe&lt;/a&gt;&lt;br /&gt;
+on Virtualization, Open Source tools and DNS Problems&lt;/p&gt;
+&lt;p&gt;&lt;embed src=&quot;http://blip.tv/play/AYGuxQoC&quot; type=&quot;application/xshockwave-flash&quot; width=&quot;480&quot; height=&quot;390&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/got-interviewed#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/437">dnsproblem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pacemaker">pacemaker</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Wed, 18 Nov 2009 20:05:47 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">960 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Yet Another DNS Issue</title>
+ <link>http://127.0.0.1:8080/blog/yet-another-dns-issue</link>
+ <description>&lt;p&gt;While browsing trough  my enormous mailinglist backlog I ran into the following message from Gianluca Cecchi on the DRBD-user mailing list&lt;/p&gt;
+&lt;p&gt;guess I`ll have to give Lars a T-Shirt when we next meet ;)&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;From: Gianluca Cecchi&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;To: drbd-user@lists.linbit.com&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Subject: [DRBD-user] notes on 8.3.2&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;- drbdadm create-md r0 segfaults when the command &amp;quot;hostname&amp;quot; on the&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;server contains the fully qualified domain name but you have put only&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;the hostname part in drbd.conf&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Instead, the command &amp;quot;drbdadm dump&amp;quot; correctly gives you a warning in&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;this case (suggesting how to correct the error you made....):&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;suppose complete hostname is virtfed.domainname.com and you put&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;virtfed alone in drbd.conf&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;[root@virtfed ~]# drbdadm dump&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;WARN: no normal resources defined for this host (virtfed.domainname.com)!?&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;while&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;[root@virtfed ~]# drbdadm create-md r0&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Segmentation fault&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Guess I`ll have to give the Linbit crowd a T-Shirt when we next meet ;)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/yet-another-dns-issue#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/437">dnsproblem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/899">drbd</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/category/linux-cluster">linux-cluster</category>
+ <pubDate>Thu, 12 Nov 2009 21:01:43 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">958 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Nines , Damn Nines  and More Nines </title>
+ <link>http://127.0.0.1:8080/blog/nines-damn-nines-and-more-nines</link>
+ <description>&lt;p&gt;Funny how different experiences lead to different evaluations of tools. The MySQL HA solutions &lt;a href=&quot;http://www.mysqlperformanceblog.com/2009/10/16/finding-your-mysql-high-availability-solution-%E2%80%93-the-questions/&quot; rel=&quot;nofollow&quot;&gt;the MySQL Performanceblog&lt;/a&gt; list, are almost listed in the complete opposited order of what  my impressions are.&lt;/p&gt;
+&lt;p&gt;Ok agreed, I should probably not put my MySQL NDB experiences from 2-3 years ago with multiple Query of deaths and more problems than you into account  anymore ,  but back then went in the list Less stable than a single node.   I&#039;ve had NDB POC setups going down for much more than 05:16 minutes&lt;br /&gt;
+Ndb comes with a lot of restrictions, there are&lt;/p&gt;
+&lt;p&gt;As for MySQL on DRBD, &lt;a href=&quot;http://www.krisbuytaert.be/blog/mysql-and-drbd-often-say-no&quot;&gt;I&#039;ve said this before&lt;/a&gt; , I love DRBD, but having to wait for a long InnoDB recovery after a failover  just kills your uptime ,&lt;br /&gt;
+I remember being called by a customer during &lt;a href=&quot;http://lefred.be/&quot;&gt;Fred&lt;/a&gt; last holiday who was waiting over 20 minutes for recovery , twice, so putting the DRBD/San setup second would not be my preference.   But agreed .. it&#039;s only listed at 99.9% meaning almost 9 hours of downtime per year are allowed.&lt;/p&gt;
+&lt;p&gt;On the other hand we&#039;ve seen database uptime of MySQL MultiMaster setups with Heartbeat reaching better figures than 99.99%  Heck I&#039;ve seen single nodes  achieve better  than 99.99% :)&lt;/p&gt;
+&lt;p&gt;So what does this teach us ... there is no golden rule for HA,  lots of situations are different,  it&#039;s the preferences of the customer, the size of the database,   the kind of application , and much&lt;br /&gt;
+more ..  you always need to think and evaluate the environment ...&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/nines-damn-nines-and-more-nines#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/433">cluster</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/899">drbd</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/nines">nines</category>
+ <pubDate>Mon, 19 Oct 2009 21:46:41 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">951 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Heartbeat 2 OpenAIS</title>
+ <link>http://127.0.0.1:8080/blog/heartbeat-2-openais</link>
+ <description>&lt;p&gt;While upgrading a pretty recent Heartbeat cluster to OpenAis earlier today I ran  into the following weird situation&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Last updated: Fri Oct 16 08:50:03 2009&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Stack: openais&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Current DC: CO_NMS-1 - partition with quorum&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Version: 1.0.5-462f1569a43740667daf7b0f6b521742e9eb8fa7&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;4 Nodes configured, 2 expected votes&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;1 Resources configured.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;============&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Online: [ CO_NMS-1 CO_NMS-2 ]&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;OFFLINE: [ co_nms-1 co_nms-2 ]&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;or &lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;crm(live)node# show&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;co_nms-1(5c48ab4f-767f-e2dc-20ec-5969cddad152): normal&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;co_nms-2(922ff786-eca9-bed0-d79d-8222727a2c5b): normal&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;CO_NMS-1: normal&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;CO_NMS-2: normal&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Whohoo.. OpenAIS must have realized I have upperase and lowercase cores :)&lt;/p&gt;
+&lt;p&gt;Funny to see .. but quickly solved..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/heartbeat-2-openais#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/category/high-availability">high availability</category>
+ <category domain="http://127.0.0.1:8080/blog/category/openais">openais</category>
+ <pubDate>Fri, 16 Oct 2009 18:53:13 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">950 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

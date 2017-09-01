@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - rpm</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/472/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>The power of packaging software, package all the things</title>
+ <link>http://127.0.0.1:8080/blog/power-packaging-software-package-all-things</link>
+ <description>&lt;p&gt;Software delivery is hard, plenty of people all over this planet are struggling with delivering software in their own controlled environment. They have invented great patterns that will build an artifact, then do some magic and the application is up and running.&lt;/p&gt;
+&lt;p&gt;When talking about continuous delivery, people invariably discus their delivery pipeline and the different components that need to be in that pipeline.&lt;br /&gt;
+Often, the focus on getting the application deployed or upgraded from that pipeline is so strong that teams&lt;br /&gt;
+forget how to deploy their environment from scratch.&lt;/p&gt;
+&lt;p&gt;After running a number of tests on the code , compiling it where needed, people want to move forward quickly and deploy their release artifact on an actual platform.&lt;br /&gt;
+This deployment is typically via a file upload or a checkout from a source-control tool from the dedicated computer on which the application resides.&lt;br /&gt;
+Sometimes, dedicated tools are integrated to simulate what a developer would do manually on a computer to get the application running.  Copy three files left, one right, and make sure you restart the service. Although this is obviously already a large improvement  over people manually pasting commands from a 42 page run book, it doesn’t solve all problems.&lt;/p&gt;
+&lt;p&gt;Like the guy who quickly makes a change on the production server, never to commit the change, (say goodbye to git pull for your upgrade process)&lt;br /&gt;
+If you package your software there are a couple of things you get for free from your packaging system.&lt;br /&gt;
+Questions like, has this file been modified since I deployed it,  where did this file come from, when was it deployed,&lt;br /&gt;
+what version of software  X do I have running on all my servers, are easily answered by the same&lt;br /&gt;
+tools we use already for every other package on the system.   Not only can you use existing tools you are also using tools that are well known by your ops team and that they&lt;br /&gt;
+already use for every other piece of software on your system.&lt;/p&gt;
+&lt;p&gt;If your build process creates a package and uploads it to a package repository which is available for the hosts in the environment you want to deploy to, there is no need anymore for&lt;br /&gt;
+a script that copies the artifact from a 3rd party location , and even less for that 42 page text document which never gets updated and still tells you to download yaja.3.1.9.war  from a location where you can only find&lt;br /&gt;
+3.2 and 3.1.8 and the developer that knows if you can use 3.2 or why 3.1.9 got removed just left for the long weekend.&lt;/p&gt;
+&lt;p&gt;Another, and maybe even more important thing, is the current sadly growing practice of having yet another tool in place that translates that 42 page text document to a bunch of shell scripts created from a drag and drop interface,  typically that &quot;deploy tool&quot; is even triggered from within the pipeline.   Apart from the fact that it usually stimulates a pattern of non reusable code, distributing even more ssh  keys , or adding yet another agent on all systems. it doesn’t take into account that you want to think of your servers as cattle and be able to deploy new instances of your application fast.&lt;br /&gt;
+Do you really want to deploy your five new nodes on AWS  with a full Apache stack ready for production, then reconfigure your load balancers only to figure out that someone needs to go click in your continuous integration tool or deployment  to deploy the application to the new hosts? That one manual action someone forgets?&lt;br /&gt;
+Imvho Deployment tools are a phase in the maturity process of a product team.. yes it&#039;s a step up from manually deploying software but it creates more and other problems , once your team grows in maturity refactoring out that tool is trivial.&lt;/p&gt;
+&lt;p&gt;The obvious and trivial approach to this problem, and it comes with even more benefits. is called packaging. When you package your artifacts as operating system (e.g., .deb or .rpm) packages,&lt;br /&gt;
+you can include that package in the list of packages to be deployed at installation time (via Kickstart or debootstrap). Similarly, when your configuration management tool&lt;br /&gt;
+(e.g., Puppet or Chef) provisions the computer, you can specify which version of the application you want to have deployed by default.&lt;/p&gt;
+&lt;p&gt;So, when you’re designing how you want to deploy your application, think about deploying new instances or deploying to existing setups (or rather, upgrading your application).&lt;br /&gt;
+Doing so will make life so much easier when you want to deploy a new batch of servers.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/power-packaging-software-package-all-things#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/cd">cd</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ci">ci</category>
+ <category domain="http://127.0.0.1:8080/blog/category/deb">deb</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/opslife">opslife</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Tue, 28 Jul 2015 06:35:13 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1104 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>To Package,  and what to package</title>
+ <link>http://127.0.0.1:8080/blog/package-and-what-package</link>
+ <description>&lt;p&gt;One of the open sessions last week (corr: last month) at Devopsdays 2010 Hamburg was the one on packaging software.   It&#039;s always a big question on wether you package the software that runs in your infrastructure or not.     And if you package it .. what do you package ..&lt;/p&gt;
+&lt;p&gt;The general consensus of the open space was pretty much that you always package the software you deploy, unless you have some very good reasons not to.  Pretty much the way I&#039;ve been doing for ages ..&lt;/p&gt;
+&lt;p&gt;Good reasons that were mentionned were the use of scripting languages that update extremely frequently, but certainly not for compiled code,  compiling code on a production machine also is a big nono.&lt;/p&gt;
+&lt;p&gt;There also was a consensus that you DO NOT PUT CONFIGURATION inside a package.  You can put in default templates, but you don&#039;t put in config files that should change frequently ..  There&#039;s plenty of configuration mgmt systems out there do that kind of stuff for you.&lt;/p&gt;
+&lt;p&gt;The naysayers claimed that packaging brings way to much overhead ... and others claim it takes to much time... however I feel it&lt;br /&gt;
+should just be a 1 time effort that brings devs and ops closer to eachother and from there on it should automated&lt;br /&gt;
+New versions of software don&#039;t mean that the packaging effort needs to be done again..&lt;/p&gt;
+&lt;p&gt;Another topic that gathered lots of questions was if you should be capable of installing multiple versions of the same package  , lots of people mentionned they didn&#039;t like fiddling with symlinks however the best comment in that discussion was that there is already a system out there , the &lt;cite&gt;alternatives&lt;/cite&gt; setup .. provide by most operating systems that allow you to do so in a pretty clean way. I must admit I should look into &lt;cite&gt;alternatives&lt;/cite&gt; more in depth too ..&lt;/p&gt;
+&lt;p&gt;The ever recurring question is wether one should package war files ?  Sure  as you then can also use the dependency models a package mgmt system brings to deploy the dependent libraries.&lt;/p&gt;
+&lt;p&gt;However when people ship products, rather than a live service   they seem to package everything , mainly because the code in the product isn&#039;t changing as quickly as a live website, or internally used application.&lt;/p&gt;
+&lt;p&gt;The biggest problem however is the frustration people have with  GEM or CPAN  packages .. they add yet another layer of management to a system,  most lots of CPAN packages are already packaged.. but when it comes to GEM&#039;s disaster strikes.   There&#039;s a lot of work left for distributions to integrate GEM and CPAN style packages.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/package-and-what-package#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/471">apt</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/package">package</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Mon, 01 Nov 2010 19:20:30 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1020 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Packaging Drupal Modules  or not ?</title>
+ <link>http://127.0.0.1:8080/blog/packaging-drupal-modules-or-not</link>
+ <description>&lt;p&gt;So &lt;a href=&quot;http://bitfieldconsulting.com/puppet-drupal&quot; rel=&quot;nofollow&quot;&gt;John&lt;/a&gt; wrote down his experiences on deploying Drupal sites with Puppet .&lt;/p&gt;
+&lt;p&gt;It&#039;s not a secret that I&#039;ve been thinking about similar stuff and how I could get to the best possible setup.&lt;/p&gt;
+&lt;p&gt;John starts of with using Puppet to download Drush... while I want to use &lt;a href=&quot;http://repo.inuits.be/centos/5/os/noarch/drush-All-Versions-2.1-1.noarch.rpm&quot; rel=&quot;nofollow&quot;&gt;rpm&lt;/a&gt;  for that ...&lt;/p&gt;
+&lt;p&gt;I want my core infrastructure to be fully packaged... not downloaded and untarred.  I want to be able to reproduce my platform in a couple of months , with the exact same versions I`m using now .. not with the version that happens to be on ftp.drupal.org at that point in time, or with ftp.drupal.org being down.&lt;/p&gt;
+&lt;p&gt;Now the next question off course is what&#039;s the core infrastructure.&lt;br /&gt;
+Where does the infrastructure end and does the application start. There&#039;s little discussion about having a  puppet created vhost ,  an apache conf.d file, a matching .htaccess file if wanted , and the appropriate settings.php for a multisite drupal config.&lt;/p&gt;
+&lt;p&gt;There&#039;s also little doubt to me on using drush to run the updates, manage the drupal site etc . Reading John&#039;s  article made me think some further about what and when I want things packaged. &lt;/p&gt;
+&lt;p&gt;John&#039;s post lead to a discussion on #infra-talk on getting all drupal modules packaged for Centos with &lt;a href=&quot;http://www.karan.org/blog/&quot; rel=&quot;nofollow&quot;&gt;Karan&lt;/a&gt; and some others&lt;/p&gt;
+&lt;p&gt;In a development environment I probably want to have periodic drush updates getting the latest modules from the interwebs and potentially breaking my devs code.   But making sure that when you put a site in production it will be on a fairly up to date platform, and not on the platform you started developing on 24 months ago.&lt;/p&gt;
+&lt;p&gt;In a production environment however you  only want tested updates of your modules as indeed they will break code.&lt;/p&gt;
+&lt;p&gt;It&#039;s probably going to be a mix and match setup having a local rpm/deb repo with packaged  modules that have been tested and validated in your setup  and using drush to enable  or configure them for that  production setup.&lt;/p&gt;
+&lt;p&gt;But also having a CI environment wher Drush will get the new modules from the interwebs when needed.  and package them for you.&lt;/p&gt;
+&lt;p&gt;To me that sounds beter than getting all the available Drupal modules and packaging them, even automated, and preparing a repository of those modules of which only a small percentage will actually be used by people.&lt;/p&gt;
+&lt;p&gt;But I need to think about it some more :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/packaging-drupal-modules-or-not#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/apt-get">apt-get</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/473">yum</category>
+ <pubDate>Tue, 16 Feb 2010 20:20:13 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">987 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>To not yum or to not apt-get, that&#039;s NOT the question.</title>
+ <link>http://127.0.0.1:8080/blog/not-yum-or-not-apt-get-thats-not-question</link>
+ <description>&lt;p&gt;Over at the &lt;a href=&quot;http://code.openark.org/blog/mysql/to-not-yum-or-to-not-apt-get&quot; rel=&quot;nofollow&quot;&gt;OPenARK blog&lt;/a&gt; Shlomi Noach argues that using apt-get or yum to install your MySQL instance will one day most likeley break your MySQL setup.     Depdendencies, distros not shipping the MySQL version you want to use and on some distro&#039;s indeed the mysql vs MySQL issue,  agreed,  it all makes things less trivial.&lt;/p&gt;
+&lt;p&gt;However why give up a clean packaged system if there are other ways out ?&lt;/p&gt;
+&lt;p&gt;First of all by claiming that such an installation can break a working production environment looks to me like admitting you don&#039;t have a split development, production environment and that rather than testing stuff upfront indeed you just hack a long in production.&lt;/p&gt;
+&lt;p&gt;So rather than using a tarball for the MySQL instance an --force to satisfy the missing dependencies (hence also cluttering your system) , a much cleaner and less error prone setup is to only deploy from your own , self controlled  repository , in which you only allow  tested packages, most probably not the distro based package , hence packages that won&#039;t break your setups ;)   But still you will be using apt or yum and deploying rpm&#039;s and debs , perfectly satisfying dependency needs.&lt;/p&gt;
+&lt;p&gt;Apart from that .. watch out for Banquise .. :)  Coming to your favourite distro soon..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/not-yum-or-not-apt-get-thats-not-question#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/471">apt</category>
+ <category domain="http://127.0.0.1:8080/blog/category/apt-get">apt-get</category>
+ <category domain="http://127.0.0.1:8080/blog/category/banquise">banquise</category>
+ <category domain="http://127.0.0.1:8080/blog/category/deb">deb</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/473">yum</category>
+ <pubDate>Tue, 16 Feb 2010 20:13:33 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">986 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>F12 Dependency failure </title>
+ <link>http://127.0.0.1:8080/blog/f12-dependency-failure</link>
+ <description>&lt;p&gt;Fresh laptop arrived, obviously the first thing to do is to install the latest fedora.  then do a full yum update. &lt;/p&gt;
+&lt;p&gt;However that failed  with the following failed dependency&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;mesa-libGL-7.7-2.fc12.i686 from updates has depsolving problems&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  --&amp;gt; Missing Dependency: libdrm &amp;gt;= 2.4.17-1 is needed by package mesa-libGL-7.7-2.fc12.i686 (updates)&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Error: Missing Dependency: libdrm &amp;gt;= 2.4.17-1 is needed by package mesa-libGL-7.7-2.fc12.i686 (updates)&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; You could try using --skip-broken to work around the problem&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; You could try running: package-cleanup --problems&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        package-cleanup --dupes&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        rpm -Va --nofiles --nodigest&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;
+Now I don&#039;t really use all the fancy compiz stuff so for now I can just solve it by running &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;[root@stillmine ~]# yum remove  mesa-libGL &lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/f12-dependency-failure#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/compiz">compiz</category>
+ <category domain="http://127.0.0.1:8080/blog/category/f12">f12</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/category/mesa">mesa</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Tue, 19 Jan 2010 19:34:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">980 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Drupal6 in EPEL</title>
+ <link>http://127.0.0.1:8080/blog/drupal6-epel</link>
+ <description>&lt;p&gt;Dear Drupal Community,&lt;/p&gt;
+&lt;p&gt;If any of you are interrested in getting a packaged version of Drupal 6 into  Fedora&#039;s EPEL repository (Extra Packages for Enterprise Linux) and therefore usable in RHEL and Centos,&lt;br /&gt;
+please comment on the &lt;a href=&quot;https://bugzilla.redhat.com/show_bug.cgi?id=552717&quot; rel=&quot;nofollow&quot;&gt;Bug&lt;/a&gt; I filed to get it&#039;s introduction started.&lt;/p&gt;
+&lt;p&gt;Any pitfalls, benefits etc  are welcome ..&lt;/p&gt;
+&lt;p&gt;thnx in advance !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/drupal6-epel#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/drupal6">drupal6</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/category/package">package</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Tue, 05 Jan 2010 22:48:22 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">975 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Packaging Djagios</title>
+ <link>http://127.0.0.1:8080/blog/packaging-djagios</link>
+ <description>&lt;p&gt;After all the politics involved in getting a package in a distro, or not it was time for a nice small and clean package of a fresh and promising open source project.  &lt;a href=&quot;http://www.djagios.org/&quot; rel=&quot;nofollow&quot;&gt;Djagios&lt;/a&gt; was an easy choice.&lt;/p&gt;
+&lt;p&gt;I&#039;ve uploade the &lt;a href=&quot;http://repo.inuits.be/centos/5/os/noarch/djagios-0.1.3-1.noarch.rpm&quot; rel=&quot;nofollow&quot;&gt;rpm&lt;/a&gt; and &lt;a href=&quot;http://repo.inuits.be/centos/5/os/SRPMS/djagios-0.1.3-1.src.rpm&quot; rel=&quot;nofollow&quot;&gt;Source RPM&lt;/a&gt; to repo.inuits.be and getting the  SPEC file in the upstream repo was 10 minutes work.&lt;/p&gt;
+&lt;p&gt;Next step is to get it into Fedora  , and EPEL   :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/packaging-djagios#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/djagios">djagios</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/890">nagios</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/466">packaging</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Sun, 20 Dec 2009 20:42:00 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">974 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Packaging Drush</title>
+ <link>http://127.0.0.1:8080/blog/packaging-drush</link>
+ <description>&lt;p&gt;A couple of weeks ago I was once again manually installing Drush as there were no packages for CentOS / EPEL or whatever,   apart from the &lt;a href=&quot;http://drupal.org/node/502452&quot; rel=&quot;nofollow&quot;&gt;needed patch &lt;/a&gt; to get it running on a 5.1.X RHEL php&lt;/p&gt;
+&lt;p&gt;I had found &lt;a href=&quot;http://drupal.org/node/508086&quot; rel=&quot;nofollow&quot;&gt;this&lt;/a&gt; thread on Drupal.org mentioning that a package already exists&lt;br /&gt;
+however David had not answered the exact location yet&lt;br /&gt;
+So I created a drush package with a with the above mentionned patch and sent it to  Jon Ciesla again he gave some suprising  feedback ;)&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;br /&gt;
+Drush itself might need to be modified in Fedora.   It seems&lt;br /&gt;
+like one of the major functions of drush is to install and update&lt;br /&gt;
+modules.  That&#039;s great for modules we don&#039;t ship as rpms, but we can&#039;t&lt;br /&gt;
+allow drush to modify modules that we ship.&lt;br /&gt;
+&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;This feedback pretty much leaves me with 3 options.&lt;/p&gt;
+&lt;p&gt;The first one is the easiest one,  I just forget about packaging drush for Fedora.&lt;/p&gt;
+&lt;p&gt;The second one would require me to patch Drush so that for all existing drupal modules that have been packaged for Fedora,  Drush will call yum to install them.  This obviously would create a lot of work  maintaining this excludelist.&lt;/p&gt;
+&lt;p&gt;The third one would be to disable the download functionality for Drush in a Fedora/Rhel enviornment,  Jon suggested that this would probably be the saftest path.&lt;/p&gt;
+&lt;p&gt;(Jon also suggested a fourth option, namely removing all drupal modules from fedora and add a prohibition to package them in the Packaging Guidelines, which he immediately called ridiculous.)&lt;/p&gt;
+&lt;p&gt;I once again understand the problem of the Distribution maintainer,  but on the other hand if I were the upstream Drush developer I wouldn&#039;t want to see my software severely disabled in a distribution.&lt;/p&gt;
+&lt;p&gt;So what do you folks think, disable the functionality  or not ?&lt;/p&gt;
+&lt;p&gt;PS.  Yes I&#039;ve contacted upstream , but I haven&#039;t gotten a reply yet.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/packaging-drush#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/drush">drush</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Sun, 20 Dec 2009 20:41:10 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">973 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Drupal 6 for EPEL</title>
+ <link>http://127.0.0.1:8080/blog/drupal-6-epel</link>
+ <description>&lt;p&gt;Some of you might have noticed that Fedora 11 and up already have an up to date Drupal6 version, but EPEL , which is what a lot of people are using on their  CentOS  or RHEL builds only has a Drupal5.   I asked  Jon Ciesla, who is maintaing the Drupal packages in Fedora why :&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;br /&gt;
+Because when Drupal was initially built for EL-5 and EL-5, the 5.x&lt;br /&gt;
+branch was the current release.  It&#039;s up to date, 5.20 is the most&lt;br /&gt;
+recent release, and is still supported upstream in terms of security&lt;br /&gt;
+fixes.  6 is out, and has been for awhile, but we have the following:&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies&quot; title=&quot;http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies&quot; rel=&quot;nofollow&quot;&gt;http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Since 5.x isn&#039;t broken or insecure, it&#039;ll be a tough sell to move to&lt;br /&gt;
+6.x.  Once upstream drops support, this may change.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;It&#039;s a correct answer from a Distribution point of view, but the fact is it is widening the gap between the Ops and the Devs.     If the ops want to keep their platform clean we need to have our software packaged on the platform we want to use, which is most often an Enterprise Linux distro,  on the other there is understandably no hair on a dev&#039;s head that he will be  building a new site on  a Drupal 5 platform.&lt;/p&gt;
+&lt;p&gt;So until the Drupal community  doesn&#039;t declare Drupal 5 dead, RHEL and CentOS users will have to use 3rd party Drupal6  RPMS , or rebuild the F12 rpm from Source again  .&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/drupal-6-epel#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/guidelines">guidelines</category>
+ <category domain="http://127.0.0.1:8080/blog/category/politics">politics</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Sun, 20 Dec 2009 20:39:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">972 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Recent MySQL builds in CentOSPlus </title>
+ <link>http://127.0.0.1:8080/blog/node/547</link>
+ <description>&lt;p&gt;&lt;a&gt;Peter &lt;/a&gt; notes that you indeed can find pretty recent Enterprise level MySQL rebuilds over at the &lt;a href=&quot;http://mirror.centos.org/centos/4/centosplus/i386/RPMS/&quot; rel=&quot;nofollow&quot;&gt;CentOSPlus repository.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Good things come to those who wait :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/547#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/698">centosplus</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Fri, 04 Jan 2008 18:59:43 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">547 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/pidgin-and-oauth by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:35:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pidgin and OAUth | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Pidgin and OAUth</h2>
+<div class="content">
+<div id="node-1016" class="node  blog">
+<div class="content"><p>So earlier today the nice folks over at twitter figured it was a good time to change all the authentication to oauth ...  they might have announced it all over the place .. but it never catched my attention</p>
+<p>The onlything that did catch my attention was that after not having ued pidgin for about 2 weeks I didn't have access to twitter anymore.</p>
+<p>I`m using the <a href="http://code.google.com/p/microblog-purple/" rel="nofollow">purple-microblog plugin</a>  and the default version of that plugin in Fedora 12 wasn't really up2date.   The plugin supports OAuth as of 3.0 which was released ages ago.</p>
+<p>The version in fedora-updates-testing however was already recent enough ..</p>
+<p>So enabling that repo and running<br />
+<span class="geshifilter"><code class="text geshifilter-text">yum &nbsp;update &nbsp;purple-microblog</code></span><br />
+quickly solved my proble ..  till I disabled twitter in my pidgin again as there was way to much talk about some weird fruit ...</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 09/01/2010 - 20:53</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1419 first"><a href="../category/oauth/index.html" rel="tag" title="">oauth</a></li>
+<li class="taxonomy_term_1111"><a href="../category/pidgin/index.html" rel="tag" title="">pidgin</a></li>
+<li class="taxonomy_term_811 last"><a href="../taxonomy/term/811/index.html" rel="tag" title="">twitter</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-4074"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/831f1b8f66dac8454054511881bc0697.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Anonymous&#039;s picture" title="Anonymous&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4074">#1</a>
+    <span class="author"><span class="anonymous" title="not verified">Anonymous</span></span>  : <span class="title"><a href="index.html#comment-4074" class="active">thanks..... It&#039;s works!! the</a></span>
+  </h3>
+  <div class="content"><p>thanks..... It's works!! the problem was my firewall<br />
+it was blocking the pidgin... I turn it off and finally I could see the PIN<br />
+Thanks again<br />
+bye</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/08/2010 - 03:46</div>
+  </div>
+<a id="comment-4072"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.bigbasstabs.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/e6394b8e12425a0423ed89d6e573dc32.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Jernej&#039;s picture" title="Jernej&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4072">#2</a>
+    <span class="author"><a href="http://www.bigbasstabs.com/">Jernej</a></span>  : <span class="title"><a href="index.html#comment-4072" class="active">I have exact same issues</a></span>
+  </h3>
+  <div class="content"><p>I have exact same issues every time MSN changes something. Pidgin seems like a solid client but for the longest time it didn't support offline messages so I switched to amsn. That was nice.. for a while and then I started using xmonad and amsn crashed every time I got a message. So now I'm using emesene.</p>
+<p>Linux users are so screwed when it comes to these things, it's totally unfair.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/06/2010 - 20:49</div>
+  </div>
+<a id="comment-4071"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/831f1b8f66dac8454054511881bc0697.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Anonymous&#039;s picture" title="Anonymous&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4071">#3</a>
+    <span class="author"><span class="anonymous" title="not verified">Anonymous</span></span>  : <span class="title"><a href="index.html#comment-4071" class="active">Pidgin and OAUth</a></span>
+  </h3>
+  <div class="content"><p>Hi,<br />
+   now Pidgin ask about a PIN...Please allow mbpidgin to<br />
+access your account...<br />
+Where can I get these PIN?</p>
+<p>thanks</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/06/2010 - 19:51</div>
+  </div>
+<div class="indented"><a id="comment-4073"></a>
+<div id="comment-4" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4073">#4</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-4073" class="active">Twitter tells you</a></span>
+  </h3>
+  <div class="content"><p>When you are logged in to your twitter account using the web interface  it will ask you to allow mbpidgin to access Twitter and after you allow it will tell you that PIN.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/07/2010 - 07:27</div>
+  </div>
+</div></div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/pidgin-and-oauth by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:35:14 GMT -->
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - package centri</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/731/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Package Centric Deployment, or how to package packages</title>
+ <link>http://127.0.0.1:8080/blog/node/563</link>
+ <description>&lt;p&gt;This one has been in my queue for ages ..  well.. 3+ months or so .. but still..&lt;/p&gt;
+&lt;p&gt;Over at &lt;a href=&quot;http://dev2ops.blogspot.com/2007/10/package-centric-application-release.html&quot; rel=&quot;nofollow&quot;&gt;dev2ops&lt;/a&gt; an article was posted with as title Pacakge Centric Application Release Methodology.&lt;/p&gt;
+&lt;p&gt;And it&#039;s that &lt;cite&gt;Application Release&lt;/cite&gt; part which is actually the focus point.&lt;br /&gt;
+The Application being split up in different parts where different teams have responsibility over those parts and having isolated packages for these parts is a good thing.&lt;/p&gt;
+&lt;p&gt;But  you can easily confuse that naming of a package with the way a systems person looks at a pacakge, a deb , or an rpm.    And then the story changes  a  lot.&lt;/p&gt;
+&lt;p&gt;They list the contents as a packge as follows :&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;br /&gt;
+ What belongs in a package?&lt;br /&gt;
+   * Code: Application files executed by the runtime system. This could be compiled objects or interpreted script.&lt;br /&gt;
+    * Platform: Files that comprise the runtime layer. This is generally server software like Apache, JBoss, Oracle, etc.&lt;br /&gt;
+   * Content: Non-executed files containing information. These could be media files or static text.&lt;br /&gt;
+   * Configuration: Files defining the structure and settings of an online service. These could be files for configuring the runtime system or the application.&lt;br /&gt;
+   * Data: Files containing data or procedures for defining data. These could be database schema dumps, SQL scripts, .csv files, etc.&lt;br /&gt;
+   * Control: Configuration and procedures consumed by management frameworks&lt;br /&gt;
+&lt;/cite&gt;&lt;br /&gt;
+Now I`m convinced that not all of this content belongs in an RPM or Deb.&lt;br /&gt;
+Config , Content and Data don&#039;t belong there at all.&lt;br /&gt;
+Yet they have to be delivered as a package by the development team, we need to know what the deliverables are they have to provide us with.  But on a system,  if you autorize change to content or config you don&#039;t want our package management system to keep telling you it&#039;s checksums have changed.&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt; Within the package-centric paradigm, each type of change noted above is bundled, distributed and executed via a package.&lt;/cite&gt;&lt;br /&gt;
+Executed ?   You don&#039;t want your package management system to do this .. that&#039;s exactly what your &lt;a href=&quot;http://reductivelabs.com/trac/puppet&quot; rel=&quot;nofollow&quot;&gt;configuration management platform &lt;/a&gt; isi supposed to do isn&#039;t it ?&lt;br /&gt;
+On a systems level you really want to separate code, data and config.&lt;/p&gt;
+&lt;p&gt;So dev2ops is talking about a package from a developer point of view, which is a totally different view as the one from a sysadmin ...&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/563#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/521">dev2ops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/731">package centri</category>
+ <pubDate>Tue, 22 Jan 2008 10:36:00 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">563 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

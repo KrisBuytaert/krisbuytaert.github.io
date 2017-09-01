@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/jenkins-puppet-graphite-logstash-and-you by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:23:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jenkins, Puppet, Graphite, Logstash and YOU | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Jenkins, Puppet, Graphite, Logstash and YOU</h2>
+<div class="content">
+<div id="node-1096" class="node  blog">
+<div class="content"><p>This is a repost of an article I wrote for the Acquia Blog some time ago.</p>
+<p>As mentioned before, devops can be summarized by talking about culture, automation, monitoring metrics and sharing. Although devops is not about tooling, there are a number of open source tools out there that will be able to help you achieve your goals. Some of those tools will also enable better communication between your development and operations teams.</p>
+<p>When we talk about Continuous Integration and Continuous Deployment we need a number of tools to help us there. We need to be able to build reproducible artifacts which we can test. And we need a reproducible infrastructure which we can manage in a fast and sane way. To do that we need a Continuous Integration framework like Jenkins.</p>
+<p>Formerly known as Hudson, Jenkins has been around for a while. The open source project was initially very popular in the Java community but has now gained popularity in different environments. Jenkins allows you to create reproducible Build and Test scenarios and perform reporting on those. It will provide you with a uniform and managed way to , Build, Test, Release and Trigger the deployment of new Artifacts, both traditional software and infrastructure as code-based projects. Jenkins has a vibrant community that builds new plugins for the tool in different kinds of languages. People use it to build their deployment pipelines, automatically check out new versions of the source code, syntax test it and style test it. If needed, users can compile the software, triggering unit tests, uploading a tested artifact into a repository so it is ready to be deployed on a new platform level.</p>
+<p>Jenkins then can trigger an automated way to deploy the tested software on its new target platform. Whether that be development, testing, user acceptance or production is just a parameter. Deployment should not be something we try first in production, it should be done the same on all platforms. The deltas between these platforms should be managed using a configuration management tool such as Puppet, Chef or friends.</p>
+<p>In a way this means that Infrastructure as code is a testing dependency, as you also want to be able to deploy a platform to exactly the same state as it was before you ran your tests, so that you can compare the test results of your test runs and make sure they are correct. This means you need to be able to control the starting point of your test and tools like Puppet and Chef can help you here. Which tool you use is the least important part of the discussion, as the important part is that you adopt one of the tools and start treating your infrastructure the same way as you treat your code base: as a tested, stable, reproducible piece of software that you can deploy over and over in a predictable fashion.</p>
+<p>Configuration management tools such as Puppet, Chef, CFengine are just a part of the ecosystem and integration with Orchestration and monitoring tools is needed as you want feedback on how your platform is behaving after the changes have been introduced. Lots of people measure the impact of a new deploy, and then we obviously move to the M part of CAMS.</p>
+<p>There, Graphite is one of the most popular tools to store metrics. Plenty of other tools in the same area tried to go where Graphite is going , but both on flexibility, scalability and ease of use, not many tools allow developers and operations people to build dashboards for any metric they can think of in a matter of seconds.</p>
+<p>Just sending a keyword, a timestamp and a value to the Graphite platform provides you with a large choice of actions that can be done with that metric. You can graph it, transform it, or even set an alert on it. Graphite takes out the complexity of similar tools together with an easy to use API for developers so they can integrate their own self service metrics into dashboards to be used by everyone.</p>
+<p>One last tool that deserves our attention is Logstash. Initially just a tool to aggregate, index and search the log files of our platform, it is sometimes a huge missed source of relevant information about how our applications behave.. Logstash and it's Kibana+ElasticSearch ecosystem are now quickly evolving into a real time analytics platform. Implementing the Collect, Ship+Transform, Store and Display pattern we see emerge a lot in the #monitoringlove community. Logstash now allows us to turn boring old logfiles that people only started searching upon failure into valuable information that is being used by product owners and business manager to learn from on the behavior of their users.</p>
+<p>Together with the Graphite-based dashboards we mentioned above, these tools help people start sharing their information and communicate better. When thinking about these tools, think about what you are doing, what goals you are trying to reach and where you need to improve. Because after all, devops is not solving a technical problem, it's trying to solve a business problem and bringing better value to the end user at a more sustainable pace. And in that way the biggest tool we need to use is YOU, as the person who enables communication.</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 06/04/2014 - 16:55</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_484"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_1470"><a href="../category/graphite/index.html" rel="tag" title="">graphite</a></li>
+<li class="taxonomy_term_1465"><a href="../category/jenkins/index.html" rel="tag" title="">jenkins</a></li>
+<li class="taxonomy_term_1481"><a href="../category/logstash/index.html" rel="tag" title="">logstash</a></li>
+<li class="taxonomy_term_439 last"><a href="../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/jenkins-puppet-graphite-logstash-and-you by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:23:25 GMT -->
+</html>

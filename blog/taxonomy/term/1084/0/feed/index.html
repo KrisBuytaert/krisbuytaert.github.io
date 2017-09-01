@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - marketing sucks</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1084/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Virtualizing MySQL , are you stupid ?</title>
+ <link>http://127.0.0.1:8080/blog/node/757</link>
+ <description>&lt;p&gt;or timebound ? &lt;strong&gt; or don&#039;t you have any load on your DB at all ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I personally don&#039;t see many reasons to virtualize your database,  apart from the , we plan to start small and scale out, or the we need it now and we don&#039;t have the hardware yet  , putting your database on a virtual platform where you have to share resources with other virtual machines doesn&#039;t really sound like a tempting proposition to me.   Small, almost idle databases , maybe.  But enterprise production level databases no thnx.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.pythian.com/blogs/1321/virtualizing-mysql&quot; rel=&quot;nofollow&quot;&gt;Sheeri Cabral&lt;/a&gt; also mentions the above reasons ..  and there also .. Enterprise Production use isn&#039;t listed.&lt;/p&gt;
+&lt;p&gt;Databases typically  require a good amount of memory , and steady disk access.&lt;br /&gt;
+So if you are in a production environment with a fairly loaded database, would you want a 4Gb machine with full direct memory access,  Or 3.5Gb of virtual memory that can be ballooned to 3 if underused.   My pick is at the 4Gb real memory.&lt;/p&gt;
+&lt;p&gt;The original article at Sun argues the use of Virtual Harddisk to move around workloads between different servers or even Virtualization platforms.  But it fails to describe the guaranteed performance penalty of not using raw disks but a filesystem on top of a loopback device.  How many layers do you want before actually write to the disks. Good practice in a virtual environment is to dedicate full disks or LVM parts to the virtual machine hence lowering the overhead, but most (default) setups do the opposite.&lt;/p&gt;
+&lt;p&gt;And don&#039;t get me started about &lt;a href=&quot;http://www.krisbuytaert.be/blog/node/750&quot;&gt;the myth&lt;/a&gt; of using virtualization for high-availability :)&lt;/p&gt;
+&lt;p&gt;Now can somebody please remove all the clueless marketing people from planetmysql.org , thnx.  (they can be identified with by a blogs.sun.com source and posts that  mainly talk about Sun products including only a slight hint to MySQL)&lt;/p&gt;
+&lt;p&gt;(PS. What&#039;s a  Market Development Engineer&#039;s  job description anyhow  ? , that&#039;s just a different name for Marketing Assistant right ?)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/757#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1085">i hate it when the marketeers join in</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1084">marketing sucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/488">sun</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1083">xvm</category>
+ <pubDate>Tue, 28 Oct 2008 17:25:19 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">757 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

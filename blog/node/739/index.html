@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/739 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:34:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Open Source Days 2008 , Day 2  | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a> &#8594; <a href="../../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Open Source Days 2008 , Day 2 </h2>
+<div class="content">
+<div id="node-739" class="node  blog">
+<div class="content"><p>As I was already up since yesterday 0500 , it was dinner with Sven , Robin and some other conference visitors at a Turkish Buffet place , after which we headed to what seemed to be a great bar where they failed to serve us while waiting for over 10 minutes, so we moved on to another place. and then to be "early"</p>
+<p>After walking around a bit in Copenhagen and looking for a bus stop to go to the university I managed to bump into Wim &amp; Co who offered me a ride to the IT University. Where I was almost in time for the first talk by<br />
+Jan Wieck about Slony-I,  A master to multiple slaves-replication system for PostgreSQL<br />
+Given my recent MySQL MultiMaster setups I was fairly interested where PostgreSQL is at today.</p>
+<p>Jan started out with explaining where he used replication the most,<br />
+For backups and    Specialized services  so he could offload long running and intrusive reporting tools to an isiolated server.</p>
+<p>While going over the history of Slony he also mentioned eRserver, first written in Perl later  rewritten  in Java and that was a ...   Well lets just say that memory usage wasn't really ideal.</p>
+<p>The presentation covered different potential replication scenarios and the problems one could run into.<br />
+No sign however of multimaster replication.  Jan Wieck even told us he had no plans to implmenent multimaster replication<br />
+at all at the moment.   To me MultiMaster means that I can move my database connection together with my application service in a HA setup.  I don't need to wory about the possibility of writing in a slave and breaking replication  as the slave is also a master and the other node Will catch up.</p>
+<p>Next up was a talk about openID, which made me realize a couple of things about it..  all off that in a separate post :)</p>
+<p>The University restaurant was open and you could pay for your Chilli Con Carne to a really Grumpy cashier which brings me right to the next talk I followed..  A Developers Guide to Grumpy Old Sysadmins however, the majority of people in the room were Sysadmins , or people with a mixed role doing both development and sysadmin work.</p>
+<p>You don't let your developers even close to your production systems.  He then went on to read a fairly big part of "Over Clocked,  Stories of the Future Present " by Cory Doctorow ,  which I've  promptly put on my holliday reading list :</p>
+<p>So what's it like being a sysadmin ?  You get calls in the middle of the night because a system breaks,<br />
+When you work you .. people complain when things go wrong.. they don't cheer when things go right or when you have done your job correctly</p>
+<p>Reminds me of this situation at a customer where the Cisco people that fail to automate their work and  get to travel around the qworld to do  their work using their serial console , where as the Linux platform team has automated their work so far they get to stay home and watch the machines boot  then do a quick check over ssh to see if they actually work.</p>
+<p>Anyhow.. the talk really wasn't focusing on how developers could cooperate better with sysadmins, apart from a couple of general tips  so it really missed its goal.</p>
+<p>I popped into the Lightning talk about Ubuntu on EEE talk , hoping to learn something, apart from 1 url that I should read I guess it was the otherway around  , it's usually a bad sign when a speaker starts every 2 slides with "I haven't tested this myselve but " ...</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Sat, 10/04/2008 - 15:52</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_558 first"><a href="../../taxonomy/term/558/index.html" rel="tag" title="">conferences</a></li>
+<li class="taxonomy_term_461"><a href="../../taxonomy/term/461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_1045"><a href="../../taxonomy/term/1045/index.html" rel="tag" title="">open source days</a></li>
+<li class="taxonomy_term_1047"><a href="../../taxonomy/term/1047/index.html" rel="tag" title="">postgresql</a></li>
+<li class="taxonomy_term_1048 last"><a href="../../taxonomy/term/1048/index.html" rel="tag" title="">sysadmin</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/739 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:34:12 GMT -->
+</html>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - xen</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/470/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Converting KVM to VirtualBox</title>
+ <link>http://127.0.0.1:8080/blog/converting-kvm-virtualbox</link>
+ <description>&lt;p&gt;I have had most of my test environment, aka puppetmasters, test mysql setups etc running in KVM for the past couple of years .. (yes I`m still using a lot of Xen in production environments, but we&#039;ve also been using KVM for a while already .. it&#039;s a good mix)  , Virtual box has always been the lesser loved Virtualization platform , however while playing more and more with Vagrant Up I realized I needed to convirt some boxen (e.g my PuppetMaster) to Virtualbox,  and google was really no good help(most people seem  to go the other way , or want to use some proprietary tools )&lt;/p&gt;
+&lt;p&gt;So I remembered VBoxManage and apparently I hade blogged about it myselve already ..&lt;br /&gt;
+I just  hate it when I search for  stuff and google points right back to &lt;a href=&quot;http://www.krisbuytaert.be/blog/kvm-vs-virtualbox&quot;&gt;me&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So I converted my puppetmaster&#039;s disks&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;VBoxManage convertdd Emtpy-clone.img  PuppetMasterroot.vdi&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;VBoxManage convertdd puppet-var.img  PuppetMastervar.vdi&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Now when booting the VM in Virtualbox , obviously the kernel panicked .. as my KVM disks are recognised as as /dev/hda and and Virtualbox defaults to /dev/sda  and LVM doesn&#039;t really like disks to be on another names&lt;br /&gt;
+No commandline fu here to help me, but using the VirtualBox gui to move the disks to the IDE controller rather than the SATA controller.&lt;/p&gt;
+&lt;p&gt;Now all I need to do is wait for some smart guy who comments that you probably could use VBoxManage storagectl to achieve the same goal :)&lt;/p&gt;
+&lt;p&gt;And wait till Vagrant Up start supporting KVM , so I can move back :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/converting-kvm-virtualbox#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vagrant">vagrant</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1046">virtualbox</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Tue, 22 Feb 2011 22:01:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1035 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Puppet broke my Xen</title>
+ <link>http://127.0.0.1:8080/blog/puppet-broke-my-xen</link>
+ <description>&lt;p&gt;Actually it didn&#039;t , but now I got your attention.&lt;br /&gt;
+We just adopted the use of  adding headers to all of our files that are managed by puppet so people will know not to touch it&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  file {&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                &amp;quot;/etc/xen/scripts/network-custom-vlan-bridges&amp;quot;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        owner =&amp;gt; &amp;quot;root&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        group =&amp;gt; &amp;quot;root&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        mode =&amp;gt; &amp;quot;0755&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        content =&amp;gt; template(&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                                &amp;quot;headers/header-hash.erb&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                                &amp;quot;xen/co-mmx-network-custom-vlan-bridges.erb&amp;quot;);&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;        }&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;All worked nice however  upon bootstrapping our Xen host the bridges stopped working ..     running the network-custom-vlan-bridges script manually  solved everything and created the appropriate bridges.  But at boottime it didn&#039;t.. &lt;/p&gt;
+&lt;p&gt;I added some debug info to the script and figured it never got executed at boot time.&lt;/p&gt;
+&lt;p&gt;Turns out that when I removed the headers Xen actually does configure the bridges at boot time, Xen probably checks for a shebang at the beginning of the file.&lt;/p&gt;
+&lt;p&gt;Putting the header at the end of the file therefore solved the problem. ,&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/puppet-broke-my-xen#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/shebang">shebang</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Sat, 30 Oct 2010 14:35:01 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1019 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Building Virtual Appliances</title>
+ <link>http://127.0.0.1:8080/blog/building-virtual-appliances</link>
+ <description>&lt;p&gt;Johan from &lt;a href=&quot;http://sizingservers.be/&quot;&gt;Sizing Servers&lt;/a&gt; asked me if I could talk about my experiences on building (virtual) appliances at their Advanced Virtualization and Hybrid Cloud seminar .    Off course I said yes .. &lt;/p&gt;
+&lt;p&gt;Slides are below ... Enjoy ..&lt;/p&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_4321121&quot;&gt;&lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/building-appliances&quot; title=&quot;Building appliances&quot;&gt;Building appliances&lt;/a&gt;&lt;/strong&gt;
+&lt;object id=&quot;__sse4321121&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=buildingappliances-100526211332-phpapp01&amp;stripped_title=building-appliances&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed name=&quot;__sse4321121&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=buildingappliances-100526211332-phpapp01&amp;stripped_title=building-appliances&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;padding:5px 0 12px&quot;&gt;View more &lt;a href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/building-virtual-appliances#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/775">automation</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1046">virtualbox</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Thu, 27 May 2010 08:03:29 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1005 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Disabling DHCP on a LibVirt setup</title>
+ <link>http://127.0.0.1:8080/blog/disabling-dhcp-libvirt-setup</link>
+ <description>&lt;p&gt;So you have this libvirt setup and you  want to have a dhcp server on the virtual machines you are playing with , or you want to have all static IP&#039;s.&lt;/p&gt;
+&lt;p&gt;Libvirt uses dnsmasq to provide dhcp services etc and when you  generate a config from the gui it will look like&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;network&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;name&amp;gt;piponet&amp;lt;/name&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;uuid&amp;gt;e87d3bf1-a2e7-96ca-e131-7ae51ac033f9&amp;lt;/uuid&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;bridge name=&#039;virbr2&#039; stp=&#039;on&#039; delay=&#039;0&#039; /&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;ip address=&#039;192.168.100.1&#039; netmask=&#039;255.255.255.0&#039;&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    &amp;lt;dhcp&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;      &amp;lt;range start=&#039;192.168.100.128&#039; end=&#039;192.168.100.254&#039; /&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    &amp;lt;/dhcp&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;/ip&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;/network&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;
+If you  fully remove the dhcp  section, then restart libvirt you&#039;ll notice dnsmasq running with no dhcpd on that subnet so you&#039;ll have full control again :)&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;network&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;name&amp;gt;piponet&amp;lt;/name&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;uuid&amp;gt;e87d3bf1-a2e7-96ca-e131-7ae51ac033f9&amp;lt;/uuid&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;bridge name=&#039;virbr2&#039; stp=&#039;on&#039; delay=&#039;0&#039; /&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;ip address=&#039;192.168.100.1&#039; netmask=&#039;255.255.255.0&#039;&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;     &amp;lt;/ip&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;/network&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/disabling-dhcp-libvirt-setup#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/dhcp">dhcp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/category/libvirt">libvirt</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Fri, 04 Dec 2009 18:43:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">967 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Got Interviewed</title>
+ <link>http://127.0.0.1:8080/blog/got-interviewed</link>
+ <description>&lt;p&gt;by &lt;a href=&quot;http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/&quot;&gt;@botchagalupe&lt;/a&gt;&lt;br /&gt;
+on Virtualization, Open Source tools and DNS Problems&lt;/p&gt;
+&lt;p&gt;&lt;embed src=&quot;http://blip.tv/play/AYGuxQoC&quot; type=&quot;application/xshockwave-flash&quot; width=&quot;480&quot; height=&quot;390&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/got-interviewed#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/437">dnsproblem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pacemaker">pacemaker</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Wed, 18 Nov 2009 20:05:47 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">960 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>KVM or Xen</title>
+ <link>http://127.0.0.1:8080/blog/kvm-or-xen</link>
+ <description>&lt;p&gt;Over at &lt;a href=&quot;http://virtualization.com/guest-posts/2009/07/06/rhel-will-5.4-features-kvm/&quot;&gt;Virtualization.com&lt;/a&gt; I asked  the crowd what they planned to do when RedHat plans on finally migrating from Xen to KVM ..  you can have your say too . : &lt;/p&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/1761790.js&quot;&gt;&lt;/script&gt;&lt;p&gt;&lt;noscript&gt;&lt;br /&gt;
+&lt;a href=&quot;http://answers.polldaddy.com/poll/1761790/&quot;&gt;Will you migrate from Xen to KVM&lt;/a&gt;&lt;span style=&quot;font-size:9px;&quot;&gt;(&lt;a href=&quot;http://www.polldaddy.com&quot;&gt;poll&lt;/a&gt;)&lt;/span&gt;&lt;br /&gt;
+&lt;/noscript&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/kvm-or-xen#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Mon, 06 Jul 2009 20:47:17 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">925 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Upcoming Training opportunities</title>
+ <link>http://127.0.0.1:8080/blog/upcoming-training-opportunities</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://www.kuleuven-kortrijk.be/nl/PAV/Opleidingsaanbod/Meerdaagse/Opleiding/?code=1534&quot; rel=&quot;nofollow&quot;&gt;Next month&lt;/a&gt; I`ll be teaching a course on Virtualization at the KULAK.&lt;/p&gt;
+&lt;p&gt;Apart from my training there is also a &lt;a href=&quot;http://reductivelabs.com/training/&quot; rel=&quot;nofollow&quot;&gt;Puppet training&lt;/a&gt; planned in Belgium.&lt;/p&gt;
+&lt;p&gt;As I assisted Luke in finding a location for the training I tought it might be a good idea to have a Puppet Users meetup while some people are already gathering in Leuven&lt;/p&gt;
+&lt;p&gt;Current plan is to meet up somewhere in Leuven on the evening of the 25th , more announcements later ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/upcoming-training-opportunities#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/kulak">kulak</category>
+ <category domain="http://127.0.0.1:8080/blog/category/leuven">leuven</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/training">training</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Thu, 16 Apr 2009 21:45:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">901 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>CloudCamp Antwerp</title>
+ <link>http://127.0.0.1:8080/blog/cloudcamp-antwerp-0</link>
+ <description>&lt;p&gt;So yesterday a 100+ crowd met in the Antwerp Zoo.&lt;br /&gt;
+I heard different comments from that crowd... some of them liked the event,  good networking, interresting topics , a broad overview, meeting new vendors active in the Cloud, others of them didn&#039;t .. it wasn&#039;t a real camp , just some vendors pitching,  they didn&#039;t hear any new stuff , or we didn&#039;t touch the real stuff.&lt;/p&gt;
+&lt;p&gt;So different opinions from different expectations... &lt;/p&gt;
+&lt;p&gt;Anyhow  for all those who could&#039;t read the slides :  &lt;/p&gt;
+&lt;div style=&quot;width:425px;text-align:left&quot; id=&quot;__ss_1271663&quot;&gt;&lt;a style=&quot;font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/KrisBuytaert/cloudsec-dont-forget-security-in-the-cloud?type=presentation&quot; title=&quot;CloudSec , don&amp;#39;t forget Security in the Cloud !&quot;&gt;CloudSec , don&amp;#39;t forget Security in the Cloud !&lt;/a&gt;
+&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=cloudsec-090410031348-phpapp02&amp;stripped_title=cloudsec-dont-forget-security-in-the-cloud&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=cloudsec-090410031348-phpapp02&amp;stripped_title=cloudsec-dont-forget-security-in-the-cloud&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;&quot;&gt;View more &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Or &lt;a href=ihttp://www.krisbuytaert.be/presentations/CloudSec.odp&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/cloudcamp-antwerp-0#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/antwerpen">antwerpen</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/category/marketeers">marketeers</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <category domain="http://127.0.0.1:8080/blog/category/zoo">zoo</category>
+ <pubDate>Fri, 10 Apr 2009 19:21:53 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">898 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>We are rebranding !</title>
+ <link>http://127.0.0.1:8080/blog/we-are-rebranding</link>
+ <description>&lt;p&gt;So the cat is out of the bag,&lt;/p&gt;
+&lt;p&gt;As of today Inuits is rebranding to Pinuits,&lt;br /&gt;
+The press release is &lt;a href=&quot;http://www.pinuits.be/&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We&#039;ve had good feedback on the new name so far.  Different people told me the name matched better to what we are doing .  Actually my wife thinks our new name is much better as at least the Pin in Pinuits refers to our favourite Tux again ..&lt;/p&gt;
+&lt;p&gt;Finding an appropriate name for an Open Source consultancy company, with focus on Linux, Open Source Monitoring, MySQL, Open Source Virtualization , Large Scale Deployments , High Availability and  Drupal, isn&#039;t easy .. you want to show both community involvement and professionality.  And find a domain that&#039;s still available.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/we-are-rebranding#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/apache">apache</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/category/lamp">lamp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pinuits">pinuits</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Tue, 31 Mar 2009 23:27:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">895 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Slides updated</title>
+ <link>http://127.0.0.1:8080/blog/slides-updated</link>
+ <description>&lt;p&gt;I&#039;ve updated the slidedeck of my Open Source Virtualization talk, with the 2009 edition as I gave it last week at the UKUUG Spring conference.&lt;/p&gt;
+&lt;p&gt;Talk is up, both on &lt;a href=&quot;http://www.krisbuytaert.be/presentations/OSSVirt2009.odp&quot;&gt;my page&lt;/a&gt; as on &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/open-source-virtualization&quot;&gt;SlideShare&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&quot;width:425px;text-align:left&quot; id=&quot;__ss_637726&quot;&gt;&lt;a style=&quot;font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/KrisBuytaert/open-source-virtualization?type=powerpoint&quot; title=&quot;open source virtualization&quot;&gt;open source virtualization&lt;/a&gt;
+&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=open-source-virtualization-27314&amp;stripped_title=open-source-virtualization&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=open-source-virtualization-27314&amp;stripped_title=open-source-virtualization&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;&quot;&gt;View more &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Tom also updated our set of Open Source Monitoring Tool Shootout slides .&lt;br /&gt;
+They are also on &lt;a href=&quot;http://www.slideshare.net/tomdc/open-source-monitoring-tools-shootout&quot;&gt;SlideShare&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&quot;width:425px;text-align:left&quot; id=&quot;__ss_1226731&quot;&gt;&lt;a style=&quot;font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/tomdc/open-source-monitoring-tools-shootout?type=presentation&quot; title=&quot;Open Source Monitoring Tools Shootout&quot;&gt;Open Source Monitoring Tools Shootout&lt;/a&gt;
+&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=monitoringshootout-ukuug-090331062800-phpapp02&amp;stripped_title=open-source-monitoring-tools-shootout&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=monitoringshootout-ukuug-090331062800-phpapp02&amp;stripped_title=open-source-monitoring-tools-shootout&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;&quot;&gt;View more &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/tomdc&quot;&gt;tomdc&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/slides-updated#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/889">hyperic</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/427">ukuug</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/887">zabbix</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/888">zenoss</category>
+ <pubDate>Tue, 31 Mar 2009 17:04:55 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">894 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

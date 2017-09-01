@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/not-yum-or-not-apt-get-thats-not-question by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>To not yum or to not apt-get, that&#039;s NOT the question. | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">To not yum or to not apt-get, that&#039;s NOT the question.</h2>
+<div class="content">
+<div id="node-986" class="node  blog">
+<div class="content"><p>Over at the <a href="http://code.openark.org/blog/mysql/to-not-yum-or-to-not-apt-get" rel="nofollow">OPenARK blog</a> Shlomi Noach argues that using apt-get or yum to install your MySQL instance will one day most likeley break your MySQL setup.     Depdendencies, distros not shipping the MySQL version you want to use and on some distro's indeed the mysql vs MySQL issue,  agreed,  it all makes things less trivial.</p>
+<p>However why give up a clean packaged system if there are other ways out ?</p>
+<p>First of all by claiming that such an installation can break a working production environment looks to me like admitting you don't have a split development, production environment and that rather than testing stuff upfront indeed you just hack a long in production.</p>
+<p>So rather than using a tarball for the MySQL instance an --force to satisfy the missing dependencies (hence also cluttering your system) , a much cleaner and less error prone setup is to only deploy from your own , self controlled  repository , in which you only allow  tested packages, most probably not the distro based package , hence packages that won't break your setups ;)   But still you will be using apt or yum and deploying rpm's and debs , perfectly satisfying dependency needs.</p>
+<p>Apart from that .. watch out for Banquise .. :)  Coming to your favourite distro soon..</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Tue, 02/16/2010 - 22:13</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_471 first"><a href="../taxonomy/term/471/index.html" rel="tag" title="">apt</a></li>
+<li class="taxonomy_term_1371"><a href="../category/apt-get/index.html" rel="tag" title="">apt-get</a></li>
+<li class="taxonomy_term_1372"><a href="../category/banquise/index.html" rel="tag" title="">banquise</a></li>
+<li class="taxonomy_term_1370"><a href="../category/deb/index.html" rel="tag" title="">deb</a></li>
+<li class="taxonomy_term_458"><a href="../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_472"><a href="../taxonomy/term/472/index.html" rel="tag" title="">rpm</a></li>
+<li class="taxonomy_term_473 last"><a href="../taxonomy/term/473/index.html" rel="tag" title="">yum</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3969"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/6202e535f250f0478a65dc0bc386fd8e.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Greg&#039;s picture" title="Greg&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3969">#1</a>
+    <span class="author"><span class="anonymous" title="not verified">Greg</span></span>  : <span class="title"><a href="index.html#comment-3969" class="active">Use --noscripts option</a></span>
+  </h3>
+  <div class="content"><p>I always install MySQL Server using the --noscripts option to rpm. I then manually do the stuff the scripts would have done when I'm ready.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/17/2010 - 21:22</div>
+  </div>
+<a id="comment-3966"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://openark.org/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/168ccec72eee0530b818d44f3fedaacf.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Shlomi Noach&#039;s picture" title="Shlomi Noach&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3966">#2</a>
+    <span class="author"><a href="http://openark.org/">Shlomi Noach</a></span>  : <span class="title"><a href="index.html#comment-3966" class="active">complex either way?</a></span>
+  </h3>
+  <div class="content"><p>Hi Kris,</p>
+<p>How complex is it to manage your own repository?<br />
+I'm asking sincerely, since this is not something I ever did.</p>
+<p>It seems to me (let me know if I'm wrong) that it's not less complex than having MySQL installed using tarball.</p>
+<p>Neither solution is pretty nor ideal. I'm not sure, then, that tweaking your repository (how much damage is done if something goes wrong there?) is any easier.</p>
+<p>I'm pretty certain that an expert sys admin would say managing your own repository is a piece of cake. An expert MySQL DBA has little trouble with installing from tarball.</p>
+<p>Best to compare on non-expert level.</p>
+<p>Regards,<br />
+Shlomi (Open-Ark)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/17/2010 - 07:42</div>
+  </div>
+<div class="indented"><a id="comment-3967"></a>
+<div id="comment-3" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3967">#3</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3967" class="active">piece of cake</a></span>
+  </h3>
+  <div class="content"><p>Shlomi ,</p>
+<p>It indeed is a piece of cake :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/17/2010 - 10:19</div>
+  </div>
+</div><a id="comment-3965"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://blog.wl0.org/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/fdef5eebd84bc5e63739f5910fe2a1d2.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Simon J Mudd&#039;s picture" title="Simon J Mudd&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3965">#4</a>
+    <span class="author"><a href="http://blog.wl0.org/">Simon J Mudd</a></span>  : <span class="title"><a href="index.html#comment-3965" class="active">Packaging means different things to different people</a></span>
+  </h3>
+  <div class="content"><p>Yes and no in response to your comments.</p>
+<p>There's nothing inherently wrong with using packages, but they need to do what you want. Sometimes, however, the original packaging design may do things you don't like and that's not helpful.</p>
+<p>Also in an environment where you have more than one database instance running on the same host, most rpm packages are "broken", assuming that there is only one instance and only one package. That is not always true.</p>
+<p>I work in an environment where we have multiple instances. You can work around the packaging problem if all instances run the same version, but if you want to first test a new version while running an older version, that's hard with most rpm packages. I'm not sure if apt packages are better.</p>
+<p>The Linux kernel packages seem to be more suitable: you <em>can</em> install more than one package at once, and each one is isolated. Obviously you can't run more than one kernel at once, but running more than one mysqld is easy as long as you put your <span class="geshifilter"><code class="text geshifilter-text">datadir</code></span> somewhere different for each instance.</p>
+<p>Then if you're looking at upgrading 5.0 to 5.1 be aware of some of the silly hoops you have to run around: you need to start mysqld 5.1 to run the 5.1 mysqlcheck to check which tables need upgrading, and in theory to do this you have to downgrade again back to 5.0 to do the dump, and upgrade again to import those dumps back in.  <em>Silly</em>. If you can only have one version of the mysql package installed at once that becomes <em>frustrating</em>.</p>
+<p>RedHat and MySQL rpms also insist on <em>starting</em> a MySQL instance when the package is installed. That's not sometimes very helpful if you're going through an install process, or want to "tweak" certain things before putting the server live (a slave will immediately try to talk to the master and start replicating), yet there's still no fix possible to tell the package: <em>please don't start me while installing or upgrading</em>. Not hard to do and possibly not an issue for a lot of people, but for some of us this behaviour is not ideal.</p>
+<p>So in general I agree. Packaging is <em>good</em>, but I think that the MySQL packaging I've seen is not intended for people who work in a slightly more complex setup. However, we are the people who really use MySQL and actually <em>need</em> these features.</p>
+<p>I'm still pondering over whether to go back to mysql binary tar balls and use something like the <a href="http://mysqlsandbox.net/" rel="nofollow">MySQL Sandbox</a> scripts (or something similar) to manage multiple instances. This software actually works quite well, even if the setup is a little unconventional for managing production or development MySQL instances.</p>
+<p>In the end I'd like the packages to install into a separate location, and it to be possible to have multiple versions installed at once, and then have some simple way to manage more than one instance and to be able to switch between those instances that are running on the same box.</p>
+<p>However, I see that changing from the current practice is probably too much, which leads me to assume I'll have to come up with my own adhoc "different" solution.  You may do the same thing using your solution which different again from mine.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/17/2010 - 00:41</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/not-yum-or-not-apt-get-thats-not-question by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:02 GMT -->
+</html>

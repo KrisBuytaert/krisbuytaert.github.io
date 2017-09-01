@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - centos</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/480/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>FOSDEM 2014 is coming</title>
+ <link>http://127.0.0.1:8080/blog/fosdem-2014-coming</link>
+ <description>&lt;p&gt;and with that almost a full week of side events.&lt;br /&gt;
+For those who don&#039;t know FOSDEM, (where have you been hiding for the past 13 years ? )  Fosdem is the annual Free and Open Source Developers European meeting. If you are into open source , you just can&#039;t mis this event where thousands of likeminded people will meet.&lt;/p&gt;
+&lt;p&gt;And if 2 days of FOSDEM madness isn&#039;t enough people organise events around it.&lt;/p&gt;
+&lt;p&gt;Last year I organised PuppetCamp in Gent, the days before Fosdem and a MonitoringLove Hackfest in our office the 2 days after FOSDEM This year another marathon is planned.&lt;/p&gt;
+&lt;p&gt;On Friday (31/1/2014) the CentOs community is hosting a &lt;a href=&quot;http://wiki.centos.org/Events/Dojo/Brussels2014&quot; rel=&quot;nofollow&quot;&gt;Dojo in Brussels&lt;/a&gt; at the IBM Forum. (Free, but registration required by the venue)&lt;/p&gt;
+&lt;p&gt;After the success of PuppetCamp in Gent last year we decided to open up the discussion and get more Infrastructure as Code people involved in a &lt;a href=&quot;http://cfgmgmtcamp.eu/&quot; rel=&quot;nofollow&quot;&gt;CfgMgmtCamp.eu&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;The keynotes for CfgMgmtCamp will include the leaders of the 3 most popular tools around ,  both Mark Burgess, Luke Kanies and Adam Jacob will present at the event which will take place in Gent  right after Fosdem.  We expect people from all the major communities including, but not limited to , Ansible, Salt, Chef, Puppet, CFengine, Rudder, Foreman and Juju (Free but registration required for catering)&lt;/p&gt;
+&lt;p&gt;And because 3 events in one week isn&#039;t enough the RedHat Community is hosting their &lt;a href=&quot;http://community.redhat.com/blog/2013/12/announcing-infrastructure-next/&quot; rel=&quot;nofollow&quot;&gt;Infrastructure.next&lt;/a&gt; conference after CfgMgmtCamp at the same venue.  (Free but registration required for catering)&lt;/p&gt;
+&lt;p&gt;cya in Belgium next year..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/fosdem-2014-coming#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/cfengine">cfengine</category>
+ <category domain="http://127.0.0.1:8080/blog/category/chef">chef</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/465">community</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1076">events</category>
+ <category domain="http://127.0.0.1:8080/blog/category/keynotes">keynotes</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetize">puppetize</category>
+ <pubDate>Sun, 22 Dec 2013 20:04:04 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1092 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Giving Devs a Dev platform</title>
+ <link>http://127.0.0.1:8080/blog/giving-devs-dev-platform</link>
+ <description>&lt;p&gt;It&#039;s a typical situation,  the developers develop on their own boxen, they only start to integrate their code on on the  production platform 3 hours before the deadline.   And then the problems start, the typical &quot;But it works on my system&quot;  , &quot;its your problem now&quot; is something nobody really likes to hear .&lt;/p&gt;
+&lt;p&gt;So how do you tackle this problem ? &lt;a href=&quot;http://devops-abyss.blogspot.com/2010/03/application-is-only-running-on.html&quot; rel=&quot;nofollow&quot;&gt;As Christian already mentions Talking&lt;/a&gt;  is the first step of the solution,&lt;/p&gt;
+&lt;p&gt;But one of the most satisfying approaches to solve this problem is to provide your development teams with a standard platform that you support, and a platform they can play with ,  if you can&#039;t provide them with a fully defined platform, give them a set of guide lines on what they can expect.  Things like library versions, database types , memory availability and storage availability  are key components of such guidelines.&lt;/p&gt;
+&lt;p&gt;My platform of choice for this kind of projects today is to for an Enterprise Level distro,  a distro that stays stable for a longer period, not one that is bleeding edge and changes every other week.  So a CentOS or a Debian based distro is probably going to be the platform of choice.  But a stable standard platform also means that all the latest nice features a developer wants to have from the bleeding edge libraries he is using aren&#039;t going to be available .&lt;/p&gt;
+&lt;p&gt;Sometimes your devs really need those features, sometimes its just a nice to have.  On the other hand you as an ops guy don&#039;t want to be packaging and configurating every single tool they dream off.  As usual in a Devops environment the key can be found in communication ... Talking with the devs will teach you what features they really need and how they might solve things in a different, more standardized way&lt;/p&gt;
+&lt;p&gt;We&#039;ve learned that by giving them a default platform   and keeping an open conversation  helps,  some developers take longer to understand the process others jump in right away .. but in the long term  you really need to talk to your devs as soon as possible when they think of implementing a new project  that has to run on your platorms.&lt;/p&gt;
+&lt;p&gt;Lets you sleep at night ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/giving-devs-dev-platform#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/platform">platform</category>
+ <category domain="http://127.0.0.1:8080/blog/category/standardize">standardize</category>
+ <pubDate>Mon, 14 Jun 2010 20:51:41 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1010 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Packaging Drupal Modules  or not ?</title>
+ <link>http://127.0.0.1:8080/blog/packaging-drupal-modules-or-not</link>
+ <description>&lt;p&gt;So &lt;a href=&quot;http://bitfieldconsulting.com/puppet-drupal&quot; rel=&quot;nofollow&quot;&gt;John&lt;/a&gt; wrote down his experiences on deploying Drupal sites with Puppet .&lt;/p&gt;
+&lt;p&gt;It&#039;s not a secret that I&#039;ve been thinking about similar stuff and how I could get to the best possible setup.&lt;/p&gt;
+&lt;p&gt;John starts of with using Puppet to download Drush... while I want to use &lt;a href=&quot;http://repo.inuits.be/centos/5/os/noarch/drush-All-Versions-2.1-1.noarch.rpm&quot; rel=&quot;nofollow&quot;&gt;rpm&lt;/a&gt;  for that ...&lt;/p&gt;
+&lt;p&gt;I want my core infrastructure to be fully packaged... not downloaded and untarred.  I want to be able to reproduce my platform in a couple of months , with the exact same versions I`m using now .. not with the version that happens to be on ftp.drupal.org at that point in time, or with ftp.drupal.org being down.&lt;/p&gt;
+&lt;p&gt;Now the next question off course is what&#039;s the core infrastructure.&lt;br /&gt;
+Where does the infrastructure end and does the application start. There&#039;s little discussion about having a  puppet created vhost ,  an apache conf.d file, a matching .htaccess file if wanted , and the appropriate settings.php for a multisite drupal config.&lt;/p&gt;
+&lt;p&gt;There&#039;s also little doubt to me on using drush to run the updates, manage the drupal site etc . Reading John&#039;s  article made me think some further about what and when I want things packaged. &lt;/p&gt;
+&lt;p&gt;John&#039;s post lead to a discussion on #infra-talk on getting all drupal modules packaged for Centos with &lt;a href=&quot;http://www.karan.org/blog/&quot; rel=&quot;nofollow&quot;&gt;Karan&lt;/a&gt; and some others&lt;/p&gt;
+&lt;p&gt;In a development environment I probably want to have periodic drush updates getting the latest modules from the interwebs and potentially breaking my devs code.   But making sure that when you put a site in production it will be on a fairly up to date platform, and not on the platform you started developing on 24 months ago.&lt;/p&gt;
+&lt;p&gt;In a production environment however you  only want tested updates of your modules as indeed they will break code.&lt;/p&gt;
+&lt;p&gt;It&#039;s probably going to be a mix and match setup having a local rpm/deb repo with packaged  modules that have been tested and validated in your setup  and using drush to enable  or configure them for that  production setup.&lt;/p&gt;
+&lt;p&gt;But also having a CI environment wher Drush will get the new modules from the interwebs when needed.  and package them for you.&lt;/p&gt;
+&lt;p&gt;To me that sounds beter than getting all the available Drupal modules and packaging them, even automated, and preparing a repository of those modules of which only a small percentage will actually be used by people.&lt;/p&gt;
+&lt;p&gt;But I need to think about it some more :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/packaging-drupal-modules-or-not#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/apt-get">apt-get</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/473">yum</category>
+ <pubDate>Tue, 16 Feb 2010 20:20:13 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">987 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Drupal6 in EPEL</title>
+ <link>http://127.0.0.1:8080/blog/drupal6-epel</link>
+ <description>&lt;p&gt;Dear Drupal Community,&lt;/p&gt;
+&lt;p&gt;If any of you are interrested in getting a packaged version of Drupal 6 into  Fedora&#039;s EPEL repository (Extra Packages for Enterprise Linux) and therefore usable in RHEL and Centos,&lt;br /&gt;
+please comment on the &lt;a href=&quot;https://bugzilla.redhat.com/show_bug.cgi?id=552717&quot; rel=&quot;nofollow&quot;&gt;Bug&lt;/a&gt; I filed to get it&#039;s introduction started.&lt;/p&gt;
+&lt;p&gt;Any pitfalls, benefits etc  are welcome ..&lt;/p&gt;
+&lt;p&gt;thnx in advance !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/drupal6-epel#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/drupal6">drupal6</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/category/package">package</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Tue, 05 Jan 2010 22:48:22 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">975 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Packaging Djagios</title>
+ <link>http://127.0.0.1:8080/blog/packaging-djagios</link>
+ <description>&lt;p&gt;After all the politics involved in getting a package in a distro, or not it was time for a nice small and clean package of a fresh and promising open source project.  &lt;a href=&quot;http://www.djagios.org/&quot; rel=&quot;nofollow&quot;&gt;Djagios&lt;/a&gt; was an easy choice.&lt;/p&gt;
+&lt;p&gt;I&#039;ve uploade the &lt;a href=&quot;http://repo.inuits.be/centos/5/os/noarch/djagios-0.1.3-1.noarch.rpm&quot; rel=&quot;nofollow&quot;&gt;rpm&lt;/a&gt; and &lt;a href=&quot;http://repo.inuits.be/centos/5/os/SRPMS/djagios-0.1.3-1.src.rpm&quot; rel=&quot;nofollow&quot;&gt;Source RPM&lt;/a&gt; to repo.inuits.be and getting the  SPEC file in the upstream repo was 10 minutes work.&lt;/p&gt;
+&lt;p&gt;Next step is to get it into Fedora  , and EPEL   :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/packaging-djagios#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/djagios">djagios</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/890">nagios</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/466">packaging</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Sun, 20 Dec 2009 20:42:00 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">974 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Drupal 6 for EPEL</title>
+ <link>http://127.0.0.1:8080/blog/drupal-6-epel</link>
+ <description>&lt;p&gt;Some of you might have noticed that Fedora 11 and up already have an up to date Drupal6 version, but EPEL , which is what a lot of people are using on their  CentOS  or RHEL builds only has a Drupal5.   I asked  Jon Ciesla, who is maintaing the Drupal packages in Fedora why :&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;br /&gt;
+Because when Drupal was initially built for EL-5 and EL-5, the 5.x&lt;br /&gt;
+branch was the current release.  It&#039;s up to date, 5.20 is the most&lt;br /&gt;
+recent release, and is still supported upstream in terms of security&lt;br /&gt;
+fixes.  6 is out, and has been for awhile, but we have the following:&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies&quot; title=&quot;http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies&quot; rel=&quot;nofollow&quot;&gt;http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Since 5.x isn&#039;t broken or insecure, it&#039;ll be a tough sell to move to&lt;br /&gt;
+6.x.  Once upstream drops support, this may change.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;It&#039;s a correct answer from a Distribution point of view, but the fact is it is widening the gap between the Ops and the Devs.     If the ops want to keep their platform clean we need to have our software packaged on the platform we want to use, which is most often an Enterprise Linux distro,  on the other there is understandably no hair on a dev&#039;s head that he will be  building a new site on  a Drupal 5 platform.&lt;/p&gt;
+&lt;p&gt;So until the Drupal community  doesn&#039;t declare Drupal 5 dead, RHEL and CentOS users will have to use 3rd party Drupal6  RPMS , or rebuild the F12 rpm from Source again  .&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/drupal-6-epel#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/guidelines">guidelines</category>
+ <category domain="http://127.0.0.1:8080/blog/category/politics">politics</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Sun, 20 Dec 2009 20:39:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">972 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Fedora 12 Release Party</title>
+ <link>http://127.0.0.1:8080/blog/fedora-12-release-party</link>
+ <description>&lt;p&gt;I have a confession to make, I`m a Fedora user, have been since before it existed , I remember running RedHat 4.2 on my Multia and I`m pretty sur that wasn&#039;t my first RedHat install&lt;/p&gt;
+&lt;p&gt;I`m running Fedora on my laptop and corporate desktop for the simple reason that it will provide me with a preview of what CentOS might look like in the future.&lt;/p&gt;
+&lt;p&gt;So when my inbox started to show invites of a Fedora 12 release party at walking distance from my home , I replied I&#039;d join the party afer I had put the kids to bed.&lt;/p&gt;
+&lt;p&gt;Saturday came and I realized that given the short distance to the events place it might be a good idea to get the good old RedHat bike from the garage and check it&#039;s tires.   Just after I had put Margot to bed &lt;a href=&quot;http://twitter.com/biertie/status/6146841182&quot; rel=&quot;nofollow&quot;&gt;the crowd&lt;/a&gt; already wondered where I stayed.&lt;/p&gt;
+&lt;p&gt;I grabbed my Fedora and jumped on my bike, only to realize it&#039;s lights weren&#039;t working :(   The only remaining option was to drive by car.  A full 3 minutes later I was at the venue.&lt;/p&gt;
+&lt;p&gt;.Apparently nobody in the audience had seen a real Fedora before as Bert promplty stopped his presentation.&lt;/p&gt;
+&lt;p&gt;After the presentation we tried to create an OpenSpace and started introducing ourselves,  we used the Fedora as a talking stick,   on a regular day my Big Tux wears the Fedora, but apparently our cats had been playing with it a bit too much ... :)&lt;/p&gt;
+&lt;p&gt;More reports from &lt;a href=&quot;http://blog.vanderkussen.org/?p=52&amp;amp;cpage=1#comment-203&quot; rel=&quot;nofollow&quot;&gt;Vincent&lt;/a&gt;, &lt;a href=&quot;http://www.toshaan.be/?p=320&quot; rel=&quot;nofollow&quot;&gt;Tosh&lt;/a&gt; and &lt;a href=&quot;http://blog.bdesmet.be/?p=248&quot; rel=&quot;nofollow&quot;&gt;Bert&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oh, and I`m a Debian, Ubuntu, and CentOS user too :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/fedora-12-release-party#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/debian">debian</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/916">ubuntu</category>
+ <pubDate>Tue, 01 Dec 2009 18:37:13 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">964 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Centos, a fine DNS problem </title>
+ <link>http://127.0.0.1:8080/blog/centos-fine-dns-problem</link>
+ <description>&lt;p&gt;You must have noticed the fuzz around CentOS,  &lt;a href=&quot;http://lists.centos.org/pipermail/centos/2009-July/079767.html&quot; rel=&quot;nofollow&quot;&gt;the open Letter&lt;/a&gt;  , and luckily Lance  &lt;a href=&quot;http://www.centos.org/&quot; rel=&quot;nofollow&quot;&gt;showing up&lt;/a&gt; again ..   &lt;/p&gt;
+&lt;p&gt;I&#039;ve been a long time CentOS user , so this kind of events are pretty close to my heart, I never really worried about the future of the project  ,  the CentOS community is was standing behind their message as one group.  If Lance wouldn&#039;t have shown up again  quoting &lt;a href=&quot;http://www.arrfab.net/blog/&quot; rel=&quot;nofollow&quot;&gt;Arrfab&lt;/a&gt;:&lt;br /&gt;
+&quot;The worst would be to switch to another domain name .. but you already know that everything is a fscking DNS problem&quot;&lt;/p&gt;
+&lt;p&gt;In this case it would actually be more of a mareketing problem :)&lt;/p&gt;
+&lt;p&gt;Fact is that &lt;a href=&quot;http://www.icinga.org/&quot; rel=&quot;nofollow&quot;&gt;sometimes&lt;/a&gt; an active community standing up against a lesser active project lead has it&#039;s results, however  this time there probably won&#039;t be any other DNS entries to be added , but I hope one day the logo will become better :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/centos-fine-dns-problem#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/437">dnsproblem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Mon, 03 Aug 2009 21:14:41 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">932 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>RiverMuse on RHEL/Centos 5</title>
+ <link>http://127.0.0.1:8080/blog/rivermuse-rhelcentos-5</link>
+ <description>&lt;p&gt;My yesterday post about RiverMuse only being available on Fedora Core 9 wasn&#039;t even cold yet and today Rivermuse already announced the availability of their &lt;a href=&quot;http://www.rivermuse.org/static/2009/07/rhel-5-binaries-now-available/&quot; rel=&quot;nofollow&quot;&gt;RHEL5&lt;/a&gt; binaries.&lt;/p&gt;
+&lt;p&gt;Awesome Open Source !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/rivermuse-rhelcentos-5#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/rivermuse">rivermuse</category>
+ <pubDate>Fri, 31 Jul 2009 13:23:56 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">930 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>How popular  is an Open Source project ? </title>
+ <link>http://127.0.0.1:8080/blog/how-popular-open-source-project</link>
+ <description>&lt;p&gt;There is a really easy way to figure out ...&lt;/p&gt;
+&lt;p&gt;Look at the size of of the devrooms , if at all , a project gets at Fosdem&lt;br /&gt;
+It&#039;s really interresting to see the Embedded room move to a 500 seat room which it really needed when the first openMoko talk was held there in a previous edition.&lt;/p&gt;
+&lt;p&gt;The FDO , Drupal, Mozilla, Centos/Fedora and Suse rooms stay in similar size rooms as last year..  But it seems lik the BSD and PostgreSQL room which was pretty crowded moved to a bigger location.&lt;/p&gt;
+&lt;p&gt;The Ruby room also seems to move to a bigger room.   Fosdem has a couple of new rooms too it seems this freed up room for new groups such as the &lt;a href=&quot;http://lenz.homelinux.org/archives/230-MySQLFOSDEM-2009-Feb-78,-Brussels,-Belgium.html&quot;&gt;MySQL Crowd&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Obviously these sizes aren&#039;t a real match to the size of a community, as the new rooms might need (and probably will need) a reshuffle for next year ;)&lt;/p&gt;
+&lt;p&gt;Different schedules for the devrooms are online .. you&#039;ll probably find me in the &lt;a href=&quot;http://www.fosdem.org/2009/schedule/devroom/debian&quot;&gt;Debian&lt;/a&gt; , &lt;a href=&quot;http://www.fosdem.org/2009/schedule/devroom/fedoracentos&quot;&gt; Fedora+CentOS&lt;/a&gt;, &lt;a href=&quot;http://www.fosdem.org/2009/schedule/devroom/mysql&quot;&gt;MySQL&lt;/a&gt; or &lt;a href=&quot;http://www.fosdem.org/2009/schedule/devroom/drupal&quot;&gt;Drupal&lt;/a&gt; rooms :)&lt;/p&gt;
+&lt;p&gt;Did I mention that :&lt;br /&gt;
+&lt;img src=&quot;http://www.krisbuytaert.be/images/going_to_fosdem.png&quot; /&gt;&lt;br /&gt;
+and I`ll actually be &lt;a href=&quot;http://www.fosdem.org/2009/schedule/speakers/kris+buytaert&quot;&gt;speaking&lt;/a&gt; there again about Monitoring MySQL&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/how-popular-open-source-project#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/debian">debian</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/768">fosdem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Thu, 15 Jan 2009 17:36:34 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">853 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

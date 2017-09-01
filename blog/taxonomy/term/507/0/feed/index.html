@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - virtualisation</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/507/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Virtualization.com just Relaunched</title>
+ <link>http://127.0.0.1:8080/blog/node/599</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://www.virtualization.com&quot; rel=&quot;nofollow&quot;&gt;Virtualization.com&lt;/a&gt; just launched their freshly revamped site.&lt;/p&gt;
+&lt;p&gt;Virtualization.com is your central place to read everything about Virtualization that&#039;s happening on our little planet, news, rumours,  events, interviews,  howto&#039;s and many more.&lt;/p&gt;
+&lt;p&gt;Go check it out ! &lt;/p&gt;
+&lt;p&gt;Disclaimer:  I`m writing for Virtualization.com&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/599#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/798">Robin Wauters</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/797">Toon Vanagt</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/507">virtualisation</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/796">virtualisation.com</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/795">virtualization.com</category>
+ <pubDate>Thu, 14 Feb 2008 16:27:52 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">599 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>VMWare Revisited</title>
+ <link>http://127.0.0.1:8080/blog/node/579</link>
+ <description>&lt;p&gt;Last century I was sometimes noticed to be using VMWare to run a weird platform on my Linux Desktop , or to run some test installations.    With the introduction of Qemu and later Xen  there was no need for me to use the proprietary closed alternative.&lt;/p&gt;
+&lt;p&gt;So I got the question earlier this week to build a virtual instance of our bootstrapping environment so that field engineers could take that virtual machine on their laptop and do installations from there.&lt;/p&gt;
+&lt;p&gt;One of the collegues told me that  booting a fresh VMWare instance of  the network would be no problem so I took up on the challenge.&lt;/p&gt;
+&lt;p&gt;First of all a registration procedure so the nice folks over at VMWare can spam me with their marketing stuff during the next couple of months.  I needed to register as I seemed to need a Serial Number..  whow .. that was ages ago since I last needed such a beast.&lt;br /&gt;
+A full 101Mb download later I had an RPM ready to be installed.&lt;/p&gt;
+&lt;p&gt;&quot;Cool an RPM&quot; I tought, that means that I will be able to clean up all the mess they leave behind with a simple rpm -e.&lt;br /&gt;
+Wrong guess.  it seems like VMWare starts copying around files in different places on your filesystem and actually even wants to compile stuff against your running kernel.   All fine and well, but the result is  a bunch of unidentified files that are cluttering my filesystem.&lt;/p&gt;
+&lt;p&gt;The next step  required me to start the gui to create a virtual machine, suddenly the load of my machine skyrocketed.  Load 11 whew..  yep the VMware process was the guilty one..  luckily it went back to normal after a while .. but I`m still not sure what happened there.&lt;/p&gt;
+&lt;p&gt;Click, click, click and before I knew it VMware was allocating 4Gb on myfilesystem for an empty VM.  Noo.. don&#039;t allocate it yet.. retry.. ok .. take it when you need it .. that&#039;s better.  And why do you think I only want 256Mb for this machine ?   Hmm.. where&#039;s that config file.. aah.. clickerdy click again .&lt;/p&gt;
+&lt;p&gt;Start VM, F12 to boot of the network, wait, reboot done.&lt;/p&gt;
+&lt;p&gt;And thus we joined the era of transferring an unmanagable image that everyone will copy around wile slightly modifying things and never placing them in version control .  hence ending up one day with something nobody knows how we got there..&lt;/p&gt;
+&lt;p&gt;What did we learn, that the way I bootstrap a Virtual machine or a physical machine really doesn&#039;t matter,  and is still just a matter of mapping a MAC address to a HOSTNAME.&lt;/p&gt;
+&lt;p&gt;When working on the system, to check if the install was done correctly it felt like I was on a remotely bad connected machine,  not really slow, but really slow but still  (could have been because I logged on via the gui).   Certainly not like the paravirtualized Xen machines I`m used to work with,  more like the VirtualBox experience.  &lt;/p&gt;
+&lt;p&gt;The big problem with giving someone an image to play with however is that you loose all control over what is being deployed , configured or changed and it just becomes a change management nightmare.   At least reinstalling won&#039;t take much time.&lt;/p&gt;
+&lt;p&gt;But  I`ll go back to KVM and Xen for my daily work.. I&#039;ve seen enough GUI&#039;s for this month :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/579#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/761">i hate gui&#039;s</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/764">nothingchanged</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/763">oldscool</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/762">quem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/507">virtualisation</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/555">vmware</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Thu, 31 Jan 2008 17:58:40 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">579 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>ProfOSS Virtualisation</title>
+ <link>http://127.0.0.1:8080/blog/node/525</link>
+ <description>&lt;p&gt;For those of you reading my blog the old fashioned way with a browser  you might have seen the ProfOss Virtualisation conference  Badge popping up on the right.  &lt;/p&gt;
+&lt;p&gt;For the others:&lt;br /&gt;
+&lt;a href=&quot;http://www.profoss.eu/events/january-2008-virtualisation/&quot;&gt;&lt;img src=&quot;http://www.profoss.eu/images/profoss_speaker_200801.gif&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So come and hear me speak at ProfOSS next January ! &lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/525#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/558">conferences</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/613">profoss</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/507">virtualisation</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Wed, 12 Dec 2007 14:11:28 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">525 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Profoss CFP on Virtualisation</title>
+ <link>http://127.0.0.1:8080/blog/node/497</link>
+ <description>&lt;p&gt;The next edition of &lt;a href=&quot;http://www.profoss.eu/&quot; rel=&quot;nofollow&quot;&gt;Profoss&lt;/a&gt; scheduled late january will tackle one of my favourite topics.  Virtualization ..&lt;/p&gt;
+&lt;p&gt;Raph just posted a &lt;a href=&quot;http://www.profoss.eu/events/january-2008-virtualisation/call-for-papers&quot; rel=&quot;nofollow&quot;&gt; Call for Papers&lt;/a&gt; he says :&lt;br /&gt;
+&lt;cite&gt;If you have deployed a Free or Open Source virtualisation technology in a demanding professional environment, if you&#039;re a services company with extended expertise with virtualisation, or if you have developed a virtualisation software under an open source license, or built a product based on open source technology, and want to share your experience with your peers, please don&#039;t hesitate to submit your proposals.&lt;/cite&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/497#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/456">cfp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/613">profoss</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/507">virtualisation</category>
+ <pubDate>Wed, 07 Nov 2007 20:05:24 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">497 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Qumranet exited stealth mode</title>
+ <link>http://127.0.0.1:8080/blog/node/453</link>
+ <description>&lt;p&gt;So &lt;a href=&quot;www.qumranet.com&quot;&gt;Qumranet&lt;/a&gt; is out stealthmode , they have news on their website regarding their product.&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;br /&gt;
+Qumranet is a leading provider of virtual computing solutions and offers the industry&#039;s first truly integrated desktop virtualization solution, Solid ICE. Solid ICE enables enterprises to host Windows and Linux virtual desktops in KVM virtual machines on servers in the corporate data center, and allows users to connect to them via a remote protocol called SPICE. The benefits for IT include centralized provisioning, management, policy enforcement and compliance for desktops. In addition, due to the KVM and SPICE combination, Solid ICE delivers a superior end-user experience, especially with respect to graphics and multimedia.&lt;br /&gt;
+&lt;/cite&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/453#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/505">qumranet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/507">virtualisation</category>
+ <pubDate>Tue, 25 Sep 2007 22:52:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">453 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/36 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:36:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UKUUG Day 2 | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-story one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a></div></div>
+  <h2 id="title">UKUUG Day 2</h2>
+<div class="content">
+<div id="node-36" class="node  story">
+<div class="content"><p>Ian Pratt , Xen, a full 1.5 hour talk about Xen</p>
+<p>Ian mentions lots of uses for Xen : Consolidate, Avoid Downtime ,<br />
+Dynamically re-balance workload to guarantee application SLA's and Enforce security policy</p>
+<p>Multilevel secure systems , 1 virtual machine for browsing (back at home) , 1 virtual machine for corporate usage which can securely<br />
+connect back to the office.</p>
+<p>The Xen 3.0 release is between 4 to 6 week away and will support new architectures Xen is moving stuff out of xen and let Linux do that<br />
+stuff  for  them, this way they can start using ACPI and AGP ,initially Xen was developed as a Server back end which means that<br />
+back then people didn't need X and ACPI, this will now change.</p>
+<p>SMP virtual machines are now possible, (or how to fake a 32 CPU machine on a single CPU machine ..) Support for the new Intel VTx<br />
+extensions which will enable them to run proprietary platforms is also on the roadmap.</p>
+<p>Marcus Hardt shows us some Use cases for Xen, since he doesn't get the budget to buy enough machines when teaching HPC he uses Xen to build a Grid in a box. He's also providing people with a Login Cluster  which gives people an on demand distro based on their username</p>
+<p>Marcus  then  went  on  to  discuss  the  Benchmarking he with <a href="http://www.freebench.org/" title="www.Freebench.org">www.Freebench.org</a> tools regarding Xen.<br />
+Ruediger Berlich explained what a grid really is (unlike Oracle's wannabe grid stuff) and how the EGEE project tries to solve the problem  of  different grid projects not being compatible with eachother by creating and operating a production grid and supporting the end -users by building gLite on top of best of breed of other  grid projects.</p>
+<p>After lunch I squeezed down my laptops resolution to 640x480 and gave a fast forward openMosix presentation, the 10 minutes left sign really came way to fast, which made me skip a couple of slides and probably made the talk even more chaoitic than it already is :( It probably also made the talk look like I didn't say anything more than the stuff already on the slides which was obviously not the goal.</p>
+<p>Dropped back into the Linux on Power talk by Nigel, who pointed us to what he thinks is a better way of displaying/reporting system information<br />
+<a href="http://www-128.ibm.com/developerworks/eserver/articles/analyze_aix/">http://www-128.ibm.com/developerworks/eserver/articles/analyze_aix/</a></p>
+<p>Back to the hotel to get some food and sleep :)</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Tue, 08/09/2005 - 09:15</div>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/36 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:36:30 GMT -->
+</html>

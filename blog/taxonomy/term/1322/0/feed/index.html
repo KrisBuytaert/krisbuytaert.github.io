@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - everything</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1322/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>DNS Tools </title>
+ <link>http://127.0.0.1:8080/blog/dns-tools</link>
+ <description>&lt;p&gt;In my latest DNS Problem related post I mentionned that don&#039;t know all the answers, I however know about some good tools to help you setup a clean DNS server.&lt;/p&gt;
+&lt;p&gt;Ages ago via &lt;a href=&quot;http://planet.fedoraproject.org/&quot; rel=&quot;nofollow&quot;&gt;Planet Fedora&lt;/a&gt; I ran into an article   from  &lt;a href=&quot;http://www.alphatek.info/2008/11/29/dnsknifecom-meet-the-online-dig/&quot; rel=&quot;nofollow&quot;&gt;Steven Moix&lt;/a&gt;  about a tool he and his fellow students build for a summer project.&lt;/p&gt;
+&lt;p&gt;The tool is &lt;a href=&quot;http://www.dnsknife.com/&quot; rel=&quot;nofollow&quot;&gt;DNSKnife&lt;/a&gt; and it&#039;s really interresting.&lt;/p&gt;
+&lt;p&gt;DNS Knife is a good tool to check if your DNS setup is ok,  it checks the parent servers, it checks for if your nameservers are listed on the parent server,  checks if all your nameservers are reachable and are authorative .&lt;br /&gt;
+And so on and so on ...&lt;/p&gt;
+&lt;p&gt;It warns for Open Relays, if you care for that ..in fact an Open DNS relay also means that you can use it from everywhere eg for tcp over dns.&lt;/p&gt;
+&lt;p&gt;It warns for misconfigured  SOA , such as too short Expire values etc&lt;br /&gt;
+You know.. the time a secondary dns server will keep it&#039;s copy of the zone valid when It can&#039;t contact the primary , not the other misinterpretations you folks usually have .. &lt;/p&gt;
+&lt;p&gt;Off course it isn&#039;t always correct. it considers not finding MX records a failur&lt;br /&gt;
+e ,  however some domains just don&#039;t want a MX record.&lt;/p&gt;
+&lt;p&gt;DNSKnife actually provides you with an automated alternative to manually verify ing RFC 1912 , well at least partly :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/dns-tools#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/451">dns</category>
+ <category domain="http://127.0.0.1:8080/blog/category/dnsknife">dnsknife</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/437">dnsproblem</category>
+ <category domain="http://127.0.0.1:8080/blog/category/everything">everything</category>
+ <pubDate>Wed, 28 Oct 2009 20:52:08 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">953 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

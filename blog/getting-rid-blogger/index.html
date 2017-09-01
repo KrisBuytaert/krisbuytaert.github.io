@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/getting-rid-blogger by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:44:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Getting rid of Blogger | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Getting rid of Blogger</h2>
+<div class="content">
+<div id="node-535" class="node  blog">
+<div class="content"><p>So time had come to move all my other blogs to drupal and move them away from blogger.<br />
+When I migrated this blog from dotclear  to Drupal I found a php script that grabbed all the content from my dotclear setup and migrated it to a fresly installed drupal.  I was hoping to find a similar tool for Blogger .</p>
+<p>Well no such luck ..  most of the links I found instructed me to first install wordpress, use the import functionality of wordpress then migrate from wordpress to Drupal.</p>
+<p>Setting up a Wordpress and importing the Blogger postings took me about 10 minutes. Then the hunt for a WordPress to Drupal migration tool started .. first I ran into into a binary one that seemed to be able to connect too my database but couldn't find the wordpress databases.  Next I ran into a drupal module that only worked on 4.6  But luckily at last I ran into <a href="http://dojotoolkit.org/~ktiedt/wp2drupal5.tar.gz" title="http://dojotoolkit.org/~ktiedt/wp2drupal5.tar.gz" rel="nofollow">http://dojotoolkit.org/~ktiedt/wp2drupal5.tar.gz</a>  A drupal module that works with 5.X  well. not sure if it does .X  but at least with .1 ..  (as one of the tests I ran waas on a 5.2 and it failed there) </p>
+<p>So a couple of manual changes of users mappings , setting up new themes  and some postings on the old blogs that there was a new feed to be subscribed to I was ready to go...</p>
+<p>Untill.. I couldn't log on to one of the blogs anymore .. I could ask for a onetime login session, ,manage from there .. then try to log on with the new password and promptly I was shown an Access Denied page .  Weird..<br />
+The watchdog logs told me that the logon was successfull. but the next entry told me that it was the anonymous user failing access to the protected pages .</p>
+<p>Thxn  to gnat_x on #drupal_support I cleared my cookies and seemed to solve the issue.<br />
+He told me he had seen issues before with settings where <a href="http://www.example.com/" title="www.example.com" rel="nofollow">www.example.com</a> and example.com conflicted or it might have been beta.example.com and blog.example.com ..   He was right..  so I`ll need to figure out how to set my base_url for the different drupals I have running :)</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 12/19/2007 - 23:02</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_675 first"><a href="../taxonomy/term/675/index.html" rel="tag" title="">blogger</a></li>
+<li class="taxonomy_term_484 last"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3515"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.bransonopenhouse.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/dbd04362c35f4ae5d75f14593976e388.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Branson Real Estate&#039;s picture" title="Branson Real Estate&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3515">#1</a>
+    <span class="author"><a href="http://www.bransonopenhouse.com/">Branson Real Estate</a></span>  : <span class="title"><a href="index.html#comment-3515" class="active">Word Press</a></span>
+  </h3>
+  <div class="content"><p>I love Word Press and would take it over Blogger any day of the week.<br />
+I've used blogger in the past. And it is a stable blogging platform. But when it comes to tweaks and customizations, you just can't beat the level of functionality that Word Press gives you.<br />
+I think it's great you made the transition!<br />
+Thanks for sharing.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/25/2009 - 02:40</div>
+  </div>
+<a id="comment-3509"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://carissaputri.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/4e3684ff241f25f07e88b00d177758cb.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="seo carissa&#039;s picture" title="seo carissa&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3509">#2</a>
+    <span class="author"><a href="http://carissaputri.com/">seo carissa</a></span>  : <span class="title"><a href="index.html#comment-3509" class="active">if we concern with SEO,</a></span>
+  </h3>
+  <div class="content"><p>if we concern with SEO, wordpress is the winner, but if we concern with the lay out, i choose drupal :D</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/22/2009 - 17:44</div>
+  </div>
+<a id="comment-3508"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/5d1773752a8c9afb920c15cddea2b499.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Todd Beardsley&#039;s picture" title="Todd Beardsley&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3508">#3</a>
+    <span class="author"><span class="anonymous" title="not verified">Todd Beardsley</span></span>  : <span class="title"><a href="index.html#comment-3508" class="active">Wordpress</a></span>
+  </h3>
+  <div class="content"><p>I have tried everything and I am partial to Wordpress. It's very easy and convenient.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/22/2009 - 17:40</div>
+  </div>
+<a id="comment-3494"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.klipizlesene.net/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/0cbf53fe8f6f0bd33c679e2ea3b5035c.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Klip izle&#039;s picture" title="Klip izle&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3494">#4</a>
+    <span class="author"><a href="http://www.klipizlesene.net/">Klip izle</a></span>  : <span class="title"><a href="index.html#comment-3494" class="active">Wordpress</a></span>
+  </h3>
+  <div class="content"><p>I think Wordpress is better than Drupal.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/20/2009 - 15:08</div>
+  </div>
+<a id="comment-3369"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.preselek.net/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/759956772b53765b3f1975bc3a6e76fb.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="artykuły tematyczne&#039;s picture" title="artykuły tematyczne&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3369">#5</a>
+    <span class="author"><a href="http://www.preselek.net/">artykuły tematyczne</a></span>  : <span class="title"><a href="index.html#comment-3369" class="active">drupal is the best blog cms</a></span>
+  </h3>
+  <div class="content"><p>drupal is the best blog cms now i think</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/21/2008 - 19:42</div>
+  </div>
+<div class="indented"><a id="comment-3404"></a>
+<div id="comment-6" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.wowglider.de/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/ba0a5f328077d54d268f373efbdf67a9.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="WoW Bot Admin&#039;s picture" title="WoW Bot Admin&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3404">#6</a>
+    <span class="author"><a href="http://www.wowglider.de/">WoW Bot Admin</a></span>  : <span class="title"><a href="index.html#comment-3404" class="active">...</a></span>
+  </h3>
+  <div class="content"><p>nooo wordpress is the best cms :P</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/12/2008 - 17:19</div>
+  </div>
+</div><a id="comment-3366"></a>
+<div id="comment-7" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://kabonfootprint.com/busby-seo-test/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/f5171184a5f55276e97163df34980c82.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kabon&#039;s picture" title="Kabon&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3366">#7</a>
+    <span class="author"><a href="http://kabonfootprint.com/busby-seo-test/">Kabon</a></span>  : <span class="title"><a href="index.html#comment-3366" class="active">Never using blogger</a></span>
+  </h3>
+  <div class="content"><p>I am never using blogger before. For the first time i am using wordpress as a blog engine. But know i think i'll try to using Drupal. It's sound great engine too.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/19/2008 - 07:07</div>
+  </div>
+<a id="comment-3260"></a>
+<div id="comment-8" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/36042cc2513c18a7d0ed118171909a33.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Austin Real Estate Blog&#039;s picture" title="Austin Real Estate Blog&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3260">#8</a>
+    <span class="author"><span class="anonymous" title="not verified">Austin Real Estate Blog</span></span>  : <span class="title"><a href="index.html#comment-3260" class="active">wordpress vs drupal</a></span>
+  </h3>
+  <div class="content"><p>I started with moveable type a while ago and have hated it.  Why did you move to drupal instead of wordpress.  With newer blogs I am looking at wordpress.  It seems to have a decent number of nice plugins.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/27/2008 - 23:27</div>
+  </div>
+<a id="comment-3218"></a>
+<div id="comment-9" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.vividracing.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/0a085a945cd57d3b89f6f9afb305150f.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="lowering springs &#039;s picture" title="lowering springs &#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3218">#9</a>
+    <span class="author"><a href="http://www.vividracing.com/">lowering springs </a></span>  : <span class="title"><a href="index.html#comment-3218" class="active">Despite of searching</a></span>
+  </h3>
+  <div class="content"><p>Despite of searching everywhere, I couldn't find some thing to migrate all my wordpress content to Drupal. Perhaps i was searching with Drupal 6.X. Anyhow I have been using Drupal 6.x on all my new ventures and hope that someday i shall have some tool which could migrate from wordpress to Drupal 6.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/16/2008 - 22:35</div>
+  </div>
+<a id="comment-3194"></a>
+<div id="comment-10" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.runcaronwater4gas.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/33f75c95655b71a2a1fb77bbd8513b35.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Run your car on water&#039;s picture" title="Run your car on water&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3194">#10</a>
+    <span class="author"><a href="http://www.runcaronwater4gas.com/">Run your car on water</a></span>  : <span class="title"><a href="index.html#comment-3194" class="active">Well, i think that drupal is</a></span>
+  </h3>
+  <div class="content"><p>Well, i think that drupal is good. However I have been using blogger for a long time and I am satisfied.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/29/2008 - 19:12</div>
+  </div>
+<div class="indented"><a id="comment-3516"></a>
+<div id="comment-11" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://metroductcleaning.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/77bacaaab1ed573dd0de590aaadb2d78.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Air Duct Cleaning Atlanta&#039;s picture" title="Air Duct Cleaning Atlanta&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3516">#11</a>
+    <span class="author"><a href="http://metroductcleaning.com/">Air Duct Cleaning Atlanta</a></span>  : <span class="title"><a href="index.html#comment-3516" class="active">Just like Kris said, you want</a></span>
+  </h3>
+  <div class="content"><p>Just like Kris said, you want to be in control of your site.  All you need is for blogger to get a reason not to like you anymore, and then bang! you are out of luck!</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/25/2009 - 03:51</div>
+  </div>
+<a id="comment-3258"></a>
+<div id="comment-12" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://thegroovychick.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/0dd1642ad5e9d40489f5adcfd1fb40a1.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Sharon&#039;s picture" title="Sharon&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3258">#12</a>
+    <span class="author"><a href="http://thegroovychick.com/">Sharon</a></span>  : <span class="title"><a href="index.html#comment-3258" class="active">Thats cool, but one thing is</a></span>
+  </h3>
+  <div class="content"><p>Thats cool, but one thing is like they are saying, you don't have any control with your blog.  It can be gone at any time...</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/27/2008 - 04:45</div>
+  </div>
+</div><a id="comment-3176"></a>
+<div id="comment-13" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://autoklix.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/ecf3cfed50132b2ec086d86f372b0e5f.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Jeremy&#039;s picture" title="Jeremy&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3176">#13</a>
+    <span class="author"><a href="http://autoklix.com/">Jeremy</a></span>  : <span class="title"><a href="index.html#comment-3176" class="active">Why would anyone want to get</a></span>
+  </h3>
+  <div class="content"><p>Why would anyone want to get rid of good ol' Blogger?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/18/2008 - 11:41</div>
+  </div>
+<div class="indented"><a id="comment-3177"></a>
+<div id="comment-14" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3177">#14</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3177" class="active">Because </a></span>
+  </h3>
+  <div class="content"><p>It is YOUR content  and YOU want to be in control.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/18/2008 - 13:06</div>
+  </div>
+</div><a id="comment-3059"></a>
+<div id="comment-15" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/16d583d4315359c299db4585e2071901.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="klip izle&#039;s picture" title="klip izle&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3059">#15</a>
+    <span class="author"><span class="anonymous" title="not verified">klip izle</span></span>  : <span class="title"><a href="index.html#comment-3059" class="active">Great artikel :)</a></span>
+  </h3>
+  <div class="content"><p>Great artikel :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/09/2008 - 12:19</div>
+  </div>
+<a id="comment-2767"></a>
+<div id="comment-16" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.linuxbasement.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/1154cf03c2d2a9e6a89573f3a9a16d88.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Chad&#039;s picture" title="Chad&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2767">#16</a>
+    <span class="author"><a href="http://www.linuxbasement.com/">Chad</a></span>  : <span class="title"><a href="index.html#comment-2767" class="active">drupal to wordpress</a></span>
+  </h3>
+  <div class="content"><p>I actually moved from drupal to wordpress a while ago using the following script. You could probably modify this script to do the opposite.<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">-- taken from</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">-- &lt;a href=&quot;http://vrypan.net/log/archives/2005/03/10/migrating-from-drupal-to-wordpress/&lt;br /&gt;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">--&quot; title=&quot;http://vrypan.net/log/archives/2005/03/10/migrating-from-drupal-to-wordpress/&lt;br /&gt;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">--&quot;&gt;http://vrypan.net/log/archives/2005/03/10/migrating-from-drupal-to-wordp...&lt;/a&gt; and then improved :-) </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">-- these lines will result in the deletion of all existing posts, comments</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">-- and categories. Comments these out using '--' or /* ... */ if you don't</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">-- want that to happen </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">DELETE FROM wp_posts ;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">DELETE FROM wp_comments ;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/*</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">-- does not work (think it is to do with password issues)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">-- also causes problems with auto-increment</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">delete from wp_users;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">INSERT INTO wp_users</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  (ID, user_login, user_pass, user_nickname, user_email, user_registered)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  SELECT</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  uid, name, pass, name, mail, FROM_UNIXTIME(timestamp)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  FROM users;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">*/</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">INSERT INTO wp_posts(</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  ID, post_author, post_date, post_content, post_title, post_excerpt,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  post_name, post_modified</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  )</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  SELECT a.nid, 1, FROM_UNIXTIME(a.created), b.body, a.title, b.teaser, concat('OLD',a.nid), FROM_UNIXTIME(a.changed)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  FROM node as a, node_revisions as b</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  WHERE a.nid = b.nid AND (a.type='blog' OR a.type='page' OR a.type='story' OR a.type='forum');</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">INSERT INTO wp_comments (</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  comment_post_ID, comment_date, comment_content, comment_parent</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  )</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  SELECT nid, FROM_UNIXTIME(timestamp), concat(subject,' ', comment), thread</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  FROM comments ;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">DROP TABLE term_data;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">DROP TABLE term_hierarchy;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">DROP TABLE node;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">DROP TABLE term_node;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">DROP TABLE comments;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">DROP TABLE users;</div></li></ol></pre></div></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/20/2007 - 18:53</div>
+  </div>
+<div class="indented"><a id="comment-3269"></a>
+<div id="comment-17" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/57e3b68ea42ef8368482fbb3a7fa2772.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="SouthMedia&#039;s picture" title="SouthMedia&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3269">#17</a>
+    <span class="author"><span class="anonymous" title="not verified">SouthMedia</span></span>  : <span class="title"><a href="index.html#comment-3269" class="active">Thank you for the tips.I&#039;ll</a></span>
+  </h3>
+  <div class="content"><p>Thank you for the tips.<br />
+I'll try to do something out of ot so I can do the oppostie - from Wordpress to Drupal.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/10/2008 - 23:37</div>
+  </div>
+</div><a id="comment-2765"></a>
+<div id="comment-18" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://knaddison.com/category/drupal" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/c165055d4cfb11e3e57d2a0626adc78f.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="greggles&#039;s picture" title="greggles&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2765">#18</a>
+    <span class="author"><a href="http://knaddison.com/category/drupal">greggles</a></span>  : <span class="title"><a href="index.html#comment-2765" class="active">wordpress2drupal</a></span>
+  </h3>
+  <div class="content"><p>There is a wordpress2drupal importer on Drupal.org as well: <a href="http://drupal.org/project/wordpress_import" title="http://drupal.org/project/wordpress_import" rel="nofollow">http://drupal.org/project/wordpress_import</a></p>
+<p>I don't know if it's the same thing as the dojotoolkit.org file, but it's generally better to centralize work/interest around project pages (with issue queues and more) than some random file out there on the web.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/20/2007 - 14:07</div>
+  </div>
+<a id="comment-2764"></a>
+<div id="comment-19" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://anmutunddemut.de/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/a354f78da25434cb0d432d475cc2b72d.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="ben_&#039;s picture" title="ben_&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2764">#19</a>
+    <span class="author"><a href="http://anmutunddemut.de/">ben_</a></span>  : <span class="title"><a href="index.html#comment-2764" class="active">Welcome to the club!</a></span>
+  </h3>
+  <div class="content"><p>I had the same problem just a fortnight ago. I use the Wordpress XML-Export, fixed the XML with a hell lot of Regular Expressions and Search&amp;Replace an imported this, using a tiny module by myself and SimpleXML. </p>
+<p>I.m.h.o it would be a great great benefit for Drupal to have a WP2Drupal Module, that is easy to use and always up ti date, as bloggers are an extremly important audience, if you want to succeed in the web.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/20/2007 - 10:30</div>
+  </div>
+<a id="comment-2704"></a>
+<div id="comment-20" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://drupal.geek.nz/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/c176ff1b298d41bde5086faad10b25a9.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Bevan&#039;s picture" title="Bevan&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2704">#20</a>
+    <span class="author"><a href="http://drupal.geek.nz/">Bevan</a></span>  : <span class="title"><a href="index.html#comment-2704" class="active">I wish you had posted this</a></span>
+  </h3>
+  <div class="content"><p>I wish you had posted this about a month ago! :(</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/20/2007 - 04:41</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/getting-rid-blogger by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:44:30 GMT -->
+</html>

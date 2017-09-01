@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/757 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:33:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Virtualizing MySQL , are you stupid ? | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a> &#8594; <a href="../../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Virtualizing MySQL , are you stupid ?</h2>
+<div class="content">
+<div id="node-757" class="node  blog">
+<div class="content"><p>or timebound ? <strong> or don't you have any load on your DB at all ?</strong></p>
+<p>I personally don't see many reasons to virtualize your database,  apart from the , we plan to start small and scale out, or the we need it now and we don't have the hardware yet  , putting your database on a virtual platform where you have to share resources with other virtual machines doesn't really sound like a tempting proposition to me.   Small, almost idle databases , maybe.  But enterprise production level databases no thnx.</p>
+<p><a href="http://www.pythian.com/blogs/1321/virtualizing-mysql" rel="nofollow">Sheeri Cabral</a> also mentions the above reasons ..  and there also .. Enterprise Production use isn't listed.</p>
+<p>Databases typically  require a good amount of memory , and steady disk access.<br />
+So if you are in a production environment with a fairly loaded database, would you want a 4Gb machine with full direct memory access,  Or 3.5Gb of virtual memory that can be ballooned to 3 if underused.   My pick is at the 4Gb real memory.</p>
+<p>The original article at Sun argues the use of Virtual Harddisk to move around workloads between different servers or even Virtualization platforms.  But it fails to describe the guaranteed performance penalty of not using raw disks but a filesystem on top of a loopback device.  How many layers do you want before actually write to the disks. Good practice in a virtual environment is to dedicate full disks or LVM parts to the virtual machine hence lowering the overhead, but most (default) setups do the opposite.</p>
+<p>And don't get me started about <a href="http://www.krisbuytaert.be/blog/node/750">the myth</a> of using virtualization for high-availability :)</p>
+<p>Now can somebody please remove all the clueless marketing people from planetmysql.org , thnx.  (they can be identified with by a blogs.sun.com source and posts that  mainly talk about Sun products including only a slight hint to MySQL)</p>
+<p>(PS. What's a  Market Development Engineer's  job description anyhow  ? , that's just a different name for Marketing Assistant right ?)</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Tue, 10/28/2008 - 19:25</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1085 first"><a href="../../taxonomy/term/1085/index.html" rel="tag" title="">i hate it when the marketeers join in</a></li>
+<li class="taxonomy_term_1084"><a href="../../taxonomy/term/1084/index.html" rel="tag" title="">marketing sucks</a></li>
+<li class="taxonomy_term_458"><a href="../../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_488"><a href="../../taxonomy/term/488/index.html" rel="tag" title="">sun</a></li>
+<li class="taxonomy_term_672"><a href="../../taxonomy/term/672/index.html" rel="tag" title="">virtualization</a></li>
+<li class="taxonomy_term_470"><a href="../../taxonomy/term/470/index.html" rel="tag" title="">xen</a></li>
+<li class="taxonomy_term_1083 last"><a href="../../taxonomy/term/1083/index.html" rel="tag" title="">xvm</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3321"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://prgmr.com/~lsc" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/1b41a96dffd15aef2e57ef90ce618caa.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Luke Crawford&#039;s picture" title="Luke Crawford&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3321">#1</a>
+    <span class="author"><a href="http://prgmr.com/~lsc">Luke Crawford</a></span>  : <span class="title"><a href="index.html#comment-3321" class="active">Virtualization is a tool to ease consolidation. </a></span>
+  </h3>
+  <div class="content"><p>virtualization is just a tool to make consolidation easier.  Consolidation saves you money when the server with the best value per unit of CPU/RAM/power leaves you with a server that is larger than you need.    Consolidation, though, tends to reduce redundancy.  Be careful with it.  However, virtualizing MySQL can make sense in some cases.  </p>
+<p>the only reason to virtualize MySQL that I can think of is if you have 2 servers with way more ram than you need.  Say that, like me, you buy servers based on the dollar-per-ram metric.  Right now, this means your servers have 32GB ram each.  (I use two quad-core opterons in each 32GB ram server)  so say I have 2 servers with 32GB ram each, running Xen. (I do, in various states of assembly and burn-in)  Further say I only need 1GB of data on my MySQL server.  I can easily carve off a 4GB ram server from each Xen hardware host, and I can setup a MySQL cluster server, with redundancy  for much less than it would cost to build two 4GB servers.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/29/2008 - 06:34</div>
+  </div>
+<a id="comment-3318"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/4e3b24e800fea8af32b9ac0856a5bcb9.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Ryan Thiessen&#039;s picture" title="Ryan Thiessen&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3318">#2</a>
+    <span class="author"><span class="anonymous" title="not verified">Ryan Thiessen</span></span>  : <span class="title"><a href="index.html#comment-3318" class="active">wow that&#039;s needlessly hostile</a></span>
+  </h3>
+  <div class="content"><p>Here is a use case that I believe lends itself toward virtualization.  I am using virtualized servers for this to a limited extent already and am strongly considering to expand upon it.</p>
+<p>* Slave servers<br />
+  * Not accessed by customers<br />
+  * Allowed to fall behind masters during peak load<br />
+* Tuned to use low amounts of memory<br />
+* Used for ad-hoc queries and source for data warehouse<br />
+* Source of logical backups (for auditing)<br />
+* Using shared storage</p>
+<p>In addition to this case, I would add that because of MySQL's suboptimal CPU usage on large multicore systems I can see use cases where servers that require little RAM could potentially be aggregated especially if they required limited writes.  For example depending on workload and dataset size you will could likely get more out out 4 VMs using 4G memory + 2 procs than you could with a single process on a 8 proc machine with 16G memory.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/29/2008 - 02:28</div>
+  </div>
+<div class="indented"><a id="comment-3326"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://anothersysadmin.wordpress.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/7f83c5c93a8db32d512fd36bc4c99768.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Vide&#039;s picture" title="Vide&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3326">#3</a>
+    <span class="author"><a href="http://anothersysadmin.wordpress.com/">Vide</a></span>  : <span class="title"><a href="index.html#comment-3326" class="active">Check your math..</a></span>
+  </h3>
+  <div class="content"><p>You need less disk access if you have few writes AND you can cache almost any reads, so you need a good amount of RAM. You're putting 2 constraints that are mutually exclusive, at least if your DB isn't really small.<br />
+To sum it up, I pretty agree with Kris although there are some usecases for virtualized DBs, but not for real and heavy workloads</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/30/2008 - 13:29</div>
+  </div>
+<a id="comment-3325"></a>
+<div id="comment-4" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3325">#4</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3325" class="active">Slave servers ?</a></span>
+  </h3>
+  <div class="content"><p>If I were you I'd check out some Slave vs Master load documentation ..</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/29/2008 - 14:35</div>
+  </div>
+</div><a id="comment-3316"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/d3c5d42b6e3e4c682a8b454fa3c32d7b.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Anonymous&#039;s picture" title="Anonymous&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3316">#5</a>
+    <span class="author"><span class="anonymous" title="not verified">Anonymous</span></span>  : <span class="title"><a href="index.html#comment-3316" class="active">More of this stupid stupidity</a></span>
+  </h3>
+  <div class="content"><p>Sometimes you become what you criticize. You left out quite a few benefits of virtualization by holding up to and generalizing your narrow view of what databases are useful for ("enterprise production level databases" this sounds like marketing crap).</p>
+<p>Virtualization has great applicability for a wide variety of applications, performance is not always the most important factor. Resource partitioning, isolation, security, simulation, checkpointing (and etc) are just some of the advantages one gain when using virtualization.</p>
+<p>You also make some dubious statements about "full direct memory access" and such. There are various types of virtualization and very few of then impose heavier restrictions/overhead on access to memory from a user space process (nothing more then the usual in a non-virtualized environment). There are virtualization techniques that yield a overhead of less then 5%.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/28/2008 - 22:28</div>
+  </div>
+<div class="indented"><a id="comment-3317"></a>
+<div id="comment-6" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3317">#6</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3317" class="active">Funny</a></span>
+  </h3>
+  <div class="content"><p>Funny how people absolutely fail to read beyond 1 post ..</p>
+<p>But the saddest part is they fail to cut trought the hype that is Virtualization today and keep following the Vendors that push virtualization for everything.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/28/2008 - 23:40</div>
+  </div>
+<div class="indented"><a id="comment-3319"></a>
+<div id="comment-7" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/d3c5d42b6e3e4c682a8b454fa3c32d7b.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Anonymous&#039;s picture" title="Anonymous&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3319">#7</a>
+    <span class="author"><span class="anonymous" title="not verified">Anonymous</span></span>  : <span class="title"><a href="index.html#comment-3319" class="active">Vendors hyping technology..</a></span>
+  </h3>
+  <div class="content"><p>Vendors hyping technology.. news at eleven!  I guess I also should shouldn't be surprised if bloggers don't provide coherent arguments and use catchy titles like 'stupid' to draw audience.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/29/2008 - 03:30</div>
+  </div>
+<div class="indented"><a id="comment-3323"></a>
+<div id="comment-8" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3323">#8</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3323" class="active">Atracting vs the real argument</a></span>
+  </h3>
+  <div class="content"><p>Yes it was the marketeers that pissed me of.. (I even tagged the article that way..)<br />
+And that was also the biggest part of the message .. </p>
+<p>And I admit to using their (the marketeers) tricks  to get your attention :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/29/2008 - 10:07</div>
+  </div>
+</div></div></div><a id="comment-3313"></a>
+<div id="comment-9" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.vanginderachter.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/0023cde5ac7c71e5c0c0c1f5fae87b82.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Serge van Ginderachter&#039;s picture" title="Serge van Ginderachter&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3313">#9</a>
+    <span class="author"><a href="http://www.vanginderachter.be/">Serge van Ginderachter</a></span>  : <span class="title"><a href="index.html#comment-3313" class="active">Hey, if one can run a</a></span>
+  </h3>
+  <div class="content"><p>Hey, if one can run a production system on Microsoft Access, I'm sure running it on a virtualised mysql would be a great step forward.</p>
+<p>But then again, that might be not be enterprisy enough of course :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/28/2008 - 21:06</div>
+  </div>
+<a id="comment-3312"></a>
+<div id="comment-10" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/6970d26d5f43abb6a1b7fce782f9b6b6.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Keith Murphy&#039;s picture" title="Keith Murphy&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3312">#10</a>
+    <span class="author"><span class="anonymous" title="not verified">Keith Murphy</span></span>  : <span class="title"><a href="index.html#comment-3312" class="active">wow</a></span>
+  </h3>
+  <div class="content"><p>Can you inject a little more venom into the discussion? Because I don't think you had QUITE enough.</p>
+<p>Seriously, you would be remiss to dismiss virtualization as you are doing. For one thing, not every server has to be a high-end setup. Secondly, you might be amazed at what virtual servers actually can do. I work with Sheeri and we do have customers right now who are running some pretty good loads on AWS. While it isn't suitable for every situation, it is suitable for many. As for the whole high-availability "issue" you brought up..someone is an idiot if they think one instance, wheter it is a server or a virtual server, is going to be online 24x7x365. You design around that. Is a virtual server any more reliable than physical server? I don't know, but I wouldn't trust either so it doesn't matter. </p>
+<p>Thats all I have time for, but seriously, wow... slow down.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/28/2008 - 20:40</div>
+  </div>
+<a id="comment-3311"></a>
+<div id="comment-11" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://karwin.blogspot.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/05845ddff9dbf10e3d47edce7032bae7.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Bill Karwin&#039;s picture" title="Bill Karwin&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3311">#11</a>
+    <span class="author"><a href="http://karwin.blogspot.com/">Bill Karwin</a></span>  : <span class="title"><a href="index.html#comment-3311" class="active">Market Development Engineer</a></span>
+  </h3>
+  <div class="content"><p>A Market Development Engineer is someone who works in Marketing but knows that "memory" is RAM, not disk space.  :-)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/28/2008 - 20:37</div>
+  </div>
+<a id="comment-3310"></a>
+<div id="comment-12" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/bb132e38cf3b58ef6582a9a9d7851374.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Mike&#039;s picture" title="Mike&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3310">#12</a>
+    <span class="author"><span class="anonymous" title="not verified">Mike</span></span>  : <span class="title"><a href="index.html#comment-3310" class="active">Virtualization is an entirely valid strategy</a></span>
+  </h3>
+  <div class="content"><p>Most db implementations are NOT high-load customer-facing instances.  While our team's (internal) production (non-)cluster of 6 machines serve about 1900 qps 24/7, we have dozens of internal and departmental-level databases that are a waste of stand-alone hardware.  Virtualization is a huge win for these systems, and they outnumber our hardware-dependent systems by about 10 to 1.  Furthermore, in the case of hardware failure under a database, sensible virtualization does not depend on hardware repairs/hardware procurement/OS buildout and configuration in order to get a system back up and running.</p>
+<p>We've also encountered real-world scenarios where virtualization has eliminated downtime: for instance, about a year ago, we had a planned datacenter outage to upgrade power to our primary facility.  We were able to transparently migrate dns, ldap, and other plant services to another center without incurring *any* downtime along the way.  </p>
+<p>Virtualization is a huge win under the right circumstances.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/28/2008 - 20:22</div>
+  </div>
+<div class="indented"><a id="comment-3320"></a>
+<div id="comment-13" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://amedee.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/9132b1dcaf7666aad648aa14976f049b.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Amedee&#039;s picture" title="Amedee&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3320">#13</a>
+    <span class="author"><a href="http://amedee.be/">Amedee</a></span>  : <span class="title"><a href="index.html#comment-3320" class="active">Enterprise is a Marketing lie</a></span>
+  </h3>
+  <div class="content"><p>Mike,</p>
+<p>I told Kris almost exactly the same last week on a geekdinner. Why waste physical resources on 80% of the databases (small ones)? Virtualize them, and recycle resources for the 20% Real Resource Hogs.<br />
+Virtualization can be a huge win, but only when used appropriately.</p>
+<p>I wonder, was it my story last week combined with the marketing lingo on planetmysql.org that triggered his rant treshold?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/29/2008 - 04:38</div>
+  </div>
+<div class="indented"><a id="comment-3322"></a>
+<div id="comment-14" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3322">#14</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3322" class="active">Nope you didn&#039;t </a></span>
+  </h3>
+  <div class="content"><p>It really is the Marketing Lingo that tipped me off ..</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/29/2008 - 10:03</div>
+  </div>
+</div><a id="comment-3314"></a>
+<div id="comment-15" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3314">#15</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3314" class="active">Not the only option</a></span>
+  </h3>
+  <div class="content"><p>You mention low load machines, perfect opportunity. </p>
+<p>But there are probably other alternatives to migrated dns,ldap and other services while not using Virtualization, that are a lot less complex.     I`m just trying to cut trough the "Virtualize Everything" hype :) </p>
+<p>It is a huge win in the right circumstances  indeed.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/28/2008 - 21:21</div>
+  </div>
+</div><a id="comment-3309"></a>
+<div id="comment-16" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://virtwo.blogspot.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/d0f348ffb9e6a2a7df79276a75db7ff3.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="bertdb&#039;s picture" title="bertdb&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3309">#16</a>
+    <span class="author"><a href="http://virtwo.blogspot.com/">bertdb</a></span>  : <span class="title"><a href="index.html#comment-3309" class="active">other reasons for going virtual</a></span>
+  </h3>
+  <div class="content"><p>Hey Kris, I think you're leaving out some major reasons for virtualizing applications, including databases.<br />
+How about: being able to migrate from one hardware generation to the next without doing a complete migration of OS and application.<br />
+How about: making 100% sure that you can easily restart your applications on your DR servers (even if you don't have them yet, and would just buy them on the spot after distaster struck).<br />
+You argue that a virtual harddisk is much slower than raw access because of extra FS layers. Not if these extra layers have been designed for exactly that ... think VMFS in VMware ESX. I know, there's a couple of percents performance to be lost even with VMFS. But if you were really looking for those last percents, you were looking for dedicated hardware (and therefore not virtualization) anyway.<br />
+Arguing that virtualization isn't an option because of shared resources means that you're not sizing your hardware correctly. Expecting to get all the HW performance in one VM isn't realistic in any scenario.<br />
+And IMnsHO, High Availability with VMs _is_ real, even though it stands as a distant second to OS or application level HA clustering. It shines when those two aren't available or too complicated. Then it is your only option, and a damn fine one I think.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/28/2008 - 20:16</div>
+  </div>
+<div class="indented"><a id="comment-3315"></a>
+<div id="comment-17" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3315">#17</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3315" class="active">LTNC :)</a></span>
+  </h3>
+  <div class="content"><p>Ha Bob,  since when do you have a blog :) </p>
+<p>Migrating from one hardware generation to another is a valid option, but as mentioned in an earlier comment , Virtualization is not the only option.       You could also do that using an application HA solution if available.  Sometimes Virtualization adds another layer of complexity, sometimes it makes it easier.</p>
+<p>Testing a DR scenario.. definitely one of the options on my Why Virutalization matters list ..</p>
+<p>And I think you got my point..   if you care about those last %'s of performance, indeed, then why are you virtualizing. </p>
+<p>You will be sizing good,  we will,  but most of the "cloud" vendors and ISP's won't.   I've seen highprofile blogs move around from one shared hosting to another only to realize that most of them underestimate the need of their customers and give them less resources than needed.  Obviously that's also the work of a Market Development Engineer who wants to upsell his products. </p>
+<p>And as I mentioned before ..  WholeSale HA is a valid alternative, just not for everybody ..<br />
+But you have to know what you buy into :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/28/2008 - 21:30</div>
+  </div>
+</div></div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/757 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:33:35 GMT -->
+</html>

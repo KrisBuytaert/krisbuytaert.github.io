@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - cloud</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1037/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Devops and Cloud</title>
+ <link>http://127.0.0.1:8080/blog/devops-and-cloud</link>
+ <description>&lt;p&gt;Whenever I give my Cloud security talk there&#039;s a slide in there talking about the most scary idea about Cloud and Security,  the fact that Marketing people will build things on their own while IT, or any other departement isn&#039;t involved,  and as we all know marketing people have no clue about security, it&#039;s not on their mind they won&#039;t even think about adding some sort of security to their application.&lt;/p&gt;
+&lt;p&gt;So IT isn&#039;t involved, Development isn&#039;t involved , and Operations isn&#039;t involved ...&lt;/p&gt;
+&lt;p&gt;Ages ago.. well.. about a decade I was working in those very marketing departments sitting there, writing code, hired by the marketeers, not by IT , the marketing PM did the talking to IT , we still had to go trough their IT department to get stuff deployed.&lt;/p&gt;
+&lt;p&gt;The marketing people had to deal with their impossible deadlines, a nationwide tv or radio campaign that was going to be launched , with a supporting website which meant that the website functionality needed to go live just before the first airing of the commercial.  Obviously the website was lower priority than finding a famous voice  or face to record the commercial with,  so it became only late in the planning..   even more obvious was the fact that talking to IT about getting these new features deployed was even later on their planning .&lt;/p&gt;
+&lt;p&gt;Back then, part of my job was to smooth that process, my role was both creating the technical backend for the sites , putting them in production and doing the daily maintenance afterwards ...&lt;/p&gt;
+&lt;p&gt;Looking back at those days I realize the pains of both deployment and procurement,  getting a new machine racked and then installed up to a bare os installations took up to 6 weeks,  in a marketing driven world that meant that I&#039;d often had to bypass the whole procurement process of expensive sunboxen and had to quickly deploy a linux box under my desk that could be used to move to production as plan B ,  and trust me .. we had to use plan B a lot ..&lt;/p&gt;
+&lt;p&gt;Letting nontechnical people deploy stuff in the cloud will only widen the gap,  but getting involved early enough in the concept fase of a  project with a good devops methodology/team in place will give the business people the opportunity to learn that  things have changed , it doesn&#039;t take 6 weeks anymore to get an expensive Sun box racked and a Solaris instance installed after which a team of engineers needs to install an application server, then a different team needs to install the database etc .. these days it&#039;s a virtual machine instantiation and a couple of recipes ,in that way  we can get manageable, reproducible and scalable  deployments  in no time.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/devops-and-cloud#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/history">history</category>
+ <category domain="http://127.0.0.1:8080/blog/category/marketing">marketing</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Wed, 28 Apr 2010 21:15:54 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1000 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>A long overdue report of DevopsDays</title>
+ <link>http://127.0.0.1:8080/blog/long-overdue-report-devopsdays</link>
+ <description>&lt;p&gt;Here&#039;s how it started :&lt;/p&gt;
+&lt;p&gt;So I used to be a software developer, writing perl for the web, then C, then Java, then PHP, till I realized nobody ever configured my servers correctly and I changed trades becoming a system engineer, while teaching new developers the basics of their trade, whom grew into doing Infrastructure Architecture ..   familiar story for much of the crowd at DevopsDays ... a crowd that wants to  stopping the war between developers and system engineering , a crowd that wants to automate builds, integrate testing, deploy, deploy on very large scale, deploy in the cloud and much more.&lt;/p&gt;
+&lt;p&gt;So what do you get when you put together some of the experts on building software, organizing development teams , Agile geeks, Cloud infrastructure projects, and Automating guru&#039;s in 1 location for 2 days in Gent ?   Exactly .. DevopsDays ..&lt;/p&gt;
+&lt;p&gt;The format was 2 days .. 3  kickass formal talks in the morning..  Open Space sessions in the afternoon.  ...  Friday featured talks on Non Functional Requirements, CucumberNagios and Monitoring in the Cloud with FlapJack  and Building Agile Infrastructures with Puppet while discussing the James White Manifesto ..&lt;/p&gt;
+&lt;p&gt;which I had never heard of, but which apparently comes down to &lt;a href=&quot;http://gist.github.com/161265&quot; rel=&quot;nofollow&quot;&gt;this&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;== Rules ==&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; On Infrastructure&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; -----------------&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; There is one system, not a collection of systems.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; The desired state of the system should be a known quantity.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; The &amp;quot;known quantity&amp;quot; must be machine parseable.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; The actual state of the system must self-correct to the desired state.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; The only authoritative source for the actual state of the system is the system.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; The entire system must be deployable using source media and text files.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; On Buying Software&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; -------------------&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Keep the components in the infrastructure simple so it will be better understood.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; All products must authenticate and authorize from external, configurable sources.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Use small tools that interoperate well, not one &amp;quot;do everything poorly&amp;quot; product.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Do not implement any product that no one in your organization has administered.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; &amp;quot;Administered&amp;quot; does not mean saw it in a rigged demo, online or otherwise.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; If you must deploy the product, hire someone who has implemented it before to do so.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; On Automation&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; -------------&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Do not author any code you would not buy.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Do not implement any product that does not provide an API.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; The provided API must have all functionality that the application provides.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; The provided API must be tailored to more than one language and platform.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Source code counts as an API, and may be restricted to one language or platform.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; The API must include functional examples and not requre someone to be an expert on the product to use.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Do not use any product with configurations that are not machine parseable and machine writeable.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; All data stored in the product must be machine readable and writeable by applications other than the product itself.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Writing hacks around the deficiencies in a product should be less work than writing the product&#039;s functionality.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; In general &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; ----------&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Keep the disparity in your architecture to an absolute minimum.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Use [http://en.wikipedia.org/wiki/Set_theory Set Theory] to accomplish this.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Do not improve manual processes if you can automate them instead.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Do not buy software that requires bare-metal.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; Manual data transfers and datastores maintained manually are to be avoided.&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Much unlike the &lt;a href=&quot;http://failmanifesto.org/&quot; rel=&quot;nofollow&quot;&gt;FAIL Manifesto&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The openspaces tackled how to migrate from a totally unreproducable environment too a correctly bootstrapped infreaastructure, over the Ubuntu Enterprise Cloud , then dinner and off for beers to the Vooruit .    The OpenQRM &quot;crowd&quot; stayed at my place  so I didn&#039;t stay around too late ..&lt;/p&gt;
+&lt;p&gt;Saturday morning came early ...   sadly I missed the first 10 minutes of a very interresting talk about Kanban in operations ...  let&#039;s ee if we can convince some more people to try it out ...&lt;/p&gt;
+&lt;p&gt;The talk on Continuous integration, Build Pipelines and Continuous deployment was also really interresting with lots of stories from the real world.. . after the openqRM talk it was time again for OpenSpaces with e.g discussions on svn vs git and building a feature matrix of Cloud , with &lt;a href=&quot;http://twitter.com/botchagalupe/&quot; rel=&quot;nofollow&quot;&gt;@botchagalupe&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/openqrm&quot; rel=&quot;nofollow&quot;&gt;@openqrm&lt;/a&gt; and &lt;a href=&quot;http://twitter.com/maesjoch/&quot; rel=&quot;nofollow&quot;&gt;@maesjoch&lt;/a&gt; in the room and &lt;a href=&quot;http://twitter.com/diegomarino&quot; rel=&quot;nofollow&quot;&gt;@diegomarino&lt;/a&gt; online .    &lt;/p&gt;
+&lt;p&gt;Devopsdays ended too soon , with way to much interresting ideas to build on ..  Let&#039;s hope we can all work them out !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/long-overdue-report-devopsdays#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/botchagalupe">botchagalupe</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/category/dev">dev</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devopsdays">devopsdays</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1006">eucalyptus</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/681">gent</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/905">IBBT</category>
+ <category domain="http://127.0.0.1:8080/blog/category/openqr">openqr</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ops">ops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Thu, 05 Nov 2009 19:32:41 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">955 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>CloudCamp Antwerp</title>
+ <link>http://127.0.0.1:8080/blog/cloudcamp-antwerp-0</link>
+ <description>&lt;p&gt;So yesterday a 100+ crowd met in the Antwerp Zoo.&lt;br /&gt;
+I heard different comments from that crowd... some of them liked the event,  good networking, interresting topics , a broad overview, meeting new vendors active in the Cloud, others of them didn&#039;t .. it wasn&#039;t a real camp , just some vendors pitching,  they didn&#039;t hear any new stuff , or we didn&#039;t touch the real stuff.&lt;/p&gt;
+&lt;p&gt;So different opinions from different expectations... &lt;/p&gt;
+&lt;p&gt;Anyhow  for all those who could&#039;t read the slides :  &lt;/p&gt;
+&lt;div style=&quot;width:425px;text-align:left&quot; id=&quot;__ss_1271663&quot;&gt;&lt;a style=&quot;font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/KrisBuytaert/cloudsec-dont-forget-security-in-the-cloud?type=presentation&quot; title=&quot;CloudSec , don&amp;#39;t forget Security in the Cloud !&quot;&gt;CloudSec , don&amp;#39;t forget Security in the Cloud !&lt;/a&gt;
+&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=cloudsec-090410031348-phpapp02&amp;stripped_title=cloudsec-dont-forget-security-in-the-cloud&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=cloudsec-090410031348-phpapp02&amp;stripped_title=cloudsec-dont-forget-security-in-the-cloud&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;&quot;&gt;View more &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Or &lt;a href=ihttp://www.krisbuytaert.be/presentations/CloudSec.odp&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/cloudcamp-antwerp-0#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/antwerpen">antwerpen</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/category/marketeers">marketeers</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <category domain="http://127.0.0.1:8080/blog/category/zoo">zoo</category>
+ <pubDate>Fri, 10 Apr 2009 19:21:53 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">898 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>VirtSec, and Open Source</title>
+ <link>http://127.0.0.1:8080/blog/virtsec-and-open-source</link>
+ <description>&lt;p&gt;The slides from  the presentation I gave last friday at Lsec are now online, both at &lt;a href=&quot;http://www.krisbuytaert.be/presentations/VirtSec.odp&quot;&gt;My Site&lt;/a&gt; and on &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/virtsec-and-the-open-source-impact&quot;&gt;Slideshare&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&quot;width:425px;text-align:left&quot; id=&quot;__ss_1143492&quot;&gt;&lt;a style=&quot;font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/KrisBuytaert/virtsec-and-the-open-source-impact?type=powerpoint&quot; title=&quot;VirtSec,  and the Open Source impact&quot;&gt;VirtSec,  and the Open Source impact&lt;/a&gt;
+&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slideshare.net/swf/ssplayer2.swf?doc=virtsec-090313153234-phpapp02&amp;stripped_title=virtsec-and-the-open-source-impact&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://static.slideshare.net/swf/ssplayer2.swf?doc=virtsec-090313153234-phpapp02&amp;stripped_title=virtsec-and-the-open-source-impact&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;&quot;&gt;View more &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;I learned a lot last friday , I`ll be talking to some more people about the technical details , but be expecting some of my findings on &lt;a href=&quot;http://Virtualization.com/&quot;&gt;Virtualization.com&lt;/a&gt; soon :) &lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/virtsec-and-open-source#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/category/cloudsec">cloudsec</category>
+ <category domain="http://127.0.0.1:8080/blog/category/hypes">hypes</category>
+ <category domain="http://127.0.0.1:8080/blog/category/lsec">lsec</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/954">presentation</category>
+ <category domain="http://127.0.0.1:8080/blog/category/reality">reality</category>
+ <category domain="http://127.0.0.1:8080/blog/category/slideshare">slideshare</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/926">virtsec</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <pubDate>Mon, 16 Mar 2009 18:51:00 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">886 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Image Sprawl , and the new cure .. </title>
+ <link>http://127.0.0.1:8080/blog/image-sprawl-and-new-cure</link>
+ <description>&lt;p&gt;When I tell people that the concept of copying VM&#039;s around as frequently done in the VMWare world is one of the most stupid ideas on this planet, I get the weirdest looks.  &lt;/p&gt;
+&lt;p&gt;In my world it is, I want my infrastructure to be reproducible ,  I want to be able to throw any machine in my infrastructure out of the 10th floor of a building and be up and running again in no time.     If I spread a bunch of VM copies around who knows what kind of life they start leading.  Some will get upgrades,  some won&#039;t ..&lt;br /&gt;
+If I get an image from someone, how did he get there ?  Nobody knows ..&lt;/p&gt;
+&lt;p&gt;To me Image Sprawl is more than not being able to to manage your Virtual Machines,  it also matters for physical machines that are being deployed using a golden image.&lt;/p&gt;
+&lt;p&gt;Now rewind back about 4  something years.. back then I wrote a paper for LinuxKongress  titled &lt;a href=&quot;http://howto.krisbuytaert.be/AutomatingVirtualMachineDeployment/#AEN34&quot; rel=&quot;nofollow&quot;&gt;Automating Xen Virtual Machine Deployment&lt;/a&gt; which described a Hybrid way of Bootstrapping an infrastructure.&lt;br /&gt;
+Quicly summarized, you use the benefits of images to quickly deploy a minimal image which&lt;br /&gt;
+&lt;a href=&quot;http://madstop.com/2009/02/04/golden-image-or-foil-ball/&quot; rel=&quot;nofollow&quot;&gt;Luke&lt;/a&gt; today calls  a Stem Cell  then go on using centralized package management and a configuration management tool to keep them up to par.    There are 2 things that changed in between,&lt;br /&gt;
+we replaced CFEngine with Puppet ,  and the fact that today &lt;a href=&quot;http://news.cnet.com/8301-13505_3-10157591-16.html?tag=mncol;title&quot; rel=&quot;nofollow&quot;&gt;some people&lt;/a&gt; do care a bit more about the infrastructure side of the web, guess we have to thank Amazon and the Cloud Hype for that&lt;/p&gt;
+&lt;p&gt;But fundamentally .. not that much changed :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/image-sprawl-and-new-cure#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/automating">automating</category>
+ <category domain="http://127.0.0.1:8080/blog/category/cfengine">cfengine</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1077">devministration</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/503">hype</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/862">LinuxKongress</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/615">systemimager</category>
+ <category domain="http://127.0.0.1:8080/blog/category/toldyaso">toldyaso</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <pubDate>Thu, 05 Feb 2009 22:24:43 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">871 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Oldskool, Fuck the Cloud </title>
+ <link>http://127.0.0.1:8080/blog/oldskool-fuck-cloud</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://ascii.textfiles.com/archives/1717#comment-7292&quot; rel=&quot;nofollow&quot;&gt;This comment&lt;/a&gt;  by Jim Leonard, &lt;a href=&quot;http://trixter.wordpress.com/&quot; rel=&quot;nofollow&quot;&gt;Trixter/Hornet&lt;/a&gt; for those who still remember our &lt;a href=&quot;http://www.krisbuytaert.be/ceevee/democeevee.html&quot;&gt;previous lives &lt;/a&gt; , is right on the spot.&lt;/p&gt;
+&lt;p&gt;&quot;This is the longest post I’ve ever seen that says “do not put your only copy of data on a site you do not pay for or trust.”&lt;/p&gt;
+&lt;p&gt;Weird, how you suddenly bump online into someone you haven&#039;t heard from for over a decade, and even weirder how they still seem to have similar ideas to yours :-)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/oldskool-fuck-cloud#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/859">demoscene</category>
+ <category domain="http://127.0.0.1:8080/blog/category/hornet">hornet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/oldskool">oldskool</category>
+ <category domain="http://127.0.0.1:8080/blog/category/-natives">the natives</category>
+ <pubDate>Wed, 21 Jan 2009 18:56:12 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">863 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>JoliCloud</title>
+ <link>http://127.0.0.1:8080/blog/jolicloud</link>
+ <description>&lt;p&gt;Am I the only one who thinks &lt;a href=&quot;http://www.techcrunch.com/2008/12/09/netvibes-founder-building-iphone-like-operating-system-for-netbooks/&quot;&gt;the JoliCloud&lt;/a&gt; screenshot on TechCrunch really really looks like a default &lt;a href=&quot;http://www.eeebuntu.org/&quot;&gt;eeebuntu&lt;/a&gt; setup ?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.techcrunch.com/wp-content/uploads/2008/12/jolicloud.jpg&quot; /&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/jolicloud#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/category/eeubuntu">eeubuntu</category>
+ <pubDate>Fri, 19 Dec 2008 18:36:44 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">841 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>This was not a Cloudcamp ! :) </title>
+ <link>http://127.0.0.1:8080/blog/node/759</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://cloudcamp-brussels-08.eventbrite.com/&quot; rel=&quot;nofollow&quot;&gt;This&lt;/a&gt; was not a CloudCamp !   &lt;/p&gt;
+&lt;p&gt;Don&#039;t get me wrong, it was a great event and I met lots of interesting people , but it was not a *camp.&lt;br /&gt;
+The idea was there to have an unconference after the formal sessions, but the formal sessions ran out and there was no time because of food and bar duties. &lt;/p&gt;
+&lt;p&gt;The event was a mixture of &lt;a href=&quot;http://lvb.net/&quot; rel=&quot;nofollow&quot;&gt;regular&lt;/a&gt; &lt;a href=&quot;http://bbbart.internationalgeneration.be/&quot; rel=&quot;nofollow&quot;&gt;Belgian&lt;/a&gt; &lt;a href=&quot;http://blog.elisehuard.be/&quot; rel=&quot;nofollow&quot;&gt;Campers&lt;/a&gt;,  &lt;a href=&quot;http://www.virtualization.com/&quot; rel=&quot;nofollow&quot;&gt;Virtualization&lt;/a&gt;&lt;a href=&quot;http://tarrysingh.blogspot.com/&quot; rel=&quot;nofollow&quot;&gt; geeks&lt;/a&gt;, &lt;a href=&quot;http://mattinaction.blogspot.com/&quot; rel=&quot;nofollow&quot;&gt;Open Source folks&lt;/a&gt; , obviously   there were a couple of &quot;lost&quot; &lt;a href=&quot;http://www.johnmwillis.com/&quot; rel=&quot;nofollow&quot;&gt;americans&lt;/a&gt;  , and the crowd from up &lt;a href=&quot;http://www.gravityzoo.com/&quot; rel=&quot;nofollow&quot;&gt;North&lt;/a&gt; :)&lt;/p&gt;
+&lt;p&gt;The location was  &lt;a href=&quot;http://www.biouel.be/intro.php&quot; rel=&quot;nofollow&quot;&gt;weird&lt;/a&gt; to say the least,  what if the boat hat floated off on the river :)       &lt;/p&gt;
+&lt;p&gt;It&#039;s obvious the world doesn&#039;t have a fixed definition for &quot;Cloud Computing&quot; yet , Tarry really made a safe bet by cut and pasting the definition from WikiPedia  but the thing that really worried me was that when &lt;a href=&quot;http://blog.raphinou.com/&quot; rel=&quot;nofollow&quot;&gt;Raph&lt;/a&gt;  asked if the audience could define Open Source they couldn&#039;t either.&lt;/p&gt;
+&lt;p&gt;Given the audience it&#039;s really hard to understand why they couldn&#039;t explain what Open Source is .. they should be able to.    As the biggest chunk of Cloud Infrastructure is based on Open Source ,  the audience of a CloudCamp should be able to define Open Source,   but then again there was quite  a number of suits around that weren&#039;t expected to understand what it is all about :) &lt;/p&gt;
+&lt;p&gt;The fact is that a the cloud today still is a bit of undefined,  different marketeers  are grabbing the opportunity to rebrand their longtime existing product as fresh and hot cloud.  &lt;/p&gt;
+&lt;p&gt;The interesting part of the Cloud to me is the mix of Virtualization, Scalability, Automation , Large Scale Deployment , playing the puppetmaster, and High Availability ..  &lt;/p&gt;
+&lt;p&gt;It&#039;s stuff I have been doing for ages , it&#039;s the stuff this blog has been covering since the beginning ... but I don&#039;t plan on renaming my blog .. as afterall the whole cloud issue is just a &lt;a href=&quot;http://code.google.com/p/dnsbalancer/&quot; rel=&quot;nofollow&quot;&gt;Freaking DNS Problem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pictures of the event are &lt;a href=&quot;http://pics.inuits.be/v/techevents/cloudcamp_bxl/&quot; rel=&quot;nofollow&quot;&gt;here &lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/759#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/617">barcamp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/994">cloudcamp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1088">cloudcamp_bxl</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1087">unconference</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <pubDate>Fri, 31 Oct 2008 21:15:53 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">759 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>DevMinistration</title>
+ <link>http://127.0.0.1:8080/blog/node/754</link>
+ <description>&lt;p&gt;In his &lt;a href=&quot;http://www.johnmwillis.com/cloudcafe/cloud-cafe-18-the-puppet-vs-the-meat-cloud/&quot; rel=&quot;nofollow&quot;&gt;CloudCafe 18 Podcast&lt;/a&gt; John talks  about Puppet to   &lt;a href=&quot;http://madstop.com/&quot; rel=&quot;nofollow&quot;&gt;Luke&lt;/a&gt;   and they coin the idea of Devministration&lt;/p&gt;
+&lt;p&gt;I really like the terminology, so I`m a devministrator,  and probably the bigger part of &lt;a href=&quot;http://www.inuits.be/&quot;&gt;Inuits&lt;/a&gt; are Devministrators.&lt;/p&gt;
+&lt;p&gt;The first stage in becoming a devministrator is using version control, then bugtracking ..  etc.&lt;br /&gt;
+Coming from an era where I was the sysadmin pushing the developers to use version control this sounds really strange to me..&lt;br /&gt;
+Yes I had to convince developers to use version control,  while Luke thinks he needs to convince sysadmins to use version control.&lt;br /&gt;
+Weird.. other continent, other habits, but the important part is we all use it.&lt;/p&gt;
+&lt;p&gt;But the big part is that we don&#039;t spend our time managing servers, but rather scripting the automation of the management.  Learning machines how they should manage our configs and automate.&lt;/p&gt;
+&lt;p&gt;Like the old Google saying, you have to automate yourself out of a job every 18 months. &lt;/p&gt;
+&lt;p&gt;Guess that&#039;s also what ad Devministrator is.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/754#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/775">automation</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1077">devministration</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1078">devministrator</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Mon, 27 Oct 2008 17:57:40 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">754 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>CloudCamp BXL</title>
+ <link>http://127.0.0.1:8080/blog/node/753</link>
+ <description>&lt;p&gt;Don&#039;t forget .. this thursday : &lt;a href=&quot;http://cloudcamp-brussels-08.eventbrite.com/&quot; rel=&quot;nofollow&quot;&gt;CloudCamp Brussels&lt;/a&gt; !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/753#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/620">brussels</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/994">cloudcamp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1076">events</category>
+ <pubDate>Mon, 27 Oct 2008 17:52:15 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">753 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - skype</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1107/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Next Step, Done</title>
+ <link>http://127.0.0.1:8080/blog/next-step-done</link>
+ <description>&lt;p&gt;I &lt;a href=&quot;http://www.krisbuytaert.be/blog/upgrading-fedora-10&quot;&gt;just blogged&lt;/a&gt; that I wanted the skype plugin to work in my pidgin, only to have 1 central chat window.&lt;/p&gt;
+&lt;p&gt;Guess what ..  &lt;a href=&quot;http://eion.robbmob.com/&quot; rel=&quot;nofollow&quot;&gt;this&lt;/a&gt; really works.  it&#039;s that simple .. copy the 2 files, then setup the account ..  I just had to disable the annoying skype sounds :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/next-step-done#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/pidgin">pidgin</category>
+ <category domain="http://127.0.0.1:8080/blog/category/skype">skype</category>
+ <pubDate>Mon, 01 Dec 2008 20:40:01 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">832 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Upgrading to Fedora 10 </title>
+ <link>http://127.0.0.1:8080/blog/upgrading-fedora-10</link>
+ <description>&lt;p&gt;As some of you know I run Fedora on my main Laptop, and Ubuntu on my EEE and my office Desktop.   My Ubuntu installs were pretty fresh, but my fedora was long due for an upgrade.    As after years of abuse (--force --nodeps) it usually is impossible to do a regular upgrade, so my best way out was a quick and fresh install on an isolated root partition.   (my /home/ etc live on separate volumes)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://raskas.be/&quot; rel=&quot;nofollow&quot;&gt;Johan&lt;/a&gt; tricked me into installing a FC10 x86-64 setup which required some more work than usual, but I`m back in the same state as I was before I started the upgrade.  We&#039;ll almost .. as I expect I`ll be reinstalling packages I don&#039;t daily use on a frequent basis over the next couple of weeks.&lt;/p&gt;
+&lt;p&gt;I&#039;ll dig a bit deeper in my x86_64 struggles later but first I had to tackle the problems I had with stepping my Evolution to a fresh and hopefully more stable version.&lt;/p&gt;
+&lt;p&gt;Evolution fails to recognise  the fact that I have multiple calendars, or got confused.. anyway .. my calendar was empty and I had to recreate them all and import them again one by one.&lt;br /&gt;
+Luckily the content was still available in .ics&lt;/p&gt;
+&lt;p&gt;Also Evolution partly forgot about all my email accounts , it remembered their passwords after recreating them, but not their settings.. well. that is if I managed to recreate them all :)&lt;br /&gt;
+(If I`m not replying to a mail you sent me sinc last thursday.. I might just have forgotten about that email address ..&lt;/p&gt;
+&lt;p&gt;On to the x86_64 stuff then.  &lt;a href=&quot;http://blog.verwilst.be/&quot; rel=&quot;nofollow&quot;&gt;Bort&lt;/a&gt; pointed me to the&lt;br /&gt;
+&lt;a href=&quot;http://labs.adobe.com/downloads/flashplayer10.html&quot; rel=&quot;nofollow&quot;&gt;Adobe Labs site&lt;/a&gt; that had a working flash plugin.  The right symlink in my .mozilla/plugins and the first problem was solved.&lt;/p&gt;
+&lt;p&gt;There&#039;s 2 apps from Google that I sometimes abuse,  I don&#039;t know why I still use Picasa, there must be plenty of good open source alternatives out there ..  however for Google Earth I don&#039;t really have a good alternative.   bot work  (unlike previous Fedora/Googl Earth combinations)&lt;/p&gt;
+&lt;p&gt;The only thing that annoyed me was Google Earth and selinux  , I had to run some chcon s to solve the problems.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libminizip.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/librender.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libauth.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libevll.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/lib*&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libnavigate.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/liblayer.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libmeasure.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libbasicingest.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libgps.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/googleearth/libgooglesearch.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/googleearth/libinput_plugin.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libflightsim.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;A couple of more frustrations later  and the SELinux config got changed.  Afterall .. Life is to short for SELinux.&lt;/p&gt;
+&lt;p&gt;A must,  if you used too have Livna , or FreshRPMS is &lt;a href=&quot;http://rpmfusion.org/&quot; rel=&quot;nofollow&quot;&gt;RPMFusion&lt;/a&gt; a merger of the old repositories&lt;/p&gt;
+&lt;p&gt;Skype  seemed to be a bit more difficult.  I tried installing the rpm at first but I failed , then I read  &lt;a href=&quot;http://liquidat.wordpress.com/2008/11/27/moving-on-64bit-linux-pulseaudio-fedora-10-and-so-on/&quot; rel=&quot;nofollow&quot;&gt;some tips&lt;/a&gt; which suggested to use yum localinstall skype*.rpm&lt;/p&gt;
+&lt;p&gt;As I`m more of an apt-get user (yes even on CentOS etc) I don&#039;t usually try installing packages that way .. but it worked like a charm.    Skype started,  I could connect to the servers , however a test call  reveals no input sound.  Maybe if I try again with a headset later.&lt;/p&gt;
+&lt;p&gt;Anyway,  I`m pretty satisfied so far ...&lt;/p&gt;
+&lt;p&gt;Next step is to get that skype chat integrated in pidgin.. or hope people will realize they have to drop that proprietary tool one day..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/upgrading-fedora-10#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora-10">fedora 10</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1001">selinux</category>
+ <category domain="http://127.0.0.1:8080/blog/category/skype">skype</category>
+ <category domain="http://127.0.0.1:8080/blog/category/x8664">x86_64</category>
+ <pubDate>Mon, 01 Dec 2008 20:14:48 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">831 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

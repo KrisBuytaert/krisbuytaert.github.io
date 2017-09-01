@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - rivermuse</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1278/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>RiverMuse on RHEL/Centos 5</title>
+ <link>http://127.0.0.1:8080/blog/rivermuse-rhelcentos-5</link>
+ <description>&lt;p&gt;My yesterday post about RiverMuse only being available on Fedora Core 9 wasn&#039;t even cold yet and today Rivermuse already announced the availability of their &lt;a href=&quot;http://www.rivermuse.org/static/2009/07/rhel-5-binaries-now-available/&quot; rel=&quot;nofollow&quot;&gt;RHEL5&lt;/a&gt; binaries.&lt;/p&gt;
+&lt;p&gt;Awesome Open Source !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/rivermuse-rhelcentos-5#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/rivermuse">rivermuse</category>
+ <pubDate>Fri, 31 Jul 2009 13:23:56 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">930 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Rivermuse First Impressions</title>
+ <link>http://127.0.0.1:8080/blog/rivermuse-first-impressions</link>
+ <description>&lt;p&gt;First of all, I don&#039;t come from a Tivoli, OpenView background  , I have never touched the commercial network monitoring tools and  I`m not a network guy . I&#039;m an infrastructure  guy whith a focus on Open Source platforms so I have been using Nagios and more recently Zabbix, Zenoss  etc for the better part of the last 2 decades in large to very large environments.&lt;br /&gt;
+My syslogs go to a central (r)syslog)-ng) server where I frequently abuse grep.   So If my experience with RiverMuse is not what it should be , there&#039;s work to be done on both sides ;) &lt;/p&gt;
+&lt;p&gt;So When looking at my Rivermuse setup (in a VirtualBox FC9 setup) my first tought is &quot;Those Rivermuse folks will really need to explain me what their tool is all about .. as to me it&#039;s just a fancy colortail integrated with snmp traps.&quot;&lt;/p&gt;
+&lt;p&gt;Hopefully it&#039;s not just that and it all becomes clear in a couple of days ..  Apart from the FC9 annoyancy there is the  frequent  Unresponsive script errors.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/RiverMuse.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;And those I fear will be the real killer problems  for RiverMuse&lt;/p&gt;
+&lt;p&gt;On the other hand, RiverMuse does good  job in displaying the actual  events in your network and following up the actions that one ... after a while  you&#039;ll get a good overview of the actual issues as opposed to all the relevant events&lt;/p&gt;
+&lt;p&gt;I&#039;ve dropped RiverMuse into my blade test setup (more on that subject later) and I`ll be keeping a look on what I can learn from it but the dreaded Unresponsive scripts that I know so well from Bamboo really need to be fixed :)&lt;/p&gt;
+&lt;p&gt;Well time will tell :) &lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/rivermuse-first-impressions#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/890">nagios</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/rivermuse">rivermuse</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/887">zabbix</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/888">zenoss</category>
+ <pubDate>Thu, 30 Jul 2009 19:37:34 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">928 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>RiverMuse</title>
+ <link>http://127.0.0.1:8080/blog/rivermuse</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://www.rivermuse.org/&quot; rel=&quot;nofollow&quot;&gt;Rivermuse&lt;/a&gt; is the new Fault Management platform tool on the market, their initial relase was lurking around the corner for a while now but since earlier this week it finally arrived&lt;/p&gt;
+&lt;p&gt;Eager to see what all the fuzz was about I jumped to their dowload page to find an yum repository for Fedora Core 9, that&#039;s right .. it&#039;s july 2009 and RiverMuse released their platform for a Linux distribution that got it&#039;s  End Of Life notice last month.&lt;/p&gt;
+&lt;p&gt;On a fresh Fedora 11 box off course you get a zillion dependency mismatches.&lt;br /&gt;
+So over to the source code.    After installing some build dependencies I managed to build desktop-trunk-8.fc11.noarch.rpm  rivermusece-trunk-8.fc11.noarch.rpm&lt;br /&gt;
+rpms&lt;/p&gt;
+&lt;p&gt;However these depend on extremely fresh versions of rsyslog &amp;gt;= 4.1.6 where as Fedora 11 is only on 3.21 and RHEL is even only on 2.0.6.&lt;/p&gt;
+&lt;p&gt;The initial checkout I had had no README file yet .. so creating a build wasn&#039;t really easy ..&lt;/p&gt;
+&lt;p&gt;In the meanwhile they have promised builds for other versions.&lt;/p&gt;
+&lt;p&gt;So the battle is between me getting time to setup an FC9 box somehwere and they releasing fresher RPM&#039;s .. I hope they win :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/rivermuse#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1021">network monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/category/rivermuse">rivermuse</category>
+ <pubDate>Thu, 30 Jul 2009 19:31:51 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">926 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

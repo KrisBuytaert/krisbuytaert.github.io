@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - epel</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1347/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Drupal6 in EPEL</title>
+ <link>http://127.0.0.1:8080/blog/drupal6-epel</link>
+ <description>&lt;p&gt;Dear Drupal Community,&lt;/p&gt;
+&lt;p&gt;If any of you are interrested in getting a packaged version of Drupal 6 into  Fedora&#039;s EPEL repository (Extra Packages for Enterprise Linux) and therefore usable in RHEL and Centos,&lt;br /&gt;
+please comment on the &lt;a href=&quot;https://bugzilla.redhat.com/show_bug.cgi?id=552717&quot; rel=&quot;nofollow&quot;&gt;Bug&lt;/a&gt; I filed to get it&#039;s introduction started.&lt;/p&gt;
+&lt;p&gt;Any pitfalls, benefits etc  are welcome ..&lt;/p&gt;
+&lt;p&gt;thnx in advance !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/drupal6-epel#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/drupal6">drupal6</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/category/package">package</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Tue, 05 Jan 2010 22:48:22 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">975 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Packaging Djagios</title>
+ <link>http://127.0.0.1:8080/blog/packaging-djagios</link>
+ <description>&lt;p&gt;After all the politics involved in getting a package in a distro, or not it was time for a nice small and clean package of a fresh and promising open source project.  &lt;a href=&quot;http://www.djagios.org/&quot; rel=&quot;nofollow&quot;&gt;Djagios&lt;/a&gt; was an easy choice.&lt;/p&gt;
+&lt;p&gt;I&#039;ve uploade the &lt;a href=&quot;http://repo.inuits.be/centos/5/os/noarch/djagios-0.1.3-1.noarch.rpm&quot; rel=&quot;nofollow&quot;&gt;rpm&lt;/a&gt; and &lt;a href=&quot;http://repo.inuits.be/centos/5/os/SRPMS/djagios-0.1.3-1.src.rpm&quot; rel=&quot;nofollow&quot;&gt;Source RPM&lt;/a&gt; to repo.inuits.be and getting the  SPEC file in the upstream repo was 10 minutes work.&lt;/p&gt;
+&lt;p&gt;Next step is to get it into Fedora  , and EPEL   :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/packaging-djagios#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/djagios">djagios</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/890">nagios</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/466">packaging</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Sun, 20 Dec 2009 20:42:00 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">974 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Packaging Drush</title>
+ <link>http://127.0.0.1:8080/blog/packaging-drush</link>
+ <description>&lt;p&gt;A couple of weeks ago I was once again manually installing Drush as there were no packages for CentOS / EPEL or whatever,   apart from the &lt;a href=&quot;http://drupal.org/node/502452&quot; rel=&quot;nofollow&quot;&gt;needed patch &lt;/a&gt; to get it running on a 5.1.X RHEL php&lt;/p&gt;
+&lt;p&gt;I had found &lt;a href=&quot;http://drupal.org/node/508086&quot; rel=&quot;nofollow&quot;&gt;this&lt;/a&gt; thread on Drupal.org mentioning that a package already exists&lt;br /&gt;
+however David had not answered the exact location yet&lt;br /&gt;
+So I created a drush package with a with the above mentionned patch and sent it to  Jon Ciesla again he gave some suprising  feedback ;)&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;br /&gt;
+Drush itself might need to be modified in Fedora.   It seems&lt;br /&gt;
+like one of the major functions of drush is to install and update&lt;br /&gt;
+modules.  That&#039;s great for modules we don&#039;t ship as rpms, but we can&#039;t&lt;br /&gt;
+allow drush to modify modules that we ship.&lt;br /&gt;
+&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;This feedback pretty much leaves me with 3 options.&lt;/p&gt;
+&lt;p&gt;The first one is the easiest one,  I just forget about packaging drush for Fedora.&lt;/p&gt;
+&lt;p&gt;The second one would require me to patch Drush so that for all existing drupal modules that have been packaged for Fedora,  Drush will call yum to install them.  This obviously would create a lot of work  maintaining this excludelist.&lt;/p&gt;
+&lt;p&gt;The third one would be to disable the download functionality for Drush in a Fedora/Rhel enviornment,  Jon suggested that this would probably be the saftest path.&lt;/p&gt;
+&lt;p&gt;(Jon also suggested a fourth option, namely removing all drupal modules from fedora and add a prohibition to package them in the Packaging Guidelines, which he immediately called ridiculous.)&lt;/p&gt;
+&lt;p&gt;I once again understand the problem of the Distribution maintainer,  but on the other hand if I were the upstream Drush developer I wouldn&#039;t want to see my software severely disabled in a distribution.&lt;/p&gt;
+&lt;p&gt;So what do you folks think, disable the functionality  or not ?&lt;/p&gt;
+&lt;p&gt;PS.  Yes I&#039;ve contacted upstream , but I haven&#039;t gotten a reply yet.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/packaging-drush#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/drush">drush</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Sun, 20 Dec 2009 20:41:10 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">973 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Drupal 6 for EPEL</title>
+ <link>http://127.0.0.1:8080/blog/drupal-6-epel</link>
+ <description>&lt;p&gt;Some of you might have noticed that Fedora 11 and up already have an up to date Drupal6 version, but EPEL , which is what a lot of people are using on their  CentOS  or RHEL builds only has a Drupal5.   I asked  Jon Ciesla, who is maintaing the Drupal packages in Fedora why :&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;br /&gt;
+Because when Drupal was initially built for EL-5 and EL-5, the 5.x&lt;br /&gt;
+branch was the current release.  It&#039;s up to date, 5.20 is the most&lt;br /&gt;
+recent release, and is still supported upstream in terms of security&lt;br /&gt;
+fixes.  6 is out, and has been for awhile, but we have the following:&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies&quot; title=&quot;http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies&quot; rel=&quot;nofollow&quot;&gt;http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Since 5.x isn&#039;t broken or insecure, it&#039;ll be a tough sell to move to&lt;br /&gt;
+6.x.  Once upstream drops support, this may change.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;It&#039;s a correct answer from a Distribution point of view, but the fact is it is widening the gap between the Ops and the Devs.     If the ops want to keep their platform clean we need to have our software packaged on the platform we want to use, which is most often an Enterprise Linux distro,  on the other there is understandably no hair on a dev&#039;s head that he will be  building a new site on  a Drupal 5 platform.&lt;/p&gt;
+&lt;p&gt;So until the Drupal community  doesn&#039;t declare Drupal 5 dead, RHEL and CentOS users will have to use 3rd party Drupal6  RPMS , or rebuild the F12 rpm from Source again  .&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/drupal-6-epel#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/guidelines">guidelines</category>
+ <category domain="http://127.0.0.1:8080/blog/category/politics">politics</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Sun, 20 Dec 2009 20:39:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">972 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/693 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:34:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>OLS Day 2 | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a> &#8594; <a href="../../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">OLS Day 2</h2>
+<div class="content">
+<div id="node-693" class="node  blog">
+<div class="content"><p>Were does kernel documentation hide ?</p>
+<p>It hides in all kind of different places,  in /usr/src/linux/Documentation which isn't on the web<br />
+, in papers, in blogs, in Google Video,  even in flashfiles .. so Google won't find them, or at least not all of it .<br />
+Rob Landley had a 6 month fellowship with the Linux Foundation  focusing on cleaning up the documentation ...</p>
+<p>The results is <a href="http://www.kernel.org/doc/" title="http://www.kernel.org/doc/" rel="nofollow">http://www.kernel.org/doc/</a>,  now if we could only turn it into a Wiki ..</p>
+<p>After Robs talk I went into Measuring database performance with NFSv4 .. sadly this Netapp focussed talk covers a proprietary database that I don't care about.   The speaker claims that his proprietary vendor prefers NFS to store it's data .. if that's the case I wonder why they are focussing on their own Clusterfilesystem (OCFS2)<br />
+Maybe he should have focussed on an open database ..  Obviously Netapp is in the business of selling their storage and not Cluster filesystems but I find it hard to believe.... also the fact that they only talk about client optimalization because the server side its a proprietary device wasn't really helping their case.</p>
+<p>Obviously I went to the Virtualization of Linux Servers: a comparative study  talk which had a standing room, but I'll save my thoughts on that one for a separate post.</p>
+<p>Just one thought here .. there is a new benchmark in town namely the number of kernels can you build per hour :)</p>
+<p>Next talk was the the Corosync Cluster Engine.  Corosync.org isn't up yet but  and the source code is about to be released but it aims at becoming the common cluster infrastructure that can be used by different cluster toolsm It will be used as a backend for Pacemaker  and is already used by RedHat folks ..</p>
+<p>Werner gave an interesting talk on the building of the openMoko NEO during which "nobody" said  FSO is Android done right .. FSO being FreeSmartphone.org  Werner described the traditional problems a  young engineering company has to go trough in order to go from prototype to actual mass production.</p>
+<p>So over the past couple of days I ran into people that have much more time to travel and go to events than I do , so who have been to  both the Xen summit and the KVM Forum interesting to know that the KVM summit had about 50-60 people and the Xen summit about 100 people  now these are developer summits .. not end user conferences like with other technologies.</p>
+<p>After dinner there was a BOF about  Direct Function assignment benefits by folks from Neterion</p>
+<p>The advantage is that it Eliminates overhead of network virtualization<br />
+Allows support for a large number of guest with a compact number of ports.<br />
+Allows using native OS drivers as is ..</p>
+<p>The idea of using bonding of a physically PCI bridged device with a virtual NIC sounds really tempting to enable migration of Virtual machines with a hardware dependency , however I still have some thoughts on that.</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Fri, 07/25/2008 - 23:51</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_955 first"><a href="../../taxonomy/term/955/index.html" rel="tag" title="">linuxsymposium</a></li>
+<li class="taxonomy_term_863"><a href="../../taxonomy/term/863/index.html" rel="tag" title="">ols</a></li>
+<li class="taxonomy_term_919"><a href="../../taxonomy/term/919/index.html" rel="tag" title="">ols2008</a></li>
+<li class="taxonomy_term_599 last"><a href="../../taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3128"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/4ab5568877a1b040d336de446d1ecbf6.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Elie De Brauwer&#039;s picture" title="Elie De Brauwer&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3128">#1</a>
+    <span class="author"><span class="anonymous" title="not verified">Elie De Brauwer</span></span>  : <span class="title"><a href="index.html#comment-3128" class="active">404</a></span>
+  </h3>
+  <div class="content"><p>It would've actually been nice if <a href="http://www.kernel.org/docs/" title="http://www.kernel.org/docs/" rel="nofollow">http://www.kernel.org/docs/</a> wouldn't give a 404 ;-)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/27/2008 - 10:16</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/693 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:34:36 GMT -->
+</html>

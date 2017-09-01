@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - systemimager</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/615/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Image Sprawl , and the new cure .. </title>
+ <link>http://127.0.0.1:8080/blog/image-sprawl-and-new-cure</link>
+ <description>&lt;p&gt;When I tell people that the concept of copying VM&#039;s around as frequently done in the VMWare world is one of the most stupid ideas on this planet, I get the weirdest looks.  &lt;/p&gt;
+&lt;p&gt;In my world it is, I want my infrastructure to be reproducible ,  I want to be able to throw any machine in my infrastructure out of the 10th floor of a building and be up and running again in no time.     If I spread a bunch of VM copies around who knows what kind of life they start leading.  Some will get upgrades,  some won&#039;t ..&lt;br /&gt;
+If I get an image from someone, how did he get there ?  Nobody knows ..&lt;/p&gt;
+&lt;p&gt;To me Image Sprawl is more than not being able to to manage your Virtual Machines,  it also matters for physical machines that are being deployed using a golden image.&lt;/p&gt;
+&lt;p&gt;Now rewind back about 4  something years.. back then I wrote a paper for LinuxKongress  titled &lt;a href=&quot;http://howto.krisbuytaert.be/AutomatingVirtualMachineDeployment/#AEN34&quot; rel=&quot;nofollow&quot;&gt;Automating Xen Virtual Machine Deployment&lt;/a&gt; which described a Hybrid way of Bootstrapping an infrastructure.&lt;br /&gt;
+Quicly summarized, you use the benefits of images to quickly deploy a minimal image which&lt;br /&gt;
+&lt;a href=&quot;http://madstop.com/2009/02/04/golden-image-or-foil-ball/&quot; rel=&quot;nofollow&quot;&gt;Luke&lt;/a&gt; today calls  a Stem Cell  then go on using centralized package management and a configuration management tool to keep them up to par.    There are 2 things that changed in between,&lt;br /&gt;
+we replaced CFEngine with Puppet ,  and the fact that today &lt;a href=&quot;http://news.cnet.com/8301-13505_3-10157591-16.html?tag=mncol;title&quot; rel=&quot;nofollow&quot;&gt;some people&lt;/a&gt; do care a bit more about the infrastructure side of the web, guess we have to thank Amazon and the Cloud Hype for that&lt;/p&gt;
+&lt;p&gt;But fundamentally .. not that much changed :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/image-sprawl-and-new-cure#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/automating">automating</category>
+ <category domain="http://127.0.0.1:8080/blog/category/cfengine">cfengine</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1077">devministration</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/503">hype</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/862">LinuxKongress</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/615">systemimager</category>
+ <category domain="http://127.0.0.1:8080/blog/category/toldyaso">toldyaso</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <pubDate>Thu, 05 Feb 2009 22:24:43 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">871 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Whip me, beat me, make me maintain .... </title>
+ <link>http://127.0.0.1:8080/blog/node/498</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://dag.wieers.com/blog/content/call-for-participation-on-mksysb&quot; rel=&quot;nofollow&quot;&gt;Dag&lt;/a&gt;,  we can&#039;t blame you for being brainwashed by IBM and still looking back at AIX  tools, afterall you worked there twice already and who knows how may more times to come :)&lt;/p&gt;
+&lt;p&gt;But .. before you start to reinvent the wheel, or mksysb  have a look at the following tools.&lt;br /&gt;
+There&#039;s 2 tools that come to mind when looking at your requirements.&lt;/p&gt;
+&lt;p&gt;A tool I used a lot  about 5-6 years ago is &lt;a href=&quot;http://www.mondorescue.org/&quot; rel=&quot;nofollow&quot;&gt;Mondo Rescue &lt;/a&gt;:&lt;br /&gt;
+&lt;cite&gt;Mondo Rescue is a GPL disaster recovery solution. It supports Linux (i386, x86_64, ia64) and FreeBSD (i386). It&#039;s packaged for multiple distributions (RedHat, RHEL, SuSE, SLES, Mandriva, Debian, Gentoo). It supports tapes, disks, network and CD/DVD as backup media, multiple filesystems, LVM, software and hardware Raid.&lt;br /&gt;
+&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;I haven&#039;t used it for a while since my current preference off course goes to the &lt;a&gt;SystemImager Framework.   &lt;/a&gt; Apart from using it for automating installations off course you can use it to create a golden image of your running environment  and restore that image any way you like, over network, from CD (with si_mkautoinstallcd)  etc.&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;SystemImager makes it easy to do automated installs (clones), software distribution, content or data distribution, configuration changes, and operating system updates to your network of Linux machines.&lt;br /&gt;
+&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;On the other hand , if you manage your systems in an &lt;a href=&quot;http://www.infrastructures.org/&quot; rel=&quot;nofollow&quot;&gt;Infrastructures.org&lt;/a&gt; way , and you have good backups of your data.  You don&#039;t need to restore a system from some media, as you will just be able to rebootstrap the failing machine in an identical way as you have been managing it and the only thing needed to do is restore your data.&lt;/p&gt;
+&lt;p&gt;PS. &lt;a href=&quot;http://www.google.be/search?hl=en&amp;amp;client=firefox-a&amp;amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;amp;hs=RJr&amp;amp;q=Whip+me+%2C+beat+me+%2C+make+me+maintain&amp;amp;btnG=Search&amp;amp;meta=&quot; rel=&quot;nofollow&quot;&gt;if you don&#039;t know what I don&#039;t want to maintain&lt;/a&gt;, skip the first result&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/498#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/614">aix</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/489">linux</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/616">mondo rescue</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/615">systemimager</category>
+ <pubDate>Wed, 07 Nov 2007 20:32:39 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">498 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

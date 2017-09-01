@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - bond</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/481/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Multiple Bond Interfaces in Centos/RHEL</title>
+ <link>http://127.0.0.1:8080/blog/node/446</link>
+ <description>&lt;p&gt;So earlier today I was fighting with &lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;bond1: error fetching interface information: Device not found&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;I had a machine with 4 nics that I wanted to bond 2 by to.   I had no problem getting the bond0 device up witn any of the interfaces, however getting a bond1 up always resulted in the above error.&lt;/p&gt;
+&lt;p&gt;The friendly guys from #centos on freenode pointed me to the missing config.&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;options bonding mode=4 max_bonds=4&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;The important part being max_bonds&lt;br /&gt;
+it seems that the default is 1  so adding one more fails.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/446#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/481">bond</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/482">bond0</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/483">bond1</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <pubDate>Tue, 11 Sep 2007 18:28:51 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">446 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

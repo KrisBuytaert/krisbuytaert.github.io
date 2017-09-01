@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/category/docker-0 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:22:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>docker | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - docker" href="../../taxonomy/term/1535/0/feed/index.html" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/taxonomy/taxonomy/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-taxonomy one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a></div></div>
+  <h2 id="title">docker</h2>
+<div class="content">
+<div id="node-1109" class="node teaser blog cal">
+    <acronym class="calendar published" title="2016-05-28T13:16:45+02:00">
+  <span class="month">May</span>
+  <span class="day">28</span>
+    <span class="year">2016</span>
+    </acronym>
+    <h2 class="title"><a href="../../docker-and-volumes-hell/index.html">Docker and volumes hell</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1535 first active"><a href="index.html" rel="tag" title="" class="active">docker</a></li>
+<li class="taxonomy_term_1484"><a href="../fpm/index.html" rel="tag" title="">fpm</a></li>
+<li class="taxonomy_term_1001 last"><a href="../../taxonomy/term/1001/index.html" rel="tag" title="">selinux</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>We're increasingly using Docker to build packages,  a fresh  chroot in which we prepare a number of packages, builds typically for ruby (rvm) , or python (virtualenv) or node stuf where the language ecosystem fails on us ...  and fpm the whole tree as a working artifact.</p>
+<p>An example of such a build is my work on packaging Dashing.  <a href="https://github.com/KrisBuytaert/build-dashing" rel="nofollow">https://github.com/KrisBuytaert/build-dashing</a></p>
+<p>Now part of that build is running the actual build script in docker with a local volume mounted inside the container This is your typical  -v=/home/src/dashing-docker/package-scripts:/scripts  param.</p>
+<p>Earlier this week however I was stuck on a box where that combo did not want to work as expected. Docker clearly mounted the local volume, as it could execute the script in the directory, but for some reason it didn't want to write in the mounted volume.</p>
+<p>docker run -v=/home/src/dashing-docker/package-scripts:/scripts dashing/rvm  /scripts/packagervm<br />
+Usage of loopback devices is strongly discouraged for production use. Either use `--storage-opt dm.thinpooldev` or use `--storage-opt dm.no_warn_on_loop_devices=true` to suppress this warning.<br />
+corefines: Your Ruby doesn't support refinements, so I'll fake them using plain monkey-patching (not scoped!).<br />
+/usr/local/share/gems/gems/corefines-1.9.0/lib/corefines/support/fake_refinements.rb:26: warning: Refinements are experimental, and the behavior may change in future versions of Ruby!<br />
+/usr/share/ruby/fileutils.rb:1381:in `initialize': Permission denied - rvm-1.27.0-1.x86_64.rpm (Errno::EACCES)</p>
+<p>So what was I doing wrong, did the Docker params change, did I invert the order of the params, did I mistype them ? I added debugging to the script, (ls , chmod, etc..) and I couldn't seem to read or modify the directory. So I asked a coworker to be my wobbling duck.</p>
+<p>He did more .. he wondered if this wasn't selinux.</p>
+<p>And he was right..</p>
+<p>Apr 23 21:47:00 mine23.inuits.eu audit[9570]: AVC avc:  denied  { write } for  pid=9570 comm="fpm" name="package-scripts" dev="dm-2" ino=368957 scontext=system_u:system_r:svirt_lxc_net_t:s0:c47,c929 tcontext=unconfined_u:object_r:unlabeled_t:s0 tclass=dir permissive=0<br />
+Apr 23 21:47:02 mine23.inuits.eu python3[9597]: SELinux is preventing fpm from write access on the directory /home/src/dashing-docker/package-scripts.</p>
+<p>So while I was looking for errors in docker, it was just my selinux set to enforce acting up and me not noticing it.</p>
+<p>The quick way to verify obvisously was to setenforce 0  and trigger the build again that however is not a long term fix so  I changed the </p>
+<p>semanage fcontext -a -t cgroup_t '/home/src/dashing-docker/package-scripts'<br />
+restorecon -v '/home/src/dashing-docker/package-scripts'</p>
+<p>That solves the problem</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/category/docker-0 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:22:34 GMT -->
+</html>

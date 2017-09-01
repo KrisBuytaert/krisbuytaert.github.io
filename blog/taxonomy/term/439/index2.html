@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/taxonomy/term/439?page=2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:25:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>puppet | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - puppet" href="0/feed/index.html" />
+<link rel="shortcut icon" href="../../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/taxonomy/taxonomy/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-taxonomy one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../../faq/index/index.html">FAQ</a> and  <a href="../../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../../index/index.html">Home</a></div></div>
+  <h2 id="title">puppet</h2>
+<div class="content">
+<div id="node-1044" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-06-10T16:26:18+02:00">
+  <span class="month">Jun</span>
+  <span class="day">10</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../case-augeas/index.html">The case for Augeas</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1458 first"><a href="../../../category/augeas/index.html" rel="tag" title="">augeas</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1460"><a href="../../../category/lens/index.html" rel="tag" title="">lens</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1459"><a href="../../../category/sipxecs/index.html" rel="tag" title="">sipxecs</a></li>
+<li class="taxonomy_term_1177 last"><a href="../../../category/xml/index.html" rel="tag" title="">xml</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Ever since I met David Lutterkort over steaks at OLS 2007  augeas was this tool in the back of my mind that I couldn't place...  I never saw the need for it... or it seemed to be huge overkill for the problem that needed solving .</p>
+<p>Till I ran into sipxecs rewriting XML files on the fly .. and putting values in their XML that I could not trace back to an original source.  As of Augeas 0.8.x there's an XML lens out there.</p>
+<p>Digging innot blah.xml with augtool you can do stuff like</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">set /augeas/load/Xml/incl[3] /tmp/blah.xml</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">set /augeas/load/Xml/lens Xml.lns</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">load</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">print /files/tmp/blah.xml/profile/settings/param[17]/</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[17] = &quot;#empty&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[17]/#attribute</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[17]/#attribute/name = &quot;sip-ip&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[17]/#attribute/value = &quot;10.255.202.90&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">augtool&gt; print /files/tmp/blah.xml/profile/settings/param[18]/</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[18] = &quot;#empty&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[18]/#attribute</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[18]/#attribute/name = &quot;ext-rtp-ip&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[18]/#attribute/value = &quot;auto-nat&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">augtool&gt; print /files/tmp/blah.xml/profile/settings/param[16]/</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[16] = &quot;#empty&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[16]/#attribute</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[16]/#attribute/name = &quot;rtp-ip&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[16]/#attribute/value = &quot;10.255.202.90&quot;</div></li></ol></pre></div></p>
+<p>and get and set</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">augtool&gt; get  /files/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml/profile/settings/param[17]/#attribute/value</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml/profile/settings/param[17]/#attribute/value = 10.255.202.90</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">augtool&gt; set /files/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml/profile/settings/param[16]/#attribute/value 10.0.0.2</div></li></ol></pre></div></p>
+<p>Putting that into puppet however isn't that tvivial .</p>
+<p>When you try to do this</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">augeas{&quot;sipxprofile&quot; :</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        changes =&gt; [</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        &quot;set /augeas/load/Xml/incl[last()+1] /etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        &quot;set /files/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml/profile/settings/param[16]/#attribute/value 10.0.0.2&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        &quot;set /files/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml/profile/settings/param[17]/#attribute/value 10.0.0.2&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        ],</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        }</div></li></ol></pre></div></p>
+<p>Puppet really doesn't output what you want to do ... it only outputs the snippet you modify ..<br />
+It's the load statement above that is the really important piece but puppet can't directly work with that so you need to go around that using<br />
+The way to solve this is</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">augeas{&quot;sipxprofile&quot; :</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        lens    =&gt; &quot;Xml.lns&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        incl    =&gt; &quot;/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        context =&gt; &quot;/files/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        changes =&gt; [</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">          &quot;set profile/settings/param[16]/#attribute/value $ipaddress&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">          &quot;set profile/settings/param[17]/#attribute/value $ipaddress&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        ],</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        onlyif  =&gt; &quot;get profile/settings/param[16]/#attribute/value != $ipaddress&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">}</div></li></ol></pre></div></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../case-augeas/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-1042" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-05-25T23:18:08+02:00">
+  <span class="month">May</span>
+  <span class="day">25</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../beyond-configuration-mgmt/index.html">Beyond Configuration Mgmt</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1158 first"><a href="../../../category/chef/index.html" rel="tag" title="">chef</a></li>
+<li class="taxonomy_term_1453"><a href="../../../category/cucumber/index.html" rel="tag" title="">cucumber</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1455"><a href="../../../category/jmeter/index.html" rel="tag" title="">jmeter</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1363"><a href="../../../category/puppetcamp/index.html" rel="tag" title="">puppetcamp</a></li>
+<li class="taxonomy_term_1452"><a href="../../../category/selenium/index.html" rel="tag" title="">selenium</a></li>
+<li class="taxonomy_term_1454"><a href="../../../category/shai/index.html" rel="tag" title="">shai</a></li>
+<li class="taxonomy_term_1451 last"><a href="../../../category/testing/index.html" rel="tag" title="">testing</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>(This post has been sitting in the drafts folder for way to long,  I decided to push the publish button anyhow .. some people might get ideas from it..)</p>
+<p>We've all run in to the problem,  you've puppetized, or euh .. cooked ,  about every part of your infrastructure and then there's this one service which has no config files,  a broken api that doesn't allow you to configure antyhing, but a magnificent web gui to configure all aspects of the service.  Magnificent for the eye ,  full of AJAX and other fancy stuff which wget isn't really keen on.  Off course before it even starts working you need to set it's password , from that webgui.</p>
+<p>Sometimes when you are lucky they store al their config in a database, which you can dump, parse and replace all the host specific parameters for other deployments,   but is that an approach you like ?  As for each new version you'll need to reanalyze the db layout.  But no matter how you look at it ,dumping the DB and restoring it is an ugly hack you don't want.</p>
+<p>Other alternatives like sniffing the traffic and replaying the POSTS etc were considered ...   but fancy AJAX stuff and SSL make that less trivial than it seems </p>
+<p>Wo while discussing with an upstream project they proposed to actually screenscrape their config webgui .</p>
+<p>So screenscraping the config gui it is .. but how ...  I started looking at tools that are typically used for testing rather than for automation, with the purpose of replaying the scenarios one needs to configure the services.</p>
+<p>My first attempt was Selenium,  it plugs into a browser , so it's easy to acraully record what it has to do,  and it saves it's scenarios  in a somewhat readable/ editable format.<br />
+Having found the export to perl function it alll looked promising.   However the export to perl isn't really an export to perl as I epxected .. I assumed it would just generate the perl code to run the same scneario which would be awesome .. it however generates a perl script that instructs a selenium server to run the script.</p>
+<p>One of the annoyancies I ran into with Selenium is that a browser<br />
+doesn't accept self signed certificates , and one can't preprovision a browser easyily with those freshly created certificates. (Yes Karl I already read about certutil ... )</p>
+<p>I had heard good things about Cucumber so I was pretty eager to start testing it ...  In short Cucumber  lack documentation ,<br />
+I tried a couple of things but I couldn't get beyond testing if a certain string was on a page..  couldn't figure out how to fill in a form etc ...<br />
+Maybe if anyone could point me to some great documentation on how you should write recipe's here ... I didn't find the documentation all to  easy to find ..<br />
+Bummer as it really really looks promisiung .. specially since it is so lightweight ..</p>
+<p>IP played with JMeter and Sahi too .. but still</p>
+<p>So apart from filing bugs to the upstream project/product and hoping they understand your problem and are willing to oopen up their API , what other options do you folks suggest ?</p>
+<p>I gave a short talk about this at Puppetcamp in Amsterdam  and the audience came up with a bunch of other potential projects to look at .</p>
+<ul>
+<li>
+<a href="http://hpricot.com/" rel="nofollow">Hpricot</a>
+</li><li><a href="http://www.webinject.org/" rel="nofollow">WebInject</a>
+</li><li><a href="http://sikuli.org/" rel="nofollow">Project Sikuli</a>
+</li><li><a href="http://watir.com/" rel="nofollow">Watir</a> and
+</li></ul>
+<p>The main problem still is that all these are tools to automate testing , they don't provide you with a general purpose approach to solve the configuration mgmt problem, each time the upstream vendor modifies the layout of his page you hav e to do the work again  and that .. really doesn't sound promising ..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../beyond-configuration-mgmt/index.html#comments" title="Jump to the first comment of this posting.">6 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1041" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-05-02T22:31:17+02:00">
+  <span class="month">May</span>
+  <span class="day">02</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../and-then-vagrant-gave-while/index.html">And then vagrant gave up ...  for a while</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1439"><a href="../../../category/vagrant/index.html" rel="tag" title="">vagrant</a></li>
+<li class="taxonomy_term_1046 last"><a href="../1046/index.html" rel="tag" title="">virtualbox</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Don't you just love Ruby errors ... like the one below ? </p>
+<p>Don't they almost make Java stack traces look readable ?<br />
+57 lines of jibberish ...   where all I wanted to read was "VirtualBox in error state, check gui" </p>
+<p>People like <a href="https://twitter.com/#!/sonofhans" rel="nofollow">Randall Hanssen</a> deserve much more visibility .. they do understand how to write a good error message and there are lots of projects that need improvement there.</p>
+<p>Anywhow...  vagrant had suddenly stopped working on me with the  error below </p>
+<p>Turned out that I had deleted some unused Virtualbox images , not from the VirtualBox gui and therefore Virtualbox didn't want to play nice ..</p>
+<p>Upon starting the VirtualBox gui and cleaning up the images there , everything started working again ..</p>
+<p>But the error wasn't really helpfull .. </p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vagrant up </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/com/implementer/ffi.rb:95:in `call_and_check': Error in API call to get_teleporter_enabled: 2147942405 (VirtualBox::Exceptions::FFIException)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/com/implementer/ffi.rb:69:in `call_vtbl_function'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/com/implementer/ffi.rb:36:in `read_property'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/com/abstract_interface.rb:122:in `read_property'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/com/abstract_interface.rb:64:in `teleporter_enabled'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model/interface_attributes.rb:93:in `send'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model/interface_attributes.rb:93:in `spec_to_proc'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model/interface_attributes.rb:32:in `call'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model/interface_attributes.rb:32:in `load_interface_attribute'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model/interface_attributes.rb:13:in `load_interface_attributes'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model/interface_attributes.rb:12:in `each'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model/interface_attributes.rb:12:in `load_interface_attributes'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/vm.rb:251:in `initialize_attributes'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/vm.rb:246:in `initialize'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/vm.rb:229:in `new'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/vm.rb:229:in `populate_array_relationship'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/vm.rb:228:in `each'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/vm.rb:228:in `populate_array_relationship'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/vm.rb:218:in `populate_relationship'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model/relatable.rb:242:in `populate_relationship'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model.rb:215:in `populate_relationship'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model/dirty.rb:129:in `ignore_dirty'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model.rb:215:in `populate_relationship'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/global.rb:93:in `load_relationship'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model/relatable.rb:192:in `read_relationship'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/abstract_model/relatable.rb:146:in `vms'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/vm.rb:185:in `all'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/virtualbox-0.8.3/lib/virtualbox/vm.rb:193:in `find'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/vagrant-0.7.2/lib/vagrant/vm.rb:13:in `find'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/vagrant-0.7.2/lib/vagrant/environment.rb:378:in `load_vms!'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/vagrant-0.7.2/lib/vagrant/environment.rb:377:in `each'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/vagrant-0.7.2/lib/vagrant/environment.rb:377:in `load_vms!'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/vagrant-0.7.2/lib/vagrant/environment.rb:144:in `vms'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/vagrant-0.7.2/lib/vagrant/environment.rb:180:in `multivm?'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/vagrant-0.7.2/lib/vagrant/command/helpers.rb:19:in `target_vms'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/vagrant-0.7.2/lib/vagrant/command/up.rb:8:in `execute'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/task.rb:22:in `send'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/task.rb:22:in `run'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/invocation.rb:118:in `invoke_task'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `invoke_all'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/vagrant-0.7.2/lib/vagrant/config.rb:115:in `map'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/core_ext/ordered_hash.rb:73:in `each'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `map'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `invoke_all'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/group.rb:226:in `dispatch'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/invocation.rb:109:in `send'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/invocation.rb:109:in `invoke'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/vagrant-0.7.2/lib/vagrant/cli.rb:45:in `up'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/task.rb:22:in `send'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/task.rb:22:in `run'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/invocation.rb:118:in `invoke_task'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor.rb:263:in `dispatch'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/thor-0.14.6/lib/thor/base.rb:389:in `start'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/lib/ruby/gems/1.8/gems/vagrant-0.7.2/bin/vagrant:15</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/bin/vagrant:19:in `load'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">	from /usr/bin/vagrant:19</div></li></ol></pre></div></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../and-then-vagrant-gave-while/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-1040" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-04-20T22:36:03+02:00">
+  <span class="month">Apr</span>
+  <span class="day">20</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../4158-second-catalog-run/index.html">The 4158 second catalog run.</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_775 first"><a href="../775/index.html" rel="tag" title="">automation</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1450"><a href="../../../category/sipx/index.html" rel="tag" title="">sipx</a></li>
+<li class="taxonomy_term_1449 last"><a href="../../../category/uid/index.html" rel="tag" title="">uid</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Two of my tweets , sorry dents, earlier today caused some people to ask me what on earth I was doing :)</p>
+<p><cite>You don't exist, go away! </cite></p>
+<p>Was the first one, indeed .. it was a long time since I had actually seen that one..  this actually happens when you delete the user you are logged in with on a host, when the host notices you don't exist anymore it will tell you.</p>
+<p>Now that is exactly what happend ..  We were busy reordening the uid's on some hosts ,  so I modified the puppet config for that host and changed the uid values,   a couple of minutes later I was told that I don't exist ..</p>
+<p>The last time I saw that , was about 10 years ago when I was trying to fool some collegues :)</p>
+<p>Now the second tweet that tracked some people's attention was the one about a very lengthy catalog run</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Apr 20 05:12:42 sipx-a puppet-agent[22384]: Finished catalog run in 4158.09 seconds</div></li></ol></pre></div><br />
+Indeed, a puppet catalog run of about 69 minutes, yes thats 1 hour and 9 minutes ..</p>
+<p>The reason for this lengthy catalog run was the above uid reordering , combined with<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">       &quot;/var/sipxdata/&quot;:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                        owner =&gt; &quot;sipxchange&quot;, group =&gt; &quot;sipxchange&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                        recurse =&gt; true,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                        ensure =&gt; directory;</div></li></ol></pre></div></p>
+<p>And about 5K files in that directory ..   apparently recurse doesn't translate to chown -R yet :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../4158-second-catalog-run/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-1039" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-03-29T20:11:32+02:00">
+  <span class="month">Mar</span>
+  <span class="day">29</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../vagrant-rubylibs/index.html">Vagrant &amp; Rubylibs</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1448 first"><a href="../../../category/ageas/index.html" rel="tag" title="">ageas</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_441"><a href="../441/index.html" rel="tag" title="">ruby</a></li>
+<li class="taxonomy_term_1439 last"><a href="../../../category/vagrant/index.html" rel="tag" title="">vagrant</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>I was testing some MySQL puppet modules on my Vagrant box earlier this week and one of them required augeas.<br />
+I kept running into "Could not find a default provider for augeas",    however all the appropriate augeas , augeas-lib and ruby-augeas packages were installed.   I inspected the different ruby directories and the  files were perfectly in /usr/lib/ruby/site_ruby/1.8  where I expected them.          </p>
+<p>With all the files seemd to be in the right place,  my next option was to strace a small ruby script that included augeas,  guess what that showed ..       </p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/site_ruby/1.8/augeas.rb&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/site_ruby/1.8/augeas.so&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/site_ruby/1.8/i686-linux/augeas.rb&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/site_ruby/1.8/i686-linux/augeas.so&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/site_ruby/augeas.rb&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/site_ruby/augeas.so&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/vendor_ruby/1.8/augeas.rb&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/vendor_ruby/1.8/augeas.so&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/vendor_ruby/1.8/i686-linux/augeas.rb&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/vendor_ruby/1.8/i686-linux/augeas.so&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/vendor_ruby/augeas.rb&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/vendor_ruby/augeas.so&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/1.8/augeas.rb&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/1.8/augeas.so&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/1.8/i686-linux/augeas.rb&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;/opt/ruby/lib/ruby/1.8/i686-linux/augeas.so&quot;, 0xbfd2af1c) = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;./augeas.rb&quot;, 0xbfd2af1c)       = -1 ENOENT (No such file or directory)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">stat64(&quot;./augeas.so&quot;, 0xbfd2af1c)       = -1 ENOENT (No such file or directory)</div></li></ol></pre></div></p>
+<p>Indeed ... vagrant throws the default ruby to /opt/ruby .. and obviously there were no ruby-augeas files in there.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../vagrant-rubylibs/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-1037" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-03-04T00:42:45+01:00">
+  <span class="month">Mar</span>
+  <span class="day">04</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../24-hours-puppet-drama/index.html">24 hours of Puppet Drama</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1446"><a href="../../../category/passenger/index.html" rel="tag" title="">passenger</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_441"><a href="../441/index.html" rel="tag" title="">ruby</a></li>
+<li class="taxonomy_term_1444"><a href="../../../category/ssl/index.html" rel="tag" title="">ssl</a></li>
+<li class="taxonomy_term_1445 last"><a href="../../../category/webrick/index.html" rel="tag" title="">webrick</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Over the past couple of days I've been fighting with a weird puppet problem , we eventually cracked it , but I promised a bunch of you to fully explain it here ;)</p>
+<p>So we were deploying 2 Blade chassis at a pretty remote location with a mix of phyisical and virtual machines, some 48 instances in total.    This is a pretty standard rollout, we've got a bunch of similar platforms in our lab , so we knew about a couple of glitches, what to expect etc.</p>
+<p>I was just keeping an eye on the deployment,  looking at the logs seeing if things were running fine, when suddenly a couple of puppet runs didn't come trough,  we had seen such behaviour before,  usually it's a matter of running them a gain a couple of times and they will come trough.  (Upgrading ruby and putting passenger in front of puppet actually solved those issues,<br />
+We'd even had a loop built in the platform that runs puppet a couple of times till it returns with the correct exit code just  to make sure. )</p>
+<p>We were first scratching the A chain of our setup, so that in the event of failure we could still bring up the B chain of the platform and be up and running again.   Actually machines were coming up.. slowly .. some of them took a bit longer .  One of the machine's clock was seriously off ..  the SSL was barfing on it  , so we set the bios clock, and restarted .. it was the machine with 6VM's   took a while but everything was back on schedule.. then suddenly things were going down fast  more and more puppetruns started failing and .. , at some point in time actually none of our puppet runs were working again .<br />
+I'd see the puppetmaster perfectly compile it's catalog</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">notice: Compiled catalog for ctl-0-a</div></li></ol></pre></div></p>
+<p>Then the client .. not wanting to get it ..</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Mar  1 11:10:45 ctl-0-a puppet-agent[3674]: Not using expired catalog for ctl-0-a from cache; expired at Tue Mar 01 09:50:06 +0000 2011</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Mar  1 11:10:45 ctl-0-a puppet-agent[3674]: Using cached catalog</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Mar  1 11:10:45 ctl-0-a puppet-agent[3674]: Could not retrieve catalog; skipping run</div></li></ol></pre></div></p>
+<p>We had gone from about 60% of our fresly deployed boxen working fine,  to not one<br />
+So what do you do .. indeed .. you turn on debugging.<br />
+You put both your puppetmaster and client in debug.   Nothing, no errors no nothing ..</p>
+<p>I asked some collegues, asked on irc .. much ideas but none of them that actually cracked the problem.  I did what I knew that solve similar problems before,</p>
+<p>I switched our serialization format from yaml back to pson , and back, no luck.<br />
+I upgraded ruby to a version from the  <a href="http://yum.glei.ch/" rel="nofollow">glei.ch</a> repository.    No luck.<br />
+I upgraded our Puppet version  2.6  to a version from <a href="http://tmz.fedorapeople.org/repo/puppet/epel/5/i386/" rel="nofollow">the TMZ Epel repo</a> , we cleaned out ssl the certificates on all sides  multiple times. Cleaned out  /var/lib/puppet  ,  We uninstalled puppet and reinstalled it.<br />
+It wasn't a DNS Problem</p>
+<p>I had started stripping my manifests to empty runs, those worked,  then started uncommenting the actual manifests again ...  Then in the middle of the debug our VPN connection to the remote location broke down,  we'd only be getting it back in the morning ..about 12 hours later not fun.  Murphy obviously ..</p>
+<p>So the next morning we dived right back in ... making those manifests bigger again,  removing all the stages,  1 or 2 successful runs, then with the same config .. back to failure.   On and off.. successfull and unscussessful.  ... it wasn't in the manifests ..</p>
+<p>So we decided to roll the puppetmaster back to it's previous version, that one was known to be stable, there obviously was something really fishy going, so that was the safest bet.</p>
+<p>Wrong,  the machine came up, but it took longer than expected,  and when trying to connect new clients to it .. nothing worked anymore .. same problem as before .. puppetmaster compiles catalog,  clients didn't get anything.    we started to suspect faulty hardware .. but how could that bee.. the puppetclient looked liked the only malfunctioning thing around .</p>
+<p>Then <a href="http://twitter.com/#!/dim0" rel="nofollow">Dim0</a> suggested me to look at the that one logfile I hadn't looked , /var/log/puppet/masterhttp.log    and then we saw it .  it was being flooded with ssl errors,   ssl errors from clients that shouldn't even be connecting to the puppetmaster at all.</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[2011-03-02 13:32:00] ERROR OpenSSL::SSL::SSLError: tlsv1 alert decrypt error</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:44:in `accept'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:44:in `listen'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/1.8/webrick/server.rb:173:in `call'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:42:in `listen'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:41:in `initialize'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:41:in `new'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:41:in `listen'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/1.8/thread.rb:135:in `synchronize'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:38:in `listen'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/network/server.rb:127:in `listen'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/network/server.rb:142:in `start'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/daemon.rb:124:in `start'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/application/master.rb:114:in `main'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/application/master.rb:46:in `run_command'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/application.rb:287:in `run'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/application.rb:393:in `exit_on_fail'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/lib/ruby/site_ruby/1.8/puppet/application.rb:287:in `run'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        /usr/sbin/puppetmasterd:4</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[2011-03-02 13:32:00] ERROR OpenSSL::SSL::SSLError: tlsv1 alert decrypt error</div></li></ol></pre></div></p>
+<p>What happened was that  'we' decided to bring of the  one backup machines back online, afterall once the slow starting server  came trough, it would be the passive node in the cluster , no worries there, right ?   Wrong,<br />
+This physical machine had 6 virtual machines with old ssl certificates that got stuck in an  loop which was put there to sure their puppetrun came trough correctly at boot time.</p>
+<p>Those 7 rogue clients which generated little to no relevant traffic on the network were saturating the default webrick,   killing them solved the problem and we were back to regular deployment in no time.</p>
+<p>The sad part is that our upcoming release already has passenger , a fresher version of ruby etc .. and that most of the above mentioned errors won't occur anymore there.<br />
+But in short .. don't use the default webrick .. it will kill you :)</p>
+<p>And no , not everything is a freaking dns problem, ssl is a big pain in the B too ..  :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-1034" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-02-10T20:20:44+01:00">
+  <span class="month">Feb</span>
+  <span class="day">10</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../ensure-running/index.html">Ensure Running</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_475"><a href="../475/index.html" rel="tag" title="">heartbeat</a></li>
+<li class="taxonomy_term_562"><a href="../562/index.html" rel="tag" title="">linux-ha</a></li>
+<li class="taxonomy_term_1438"><a href="../../../category/managed/index.html" rel="tag" title="">managed</a></li>
+<li class="taxonomy_term_1436"><a href="../../../category/modules/index.html" rel="tag" title="">modules</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1437 last"><a href="../../../category/unmanaged/index.html" rel="tag" title="">unmanaged</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Has anyone noticed that pretty much every puppet module one finds on the internet by default enables the service they try to configure in the module</p>
+<p>When looking at it from a single machine point of view it makes sense to include the module , have it configure your service  and directly enable it by default.</p>
+<p>So I started wondering .. isn't there anybody out there who is building clusters ?   Where services have to configured on multiple nodes but should NOT be running acitvely on all nodes by default because there is an external tool which manages that for you (Pacemaker framework eg.)</p>
+<p>Agreed it's a small patch to get the functionality you want , but it brings an extra overhead when one upgrades the modules etc.</p>
+<p>So if it doesn't bother you  please split your puppet module in 2 parts.. one you call to configure the service,  another which you call to enable the service , if you want to.</p>
+<p>thnx !</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../ensure-running/index.html#comments" title="Jump to the first comment of this posting.">7 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1033" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-02-06T21:06:12+01:00">
+  <span class="month">Feb</span>
+  <span class="day">06</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../fosdem/index.html">At Fosdem</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_768"><a href="../768/index.html" rel="tag" title="">fosdem</a></li>
+<li class="taxonomy_term_458"><a href="../458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_439 last active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+</ul></span>
+        </div>
+  <div class="content"><li>on Friday evening , apparently having a confirmed reservation in a resto is not enough to actually be welcome at that  restaurant.
+</li><li>at DrupalDevdays,   only 2 laptops were open during our presentation
+</li><li>at DrupalDevdays,   almost nobody in the room was already using CI
+</li><li>at Fosdem , the parking lot is full before 11:30 on a saturday
+</li><li>at Fosdem ,  much less Macs than last years .
+</li><li>at Fosdem , way too much rooms are already at full capacity  so you need to have 2-3 backup alternatives ..
+</li><li>at Fosdem , people expect me to be in certain rooms, at the same time
+</li><li>at Fosdem , even with too much rooms already full one still misses a bunch of interresting talks
+</li><li>at Fosdem , one  doesn't even realize friends are speaking there too ..
+</li><li>at Fosdem , Android  is the standard ...
+</li><li>at Fosdem , you are confronted with the fact you probably forgot more names of people than you remember ;(
+</li><li>at Fosdem , you are surrounded by famous open source people, that aren't even on the schedule
+</li><li>at the MySQL Meetup Dinner, Monty brings <a href="http://en.wikipedia.org/wiki/Salmiakki_Koskenkorva" rel="nofollow">Salmiakki</a>
+</li><li>at Fosdem , you wonder how many other people have survived their 11th edition
+</li><li>at Fosdem , you can't get into any devroom on sunday morning
+</li><li>at Fosdem , begging on Twitter to get in to a devroom from the other side of the door works   (at least for me :))
+</li><li>at Fosdem , netbooks are much less popular as opposed to 2-3 years ago ..
+</li><li>after fosdem ... you crash ..<br />
+</li></div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../fosdem/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1029" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-01-16T20:45:18+01:00">
+  <span class="month">Jan</span>
+  <span class="day">16</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../devops-meetups-fosdem-2011-edition/index.html">Devops  Meetups before Fosdem , 2011 Edition</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_768"><a href="../768/index.html" rel="tag" title="">fosdem</a></li>
+<li class="taxonomy_term_1123"><a href="../../../category/meetup/index.html" rel="tag" title="">meetup</a></li>
+<li class="taxonomy_term_439 last active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Just last last year we'll have a Devops meetup just before Fosdem,<br />
+I've setup a <a href="http://devopsfosdem2011.eventbrite.com/" rel="nofollow">page</a>  for registrations , that way we'll know how many people to make reservations for.</p>
+<p>If possible we'll go to the same place as last year ..  walking distance from the Fosdem Beer event.</p>
+<p>Feel free to spread the news !</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-1028" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-01-12T21:28:58+01:00">
+  <span class="month">Jan</span>
+  <span class="day">12</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../appliance-or-not-appliance/index.html">Appliance or Not Appliance</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_775 first"><a href="../775/index.html" rel="tag" title="">automation</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_632"><a href="../632/index.html" rel="tag" title="">infrastructure</a></li>
+<li class="taxonomy_term_599"><a href="../599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_814 last"><a href="../814/index.html" rel="tag" title="">security</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>That's the question <a href="http://blog.rootshell.be/2011/01/05/security-diy-or-plugnplay/" rel="nofollow">Xavier</a> asks in his blog entry titled<br />
+Security: DIY or Plug’n'Play</p>
+<p>To me the answer is simple,   most of the appliances I ran into so far have no way of configuring them apart from the ugly webgui they ship with their device.  That means that I can't integrate them with the configuration management framework I have in place for the rest of the infrastructure.      There is no way to automatically modify e.g firewall rules together with the relocation of a service which does happen automatically, and there is always some kind of manual interaction required.    Applicances tend to sit on a island,  either stay un managed ( be honest when's the last time you upgraded the firmware of that terminal server ? ) , or take a lot of additional efort to manage manually.  They require yet another set of tools than the set you are already using to manage your network.<br />
+They don't integrate with your backup strategy,  and don't tell me they all come with perfect MIB's.</p>
+<p>There's other arguments one could bring up against appliances, obviously people can spread fud about some organisation alledgedly paying people to put backdoors in certain operation systems.. so why would they not pay people to put backdoors in appliances , they don't even need to hide them in there ..  but my main concern is manageability .. and only a  web gui to manage the box to me just means that the <a href="http://queue.acm.org/detail.cfm?id=1921361" rel="nofollow">vendor</a> hates me and dooesn't want my business</p>
+<p>A good Appliance (either security or other type) needs to provide me an API that I can use to configure it,  in all other cases I prefer a DIY platform, as I can keep it in line with all my other tools, config mgmtn, deployment, upgrade strategies etc.</p>
+<p>Mabye a last question for Xavier to finish my reply ... I`m wondering how Xavier thinks he kan achieve High-availability by using a Virtual environment  for Virtual Appliances that are not cluster aware using the virtual environment.    A fake comfortable feeling of higher availability , maybe..  but High Availability  that I'd like to see.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../appliance-or-not-appliance/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
+</ul></div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="index1.html?page=1" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-item"><a href="index.html" title="Go to page 1" class="active">1</a></li>
+<li class="pager-item"><a href="index1.html?page=1" title="Go to page 2" class="active">2</a></li>
+<li class="pager-current">3</li>
+<li class="pager-item"><a href="index3.html?page=3" title="Go to page 4" class="active">4</a></li>
+<li class="pager-item"><a href="index4.html?page=4" title="Go to page 5" class="active">5</a></li>
+<li class="pager-item"><a href="index5.html?page=5" title="Go to page 6" class="active">6</a></li>
+<li class="pager-next"><a href="index3.html?page=3" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="index5.html?page=5" title="Go to last page" class="active">last »</a></li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/taxonomy/term/439?page=2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:25:49 GMT -->
+</html>

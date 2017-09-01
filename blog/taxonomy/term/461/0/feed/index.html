@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - open source</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/461/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>FOSDEM 2014 is coming</title>
+ <link>http://127.0.0.1:8080/blog/fosdem-2014-coming</link>
+ <description>&lt;p&gt;and with that almost a full week of side events.&lt;br /&gt;
+For those who don&#039;t know FOSDEM, (where have you been hiding for the past 13 years ? )  Fosdem is the annual Free and Open Source Developers European meeting. If you are into open source , you just can&#039;t mis this event where thousands of likeminded people will meet.&lt;/p&gt;
+&lt;p&gt;And if 2 days of FOSDEM madness isn&#039;t enough people organise events around it.&lt;/p&gt;
+&lt;p&gt;Last year I organised PuppetCamp in Gent, the days before Fosdem and a MonitoringLove Hackfest in our office the 2 days after FOSDEM This year another marathon is planned.&lt;/p&gt;
+&lt;p&gt;On Friday (31/1/2014) the CentOs community is hosting a &lt;a href=&quot;http://wiki.centos.org/Events/Dojo/Brussels2014&quot; rel=&quot;nofollow&quot;&gt;Dojo in Brussels&lt;/a&gt; at the IBM Forum. (Free, but registration required by the venue)&lt;/p&gt;
+&lt;p&gt;After the success of PuppetCamp in Gent last year we decided to open up the discussion and get more Infrastructure as Code people involved in a &lt;a href=&quot;http://cfgmgmtcamp.eu/&quot; rel=&quot;nofollow&quot;&gt;CfgMgmtCamp.eu&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;The keynotes for CfgMgmtCamp will include the leaders of the 3 most popular tools around ,  both Mark Burgess, Luke Kanies and Adam Jacob will present at the event which will take place in Gent  right after Fosdem.  We expect people from all the major communities including, but not limited to , Ansible, Salt, Chef, Puppet, CFengine, Rudder, Foreman and Juju (Free but registration required for catering)&lt;/p&gt;
+&lt;p&gt;And because 3 events in one week isn&#039;t enough the RedHat Community is hosting their &lt;a href=&quot;http://community.redhat.com/blog/2013/12/announcing-infrastructure-next/&quot; rel=&quot;nofollow&quot;&gt;Infrastructure.next&lt;/a&gt; conference after CfgMgmtCamp at the same venue.  (Free but registration required for catering)&lt;/p&gt;
+&lt;p&gt;cya in Belgium next year..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/fosdem-2014-coming#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/cfengine">cfengine</category>
+ <category domain="http://127.0.0.1:8080/blog/category/chef">chef</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/465">community</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1076">events</category>
+ <category domain="http://127.0.0.1:8080/blog/category/keynotes">keynotes</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetize">puppetize</category>
+ <pubDate>Sun, 22 Dec 2013 20:04:04 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1092 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Drupal and Configuration Mgmt, we&#039;re getting there ... </title>
+ <link>http://127.0.0.1:8080/blog/drupal-and-configuration-mgmt-were-getting-there</link>
+ <description>&lt;p&gt;For those who haven&#039;t noticed yet .. I`m into devops  .. I`m also a little bit into Drupal, (blame my last name..)  ,  so one of the frustrations I&#039;ve been having with Drupal (an much other software) is the automation of deployment and upgrades of Drupal sites ... &lt;/p&gt;
+&lt;p&gt;So for the past couple of days  I&#039;ve been trying to catch up to the ongoing discussion regarding the results of the &lt;a href=&quot;http://groups.drupal.org/node/155559&quot; rel=&quot;nofollow&quot;&gt;configuration mgmt  sprint&lt;/a&gt; , I&#039;ve been looking at it mainly from a systems point of view , being  with the use of Puppet/ Chef or similar tools in mind ..  I know I`m late to the discussion but hey , some people take holidays in this season :)   So below you can read a bunch of my comments ... and thoughts on the topic ..&lt;/p&gt;
+&lt;p&gt;First of all , to me JSON looks like a valid option.&lt;br /&gt;
+Initially there was the plan to wrap the JSON in a PHP header for &quot;security&quot; reasons, but that seems to be gone even while nobody mentioned the problems that would have been caused for external configuration management tools.&lt;br /&gt;
+When thinking about external tools that should be capable of mangling the file plenty of them support JSON but won&#039;t be able to recognize a JSON file with a weird header ( thinking e.g about Augeas  (augeas.net) , I`m not talking about IDE&#039;s , GUI&#039;s etc  here, I`m talking about system level tools and libraries  that are designed to mangle standard files.   For Augeas we could create a separate lens to manage these files , but other tools might have bigger problems with the concept.&lt;/p&gt;
+&lt;p&gt;As &lt;a href=&quot;http://groups.drupal.org/node/155559#comment-520134&quot; rel=&quot;nofollow&quot;&gt;catch&lt;/a&gt; suggest a clean .htaccess should be capable of preventing people to access the .json files  There&#039;s other methods to figure out if files have been tampered with , not sure if this even fits within Drupal  (I`m thinking about reusing existing CA setups rather than having yet another security setup to manage) , &lt;/p&gt;
+&lt;p&gt;In general to me tools such as puppet should be capable of modifying config files , and then activating that config with no human interaction required , obviously drush is a good candidate here to trigger the system after the config files have been change, but unlike some people think having to browse to a web page to confirm the changes is not an acceptable solution.  Just think about having to do this on multiple environments ... manual actions are error prone.. &lt;/p&gt;
+&lt;p&gt;Apart from that I also think the storing of the certificates should not be part of the file.  What about a meta file with the appropriate checksums ?  (Also if I`m using Puppet or any other tool to manage my config files then the security , preventing to tamper these  files, is already covered by the configuration management tools,  I do understand that people want to build Drupal in the most secure way possible, but I don&#039;t think this belongs in any web application.  &lt;/p&gt;
+&lt;p&gt;When I look at other similar discussions that wanted to provide a similar secure setup they ran into a lot of end user problems with these kind of setups,  an alternative approach is to make this configurable and or plugable.   The default approach should be to have it enable, but the more experienced users should have the opportunity to disable this, or replace it with another framework.   Making it plugable upfront solves a lot of hassle later.&lt;/p&gt;
+&lt;p&gt;Someone in the discussion noted :&lt;br /&gt;
+&quot;One simple suggestion for enhancing security might be to make it possible to omit the secret key file and require the user to enter the key into the UI or drush in order to load configuration from disk.&quot;&lt;/p&gt;
+&lt;p&gt;Requiring the user to enter a key in the UI or drush would be counterproductive in the goal one wants to achieve,  the last thing you want as a requirement is manual/human interaction when automating setups.   therefore a feature like this should never be implemented  &lt;/p&gt;
+&lt;p&gt;Luckily there seems to be  new idea around &lt;a href=&quot;http://groups.drupal.org/node/157379&quot; rel=&quot;nofollow&quot;&gt;that&lt;/a&gt; doesn&#039;t plan on using a raped json file&lt;br /&gt;
+&lt;cite&gt;instead of storing the config files in a standard place, we store them in a directory that is named using a hash of your site&#039;s private key, like sites/default/config_723fd490de3fb7203c3a408abee8c0bf3c2d302392. The files in this directory would still be protected via .htaccess/web.config, but if that protection failed then the files would still be essentially impossible to find. This means we could store pure, native .json files everywhere instead, to still bring the benefits of JSON (human editable, syntax checkable, interoperability with external configuration management tools, native + speedy encoding/decoding functions), without the confusing and controversial PHP wrapper.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Figuring out the directory name for the configs from a configuration mgmt tool then could be done by something similar to  &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;cd sites/default/conf/$(ls sites/default/conf|head -1)&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;In general I think the proposed setup looks acceptable , it definitely goes in the right direction of providing systems people with a way to automate the deployment of Drupal sites and applications at scale.&lt;/p&gt;
+&lt;p&gt;I`ll be keeping a eye on both the direction they are heading into and the evolution of the code !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/drupal-and-configuration-mgmt-were-getting-there#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/chef">chef</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/440">configuration management</category>
+ <category domain="http://127.0.0.1:8080/blog/category/deployment">deployment</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Sun, 17 Jul 2011 20:39:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1045 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>The New devops Audience, Drupalistas !  </title>
+ <link>http://127.0.0.1:8080/blog/new-devops-audience-drupalistas</link>
+ <description>&lt;p&gt;When I first started out giving talks about devops ,  I realized that I was preaching to the choir,  some Barcamps,  the Keynote at Loadays , the Dutch Unix Usergroup etc .. lots of people in the audiences knew about the pains we were trying to solve, lots of them already knew some of the tools we use  and lots of them already talk a lot with their developers or are part of the deveoplment teams&lt;/p&gt;
+&lt;p&gt;With &lt;a href=&quot;http://www.slideshare.net/jedi4ever/from-devops-to-devops-what-a-difference-one-character-makes&quot; rel=&quot;nofollow&quot;&gt;our&lt;/a&gt; Devoxx talk, Patrick and I started to talk to a different audience , the Java devs , and it was great, we all learned from it.  With that experience in mind I submitted a variation of the talk to an audience that is also very  important to me ...  the Drupal Community .&lt;/p&gt;
+&lt;p&gt;Devops is gaining importance , while &lt;a href=&quot;http://inuits.be/&quot;&gt;we&lt;/a&gt; been practicing devops methodologies since ever, now even the big analyst companies etc are writing and talking about the movement,  the drupal community really should also get involved.&lt;/p&gt;
+&lt;p&gt;So if you care about devops,  about devs and ops working together, about continuous integration, continuous deployment, configuration mangement, automation, monitoring and scale, if you&#039;ve heard about all of the above but have no clue what Puppet, Hudson or Fabric can do for you , &lt;a href=&quot;http://chicago2011.drupal.org/sessions/devops-and-drupal&quot; rel=&quot;nofollow&quot;&gt;vote&lt;/a&gt; here for my proposed talk at Drupalcon Chicago,&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/new-devops-audience-drupalistas#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <pubDate>Tue, 21 Dec 2010 21:35:08 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1026 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Bug Zapper</title>
+ <link>http://127.0.0.1:8080/blog/bug-zapper</link>
+ <description>&lt;p&gt;Dear Fedoracommunity,&lt;/p&gt;
+&lt;p&gt;Over the course of the day I recieved 22^H3 mails from your friendly Bug Zapper.&lt;/p&gt;
+&lt;p&gt;Most of those bugs where bugs I had reported upon crashes using bug-buddy. Bugs on different desktop tools such as .. synergy, evolution, gwibber , gnome-settings and probably some others&lt;/p&gt;
+&lt;p&gt;I do understand that I development goes on and on .. and your fancy devs don&#039;t care anymore about bugs I reported on Fedora 12 as they are all hacking on Fedora 15 and that I should update more frequently ... &lt;/p&gt;
+&lt;p&gt;But what I don&#039;t get is that non of these bugs was ever touched,&lt;br /&gt;
+they&#039;ve been automatically created , and automatically closed&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://tieguy.org/blog/2004/09/27/mon-27-sep-2004-3/&quot; rel=&quot;nofollow&quot;&gt;Luis&lt;/a&gt; already told us ages ago ..  every project needs a bugmaster  apparently Fedora replaced that bugmaster with a Bug Zapper.&lt;/p&gt;
+&lt;p&gt;So can someone please explain my why I should continue to try to improve Fedora by reporting bugs ?&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/bug-zapper#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/bugbuddy">bugbuddy</category>
+ <category domain="http://127.0.0.1:8080/blog/category/bugmaster">bugmaster</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/712">evolution</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/category/gwibber">gwibber</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <pubDate>Wed, 03 Nov 2010 20:46:32 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1021 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>A parallel universe</title>
+ <link>http://127.0.0.1:8080/blog/parallel-universe</link>
+ <description>&lt;p&gt;What happens when you mention &lt;a href=&quot;http://www.youtube.com/watch?v=ph6ZeEDnFmc&quot; rel=&quot;nofollow&quot;&gt;Open Office and Firewall&lt;/a&gt; in once sentence, in public  ?&lt;/p&gt;
+&lt;p&gt;People start actually building &lt;a href=&quot;http://www.wzdftpd.net/blog/index.php?2010/06/16/46-le-pare-feu-openoffice&quot; rel=&quot;nofollow&quot;&gt;it&lt;/a&gt;  (French Article) &lt;/p&gt;
+&lt;p&gt;Then add to that list that there&#039;s also people out there that think that running MySQL over NFS is providing them High Availability,    or that using DNS Round Robin will provide them a scalable setup,&lt;/p&gt;
+&lt;p&gt;So yes .. apparently there is indeed a parallel universe out there.&lt;/p&gt;
+&lt;p&gt;And no .. I don&#039;t want to see &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/building-appliances&quot; rel=&quot;nofollow&quot;&gt;Webmin&lt;/a&gt;   in any Appliance .. that is a joke..., or rather a rant ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/parallel-universe#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/firewall">firewall</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/551">openoffice</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/954">presentation</category>
+ <category domain="http://127.0.0.1:8080/blog/category/weridows">weridows</category>
+ <category domain="http://127.0.0.1:8080/blog/category/zarafa">zarafa</category>
+ <category domain="http://127.0.0.1:8080/blog/category/zarafacamp">zarafacamp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/zarafasummercamp">zarafasummercamp</category>
+ <pubDate>Mon, 21 Jun 2010 19:19:16 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1013 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>11 days till Loadays</title>
+ <link>http://127.0.0.1:8080/blog/11-days-till-loadays</link>
+ <description>&lt;p&gt;That&#039;s right .. only 11 more ...&lt;br /&gt;
+The &lt;a href=&quot;http://www.loadays.org/schedule&quot; rel=&quot;nofollow&quot;&gt;schedule&lt;/a&gt; looks promising, there will be some devops juice,  some open spaces, some tutorials, som regular talks .. it really looks promising ...  the schedule is packed ,&lt;/p&gt;
+&lt;p&gt;Apart from the talks, tutorials and open spaces there&#039;s also the&lt;br /&gt;
+Pizza party and the Beer event on saturday ...&lt;/p&gt;
+&lt;p&gt;No need to register .. just show up ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/11-days-till-loadays#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/492">antwerp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/chef">chef</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/455">conference</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/loadays">loadays</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/533">wilrijk</category>
+ <pubDate>Tue, 30 Mar 2010 20:59:34 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">995 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Fosdem 2010</title>
+ <link>http://127.0.0.1:8080/blog/fosdem-2010</link>
+ <description>&lt;p&gt;Fosdem 2010 was my  10th  fosdem Edition (including the first OSDEM)&lt;br /&gt;
+As every year Fosdem suffered even more from it&#039;s own success.&lt;/p&gt;
+&lt;p&gt;On Friday evening  ther was the obligatory Beer event... however as  people need to eat to .. the Devops crowd fled the scene&lt;/p&gt;
+&lt;p&gt;I had made reservations for a 20 something group and with the CentOS crowd joining us (as there was some overlap anyhow) we were 25 when we arrived in the restaurant .&lt;br /&gt;
+&lt;img src=&quot;http://www.krisbuytaert.be/images/DevopsMeet.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Dinner and Discussions were great .. I learned about some new projects and we had some insightfull dicussions on how fat your thin foil should be ...&lt;/p&gt;
+&lt;p&gt;After dinner we went back to the Beer Event were lots of Free Beer was tasted ...&lt;/p&gt;
+&lt;p&gt;Saturday was the first full day of Fosdem,  as usual Fosdem was the victim of it&#039;s own success  , too much interresting stuff to see .. too little time.&lt;/p&gt;
+&lt;p&gt;Lots of Devrooms had the &quot;FULL&quot; sign put up more than you want as a visitor ...&lt;br /&gt;
+I never even made it into the Drupal or NoSQL rooms :(&lt;/p&gt;
+&lt;p&gt;Sadly I had to correct  &lt;a href=&quot;http://identi.ca/notice/20962834&quot;&gt;Ploum&lt;/a&gt;&#039;s first law  but for a lot of people .. Fosdem each time means the battle choosing which presentation you&#039;ll go to ...   If you can even make it to the talk .. as usually the the hallway track is much more interresting :)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/MySQLMeetup.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The MySQL devroom was on sunday but on saturday the crowd met in an Italian place nearby the Fosdem campus to get to know each other and chat a lot ..&lt;br /&gt;
+The discussions ranged from French vs Canadaian and the future of Forks&lt;/p&gt;
+&lt;p&gt;During Saturday afternoon &lt;a href=&quot;http://twitter.com/patrickdebois&quot;&gt;@patrickdebois&lt;/a&gt; suggested a Devops Meetup for Breakfast ...   and some how that also happened ...&lt;/p&gt;
+&lt;p&gt;When I arrived at Fosdem on sunday morning  they were still there :)&lt;br /&gt;
+&lt;img src=&quot;http://www.krisbuytaert.be/images/DevopsBrkFast.jpg&quot; /&gt;&lt;br /&gt;
+I spent the biggest part of Sunday in and around the MySQL devroom listening to a bunch of interresting talks&lt;/p&gt;
+&lt;p&gt;My own talk  went fairly well given the time constraint ..   sqeezing content for an hour in 20 minutes means you can&#039;t really go deep into the topics ...&lt;br /&gt;
+My initial plan was to only focus on Pacemaker integration however the community had voted for the overview talk :)&lt;/p&gt;
+&lt;div style=&quot;width:425px;text-align:left&quot; id=&quot;__ss_3116591&quot;&gt;&lt;a style=&quot;font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/KrisBuytaert/mysql-ha-alternatives-2010&quot; title=&quot;MySQL  HA  Alternatives 2010&quot;&gt;MySQL  HA  Alternatives 2010&lt;/a&gt;
+&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mysql-ha-alternatives-100209131954-phpapp01&amp;stripped_title=mysql-ha-alternatives-2010&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mysql-ha-alternatives-100209131954-phpapp01&amp;stripped_title=mysql-ha-alternatives-2010&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;&quot;&gt;View more &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;After my own talk it was almost time to head to the Janson auditorium for the Footnote of Greg Kroah-Hartman, and as on any Fosdem .. there once again had to be Beer&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/FootNote.jpg&quot; /&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/fosdem-2010#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/768">fosdem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/nosql">nosql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <pubDate>Tue, 09 Feb 2010 20:30:09 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">983 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Planet , Drupal Style</title>
+ <link>http://127.0.0.1:8080/blog/planet-drupal-style</link>
+ <description>&lt;p&gt;So when you setup an aggregator there&#039;s this one thing you miss from a regular planet ...the list of blogs with their individual Feeds.&lt;/p&gt;
+&lt;p&gt;I wanted to use this for planet.loadays.org again and realized I don&#039;t know where I got this snippet from or if I wrote it myselve or whatever .. but I do realize that unless I document it here I won&#039;t be able to point other people to it again :)  So just create a block like this one :&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;?php&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; $subscriptions = db_query(&#039;SELECT title,link,url FROM {aggregator_feed} ORDER BY title&#039;);&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; while ($list = db_fetch_object($subscriptions)) {&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;      print &amp;quot;&amp;lt;a href=\&amp;quot;$list-&amp;gt;link\&amp;quot;&amp;gt;$list-&amp;gt;title&amp;lt;/a&amp;gt; (&amp;lt;a href=\&amp;quot;$list-&amp;gt;url\&amp;quot;&amp;gt;feed&amp;lt;/a&amp;gt;)&amp;lt;br&amp;gt;\n&amp;quot;;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;      }&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;?&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/planet-drupal-style#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/code">code</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/485">php</category>
+ <category domain="http://127.0.0.1:8080/blog/category/planet">planet</category>
+ <pubDate>Fri, 15 Jan 2010 19:02:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">977 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Option D</title>
+ <link>http://127.0.0.1:8080/blog/option-d</link>
+ <description>&lt;p&gt;Lots of people writing about Snorkle again  today ,Monty &lt;a href=&quot;http://monty-says.blogspot.com/2009/12/help-saving-mysql.html&quot; rel=&quot;nofollow&quot;&gt;Says, help saving MySQL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;He gives us different options, a , b or c .. but I , and some others, want an option d &lt;/p&gt;
+&lt;p&gt;No I don&#039;t trust Oracle,  it&#039;s not like they have been a very good Open Source Citizen, yes they contribute to the kernel and other projects but my feeling says it&#039;s only because they have to (Kernel, Xen and others ) not because they Want to (thinking about Unfakable etc) , if they would really want to they probably would work with the CentOS community more etc, and as Monty mentions their InnoDB track record could be better.&lt;/p&gt;
+&lt;p&gt;But on the other hand I don&#039;t think the EU should block the deal because Monty wants his baby back , cheap , as honestly imvho that&#039;s what they really want, be able to buy MySQL back for a nice price,  either beceause Oracle is being forced by the EU to split up Sun, or eventually the deal doesn&#039;t come trough and they can buy MySQL back when Sun really goes belly up (which is what probably happens when option a)  is chosen.&lt;/p&gt;
+&lt;p&gt;According to &lt;a href=&quot;http://money.cnn.com/news/newsfeeds/articles/marketwire/0568514.htm&quot; rel=&quot;nofollow&quot;&gt;CNN&lt;/a&gt; , Oracle has made some pledges about MySQL earlier today.&lt;br /&gt;
+My main question there however is about the Opposite of option 5.  which is exactly what created the problem.&lt;br /&gt;
+&lt;cite&gt;&lt;br /&gt;
+5. Support not mandatory. Customers will not be required to purchase support services from Oracle as a condition to obtaining a commercial license to MySQL. &lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Yes we want support, but no we don&#039;t want a commercial license with it, we want support on the GPL version, which is a problem lots of Open Source vendors struggle with , some of them&lt;br /&gt;
+force people wanting to buy support to go for the commercial license.  And it is exaclty that  upselling  that  got MySQL in the troubles it has  today .&lt;/p&gt;
+&lt;p&gt;Josh Berkus has a point declaring&lt;br /&gt;
+&lt;a href=&quot;http://it.toolbox.com/blogs/database-soup/snoracle-mysql-and-the-death-of-duallicensing-35850?rss=1&quot; rel=&quot;nofollow&quot;&gt;Dual Licensing dead&lt;/a&gt;, just as I he  sees much more future in the Percona like model than in the Dual License model MySQL used to have ..&lt;/p&gt;
+&lt;p&gt;Dries &lt;a href=&quot;http://pooteeweet.org/blog/0/1639#m1639&quot; rel=&quot;nofollow&quot;&gt; points&lt;/a&gt; to one of the comments  on&lt;br /&gt;
+&lt;a href=&quot;http://twitter.com/Dries/status/6660856340&quot; rel=&quot;nofollow&quot;&gt;  Lukas  Kahwe  Smith &#039;s Come On Money er Monty article&lt;/a&gt;  stating&lt;br /&gt;
+&lt;cite&gt;Monty walks away with several millions in hard cash, while [PHP +] MySQL cheerleaders who bet on &quot;MySQL&quot; franchise only walk away with a cute dolphin T-shirt&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Which makes me wonder when I`ll be getting a nice Acquia T-shirt :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/option-d#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/870">acquia</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/eu">eu</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/467">oracle</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/485">php</category>
+ <category domain="http://127.0.0.1:8080/blog/category/snorkle">snorkle</category>
+ <pubDate>Mon, 14 Dec 2009 20:30:42 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">969 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Life with an Android</title>
+ <link>http://127.0.0.1:8080/blog/life-android</link>
+ <description>&lt;p&gt;I&#039;ve have never been a really an HTC fan, because of the platform they used before, I have been a Ericsson GA628, SH888, then Sony Ericsson fanboy for all my life  T39m, K700, K800i , so this is my first attempt into using a different brand of phone , I&#039;ve been wanting an Open Phone for ages.. but I&#039;ve been waiting for Godot, er the openMoko, for way to long now so with the introduction of the HTC and my K800i being long overdue for a replacement.&lt;/p&gt;
+&lt;p&gt;The Good,&lt;/p&gt;
+&lt;p&gt;So in gereral I`m pretty satisfied with my HTC Hero so far,  it&#039;s quick/reactive , the wifi has good reception ,  screen quality is good,  the touch screen however will take some time to get used to .. it already happened a couple of times that I accidently started calling the wrong person while I was still browing trough the addressbook.   But in short .. I like the phone ..&lt;/p&gt;
+&lt;p&gt;However there&#039;s &lt;a href=&quot;http://laforge.gnumonks.org/weblog/2009/11/04/#20091104-android_mythbusters&quot; rel=&quot;nofollow&quot;&gt;lots&lt;/a&gt; of people out there warning us that the Android isn&#039;t really an Open phone, true,  lots of the software on it is proprietary, and lots of the software in the Market is cripple or pay ware.  However imvho it&#039;s a step in the good direction going from a fully closed phone   so something already more open...&lt;/p&gt;
+&lt;p&gt;The Bad&lt;/p&gt;
+&lt;p&gt;The volume button is to easy to use when in your pocket , hence putting the phone on silent by walking around is not unusable  and  Camera Autofocus is pretty bad .. no I&#039;m not comparing to my EOS 400D, but to my previos Ericsson phone.  the quality of the pictures is shaky  and there is no way to cover the lens.&lt;/p&gt;
+&lt;p&gt;As for the The Ugly I&#039;d have to say Bluetooth support,   hey I want to be able to browse / download my addressbook from my Phone to my Bluetooth enabled car  , this is a feature I had on my previous phone, and the phone before that ..I want to be able to upload and download files over Bluetooth, works on both my previous phones , I want to be able to send phonebook entries over bluetooth .. so that&#039;s pretty much my biggest annoyancy&lt;br /&gt;
+(unless someone knows solutions for this ?) &lt;/p&gt;
+&lt;p&gt;So when will Sony Ericsson release their Android in Europe ?  I`m hoping they&#039;d keep the features they already had on their previous phones , so I`m hoping for better camera and better bluetooth support ..&lt;/p&gt;
+&lt;p&gt;We have come a long way for Linux to be present in our daily life , even for Joe Average,  at home we watch TV using MythTV, my alarm is a Chumby, the phone in my downstairs office is a TuxScreen ...  So I`m wondering when I finally will get a car that is running Linux,&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/life-android#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/android">android</category>
+ <category domain="http://127.0.0.1:8080/blog/category/bluetooth">bluetooth</category>
+ <category domain="http://127.0.0.1:8080/blog/category/htc-hero">htc hero</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/489">linux</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <pubDate>Thu, 05 Nov 2009 18:06:10 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">954 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

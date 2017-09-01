@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=88 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:42:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Everything is a Freaking DNS problem | Devops Needs Sushi</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/blog/blogapi/rsd/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem RSS" href="/blog/rss/index.xml" />
+<link rel="shortcut icon" href="/blog/misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="/blog/sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="front not-logged-in page-node one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="/blog/index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="/blog/files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="/blog/index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="/blog/social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+<div class="content">
+<div id="node-160" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-04-06T21:21:06+02:00">
+  <span class="month">Apr</span>
+  <span class="day">06</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/160/index.html">Misc CFEngine thingies</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>I'm doing a lot of CFengine studying, learning and testing these days,<br />
+and I guess one could study CFengine for a couple of years still not knowing everything about it ;)<br />
+Up till last week the 2 most difficult tasks I had in mind was the initial distribution of keys , and  how I was going to put Cfengine in HA.</p>
+<p>As someone at the UKUUG Lisa conference mentionned you can distribute keys using cfrun.  If you make sure that on your managed nodes you also have a cfservd running that accepts keys from a certain subnet, you then do a echo y | cfrun  with your managed nodes in your cfrun.hosts file  cfrun will help you spread the keys.<br />
+Also cfengine is so kind to try multiple values of server = ( server-a server-b ) so that if server-a is down it tries server-b , next step is to find out a intelligent scheme for modifying the configs of server-b</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/160/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-159" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-04-06T21:20:20+02:00">
+  <span class="month">Apr</span>
+  <span class="day">06</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/159/index.html">Java Error, Google returns 0 results .. till now :)</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Google is was not very helpful with the "Exception in thread "main" java.lang.Error: Probable fatal error:No fonts found."  I ran into earlier this week.  I figured out via another box that /usr/lib/jvm/java/jre/lib containd a missing link to fonts -&gt; /usr/share/fonts/java<br />
+Which actually can be found in java-1.5.0-sun-font alike packages.  Who knows this helps soneone someday.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/159/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-158" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-04-06T21:17:43+02:00">
+  <span class="month">Apr</span>
+  <span class="day">06</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/158/index.html">Presentations</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>My most recent presentations are online ( UKUUG &amp; TMAB ) ,  yes the <a href="http://www.x-tend.be/~kb/presentations/UKUUG.Lisa.2006.odp">UKUUG</a> one  has some minor changes when comparing to the LinuxDays.lu presentation.</p>
+<p>The other presentation was about <a href="http://www.x-tend.be/~kb/presentations/ContributingToOpenSource.odp">Contributing to Open Source</a>,  A strange experience for me I kind of got used to rushing trough my presentations in about 75% of the time I have available for my talks,  only this time to realise that I had used about twice the time  I had available , strange thing the moderator didn't even try to warn me that I was going over time.</p>
+</div>
+</div>
+<div id="node-157" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-04-06T12:39:52+02:00">
+  <span class="month">Apr</span>
+  <span class="day">06</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/157/index.html">Deep Hacking Mode Explained</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>We can't  idle,  we can't sit down and listen , we can't stay awake in meetings ,<br />
+and the worst part of all, once we are sitting behind our laptops, the rest of the world doesn't exist anymore</p>
+<p>Guess what.. there are even  <a href="http://www.carotids.com/lifestyle/health-problems-related-to-the-geek-lifestyle/">explanations</a> for this behaviour</p>
+<blockquote><p>The typical geek trains their brain to be heavily focused while multitasking day after day. Is it surprising that this same brain does not do well when forced to isolate down to one task? Listening in a meeting is a very isolated, very passive event. Coding, developing, debugging  these are not passive at all. The geek brain is just not trained to sit quietly and listen.</p>
+</blockquote>
+<pre></pre><p>Now the next question is,  do we want to be cured ? :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/157/index.html#comments" title="Jump to the first comment of this posting.">25 comments</a></li>
+</ul></div>
+</div>
+<div id="node-156" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-03-31T13:26:33+02:00">
+  <span class="month">Mar</span>
+  <span class="day">31</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/156/index.html">LinuxTag 2006 - Grid, Cluster and Virtualisation Track</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>It's almost completely finished  the <a href="http://www.linuxtag.org/2006/de/besucher/programm/freies-vortragsprogramm/samstag.html">LinuxTag 2006 - Grid, Cluster and Virtualisation Track </a><br />
+schedule,</p>
+<p>Reviewing all the submissions was a lot of work,  there were a lot of interresting topics and we had to decline a lot of them,  I hope we managed to create a schedule where all kinds of different topics in the track will be tackled.</p>
+<p>The <a href="http://www.linuxtag.org/2006/en/besucher/programm/freies-vortragsprogramm/freitag.html">Kernel track</a> on friday also look interresting .. It's nice seeing people such as Alasdair and Matt showing up again :)  Too bad once again Wim can't make it :(</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/156/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-155" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-03-29T17:47:57+02:00">
+  <span class="month">Mar</span>
+  <span class="day">29</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/155/index.html">Open Source vs Web 2.0</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p><a href="http://zgp.org/~dmarti/blosxom/www/on-web-20.html">Don Marti </a> on Open Source and Web 2.0 stuff</p>
+<blockquote><p>There's some overlap between being a "Web 2.0" company and being an "open source" one. Here's where I think Web 2.0 goes further than open source. If open source is trees, Web 2.0 is hemp. Instead of harvesting big particpation from a committed developer, tester, user, partner, or customer, you get a small quantity of fiber per transaction, fast, and you do a lot of them.</p>
+</blockquote>
+</div>
+</div>
+<div id="node-154" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-03-27T12:45:00+02:00">
+  <span class="month">Mar</span>
+  <span class="day">27</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/154/index.html">MySQL Bugs: #12027: DBDICT: File has already been opened</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>I just  ran into <a href="http://bugs.mysql.com/bug.php?id=12027">MySQL Bugs: #12027: </a> ,  one of the fixes for this is to run ndbd --initial again, however as I had already done that on my other node    just removing the offending file also worked.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/154/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-153" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-03-24T15:04:33+01:00">
+  <span class="month">Mar</span>
+  <span class="day">24</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/153/index.html">FBI Involved in DNS Problems (almost)</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Now <a href="http://www.centos.org/modules/news/article.php?storyid=127">this</a> really is an annoying DNS problem :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/153/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-152" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-03-23T20:04:37+01:00">
+  <span class="month">Mar</span>
+  <span class="day">23</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/152/index.html">Report of the UKUUG Spring Conference Day 2</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>To start with the Postgresql talk , I ran in just too late as the slides about slony were just finished :(</p>
+<p>Skipped out on Nigel's Talk,  after not having time to play with the OpenPower at the office I`m assuming that Macbar knows enough about it already ,<br />
+Then the awkard break before your own talk it's the waiting and the people dropping in one by one ,  It's much easier to start directly after someone else :)  Ray introduced my talk as "The talk you have all been waiting for" , hmm.. he shouldn't have done that.  It made me fall back into my old bad habit of speeding trough my slides in just about 35 minutes rather than the scheduled 45 I had.</p>
+<p>I'm starting to  hear myselve thinking during a talk that I gave before "Hmm.. I've already said this"  then realising 2 slides later that I actually didn't say that yet during that talk but during a previous one.  That really might have confused people.  I really have to work on my presentation skills.</p>
+<p>But then again it's the content that counts and discussing other ideas with people afterwards, actually much of the discussion already happened before :)</p>
+<p>Back up the hill, to Collingwood College, for lunch then back down the hill for the Kerberos talk.   Lunch was good at this conference, the only donwside being that you had 1 hour time and you also needed about  a 5-10 minutes up the hill and back down which didn't really give you the opportunity to eat and rest.</p>
+<p>I sneeked out during the break to get a drink,  and the machine ate my money :((</p>
+<p>Alex has been quite active on de MySQL Cluster list so I`m kind of interested to see what he has to say about it.  Hmmm. what's a NetApp Filter ? :)<br />
+He is giving a general introductory talk on LAMP HA, nothing really new there for me ..  turns out he is about to get his book on MySQL Cluster published really soon now.<br />
+I spoke to him afterwards on what to expect from the book, mainly regarding MySQL 5.1 etc..<br />
+The Register's talk on their Apache infrastructure is matchining really with his paper, good talk, but as he concludes they are extremely lucky that their site is mostly static,  this ain't working with fully personalised an dynamic sites.</p>
+<p><a href="http://pieter.fab4.be/">Pieter</a> also just posted his report .. which is quite normal as my laptop is bridging his internet access ;)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/152/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-151" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-03-23T19:52:52+01:00">
+  <span class="month">Mar</span>
+  <span class="day">23</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/151/index.html">Report of the UKUUG Spring Conference  Day 1(delayed)</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>The next couple of blog entries have been written offline and pasted here when I finally had time and network access, so some stuff might be out of sequence :)</p>
+<p>Pieter and I flew from Zaventem to Newcastle on tuesday, then the Metro to from Newcastle Airport to Newcastle Train Station , then the train from Newcastle Station to Durham station, then the Bus to Collingwood college where we are staying.</p>
+<p>So here we are now UKUUG Spring Conference Day 1 :)<br />
+Our first talk was the  LDAP tutorial, the lack of IP feed is really annoying, seems the Durham Uni is using some kind of wifi auth that is only working for some weird platforms ..<br />
+The LDAP tutorial was fairly good, altough the number of things I learned from it was minimal,  but that mostly to blame myselve as I've been working with LDAP for a couple of years now</p>
+<p>Something went wrong with one of the keynote speakers laptop so the only keynote we got was from  James Youngman  from Google  crawling and indexing<br />
+Some notes,  according to Google   "HA comes in for free, with scaling" , now how comes that when I say that HA shouldn't be more expensive when taught about upfront people don't believe me but when Google says it ..<br />
+There is a paper about GoogleFS which is in userland not in kernelspace on <a href="http://labs.google.com/papers/gfs.html">labs.google.com</a><br />
+Use cheaper hardware, use multiple instances, replicate , hmm.. that sounds familiar to the the kind of architecture I'm working with daily :)<br />
+Automate yourselve out of a job each 18 months, yep that's true that way I can move on to doing new and other interresting stuff and spreading knowledge ..</p>
+<p>Then it was Pieter's turn to talk about Juliux,  we really need to get that domain registered and small site to get started with.  People are really interrested by the concept and some even want to contribute it seems, great stuff</p>
+<p>Then the CFengine talk , I was really looking forward to this talk ...  oh my .. this Kpresent presentation is the most annoying I have ever seen.. what's with the baby and dolphin pictures in this presentation ?  Apart from that the presentation was<br />
+good for an introductory talk  I was hoping to learn a lot here.. well it didn't happen.. I learned some stuff however  I`ll be looking at replacing  filereaper cfengine  soon on some platforms,</p>
+<p>My biggest question was how do you do the Initial key distribution ? Seems like you can do something with cfrun initially,  I have to look into that</p>
+<p>Ahhr.. the network really, really sucks here.. even the wired stuff in the terminal room upstairs doesn't work.. , after the "registration" I should be able to access the network but it keeps telling me I`m not registered,  however when I try again it tells me I`m already registered,  let's not even mention the fact that wifi was only available for some proprietary platforms, and it didn't even work for these people.</p>
+<p>The Exim talk , hmm I   should look into ho how this stuff can be done on Postfix also :)</p>
+<p>Finally I figured out I had ip connectivity at my room in Collingwood College but as we had to hurry to the Conference Dinner  then to "Vix"  these postings will still be late ;)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/151/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="index87.html?page=87" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a href="index84.html?page=84" title="Go to page 85" class="active">85</a></li>
+<li class="pager-item"><a href="index85.html?page=85" title="Go to page 86" class="active">86</a></li>
+<li class="pager-item"><a href="index86.html?page=86" title="Go to page 87" class="active">87</a></li>
+<li class="pager-item"><a href="index87.html?page=87" title="Go to page 88" class="active">88</a></li>
+<li class="pager-current">89</li>
+<li class="pager-item"><a href="index89.html?page=89" title="Go to page 90" class="active">90</a></li>
+<li class="pager-item"><a href="index90.html?page=90" title="Go to page 91" class="active">91</a></li>
+<li class="pager-item"><a href="index91.html?page=91" title="Go to page 92" class="active">92</a></li>
+<li class="pager-item"><a href="index92.html?page=92" title="Go to page 93" class="active">93</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="index89.html?page=89" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="index103.html?page=103" title="Go to last page" class="active">last »</a></li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=88 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:42:32 GMT -->
+</html>

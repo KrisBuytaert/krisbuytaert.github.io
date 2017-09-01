@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Kris Buytaert&#039;s blog</title>
+ <link>http://127.0.0.1:8080/blog/blogs/kris-buytaert</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Will containers take over ?</title>
+ <link>http://127.0.0.1:8080/blog/will-containers-take-over</link>
+ <description>&lt;p&gt;and if so why haven&#039;t they done so yet ?&lt;/p&gt;
+&lt;p&gt;Unlike many people think, containers are not new, they have been around for more than a decade,  they however just became popular for a larger part of our ecosystem. &lt;a href=&quot;http://cloudscaling.com/blog/cloud-computing/will-containers-replace-hypervisors-almost-certainly/&quot; rel=&quot;nofollow&quot;&gt;Some&lt;/a&gt; people think  containers will eventually take over.&lt;/p&gt;
+&lt;p&gt;Imvho It is  all about application workloads,  when  8 years ago &lt;a href=&quot;http://virtualization.com/2008/03/10/looking-back-at-a-decade-of-open-source-virtualisation/&quot; rel=&quot;nofollow&quot;&gt; I wrote&lt;/a&gt; about a decade of open source virtualization,   we looked at containers as the solution for running a large number of isolated instances of something on a machine. And with large we meant hundreds or more instances  of apache, this was one of  the example use cases for an ISP that wanted to give a secure but isolated platform to his users. One container per user.&lt;/p&gt;
+&lt;p&gt;The majority of enterprise  usecases however were full VM&#039;s   Partly because we were still consolidating existing services to VM&#039;s and weren&#039;t planning on changing the deployment patterns yet. But mainly because most organisations didn&#039;t have the need to run 100 similar or identical instances of an application or a service,  they were going from 4 bare metal servers to 40 something VM&#039;s but they had  not yet come to the need to run 100&#039;s of them.  The software architecture had just moved from FatClient applications that talked directly to bloated relational databases containing business logic, to web enabled multi-tier&lt;br /&gt;
+applications.   In those days when you suggested to run 1 Tomcat instance per VM because VM&#039;s were cheap and it would make management easier,  (Oh oops I shut down the wrong tomcat instance)  , people gave you very weird looks&lt;/p&gt;
+&lt;p&gt;Slowly software architectures are changing , today  the new breed of applications is small, single function, dedicated, and it interacts frequently with it&#039;s peers, together combined they provide similar functionality as a big fat application 10 years ago, But when you look at the market that new breed is a minority.  So a modern application might consist of 30-50 really small ones,  all with different deployment speeds.  And unlike 10 years ago where we needed to fight hard to be able to build both dev, acceptance and production platforms,  people now consider that practice normal.  So today we do get environments that quickly go to 100+ instances , but requiring similar CPU power as before,   so the use case for containers like we proposed it in the early days is now slowly becoming a more common use case.&lt;/p&gt;
+&lt;p&gt;So yes containers might take over ...  but before that happens .. a lot of software architectures will need to change,  a lot of elephants will need to be sliced, and that  is usually what blocks cloud, container, agile and devops adoption.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/will-containers-take-over#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/containers">containers</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devoops">devoops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/microservices">microservices</category>
+ <category domain="http://127.0.0.1:8080/blog/category/software-architecture">software architecture</category>
+ <pubDate>Wed, 15 Jun 2016 14:57:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1112 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Jenkins DSL and Heisenbugs</title>
+ <link>http://127.0.0.1:8080/blog/jenkins-dsl-and-heisenbugs</link>
+ <description>&lt;p&gt;I`m working on getting even more moving parts automated,  those who use Jenkins frequently probably also have  Love - Hate relationship with it. &lt;/p&gt;
+&lt;p&gt;The love coming from the flexibility , stability and the power you get from it,  the hate from it&#039;s UI.   If you&#039;ve ever had to create a new Jenkins job or even pipeline based on one that already existed you&#039;ve gone trough the horror of click and paste errors , and you know where the hate breeds.&lt;/p&gt;
+&lt;p&gt;We&#039;ve been trying to automate this with different levels of success,  we&#039;ve puppetized the XML jobs,  we&#039;ve used the  Buildflow Plugin (reusing the same job for different pipelines is a bad idea..)  We played with JJB running into issues with some plugins (Promoted Build)  and most recently we have put our hope in  the Job DSL. &lt;/p&gt;
+&lt;p&gt;While toying with the DSL I ran into a couple of interresting behaviours.  Imagine you have an entry like this which is supposed to replace the $foldername with the content of the variable and actually take the correct upstream&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;cloneWorkspace(&#039;${foldername}/dashing-dashboard-test&#039;, &#039;Successful&#039;)&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;You generate the job, look inside the Jenkins UI to verify what the build result was .. save the job and run it .. success ..&lt;br /&gt;
+Then a couple of times later that same job gives an error ... It can&#039;t find the upstream job  to copy the workspace from. You once again open up the job in the UI, look at it .. save it , run it again and then it works.. a typical case of  Heisenbug .. &lt;/p&gt;
+&lt;p&gt;When you start looking closer to the XML of the job you notice ..&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;parentJobName&amp;gt;${foldername}/dashing-dashboard-test&amp;lt;/parentJobName&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;obviously wrong .. I should have used double quotes ..&lt;/p&gt;
+&lt;p&gt;But why doesn&#039;t it look wrong in the UI ?  That&#039;s because the UI autoselects the first option from it&#039;s autogenerated pull down list ..  Which actually contains the right upstream workplace I wanted to trigger (that will teach me to use 00 as a prefix for the  foldername  for all my tests..)&lt;/p&gt;
+&lt;p&gt;So when working with the DSL .. review the generated XML .. not just if the job works ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/jenkins-dsl-and-heisenbugs#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/automate">automate</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/dsl">dsl</category>
+ <category domain="http://127.0.0.1:8080/blog/category/inception">inception</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jenkins">jenkins</category>
+ <pubDate>Mon, 13 Jun 2016 19:04:03 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1111 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Linux Troubleshooting 101 , 2016 Edition</title>
+ <link>http://127.0.0.1:8080/blog/linux-troubleshooting-101-2016-edition</link>
+ <description>&lt;p&gt;Back in 2006 I wrote a &lt;a href=&quot;http://www.krisbuytaert.be/blog/node/177&quot;&gt;blog post&lt;/a&gt; about linux troubleshoooting.  &lt;a href=&quot;https://twitter.com/bertvanvreckem/status/737761421879054336&quot; rel=&quot;nofollow&quot;&gt;Bert Van Vreckem&lt;/a&gt; pointed out that it might be time for an update ..&lt;/p&gt;
+&lt;p&gt;There&#039;s not that much that has changed .. however :)&lt;/p&gt;
+&lt;p&gt;Everything is a DNS Problem&lt;/p&gt;
+&lt;p&gt;Everything is a Fscking DNS Problem&lt;br /&gt;
+No really, Everything is a Fscking DNS Problem&lt;br /&gt;
+If it&#039;s not a fucking DNS Problem ..&lt;br /&gt;
+It&#039;s a Full Filesystem Problem&lt;br /&gt;
+If your filesystem isn&#039;t full&lt;br /&gt;
+It is a SELinux problem&lt;br /&gt;
+If you have SELinux disabled&lt;br /&gt;
+It might be an ntp problem&lt;br /&gt;
+If it&#039;s not an ntp problem&lt;br /&gt;
+It&#039;s an arp problem&lt;br /&gt;
+If it&#039;s not an arp problem...&lt;br /&gt;
+It is a Java Garbage Collection problem&lt;br /&gt;
+If you ain&#039;t running Java&lt;br /&gt;
+It&#039;s a natting problem&lt;br /&gt;
+If you are already on IPv6&lt;br /&gt;
+It&#039;s a Spanning Tree problem&lt;br /&gt;
+If it&#039;s not a spanning Tree problem...&lt;br /&gt;
+It&#039;s a USB problem&lt;br /&gt;
+If it&#039;s not a USB Problem&lt;br /&gt;
+It&#039;s a sharing IRQ Problem&lt;br /&gt;
+If it&#039;s not a sharing IRQ Problem&lt;br /&gt;
+But most often .. its a Freaking Dns Problem !&lt;/p&gt;
+&lt;p&gt;`&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/linux-troubleshooting-101-2016-edition#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/arp">arp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/451">dns</category>
+ <category domain="http://127.0.0.1:8080/blog/category/iptables">iptables</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/979">ntp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1001">selinux</category>
+ <pubDate>Wed, 01 Jun 2016 07:00:55 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1110 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Docker and volumes hell</title>
+ <link>http://127.0.0.1:8080/blog/docker-and-volumes-hell</link>
+ <description>&lt;p&gt;We&#039;re increasingly using Docker to build packages,  a fresh  chroot in which we prepare a number of packages, builds typically for ruby (rvm) , or python (virtualenv) or node stuf where the language ecosystem fails on us ...  and fpm the whole tree as a working artifact.&lt;/p&gt;
+&lt;p&gt;An example of such a build is my work on packaging Dashing.  &lt;a href=&quot;https://github.com/KrisBuytaert/build-dashing&quot; rel=&quot;nofollow&quot;&gt;https://github.com/KrisBuytaert/build-dashing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now part of that build is running the actual build script in docker with a local volume mounted inside the container This is your typical  -v=/home/src/dashing-docker/package-scripts:/scripts  param.&lt;/p&gt;
+&lt;p&gt;Earlier this week however I was stuck on a box where that combo did not want to work as expected. Docker clearly mounted the local volume, as it could execute the script in the directory, but for some reason it didn&#039;t want to write in the mounted volume.&lt;/p&gt;
+&lt;p&gt;docker run -v=/home/src/dashing-docker/package-scripts:/scripts dashing/rvm  /scripts/packagervm&lt;br /&gt;
+Usage of loopback devices is strongly discouraged for production use. Either use `--storage-opt dm.thinpooldev` or use `--storage-opt dm.no_warn_on_loop_devices=true` to suppress this warning.&lt;br /&gt;
+corefines: Your Ruby doesn&#039;t support refinements, so I&#039;ll fake them using plain monkey-patching (not scoped!).&lt;br /&gt;
+/usr/local/share/gems/gems/corefines-1.9.0/lib/corefines/support/fake_refinements.rb:26: warning: Refinements are experimental, and the behavior may change in future versions of Ruby!&lt;br /&gt;
+/usr/share/ruby/fileutils.rb:1381:in `initialize&#039;: Permission denied - rvm-1.27.0-1.x86_64.rpm (Errno::EACCES)&lt;/p&gt;
+&lt;p&gt;So what was I doing wrong, did the Docker params change, did I invert the order of the params, did I mistype them ? I added debugging to the script, (ls , chmod, etc..) and I couldn&#039;t seem to read or modify the directory. So I asked a coworker to be my wobbling duck.&lt;/p&gt;
+&lt;p&gt;He did more .. he wondered if this wasn&#039;t selinux.&lt;/p&gt;
+&lt;p&gt;And he was right..&lt;/p&gt;
+&lt;p&gt;Apr 23 21:47:00 mine23.inuits.eu audit[9570]: AVC avc:  denied  { write } for  pid=9570 comm=&quot;fpm&quot; name=&quot;package-scripts&quot; dev=&quot;dm-2&quot; ino=368957 scontext=system_u:system_r:svirt_lxc_net_t:s0:c47,c929 tcontext=unconfined_u:object_r:unlabeled_t:s0 tclass=dir permissive=0&lt;br /&gt;
+Apr 23 21:47:02 mine23.inuits.eu python3[9597]: SELinux is preventing fpm from write access on the directory /home/src/dashing-docker/package-scripts.&lt;/p&gt;
+&lt;p&gt;So while I was looking for errors in docker, it was just my selinux set to enforce acting up and me not noticing it.&lt;/p&gt;
+&lt;p&gt;The quick way to verify obvisously was to setenforce 0  and trigger the build again that however is not a long term fix so  I changed the &lt;/p&gt;
+&lt;p&gt;semanage fcontext -a -t cgroup_t &#039;/home/src/dashing-docker/package-scripts&#039;&lt;br /&gt;
+restorecon -v &#039;/home/src/dashing-docker/package-scripts&#039;&lt;/p&gt;
+&lt;p&gt;That solves the problem&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/docker-and-volumes-hell#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/docker-0">docker</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fpm">fpm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1001">selinux</category>
+ <pubDate>Sat, 28 May 2016 11:16:45 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1109 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>It&#039;s just rubber , with some air in it.</title>
+ <link>http://127.0.0.1:8080/blog/its-just-rubber-some-air-it</link>
+ <description>&lt;p&gt;- A child balloon&lt;br /&gt;
+ you inflate it, play with it for a while, then it explodes, you throw it away  you inflate another one, maybe even a different color. the kid plays with it .. till it breaks, then you throw it away... &lt;/p&gt;
+&lt;p&gt;- An inflatable castle.&lt;br /&gt;
+ you inflate it, play with it for a while,  deflate it, move it around,  inflate it again,  if it has a hole in it, you patch the hole. &lt;/p&gt;
+&lt;p&gt;- The tyres on your kids bike,.&lt;br /&gt;
+ You inflate it , kid rides on it, if it starts losing air, you fix it asap so you can continue using it.&lt;/p&gt;
+&lt;p&gt;All of the 3 are really valuable use cases for rubber with air in it,&lt;br /&gt;
+in a way they are all equally valuable, but serve different purposes, different use cases.&lt;/p&gt;
+&lt;p&gt;Now think about this next time you spin up a container, that&#039;s running a database, application server and where your users ssh to.  &lt;/p&gt;
+&lt;p&gt;It&#039;s not just another VirtualMachine&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/its-just-rubber-some-air-it#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/containers">containers</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <pubDate>Wed, 23 Mar 2016 21:38:34 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1108 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Lies, Damn Lies and Statistics, 2016 Edition</title>
+ <link>http://127.0.0.1:8080/blog/lies-damn-lies-and-statistics-2016-edition</link>
+ <description>&lt;p&gt;When people sign up for Configuration Management Camp, we ask them what community room they are mostly interested in.&lt;br /&gt;
+We ask this question  because we have rooms in different sizes and we don&#039;t want to put communities with 20 people showing interest in a 120 seat room  and we don&#039;t want to put a community with 200 people in a 60 seat room.&lt;/p&gt;
+&lt;p&gt;But it also gives us to opportunity to build some very interesting graph over the potential evolution of the communities.&lt;/p&gt;
+&lt;p&gt;So looking at the figures ... the overall community is obviously growing,From 350 to 420, to just short of 600 people registered now.   &lt;/p&gt;
+&lt;p&gt;The Puppet Community is not the biggest anymore, that spot went to the Ansible Community room.   And all but the CFengine communities are growing.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/RoomSizes2016.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;One more thing ,  The organisation team discussed several times if we should rebrand the event.   We opted not to ..  Infracoders.eu  could have been an alternative name .. but we decided to stick with the name that already is known,&lt;br /&gt;
+the content will evolve.. but Config Management Camp will stay the place where people that care about Infrastructure as Code and Infrastructure automation meet.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/lies-damn-lies-and-statistics-2016-edition#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/ansible">ansible</category>
+ <category domain="http://127.0.0.1:8080/blog/category/cfengine">cfengine</category>
+ <category domain="http://127.0.0.1:8080/blog/category/cfgmgmtcamp">cfgmgmtcamp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/chef">chef</category>
+ <category domain="http://127.0.0.1:8080/blog/category/communities">communities</category>
+ <category domain="http://127.0.0.1:8080/blog/category/juju">juju</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/salt">salt</category>
+ <pubDate>Wed, 23 Mar 2016 21:28:36 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1107 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Recent and Upcoming Talks</title>
+ <link>http://127.0.0.1:8080/blog/recent-and-upcoming-talks</link>
+ <description>&lt;p&gt;I gave a couple of new and updated talks the last couple of months.&lt;/p&gt;
+&lt;p&gt;At Fosdem, I opened up the Distributions Devroom with a talk on how we could improve the collaboration between the developers of a distro, and their users, the ops folks.  I seemed to not be the only person with similar ideas as the smart folks over at the CentOS project were already actively talking about their efforts into making some my ideas become reality the day before at the CentOS Dojo.&lt;/p&gt;
+&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/7Pf3zfdlflWvei&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/KrisBuytaert/closing-the-gap-between-distrosdevs-and-their-usersops&quot; title=&quot;Closing the gap between Distros(devs) and their Users(ops)&quot; target=&quot;_blank&quot;&gt;Closing the gap between Distros(devs) and their Users(ops)&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;//www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;/p&gt;&lt;p&gt;Another talk of early this year was an update on the why Security is requires a devops aproach, why you want to embed security as a standard practice in your development process and why continuous delivery actually is a security requirement. &lt;/p&gt;
+&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/aEg8OJ3MS8wkzR&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/KrisBuytaert/dev-secops-opsec-devsec-devops&quot; title=&quot;Dev secops opsec, devsec, devops ?&quot; target=&quot;_blank&quot;&gt;Dev secops opsec, devsec, devops ?&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;//www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;/p&gt;&lt;p&gt;At last weeks FLOSS UK Conference in London , I gave an updated version of My MonitoringLove talk, giving an opinionated overview of the current state of Open Source Monitoring tools.&lt;/p&gt;
+&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/ebCtrEP90Iufn&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/KrisBuytaert/from-monitoringsucks-to-monitoring-love-2016-edition&quot; title=&quot;From MonitoringSucks to Monitoring Love , 2016 Edition&quot; target=&quot;_blank&quot;&gt;From MonitoringSucks to Monitoring Love , 2016 Edition&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;//www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;/p&gt;&lt;p&gt;I was scheduled to give the Opening Keynote today (23/3/2016) at the &lt;a href=&quot;http://mossconf.ro/&quot;&gt;Making Open Source Software Conference &lt;/a&gt; , but sadly I had to cancel that due to yesterdays (22/3/2016) events at Brussels Airport.  My flight to Bucharest was obviously cancelled.&lt;/p&gt;
+&lt;p&gt;I`m scheduled to open up the 2nd day of the the upcoming &lt;a href=&quot;http://www.devopsdays.org/events/2016-london/program/&quot;&gt;Devopsdays London Edition &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And &lt;a href=&quot;https://twitter.com/gethash&quot;&gt;Bernd Erk&lt;/a&gt; tricked me into giving a follow up talk on my popular 7 tools for your devops stack talk, aptly titled &lt;a href=&quot;https://www.netways.de/en/events_trainings/osdc/program/kris_buytaert_another_7_tools_for_your_devops_stack/&quot;&gt;Another 7 tools for your devops stack&lt;a/&gt;&lt;/a/&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/recent-and-upcoming-talks#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/937">presentations</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/936">talks</category>
+ <pubDate>Wed, 23 Mar 2016 20:58:16 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1106 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Bimodal IT , redefined</title>
+ <link>http://127.0.0.1:8080/blog/bimodal-it-redefined</link>
+ <description>&lt;p&gt;There&#039;s been a lot of discussion about the sillynes of the term BiModal IT, aka the next big thing for IT-organisations that don&#039;t dare to change, but still want to sound cool.&lt;/p&gt;
+&lt;p&gt;So here is my idea to reuse that term for something relevant.&lt;/p&gt;
+&lt;p&gt;BiModal IT, is the idea where you take a fully automated infrastructure which has been build on the principles of Infrastructure as Code. Which gets periodic idempodent updates (e.g every 15 or 30 minutes, or when you orchestrate it), and consistency checks , where the source code for that infrastructure is versioned , tested and delivered trough  a traditional Continuous Delivery pipeline for the majority of your services. and add realtime reconfiguration capacities based on service discovery for the other services that really change fast, or in a real elastic way, using  tools like Consul, Consul_template, etcd etc..&lt;/p&gt;
+&lt;p&gt;That way you have 2 modes of managing your infrastructure, aka  BiModal&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/bimodal-it-redefined#comments</comments>
+ <pubDate>Thu, 07 Jan 2016 08:48:15 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1105 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>The power of packaging software, package all the things</title>
+ <link>http://127.0.0.1:8080/blog/power-packaging-software-package-all-things</link>
+ <description>&lt;p&gt;Software delivery is hard, plenty of people all over this planet are struggling with delivering software in their own controlled environment. They have invented great patterns that will build an artifact, then do some magic and the application is up and running.&lt;/p&gt;
+&lt;p&gt;When talking about continuous delivery, people invariably discus their delivery pipeline and the different components that need to be in that pipeline.&lt;br /&gt;
+Often, the focus on getting the application deployed or upgraded from that pipeline is so strong that teams&lt;br /&gt;
+forget how to deploy their environment from scratch.&lt;/p&gt;
+&lt;p&gt;After running a number of tests on the code , compiling it where needed, people want to move forward quickly and deploy their release artifact on an actual platform.&lt;br /&gt;
+This deployment is typically via a file upload or a checkout from a source-control tool from the dedicated computer on which the application resides.&lt;br /&gt;
+Sometimes, dedicated tools are integrated to simulate what a developer would do manually on a computer to get the application running.  Copy three files left, one right, and make sure you restart the service. Although this is obviously already a large improvement  over people manually pasting commands from a 42 page run book, it doesn’t solve all problems.&lt;/p&gt;
+&lt;p&gt;Like the guy who quickly makes a change on the production server, never to commit the change, (say goodbye to git pull for your upgrade process)&lt;br /&gt;
+If you package your software there are a couple of things you get for free from your packaging system.&lt;br /&gt;
+Questions like, has this file been modified since I deployed it,  where did this file come from, when was it deployed,&lt;br /&gt;
+what version of software  X do I have running on all my servers, are easily answered by the same&lt;br /&gt;
+tools we use already for every other package on the system.   Not only can you use existing tools you are also using tools that are well known by your ops team and that they&lt;br /&gt;
+already use for every other piece of software on your system.&lt;/p&gt;
+&lt;p&gt;If your build process creates a package and uploads it to a package repository which is available for the hosts in the environment you want to deploy to, there is no need anymore for&lt;br /&gt;
+a script that copies the artifact from a 3rd party location , and even less for that 42 page text document which never gets updated and still tells you to download yaja.3.1.9.war  from a location where you can only find&lt;br /&gt;
+3.2 and 3.1.8 and the developer that knows if you can use 3.2 or why 3.1.9 got removed just left for the long weekend.&lt;/p&gt;
+&lt;p&gt;Another, and maybe even more important thing, is the current sadly growing practice of having yet another tool in place that translates that 42 page text document to a bunch of shell scripts created from a drag and drop interface,  typically that &quot;deploy tool&quot; is even triggered from within the pipeline.   Apart from the fact that it usually stimulates a pattern of non reusable code, distributing even more ssh  keys , or adding yet another agent on all systems. it doesn’t take into account that you want to think of your servers as cattle and be able to deploy new instances of your application fast.&lt;br /&gt;
+Do you really want to deploy your five new nodes on AWS  with a full Apache stack ready for production, then reconfigure your load balancers only to figure out that someone needs to go click in your continuous integration tool or deployment  to deploy the application to the new hosts? That one manual action someone forgets?&lt;br /&gt;
+Imvho Deployment tools are a phase in the maturity process of a product team.. yes it&#039;s a step up from manually deploying software but it creates more and other problems , once your team grows in maturity refactoring out that tool is trivial.&lt;/p&gt;
+&lt;p&gt;The obvious and trivial approach to this problem, and it comes with even more benefits. is called packaging. When you package your artifacts as operating system (e.g., .deb or .rpm) packages,&lt;br /&gt;
+you can include that package in the list of packages to be deployed at installation time (via Kickstart or debootstrap). Similarly, when your configuration management tool&lt;br /&gt;
+(e.g., Puppet or Chef) provisions the computer, you can specify which version of the application you want to have deployed by default.&lt;/p&gt;
+&lt;p&gt;So, when you’re designing how you want to deploy your application, think about deploying new instances or deploying to existing setups (or rather, upgrading your application).&lt;br /&gt;
+Doing so will make life so much easier when you want to deploy a new batch of servers.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/power-packaging-software-package-all-things#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/cd">cd</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ci">ci</category>
+ <category domain="http://127.0.0.1:8080/blog/category/deb">deb</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/opslife">opslife</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Tue, 28 Jul 2015 06:35:13 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1104 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>On the importance of idempotence.</title>
+ <link>http://127.0.0.1:8080/blog/importance-idempotence</link>
+ <description>&lt;p&gt;A couple of months ago we were seeing weird behaviour with consul not knowing all it&#039;s members at a customer where we had deployed Consul for service registration as a POC&lt;br /&gt;
+The first couple of weeks we hadn&#039;t noticed any difficulties but after a while we had the impression that the number of nodes in the cluster wasn&#039;t stable.&lt;/p&gt;
+&lt;p&gt;Obviously the first thought is that such a new tool probably isn&#039;t stable enough so it&#039;s expected behaviour , but rest asured that was not the case.&lt;/p&gt;
+&lt;p&gt;We set out to frequently monitor the number of nodes&lt;br /&gt;
+a simple cron to create a graph.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;NOW=`date +%s`&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;HOST=`hostname -f`&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;MEMBERS=`/usr/local/bin/consul members | wc -l`&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;echo &amp;quot;consul_members.$HOST $MEMBERS $NOW&amp;quot;  | graphite 2003&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;It didn&#039;t take us very long to see that indeed the number members in the cluster wasn&#039;t stable,  frequently there were less nodes in a cluster then slowly the expected number of nodes came back on our graph.&lt;/p&gt;
+&lt;p&gt;Some digging learned us that the changes in number of nodes was in sync with our puppetruns.&lt;br /&gt;
+But we weren&#039;t reconfiguring consul anymore, there were no changes in the configuration of our nodes.&lt;br /&gt;
+Yet puppet triggered a restart of consul on every run.    The restart was because knew it had rewritten the consul config file.&lt;br /&gt;
+Which was weird as the values in that file were the same.&lt;/p&gt;
+&lt;p&gt;On closer inspection we noticed that the values in the file didn&#039;t change, however the order of the values in the file&lt;br /&gt;
+changed.   From a functional point of view that did not introduce any changes, but puppet rightfully assumed the configuration file&lt;br /&gt;
+had changed and thus restarted the service dutyfully.&lt;/p&gt;
+&lt;p&gt;The actually problem lied  in the implementation of the writing of the config file which was in JSON,&lt;br /&gt;
+The ancient Ruby library just took the hash and wrote it in no specific order, each time potentially resulting&lt;br /&gt;
+in a file with the content in a different order.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&quot;https://github.com/solarkennedy/puppet-consul/issues/45&quot; rel=&quot;nofollow&quot;&gt;bug fix&lt;/a&gt; to the puppet module made sure that the hash was written out in a sorted way , so each time resulting in the&lt;br /&gt;
+same file being generated.&lt;/p&gt;
+&lt;p&gt;After that bugfix  obviously our graph of the number of nodes in the cluster flatlined as restarts were not being introduced anymore.&lt;/p&gt;
+&lt;p&gt;This is yet another example of the importance of idempotence . When we trigger a configuration run , we want to&lt;br /&gt;
+be absolutely sure that it won&#039;t change the state of the system if it already has been defined the way we want.&lt;br /&gt;
+Rewriting the config file should only happen if it gets new content.&lt;/p&gt;
+&lt;p&gt;The yak is shaved .. and sometimes it&#039;s not a funky dns problem but just a legacy ruby library one ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/importance-idempotence#comments</comments>
+ <pubDate>Mon, 11 May 2015 18:06:23 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1103 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

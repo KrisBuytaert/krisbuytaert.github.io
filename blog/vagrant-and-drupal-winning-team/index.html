@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/vagrant-and-drupal-winning-team by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:25:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vagrant and Drupal, a winning team | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Vagrant and Drupal, a winning team</h2>
+<div class="content">
+<div id="node-1071" class="node  blog">
+<div class="content"><p>While heading back home from DrupalCon Munich after 4 days of good interaction with lots of Drupal folks.<br />
+I realized to my big suprise that there are a lot of people using Vagrant to make sure that developers are not working on platforms they invented their own.  Lots of people have realized that  "It works on my computer" is not something they want to hear from a developer and are reaching out to give them viable solutions to work on shared and reproducible solutions.   </p>
+<p>There were 2 talks proposing solutions to the problem, </p>
+<p>the first one was ..<a href="http://munich2012.drupal.org/program/sessions/fearless-development-drush-vagrant-and-aegir" rel="nofollow">Fearless development with Drush, Vagrant and Aegir</a> by <a href="http://ergonlogic.com/" rel="nofollow">Christopher Gervais </a> He talked about Drush VAgrant Integraion and how <a href="http://drupal.org/project/drush-vagrant" rel="nofollow"> extentions to Drush</a> allow for easy vagrant integration , bridging this gap allows rupal developers to use a tool they are already familiar with </p>
+<p>The second one was Jochen Lillich who explained how he us using Vagrant an Chef for this purpose his talk titled <a href="http://munich2012.drupal.org/program/sessions/use-datacenter-tools-make-your-dev-life-easier" rel="nofollow">Use datacenter tools to make your dev life easier</a> has been posted already.</p>
+<p>During the Vagrant BOF , I briefly ran over @patrickdebois old slides on Vagrant after which people started discussing their use cases..  2 other projects came up </p>
+<p>First is <a href="https://github.com/manarth/oscar" rel="nofollow">Project Oscar</a> which aims at providing developers with a default Drupal development environment in a Jiffy. they do this by providing a bunch of puppetmanifests that sets up a working environment.</p>
+<p>And the second one is <a href="https://github.com/myplanetdigital/ariadne" rel="nofollow">Ariadne</a> which is a standardized virtual machine development evironment for easily developing Drupal sites in a local sandbox that is essentially identical to a fully-configured hosted solution. It attempts to emulate a dedicated Acquia/Pantheon server as closely as possible, with added development tools. Project Ariadne is just like the examples from Jochen Lillich based on Chef</p>
+<p>With all of these tools and examples around , there should be no excuses anymore for Drupal developers to hack on their own machine and tell the systems people "It works on my machine" (let alone to hack in production).</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Sat, 08/25/2012 - 23:51</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1158 first"><a href="../category/chef/index.html" rel="tag" title="">chef</a></li>
+<li class="taxonomy_term_1328"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_484"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_439"><a href="../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1439 last"><a href="../category/vagrant/index.html" rel="tag" title="">vagrant</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-4901"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://expertxteriors.com/Siding.html" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/82e026df97a910cdba125ed5e87fcacc.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Vincent&#039;s picture" title="Vincent&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4901">#1</a>
+    <span class="author"><a href="http://expertxteriors.com/Siding.html">Vincent</a></span>  : <span class="title"><a href="index.html#comment-4901" class="active">an excellent combo</a></span>
+  </h3>
+  <div class="content"><p>thanks for sharing about your learnings in DrupalCon. Was supposed to be there but there was a sudden change in my schedule. The extensions to Drush are really a big help!</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/04/2012 - 05:23</div>
+  </div>
+<a id="comment-4892"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://about.me/patcon" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/7e945991d1d70075cff59331d72ef4d8.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="patcon&#039;s picture" title="patcon&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4892">#2</a>
+    <span class="author"><a href="http://about.me/patcon">patcon</a></span>  : <span class="title"><a href="index.html#comment-4892" class="active">@Mark: I&#039;ve been meaning to</a></span>
+  </h3>
+  <div class="content"><p>@Mark: I've been meaning to check out ansible ever since I came across the vagrant plugin that allows it to act as a provisioner.</p>
+<p>And hey, thanks for the mention on Ariadne Kris! We're also working on a Jenkins environment called Inception, but the intention is that it's simply using Vagrant for evaluation purposes before allowing a user to spin up an actual cloud instance.<br />
+<a href="https://github.com/myplanetdigital/inception" title="https://github.com/myplanetdigital/inception" rel="nofollow">https://github.com/myplanetdigital/inception</a></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/28/2012 - 15:32</div>
+  </div>
+<a id="comment-4886"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://ergonlogic.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/7a691b1a198c37fb848945d38c7b021b.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Christopher Gervais&#039;s picture" title="Christopher Gervais&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4886">#3</a>
+    <span class="author"><a href="http://ergonlogic.com/">Christopher Gervais</a></span>  : <span class="title"><a href="index.html#comment-4886" class="active">Drush Vagrant Integration</a></span>
+  </h3>
+  <div class="content"><p>Thanks for the mention, Kris. I'd love to get more feedback from you on the direction we're taking with drush-vagrant.</p>
+<p>Unfortunately, there were some technical issues with the session recording, so there isn't a video posted. If there's interest, I'll see about putting up a demo/tutorial video.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/27/2012 - 18:40</div>
+  </div>
+<div class="indented"><a id="comment-4890"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/1ef49abbfdc9d60652f94a2a7a19f26c.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="JJ&#039;s picture" title="JJ&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4890">#4</a>
+    <span class="author"><span class="anonymous" title="not verified">JJ</span></span>  : <span class="title"><a href="index.html#comment-4890" class="active">Chris, please put up a demo/tut</a></span>
+  </h3>
+  <div class="content"><p>Chris,</p>
+<p>Please could you put up a demo of tut. I'm looking at ways to streamline how to do this.</p>
+<p>Thx,</p>
+<p>JJ</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/28/2012 - 15:21</div>
+  </div>
+</div><a id="comment-4874"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/c2a7ca677379cefd8048b129dfd7dbea.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Mark&#039;s picture" title="Mark&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4874">#5</a>
+    <span class="author"><span class="anonymous" title="not verified">Mark</span></span>  : <span class="title"><a href="index.html#comment-4874" class="active">Ansible a good choice</a></span>
+  </h3>
+  <div class="content"><p>I would also suggest Ansible to use with Vagrant, it's a really simple configuration management + deployment system that we hope will supplant Puppet &amp; Chef.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/26/2012 - 02:20</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/vagrant-and-drupal-winning-team by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:25:19 GMT -->
+</html>

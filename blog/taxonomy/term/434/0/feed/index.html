@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - gfs</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/434/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>DRBD2, OCFS2,  Unexplained crashes</title>
+ <link>http://127.0.0.1:8080/blog/drbd2-ocfs2-unexplained-crashes</link>
+ <description>&lt;p&gt;I was trying to setup a dual-primary DRBD environment, with a shared disk with either OCFS2 or GFS.   The environment is a Centos 5.3 with DRBD82 (but also tried with DRBD83 from testing) .&lt;/p&gt;
+&lt;p&gt;Setting up a single primary disk and running bonnie++ on it worked Setting up a dual-primary disk, only mounting it on one node (ext3) and running bonnie++  worked&lt;/p&gt;
+&lt;p&gt;When setting up ocfs2 on the /dev/drbd0 disk and mounting it on both nodes, basic functionality seemed in place but usually less than 5-10 minutes after I start bonnie++ as a test on one of the nodes , both nodes power cycle  with no errors in the logfiles, just a crash.&lt;/p&gt;
+&lt;p&gt;When at the console at the time of crash it looks like a disk IO (you can type , but actions happen)  block happens  then a reboot, no panics, no oops , nothing. ( sysctl panic values set to timeouts etc )&lt;br /&gt;
+Setting up a dual-primary disk , with ocfs2 only mounting it on one node and starting bonnie++ causes only that node to crash.&lt;/p&gt;
+&lt;p&gt;On DRBD level I got the following error when that node disappears&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;drbd0: PingAck did not arrive in time.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;drbd0: peer( Primary -&amp;gt; Unknown ) conn( Connected -&amp;gt; NetworkFailure )&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;pdsk(UpToDate -&amp;gt; DUnknown )&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;drbd0: asender terminated&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;drbd0: Terminating asender thread&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;
+That however is an expected error because of the reboot.&lt;/p&gt;
+&lt;p&gt;At first I assumed OCFS2 to be the root of this problem ..so I moved forward and setup an ISCSI target on a 3rd node, and used that device with the same OCFS2 setup. There no crashes occured and bonnie++ flawlessly completed it test run. &lt;/p&gt;
+&lt;p&gt;So my attention went  back to the combination of DRBD and OCFS&lt;br /&gt;
+I tried both DRBD 8.2 drbd82-8.2.6-1.el5.centos kmod-drbd82-8.2.6-2  and the 83 variant from Centos Testing&lt;/p&gt;
+&lt;p&gt;At first I was trying with the ocfs2 1.4.1-1.el5.i386.rpm verson but upgrading to  1.4.2-1.el5.i386.rpm didn&#039;t change the behaviour &lt;/p&gt;
+&lt;p&gt;Both the DRBD as the OCFS mailinglist were fairly supportive pointing me out that it was probably OCFS2 fencing both hosts after missing the heartbeat, and suggested increasing the deathtimetimeout values.&lt;/p&gt;
+&lt;p&gt;I however wanted to confirm that. As I got no entries in syslog I attached a Cyclades err Avocent Terminal server to the device in the hope that I&#039;d capture the last kernel messsages there ...   no such luck either.&lt;/p&gt;
+&lt;p&gt;On the OCFS2 mailinlist people pointed out that i&#039;d use netconsole to catch the logs on a remote node&lt;br /&gt;
+I set up netconsole using&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;modprobe  netconsole netconsole=&amp;quot;@/,@172.16.32.1/&amp;quot;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;sysctl -w kernel.printk=&amp;quot;7 4 1 7&amp;quot;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;After which indeed I catched error on my remote host..&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;[base-root@CCMT-A ~]# nc -l -u -p 6666&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;(8,0):o2hb_write_timeout:166 ERROR: Heartbeat write timeout to device&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;drbd0 after 478000 milliseconds&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;(8,0):o2hb_stop_all_regions:1873 ERROR: stopping heartbeat on all active&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;regions.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;ocfs2 is very sorry to be fencing this system by restarting&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;One&#039;d think that it output over Serial console before it log over the network :)   It doesn&#039;t .&lt;/p&gt;
+&lt;p&gt;Next step is that I`ll start fiddling some more with the timeout values :)  (note the &quot;:)&quot;)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/drbd2-ocfs2-unexplained-crashes#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/899">drbd</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/434">gfs</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/category/iscsi">iscsi</category>
+ <category domain="http://127.0.0.1:8080/blog/category/netconsole">netconsole</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ocfs2">ocfs2</category>
+ <pubDate>Wed, 01 Jul 2009 14:01:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">922 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>On the Future of Lustre</title>
+ <link>http://127.0.0.1:8080/blog/future-lustre</link>
+ <description>&lt;p&gt;&lt;a href=&quot;//www.prnewswire.com/cgi-bin/stories.pl?ACCT=104&amp;amp;STORY=/www/story/09-12-2007/0004661104&amp;amp;EDATE&quot; rel=&quot;nofollow&quot;&gt;&lt;br /&gt;
+So Sun bought ClusterFS&lt;/a&gt;.  I`m wondering what their focus will be now. What will be the prime platform on which Lustre will be developed  Solaris or Linux ?   Will other efforts in the open source cluster filesystem area react on this ?   Will Lustre development speed up ?   Will management become less complex ?&lt;br /&gt;
+Time will tell .. I`m keeping an eye on it&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/future-lustre#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/433">cluster</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/434">gfs</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/489">linux</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/487">lustre</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/488">sun</category>
+ <pubDate>Fri, 14 Sep 2007 09:53:03 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">448 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>LinuxConference Europe 2007 2/X</title>
+ <link>http://127.0.0.1:8080/blog/node/439</link>
+ <description>&lt;p&gt;Sunday evening was the conference dinner,  someone tought he was really funny to have us all walk about 3Km more than we needed to.  The instructions on the back of our entrance tickets gave us a full tour of the Cambridge suburbs, I should have followed my guts.. not the people trying to read the instructions, would have saved us half an our at least .&lt;br /&gt;
+ Luckily we took the short way back.    Dinner was typically english .. nuff said :) &lt;/p&gt;
+&lt;p&gt;So monday started out with a whole bunch of sessions related to filesystems and storage.&lt;br /&gt;
+Bryn M Reeves gave a really good intro to LVM , then Jan Blunck took over and started talking about how to scale the Device Mapper snap shot solution.    I tried to see Dag&#039;s talk on dstat but I`ll have to try again at T-Dose as I missed the largest part of the talk due to some phone calls :(&lt;br /&gt;
+Next up was Olaf &quot;thank god I`m not doing nfs anymore&quot; Kirch (who also listens when you just shout Lars in the streets of Cambridge) who introduced us to iSNS.  &lt;/p&gt;
+&lt;p&gt;So after lunch the filesystem track continued with Steven Whitehouse talking about VFS and cluster filesystems , Jorn talking to us about the future of Flashdisks ant their appropriate filesystems, and  Chris Mason from Oracle finishing of with a talk on Btrfs.. pronounced &quot;ButterFS&quot;  &lt;/p&gt;
+&lt;p&gt;There were 2 different busses to the Duxford air museum which was a bit of a pity since both groups didn&#039;t really meet eachother, so it wasn&#039;t really a social event where you could chat and meed with everybody at the conference.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/439#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/436">btrfs</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/435">butterfs</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/428">cambridge</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/433">cluster</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/434">gfs</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/476">linuxconf.eu.2007</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/429">linuxconference</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/427">ukuug</category>
+ <pubDate>Tue, 04 Sep 2007 10:54:53 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">439 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

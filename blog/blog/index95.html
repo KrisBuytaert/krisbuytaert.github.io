@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=95 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:28:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Everything is a Freaking DNS problem | Devops Needs Sushi</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../blogapi/rsd/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem RSS" href="../rss/index.xml" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="front not-logged-in page-node one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+<div class="content">
+<div id="node-90" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-12-21T13:18:10+01:00">
+  <span class="month">Dec</span>
+  <span class="day">21</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="../node/90/index.html">Xen&#039;s no killer app ??</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Steven J. Vaughan-Nichols just missed the ball with his<br />
+<a href="http://www.linux-watch.com/news/NS7534594608.html">Xen's no killer app</a>  article ;(</p>
+<p>First of all he is wrong about the lack of platform support.   Xen<br />
+supports a lot more platforms than Linux 2.4 en 2.6 , namely lots of BSD<br />
+Variants , Plan 9 etc.  Sun also seems to have  Solaris working on Xen and there exists<br />
+a Windows version for Xen which is just not available for the general<br />
+public.  However with the introduction of the VT Chipsets that issue won't<br />
+exist anymore.</p>
+<p>As for the lack of management part he is completely missing out on how<br />
+you manage an infrastructure,  the whole point being that there is no<br />
+difference between deploying physical or virtual machines and having<br />
+virtual machines only makes it easier for you.</p>
+<p>Apart from that there are plenty of tools to manage the actual virtual machine stuff,<br />
+ranging from the command line over web interfaces to other stuff that<br />
+people have been contributing.</p>
+<p>Actually the original python scripts that Xen delivered as  management<br />
+tools have already been ported to C ,rewritten and modified by other<br />
+people ,  hopefully the best of breed of these tools wil eventually become the Xen<br />
+default tools</p>
+<p>I do however agree on his claims that in order to really beat the * out<br />
+of the competition you have to become better than them and tackle new<br />
+issues, not "just improve' their stuff.</p>
+<p>On top of that he actually forgets about the point that Xen is Free Software</p>
+</div>
+</div>
+<div id="node-89" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-12-20T18:10:32+01:00">
+  <span class="month">Dec</span>
+  <span class="day">20</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="../node/89/index.html">Schneier on Security: Microsoft Windows Receives EAL 4  Certification</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>From : <a href="http://www.schneier.com/blog/archives/2005/12/microsoft_windo.html">Schneier on Security: Microsoft Windows Receives EAL 4  Certification</a>:</p>
+<p>"Or are the certifications proof that EAL 4+ isn't worth much?"</p>
+<p>Needless to comment..</p>
+</div>
+</div>
+<div id="node-88" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-12-20T18:07:34+01:00">
+  <span class="month">Dec</span>
+  <span class="day">20</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="../node/88/index.html">Wifi in London</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>It's all true what they say .. London is probably one of the hottest spots in the world, when my 770 starts scanning it finds at least 3-4 unencrypted access points.<br />
+I`m blogging this from a hotspot I found from my hotel room, no clue who it belongs to, It's called WLAN and it gives you an ip via dhcp from there you're online.</p>
+<p>I`m heading back to Antwerp tomorrow evening,  flying VLM which takes me from Downtown London  back home in less than 2h30 including tubes and the drive back home by car, I still wonder why on earth I ever flew Brussels-Heathrow when Antwerp-London City takes you much faster there.</p>
+</div>
+</div>
+<div id="node-87" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-12-19T14:05:47+01:00">
+  <span class="month">Dec</span>
+  <span class="day">19</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="../node/87/index.html">SCIgen - An Automatic CS Paper Generator</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>So it seems I`m also on the spamlist of <q>Prof. Nagib Callaos</q><br />
+whose WMSCI conferences  don't really have a good reputation regarding accepting (non)quality papers to their agenda, as documented in <a href="http://pdos.csail.mit.edu/scigen/">SCIgen - An Automatic CS Paper Generator</a>, they often don't even read the papers that are being submitted. Anthony Liekens goes a step further by identifying more conference as Fake :)<br />
+<a href="http://anthony.liekens.net/index.php/Misc/FakeConferences">http://anthony.liekens.net/index.php/Misc/FakeConferences</a>  I`m lucky I googled  to see what the conference looked like the past couple of years and didn't find anything .</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../node/87/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-86" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-12-15T20:34:48+01:00">
+  <span class="month">Dec</span>
+  <span class="day">15</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="../node/86/index.html">Talks , Progres and Presentations</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p> The System Imager Suite presentation I gave yesterday evening <a href="http://www.x-tend.be/~kb/presentations/SystemImager.20051215.odp">is online ,</a> the patches provided by Jo and Bob have already been applied :)</p>
+<p>I succeeded in eliminating the <a href="http://howto.x-tend.be/AutomatingVirtualMachineDeployment/#AEN97">2 phase</a> bootstrap today , more news on that follows in the next couple of days. (On Xen 3.0 , Centos 4.2 and SystemImager)
+</p>
+<p>
+Today I also received the invitation to speak at <a href="http://www.linuxdays.lu/">LinuxDays.lu</a></p>
+</div>
+</div>
+<div id="node-85" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-12-13T14:25:18+01:00">
+  <span class="month">Dec</span>
+  <span class="day">13</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="../node/85/index.html">System Imager Suite Talk at L2U</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>In case you're interrested in Large Scale and/or Automated Linux Deployments I`ll be doing a talk on <a href="http://wiki.sisuite.org/">SystemImager Suite</a> tomorrow at <a href="http://l2u.iguana.be/">L2U</a></p>
+</div>
+</div>
+<div id="node-84" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-12-12T10:08:32+01:00">
+  <span class="month">Dec</span>
+  <span class="day">12</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="../node/84/index.html">kiscsiadm</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>My good friend Matt Rechenburg of openMosixview fame , is working on a new project <a href="http://kiscsiadm.sourceforge.net/">kiscsiadm</a>, kiscsiadm is the system-administrator's "swiss knife" when it comes to ISCSI. It is a GUI for common ISCSI-actions which are executed by just a few mouse-clicks.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../node/84/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-83" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-12-07T16:36:38+01:00">
+  <span class="month">Dec</span>
+  <span class="day">07</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="../node/83/index.html">Xen 3 , Everythying is a ...</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><pre>bash-3.00# /etc/init.d/xend start
+Exception starting xend: (-3, 'Temporary failure in name resolution')
+.........-bash-3.00#vi /etc/hosts
+-bash-3.00# /etc/init.d/xend start
+-bash-3.00# xm list
+Name                              ID Mem(MiB) VCPUs State  Time(s)
+Domain-0                           0     1894     2 r<del></del>-   187.3</pre><p>No further comment required.</p>
+</div>
+</div>
+<div id="node-82" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-12-06T22:28:37+01:00">
+  <span class="month">Dec</span>
+  <span class="day">06</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="../node/82/index.html">OpenSPARC , Reprap</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>On <a href="http://www.sun.com/processors/opensparc/index.jsp">OpenSPARC</a><br />
+we read<br />
+<q>Making silicon will never be free, but we believe it's time to open up the process, and enable more bright minds to build on a proven technology core.</q></p>
+<p>So with <a href="http://opensparc.sunsource.net/nonav/index.html">http://opensparc.sunsource.net/nonav/index.html</a> Sun thinks they make the first step in the openhardware revolution ?</p>
+<p>Think again Sun,   and have a look at <a href="http://reprap.org/">RepRap, the Replicating Rapid-Prototyper.</a> , now get in touch and start to work together ! :)</p>
+</div>
+</div>
+<div id="node-81" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-12-05T15:03:31+01:00">
+  <span class="month">Dec</span>
+  <span class="day">05</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="../node/81/index.html">[Xen-devel] Xen 3.0.0 released! - Xen Source</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>It's official : <a href="http://lists.xensource.com/archives/html/xen-users/2005-12/msg00087.html"> Xen 3.0.0 released</a>  , including <a href="http://www.xensource.com/xen/downloads/index.html">RPM's</a>  and other fine stuf.  Good work guys !   Guess there will be a party in Cambridge later tonight ;)</p>
+</div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="index94.html?page=94" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a href="index91.html?page=91" title="Go to page 92" class="active">92</a></li>
+<li class="pager-item"><a href="index92.html?page=92" title="Go to page 93" class="active">93</a></li>
+<li class="pager-item"><a href="index93.html?page=93" title="Go to page 94" class="active">94</a></li>
+<li class="pager-item"><a href="index94.html?page=94" title="Go to page 95" class="active">95</a></li>
+<li class="pager-current">96</li>
+<li class="pager-item"><a href="index96.html?page=96" title="Go to page 97" class="active">97</a></li>
+<li class="pager-item"><a href="index97.html?page=97" title="Go to page 98" class="active">98</a></li>
+<li class="pager-item"><a href="index98.html?page=98" title="Go to page 99" class="active">99</a></li>
+<li class="pager-item"><a href="index99.html?page=99" title="Go to page 100" class="active">100</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="index96.html?page=96" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="index103.html?page=103" title="Go to last page" class="active">last »</a></li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=95 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:28:08 GMT -->
+</html>

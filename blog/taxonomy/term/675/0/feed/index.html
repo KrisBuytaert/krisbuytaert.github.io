@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - blogger</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/675/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Getting rid of Blogger</title>
+ <link>http://127.0.0.1:8080/blog/getting-rid-blogger</link>
+ <description>&lt;p&gt;So time had come to move all my other blogs to drupal and move them away from blogger.&lt;br /&gt;
+When I migrated this blog from dotclear  to Drupal I found a php script that grabbed all the content from my dotclear setup and migrated it to a fresly installed drupal.  I was hoping to find a similar tool for Blogger .&lt;/p&gt;
+&lt;p&gt;Well no such luck ..  most of the links I found instructed me to first install wordpress, use the import functionality of wordpress then migrate from wordpress to Drupal.&lt;/p&gt;
+&lt;p&gt;Setting up a Wordpress and importing the Blogger postings took me about 10 minutes. Then the hunt for a WordPress to Drupal migration tool started .. first I ran into into a binary one that seemed to be able to connect too my database but couldn&#039;t find the wordpress databases.  Next I ran into a drupal module that only worked on 4.6  But luckily at last I ran into &lt;a href=&quot;http://dojotoolkit.org/~ktiedt/wp2drupal5.tar.gz&quot; title=&quot;http://dojotoolkit.org/~ktiedt/wp2drupal5.tar.gz&quot; rel=&quot;nofollow&quot;&gt;http://dojotoolkit.org/~ktiedt/wp2drupal5.tar.gz&lt;/a&gt;  A drupal module that works with 5.X  well. not sure if it does .X  but at least with .1 ..  (as one of the tests I ran waas on a 5.2 and it failed there) &lt;/p&gt;
+&lt;p&gt;So a couple of manual changes of users mappings , setting up new themes  and some postings on the old blogs that there was a new feed to be subscribed to I was ready to go...&lt;/p&gt;
+&lt;p&gt;Untill.. I couldn&#039;t log on to one of the blogs anymore .. I could ask for a onetime login session, ,manage from there .. then try to log on with the new password and promptly I was shown an Access Denied page .  Weird..&lt;br /&gt;
+The watchdog logs told me that the logon was successfull. but the next entry told me that it was the anonymous user failing access to the protected pages .&lt;/p&gt;
+&lt;p&gt;Thxn  to gnat_x on #drupal_support I cleared my cookies and seemed to solve the issue.&lt;br /&gt;
+He told me he had seen issues before with settings where &lt;a href=&quot;http://www.example.com&quot; title=&quot;www.example.com&quot; rel=&quot;nofollow&quot;&gt;www.example.com&lt;/a&gt; and example.com conflicted or it might have been beta.example.com and blog.example.com ..   He was right..  so I`ll need to figure out how to set my base_url for the different drupals I have running :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/getting-rid-blogger#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/675">blogger</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <pubDate>Wed, 19 Dec 2007 21:02:23 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">535 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

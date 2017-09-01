@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Using broken development frameworks , or why we don&#039;t use Zurmo | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Using broken development frameworks , or why we don&#039;t use Zurmo</h2>
+<div class="content">
+<div id="node-1083" class="node  blog">
+<div class="content"><p>People often wonder why DBA's used to hate developers, and with DBA's also the System Engineers,<br />
+(note that I just expanded devops by adding dba's to the picture..) </p>
+<p>So let me tell you a story .. </p>
+<p>A couple of weeks ago one of our customers wanted to start experimenting with a new type of CRM.  A gamified CRM.<br />
+Zurmo ... </p>
+<p>So we set this thing up in a dev environment and started playing with it , while at first it looks nice ..<br />
+the application  actually felt pretty slow.. however given that is a low resource development environment we looked no further.</p>
+<p>Yet the next step is that we run into missing features, such as the fact that every contact you create by default is<br />
+set to private .. which really isn't productive for a CRM system where you want to be able to follow up on different<br />
+customer and share information.  </p>
+<p>So we tried figuring out what the database changes to do this in bulk would mean, surely it had to be a flag on the contact record .<br />
+Wrong,  Zurmo uses an ORM for their database connectivity ...so their data model wasn't really trivial.</p>
+<p>So we decided to look at the MySQL log file to figure out what db changes happened when updating the record<br />
+Yes there's better approaches  but this one learned us a lot ..<br />
+The procedure I followed was pointing my browser to the page where I wanted to switch the checkbox,<br />
+log on to the mysql box,  set global logging on .  Clicked the checkbox and stopped global logging.</p>
+<p>This gave me a log file with all the database actions required to make that one single change.<br />
+I had to cross check a number of times ... the file created by this short and small action was.<br />
+about 70K </p>
+<p>Puzzled you start looking at the queries ...<br />
+The query list was full with "SELECT * FROM " stanza's ..<br />
+70K whopping K of queries that make your hair turn grey ... </p>
+<p>I figured I'd file a bug .. but I couldn't find  no bugtracker for Zurmo, only a forum (and forums are the most broken form of communication imvho) , yet the developers responded on Twitter.</p>
+<p>The feedback wasn't really satisfying so we quickly decided that supporting this application was not something we would like to do..<br />
+and abandonned it.. </p>
+<p>The real question is  who needs a <a href="http://dilbert.com/2013-05-19/" rel="nofollow">Gamified CRM</a> anyhow...</p>
+<p>PS.  So while finishing up this article on a late evening this week  I might not have put in clear enough that the generated logfile was 70Kb .. I fear some people misunderstood that it generated 70.000 queries.  Obviously a huge difference.  But still the log file shouldn't have been bigger han 1Kb There should have been 2-3 queries max (<a href="https://github.com/KrisBuytaert/snippets/tree/master/zurmo" title="https://github.com/KrisBuytaert/snippets/tree/master/zurmo" rel="nofollow">https://github.com/KrisBuytaert/snippets/tree/master/zurmo</a>) </p>
+<p>But imvho if the size of the queries you are generating is bigger than the page you are generating  you are most often doing it wrong.</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 07/10/2013 - 22:08</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1302 first"><a href="../category/crm/index.html" rel="tag" title="">crm</a></li>
+<li class="taxonomy_term_458"><a href="../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_599"><a href="../taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_1506"><a href="../category/vtiger/index.html" rel="tag" title="">vtiger</a></li>
+<li class="taxonomy_term_1505 last"><a href="../category/zurmo/index.html" rel="tag" title="">zurmo</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-5418"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/3a9e75e1597bf16a9ffc682499a8be2c.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="roblaus&#039;s picture" title="roblaus&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-5418">#1</a>
+    <span class="author"><span class="anonymous" title="not verified">roblaus</span></span>  : <span class="title"><a href="index.html#comment-5418" class="active">Ran a test with Sugar</a></span>
+  </h3>
+  <div class="content"><p>Since I have come across such issues (and debates) quite a few times a ran a short test with Sugar (latest version). You may know that these guys are on the market for almost 10 years now, they got more than 50 mio in venture capital, they have allegedly 160 people employed and (or so they say) more than 1 mio users.</p>
+<p>One single query - a simple refresh on the contacts listview (I cleaned up the log file before pressing the refresh button) produced a 35K file with almost exactly 500 entries. No modifications, no permissions (teams, groups), just a simple select.</p>
+<p>When I was young I admit I did the same as what you do today - I couldn't understand how other people could be so stupid to produce such c..p (in my eyes) and I bitched about it. Loudly and publicly. </p>
+<p>This went on until somebody much smarter than me asked me whether, under the same circumstances, I could do it any better. Which I tried. And failed miserably.</p>
+<p>Since then I have changed my attitude. I of course still criticize a lot. But careful and constructive, always keeping in mind that it's very very hard to create such a complex product. Free of charge for you and me...</p>
+<p>BTW: vtiger is based on Sugar code from 2006 or 07.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/12/2013 - 08:17</div>
+  </div>
+<div class="indented"><a id="comment-5419"></a>
+<div id="comment-2" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-5419">#2</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-5419" class="active">On Broken development frameworks .. </a></span>
+  </h3>
+  <div class="content"><p>You can easily conclude from the article that we opted for an alternative CRM because of the db queries ..</p>
+<p>We didn't . there were a number of other reasons to change .. </p>
+<p>(When I was young) I've ranted about the style of queries that other tools (e.g. Drupal) generated before too..  this is not specific to Zurmo or  Sugar ,   don't even get me started about Hibernate :) </p>
+<p>And oh .. no need to teach me on the history of VTiger &amp; Sugar :)  I`m old enough for that too ...</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/12/2013 - 10:03</div>
+  </div>
+</div><a id="comment-5416"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://zurmo.org/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/78f4e891e98e407711fcbb8b9025a663.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Zurmo&#039;s picture" title="Zurmo&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-5416">#3</a>
+    <span class="author"><a href="http://zurmo.org/">Zurmo</a></span>  : <span class="title"><a href="index.html#comment-5416" class="active">We Have Responded</a></span>
+  </h3>
+  <div class="content"><p><a href="http://zurmo.org/open-source-community/our-community-is-strong" title="http://zurmo.org/open-source-community/our-community-is-strong" rel="nofollow">http://zurmo.org/open-source-community/our-community-is-strong</a></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/12/2013 - 01:24</div>
+  </div>
+<a id="comment-5413"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/ef71a20cfea0149a91ac5a4749b1f714.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="gggeek&#039;s picture" title="gggeek&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-5413">#4</a>
+    <span class="author"><span class="anonymous" title="not verified">gggeek</span></span>  : <span class="title"><a href="index.html#comment-5413" class="active">wow, and I though some of the</a></span>
+  </h3>
+  <div class="content"><p>wow, and I though some of the developers customizing ezpublish websites where real bad, sometimes churning out a few thousand requests per page without knowing what they where doing! 70k for the base app is the new king of the hill ;-)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/11/2013 - 09:44</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:29 GMT -->
+</html>

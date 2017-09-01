@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/199 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:56:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>A linux geek starts playing with a MacMini | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-story one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a></div></div>
+  <h2 id="title">A linux geek starts playing with a MacMini</h2>
+<div class="content">
+<div id="node-199" class="node  story">
+<div class="content"><p>We bought a Mac Mini at the office for multiple reasons,<br />
+First of all we needed a demo box to carry around to show of MailMuseum to customers,  we wanted something small and light as a server.  Secondly it seems like the new MacMini's already have a VT Based chip  so they should be able to runn Xen in full virtualisation mode.  And wel.. If we really have to buy hardware that includes an OS by default ..we prefer buying a Unix platform vs sending money to Redmond.    But the goal is to make it a fulltime Linux/Xen platform not a MacOS X box.</p>
+<p><a href="http://www.mactel-linux.org/" title="www.mactel-linux.org">www.mactel-linux.org</a>  learns you a lot of stuff on how to install Linux and so on.. so I started of by<br />
+Connecting  the MacMini via FireWire to My Laptop Booted with F pressed  thus booted with disk in slave mode ,  mounted stuff,<br />
+I edited partition table.. hmm that should read screwed partition table . Coudn't boot anymore.   Booted with install CD.  (Press C)<br />
+It didn't find a disk anymore .. you need to launch Utilities / Disk Utility from the menu and partition it again .. weird.. it just stops and you have to look in menu's rather than just starting the thing itselve.  Hmm.. Linux really is userfriendly at least Linux installers tell me what's the next step and suggest a partition info :)</p>
+<p>What ? MacOS needs 15 GB to install,  I planned on giving it about 10Gb but that really didn't seem to be enough.  Ok so 30 Gb you get .. the rest is for Linux.<br />
+While fiddling in the menu I ran into the Startup Disk thingie Hmm.. this thing has an option boot from netwrk.. needs to be figured out ..<br />
+Right I`m in wait mode now .. 11% complete ...</p>
+<p>Ah now it's done  .. it's at 100% and it starts again .. "Writing files"<br />
+Oh my .. Installing MacOS X really really takes long, I already experienced it last July when I scratched and reinstalled Macbar's Powerbook  but now again I have to realise that Installing Linux is soo much faster and and once again the progress stuff reaches 100% completed .. only to proceed to the next phase...<br />
+But.. wait .. now it gives me a Time Remaining:  About 1 hour and 23 minutes.<br />
+Yeah right.. I`m going to play with my MythTV box</p>
+<p>Anyway.. my iMac is still happily running Ubuntu PPC ...</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 05/24/2006 - 19:47</div>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/199 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:56:53 GMT -->
+</html>

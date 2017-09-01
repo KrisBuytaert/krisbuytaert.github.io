@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - ran</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1467/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Installing Vagrant, on Ubuntu Natty</title>
+ <link>http://127.0.0.1:8080/blog/installing-vagrant-ubuntu-natty</link>
+ <description>&lt;p&gt;(Warning some Ubuntu ranting ahead) &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;apt-get install virtualbox-ose &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;apt-get install rubygems&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;gem install vagrant&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;That&#039;s what I assumed it would take me to install vagrant on a spare Ubuntu (Natty) laptop.&lt;/p&gt;
+&lt;p&gt;Well it&#039;s not.   after that I was greeted with some weirdness.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;$vagrant&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;vagrant: command not found...&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Yet gem list --local showed the vagrant gem installed.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;$ruby&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;ruby:  command not found&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;I looked twice, checked again and indeed it seems you can install rubygems on natty with no  ruby installed  #dazedandconfused&lt;/p&gt;
+&lt;p&gt;So unlike other distro&#039;s on Ubuntu doesn&#039;t add the rubygems binary path to it&#039;s default path&lt;br /&gt;
+After  adding that to my .bashrc things started working better.&lt;/p&gt;
+&lt;p&gt;The active reader has noticed that by now half of the Twittersphere was pointing me to the already implemented&lt;br /&gt;
+above solution and the other half was telling me to not install rubygems using apt-get, or to use rvm for all my rubygem troubles&lt;/p&gt;
+&lt;p&gt;Apart from the point that if you need tools to like rvm to fix things that are fundamentally broken,  the fact is that joe average java developer doens&#039;t want to be bothered with  RubyGem hell  , he just wants to do apt-get install Vagrant and get on with his real work,  and that&#039;s exactly what I&#039;d expect from   Linux for human beings&lt;/p&gt;
+&lt;p&gt;I&#039;d expect any junior guy to be able to go to vagrantup.com  read the 4 commands on the main page and be up and running&lt;br /&gt;
+Coz that&#039;s how it works on my  Bleeding Edge Enterprise Development Distro,  the one I usually would not advise those people (and my mother) to use.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/installing-vagrant-ubuntu-natty#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/ran">ran</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/916">ubuntu</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vagrant">vagrant</category>
+ <pubDate>Thu, 29 Dec 2011 18:31:03 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1055 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

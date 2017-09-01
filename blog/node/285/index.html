@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/285 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:57:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>How to manage parsable code in a large infrastructure. | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-story one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a></div></div>
+  <h2 id="title">How to manage parsable code in a large infrastructure.</h2>
+<div class="content">
+<div id="node-285" class="node  story">
+<div class="content"><p>I already touched the topic  in the previous article,  but I've been wondering,  how do you ideally manage say Perl or PHP code in a Large Environment.<br />
+As earlier noted     I want a system to be    reproducability under    version control and I want to be able to identify the source of every single file on my system either as belonging to a package or being transferred there from my version control platform.</p>
+<p>For the ease of reading let's say we stick to mass deploying PHP Code.      Libraries most certainly belong to be in packages.  One can disuss where your own code belings.<br />
+sTypically PHP code, html layout and Stylesheets are small files that are modified manually by a developer .  Often really small changes are being made to those files.<br />
+These changes don't need to be recompiled in order to be used so shops that use this kind of code don't always have tradition of build and release management.</p>
+<p>I`m thinking about abusing configuration management tools to manage code and just consider code as a configuration file.<br />
+Amongst the disadvantages of using these file based management tools , puppet/cfengine/yourpoison but it should be a tool that makes it as easy for you to update 1 file on 1 machine as 1 file on 2000 machines.</p>
+<ul>
+<li>Unclear file origin , you have no direct link anymore between the file and where it came from on the machine as it doesn't show up in a package list and rpm -qf doesn't  help you either</li>
+<li>You need a  tool , most people these days know either rpm or dpkg , either  apt or yum, using  a tool such as CFengine or Puppet makes it  more complex for new people to step in.</li>
+</ul>
+<p>The DisAdvantages of packaging code</p>
+<ul>
+<li>You have a less granular way of defining which files need to be modified,  it's an all or nothing approach , however you can define how small your packages  are</li>
+<li>You need a build framework to build the packages, off course this can be automated.</li>
+</ul>
+<p>If you use tagging wisely you're sure that either way you know which version is on the production platform.<br />
+Most configuration management systems have features that allow you to verify if a file is changed or to to do a certain action after you update this so that's not an issue.<br />
+Is using a  package per application really that much overhead ?   If you already have the infrastructure in place to build your packages then what's the extra effort ?</p>
+<p>I've used both approaches so far,  a lot depends on the culture of the developers team and the already existing infrastructure.</p>
+<p>So what's your opinion ?</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Tue, 01/02/2007 - 23:00</div>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/285 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:57:58 GMT -->
+</html>

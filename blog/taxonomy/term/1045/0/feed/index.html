@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - open source days</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1045/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Why openID will fail</title>
+ <link>http://127.0.0.1:8080/blog/node/740</link>
+ <description>&lt;p&gt;Martin Strandbygaard just gave an introductory talk about openID, at Open Source days in Denmark,  Given the recent discussion about openID and security, mostly the phishing opportunities it created I was interrested to hear the talk.&lt;/p&gt;
+&lt;p&gt;Yes I have an openID,  I use it at like 2-3 sites..  why.. because most of the sites haven&#039;t adopted yet..&lt;br /&gt;
+Martin gave an overview of different sites already allowing people to use openID to log on.  And also which sites today allow you to create an openid identity with them that you then can use elsewhere.    Yes you can use your LiveJournal, or Yahoo Account as an OpenID.    I&#039;m not doing that. I&#039;m running my own Open Source Open ID server (funny he didn&#039;t touch that subject).&lt;/p&gt;
+&lt;p&gt;When he continued to discuss adoption he mentionned that even the company from RedMond was starting to allow people to logon with their OpenID , however just an OpenID from a restricted set of OpenID servers.&lt;/p&gt;
+&lt;p&gt;I asked where on the Yahoo site I could log on using an OpenID, and my fear was confirmed, you can&#039;t.   So yahoo indeed is promoting OpenID,  but why .. so they can see which other services their users are using  so they can quickly acquire them ?&lt;/p&gt;
+&lt;p&gt;And according to Martin different other sites that allow OpenID authentication are gearing towards allowing just a limited set of OpenID services,  the ones that they have partnerships with.&lt;/p&gt;
+&lt;p&gt;Now I don&#039;t want to use a 3rd party OpenID server, I have my own.. I want to control my own data.  For services that use the above mentionned mode,  trusting a limited set of openidproviders, my presonal OpenID is useless.  I would once again endup having to sign up with different OpenID servers , which kind of makes the whole idea of not having to keep different username/password combinations around void :(&lt;/p&gt;
+&lt;p&gt;One of the questions from the audience was about how strong the authentication of an OpenID logon was.  fact is that you can make it as strong as you want.  If you build an OpenID server you could go with plain text authentication over http, basic authentication over https   or even build an authentication system based on a challenge response framework.&lt;br /&gt;
+The bigger question however is how and what data goes to the OpenID consumer.&lt;/p&gt;
+&lt;p&gt;So apart from the existing security challenges today , there are a lot of organisatins claiming to support OpenID, while they actually aren&#039;t, and that&#039;s the first blocking factor for quick openID adoption.   And the ones that are adopting aren&#039;t doing it open enough.&lt;/p&gt;
+&lt;p&gt;I fear it was a nice attempt .. but I don&#039;t really think it&#039;s going to be a big success.&lt;br /&gt;
+It should have taken of allready ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/740#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1045">open source days</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/718">openid</category>
+ <pubDate>Sat, 04 Oct 2008 13:56:29 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">740 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Open Source Days 2008 , Day 2 </title>
+ <link>http://127.0.0.1:8080/blog/node/739</link>
+ <description>&lt;p&gt;As I was already up since yesterday 0500 , it was dinner with Sven , Robin and some other conference visitors at a Turkish Buffet place , after which we headed to what seemed to be a great bar where they failed to serve us while waiting for over 10 minutes, so we moved on to another place. and then to be &quot;early&quot;&lt;/p&gt;
+&lt;p&gt;After walking around a bit in Copenhagen and looking for a bus stop to go to the university I managed to bump into Wim &amp;amp; Co who offered me a ride to the IT University. Where I was almost in time for the first talk by&lt;br /&gt;
+Jan Wieck about Slony-I,  A master to multiple slaves-replication system for PostgreSQL&lt;br /&gt;
+Given my recent MySQL MultiMaster setups I was fairly interested where PostgreSQL is at today.&lt;/p&gt;
+&lt;p&gt;Jan started out with explaining where he used replication the most,&lt;br /&gt;
+For backups and    Specialized services  so he could offload long running and intrusive reporting tools to an isiolated server.&lt;/p&gt;
+&lt;p&gt;While going over the history of Slony he also mentioned eRserver, first written in Perl later  rewritten  in Java and that was a ...   Well lets just say that memory usage wasn&#039;t really ideal.&lt;/p&gt;
+&lt;p&gt;The presentation covered different potential replication scenarios and the problems one could run into.&lt;br /&gt;
+No sign however of multimaster replication.  Jan Wieck even told us he had no plans to implmenent multimaster replication&lt;br /&gt;
+at all at the moment.   To me MultiMaster means that I can move my database connection together with my application service in a HA setup.  I don&#039;t need to wory about the possibility of writing in a slave and breaking replication  as the slave is also a master and the other node Will catch up.&lt;/p&gt;
+&lt;p&gt;Next up was a talk about openID, which made me realize a couple of things about it..  all off that in a separate post :)&lt;/p&gt;
+&lt;p&gt;The University restaurant was open and you could pay for your Chilli Con Carne to a really Grumpy cashier which brings me right to the next talk I followed..  A Developers Guide to Grumpy Old Sysadmins however, the majority of people in the room were Sysadmins , or people with a mixed role doing both development and sysadmin work.&lt;/p&gt;
+&lt;p&gt;You don&#039;t let your developers even close to your production systems.  He then went on to read a fairly big part of &quot;Over Clocked,  Stories of the Future Present &quot; by Cory Doctorow ,  which I&#039;ve  promptly put on my holliday reading list :&lt;/p&gt;
+&lt;p&gt;So what&#039;s it like being a sysadmin ?  You get calls in the middle of the night because a system breaks,&lt;br /&gt;
+When you work you .. people complain when things go wrong.. they don&#039;t cheer when things go right or when you have done your job correctly&lt;/p&gt;
+&lt;p&gt;Reminds me of this situation at a customer where the Cisco people that fail to automate their work and  get to travel around the qworld to do  their work using their serial console , where as the Linux platform team has automated their work so far they get to stay home and watch the machines boot  then do a quick check over ssh to see if they actually work.&lt;/p&gt;
+&lt;p&gt;Anyhow.. the talk really wasn&#039;t focusing on how developers could cooperate better with sysadmins, apart from a couple of general tips  so it really missed its goal.&lt;/p&gt;
+&lt;p&gt;I popped into the Lightning talk about Ubuntu on EEE talk , hoping to learn something, apart from 1 url that I should read I guess it was the otherway around  , it&#039;s usually a bad sign when a speaker starts every 2 slides with &quot;I haven&#039;t tested this myselve but &quot; ...&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/739#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/558">conferences</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1045">open source days</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1047">postgresql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1048">sysadmin</category>
+ <pubDate>Sat, 04 Oct 2008 13:52:53 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">739 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Open Source Virtualization</title>
+ <link>http://127.0.0.1:8080/blog/node/738</link>
+ <description>&lt;p&gt;I&#039;ve just placed the presentation I gave both yesterday at the &lt;a href=&quot;http://www.opensourcedays.org/2008/&quot; rel=&quot;nofollow&quot;&gt;Open Source Days&lt;/a&gt; in Copenhagen , and last week in Zurich at the &lt;a href=&quot;http://openexpo.org/en&quot; rel=&quot;nofollow&quot;&gt;Open Expo&lt;/a&gt; , about Open Source Virtualization online.&lt;br /&gt;
+The presentation is based on a series of articles I wrote earlier this year for &lt;a href=&quot;http://virtualization.com/guides-howto-whitepaper-explanation/2008/03/10/looking-back-at-a-decade-of-open-source-virtualisation/&quot; rel=&quot;nofollow&quot;&gt;Virtualization.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can download it &lt;a href=&quot;http://www.krisbuytaert.be/presentations/OSSVirt.odp&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The presentation covers a fairly complete overview of what&#039;s around in Open Source Virtualization tools and and their Management frameworks.&lt;/p&gt;
+&lt;p&gt;I will be giving the same presentation again at the end of the month at &lt;a href=&quot;http://www.t-dose.org/&quot; rel=&quot;nofollow&quot;&gt;T-Dose&lt;/a&gt; in Eindhoven, The Netherlands&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/738#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/558">conferences</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1045">open source days</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/989">openexpo</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1046">virtualbox</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Sat, 04 Oct 2008 11:18:26 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">738 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Open Source Days 2008 , Copenhagen, Day 1</title>
+ <link>http://127.0.0.1:8080/blog/node/737</link>
+ <description>&lt;p&gt;I&#039;m expecting different people not using Dopplr to come back to me next week and tell me they were in Denmark also , as Copenhagen is the place to be this week(end)&lt;/p&gt;
+&lt;p&gt;I was late for the first talk on how to automate a large scale school environment with gentoo.  So I missed the rationale for the development of DIPO, and I didn&#039;t want to bother the speaker with questions he had already explained in his earlier slides, however .. it spelled &quot;reinventing the wheel&quot; all over again.&lt;/p&gt;
+&lt;p&gt;The second speaker apologised for being late on schedule as the first speaker had to compile everything.  Nigel Kersten from from Google talked about Puppet, need I say more.. it was great :)&lt;/p&gt;
+&lt;p&gt;So lunch is really really early here as from 11u30 on , however I didn&#039;t mind as I was up since 5 , so I actually was pretty hungry :)&lt;/p&gt;
+&lt;p&gt;After lunch  3 talks and a Keynote were scheduled.  In order not to be late for my own talk I headed into the Open Solaris Storage talk ... ,  not really interesting :( &lt;/p&gt;
+&lt;p&gt;Funny quote from the talk however &quot;The clients are still Linux, but the server is already solaris&quot;...funny thing to say ... certainly for a &lt;a href=&quot;http://www.nytimes.com/idg/IDG_852573C400693880002574CE00371FE1.html?ref=technology&quot; rel=&quot;nofollow&quot;&gt;dying breed.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My own talk was fairly well attended, people were sitting on the stairs in the Auditorium and there was a lot of Q&amp;amp;A after.&lt;/p&gt;
+&lt;p&gt;As said in my talk last week in Zurich  I don&#039;t think&lt;br /&gt;
+Sun has a really clear message with what they are doing with xVM etc&lt;br /&gt;
+So the talk aftermine should have cleared that out shouldn&#039;t it.&lt;br /&gt;
+Well it didn&#039;t , all I got back from it was .. &quot;We ported Xen to Solaris&quot; , and &quot;Our demo doesn&#039;t work because of a funky dns problem.&quot;&lt;/p&gt;
+&lt;p&gt;So Robin Rowe is keynoting about about Linux at the Movies.. and tonight it&#039;s off to the Social event .. well one of them :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/737#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/455">conference</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1045">open source days</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1044">opensource days</category>
+ <pubDate>Fri, 03 Oct 2008 13:58:32 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">737 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

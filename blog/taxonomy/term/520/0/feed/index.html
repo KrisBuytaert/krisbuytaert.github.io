@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - inuits</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/520/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>#monitoringlove hackfest</title>
+ <link>http://127.0.0.1:8080/blog/monitoringlove-hackfest</link>
+ <description>&lt;p&gt;The age of #monitoringsucks is over, we&#039;re now transitioning into a #monitoringlove period.  &lt;/p&gt;
+&lt;p&gt;That however doesn&#039;t mean al the work is done, we still need to do a lot of work and a lot of people are working on a lot of stuff.&lt;/p&gt;
+&lt;p&gt;Therefore like last year we are opening up our offices again right after Fosdem for a #monitoringlove hackfest&lt;/p&gt;
+&lt;p&gt;That&#039;s right on february 4 and 5 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp.  In short  a #monitoringlove hackathon&lt;/p&gt;
+&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert) know if you want to join us in Antwerp.  We&#039;ll provide caffeine, wireless, chairs and some snacks. &lt;/p&gt;
+&lt;p&gt;Please register upfront at : &lt;a href=&quot;http://monitoringlove2013.eventbrite.com/&quot; rel=&quot;nofollow&quot;&gt;http://monitoringlove2013.eventbrite.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Obviously if you can&#039;t make it to Antwerp you can join the effort on ##monitoringsucks on Freenode or on Twitter.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.inuits.eu/contact&quot; rel=&quot;nofollow&quot;&gt;location will be Duboistraat 50 , Antwerp&lt;/a&gt;&lt;br /&gt;
+It is about 10 minutes walk from the Antwerp Central Trainstation&lt;br /&gt;
+Depending on Traffic Antwerp is about half an hour north of Brussels and there are hotels at walking distance from the venue.&lt;/p&gt;
+&lt;p&gt;Plenty of parking space is available on the other side of the Park &lt;/p&gt;
+&lt;p&gt;Read last years report &lt;a href=&quot;http://www.krisbuytaert.be/blog/we-didnt-fix-it&quot;&gt;http://www.krisbuytaert.be/blog/we-didnt-fix-it&lt;/a&gt;  to get an idea of what will happen...&lt;/p&gt;
+&lt;p&gt;PS.  Yes I`m trying to get another event of the ground the days before Fosdem but I`m still awaiting confirmation of the venue ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoringlove-hackfest#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/768">fosdem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Tue, 13 Nov 2012 20:54:24 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1074 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Inuits Day </title>
+ <link>http://127.0.0.1:8080/blog/inuits-day</link>
+ <description>&lt;p&gt;Couple of Fridays ago we had one of our @Inuits days again.  Rather than having some people give talks and presentations about what they have been doing for the  past couple of months this time we set out to  research, test, and build stuff.&lt;/p&gt;
+&lt;p&gt;We split up in 3 different groups,  one focusing on CI and testing freshly build stuff with cucumber,   a second one setup and tested &lt;a href=&quot;http://www.codership.com/products/galera_replication&quot; rel=&quot;nofollow&quot;&gt;Galera&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We setup a 3 node Galera cluster , not really as smooth as we&#039;d like to ..&lt;/p&gt;
+&lt;p&gt;Our first bump was that the installation of the package on CentOS is hell, it needs manual interaction such as replacing  packages.  Deploying this from a repository is probably not going to be a straight forward option.&lt;/p&gt;
+&lt;p&gt;Galera only takes care of replicating data, just as with MySQL MM replication there still is a need for an external tool to define where to access the database, and implement monitoring in such a way that you are connecting to an up to date database.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://poke152.blogspot.com/&quot; rel=&quot;nofollow&quot;&gt;Karl&lt;/a&gt; started wondering about Galera&#039;s locking,  turns out the locks aren&#039;t cluster wide, locks within the same node work fine.. so if galera is solely used for HA with 1 active node and X failover nodes, it will work (so all transactions happening on 1 node).&lt;/p&gt;
+&lt;p&gt;We also ran into some issues when trying to start a node which couldn&#039;t contact the wsrep_cluster_address point (which is a node it will sync from at startup if specified in the wsrep.cnf file) , it just didn&#039;t want to start. This means that when the referenced node (configured in wsrep_cluster_address)is down, you will need to comment it out before you are able to start the mysql server.&lt;/p&gt;
+&lt;p&gt;The fact that Galera replicates everythying brought us to the discussion if we really wanted that , or if we wanted more finegrained control over which databases or even tables we want to replicate and which ones we didn&#039;t want to replicate.  A minority of people wanted to replicate everything,  the majority of our group wanted finere grained control over what is being replicated to another node.&lt;/p&gt;
+&lt;p&gt;I`m sure &lt;a href=&quot;http://www.lefred.be/&quot; rel=&quot;nofollow&quot;&gt;Lefred&lt;/a&gt; will shortly be writing about the progress his group made on &lt;a href=&quot;http://www.banquise.be/&quot; rel=&quot;nofollow&quot;&gt;Banquise&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The day ended as it should .. with BBQ and plenty of drinks&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/inuits-day#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/banquise">banquise</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ci">ci</category>
+ <category domain="http://127.0.0.1:8080/blog/category/galera">galera</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/category/inuits-day">inuits day</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <pubDate>Mon, 21 Jun 2010 19:14:12 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1012 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>FAQ:</title>
+ <link>http://127.0.0.1:8080/blog/faq</link>
+ <description>&lt;p&gt;Q: Is &lt;a href=&quot;http://buytaert.net/&quot; rel=&quot;nofollow&quot;&gt;Dries&lt;/a&gt; your Brother  ?&lt;br /&gt;
+A: No he isn&#039;t.&lt;/p&gt;
+&lt;p&gt;Q: Are you related to  &lt;a href=&quot;http://buytaert.net/&quot; rel=&quot;nofollow&quot;&gt;Dries&lt;/a&gt; ?&lt;br /&gt;
+A: No we aren&#039;t (as far as we know)&lt;/p&gt;
+&lt;p&gt;Q: Do you know  &lt;a href=&quot;http://buytaert.net/&quot; rel=&quot;nofollow&quot;&gt;Dries&lt;/a&gt;  ?&lt;br /&gt;
+A: Yeah .. I&#039;ve known him since before he started his work on Drupal, now can you stop asking about Dries and refocus on me ?&lt;/p&gt;
+&lt;p&gt;Q: Are you related to Thomas Buytaert&lt;br /&gt;
+A: No.&lt;/p&gt;
+&lt;p&gt;Q: Why are you sdog  on irc ?&lt;br /&gt;
+A: Back in my DemoScene days my nick was Sleeping Dog , whch was too long for a unix account name , sleeping didn&#039;t feel like a good choice and neither did dog, so the abbrev became sdog&lt;/p&gt;
+&lt;p&gt;Q: Are you still involved in openMosix ?&lt;br /&gt;
+A: It&#039;s dead Jim, openMosix  never made it to the 2.6 Kernel series,  Moshe announced  the EOL in July 2007.  I&#039;ve been told the folks over at &lt;a href=&quot;http://linuxpmi.org/trac/&quot; rel=&quot;nofollow&quot;&gt;LinuxPMI&lt;/a&gt; are doing good job in trying to revive the project.&lt;/p&gt;
+&lt;p&gt;Q: Why is Inuits called Inuits ?&lt;br /&gt;
+A: Try finding a cool name and the matching available .be domain.  That and our marketeers didn&#039;t know where the Penguins live.&lt;/p&gt;
+&lt;p&gt;Q: Why is Everything a Freaking DNS Problem&lt;br /&gt;
+A: You mean you still haven&#039;t figured out yourselve ?&lt;/p&gt;
+&lt;p&gt;Q: I want to connect ?&lt;br /&gt;
+A: No prob, here&#039;s my &lt;a href=&quot;/blog/policy&quot;&gt;policy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Q: Do you want to give a talk  about Open Source, MySQL HA, Devops, Virtualization, CloudSec, Open Source  ....&lt;br /&gt;
+A: Tell me more about your event and I`ll consider it.&lt;/p&gt;
+&lt;p&gt;Q: I&#039;ve got another Question&lt;br /&gt;
+A: I`m pretty sure you can find my email address and mail me :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/faq#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/557">buytaert</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/853">dries</category>
+ <category domain="http://127.0.0.1:8080/blog/category/eiafdp">eiafdp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/faq">faq</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/708">kris buytaert</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/732">openmosix</category>
+ <pubDate>Mon, 14 Jun 2010 19:32:26 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1009 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Racketeering in 2009</title>
+ <link>http://127.0.0.1:8080/blog/racketeering-2009</link>
+ <description>&lt;p&gt;With the fresh launch of &lt;a href=&quot;http://www.inuits.be&quot;&gt;inuits.be&lt;/a&gt;  this long overdue &lt;a href=&quot;http://www.inuits.be/news/bsa-viseert-open-source-sector&quot;&gt;post&lt;/a&gt; popped up again   , Earlier this year we  got this very nice letter from the BSA   That&#039;s right the Business Software Alliance.&lt;/p&gt;
+&lt;p&gt;The letter pictured below is in dutch, so allow me to translate&lt;br /&gt;
+some parts :) (Although I`m pretty sure you&#039;ve seen variations of this letter in different languages before..)&lt;/p&gt;
+&lt;p&gt;In short they are warning us about using software with no licenses.&lt;/p&gt;
+&lt;p&gt;They warn us, that in the next couple of weeks they will specifically focus on our sector,  that is the &lt;b&gt;Linux and Open Source Consultancy sector&lt;/b&gt;,&lt;/p&gt;
+&lt;p&gt;Obviously they are pointing out the potential legal risks we are taking if we would be using illegal software.  What illegal software ?  What on earth makes them think we are violating licenses ?&lt;/p&gt;
+&lt;p&gt;Now sending us that letter is just plain stupid,  but sending that letter to a lot of other companies might get them all terrified ,  and that&#039;s just racketeering isn&#039;t it.&lt;/p&gt;
+&lt;p&gt;Anyhow feel free to have a good laugh with the letter below&lt;br /&gt;
+&lt;img src=&quot;http://www.krisbuytaert.be/images/bsa_small.png&quot; /&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/racketeering-2009#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/bsa">bsa</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/racketeering">racketeering</category>
+ <pubDate>Mon, 28 Sep 2009 17:59:40 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">941 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>ZooCamp</title>
+ <link>http://127.0.0.1:8080/blog/zoocamp-0</link>
+ <description>&lt;p&gt;Last saturday was ZooCamp ,  also known as Barcamp Antwerp II&lt;/p&gt;
+&lt;p&gt;The location , the Antwerp Zoo, was the same as for the last CloudCamp Antwerp edition,  so I was already pretty familiar with the  location.&lt;/p&gt;
+&lt;p&gt;Lots of new people at ZooCamp and also a bunch of regulars..&lt;/p&gt;
+&lt;p&gt;My 4th barcamp  and the 2nd where I didn&#039;t do a presentation,  I hope the fact that &lt;a href=&quot;http://www.inuits.be&quot;&gt;Inuits&lt;/a&gt; was sponsoring  ZooCamp  made up for that..   contributions can be done in different forms, and you can&#039;t always keep coming up with new topics.&lt;/p&gt;
+&lt;p&gt;I went to ZooCamp with a backpack full of internet connected things as that was the topic , my freshly upgraded TuxDroid  and my Chumby ..  but I didn&#039;t even have the time to fully unpack them and set em up.  The biggest problem with the chumby was the website authentication that was required for wifi access.. and a Chumby with no wifi is like a pub with no beer.&lt;br /&gt;
+I had even planned to do a rerun of my CloudSec talk from the last CloudCamp Antwerp, however the schedule filled quite fast with different interesting talks ...&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://frank.be/articles/2009/05/25/presentatie-zoocamp-over-dns-problemen/&quot; rel=&quot;nofollow&quot;&gt;Frank&lt;/a&gt; even  managed to hijack my favourite topic, yes that&#039;s right .. he did a talk titled &quot;Everything is a Frakkin DNS Problem&quot;.    He pretty much covered zero of my typical cases so I can still do a run of my version of that talk one day  :)&lt;/p&gt;
+&lt;p&gt;This barcamp was almost back to basics, apart from the  location, wifi and the obligatory catering the crowd took charge , Lunch was everybody on their own .. so we ran out for Sushi , great ..&lt;br /&gt;
+Not sure if we need to cough up that amount of money for a location in the future ..&lt;br /&gt;
+Ideally we&#039;d be able to find a location for free at some companies office, but that seems to be a difficult task for a saturday event.&lt;/p&gt;
+&lt;p&gt;Oh and we got to see the baby Elephant.. it was sleeping :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/zoocamp-0#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/617">barcamp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/barcamp-antwerp">barcamp antwerp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fucking-dns-problems">fucking dns problems</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/category/zoocamp">Zoocamp</category>
+ <pubDate>Tue, 26 May 2009 20:57:43 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">912 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>April Fools</title>
+ <link>http://127.0.0.1:8080/blog/april-fools</link>
+ <description>&lt;p&gt;In case you hadn&#039;t  noticed.. the previous &lt;a href=&quot;http://www.krisbuytaert.be/blog/we-are-rebranding&quot;&gt;post&lt;/a&gt; was an Aprils Fool joke .. &lt;/p&gt;
+&lt;p&gt;We had a good laugh at different people actually believing that we planned on rebranding to &lt;a href=&quot;http://www.pinuits.be&quot; rel=&quot;nofollow&quot;&gt;Pinuits&lt;/a&gt;, but we&#039;ll stay &lt;a href=&quot;http://www.inuits.be&quot;&gt;Inuits&lt;/a&gt; , But maybe next year we&#039;ll rebrand to Linuits :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/april-fools#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/april-fools">april fools</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/category/linuits">linuits</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pinuits">pinuits</category>
+ <pubDate>Mon, 06 Apr 2009 17:09:32 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">896 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>We are rebranding !</title>
+ <link>http://127.0.0.1:8080/blog/we-are-rebranding</link>
+ <description>&lt;p&gt;So the cat is out of the bag,&lt;/p&gt;
+&lt;p&gt;As of today Inuits is rebranding to Pinuits,&lt;br /&gt;
+The press release is &lt;a href=&quot;http://www.pinuits.be/&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We&#039;ve had good feedback on the new name so far.  Different people told me the name matched better to what we are doing .  Actually my wife thinks our new name is much better as at least the Pin in Pinuits refers to our favourite Tux again ..&lt;/p&gt;
+&lt;p&gt;Finding an appropriate name for an Open Source consultancy company, with focus on Linux, Open Source Monitoring, MySQL, Open Source Virtualization , Large Scale Deployments , High Availability and  Drupal, isn&#039;t easy .. you want to show both community involvement and professionality.  And find a domain that&#039;s still available.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/we-are-rebranding#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/apache">apache</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/category/lamp">lamp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pinuits">pinuits</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Tue, 31 Mar 2009 23:27:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">895 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Not using Open Source requires Anonymity </title>
+ <link>http://127.0.0.1:8080/blog/node/631</link>
+ <description>&lt;p&gt;The local &lt;a href=&quot;http://trends.be/&quot;&gt;Trends Magazine&lt;/a&gt; has a big article about Open Source and Free software..   sadly it&#039;s mistitled &quot;Gratis software becomes real business&quot; &lt;/p&gt;
+&lt;p&gt;Apart from &lt;a href=&quot;http://outerthought.org/en/index.html&quot;&gt;mentioning&lt;/a&gt; &lt;a href=&quot;http://www.krisbuytaert.be/&quot;&gt;the&lt;/a&gt; &lt;a href=&quot;http://www.inuits.be&quot;&gt;usual&lt;/a&gt; &lt;a href=http://tiny.be/&gt;suspects&lt;/a&gt; ,the obligatory &lt;a href=&quot;http://acquia.com/&quot;&gt;Acquia&lt;/a&gt; mention, and the fact that everybody who is in the business wonders where the  &lt;a href=&quot;http://www.marketcap.nl&quot;&gt;so called market analists&lt;/a&gt; get their figures,  the biggest surprise in the article are the things that are NOT mentioned.&lt;/p&gt;
+&lt;p&gt;It seems that these days you have to be ashamed for not wanting to use Open Source ..&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/Screenshot-TrendsOpenSource.pdf.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Translated: &quot;Also other and often big software companies see the advantages of using open sourcemodules in their packages, although the are not making it public. &quot;We are a big proponent of Open Source , but I don&#039;t see how you can live from it&quot;, says the managing director of a Flemish Information Services Group, who prefers not to have is companies associated with open source&quot;&lt;/p&gt;
+&lt;p&gt;Pretty pathetic,      Yes we are using Open source,   No our customers shouldn&#039;t know,&lt;br /&gt;
+No you don&#039;t get to know who we are, we want to remain anonymous.&lt;/p&gt;
+&lt;p&gt;I&#039;ve got a pretty good idea which company this might be ..  do you ? &lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/631#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/557">buytaert</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/853">dries</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/707">krisbuytaert</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/852">trends</category>
+ <pubDate>Fri, 28 Mar 2008 18:19:17 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">631 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Inuits</title>
+ <link>http://127.0.0.1:8080/blog/node/459</link>
+ <description>&lt;p&gt;Its pretty funny when you announce that you have left your job what kind of ideas people have about your next venture.&lt;/p&gt;
+&lt;p&gt;The first number of guesses were pretty obvious.  Different people tought I was heading to Xensource,   other people tought I was heading for Qumranet.&lt;br /&gt;
+Other people tought I was heading to the US.&lt;br /&gt;
+I&#039;d love to spend some time abroad working in a  different culture so who knows  one day..&lt;/p&gt;
+&lt;p&gt;But I`m pretty much not moving that far yet&lt;br /&gt;
+Our new venture is called Inuits.  I write our as there are different  familiar faces at &lt;a href=&quot;www.Inuits.be&quot;&gt;Inuits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Our website isn&#039;t ready yet .. we have other priorities.&lt;br /&gt;
+But as soon as it&#039;s ready I`ll let you know &lt;/p&gt;
+&lt;p&gt;So now you know :)&lt;/p&gt;
+&lt;p&gt;PS. And for those dissapointed.. yes there is more where this came from :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/459#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/505">qumranet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Fri, 05 Oct 2007 13:46:38 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">459 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

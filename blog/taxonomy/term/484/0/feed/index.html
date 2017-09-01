@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - drupal</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/484/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Jenkins, Puppet, Graphite, Logstash and YOU</title>
+ <link>http://127.0.0.1:8080/blog/jenkins-puppet-graphite-logstash-and-you</link>
+ <description>&lt;p&gt;This is a repost of an article I wrote for the Acquia Blog some time ago.&lt;/p&gt;
+&lt;p&gt;As mentioned before, devops can be summarized by talking about culture, automation, monitoring metrics and sharing. Although devops is not about tooling, there are a number of open source tools out there that will be able to help you achieve your goals. Some of those tools will also enable better communication between your development and operations teams.&lt;/p&gt;
+&lt;p&gt;When we talk about Continuous Integration and Continuous Deployment we need a number of tools to help us there. We need to be able to build reproducible artifacts which we can test. And we need a reproducible infrastructure which we can manage in a fast and sane way. To do that we need a Continuous Integration framework like Jenkins.&lt;/p&gt;
+&lt;p&gt;Formerly known as Hudson, Jenkins has been around for a while. The open source project was initially very popular in the Java community but has now gained popularity in different environments. Jenkins allows you to create reproducible Build and Test scenarios and perform reporting on those. It will provide you with a uniform and managed way to , Build, Test, Release and Trigger the deployment of new Artifacts, both traditional software and infrastructure as code-based projects. Jenkins has a vibrant community that builds new plugins for the tool in different kinds of languages. People use it to build their deployment pipelines, automatically check out new versions of the source code, syntax test it and style test it. If needed, users can compile the software, triggering unit tests, uploading a tested artifact into a repository so it is ready to be deployed on a new platform level.&lt;/p&gt;
+&lt;p&gt;Jenkins then can trigger an automated way to deploy the tested software on its new target platform. Whether that be development, testing, user acceptance or production is just a parameter. Deployment should not be something we try first in production, it should be done the same on all platforms. The deltas between these platforms should be managed using a configuration management tool such as Puppet, Chef or friends.&lt;/p&gt;
+&lt;p&gt;In a way this means that Infrastructure as code is a testing dependency, as you also want to be able to deploy a platform to exactly the same state as it was before you ran your tests, so that you can compare the test results of your test runs and make sure they are correct. This means you need to be able to control the starting point of your test and tools like Puppet and Chef can help you here. Which tool you use is the least important part of the discussion, as the important part is that you adopt one of the tools and start treating your infrastructure the same way as you treat your code base: as a tested, stable, reproducible piece of software that you can deploy over and over in a predictable fashion.&lt;/p&gt;
+&lt;p&gt;Configuration management tools such as Puppet, Chef, CFengine are just a part of the ecosystem and integration with Orchestration and monitoring tools is needed as you want feedback on how your platform is behaving after the changes have been introduced. Lots of people measure the impact of a new deploy, and then we obviously move to the M part of CAMS.&lt;/p&gt;
+&lt;p&gt;There, Graphite is one of the most popular tools to store metrics. Plenty of other tools in the same area tried to go where Graphite is going , but both on flexibility, scalability and ease of use, not many tools allow developers and operations people to build dashboards for any metric they can think of in a matter of seconds.&lt;/p&gt;
+&lt;p&gt;Just sending a keyword, a timestamp and a value to the Graphite platform provides you with a large choice of actions that can be done with that metric. You can graph it, transform it, or even set an alert on it. Graphite takes out the complexity of similar tools together with an easy to use API for developers so they can integrate their own self service metrics into dashboards to be used by everyone.&lt;/p&gt;
+&lt;p&gt;One last tool that deserves our attention is Logstash. Initially just a tool to aggregate, index and search the log files of our platform, it is sometimes a huge missed source of relevant information about how our applications behave.. Logstash and it&#039;s Kibana+ElasticSearch ecosystem are now quickly evolving into a real time analytics platform. Implementing the Collect, Ship+Transform, Store and Display pattern we see emerge a lot in the #monitoringlove community. Logstash now allows us to turn boring old logfiles that people only started searching upon failure into valuable information that is being used by product owners and business manager to learn from on the behavior of their users.&lt;/p&gt;
+&lt;p&gt;Together with the Graphite-based dashboards we mentioned above, these tools help people start sharing their information and communicate better. When thinking about these tools, think about what you are doing, what goals you are trying to reach and where you need to improve. Because after all, devops is not solving a technical problem, it&#039;s trying to solve a business problem and bringing better value to the end user at a more sustainable pace. And in that way the biggest tool we need to use is YOU, as the person who enables communication.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/jenkins-puppet-graphite-logstash-and-you#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jenkins">jenkins</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logstash">logstash</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Wed, 04 Jun 2014 14:55:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1096 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Why Does DevOps Matter?</title>
+ <link>http://127.0.0.1:8080/blog/why-does-devops-matter</link>
+ <description>&lt;p&gt;This is a repost of an article I wrote for the &lt;a href=&quot;http://www.acquia.com/blog&quot; rel=&quot;nofollow&quot;&gt;Acquia Blog&lt;/a&gt; some time ago.&lt;/p&gt;
+&lt;p&gt;People often ask, why does DevOps matter?&lt;/p&gt;
+&lt;p&gt;The honest answer to that question is...because having the development and operations team work together is the only way IT is successful.&lt;/p&gt;
+&lt;p&gt;Over the past few decades I&#039;ve worked in different environments that include: small web start ups, big pharmaceutical companies, hardware engineering shops and large software companies and banks. All were trying different approaches to deliver quality software to their end users, customers, but most of them were failing badly.&lt;/p&gt;
+&lt;p&gt;Operations people were being pulled in at the last minute. A marketing campaign needed to go live at 5 p.m. because that&#039;s when the first radio commercial was scheduled to be broadcasted. At 11 a.m., the operations people still didn&#039;t know the campaign existed.&lt;/p&gt;
+&lt;p&gt;It was always the other person’s fault. Waterfall projects and large PID documents were the solution to all the problems. But people learned; they figured out that we can&#039;t expect humans to predict how long it would take to implement something they have never done before. Unfortunately, even today, only a small set of people understand the value of being agile and that we cannot break a project down to its granular details without factoring in the “unpredictable.” The key element here is the “uncertainty” of the many project pieces.&lt;/p&gt;
+&lt;p&gt;So on came the agile movement and software development became much smoother.&lt;br /&gt;
+People agreed on time boxing a reasonable set of work that would result in delivering useful functionality in frequent batches. Yet, on the day of deployment, all hell breaks loose because someone forgot to loop in the Ops team.&lt;/p&gt;
+&lt;p&gt;This is where my personal experience differs from a lot of others, because I was part of a development team building a product where the developers were sitting right next to the system administration team. Within sprints, our DevOps team was building both system features and application features, making the application highly available was a story on the board next to an actual end user feature.&lt;/p&gt;
+&lt;p&gt;In the old days, a new feature that was scheduled for Friday couldn&#039;t be brought online for a couple of days because it couldn&#039;t be deployed to production. In the new setup, deploying to production was a no brainer as we had already tested the automated deployment to the acceptance platform.&lt;/p&gt;
+&lt;p&gt;This brings us to the first benefit : Actually being able to go live.&lt;/p&gt;
+&lt;p&gt;The next problem came on a Wednesday evening. A major security issue had popped up in Drupal and an upgrade needed to be performed, however nobody dared to perform the upgrade as they were afraid of breaking the site. Some people had made changes, they hadn&#039;t put their config back in code base, and thus the site didn&#039;t get updated. This is the typical state of the majority of any type of website where people build something, deploy it and never look back. This is the case until disaster strikes and it hits the evening news.&lt;/p&gt;
+&lt;p&gt;Teams then learn that not only do they need to implement features and put their config changes in code, but also do continuous integration testing on their sites.&lt;/p&gt;
+&lt;p&gt;From doing continuous integration, they go to continuous delivery and continuous deployment, where an upgrade isn&#039;t a risk anymore but a normal event which happens automatically when all the tests are green. By implementing infrastructure as code, they now have achieved 2 goals. By implementing tests, we build the confidence that the code was working, but also made sure that the number of defects in that code base went down so the number of times people needed to dig back into old code to fix issue also came down.&lt;/p&gt;
+&lt;p&gt;By delivering better software in a much more regular way, it enables the security issues to be fixed faster, but also brings new features to market faster. With faster, we often mean that there is an change from releasing software on a bi-yearly basis to a release each sprint, to a release whenever a commit has passed a number of test criteria.&lt;/p&gt;
+&lt;p&gt;Because they started to involve other stakeholders, the value of their application grew as they had faster feedback and better usage statistics. The faster feedback meant that they weren&#039;t spending as much time on features nobody used, but focusing their efforts on things that mattered.&lt;/p&gt;
+&lt;p&gt;Having other stakeholders like systems and security teams involved with early metrics and taking in the non functional requirements into the backlog planning meant that the stability of the platform was growing. Rather than people spending hours and nights fixing production problems, Potential issues are now being tackled upfront because of the&lt;br /&gt;
+communication between devs and ops. Also, scale and high availability have been built into the application upfront, rather than afterwards -- when it is too late.&lt;/p&gt;
+&lt;p&gt;So, in the end it comes down to the most important part, which is that devops creates more happiness. It creates more happy customers, developers, operations teams, managers, and investors and for a lot of people it improves not only application quality, but also their life quality.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/why-does-devops-matter#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <pubDate>Wed, 04 Jun 2014 14:54:23 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1095 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>The Rise of the DevOps movement</title>
+ <link>http://127.0.0.1:8080/blog/rise-devops-movement</link>
+ <description>&lt;p&gt;This is a repost of an article I wrote for the &lt;a href=&quot;http://www.acquia.com/blog&quot; rel=&quot;nofollow&quot;&gt;Acquia Blog&lt;/a&gt; some time ago.&lt;/p&gt;
+&lt;p&gt;DevOps, DevOps, DevOps … the whole world is talking about DevOps, but what is DevOps?&lt;/p&gt;
+&lt;p&gt;Since Munich 2012, DrupalCon had a dedicated devops track. After talking to&lt;br /&gt;
+a lot of people in Prague last month, I realized that the concept of DevOps is still very unclear to a lot of developers. To a large part of the development community, DevOps development still means folks working on &#039;the infrastructure part&#039; of the development life cycle and for some it just means simply deploying Drupal, being concerned about purely keeping the site alive etc.&lt;/p&gt;
+&lt;p&gt;Obviously that&#039;s not what DevOps is about, so let&#039;s take a step back and find out how it all started.&lt;/p&gt;
+&lt;p&gt;Like all good things, Drupal included, DevOps is a Belgian thing!&lt;/p&gt;
+&lt;p&gt;Back in 2009 DevopsDays Europe was created because a group of people met over and over again at different conferences throughout the world and didn’t have a common devops conference to go to. These individuals would talk about software delivery, deployment, build, scale, clustering, management, failure, monitoring and all the important things one needs to think about when running a modern web operation. These folks included Patrick Debois, Julian Simpson, Gildas Le Nadan, Jezz Humble, Chris Read, Matt Rechenburg , John Willis, Lindsay Holmswood and me - Kris Buytaert.&lt;/p&gt;
+&lt;p&gt;O’Reilly created a conference called, “Velocity,” and that sounded interesting to a bunch of us Europeans, but on our side of the ocean we had to resort to the existing Open Source, Unix, and Agile conferences. We didn&#039;t really have a common meeting ground yet. At CloudCamp Antwerp, in the Antwerp Zoo, I started talking to Patrick Debois about ways to fill this gap.&lt;/p&gt;
+&lt;p&gt;Many different events and activities like John Allspaw and Paul Hammond’s talk at “Velocity”, multiple twitter discussions influenced Patrick to create a DevOps specific event in Gent, which became the very first ‘DevopsDays&#039;. DevopsDays Gent was not your traditional conference, it was a mix between a couple of formal presentations in the morning and open spaces in the afternoon. And those open spaces were where people got most value. The opportunity to talk to people with the same complex problems, with actual experiences in solving them, with stories both about success and failure etc. How do you deal with that oldskool system admin that doesn’t understand what configuration management can bring him? How do you do Kanban for operations while the developers are working in 2 week sprints? What tools do you use to monitor a highly volatile and expanding infrastructure?&lt;/p&gt;
+&lt;p&gt;From that very first DevopsDays in Gent several people spread out to organize other events John Willis and Damon Edwards started organizing DevopsDays Mountain View, and the European Edition started touring Europe. It wasn’t until this year that different local communities started organizing their own local DevopsDays, e.g in Atlanta, Portland, Austin, Berlin, Paris, Amsterdam, London, Barcelona and many more.&lt;/p&gt;
+&lt;p&gt;From this group of events a community has grown of people that care about bridging the gap between development and operations, a community of people that cares about delivering holistic business value to their organization.&lt;/p&gt;
+&lt;p&gt;As a community, we have realized that there needs to be more communication between the different stakeholders in an IT project lifecycle - business owners, developers, operations, network engineers, security engineers – everybody needs to be involved as soon as possible in the project in order to help each other and talk about solving potential pitfalls ages before the application goes live. And when it goes live the communication needs to stay alive too.. We need to talk about maintaining the application, scaling it, keeping it secure . Just think about how many Drupal sites are out there vulnerable to attackers because the required security updates have never been implemented. Why does this happen? It could be because many developers don&#039;t try to touch the site anymore..because they are afraid of breaking it.&lt;/p&gt;
+&lt;p&gt;And this is where automation will help.. if we can do automatic deployments and upgrades of a site because it is automatically tested when developers push their code, upgrading won&#039;t be that difficult of a task. Typically when people only update once in 6 months, its a painful and difficult process but when its automated and done regularly, it makes life so much easier.&lt;/p&gt;
+&lt;p&gt;This ultimately comes down to the idea that the involvement of developers doesn’t end at their last commit. Collaboration is key which allows every developer to play a key role in keeping the site up and running, for more happy users. After all software with no users has no value. The involvement of the developers in the ongoing operations of their software shouldn&#039;t end before the last end user stops using their applications.&lt;/p&gt;
+&lt;p&gt;In order to keep users happy we need to get feedback and metrics, starting from the very first phases of development all the way up to production. It means we need to monitor both our application and infrastructure and get metrics from all possible aspects, with that feedback we can learn about potential problems but also about successes.&lt;/p&gt;
+&lt;p&gt;Finally, summarizing this in an acronym coined by John Willis and Damon Edwards&lt;br /&gt;
+- CAMS. CAMS says Devops is about Culture, Automation, Measurement and Sharing.&lt;br /&gt;
+Getting the discussion going on how to do all of that, more specifically in a Drupal environment, is the sharing part .&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/rise-devops-movement#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <pubDate>Wed, 04 Jun 2014 14:49:23 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1094 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>#devops Conference Season heating up...</title>
+ <link>http://127.0.0.1:8080/blog/devops-conference-season-heating</link>
+ <description>&lt;p&gt;My last post has been a while ... in that I announced that there would be another event right before FOSDEM ... I totally forgot to announce it here but  I`m sure that most of you already know.  Yes. PuppetCamp Europe is coming back to it&#039;s roots... it&#039;s coming back to the city where we hosted it for the first time on this side of the ocean.. Gent.  (that&#039;s 31/1 and 1/2 ) &lt;/p&gt;
+&lt;p&gt;There is still time to register for the event &lt;a href=&quot;http://puppetcampghent2013.eventbrite.com/&quot; rel=&quot;nofollow&quot;&gt;http://puppetcampghent2013.eventbrite.com/&lt;/a&gt;   The schedule for the event will be published soonish (given that the selection was done on Friday evening and the speakers already received their feedback)&lt;/p&gt;
+&lt;p&gt;Co-located with PuppetCamp there will  another Build and Open Source cloud day&lt;br /&gt;
+&lt;a href=&quot;http://buildacloud.org/about-cloudstack/cloudstack-events/viewevent/140-build-a-cloud-day-ghent-2013.html&quot; rel=&quot;nofollow&quot;&gt;Build a Cloud day&lt;/a&gt; with interesting topics such as Cloudstack, Ceph, devops and a really interesting talk on how  the Spotify crowd is using Cloudstack.&lt;/p&gt;
+&lt;p&gt;So after those 2 days in Ghent, a lot of people will be warmed up for the open source event of the year FOSDEM.&lt;/p&gt;
+&lt;p&gt;And right after FOSDEM a bunch of people will gather at the Inuits office for 2 days of discussing, hacking and evangelizing around #monitoringlove (see previous post)&lt;/p&gt;
+&lt;p&gt;I almost forgot but even before the FOSDEM week-long there is the &lt;a href=&quot;http://conference.phpbenelux.eu/2013/&quot; rel=&quot;nofollow&quot;&gt;2013 PHP Benelux Conference&lt;/a&gt; where I`ll be running a fresh version of the 7 Tools for your devops stack &lt;/p&gt;
+&lt;p&gt;There is a ****load of #DevopsDays events being planned this year ....  the 2012 edition of New York will be taking place next week .&lt;br /&gt;
+Austin and London have been announced and have opened up their CFP and Registration   but different groups are organizing themselves to host events in Berlin, Mountain View, Tokyo, Barcelona, Paris, Amsterdam , Australia , Atlanta and many more .. &lt;/p&gt;
+&lt;p&gt;And  there&#039;s even more to come ..  April 6 and 7 will be the dates for the &lt;a href=&quot;http://loadays.org/&quot; rel=&quot;nofollow&quot;&gt;Linux Open Administration Days&lt;/a&gt; (Loadays 2013) in Antwerp again ... a nice small conference where people gather to discuss different interesting Linux topics ....     Call For Presentations is still open ..&lt;a href=&quot;http://loadays.org/pages/cfp-info.html&quot; rel=&quot;nofollow&quot;&gt;Submit here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On the other side of the ocean there&#039;s &lt;a href=&quot;http://portland2013.drupal.org/&quot; rel=&quot;nofollow&quot;&gt;DrupalCon Portland&lt;/a&gt; which once again is featuring a #devops track  , and also the folks over at &lt;a href=&quot;http://agile2013.agilealliance.org/&quot; rel=&quot;nofollow&quot;&gt;Agile 2013&lt;/a&gt; (Nashville)&lt;br /&gt;
+have a #devops track now.   Both events are still looking for speakers .. &lt;/p&gt;
+&lt;p&gt;So if by the end of this year you still don&#039;t know what devops is all about .. you probably don&#039;t care and shouldn&#039;t be in the IT industry anyhow.&lt;/p&gt;
+&lt;p&gt;And those are only the events I`m somehow involved in for the next couple of months&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/devops-conference-season-heating#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/agile">agile</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devopsdays">devopsdays</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/768">fosdem</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/phpbenelux">phpbenelux</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetcamp">puppetcamp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetzie">puppetzie</category>
+ <pubDate>Sun, 13 Jan 2013 10:21:11 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1075 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Vagrant and Drupal, a winning team</title>
+ <link>http://127.0.0.1:8080/blog/vagrant-and-drupal-winning-team</link>
+ <description>&lt;p&gt;While heading back home from DrupalCon Munich after 4 days of good interaction with lots of Drupal folks.&lt;br /&gt;
+I realized to my big suprise that there are a lot of people using Vagrant to make sure that developers are not working on platforms they invented their own.  Lots of people have realized that  &quot;It works on my computer&quot; is not something they want to hear from a developer and are reaching out to give them viable solutions to work on shared and reproducible solutions.   &lt;/p&gt;
+&lt;p&gt;There were 2 talks proposing solutions to the problem, &lt;/p&gt;
+&lt;p&gt;the first one was ..&lt;a href=&quot;http://munich2012.drupal.org/program/sessions/fearless-development-drush-vagrant-and-aegir&quot; rel=&quot;nofollow&quot;&gt;Fearless development with Drush, Vagrant and Aegir&lt;/a&gt; by &lt;a href=&quot;http://ergonlogic.com/&quot; rel=&quot;nofollow&quot;&gt;Christopher Gervais &lt;/a&gt; He talked about Drush VAgrant Integraion and how &lt;a href=&quot;http://drupal.org/project/drush-vagrant&quot; rel=&quot;nofollow&quot;&gt; extentions to Drush&lt;/a&gt; allow for easy vagrant integration , bridging this gap allows rupal developers to use a tool they are already familiar with &lt;/p&gt;
+&lt;p&gt;The second one was Jochen Lillich who explained how he us using Vagrant an Chef for this purpose his talk titled &lt;a href=&quot;http://munich2012.drupal.org/program/sessions/use-datacenter-tools-make-your-dev-life-easier&quot; rel=&quot;nofollow&quot;&gt;Use datacenter tools to make your dev life easier&lt;/a&gt; has been posted already.&lt;/p&gt;
+&lt;p&gt;During the Vagrant BOF , I briefly ran over @patrickdebois old slides on Vagrant after which people started discussing their use cases..  2 other projects came up &lt;/p&gt;
+&lt;p&gt;First is &lt;a href=&quot;https://github.com/manarth/oscar&quot; rel=&quot;nofollow&quot;&gt;Project Oscar&lt;/a&gt; which aims at providing developers with a default Drupal development environment in a Jiffy. they do this by providing a bunch of puppetmanifests that sets up a working environment.&lt;/p&gt;
+&lt;p&gt;And the second one is &lt;a href=&quot;https://github.com/myplanetdigital/ariadne&quot; rel=&quot;nofollow&quot;&gt;Ariadne&lt;/a&gt; which is a standardized virtual machine development evironment for easily developing Drupal sites in a local sandbox that is essentially identical to a fully-configured hosted solution. It attempts to emulate a dedicated Acquia/Pantheon server as closely as possible, with added development tools. Project Ariadne is just like the examples from Jochen Lillich based on Chef&lt;/p&gt;
+&lt;p&gt;With all of these tools and examples around , there should be no excuses anymore for Drupal developers to hack on their own machine and tell the systems people &quot;It works on my machine&quot; (let alone to hack in production).&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/vagrant-and-drupal-winning-team#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/chef">chef</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vagrant">vagrant</category>
+ <pubDate>Sat, 25 Aug 2012 21:51:31 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1071 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Open Source Certification , Friend or Foe</title>
+ <link>http://127.0.0.1:8080/blog/open-source-certification-friend-or-foe</link>
+ <description>&lt;p&gt;With 2 of the bigger Open Source projects I care about talking about certifications programs questions pop up again ... &lt;/p&gt;
+&lt;p&gt;Should we certify ourselves ? &lt;/p&gt;
+&lt;p&gt;So let me tell you about my experiences in getting Open Source related Certifications ..&lt;/p&gt;
+&lt;p&gt;Over a decade ago, (2001) when RedHat was still Redhat and not yet Fedora the company I was working for was about to partner with RedHat and needed to get a number of people certified for that. &lt;/p&gt;
+&lt;p&gt;So I took the challenge, I bored myselve to death during a 4 day RedHat fast track training and set out to do the exam the next day.   Obviosly I scored pretty well given my yearlong experience in the subject. Back then I was told that I scored the one but European Record on the exam which was actually held by another collegue (hey Ico) , our CTO however  was not amused when I told that I could have scored better but I didn&#039;t bother running a &lt;span class=&quot;geshifilter&quot;&gt;&lt;code class=&quot;text geshifilter-text&quot;&gt;chkconfig smb &amp;nbsp;on&lt;/code&gt;&lt;/span&gt;  since I didn&#039;t see the use in using windows fileshares in a unix environment (Yes I was young , we&#039;re all allowd to make stupid mistakes :)) &lt;/p&gt;
+&lt;p&gt;So I was certified,  we were expecting the requests to flow in en masse ... nothing happened... not a single customer request...  If I recall correctly we got 2 requests for certified engineers over the course of the following years. One was from a customer that wanted to have us do some junior level sysadmin work on their systems which we didn&#039;t care about, we proposed a more junior profile, but they insisted on having someone who was certified, The other one was from a Large institution that wanted certified people for their RedHat support, only to quickly learn that the budget they had planned for this project was about half the rate we usually charged ..&lt;/p&gt;
+&lt;p&gt;When RedHat introduced their certified Architect program my answer was, sure .. if you bring us the customer that will make the investment worthwhile , guess what..&lt;/p&gt;
+&lt;p&gt;My second experience with Open Source certification came a couple of years later with MySQL,  same story partnering etc, . only this time our trainer had put some focus on a couple of slides during the training (Hi Tobias)  and during the exam indeed one of those questions popped up,  The correct answer to &quot;What are the core values of MySQL AB&quot;  was &quot;We reply to email&quot; ,  I stood up and left the exam ...&lt;br /&gt;
+I ranted about this to a number of people including  Roland Bouman who back then was just starting on the MySQL (NDBD) Cluster certifciation track and I assisted him in making the book to study for that exam better.&lt;br /&gt;
+Once again .. pretty much no one asked for MySQL certification in Europe back in those days (2007  ?)  &lt;/p&gt;
+&lt;p&gt;I won&#039;t go deeper into discussing the Xen certification I got from Citrix, but it involved correcting slides from the presenters at the first European training.&lt;/p&gt;
+&lt;p&gt;Based on my experience with these certifications in Belgium/Europe you can see that I`m not a big fan of certifications  I have not seen a reason for me to certify yet&lt;/p&gt;
+&lt;p&gt;I actually think that noone within the Open Source community should be looking for certification,  we should be looking for people that are active in the community and that are contributing to projects.&lt;br /&gt;
+Unlike in the proprietary world where you have to cough up tons of money in order to get a license to play with a tool and learn itl In the open source world with projects such as both Drupal and Puppet, there are  absolutely no excuses for Junior people not to engage and prove themselves.    they have full access to anything they need, the only thing they need to do is want to get involved.&lt;/p&gt;
+&lt;p&gt;Sadly this world however is still full of  incompetent recruiters,  middlemarket agencies that will never understand this and will ask for cerftifications of some kind.   My fear is indeed that there will be a group of mediocre but certified developers swarming these growing markets at dumping rates and that the people with the real experience that have been involved in the communities for ages already will be the ones pulling the short straw. &lt;/p&gt;
+&lt;p&gt;Anyhow ... in just  a short couple of years everything will be fine again .. as by then my RHCE will be current again and the incompetent recruiters that need people that are RedHat 7 certified will start calling me  by the dozen.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/open-source-certification-friend-or-foe#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/certification">certification</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Sat, 25 Aug 2012 13:53:34 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1070 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Breaking the Silence.</title>
+ <link>http://127.0.0.1:8080/blog/breaking-silence</link>
+ <description>&lt;p&gt;3+ months is probably the biggest timeout I&#039;ve taken from blogging in a while..&lt;br /&gt;
+Not that I didn&#039;t have anything to write ..but more that I was prioritizing writing different content over&lt;br /&gt;
+over writing blogposts.&lt;/p&gt;
+&lt;p&gt;Blogging tech snippets and contributing documentation used to be one now all of that has evolved.&lt;br /&gt;
+Anyhow ..&lt;/p&gt;
+&lt;p&gt;So to get things going here&#039;s my preliminary Conference schedule for the next couple of months.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First up, in about one week (august 20-24)  I`ll be  chairing the #devops track at &lt;a href=&quot;http://munich2012.drupal.org/&quot; rel=&quot;nofollow&quot;&gt;DrupalCon Munich&lt;/a&gt;&lt;br /&gt;
+Next to talking there myselve  explaining the &lt;a href=&quot;http://munich2012.drupal.org/program/sessions/whats-devops-thing-anyhow&quot; rel=&quot;nofollow&quot;&gt;Drupal Crowd what  devops is&lt;/a&gt;&lt;br /&gt;
+Plenty of interresting content there ranging from culture  over to tooling and back.  I`m really looking forward to this one.
+&lt;p&gt;There&#039;s also talk of the local Devops meetup group hosting an additional meetup ! &lt;/p&gt;
+&lt;/li&gt;&lt;li&gt;About a month later I`ll be heading to San Francisco for a talk at  &lt;a href=&quot;http://puppetconf.com/&quot; rel=&quot;nofollow&quot;&gt;PuppetConf 2012&lt;/a&gt;.  I&#039;ll probably be around in the valley a bit earlier&lt;br /&gt;
+so if you anyone wants to meet up  I`m open for suggestions.
+&lt;/li&gt;&lt;li&gt;
+I&#039;ve taken over a bit of Patricks workload this year , thus I`m trying to guide the local crew in Rome into organising yet another awesome Devopsdays Europe,&lt;br /&gt;
+If you haven&#039;t noticed yet , Devopsdays is going to be in Rome this year  on october 5 and 6. Both &lt;a href=&quot;http://devopsdays.org/events/2012-italy/registration/&quot; rel=&quot;nofollow&quot;&gt;registration&lt;/a&gt; and the &lt;a href=&quot;http://devopsdays.org/events/2012-italy/propose/&quot; rel=&quot;nofollow&quot;&gt;call for participation&lt;/a&gt; are still open !
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Next up .. content ... on how monitoring tools still suck .. and I`m still not sure wether a certification program is relevant for open source consultants ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/breaking-silence#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/558">conferences</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devopsdays">devopsdays</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1010">drupalcon</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Mon, 06 Aug 2012 06:51:35 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1066 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Devops in Munich</title>
+ <link>http://127.0.0.1:8080/blog/devops-munich</link>
+ <description>&lt;p&gt;Devopsdays Mountainview sold out in a short 3 hours ..   but there&#039;s other events   that will breath devops this summer.&lt;br /&gt;
+DrupalCon in Munich will be one of them ..&lt;/p&gt;
+&lt;p&gt;Some of you might have noticed that I`m cochairing the devops track for DrupalCon Munich,&lt;br /&gt;
+The CFP is open till the 11th of this month and we are still actively looking for speakers.&lt;/p&gt;
+&lt;p&gt;We&#039;re trying to bridge the gap between drupal developers and the people that put their code to production, at scale.&lt;br /&gt;
+But also enhancing the knowledge of infrastructure components Drupal developers depend on.&lt;/p&gt;
+&lt;p&gt;We&#039;re looking for talks both on culture (both success stories and failure) ,   automation,&lt;br /&gt;
+specifically looking for people talking about drupal deployments , eg using tools like Capistrano, Chef, Puppet,&lt;br /&gt;
+We want to hear where Continuous Integration fits in your deployment ,  do you do Continuous Delivery of a drupal environment.&lt;br /&gt;
+And how do you test ... yes we like to hear a lot about testing , performance tests, security tests, application tests and so on.&lt;br /&gt;
+...  Or have you solved the content vs code vs config  deployment problem yet ? &lt;/p&gt;
+&lt;p&gt;How are you measuring and monitoring these deployments and adding metrics to them  so you can get good visibility on both&lt;br /&gt;
+system and user actions of your platform.  Have you build fancy dashboards showing your whole organisation the current state of your deployment ? &lt;/p&gt;
+&lt;p&gt;We&#039;re also looking  for people talking about introducing different data backends,  nosql,  scaling different search backends , building your own cdn using  smart  filesystem setups.&lt;br /&gt;
+Or making smart use of existing backends, such as tuning and scaling MySQL, memcached and others.&lt;/p&gt;
+&lt;p&gt;So lets make it clear to the community that drupal people do care about their code after they committed it in source control ! &lt;/p&gt;
+&lt;p&gt;Please submit your talks &lt;a href=&quot;http://munich2012.drupal.org/news/call-for-papers&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/devops-munich#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/456">cfp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/configmgmt">configmgmt</category>
+ <category domain="http://127.0.0.1:8080/blog/category/deployment">deployment</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/measurement">measurement</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/testing">testing</category>
+ <pubDate>Tue, 01 May 2012 19:02:30 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1065 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Devops and Drupal, the Survey, the Results</title>
+ <link>http://127.0.0.1:8080/blog/devops-and-drupal-survey-results</link>
+ <description>&lt;p&gt;I&#039;ve just finished presenting the results of our &lt;a href=&quot;http://surveys.inuits.eu/limesurvey/index.php?sid=81259&quot;&gt;Drupal and Devops&lt;/a&gt; survey at the Belgian Drupal User Group meetup at &lt;a href=&quot;http://inuits.eu/&quot;&gt;our office&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;and I&#039;ve uploaded the slides to slideshare for the rest of the world to &lt;del&gt;cry&lt;/del&gt; read.&lt;/p&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_11926713&quot;&gt;&lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/drupal-and-devops-the-survey-results&quot; title=&quot;Drupal and Devops , the Survey Results&quot;&gt;Drupal and Devops , the Survey Results&lt;/a&gt;&lt;/strong&gt;
+&lt;object id=&quot;__sse11926713&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=surveydrupal-120308144348-phpapp02&amp;stripped_title=drupal-and-devops-the-survey-results&amp;userName=KrisBuytaert&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;wmode&quot; value=&quot;transparent&quot; /&gt;&lt;embed name=&quot;__sse11926713&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=surveydrupal-120308144348-phpapp02&amp;stripped_title=drupal-and-devops-the-survey-results&amp;userName=KrisBuytaert&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; wmode=&quot;transparent&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;padding:5px 0 12px&quot;&gt;View more &lt;a href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Honestly I was hoping for the audience to prove me wrong and I  was expecting all of them to claim they were doing automated and repeatable deployments.  &lt;/p&gt;
+&lt;p&gt;But there&#039;s hope... &lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/devops-and-drupal-survey-results#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/results">results</category>
+ <category domain="http://127.0.0.1:8080/blog/category/survey">survey</category>
+ <pubDate>Thu, 08 Mar 2012 20:51:44 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1063 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>What is devops ? </title>
+ <link>http://127.0.0.1:8080/blog/what-devops</link>
+ <description>&lt;p&gt;I`m parsing the responses of the Deploying Drupal survey  I started a couple of months ago (more on that later) &lt;/p&gt;
+&lt;p&gt;One of the questions in the survey is &quot;What is devops&quot; , apparently when you ask a zillion people (ok ok, just a large bunch of Tweeps..),  you get a large amount of different answers ranging from totally wrong to  spot on.&lt;/p&gt;
+&lt;p&gt;So let&#039;s go over them  and see what we can learn from them .. &lt;/p&gt;
+&lt;p&gt;The most Wrong definition one can give is probably : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; A buzzword
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;I think we&#039;ve long passed the buzzword phase, definitely since it&#039;s not new, it&#039;s a new term we put to an existing practice.  A new term that gives a lot of people that were already doing devops , a common word to dicuss about it. Also lots of people still seem to think that devops is a specific role,  a job description , that it points to a specific group of people doing a certain job, it&#039;s not . Yes you&#039;ll see a lot of organisations  looing for  devops people,  and giving them a  devops job title.  But  it&#039;s kinda hard to be the only one doing devops in an organisation.&lt;/p&gt;
+&lt;p&gt;I described one of my current roles as Devops Kickstarter, it pretty much describes what I`m doing and it does contain devops :) &lt;/p&gt;
+&lt;p&gt;But devops also isn&#039;t &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The connection between operations and development.
+&lt;/li&gt;&lt;li&gt;people that keep it running
+&lt;/li&gt;&lt;li&gt;crazy little fellows who find beauty in black/white letters( aka code) rather than a view like that of Taj in a full moon light.
+&lt;/li&gt;&lt;li&gt;the combination of developer and operations into one overall functionality
+&lt;/li&gt;&lt;li&gt;The perfect mixture between a developer and a system engineer. Someone who can optimize and simplify certain flows that are required by developers and system engineers, but sometimes are just outside of the scope for both of them.
+&lt;/li&gt;&lt;li&gt;Proxy between developer and management
+&lt;/li&gt;&lt;li&gt;The people in charge of the build/release cycle and planning.
+&lt;/li&gt;&lt;li&gt;A creature, made from 8-bit cells, with the knowledge of a seasoned developer, the skillset of a trained systems engineer and the perseverence of a true hacker.
+&lt;/li&gt;&lt;li&gt;The people filling the gap between the developer world and the sysadmin world. They understand dev. issues and system issues as well. They use tools from both world to solve them.
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Or&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Developers looking at the operations of the company and how we can save the company time and money
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;And it&#039;s definitely not &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Someone who mixes both a sysop and dev duties
+&lt;/li&gt;&lt;li&gt; developers who know how to deploy and manage sites, including content and configuration.
+&lt;/li&gt;&lt;li&gt;I believe there&#039;s a thin line line between Ops and Devs where we need to do parts of each others jobs (or at least try) to reach our common goal..
+&lt;/li&gt;&lt;li&gt; A developer that creates and maintains environments tools to help other developers be more successful in building and  releasing new products
+&lt;/li&gt;&lt;li&gt; Developers who also do IT operations, or visa versa.
+&lt;/li&gt;&lt;li&gt; Software developers that support development teams and assist with infrastructure systems
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;So no,  developers that take on systems roles next to their own role and want to go for NoOps isn&#039;t feasable at all ..you really want collaboration, you want people with  different skillsets that (try to) understand eachoter and (try to) work together towards a common goal. &lt;/p&gt;
+&lt;p&gt;Devops is also not  just infrastructure as code &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Writing software to manage operations
+&lt;/li&gt;&lt;li&gt;system administrators with a development culture.
+&lt;/li&gt;&lt;li&gt;Bring code management to operations, automating system admin tasks.
+&lt;/li&gt;&lt;li&gt;The melding of the art of Systems Administration and the skill of development with a focus on automation. A side effect of devops is the tearing down of the virtual wall that has existed between SA&#039;s and developers.
+&lt;/li&gt;&lt;li&gt;Infrastructure as code.
+&lt;/li&gt;&lt;li&gt;Applying some of the development worlds techniques (eg source control, builds, testing etc) to the operations world.
+&lt;/li&gt;&lt;li&gt; Code for infrastructure
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Sure infastructure as code is a big part of the Automation part listed in CAMS, but just because you are doing puppet/chef doesn&#039;t mean you are doing devops.&lt;br /&gt;
+Devops is also not  just  continous delivery&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A way to let operations deploy sites in regular intervals to enable developers to interact on the systems earlier and make deployments easier.
+&lt;/li&gt;&lt;li&gt;Devops is the process of how you go from development to release.
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Obviously lots of people doing devops also often try to achieve Continuous delivery, but just like Infrastructure as Code it devops is not limited to that :) &lt;/p&gt;
+&lt;p&gt;But I guess the truth is somewhere in the definitions below ... &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;That sweet spot between &quot;operating system&quot; or platform stack and the application layer. It is wanting sys admins who are willing to go beyond the normal package installers, and developers who know how to make their platform hum with their application.
+&lt;/li&gt;&lt;li&gt; Breaking the wall between dev and ops in the same way agile breaks the wall between business and dev e.g. coming to terms with changing requirements, iterative cycles
+&lt;/li&gt;&lt;li&gt; Not being an arsehole!
+&lt;/li&gt;&lt;li&gt; Sysadmin best-practise, using configuration as code, and facilitating communication between sysadmins and developers, with each understanding and participating in the activities of the other.
+&lt;/li&gt;&lt;li&gt; Devops is both the process of developers and system operators working closer together, as well as people who know (or who have worked in) both development and system operations.
+&lt;/li&gt;&lt;li&gt; Culture collaboration, tool-chains
+&lt;/li&gt;&lt;li&gt; Removing barriers to communication and efficiency through shared vocabulary, ideals, and business objectives to to deliver value.
+&lt;/li&gt;&lt;li&gt; A set of principles and good practices to improve the interactions between Operations and Development.
+&lt;/li&gt;&lt;li&gt; Collaboration between developers and sysadmins to work towards more reliable platforms
+&lt;/li&gt;&lt;li&gt; Building a bridge between development and operations
+&lt;/li&gt;&lt;li&gt; The systematic process of building, deploying, managing, and using an application or group of applications such as a drupal site.
+&lt;/li&gt;&lt;li&gt; Devops is collaboration and Integration between Software Development and System Administration.
+&lt;/li&gt;&lt;li&gt; Devops is an emerging set of principles, methods and practices for communication, collaboration and integration between software development (application/software engineering) and IT operations (systems administration/infrastructure) professionals.[1] It has developed in response to the emerging understanding of the interdependence and importance of both the development and operations disciplines in meeting an organization&#039;s goal of rapidly producing software products and services.
+&lt;/li&gt;&lt;li&gt; bringing together technology (development) &amp;amp; content (management) closer together
+&lt;/li&gt;&lt;li&gt; Making developers and admins understand each other.
+&lt;/li&gt;&lt;li&gt; Communication between developers and systems folk.
+&lt;/li&gt;&lt;li&gt; a cultural movement to improve agility between dev and ops
+&lt;/li&gt;&lt;li&gt; The cultural extension of agile to bring operations into development teams.
+&lt;/li&gt;&lt;li&gt; Tight collaboration of developers, operations team (sys admins) and QA-team.
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;But I can only conclude that there is a huge amount of evangelisation that still needs to be done,  Lots of people still don&#039;t understand what devops is , or have a totally different view on it. &lt;/p&gt;
+&lt;p&gt;A number of technology conferences are and have taken up devops as a part of their conference program,  inviting experienced people from outside of their focus field to talk about how they improve the quality of life !&lt;/p&gt;
+&lt;p&gt;There is still a large number of devops related problems to solve,  so that&#039;s what I`ll be doing in 2012&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/what-devops#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/culture">culture</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Sat, 31 Dec 2011 15:59:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1056 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

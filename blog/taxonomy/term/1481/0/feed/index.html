@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - logstash</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1481/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Jenkins, Puppet, Graphite, Logstash and YOU</title>
+ <link>http://127.0.0.1:8080/blog/jenkins-puppet-graphite-logstash-and-you</link>
+ <description>&lt;p&gt;This is a repost of an article I wrote for the Acquia Blog some time ago.&lt;/p&gt;
+&lt;p&gt;As mentioned before, devops can be summarized by talking about culture, automation, monitoring metrics and sharing. Although devops is not about tooling, there are a number of open source tools out there that will be able to help you achieve your goals. Some of those tools will also enable better communication between your development and operations teams.&lt;/p&gt;
+&lt;p&gt;When we talk about Continuous Integration and Continuous Deployment we need a number of tools to help us there. We need to be able to build reproducible artifacts which we can test. And we need a reproducible infrastructure which we can manage in a fast and sane way. To do that we need a Continuous Integration framework like Jenkins.&lt;/p&gt;
+&lt;p&gt;Formerly known as Hudson, Jenkins has been around for a while. The open source project was initially very popular in the Java community but has now gained popularity in different environments. Jenkins allows you to create reproducible Build and Test scenarios and perform reporting on those. It will provide you with a uniform and managed way to , Build, Test, Release and Trigger the deployment of new Artifacts, both traditional software and infrastructure as code-based projects. Jenkins has a vibrant community that builds new plugins for the tool in different kinds of languages. People use it to build their deployment pipelines, automatically check out new versions of the source code, syntax test it and style test it. If needed, users can compile the software, triggering unit tests, uploading a tested artifact into a repository so it is ready to be deployed on a new platform level.&lt;/p&gt;
+&lt;p&gt;Jenkins then can trigger an automated way to deploy the tested software on its new target platform. Whether that be development, testing, user acceptance or production is just a parameter. Deployment should not be something we try first in production, it should be done the same on all platforms. The deltas between these platforms should be managed using a configuration management tool such as Puppet, Chef or friends.&lt;/p&gt;
+&lt;p&gt;In a way this means that Infrastructure as code is a testing dependency, as you also want to be able to deploy a platform to exactly the same state as it was before you ran your tests, so that you can compare the test results of your test runs and make sure they are correct. This means you need to be able to control the starting point of your test and tools like Puppet and Chef can help you here. Which tool you use is the least important part of the discussion, as the important part is that you adopt one of the tools and start treating your infrastructure the same way as you treat your code base: as a tested, stable, reproducible piece of software that you can deploy over and over in a predictable fashion.&lt;/p&gt;
+&lt;p&gt;Configuration management tools such as Puppet, Chef, CFengine are just a part of the ecosystem and integration with Orchestration and monitoring tools is needed as you want feedback on how your platform is behaving after the changes have been introduced. Lots of people measure the impact of a new deploy, and then we obviously move to the M part of CAMS.&lt;/p&gt;
+&lt;p&gt;There, Graphite is one of the most popular tools to store metrics. Plenty of other tools in the same area tried to go where Graphite is going , but both on flexibility, scalability and ease of use, not many tools allow developers and operations people to build dashboards for any metric they can think of in a matter of seconds.&lt;/p&gt;
+&lt;p&gt;Just sending a keyword, a timestamp and a value to the Graphite platform provides you with a large choice of actions that can be done with that metric. You can graph it, transform it, or even set an alert on it. Graphite takes out the complexity of similar tools together with an easy to use API for developers so they can integrate their own self service metrics into dashboards to be used by everyone.&lt;/p&gt;
+&lt;p&gt;One last tool that deserves our attention is Logstash. Initially just a tool to aggregate, index and search the log files of our platform, it is sometimes a huge missed source of relevant information about how our applications behave.. Logstash and it&#039;s Kibana+ElasticSearch ecosystem are now quickly evolving into a real time analytics platform. Implementing the Collect, Ship+Transform, Store and Display pattern we see emerge a lot in the #monitoringlove community. Logstash now allows us to turn boring old logfiles that people only started searching upon failure into valuable information that is being used by product owners and business manager to learn from on the behavior of their users.&lt;/p&gt;
+&lt;p&gt;Together with the Graphite-based dashboards we mentioned above, these tools help people start sharing their information and communicate better. When thinking about these tools, think about what you are doing, what goals you are trying to reach and where you need to improve. Because after all, devops is not solving a technical problem, it&#039;s trying to solve a business problem and bringing better value to the end user at a more sustainable pace. And in that way the biggest tool we need to use is YOU, as the person who enables communication.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/jenkins-puppet-graphite-logstash-and-you#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jenkins">jenkins</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logstash">logstash</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Wed, 04 Jun 2014 14:55:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1096 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Our #monitoringsucks rpm is repository available </title>
+ <link>http://127.0.0.1:8080/blog/our-monitoringsucks-rpm-repository-available</link>
+ <description>&lt;p&gt;Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.&lt;/p&gt;
+&lt;p&gt;You might have noticed a variety of vagrant- projects on my github acount&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://github.com/KrisBuytaert/vagrant-ganglia&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-ganglia &lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;//github.com/KrisBuytaert/vagrant-graphite&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://github.com/KrisBuytaert/vagrant-puppet-logstash&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-puppet-logstash,&lt;/a&gt;&lt;br /&gt;
+Being the #monitoringsucks part of them.     All of those Vagrant projects are basically my test setups to play with those new tools.&lt;/p&gt;
+&lt;p&gt;They contain a bunch of puppet modules that install and configure these tools.  (Note that they mostly consist of&lt;br /&gt;
+of git submodules to other puppet module repositories.&lt;/p&gt;
+&lt;p&gt;Given the fact that I also like to have my software cleanly installed from a package, that means that some of these tools had to be packaged,  or I had to create a personal / internal repository which had packages from upstream that were hiding on the internet available.&lt;/p&gt;
+&lt;p&gt;I&#039;ve forked of this repository off the internal Inuits epository so you all can also benefit from these efforts.&lt;br /&gt;
+(You gotta love pulp :))&lt;/p&gt;
+&lt;p&gt;That means you can now install all of the above mentionned #monitoringsucks tool from our public repo on &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;yumrepo { &#039;monitoringsucks&#039;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  baseurl    =&amp;gt; &#039;http://pulp.inuits.eu/pulp/repos/monitoring&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  descr      =&amp;gt; &#039;MonitoringSuck at Inuits&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  gpgcheck   =&amp;gt; &#039;0&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;}&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Patches to both the Vagrant projects and the puppet modules are welcome ...&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/our-monitoringsucks-rpm-repository-available#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logstash">logstash</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/repo">repo</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vagrant">vagrant</category>
+ <pubDate>Sat, 11 Aug 2012 19:49:39 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1068 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>FlossUK and Puppetcamp Edinburgh</title>
+ <link>http://127.0.0.1:8080/blog/flossuk-and-puppetcamp-edinburgh</link>
+ <description>&lt;p&gt;I&#039;ve just finished presenting my talk on how I currently work on Puppet modules  at Puppetcamp here in Edinburgh where I&#039;ve been for the week talking on both FlossUK 2012 and Puppetcamp.&lt;/p&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_12093262&quot;&gt; &lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/7-tools-for-your-devops-stack&quot; title=&quot;7 tools for your devops stack&quot; target=&quot;_blank&quot;&gt;7 tools for your devops stack&lt;/a&gt;&lt;/strong&gt; &lt;iframe src=&quot;http://www.slideshare.net/slideshow/embed_code/12093262&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;padding:5px 0 12px&quot;&gt; View more &lt;a href=&quot;http://www.slideshare.net/&quot; target=&quot;_blank&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert&quot; target=&quot;_blank&quot;&gt;Kris Buytaert&lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Earlier this week I opened FlossUK 2012 with my talk on 7 tools for your devops stack &lt;/p&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_12130149&quot;&gt; &lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/how-ihackonpuppetmodules&quot; title=&quot;How I hack on puppet modules&quot; target=&quot;_blank&quot;&gt;How I hack on puppet modules&lt;/a&gt;&lt;/strong&gt; &lt;iframe src=&quot;http://www.slideshare.net/slideshow/embed_code/12130149&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;padding:5px 0 12px&quot;&gt; View more &lt;a href=&quot;http://www.slideshare.net/&quot; target=&quot;_blank&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert&quot; target=&quot;_blank&quot;&gt;Kris Buytaert&lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/flossuk-and-puppetcamp-edinburgh#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/455">conference</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logstash">logstash</category>
+ <category domain="http://127.0.0.1:8080/blog/category/mcollective">mcollective</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetcamp">puppetcamp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vagrant">vagrant</category>
+ <pubDate>Fri, 23 Mar 2012 14:49:47 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1064 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

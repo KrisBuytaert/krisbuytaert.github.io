@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - selinux</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1001/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Linux Troubleshooting 101 , 2016 Edition</title>
+ <link>http://127.0.0.1:8080/blog/linux-troubleshooting-101-2016-edition</link>
+ <description>&lt;p&gt;Back in 2006 I wrote a &lt;a href=&quot;http://www.krisbuytaert.be/blog/node/177&quot;&gt;blog post&lt;/a&gt; about linux troubleshoooting.  &lt;a href=&quot;https://twitter.com/bertvanvreckem/status/737761421879054336&quot; rel=&quot;nofollow&quot;&gt;Bert Van Vreckem&lt;/a&gt; pointed out that it might be time for an update ..&lt;/p&gt;
+&lt;p&gt;There&#039;s not that much that has changed .. however :)&lt;/p&gt;
+&lt;p&gt;Everything is a DNS Problem&lt;/p&gt;
+&lt;p&gt;Everything is a Fscking DNS Problem&lt;br /&gt;
+No really, Everything is a Fscking DNS Problem&lt;br /&gt;
+If it&#039;s not a fucking DNS Problem ..&lt;br /&gt;
+It&#039;s a Full Filesystem Problem&lt;br /&gt;
+If your filesystem isn&#039;t full&lt;br /&gt;
+It is a SELinux problem&lt;br /&gt;
+If you have SELinux disabled&lt;br /&gt;
+It might be an ntp problem&lt;br /&gt;
+If it&#039;s not an ntp problem&lt;br /&gt;
+It&#039;s an arp problem&lt;br /&gt;
+If it&#039;s not an arp problem...&lt;br /&gt;
+It is a Java Garbage Collection problem&lt;br /&gt;
+If you ain&#039;t running Java&lt;br /&gt;
+It&#039;s a natting problem&lt;br /&gt;
+If you are already on IPv6&lt;br /&gt;
+It&#039;s a Spanning Tree problem&lt;br /&gt;
+If it&#039;s not a spanning Tree problem...&lt;br /&gt;
+It&#039;s a USB problem&lt;br /&gt;
+If it&#039;s not a USB Problem&lt;br /&gt;
+It&#039;s a sharing IRQ Problem&lt;br /&gt;
+If it&#039;s not a sharing IRQ Problem&lt;br /&gt;
+But most often .. its a Freaking Dns Problem !&lt;/p&gt;
+&lt;p&gt;`&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/linux-troubleshooting-101-2016-edition#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/arp">arp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/451">dns</category>
+ <category domain="http://127.0.0.1:8080/blog/category/iptables">iptables</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/979">ntp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1001">selinux</category>
+ <pubDate>Wed, 01 Jun 2016 07:00:55 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1110 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Docker and volumes hell</title>
+ <link>http://127.0.0.1:8080/blog/docker-and-volumes-hell</link>
+ <description>&lt;p&gt;We&#039;re increasingly using Docker to build packages,  a fresh  chroot in which we prepare a number of packages, builds typically for ruby (rvm) , or python (virtualenv) or node stuf where the language ecosystem fails on us ...  and fpm the whole tree as a working artifact.&lt;/p&gt;
+&lt;p&gt;An example of such a build is my work on packaging Dashing.  &lt;a href=&quot;https://github.com/KrisBuytaert/build-dashing&quot; rel=&quot;nofollow&quot;&gt;https://github.com/KrisBuytaert/build-dashing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now part of that build is running the actual build script in docker with a local volume mounted inside the container This is your typical  -v=/home/src/dashing-docker/package-scripts:/scripts  param.&lt;/p&gt;
+&lt;p&gt;Earlier this week however I was stuck on a box where that combo did not want to work as expected. Docker clearly mounted the local volume, as it could execute the script in the directory, but for some reason it didn&#039;t want to write in the mounted volume.&lt;/p&gt;
+&lt;p&gt;docker run -v=/home/src/dashing-docker/package-scripts:/scripts dashing/rvm  /scripts/packagervm&lt;br /&gt;
+Usage of loopback devices is strongly discouraged for production use. Either use `--storage-opt dm.thinpooldev` or use `--storage-opt dm.no_warn_on_loop_devices=true` to suppress this warning.&lt;br /&gt;
+corefines: Your Ruby doesn&#039;t support refinements, so I&#039;ll fake them using plain monkey-patching (not scoped!).&lt;br /&gt;
+/usr/local/share/gems/gems/corefines-1.9.0/lib/corefines/support/fake_refinements.rb:26: warning: Refinements are experimental, and the behavior may change in future versions of Ruby!&lt;br /&gt;
+/usr/share/ruby/fileutils.rb:1381:in `initialize&#039;: Permission denied - rvm-1.27.0-1.x86_64.rpm (Errno::EACCES)&lt;/p&gt;
+&lt;p&gt;So what was I doing wrong, did the Docker params change, did I invert the order of the params, did I mistype them ? I added debugging to the script, (ls , chmod, etc..) and I couldn&#039;t seem to read or modify the directory. So I asked a coworker to be my wobbling duck.&lt;/p&gt;
+&lt;p&gt;He did more .. he wondered if this wasn&#039;t selinux.&lt;/p&gt;
+&lt;p&gt;And he was right..&lt;/p&gt;
+&lt;p&gt;Apr 23 21:47:00 mine23.inuits.eu audit[9570]: AVC avc:  denied  { write } for  pid=9570 comm=&quot;fpm&quot; name=&quot;package-scripts&quot; dev=&quot;dm-2&quot; ino=368957 scontext=system_u:system_r:svirt_lxc_net_t:s0:c47,c929 tcontext=unconfined_u:object_r:unlabeled_t:s0 tclass=dir permissive=0&lt;br /&gt;
+Apr 23 21:47:02 mine23.inuits.eu python3[9597]: SELinux is preventing fpm from write access on the directory /home/src/dashing-docker/package-scripts.&lt;/p&gt;
+&lt;p&gt;So while I was looking for errors in docker, it was just my selinux set to enforce acting up and me not noticing it.&lt;/p&gt;
+&lt;p&gt;The quick way to verify obvisously was to setenforce 0  and trigger the build again that however is not a long term fix so  I changed the &lt;/p&gt;
+&lt;p&gt;semanage fcontext -a -t cgroup_t &#039;/home/src/dashing-docker/package-scripts&#039;&lt;br /&gt;
+restorecon -v &#039;/home/src/dashing-docker/package-scripts&#039;&lt;/p&gt;
+&lt;p&gt;That solves the problem&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/docker-and-volumes-hell#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/docker-0">docker</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fpm">fpm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1001">selinux</category>
+ <pubDate>Sat, 28 May 2016 11:16:45 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1109 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Upgrading to Fedora 10 </title>
+ <link>http://127.0.0.1:8080/blog/upgrading-fedora-10</link>
+ <description>&lt;p&gt;As some of you know I run Fedora on my main Laptop, and Ubuntu on my EEE and my office Desktop.   My Ubuntu installs were pretty fresh, but my fedora was long due for an upgrade.    As after years of abuse (--force --nodeps) it usually is impossible to do a regular upgrade, so my best way out was a quick and fresh install on an isolated root partition.   (my /home/ etc live on separate volumes)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://raskas.be/&quot; rel=&quot;nofollow&quot;&gt;Johan&lt;/a&gt; tricked me into installing a FC10 x86-64 setup which required some more work than usual, but I`m back in the same state as I was before I started the upgrade.  We&#039;ll almost .. as I expect I`ll be reinstalling packages I don&#039;t daily use on a frequent basis over the next couple of weeks.&lt;/p&gt;
+&lt;p&gt;I&#039;ll dig a bit deeper in my x86_64 struggles later but first I had to tackle the problems I had with stepping my Evolution to a fresh and hopefully more stable version.&lt;/p&gt;
+&lt;p&gt;Evolution fails to recognise  the fact that I have multiple calendars, or got confused.. anyway .. my calendar was empty and I had to recreate them all and import them again one by one.&lt;br /&gt;
+Luckily the content was still available in .ics&lt;/p&gt;
+&lt;p&gt;Also Evolution partly forgot about all my email accounts , it remembered their passwords after recreating them, but not their settings.. well. that is if I managed to recreate them all :)&lt;br /&gt;
+(If I`m not replying to a mail you sent me sinc last thursday.. I might just have forgotten about that email address ..&lt;/p&gt;
+&lt;p&gt;On to the x86_64 stuff then.  &lt;a href=&quot;http://blog.verwilst.be/&quot; rel=&quot;nofollow&quot;&gt;Bort&lt;/a&gt; pointed me to the&lt;br /&gt;
+&lt;a href=&quot;http://labs.adobe.com/downloads/flashplayer10.html&quot; rel=&quot;nofollow&quot;&gt;Adobe Labs site&lt;/a&gt; that had a working flash plugin.  The right symlink in my .mozilla/plugins and the first problem was solved.&lt;/p&gt;
+&lt;p&gt;There&#039;s 2 apps from Google that I sometimes abuse,  I don&#039;t know why I still use Picasa, there must be plenty of good open source alternatives out there ..  however for Google Earth I don&#039;t really have a good alternative.   bot work  (unlike previous Fedora/Googl Earth combinations)&lt;/p&gt;
+&lt;p&gt;The only thing that annoyed me was Google Earth and selinux  , I had to run some chcon s to solve the problems.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libminizip.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/librender.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libauth.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libevll.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/lib*&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libnavigate.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/liblayer.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libmeasure.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libbasicingest.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libgps.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/googleearth/libgooglesearch.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/googleearth/libinput_plugin.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;chcon -t textrel_shlib_t &#039;/opt/google-earth/libflightsim.so&#039;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;A couple of more frustrations later  and the SELinux config got changed.  Afterall .. Life is to short for SELinux.&lt;/p&gt;
+&lt;p&gt;A must,  if you used too have Livna , or FreshRPMS is &lt;a href=&quot;http://rpmfusion.org/&quot; rel=&quot;nofollow&quot;&gt;RPMFusion&lt;/a&gt; a merger of the old repositories&lt;/p&gt;
+&lt;p&gt;Skype  seemed to be a bit more difficult.  I tried installing the rpm at first but I failed , then I read  &lt;a href=&quot;http://liquidat.wordpress.com/2008/11/27/moving-on-64bit-linux-pulseaudio-fedora-10-and-so-on/&quot; rel=&quot;nofollow&quot;&gt;some tips&lt;/a&gt; which suggested to use yum localinstall skype*.rpm&lt;/p&gt;
+&lt;p&gt;As I`m more of an apt-get user (yes even on CentOS etc) I don&#039;t usually try installing packages that way .. but it worked like a charm.    Skype started,  I could connect to the servers , however a test call  reveals no input sound.  Maybe if I try again with a headset later.&lt;/p&gt;
+&lt;p&gt;Anyway,  I`m pretty satisfied so far ...&lt;/p&gt;
+&lt;p&gt;Next step is to get that skype chat integrated in pidgin.. or hope people will realize they have to drop that proprietary tool one day..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/upgrading-fedora-10#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora-10">fedora 10</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1001">selinux</category>
+ <category domain="http://127.0.0.1:8080/blog/category/skype">skype</category>
+ <category domain="http://127.0.0.1:8080/blog/category/x8664">x86_64</category>
+ <pubDate>Mon, 01 Dec 2008 20:14:48 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">831 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>SELinux is Dead !</title>
+ <link>http://127.0.0.1:8080/blog/node/714</link>
+ <description>&lt;p&gt;No really it isn&#039;t but so isn&#039;t AppArmor, altough &lt;a href=&quot;http://etbe.coker.com.au/2008/08/23/apparmor-is-dead/&quot;&gt;Russel&lt;/a&gt; claims it is. Weird how he totally rewords the &lt;a href=&quot;http://news.opensuse.org/2008/08/20/opensuse-to-add-selinux-basic-enablement-in-111/&quot;&gt;OpenSuse statements&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;From &quot;While our customer experience shows that AppArmor is the best solution for the vast majority of users, applications, and use cases, we want to give all of our users the ability to choose the security framework that’s appropriate for their respective environments and needs. We continue to enable AppArmor as our default Host Intrusion Prevention System......&quot;&lt;/p&gt;
+&lt;p&gt;To &quot;The next step will be to make SE Linux the default and AppArmor the one that exists in a repository, and the step after that will be to remove AppArmor.&quot;&lt;/p&gt;
+&lt;p&gt;Given &lt;a href=&quot;https://help.ubuntu.com/community/AppArmor&quot;&gt;Ubuntu&#039;s AppArmor adoption&lt;/a&gt; I don&#039;t see it die that fast ...&lt;/p&gt;
+&lt;p&gt;The real problem is who uses AppArmor or SELinux,  sadly most of the installations I run into have none of both technologies enabled.  Most Admins overrule their favourite distro&#039;s default config. The reason is pretty obvious as &lt;a href=&quot;http://www.krisbuytaert.be/blog/node/335&quot;&gt;I&#039;ve&lt;/a&gt; heard &lt;a href=&quot;http://www.sxw.org.uk/lighting/&quot;&gt;a lot of&lt;/a&gt; &lt;a href=&quot;http://en.wikipedia.org/wiki/SELinux#Quotes&quot;&gt;intelligent&lt;/a&gt; &lt;a href=&quot;http://thunk.org/tytso/&quot;&gt;people&lt;/a&gt; say &quot;Life Is Too short For SELinux&quot;&lt;/p&gt;
+&lt;p&gt;So I wonder, how can you die if you never were really alive ?&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/714#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1002">apparmor</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/621">opensuse</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1001">selinux</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/916">ubuntu</category>
+ <pubDate>Mon, 25 Aug 2008 19:05:55 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">714 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

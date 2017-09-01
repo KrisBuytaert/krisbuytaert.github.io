@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - f12</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1356/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>F12 Dependency failure </title>
+ <link>http://127.0.0.1:8080/blog/f12-dependency-failure</link>
+ <description>&lt;p&gt;Fresh laptop arrived, obviously the first thing to do is to install the latest fedora.  then do a full yum update. &lt;/p&gt;
+&lt;p&gt;However that failed  with the following failed dependency&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;mesa-libGL-7.7-2.fc12.i686 from updates has depsolving problems&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  --&amp;gt; Missing Dependency: libdrm &amp;gt;= 2.4.17-1 is needed by package mesa-libGL-7.7-2.fc12.i686 (updates)&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Error: Missing Dependency: libdrm &amp;gt;= 2.4.17-1 is needed by package mesa-libGL-7.7-2.fc12.i686 (updates)&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; You could try using --skip-broken to work around the problem&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; You could try running: package-cleanup --problems&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        package-cleanup --dupes&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        rpm -Va --nofiles --nodigest&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;
+Now I don&#039;t really use all the fancy compiz stuff so for now I can just solve it by running &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;[root@stillmine ~]# yum remove  mesa-libGL &lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/f12-dependency-failure#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/compiz">compiz</category>
+ <category domain="http://127.0.0.1:8080/blog/category/f12">f12</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/category/mesa">mesa</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Tue, 19 Jan 2010 19:34:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">980 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

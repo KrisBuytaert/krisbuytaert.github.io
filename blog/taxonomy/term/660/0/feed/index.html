@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - stupid</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/660/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>SELECT vs select</title>
+ <link>http://127.0.0.1:8080/blog/node/522</link>
+ <description>&lt;p&gt;I spent way too much time this weekend trying to get the &lt;a href=&quot;http://api.drupal.org/api/file/includes/pager.inc/5&quot; rel=&quot;nofollow&quot;&gt;pager&lt;/a&gt; stuff in Drupal working for a module I`m playing with.  &lt;/p&gt;
+&lt;p&gt;I had learned a lot from the watchdog module on how paging was supposed to be working and I was trying to do the same with another database.    As I got a page limited by the number of records I wanted but I couldn&#039;t find any of the fancy next, previous and page number thingies that I wanted.    &lt;/p&gt;
+&lt;p&gt;The watchdog module worked for me and I started stripping the watchdog module till I could actually replace my function with watchdog_overview function.    Even replaced the watchdog query with my qeury..  but not such luck.. I couldn&#039;t get   $output .= &lt;span class=&quot;geshifilter&quot;&gt;&lt;code class=&quot;text geshifilter-text&quot;&gt;theme(&#039;pager&#039;, NULL, 50, 0);&lt;/code&gt;&lt;/span&gt;  to work.&lt;/p&gt;
+&lt;p&gt;So as every open source geek does.. I started looking into the code.  pager.inc&lt;br /&gt;
+The header told me  the author.. I could mail him and wait or even call him , , but I read on.&lt;br /&gt;
+&lt;span class=&quot;geshifilter&quot;&gt;&lt;code class=&quot;text geshifilter-text&quot;&gt;$pager_total_items[$element] = db_result(db_query($count_query, $args));&lt;/code&gt;&lt;/span&gt;&lt;br /&gt;
+Never returned  anything useful.., my mysql log learned me there never was any query with a count ..&lt;br /&gt;
+Till I modified the pager.inc file to actually perform the query I wanted it to do.. and it started working.&lt;br /&gt;
+Then I took a closer look at the regexp that was being used to create the $count_qeury&lt;br /&gt;
+&lt;span class=&quot;geshifilter&quot;&gt;&lt;code class=&quot;text geshifilter-text&quot;&gt;$count_query = preg_replace(array(&#039;/SELECT.*?FROM /As&#039;, &#039;/ORDER BY .*/&#039;), array(&#039;SELECT COUNT(*) FROM &#039;, &#039;&#039;),$query);&lt;/code&gt;&lt;/span&gt;&lt;br /&gt;
+However my query was all in lowercase so the count was never inserted.&lt;/p&gt;
+&lt;p&gt;The only difference between the working watchdog module and my own code was in the use of uppercase SQL statements.&lt;br /&gt;
+So call me lazy :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/522#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/526">newbie</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/659">pager</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/661">rtfc</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/660">stupid</category>
+ <pubDate>Sun, 02 Dec 2007 22:56:45 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">522 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/mollom-and-views by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:35:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mollom and Views | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Mollom and Views</h2>
+<div class="content">
+<div id="node-1015" class="node  blog">
+<div class="content"><p>You might have noticed that this blog stopped accepting comments about a month ago.. well. stopped accepting is a big word.. I was still accepting comments, only they were never submitted to the database and after entering a comment to my blog people  ended up on a white page.</p>
+<p>So upon returning from holliday I set out to debug the issue together with one of our Inuits Drupal geeks and quickly ran into the following error.<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">PHP Fatal error:  Call to a member function has_more_records() on a non-object in /somepath/modules/views/plugins/views_plugin_display.inc on line 1992, referer: http://www.krisbuytaert.be/blog/comment/reply/1014</div></li></ol></pre></div></p>
+<p>So apparently my veasion of views  6.x-3.0-alpha3 didn't really like to play with Mollom,<br />
+I downgraded views again to 6.x-2.11  and Mollom started showing its Captcha's etc  again .</p>
+<p>So apart from wondering how I ended up installing that alpha3 version (I`m sure Drush didn't do that), all is back to normal. and you should be able to comment on this blog again</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 08/04/2010 - 00:06</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_793 first"><a href="../taxonomy/term/793/index.html" rel="tag" title="">comments</a></li>
+<li class="taxonomy_term_484"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_858"><a href="../taxonomy/term/858/index.html" rel="tag" title="">mollom</a></li>
+<li class="taxonomy_term_599"><a href="../taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_485"><a href="../taxonomy/term/485/index.html" rel="tag" title="">php</a></li>
+<li class="taxonomy_term_1122 last"><a href="../category/views/index.html" rel="tag" title="">views</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-4052"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.e-block.com.vn/index.php?module=eblock&amp;function=detail&amp;id=40" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/018cac65e10b6ba8cfe373d71012b928.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Gach khong nung&#039;s picture" title="Gach khong nung&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4052">#1</a>
+    <span class="author"><a href="http://www.e-block.com.vn/index.php?module=eblock&amp;function=detail&amp;id=40">Gach khong nung</a></span>  : <span class="title"><a href="index.html#comment-4052" class="active">Dont use beta version</a></span>
+  </h3>
+  <div class="content"><p>views 6.x-3.0-alpha3 meaning a beta version - not completed and have some errors of course.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/10/2010 - 12:12</div>
+  </div>
+<a id="comment-4046"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.unleashedmind.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/e6e589e42701b287671255b24f976286.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="sun&#039;s picture" title="sun&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4046">#2</a>
+    <span class="author"><a href="http://www.unleashedmind.com/">sun</a></span>  : <span class="title"><a href="index.html#comment-4046" class="active">Odd title. Relationship?</a></span>
+  </h3>
+  <div class="content"><p>I wonder what Mollom has to do with this post and error message?</p>
+<p>The only relationship I see is that your site "did not accept (store) posted comments" due to that error.  Of course, that's also a way to prevent spam posts. ;)</p>
+<p>But in the end, a better title for this post would probably have been "Views 3 and Comments".</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/04/2010 - 15:12</div>
+  </div>
+<div class="indented"><a id="comment-4048"></a>
+<div id="comment-3" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4048">#3</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-4048" class="active">Disabling Mollom</a></span>
+  </h3>
+  <div class="content"><p>Upon disabling mollom one could actually post comments ...<br />
+But then I was being spammed ....</p>
+<p>...</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/04/2010 - 15:53</div>
+  </div>
+</div><a id="comment-4043"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/7315e751540cc141ff8c139e524e2e2f.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="dereine&#039;s picture" title="dereine&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4043">#4</a>
+    <span class="author"><span class="anonymous" title="not verified">dereine</span></span>  : <span class="title"><a href="index.html#comment-4043" class="active">It&#039;s always! worth to look</a></span>
+  </h3>
+  <div class="content"><p>It's always! worth to look first in the issue queue, i just wanted to have said this. :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/04/2010 - 08:24</div>
+  </div>
+<div class="indented"><a id="comment-4044"></a>
+<div id="comment-5" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4044">#5</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-4044" class="active">looked .. but didn&#039;t find</a></span>
+  </h3>
+  <div class="content"><p>Looked but didn't find a similar issue. </p>
+<p>If you have a pointer .. feel free..</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/04/2010 - 09:03</div>
+  </div>
+</div><a id="comment-4042"></a>
+<div id="comment-6" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/2c18cfd15333a882aa719110b221d4e5.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="laz&#039;s picture" title="laz&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4042">#6</a>
+    <span class="author"><span class="anonymous" title="not verified">laz</span></span>  : <span class="title"><a href="index.html#comment-4042" class="active">wait, are you saying it</a></span>
+  </h3>
+  <div class="content"><p>wait, are you saying it wasn't a dns problem?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/04/2010 - 06:10</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/mollom-and-views by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:35:15 GMT -->
+</html>

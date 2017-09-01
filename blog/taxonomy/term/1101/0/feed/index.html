@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - technorati</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1101/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Technorati RRD</title>
+ <link>http://127.0.0.1:8080/blog/technorati-rrd</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://blog.verwilst.be/&quot;&gt;Bort&lt;/a&gt; is in to graphs and stats these days, so he was interested in my little Technorati hack.&lt;/p&gt;
+&lt;p&gt;Lots of us bloggers are using Technorati to track who&#039;s joining the discussion on articles we posts.   Technorati gives you details on how many blogs link to you, and how much they link to you and translate that into an Authority rank.   Now what they don&#039;t give you is an idea on how that rank evolves.&lt;/p&gt;
+&lt;p&gt;Technorati also as an API which allows you to get that same information.&lt;br /&gt;
+As I was explaining the concept of RRDTool to someone a couple of months ago I thought it was a good idea to track a Technorati rank and grab that with RRDTool.&lt;/p&gt;
+&lt;p&gt;So I wrote a small script that gets the bloginfo data for my blog from Technorati,&lt;br /&gt;
+parses out the number of inboundblogs  , writes that info to an RRD file and creates a graph from it&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;wget -O $NOW.html  &amp;quot;http://api.technorati.com/bloginfo?key=getyourown&amp;amp;url=www.krisbuytaert.be/blog/&amp;quot;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;VALUE=`cat $NOW.html   | grep inboundblogs  | head -n 1  | sed -e &amp;quot;s/&amp;lt;//g&amp;quot;  | sed -e &amp;quot;s/inboundblogs//g&amp;quot;  | sed -e &amp;quot;s/\///g&amp;quot; | sed -e &amp;quot;s/&amp;gt;//g&amp;quot; | sed -e &amp;quot;s/ //g&amp;quot; `&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;rrdtool update technorati.rrd $UNIXNOW:$VALUE&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;rrdtool  graph ../public_html/images/technorati.png --start 1218548820  --vertical-label TechnoratiRank DEF&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;:myrank=technorati.rrd:rank:AVERAGE   LINE2:myrank#FF0000 -m 2&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;The result looks like&lt;br /&gt;
+&lt;img src=&quot;http://www.krisbuytaert.be/images/technorati.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;As you can see somewhere in week 37 Technorati was pretty much not working.  And 180 days before week 42 my blog got a lot of fresh , but non recurring inbound links.&lt;/p&gt;
+&lt;p&gt;Now I have a couple of more ideas to build on this.. just no time.. but if you are interested lemme know ..&lt;/p&gt;
+&lt;p&gt;Anyhow it&#039;s all lies, damn lies and statistics ;)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/technorati-rrd#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1066">rrdtool</category>
+ <category domain="http://127.0.0.1:8080/blog/category/stats">stats</category>
+ <category domain="http://127.0.0.1:8080/blog/category/technorati">technorati</category>
+ <pubDate>Fri, 14 Nov 2008 18:50:30 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">766 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/96 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:42:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Automating Unix and Linux Administration | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-story one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a></div></div>
+  <h2 id="title">Automating Unix and Linux Administration</h2>
+<div class="content">
+<div id="node-96" class="node  story">
+<div class="content"><p>
+A couple of months ago I promised a review of the book <a href="http://www.amazon.co.uk/exec/obidos/redirect?link_code=as2&amp;path=ASIN/1590592123&amp;tag=everytisafine-21&amp;camp=1634&amp;creative=6738">Automating Unix and Linux Administration</a><img src="http://www.assoc-amazon.co.uk/e/ir?t=everytisafine-21&amp;l=as2&amp;o=2&amp;a=1590592123" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /><br />
+I`m lucky I took notes while reading it because otherwise this review would never have been written.
+</p>
+<p>
+   Kirk Bauer does a good job in higlighting important parts of modern<br />
+   system administration. He gives a good overview of the tools you<br />
+   should use such as Nagios and CFengine but on some occasions my<br />
+   opinion differs with his.</p>
+<p>
+   Allowing Remote root is one of those things, for me there is no<br />
+   reason whatsoever why someone must be able to login as root remotely<br />
+   , I want them to ssh into a box as a normal user , then su to root.<br />
+   The main reason for this is that passwords tend to be exchanged by<br />
+   people  and  getting to know a root password isn't always that<br />
+   difficult (remember the human being the weakest factor in security),<br />
+   so even if someone knows the root password of a machine, as long as<br />
+   he doesn't have another valid account that password isn't worth<br />
+   anything.
+</p>
+<p>
+   There were some moments where I was puzzled, somewhere in the book<br />
+   he described on how scripts that had an "add" function also needed a<br />
+   "remove" function. I always assume you generate configs or file, put<br />
+   them in CVS( Feel free to replace CVS with your favourite version<br />
+   control system.), distribute the files and when you have to rollback<br />
+   you have the older versions in CVS.
+</p>
+<p>
+   Some  other  things  I  didn't like were some of his "Software<br />
+   Distribution" methods, as in use rsync for sharing data and code ??<br />
+   No way, code should be packaged in to rpm or deb files (pick your<br />
+   favourite) and packages should be updated or installed. We don't<br />
+   want any orphaned files on our systems do we ?
+</p>
+<p>
+   But apart from those disagreements the book was really interresting<br />
+   to read and it actually taught me some new things. Thumbs up !
+</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 01/04/2006 - 22:53</div>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/96 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:42:14 GMT -->
+</html>

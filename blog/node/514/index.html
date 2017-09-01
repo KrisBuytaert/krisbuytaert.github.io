@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/514 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:29:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>YASN, or how to overload the SMTP servers | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a> &#8594; <a href="../../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">YASN, or how to overload the SMTP servers</h2>
+<div class="content">
+<div id="node-514" class="node  blog">
+<div class="content"><p>Over the past couple of days  there is an increased flow of traffic to my Inbox all fairly identical mails from people that I`m connected to on LinkedIn that somehow are being invited by their friends to also start using Plaxo.<br />
+I`m wondering if people don't realise they are resending their whole LinkedIn addressbook an invitation or if they do it on purpose. I`m still looking for the great new feature that Plaxo has that urges me to switch to it or even consider using it actively.<br />
+I haven't found it .. so please explain me why you are using plaxo </p>
+<p>A couple of weeks ago I started this poll on my blog so people could vote on their social network site.<br />
+Guess what the conclusion was.. the majority of my readers favours LinkedIn, some like Facebook and only some individuals like Plaxo or Xing </p>
+<p>Yes I create accounts on most new YASN (Yet Another Social Network)  thingies, but merely as a form of Online Identity Protection.  (It's pretty easy to find a new YASN and create an account there that you shouldn't be creating) </p>
+<p>Now I`m all in favour of redundancy and high availability.  But I frequently just export my LinkedIn connections to my local desktop and that gives me a nice backup.       </p>
+<p>So is this going to be the new trend ?  I launch a new YASN  and suddenly I create an avalanche of mails that will be send to other people.   Geez.. this looks like a virus in LookOut<br />
+But how long wil our email system live if more and more people start using these tools and more and more new sites implement the feature. ?  When will Inbox protection tools start  with default filtersets for a list of Social Networks ?<br />
+Wil social networks start to figure out ways to evade Inbox protection tools ?</p>
+<p>Maybe we just need to add some more meta information in our DNS servers.  :)</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Thu, 11/29/2007 - 21:11</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_496 first"><a href="../../taxonomy/term/496/index.html" rel="tag" title="">linkedin</a></li>
+<li class="taxonomy_term_603"><a href="../../taxonomy/term/603/index.html" rel="tag" title="">plaxo</a></li>
+<li class="taxonomy_term_511"><a href="../../taxonomy/term/511/index.html" rel="tag" title="">spam</a></li>
+<li class="taxonomy_term_647 last"><a href="../../taxonomy/term/647/index.html" rel="tag" title="">yasn</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/514 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:29:18 GMT -->
+</html>

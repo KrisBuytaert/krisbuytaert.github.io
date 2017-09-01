@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=84 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:56:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Everything is a Freaking DNS problem | Devops Needs Sushi</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../blogapi/rsd/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem RSS" href="../rss/index.xml" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="front not-logged-in page-node one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+<div class="content">
+<div id="node-200" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-05-28T13:20:57+02:00">
+  <span class="month">May</span>
+  <span class="day">28</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="../node/200/index.html">echo &quot;Building a Self-Healing Network&quot; |  sed s/Network/Infrastructure/</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>O'Reilly has an interresting article on <a href="http://www.onlamp.com/pub/a/onlamp/2006/05/25/self-healing-networks.html?page=1">ONLamp.com -- Building a Self-Healing Network</a>  The idea is great however with this approach you might endup restarting apache a zillion times while not looking at the real problem.<br />
+The question is .. why did apache crash and how do we fix the problem.<br />
+We should looking to fixing the cause of the problem rather than the symptons.</p>
+<p>Now here's off course where you have CFengine also monitor e.g your diskspace and write a nice tidy section in your cfengine configs.</p>
+<p>However .. not all crashes are due to flooding disks so there is some other stuff you might want to investigate.  I can imagine that  with an editfiles section containnig RunScriptIfLineMactching you can probably fix a lot .. or at least  fix issue by  issue ,  Fix it once and forever and make that fix reproducable.  Untill you run into the next undocumented problem :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../node/200/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-199" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-05-24T19:47:01+02:00">
+  <span class="month">May</span>
+  <span class="day">24</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="../node/199/index.html">A linux geek starts playing with a MacMini</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>We bought a Mac Mini at the office for multiple reasons,<br />
+First of all we needed a demo box to carry around to show of MailMuseum to customers,  we wanted something small and light as a server.  Secondly it seems like the new MacMini's already have a VT Based chip  so they should be able to runn Xen in full virtualisation mode.  And wel.. If we really have to buy hardware that includes an OS by default ..we prefer buying a Unix platform vs sending money to Redmond.    But the goal is to make it a fulltime Linux/Xen platform not a MacOS X box.</p>
+<p><a href="http://www.mactel-linux.org/" title="www.mactel-linux.org">www.mactel-linux.org</a>  learns you a lot of stuff on how to install Linux and so on.. so I started of by<br />
+Connecting  the MacMini via FireWire to My Laptop Booted with F pressed  thus booted with disk in slave mode ,  mounted stuff,<br />
+I edited partition table.. hmm that should read screwed partition table . Coudn't boot anymore.   Booted with install CD.  (Press C)<br />
+It didn't find a disk anymore .. you need to launch Utilities / Disk Utility from the menu and partition it again .. weird.. it just stops and you have to look in menu's rather than just starting the thing itselve.  Hmm.. Linux really is userfriendly at least Linux installers tell me what's the next step and suggest a partition info :)</p>
+<p>What ? MacOS needs 15 GB to install,  I planned on giving it about 10Gb but that really didn't seem to be enough.  Ok so 30 Gb you get .. the rest is for Linux.<br />
+While fiddling in the menu I ran into the Startup Disk thingie Hmm.. this thing has an option boot from netwrk.. needs to be figured out ..<br />
+Right I`m in wait mode now .. 11% complete ...</p>
+<p>Ah now it's done  .. it's at 100% and it starts again .. "Writing files"<br />
+Oh my .. Installing MacOS X really really takes long, I already experienced it last July when I scratched and reinstalled Macbar's Powerbook  but now again I have to realise that Installing Linux is soo much faster and and once again the progress stuff reaches 100% completed .. only to proceed to the next phase...<br />
+But.. wait .. now it gives me a Time Remaining:  About 1 hour and 23 minutes.<br />
+Yeah right.. I`m going to play with my MythTV box</p>
+<p>Anyway.. my iMac is still happily running Ubuntu PPC ...</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../node/199/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-198" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-05-24T19:43:07+02:00">
+  <span class="month">May</span>
+  <span class="day">24</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="../node/198/index.html">Why people don&#039;t buy Open Source ..</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>I finally realised and it's so true.  People don't buy open source because the<br />
+opensource companies don't give free movie tickets, iPods, Moutain bikes, City Trips ,   the proprietary companies do.. the hardware companies do, but the people that sell open source services don't.</p>
+<p>I remember a couple of years ago when working for one of the larger  mobile operators in Belgium  and we had to decide on some new platforms..  the technical people were invited to some technical sessions 5km from our office by different vendors.  We actually had already decided without those sessions by marketeers that didn't even knew the answers to our questions.  But.. the management got invited to a full week visit to some manufacturer in California ,  when they came back we were not even  heard about our opinions.. the deals were already closed.<br />
+And it wasn't our choice.</p>
+<p>In other unrelated news I finally found time to upgrade a MySQL Cluster test platform to 5.1.9 ,<br />
+I could already reproduce at least 1 bug I initially found in 5.1.6...  let's see what happens next .</p>
+</div>
+</div>
+<div id="node-197" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-05-21T21:58:54+02:00">
+  <span class="month">May</span>
+  <span class="day">21</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="../node/197/index.html">Missed ! : SANE06  :(((</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Aahr.. my technocrati search on cfengine just brought up ..<br />
+<a href="http://bnerd.blogspot.com/2006/05/sane06-yesterday-sedgewick.html">Bnerd: SANE06 Yesterday &amp; Sedgewick</a></p>
+<blockquote><p>Yesterday I was in a pretty interesting tutorial on cfengine by Mark Burgess himself.</p>
+</blockquote>
+<p>If only I had known before.. I'm 100% positive I would have gone there if only for that tutorial :(<br />
+I hope to catch that talk again some day !  Any video recordings ?</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../node/197/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-196" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-05-21T17:42:02+02:00">
+  <span class="month">May</span>
+  <span class="day">21</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="../node/196/index.html">Nokia Gadgets @ Barcamp Brussels</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Seems like <a href="http://blog.coolz0r.com/2006/05/20/barcamp-brussels-2/">everyone and their little thumbs</a> have been playing with the  N series from okia at Barcampbrussels.</p>
+<p>But is seems that noone except me actually looked into using that <a href="http://europe.nokia.com/nokia/0,1522,,00.html?orig=/770">other great Nokia device</a>  to read the feeds they generated.</p>
+<p>Might also be because the 770 hype is already over ... dunno.. so fellow barcampers..  didn't anybody notice ?</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../node/196/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-195" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-05-21T12:23:50+02:00">
+  <span class="month">May</span>
+  <span class="day">21</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="../node/195/index.html">Barcamp Brussels</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>I went to Barcamp Brussels yesterday .. I arrived way to late.. around 1430  the parking lot was already closed and I had to find a parking place and the place itselve while the sky was pouring down on me.<br />
+So when I finally enterred the building all the T-Shirts were already gone :(   So apart from the <a href="http://flickr.com/photos/tags/barcampbrussels/" hreflang="en">pictures people took</a>.. I can't prove I was there..</p>
+<p>A quick look at the schedule learned me that I first wanted to go see  the <a href="http://www.lowagie.com/iText/"> iText</a> , iText being used by Google and others , is a neat PDF library written by  <a href="http://www.lowagie.com/">Bruno Lowagie</a>  ,  Bruno is even working on a book about the topic, in  that book he uses an imaginary university at an imaginary city FooBar to build examples. The fact that he isn't publishing it with O'Reilly probably makes it the most relevant talk at Barcamp :))   Which made me wonder how many people at Barcamp Brussels actually knew where the name Barcamp  came from .. and suprisingly noone I asked really knew... weird :)</p>
+<p>So 2 minutes into Bruno's talk I started wondering why the talk was in dutch.. and it seemed that actually everybody in the audience was a native dutch speaker.. even weirder.. something I`m definitely not used to..<br />
+<a href="http://www.bluemonday.be/i">Frank Louwers</a> actually was prepared to give his Hosting 2.0 in either dutch or english as he had prepared 2 sets of slides .. His talk was about or what changed in hosting and  what we expect from a hosting company. I talked with Frank later on his visions of clustering ,  virtualisation and system management, and off course topics such as <a href="http://xensource.com/" hreflang="en">Xen</a> and <a href="http://www.openqrm.org/" hreflang="en">OpenQRM</a> came up :)</p>
+<p>The next talk I joined was the one from Bart Van Herreweghe about <a href="http://sourceforge.net/projects/taggingmanager">Taggingmanager</a> , as an happy <a href="http://del.icio.us/kbuytaert">del.ico.us</a> user I was interrested in what tagging manager was all about. I was dissapointed  that my question on what was wrong with the existing opensource implementations such as<br />
+<a href="http://de.lirio.us/code/">delirious</a> wasn't really answered.  My interrested was in where the delirous implementation lacked features and functions, or failed to be integrated with other platforms, isn't maintained anymore or whatever .. . I'm still not sure  so I`ll have to look into both projects  as I plan on integrating some kind of bookmark/tag sharing in our corporate intranet.</p>
+<p>With my old demoscene background I really enjoyed the talk about <a href="http://www.workspace-unlimited.org/welcome.html">workspace unlimited</a>  I really plan on visiting their setup in de Vooruit in Gent in september ..</p>
+<p>Barcamp Brussels was Small  , and fine which meant you actually got the chance to talk to a lot of people and still see the talks as it wasn't too crowded... compared to Fosdem when upon entering the building it takes me about an hour to arrive at the first talk as I spend way to much time talking to different people  and not going to talks.  This time I actually got around talking to people that I haven't been talking to for ages :)</p>
+<p>Maybe my expectations on what kind of people / talks to meet and see there were a bit wrong.. when looking at other barcamps where people such as <a href="http://whurley.com/">whurley</a> and <a href="http://www.moshebar.com/tech/">Moshe</a> were present, I was maybe hoping for a bit more of system level innovation etc. or at least more technology innovation rather than Bloggers meet and talk about Blogging tools.   I wasn't sure on what I should talk about as most of the topics I usually speak about  would have been so out of scope and probably wouldn't have reached any potientiel audience.   Well.. maybe my Everything is A Funky DNS problem talk would have suited  but still  ..</p>
+<p>Next Barcamp Brussels is planned for somewhere in crowdy september (<a href="http://conferences.oreillynet.com/euos2006/">Euroscon</a>, <a href="http://www.linux-kongress.org/2006/">LinuxKongress</a> etc..)  and I`ll try making up for the lack of talk by giving either my Everythying is a  talk ... or a Sysadmin 2.1 talk :)</p>
+</div>
+</div>
+<div id="node-194" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-05-20T17:26:23+02:00">
+  <span class="month">May</span>
+  <span class="day">20</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="../node/194/index.html">Playing with Google Trends</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Yes, I've also been playing with Google Trends...</p>
+<p>A picture says more than ...</p>
+<p>So I had a look at the rise of new Linux distributions.<br />
+<br />
+<img src="http://www.x-tend.be/~kb/pics/young-distros.png" alt="" /><br />
+<br />
+<img src="http://www.x-tend.be/~kb/pics/debian-gentoo-slackware-redhat.png" alt="" /><br />
+</p>
+<p>Enterprise Linux Distros and how the "rebuild" compares to the original.<br />
+</p>
+<p><img src="http://www.x-tend.be/~kb/pics/fed-opensuse-redhat-ubuntu.png" alt="" /><br />
+</p>
+<p><img src="http://www.x-tend.be/~kb/pics/redhat-suse-debian-ubuntu-centos.png" alt="" /><br />
+</p>
+<p>Clustering..  note the lack of openSSI on this picture,  reason.. not enough search results.. (ask google.. not me..)<br />
+</p>
+<p><img src="http://www.x-tend.be/~kb/pics/openmosix-beowulf.png" alt="" /></p>
+<p></p>
+<p>On Linux vs BSD,  I love BSD as a technology... but when looking at it from a marketing point of view it's already difficult enough convincing people to us Linux ..<br />
+</p>
+<p><img src="http://www.x-tend.be/~kb/pics/bsds-linux.png" alt="" /></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../node/194/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-193" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-05-20T12:28:22+02:00">
+  <span class="month">May</span>
+  <span class="day">20</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="../node/193/index.html">Gallery :: LinuxTag 2006 Wiesbaden</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Finally found time to upload the pictures I took at LinuxTag this year in Wiesbaden not much but some people might be interrested :)<br />
+<a href="http://www.x-tend.be/gallery/view_album.php?set_albumName=LinuxTag2006">Gallery :: LinuxTag 2006 Wiesbaden :: </a></p>
+</div>
+</div>
+<div id="node-192" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-05-19T16:52:02+02:00">
+  <span class="month">May</span>
+  <span class="day">19</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="../node/192/index.html">Attacks to our  DNS system,  how vulnerable is the internet ?</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Most of you already know that one of my default replies to a question is "It's a DNS Problem"  , and lots of you already came back afterwards confirming that I indeed was right.<br />
+Apart from configuration errors and performance issues ,  there are more issues on the internet that are  DNS related.</p>
+<p>Spam is one of them .. one of the main reasons behind spam is that other than an MX record to send mail to,  the original mail architecture did not provide us with a way to guarantee that mails were actually coming from<br />
+the domain they claim to come from.   Luckily today we have <a href="http://www.openspf.org/">openSPF</a> and other techniques that are helping us , however not widespread enough ..<br />
+Think about the bad things that can happen when someone can take over your DNS server...  yep.. that kind of stuff...</p>
+<p>Or even worse .. think about what happens if you ask for the IP address for a server and get no reply...  do you still know the IP address of your mailserver, default gateway,  or even DNS server ?<br />
+So what happens when the idiots that think we are interrested in their spam  feel attacked by a company that tries to help us fight spam start fighting the company by attacking their ISP's  DNS servers ?<br />
+Indeed they get caught and are forced to manually reply to DNS requests for the rest of their lives ..  oh no.. that's not reality :(    They actually bring some DNS servers down by sending it more traffic than the ISP's network can ever handle.</p>
+<p>The dns system is one of the most important parts of todays internet .. yet it is broken as ...<br />
+I spend lots of time thinking how we could fix it...  and I`m probably not the only one ..  so what are your ideas ?</p>
+<p>Anyway... if you want to read on about an actually story with this sad story line  go<br />
+<a href="http://blog.washingtonpost.com/securityfix/2006/05/blue_security_surrenders_but_s.html">here</a></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../node/192/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-191" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-05-17T15:36:22+02:00">
+  <span class="month">May</span>
+  <span class="day">17</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="../node/191/index.html">Enomalism: No More Vapourware</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Just got the mail.. it's there .. it's no more vapourware ..    dunno if it works though.. <a href="http://sourceforge.net/projects/enomalism/">SourceForge.net: Enomalism Virtualized Management Console</a>  I`ll need to shedule some testing time..<br />
+Feel free to share your feedback !</p>
+</div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="index83.html?page=83" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a href="index80.html?page=80" title="Go to page 81" class="active">81</a></li>
+<li class="pager-item"><a href="index81.html?page=81" title="Go to page 82" class="active">82</a></li>
+<li class="pager-item"><a href="index82.html?page=82" title="Go to page 83" class="active">83</a></li>
+<li class="pager-item"><a href="index83.html?page=83" title="Go to page 84" class="active">84</a></li>
+<li class="pager-current">85</li>
+<li class="pager-item"><a href="index85.html?page=85" title="Go to page 86" class="active">86</a></li>
+<li class="pager-item"><a href="index86.html?page=86" title="Go to page 87" class="active">87</a></li>
+<li class="pager-item"><a href="index87.html?page=87" title="Go to page 88" class="active">88</a></li>
+<li class="pager-item"><a href="index88.html?page=88" title="Go to page 89" class="active">89</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="index85.html?page=85" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="index103.html?page=103" title="Go to last page" class="active">last »</a></li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=84 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:56:01 GMT -->
+</html>

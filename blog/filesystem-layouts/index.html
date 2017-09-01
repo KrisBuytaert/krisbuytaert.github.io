@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/filesystem-layouts by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:48:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>On Filesystem Layouts | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">On Filesystem Layouts</h2>
+<div class="content">
+<div id="node-858" class="node  blog">
+<div class="content"><p><a href="http://grep.be/blog/en/computer/filesystem_layouts?show_comments=yes" rel="nofollow">Wouter</a> blogged  about his favourite Laptop filesystem layout , just one filesystem , and <a href="http://blog.andrew.net.au/2009/01/15#filesystem_layouts" rel="nofollow">some geeks</a> think that's a bad idea.</p>
+<p>Actually I can understand Wouter not wanting to have different /usr/ /var or other partitions on his laptop , the 20Mb left and 300Mb right you loose on different partitions are exactly what you want to use on your laptop, however isolating partitions also has it's benefits</p>
+<p>My setup looks similar to this :<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/home</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/opt</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/altroot</div></li></ol></pre></div></p>
+<p>/ and altroot so you can run 2 distros, keeping my local data on a different partition so I can upgrade , switch distro etc..   and /opt .. for the software that isn't shipped as a package.</p>
+<p>Obviously I use LVM so I can use these different partitions also as storage for virtual machines that can boot a different distro either on the physical or the virtual machine.</p>
+<p>And obviously the rules for servers are different than the ones for laptops or even personal desktops for that matter</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Sun, 01/18/2009 - 15:04</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_540 first"><a href="../taxonomy/term/540/index.html" rel="tag" title="">lvm</a></li>
+<li class="taxonomy_term_1151"><a href="../category/no-root/index.html" rel="tag" title="">no root</a></li>
+<li class="taxonomy_term_1150 last"><a href="../category/root/index.html" rel="tag" title="">root</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3492"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://pieterb.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/1b1013ef0be963bd0644c6873172e23b.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="PieterB&#039;s picture" title="PieterB&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3492">#1</a>
+    <span class="author"><a href="http://pieterb.be/">PieterB</a></span>  : <span class="title"><a href="index.html#comment-3492" class="active">Desktop:
+/
+/home
+and</a></span>
+  </h3>
+  <div class="content"><p>Desktop:<br />
+/<br />
+/home<br />
+and sometimes a seperate /boot</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/20/2009 - 10:23</div>
+  </div>
+<a id="comment-3482"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://blog.ghosty.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/46d37333e79c30f899ed61dd2a5d84e5.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="ghosty&#039;s picture" title="ghosty&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3482">#2</a>
+    <span class="author"><a href="http://blog.ghosty.be/">ghosty</a></span>  : <span class="title"><a href="index.html#comment-3482" class="active">server partition layout</a></span>
+  </h3>
+  <div class="content"><p>With your many years of experience do you have a holy grail solution for a good server partitioning? :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/18/2009 - 20:26</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/filesystem-layouts by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:48:48 GMT -->
+</html>

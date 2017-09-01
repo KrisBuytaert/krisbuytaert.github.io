@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - testing</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1451/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Devops in Munich</title>
+ <link>http://127.0.0.1:8080/blog/devops-munich</link>
+ <description>&lt;p&gt;Devopsdays Mountainview sold out in a short 3 hours ..   but there&#039;s other events   that will breath devops this summer.&lt;br /&gt;
+DrupalCon in Munich will be one of them ..&lt;/p&gt;
+&lt;p&gt;Some of you might have noticed that I`m cochairing the devops track for DrupalCon Munich,&lt;br /&gt;
+The CFP is open till the 11th of this month and we are still actively looking for speakers.&lt;/p&gt;
+&lt;p&gt;We&#039;re trying to bridge the gap between drupal developers and the people that put their code to production, at scale.&lt;br /&gt;
+But also enhancing the knowledge of infrastructure components Drupal developers depend on.&lt;/p&gt;
+&lt;p&gt;We&#039;re looking for talks both on culture (both success stories and failure) ,   automation,&lt;br /&gt;
+specifically looking for people talking about drupal deployments , eg using tools like Capistrano, Chef, Puppet,&lt;br /&gt;
+We want to hear where Continuous Integration fits in your deployment ,  do you do Continuous Delivery of a drupal environment.&lt;br /&gt;
+And how do you test ... yes we like to hear a lot about testing , performance tests, security tests, application tests and so on.&lt;br /&gt;
+...  Or have you solved the content vs code vs config  deployment problem yet ? &lt;/p&gt;
+&lt;p&gt;How are you measuring and monitoring these deployments and adding metrics to them  so you can get good visibility on both&lt;br /&gt;
+system and user actions of your platform.  Have you build fancy dashboards showing your whole organisation the current state of your deployment ? &lt;/p&gt;
+&lt;p&gt;We&#039;re also looking  for people talking about introducing different data backends,  nosql,  scaling different search backends , building your own cdn using  smart  filesystem setups.&lt;br /&gt;
+Or making smart use of existing backends, such as tuning and scaling MySQL, memcached and others.&lt;/p&gt;
+&lt;p&gt;So lets make it clear to the community that drupal people do care about their code after they committed it in source control ! &lt;/p&gt;
+&lt;p&gt;Please submit your talks &lt;a href=&quot;http://munich2012.drupal.org/news/call-for-papers&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/devops-munich#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/456">cfp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/configmgmt">configmgmt</category>
+ <category domain="http://127.0.0.1:8080/blog/category/deployment">deployment</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/measurement">measurement</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/testing">testing</category>
+ <pubDate>Tue, 01 May 2012 19:02:30 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1065 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Beyond Configuration Mgmt</title>
+ <link>http://127.0.0.1:8080/blog/beyond-configuration-mgmt</link>
+ <description>&lt;p&gt;(This post has been sitting in the drafts folder for way to long,  I decided to push the publish button anyhow .. some people might get ideas from it..)&lt;/p&gt;
+&lt;p&gt;We&#039;ve all run in to the problem,  you&#039;ve puppetized, or euh .. cooked ,  about every part of your infrastructure and then there&#039;s this one service which has no config files,  a broken api that doesn&#039;t allow you to configure antyhing, but a magnificent web gui to configure all aspects of the service.  Magnificent for the eye ,  full of AJAX and other fancy stuff which wget isn&#039;t really keen on.  Off course before it even starts working you need to set it&#039;s password , from that webgui.&lt;/p&gt;
+&lt;p&gt;Sometimes when you are lucky they store al their config in a database, which you can dump, parse and replace all the host specific parameters for other deployments,   but is that an approach you like ?  As for each new version you&#039;ll need to reanalyze the db layout.  But no matter how you look at it ,dumping the DB and restoring it is an ugly hack you don&#039;t want.&lt;/p&gt;
+&lt;p&gt;Other alternatives like sniffing the traffic and replaying the POSTS etc were considered ...   but fancy AJAX stuff and SSL make that less trivial than it seems &lt;/p&gt;
+&lt;p&gt;Wo while discussing with an upstream project they proposed to actually screenscrape their config webgui .&lt;/p&gt;
+&lt;p&gt;So screenscraping the config gui it is .. but how ...  I started looking at tools that are typically used for testing rather than for automation, with the purpose of replaying the scenarios one needs to configure the services.&lt;/p&gt;
+&lt;p&gt;My first attempt was Selenium,  it plugs into a browser , so it&#039;s easy to acraully record what it has to do,  and it saves it&#039;s scenarios  in a somewhat readable/ editable format.&lt;br /&gt;
+Having found the export to perl function it alll looked promising.   However the export to perl isn&#039;t really an export to perl as I epxected .. I assumed it would just generate the perl code to run the same scneario which would be awesome .. it however generates a perl script that instructs a selenium server to run the script.&lt;/p&gt;
+&lt;p&gt;One of the annoyancies I ran into with Selenium is that a browser&lt;br /&gt;
+doesn&#039;t accept self signed certificates , and one can&#039;t preprovision a browser easyily with those freshly created certificates. (Yes Karl I already read about certutil ... )&lt;/p&gt;
+&lt;p&gt;I had heard good things about Cucumber so I was pretty eager to start testing it ...  In short Cucumber  lack documentation ,&lt;br /&gt;
+I tried a couple of things but I couldn&#039;t get beyond testing if a certain string was on a page..  couldn&#039;t figure out how to fill in a form etc ...&lt;br /&gt;
+Maybe if anyone could point me to some great documentation on how you should write recipe&#039;s here ... I didn&#039;t find the documentation all to  easy to find ..&lt;br /&gt;
+Bummer as it really really looks promisiung .. specially since it is so lightweight ..&lt;/p&gt;
+&lt;p&gt;IP played with JMeter and Sahi too .. but still&lt;/p&gt;
+&lt;p&gt;So apart from filing bugs to the upstream project/product and hoping they understand your problem and are willing to oopen up their API , what other options do you folks suggest ?&lt;/p&gt;
+&lt;p&gt;I gave a short talk about this at Puppetcamp in Amsterdam  and the audience came up with a bunch of other potential projects to look at .&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://hpricot.com/&quot; rel=&quot;nofollow&quot;&gt;Hpricot&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.webinject.org/&quot; rel=&quot;nofollow&quot;&gt;WebInject&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://sikuli.org/&quot; rel=&quot;nofollow&quot;&gt;Project Sikuli&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://watir.com/&quot; rel=&quot;nofollow&quot;&gt;Watir&lt;/a&gt; and
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;The main problem still is that all these are tools to automate testing , they don&#039;t provide you with a general purpose approach to solve the configuration mgmt problem, each time the upstream vendor modifies the layout of his page you hav e to do the work again  and that .. really doesn&#039;t sound promising ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/beyond-configuration-mgmt#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/chef">chef</category>
+ <category domain="http://127.0.0.1:8080/blog/category/cucumber">cucumber</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jmeter">jmeter</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetcamp">puppetcamp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/selenium">selenium</category>
+ <category domain="http://127.0.0.1:8080/blog/category/shai">shai</category>
+ <category domain="http://127.0.0.1:8080/blog/category/testing">testing</category>
+ <pubDate>Wed, 25 May 2011 21:18:08 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1042 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/converting-kvm-virtualbox by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:27:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Converting KVM to VirtualBox | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Converting KVM to VirtualBox</h2>
+<div class="content">
+<div id="node-1035" class="node  blog">
+<div class="content"><p>I have had most of my test environment, aka puppetmasters, test mysql setups etc running in KVM for the past couple of years .. (yes I`m still using a lot of Xen in production environments, but we've also been using KVM for a while already .. it's a good mix)  , Virtual box has always been the lesser loved Virtualization platform , however while playing more and more with Vagrant Up I realized I needed to convirt some boxen (e.g my PuppetMaster) to Virtualbox,  and google was really no good help(most people seem  to go the other way , or want to use some proprietary tools )</p>
+<p>So I remembered VBoxManage and apparently I hade blogged about it myselve already ..<br />
+I just  hate it when I search for  stuff and google points right back to <a href="http://www.krisbuytaert.be/blog/kvm-vs-virtualbox">me</a></p>
+<p>So I converted my puppetmaster's disks</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">VBoxManage convertdd Emtpy-clone.img  PuppetMasterroot.vdi</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">VBoxManage convertdd puppet-var.img  PuppetMastervar.vdi</div></li></ol></pre></div></p>
+<p>Now when booting the VM in Virtualbox , obviously the kernel panicked .. as my KVM disks are recognised as as /dev/hda and and Virtualbox defaults to /dev/sda  and LVM doesn't really like disks to be on another names<br />
+No commandline fu here to help me, but using the VirtualBox gui to move the disks to the IDE controller rather than the SATA controller.</p>
+<p>Now all I need to do is wait for some smart guy who comments that you probably could use VBoxManage storagectl to achieve the same goal :)</p>
+<p>And wait till Vagrant Up start supporting KVM , so I can move back :)</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 02/23/2011 - 00:01</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_506 first"><a href="../taxonomy/term/506/index.html" rel="tag" title="">kvm</a></li>
+<li class="taxonomy_term_1439"><a href="../category/vagrant/index.html" rel="tag" title="">vagrant</a></li>
+<li class="taxonomy_term_1046"><a href="../taxonomy/term/1046/index.html" rel="tag" title="">virtualbox</a></li>
+<li class="taxonomy_term_470 last"><a href="../taxonomy/term/470/index.html" rel="tag" title="">xen</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-4257"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/d36473cd1de6395eaf816d80292df1ec.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Tracy Mills&#039;s picture" title="Tracy Mills&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4257">#1</a>
+    <span class="author"><span class="anonymous" title="not verified">Tracy Mills</span></span>  : <span class="title"><a href="index.html#comment-4257" class="active">KVM sounds interesting and</a></span>
+  </h3>
+  <div class="content"><p>KVM sounds interesting and certainly seems like the future in virtualization on nix. The one feature virtualbox offers me that I could not live without is the headless mode with interaction with the VM over the remote desktop protocol.</p>
+<p>Tracy Mills from <a href="http://www.rapidsofttechnologies.com/ipad-application-development.html" rel="nofollow">iPad Application Development</a></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/25/2011 - 06:59</div>
+  </div>
+<a id="comment-4252"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://killua.eu/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/6eb8dd95af5a6e279c988055297244be.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Pavel&#039;s picture" title="Pavel&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4252">#2</a>
+    <span class="author"><a href="http://killua.eu/">Pavel</a></span>  : <span class="title"><a href="index.html#comment-4252" class="active">Vagrant Up</a></span>
+  </h3>
+  <div class="content"><p>Thanks, I didn't know something like Vagrant Up existed. Are there any drawbacks to it apart from kvm not being supported?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/24/2011 - 13:00</div>
+  </div>
+<a id="comment-4251"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://polibyte.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/955bedc28887db48a17dfa14679a0848.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Brian&#039;s picture" title="Brian&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4251">#3</a>
+    <span class="author"><a href="http://polibyte.com/">Brian</a></span>  : <span class="title"><a href="index.html#comment-4251" class="active">qemu-img approach</a></span>
+  </h3>
+  <div class="content"><p>KVM/QEMU can probably handle this as well.</p>
+<p><span class="geshifilter"><code class="text geshifilter-text">qemu-img convert -O vdi kvm_image vbox_image</code></span></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/23/2011 - 06:18</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/converting-kvm-virtualbox by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:27:35 GMT -->
+</html>

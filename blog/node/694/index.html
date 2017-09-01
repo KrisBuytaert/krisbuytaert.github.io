@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/694 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:34:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>OLS Day 3 | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a> &#8594; <a href="../../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">OLS Day 3</h2>
+<div class="content">
+<div id="node-694" class="node  blog">
+<div class="content"><p>As mentioned earlier Day 3 of the 2008 Ottawa Linux Symposium started of with our own talk about the different monitoring tools available on this planet.</p>
+<p>I planned on heading to the SynergyFS talk but phone calls and the hallway track with interresting discussions on Configuration management, the use of Live Migration and obviously Open Source Monitoring tools and the scaling thereof came in the way of that..</p>
+<p>So the openVZ Live migration talk came next ... Andrey also spoke on the Virtualization Mini summit and luckily he went a bit deeper<br />
+ into their Live Migration strategy ..    however as someone noticed .. why spend so much time on developing something that already<br />
+exists for ages ... so yes.. I guess I'll have to  make that wheel T-shirt one day ...</p>
+<p>After lunch I headed into the Performance Inspector,  very interesting to  see a tool that might help out to debug Java code and corelate it to platform stuff .. I however need to figure out if it would actually fit our environments or if it requires too much other dependencies.</p>
+<p>Next was the Live Migration with Pass Trough Device for<br />
+The propose to use guest PCI hot removal and hot add so it can be migrated.</p>
+<p>The topic has been discussed already a couple of times here in Ottawa (and in Boston at the Xen summit)<br />
+What puzzled me was the bonding mode used...  I'm used to using miimon and thus the linkstate of my physical interfaces to decide between active and backup, but the  arp_interval is another way to test if there is traffic on the (virtual) network interface and decide which one should be active.</p>
+<p>The Auditing the Edgy and Complicated talk was a lot of fun.. it reminded me a lot of the time when I was more involved in the security area.. the stories from the trenches haven't really changed .. and it's still a pretty insecure environment out there which we should work on more often.</p>
+<p>No pictures from space this time  (as at LCA 2005), but an outreach to the community to <a href="http://www.markshuttleworth.com/archives/146" rel="nofollow">synchronise</a></p>
+<p>The blogosphere already had it's say about this a couple of months ago .. so now the kernel community can discuss it.</p>
+<p>We're going to skip the Whiskey thingie .. I know a couple of people that will have heavy heads tomorrow morning .. but they are used to it .. we're off to get some decent food.. and probably some drinks ..</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Sat, 07/26/2008 - 00:17</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_489 first"><a href="../../taxonomy/term/489/index.html" rel="tag" title="">linux</a></li>
+<li class="taxonomy_term_955"><a href="../../taxonomy/term/955/index.html" rel="tag" title="">linuxsymposium</a></li>
+<li class="taxonomy_term_863"><a href="../../taxonomy/term/863/index.html" rel="tag" title="">ols</a></li>
+<li class="taxonomy_term_919"><a href="../../taxonomy/term/919/index.html" rel="tag" title="">ols2008</a></li>
+<li class="taxonomy_term_599 last"><a href="../../taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/694 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:34:35 GMT -->
+</html>

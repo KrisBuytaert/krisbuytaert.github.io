@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/kvm-or-xen by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:32:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>KVM or Xen | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">KVM or Xen</h2>
+<div class="content">
+<div id="node-925" class="node  blog">
+<div class="content"><p>Over at <a href="http://virtualization.com/guest-posts/2009/07/06/rhel-will-5.4-features-kvm/">Virtualization.com</a> I asked  the crowd what they planned to do when RedHat plans on finally migrating from Xen to KVM ..  you can have your say too . : </p>
+<script type="text/javascript" language="javascript" charset="utf-8" src="http://static.polldaddy.com/p/1761790.js"></script><p><noscript><br />
+<a href="http://answers.polldaddy.com/poll/1761790/">Will you migrate from Xen to KVM</a><span style="font-size:9px;">(<a href="http://www.polldaddy.com/">poll</a>)</span><br />
+</noscript></p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Mon, 07/06/2009 - 22:47</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_506 first"><a href="../taxonomy/term/506/index.html" rel="tag" title="">kvm</a></li>
+<li class="taxonomy_term_470 last"><a href="../taxonomy/term/470/index.html" rel="tag" title="">xen</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3688"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.asulumitsretsambew.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/ad3302d0811ef5c73ce439eada2518de.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="ASulumitsRetsambew.Com&#039;s picture" title="ASulumitsRetsambew.Com&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3688">#1</a>
+    <span class="author"><a href="http://www.asulumitsretsambew.com/">ASulumitsRetsambew.Com</a></span>  : <span class="title"><a href="index.html#comment-3688" class="active">Learn More Drupal</a></span>
+  </h3>
+  <div class="content"><p>We need more tips about drupal and how to optimalize it.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/31/2009 - 03:17</div>
+  </div>
+<a id="comment-3684"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/45baa3a4ea7f559d3773e68421ce07d7.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Single Maria&#039;s picture" title="Single Maria&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3684">#2</a>
+    <span class="author"><span class="anonymous" title="not verified">Single Maria</span></span>  : <span class="title"><a href="index.html#comment-3684" class="active">Thanks for the post. It&#039;s</a></span>
+  </h3>
+  <div class="content"><p>Thanks for the post. It's nice to read some articles on Xen. I think it's a great hyper-visor that gets overlooked more times than not. Xen is a great thing when it comes to virtualizing those old little Netware boxes you can't seem to get rid of, and it's a viable solution for lots of Novell applications in your enterprise from a Groupwise Mobile server to even eDirectory, and even iPrint servers. Novell needs to improve on their management side of virtualization to truly compete with other hyper-visors on a wide scale.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/25/2009 - 00:30</div>
+  </div>
+<a id="comment-3683"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://npluszero.org/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/5d17ef84ae6751ab6b7e61c2c455f90d.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="digdoug&#039;s picture" title="digdoug&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3683">#3</a>
+    <span class="author"><a href="http://npluszero.org/">digdoug</a></span>  : <span class="title"><a href="index.html#comment-3683" class="active">think about it</a></span>
+  </h3>
+  <div class="content"><p>KVM does give you significant benefits.</p>
+<p>Xen is great and we're used it here (550+ employee, aviation-related R&amp;D and systems engineering firm) with great success, particularly for para-virtualized Linux VMs.</p>
+<p>But honestly, it's not about the hypervisor, it's about how the hypervisor is implemented.  KVM, being a pair of kernel modules, means that any system running RHEL is a potential virt node.  Just probe modules, and migrate.  This is a much more flexible model than having to reboot into a Xen-modified kernel.  </p>
+<p>KVM will, in the long run, greatly benefit from taking advantage of advancements in the kernel, without developers having to re-invent them, as is the case with Xen.</p>
+<p>Paravirt was the compelling feature of the Xen platform, but with hardware-assisted virt evolving, we think it'll be less of a factor in the future.</p>
+<p>The KVM-based Red Hat Enterprise Virtualization platform we're currently beta-testing has accelerated network drivers; we're typically i/o-bound, so one of our main concerns is dealt with.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/16/2009 - 18:05</div>
+  </div>
+<a id="comment-3682"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.substance.cl/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/970ebe2fd0e6e4935719ef9bdd28a8a8.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Boris Quiroz&#039;s picture" title="Boris Quiroz&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3682">#4</a>
+    <span class="author"><a href="http://www.substance.cl/">Boris Quiroz</a></span>  : <span class="title"><a href="index.html#comment-3682" class="active">Xen!</a></span>
+  </h3>
+  <div class="content"><p>I'll stick with Xen.</p>
+<p>A few weeks ago I assisted to RedHat Tech event here in Santiago of Chile, and there was a presentation about virtualization. Obviously, the guy talked about the inclusion of KVM with RH and said that we (admins, users) will have the opportunity to choose with technology use. But, after listening him talk about KVM, I'll keep Xen on my Red Hat (and RH based) servers and obviously in my Debian ones!</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/16/2009 - 07:54</div>
+  </div>
+<a id="comment-3681"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/19d2cc3ce0c18ad879372f7c8b8c1d88.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Anonymous&#039;s picture" title="Anonymous&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3681">#5</a>
+    <span class="author"><span class="anonymous" title="not verified">Anonymous</span></span>  : <span class="title"><a href="index.html#comment-3681" class="active">NO... Stick with Xen!</a></span>
+  </h3>
+  <div class="content"><p>Although I can see the advantage to KVM to a certain degree however it is not a real Hypervisor. Using platforms with embedded HV's are really the way to go.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/15/2009 - 17:56</div>
+  </div>
+<a id="comment-3680"></a>
+<div id="comment-6" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/19d2cc3ce0c18ad879372f7c8b8c1d88.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Anonymous&#039;s picture" title="Anonymous&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3680">#6</a>
+    <span class="author"><span class="anonymous" title="not verified">Anonymous</span></span>  : <span class="title"><a href="index.html#comment-3680" class="active">NO... Stick with</a></span>
+  </h3>
+  <div class="content"><p>NO... Stick with Xen!</p>
+<p>Although I can see the advantage to KVM to a certain degree however it is not a real Hypervisor. Using platforms with embedded HV's are really the way to go.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/15/2009 - 17:54</div>
+  </div>
+<a id="comment-3675"></a>
+<div id="comment-7" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://theswisswatch.biz/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/def82ffb5e9fb367c7aedd33f738e7e2.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Roger Dubuis&#039;s picture" title="Roger Dubuis&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3675">#7</a>
+    <span class="author"><a href="http://theswisswatch.biz/">Roger Dubuis</a></span>  : <span class="title"><a href="index.html#comment-3675" class="active">Whether they are RHEL</a></span>
+  </h3>
+  <div class="content"><p>Whether they are RHEL customers following suit or others is a good question.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/07/2009 - 19:59</div>
+  </div>
+<div class="indented"><a id="comment-3679"></a>
+<div id="comment-8" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://virtualizationinformation.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/266d0ab66b11ea27931dcdc9d15d95ea.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Shannon Snowden&#039;s picture" title="Shannon Snowden&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3679">#8</a>
+    <span class="author"><a href="http://virtualizationinformation.com/">Shannon Snowden</a></span>  : <span class="title"><a href="index.html#comment-3679" class="active">Existing RHEL Customers?</a></span>
+  </h3>
+  <div class="content"><p>Great poll. </p>
+<p>I too, am interested to see the breakdown of existing RHEL customers following Red Hat to KVM.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/15/2009 - 17:28</div>
+  </div>
+</div><a id="comment-3674"></a>
+<div id="comment-9" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://theswisswatch.biz/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/def82ffb5e9fb367c7aedd33f738e7e2.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Roger Dubuis&#039;s picture" title="Roger Dubuis&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3674">#9</a>
+    <span class="author"><a href="http://theswisswatch.biz/">Roger Dubuis</a></span>  : <span class="title"><a href="index.html#comment-3674" class="active">I don&#039;t known who is voting</a></span>
+  </h3>
+  <div class="content"><p>I don't known who is voting for "Yes, I will follow RedHat to KVM" but I don't</p>
+<p>Regards,<br />
+<a href="http://theswisswatch.biz/" rel="nofollow">Roger Dubuis</a></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/07/2009 - 19:58</div>
+  </div>
+<a id="comment-3673"></a>
+<div id="comment-10" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://mario.verbelen.org/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/cc1207f0f7e67b03d52c2a308f076500.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Mario&#039;s picture" title="Mario&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3673">#10</a>
+    <span class="author"><a href="http://mario.verbelen.org/">Mario</a></span>  : <span class="title"><a href="index.html#comment-3673" class="active">No , I`ll stick with Xen</a></span>
+  </h3>
+  <div class="content"><p>I don't known who is voting for "Yes, I will follow RedHat to KVM" but I don't</p>
+<p>Are they try to play like the proprietary company's<br />
+or would they use the open source way in the future</p>
+<p>I hope they will think about that! and take a good decision</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/07/2009 - 14:05</div>
+  </div>
+<a id="comment-3671"></a>
+<div id="comment-11" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://frank.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/deb129b8830b3ebc0ede3ac2fb0eda7f.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Frank&#039;s picture" title="Frank&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3671">#11</a>
+    <span class="author"><a href="http://frank.be/">Frank</a></span>  : <span class="title"><a href="index.html#comment-3671" class="active">Why would anyone migrate to</a></span>
+  </h3>
+  <div class="content"><p>Why would anyone migrate to techX or techY because redhat does so? Except if you are a redhat/centos use, you shouldn't move *because* RH moves...</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/06/2009 - 23:27</div>
+  </div>
+<div class="indented"><a id="comment-3672"></a>
+<div id="comment-12" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3672">#12</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3672" class="active">dunno</a></span>
+  </h3>
+  <div class="content"><p>If it's not broken and doesn't give you significant other benefits , indeed why would you. On the other hand .. if you have a number of relevant features in techY that you don't have in techX you might have a reason.</p>
+<p>But given the current results of the poll there are more people planning on switching from Xen to KVM than others.</p>
+<p>Whether they are RHEL customers following suit or others is a good question.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">07/07/2009 - 11:40</div>
+  </div>
+</div></div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/kvm-or-xen by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:32:04 GMT -->
+</html>

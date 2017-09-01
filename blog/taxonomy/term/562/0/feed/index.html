@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - linux-ha</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/562/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Ensure Running</title>
+ <link>http://127.0.0.1:8080/blog/ensure-running</link>
+ <description>&lt;p&gt;Has anyone noticed that pretty much every puppet module one finds on the internet by default enables the service they try to configure in the module&lt;/p&gt;
+&lt;p&gt;When looking at it from a single machine point of view it makes sense to include the module , have it configure your service  and directly enable it by default.&lt;/p&gt;
+&lt;p&gt;So I started wondering .. isn&#039;t there anybody out there who is building clusters ?   Where services have to configured on multiple nodes but should NOT be running acitvely on all nodes by default because there is an external tool which manages that for you (Pacemaker framework eg.)&lt;/p&gt;
+&lt;p&gt;Agreed it&#039;s a small patch to get the functionality you want , but it brings an extra overhead when one upgrades the modules etc.&lt;/p&gt;
+&lt;p&gt;So if it doesn&#039;t bother you  please split your puppet module in 2 parts.. one you call to configure the service,  another which you call to enable the service , if you want to.&lt;/p&gt;
+&lt;p&gt;thnx !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/ensure-running#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/category/managed">managed</category>
+ <category domain="http://127.0.0.1:8080/blog/category/modules">modules</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/unmanaged">unmanaged</category>
+ <pubDate>Thu, 10 Feb 2011 19:20:44 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1034 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Upcoming 2011 Speaking Engagements</title>
+ <link>http://127.0.0.1:8080/blog/upcoming-2011-speaking-engagements</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://www.lenzg.net/&quot; rel=&quot;nofollow&quot;&gt;Lenz&lt;/a&gt; gave the good example so I`ll follow :)&lt;/p&gt;
+&lt;p&gt;Next weekend saturday  I`ll be giving a talk about devops at &lt;a href=&quot;http://brussels.startupweekend.org/speakers/&quot; rel=&quot;nofollow&quot;&gt;StartUp Weekend Brussels&lt;/a&gt;, from what I&#039;ve read so far  it promises to be an audience that needs the talk, &lt;/p&gt;
+&lt;p&gt;The week after I`ll be speaking at the &lt;a href=&quot;http://bxl2011.drupaldays.org/node/233&quot; rel=&quot;nofollow&quot;&gt;DrupalDevDays&lt;/a&gt;,  again about devops , however this time with a touch of Drupal  ,  giving a devops talk at Devoxx last year to a Java audience learned me that the devops evangelist  need to  go outside of their usual  conference audiences and als talk to the people that are usually in the other silos. &lt;/p&gt;
+&lt;p&gt;Next march   I`ll be speaking at the &lt;a href=&quot;http://www.ukuug.org/events/spring2011/programme/&quot; rel=&quot;nofollow&quot;&gt;UKUUG spring conference in Leeds&lt;/a&gt;  this time about my experiences on High Availability with Pacemaker&lt;/p&gt;
+&lt;p&gt;And who knows I might squeeze in a talk at &lt;a href=&quot;http://loadays.org/&quot; rel=&quot;nofollow&quot;&gt;Load&lt;/a&gt; this year also .. &lt;/p&gt;
+&lt;p&gt;If you are around at one of these confs and you want to talk Devops, Clustering, sipx or just have a beer .. don&#039;t hesitate !  There&#039;s already &lt;a href=&quot;http://twitter.com/#!/jpmens/status/28483625066430464&quot; rel=&quot;nofollow&quot;&gt;plenty of people&lt;/a&gt; promising me beers , and some even sushi :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/upcoming-2011-speaking-engagements#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/768">fosdem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pacemaker">pacemaker</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/427">ukuug</category>
+ <pubDate>Sun, 23 Jan 2011 22:04:15 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1030 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>High Availability MySQL Cookbook , the review</title>
+ <link>http://127.0.0.1:8080/blog/high-availability-mysql-cookbook-review</link>
+ <description>&lt;p&gt;When I read on the internetz that Alex Davies was about the publish a &lt;a href=&quot;https://www.packtpub.com/high-availability-mysql-cookbook/book&quot; rel=&quot;nofollow&quot;&gt;Packt book on MySQL HA&lt;/a&gt;  I pinged my contacts at Packt and suggested that I&#039;d review the book .&lt;/p&gt;
+&lt;p&gt;I&#039;ve ran into &lt;a href=&quot;https://sites.google.com/a/davz.net/alex-davies/&quot; rel=&quot;nofollow&quot;&gt;Alex&lt;/a&gt; at some UKUUG conferences before and he&#039;s got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.&lt;/p&gt;
+&lt;p&gt;Alex starts of with a couple of indepth chapters on MySQL Cluster,  he does mention that it&#039;s not a fit for all problems, but I&#039;d hoped he did it a bit more prominently ...    an upfront chapter outlining the different approaches and when which approach is a match could have been better.    The avid reader now might be 80 pages into MySQL cluster before he realizes it&#039;s not going to be a match for his problem.&lt;/p&gt;
+&lt;p&gt;I really loved the part where Alex correcly mentions that you should probably be using Puppet or so to manage the config files of your environment, rather than scp them around your different boxes ..&lt;/p&gt;
+&lt;p&gt;Alex then goes on to describe setting up MySQL replication and Multi Master replication with the different approaches one can take here,  he gives some nice tips on using LVM to reduce the downtime of your MySQL when having to transfer the dataset of an already existing MySQL setup, good stuff.&lt;/p&gt;
+&lt;p&gt;He then goes on to describe MySQL with shared storage ...   if you only mount your redundant sandisk once on your MySQL nodes my preference would probably be a Pacemaker stack  rather than a RedHat Cluster based setup,  but his setup seems to work too.   Alex quickly touches on using GFS to have your data disk mounted simultaneously on both nodes (keep in mind with only 1 active MySQLd)  and then goes on to describe a full DRBD based MySQL HA setup&lt;/p&gt;
+&lt;p&gt;The last chapter titled Performance tuning gives some very nice tips on both tuning your regular storage, as your&lt;br /&gt;
+GFS setup but also the tuning parameters for MySQL Cluster&lt;/p&gt;
+&lt;p&gt;I was also really happy to see the Appendixes on the basic installation where he advocates the use of Cobbler , Kickstart and LVM ..&lt;/p&gt;
+&lt;p&gt;One of the better books I read the past couple of years .. certainly the best book from Packt so far , I hope there is more quality stuff coming from that direction !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/high-availability-mysql-cookbook-review#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/cobbler">cobbler</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/899">drbd</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pacemaker">pacemaker</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Wed, 03 Nov 2010 23:07:18 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1022 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>UKUUG Spring Conference 2010</title>
+ <link>http://127.0.0.1:8080/blog/ukuug-spring-conference-2010</link>
+ <description>&lt;p&gt;Last week I was in Manchester for the 2010 UKUUG Spring Conference, right .. make that 2 weeks ago , :) &lt;/p&gt;
+&lt;p&gt;The UKUUG usually hosts the more interesting conferences around ... , it&#039;s not just the schedule that attrackts me , yes there&#039;s the strong focus towards Larger Scale Unix (and mostly Linux) deployments and how to manage them, but there&#039;s also the opportunity to chat in real life with the Devops from across the chunnel.&lt;/p&gt;
+&lt;p&gt;Spending time with &lt;a href=&quot;http://www.devco.net/&quot;&gt;R.I.Pienaar&lt;/a&gt;, &lt;a href=&quot;http://www.build-doctor.com/2010/03/26/ukuug-spring-conference-2010/&quot;&gt;Julian Simpson&lt;/a&gt;,  &lt;a href=&quot;http://twitter.com/simonxwilkinson&quot;&gt;Simon Wilkinson&lt;/a&gt; , &lt;a href=&quot;https://sites.google.com/a/davz.net/alex-davies/&quot;&gt;Alex Davies&lt;/a&gt; , &lt;a href=&quot;http://database-explorer.blogspot.com/&quot;&gt;Simon Riggs&lt;/a&gt; , Josette, and many others is always fun .&lt;/p&gt;
+&lt;p&gt;As I was in town early I went to the preconference beer meetup and met with a lot of people and chatted about config management, virtualization   and lots of other stuff ...  after the pub the plan was to go for curries nearby .. and while walking to the , ahem  Bus stop, I managed to recognise &lt;a href=&quot;http://monkeyiq.blogspot.com/&quot;&gt;Ben Martin&lt;/a&gt; from meeting him back ages ago in Hamburg for LinuxKongress , always fun ..&lt;/p&gt;
+&lt;p&gt;Apart from having to jump on a bus and our group being split at the curry place , rather than being able to tell the latecomers where to walk to and being seeted upstairs with the whole group , the curries were interesting and fun.&lt;/p&gt;
+&lt;p&gt;As I had been pushing &lt;a href=&quot;http://blog.gardeviance.org/&quot;&gt;Simon Wardley&lt;/a&gt; on Twitter to submit a talk for the conference it was really great to finally see him present ..  His talk was the perfect soft introduction to the conference ...&lt;/p&gt;
+&lt;p&gt;Simon&#039;s talk  was followed   by a talk on Security for the virtual datacenters,  after I questionned the speaker  if anyone actualy uses TPM outside an academic lab the talk suddenly changed into a commercial presentation for a Quack, nuff said.&lt;/p&gt;
+&lt;p&gt;The Ever energetic &lt;a href=&quot;http://www.shadowcat.co.uk/blog/matt-s-trout/&quot;&gt;Matt S Trout&lt;/a&gt; talked about 21st century perl before Simon &quot;Life is to short for SELinux&quot; Wilkinson talked about his experiences in getting the openAFS crowd  on Git.&lt;/p&gt;
+&lt;p&gt;Bummer Thierry Carrez didn&#039;t show us the real juice of UEC and just the installations of  a Cloud Controller and a Node Controller , but he managed to do so in approx 30 minutes as promised .&lt;/p&gt;
+&lt;p&gt;A talk titled Coherent and Integrated Configuration of Virtual Infrastructures always cathces my eye.. however when that talk turns out to be a Coherent and Integrated configuration only within the Univerity of Edinborough  (aka lcfg2) talk I`m dissapointed,  specially since it pretty  much didn&#039;t introduce any new concepts from the ones I introduced back in  my Durham UKUUG presentation&lt;/p&gt;
+&lt;p&gt;Luckily Andrew Stribblehill gave a very interesting talk on MySQL scalability,  in which I promised him some answers to his questions for the next day :)&lt;/p&gt;
+&lt;p&gt;The Conference dinner was without a doubt the best UKUUG dinner so far ,  no typical english &quot;food&quot;,  no weird location (Old Trafford, an abandoned warship) , but just a big chinese place and plenty of food !&lt;/p&gt;
+&lt;p&gt;I started thurday morning in the wrong track,  I assumed to be in the Virtualization track, but I ended up in the Sun thinclient and Abusing Linux to serve weird desktops under the Green computing umbrella track, not my favourites ..&lt;/p&gt;
+&lt;p&gt;When Patrick and Julian started their Hudson hit my Puppet with a Cucumber talk (which featured some aweseom #devops content) I was a afraid that we&#039;d had to look for a replacment PostgreSQL talk as Simon hadn&#039;t arrived yet ..  Luckily he arrived in time for his presentation and he explained us about the new replication features that are slowly making it into PostgreSQL,   one way ... log shipping ...  not really up to par with other alternatives yet :(&lt;/p&gt;
+&lt;p&gt;So with no further ado .. here&#039;s the presentation I gave&lt;/p&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_3582666&quot;&gt;&lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/mysql-ha-with-pacemaker&quot; title=&quot;MySQL HA with  PaceMaker&quot;&gt;MySQL HA with  PaceMaker&lt;/a&gt;&lt;/strong&gt;
+&lt;object width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mysql-pacemaker-100329022737-phpapp01&amp;stripped_title=mysql-ha-with-pacemaker&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mysql-pacemaker-100329022737-phpapp01&amp;stripped_title=mysql-ha-with-pacemaker&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;padding:5px 0 12px&quot;&gt;View more &lt;a href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;PS.  If at a Ukuug event and not sure about a person&#039;s name ... try Simon.. pretty good chance you&#039;re correct :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/ukuug-spring-conference-2010#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/455">conference</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/category/manchester">manchester</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/simon">simon</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/427">ukuug</category>
+ <pubDate>Wed, 07 Apr 2010 17:16:20 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">997 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Got Interviewed</title>
+ <link>http://127.0.0.1:8080/blog/got-interviewed</link>
+ <description>&lt;p&gt;by &lt;a href=&quot;http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/&quot;&gt;@botchagalupe&lt;/a&gt;&lt;br /&gt;
+on Virtualization, Open Source tools and DNS Problems&lt;/p&gt;
+&lt;p&gt;&lt;embed src=&quot;http://blip.tv/play/AYGuxQoC&quot; type=&quot;application/xshockwave-flash&quot; width=&quot;480&quot; height=&quot;390&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/got-interviewed#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/437">dnsproblem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pacemaker">pacemaker</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Wed, 18 Nov 2009 20:05:47 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">960 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Nines , Damn Nines  and More Nines </title>
+ <link>http://127.0.0.1:8080/blog/nines-damn-nines-and-more-nines</link>
+ <description>&lt;p&gt;Funny how different experiences lead to different evaluations of tools. The MySQL HA solutions &lt;a href=&quot;http://www.mysqlperformanceblog.com/2009/10/16/finding-your-mysql-high-availability-solution-%E2%80%93-the-questions/&quot; rel=&quot;nofollow&quot;&gt;the MySQL Performanceblog&lt;/a&gt; list, are almost listed in the complete opposited order of what  my impressions are.&lt;/p&gt;
+&lt;p&gt;Ok agreed, I should probably not put my MySQL NDB experiences from 2-3 years ago with multiple Query of deaths and more problems than you into account  anymore ,  but back then went in the list Less stable than a single node.   I&#039;ve had NDB POC setups going down for much more than 05:16 minutes&lt;br /&gt;
+Ndb comes with a lot of restrictions, there are&lt;/p&gt;
+&lt;p&gt;As for MySQL on DRBD, &lt;a href=&quot;http://www.krisbuytaert.be/blog/mysql-and-drbd-often-say-no&quot;&gt;I&#039;ve said this before&lt;/a&gt; , I love DRBD, but having to wait for a long InnoDB recovery after a failover  just kills your uptime ,&lt;br /&gt;
+I remember being called by a customer during &lt;a href=&quot;http://lefred.be/&quot;&gt;Fred&lt;/a&gt; last holiday who was waiting over 20 minutes for recovery , twice, so putting the DRBD/San setup second would not be my preference.   But agreed .. it&#039;s only listed at 99.9% meaning almost 9 hours of downtime per year are allowed.&lt;/p&gt;
+&lt;p&gt;On the other hand we&#039;ve seen database uptime of MySQL MultiMaster setups with Heartbeat reaching better figures than 99.99%  Heck I&#039;ve seen single nodes  achieve better  than 99.99% :)&lt;/p&gt;
+&lt;p&gt;So what does this teach us ... there is no golden rule for HA,  lots of situations are different,  it&#039;s the preferences of the customer, the size of the database,   the kind of application , and much&lt;br /&gt;
+more ..  you always need to think and evaluate the environment ...&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/nines-damn-nines-and-more-nines#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/433">cluster</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/899">drbd</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/nines">nines</category>
+ <pubDate>Mon, 19 Oct 2009 21:46:41 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">951 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Everything is a fine whitespace problem ... </title>
+ <link>http://127.0.0.1:8080/blog/everything-fine-whitespace-problem</link>
+ <description>&lt;p&gt;Couple of days ago I was working on a Linux Heartbeat v2 setup.&lt;br /&gt;
+Upon inserting an XML snippet into the cib  cib-adm started eating memory fast until the oom killer kicked in.&lt;/p&gt;
+&lt;p&gt;The environment  was running a fairly old heartbeat-2.0.8 version so I upgraded to  heartbeat-2.1.4-2.1  and there I got a nice warning that my XML sintax wasn&#039;t correct.&lt;/p&gt;
+&lt;p&gt;There was a whitespace in the XML syntax.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;expression attribute=&amp;quot;#replicationvalue&amp;quot; id=&amp;quot;is_lagged&amp;quot; operation =&amp;quot;gt&amp;quot;  ... &amp;gt;&amp;lt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Removing the  whitespace solves the problem, also on the older version.  So the problem is already fixed upstream.. but you might run into it anyhow.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/everything-fine-whitespace-problem#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/category/whitespace">whitespace</category>
+ <category domain="http://127.0.0.1:8080/blog/category/xml">xml</category>
+ <pubDate>Mon, 02 Feb 2009 21:00:36 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">869 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Wholesale High Availability</title>
+ <link>http://127.0.0.1:8080/blog/node/750</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://techthoughts.typepad.com/managing_computers/2008/10/using-virtualization-to-provide-ha-at-wholesale.html&quot; rel=&quot;nofollow&quot;&gt;Alan&lt;/a&gt; just coined WholeSale HA.  The idea of  rebooting a whole virtual machine rather than just failing over 1 service.&lt;/p&gt;
+&lt;p&gt;He wants to have the best of both worlds in 1 framework, he however doesn&#039;t specify what parts he likes from the WholeSale HA setup&lt;/p&gt;
+&lt;p&gt;Yes you want to use it coupled with hardware predictive failure analysis tools. In order to achieve Higher Availabilty, but I don&#039;t think the WholeSale HA part is real HA.&lt;/p&gt;
+&lt;p&gt;WholeSale HA isn&#039;t going to be fast enough for most of the business critical environments.&lt;br /&gt;
+You simply cannot afford to reboot or even boot a full machine and the related downtime that brings for your service.&lt;/p&gt;
+&lt;p&gt;So yes a best effort combination, but with a strong focus on the application state would be preferred.  WholeSale is a good start .. but it&#039;s definitely not where you want to stop.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/750#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1073">alan robertson</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/673">high-availability</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/464">vapourware</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <pubDate>Sat, 25 Oct 2008 13:56:28 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">750 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Bug in ifconfig ? </title>
+ <link>http://127.0.0.1:8080/blog/bug-ifconfig</link>
+ <description>&lt;p&gt;So earlier this week I ran into the weirdest problem with Linux-HA.  Heartbeat was happily adding an IP address as an active resource so one of my nodes when needed, but upon removal it failed to remove the IP from the stack.  Further debugging learned that the Heartbeat scripts claimed the ip wasn&#039;t on the actual stack.&lt;/p&gt;
+&lt;p&gt;It was.. but it the output from ifconfig was different from what it expected it to be.&lt;/p&gt;
+&lt;p&gt;Heartbeat checks the output of ifconfig and expects to find the IP address it added itselve to be on a :0 or similar interface.     Now ifconfig only seems output 8 characters for the interface name  Which means that when you have an interface called eth0:0 the output perfectly lists it and heartbea&lt;br /&gt;
+t is smart enough to remove the ip again when the node goes to standby.  If however you have   a vlan with 3 digits on a bond interface Heartbeat will add :0 to bond0.129  , the Heartbeat resource will add the ip address perfectly but opon checking all the :0 interfaces the bond0.129:0 interface won&#039;t be parsed as ifconfig outputs it as bond0.129 , hence resulting in a potential painfull situation where 2 nodes still share an IP address.&lt;/p&gt;
+&lt;p&gt;So where&#039;s the actual problem ifconfig, or heartbeat,   I&#039;d say both, but the easiest fix will be in  Heartbeat,  afterall there are other preferred ways of adding an ip addres to an interface. ip addr add comes to mind :)&lt;/p&gt;
+&lt;p&gt;So I filed a &lt;a href=&quot;http://developerbugs.linux-foundation.org/show_bug.cgi?id=1968&quot; rel=&quot;nofollow&quot;&gt;bug report&lt;/a&gt; :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/bug-ifconfig#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1032">ifconfig</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1031">ip</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Wed, 24 Sep 2008 15:27:26 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">730 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Integrating HA and Virtualization</title>
+ <link>http://127.0.0.1:8080/blog/node/533</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://techthoughts.typepad.com/managing_computers/2007/12/how-managed-vir.html &quot;&gt;Alan Robertson&lt;/a&gt; is discussing  how Managed Virtualization (including HA) conflicts with System Management&lt;/p&gt;
+&lt;p&gt;He has some interesting points regarding managing infrastructure  , in his vision there are just too much layers that don&#039;t talk to eachother .&lt;br /&gt;
+He also points out some of the issues with CIM and SNMP .&lt;/p&gt;
+&lt;p&gt;Alan thinks the ideal way to go is to have your HA solution manage your Virtualization also.&lt;/p&gt;
+&lt;p&gt;I`m wondering if this doesn&#039;t add too much complexity.&lt;/p&gt;
+&lt;p&gt;If you are already making sure the services in your virtual machines are highly available, then why would you want to add another layer of complexity ?   Surely the idea of being able to migrate virtual machines around sounds tempting but do we really need that extra layer of complexity ?    &lt;/p&gt;
+&lt;p&gt;I&#039;ve explained that migrating a virtual machine to another server won&#039;t help you when your apps crash or when your physical server fails.&lt;/p&gt;
+&lt;p&gt;But keeping an overview of which services are running where from 1 place seems like an interesting idea.  &lt;/p&gt;
+&lt;p&gt;I&#039;ve been tinkering about using the resource concept of Linux-HA however to serve another purpose than pure high availability.  You might want to use its constraints to define how many virtual machines should run on and how much resources they can use on a certain physical machine.  Hence create a loadbalancing infrastructure with it.&lt;/p&gt;
+&lt;p&gt;(I`m really really hoping someone now replies to this with a url  which gives me a HAResource that does Live Migration :))&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/533#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/673">high-availability</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <pubDate>Mon, 17 Dec 2007 20:59:32 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">533 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

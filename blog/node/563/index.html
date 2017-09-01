@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/563 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:46:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Package Centric Deployment, or how to package packages | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a> &#8594; <a href="../../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Package Centric Deployment, or how to package packages</h2>
+<div class="content">
+<div id="node-563" class="node  blog">
+<div class="content"><p>This one has been in my queue for ages ..  well.. 3+ months or so .. but still..</p>
+<p>Over at <a href="http://dev2ops.blogspot.com/2007/10/package-centric-application-release.html" rel="nofollow">dev2ops</a> an article was posted with as title Pacakge Centric Application Release Methodology.</p>
+<p>And it's that <cite>Application Release</cite> part which is actually the focus point.<br />
+The Application being split up in different parts where different teams have responsibility over those parts and having isolated packages for these parts is a good thing.</p>
+<p>But  you can easily confuse that naming of a package with the way a systems person looks at a pacakge, a deb , or an rpm.    And then the story changes  a  lot.</p>
+<p>They list the contents as a packge as follows :</p>
+<p><cite><br />
+ What belongs in a package?<br />
+   * Code: Application files executed by the runtime system. This could be compiled objects or interpreted script.<br />
+    * Platform: Files that comprise the runtime layer. This is generally server software like Apache, JBoss, Oracle, etc.<br />
+   * Content: Non-executed files containing information. These could be media files or static text.<br />
+   * Configuration: Files defining the structure and settings of an online service. These could be files for configuring the runtime system or the application.<br />
+   * Data: Files containing data or procedures for defining data. These could be database schema dumps, SQL scripts, .csv files, etc.<br />
+   * Control: Configuration and procedures consumed by management frameworks<br />
+</cite><br />
+Now I`m convinced that not all of this content belongs in an RPM or Deb.<br />
+Config , Content and Data don't belong there at all.<br />
+Yet they have to be delivered as a package by the development team, we need to know what the deliverables are they have to provide us with.  But on a system,  if you autorize change to content or config you don't want our package management system to keep telling you it's checksums have changed.</p>
+<p><cite> Within the package-centric paradigm, each type of change noted above is bundled, distributed and executed via a package.</cite><br />
+Executed ?   You don't want your package management system to do this .. that's exactly what your <a href="http://reductivelabs.com/trac/puppet" rel="nofollow">configuration management platform </a> isi supposed to do isn't it ?<br />
+On a systems level you really want to separate code, data and config.</p>
+<p>So dev2ops is talking about a package from a developer point of view, which is a totally different view as the one from a sysadmin ...</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Tue, 01/22/2008 - 12:36</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_521 first"><a href="../../taxonomy/term/521/index.html" rel="tag" title="">dev2ops</a></li>
+<li class="taxonomy_term_731 last"><a href="../../taxonomy/term/731/index.html" rel="tag" title="">package centri</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-2972"></a>
+<div id="comment-1" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-2972">#1</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-2972" class="active">I won&#039;t confuse them</a></span>
+  </h3>
+  <div class="content"><p>I actually posted that you could easily coonfuse them .. then  explained those as from a sysadmin point of view :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">05/12/2008 - 09:28</div>
+  </div>
+<a id="comment-2971"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.controltier.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/bb15f2efa6c48eb00eb8331626541f14.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Damon Edwards&#039;s picture" title="Damon Edwards&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2971">#2</a>
+    <span class="author"><a href="http://www.controltier.com/">Damon Edwards</a></span>  : <span class="title"><a href="index.html#comment-2971" class="active">Don&#039;t confuse your system packages with application &quot;packaging&quot;</a></span>
+  </h3>
+  <div class="content"><p>Hi Kris,</p>
+<p>Just noticed this in a Google alert. I figured I'd weigh in, hopefully better late than never. :)</p>
+<p>The sysadmin view of a package is often clouded by the individual features of their favorite package system. Alex's post was about looking the the underlying reasons and benefits for using packages (independent of any one system) and applying those to managing a release of an application stack. </p>
+<p>I think you may have misunderstood that list of things that belong in packages. They don't all belong in the same package. They each belong individually in some sort of manageable package. Some could be rpms, some could be simple zips, some could be some package type you just made up... the point is that all of these types of artifacts are what comprise a complete application release. Having part of your release packaged and the rest of it moved around in some ad-hoc manner is inviting disaster. If you don't have a standardized and structured way to handle each of those artifact types (and the dependencies between them) with 100% repeatability and reliability you are going to have a very difficult time achieving scalable and reliable operations (let alone fully automate them). </p>
+<p>And of course you want to rely on a configuration management tool to coordinate your overall change process and manage the flow of packages. The package-centric methodology is really a design principle for implementing your configuration management tooling. It's a way to think about the individual elements of change before the tools even come into play.</p>
+<p>Read Alex's description of how a package is a "standard vehicle of change" again, and I think you'll see the design pattern in it.</p>
+<p><cite><br />
+<strong>Standard vehicle of change</strong><br />
+The package serves as a vehicle of change, both as a unit of transmission between teams, but also as a standard means to affect the change within the context of the running application service. The package concept helps cope with rising complexity by encapsulating change-specific procedures and underlying tools behind the package's standard interfaces. In an object-oriented fashion, the package provides the standard interfaces and encapsulation needed to run efficient operations. Teams no longer have to understand the internal structure and procedures in order to apply another team's change.<br />
+</cite></p>
+<p>Thanks,<br />
+Damon Edwards<br />
+<a href="http://controltier.com/" title="http://controltier.com" rel="nofollow">http://controltier.com</a><br />
+<a href="http://dev2ops.org/" title="http://dev2ops.org" rel="nofollow">http://dev2ops.org</a></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">05/12/2008 - 01:55</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/563 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:46:07 GMT -->
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/463 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:38:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Newbie Drupal Experiences | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a> &#8594; <a href="../../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Newbie Drupal Experiences</h2>
+<div class="content">
+<div id="node-463" class="node  blog">
+<div class="content"><p>Every once in a while you start with something new..   you're used to being rather expercienced on different topics in open source , having written an article and a book left or right  but there comes a day when you will feel a total newbie again :)</p>
+<p>About 10 years ago I was mostly into technical webdevelopment , perl, php, oracle plsql , java servlets  , coldfusion stuff like that.. I stopped building corporate websites about 7-8 years ago when I realised I was spending more time helping people to build the infrastructure to host those sites than actually building the sites. (That and the fact that I really got bored with people wanting greener green)</p>
+<p>So fast forward to about 5-6 months ago where I suddenly felth the need again to start writing code for a small pet project of mine.</p>
+<p>I wanted a framework where I could jumpstart with different features I needed such as usermanagement  and a blog feature.</p>
+<p>As I mentionned earlier this week .. everybody seems to be using Drupal these days and has similar  newbie feelings :)</p>
+<p><a href="http://dag.wieers.com/blog/content/mistakes-made-when-using-drupal-personal-blog" rel="nofollow">Dag </a> is posting about his experiences on how to use Drupal as a personal blog.     So my current project is different.</p>
+<p>For a personal blog I wouldn't be using the blog module either has he describes, but as I wanted different authors .. I understood I do need it.</p>
+<p>I had the same problem with the Vocabularies and Terms .. Upon starting I really didn't understand what they meant for my blog.  So I recreated the categories I had in dotclear in there.    I deleted them from my database after a month, when I figured out how to use tagging in the blog :)</p>
+<p>So what do you need when you want to go one step further, like getting content from a database.  So here is where the I probably went totally wrong and where the documentation could use a hand.</p>
+<p>I started out writing my own module where I use some drupal functions and custom php code.  Turns out there is something like CCK but I`m still not sure if CCK is the thing I need (or how to use it)</p>
+<p>I`m pretty sure the way I`m writing my modules totally wrong also.<br />
+I'm having 1 big file in which I do everything.. Pretty crappy if you ask me but I don't really find another way .. Or should I create multiple modules ?</p>
+<p>Luckily this is <cite>just a hobby, won't be big and professional like</cite>...  It's just a project to  learn and I got a different dayjob ..<br />
+However my fear is that other people probably won't realize how wrong the<br />
+are using a certain technology and will offer their services to customers :(</p>
+<p>So I`m nagging some people about a new Drupal User group meeting.<br />
+Guess Dag and I will learn some stuff there ;)</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Sun, 10/07/2007 - 11:10</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_484 first"><a href="../../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_526 last"><a href="../../taxonomy/term/526/index.html" rel="tag" title="">newbie</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/463 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:38:09 GMT -->
+</html>

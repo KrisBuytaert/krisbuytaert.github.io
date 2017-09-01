@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - automation</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/775/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>The 4158 second catalog run.</title>
+ <link>http://127.0.0.1:8080/blog/4158-second-catalog-run</link>
+ <description>&lt;p&gt;Two of my tweets , sorry dents, earlier today caused some people to ask me what on earth I was doing :)&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;You don&#039;t exist, go away! &lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Was the first one, indeed .. it was a long time since I had actually seen that one..  this actually happens when you delete the user you are logged in with on a host, when the host notices you don&#039;t exist anymore it will tell you.&lt;/p&gt;
+&lt;p&gt;Now that is exactly what happend ..  We were busy reordening the uid&#039;s on some hosts ,  so I modified the puppet config for that host and changed the uid values,   a couple of minutes later I was told that I don&#039;t exist ..&lt;/p&gt;
+&lt;p&gt;The last time I saw that , was about 10 years ago when I was trying to fool some collegues :)&lt;/p&gt;
+&lt;p&gt;Now the second tweet that tracked some people&#039;s attention was the one about a very lengthy catalog run&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Apr 20 05:12:42 sipx-a puppet-agent[22384]: Finished catalog run in 4158.09 seconds&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;
+Indeed, a puppet catalog run of about 69 minutes, yes thats 1 hour and 9 minutes ..&lt;/p&gt;
+&lt;p&gt;The reason for this lengthy catalog run was the above uid reordering , combined with&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;       &amp;quot;/var/sipxdata/&amp;quot;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        owner =&amp;gt; &amp;quot;sipxchange&amp;quot;, group =&amp;gt; &amp;quot;sipxchange&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        recurse =&amp;gt; true,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        ensure =&amp;gt; directory;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;And about 5K files in that directory ..   apparently recurse doesn&#039;t translate to chown -R yet :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/4158-second-catalog-run#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/775">automation</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/sipx">sipx</category>
+ <category domain="http://127.0.0.1:8080/blog/category/uid">uid</category>
+ <pubDate>Wed, 20 Apr 2011 20:36:03 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1040 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Appliance or Not Appliance</title>
+ <link>http://127.0.0.1:8080/blog/appliance-or-not-appliance</link>
+ <description>&lt;p&gt;That&#039;s the question &lt;a href=&quot;http://blog.rootshell.be/2011/01/05/security-diy-or-plugnplay/&quot; rel=&quot;nofollow&quot;&gt;Xavier&lt;/a&gt; asks in his blog entry titled&lt;br /&gt;
+Security: DIY or Plug’n&#039;Play&lt;/p&gt;
+&lt;p&gt;To me the answer is simple,   most of the appliances I ran into so far have no way of configuring them apart from the ugly webgui they ship with their device.  That means that I can&#039;t integrate them with the configuration management framework I have in place for the rest of the infrastructure.      There is no way to automatically modify e.g firewall rules together with the relocation of a service which does happen automatically, and there is always some kind of manual interaction required.    Applicances tend to sit on a island,  either stay un managed ( be honest when&#039;s the last time you upgraded the firmware of that terminal server ? ) , or take a lot of additional efort to manage manually.  They require yet another set of tools than the set you are already using to manage your network.&lt;br /&gt;
+They don&#039;t integrate with your backup strategy,  and don&#039;t tell me they all come with perfect MIB&#039;s.&lt;/p&gt;
+&lt;p&gt;There&#039;s other arguments one could bring up against appliances, obviously people can spread fud about some organisation alledgedly paying people to put backdoors in certain operation systems.. so why would they not pay people to put backdoors in appliances , they don&#039;t even need to hide them in there ..  but my main concern is manageability .. and only a  web gui to manage the box to me just means that the &lt;a href=&quot;http://queue.acm.org/detail.cfm?id=1921361&quot; rel=&quot;nofollow&quot;&gt;vendor&lt;/a&gt; hates me and dooesn&#039;t want my business&lt;/p&gt;
+&lt;p&gt;A good Appliance (either security or other type) needs to provide me an API that I can use to configure it,  in all other cases I prefer a DIY platform, as I can keep it in line with all my other tools, config mgmtn, deployment, upgrade strategies etc.&lt;/p&gt;
+&lt;p&gt;Mabye a last question for Xavier to finish my reply ... I`m wondering how Xavier thinks he kan achieve High-availability by using a Virtual environment  for Virtual Appliances that are not cluster aware using the virtual environment.    A fake comfortable feeling of higher availability , maybe..  but High Availability  that I&#039;d like to see.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/appliance-or-not-appliance#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/775">automation</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/632">infrastructure</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/814">security</category>
+ <pubDate>Wed, 12 Jan 2011 20:28:58 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1028 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Building Virtual Appliances</title>
+ <link>http://127.0.0.1:8080/blog/building-virtual-appliances</link>
+ <description>&lt;p&gt;Johan from &lt;a href=&quot;http://sizingservers.be/&quot;&gt;Sizing Servers&lt;/a&gt; asked me if I could talk about my experiences on building (virtual) appliances at their Advanced Virtualization and Hybrid Cloud seminar .    Off course I said yes .. &lt;/p&gt;
+&lt;p&gt;Slides are below ... Enjoy ..&lt;/p&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_4321121&quot;&gt;&lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/building-appliances&quot; title=&quot;Building appliances&quot;&gt;Building appliances&lt;/a&gt;&lt;/strong&gt;
+&lt;object id=&quot;__sse4321121&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=buildingappliances-100526211332-phpapp01&amp;stripped_title=building-appliances&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed name=&quot;__sse4321121&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=buildingappliances-100526211332-phpapp01&amp;stripped_title=building-appliances&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;padding:5px 0 12px&quot;&gt;View more &lt;a href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/building-virtual-appliances#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/775">automation</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1046">virtualbox</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Thu, 27 May 2010 08:03:29 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1005 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>What does your BOFH want ? :)</title>
+ <link>http://127.0.0.1:8080/blog/what-does-your-bofh-want</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://www.garfieldtech.com/blog/drupal-system-tools&quot; rel=&quot;nofollow&quot;&gt;Larry&lt;/a&gt;, I`m glad  you asked ..&lt;/p&gt;
+&lt;p&gt;With the risk of receiving a flood of comments pointing me to already existing tools here&#039;s my go at what I as a sysadmin of often large deployments am looking for in Drupalland .&lt;/p&gt;
+&lt;p&gt;You suggest LDAP and syslog integration .. guess we already have that don&#039;t we ? &lt;/p&gt;
+&lt;p&gt;But what I haven&#039;t found yet ..&lt;br /&gt;
+An rpm/deb repository  of Drupal modules So we can do an apt-get install drupal-package , yes I know about Drush, but I want the files on my system to be in a package and clearly identified, it helps me keeping my system uncluttered.&lt;/p&gt;
+&lt;p&gt;apt-get update drupal-package  , or yum install drupal-package would be a luxury,  same for themes btw.&lt;/p&gt;
+&lt;p&gt;It would be lovely if the postinstalls of those package also trigger a database upgrade if needed.&lt;/p&gt;
+&lt;p&gt;Which brings me to the next issue.   If I have a multisite setup  and I update a module in sites/all/modules,  I usually have to go trough each and every site hosted there to update the databases.    No really something I like to do for 10+ euh 3+ sites.&lt;/p&gt;
+&lt;p&gt;Also think big, don&#039;t waste your time on desktop apps or guis .since as long as you only have  1 site to manage point an click is fine,  for you ,  Think in terms of what if you have 10 sites, 100 sites, or more .. do you really want to do that kind of administration via a browser or gui ? Some wise man once said &lt;cite&gt;If your computer can&#039;t install it the installer is broken&lt;/cite&gt;.  A script should or automation tool should be able to interact with the sites,  not a human operating a mouse ;)  It&#039;s not just the RSI , but also the fact that to err is human, and if the computer fails a script you can patch it :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/what-does-your-bofh-want#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/775">automation</category>
+ <category domain="http://127.0.0.1:8080/blog/category/bof">bof</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1077">devministration</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/452">lisa</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/system-administration">system administration</category>
+ <pubDate>Wed, 28 Jan 2009 22:29:29 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">866 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>DevMinistration</title>
+ <link>http://127.0.0.1:8080/blog/node/754</link>
+ <description>&lt;p&gt;In his &lt;a href=&quot;http://www.johnmwillis.com/cloudcafe/cloud-cafe-18-the-puppet-vs-the-meat-cloud/&quot; rel=&quot;nofollow&quot;&gt;CloudCafe 18 Podcast&lt;/a&gt; John talks  about Puppet to   &lt;a href=&quot;http://madstop.com/&quot; rel=&quot;nofollow&quot;&gt;Luke&lt;/a&gt;   and they coin the idea of Devministration&lt;/p&gt;
+&lt;p&gt;I really like the terminology, so I`m a devministrator,  and probably the bigger part of &lt;a href=&quot;http://www.inuits.be/&quot;&gt;Inuits&lt;/a&gt; are Devministrators.&lt;/p&gt;
+&lt;p&gt;The first stage in becoming a devministrator is using version control, then bugtracking ..  etc.&lt;br /&gt;
+Coming from an era where I was the sysadmin pushing the developers to use version control this sounds really strange to me..&lt;br /&gt;
+Yes I had to convince developers to use version control,  while Luke thinks he needs to convince sysadmins to use version control.&lt;br /&gt;
+Weird.. other continent, other habits, but the important part is we all use it.&lt;/p&gt;
+&lt;p&gt;But the big part is that we don&#039;t spend our time managing servers, but rather scripting the automation of the management.  Learning machines how they should manage our configs and automate.&lt;/p&gt;
+&lt;p&gt;Like the old Google saying, you have to automate yourself out of a job every 18 months. &lt;/p&gt;
+&lt;p&gt;Guess that&#039;s also what ad Devministrator is.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/754#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/775">automation</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1037">cloud</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1077">devministration</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1078">devministrator</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Mon, 27 Oct 2008 17:57:40 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">754 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>The Mantra and it&#039;s implementation</title>
+ <link>http://127.0.0.1:8080/blog/node/588</link>
+ <description>&lt;p&gt;Twice in one day I  was pointed to The Mantra .. the vision , the good practices on how to run an infrastructure.   And because I fully agree with this way of runing an infrastructure I`ll highlight some of them again .&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Design For Change , the google way.. everything will be different the next time you look around
+&lt;/li&gt;&lt;li&gt;Be reproducable ,  you have to be able to survive the 10th floor test .. yes even when building stuff
+&lt;/li&gt;&lt;li&gt;Design Redundancy upfront ,  don&#039;t try to squeeze it in later .. it will be more expensive and you will be less flexible
+&lt;/li&gt;&lt;li&gt; ...
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://dormando.livejournal.com/484577.html&quot;&gt;Dormando&lt;/a&gt; has some more reading material.&lt;br /&gt;
+And when you are done reading Go watch the video of &lt;a href=&quot;http://www.infoq.com/presentations/shoup-ebay-architectural-principles&quot;&gt;Randy Shoups presentation on Amazon&#039;s infrastructure&lt;/a&gt;, because also at Amazon  we can find 4 repeatedly discussed points in the Architectural strategy&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Partition Everything
+&lt;/li&gt;&lt;li&gt;Automate Everything
+&lt;/li&gt;&lt;li&gt;Async Everything
+&lt;/li&gt;&lt;li&gt;Prepare for Failure
+&lt;/li&gt;
+&lt;p&gt;It&#039;s a repeating theme , with variations based on your specific problem domain..  but the central toughts stay the same.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;h1&gt;Automate Everything&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1&gt;Expect  Failure&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;</description>
+ <comments>http://127.0.0.1:8080/blog/node/588#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/775">automation</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/774">mantra</category>
+ <pubDate>Thu, 07 Feb 2008 19:41:48 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">588 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

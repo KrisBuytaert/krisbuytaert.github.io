@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/migrate-multisite-and-restyle by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:37:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Migrate, MultiSite and Restyle | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Migrate, MultiSite and Restyle</h2>
+<div class="content">
+<div id="node-767" class="node  blog">
+<div class="content"><p>Done</p>
+<p>Some of my lower traffic sites were still on an old Drupal 5,  others were at 6.4 and lots of modules were outdated.   So I set out to migrate all the sites to a multisite setup.   I now have a set of shared modules , shared themes and some specific ones .. just as it is meant to be.    And I only have 1 central Drupal instance to upgrade.  Next step is figuring out how to trigger the database upgrades from 1 central place. </p>
+<p>Well 2 , ny personal stuff and <a href="http://www.inuits.be/" />our corporate sites</a>, that's the idea.   Personal site is on plain old Drupal 6.6 and for  the corporate one we are thinking to go with <a href="http://www.acquia.com/" rel="nofollow">Acquia Drupal</a>, but we're not sure yet</p>
+<p>I've added a new theme, however I can imagine most of you never saw the old one as most of you read this feed in an RSS readers, yet some people nagged me about my lack of style, and as over a decade ago I even won web design contests , something had to be done :)</p>
+<p>I moved some blocks left and right and the performance of the site has improved drastically now, mainly slow technorati loading widgets in the left column often blocked loading, that's all gone now.</p>
+<p>Also , as some of the commenters on earlier posts complained the main <a href="http://www.krisbuytaert.be/">page</a> has no CSS as it isn't in the CMS.  So my next step is trying to find out a way that I can replace the now manually maintained files build from different includes into a more dynamical setup where I can also have feeds for my Publications and Presentations.</p>
+<p>I`m wondering if there is any microformat or so out there for <a href="http://www.krisbuytaert.be/presentations.html">Presentations</a> and <a href="http://www.krisbuytaert.be/publications.html">Publications</a>  that I could use so other people could use that information in other sites.</p>
+<p>After that there's just one site left  to migrate.. but that migration won't be for next month  as there is some custom modules involved that need to be ported.</p>
+<p>Well.. off to some more content then :)</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Fri, 11/14/2008 - 20:56</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_484 first"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_1104"><a href="../category/feed/index.html" rel="tag" title="">feed</a></li>
+<li class="taxonomy_term_746"><a href="../taxonomy/term/746/index.html" rel="tag" title="">microformats</a></li>
+<li class="taxonomy_term_1103 last"><a href="../category/upgrade/index.html" rel="tag" title="">upgrade</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3497"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.freewebsitethemes.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/7fdc5ea35c62f668425e501cb3caf6b2.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Wordpress Themes&#039;s picture" title="Wordpress Themes&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3497">#1</a>
+    <span class="author"><a href="http://www.freewebsitethemes.com/">Wordpress Themes</a></span>  : <span class="title"><a href="index.html#comment-3497" class="active">Moniker DNS</a></span>
+  </h3>
+  <div class="content"><p>I have been having a TON of problems recently with Moniker and binding domains using their custom NS record set up.</p>
+<p>Have you heard if anyone else is having the same problem?</p>
+<p>I email their support, and I get back the standard "everything is working fine" spill.</p>
+<p>Go figure!</p>
+<p>Great Pots,</p>
+<p>Cheers,<br />
+Michael</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/21/2009 - 03:59</div>
+  </div>
+<a id="comment-3420"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.buy-smart-car.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/a68c627bca6d37cc6cd1455ca2d8f434.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Jerry&#039;s picture" title="Jerry&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3420">#2</a>
+    <span class="author"><a href="http://www.buy-smart-car.com/">Jerry</a></span>  : <span class="title"><a href="index.html#comment-3420" class="active">MultiSite management is</a></span>
+  </h3>
+  <div class="content"><p>MultiSite management is something that I've honestly not considered up until this point. I've been debating the differences between moving to a new CMS, either WP or Drupal. If you are familiar with WP maybe you can answer this question, does Drupal offer 'plugins/modules' that are created strictly for multisites that make management easier?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/20/2008 - 05:39</div>
+  </div>
+<div class="indented"><a id="comment-3462"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://albanyseo.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/1256637d89cf9548f460a37f4b966107.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Red&#039;s picture" title="Red&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3462">#3</a>
+    <span class="author"><a href="http://albanyseo.com/">Red</a></span>  : <span class="title"><a href="index.html#comment-3462" class="active">If you are looking for easier</a></span>
+  </h3>
+  <div class="content"><p>If you are looking for easier management I would recommend going with Wordpress MU.  If you are looking for more functionality and the ability to customize more then I would go with Drupal.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/14/2009 - 02:26</div>
+  </div>
+</div><a id="comment-3364"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.high-thread-count-bed-sheets.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/7329c5af7053c747b7743a700a586a1a.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Erin&#039;s picture" title="Erin&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3364">#4</a>
+    <span class="author"><a href="http://www.high-thread-count-bed-sheets.com/">Erin</a></span>  : <span class="title"><a href="index.html#comment-3364" class="active">I&#039;m curious as to whether or</a></span>
+  </h3>
+  <div class="content"><p>I'm curious as to whether or not you've written a guide like Gerard asked. That's exactly what I'm looking for as well, I need to have multisite management for my Drupal sites and wasn't really able to find what I was looking for on Drupal.org. Do I need a VPS or Dedicated server to do this? Thanks in advance...</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/19/2008 - 00:51</div>
+  </div>
+<a id="comment-3354"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://gerardmcgarry.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/906aff1690b89e032ae9ea1214dda28a.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Gerard&#039;s picture" title="Gerard&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3354">#5</a>
+    <span class="author"><a href="http://gerardmcgarry.com/">Gerard</a></span>  : <span class="title"><a href="index.html#comment-3354" class="active">Kris - I&#039;d love to read how</a></span>
+  </h3>
+  <div class="content"><p>Kris - I'd love to read how you managed to centralise on to a multisite configuration. I've been considering doing the same with my various Drupal sites just for ease of management.</p>
+<p>And who are you hosting with and do they have multisite out of the box?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/15/2008 - 02:59</div>
+  </div>
+<div class="indented"><a id="comment-3356"></a>
+<div id="comment-6" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3356">#6</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3356" class="active">Aren&#039;t there already enough docs ?</a></span>
+  </h3>
+  <div class="content"><p>Doesn't drupal.org alraedy have a good writeup on how to go multisite if not I'd be glad to document my steps in a separated blog post but it once you think about it , it is dead simple I wonder why I never did it before.</p>
+<p>As for hosting  we have our own box in a colo.  So I pretty much have no limitations.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/15/2008 - 10:29</div>
+  </div>
+</div><a id="comment-3353"></a>
+<div id="comment-7" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://growingventuresolutions.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/57497496b7ba7b7561675d544d5cdb71.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="greggles&#039;s picture" title="greggles&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3353">#7</a>
+    <span class="author"><a href="http://growingventuresolutions.com/">greggles</a></span>  : <span class="title"><a href="index.html#comment-3353" class="active">presentation styles</a></span>
+  </h3>
+  <div class="content"><p>There is the s5 presentation format which even has a Drupal module - <a href="http://drupal.org/project/s5" title="http://drupal.org/project/s5" rel="nofollow">http://drupal.org/project/s5</a></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/14/2008 - 23:42</div>
+  </div>
+<div class="indented"><a id="comment-3355"></a>
+<div id="comment-8" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3355">#8</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3355" class="active">Not really</a></span>
+  </h3>
+  <div class="content"><p>I`m not really looking for a method to put presentations online.<br />
+I`m more looking for a method to keep a list of presentations I gave , with  location, time  and a possible pointer to a slideshare presentation.<br />
+   I guess I could look into CCK &amp; Views for this.       But I  don't want to reinvent the wheel.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/15/2008 - 10:26</div>
+  </div>
+</div></div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/migrate-multisite-and-restyle by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:37:17 GMT -->
+</html>

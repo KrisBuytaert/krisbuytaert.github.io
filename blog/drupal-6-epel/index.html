@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/drupal-6-epel by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Drupal 6 for EPEL | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Drupal 6 for EPEL</h2>
+<div class="content">
+<div id="node-972" class="node  blog">
+<div class="content"><p>Some of you might have noticed that Fedora 11 and up already have an up to date Drupal6 version, but EPEL , which is what a lot of people are using on their  CentOS  or RHEL builds only has a Drupal5.   I asked  Jon Ciesla, who is maintaing the Drupal packages in Fedora why :</p>
+<p><cite><br />
+Because when Drupal was initially built for EL-5 and EL-5, the 5.x<br />
+branch was the current release.  It's up to date, 5.20 is the most<br />
+recent release, and is still supported upstream in terms of security<br />
+fixes.  6 is out, and has been for awhile, but we have the following:</cite></p>
+<p><a href="http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies" title="http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies" rel="nofollow">http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies</a></p>
+<p>Since 5.x isn't broken or insecure, it'll be a tough sell to move to<br />
+6.x.  Once upstream drops support, this may change.<br />
+</p>
+<p>It's a correct answer from a Distribution point of view, but the fact is it is widening the gap between the Ops and the Devs.     If the ops want to keep their platform clean we need to have our software packaged on the platform we want to use, which is most often an Enterprise Linux distro,  on the other there is understandably no hair on a dev's head that he will be  building a new site on  a Drupal 5 platform.</p>
+<p>So until the Drupal community  doesn't declare Drupal 5 dead, RHEL and CentOS users will have to use 3rd party Drupal6  RPMS , or rebuild the F12 rpm from Source again  .</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Sun, 12/20/2009 - 22:39</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_480 first"><a href="../taxonomy/term/480/index.html" rel="tag" title="">centos</a></li>
+<li class="taxonomy_term_484"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_1347"><a href="../category/epel/index.html" rel="tag" title="">epel</a></li>
+<li class="taxonomy_term_1349"><a href="../category/guidelines/index.html" rel="tag" title="">guidelines</a></li>
+<li class="taxonomy_term_1348"><a href="../category/politics/index.html" rel="tag" title="">politics</a></li>
+<li class="taxonomy_term_479"><a href="../taxonomy/term/479/index.html" rel="tag" title="">rhel</a></li>
+<li class="taxonomy_term_472 last"><a href="../taxonomy/term/472/index.html" rel="tag" title="">rpm</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3941"></a>
+<div id="comment-1" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3941">#1</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3941" class="active">@arrfab pointed to rpmforge</a></span>
+  </h3>
+  <div class="content"><p><a href="http://arrfab.net/" rel="nofollow">Arrfab</a> pointed me to the forgotten <a href="http://packages.sw.be/drupal6" rel="nofollow">Drupal 6 package in RPMForge</a>   </p>
+<p>Yes that's a good package.. but it's yet another repo to be included ..</p>
+<p>Also it's work that is being done twice.. once for Fedora, once for RPMForge..  it would be easy to single maintenance just in Fedora and enable it for EPEL too .</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/14/2010 - 22:27</div>
+  </div>
+<a id="comment-3927"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/00d1c2c85d66f9a50744e7e7c8c35ce2.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="chx&#039;s picture" title="chx&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3927">#2</a>
+    <span class="author"><span class="anonymous" title="not verified">chx</span></span>  : <span class="title"><a href="index.html#comment-3927" class="active">RHEL is unsuitable for websites.</a></span>
+  </h3>
+  <div class="content"><p>They still do not have a release w/ PHP 5.2 more than three years after 5.2.0 got released. Two years after Drupal 6 is out it's not there. They are worse than Debian and hold back innovation. When it will have MongoDB, 2020?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/21/2009 - 22:23</div>
+  </div>
+<a id="comment-3914"></a>
+<div id="comment-3" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3914">#3</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3914" class="active">Fully Agree</a></span>
+  </h3>
+  <div class="content"><p>Absolutely .. we choose EL for stability and reliability.</p>
+<p>The question always is what's bleeding edge, what's recent and what's obsolete.    In the Drupal case .. Drupal 5 is obsolete,    Drupal 6 is  tested and verified and backed by enterprise level support.    and D7 is Bleeding Edge ... </p>
+<p>We can only open the conversation with the Distributions on which version they should include ..</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/20/2009 - 23:58</div>
+  </div>
+<a id="comment-3913"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/286c5d0b60ed374e4842bac3ab690b7f.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Anonymous&#039;s picture" title="Anonymous&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3913">#4</a>
+    <span class="author"><span class="anonymous" title="not verified">Anonymous</span></span>  : <span class="title"><a href="index.html#comment-3913" class="active">Drupal and RPM</a></span>
+  </h3>
+  <div class="content"><p>Responsible software packages for any enterprise OS will always lag behind the bleeding edge;  often by a large amount.  People go with an enterprise-class OS because the number of security and other bugs found in software and packages diminishes as the release 'cooks' in the field.  That's why, as long as a given major release (often minor too) is still around, it will be the one chosen for update.  It's why RH and others cherry-pick and back-port fixes from new software instead of rolling new versions whenever possible.</p>
+<p>Enterprise OSes are chosen for stability.  We have ubunt-u and fedora - and potentially rawhide, really - for those wanting This Week's Release.  While I think that EPEL and RH both need to maintain the reliability over the shiny, I'd fully support a plan to create a new repository of more recent releases, so that even RHEL(/centos/etc) people can get shiny new releases, as long as they understand support is tainted.</p>
+<p>Not many people understand this, and it's stranger to understand from a developer point of view that people would value anything more than a week old in the 'release early, release often' world of open source.  As the customer wants more reliable software vs more flashy, and as the OS Distro wants less bugfixes and needs to find the middle ground between the shiny and the sharp, the policy of locking in major releases is a less-worse solution than others.</p>
+<p>As a former unix and linux distro build engineer, it's one of the few policies I haven't challenged -- after the logic was explained.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/20/2009 - 23:30</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/drupal-6-epel by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:12 GMT -->
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - shebang</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1426/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Puppet broke my Xen</title>
+ <link>http://127.0.0.1:8080/blog/puppet-broke-my-xen</link>
+ <description>&lt;p&gt;Actually it didn&#039;t , but now I got your attention.&lt;br /&gt;
+We just adopted the use of  adding headers to all of our files that are managed by puppet so people will know not to touch it&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  file {&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                &amp;quot;/etc/xen/scripts/network-custom-vlan-bridges&amp;quot;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        owner =&amp;gt; &amp;quot;root&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        group =&amp;gt; &amp;quot;root&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        mode =&amp;gt; &amp;quot;0755&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                        content =&amp;gt; template(&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                                &amp;quot;headers/header-hash.erb&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;                                &amp;quot;xen/co-mmx-network-custom-vlan-bridges.erb&amp;quot;);&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;        }&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;All worked nice however  upon bootstrapping our Xen host the bridges stopped working ..     running the network-custom-vlan-bridges script manually  solved everything and created the appropriate bridges.  But at boottime it didn&#039;t.. &lt;/p&gt;
+&lt;p&gt;I added some debug info to the script and figured it never got executed at boot time.&lt;/p&gt;
+&lt;p&gt;Turns out that when I removed the headers Xen actually does configure the bridges at boot time, Xen probably checks for a shebang at the beginning of the file.&lt;/p&gt;
+&lt;p&gt;Putting the header at the end of the file therefore solved the problem. ,&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/puppet-broke-my-xen#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/shebang">shebang</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Sat, 30 Oct 2010 14:35:01 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1019 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

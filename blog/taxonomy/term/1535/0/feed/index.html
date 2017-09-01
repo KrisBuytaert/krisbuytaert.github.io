@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - docker</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1535/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Docker and volumes hell</title>
+ <link>http://127.0.0.1:8080/blog/docker-and-volumes-hell</link>
+ <description>&lt;p&gt;We&#039;re increasingly using Docker to build packages,  a fresh  chroot in which we prepare a number of packages, builds typically for ruby (rvm) , or python (virtualenv) or node stuf where the language ecosystem fails on us ...  and fpm the whole tree as a working artifact.&lt;/p&gt;
+&lt;p&gt;An example of such a build is my work on packaging Dashing.  &lt;a href=&quot;https://github.com/KrisBuytaert/build-dashing&quot; rel=&quot;nofollow&quot;&gt;https://github.com/KrisBuytaert/build-dashing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now part of that build is running the actual build script in docker with a local volume mounted inside the container This is your typical  -v=/home/src/dashing-docker/package-scripts:/scripts  param.&lt;/p&gt;
+&lt;p&gt;Earlier this week however I was stuck on a box where that combo did not want to work as expected. Docker clearly mounted the local volume, as it could execute the script in the directory, but for some reason it didn&#039;t want to write in the mounted volume.&lt;/p&gt;
+&lt;p&gt;docker run -v=/home/src/dashing-docker/package-scripts:/scripts dashing/rvm  /scripts/packagervm&lt;br /&gt;
+Usage of loopback devices is strongly discouraged for production use. Either use `--storage-opt dm.thinpooldev` or use `--storage-opt dm.no_warn_on_loop_devices=true` to suppress this warning.&lt;br /&gt;
+corefines: Your Ruby doesn&#039;t support refinements, so I&#039;ll fake them using plain monkey-patching (not scoped!).&lt;br /&gt;
+/usr/local/share/gems/gems/corefines-1.9.0/lib/corefines/support/fake_refinements.rb:26: warning: Refinements are experimental, and the behavior may change in future versions of Ruby!&lt;br /&gt;
+/usr/share/ruby/fileutils.rb:1381:in `initialize&#039;: Permission denied - rvm-1.27.0-1.x86_64.rpm (Errno::EACCES)&lt;/p&gt;
+&lt;p&gt;So what was I doing wrong, did the Docker params change, did I invert the order of the params, did I mistype them ? I added debugging to the script, (ls , chmod, etc..) and I couldn&#039;t seem to read or modify the directory. So I asked a coworker to be my wobbling duck.&lt;/p&gt;
+&lt;p&gt;He did more .. he wondered if this wasn&#039;t selinux.&lt;/p&gt;
+&lt;p&gt;And he was right..&lt;/p&gt;
+&lt;p&gt;Apr 23 21:47:00 mine23.inuits.eu audit[9570]: AVC avc:  denied  { write } for  pid=9570 comm=&quot;fpm&quot; name=&quot;package-scripts&quot; dev=&quot;dm-2&quot; ino=368957 scontext=system_u:system_r:svirt_lxc_net_t:s0:c47,c929 tcontext=unconfined_u:object_r:unlabeled_t:s0 tclass=dir permissive=0&lt;br /&gt;
+Apr 23 21:47:02 mine23.inuits.eu python3[9597]: SELinux is preventing fpm from write access on the directory /home/src/dashing-docker/package-scripts.&lt;/p&gt;
+&lt;p&gt;So while I was looking for errors in docker, it was just my selinux set to enforce acting up and me not noticing it.&lt;/p&gt;
+&lt;p&gt;The quick way to verify obvisously was to setenforce 0  and trigger the build again that however is not a long term fix so  I changed the &lt;/p&gt;
+&lt;p&gt;semanage fcontext -a -t cgroup_t &#039;/home/src/dashing-docker/package-scripts&#039;&lt;br /&gt;
+restorecon -v &#039;/home/src/dashing-docker/package-scripts&#039;&lt;/p&gt;
+&lt;p&gt;That solves the problem&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/docker-and-volumes-hell#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/docker-0">docker</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fpm">fpm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1001">selinux</category>
+ <pubDate>Sat, 28 May 2016 11:16:45 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1109 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

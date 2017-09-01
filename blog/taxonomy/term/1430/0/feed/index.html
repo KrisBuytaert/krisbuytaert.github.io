@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - cobbler</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1430/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>High Availability MySQL Cookbook , the review</title>
+ <link>http://127.0.0.1:8080/blog/high-availability-mysql-cookbook-review</link>
+ <description>&lt;p&gt;When I read on the internetz that Alex Davies was about the publish a &lt;a href=&quot;https://www.packtpub.com/high-availability-mysql-cookbook/book&quot; rel=&quot;nofollow&quot;&gt;Packt book on MySQL HA&lt;/a&gt;  I pinged my contacts at Packt and suggested that I&#039;d review the book .&lt;/p&gt;
+&lt;p&gt;I&#039;ve ran into &lt;a href=&quot;https://sites.google.com/a/davz.net/alex-davies/&quot; rel=&quot;nofollow&quot;&gt;Alex&lt;/a&gt; at some UKUUG conferences before and he&#039;s got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.&lt;/p&gt;
+&lt;p&gt;Alex starts of with a couple of indepth chapters on MySQL Cluster,  he does mention that it&#039;s not a fit for all problems, but I&#039;d hoped he did it a bit more prominently ...    an upfront chapter outlining the different approaches and when which approach is a match could have been better.    The avid reader now might be 80 pages into MySQL cluster before he realizes it&#039;s not going to be a match for his problem.&lt;/p&gt;
+&lt;p&gt;I really loved the part where Alex correcly mentions that you should probably be using Puppet or so to manage the config files of your environment, rather than scp them around your different boxes ..&lt;/p&gt;
+&lt;p&gt;Alex then goes on to describe setting up MySQL replication and Multi Master replication with the different approaches one can take here,  he gives some nice tips on using LVM to reduce the downtime of your MySQL when having to transfer the dataset of an already existing MySQL setup, good stuff.&lt;/p&gt;
+&lt;p&gt;He then goes on to describe MySQL with shared storage ...   if you only mount your redundant sandisk once on your MySQL nodes my preference would probably be a Pacemaker stack  rather than a RedHat Cluster based setup,  but his setup seems to work too.   Alex quickly touches on using GFS to have your data disk mounted simultaneously on both nodes (keep in mind with only 1 active MySQLd)  and then goes on to describe a full DRBD based MySQL HA setup&lt;/p&gt;
+&lt;p&gt;The last chapter titled Performance tuning gives some very nice tips on both tuning your regular storage, as your&lt;br /&gt;
+GFS setup but also the tuning parameters for MySQL Cluster&lt;/p&gt;
+&lt;p&gt;I was also really happy to see the Appendixes on the basic installation where he advocates the use of Cobbler , Kickstart and LVM ..&lt;/p&gt;
+&lt;p&gt;One of the better books I read the past couple of years .. certainly the best book from Packt so far , I hope there is more quality stuff coming from that direction !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/high-availability-mysql-cookbook-review#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/cobbler">cobbler</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/899">drbd</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pacemaker">pacemaker</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Wed, 03 Nov 2010 23:07:18 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1022 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

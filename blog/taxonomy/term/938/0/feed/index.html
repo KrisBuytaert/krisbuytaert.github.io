@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - monitoring</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/938/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Our #monitoringsucks rpm is repository available </title>
+ <link>http://127.0.0.1:8080/blog/our-monitoringsucks-rpm-repository-available</link>
+ <description>&lt;p&gt;Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.&lt;/p&gt;
+&lt;p&gt;You might have noticed a variety of vagrant- projects on my github acount&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://github.com/KrisBuytaert/vagrant-ganglia&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-ganglia &lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;//github.com/KrisBuytaert/vagrant-graphite&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://github.com/KrisBuytaert/vagrant-puppet-logstash&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-puppet-logstash,&lt;/a&gt;&lt;br /&gt;
+Being the #monitoringsucks part of them.     All of those Vagrant projects are basically my test setups to play with those new tools.&lt;/p&gt;
+&lt;p&gt;They contain a bunch of puppet modules that install and configure these tools.  (Note that they mostly consist of&lt;br /&gt;
+of git submodules to other puppet module repositories.&lt;/p&gt;
+&lt;p&gt;Given the fact that I also like to have my software cleanly installed from a package, that means that some of these tools had to be packaged,  or I had to create a personal / internal repository which had packages from upstream that were hiding on the internet available.&lt;/p&gt;
+&lt;p&gt;I&#039;ve forked of this repository off the internal Inuits epository so you all can also benefit from these efforts.&lt;br /&gt;
+(You gotta love pulp :))&lt;/p&gt;
+&lt;p&gt;That means you can now install all of the above mentionned #monitoringsucks tool from our public repo on &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;yumrepo { &#039;monitoringsucks&#039;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  baseurl    =&amp;gt; &#039;http://pulp.inuits.eu/pulp/repos/monitoring&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  descr      =&amp;gt; &#039;MonitoringSuck at Inuits&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  gpgcheck   =&amp;gt; &#039;0&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;}&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Patches to both the Vagrant projects and the puppet modules are welcome ...&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/our-monitoringsucks-rpm-repository-available#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logstash">logstash</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/repo">repo</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vagrant">vagrant</category>
+ <pubDate>Sat, 11 Aug 2012 19:49:39 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1068 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Devops in Munich</title>
+ <link>http://127.0.0.1:8080/blog/devops-munich</link>
+ <description>&lt;p&gt;Devopsdays Mountainview sold out in a short 3 hours ..   but there&#039;s other events   that will breath devops this summer.&lt;br /&gt;
+DrupalCon in Munich will be one of them ..&lt;/p&gt;
+&lt;p&gt;Some of you might have noticed that I`m cochairing the devops track for DrupalCon Munich,&lt;br /&gt;
+The CFP is open till the 11th of this month and we are still actively looking for speakers.&lt;/p&gt;
+&lt;p&gt;We&#039;re trying to bridge the gap between drupal developers and the people that put their code to production, at scale.&lt;br /&gt;
+But also enhancing the knowledge of infrastructure components Drupal developers depend on.&lt;/p&gt;
+&lt;p&gt;We&#039;re looking for talks both on culture (both success stories and failure) ,   automation,&lt;br /&gt;
+specifically looking for people talking about drupal deployments , eg using tools like Capistrano, Chef, Puppet,&lt;br /&gt;
+We want to hear where Continuous Integration fits in your deployment ,  do you do Continuous Delivery of a drupal environment.&lt;br /&gt;
+And how do you test ... yes we like to hear a lot about testing , performance tests, security tests, application tests and so on.&lt;br /&gt;
+...  Or have you solved the content vs code vs config  deployment problem yet ? &lt;/p&gt;
+&lt;p&gt;How are you measuring and monitoring these deployments and adding metrics to them  so you can get good visibility on both&lt;br /&gt;
+system and user actions of your platform.  Have you build fancy dashboards showing your whole organisation the current state of your deployment ? &lt;/p&gt;
+&lt;p&gt;We&#039;re also looking  for people talking about introducing different data backends,  nosql,  scaling different search backends , building your own cdn using  smart  filesystem setups.&lt;br /&gt;
+Or making smart use of existing backends, such as tuning and scaling MySQL, memcached and others.&lt;/p&gt;
+&lt;p&gt;So lets make it clear to the community that drupal people do care about their code after they committed it in source control ! &lt;/p&gt;
+&lt;p&gt;Please submit your talks &lt;a href=&quot;http://munich2012.drupal.org/news/call-for-papers&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/devops-munich#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/456">cfp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/configmgmt">configmgmt</category>
+ <category domain="http://127.0.0.1:8080/blog/category/deployment">deployment</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/measurement">measurement</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/testing">testing</category>
+ <pubDate>Tue, 01 May 2012 19:02:30 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1065 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>#monitoringsucks and we&#039;ll fix it !</title>
+ <link>http://127.0.0.1:8080/blog/monitoringsucks-and-well-fix-it</link>
+ <description>&lt;p&gt;If you are hacking on monitoring solutions, and want to talk to your peers solving the problem&lt;br /&gt;
+Block the monday and tuesday after fosdem in your calendar !&lt;/p&gt;
+&lt;p&gt;That&#039;s right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp&lt;/p&gt;
+&lt;p&gt;In short  a #monitoringsucks hackathon&lt;/p&gt;
+&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp&lt;/p&gt;
+&lt;p&gt;Obviously if you can&#039;t make it to Antwerp you can join the effort on ##monitoringsucks on Freenode or on Twitter.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.inuits.eu/contact&quot; rel=&quot;nofollow&quot;&gt;location will be Duboistraat 50 , Antwerp&lt;/a&gt;&lt;br /&gt;
+It is about 10 minutes walk from the Antwerp Central Trainstation&lt;br /&gt;
+Depending on Traffic Antwerp is about half an hour north of Brussels and there are hotels at walking distance from the venue.&lt;/p&gt;
+&lt;p&gt;Plenty of parking space is available on the other side of the Park&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoringsucks-and-well-fix-it#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/collectd">collectd</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/icinga">icinga</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/category/munin">munin</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/890">nagios</category>
+ <category domain="http://127.0.0.1:8080/blog/category/rrd">rrd</category>
+ <pubDate>Tue, 03 Jan 2012 18:23:00 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1057 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Watching the Guards</title>
+ <link>http://127.0.0.1:8080/blog/watching-guards</link>
+ <description>&lt;p&gt;A couple of weeks ago I noticed a weird drop in web usage stats on the site you are browsing now.  Kinda weird as the drop was right around Fosdem when usually there is a spike in traffic.  &lt;img src=&quot;http://www.krisbuytaert.be/images/PiwiwFail.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;So before you start.. no I don&#039;t preach on practice on my own blog,   it&#039;s a blog dammit,  so I do the occasional upgrades on the actual platform , with backups available, do some sanity tests and move on,  yes I break the theme pretty often but ya&#039;ll reading this trough RSS anyhow.&lt;/p&gt;
+&lt;p&gt;My backups showed me that drush had made a copy of the Piwik module somewhere early february, exactly when this drop started showing.   I verified the module , I verified my Piwik , - Oh Piwik you say .. yes Piwik, if you want a free alternative to Google Analytics , Piwik rocks ..  -   I even checked other sites using the same piwik setup and they were all still functional happily humming and being analyzed.... everything fine ...    but traffic stayed low ..&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://drupal.org/node/1052430&quot;&gt;This&lt;/a&gt; taught me I actually had to upgrade my Piwik too ...&lt;/p&gt;
+&lt;p&gt;So that brings me to the point I`m actually wanting to make...&lt;br /&gt;
+as according to @patrickdebois  in his chapter on Monitoring &quot;Quis custodiet ipsos custodes?&quot; who&#039;s monitoring the monitoring tools, who&#039;s monitoring the analytics tools,  &lt;/p&gt;
+&lt;p&gt;So not only should you monitor the availability of yor monitoring tools, you should also monitor if their api hasn&#039;t changed in some way or another.&lt;br /&gt;
+Just like when you are monitoring an web app you shoulnd&#039;t just see if you can connect to the appropriate http port, but you should be checking if you get sensible results back from it , no gibberish.&lt;/p&gt;
+&lt;p&gt;But then again ... there&#039;s no revenue in my blog or its statistics :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/watching-guards#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/category/piwik">piwik</category>
+ <pubDate>Thu, 10 Mar 2011 18:44:56 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1038 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Better days Arrive when Dev Meet Ops</title>
+ <link>http://127.0.0.1:8080/blog/better-days-arrive-when-dev-meet-ops</link>
+ <description>&lt;p&gt;A couple of weeks a go &lt;a href=&quot;http://twitter.com/LinuxScribe&quot; rel=&quot;nofollow&quot;&gt;Brian Profitt&lt;/a&gt; pinged me for a chat about  Devops ,  the result of that chat , his article can now be found on the Zenoss blog, it&#039;s  titled &lt;a href=&quot;http://community.zenoss.org/blogs/zenossblog/2010/03/05/datacenter-barometer-better-days-arrive-when-dev-meets-ops&quot; rel=&quot;nofollow&quot;&gt;Datacenter Barometer: Better days arrive when dev meets ops&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It&#039;s a very nice read with some pointers to places regular readers of my blog should already know ;)&lt;br /&gt;
+So with lots of leading Open Source infrastructure companies  on different levels, such as config management (OpsCode and Reductive Labs) , monitoring (Zenoss) , deployment (openQRM, RPath, and obviously &lt;a href=&quot;http://www.inuits.be&quot;&gt;Consultancy&lt;/a&gt; companies  , the upcoming Devops conferences around the planet promise to be a lot of fun ! ;)&lt;/p&gt;
+&lt;p&gt;Oh, and apparently there is some more on the  story on &lt;a href=&quot;http://slashdot.org/submission/1186968/&quot; rel=&quot;nofollow&quot;&gt;/.&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/better-days-arrive-when-dev-meet-ops#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/707">krisbuytaert</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/888">zenoss</category>
+ <pubDate>Sat, 06 Mar 2010 13:03:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">991 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Implementing Raid Monitoring on a 3Ware 3w-9xxx based controller.</title>
+ <link>http://127.0.0.1:8080/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller</link>
+ <description>&lt;p&gt;When you pull out a disk from your Raid setup it shows a warning in syslog&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: WARNING (0x04:0x0019): Drive &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;removed:port=1.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: ERROR (0x04:0x0002): Degraded&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; unit:unit=0, port=1.&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;However if no one is looking at syslog that won&#039;t really be helpfull.&lt;/p&gt;
+&lt;p&gt;3Ware provides a tool from their site called tw_cli which can be used to manage&lt;br /&gt;
+the raid setup from the command line.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;[EL860-root@EL860 admin]# tw_cli /c0 show &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;------------------------------------------------------------------------------&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;u0    RAID-1    REBUILDING     41%     -       -       232.82    RiW    ON     &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;VPort Status         Unit Size      Type  Phy Encl-Slot    Model&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;------------------------------------------------------------------------------&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;p0    OK             u0   232.88 GB SATA  0   -            ST3250310NS         &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;p1    DEGRADED       u0   232.88 GB SATA  1   -            ST3250310NS         &lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;I&#039;d figure I&#039;d either have to write wrapper script around that or find some other way of integrating it.&lt;br /&gt;
+Asking the question on ##infra-talk on irc.freenode.net  gave me the following link to a &lt;a href=&quot;http://github.com/stanaka/check_tw&quot; rel=&quot;nofollow&quot;&gt;check script&lt;/a&gt; on github&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;koollman: sdog: something like &lt;a href=&quot;http://github.com/stanaka/check_tw&quot; title=&quot;http://github.com/stanaka/check_tw&quot; rel=&quot;nofollow&quot;&gt;http://github.com/stanaka/check_tw&lt;/a&gt; should work. &lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;With that in your snmpd.conf you can get the info via snmp&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;[root snmp]#  snmpwalk  localhost   -v 2c  -c public  .1.3.6.1.4.1.2&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;021   | grep ext &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extIndex.1 = INTEGER: 1&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extNames.1 = STRING: TW_RAID&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extCommand.1 = STRING: /usr/local/sbin/check_tw&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extResult.1 = INTEGER: 2&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extOutput.1 = STRING: CRITICAL: Unit: u0, Type: RAID-1, Status: RE&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;BUILDING&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extErrFix.1 = INTEGER: 0&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extErrFixCmd.1 = STRING: &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::ssSysContext.0 = INTEGER: 2073&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::ssRawContexts.0 = Counter32: 11781783&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-DLMOD-MIB::dlmodNextIndex.0 = INTEGER: 1&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/3w-9xxx">3w-9xxx</category>
+ <category domain="http://127.0.0.1:8080/blog/category/3ware">3ware</category>
+ <category domain="http://127.0.0.1:8080/blog/category/didimentionihateraid">didimentionihateraid</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/489">linux</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/995">raid</category>
+ <category domain="http://127.0.0.1:8080/blog/category/snmp">snmp</category>
+ <pubDate>Thu, 28 Jan 2010 18:41:42 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">981 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Monitoring MySQL</title>
+ <link>http://127.0.0.1:8080/blog/monitoring-mysql-0</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://ronaldbradford.com/blog/what-alert-monitoring-do-you-use-2009-10-07/&quot; rel=&quot;nofollow&quot;&gt;Ronald Bradford&lt;/a&gt; wants to know what kind of Monitoring you use..&lt;br /&gt;
+He specifically wants to know about Alerting tools&lt;/p&gt;
+&lt;p&gt;There&#039;s different cases , looking at it from a full infrastructure point my current favourite is Zabbix or good old Nagios,&lt;/p&gt;
+&lt;p&gt;But when looking at it from a debugging perspective you have MySQLAR or Hyperic, but those aren&#039;t in the  alerting list.&lt;/p&gt;
+&lt;p&gt;However, when you are building HA clusters, you have custom scripts running either from mon  or from pacemaker ..&lt;/p&gt;
+&lt;p&gt;Still .. Ronald probably wants more input :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoring-mysql-0#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/category/msql">msql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/887">zabbix</category>
+ <category domain="http://127.0.0.1:8080/blog/category/zenos">zenos</category>
+ <pubDate>Sun, 11 Oct 2009 18:18:04 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">945 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>MonitoringForge</title>
+ <link>http://127.0.0.1:8080/blog/monitoringforge</link>
+ <description>&lt;p&gt;I found the  initial announcement in my Spambox, thats where I send all the mails from GroundWork as unsubscribing from their marketing lists doesn&#039;t seem to work ..&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.adventuresinoss.com/?p=1117&quot; rel=&quot;nofollow&quot;&gt;Tarus&lt;/a&gt; pointed it out.. he already mentionned Marketing, low community imput etc..&lt;/p&gt;
+&lt;p&gt;Nevertheles I had a look,  and my first and last impression was,  NagiosForge, no active community, and empty pages on other imvho more relevant Monitoring Projects created by GroundWork employees.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.johnmwillis.com/&quot; rel=&quot;nofollow&quot;&gt;Big John &lt;/a&gt; coined the &quot;to pull a GroundWork&quot; phrase aiming at their early products, err logo placements.   When &lt;a href=&quot;http://www.inuits.be&quot;&gt;we&lt;/a&gt; were evaluating differen Open Source monitoring tools for our OLS paper about 18 months ago we looked at the tool and it  didn&#039;t make the cut .. it failed in all areas where it claimed to be strong,  ease of installation , lack of errorhandling during the installation, etc  ... some while later another collegue tried again  and we ran into similar problems&lt;/p&gt;
+&lt;p&gt;Yet some people claim it to be a great product..   I&#039;m not a fan yet ...maybe one day they they&#039;ll know to convince me .. but for now&lt;br /&gt;
+When I need Nagios .. I`ll be looking at &lt;a href=&quot;http://djagios.org/&quot; rel=&quot;nofollow&quot;&gt;Djagios&lt;/a&gt; , &lt;a href=&quot;http://opsview.org/&quot; rel=&quot;nofollow&quot;&gt;Opsview&lt;/a&gt; , &lt;a href=&quot;http://www.icinga.org/&quot; rel=&quot;nofollow&quot;&gt;Icinga&lt;/a&gt; or the real thing.&lt;/p&gt;
+&lt;p&gt;However, ther&#039;s still Hyperic, Zenoss and Zabbix :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoringforge#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/889">hyperic</category>
+ <category domain="http://127.0.0.1:8080/blog/category/icinga">icinga</category>
+ <category domain="http://127.0.0.1:8080/blog/category/look-no-link">look no link</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/890">nagios</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/887">zabbix</category>
+ <category domain="http://127.0.0.1:8080/blog/category/zenos">zenos</category>
+ <pubDate>Wed, 23 Sep 2009 19:20:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">939 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Zenoss, the Book , the review</title>
+ <link>http://127.0.0.1:8080/blog/node/735</link>
+ <description>&lt;p&gt;As mentioned &lt;a href=&quot;http://www.krisbuytaert.be/blog/node/726&quot;&gt;earlier&lt;/a&gt; , Packt sent me their &lt;a href=&quot;http://www.packtpub.com/zenoss-core-network-and-system-monitoring/book&quot; rel=&quot;nofollow&quot;&gt;Zenos Core Network and Systems Monitoring&lt;/a&gt; by &lt;a href=&quot;http://badgerfiles.com/blog/2008/09/24/zenoss-core-book-excerpts/&quot; rel=&quot;nofollow&quot;&gt;Michael Badger&lt;/a&gt; to review.&lt;/p&gt;
+&lt;p&gt;So I spend the past couple of weeks trying to crawl my way trough it.   Not that there was any problem with the book, more with my schedule :)   I was hoping to finish it some time ago but time was working against me, even last week when my flight back from Zurich was a bit shorter than planned I couldn&#039;t finish reading the book.  &lt;/p&gt;
+&lt;p&gt;But yesterday I managed,  Michael managed to write a good book on a hot topic during what was probably one of the most busy of his life. &lt;/p&gt;
+&lt;p&gt;In 8 chapters Michael manages to explain the different aspects of Zenoss fairly well, he even touches the creation of ZenPacks and extending Zenoss in general also.  &lt;/p&gt;
+&lt;p&gt;It was a fairly good read and showed me a couple of new insights into Zenoss.&lt;/p&gt;
+&lt;p&gt;However although Zenoss is  heavily SNMP based there is little information on SNMP in general and MIB more in detail ?   People really new to systems monitoring might want to have a couple of more pages on these topics.  &lt;/p&gt;
+&lt;p&gt;For those not familiar to Zope the mentioning of TALES expressions might also raise some eyebrows, luckily there has been a full Appendix dedicated  to it. &lt;/p&gt;
+&lt;p&gt;Time permitting I would have hoped he could of gone a bit more in detail on creating a ZenPack that did a bit more than checking the status of a page.  Looking into the status of an Apache or MySQL or other relevant daemon , or the Squid internal statistics  &lt;/p&gt;
+&lt;p&gt;But if you are new to Zenoss and you want to have a quick headstart into monitoring your infrastructure with it this book is a really really good start.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.scribd.com/doc/5371809/Zenoss-Core-Network-and-System-Monitoring-Sample-Chapter&quot; rel=&quot;nofollow&quot;&gt;There&#039;s a free preview Chapter at Scribd.com&lt;/a&gt; and also at &lt;a href=&quot;http://www.packtpub.com/article/user-management-in-zenoss&quot; rel=&quot;nofollow&quot;&gt;Packt&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/735#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1040">bookreview</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/888">zenoss</category>
+ <pubDate>Mon, 29 Sep 2008 19:39:20 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">735 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Where are the Virtualization Zenpacks ?</title>
+ <link>http://127.0.0.1:8080/blog/node/715</link>
+ <description>&lt;p&gt;Zennoss has announced the &lt;a href=&quot;http://blog.zenoss.com/2008/08/20/the-submit-a-zenpack-contest-entries/&quot; rel=&quot;nofollow&quot;&gt;entries for their zenpack contest&lt;/a&gt; .  What strikes me is that there is not a single entry that plans on  monitoring Xen, KVM, VirtualBox or any of the other Open Source virtualization technologies .. Not in the contest entries and not in the &lt;a href=&quot;http://www.zenoss.com/community/projects/zenpacks/&quot; rel=&quot;nofollow&quot;&gt;existing community packs&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://wiki.xensource.com/xenwiki/XenApi&quot; rel=&quot;nofollow&quot;&gt;This&lt;/a&gt; sounds like a big opportunity to me :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/715#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/888">zenoss</category>
+ <pubDate>Mon, 25 Aug 2008 19:07:20 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">715 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

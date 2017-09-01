@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/upgrading-fedora-10 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:24:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Upgrading to Fedora 10  | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Upgrading to Fedora 10 </h2>
+<div class="content">
+<div id="node-831" class="node  blog">
+<div class="content"><p>As some of you know I run Fedora on my main Laptop, and Ubuntu on my EEE and my office Desktop.   My Ubuntu installs were pretty fresh, but my fedora was long due for an upgrade.    As after years of abuse (--force --nodeps) it usually is impossible to do a regular upgrade, so my best way out was a quick and fresh install on an isolated root partition.   (my /home/ etc live on separate volumes)</p>
+<p><a href="http://raskas.be/" rel="nofollow">Johan</a> tricked me into installing a FC10 x86-64 setup which required some more work than usual, but I`m back in the same state as I was before I started the upgrade.  We'll almost .. as I expect I`ll be reinstalling packages I don't daily use on a frequent basis over the next couple of weeks.</p>
+<p>I'll dig a bit deeper in my x86_64 struggles later but first I had to tackle the problems I had with stepping my Evolution to a fresh and hopefully more stable version.</p>
+<p>Evolution fails to recognise  the fact that I have multiple calendars, or got confused.. anyway .. my calendar was empty and I had to recreate them all and import them again one by one.<br />
+Luckily the content was still available in .ics</p>
+<p>Also Evolution partly forgot about all my email accounts , it remembered their passwords after recreating them, but not their settings.. well. that is if I managed to recreate them all :)<br />
+(If I`m not replying to a mail you sent me sinc last thursday.. I might just have forgotten about that email address ..</p>
+<p>On to the x86_64 stuff then.  <a href="http://blog.verwilst.be/" rel="nofollow">Bort</a> pointed me to the<br />
+<a href="http://labs.adobe.com/downloads/flashplayer10.html" rel="nofollow">Adobe Labs site</a> that had a working flash plugin.  The right symlink in my .mozilla/plugins and the first problem was solved.</p>
+<p>There's 2 apps from Google that I sometimes abuse,  I don't know why I still use Picasa, there must be plenty of good open source alternatives out there ..  however for Google Earth I don't really have a good alternative.   bot work  (unlike previous Fedora/Googl Earth combinations)</p>
+<p>The only thing that annoyed me was Google Earth and selinux  , I had to run some chcon s to solve the problems.</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/google-earth/libminizip.so'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/google-earth/librender.so'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/google-earth/libauth.so'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/google-earth/libevll.so'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/google-earth/lib*'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/google-earth/libnavigate.so'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/google-earth/liblayer.so'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/google-earth/libmeasure.so'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/google-earth/libbasicingest.so'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/google-earth/libgps.so'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/googleearth/libgooglesearch.so'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/googleearth/libinput_plugin.so'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">chcon -t textrel_shlib_t '/opt/google-earth/libflightsim.so'</div></li></ol></pre></div></p>
+<p>A couple of more frustrations later  and the SELinux config got changed.  Afterall .. Life is to short for SELinux.</p>
+<p>A must,  if you used too have Livna , or FreshRPMS is <a href="http://rpmfusion.org/" rel="nofollow">RPMFusion</a> a merger of the old repositories</p>
+<p>Skype  seemed to be a bit more difficult.  I tried installing the rpm at first but I failed , then I read  <a href="http://liquidat.wordpress.com/2008/11/27/moving-on-64bit-linux-pulseaudio-fedora-10-and-so-on/" rel="nofollow">some tips</a> which suggested to use yum localinstall skype*.rpm</p>
+<p>As I`m more of an apt-get user (yes even on CentOS etc) I don't usually try installing packages that way .. but it worked like a charm.    Skype started,  I could connect to the servers , however a test call  reveals no input sound.  Maybe if I try again with a headset later.</p>
+<p>Anyway,  I`m pretty satisfied so far ...</p>
+<p>Next step is to get that skype chat integrated in pidgin.. or hope people will realize they have to drop that proprietary tool one day..</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Mon, 12/01/2008 - 22:14</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1109 first"><a href="../category/fedora/index.html" rel="tag" title="">fedora</a></li>
+<li class="taxonomy_term_1108"><a href="../category/fedora-10/index.html" rel="tag" title="">fedora 10</a></li>
+<li class="taxonomy_term_461"><a href="../taxonomy/term/461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_1001"><a href="../taxonomy/term/1001/index.html" rel="tag" title="">selinux</a></li>
+<li class="taxonomy_term_1107"><a href="../category/skype/index.html" rel="tag" title="">skype</a></li>
+<li class="taxonomy_term_1110 last"><a href="../category/x8664/index.html" rel="tag" title="">x86_64</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3398"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.emiic.net/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/af19b82adfd30cbee869275b02afd687.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Louise&#039;s picture" title="Louise&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3398">#1</a>
+    <span class="author"><a href="http://www.emiic.net/">Louise</a></span>  : <span class="title"><a href="index.html#comment-3398" class="active">Just what I needed</a></span>
+  </h3>
+  <div class="content"><p>I was having a few issues with GE and SElinux as well. It's a shame the end result for a lot of these issues is people just switching SELinux off. Kismet also causes us problems. Maybe by F12 SELinux will be much friendly. Anyway, thanks for your GE tips. I found a really useful guide on quickly get all the software (except GE) on  and working at <a href="http://www.gredil.net/wiki/Fedora_10" title="http://www.gredil.net/wiki/Fedora_10" rel="nofollow">http://www.gredil.net/wiki/Fedora_10</a> if you or your readers need some additional info. Worked a charm for me.</p>
+<p>L</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/08/2008 - 17:00</div>
+  </div>
+<a id="comment-3375"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.lefred.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/8138ef303fc01a03f8da04357d7cc77b.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="lefred&#039;s picture" title="lefred&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3375">#2</a>
+    <span class="author"><a href="http://www.lefred.be/">lefred</a></span>  : <span class="title"><a href="index.html#comment-3375" class="active">preupgrade</a></span>
+  </h3>
+  <div class="content"><p>preupgrade is nice too, I used it to upgrade my fedora 9 to 10 and I'm currently upgrading from fedora 7 to 9 (and then 9 to 10) as 7 to 10 wasn't proposed.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/02/2008 - 07:49</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/upgrading-fedora-10 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:24:33 GMT -->
+</html>

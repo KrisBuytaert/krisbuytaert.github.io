@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - repo</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1486/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Our #monitoringsucks rpm is repository available </title>
+ <link>http://127.0.0.1:8080/blog/our-monitoringsucks-rpm-repository-available</link>
+ <description>&lt;p&gt;Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.&lt;/p&gt;
+&lt;p&gt;You might have noticed a variety of vagrant- projects on my github acount&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://github.com/KrisBuytaert/vagrant-ganglia&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-ganglia &lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;//github.com/KrisBuytaert/vagrant-graphite&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://github.com/KrisBuytaert/vagrant-puppet-logstash&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-puppet-logstash,&lt;/a&gt;&lt;br /&gt;
+Being the #monitoringsucks part of them.     All of those Vagrant projects are basically my test setups to play with those new tools.&lt;/p&gt;
+&lt;p&gt;They contain a bunch of puppet modules that install and configure these tools.  (Note that they mostly consist of&lt;br /&gt;
+of git submodules to other puppet module repositories.&lt;/p&gt;
+&lt;p&gt;Given the fact that I also like to have my software cleanly installed from a package, that means that some of these tools had to be packaged,  or I had to create a personal / internal repository which had packages from upstream that were hiding on the internet available.&lt;/p&gt;
+&lt;p&gt;I&#039;ve forked of this repository off the internal Inuits epository so you all can also benefit from these efforts.&lt;br /&gt;
+(You gotta love pulp :))&lt;/p&gt;
+&lt;p&gt;That means you can now install all of the above mentionned #monitoringsucks tool from our public repo on &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;yumrepo { &#039;monitoringsucks&#039;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  baseurl    =&amp;gt; &#039;http://pulp.inuits.eu/pulp/repos/monitoring&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  descr      =&amp;gt; &#039;MonitoringSuck at Inuits&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  gpgcheck   =&amp;gt; &#039;0&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;}&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Patches to both the Vagrant projects and the puppet modules are welcome ...&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/our-monitoringsucks-rpm-repository-available#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logstash">logstash</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/repo">repo</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vagrant">vagrant</category>
+ <pubDate>Sat, 11 Aug 2012 19:49:39 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1068 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Ruby Gems Yum Repo</title>
+ <link>http://127.0.0.1:8080/blog/ruby-gems-yum-repo</link>
+ <description>&lt;p&gt;For those of you that are looking for  my old build-gems Github repo, given that  lots of other Inuits collegues are using it too I&#039;ve transferred  ownership of that repo to the Inuits group.&lt;/p&gt;
+&lt;p&gt;It can now be found on &lt;a href=&quot;https://github.com/Inuits/build-gems/&quot; rel=&quot;nofollow&quot;&gt;https://github.com/Inuits/build-gems/&lt;/a&gt; (Yes directory indexes are disabled on purpose..) &lt;/p&gt;
+&lt;p&gt;The build result  has also been moved.  We&#039;ve replaced our static repo.inuits.be with a &lt;a href=&quot;http://pulpproject.org/&quot; rel=&quot;nofollow&quot;&gt;Pulp&lt;/a&gt; powered yum repo.&lt;/p&gt;
+&lt;p&gt;The new location of the rubygems rpm repo now is at  &lt;a href=&quot;http://pulp.inuits.eu/pulp/repos/rubygems/&quot; rel=&quot;nofollow&quot;&gt;http://pulp.inuits.eu/pulp/repos/rubygems/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Which can be used as &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;[rubygems]&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;name=RubyGems at Inuits&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;baseurl=http://pulp.inuits.eu/pulp/repos/rubygems&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;gpgcheck=0&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;or even &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;yumrepo { &#039;rubygems&#039;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    baseurl  =&amp;gt; &#039;http://pulp.inuits.eu/pulp/repos/rubygems&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    descr    =&amp;gt; &#039;RubyGems at Inuits&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    gpgcheck =&amp;gt; &#039;0&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;      }&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;More repos are moving .. I`ll be updating Vagrant trees as I go ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/ruby-gems-yum-repo#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/fpm">fpm</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jenkins">jenkins</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pulp">pulp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/repo">repo</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ruby-gems">ruby gems</category>
+ <pubDate>Wed, 08 Aug 2012 20:28:18 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1067 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

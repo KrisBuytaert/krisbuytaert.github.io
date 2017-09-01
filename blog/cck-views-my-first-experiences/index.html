@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/cck-views-my-first-experiences by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:37:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CCK &amp; Views, My First Experiences  | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">CCK &amp; Views, My First Experiences </h2>
+<div class="content">
+<div id="node-838" class="node  blog">
+<div class="content"><p>and probably my last one .. </p>
+<p>I <a href="http://www.krisbuytaert.be/blog/migrate-multisite-and-restyle">mentioned </a> a couple of weeks ago that I was looking into a way of converting my static page with published papers, articles and presentations in a more dynamic page where I could create RSS feeds from the updates and feed them into <a href="http://www.inuits.be/">another site</a> for everybody to use.</p>
+<p>Some people suggested that I'd have a look at CCK &amp; Views for this. While up till now when creating an app I had usually written my own Drupal module with my own database schema and manually written  SQL Queries.  This indeed looked like  the perfect opportunity to dig into the CCK and Views thingie.</p>
+<p>Now I must admit that <a href="http://www.krisbuytaert.be/pics/hybernate.jpg">I`m not really fond</a> of "generated queries"</p>
+<p>I've had nightmares before when having to debug 2Mb Hibernate queries that could be reduced  to a single select value from table where query but Hibernate used a zillion join on tables I didn't need.<br />
+So I was a bit afraid of what Views would do ..</p>
+<p>So here's what happened, I created 2 pages ..  presentations. and publications.  Personally I'd go for 1 table each with some smart indexes and then the only thing you want is   SELECT  * FROM table ORDER BY  date</p>
+<p>Now if I'd create a special content type for this I probably get some more benefits.<br />
+And I could get the data from the tables with a rather simple query like this :<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">SELECT  node.nid,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        content_type_presentation.field_datum_value,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        content_type_presentation.field_location_value,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        content_type_presentation.field_country_value  ,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        content_type_presentation.field_event_link_title,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        content_type_presentation.field_event_link_url</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> FRON content_type_presentation, node</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> WHERE node.type=&quot;presentation&quot; AND node.nid = content_type_presentation.nid</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> ORDER BY  content_type_presentation.field_datum_value desc;</div></li></ol></pre></div></p>
+<p>However when using Views , this is what is being created. </p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">SELECT DISTINCT(node.nid) AS nid,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.field_datum_value AS node_data_field_country_field_datum_value,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.nid AS node_data_field_country_nid,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node.type AS node_type,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.field_event_link_url AS node_data_field_country_field_event_link_url,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.field_event_link_title AS node_data_field_country_field_event_link_title,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.field_event_link_attributes AS node_data_field_country_field_event_link_attributes,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.field_location_value AS node_data_field_country_field_location_value,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.field_country_value AS node_data_field_country_field_country_value,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_link.field_link_url AS node_data_field_link_field_link_url,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_link.field_link_title AS node_data_field_link_field_link_title,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_link.field_link_attributes AS node_data_field_link_field_link_attributes,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_link.nid AS node_data_field_link_nid</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> FROM node node</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> LEFT JOIN content_type_presentation node_data_field_country ON node.vid = node_data_field_country.vid</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> LEFT JOIN content_field_link node_data_field_link ON node.vid = node_data_field_link.vid</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> WHERE UPPER(node_data_field_country.field_country_value) != UPPER('')</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   ORDER BY node_data_field_country_field_datum_value DESC</div></li></ol></pre></div></p>
+<p>So there's some joins, a zillion more fields that I don't really need being fetched from my database.<br />
+The explain also tells me some interesting things.. like the Using temporary AND Using Filesort</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">| id | select_type | table                   | type   | possible_keys | key     | key_len | ref                                       | rows | Extra                                        |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">+----+-------------+-------------------------+--------+---------------+---------+---------+-------------------------------------------+------+----------------------------------------------+</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">|  1 | SIMPLE      | node_data_field_country | ALL    | PRIMARY       | NULL    | NULL    | NULL                                      |   33 | Using where; Using temporary; Using filesort |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">|  1 | SIMPLE      | node                    | eq_ref |vid           | vid     | 4       |buytaert_blog.node_data_field_country.vid |    1 |                                              |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">|  1 | SIMPLE      | node_data_field_link    | eq_ref | PRIMARY       | PRIMARY | 4       | buytaert_blog.node.vid                    |    1 |                                              |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">+----+-------------+-------------------------+--------+---------------+---------+---------+-------------------------------------------+------+----------------------------------------------+</div></li></ol></pre></div></p>
+<p>Now my simpler query uses the same amount of rows to return the result but doesn't build a temporary table.<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">+----+-------------+---------------------------+------+-----------------------+------+---------+---------------------------------------------+------+----------------+</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">| id | select_type | table                     | type | possible_keys         | key  | key_len | ref                                         | rows | Extra          |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">+----+-------------+---------------------------+------+-----------------------+------+---------+---------------------------------------------+------+----------------+</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">|  1 | SIMPLE      | content_type_presentation | ALL  | nid                   | NULL | NULL    | NULL                                        |   33 | Using filesort |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">|  1 | SIMPLE      | node                      | ref  | PRIMARY,node_type,nid | nid  | 4       | buytaert_blog.content_type_presentation.nid |    1 | Using where    |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">+----+-------------+---------------------------+------+-----------------------+------+---------+---------------------------------------------+------+----------------+</div></li></ol></pre></div></p>
+<p>In this small example there isn't much  difference in performance to be noticed, but with bigger tables you will see other results. However I still prefer my personal query approach.</p>
+<p>The other thing that bugs me is the excessive use of aliases.  The MySQL internal experts can shed a light on the performance impact of using them, but if you are running queries remotely you at least have an increase in bandwidth usage.  Not a problem now,  but who knows later when you are big and famous :)</p>
+<p>Now Drupal seems to do it pretty ok .. it's aliasing table.field to table_field which still makes sense.  Not unlike some other tools that alias table.field to dynamically_generated_unreproducable_unreadable_key_word_with_no_relevant_meaning , try debugging that for a change.   And yes I see valuable use for resultset aliasing, but I also se it is often overused.</p>
+<p>But the short summary ... given my background  I prefer writing the module and crafting my own queries over having Views create<br />
+a query for me.</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Sun, 12/07/2008 - 23:44</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1121 first"><a href="../category/cck/index.html" rel="tag" title="">cck</a></li>
+<li class="taxonomy_term_484"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_458"><a href="../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_1122 last"><a href="../category/views/index.html" rel="tag" title="">views</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3401"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/edb4afd8a8cc82d61e6c88ea4ff96e08.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Simon Hobbs&#039;s picture" title="Simon Hobbs&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3401">#1</a>
+    <span class="author"><span class="anonymous" title="not verified">Simon Hobbs</span></span>  : <span class="title"><a href="index.html#comment-3401" class="active">You should be comparing views</a></span>
+  </h3>
+  <div class="content"><p>You should be comparing views with other query builders, not the infinitely complex coder's mind.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/10/2008 - 01:10</div>
+  </div>
+<a id="comment-3399"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://windmill.sk/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/54b444b49842a0f49003522f97555339.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Pasqualle&#039;s picture" title="Pasqualle&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3399">#2</a>
+    <span class="author"><a href="http://windmill.sk/">Pasqualle</a></span>  : <span class="title"><a href="index.html#comment-3399" class="active">Views module</a></span>
+  </h3>
+  <div class="content"><p>Come on, don't be stupid, do not even try using Drupal without views. I am sorry, it is only your fault, that the generated query does not look like as you expected..</p>
+<p>First thing everyone should do when starting a new site is to enable the views module. No excuses..</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/08/2008 - 20:40</div>
+  </div>
+<a id="comment-3397"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.guruburu.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/e0c239a969b78908b9f025d611d1de60.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="gaele&#039;s picture" title="gaele&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3397">#3</a>
+    <span class="author"><a href="http://www.guruburu.com/">gaele</a></span>  : <span class="title"><a href="index.html#comment-3397" class="active">@greggles: don&#039;t forget
+3)</a></span>
+  </h3>
+  <div class="content"><p>@greggles: don't forget</p>
+<p>3) Maintenance.</p>
+<p>Who's going to maintain the custom queries after the developer has left? Who's going to do the upgrade to a next Drupal version? You did fully document your own code, didn't you?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/08/2008 - 15:30</div>
+  </div>
+<a id="comment-3395"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.garfieldtech.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/621c389c46a307318e21d1b535790a5d.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Larry Garfield&#039;s picture" title="Larry Garfield&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3395">#4</a>
+    <span class="author"><a href="http://www.garfieldtech.com/">Larry Garfield</a></span>  : <span class="title"><a href="index.html#comment-3395" class="active">Three reasons for CCK+Views</a></span>
+  </h3>
+  <div class="content"><p>While hand-crafted anything will generally get you better performance than a generic solution, I will almost always favor CCK+Views as a solution, even if I have to do more work to set it up initially with a custom plugin to one of them.  There are three main reasons for that:</p>
+<p>1) Non-programmers can manipulate and change it.  More than half of my company is non-programmers.  Having 90% of the company rather than 40% able to build new data types and queries against them instead of 40% is an absolute godsend.  That occasionally a query is a bit less performant is well worth it for me as a programmer to be doing 80% less grunt work.</p>
+<p>2) Because of the way CCK works with multiple value fields and shared fields, it is possible for the database structure to change out from under me.  If I write my own queries, those queries will then die a horrible death.  CCK, however, will transparently update the info it feeds to Views and Views will therefore automagically work with the new table structure.  </p>
+<p>3) Perhaps the least appreciated part of Views, especially in Views 2, is its many-layered theming.  The way different plugin configurations can let you dip into the query results at any level to override things locally or globally, or swap out entire rendering engines, is simply phenominal.  Again, it goes back to non-programmers being able to do work that you say you don't need Views to do because you're a programmer.  That's well and good, but if my theming team can do 7/10 of the work building a site without having to talk to me about code, that means that I as a programmer have done my job properly.  It also means I can focus on the cool stuff, rather than just writing simple queries all day.</p>
+<p>You can have my CCK+Views when you pry them from my cold dead hands. :-)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/08/2008 - 09:24</div>
+  </div>
+<a id="comment-3394"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/f2770f2afb0bdf14f251fabb0d13c7a5.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Bram&#039;s picture" title="Bram&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3394">#5</a>
+    <span class="author"><span class="anonymous" title="not verified">Bram</span></span>  : <span class="title"><a href="index.html#comment-3394" class="active">Re that &quot;hybernate&quot; book</a></span>
+  </h3>
+  <div class="content"><p>Re that "hybernate" book cover..Let me put it gently: garbage in, garbage out. If you use hibernate like a retard, then yes, you'll end up with monsters of queries fetching all sorts of crap from your database that no sane person would ever need. If, however, you use your brain and tell hibernate to fetch only what you need, then it will gladly comply. Of course, this functionality is somewhat poorly document and actually requires more than a 5 minute google search followed by a quick copy/paste. </p>
+<p>Here's a gentle hint:<br />
+"SELECT new foo.bar.MyClass(foo.foo, bar.bar FROM foo LEFT JOIN bar.property bar.WHERE blablabla)".<br />
+All you have to do is be willing to think about what exactly you need from which model and fetch it. Only a retard fetches the whole frigging database for no reason whatsoever.</p>
+<p>Of course, it all starts with your hibernate model..if you screw that up with billions of eager-loaded collections and joins, then you deserve whatever crappy queries you get. </p>
+<p>As for aliases...I think they're supposed to improve query performance on mysql, although do correct me if I'm wrong, brain's still a bit frozen after the long walk to work :-)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/08/2008 - 09:24</div>
+  </div>
+<a id="comment-3393"></a>
+<div id="comment-6" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://mikkel.hoegh.org/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/2c3b9882e6898958b892a218b5493af9.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Mikkel Høgh&#039;s picture" title="Mikkel Høgh&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3393">#6</a>
+    <span class="author"><a href="http://mikkel.hoegh.org/">Mikkel Høgh</a></span>  : <span class="title"><a href="index.html#comment-3393" class="active">Hardly a fair comparison</a></span>
+  </h3>
+  <div class="content"><p>As Earl says, this is hardly a fair comparison. I have seen a lot of Views-generated queries in my time, and none of them joined more tables or pulled in more fields than it had to be able to fulfill the requirements of the Views configuration.</p>
+<p>You may prefer that 2-5% extra performance you gain by carefully hand-crafting every bit of SQL, but I'm just grateful that we have talented people like Earl that created powerful tools for us to use.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/08/2008 - 09:00</div>
+  </div>
+<a id="comment-3392"></a>
+<div id="comment-7" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://advomatic.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/cd042394db9ff0bda024118e6755ac79.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="dalin&#039;s picture" title="dalin&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3392">#7</a>
+    <span class="author"><a href="http://advomatic.com/">dalin</a></span>  : <span class="title"><a href="index.html#comment-3392" class="active">I have to agree with both</a></span>
+  </h3>
+  <div class="content"><p>I have to agree with both Earl and Greg on this one.  This post might be classified as FUD.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/08/2008 - 08:56</div>
+  </div>
+<a id="comment-3391"></a>
+<div id="comment-8" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://highervisibilitywebsites.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/668861b881c842487b7e9f8f978015f4.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Caleb G&#039;s picture" title="Caleb G&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3391">#8</a>
+    <span class="author"><a href="http://highervisibilitywebsites.com/">Caleb G</a></span>  : <span class="title"><a href="index.html#comment-3391" class="active">Worthwhile post</a></span>
+  </h3>
+  <div class="content"><p>Thanks for this article - despite any imperfections it provides information that isn't going be obvious to everyone, and raises issues which are very interesting.</p>
+<p>Personally, I too prefer to write my own queries/modules/content types whenever possible, but at the same time I value having Views and CCK available for any number of reasons (mostly having to do with *massive* time savings and/or the slew of other modules which hook/are-hooked by them).</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/08/2008 - 07:47</div>
+  </div>
+<a id="comment-3390"></a>
+<div id="comment-9" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/fb31c4b02230d6ef5808767c8fdad3f3.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Scott Reynolds&#039;s picture" title="Scott Reynolds&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3390">#9</a>
+    <span class="author"><span class="anonymous" title="not verified">Scott Reynolds</span></span>  : <span class="title"><a href="index.html#comment-3390" class="active">I would be interested to see</a></span>
+  </h3>
+  <div class="content"><p>I would be interested to see if you remove the DISTINCT flag from the your view if it prevents the temporary table. (And any further analysis you care to provide).</p>
+<p>With most views I create I start with how I would write the query, compare it to how views wrote the query, and see what I can improve it (or in some cases why my first query was wrong) and why Views wrote it the way it did. I find that I learn a lot about how Views works and better ways to write my own queries.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/08/2008 - 06:51</div>
+  </div>
+<a id="comment-3389"></a>
+<div id="comment-10" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://growingventuresolutions.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/57497496b7ba7b7561675d544d5cdb71.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="greggles&#039;s picture" title="greggles&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3389">#10</a>
+    <span class="author"><a href="http://growingventuresolutions.com/">greggles</a></span>  : <span class="title"><a href="index.html#comment-3389" class="active">caching and value of time</a></span>
+  </h3>
+  <div class="content"><p>There are at least two good reasons to use views+cck.</p>
+<p>1) If you are doing any caching (including the Drupal page caching) then the results of the query will be cached so it doesn't matter how bad the performance is as long as it can be done at least once.</p>
+<p>2) There are two major sources of costs on a project: consulting time and server resources.  Consulting time is usually 90% of the cost.  Server resources something less than 10%, and other more minor things even less.  I value my time quite highly (as do my clients) so if I can save a few hours using Views/CCK then it justifies any necessary spending on additional server resources...</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/08/2008 - 06:28</div>
+  </div>
+<a id="comment-3388"></a>
+<div id="comment-11" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.angrydonuts.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/09996fbb3b59b60b0dec050000299e0d.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="merlinofchaos&#039;s picture" title="merlinofchaos&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3388">#11</a>
+    <span class="author"><a href="http://www.angrydonuts.com/">merlinofchaos</a></span>  : <span class="title"><a href="index.html#comment-3388" class="active">Hmm.</a></span>
+  </h3>
+  <div class="content"><p>While I agree with you that generated queries are by default less efficient than hand build queries, I find your example actually disingenuous and overemphasizing it.</p>
+<p>Let's start with this:</p>
+<p>FRON content_type_presentation, node</p>
+<p>This is equivalent to doing a INNER JOIN, so you've used an abbreviation to make your query seem a little simpler than it is.</p>
+<p>Also, the fact that the data is stored in separate tables, and not all together in one table is both not Views' fault, and in fact, it's YOUR fault because CCK only stores the data that way if you do something that requires a single field to be shared across node types, or if it has the 'multiple' option checked, since you can't have multiple values in a single table without doing things kind of strangely.</p>
+<p>Finally, any field being fetched is needed by something you added to your view, for whatever reason. Saying you don't really need it may be quite wrong. Perhaps for reasons you don't understand, but not understanding something isn't a reason for it not to happen.</p>
+<p>I will say that you have more fields in the generated query than you have in your query and I suspect it's because you have more fields in the view than you talk about.</p>
+<p>node_data_field_link.field_link_url AS node_data_field_link_field_link_url,<br />
+node_data_field_link.field_link_title AS node_data_field_link_field_link_title,<br />
+node_data_field_link.field_link_attributes AS node_data_field_link_field_link_attributes,<br />
+node_data_field_link.nid AS node_data_field_link_nid</p>
+<p>That table, in particular, isn't something you mention; but it's only in there because you added something to the view that wants that data.</p>
+<p>Finally, using aliases is important for a variety of reasons, not the first of which is that Drupal's prefixing makes it important to refer to the aliases, but also because there are so many opportunities for collisions that automatic aliasing makes things work a lot smoother. Perhaps there are some issues with aliasing but enh. They're worth it.</p>
+<p>You're perfectly welcome to build your own stuff without CCK or Views, but I feel your public post about it rather unfairly treats what it generates, especially when you blame Views for things that it doesn't deserve being blamed for.</p>
+<p>Really, if you actually expected an open source freely available query generator to write something as efficiently as you would've written it without having to worry about infinite combinations, but only doing what you want it to do, you started from an incredibly foolish starting point and you pretty much set up the results. The fact that you published them publicly is just sad.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/08/2008 - 06:13</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/cck-views-my-first-experiences by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:37:33 GMT -->
+</html>

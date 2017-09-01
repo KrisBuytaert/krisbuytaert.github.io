@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - comments</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/793/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Mollom and Views</title>
+ <link>http://127.0.0.1:8080/blog/mollom-and-views</link>
+ <description>&lt;p&gt;You might have noticed that this blog stopped accepting comments about a month ago.. well. stopped accepting is a big word.. I was still accepting comments, only they were never submitted to the database and after entering a comment to my blog people  ended up on a white page.&lt;/p&gt;
+&lt;p&gt;So upon returning from holliday I set out to debug the issue together with one of our Inuits Drupal geeks and quickly ran into the following error.&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;PHP Fatal error:  Call to a member function has_more_records() on a non-object in /somepath/modules/views/plugins/views_plugin_display.inc on line 1992, referer: http://www.krisbuytaert.be/blog/comment/reply/1014&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;So apparently my veasion of views  6.x-3.0-alpha3 didn&#039;t really like to play with Mollom,&lt;br /&gt;
+I downgraded views again to 6.x-2.11  and Mollom started showing its Captcha&#039;s etc  again .&lt;/p&gt;
+&lt;p&gt;So apart from wondering how I ended up installing that alpha3 version (I`m sure Drush didn&#039;t do that), all is back to normal. and you should be able to comment on this blog again&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/mollom-and-views#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/793">comments</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/858">mollom</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/485">php</category>
+ <category domain="http://127.0.0.1:8080/blog/category/views">views</category>
+ <pubDate>Tue, 03 Aug 2010 22:06:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1015 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Trackbacks</title>
+ <link>http://127.0.0.1:8080/blog/node/603</link>
+ <description>&lt;p&gt;Dear &lt;a href=&quot;http://planet.drupal.org/&quot; rel=&quot;nofollow&quot;&gt;Drupal developers&lt;/a&gt; :)&lt;/p&gt;
+&lt;p&gt;Over at &lt;a href=&quot;http://planet.grep.be&quot; rel=&quot;nofollow&quot;&gt;planet.grep.be&lt;/a&gt; we had some fuzz&lt;br /&gt;
+about comments, trackbacks and mostly the spam related with having trackbacks enabled.&lt;/p&gt;
+&lt;p&gt;So the message is clear .. we need to do something about the trackback module so it fits in better with all the great antispam tools  are around.&lt;br /&gt;
+I`m currently not using any captchas on my blog but my spam is down to 1 or to messages a week.   My Trackbacks however are still pretty problematic , but they are the only place I need to focus on periodically.&lt;/p&gt;
+&lt;p&gt;Fairly well hidden in a  &lt;a href=&quot;http://www.stroobant.be/trackback-spam#comment-301&quot; rel=&quot;nofollow&quot;&gt;comment on Luc&lt;/a&gt; &#039;s blog someone points out the idea of having a list of people you trust that are allowed to send trackbacks, which sounds to me like a pretty good idea.&lt;/p&gt;
+&lt;p&gt;So if you are out there , feeling bored not knowing what code to work on .. :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/603#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/793">comments</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/511">spam</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/794">trackbacks</category>
+ <pubDate>Sat, 23 Feb 2008 11:25:18 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">603 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Where to comment ?</title>
+ <link>http://127.0.0.1:8080/blog/node/598</link>
+ <description>&lt;p&gt;Dear &lt;a href=&quot;http://dag.wieers.com/blog/content/commenting-on-blogarticles&quot; rel=&quot;nofollow&quot;&gt;Dag&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I`m with &lt;a href=&quot;http://bbbart.internationalgeneration.be/blog/archives/2008/02/index.html#e2008-02-06T01_47_32.txt&quot; rel=&quot;nofollow&quot;&gt;Bart&lt;/a&gt; on this topic.&lt;/p&gt;
+&lt;p&gt;It&#039;s hard enough to keep up with blogs let alone with comments on the comments you made on those blogs. And as people in your comments noted .. Trackbacks should solve this problem&lt;br /&gt;
+I actually send a trackback to &lt;a href=&quot;http://leo.unstable.be/wordpress/?p=57&quot; rel=&quot;nofollow&quot;&gt;Leo&lt;/a&gt; which made my &lt;cite&gt;comment&lt;/cite&gt; show up in his comments.&lt;/p&gt;
+&lt;p&gt;Commenting to it on my own blog and trackbacking to the original post actually gives you the benefit of not having to authenticate / register on a gazillion blogs.  it gives you better visibility on the comments people make on your comment  (If they are nice they include 2 trackbacks), since you don&#039;t need to track it on other blogs.&lt;/p&gt;
+&lt;p&gt;Lots of blogging tools have features to detect trackback urls from original posts that you point to , Drupal can even do that from a cronjob if you want to.&lt;br /&gt;
+It&#039;s however the other side that also needs to have trackbacking allowed.&lt;/p&gt;
+&lt;p&gt;If the trackback system doesn&#039;t work , or if you prefer not to enable it due to the shitload of spam you get on it there&#039;s always Technorati telling you that people have been pointing back to you.&lt;/p&gt;
+&lt;p&gt;Might I suggest you take a look at the &lt;a href=&quot;http://drupal.org/project/trackback&quot; rel=&quot;nofollow&quot;&gt;Drupal Trackback module  &lt;/a&gt; , if you enable it this post on my blog should show up a s a comment to your blog entry  and we&#039;ll all be happy :)   And Technorati will update your Authority&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/598#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/792">blogs</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/793">comments</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/794">trackbacks</category>
+ <pubDate>Wed, 13 Feb 2008 22:34:03 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">598 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - extrememon</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1477/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>We didn&#039;t fix it </title>
+ <link>http://127.0.0.1:8080/blog/we-didnt-fix-it</link>
+ <description>&lt;p&gt;MonitoringSucks and we didn&#039;t fix it.&lt;/p&gt;
+&lt;p&gt;Earlier this week &lt;a href=&quot;http://www.inuits.eu&quot;&gt;Inuits&lt;/a&gt; hosted a 2 day hackfest titled #MonitoringSucks.  A good number of people with a variety of backgrounds showed up on monday morning. I don&#039;t know why but people had high expectations for this event ,  did they really expect us to fix the #monitoringsucks problem in a mere 2 days ?&lt;/p&gt;
+&lt;p&gt;Next to myselve we had  Patrick Debois , &lt;a href=&quot;https://twitter.com/#!/gkarekinian&quot;&gt;Grégory Karékinian&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/#!/sjourdan&quot;&gt;Stefan Jourdan&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/#!/hatofmonkeys&quot;&gt;Colin Humphreys&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/#!/acrmp&quot;&gt;Andrew Crump&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/#!/ohadlevy/&quot;&gt;Ohad Levy &lt;/a&gt;, Frank Marien, Toshaan Bharvani,  Devdas Bhagat, &lt;a href=&quot;https://twitter.com/#!/mpasternacki/&quot;&gt; Maciej Pasternacki &lt;/a&gt; &lt;a href=&quot;https://twitter.com/xtaran&quot;&gt;Axel Beckert&lt;/a&gt; &lt;a href=&quot;https://twitter.com/#!/smetj/&quot;&gt;Jelle Smet&lt;/a&gt;,   Noa Resare @blippie , John John Tedro @udoprog,  Christian Trabold @ctrabold and obviously some people I missed&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+A good mixture of Fosdem visitors that stayed a litte longer in our cold country and locals with ideas. We had people from TomTom, RedHat , Spotify, Booking.com, Inuits, Atlassian, coming from Belgium, The Netherlands France, Israel, the UK, Sweden, Germany, Poland and Switzerland if I`m not mistaken.&lt;/p&gt;
+&lt;p&gt;The format  was pretty open, much of the first day was spend around  the drawingboard.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/drawingboard.jpg&quot; alt=&quot;people around the drawingboard&quot; /&gt;&lt;br /&gt;
+(Ohad Levy, Jelle Smet, PatrickDebois and Frank Marien) discussing a variety of topics &lt;/p&gt;
+&lt;p&gt;This monitoring topic is complex, there are different areas that need to be covered. The drawing below documents how we splitted the problem into different areas , and listed the different tools people use for these areas.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/componnents.jpg&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Collection: Collectd, Nagios, Ganglia
+&lt;/li&gt;&lt;li&gt; Transport: XMPP, Smiple, Smtp, 0mq , APMQ, rsyslog, irc, stomp
+&lt;/li&gt;&lt;li&gt;Storage : rrd, graphite, opentsdb, hbase,
+&lt;/li&gt;&lt;li&gt;Filtering: logstash, esper,
+&lt;/li&gt;&lt;li&gt;Visualisation : Graphite,
+&lt;/li&gt;&lt;li&gt;Notifcation: PagerDuty
+&lt;/li&gt;&lt;li&gt;Reporting: Jasper
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Obviously above list is far from complete. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/morediscussions.jpg&quot; /&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+The afternoon discussion continued where we left of before lunch, just after the powercut. Only now we started refocussing on filtering and aggregating values using Logstash&lt;br /&gt;
+@patrickdebois had been talking about the idea to use Logstash as a way to collect data , transform it and throw it either to another tool, or onto a Queue before.&lt;br /&gt;
+Looking at Logstash it makes kind of sense.  Logstash already has a zillion of input types, filters and outputs.  Including popular queues such as amqp and zeromq. Yes, the default  behaviour for a lot of people is to  get data from different inputs,  filter it and then send it to ElasticSearch,  but much more  is possible with the available outputs.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://www.krisbuytaert.be/images/logstash.jpg&quot; /&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+It was only on tuesday that people really started writing code&lt;br /&gt;
+So what did really come out of the #monitoringsucks hackfest. ?&lt;/p&gt;
+&lt;p&gt;A couple of people were working on packaging existing tools for their favourite distro. Others were working on integrating a number of other already existing tools (e.g Patrick working on more inputs for Logstash.,  me working on replacing logster with Logstash, setting up Kibana etc. New tools were learned, items were added to todolists (Kibana, (doesn&#039;t work on older Firefox instances)  Tattle, statsd) and items were scratched from todolists  (Graylog2 (Kibana replaces that as a good Frontend for Logstash) )&lt;/p&gt;
+&lt;p&gt;A lot of experiences with different tools were exchanged&lt;/p&gt;
+&lt;p&gt;Frank Marien showed us a demo of his freshly release &lt;a href=&quot;https://extremon.org/&quot;&gt;ExtremeMon&lt;/a&gt; framework.   A really promising project.&lt;/p&gt;
+&lt;p&gt;The sad part about a workshop like this one is that you enter with a bunch of ideas , and leave with even more ideas, hence more work.  We haven&#039;t solved the problem yet, but a lot of more people are now thiking about the problem and how to solve it a more modulare (unix style) approach. With different litte tools, all being good at something and all being interconnectable.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/we-didnt-fix-it#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/extrememon">extrememon</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <pubDate>Thu, 09 Feb 2012 23:03:52 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1060 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

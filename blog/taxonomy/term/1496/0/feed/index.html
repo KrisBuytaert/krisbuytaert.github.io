@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - infracoders</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1496/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Why you shouldn&#039;t hire a devops</title>
+ <link>http://127.0.0.1:8080/blog/why-you-shouldnt-hire-devops</link>
+ <description>&lt;p&gt;Lately there have been a lot of organisations trying to hire a devops engineer.&lt;br /&gt;
+I myselve have been asked to fill in devops roles .. &lt;/p&gt;
+&lt;p&gt;There&#039;s a number of issues with that.&lt;/p&gt;
+&lt;p&gt;The biggest problem is that I always have to ask what exactly the organisation is looking for.&lt;/p&gt;
+&lt;p&gt;So you want a devops engineer with experience in Linux, MongoDB, MySQL and  Java ,  does that mean you want a Java developer who is familiar with MySQL and Linux and breaths a devops Culture.&lt;br /&gt;
+Or a Linux expert who understands Java developers and knows how to tune Mongo and MySQL ?&lt;/p&gt;
+&lt;p&gt;It&#039;s absolutely unclear what you want when you are hiring &quot;A devops engineer&quot;&lt;/p&gt;
+&lt;p&gt;The second problem is that you are trying to hire people who are knowledgeable about  devops, &lt;/p&gt;
+&lt;p&gt;Yet a lot of those people know that you can&#039;t do devops on your own ,  devops is not a jobtitle. devops is not a new devops team you create.   &lt;/p&gt;
+&lt;p&gt;To some of them you are even making a fool out of yourselve,  as to them you show that you don&#039;t understand devops&lt;/p&gt;
+&lt;p&gt;On top .. the ones that do apply for this fancy new devops role, are the ones that might not get the fact that the problem isn&#039;t about tooling but about people working together and helping eachother , so you end up hiring the wrong people.&lt;/p&gt;
+&lt;p&gt;Even in todays devops culture a system engineer is still a system engineer,  and a developer is still a developer.&lt;br /&gt;
+You might have developers supporting the build tool chain, or system engineers focussing on infrastructure automation.&lt;/p&gt;
+&lt;p&gt;But as John said almost 3 years ago &lt;a href=&quot;http://www.krisbuytaert.be/blog/apparently-devops-not-jobtitle#comment-3992&quot;&gt;they are good at their job.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Devops is not a word you slap onto a tool, a team or a person and expect magic to happen &lt;/p&gt;
+&lt;p&gt;Let&#039;s face it .. devops is hard, you can&#039;t do this on your own .. you need to find the right people ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/why-you-shouldnt-hire-devops#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/infracoders">infracoders</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetize">puppetize</category>
+ <pubDate>Wed, 22 May 2013 21:11:15 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1081 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Love, MonitoringLove</title>
+ <link>http://127.0.0.1:8080/blog/love-monitoringlove</link>
+ <description>&lt;p&gt;Last year we were pretty negative about Monitoring, We shouted out that MonitoringSucked ... A year has passed and a lot has changed ... most importantly our new found love for monitoring,  thanks to an inspirational Ignite talk by &lt;a href=&quot;https://twitter.com/ulfmansson&quot; rel=&quot;nofollow&quot;&gt;Ulf Mansson&lt;/a&gt; at devopsdays Rome.&lt;/p&gt;
+&lt;p&gt;Right after Fosdem about 20 people showed up at the #monitoringlove hacksessions hosted at the &lt;a href=&quot;http://www.inuits.eu/&quot; rel=&quot;nofollow&quot;&gt;Inuits.eu&lt;/a&gt; offices to work on Open Source monitoring projects and exchange ideas.   Some completely new people,  some people with already a lot of experience.&lt;/p&gt;
+&lt;p&gt;Amongst the projects that were worked on was Maciej working on  Packaging graphite for Debian, Ohter people were fixing bugs in Puppet  , I spent some time with a  &lt;a href=&quot;https://github.com/krisbuytaert/vagrant-sensu&quot; rel=&quot;nofollow&quot;&gt;vagrant box&lt;/a&gt; to deploy Sensu using Puppet.  Last time I was playing with Sensu was on the flight back from PuppetCon , I gave up the fight with&lt;br /&gt;
+RabbitMQ and SSL because I had no internet connection .. and now Ulf just pointed out that I could disable SSL at all, which resulted in having a POC up and running in no time.&lt;/p&gt;
+&lt;p&gt;Patrick was  hacking on the Chef counterpart of the vagrant-puppet sensu setup a part of &lt;a href=&quot;https://github.com/monigusto&quot; rel=&quot;nofollow&quot;&gt;#monigusto&lt;/a&gt;. Ulf Mansson was getting &lt;a href=&quot;http://shopify.github.com/dashing/&quot; rel=&quot;nofollow&quot;&gt;dashing&lt;/a&gt; to display on a  Raspberry Pi  ... pretty cool stuff&lt;br /&gt;
+And Jelle Smet was working on &lt;a href=&quot;https://github.com/smetj/pyseps&quot; rel=&quot;nofollow&quot;&gt;Pyseps&lt;/a&gt; a Python based Simple Event Processing Server framework that  consume JSON docs from RabbitMQ and forwards them real time to other queues using MongoDB query syntax.&lt;/p&gt;
+&lt;p&gt;One of the more interesting discussion was around the topic of  alerting and modeling business rules and input from a lot of different sources&lt;br /&gt;
+in order to send the right alerts to the right people. &lt;/p&gt;
+&lt;p&gt;We explored different ideas like using BPM tools such as Activity or Rules engines like Ruby Rools. There exist some Saas providers that try to solve this need like PagerDuty and friends but obviously there is still a lot of work that needs to be done in order to create a viable alerting system based on different input sources.&lt;/p&gt;
+&lt;p&gt;The monitoring problem is not solved yet .. and it will stay around for a couple of years .. but with the advent of event such as &lt;a href=&quot;http://monitorama.com/&quot; rel=&quot;nofollow&quot;&gt;Monitorama&lt;/a&gt; its clear&lt;br /&gt;
+that an event like our #monitoring love hackessions is needed .. and is probably here to stay for a couple of years.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/love-monitoringlove#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/infracoders">infracoders</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/sensu">sensu</category>
+ <pubDate>Wed, 13 Feb 2013 17:10:32 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1077 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

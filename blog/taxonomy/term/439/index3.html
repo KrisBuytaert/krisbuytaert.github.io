@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/taxonomy/term/439?page=3 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:25:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>puppet | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - puppet" href="0/feed/index.html" />
+<link rel="shortcut icon" href="../../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/taxonomy/taxonomy/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-taxonomy one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../../faq/index/index.html">FAQ</a> and  <a href="../../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../../index/index.html">Home</a></div></div>
+  <h2 id="title">puppet</h2>
+<div class="content">
+<div id="node-1025" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-12-18T22:23:39+01:00">
+  <span class="month">Dec</span>
+  <span class="day">18</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../../guest-post-season/index.html">Guest Post Season</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1158 first"><a href="../../../category/chef/index.html" rel="tag" title="">chef</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_437"><a href="../437/index.html" rel="tag" title="">dnsproblem</a></li>
+<li class="taxonomy_term_599"><a href="../599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1433 last"><a href="../../../category/sysadvent/index.html" rel="tag" title="">sysadvent</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Apparently December is the month where everybody starts writing guest posts for other blogs.</p>
+<p>Earlier this month I wrote an article with the title of this blog for Sysadvent ,</p>
+<p><cite>It's a sysadmin relative of the Perl Advent Calendar: One article for each day of December, ending on the 25th article. With the goals of of sharing, openness, and mentoring, we aim to provide great articles about systems administration topics written by fellow sysadmins<br />
+</cite></p>
+<p>My article is <a href="http://sysadvent.blogspot.com/2010/12/day-8-everything-is-dns-problem.html" rel="nofollow">here</a>, but there's plenty more other articles written about a variety of topics, such as chef, tcpdump , how ls works, cucumber and Devops.</p>
+<p>On the other side, Matthias over at Agile Web Development and Operations is hosting a series on Devops where lots of Devops Advocates and Evangelists are having their say about Devops ...</p>
+<p>My entry about the Challenges the Devops Crowd faces was put online <a href="http://www.agileweboperations.com/challenges-for-the-devops-crowd" rel="nofollow">yesterday</a></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../guest-post-season/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-1022" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-11-04T00:07:18+01:00">
+  <span class="month">Nov</span>
+  <span class="day">04</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../../high-availability-mysql-cookbook-review/index.html">High Availability MySQL Cookbook , the review</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1430 first"><a href="../../../category/cobbler/index.html" rel="tag" title="">cobbler</a></li>
+<li class="taxonomy_term_899"><a href="../899/index.html" rel="tag" title="">drbd</a></li>
+<li class="taxonomy_term_449"><a href="../449/index.html" rel="tag" title="">ha</a></li>
+<li class="taxonomy_term_475"><a href="../475/index.html" rel="tag" title="">heartbeat</a></li>
+<li class="taxonomy_term_562"><a href="../562/index.html" rel="tag" title="">linux-ha</a></li>
+<li class="taxonomy_term_458"><a href="../458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_1336"><a href="../../../category/pacemaker/index.html" rel="tag" title="">pacemaker</a></li>
+<li class="taxonomy_term_439 last active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>When I read on the internetz that Alex Davies was about the publish a <a href="https://www.packtpub.com/high-availability-mysql-cookbook/book" rel="nofollow">Packt book on MySQL HA</a>  I pinged my contacts at Packt and suggested that I'd review the book .</p>
+<p>I've ran into <a href="https://sites.google.com/a/davz.net/alex-davies/" rel="nofollow">Alex</a> at some UKUUG conferences before and he's got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.</p>
+<p>Alex starts of with a couple of indepth chapters on MySQL Cluster,  he does mention that it's not a fit for all problems, but I'd hoped he did it a bit more prominently ...    an upfront chapter outlining the different approaches and when which approach is a match could have been better.    The avid reader now might be 80 pages into MySQL cluster before he realizes it's not going to be a match for his problem.</p>
+<p>I really loved the part where Alex correcly mentions that you should probably be using Puppet or so to manage the config files of your environment, rather than scp them around your different boxes ..</p>
+<p>Alex then goes on to describe setting up MySQL replication and Multi Master replication with the different approaches one can take here,  he gives some nice tips on using LVM to reduce the downtime of your MySQL when having to transfer the dataset of an already existing MySQL setup, good stuff.</p>
+<p>He then goes on to describe MySQL with shared storage ...   if you only mount your redundant sandisk once on your MySQL nodes my preference would probably be a Pacemaker stack  rather than a RedHat Cluster based setup,  but his setup seems to work too.   Alex quickly touches on using GFS to have your data disk mounted simultaneously on both nodes (keep in mind with only 1 active MySQLd)  and then goes on to describe a full DRBD based MySQL HA setup</p>
+<p>The last chapter titled Performance tuning gives some very nice tips on both tuning your regular storage, as your<br />
+GFS setup but also the tuning parameters for MySQL Cluster</p>
+<p>I was also really happy to see the Appendixes on the basic installation where he advocates the use of Cobbler , Kickstart and LVM ..</p>
+<p>One of the better books I read the past couple of years .. certainly the best book from Packt so far , I hope there is more quality stuff coming from that direction !</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../high-availability-mysql-cookbook-review/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1019" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-10-30T16:35:01+02:00">
+  <span class="month">Oct</span>
+  <span class="day">30</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../../puppet-broke-my-xen/index.html">Puppet broke my Xen</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1426"><a href="../../../category/shebang/index.html" rel="tag" title="">shebang</a></li>
+<li class="taxonomy_term_470 last"><a href="../470/index.html" rel="tag" title="">xen</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Actually it didn't , but now I got your attention.<br />
+We just adopted the use of  adding headers to all of our files that are managed by puppet so people will know not to touch it</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  file {</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                &quot;/etc/xen/scripts/network-custom-vlan-bridges&quot;:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                        owner =&gt; &quot;root&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                        group =&gt; &quot;root&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                        mode =&gt; &quot;0755&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                        content =&gt; template(</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                                &quot;headers/header-hash.erb',</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                                &quot;xen/co-mmx-network-custom-vlan-bridges.erb&quot;);</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        }</div></li></ol></pre></div></p>
+<p>All worked nice however  upon bootstrapping our Xen host the bridges stopped working ..     running the network-custom-vlan-bridges script manually  solved everything and created the appropriate bridges.  But at boottime it didn't.. </p>
+<p>I added some debug info to the script and figured it never got executed at boot time.</p>
+<p>Turns out that when I removed the headers Xen actually does configure the bridges at boot time, Xen probably checks for a shebang at the beginning of the file.</p>
+<p>Putting the header at the end of the file therefore solved the problem. ,</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../puppet-broke-my-xen/index.html#comments" title="Jump to the first comment of this posting.">8 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1008" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-06-01T23:10:29+02:00">
+  <span class="month">Jun</span>
+  <span class="day">01</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../../beaker-devops/index.html">@Beaker on #Devops</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1179 first"><a href="../../../category/cfengine/index.html" rel="tag" title="">cfengine</a></li>
+<li class="taxonomy_term_1158"><a href="../../../category/chef/index.html" rel="tag" title="">chef</a></li>
+<li class="taxonomy_term_1401"><a href="../../../category/cim/index.html" rel="tag" title="">cim</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1402"><a href="../../../category/dtmf/index.html" rel="tag" title="">dtmf</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1373 last"><a href="../../../category/secops/index.html" rel="tag" title="">SecOPS</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://www.rationalsurvivability.com/blog/?p=1890" rel="nofollow">Yesterday</a> @beaker posted his ideas on the #devops movement ...</p>
+<p>Apparently we haven't been stressing enough on the fact that it isn't just about Devs and Ops,<br />
+So let me <a href="http://www.krisbuytaert.be/blog/devops-secops-dbaops-netops">repeat</a> it's not just about Devs and Ops, it's about breaking silo's , about being good at our jobs, about getting conversation started, about talking to different stakeholders in the processes .  We are absolutely trying to include all groups, not exclude some.</p>
+<p>@beaker also seems to have seen many presentations where <cite>developers are shown to have evolved in practice and methodology, but operators (of all kinds) are described as being stuck in the dark ages. </cite>   , is that a different point of view on another continent \,  on this side of the Atlantic, it's mostly the Ops people that are already using agile methods spreading the word and it  isn't about Devs talking about Deopvs yet.  It's actually mostly the ops spreading the word because they feel most of the pain .</p>
+<p>Hoff also wonders about routers switches firewall and all the other boxen where we aren't running puppet or chef on , the boxes that are left out of our fully automated environments .<br />
+Indeed, Puppetcamp Europe once again woke up the discussion on how to tackle these boxen,  the lack of use of  existing standards was covered .. and some mentioned that CIM and family are pretty much death or irrelevant for real life usage  , both the Puppet and Chef communities are working on manifest, modules and recipes to solve the issues.</p>
+<p>But the good thing is that we now have the security people involved too, maybe they'll figure out how to survive longer than 6 months in a CSO position if they talk to the others and come out of their Ivory towers :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../beaker-devops/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-1007" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-06-01T21:59:41+02:00">
+  <span class="month">Jun</span>
+  <span class="day">01</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../../puppetcamp-europe-2010/index.html">PuppetCamp Europe  2010</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1400 first"><a href="../../../category/configuration-mgmt/index.html" rel="tag" title="">configuration mgmt</a></li>
+<li class="taxonomy_term_1398"><a href="../../../category/curry/index.html" rel="tag" title="">curry</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_908"><a href="../908/index.html" rel="tag" title="">ghent</a></li>
+<li class="taxonomy_term_1399"><a href="../../../category/jruby/index.html" rel="tag" title="">jruby</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1363"><a href="../../../category/puppetcamp/index.html" rel="tag" title="">puppetcamp</a></li>
+<li class="taxonomy_term_441"><a href="../441/index.html" rel="tag" title="">ruby</a></li>
+<li class="taxonomy_term_1397 last"><a href="../../../category/zebrastraat/index.html" rel="tag" title="">zebrastraat</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Last week was pretty heavy on conferences for me.  On wednesday I had to give my <a href="http://www.krisbuytaert.be/blog/building-virtual-apliances">Building Virtual Appliances</a> talk at the at the Sizing Server event  on Advanced Virtualization and Hybrid Cloud Computing ,  but the most important part of the week was the first edition of Puppetcamp Europe.</p>
+<p>When the first ideas about PuppetCamp Europe  started  I asked Luke when and where it'd be held.  He replied that I should know as I was supposed to organise it...  I thanked for the honour , he went on to ask <a href="http://jedi.be/blog/" rel="nofollow">Patrick</a> , he accepted ... I hope I helped him out enough :)    I even handed out a personal invitation to some of the  most famous configuration mgmt people on this planet and <a href="http://www.inuits.be/">Inuits</a> sponsored the event too</p>
+<p>Luke started with the opening talk,  talking about the future and past of puppet , about version numbers, 2.6 does sound familiar and stable doesn't it, about <a href="http://forge.puppetlabs.com/" rel="nofollow">forge.puppetlabs.com</a><br />
+During @puppetmasterd 's  talk @kartar played Bugmaster which was great and almost realtime</p>
+<p>The real fun started with the Open Spaces ...  after everybody presented themselves, a mix of usual  suspects, first timers and oldskoolers from irc #puppet that finally got faces,      different sessions were proposed, ranging from Puppet 101, Alternative Puppet Architectures,  Puppet HA,  MultiMaster Puppet to Dating for PuppetMasters  </p>
+<p>Over the 2 days spread the open space different ideas came up on e.g how to scale puppet.    Different people are letting their puppetclients run from cron in batches,  but probably the weirdest idea I heard was to run Puppet in Jruby in order to speed it up.</p>
+<p>Lots of talk on certificates and how to solve the pains with them .. e.g like in a HA setup .. you need to create an authority chain  .. there was also talk about having a<br />
+--trust-my-network   feature that would disable certificates,  Luke was open to accepting such a patch, or a patch that would make the whole certificate setup more pluggable<br />
+That would for sure be a feature a lot of people would want to use ..</p>
+<p>The thurday evening conference dinner was "Stoofvlees met Frieten" for most of us .. but for me it was a London Devops Curry in Gent, with @unixdaemon @ripienaar  and some others ;)       </p>
+<p>But with lots of interesting chatter, free beer and  free icecream  there's for sure going to be another similar event in Europe next year ..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../puppetcamp-europe-2010/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-998" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-04-20T21:43:05+02:00">
+  <span class="month">Apr</span>
+  <span class="day">20</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../../linux-open-administration-days-2010/index.html">Linux Open Administration Days 2010</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1179 first"><a href="../../../category/cfengine/index.html" rel="tag" title="">cfengine</a></li>
+<li class="taxonomy_term_1158"><a href="../../../category/chef/index.html" rel="tag" title="">chef</a></li>
+<li class="taxonomy_term_455"><a href="../455/index.html" rel="tag" title="">conference</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_449"><a href="../449/index.html" rel="tag" title="">ha</a></li>
+<li class="taxonomy_term_1395"><a href="../../../category/load/index.html" rel="tag" title="">load</a></li>
+<li class="taxonomy_term_1386"><a href="../../../category/loadays/index.html" rel="tag" title="">loadays</a></li>
+<li class="taxonomy_term_458"><a href="../458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_1394"><a href="../../../category/mysql-ha/index.html" rel="tag" title="">mysql ha</a></li>
+<li class="taxonomy_term_439 last active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So about 4 monts ago <a href="http://blog.bdesmet.be/?p=272" rel="nofollow">there was the crazy idea</a> to start a new FOSS event in Belgium targeted  at sysadmins.</p>
+<p>What started out as an event for local people to meet local people with some local speakers actually ended up being a small local event with some top international speakers on onfiguration mananagement and system administration mixed with a bunch of good local ones !</p>
+<p>I had the honour to open the conference with an extremely short version of the Devops talk I gave earlier last year..  extremely short as I knew that over the course of the weekend the topic would reoccur a lot.</p>
+<p>We had the first european talk on <a href="http://wiki.opscode.com/display/chef/Home" rel="nofollow">Chef</a>, by Joshua Timberman,  and we had Puppet talks amongst by Dan Bode from Puppetlabs and CFengine talks ,  devops was a frequently dropped word,</p>
+<p>We had a book raffle where we handed out O'Reilly's .. we had a great free pizza party (got the idea from the saturday pizza event at LCA 2005) ,  and we had some free beer.      Sounds like a good combination for a geeky weekend.</p>
+<p>Apart from the regular talks there were plenty of Open Spaces where interesting topics were discussed ... we had spaces on Open Source vs Open Core , strong voices were heard when we discussed what we should do with the Open Core companies that claim to value Open Source , some people think we should actually list the fauxpensource ones somewhere and make sure the world knows about them</p>
+<p>We had an awesome configuration management discussion session  discussing Chef vs Puppet vs CFengine . And much much more ...</p>
+<p>Some people owe me plenty of Sushi as I had to do my MySQL HA talk before their Managing MySQL talk  , but other than that .. things just went fine..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-997" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-04-07T19:16:20+02:00">
+  <span class="month">Apr</span>
+  <span class="day">07</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../../ukuug-spring-conference-2010/index.html">UKUUG Spring Conference 2010</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_455 first"><a href="../455/index.html" rel="tag" title="">conference</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_449"><a href="../449/index.html" rel="tag" title="">ha</a></li>
+<li class="taxonomy_term_562"><a href="../562/index.html" rel="tag" title="">linux-ha</a></li>
+<li class="taxonomy_term_1393"><a href="../../../category/manchester/index.html" rel="tag" title="">manchester</a></li>
+<li class="taxonomy_term_458"><a href="../458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1392"><a href="../../../category/simon/index.html" rel="tag" title="">simon</a></li>
+<li class="taxonomy_term_427 last"><a href="../427/index.html" rel="tag" title="">ukuug</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Last week I was in Manchester for the 2010 UKUUG Spring Conference, right .. make that 2 weeks ago , :) </p>
+<p>The UKUUG usually hosts the more interesting conferences around ... , it's not just the schedule that attrackts me , yes there's the strong focus towards Larger Scale Unix (and mostly Linux) deployments and how to manage them, but there's also the opportunity to chat in real life with the Devops from across the chunnel.</p>
+<p>Spending time with <a href="http://www.devco.net/">R.I.Pienaar</a>, <a href="http://www.build-doctor.com/2010/03/26/ukuug-spring-conference-2010/">Julian Simpson</a>,  <a href="http://twitter.com/simonxwilkinson">Simon Wilkinson</a> , <a href="https://sites.google.com/a/davz.net/alex-davies/">Alex Davies</a> , <a href="http://database-explorer.blogspot.com/">Simon Riggs</a> , Josette, and many others is always fun .</p>
+<p>As I was in town early I went to the preconference beer meetup and met with a lot of people and chatted about config management, virtualization   and lots of other stuff ...  after the pub the plan was to go for curries nearby .. and while walking to the , ahem  Bus stop, I managed to recognise <a href="http://monkeyiq.blogspot.com/">Ben Martin</a> from meeting him back ages ago in Hamburg for LinuxKongress , always fun ..</p>
+<p>Apart from having to jump on a bus and our group being split at the curry place , rather than being able to tell the latecomers where to walk to and being seeted upstairs with the whole group , the curries were interesting and fun.</p>
+<p>As I had been pushing <a href="http://blog.gardeviance.org/">Simon Wardley</a> on Twitter to submit a talk for the conference it was really great to finally see him present ..  His talk was the perfect soft introduction to the conference ...</p>
+<p>Simon's talk  was followed   by a talk on Security for the virtual datacenters,  after I questionned the speaker  if anyone actualy uses TPM outside an academic lab the talk suddenly changed into a commercial presentation for a Quack, nuff said.</p>
+<p>The Ever energetic <a href="http://www.shadowcat.co.uk/blog/matt-s-trout/">Matt S Trout</a> talked about 21st century perl before Simon "Life is to short for SELinux" Wilkinson talked about his experiences in getting the openAFS crowd  on Git.</p>
+<p>Bummer Thierry Carrez didn't show us the real juice of UEC and just the installations of  a Cloud Controller and a Node Controller , but he managed to do so in approx 30 minutes as promised .</p>
+<p>A talk titled Coherent and Integrated Configuration of Virtual Infrastructures always cathces my eye.. however when that talk turns out to be a Coherent and Integrated configuration only within the Univerity of Edinborough  (aka lcfg2) talk I`m dissapointed,  specially since it pretty  much didn't introduce any new concepts from the ones I introduced back in  my Durham UKUUG presentation</p>
+<p>Luckily Andrew Stribblehill gave a very interesting talk on MySQL scalability,  in which I promised him some answers to his questions for the next day :)</p>
+<p>The Conference dinner was without a doubt the best UKUUG dinner so far ,  no typical english "food",  no weird location (Old Trafford, an abandoned warship) , but just a big chinese place and plenty of food !</p>
+<p>I started thurday morning in the wrong track,  I assumed to be in the Virtualization track, but I ended up in the Sun thinclient and Abusing Linux to serve weird desktops under the Green computing umbrella track, not my favourites ..</p>
+<p>When Patrick and Julian started their Hudson hit my Puppet with a Cucumber talk (which featured some aweseom #devops content) I was a afraid that we'd had to look for a replacment PostgreSQL talk as Simon hadn't arrived yet ..  Luckily he arrived in time for his presentation and he explained us about the new replication features that are slowly making it into PostgreSQL,   one way ... log shipping ...  not really up to par with other alternatives yet :(</p>
+<p>So with no further ado .. here's the presentation I gave</p>
+<div style="width:425px" id="__ss_3582666"><strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/KrisBuytaert/mysql-ha-with-pacemaker" title="MySQL HA with  PaceMaker">MySQL HA with  PaceMaker</a></strong>
+<object width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mysql-pacemaker-100329022737-phpapp01&amp;stripped_title=mysql-ha-with-pacemaker" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mysql-pacemaker-100329022737-phpapp01&amp;stripped_title=mysql-ha-with-pacemaker" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="padding:5px 0 12px">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/KrisBuytaert">Kris Buytaert</a>.</div>
+</div>
+<p>PS.  If at a Ukuug event and not sure about a person's name ... try Simon.. pretty good chance you're correct :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../ukuug-spring-conference-2010/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-995" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-03-30T22:59:34+02:00">
+  <span class="month">Mar</span>
+  <span class="day">30</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../../11-days-till-loadays/index.html">11 days till Loadays</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_492 first"><a href="../492/index.html" rel="tag" title="">antwerp</a></li>
+<li class="taxonomy_term_1158"><a href="../../../category/chef/index.html" rel="tag" title="">chef</a></li>
+<li class="taxonomy_term_455"><a href="../455/index.html" rel="tag" title="">conference</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1386"><a href="../../../category/loadays/index.html" rel="tag" title="">loadays</a></li>
+<li class="taxonomy_term_461"><a href="../461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_533 last"><a href="../533/index.html" rel="tag" title="">wilrijk</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>That's right .. only 11 more ...<br />
+The <a href="http://www.loadays.org/schedule" rel="nofollow">schedule</a> looks promising, there will be some devops juice,  some open spaces, some tutorials, som regular talks .. it really looks promising ...  the schedule is packed ,</p>
+<p>Apart from the talks, tutorials and open spaces there's also the<br />
+Pizza party and the Beer event on saturday ...</p>
+<p>No need to register .. just show up ..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-990" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-03-03T21:55:38+01:00">
+  <span class="month">Mar</span>
+  <span class="day">03</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../../apparently-devops-not-jobtitle/index.html">Apparently Devops is not a JobTitle</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_439 last active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Devops, Devops, Devops,  everybody talks about it but we're still defining it ...</p>
+<p>There's so many different interpretations possible for the term Devops , It's automated infrastructure, it's agile infrastucture, it's getting devs and ops closer to eachother, it's briding the gap between devs and ops , it's agile system administration, it's the movement , it's the mindset , it's the spirit.</p>
+<p>Lots of people,  lots of opinions ..  Indeed some people have been doing this kind of work for ages, some claim the cloud is what makes devops become visible (but we've been doing cloud since before the cloud marketeers called it cloud)</p>
+<p>Some define the devop as a European based , open source backgrounded , thirtysomething senior sysadmin , or should I say infrastructure architect , originated concept .  Others claim it's developers gone sysadmin gone partly developer again ..</p>
+<p>But it seems like  <a href="http://dev2ops.org/blog/2010/2/22/what-is-devops.html" rel="nofollow">lots</a> of people claim that Devops is more about the team, not about the unique individual doing a job.   </p>
+<p>You'll  have to agree however that our jobs are significantly  different from the system adminstration type jobs you'll find at the average IT department.   With that in mind: How shall we call this breed of people cooking up chef stuff, playing the puppeteer or cranking up the CFEngines ? </p>
+<p>And no I don't like Devministrator :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../apparently-devops-not-jobtitle/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-987" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-02-16T21:20:13+01:00">
+  <span class="month">Feb</span>
+  <span class="day">16</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../../packaging-drupal-modules-or-not/index.html">Packaging Drupal Modules  or not ?</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1371 first"><a href="../../../category/apt-get/index.html" rel="tag" title="">apt-get</a></li>
+<li class="taxonomy_term_480"><a href="../480/index.html" rel="tag" title="">centos</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_484"><a href="../484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_472"><a href="../472/index.html" rel="tag" title="">rpm</a></li>
+<li class="taxonomy_term_473 last"><a href="../473/index.html" rel="tag" title="">yum</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So <a href="http://bitfieldconsulting.com/puppet-drupal" rel="nofollow">John</a> wrote down his experiences on deploying Drupal sites with Puppet .</p>
+<p>It's not a secret that I've been thinking about similar stuff and how I could get to the best possible setup.</p>
+<p>John starts of with using Puppet to download Drush... while I want to use <a href="http://repo.inuits.be/centos/5/os/noarch/drush-All-Versions-2.1-1.noarch.rpm" rel="nofollow">rpm</a>  for that ...</p>
+<p>I want my core infrastructure to be fully packaged... not downloaded and untarred.  I want to be able to reproduce my platform in a couple of months , with the exact same versions I`m using now .. not with the version that happens to be on ftp.drupal.org at that point in time, or with ftp.drupal.org being down.</p>
+<p>Now the next question off course is what's the core infrastructure.<br />
+Where does the infrastructure end and does the application start. There's little discussion about having a  puppet created vhost ,  an apache conf.d file, a matching .htaccess file if wanted , and the appropriate settings.php for a multisite drupal config.</p>
+<p>There's also little doubt to me on using drush to run the updates, manage the drupal site etc . Reading John's  article made me think some further about what and when I want things packaged. </p>
+<p>John's post lead to a discussion on #infra-talk on getting all drupal modules packaged for Centos with <a href="http://www.karan.org/blog/" rel="nofollow">Karan</a> and some others</p>
+<p>In a development environment I probably want to have periodic drush updates getting the latest modules from the interwebs and potentially breaking my devs code.   But making sure that when you put a site in production it will be on a fairly up to date platform, and not on the platform you started developing on 24 months ago.</p>
+<p>In a production environment however you  only want tested updates of your modules as indeed they will break code.</p>
+<p>It's probably going to be a mix and match setup having a local rpm/deb repo with packaged  modules that have been tested and validated in your setup  and using drush to enable  or configure them for that  production setup.</p>
+<p>But also having a CI environment wher Drush will get the new modules from the interwebs when needed.  and package them for you.</p>
+<p>To me that sounds beter than getting all the available Drupal modules and packaging them, even automated, and preparing a repository of those modules of which only a small percentage will actually be used by people.</p>
+<p>But I need to think about it some more :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../packaging-drupal-modules-or-not/index.html#comments" title="Jump to the first comment of this posting.">5 comments</a></li>
+</ul></div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="index2.html?page=2" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-item"><a href="index.html" title="Go to page 1" class="active">1</a></li>
+<li class="pager-item"><a href="index1.html?page=1" title="Go to page 2" class="active">2</a></li>
+<li class="pager-item"><a href="index2.html?page=2" title="Go to page 3" class="active">3</a></li>
+<li class="pager-current">4</li>
+<li class="pager-item"><a href="index4.html?page=4" title="Go to page 5" class="active">5</a></li>
+<li class="pager-item"><a href="index5.html?page=5" title="Go to page 6" class="active">6</a></li>
+<li class="pager-next"><a href="index4.html?page=4" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="index5.html?page=5" title="Go to last page" class="active">last »</a></li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/taxonomy/term/439?page=3 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:25:50 GMT -->
+</html>

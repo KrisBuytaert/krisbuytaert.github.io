@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/taxonomy/term/458?page=4 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:31:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mysql | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - mysql" href="0/feed/index.html" />
+<link rel="shortcut icon" href="../../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/taxonomy/taxonomy/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-taxonomy one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../../faq/index/index.html">FAQ</a> and  <a href="../../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../../index/index.html">Home</a></div></div>
+  <h2 id="title">mysql</h2>
+<div class="content">
+<div id="node-842" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-12-19T19:38:33+01:00">
+  <span class="month">Dec</span>
+  <span class="day">19</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../mysql-51-fedora-10/index.html">MySQL 5.1 on Fedora 10  </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1128 first"><a href="../../../category/fedora10/index.html" rel="tag" title="">fedora10</a></li>
+<li class="taxonomy_term_458 active"><a href="index.html" rel="tag" title="" class="active">mysql</a></li>
+<li class="taxonomy_term_599 last"><a href="../599/index.html" rel="tag" title="">opensource</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So I wanted a fresh MySQL 5.1 release on my Fedora 10 box.<br />
+Fedora comes with a mysql 5.0 package and the MySQL community packages for 5.1 conflict with that in different ways.  (to start with MySQL vs mysql)</p>
+<p>For some weird reason libmysqlclient (in mysql-libs) is required by redland, which is required by openoffice.org-core.   I probaly never need the RDF funtionalities that redland provides me but I`m stuck with them anyhow.</p>
+<p>So <a href="http://lefred.be/">Fred</a>  pointed me to<br />
+<a href="http://rpms.famillecollet.com/fc10.x86_64/repoview/mysql-server.html" rel="nofollow"><br />
+Remi repo for mysql 5.1</a></p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">yum --enablerepo remi install  mysql-server</div></li></ol></pre></div></p>
+<p>Now gives me a very nice MySQL 5.1 to play around with.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../mysql-51-fedora-10/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-839" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-12-18T22:14:23+01:00">
+  <span class="month">Dec</span>
+  <span class="day">18</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../free-beer-planetgrepbe-meetup/index.html">Free Beer, planet.grep.be Meetup</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_484 first"><a href="../484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_1033"><a href="../1033/index.html" rel="tag" title="">free beer</a></li>
+<li class="taxonomy_term_1123"><a href="../../../category/meetup/index.html" rel="tag" title="">meetup</a></li>
+<li class="taxonomy_term_458 active"><a href="index.html" rel="tag" title="" class="active">mysql</a></li>
+<li class="taxonomy_term_461"><a href="../461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_976 last"><a href="../976/index.html" rel="tag" title="">planet.grep.be</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://planet.grep.be/" rel="nofollow">planet.grep.be</a> today has a lot of active open source users and contributors.<br />
+The weird thing is that we never meet apart from Fosdem.<br />
+Yes, we occasionally run into eachother at other events but there's not enough beer involved.</p>
+<p>I've had different people ask me  what and where are the Open Source gatherings in Belgium,   and we must admit that apart<br />
+from Fosdem there isn't that much in our little country.</p>
+<p>There were a couple of MySQL User Group events, some Drupal ones, some LUG had meetings altough I have the idea most of them have dried out :(  </p>
+<p>So I have this crazy idea of  inviting you all to grab a beer, maybe even  free beer :) on december 29 some in a pub in Antwerp </p>
+<p>I`m open for suggestions on good locations.</p>
+<p>Oh and everybody is welcome, both readers and writers :) </p>
+<p>PS.  Yes I know that some of you will be drinking in Berlin at that time .. we'll drink an extra one for you.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../free-beer-planetgrepbe-meetup/index.html#comments" title="Jump to the first comment of this posting.">12 comments</a></li>
+</ul></div>
+</div>
+<div id="node-838" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-12-07T22:44:10+01:00">
+  <span class="month">Dec</span>
+  <span class="day">07</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../cck-views-my-first-experiences/index.html">CCK &amp; Views, My First Experiences </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1121 first"><a href="../../../category/cck/index.html" rel="tag" title="">cck</a></li>
+<li class="taxonomy_term_484"><a href="../484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_458 active"><a href="index.html" rel="tag" title="" class="active">mysql</a></li>
+<li class="taxonomy_term_1122 last"><a href="../../../category/views/index.html" rel="tag" title="">views</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>and probably my last one .. </p>
+<p>I <a href="http://www.krisbuytaert.be/blog/migrate-multisite-and-restyle">mentioned </a> a couple of weeks ago that I was looking into a way of converting my static page with published papers, articles and presentations in a more dynamic page where I could create RSS feeds from the updates and feed them into <a href="http://www.inuits.be/">another site</a> for everybody to use.</p>
+<p>Some people suggested that I'd have a look at CCK &amp; Views for this. While up till now when creating an app I had usually written my own Drupal module with my own database schema and manually written  SQL Queries.  This indeed looked like  the perfect opportunity to dig into the CCK and Views thingie.</p>
+<p>Now I must admit that <a href="http://www.krisbuytaert.be/pics/hybernate.jpg">I`m not really fond</a> of "generated queries"</p>
+<p>I've had nightmares before when having to debug 2Mb Hibernate queries that could be reduced  to a single select value from table where query but Hibernate used a zillion join on tables I didn't need.<br />
+So I was a bit afraid of what Views would do ..</p>
+<p>So here's what happened, I created 2 pages ..  presentations. and publications.  Personally I'd go for 1 table each with some smart indexes and then the only thing you want is   SELECT  * FROM table ORDER BY  date</p>
+<p>Now if I'd create a special content type for this I probably get some more benefits.<br />
+And I could get the data from the tables with a rather simple query like this :<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">SELECT  node.nid,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        content_type_presentation.field_datum_value,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        content_type_presentation.field_location_value,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        content_type_presentation.field_country_value  ,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        content_type_presentation.field_event_link_title,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        content_type_presentation.field_event_link_url</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> FRON content_type_presentation, node</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> WHERE node.type=&quot;presentation&quot; AND node.nid = content_type_presentation.nid</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> ORDER BY  content_type_presentation.field_datum_value desc;</div></li></ol></pre></div></p>
+<p>However when using Views , this is what is being created. </p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">SELECT DISTINCT(node.nid) AS nid,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.field_datum_value AS node_data_field_country_field_datum_value,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.nid AS node_data_field_country_nid,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node.type AS node_type,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.field_event_link_url AS node_data_field_country_field_event_link_url,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.field_event_link_title AS node_data_field_country_field_event_link_title,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.field_event_link_attributes AS node_data_field_country_field_event_link_attributes,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.field_location_value AS node_data_field_country_field_location_value,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_country.field_country_value AS node_data_field_country_field_country_value,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_link.field_link_url AS node_data_field_link_field_link_url,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_link.field_link_title AS node_data_field_link_field_link_title,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_link.field_link_attributes AS node_data_field_link_field_link_attributes,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   node_data_field_link.nid AS node_data_field_link_nid</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> FROM node node</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> LEFT JOIN content_type_presentation node_data_field_country ON node.vid = node_data_field_country.vid</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> LEFT JOIN content_field_link node_data_field_link ON node.vid = node_data_field_link.vid</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> WHERE UPPER(node_data_field_country.field_country_value) != UPPER('')</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   ORDER BY node_data_field_country_field_datum_value DESC</div></li></ol></pre></div></p>
+<p>So there's some joins, a zillion more fields that I don't really need being fetched from my database.<br />
+The explain also tells me some interesting things.. like the Using temporary AND Using Filesort</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">| id | select_type | table                   | type   | possible_keys | key     | key_len | ref                                       | rows | Extra                                        |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">+----+-------------+-------------------------+--------+---------------+---------+---------+-------------------------------------------+------+----------------------------------------------+</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">|  1 | SIMPLE      | node_data_field_country | ALL    | PRIMARY       | NULL    | NULL    | NULL                                      |   33 | Using where; Using temporary; Using filesort |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">|  1 | SIMPLE      | node                    | eq_ref |vid           | vid     | 4       |buytaert_blog.node_data_field_country.vid |    1 |                                              |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">|  1 | SIMPLE      | node_data_field_link    | eq_ref | PRIMARY       | PRIMARY | 4       | buytaert_blog.node.vid                    |    1 |                                              |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">+----+-------------+-------------------------+--------+---------------+---------+---------+-------------------------------------------+------+----------------------------------------------+</div></li></ol></pre></div></p>
+<p>Now my simpler query uses the same amount of rows to return the result but doesn't build a temporary table.<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">+----+-------------+---------------------------+------+-----------------------+------+---------+---------------------------------------------+------+----------------+</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">| id | select_type | table                     | type | possible_keys         | key  | key_len | ref                                         | rows | Extra          |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">+----+-------------+---------------------------+------+-----------------------+------+---------+---------------------------------------------+------+----------------+</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">|  1 | SIMPLE      | content_type_presentation | ALL  | nid                   | NULL | NULL    | NULL                                        |   33 | Using filesort |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">|  1 | SIMPLE      | node                      | ref  | PRIMARY,node_type,nid | nid  | 4       | buytaert_blog.content_type_presentation.nid |    1 | Using where    |</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">+----+-------------+---------------------------+------+-----------------------+------+---------+---------------------------------------------+------+----------------+</div></li></ol></pre></div></p>
+<p>In this small example there isn't much  difference in performance to be noticed, but with bigger tables you will see other results. However I still prefer my personal query approach.</p>
+<p>The other thing that bugs me is the excessive use of aliases.  The MySQL internal experts can shed a light on the performance impact of using them, but if you are running queries remotely you at least have an increase in bandwidth usage.  Not a problem now,  but who knows later when you are big and famous :)</p>
+<p>Now Drupal seems to do it pretty ok .. it's aliasing table.field to table_field which still makes sense.  Not unlike some other tools that alias table.field to dynamically_generated_unreproducable_unreadable_key_word_with_no_relevant_meaning , try debugging that for a change.   And yes I see valuable use for resultset aliasing, but I also se it is often overused.</p>
+<p>But the short summary ... given my background  I prefer writing the module and crafting my own queries over having Views create<br />
+a query for me.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../cck-views-my-first-experiences/index.html#comments" title="Jump to the first comment of this posting.">11 comments</a></li>
+</ul></div>
+</div>
+<div id="node-836" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-12-06T10:42:56+01:00">
+  <span class="month">Dec</span>
+  <span class="day">06</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../eclipse-sun/index.html">The Eclipse of Sun</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_458 first active"><a href="index.html" rel="tag" title="" class="active">mysql</a></li>
+<li class="taxonomy_term_461"><a href="../461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_488"><a href="../488/index.html" rel="tag" title="">sun</a></li>
+<li class="taxonomy_term_1046 last"><a href="../1046/index.html" rel="tag" title="">virtualbox</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>If you've been reading this blog for a while you'll know that<br />
+for the past decade I've had a love-hate relation ship with Sun.     </p>
+<p>Sun has done a lot of good things in their open source journey  such as MySQL, openOffice , Virtualbox  and  opensourcing Java.  But on the other hand they had troubles with creating really organic opensource.  </p>
+<p>I've always wondered why a company that bought StarDivision because it was cheaper than buying the MS Office license keeps wasting money on building it's own operating systems, albeit in a pretty open model, but with zero to no relevant community.</p>
+<p>Yes I've ranted on their marketing boys and girls when they polluted forums I liked.    But no I don't want <a href="http://blogs.zdnet.com/perlow/?p=9343" rel="nofollow">this</a> to happen. (Slicing up Sun) </p>
+<p>However I`m in fear it actually might happen, the funny thing is that I already mentioned the same idea in offline conversations during the last couple of months.</p>
+<p>My Advice to Sun.  : Stop putting money in things you can co-create  with other organisations,  if there's only 2 features in your product that count for some people,   contribute those 2 features to something bigger.<br />
+(That's D-Trace and ZFS and the Linux Kernel I`m talking about in case you didn't realise)  Why keep throwing money down the drain ? </p>
+<p>Also let Google, Percona and others contribute to MySQL, don't keep it as closed as it is today.  As after al it's more Free software than it is Open Source, but it has a great community which I love to be part of .. and I hope for a long time to come..</p>
+<p>I`m going to try to keep my mouth shut on this for a while.. as I think   <a href="http://blogs.sun.com/jonathan/" rel="nofollow">Jonathan</a> is listening anyhow.   If he was, he would have known that at some point in time when you step out of the shower and there is too much hair dropping from your skull every morning, it's time to cut off the <a>ponytail..</a> , not <a href="http://www.sun.com/ponytail/" rel="nofollow">opensource it</a>.  I did that years ago.. and it's growing much thicker again now. </p>
+<p>My hair that is ..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../eclipse-sun/index.html#comments" title="Jump to the first comment of this posting.">5 comments</a></li>
+</ul></div>
+</div>
+<div id="node-833" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-12-01T21:55:39+01:00">
+  <span class="month">Dec</span>
+  <span class="day">01</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../tab-dump-drupal-performance/index.html">Tab Dump , Drupal Performance</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_484 first"><a href="../484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_1112"><a href="../../../category/drupal-performance-tuning/index.html" rel="tag" title="">drupal performance tuning</a></li>
+<li class="taxonomy_term_458 last active"><a href="index.html" rel="tag" title="" class="active">mysql</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Have to close some tabs ..   what more can I say ..</p>
+<p>2 interresting articles about Drupal and MySQL performance tuning </p>
+<p><a href="http://marksitblog.blogspot.com/2008/11/improving-drupal-performance-part-iii.html" rel="nofollow">here</a> and <a href="http://www.pronovix.com/blog/my-favorite-drupal-performance-hacks" rel="nofollow">here</a></p>
+<p>Enjoy</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../tab-dump-drupal-performance/index.html#comments" title="Jump to the first comment of this posting.">5 comments</a></li>
+</ul></div>
+</div>
+<div id="node-769" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-11-17T23:44:10+01:00">
+  <span class="month">Nov</span>
+  <span class="day">18</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../do-we-want-open-source-mysql-monitoring-tool/index.html">Do we want an Open Source MySQL Monitoring tool  ?</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_889 first"><a href="../889/index.html" rel="tag" title="">hyperic</a></li>
+<li class="taxonomy_term_458 active"><a href="index.html" rel="tag" title="" class="active">mysql</a></li>
+<li class="taxonomy_term_890"><a href="../890/index.html" rel="tag" title="">nagios</a></li>
+<li class="taxonomy_term_461"><a href="../461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_887"><a href="../887/index.html" rel="tag" title="">zabbix</a></li>
+<li class="taxonomy_term_888 last"><a href="../888/index.html" rel="tag" title="">zenoss</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://themattreid.com/wordpress/?p=77" rel="nofollow">Matt Reid</a> wants to know what we want in an Open Source MySQL monitoring solution ?</p>
+<p>He is working on the second incarnation of Monolith and wants input from the MySQL community.</p>
+<p>Now for me the bigger question is if we want an isolated tool that runs stand alone, or a tool which we can integrate it in something we already have.</p>
+<p>To me there is a difference between a tool that I want to use to debug my environment, such as Mytop or MySQL Activity Report, in that case I need  some tool that quickly installs with little dependencies and little impact.</p>
+<p>On the other side I want a tool that is constantly there, that tells me about trends and performance history.  But there I don't want an isolated toool, I want something fully integrated where I can correlate different measurements  from disk io, memory usage etc , that tool should also tell me about the things that go<br />
+ wrong.</p>
+<p><a href="http://www.inuits.be/">We</a> did some research earlier this year to figure out the current state of Open Source monitoring tools.  Different tools have a different audience.. some go for the network layer, others take the os level and other even try to go deep inside the applications.</p>
+<p>Given that knowledge we even had the  idea  to refocus that research comparing different monitoring tools such as Zabbix, Zenoss, Hyperic and Nagios again but this time with a focus on monitoring MySQL  and submit that as an abstract for the upcoming MySQL conference,  we didn't .. maybe next time.</p>
+<p>There's plenty of frameworks already that will allow you to send alerts on all of the occasions you list, or allow you to graph all the values you want.  And yes we want to see those values too.</p>
+<p>But do we want yet another tool , yet another URL to browse to or do we want those alerts and graphs  integrated  in an existing tool such as Zabbix, Zenoss or<br />
+Hyperic ..  I guess I prefer the integrated approach.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../do-we-want-open-source-mysql-monitoring-tool/index.html#comments" title="Jump to the first comment of this posting.">6 comments</a></li>
+</ul></div>
+</div>
+<div id="node-760" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-11-01T12:00:10+01:00">
+  <span class="month">Nov</span>
+  <span class="day">01</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../want-be-social-network/index.html">The Want to be Social Network</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_465 first"><a href="../465/index.html" rel="tag" title="">community</a></li>
+<li class="taxonomy_term_1089"><a href="../../../category/blog/dopplr/index.html" rel="tag" title="">dopplr</a></li>
+<li class="taxonomy_term_496"><a href="../496/index.html" rel="tag" title="">linkedin</a></li>
+<li class="taxonomy_term_458 active"><a href="index.html" rel="tag" title="" class="active">mysql</a></li>
+<li class="taxonomy_term_461"><a href="../461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_1090 last"><a href="../../../category/blog/social-network/index.html" rel="tag" title="">social network</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://blogs.mysql.com/kaj/2008/10/31/dopplr-joining-the-social-network-for-travellers/" rel="nofollow">Kaj</a> wrote about using <a href="http://www.dopplr.com/traveller/KrisBuytaert" rel="nofollow">Dopplr</a> to keep track of where colegues and friends are traveling and finding out about accidental meetups.   (I even use it to track where one of the Inuits collegues work plans)<br />
+Now I have never met <a href="http://datacharmer.blogspot.com/" rel="nofollow">Giuseppe</a> , but we shared slides before so I'd love to meet him one day .. connecting to him via Dopplr gives me that opportunity .. who knows one day Dopplr will tell me we have matching travel schedules. </p>
+<p>Earlier this week <a href="http://www.linkedin.com/" rel="nofollow">LinkedIn</a> announced <a href="http://www.tripit.com/" rel="nofollow">Tripit</a> as one of their first integrated applications,  I was a bit dissapointed  I use Tripit to let Dopplr learn about my trips , but I really prefer Dopplr over Tripit.     </p>
+<p>Now there are 2 things I would like to acoomplish with these kind of tools.<br />
+First of all I don't mind giving all of my LinkedIn contacts, so my whole addresbook, access to my upcoming travel plans so I can meet up with them again if our plans happen to match.  On the other hand I use LinkedIn as my addressbook,  so it only contains people I've met, or collaborated with (sometimes even over a decade ago) . And  there are a bunch of people out there that I haven't met yet  but that I'd love to meet one day and buy some beers or even dinner/lunch.  I'd love to connect to them on Dopplr to make that happen but I don't want to have them connected on LinkedIn (yet). </p>
+<p>So when Dopplr integrates with LinkedIn I hope they think about this kind of scenario ..</p>
+<p>Oh and btw.. <a href="http://www.xaprb.com/blog/2008/10/30/i-unsubscribed-from-the-planet-mysql-feed/" rel="nofollow">Xaprb</a> rocks !</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../want-be-social-network/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-758" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-10-31T11:41:43+01:00">
+  <span class="month">Oct</span>
+  <span class="day">31</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../node/758/index.html">How Sun Will be rescued</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1086 first"><a href="../1086/index.html" rel="tag" title="">jonathan schwartz</a></li>
+<li class="taxonomy_term_458 active"><a href="index.html" rel="tag" title="" class="active">mysql</a></li>
+<li class="taxonomy_term_461"><a href="../461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_866"><a href="../866/index.html" rel="tag" title="">solaris</a></li>
+<li class="taxonomy_term_488"><a href="../488/index.html" rel="tag" title="">sun</a></li>
+<li class="taxonomy_term_1017 last"><a href="../1017/index.html" rel="tag" title="">techcrunch</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>I probably ranted a bit too much on the marketing push that Sun has been trying to make into the Open Source community.<br />
+The economical situation isn't really perfect so Sun does deserve some credit too.</p>
+<p>Yesterday <a href="http://www.techcrunch.com/2008/10/30/never-mind-that-17-billion-loss-jonathan-schwartz-has-a-new-plan-to-save-sun/">Techcrunch </a> published an exclusive interview with Jonathan Schwartz on the future of Sun and how Sun will be rescued . </p>
+<p>[YouTube Movie Embedded]</p>
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/5r3JSciJf5M&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;fs=1" /><param name="allowFullScreen" value="true" /><embed src="http://www.youtube.com/v/5r3JSciJf5M&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object><p>
+More details are <a href="http://www.sun.com/ponytail/">here</a></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../node/758/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-757" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-10-28T18:25:19+01:00">
+  <span class="month">Oct</span>
+  <span class="day">28</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../node/757/index.html">Virtualizing MySQL , are you stupid ?</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1085 first"><a href="../1085/index.html" rel="tag" title="">i hate it when the marketeers join in</a></li>
+<li class="taxonomy_term_1084"><a href="../1084/index.html" rel="tag" title="">marketing sucks</a></li>
+<li class="taxonomy_term_458 active"><a href="index.html" rel="tag" title="" class="active">mysql</a></li>
+<li class="taxonomy_term_488"><a href="../488/index.html" rel="tag" title="">sun</a></li>
+<li class="taxonomy_term_672"><a href="../672/index.html" rel="tag" title="">virtualization</a></li>
+<li class="taxonomy_term_470"><a href="../470/index.html" rel="tag" title="">xen</a></li>
+<li class="taxonomy_term_1083 last"><a href="../1083/index.html" rel="tag" title="">xvm</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>or timebound ? <strong> or don't you have any load on your DB at all ?</strong></p>
+<p>I personally don't see many reasons to virtualize your database,  apart from the , we plan to start small and scale out, or the we need it now and we don't have the hardware yet  , putting your database on a virtual platform where you have to share resources with other virtual machines doesn't really sound like a tempting proposition to me.   Small, almost idle databases , maybe.  But enterprise production level databases no thnx.</p>
+<p><a href="http://www.pythian.com/blogs/1321/virtualizing-mysql" rel="nofollow">Sheeri Cabral</a> also mentions the above reasons ..  and there also .. Enterprise Production use isn't listed.</p>
+<p>Databases typically  require a good amount of memory , and steady disk access.<br />
+So if you are in a production environment with a fairly loaded database, would you want a 4Gb machine with full direct memory access,  Or 3.5Gb of virtual memory that can be ballooned to 3 if underused.   My pick is at the 4Gb real memory.</p>
+<p>The original article at Sun argues the use of Virtual Harddisk to move around workloads between different servers or even Virtualization platforms.  But it fails to describe the guaranteed performance penalty of not using raw disks but a filesystem on top of a loopback device.  How many layers do you want before actually write to the disks. Good practice in a virtual environment is to dedicate full disks or LVM parts to the virtual machine hence lowering the overhead, but most (default) setups do the opposite.</p>
+<p>And don't get me started about <a href="http://www.krisbuytaert.be/blog/node/750">the myth</a> of using virtualization for high-availability :)</p>
+<p>Now can somebody please remove all the clueless marketing people from planetmysql.org , thnx.  (they can be identified with by a blogs.sun.com source and posts that  mainly talk about Sun products including only a slight hint to MySQL)</p>
+<p>(PS. What's a  Market Development Engineer's  job description anyhow  ? , that's just a different name for Marketing Assistant right ?)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../node/757/index.html#comments" title="Jump to the first comment of this posting.">17 comments</a></li>
+</ul></div>
+</div>
+<div id="node-751" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-10-27T18:49:35+01:00">
+  <span class="month">Oct</span>
+  <span class="day">27</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../node/751/index.html">T-Dose 2008 is over</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_484 first"><a href="../484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_458 active"><a href="index.html" rel="tag" title="" class="active">mysql</a></li>
+<li class="taxonomy_term_461"><a href="../461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_601"><a href="../601/index.html" rel="tag" title="">openqrm</a></li>
+<li class="taxonomy_term_454 last"><a href="../454/index.html" rel="tag" title="">t-dose</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>It was fun,  the good part about <a href="http://www.t-dose.org/node/117" rel="nofollow">T-Dose</a> is that is small enough to actually be able to speak with everybody you want to .. well almost .. there were still some people around I wanted to talk to but I didn't get the chance to .  Specially Ber Kessels and Roy Scholten who filled in the gaps in the Drupal track.    After my own talk I had to run to the other track so I could answer the tricky questions in <a href="http://www.inuits.be/">our</a> other talk about Open Source Monitoring Tools.  And I never really made it back to the Drupal room.   So Ber, Roy , next time you run into me I`ll buy you a Beer !</p>
+<p>Anyway <a href="http://pics.inuits.be/v/Open+Source+Events/T-Dose2008/" rel="nofollow">Pics</a> are up    (so <a href="http://someabstracttype.blogspot.com/" rel="nofollow">Geert</a> now finally has pictures of himself on stage)</p>
+<p>Social event <a href="http://www.johnmwillis.com/other/if-you-can’t-spot-the-dumbest-guy-in-the-room-in-the-first-half-hour-of-the-first-meeting-then-you-are-the-dumbest-guy-in-the-room/" rel="nofollow">pic</a> is also up ..</p>
+<p>Slides (<a href="http://www.krisbuytaert.be/presentations/Drupal-MySQL.odp">Drupal</a>/ <a href="http://www.krisbuytaert.be/presentations/OSSVirt.odp">Virtualization</a>) were already up</p>
+<p>Somehow I had problems seeing al the sessions I wanted to see this year.  lots of interesting things happening at the same time and therefore forcing me to choose for specific sessions.   JP and Jeroen already announced they will be there again next year ..  I just hope to have a better planned Drupal track then ...</p>
+<p>T-Dose kind of concluded my current scheduled list of talks ,  I`m looking for new interesting conference venues to visit .. specially in southern Europe ..  so if anybody has ideas :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="index3.html?page=3" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-item"><a href="index.html" title="Go to page 1" class="active">1</a></li>
+<li class="pager-item"><a href="index1.html?page=1" title="Go to page 2" class="active">2</a></li>
+<li class="pager-item"><a href="index2.html?page=2" title="Go to page 3" class="active">3</a></li>
+<li class="pager-item"><a href="index3.html?page=3" title="Go to page 4" class="active">4</a></li>
+<li class="pager-current">5</li>
+<li class="pager-item"><a href="index5.html?page=5" title="Go to page 6" class="active">6</a></li>
+<li class="pager-item"><a href="index6.html?page=6" title="Go to page 7" class="active">7</a></li>
+<li class="pager-item"><a href="index7.html?page=7" title="Go to page 8" class="active">8</a></li>
+<li class="pager-item"><a href="index8.html?page=8" title="Go to page 9" class="active">9</a></li>
+<li class="pager-next"><a href="index5.html?page=5" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="index9.html?page=9" title="Go to last page" class="active">last »</a></li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/taxonomy/term/458?page=4 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:31:00 GMT -->
+</html>

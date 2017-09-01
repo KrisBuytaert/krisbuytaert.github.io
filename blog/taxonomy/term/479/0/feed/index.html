@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - rhel</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/479/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Packaging Djagios</title>
+ <link>http://127.0.0.1:8080/blog/packaging-djagios</link>
+ <description>&lt;p&gt;After all the politics involved in getting a package in a distro, or not it was time for a nice small and clean package of a fresh and promising open source project.  &lt;a href=&quot;http://www.djagios.org/&quot; rel=&quot;nofollow&quot;&gt;Djagios&lt;/a&gt; was an easy choice.&lt;/p&gt;
+&lt;p&gt;I&#039;ve uploade the &lt;a href=&quot;http://repo.inuits.be/centos/5/os/noarch/djagios-0.1.3-1.noarch.rpm&quot; rel=&quot;nofollow&quot;&gt;rpm&lt;/a&gt; and &lt;a href=&quot;http://repo.inuits.be/centos/5/os/SRPMS/djagios-0.1.3-1.src.rpm&quot; rel=&quot;nofollow&quot;&gt;Source RPM&lt;/a&gt; to repo.inuits.be and getting the  SPEC file in the upstream repo was 10 minutes work.&lt;/p&gt;
+&lt;p&gt;Next step is to get it into Fedora  , and EPEL   :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/packaging-djagios#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/djagios">djagios</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/890">nagios</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/466">packaging</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Sun, 20 Dec 2009 20:42:00 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">974 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Packaging Drush</title>
+ <link>http://127.0.0.1:8080/blog/packaging-drush</link>
+ <description>&lt;p&gt;A couple of weeks ago I was once again manually installing Drush as there were no packages for CentOS / EPEL or whatever,   apart from the &lt;a href=&quot;http://drupal.org/node/502452&quot; rel=&quot;nofollow&quot;&gt;needed patch &lt;/a&gt; to get it running on a 5.1.X RHEL php&lt;/p&gt;
+&lt;p&gt;I had found &lt;a href=&quot;http://drupal.org/node/508086&quot; rel=&quot;nofollow&quot;&gt;this&lt;/a&gt; thread on Drupal.org mentioning that a package already exists&lt;br /&gt;
+however David had not answered the exact location yet&lt;br /&gt;
+So I created a drush package with a with the above mentionned patch and sent it to  Jon Ciesla again he gave some suprising  feedback ;)&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;br /&gt;
+Drush itself might need to be modified in Fedora.   It seems&lt;br /&gt;
+like one of the major functions of drush is to install and update&lt;br /&gt;
+modules.  That&#039;s great for modules we don&#039;t ship as rpms, but we can&#039;t&lt;br /&gt;
+allow drush to modify modules that we ship.&lt;br /&gt;
+&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;This feedback pretty much leaves me with 3 options.&lt;/p&gt;
+&lt;p&gt;The first one is the easiest one,  I just forget about packaging drush for Fedora.&lt;/p&gt;
+&lt;p&gt;The second one would require me to patch Drush so that for all existing drupal modules that have been packaged for Fedora,  Drush will call yum to install them.  This obviously would create a lot of work  maintaining this excludelist.&lt;/p&gt;
+&lt;p&gt;The third one would be to disable the download functionality for Drush in a Fedora/Rhel enviornment,  Jon suggested that this would probably be the saftest path.&lt;/p&gt;
+&lt;p&gt;(Jon also suggested a fourth option, namely removing all drupal modules from fedora and add a prohibition to package them in the Packaging Guidelines, which he immediately called ridiculous.)&lt;/p&gt;
+&lt;p&gt;I once again understand the problem of the Distribution maintainer,  but on the other hand if I were the upstream Drush developer I wouldn&#039;t want to see my software severely disabled in a distribution.&lt;/p&gt;
+&lt;p&gt;So what do you folks think, disable the functionality  or not ?&lt;/p&gt;
+&lt;p&gt;PS.  Yes I&#039;ve contacted upstream , but I haven&#039;t gotten a reply yet.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/packaging-drush#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/drush">drush</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Sun, 20 Dec 2009 20:41:10 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">973 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Drupal 6 for EPEL</title>
+ <link>http://127.0.0.1:8080/blog/drupal-6-epel</link>
+ <description>&lt;p&gt;Some of you might have noticed that Fedora 11 and up already have an up to date Drupal6 version, but EPEL , which is what a lot of people are using on their  CentOS  or RHEL builds only has a Drupal5.   I asked  Jon Ciesla, who is maintaing the Drupal packages in Fedora why :&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;br /&gt;
+Because when Drupal was initially built for EL-5 and EL-5, the 5.x&lt;br /&gt;
+branch was the current release.  It&#039;s up to date, 5.20 is the most&lt;br /&gt;
+recent release, and is still supported upstream in terms of security&lt;br /&gt;
+fixes.  6 is out, and has been for awhile, but we have the following:&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies&quot; title=&quot;http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies&quot; rel=&quot;nofollow&quot;&gt;http://fedoraproject.org/wiki/EPEL/GuidelinesAndPolicies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Since 5.x isn&#039;t broken or insecure, it&#039;ll be a tough sell to move to&lt;br /&gt;
+6.x.  Once upstream drops support, this may change.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;It&#039;s a correct answer from a Distribution point of view, but the fact is it is widening the gap between the Ops and the Devs.     If the ops want to keep their platform clean we need to have our software packaged on the platform we want to use, which is most often an Enterprise Linux distro,  on the other there is understandably no hair on a dev&#039;s head that he will be  building a new site on  a Drupal 5 platform.&lt;/p&gt;
+&lt;p&gt;So until the Drupal community  doesn&#039;t declare Drupal 5 dead, RHEL and CentOS users will have to use 3rd party Drupal6  RPMS , or rebuild the F12 rpm from Source again  .&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/drupal-6-epel#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/guidelines">guidelines</category>
+ <category domain="http://127.0.0.1:8080/blog/category/politics">politics</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Sun, 20 Dec 2009 20:39:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">972 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Why openSLES doesn&#039;t exist</title>
+ <link>http://127.0.0.1:8080/blog/node/501</link>
+ <description>&lt;p&gt;Over a year ago I asked &lt;a href=&quot;http://www.krisbuytaert.be/blog/?q=node/210&quot;&gt;Lazyweb&lt;/a&gt;: &lt;cite&gt;I wonder why nobody tried to rebuild SLES like RHEL...&lt;/cite&gt;Yesterday .. &lt;a&gt;Dag&lt;/a&gt; responded.  It indeed seems that the community around Fedora and CentOS is much bigger than the community around openSUSE&lt;br /&gt;
+The comment from Leo  to his posting is  confirming that.   &lt;a href=&quot;http://www.stroobant.be/&quot; rel=&quot;nofollow&quot;&gt;Luc &lt;/a&gt; makes an observation regarding the use of any Suse based product .. namely that people who are using it are stripping Yast from it  .. sounds like something I could have said :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/501#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/622">closedsuse</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/621">opensuse</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/623">sles</category>
+ <pubDate>Fri, 09 Nov 2007 16:41:31 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">501 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Multiple Bond Interfaces in Centos/RHEL</title>
+ <link>http://127.0.0.1:8080/blog/node/446</link>
+ <description>&lt;p&gt;So earlier today I was fighting with &lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;bond1: error fetching interface information: Device not found&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;I had a machine with 4 nics that I wanted to bond 2 by to.   I had no problem getting the bond0 device up witn any of the interfaces, however getting a bond1 up always resulted in the above error.&lt;/p&gt;
+&lt;p&gt;The friendly guys from #centos on freenode pointed me to the missing config.&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;options bonding mode=4 max_bonds=4&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;The important part being max_bonds&lt;br /&gt;
+it seems that the default is 1  so adding one more fails.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/446#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/481">bond</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/482">bond0</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/483">bond1</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <pubDate>Tue, 11 Sep 2007 18:28:51 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">446 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Taking over management of a Xen box</title>
+ <link>http://127.0.0.1:8080/blog/node/445</link>
+ <description>&lt;p&gt;So once in a while you get to take over the management of a machine someone installed with no documentation, with lots of playing around and no clue on how it should be reproducible.  You&#039;re pretty sure that if you reboot the machine it won&#039;t come up with the right services, or in this case with the right Virtual machines  up and running.&lt;/p&gt;
+&lt;p&gt;So I got this box with about 7 different xen configs in /etc/xen  and none in /etc/xen/auto .. however different lvm volumes were created and 3 virtual machines were running.   The  different xen configs looked all the same.&lt;br /&gt;
+web1, web, web.orig, web.working   you know :(&lt;/p&gt;
+&lt;p&gt;So my challenge was to figure out the config of the running virtual machines&lt;br /&gt;
+Luckily I bumped into some Redhat articles that tought me virsh dumpxml&lt;br /&gt;
+Now I`m not really a fan of xml based config but it got me quite far.&lt;/p&gt;
+&lt;p&gt;Eg. on one of my own machines the output looks pretty good.&lt;/p&gt;
+&lt;p&gt;&lt;xmp&gt;&lt;br /&gt;
+[root@core named]# xm list&lt;br /&gt;
+Name                                      ID Mem(MiB) VCPUs State   Time(s)&lt;br /&gt;
+Domain-0                                   0      619     1 r-----   1242.5&lt;br /&gt;
+web.hs62.be                              1      511     1 -b----   4648.2&lt;br /&gt;
+[root@core named]# virsh dumpxml 1&lt;/xmp&gt;&lt;/p&gt;
+&lt;p&gt;&lt;domain type=&#039;xen&#039; id=&#039;1&#039;&gt;&lt;br /&gt;
+  &lt;name&gt;web.hs62.be&lt;/name&gt;&lt;br /&gt;
+  &lt;uuid&gt;f7cb62b9d3aa8a07489604285fe3d842&lt;/uuid&gt;&lt;br /&gt;
+  &lt;os&gt;&lt;br /&gt;
+    &lt;type&gt;linux&lt;/type&gt;&lt;br /&gt;
+    &lt;kernel&gt;/boot/vmlinuz-2.6-xen&lt;/kernel&gt;&lt;br /&gt;
+    &lt;initrd&gt;/boot/initrd-2.6-xen.img&lt;/initrd&gt;&lt;br /&gt;
+    &lt;root&gt;/dev/sda1 rw&lt;/root&gt;&lt;br /&gt;
+    &lt;cmdline&gt;selinux=0  3&lt;/cmdline&gt;&lt;br /&gt;
+  &lt;/os&gt;&lt;br /&gt;
+  &lt;memory&gt;524288&lt;/memory&gt;&lt;br /&gt;
+  &lt;vcpu&gt;1&lt;/vcpu&gt;&lt;br /&gt;
+  &lt;on_poweroff&gt;destroy&lt;/on_poweroff&gt;&lt;br /&gt;
+  &lt;on_reboot&gt;restart&lt;/on_reboot&gt;&lt;br /&gt;
+  &lt;on_crash&gt;restart&lt;/on_crash&gt;&lt;br /&gt;
+  &lt;devices&gt;&lt;br /&gt;
+    &lt;interface type=&#039;bridge&#039;&gt;&lt;br /&gt;
+      &lt;source bridge=&#039;xenbr0&#039;/&gt;&lt;br /&gt;
+      &lt;mac address=&#039;00:16:3e:0a:e8:9b&#039;/&gt;&lt;/mac&gt;&lt;/source&gt;&lt;/interface&gt;&lt;/devices&gt;&lt;/domain&gt;&lt;/p&gt;
+&lt;script path=&#039;vif-bridge&#039;/&gt;
+    
+    &lt;disk type=&#039;block&#039; device=&#039;disk&#039;&gt;
+      &lt;driver name=&#039;phy&#039;/&gt;
+      &lt;source dev=&#039;vm_volumes/root-web.hs62.be&#039;/&gt;
+      &lt;target dev=&#039;sda1&#039;/&gt;
+    &lt;/target&gt;&lt;/source&gt;&lt;/driver&gt;&lt;/disk&gt;
+    &lt;disk type=&#039;block&#039; device=&#039;disk&#039;&gt;
+      &lt;driver name=&#039;phy&#039;/&gt;
+      &lt;source dev=&#039;vm_volumes/tmp-web.hs62.be&#039;/&gt;
+      &lt;target dev=&#039;sda2&#039;/&gt;
+    &lt;/target&gt;&lt;/source&gt;&lt;/driver&gt;&lt;/disk&gt;
+    &lt;disk type=&#039;block&#039; device=&#039;disk&#039;&gt;
+      &lt;driver name=&#039;phy&#039;/&gt;
+      &lt;source dev=&#039;vm_volumes/usr-web.hs62.be&#039;/&gt;
+      &lt;target dev=&#039;sda3&#039;/&gt;
+    &lt;/target&gt;&lt;/source&gt;&lt;/driver&gt;&lt;/disk&gt;
+    &lt;disk type=&#039;block&#039; device=&#039;disk&#039;&gt;
+      &lt;driver name=&#039;phy&#039;/&gt;
+ &lt;source dev=&#039;vm_volumes/swap-web.hs62.be&#039;/&gt;
+      &lt;target dev=&#039;sda4&#039;/&gt;
+    &lt;/target&gt;&lt;/source&gt;&lt;/driver&gt;&lt;/disk&gt;
+    &lt;disk type=&#039;block&#039; device=&#039;disk&#039;&gt;
+      &lt;driver name=&#039;phy&#039;/&gt;
+      &lt;source dev=&#039;vm_volumes/home-web.hs62.be&#039;/&gt;
+      &lt;target dev=&#039;sda5&#039;/&gt;
+    &lt;/target&gt;&lt;/source&gt;&lt;/driver&gt;&lt;/disk&gt;
+    &lt;console tty=&#039;/dev/pts/0&#039;/&gt;
+  
+
+
+
+Might come handy some day&lt;/console&gt;&lt;/script&gt;</description>
+ <comments>http://127.0.0.1:8080/blog/node/445#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/479">rhel</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Tue, 11 Sep 2007 18:23:45 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">445 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

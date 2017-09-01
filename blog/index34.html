@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=34 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:57:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Everything is a Freaking DNS problem | Devops Needs Sushi</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/blog/blogapi/rsd/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem RSS" href="/blog/rss/index.xml" />
+<link rel="shortcut icon" href="/blog/misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="/blog/sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="front not-logged-in page-node one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="/blog/index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="/blog/files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="/blog/index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="/blog/social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+<div class="content">
+<div id="node-706" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-08-06T11:16:10+02:00">
+  <span class="month">Aug</span>
+  <span class="day">06</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/706/index.html">It&#039;s Ham dammit ! </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_484 first"><a href="/blog/taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_858"><a href="/blog/taxonomy/term/858/index.html" rel="tag" title="">mollom</a></li>
+<li class="taxonomy_term_511 last"><a href="/blog/taxonomy/term/511/index.html" rel="tag" title="">spam</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Seems like my old spam module and Mollom were dissagreeing on comment spams.</p>
+<p>Comment's that I had already approved  were still being deleted by the spam module during it's cron run.</p>
+<p>spam_delete_comment: deleted comment "openSUSEEE"  </p>
+<p>I just noticed this yesterday with 2-3 comments that disappeared.<br />
+So the old Spam module is gone.. it's just Mollom and Moderation now ..<br />
+If one of your comments is gone , please post it again :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/node/706/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-705" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-08-05T18:53:05+02:00">
+  <span class="month">Aug</span>
+  <span class="day">05</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/705/index.html">EEEbuntu</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_969 first"><a href="/blog/taxonomy/term/969/index.html" rel="tag" title="">asus eee</a></li>
+<li class="taxonomy_term_664"><a href="/blog/taxonomy/term/664/index.html" rel="tag" title="">eee</a></li>
+<li class="taxonomy_term_974"><a href="/blog/taxonomy/term/974/index.html" rel="tag" title="">eeebuntu</a></li>
+<li class="taxonomy_term_897 last"><a href="/blog/taxonomy/term/897/index.html" rel="tag" title="">xandros</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>It's gone,  the Xandros that is..  I moved to <a href="http://www.eeebuntu.org/" rel="nofollow">EEEBuntu</a>, the NBR 1.0 release.<br />
+Installed like a charm ..  iso2stick</p>
+<p>Pretty funny header  :)<br />
+# Convert an Ubuntu live CD iso so that it's bootable off of a USB stick<br />
+# Copyright 2007  Red Hat, Inc.<br />
+# Jeremy Katz<br />
+# Jani Monoses  (slightly adapted to Ubuntu LiveCD)</p>
+<p>Tried it first .. the live distro luxury ... and the thing that made me decide was the better font support, much more screen realestate with Eeebuntu , that and the fact that much more tools that can be installed by default from a public repository while not breaking the dependency chain.</p>
+<p>I created a backup of my configs.. well.. home dir  then live-install and off we went.</p>
+<p>Everything works like a charm, just like with the original Xandors distro,<br />
+suspend resume works,  wifi works, my whole box is back up and running.</p>
+<p>Next goal, upgrade my laptop :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/node/705/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-704" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-08-04T21:59:59+02:00">
+  <span class="month">Aug</span>
+  <span class="day">04</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/704/index.html">Cuil</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_970 first"><a href="/blog/taxonomy/term/970/index.html" rel="tag" title="">confusion</a></li>
+<li class="taxonomy_term_975"><a href="/blog/taxonomy/term/975/index.html" rel="tag" title="">conspiracy</a></li>
+<li class="taxonomy_term_972"><a href="/blog/taxonomy/term/972/index.html" rel="tag" title="">corrupt files</a></li>
+<li class="taxonomy_term_971"><a href="/blog/taxonomy/term/971/index.html" rel="tag" title="">cuil</a></li>
+<li class="taxonomy_term_973"><a href="/blog/taxonomy/term/973/index.html" rel="tag" title="">geert vanderkelen</a></li>
+<li class="taxonomy_term_708"><a href="/blog/taxonomy/term/708/index.html" rel="tag" title="">kris buytaert</a></li>
+<li class="taxonomy_term_458 last"><a href="/blog/taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So <a href="http://www.theregister.co.uk/2008/08/01/cuil_apology/">Cuil</a> had lots of visibility because of their "data corruption" , showing "wrong" images to people.</p>
+<p>However it seems like they still haven't cleaned up their mess.</p>
+<p><a href="http://www.krisbuytaert.be/images/cuil.png"><img src="http://www.krisbuytaert.be/images/cuil_th.png" /></a></p>
+<p>Somehow they manage to place <a href="http://someabstracttype.blogspot.com/">Geert Vanderkelen's</a> picture in the search results for me.<br />
+Not the other way around however.  </p>
+<p>Well.. at least it isn't what they used to show :)</p>
+<p>So Geert , if someone ever runs up to you and says "Hi Kris" , you know where they got the picture from :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-703" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-08-03T20:58:26+02:00">
+  <span class="month">Aug</span>
+  <span class="day">03</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/703/index.html">A week of EEE</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_969 first"><a href="/blog/taxonomy/term/969/index.html" rel="tag" title="">asus eee</a></li>
+<li class="taxonomy_term_863"><a href="/blog/taxonomy/term/863/index.html" rel="tag" title="">ols</a></li>
+<li class="taxonomy_term_599 last"><a href="/blog/taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Obviously this last OLS week I've been carrying around my EEE.  I left my big fat laptop in the hotel room to work on and make backups<br />
+ at night but the main working machine of the week was my EEE.</p>
+<p>Typing speed etc was reasonable the I only often ran into hitting the Up arror rather than the Shift button.<br />
+My biggest dissappointment however is the battery life.  Surfing on this thing for more than 2 hours is just not feasable.</p>
+<p>Then it's a matter of getting it charged again ...  watching /proc/acpi/battery/BAT0/state  update while you are still using it is as<br />
+ painfull as watching grass grow. and shrink again while you watch at it .. </p>
+<p>So I tried to keep it charging as much as possible.. so that I could  make it to the end of the day.  Then charge it at night so I could had a full battery again by the next morning. </p>
+<p>But afterall the EEE cost less than my phone.. so it's worth the money .. and I was really glad to have it with  me it's small, it's<br />
+lightweight .. and will last more conferences for me :)</p>
+<p>O that and the fact that it heats up a lot</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/node/703/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-702" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-08-01T20:10:25+02:00">
+  <span class="month">Aug</span>
+  <span class="day">01</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/702/index.html">DNS Problems and MySQL</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_437 first"><a href="/blog/taxonomy/term/437/index.html" rel="tag" title="">dnsproblem</a></li>
+<li class="taxonomy_term_458 last"><a href="/blog/taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://www.mysqlperformanceblog.com/2008/05/31/dns-achilles-heel-mysql-installation/" rel="nofollow">The MySQL Performance Blog</a> also figured it out ..  Everything is a frigging dns problem :)</p>
+<p>Baron gives a quick hint on how to test if you can safely enable skip_name_resolve  or how to figure out which users to update to an IP address rather than a DNS name.</p>
+<p>On of the many ... :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-701" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-07-31T20:30:36+02:00">
+  <span class="month">Jul</span>
+  <span class="day">31</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/701/index.html">Eat your own dogfood</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_967 first"><a href="/blog/taxonomy/term/967/index.html" rel="tag" title="">dogfood</a></li>
+<li class="taxonomy_term_968"><a href="/blog/taxonomy/term/968/index.html" rel="tag" title="">journalists</a></li>
+<li class="taxonomy_term_489"><a href="/blog/taxonomy/term/489/index.html" rel="tag" title="">linux</a></li>
+<li class="taxonomy_term_599 last"><a href="/blog/taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Can someone over at ZDNet please kick <a href="http://blogs.zdnet.com/open-source/?p=2719" rel="nofollow">this idiot</a> of this planet ?<br />
+ We <a href="http://www.krisbuytaert.be/blog/node/600">already</a> <a href="http://www.krisbuytaert.be/blog/node/617">knew</a>  that he doesn't have a clue what he is writing about </p>
+<p>But <a href="http://practical-tech.com/operating-system/linux-user-here/" rel="nofollow">Steven</a> is also surprised that Dana isn't using even Linux while he has been writing about it long enough ..  </p>
+<p>Please make it stop !</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-700" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-07-31T20:17:35+02:00">
+  <span class="month">Jul</span>
+  <span class="day">31</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/700/index.html">DNS Victims</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_451 first"><a href="/blog/taxonomy/term/451/index.html" rel="tag" title="">dns</a></li>
+<li class="taxonomy_term_437"><a href="/blog/taxonomy/term/437/index.html" rel="tag" title="">dnsproblem</a></li>
+<li class="taxonomy_term_966 last"><a href="/blog/taxonomy/term/966/index.html" rel="tag" title="">problem</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://www.networkworld.com/news/2008/073008-dns-attack-writer-a-victim.html?page=1" rel="nofollow">Everything</a> is a freaking DNS problem  , and when you warn people about it , you get a piece of your own cake ;(</p>
+<p>So it seems that <a href="http://blog.internetnews.com/skerner/2008/07/h-d-moore-has-not-been-owned.html" rel="nofollow">HD Moore was Misquoted</a> in the press.  </p>
+<p>So there's victims and victims.  Surely Metasploit's credibility will go down as lots of people will only read the first article ..  let alone the <a href="http://metasploit.com/blog/" rel="nofollow">Metasploit blog</a> that has more details.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-699" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-07-31T19:55:44+02:00">
+  <span class="month">Jul</span>
+  <span class="day">31</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/699/index.html">GroundWork heading the same path as Qlusters ?</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_965 first"><a href="/blog/taxonomy/term/965/index.html" rel="tag" title="">caldera</a></li>
+<li class="taxonomy_term_962"><a href="/blog/taxonomy/term/962/index.html" rel="tag" title="">doomed</a></li>
+<li class="taxonomy_term_886"><a href="/blog/taxonomy/term/886/index.html" rel="tag" title="">groundwork</a></li>
+<li class="taxonomy_term_601"><a href="/blog/taxonomy/term/601/index.html" rel="tag" title="">openqrm</a></li>
+<li class="taxonomy_term_599"><a href="/blog/taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_948"><a href="/blog/taxonomy/term/948/index.html" rel="tag" title="">proprietary crap</a></li>
+<li class="taxonomy_term_893"><a href="/blog/taxonomy/term/893/index.html" rel="tag" title="">qlusters</a></li>
+<li class="taxonomy_term_964"><a href="/blog/taxonomy/term/964/index.html" rel="tag" title="">sco</a></li>
+<li class="taxonomy_term_963 last"><a href="/blog/taxonomy/term/963/index.html" rel="tag" title="">vc</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>In <a href="http://blog.sciencelogic.com/links-list-7308/07/2008">this</a> article the ScienceLogic blogs wonders.</p>
+<blockquote><p>
+Here’s an interview with David Lily, founder and CEO. Hmm. What happened to CEO Ranga Rangachari? As far as I can tell, he disappeared somewhere between Nov 2007 and Jan 2008. No announcement that I could find… Wonder how things are going for GroundWork? Are they about to follow QLusters and drop the “Open Source” part of their name that they tacked on a couple years back?
+</p></blockquote>
+<p>Then followed up with the <a href="http://blog.sciencelogic.com/qlusters-out-of-business/07/2008">article on Qlusters closing shop</a> where they identify different reasons for an Open Source systems management shop to close</p>
+<blockquote><p>
+What are the signs that a systems management company is going out of business?</p>
+<p>a) they abandon their open source project, which was supposedly tied to their commercially supported version</p>
+<p>b) they switch CEOs very very quietly</p>
+<p>c) they are an “open source” company trying to actually make money (via paying customers, not VC)</p>
+<p>d) all of the above
+</p></blockquote>
+<p>I've read rumours about GroundWorks management leaving before, but are they really heading the same direction ?</p>
+<p>Now while we are on the crazy similarities subject ...</p>
+<p>Remember Caldera ?  Who bought SCO, after which it rebranded to SCO ?<br />
+Didn't have a nice ending didn't it ?   So can you come up with another example of such a TakeOver and Rebrand scenario ?</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/node/699/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-698" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-07-31T19:36:55+02:00">
+  <span class="month">Jul</span>
+  <span class="day">31</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/698/index.html">OLS Day 5</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_960 first"><a href="/blog/taxonomy/term/960/index.html" rel="tag" title="">hackers bike ride</a></li>
+<li class="taxonomy_term_863"><a href="/blog/taxonomy/term/863/index.html" rel="tag" title="">ols</a></li>
+<li class="taxonomy_term_919"><a href="/blog/taxonomy/term/919/index.html" rel="tag" title="">ols2008</a></li>
+<li class="taxonomy_term_961 last"><a href="/blog/taxonomy/term/961/index.html" rel="tag" title="">peter anvin</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>What , you didn't know OLS had 6 full  days ? Sure thing.. if you include the pre OLS Minconfs then the 4 days of conference and then sunday to recover from the Black Thorne event and get on your (rental) bike for the Hacker Bike Ride .  All together 6 days ..</p>
+<p>The Bike Ride is the must do event where you can see <a href="http://flickr.com/photos/krisbuytaert/2718074582/" rel="nofollow">Peter Anvin french kiss a penguin</a>, or is that just the way you boot a Penguin ?<br />
+While eating some Burgers and HotDogs at the <a href="http://oclug.on.ca/meeting/31/" rel="nofollow">2008 LITW</a>, Linux in the Wild BBQ hosted by the  Ottawa Linux User Group.  Great event.. nice sights .  and thnx for all the fish .. euh meat :)</p>
+<p>That said .. my ols2008 pictures are now also <a href="http://flickr.com/photos/krisbuytaert/tags/ols2008/" rel="nofollow">online </a></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-697" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-07-27T00:56:32+02:00">
+  <span class="month">Jul</span>
+  <span class="day">27</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/697/index.html">OLS Day 4</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_955 first"><a href="/blog/taxonomy/term/955/index.html" rel="tag" title="">linuxsymposium</a></li>
+<li class="taxonomy_term_863"><a href="/blog/taxonomy/term/863/index.html" rel="tag" title="">ols</a></li>
+<li class="taxonomy_term_919"><a href="/blog/taxonomy/term/919/index.html" rel="tag" title="">ols2008</a></li>
+<li class="taxonomy_term_599 last"><a href="/blog/taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>H Peter Anvin starts of with a long history of IBM  booting in order to get to Network booting. how we went from ROMs placed on network cards up till PXE<br />
+He explains how he went from SYSLINUX , to PXELINUX adding ISOLINUX etc ..</p>
+<p>Next to him there was the another boot project  , Net Boot Image Proposal originally from NetBSD which aimed at creating a ROM image which then became Etherboot wich just in 2008 became gPXE which is now aiming  at full PXE support.  Initially 2 different projects with a totally different approach.</p>
+<p>However some NIC's were broken and PXELinux didn't solve those problems, but gPXE could solve these.  So the PXELinux and gPXE folks met up.  Which eventually lead to a joined effort.   Syslinux will get a LUA scripting interface where you can boot a certain kernel based on hardware specification.</p>
+<p>Next talk was David Lutterkort talk about <a href="http://www.augeas.net/" rel="nofollow">Augeas</a> .. luckily he didn't spoil it yet over dinner yesterday ;_)  Very interresting stuff .. surely something that's on my todolist.</p>
+<p>Next was a talk on  Vesper .  (Virtual Embraced Space Prober)<br />
+When Clustering Virtual Machines there are different possibilities, What does heartbeat do already to cluster virtual machines  Heartbeat just uses a VM as a resource.  A heartbeat is to "slow" to monitor it's actual resources ..</p>
+<p>Their solution is to probe the virtual machine , event driven , therefore immediate failure detection is possible.<br />
+It will also give you an alternative to debug the failure better.<br />
+Vesper is a framework to handle Kprobes in a virtual environment.<br />
+Sungho Kim pointed us to the <a href="http://cimha.sourceforge.net/" rel="nofollow">CIMHA</a> project which is aimed to create an integrated suite to provision and manage HA clusters in virtual environment. It will also constantly analyze kernel/hardware health of cluster nodes by using VESPER.   Not sure if I`ll put that on my todolist however</p>
+<p>What is Bringup you'd ask ,  according to Tim Hockin it is the process of making a new piece of hardware boot up YOUR os.<br />
+He also told us about  Drummonds law ..which learns us that  When you ship to a customer some thing will fail and   When you start debugging it goes away ..<br />
+To circumvent a lot problems they have been developing a set of tools starting off with  <a href="http://code.google.com/p/sgabios/" rel="nofollow">SGABios</a> and  <a href="http://code.google.com/p/iotools/" rel="nofollow">iotools</a>  and then goes on to show how he digs into the cpu and pci information using their new ppfs<br />
+His project is  <a href="http://prettyprint.google.com/" rel="nofollow">PrettyPrint</a></p>
+<p>Then off to the closing session of this last Ottawa Linux Symposium,  this will be the last OLS for a while as they are tearing down the Conference center.. co the Linux Symposium will move to Montreal next year..</p>
+<p>We're off to the Black Thorn Cafe for the final closing event now</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="index33.html?page=33" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a href="index30.html?page=30" title="Go to page 31" class="active">31</a></li>
+<li class="pager-item"><a href="index31.html?page=31" title="Go to page 32" class="active">32</a></li>
+<li class="pager-item"><a href="index32.html?page=32" title="Go to page 33" class="active">33</a></li>
+<li class="pager-item"><a href="index33.html?page=33" title="Go to page 34" class="active">34</a></li>
+<li class="pager-current">35</li>
+<li class="pager-item"><a href="index35.html?page=35" title="Go to page 36" class="active">36</a></li>
+<li class="pager-item"><a href="index36.html?page=36" title="Go to page 37" class="active">37</a></li>
+<li class="pager-item"><a href="index37.html?page=37" title="Go to page 38" class="active">38</a></li>
+<li class="pager-item"><a href="index38.html?page=38" title="Go to page 39" class="active">39</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="index35.html?page=35" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="index103.html?page=103" title="Go to last page" class="active">last »</a></li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=34 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:57:50 GMT -->
+</html>

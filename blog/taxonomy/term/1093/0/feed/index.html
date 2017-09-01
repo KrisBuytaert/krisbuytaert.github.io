@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - rss feed</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1093/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Everything is a Funky DNS Problem</title>
+ <link>http://127.0.0.1:8080/blog/everything-funky-dns-problem</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://www.sid3windr.be/&quot; rel=&quot;nofollow&quot;&gt;Tom&lt;/a&gt; dropped me a mail today letting me know that all the links to my RSS feed were broken.&lt;br /&gt;
+I tested, and tested again and failed to reproduce the problem.&lt;/p&gt;
+&lt;p&gt;The only things I had changed recently where the administrator menu module and Pathauto module, apart from that I had not made any changes.   So I tried uninstalling the modules to see if that helped,  it didn&#039;t.  There was no difference between the 2 setups.&lt;/p&gt;
+&lt;p&gt;When I replied to Tom that I couldn&#039;t reproduce the problemm he told me he only had the problem on &lt;a href=&quot;http://krisbuytaert.be/&quot; title=&quot;http://krisbuytaert.be/&quot;&gt;http://krisbuytaert.be/&lt;/a&gt; and not on &lt;a href=&quot;http://www.krisbuytaert.be/&quot; title=&quot;http://www.krisbuytaert.be/&quot;&gt;http://www.krisbuytaert.be/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So I verified the apache vhost config and it turned out that the problem, as usual, was a frigging DNS problem.&lt;br /&gt;
+Both Apache vhost config files had a different setup, so depending on how you arrived at this site you got a different config.&lt;/p&gt;
+&lt;p&gt;Annoying .. but I guess I owe Tom a beer for figuring this out and pointing me to my own DNS problem.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/everything-funky-dns-problem#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/451">dns</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/637">dns problem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/rss-feed">rss feed</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vhost">vhost</category>
+ <pubDate>Sun, 02 Nov 2008 19:11:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">762 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

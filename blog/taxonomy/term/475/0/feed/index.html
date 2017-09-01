@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - heartbeat</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/475/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Ensure Running</title>
+ <link>http://127.0.0.1:8080/blog/ensure-running</link>
+ <description>&lt;p&gt;Has anyone noticed that pretty much every puppet module one finds on the internet by default enables the service they try to configure in the module&lt;/p&gt;
+&lt;p&gt;When looking at it from a single machine point of view it makes sense to include the module , have it configure your service  and directly enable it by default.&lt;/p&gt;
+&lt;p&gt;So I started wondering .. isn&#039;t there anybody out there who is building clusters ?   Where services have to configured on multiple nodes but should NOT be running acitvely on all nodes by default because there is an external tool which manages that for you (Pacemaker framework eg.)&lt;/p&gt;
+&lt;p&gt;Agreed it&#039;s a small patch to get the functionality you want , but it brings an extra overhead when one upgrades the modules etc.&lt;/p&gt;
+&lt;p&gt;So if it doesn&#039;t bother you  please split your puppet module in 2 parts.. one you call to configure the service,  another which you call to enable the service , if you want to.&lt;/p&gt;
+&lt;p&gt;thnx !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/ensure-running#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/category/managed">managed</category>
+ <category domain="http://127.0.0.1:8080/blog/category/modules">modules</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/unmanaged">unmanaged</category>
+ <pubDate>Thu, 10 Feb 2011 19:20:44 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1034 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>High Availability MySQL Cookbook , the review</title>
+ <link>http://127.0.0.1:8080/blog/high-availability-mysql-cookbook-review</link>
+ <description>&lt;p&gt;When I read on the internetz that Alex Davies was about the publish a &lt;a href=&quot;https://www.packtpub.com/high-availability-mysql-cookbook/book&quot; rel=&quot;nofollow&quot;&gt;Packt book on MySQL HA&lt;/a&gt;  I pinged my contacts at Packt and suggested that I&#039;d review the book .&lt;/p&gt;
+&lt;p&gt;I&#039;ve ran into &lt;a href=&quot;https://sites.google.com/a/davz.net/alex-davies/&quot; rel=&quot;nofollow&quot;&gt;Alex&lt;/a&gt; at some UKUUG conferences before and he&#039;s got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.&lt;/p&gt;
+&lt;p&gt;Alex starts of with a couple of indepth chapters on MySQL Cluster,  he does mention that it&#039;s not a fit for all problems, but I&#039;d hoped he did it a bit more prominently ...    an upfront chapter outlining the different approaches and when which approach is a match could have been better.    The avid reader now might be 80 pages into MySQL cluster before he realizes it&#039;s not going to be a match for his problem.&lt;/p&gt;
+&lt;p&gt;I really loved the part where Alex correcly mentions that you should probably be using Puppet or so to manage the config files of your environment, rather than scp them around your different boxes ..&lt;/p&gt;
+&lt;p&gt;Alex then goes on to describe setting up MySQL replication and Multi Master replication with the different approaches one can take here,  he gives some nice tips on using LVM to reduce the downtime of your MySQL when having to transfer the dataset of an already existing MySQL setup, good stuff.&lt;/p&gt;
+&lt;p&gt;He then goes on to describe MySQL with shared storage ...   if you only mount your redundant sandisk once on your MySQL nodes my preference would probably be a Pacemaker stack  rather than a RedHat Cluster based setup,  but his setup seems to work too.   Alex quickly touches on using GFS to have your data disk mounted simultaneously on both nodes (keep in mind with only 1 active MySQLd)  and then goes on to describe a full DRBD based MySQL HA setup&lt;/p&gt;
+&lt;p&gt;The last chapter titled Performance tuning gives some very nice tips on both tuning your regular storage, as your&lt;br /&gt;
+GFS setup but also the tuning parameters for MySQL Cluster&lt;/p&gt;
+&lt;p&gt;I was also really happy to see the Appendixes on the basic installation where he advocates the use of Cobbler , Kickstart and LVM ..&lt;/p&gt;
+&lt;p&gt;One of the better books I read the past couple of years .. certainly the best book from Packt so far , I hope there is more quality stuff coming from that direction !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/high-availability-mysql-cookbook-review#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/cobbler">cobbler</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/899">drbd</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pacemaker">pacemaker</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Wed, 03 Nov 2010 23:07:18 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1022 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Got Interviewed</title>
+ <link>http://127.0.0.1:8080/blog/got-interviewed</link>
+ <description>&lt;p&gt;by &lt;a href=&quot;http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/&quot;&gt;@botchagalupe&lt;/a&gt;&lt;br /&gt;
+on Virtualization, Open Source tools and DNS Problems&lt;/p&gt;
+&lt;p&gt;&lt;embed src=&quot;http://blip.tv/play/AYGuxQoC&quot; type=&quot;application/xshockwave-flash&quot; width=&quot;480&quot; height=&quot;390&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/got-interviewed#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/437">dnsproblem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pacemaker">pacemaker</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Wed, 18 Nov 2009 20:05:47 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">960 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Heartbeat 2 OpenAIS</title>
+ <link>http://127.0.0.1:8080/blog/heartbeat-2-openais</link>
+ <description>&lt;p&gt;While upgrading a pretty recent Heartbeat cluster to OpenAis earlier today I ran  into the following weird situation&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Last updated: Fri Oct 16 08:50:03 2009&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Stack: openais&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Current DC: CO_NMS-1 - partition with quorum&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Version: 1.0.5-462f1569a43740667daf7b0f6b521742e9eb8fa7&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;4 Nodes configured, 2 expected votes&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;1 Resources configured.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;============&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Online: [ CO_NMS-1 CO_NMS-2 ]&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;OFFLINE: [ co_nms-1 co_nms-2 ]&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;or &lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;crm(live)node# show&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;co_nms-1(5c48ab4f-767f-e2dc-20ec-5969cddad152): normal&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;co_nms-2(922ff786-eca9-bed0-d79d-8222727a2c5b): normal&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;CO_NMS-1: normal&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;CO_NMS-2: normal&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Whohoo.. OpenAIS must have realized I have upperase and lowercase cores :)&lt;/p&gt;
+&lt;p&gt;Funny to see .. but quickly solved..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/heartbeat-2-openais#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/category/high-availability">high availability</category>
+ <category domain="http://127.0.0.1:8080/blog/category/openais">openais</category>
+ <pubDate>Fri, 16 Oct 2009 18:53:13 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">950 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Everything is a fine whitespace problem ... </title>
+ <link>http://127.0.0.1:8080/blog/everything-fine-whitespace-problem</link>
+ <description>&lt;p&gt;Couple of days ago I was working on a Linux Heartbeat v2 setup.&lt;br /&gt;
+Upon inserting an XML snippet into the cib  cib-adm started eating memory fast until the oom killer kicked in.&lt;/p&gt;
+&lt;p&gt;The environment  was running a fairly old heartbeat-2.0.8 version so I upgraded to  heartbeat-2.1.4-2.1  and there I got a nice warning that my XML sintax wasn&#039;t correct.&lt;/p&gt;
+&lt;p&gt;There was a whitespace in the XML syntax.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;expression attribute=&amp;quot;#replicationvalue&amp;quot; id=&amp;quot;is_lagged&amp;quot; operation =&amp;quot;gt&amp;quot;  ... &amp;gt;&amp;lt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Removing the  whitespace solves the problem, also on the older version.  So the problem is already fixed upstream.. but you might run into it anyhow.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/everything-fine-whitespace-problem#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/category/whitespace">whitespace</category>
+ <category domain="http://127.0.0.1:8080/blog/category/xml">xml</category>
+ <pubDate>Mon, 02 Feb 2009 21:00:36 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">869 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Bug in ifconfig ? </title>
+ <link>http://127.0.0.1:8080/blog/bug-ifconfig</link>
+ <description>&lt;p&gt;So earlier this week I ran into the weirdest problem with Linux-HA.  Heartbeat was happily adding an IP address as an active resource so one of my nodes when needed, but upon removal it failed to remove the IP from the stack.  Further debugging learned that the Heartbeat scripts claimed the ip wasn&#039;t on the actual stack.&lt;/p&gt;
+&lt;p&gt;It was.. but it the output from ifconfig was different from what it expected it to be.&lt;/p&gt;
+&lt;p&gt;Heartbeat checks the output of ifconfig and expects to find the IP address it added itselve to be on a :0 or similar interface.     Now ifconfig only seems output 8 characters for the interface name  Which means that when you have an interface called eth0:0 the output perfectly lists it and heartbea&lt;br /&gt;
+t is smart enough to remove the ip again when the node goes to standby.  If however you have   a vlan with 3 digits on a bond interface Heartbeat will add :0 to bond0.129  , the Heartbeat resource will add the ip address perfectly but opon checking all the :0 interfaces the bond0.129:0 interface won&#039;t be parsed as ifconfig outputs it as bond0.129 , hence resulting in a potential painfull situation where 2 nodes still share an IP address.&lt;/p&gt;
+&lt;p&gt;So where&#039;s the actual problem ifconfig, or heartbeat,   I&#039;d say both, but the easiest fix will be in  Heartbeat,  afterall there are other preferred ways of adding an ip addres to an interface. ip addr add comes to mind :)&lt;/p&gt;
+&lt;p&gt;So I filed a &lt;a href=&quot;http://developerbugs.linux-foundation.org/show_bug.cgi?id=1968&quot; rel=&quot;nofollow&quot;&gt;bug report&lt;/a&gt; :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/bug-ifconfig#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1032">ifconfig</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1031">ip</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Wed, 24 Sep 2008 15:27:26 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">730 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>It&#039;s February again</title>
+ <link>http://127.0.0.1:8080/blog/node/585</link>
+ <description>&lt;p&gt;It seems like for the past &lt;a href=&quot;http://www.oreillynet.com/pub/au/1737&quot; rel=&quot;nofollow&quot;&gt;4 years&lt;/a&gt; February is the month that  O&#039;Reilly really loves me and decides to publish one of my articles.&lt;/p&gt;
+&lt;p&gt;This years version was cowritten together with my collegue &lt;a href=&quot;http://www.raskas.be/blog/&quot; rel=&quot;nofollow&quot;&gt;Johan Huysmans&lt;/a&gt; and tackles the creation of &lt;a href=&quot;http://www.onlamp.com/pub/a/onlamp/2008/02/05/using-xen-for-high-availabilty-clusters.html&quot; rel=&quot;nofollow&quot;&gt;Highly Available Gateways&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Altough the every HA situation is different and this is a pretty easy setup it&#039;s a good start for other setups.&lt;/p&gt;
+&lt;p&gt;Enjoy the read&lt;/p&gt;
+&lt;p&gt;PS.  Yes I know , in 2006 I also had a January article :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/585#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/584">oreilly</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/769">raskas</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Wed, 06 Feb 2008 18:56:36 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">585 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Virtual Machine Replication</title>
+ <link>http://127.0.0.1:8080/blog/node/478</link>
+ <description>&lt;p&gt;I don&#039;t know on which planet I have been for the past couple of years , days  or hours  but since when do &lt;a href=&quot;//blogs.zdnet.com/virtualization/?p=256&quot; rel=&quot;nofollow&quot;&gt;&lt;br /&gt;
+VMware’s Vmotion, XenSource’s Xenmotion or Virtual Iron’s Virtual Iron support  Replication ?  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Live Migration yes, but Replication ,  No.  &lt;/p&gt;
+&lt;p&gt;I discussed this kind of technologies  with Mark and Vincent , Moshe and others already  a zillion times..  Continuously mirroring or realtime replication of a virtual machine is really difficult to do.  And I haven&#039;t heard from a working  scalable solution yet .. (Shared Memory issues such as we had with openMosix  still are amongst the issue to be tackled) &lt;/p&gt;
+&lt;p&gt;Live Replication would mean that you mirror the full state of your virtual machine realtime to another running virtual machine.  Every piece of disk/memory and screen you are using has to be replicated to the other side of the wire realtime.  Yes you can take snapshots of filesystems and checkpoints of virtual machines.  But continuous checkpointing over the network  , I&#039;d love to see that.. (outside of a lab)&lt;/p&gt;
+&lt;p&gt;So with a promise  like that .. our good friends the CIO will be dreaming and the vendors will be blamed for not delivering what was promised to them.&lt;/p&gt;
+&lt;p&gt;But on the subject of using just Live Migration features as an alternative for a real High Availability solution  , I know different vendors are singing this song,  but it&#039;s a bad one.&lt;/p&gt;
+&lt;p&gt;Using Live migration in your infrastructure will give you the opportunity to move your applications away from a bad behaving machine when you notice it starts behaving badly, hence giving you a better overall uptime.  If however you don&#039;t notice the machine is failing, or if it just suddenly stops working, or if your application crashes you are out of luck.&lt;br /&gt;
+Live migration won&#039;t work anymore since you are to late,  you can&#039;t migrate a machine that&#039;s dead.  The only thing you can do is quickly redeploy your virtual machine on another node, which for me doesn&#039;t really qualify as a Clustered or HA solution.&lt;/p&gt;
+&lt;p&gt;Real HA looks at all the aspects of an application,  the state of the application, the state of the server it is running on and the state of the network it is connected to.  It has an alternative ready if any of these aspects fail.  Session data is replicated,  data storage is done redundantly and your network has multiple paths.    If your monitoring decides something went wrong another alternative should take over with no visible interruption for the end user.  You don&#039;t have to wait till your application is restarted on the other side of the network, you don&#039;t have to wait till your virtual machine is rebooted, your filesystems are rechecked and your database has recovered no it happens right away .&lt;/p&gt;
+&lt;p&gt;But Virtual Machine Replication as an alternative for HA ?  I&#039;d call that wishfull thinking and vapourware today&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/478#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/561">clustering</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/560">dreaming</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/464">vapourware</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/563">virtual iron</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/555">vmware</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Wed, 17 Oct 2007 10:54:35 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">478 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>LinuxConference Europe 2007  5/X</title>
+ <link>http://127.0.0.1:8080/blog/node/442</link>
+ <description>&lt;p&gt;So today is the last day of LinuxConference Europe ,  down the stairs in the same building there a bunch of weirdos sitting at round tables for some highly elite and secret meeting. , also known as the KernelSummit.&lt;/p&gt;
+&lt;p&gt;I just heard someone say that they are figuring out which new bug they are planning to introduce into the new kernels. &lt;/p&gt;
+&lt;p&gt;I`m in LMB&#039;s tutorial on Linux HA,  so I`ll be musing about one of my favourite topics today :)&lt;br /&gt;
+Or I`ll just pay attention ;)&lt;/p&gt;
+&lt;p&gt;I`m wondering why Lars just modified one of his slides... maybe I`ll ask him over Lunch...&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/442#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/428">cambridge</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/476">linuxconf.eu.2007</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/429">linuxconference</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/450">lmb</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/448">tutorial</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/427">ukuug</category>
+ <pubDate>Wed, 05 Sep 2007 08:56:26 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">442 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

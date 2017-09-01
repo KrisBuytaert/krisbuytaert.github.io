@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/281 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:57:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Playing with a VT Box | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-story one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a></div></div>
+  <h2 id="title">Playing with a VT Box</h2>
+<div class="content">
+<div id="node-281" class="node  story">
+<div class="content"><p>I've had the MacMini sitting at my desk for a couple of months now, but that really didn't have enoug memory to test installing The other platform (Top from now on),   so when the SunFire boxen finally arrived I took one home and another collegue installed one at the office.</p>
+<p>It show that I don't care about being able to virtualise Top, one of the reasons why it took me so long to start testing was that I didn't have any media to test with and I couldn't just download a copy from the internet to start experimenting with as I`m used to with Linux.</p>
+<p>I started playing with a Xen enabled FC6 instance set up some Linux instances then got a freshly burned CD from the ServiceDesk at the office and tried to boot Top ,  now what can I say.. it just worked,<br />
+slow, just as I remember Top,  if the guys from Redmond say .. 10 minutes left .. you can perfectly go out for lunch Top not having finished those 10 minutes but that's just how I remember it.</p>
+<pre>import os, re
+arch = os.uname()<a href="../4/index.html">4</a>
+if re.search('64', arch):
+    arch_libdir = 'lib64'
+else:
+    arch_libdir = 'lib'
+
+kernel = "/usr/lib/xen/boot/hvmloader"
+builder='hvm'
+memory = 128
+shadow_memory = 8
+name = "WinDope"
+vif = <a href="../%27type%3dioemu%2c%20bridge%3dxenbr0%27/index.html"> 'type=ioemu, bridge=xenbr0' </a>
+disk = <a href="../%27file_/vhost/windows.hda%2chda%2cw%27%2c%27file_/vhost/windows/index.html"> 'file:/vhost/windows.hda,hda,w','file:/vhost/windows.cdrom,hdc:cdrom,r' </a>
+device_model = '/usr/' + arch_libdir + '/xen/bin/qemu-dm'
+boot="cda"
+sdl=0
+vnc=1
+stdvga=0
+serial='pty'</pre><p>Playing with sdl=0 and vnc=1 gives you the choice between direct out put on the screen or connecting via vnc remotely.<br />
+Networking worked out of the box.</p>
+<p>The dissapointement came when I tried doing a live migration of Top to another machine.  The linuxboxen could migrate perfectly, but Top refused.   Took me 30 seconds to figure out that<br />
+that also was expected behaviour, as that feature hasn't been implemented yet and is due to be out next year .<br />
+The only real problem I had with installing Top in a Xen machine was that I don't have a clue what to do with that virtual machine :)</p>
+<p>Anyway the Sun Boxen go back to the other Virtualisation people at the office for them to play with.   Not sure If I`ll have time the next couple of weeks to take the MacMini back and start playing with KVM.</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Fri, 12/29/2006 - 13:15</div>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/281 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:58:00 GMT -->
+</html>

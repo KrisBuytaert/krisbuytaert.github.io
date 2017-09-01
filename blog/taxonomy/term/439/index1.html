@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/taxonomy/term/439?page=1 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:25:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>puppet | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - puppet" href="0/feed/index.html" />
+<link rel="shortcut icon" href="../../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/taxonomy/taxonomy/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-taxonomy one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../../faq/index/index.html">FAQ</a> and  <a href="../../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../../index/index.html">Home</a></div></div>
+  <h2 id="title">puppet</h2>
+<div class="content">
+<div id="node-1072" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-09-13T22:27:28+02:00">
+  <span class="month">Sep</span>
+  <span class="day">13</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../../../gentwerpen-devops-meetup-conference-season-update/index.html">Gentwerpen Devops Meetup  &amp; Conference Season Update</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1465"><a href="../../../category/jenkins/index.html" rel="tag" title="">jenkins</a></li>
+<li class="taxonomy_term_1489"><a href="../../../category/linuxcon/index.html" rel="tag" title="">linuxcon</a></li>
+<li class="taxonomy_term_1490"><a href="../../../category/linuxconf/index.html" rel="tag" title="">linuxconf</a></li>
+<li class="taxonomy_term_458"><a href="../458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_454 last"><a href="../454/index.html" rel="tag" title="">t-dose</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>A couple of us have been taking about it a lot already .. we wanted to host a one day #devops event in .be already last year.. then talks about starting a meetup group started again with @wonko_be  but it was @fs111 pushing the final button and calling the rest of the .be community to order, we've set a date<br />
+and the first session will take place (agenda still needs to be detirmined) </p>
+<p>So all you Belgian devops enthousiasts, maark October 11th in your calendar and go <a href="http://www.eventbrite.com/event/4352133348" rel="nofollow">register here</a></p>
+<p>We already have 2 other venues (Gent, Boom) lined up .. but let's get this first one started :) </p>
+<p>Next to that here's an update for the rest of my upcoming Conference Season : </p>
+<ul>
+<li>Later this month I`ll be heading to San Francisco for a talk at  <a href="http://puppetconf.com/" rel="nofollow">PuppetConf 2012</a>.  I'll probably be around in the valley a bit earlier so if you anyone wants to meet up  I`m open for suggestions.<br />
+(Yes I asked Nick Stielau of Pantheon to host a #monitoringsucks / #devops meetup <a href="http://www.meetup.com/San-Francisco-DevOps/events/81251892/" rel="nofollow">about Sensu</a> but I should have predicted it was about to clash with the PuppetConf speakers dinner :((
+</li><li>I was thinking to swing by the MySQL- Connect conference but given the pricetag I don't think I`ll bother ...  I am however thinking about crashing the hallway track , or tricking the <a href="https://plus.google.com/102496134326414788199/posts/JXE1pRLwAsm" rel="nofollow">Foreman Meetup</a> to be colocated with a MySQL event again just like at Fosdem earlier this year
+</li><li>I will be attending the Jenkins User conference in San Francisco however before flying back to Europe
+</li><li> If you haven't noticed yet , Devopsdays is going to be in Rome this year  on october 5 and 6. <a href="http://devopsdays.org/events/2012-italy/registration/" rel="nofollow">Registration</a><br />
+is still open !
+</li><li>During the last weekend of  october it's time for <a href="http://www.t-dose.org/" rel="nofollow">t-dose.org</a> again.   No news on the program yet.
+</li><li>And one week later I`ll be heading to Barcelona to speak at <a href="https://events.linuxfoundation.org/events/linuxcon-europe" rel="nofollow">LinuxCon Europe</a>  I`m really looking forward to that last one again as it looks like the good old LinuxKongresses in Germany .. deep technical topics !
+</li></ul>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-1071" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-08-25T23:51:31+02:00">
+  <span class="month">Aug</span>
+  <span class="day">25</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../../../vagrant-and-drupal-winning-team/index.html">Vagrant and Drupal, a winning team</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1158 first"><a href="../../../category/chef/index.html" rel="tag" title="">chef</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_484"><a href="../484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1439 last"><a href="../../../category/vagrant/index.html" rel="tag" title="">vagrant</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>While heading back home from DrupalCon Munich after 4 days of good interaction with lots of Drupal folks.<br />
+I realized to my big suprise that there are a lot of people using Vagrant to make sure that developers are not working on platforms they invented their own.  Lots of people have realized that  "It works on my computer" is not something they want to hear from a developer and are reaching out to give them viable solutions to work on shared and reproducible solutions.   </p>
+<p>There were 2 talks proposing solutions to the problem, </p>
+<p>the first one was ..<a href="http://munich2012.drupal.org/program/sessions/fearless-development-drush-vagrant-and-aegir" rel="nofollow">Fearless development with Drush, Vagrant and Aegir</a> by <a href="http://ergonlogic.com/" rel="nofollow">Christopher Gervais </a> He talked about Drush VAgrant Integraion and how <a href="http://drupal.org/project/drush-vagrant" rel="nofollow"> extentions to Drush</a> allow for easy vagrant integration , bridging this gap allows rupal developers to use a tool they are already familiar with </p>
+<p>The second one was Jochen Lillich who explained how he us using Vagrant an Chef for this purpose his talk titled <a href="http://munich2012.drupal.org/program/sessions/use-datacenter-tools-make-your-dev-life-easier" rel="nofollow">Use datacenter tools to make your dev life easier</a> has been posted already.</p>
+<p>During the Vagrant BOF , I briefly ran over @patrickdebois old slides on Vagrant after which people started discussing their use cases..  2 other projects came up </p>
+<p>First is <a href="https://github.com/manarth/oscar" rel="nofollow">Project Oscar</a> which aims at providing developers with a default Drupal development environment in a Jiffy. they do this by providing a bunch of puppetmanifests that sets up a working environment.</p>
+<p>And the second one is <a href="https://github.com/myplanetdigital/ariadne" rel="nofollow">Ariadne</a> which is a standardized virtual machine development evironment for easily developing Drupal sites in a local sandbox that is essentially identical to a fully-configured hosted solution. It attempts to emulate a dedicated Acquia/Pantheon server as closely as possible, with added development tools. Project Ariadne is just like the examples from Jochen Lillich based on Chef</p>
+<p>With all of these tools and examples around , there should be no excuses anymore for Drupal developers to hack on their own machine and tell the systems people "It works on my machine" (let alone to hack in production).</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../vagrant-and-drupal-winning-team/index.html#comments" title="Jump to the first comment of this posting.">5 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1070" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-08-25T15:53:34+02:00">
+  <span class="month">Aug</span>
+  <span class="day">25</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../../../open-source-certification-friend-or-foe/index.html">Open Source Certification , Friend or Foe</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1152 first"><a href="../../../category/certification/index.html" rel="tag" title="">certification</a></li>
+<li class="taxonomy_term_484"><a href="../484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_599"><a href="../599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_439 last active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>With 2 of the bigger Open Source projects I care about talking about certifications programs questions pop up again ... </p>
+<p>Should we certify ourselves ? </p>
+<p>So let me tell you about my experiences in getting Open Source related Certifications ..</p>
+<p>Over a decade ago, (2001) when RedHat was still Redhat and not yet Fedora the company I was working for was about to partner with RedHat and needed to get a number of people certified for that. </p>
+<p>So I took the challenge, I bored myselve to death during a 4 day RedHat fast track training and set out to do the exam the next day.   Obviosly I scored pretty well given my yearlong experience in the subject. Back then I was told that I scored the one but European Record on the exam which was actually held by another collegue (hey Ico) , our CTO however  was not amused when I told that I could have scored better but I didn't bother running a <span class="geshifilter"><code class="text geshifilter-text">chkconfig smb &nbsp;on</code></span>  since I didn't see the use in using windows fileshares in a unix environment (Yes I was young , we're all allowd to make stupid mistakes :)) </p>
+<p>So I was certified,  we were expecting the requests to flow in en masse ... nothing happened... not a single customer request...  If I recall correctly we got 2 requests for certified engineers over the course of the following years. One was from a customer that wanted to have us do some junior level sysadmin work on their systems which we didn't care about, we proposed a more junior profile, but they insisted on having someone who was certified, The other one was from a Large institution that wanted certified people for their RedHat support, only to quickly learn that the budget they had planned for this project was about half the rate we usually charged ..</p>
+<p>When RedHat introduced their certified Architect program my answer was, sure .. if you bring us the customer that will make the investment worthwhile , guess what..</p>
+<p>My second experience with Open Source certification came a couple of years later with MySQL,  same story partnering etc, . only this time our trainer had put some focus on a couple of slides during the training (Hi Tobias)  and during the exam indeed one of those questions popped up,  The correct answer to "What are the core values of MySQL AB"  was "We reply to email" ,  I stood up and left the exam ...<br />
+I ranted about this to a number of people including  Roland Bouman who back then was just starting on the MySQL (NDBD) Cluster certifciation track and I assisted him in making the book to study for that exam better.<br />
+Once again .. pretty much no one asked for MySQL certification in Europe back in those days (2007  ?)  </p>
+<p>I won't go deeper into discussing the Xen certification I got from Citrix, but it involved correcting slides from the presenters at the first European training.</p>
+<p>Based on my experience with these certifications in Belgium/Europe you can see that I`m not a big fan of certifications  I have not seen a reason for me to certify yet</p>
+<p>I actually think that noone within the Open Source community should be looking for certification,  we should be looking for people that are active in the community and that are contributing to projects.<br />
+Unlike in the proprietary world where you have to cough up tons of money in order to get a license to play with a tool and learn itl In the open source world with projects such as both Drupal and Puppet, there are  absolutely no excuses for Junior people not to engage and prove themselves.    they have full access to anything they need, the only thing they need to do is want to get involved.</p>
+<p>Sadly this world however is still full of  incompetent recruiters,  middlemarket agencies that will never understand this and will ask for cerftifications of some kind.   My fear is indeed that there will be a group of mediocre but certified developers swarming these growing markets at dumping rates and that the people with the real experience that have been involved in the communities for ages already will be the ones pulling the short straw. </p>
+<p>Anyhow ... in just  a short couple of years everything will be fine again .. as by then my RHCE will be current again and the incompetent recruiters that need people that are RedHat 7 certified will start calling me  by the dozen.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../open-source-certification-friend-or-foe/index.html#comments" title="Jump to the first comment of this posting.">15 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1068" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-08-11T21:49:39+02:00">
+  <span class="month">Aug</span>
+  <span class="day">11</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../../../our-monitoringsucks-rpm-repository-available/index.html">Our #monitoringsucks rpm is repository available </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1471"><a href="../../../category/ganglia/index.html" rel="tag" title="">ganglia</a></li>
+<li class="taxonomy_term_1470"><a href="../../../category/graphite/index.html" rel="tag" title="">graphite</a></li>
+<li class="taxonomy_term_1481"><a href="../../../category/logstash/index.html" rel="tag" title="">logstash</a></li>
+<li class="taxonomy_term_938"><a href="../938/index.html" rel="tag" title="">monitoring</a></li>
+<li class="taxonomy_term_1469"><a href="../../../category/monitoringsucks/index.html" rel="tag" title="">monitoringsucks</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1486"><a href="../../../category/repo/index.html" rel="tag" title="">repo</a></li>
+<li class="taxonomy_term_1439 last"><a href="../../../category/vagrant/index.html" rel="tag" title="">vagrant</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.</p>
+<p>You might have noticed a variety of vagrant- projects on my github acount</p>
+<p><a href="http://github.com/KrisBuytaert/vagrant-ganglia" rel="nofollow">http://github.com/KrisBuytaert/vagrant-ganglia </a><br />
+<a href="http://github.com/KrisBuytaert/vagrant-graphite" rel="nofollow">http://github.com/KrisBuytaert/vagrant-graphite</a><br />
+<a href="http://github.com/KrisBuytaert/vagrant-puppet-logstash" rel="nofollow">http://github.com/KrisBuytaert/vagrant-puppet-logstash,</a><br />
+Being the #monitoringsucks part of them.     All of those Vagrant projects are basically my test setups to play with those new tools.</p>
+<p>They contain a bunch of puppet modules that install and configure these tools.  (Note that they mostly consist of<br />
+of git submodules to other puppet module repositories.</p>
+<p>Given the fact that I also like to have my software cleanly installed from a package, that means that some of these tools had to be packaged,  or I had to create a personal / internal repository which had packages from upstream that were hiding on the internet available.</p>
+<p>I've forked of this repository off the internal Inuits epository so you all can also benefit from these efforts.<br />
+(You gotta love pulp :))</p>
+<p>That means you can now install all of the above mentionned #monitoringsucks tool from our public repo on </p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">yumrepo { 'monitoringsucks':</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  baseurl    =&gt; 'http://pulp.inuits.eu/pulp/repos/monitoring',</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  descr      =&gt; 'MonitoringSuck at Inuits',</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  gpgcheck   =&gt; '0',</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">}</div></li></ol></pre></div></p>
+<p>Patches to both the Vagrant projects and the puppet modules are welcome ...</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../our-monitoringsucks-rpm-repository-available/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1066" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-08-06T08:51:35+02:00">
+  <span class="month">Aug</span>
+  <span class="day">06</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../../../breaking-silence/index.html">Breaking the Silence.</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_558 first"><a href="../558/index.html" rel="tag" title="">conferences</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1329"><a href="../../../category/devopsdays/index.html" rel="tag" title="">devopsdays</a></li>
+<li class="taxonomy_term_484"><a href="../484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_1010"><a href="../1010/index.html" rel="tag" title="">drupalcon</a></li>
+<li class="taxonomy_term_439 last active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>3+ months is probably the biggest timeout I've taken from blogging in a while..<br />
+Not that I didn't have anything to write ..but more that I was prioritizing writing different content over<br />
+over writing blogposts.</p>
+<p>Blogging tech snippets and contributing documentation used to be one now all of that has evolved.<br />
+Anyhow ..</p>
+<p>So to get things going here's my preliminary Conference schedule for the next couple of months.</p>
+<ul>
+<li>First up, in about one week (august 20-24)  I`ll be  chairing the #devops track at <a href="http://munich2012.drupal.org/" rel="nofollow">DrupalCon Munich</a><br />
+Next to talking there myselve  explaining the <a href="http://munich2012.drupal.org/program/sessions/whats-devops-thing-anyhow" rel="nofollow">Drupal Crowd what  devops is</a><br />
+Plenty of interresting content there ranging from culture  over to tooling and back.  I`m really looking forward to this one.
+<p>There's also talk of the local Devops meetup group hosting an additional meetup ! </p>
+</li><li>About a month later I`ll be heading to San Francisco for a talk at  <a href="http://puppetconf.com/" rel="nofollow">PuppetConf 2012</a>.  I'll probably be around in the valley a bit earlier<br />
+so if you anyone wants to meet up  I`m open for suggestions.
+</li><li>
+I've taken over a bit of Patricks workload this year , thus I`m trying to guide the local crew in Rome into organising yet another awesome Devopsdays Europe,<br />
+If you haven't noticed yet , Devopsdays is going to be in Rome this year  on october 5 and 6. Both <a href="http://devopsdays.org/events/2012-italy/registration/" rel="nofollow">registration</a> and the <a href="http://devopsdays.org/events/2012-italy/propose/" rel="nofollow">call for participation</a> are still open !
+</li></ul>
+<p>Next up .. content ... on how monitoring tools still suck .. and I`m still not sure wether a certification program is relevant for open source consultants ..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../breaking-silence/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-1065" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-05-01T21:02:30+02:00">
+  <span class="month">May</span>
+  <span class="day">01</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../../../devops-munich/index.html">Devops in Munich</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_456 first"><a href="../456/index.html" rel="tag" title="">cfp</a></li>
+<li class="taxonomy_term_1482"><a href="../../../category/configmgmt/index.html" rel="tag" title="">configmgmt</a></li>
+<li class="taxonomy_term_1161"><a href="../../../category/deployment/index.html" rel="tag" title="">deployment</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_484"><a href="../484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_1483"><a href="../../../category/measurement/index.html" rel="tag" title="">measurement</a></li>
+<li class="taxonomy_term_938"><a href="../938/index.html" rel="tag" title="">monitoring</a></li>
+<li class="taxonomy_term_458"><a href="../458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1451 last"><a href="../../../category/testing/index.html" rel="tag" title="">testing</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Devopsdays Mountainview sold out in a short 3 hours ..   but there's other events   that will breath devops this summer.<br />
+DrupalCon in Munich will be one of them ..</p>
+<p>Some of you might have noticed that I`m cochairing the devops track for DrupalCon Munich,<br />
+The CFP is open till the 11th of this month and we are still actively looking for speakers.</p>
+<p>We're trying to bridge the gap between drupal developers and the people that put their code to production, at scale.<br />
+But also enhancing the knowledge of infrastructure components Drupal developers depend on.</p>
+<p>We're looking for talks both on culture (both success stories and failure) ,   automation,<br />
+specifically looking for people talking about drupal deployments , eg using tools like Capistrano, Chef, Puppet,<br />
+We want to hear where Continuous Integration fits in your deployment ,  do you do Continuous Delivery of a drupal environment.<br />
+And how do you test ... yes we like to hear a lot about testing , performance tests, security tests, application tests and so on.<br />
+...  Or have you solved the content vs code vs config  deployment problem yet ? </p>
+<p>How are you measuring and monitoring these deployments and adding metrics to them  so you can get good visibility on both<br />
+system and user actions of your platform.  Have you build fancy dashboards showing your whole organisation the current state of your deployment ? </p>
+<p>We're also looking  for people talking about introducing different data backends,  nosql,  scaling different search backends , building your own cdn using  smart  filesystem setups.<br />
+Or making smart use of existing backends, such as tuning and scaling MySQL, memcached and others.</p>
+<p>So lets make it clear to the community that drupal people do care about their code after they committed it in source control ! </p>
+<p>Please submit your talks <a href="http://munich2012.drupal.org/news/call-for-papers" rel="nofollow">here</a></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../devops-munich/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1064" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-03-23T15:49:47+01:00">
+  <span class="month">Mar</span>
+  <span class="day">23</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../../../flossuk-and-puppetcamp-edinburgh/index.html">FlossUK and Puppetcamp Edinburgh</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_455 first"><a href="../455/index.html" rel="tag" title="">conference</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1470"><a href="../../../category/graphite/index.html" rel="tag" title="">graphite</a></li>
+<li class="taxonomy_term_1481"><a href="../../../category/logstash/index.html" rel="tag" title="">logstash</a></li>
+<li class="taxonomy_term_1480"><a href="../../../category/mcollective/index.html" rel="tag" title="">mcollective</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1363"><a href="../../../category/puppetcamp/index.html" rel="tag" title="">puppetcamp</a></li>
+<li class="taxonomy_term_1439 last"><a href="../../../category/vagrant/index.html" rel="tag" title="">vagrant</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>I've just finished presenting my talk on how I currently work on Puppet modules  at Puppetcamp here in Edinburgh where I've been for the week talking on both FlossUK 2012 and Puppetcamp.</p>
+<div style="width:425px" id="__ss_12093262"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/KrisBuytaert/7-tools-for-your-devops-stack" title="7 tools for your devops stack" target="_blank">7 tools for your devops stack</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/12093262" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br />
+<div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/KrisBuytaert" target="_blank">Kris Buytaert</a> </div>
+</div>
+<p>Earlier this week I opened FlossUK 2012 with my talk on 7 tools for your devops stack </p>
+<div style="width:425px" id="__ss_12130149"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/KrisBuytaert/how-ihackonpuppetmodules" title="How I hack on puppet modules" target="_blank">How I hack on puppet modules</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/12130149" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br />
+<div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/KrisBuytaert" target="_blank">Kris Buytaert</a> </div>
+</div>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../flossuk-and-puppetcamp-edinburgh/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1050" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-09-24T14:53:29+02:00">
+  <span class="month">Sep</span>
+  <span class="day">24</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../fall-winter-and-spring-conference-season-2011-2012/index.html">Fall , Winter and Spring Conference Season 2011 - 2012</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_558 first"><a href="../558/index.html" rel="tag" title="">conferences</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_599"><a href="../599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_439 last active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://www.jedi.be/blog/2011/09/06/what-conferences-to-attend/">Patrick</a> posted his upcoming conference schedule for the next couple of months.<br />
+ as you can see there are a comple of overlapping conferences :)</p>
+<p>Conferences I'm speaking at or likely to attend are:</p>
+<ul>
+<li>The first week of October I`ll be in the Valley ,  I`ll be late for Jenkinsconf but I hope to pick up some events while I`m there.. suggestions are welcome , I`m also heading back to Europe earlier than planned so I will miss BadCamp :( ...
+</li>
+<li><a href="http://devopsdays.org/events/2011-goteborg/">Devopsdays Goteborg, Sweden</a> : <i>October 14,15</i> - The yearly Europe devops event is happening in Goteborg this time. It's going to be really exciting this time , as the theme is inclusive. Eploring the boundaries of devops,  I`m once again in the organization of  this conference.</li>
+<li><a href="http://t-dose.org/">T-Dose 2011</a>, The Technical Dutch Open Source Event, on 5 and 6 november 2011 , I will be talking again about my experiences with complex Puppet setups
+</li>
+<li><del><a href="http://citconf.com/">Citconf , London</a>: <i>November 11-12</i> - All you ever wanted to know about Continuous Integration. Period, registered, haven't booked flights yet.</del></li>
+<li><a href="http://www.cloudcamp.org/ghent">Cloudcamp Belgium</a>: <i>November 21</i> - I'm looking forward to this year's event, as there will likely more practioners and less marketing folks.</li>
+<li><a href="http://www.usenix.org/events/lisa11/tech/tech.html#Buytaert">Lisa 2011</a>, Boston, US,     I`m giving an Invited talk titled , Devops: The past and futre are here, It's just not evenly distributed (yet),  and I`ll be on a panel titled What Will Be HOt Next Year, really looking forward to this one :)
+</li>
+<li><a href="http://fosdem.org/">Fosdem.org</a> will take place on  4 and 5 February 2012 , and as every year  since it inception I'll be there </li>
+<li>The UKUUG rebranded to <a href="http://www.flossuk.org/Events/Spring2012/">FlossUK</a> , they are hosting their Annual Spring conference from 20th to 22nd March in Edinburgh , given their refound focus it will be even more interresting ! </li>
+<li>And as announced earlier this week <a href="http://loadays.org/">Loadays.org</a> will take place in Antwerp again this year on 31/3/2012 and 1/4/2012 , as the previous years I`m co organizing this conference</li>
+</ul>
+<p>And yes, I do work from time to time. Just that these conferences are a great way to capture and share new ideas. All worth it!</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-1049" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-08-24T10:41:34+02:00">
+  <span class="month">Aug</span>
+  <span class="day">24</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../using-veewee/index.html">Using Veewee</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_439 active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+<li class="taxonomy_term_1439"><a href="../../../category/vagrant/index.html" rel="tag" title="">vagrant</a></li>
+<li class="taxonomy_term_1464 last"><a href="../../../category/veewee/index.html" rel="tag" title="">veewee</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>With @dancarley and @patrickebois just discussing the origin of the name of Veewee  I figured I still had that piece of documentation I wrote up for myselve flying around ...  </p>
+<p>So with no other reason than having my docs mirrored on the internet . </p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">gem install veewee</div></li></ol></pre></div></p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">veewee templates</div></li></ol></pre></div><br />
+shows you what templates we have around ..</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">$veewee init natty ubuntu-11.04-server-amd64</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Init a new box natty, starting from template ubuntu-11.04-server-amd64</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">The basebox 'natty' has been successfully created from the template ''ubuntu-11.04-server-amd64'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">You can now edit the definition files stored in definitions/natty</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">or build the box with:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vagrant basebox build 'natty'</div></li></ol></pre></div></p>
+<p>As noted this will generate the definition for your natty box,<br />
+It will create a definition.rb file which describes your box.<br />
+A preseed (or kickstart or similar file)  and a postinstall file</p>
+<p>The next step is then to use vagrant to build this basebox<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">$ vagrant  basebox build natty</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Verifying the isofile ubuntu-11.04-server-amd64.iso is ok.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Creating vm natty : 384M - 1 CPU - Ubuntu_64</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Creating new harddrive of size 10140</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">VBoxManage createhd --filename '/home/sdog/VirtualBox VMs/natty/natty.vdi' --size '10140' --format vdi &gt; /dev/null</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Attaching disk: /home/sdog/VirtualBox VMs/natty/natty.vdi</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Mounting cdrom: /home/sdog/iso/ubuntu-11.04-server-amd64.iso</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Waiting for the machine to boot</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Typing:[1]: &lt;Esc&gt;&lt;Esc&gt;&lt;Enter&gt;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Typing:[2]: /install/vmlinuz noapic preseed/url=http://192.168.10.101:7122/preseed.cfg</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Typing:[3]: debian-installer=en_US auto locale=en_US kbd-chooser/method=us</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Typing:[4]: hostname=natty</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Typing:[5]: fb=false debconf/frontend=noninteractive</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Typing:[6]: keyboard-configuration/layout=USA keyboard-configuration/variant=USA console-setup/ask_detect=false </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Typing:[7]: initrd=/install/initrd.gz -- &lt;Enter&gt;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Done typing.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Starting a webserver on port 7122</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Serving file /home/sdog/definitions/natty/preseed.cfg</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Waiting for ssh login with user vagrant to sshd on port =&gt; 7222 to work</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">.....................................................................................................................................................Transferring /tmp/vbox.version20110822-6766-1xcca1e-0 to .vbox_version</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">..</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Step [0] was successfully - saving state</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Waiting for ssh login with user vagrant to sshd on port =&gt; 7222 to work</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">.Transferring /home/sdog/definitions/natty/postinstall.sh to postinstall.sh</div></li></ol></pre></div><br />
+Plenty more output here !</p>
+<p>Be very patient ..  you will see VirtualBox launch a VM and start installing it ..</p>
+<p>The next steps are clear .. vagrant tells you what you can do next</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Now you can:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">- verify your box by running               : vagrant basebox validate natty</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">- export your vm to a .box file by running : vagrant basebox export   natty</div></li></ol></pre></div></p>
+<p>So after validating it , you can now export the basebox and share it with other people.</p>
+<p>The next step is to actually use that box in your own Vagrant setup, for that you need to import the box into your box collection</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">$ vagrant box add 'natty' 'natty.box'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[vagrant] Downloading with Vagrant::Downloaders::File...</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[vagrant] Copying box to temporary location...</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[vagrant] Extracting box...</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[vagrant] Verifying box...</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[vagrant] Cleaning up downloaded box...</div></li></ol></pre></div></p>
+<p>To verify just run</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">$ vagrant box list</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Centos6</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">MyCentOS2</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">debian</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">natty</div></li></ol></pre></div></p>
+<p>your freslhy imported box should be in the list .</p>
+<p>You can now use<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">config.vm.box = &quot;natty&quot;</div></li></ol></pre></div> to refer to the fresly imported box in your Vagrant file, a file that can be created by running vagrant init, or copying around another Vagrant template ..</p>
+<p>After that .. regular vagrant fun starts,  up,  provision, provision, provision, destroy,  and so forth ..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../using-veewee/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1045" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-07-17T22:39:27+02:00">
+  <span class="month">Jul</span>
+  <span class="day">17</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../../drupal-and-configuration-mgmt-were-getting-there/index.html">Drupal and Configuration Mgmt, we&#039;re getting there ... </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1158 first"><a href="../../../category/chef/index.html" rel="tag" title="">chef</a></li>
+<li class="taxonomy_term_440"><a href="../440/index.html" rel="tag" title="">configuration management</a></li>
+<li class="taxonomy_term_1161"><a href="../../../category/deployment/index.html" rel="tag" title="">deployment</a></li>
+<li class="taxonomy_term_1328"><a href="../../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_484"><a href="../484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_461"><a href="../461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_439 last active"><a href="index.html" rel="tag" title="" class="active">puppet</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>For those who haven't noticed yet .. I`m into devops  .. I`m also a little bit into Drupal, (blame my last name..)  ,  so one of the frustrations I've been having with Drupal (an much other software) is the automation of deployment and upgrades of Drupal sites ... </p>
+<p>So for the past couple of days  I've been trying to catch up to the ongoing discussion regarding the results of the <a href="http://groups.drupal.org/node/155559" rel="nofollow">configuration mgmt  sprint</a> , I've been looking at it mainly from a systems point of view , being  with the use of Puppet/ Chef or similar tools in mind ..  I know I`m late to the discussion but hey , some people take holidays in this season :)   So below you can read a bunch of my comments ... and thoughts on the topic ..</p>
+<p>First of all , to me JSON looks like a valid option.<br />
+Initially there was the plan to wrap the JSON in a PHP header for "security" reasons, but that seems to be gone even while nobody mentioned the problems that would have been caused for external configuration management tools.<br />
+When thinking about external tools that should be capable of mangling the file plenty of them support JSON but won't be able to recognize a JSON file with a weird header ( thinking e.g about Augeas  (augeas.net) , I`m not talking about IDE's , GUI's etc  here, I`m talking about system level tools and libraries  that are designed to mangle standard files.   For Augeas we could create a separate lens to manage these files , but other tools might have bigger problems with the concept.</p>
+<p>As <a href="http://groups.drupal.org/node/155559#comment-520134" rel="nofollow">catch</a> suggest a clean .htaccess should be capable of preventing people to access the .json files  There's other methods to figure out if files have been tampered with , not sure if this even fits within Drupal  (I`m thinking about reusing existing CA setups rather than having yet another security setup to manage) , </p>
+<p>In general to me tools such as puppet should be capable of modifying config files , and then activating that config with no human interaction required , obviously drush is a good candidate here to trigger the system after the config files have been change, but unlike some people think having to browse to a web page to confirm the changes is not an acceptable solution.  Just think about having to do this on multiple environments ... manual actions are error prone.. </p>
+<p>Apart from that I also think the storing of the certificates should not be part of the file.  What about a meta file with the appropriate checksums ?  (Also if I`m using Puppet or any other tool to manage my config files then the security , preventing to tamper these  files, is already covered by the configuration management tools,  I do understand that people want to build Drupal in the most secure way possible, but I don't think this belongs in any web application.  </p>
+<p>When I look at other similar discussions that wanted to provide a similar secure setup they ran into a lot of end user problems with these kind of setups,  an alternative approach is to make this configurable and or plugable.   The default approach should be to have it enable, but the more experienced users should have the opportunity to disable this, or replace it with another framework.   Making it plugable upfront solves a lot of hassle later.</p>
+<p>Someone in the discussion noted :<br />
+"One simple suggestion for enhancing security might be to make it possible to omit the secret key file and require the user to enter the key into the UI or drush in order to load configuration from disk."</p>
+<p>Requiring the user to enter a key in the UI or drush would be counterproductive in the goal one wants to achieve,  the last thing you want as a requirement is manual/human interaction when automating setups.   therefore a feature like this should never be implemented  </p>
+<p>Luckily there seems to be  new idea around <a href="http://groups.drupal.org/node/157379" rel="nofollow">that</a> doesn't plan on using a raped json file<br />
+<cite>instead of storing the config files in a standard place, we store them in a directory that is named using a hash of your site's private key, like sites/default/config_723fd490de3fb7203c3a408abee8c0bf3c2d302392. The files in this directory would still be protected via .htaccess/web.config, but if that protection failed then the files would still be essentially impossible to find. This means we could store pure, native .json files everywhere instead, to still bring the benefits of JSON (human editable, syntax checkable, interoperability with external configuration management tools, native + speedy encoding/decoding functions), without the confusing and controversial PHP wrapper.</cite></p>
+<p>Figuring out the directory name for the configs from a configuration mgmt tool then could be done by something similar to  </p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">cd sites/default/conf/$(ls sites/default/conf|head -1)</div></li></ol></pre></div></p>
+<p>In general I think the proposed setup looks acceptable , it definitely goes in the right direction of providing systems people with a way to automate the deployment of Drupal sites and applications at scale.</p>
+<p>I`ll be keeping a eye on both the direction they are heading into and the evolution of the code !</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../drupal-and-configuration-mgmt-were-getting-there/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="index.html" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-item"><a href="index.html" title="Go to page 1" class="active">1</a></li>
+<li class="pager-current">2</li>
+<li class="pager-item"><a href="index2.html?page=2" title="Go to page 3" class="active">3</a></li>
+<li class="pager-item"><a href="index3.html?page=3" title="Go to page 4" class="active">4</a></li>
+<li class="pager-item"><a href="index4.html?page=4" title="Go to page 5" class="active">5</a></li>
+<li class="pager-item"><a href="index5.html?page=5" title="Go to page 6" class="active">6</a></li>
+<li class="pager-next"><a href="index2.html?page=2" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="index5.html?page=5" title="Go to last page" class="active">last »</a></li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/taxonomy/term/439?page=1 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:25:49 GMT -->
+</html>

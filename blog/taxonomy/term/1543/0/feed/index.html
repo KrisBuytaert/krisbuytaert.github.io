@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - microservices</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1543/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Will containers take over ?</title>
+ <link>http://127.0.0.1:8080/blog/will-containers-take-over</link>
+ <description>&lt;p&gt;and if so why haven&#039;t they done so yet ?&lt;/p&gt;
+&lt;p&gt;Unlike many people think, containers are not new, they have been around for more than a decade,  they however just became popular for a larger part of our ecosystem. &lt;a href=&quot;http://cloudscaling.com/blog/cloud-computing/will-containers-replace-hypervisors-almost-certainly/&quot; rel=&quot;nofollow&quot;&gt;Some&lt;/a&gt; people think  containers will eventually take over.&lt;/p&gt;
+&lt;p&gt;Imvho It is  all about application workloads,  when  8 years ago &lt;a href=&quot;http://virtualization.com/2008/03/10/looking-back-at-a-decade-of-open-source-virtualisation/&quot; rel=&quot;nofollow&quot;&gt; I wrote&lt;/a&gt; about a decade of open source virtualization,   we looked at containers as the solution for running a large number of isolated instances of something on a machine. And with large we meant hundreds or more instances  of apache, this was one of  the example use cases for an ISP that wanted to give a secure but isolated platform to his users. One container per user.&lt;/p&gt;
+&lt;p&gt;The majority of enterprise  usecases however were full VM&#039;s   Partly because we were still consolidating existing services to VM&#039;s and weren&#039;t planning on changing the deployment patterns yet. But mainly because most organisations didn&#039;t have the need to run 100 similar or identical instances of an application or a service,  they were going from 4 bare metal servers to 40 something VM&#039;s but they had  not yet come to the need to run 100&#039;s of them.  The software architecture had just moved from FatClient applications that talked directly to bloated relational databases containing business logic, to web enabled multi-tier&lt;br /&gt;
+applications.   In those days when you suggested to run 1 Tomcat instance per VM because VM&#039;s were cheap and it would make management easier,  (Oh oops I shut down the wrong tomcat instance)  , people gave you very weird looks&lt;/p&gt;
+&lt;p&gt;Slowly software architectures are changing , today  the new breed of applications is small, single function, dedicated, and it interacts frequently with it&#039;s peers, together combined they provide similar functionality as a big fat application 10 years ago, But when you look at the market that new breed is a minority.  So a modern application might consist of 30-50 really small ones,  all with different deployment speeds.  And unlike 10 years ago where we needed to fight hard to be able to build both dev, acceptance and production platforms,  people now consider that practice normal.  So today we do get environments that quickly go to 100+ instances , but requiring similar CPU power as before,   so the use case for containers like we proposed it in the early days is now slowly becoming a more common use case.&lt;/p&gt;
+&lt;p&gt;So yes containers might take over ...  but before that happens .. a lot of software architectures will need to change,  a lot of elephants will need to be sliced, and that  is usually what blocks cloud, container, agile and devops adoption.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/will-containers-take-over#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/containers">containers</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devoops">devoops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/microservices">microservices</category>
+ <category domain="http://127.0.0.1:8080/blog/category/software-architecture">software architecture</category>
+ <pubDate>Wed, 15 Jun 2016 14:57:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1112 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

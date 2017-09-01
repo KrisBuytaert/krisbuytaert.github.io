@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - timezone</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1015/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>This should *never* happen!</title>
+ <link>http://127.0.0.1:8080/blog/node/724</link>
+ <description>&lt;p&gt;While playing around with the great &lt;a href=&quot;http://gert.sos.be/en/&quot; rel=&quot;nofollow&quot;&gt;MySQL Activity Reporter&lt;/a&gt; , I ran into the following error.&lt;/p&gt;
+&lt;p&gt;[client 192.168.254.72] PHP Fatal error:  strftime() [&lt;a href=&#039;function.strftime&#039;&gt;function.strftime&lt;/a&gt;]: Timezone database is corrupt - this should *never* happen! in /var/lib/mysqlard/mysqlar.php on line 62&lt;/p&gt;
+&lt;p&gt;Now the error is clear .. the Timezone database is corrupt and I`m the one to blame for ..   this was on a pretty stripped down Centos that lives in UTC.  So there wasn&#039;t a real Timezone database.&lt;/p&gt;
+&lt;p&gt;Obviously a quick apt-get install tzdata  solved  the problem, but once again the lesson is.. don&#039;t strip too much .. you&#039;ll eventually endup needing those 3 Kb of free space you gained anyhow.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/724#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1014">mysqlar</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/485">php</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1015">timezone</category>
+ <pubDate>Wed, 10 Sep 2008 18:23:48 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">724 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/devops-secops-dbaops-netops by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:30:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DevOPS, SecOPS, DBAOps, NetOps | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">DevOPS, SecOPS, DBAOps, NetOps</h2>
+<div class="content">
+<div id="node-992" class="node  blog">
+<div class="content"><p>This post is long overdue,  as the idea  struck me when dicussing with  <a href="http://lefred.be/">Lefred</a>  while preparing his <a href="http://www.lefred.be/?q=node/113" rel="nofollow">Fosdem talk</a> on Maintaining too big tables</p>
+<p>I got triggered finishing this post by <a href="http://www.build-doctor.com/2010/03/09/devops-is-a-good-cause-but-what-about-opsops/" rel="nofollow">Mr BuidlDoctor</a></p>
+<p>Fred has been struggling with a typical DevOps problem resulting in the most unmanageable database setup possible,  there's little room for him to move but he managed is way out .. because he is <a href="http://www.krisbuytaert.be/blog/apparently-devops-not-jobtitle#comment-3992">good at his job</a></p>
+<p>It set the mark for me that because in different organisations even the Opsteam is fragmented `in different groups that there also we need to get the Devops idea going.</p>
+<p>Typical setups here are the Network guys vs the Platform guys , specially  with the growth of virtualization where the network stack doesn't stop at the physcial switchport anymore but the vlan trunks go deep in to the VM's a lot of discussion happens.  There where traditionally the story for the network engineer stopped at the switch they now want control much deeper in the infrastructure.</p>
+<p>But an even bigger group that needs integration are the security folks,  it's no secret that in some organisations the security guys job is to be the bad guy, their default reply to something is NO.    Specially to people wanting to drill holes in their architecture .</p>
+<p><a href="http://twitter.com/patrickdebois/status/10231971738" rel="nofollow">Patrick</a> wonders if its the specialist vs generalist dillemma,  I think it's the  Web vs Enterprise IT way of thinking ..<br />
+DevOps first gained ground in Web environments , the battle has only started ..</p>
+<p>We still have a long way to go before in say a banking environment the Devs and SecOffs' and the DBA's and the  Ops are on the same line ...   they all need to break the walls of confusion, they all need to come out of their silos.   And when you are a generalist in charge of a bunch of these things you have to make sure your tuesday afernoon security persona talks with his other persona's from time to time ... otherwise you are really gonna need those meds :)</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Tue, 03/09/2010 - 23:39</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1374 first"><a href="../category/dbaops/index.html" rel="tag" title="">DBAOps</a></li>
+<li class="taxonomy_term_1328"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1375"><a href="../category/netops/index.html" rel="tag" title="">NetOps</a></li>
+<li class="taxonomy_term_1373 last"><a href="../category/secops/index.html" rel="tag" title="">SecOPS</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-4010"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.funmahol.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/1b6f3de493b1485309d41672aa449212.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="John&#039;s picture" title="John&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4010">#1</a>
+    <span class="author"><a href="http://www.funmahol.com/">John</a></span>  : <span class="title"><a href="index.html#comment-4010" class="active">Yaa i also agree on james</a></span>
+  </h3>
+  <div class="content"><p>Yaa i also agree on james turnball's comment,DevOps is the easiest bridge to cross.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">03/23/2010 - 09:30</div>
+  </div>
+<a id="comment-4006"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/a10d7a2b02fb8f2b049f53d591830d9e.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Devdas Bhagat&#039;s picture" title="Devdas Bhagat&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4006">#2</a>
+    <span class="author"><span class="anonymous" title="not verified">Devdas Bhagat</span></span>  : <span class="title"><a href="index.html#comment-4006" class="active">Devops isn&#039;t really new</a></span>
+  </h3>
+  <div class="content"><p>Devops has been around since long before web environments, except that we just called them good sysadmins.</p>
+<p>The job of secops *IS* to say no, until you come up with a proposal which works under their constraints. Alternatively, give them the constraints and let them figure out the solution.</p>
+<p>Having been in a secops role, it's not fun to have no budget, have everything being tunneled over port 80 (or 443) and not being able to secure end nodes. The reason I got out of secops was because I can really see no way to do a good job in that field until disaster strikes.</p>
+<p>IMO, the devops and dbaops divides will be the hadrest to cross, because each side tends to assume that the other side does not know or care what they do. In my limited experience, this has been far truer with developers who don't know enough about operations to do it right, and don't care enough to learn why operations works in certain ways.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">03/17/2010 - 15:42</div>
+  </div>
+<a id="comment-4002"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://kitchensoap.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/393c4d3cf4315a211e04f2a85abe7822.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="John Allspaw&#039;s picture" title="John Allspaw&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4002">#3</a>
+    <span class="author"><a href="http://kitchensoap.com/">John Allspaw</a></span>  : <span class="title"><a href="index.html#comment-4002" class="active">Having specialists doesn&#039;t automatically = wrong</a></span>
+  </h3>
+  <div class="content"><p>Having been in an environment where having Storage, Network, Security, and even Datacenter specialists, I want to point out that these 'silos' can indeed work well.  </p>
+<p>Just because staff are specialized doesn't prevent them from having enough awareness of the application or business case to be effective, especially in troubleshooting and design phases.  </p>
+<p>StorageOps/NetOps at Yahoo knew exactly what Flickr's requirements were, and what normal (and abnormal) workloads were. They also had the deep knowledge about storage devices to know what might be coming in the future that could help Flickr's workload. I also enjoyed not needing a specialist on my team for those bits.  Being able to communicate with them during outages and issues were the same as any on my own team.</p>
+<p>So, specialists can work quite well.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">03/12/2010 - 17:48</div>
+  </div>
+<a id="comment-4001"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.agileweboperations.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/27c7c865e1f5f6bf16050501fc503c78.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Matthias Marschall&#039;s picture" title="Matthias Marschall&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4001">#4</a>
+    <span class="author"><a href="http://www.agileweboperations.com/">Matthias Marschall</a></span>  : <span class="title"><a href="index.html#comment-4001" class="active">Silos are sub-optimizations</a></span>
+  </h3>
+  <div class="content"><p>It's great to have specialists, but they must never ignore the big picture. As soon as one thinks, his job is to _only_ fulfill his specialist role, he creates a silo. It might feel warm and cosy for him, but sooner or later he has to admit, that he is sub-optimizing his own area of responsibility instead of optimizing the whole!</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">03/12/2010 - 13:18</div>
+  </div>
+<a id="comment-3997"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/f4cb4b7e71e7cf2269e6c50579aac22c.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Doug&#039;s picture" title="Doug&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3997">#5</a>
+    <span class="author"><span class="anonymous" title="not verified">Doug</span></span>  : <span class="title"><a href="index.html#comment-3997" class="active">I think it&#039;s all about</a></span>
+  </h3>
+  <div class="content"><p>I think it's all about professional discipline. Don't cut corners wearing one hat if you know that your actions would be unacceptable or even just undesirable when wearing another hat.</p>
+<p>I've effectively done SecOps in the past. Sometimes it is tempting to break your own rules to get a ops task done but if you have discipline you can resist.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">03/10/2010 - 00:32</div>
+  </div>
+<a id="comment-3996"></a>
+<div id="comment-6" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.kartar.net/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/31cc2100279326dd6148a7e163692097.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="James Turnbull&#039;s picture" title="James Turnbull&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3996">#6</a>
+    <span class="author"><a href="http://www.kartar.net/">James Turnbull</a></span>  : <span class="title"><a href="index.html#comment-3996" class="active">I agree - it&#039;s more than</a></span>
+  </h3>
+  <div class="content"><p>I agree - it's more than "dev" + "ops" - it's about breaking down silos.  DevOps is actually the easiest bridge to cross - wait until we have to deal with SecOps... :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">03/09/2010 - 23:45</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/devops-secops-dbaops-netops by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:30:30 GMT -->
+</html>

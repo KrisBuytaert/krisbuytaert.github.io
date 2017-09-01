@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - trigger</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/930/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>MySQL Trigger Woes</title>
+ <link>http://127.0.0.1:8080/blog/node/676</link>
+ <description>&lt;p&gt;After a period of inactivity I was hacking back on a Drupal project, I had taken a mysql dump from a production platform and imported into my local dev setup, just to have some realistic data.&lt;/p&gt;
+&lt;p&gt;All of a sudden some forms started failing with  the following error:&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;user warning: There is no &#039;user&#039;@&#039;nonlocalhost registered query: insert into blah  (stuff,morestuff) values (x,y) in /var/vhost/drupal-tree/includes/database.mysql.inc on line 172.&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;My Drupal data connection was correct and working for selects etc..  only a limited set of inserts failed.&lt;/p&gt;
+&lt;p&gt;After some debugging I realised that the error was not Drupal related,  running the same query on my MySQL console gave the same error.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;ERROR 1449 (HY000): There is no &#039;user&#039;@&#039;nonlocalhost&#039; registered&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;The error came from a trigger on the table I was inserting data into that had been created on the production machine by a user@&#039;host&#039;  that didn&#039;t exist on my development machine.  the user was identical but the host wasn&#039;t.&lt;/p&gt;
+&lt;p&gt;MySQLdump includes that information in a dump and uses it to restore the same values.&lt;/p&gt;
+&lt;p&gt;So recreating the trigger on the development machine solved the problem.&lt;br /&gt;
+I should probably look a bit closer into the MySQL bugs to figure out if this is a bug or just expected behaviour.&lt;/p&gt;
+&lt;p&gt;There might even be a parameter to disable this feature , but I didn&#039;t find it yet.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/676#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/931">mysqldump</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/930">trigger</category>
+ <pubDate>Fri, 13 Jun 2008 17:44:54 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">676 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

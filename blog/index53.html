@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=53 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:59:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Everything is a Freaking DNS problem | Devops Needs Sushi</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/blog/blogapi/rsd/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem RSS" href="/blog/rss/index.xml" />
+<link rel="shortcut icon" href="/blog/misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="/blog/sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="/blog/sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="front not-logged-in page-node one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="/blog/index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="/blog/files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="/blog/index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="/blog/social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+<div class="content">
+<div id="node-514" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-11-29T20:11:57+01:00">
+  <span class="month">Nov</span>
+  <span class="day">29</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/514/index.html">YASN, or how to overload the SMTP servers</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_496 first"><a href="/blog/taxonomy/term/496/index.html" rel="tag" title="">linkedin</a></li>
+<li class="taxonomy_term_603"><a href="/blog/taxonomy/term/603/index.html" rel="tag" title="">plaxo</a></li>
+<li class="taxonomy_term_511"><a href="/blog/taxonomy/term/511/index.html" rel="tag" title="">spam</a></li>
+<li class="taxonomy_term_647 last"><a href="/blog/taxonomy/term/647/index.html" rel="tag" title="">yasn</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Over the past couple of days  there is an increased flow of traffic to my Inbox all fairly identical mails from people that I`m connected to on LinkedIn that somehow are being invited by their friends to also start using Plaxo.<br />
+I`m wondering if people don't realise they are resending their whole LinkedIn addressbook an invitation or if they do it on purpose. I`m still looking for the great new feature that Plaxo has that urges me to switch to it or even consider using it actively.<br />
+I haven't found it .. so please explain me why you are using plaxo </p>
+<p>A couple of weeks ago I started this poll on my blog so people could vote on their social network site.<br />
+Guess what the conclusion was.. the majority of my readers favours LinkedIn, some like Facebook and only some individuals like Plaxo or Xing </p>
+<p>Yes I create accounts on most new YASN (Yet Another Social Network)  thingies, but merely as a form of Online Identity Protection.  (It's pretty easy to find a new YASN and create an account there that you shouldn't be creating) </p>
+<p>Now I`m all in favour of redundancy and high availability.  But I frequently just export my LinkedIn connections to my local desktop and that gives me a nice backup.       </p>
+<p>So is this going to be the new trend ?  I launch a new YASN  and suddenly I create an avalanche of mails that will be send to other people.   Geez.. this looks like a virus in LookOut<br />
+But how long wil our email system live if more and more people start using these tools and more and more new sites implement the feature. ?  When will Inbox protection tools start  with default filtersets for a list of Social Networks ?<br />
+Wil social networks start to figure out ways to evade Inbox protection tools ?</p>
+<p>Maybe we just need to add some more meta information in our DNS servers.  :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-513" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-11-27T09:56:57+01:00">
+  <span class="month">Nov</span>
+  <span class="day">27</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/513/index.html">Belgian DNS woes</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_443 first"><a href="/blog/taxonomy/term/443/index.html" rel="tag" title="">belgium</a></li>
+<li class="taxonomy_term_451"><a href="/blog/taxonomy/term/451/index.html" rel="tag" title="">dns</a></li>
+<li class="taxonomy_term_646 last"><a href="/blog/taxonomy/term/646/index.html" rel="tag" title="">routing</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://misterd77.blogspot.com/" rel="nofollow">Tim</a> just  explained that Easynet is suffering from a routing loop. Causing dns.be to be unreachable for some folks.   So sometimes the cause is not a dns problem, only the result is :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-512" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-11-23T18:56:15+01:00">
+  <span class="month">Nov</span>
+  <span class="day">23</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/512/index.html">Going Proprietary again</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_645 first"><a href="/blog/taxonomy/term/645/index.html" rel="tag" title="">closed source</a></li>
+<li class="taxonomy_term_644 last"><a href="/blog/taxonomy/term/644/index.html" rel="tag" title="">ehour</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So while shopping for a new Timesheet application, last month we tried to use eHour.   We tried, and have already stopped our evaluation.</p>
+<p>Our requirements are pretty simple.   A bunch of consultants need to be able to book their time on different projects.  We need to be able to print out these timesheets for a customer to be able to sign and our financial department needs to be able to print invoices based on the time we spend for the different customers.</p>
+<p>Apart from a rather itchy user interface,   a really non straightforward way to add projects or even try to modify them it were mainly<br />
+little annoyancies such as not being able to print a timesheet if you only have 1 project you worked on that month, made us look again for alternatives.</p>
+<p>Then we ran into <a href="http://blog.ehour.nl/index.php/archives/35" rel="nofollow">this</a> posting on the eHour blog.   eHour indeed had fixed some of the annoyancies we had but decided to close their source again.      Right end of story for us there.</p>
+<p>So rather than being able to help out and contribute to a better product, we are now once again in the market to try our next Open Source timesheet app.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/node/512/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-511" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-11-23T17:58:14+01:00">
+  <span class="month">Nov</span>
+  <span class="day">23</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/511/index.html">ReInventing the wheel, over and over , and over , and over again </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_599 first"><a href="/blog/taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_641"><a href="/blog/taxonomy/term/641/index.html" rel="tag" title="">otrs</a></li>
+<li class="taxonomy_term_640"><a href="/blog/taxonomy/term/640/index.html" rel="tag" title="">request tracker</a></li>
+<li class="taxonomy_term_643"><a href="/blog/taxonomy/term/643/index.html" rel="tag" title="">rt</a></li>
+<li class="taxonomy_term_642"><a href="/blog/taxonomy/term/642/index.html" rel="tag" title="">simtplicket</a></li>
+<li class="taxonomy_term_639"><a href="/blog/taxonomy/term/639/index.html" rel="tag" title="">timewaster</a></li>
+<li class="taxonomy_term_638 last"><a href="/blog/taxonomy/term/638/index.html" rel="tag" title="">useless</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Over at <a href="http://blogs.cnet.com/8301-13505_1-9822336-16.html?tag=head" rel="nofollow">CNet , Matt Assay</a> found out about SimpleTicket.</p>
+<p><cite>SimpleTicket was developed by Architel in 2005 for internal use. We looked at Heat, Remedy and hosted solutions like Parature, but most of them were too complicated and expensive for our needs. Next we looked at lowend solutions like Intuit?s TrackIt and found it lacking in several ways. We needed a simple to use system that was flexible enough for us to add features on the fly. We decided to build it ourselves. SimpleTicket was the result....<br />
+</cite><br />
+So I don't know the guys over at Architel and I can't comment on their background or their real experience, so I`m a bit abusing this case as a worst case scenario.<br />
+But when I read something like that I wonder.  Why didn't those people look at the existing Open Source alternatives in the first place ?  I think we have been using OTRS since before 2003 (don't know the exact year)  and there are other alternatives out there such as RT.  And even if you don't like the features or you need some more.. that's wha open source is all about .. you should improve the product , add the functionality you need and contribute it back to the community.     </p>
+<p>When I read a n article like the one above to me it translates as <cite>Back in 2005 we were idiots not knowing about the whole other software world that was called Open Source, we were shopping<br />
+for a (proprietary) ticketing system and we couldn't find one that had a correct price tag.  We decided to build ourselves, SimpleTicket was the restult.<br />
+Now 2 years later we realise that a ticketing system is not our core business and we decided to Open Source it.  Doing so will not only free our time as we don't need to develop it ourselve anymore but it will also give us  visibility on the market </cite><br />
+I exaggerate a bit .. and while SimpleTicket might not be like this others are.. and it's just not the way opensource works.</p>
+<p>I see too much people reinventing the wheel these days...   maybe if we could all have a look at what's out there first, improve on that so we can use the time we have available to build something that really needs to be build ? </p>
+<p>Like a good multilayer calendaring solution.   Or a working Timesheet application ?</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-510" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-11-20T18:14:02+01:00">
+  <span class="month">Nov</span>
+  <span class="day">20</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/510/index.html">Build Once , Charge Everywhere</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Dunno if the term is new.. or who coined it .. but <a href="http://blogs.cnet.com/8301-13505_1-9820038-16.html?part=rss&amp;tag=feed&amp;subj=TheOpenRoad" rel="nofollow">Matt</a> just used it </p>
+<p><strong>Build once, Charge everywhere</strong></p>
+<p>Hate the concept .. love the terminology .. makes it pretty clear for the abused people.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-509" class="node teaser poll cal">
+    <acronym class="calendar published" title="2007-11-20T16:58:45+01:00">
+  <span class="month">Nov</span>
+  <span class="day">20</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/509/index.html">What&#039;s your favourite online social network</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><div class="poll">
+  
+<div class="text">LinkedIn</div>
+<div class="bar">
+  <div style="width: 59%;" class="foreground"></div>
+</div>
+<div class="percent">
+  59% (24 votes)
+</div>
+
+<div class="text">ecademy</div>
+<div class="bar">
+  <div style="width: 0%;" class="foreground"></div>
+</div>
+<div class="percent">
+  0% (0 votes)
+</div>
+
+<div class="text">Plaxo</div>
+<div class="bar">
+  <div style="width: 2%;" class="foreground"></div>
+</div>
+<div class="percent">
+  2% (1 vote)
+</div>
+
+<div class="text">Xing</div>
+<div class="bar">
+  <div style="width: 2%;" class="foreground"></div>
+</div>
+<div class="percent">
+  2% (1 vote)
+</div>
+
+<div class="text">Facebook</div>
+<div class="bar">
+  <div style="width: 37%;" class="foreground"></div>
+</div>
+<div class="percent">
+  37% (15 votes)
+</div>
+  <div class="total">
+    Total votes: 41  </div>
+  </div>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/509/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-508" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-11-17T21:33:28+01:00">
+  <span class="month">Nov</span>
+  <span class="day">17</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/508/index.html">Alfresco Suffered from a  </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_637 first last"><a href="/blog/taxonomy/term/637/index.html" rel="tag" title="">dns problem</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://blogs.cnet.com/8301-13505_1-9819551-16.html?tag=head" rel="nofollow">fine DNS problem</a><br />
+Actually not Alfreso but <a href="http://www.webhostingtalk.com/showthread.php?p=4809979" rel="nofollow">123-reg </a></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-507" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-11-17T21:30:56+01:00">
+  <span class="month">Nov</span>
+  <span class="day">17</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/507/index.html">I  hate it when the marketeers take over</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_636 first"><a href="/blog/taxonomy/term/636/index.html" rel="tag" title="">feature mismatch</a></li>
+<li class="taxonomy_term_503"><a href="/blog/taxonomy/term/503/index.html" rel="tag" title="">hype</a></li>
+<li class="taxonomy_term_467"><a href="/blog/taxonomy/term/467/index.html" rel="tag" title="">oracle</a></li>
+<li class="taxonomy_term_464"><a href="/blog/taxonomy/term/464/index.html" rel="tag" title="">vapourware</a></li>
+<li class="taxonomy_term_470 last"><a href="/blog/taxonomy/term/470/index.html" rel="tag" title="">xen</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://tarrysingh.blogspot.com/2007/11/is-oracle-on-good-start-with.html" rel="nofollow">Tarry</a> has an overview of the commentaries about Oracles latest Virtualisation announcement.  </p>
+<p>Two things hit my brainwaves,  First ,seemingly Larry is claiming that his Xen package is better than<br />
+the others since he supports Live Migration and all the others don't.  I don't know where he gets the idea..  I have to admit I don't remember which year it was .. but it was somewhere in december that I first starting with Live Migratiion of Xen machines and it was also on a CentOS platform. No fancy gui,  no hardcover manuals that had it all documented.  But fast  and seamlessly working live migration,  ready for everybody to use.</p>
+<p>Second one is he claming that since Xen was re-engineered  by Oracle  to be faster than the competition.<br />
+The way you read it there is that Oracle took Xen, modified it then started redistributing it.<br />
+Is that really what happened ?    Are they redistributing the source, or are they violating the GPL ?  Coz if they are<br />
+redistributing the source everybody just got a faster Xen and if they aren't ..<br />
+I don't know but there sure is room for rumour here.  Or is this just  a bunch of marketing people and IT journalist that are mispresenting the facts.   Fact is that one needs to spend lots of time verifying the facts of stories one read on the internet today.      </p>
+<p>I`m also seeing people crying that Oracle is finally stepping to the open source side.. .. I`m wondering on which planet they have been living.. Oracle has been supporting different Open Source products for ages already and they even are the owners of core components of typical daily used packages,  so where do those authors get the idea that Oracle is finally stepping over ? </p>
+<p>Tonight I don't have time to go and hunt back the original sources and see who actually said what  .  Honestly I don't care that much about Unbreakable,  Last time I tried caring was when one of my european customers was interested in it, and no one at Oracle.be could help me .    It's Like Dell shipping Ubuntu.. not on this part of the world.. and sadly it's also like the OLPC .. Give one Get one  only on the other side of the Ocean.</p>
+<p>It's all good marketing .. until you actually want to get it .. :(</p>
+<p>Just give me the source code .. then I don't have to sit trough presentations from marketing people that can only  read from spec sheets for some product , but fail to read the fine print and leave me  disappointed again ...</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-506" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-11-14T14:43:34+01:00">
+  <span class="month">Nov</span>
+  <span class="day">14</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/506/index.html">Drupal Registration procedure</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_635 first"><a href="/blog/taxonomy/term/635/index.html" rel="tag" title="">admin approval</a></li>
+<li class="taxonomy_term_484"><a href="/blog/taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_634 last"><a href="/blog/taxonomy/term/634/index.html" rel="tag" title="">registration</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>As a Drupal newbie I`m wondering about the new user creation process.</p>
+<p>Is it just me or is there a part missing int he admin/user/settings form. When you as an admin require users to be approved first. Don't you want the user to recieve multiple mails. One when he registered, telling him that he is awaiting  approval/.<br />
+Then one when you approved his membership giving him the details on how to log on to the site ? (Or a another one telling him he wasn't approved)</p>
+<p>Or am I looking in the wrong places for this feature ?  </p>
+<p>I see the mail form that will send out a mail that the user iss awaiting approval.  But I can't find a template that is being sent upon approval.   Neither can I see a mail departing from my system.<br />
+I find it a bit weird to send out userinformation to a user that doesn't end up to be a user afterall.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/node/506/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-505" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-11-14T12:12:02+01:00">
+  <span class="month">Nov</span>
+  <span class="day">14</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/505/index.html">Digital Television in Belgium</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_443 first"><a href="/blog/taxonomy/term/443/index.html" rel="tag" title="">belgium</a></li>
+<li class="taxonomy_term_633"><a href="/blog/taxonomy/term/633/index.html" rel="tag" title="">dream on</a></li>
+<li class="taxonomy_term_504 last"><a href="/blog/taxonomy/term/504/index.html" rel="tag" title="">mythtv</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Beste <a href="http://frank.be/2007/11/14/vergelijking-telenet-tv-en-belgacom-tv" rel="nofollow">Frank</a></p>
+<p>Too bad you spend some unneeded money.. what you should have done is build yourselve a nice <a href="http://www.mythtv.org/" rel="nofollow">MythTV</a> box.<br />
+Has all the features you list.. and doesn't need a subscription .</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/node/505/index.html#comments" title="Jump to the first comment of this posting.">6 comments</a></li>
+</ul></div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="index52.html?page=52" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a href="index49.html?page=49" title="Go to page 50" class="active">50</a></li>
+<li class="pager-item"><a href="index50.html?page=50" title="Go to page 51" class="active">51</a></li>
+<li class="pager-item"><a href="index51.html?page=51" title="Go to page 52" class="active">52</a></li>
+<li class="pager-item"><a href="index52.html?page=52" title="Go to page 53" class="active">53</a></li>
+<li class="pager-current">54</li>
+<li class="pager-item"><a href="index54.html?page=54" title="Go to page 55" class="active">55</a></li>
+<li class="pager-item"><a href="index55.html?page=55" title="Go to page 56" class="active">56</a></li>
+<li class="pager-item"><a href="index56.html?page=56" title="Go to page 57" class="active">57</a></li>
+<li class="pager-item"><a href="index57.html?page=57" title="Go to page 58" class="active">58</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="index54.html?page=54" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="index103.html?page=103" title="Go to last page" class="active">last »</a></li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=53 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:59:18 GMT -->
+</html>

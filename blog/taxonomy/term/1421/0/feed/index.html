@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - lirc</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1421/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>iMon for Linux</title>
+ <link>http://127.0.0.1:8080/blog/node/27</link>
+ <description>&lt;p&gt;Just ran into the &lt;a href=&quot;http://venky.ws/projects/imon/&quot;&gt;Linux Drivers for Soundgraph Imon page&lt;/a&gt;  , google really hid it well this time.&lt;br /&gt;
+Got a working module now&lt;/p&gt;
+&lt;p&gt;The lsusb output shows&lt;/p&gt;
+&lt;pre&gt;&lt;a href=&quot;root@mythtv-fc3 misc&quot;&gt;root@mythtv-fc3 misc&lt;/a&gt;# lsusb 
+Bus 002 Device 002: ID 15c2:ffdc&lt;/pre&gt;&lt;p&gt;Upon modprobing lirc_imon we get&lt;/p&gt;
+&lt;pre&gt; lirc_dev: IR Remote Control driver registered, at major 61
+/usr/src/lirc-0.7.1/drivers/lirc_imon/lirc_imon.c: Driver for Soundgraph iMON MultiMedian IR/VFD, v0.3
+/usr/src/lirc-0.7.1/drivers/lirc_imon/lirc_imon.c: Venky Raju &amp;lt;dev@venky.ws&amp;gt;
+/usr/src/lirc-0.7.1/drivers/lirc_imon/lirc_imon.c: imon_probe: found IMON devicelirc_dev: lirc_register_plugin: sample_rate: 0
+/usr/src/lirc-0.7.1/drivers/lirc_imon/lirc_imon.c: imon_probe: Registered iMON plugin (minor:0)
+/usr/src/lirc-0.7.1/drivers/lirc_imon/lirc_imon.c: imon_probe: iMON device on usb&amp;lt;2:2&amp;gt; initialized
+usbcore: registered new driver lirc_imon&lt;/pre&gt;&lt;p&gt;And irw gives us the following output&lt;/p&gt;
+&lt;pre&gt;&lt;a href=&quot;root@mythtv-fc3 misc&quot;&gt;root@mythtv-fc3 misc&lt;/a&gt;# irw
+0000000029b715b7 00 AppLauncher iMON-PAD
+00000000288195b7 00 AppExit iMON-PAD
+00000000298115b7 00 Record iMON-PAD
+0000000028a195b7 00 Enter iMON-PAD
+0000000028b715b7 00 MouseMenu iMON-PAD
+000000002b8195b7 00 WindowsKey iMON-PAD
+00000000299115b7 00 MouseKeyboard iMON-PAD
+0000000028a395b7 00 Vol+ iMON-PAD
+0000000028a595b7 00 Vol- iMON-PAD
+00000000289395b7 00 Ch+ iMON-PAD
+00000000288795b7 00 Ch- iMON-PAD
+000000002b8395b7 00 Timer iMON-PAD
+000000002b9595b7 00 Mute iMON-PAD
+0000000028b595b7 00 1 iMON-PAD
+000000002bb195b7 00 2 iMON-PAD
+0000000028b195b7 00 3 iMON-PAD
+000000002a8595b7 00 4 iMON-PAD
+00000000299595b7 00 5 iMON-PAD
+000000002aa595b7 00 6 iMON-PAD
+000000002b9395b7 00 7 iMON-PAD
+000000002a8515b7 00 8 iMON-PAD
+000000002aa115b7 00 9 iMON-PAD
+0000000028b515b7 00 ShiftTab iMON-PAD
+000000002ba595b7 00 0 iMON-PAD
+0000000029a115b7 00 Tab iMON-PAD&lt;/pre&gt;&lt;p&gt;As said before.. to be continued :)&lt;/p&gt;
+&lt;p&gt;And I got to see some results from the remote :&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/27#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/imon">imon</category>
+ <category domain="http://127.0.0.1:8080/blog/category/lirc">lirc</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/504">mythtv</category>
+ <pubDate>Tue, 05 Jul 2005 22:18:30 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">27 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

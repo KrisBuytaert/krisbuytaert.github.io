@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/packaging-drush by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Packaging Drush | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Packaging Drush</h2>
+<div class="content">
+<div id="node-973" class="node  blog">
+<div class="content"><p>A couple of weeks ago I was once again manually installing Drush as there were no packages for CentOS / EPEL or whatever,   apart from the <a href="http://drupal.org/node/502452" rel="nofollow">needed patch </a> to get it running on a 5.1.X RHEL php</p>
+<p>I had found <a href="http://drupal.org/node/508086" rel="nofollow">this</a> thread on Drupal.org mentioning that a package already exists<br />
+however David had not answered the exact location yet<br />
+So I created a drush package with a with the above mentionned patch and sent it to  Jon Ciesla again he gave some suprising  feedback ;)</p>
+<p><cite><br />
+Drush itself might need to be modified in Fedora.   It seems<br />
+like one of the major functions of drush is to install and update<br />
+modules.  That's great for modules we don't ship as rpms, but we can't<br />
+allow drush to modify modules that we ship.<br />
+</cite></p>
+<p>This feedback pretty much leaves me with 3 options.</p>
+<p>The first one is the easiest one,  I just forget about packaging drush for Fedora.</p>
+<p>The second one would require me to patch Drush so that for all existing drupal modules that have been packaged for Fedora,  Drush will call yum to install them.  This obviously would create a lot of work  maintaining this excludelist.</p>
+<p>The third one would be to disable the download functionality for Drush in a Fedora/Rhel enviornment,  Jon suggested that this would probably be the saftest path.</p>
+<p>(Jon also suggested a fourth option, namely removing all drupal modules from fedora and add a prohibition to package them in the Packaging Guidelines, which he immediately called ridiculous.)</p>
+<p>I once again understand the problem of the Distribution maintainer,  but on the other hand if I were the upstream Drush developer I wouldn't want to see my software severely disabled in a distribution.</p>
+<p>So what do you folks think, disable the functionality  or not ?</p>
+<p>PS.  Yes I've contacted upstream , but I haven't gotten a reply yet.</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Sun, 12/20/2009 - 22:41</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_484 first"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_1350"><a href="../category/drush/index.html" rel="tag" title="">drush</a></li>
+<li class="taxonomy_term_1347"><a href="../category/epel/index.html" rel="tag" title="">epel</a></li>
+<li class="taxonomy_term_1109"><a href="../category/fedora/index.html" rel="tag" title="">fedora</a></li>
+<li class="taxonomy_term_479"><a href="../taxonomy/term/479/index.html" rel="tag" title="">rhel</a></li>
+<li class="taxonomy_term_472 last"><a href="../taxonomy/term/472/index.html" rel="tag" title="">rpm</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3935"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.businesseducators.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/3d1ff489c6fc26446cb7029e7f94f701.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="James Avory&#039;s picture" title="James Avory&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3935">#1</a>
+    <span class="author"><a href="http://www.businesseducators.com/">James Avory</a></span>  : <span class="title"><a href="index.html#comment-3935" class="active">I feel that there are many</a></span>
+  </h3>
+  <div class="content"><p>I feel that there are many useful options. Drush packaged could be nice of course and a pain to patch drush for the second or third options is not that painful. I think that there are maybe only three new options but not everything comes with a revolution. Sometimes slow evolution is also good.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/04/2010 - 09:15</div>
+  </div>
+<a id="comment-3931"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/98780b70a97d981b43f7c74b04ec1f66.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Jon Ciesla&#039;s picture" title="Jon Ciesla&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3931">#2</a>
+    <span class="author"><span class="anonymous" title="not verified">Jon Ciesla</span></span>  : <span class="title"><a href="index.html#comment-3931" class="active">Questions</a></span>
+  </h3>
+  <div class="content"><p>Hi, tyrannical Fedora maintainer here. :)</p>
+<p>I've read the above, and am intrigued.  </p>
+<p>@Grayside Like a drush plugin to call yum and check if a package exists and if not install the usual way?</p>
+<p>@Berdir to paly devil's advocate, the advantage to having Drupal modules in yum ias simply security updates, which for many, means security updates period.  I know that Drupal can handle this for you, but there's a horse-to-water problem there.  WRT site-specifica installs, those can't be in RPMS, period, so drush could still manage these since it's site-aware.</p>
+<p>@Robert Douglass Like a yum plugin to call install via drush?  Yum uses RPMS to determine dependencies.  Security implications of yum pulling in code from outside it's repos aside, do Drupal modules have a method for programatically declaring which other modules they need?  Besides, even if we "cripple" drush, it'll be in the Fedora RPM, which you wouldn't have to use, even on Fedora.</p>
+<p>@FGM Exactly, and though while I have, at root, no objection to shipping conflicting software, I suspect that even with warnings in the docs, there'd be those who tried to use both, and I'd get the bug reports. :)  Hence my desire to find a solution in software.</p>
+<p>@moshe weiztman Install or update operations will just fail on the ones packaged by Fedora, since the files will be owned by root, and Apache runs as the httpd user.</p>
+<p>@Matt Farina That's one option, but I still wonder about security updates.  Is there a way to call drush from a script to update all modules?  I'm thinking of a cron job here.  Just speculating. You can already use drush to install drupal and modules on Fedora, just don't use the RPMS in yum.</p>
+<p>What's the problem with Drupal 7 and PHP 5.2?  Fedora has 5.3 currently.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/23/2009 - 21:28</div>
+  </div>
+<div class="indented"><a id="comment-3932"></a>
+<div id="comment-3" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3932">#3</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3932" class="active">@jon</a></span>
+  </h3>
+  <div class="content"><p>"What's the problem with Drupal 7 and PHP 5.2? Fedora has 5.3 currently."</p>
+<p>The problem is on RHEL/CentOS/EPEL</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/23/2009 - 21:46</div>
+  </div>
+</div><a id="comment-3930"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://grayside.org/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/3e2f0386a66cb77f556b166cef941d6c.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Grayside&#039;s picture" title="Grayside&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3930">#4</a>
+    <span class="author"><a href="http://grayside.org/">Grayside</a></span>  : <span class="title"><a href="index.html#comment-3930" class="active">Just brainstorming on Option</a></span>
+  </h3>
+  <div class="content"><p>Just brainstorming on Option N+1, could the CVS checkout option be extended to utilize a package manager defined in config?</p>
+<p>Another option to try an alternate download method in the event of a non-existing project name would allow failover from yum to cvs.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/23/2009 - 10:24</div>
+  </div>
+<a id="comment-3926"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/c798d0bfc1db8407a7cd82309db0a44e.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Berdir&#039;s picture" title="Berdir&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3926">#5</a>
+    <span class="author"><span class="anonymous" title="not verified">Berdir</span></span>  : <span class="title"><a href="index.html#comment-3926" class="active">Confused</a></span>
+  </h3>
+  <div class="content"><p>I don't know the packaging system of Fedory (Only Ubuntu/Debian) but I'm a bit confused.</p>
+<p>From what I know, a packaging system like deb or rpm is to install a software once per system. However, a single system can have multple drupal installs (probably even different versions) and each of these installs can have a drupal module/theme installed or not. Or even multiple times, if you have a multi-site install.</p>
+<p>Now I'm failing to see how yum/rpm could install a drupal module for a specific site...</p>
+<p>The only option *I* can see is that distributions only package/distribute drush which can then be used to install/mainain actual drupal sites.</p>
+<p>For example, Ubuntu/Debian does have a Drupal 5/6 package, which is installed into /var/something and available at localhost/drupal and therefore imho pretty much useless.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/21/2009 - 16:08</div>
+  </div>
+<a id="comment-3923"></a>
+<div id="comment-6" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://robshouse.net/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/a48bbbedbd668eecd3e1b12d2dcba64a.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Robert Douglass&#039;s picture" title="Robert Douglass&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3923">#6</a>
+    <span class="author"><a href="http://robshouse.net/">Robert Douglass</a></span>  : <span class="title"><a href="index.html#comment-3923" class="active">Make yum call drush</a></span>
+  </h3>
+  <div class="content"><p>But don't cripple Drush.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/21/2009 - 13:15</div>
+  </div>
+<a id="comment-3922"></a>
+<div id="comment-7" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://blog.riff.org/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/bb663a87ae6ad9b975ab060d73e72254.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="FGM&#039;s picture" title="FGM&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3922">#7</a>
+    <span class="author"><a href="http://blog.riff.org/">FGM</a></span>  : <span class="title"><a href="index.html#comment-3922" class="active">Same problem with PECL extensions</a></span>
+  </h3>
+  <div class="content"><p>The problem is very similar to the one existing with PECL extensions: a few selected extensions are made available by distro maintainers, while others are not and need to use the pecl install process.</p>
+<p>From what I've seen (on ubuntu, not fedora, though), there is just no prohibition on pecl installing, say, APC, although the package exists within the apt repository, and trying to use one without uninstalling the other will wreak havoc. It needn't be that much different for Drush: if someone is able and willing to use drush (resp. pecl), he should be able to understand he should avoid using the OS distribution system.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/21/2009 - 12:49</div>
+  </div>
+<a id="comment-3918"></a>
+<div id="comment-8" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://drupal.org/moshe" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/ece255bf6866464c79a8e9844c6eb3b4.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="moshe weitzman&#039;s picture" title="moshe weitzman&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3918">#8</a>
+    <span class="author"><a href="http://drupal.org/moshe">moshe weitzman</a></span>  : <span class="title"><a href="index.html#comment-3918" class="active">silly policy</a></span>
+  </h3>
+  <div class="content"><p>please don't call it drush if it can't update modules. thats just misleading. IMO, people who don't want their modules updated via drush won't be using the update command. </p>
+<p>further, drupal7 ships with the ability to add and update modules from the GUI. will Drupal 7 be banned from Fedora if one module decides to package with Fedora?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/21/2009 - 05:46</div>
+  </div>
+<div class="indented"><a id="comment-3920"></a>
+<div id="comment-9" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3920">#9</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3920" class="active">thnx</a></span>
+  </h3>
+  <div class="content"><p>Moshe, </p>
+<p>Thnx for my feedback,  I kind of had the same idea about it ..</p>
+<p>Your point about D7 having that functionality is a nice one.. maybe with that argument in the background I'd try to get the package in :) </p>
+<p>PS.  Dunnow if you got my message on Drupal.org from a couple of weeks ago ?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/21/2009 - 11:02</div>
+  </div>
+<div class="indented"><a id="comment-3925"></a>
+<div id="comment-10" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://drupal.org/moshe" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/ece255bf6866464c79a8e9844c6eb3b4.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="moshe weitzman&#039;s picture" title="moshe weitzman&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3925">#10</a>
+    <span class="author"><a href="http://drupal.org/moshe">moshe weitzman</a></span>  : <span class="title"><a href="index.html#comment-3925" class="active">I don&#039;t recall seeing that</a></span>
+  </h3>
+  <div class="content"><p>I don't recall seeing that</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/21/2009 - 16:01</div>
+  </div>
+</div></div><a id="comment-3916"></a>
+<div id="comment-11" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/a01432d79ed4067a48f8ddb84cc08ec0.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Matt Farina&#039;s picture" title="Matt Farina&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3916">#11</a>
+    <span class="author"><span class="anonymous" title="not verified">Matt Farina</span></span>  : <span class="title"><a href="index.html#comment-3916" class="active">4th option</a></span>
+  </h3>
+  <div class="content"><p>I don't like any of these options. It would be nice to have drush packaged and a pain to patch drush for the second or third options. If these 3 are the only options I would suggest continuing to manually download and install drush.</p>
+<p>I kind of like the idea of drush being distributed and used as the method to get to all modules, themes, and profiles. Wouldn't this make for less to maintain in the distribution? Instead of managing drupal along with modules and themes drush is what would need to be maintained. Or, use drush to do the installation of drupal and it's modules.</p>
+<p>This problem is going to be compounded when Drupal 7 comes out and requires PHP 5.2.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/21/2009 - 01:46</div>
+  </div>
+<a id="comment-3957"></a>
+<div id="comment-12" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://bitfieldconsulting.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/ce2ca4d6f000e74c5772031faa12a523.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="John Arundel&#039;s picture" title="John Arundel&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3957">#12</a>
+    <span class="author"><a href="http://bitfieldconsulting.com/">John Arundel</a></span>  : <span class="title"><a href="index.html#comment-3957" class="active">Drupal and Puppet</a></span>
+  </h3>
+  <div class="content"><p>I just came across your 'Packaging Drush' post and wanted to add this as a comment there, but comments are closed - perhaps you can move this over there if you want to.</p>
+<p>I've taken somewhat the opposite approach to handling Drupal/Drush in CentOS - everything's installed and updated with Drush via Puppet, giving an interface in Puppet much like that for RPM packages. I'd be interested to know what you think:</p>
+<p><a href="http://bitfieldconsulting.com/puppet-drupal" rel="nofollow">Puppet Drupal recipes</a></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/06/2010 - 16:52</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/packaging-drush by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:11 GMT -->
+</html>

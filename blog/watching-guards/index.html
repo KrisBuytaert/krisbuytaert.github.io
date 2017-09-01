@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/watching-guards by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:27:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Watching the Guards | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Watching the Guards</h2>
+<div class="content">
+<div id="node-1038" class="node  blog">
+<div class="content"><p>A couple of weeks ago I noticed a weird drop in web usage stats on the site you are browsing now.  Kinda weird as the drop was right around Fosdem when usually there is a spike in traffic.  <img src="http://www.krisbuytaert.be/images/PiwiwFail.png" /></p>
+<p>So before you start.. no I don't preach on practice on my own blog,   it's a blog dammit,  so I do the occasional upgrades on the actual platform , with backups available, do some sanity tests and move on,  yes I break the theme pretty often but ya'll reading this trough RSS anyhow.</p>
+<p>My backups showed me that drush had made a copy of the Piwik module somewhere early february, exactly when this drop started showing.   I verified the module , I verified my Piwik , - Oh Piwik you say .. yes Piwik, if you want a free alternative to Google Analytics , Piwik rocks ..  -   I even checked other sites using the same piwik setup and they were all still functional happily humming and being analyzed.... everything fine ...    but traffic stayed low ..</p>
+<p><a href="http://drupal.org/node/1052430">This</a> taught me I actually had to upgrade my Piwik too ...</p>
+<p>So that brings me to the point I`m actually wanting to make...<br />
+as according to @patrickdebois  in his chapter on Monitoring "Quis custodiet ipsos custodes?" who's monitoring the monitoring tools, who's monitoring the analytics tools,  </p>
+<p>So not only should you monitor the availability of yor monitoring tools, you should also monitor if their api hasn't changed in some way or another.<br />
+Just like when you are monitoring an web app you shoulnd't just see if you can connect to the appropriate http port, but you should be checking if you get sensible results back from it , no gibberish.</p>
+<p>But then again ... there's no revenue in my blog or its statistics :)</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Thu, 03/10/2011 - 20:44</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_484"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_938"><a href="../taxonomy/term/938/index.html" rel="tag" title="">monitoring</a></li>
+<li class="taxonomy_term_1447 last"><a href="../category/piwik/index.html" rel="tag" title="">piwik</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-4299"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://garycorbettblog.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/9945798ac34a3ea87ca7be74b164a982.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Gary Corbett&#039;s picture" title="Gary Corbett&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4299">#1</a>
+    <span class="author"><a href="http://garycorbettblog.com/">Gary Corbett</a></span>  : <span class="title"><a href="index.html#comment-4299" class="active">Google analytics appears to</a></span>
+  </h3>
+  <div class="content"><p>Google analytics appears to have the superior graph visualisation technology aesthetically versus Piwik atleast ;)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">04/07/2011 - 18:11</div>
+  </div>
+<a id="comment-4291"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.mediastory.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/626405e2557c089bd9069f7022221741.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Rachel&#039;s picture" title="Rachel&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4291">#2</a>
+    <span class="author"><a href="http://www.mediastory.com/">Rachel</a></span>  : <span class="title"><a href="index.html#comment-4291" class="active">Well for my site I am using</a></span>
+  </h3>
+  <div class="content"><p>Well for my site I am using Analytics and also Awstats and i weekly compare the results provided by both services.</p>
+<p>Rachel</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">04/01/2011 - 12:11</div>
+  </div>
+<a id="comment-4279"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.novation.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/3e62f35f8e26622f53c155ac6efe16a9.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Nicky&#039;s picture" title="Nicky&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4279">#3</a>
+    <span class="author"><a href="http://www.novation.be/">Nicky</a></span>  : <span class="title"><a href="index.html#comment-4279" class="active">support</a></span>
+  </h3>
+  <div class="content"><p>You would expect that a update of there api or code would not affect the results. Backwards compatible is important, not everyone knows how to change the code on there site.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">03/21/2011 - 01:10</div>
+  </div>
+<a id="comment-4278"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://getonthemap.us/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/bb85a306337e7c3ded3bd25b86b63ca3.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="juliemarg&#039;s picture" title="juliemarg&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4278">#4</a>
+    <span class="author"><a href="http://getonthemap.us/">juliemarg</a></span>  : <span class="title"><a href="index.html#comment-4278" class="active">Analytics</a></span>
+  </h3>
+  <div class="content"><p>At the same time the Google Farmer/Panda update was happening, my site was down. According to GA, I never regained 80%+ of that traffic.  But according to Sitemeter my traffic is higher than ever. They list the keywords that searchers looked for, and I believe their traffic estimates. I love sitemeter, but their product is a bit limited.  I'm going to look in to this piwik.  It would be nice to have a professional alternative to GA.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">03/19/2011 - 10:08</div>
+  </div>
+<a id="comment-4270"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/174dd3754ec5bcae849d511b2984ad8f.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="JR&#039;s picture" title="JR&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4270">#5</a>
+    <span class="author"><span class="anonymous" title="not verified">JR</span></span>  : <span class="title"><a href="index.html#comment-4270" class="active">GA not immune</a></span>
+  </h3>
+  <div class="content"><p>A few weeks ago I updated the Google Analytics module only to find that every outbound link on the website was opening in a "new tab" as well as the current tab. I don't know if it was the module or Google's API that caused the problem, but the fix was easy... just turn off "track outbound links". The real problem with all of this was that the outbound links opened TWO sessions which then caused an error on the target website. </p>
+<p>I might give this piwik thing a try, looks neat.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">03/11/2011 - 14:53</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/watching-guards by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:27:26 GMT -->
+</html>

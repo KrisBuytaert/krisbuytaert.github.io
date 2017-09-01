@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - lvm</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/540/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>On Filesystem Layouts</title>
+ <link>http://127.0.0.1:8080/blog/filesystem-layouts</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://grep.be/blog/en/computer/filesystem_layouts?show_comments=yes&quot; rel=&quot;nofollow&quot;&gt;Wouter&lt;/a&gt; blogged  about his favourite Laptop filesystem layout , just one filesystem , and &lt;a href=&quot;http://blog.andrew.net.au/2009/01/15#filesystem_layouts&quot; rel=&quot;nofollow&quot;&gt;some geeks&lt;/a&gt; think that&#039;s a bad idea.&lt;/p&gt;
+&lt;p&gt;Actually I can understand Wouter not wanting to have different /usr/ /var or other partitions on his laptop , the 20Mb left and 300Mb right you loose on different partitions are exactly what you want to use on your laptop, however isolating partitions also has it&#039;s benefits&lt;/p&gt;
+&lt;p&gt;My setup looks similar to this :&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;/&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;/home&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;/opt&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;/altroot&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;/ and altroot so you can run 2 distros, keeping my local data on a different partition so I can upgrade , switch distro etc..   and /opt .. for the software that isn&#039;t shipped as a package.&lt;/p&gt;
+&lt;p&gt;Obviously I use LVM so I can use these different partitions also as storage for virtual machines that can boot a different distro either on the physical or the virtual machine.&lt;/p&gt;
+&lt;p&gt;And obviously the rules for servers are different than the ones for laptops or even personal desktops for that matter&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/filesystem-layouts#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/540">lvm</category>
+ <category domain="http://127.0.0.1:8080/blog/category/no-root">no root</category>
+ <category domain="http://127.0.0.1:8080/blog/category/root">root</category>
+ <pubDate>Sun, 18 Jan 2009 13:04:09 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">858 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Xentos domU initrd with lvm support</title>
+ <link>http://127.0.0.1:8080/blog/node/469</link>
+ <description>&lt;p&gt;Before I forget again &lt;/p&gt;
+&lt;p&gt;Initrd for domU &lt;/p&gt;
+&lt;p&gt;mkinitrd --preload xennet --preload xenblk /boot/initrd-2.6-xen.img 2.6.18-8.1.8&lt;br /&gt;
+.el5xen&lt;/p&gt;
+&lt;p&gt;Now at least I can google for it again :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/469#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/539">initrd</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/540">lvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Fri, 12 Oct 2007 10:49:29 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">469 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

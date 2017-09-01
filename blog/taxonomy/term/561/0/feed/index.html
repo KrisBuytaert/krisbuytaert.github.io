@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - clustering</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/561/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Virtual Machine Replication</title>
+ <link>http://127.0.0.1:8080/blog/node/478</link>
+ <description>&lt;p&gt;I don&#039;t know on which planet I have been for the past couple of years , days  or hours  but since when do &lt;a href=&quot;//blogs.zdnet.com/virtualization/?p=256&quot; rel=&quot;nofollow&quot;&gt;&lt;br /&gt;
+VMware’s Vmotion, XenSource’s Xenmotion or Virtual Iron’s Virtual Iron support  Replication ?  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Live Migration yes, but Replication ,  No.  &lt;/p&gt;
+&lt;p&gt;I discussed this kind of technologies  with Mark and Vincent , Moshe and others already  a zillion times..  Continuously mirroring or realtime replication of a virtual machine is really difficult to do.  And I haven&#039;t heard from a working  scalable solution yet .. (Shared Memory issues such as we had with openMosix  still are amongst the issue to be tackled) &lt;/p&gt;
+&lt;p&gt;Live Replication would mean that you mirror the full state of your virtual machine realtime to another running virtual machine.  Every piece of disk/memory and screen you are using has to be replicated to the other side of the wire realtime.  Yes you can take snapshots of filesystems and checkpoints of virtual machines.  But continuous checkpointing over the network  , I&#039;d love to see that.. (outside of a lab)&lt;/p&gt;
+&lt;p&gt;So with a promise  like that .. our good friends the CIO will be dreaming and the vendors will be blamed for not delivering what was promised to them.&lt;/p&gt;
+&lt;p&gt;But on the subject of using just Live Migration features as an alternative for a real High Availability solution  , I know different vendors are singing this song,  but it&#039;s a bad one.&lt;/p&gt;
+&lt;p&gt;Using Live migration in your infrastructure will give you the opportunity to move your applications away from a bad behaving machine when you notice it starts behaving badly, hence giving you a better overall uptime.  If however you don&#039;t notice the machine is failing, or if it just suddenly stops working, or if your application crashes you are out of luck.&lt;br /&gt;
+Live migration won&#039;t work anymore since you are to late,  you can&#039;t migrate a machine that&#039;s dead.  The only thing you can do is quickly redeploy your virtual machine on another node, which for me doesn&#039;t really qualify as a Clustered or HA solution.&lt;/p&gt;
+&lt;p&gt;Real HA looks at all the aspects of an application,  the state of the application, the state of the server it is running on and the state of the network it is connected to.  It has an alternative ready if any of these aspects fail.  Session data is replicated,  data storage is done redundantly and your network has multiple paths.    If your monitoring decides something went wrong another alternative should take over with no visible interruption for the end user.  You don&#039;t have to wait till your application is restarted on the other side of the network, you don&#039;t have to wait till your virtual machine is rebooted, your filesystems are rechecked and your database has recovered no it happens right away .&lt;/p&gt;
+&lt;p&gt;But Virtual Machine Replication as an alternative for HA ?  I&#039;d call that wishfull thinking and vapourware today&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/478#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/561">clustering</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/560">dreaming</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/464">vapourware</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/563">virtual iron</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/555">vmware</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Wed, 17 Oct 2007 10:54:35 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">478 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

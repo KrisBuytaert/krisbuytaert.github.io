@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - package</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1351/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>To Package,  and what to package</title>
+ <link>http://127.0.0.1:8080/blog/package-and-what-package</link>
+ <description>&lt;p&gt;One of the open sessions last week (corr: last month) at Devopsdays 2010 Hamburg was the one on packaging software.   It&#039;s always a big question on wether you package the software that runs in your infrastructure or not.     And if you package it .. what do you package ..&lt;/p&gt;
+&lt;p&gt;The general consensus of the open space was pretty much that you always package the software you deploy, unless you have some very good reasons not to.  Pretty much the way I&#039;ve been doing for ages ..&lt;/p&gt;
+&lt;p&gt;Good reasons that were mentionned were the use of scripting languages that update extremely frequently, but certainly not for compiled code,  compiling code on a production machine also is a big nono.&lt;/p&gt;
+&lt;p&gt;There also was a consensus that you DO NOT PUT CONFIGURATION inside a package.  You can put in default templates, but you don&#039;t put in config files that should change frequently ..  There&#039;s plenty of configuration mgmt systems out there do that kind of stuff for you.&lt;/p&gt;
+&lt;p&gt;The naysayers claimed that packaging brings way to much overhead ... and others claim it takes to much time... however I feel it&lt;br /&gt;
+should just be a 1 time effort that brings devs and ops closer to eachother and from there on it should automated&lt;br /&gt;
+New versions of software don&#039;t mean that the packaging effort needs to be done again..&lt;/p&gt;
+&lt;p&gt;Another topic that gathered lots of questions was if you should be capable of installing multiple versions of the same package  , lots of people mentionned they didn&#039;t like fiddling with symlinks however the best comment in that discussion was that there is already a system out there , the &lt;cite&gt;alternatives&lt;/cite&gt; setup .. provide by most operating systems that allow you to do so in a pretty clean way. I must admit I should look into &lt;cite&gt;alternatives&lt;/cite&gt; more in depth too ..&lt;/p&gt;
+&lt;p&gt;The ever recurring question is wether one should package war files ?  Sure  as you then can also use the dependency models a package mgmt system brings to deploy the dependent libraries.&lt;/p&gt;
+&lt;p&gt;However when people ship products, rather than a live service   they seem to package everything , mainly because the code in the product isn&#039;t changing as quickly as a live website, or internally used application.&lt;/p&gt;
+&lt;p&gt;The biggest problem however is the frustration people have with  GEM or CPAN  packages .. they add yet another layer of management to a system,  most lots of CPAN packages are already packaged.. but when it comes to GEM&#039;s disaster strikes.   There&#039;s a lot of work left for distributions to integrate GEM and CPAN style packages.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/package-and-what-package#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/471">apt</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/package">package</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Mon, 01 Nov 2010 19:20:30 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1020 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Drupal6 in EPEL</title>
+ <link>http://127.0.0.1:8080/blog/drupal6-epel</link>
+ <description>&lt;p&gt;Dear Drupal Community,&lt;/p&gt;
+&lt;p&gt;If any of you are interrested in getting a packaged version of Drupal 6 into  Fedora&#039;s EPEL repository (Extra Packages for Enterprise Linux) and therefore usable in RHEL and Centos,&lt;br /&gt;
+please comment on the &lt;a href=&quot;https://bugzilla.redhat.com/show_bug.cgi?id=552717&quot; rel=&quot;nofollow&quot;&gt;Bug&lt;/a&gt; I filed to get it&#039;s introduction started.&lt;/p&gt;
+&lt;p&gt;Any pitfalls, benefits etc  are welcome ..&lt;/p&gt;
+&lt;p&gt;thnx in advance !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/drupal6-epel#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/drupal6">drupal6</category>
+ <category domain="http://127.0.0.1:8080/blog/category/epel">epel</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/category/package">package</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Tue, 05 Jan 2010 22:48:22 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">975 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

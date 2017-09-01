@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/linux-troubleshooting-101-2016-edition by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:22:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Linux Troubleshooting 101 , 2016 Edition | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Linux Troubleshooting 101 , 2016 Edition</h2>
+<div class="content">
+<div id="node-1110" class="node  blog">
+<div class="content"><p>Back in 2006 I wrote a <a href="http://www.krisbuytaert.be/blog/node/177">blog post</a> about linux troubleshoooting.  <a href="https://twitter.com/bertvanvreckem/status/737761421879054336" rel="nofollow">Bert Van Vreckem</a> pointed out that it might be time for an update ..</p>
+<p>There's not that much that has changed .. however :)</p>
+<p>Everything is a DNS Problem</p>
+<p>Everything is a Fscking DNS Problem<br />
+No really, Everything is a Fscking DNS Problem<br />
+If it's not a fucking DNS Problem ..<br />
+It's a Full Filesystem Problem<br />
+If your filesystem isn't full<br />
+It is a SELinux problem<br />
+If you have SELinux disabled<br />
+It might be an ntp problem<br />
+If it's not an ntp problem<br />
+It's an arp problem<br />
+If it's not an arp problem...<br />
+It is a Java Garbage Collection problem<br />
+If you ain't running Java<br />
+It's a natting problem<br />
+If you are already on IPv6<br />
+It's a Spanning Tree problem<br />
+If it's not a spanning Tree problem...<br />
+It's a USB problem<br />
+If it's not a USB Problem<br />
+It's a sharing IRQ Problem<br />
+If it's not a sharing IRQ Problem<br />
+But most often .. its a Freaking Dns Problem !</p>
+<p>`</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 06/01/2016 - 09:00</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1536 first"><a href="../category/arp/index.html" rel="tag" title="">arp</a></li>
+<li class="taxonomy_term_451"><a href="../taxonomy/term/451/index.html" rel="tag" title="">dns</a></li>
+<li class="taxonomy_term_1537"><a href="../category/iptables/index.html" rel="tag" title="">iptables</a></li>
+<li class="taxonomy_term_979"><a href="../taxonomy/term/979/index.html" rel="tag" title="">ntp</a></li>
+<li class="taxonomy_term_1001 last"><a href="../taxonomy/term/1001/index.html" rel="tag" title="">selinux</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-5555"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/0bc7b33199a0a5e067e1a33265cf88d1.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Wouter Verhelst&#039;s picture" title="Wouter Verhelst&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-5555">#1</a>
+    <span class="author"><span class="anonymous" title="not verified">Wouter Verhelst</span></span>  : <span class="title"><a href="index.html#comment-5555" class="active">arpv6? erm?</a></span>
+  </h3>
+  <div class="content"><p>IPv6 doesn't do ARP, it does Neighbour Discovery. They're slightly different, in that the latter doesn't need caches etc, and therefore shouldn't have some of the problems that ARP has...</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">06/03/2016 - 09:42</div>
+  </div>
+<div class="indented"><a id="comment-5556"></a>
+<div id="comment-2" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-5556">#2</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-5556" class="active">Crap .. I reordered them</a></span>
+  </h3>
+  <div class="content"><p>Crap .. I reordered them right before posting .. should have catched that one myselve :) </p>
+<p>Updated Ordering :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">06/05/2016 - 21:00</div>
+  </div>
+</div><a id="comment-5554"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/e3de266e8087cfdcfff937b5ae20cdcc.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Luc&#039;s picture" title="Luc&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-5554">#3</a>
+    <span class="author"><span class="anonymous" title="not verified">Luc</span></span>  : <span class="title"><a href="index.html#comment-5554" class="active">we mis something</a></span>
+  </h3>
+  <div class="content"><p>somewhere between Fscking DNS and filesystem we have systemd madness ;-)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">06/02/2016 - 19:27</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/linux-troubleshooting-101-2016-edition by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:22:31 GMT -->
+</html>

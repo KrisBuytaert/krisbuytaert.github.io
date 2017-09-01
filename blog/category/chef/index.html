@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/category/chef by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:22:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>chef | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - chef" href="../../taxonomy/term/1158/0/feed/index.html" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/taxonomy/taxonomy/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-taxonomy one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a></div></div>
+  <h2 id="title">chef</h2>
+<div class="content">
+<div id="node-1107" class="node teaser blog cal">
+    <acronym class="calendar published" title="2016-03-23T22:28:36+01:00">
+  <span class="month">Mar</span>
+  <span class="day">23</span>
+    <span class="year">2016</span>
+    </acronym>
+    <h2 class="title"><a href="../../lies-damn-lies-and-statistics-2016-edition/index.html">Lies, Damn Lies and Statistics, 2016 Edition</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1526 first"><a href="../ansible/index.html" rel="tag" title="">ansible</a></li>
+<li class="taxonomy_term_1179"><a href="../cfengine/index.html" rel="tag" title="">cfengine</a></li>
+<li class="taxonomy_term_1532"><a href="../cfgmgmtcamp/index.html" rel="tag" title="">cfgmgmtcamp</a></li>
+<li class="taxonomy_term_1158 active"><a href="index.html" rel="tag" title="" class="active">chef</a></li>
+<li class="taxonomy_term_1533"><a href="../communities/index.html" rel="tag" title="">communities</a></li>
+<li class="taxonomy_term_1528"><a href="../juju/index.html" rel="tag" title="">juju</a></li>
+<li class="taxonomy_term_439"><a href="../../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1534 last"><a href="../salt/index.html" rel="tag" title="">salt</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>When people sign up for Configuration Management Camp, we ask them what community room they are mostly interested in.<br />
+We ask this question  because we have rooms in different sizes and we don't want to put communities with 20 people showing interest in a 120 seat room  and we don't want to put a community with 200 people in a 60 seat room.</p>
+<p>But it also gives us to opportunity to build some very interesting graph over the potential evolution of the communities.</p>
+<p>So looking at the figures ... the overall community is obviously growing,From 350 to 420, to just short of 600 people registered now.   </p>
+<p>The Puppet Community is not the biggest anymore, that spot went to the Ansible Community room.   And all but the CFengine communities are growing.</p>
+<p><img src="http://www.krisbuytaert.be/images/RoomSizes2016.png" /></p>
+<p>One more thing ,  The organisation team discussed several times if we should rebrand the event.   We opted not to ..  Infracoders.eu  could have been an alternative name .. but we decided to stick with the name that already is known,<br />
+the content will evolve.. but Config Management Camp will stay the place where people that care about Infrastructure as Code and Infrastructure automation meet.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-1101" class="node teaser blog cal">
+    <acronym class="calendar published" title="2015-02-09T21:05:31+01:00">
+  <span class="month">Feb</span>
+  <span class="day">09</span>
+    <span class="year">2015</span>
+    </acronym>
+    <h2 class="title"><a href="../../2014-vs-2015-interest-open-source-configuration-management/index.html">2014 vs 2015 interest in Open Source Configuration Management</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1526 first"><a href="../ansible/index.html" rel="tag" title="">ansible</a></li>
+<li class="taxonomy_term_1158 active"><a href="index.html" rel="tag" title="" class="active">chef</a></li>
+<li class="taxonomy_term_1529"><a href="../foreman/index.html" rel="tag" title="">foreman</a></li>
+<li class="taxonomy_term_1528"><a href="../juju/index.html" rel="tag" title="">juju</a></li>
+<li class="taxonomy_term_439"><a href="../../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1527 last"><a href="../saltstack/index.html" rel="tag" title="">saltstack</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>A couple of people asked me to results of the survey of the 2015 vs 2014 Configuration Management Camp room interrests.</p>
+<p>This is a bunch of 350 last year and 420 people telling us what tools they are interested in so we can map the right roomsizes to the communities.</p>
+<p>2014 :</p>
+<p><img src="http://krisbuytaert.be/pics/2014.png" /></p>
+<p>2015:</p>
+<p><img src="http://krisbuytaert.be/pics/2015.png" /></p>
+<p>Enjoy.. but remember there's Lies, Damn Lies and Statistics ..<br />
+PS.   this is a mostly European Audience .</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-1092" class="node teaser blog cal">
+    <acronym class="calendar published" title="2013-12-22T21:04:04+01:00">
+  <span class="month">Dec</span>
+  <span class="day">22</span>
+    <span class="year">2013</span>
+    </acronym>
+    <h2 class="title"><a href="../../fosdem-2014-coming/index.html">FOSDEM 2014 is coming</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_480 first"><a href="../../taxonomy/term/480/index.html" rel="tag" title="">centos</a></li>
+<li class="taxonomy_term_1179"><a href="../cfengine/index.html" rel="tag" title="">cfengine</a></li>
+<li class="taxonomy_term_1158 active"><a href="index.html" rel="tag" title="" class="active">chef</a></li>
+<li class="taxonomy_term_465"><a href="../../taxonomy/term/465/index.html" rel="tag" title="">community</a></li>
+<li class="taxonomy_term_1328"><a href="../devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1076"><a href="../../taxonomy/term/1076/index.html" rel="tag" title="">events</a></li>
+<li class="taxonomy_term_1524"><a href="../keynotes/index.html" rel="tag" title="">keynotes</a></li>
+<li class="taxonomy_term_461"><a href="../../taxonomy/term/461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_1501 last"><a href="../puppetize/index.html" rel="tag" title="">puppetize</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>and with that almost a full week of side events.<br />
+For those who don't know FOSDEM, (where have you been hiding for the past 13 years ? )  Fosdem is the annual Free and Open Source Developers European meeting. If you are into open source , you just can't mis this event where thousands of likeminded people will meet.</p>
+<p>And if 2 days of FOSDEM madness isn't enough people organise events around it.</p>
+<p>Last year I organised PuppetCamp in Gent, the days before Fosdem and a MonitoringLove Hackfest in our office the 2 days after FOSDEM This year another marathon is planned.</p>
+<p>On Friday (31/1/2014) the CentOs community is hosting a <a href="http://wiki.centos.org/Events/Dojo/Brussels2014" rel="nofollow">Dojo in Brussels</a> at the IBM Forum. (Free, but registration required by the venue)</p>
+<p>After the success of PuppetCamp in Gent last year we decided to open up the discussion and get more Infrastructure as Code people involved in a <a href="http://cfgmgmtcamp.eu/" rel="nofollow">CfgMgmtCamp.eu</a>  </p>
+<p>The keynotes for CfgMgmtCamp will include the leaders of the 3 most popular tools around ,  both Mark Burgess, Luke Kanies and Adam Jacob will present at the event which will take place in Gent  right after Fosdem.  We expect people from all the major communities including, but not limited to , Ansible, Salt, Chef, Puppet, CFengine, Rudder, Foreman and Juju (Free but registration required for catering)</p>
+<p>And because 3 events in one week isn't enough the RedHat Community is hosting their <a href="http://community.redhat.com/blog/2013/12/announcing-infrastructure-next/" rel="nofollow">Infrastructure.next</a> conference after CfgMgmtCamp at the same venue.  (Free but registration required for catering)</p>
+<p>cya in Belgium next year..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../fosdem-2014-coming/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1071" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-08-25T23:51:31+02:00">
+  <span class="month">Aug</span>
+  <span class="day">25</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../../vagrant-and-drupal-winning-team/index.html">Vagrant and Drupal, a winning team</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1158 first active"><a href="index.html" rel="tag" title="" class="active">chef</a></li>
+<li class="taxonomy_term_1328"><a href="../devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_484"><a href="../../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_439"><a href="../../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1439 last"><a href="../vagrant/index.html" rel="tag" title="">vagrant</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>While heading back home from DrupalCon Munich after 4 days of good interaction with lots of Drupal folks.<br />
+I realized to my big suprise that there are a lot of people using Vagrant to make sure that developers are not working on platforms they invented their own.  Lots of people have realized that  "It works on my computer" is not something they want to hear from a developer and are reaching out to give them viable solutions to work on shared and reproducible solutions.   </p>
+<p>There were 2 talks proposing solutions to the problem, </p>
+<p>the first one was ..<a href="http://munich2012.drupal.org/program/sessions/fearless-development-drush-vagrant-and-aegir" rel="nofollow">Fearless development with Drush, Vagrant and Aegir</a> by <a href="http://ergonlogic.com/" rel="nofollow">Christopher Gervais </a> He talked about Drush VAgrant Integraion and how <a href="http://drupal.org/project/drush-vagrant" rel="nofollow"> extentions to Drush</a> allow for easy vagrant integration , bridging this gap allows rupal developers to use a tool they are already familiar with </p>
+<p>The second one was Jochen Lillich who explained how he us using Vagrant an Chef for this purpose his talk titled <a href="http://munich2012.drupal.org/program/sessions/use-datacenter-tools-make-your-dev-life-easier" rel="nofollow">Use datacenter tools to make your dev life easier</a> has been posted already.</p>
+<p>During the Vagrant BOF , I briefly ran over @patrickdebois old slides on Vagrant after which people started discussing their use cases..  2 other projects came up </p>
+<p>First is <a href="https://github.com/manarth/oscar" rel="nofollow">Project Oscar</a> which aims at providing developers with a default Drupal development environment in a Jiffy. they do this by providing a bunch of puppetmanifests that sets up a working environment.</p>
+<p>And the second one is <a href="https://github.com/myplanetdigital/ariadne" rel="nofollow">Ariadne</a> which is a standardized virtual machine development evironment for easily developing Drupal sites in a local sandbox that is essentially identical to a fully-configured hosted solution. It attempts to emulate a dedicated Acquia/Pantheon server as closely as possible, with added development tools. Project Ariadne is just like the examples from Jochen Lillich based on Chef</p>
+<p>With all of these tools and examples around , there should be no excuses anymore for Drupal developers to hack on their own machine and tell the systems people "It works on my machine" (let alone to hack in production).</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../vagrant-and-drupal-winning-team/index.html#comments" title="Jump to the first comment of this posting.">5 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1045" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-07-17T22:39:27+02:00">
+  <span class="month">Jul</span>
+  <span class="day">17</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../drupal-and-configuration-mgmt-were-getting-there/index.html">Drupal and Configuration Mgmt, we&#039;re getting there ... </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1158 first active"><a href="index.html" rel="tag" title="" class="active">chef</a></li>
+<li class="taxonomy_term_440"><a href="../../taxonomy/term/440/index.html" rel="tag" title="">configuration management</a></li>
+<li class="taxonomy_term_1161"><a href="../deployment/index.html" rel="tag" title="">deployment</a></li>
+<li class="taxonomy_term_1328"><a href="../devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_484"><a href="../../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_461"><a href="../../taxonomy/term/461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_439 last"><a href="../../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>For those who haven't noticed yet .. I`m into devops  .. I`m also a little bit into Drupal, (blame my last name..)  ,  so one of the frustrations I've been having with Drupal (an much other software) is the automation of deployment and upgrades of Drupal sites ... </p>
+<p>So for the past couple of days  I've been trying to catch up to the ongoing discussion regarding the results of the <a href="http://groups.drupal.org/node/155559" rel="nofollow">configuration mgmt  sprint</a> , I've been looking at it mainly from a systems point of view , being  with the use of Puppet/ Chef or similar tools in mind ..  I know I`m late to the discussion but hey , some people take holidays in this season :)   So below you can read a bunch of my comments ... and thoughts on the topic ..</p>
+<p>First of all , to me JSON looks like a valid option.<br />
+Initially there was the plan to wrap the JSON in a PHP header for "security" reasons, but that seems to be gone even while nobody mentioned the problems that would have been caused for external configuration management tools.<br />
+When thinking about external tools that should be capable of mangling the file plenty of them support JSON but won't be able to recognize a JSON file with a weird header ( thinking e.g about Augeas  (augeas.net) , I`m not talking about IDE's , GUI's etc  here, I`m talking about system level tools and libraries  that are designed to mangle standard files.   For Augeas we could create a separate lens to manage these files , but other tools might have bigger problems with the concept.</p>
+<p>As <a href="http://groups.drupal.org/node/155559#comment-520134" rel="nofollow">catch</a> suggest a clean .htaccess should be capable of preventing people to access the .json files  There's other methods to figure out if files have been tampered with , not sure if this even fits within Drupal  (I`m thinking about reusing existing CA setups rather than having yet another security setup to manage) , </p>
+<p>In general to me tools such as puppet should be capable of modifying config files , and then activating that config with no human interaction required , obviously drush is a good candidate here to trigger the system after the config files have been change, but unlike some people think having to browse to a web page to confirm the changes is not an acceptable solution.  Just think about having to do this on multiple environments ... manual actions are error prone.. </p>
+<p>Apart from that I also think the storing of the certificates should not be part of the file.  What about a meta file with the appropriate checksums ?  (Also if I`m using Puppet or any other tool to manage my config files then the security , preventing to tamper these  files, is already covered by the configuration management tools,  I do understand that people want to build Drupal in the most secure way possible, but I don't think this belongs in any web application.  </p>
+<p>When I look at other similar discussions that wanted to provide a similar secure setup they ran into a lot of end user problems with these kind of setups,  an alternative approach is to make this configurable and or plugable.   The default approach should be to have it enable, but the more experienced users should have the opportunity to disable this, or replace it with another framework.   Making it plugable upfront solves a lot of hassle later.</p>
+<p>Someone in the discussion noted :<br />
+"One simple suggestion for enhancing security might be to make it possible to omit the secret key file and require the user to enter the key into the UI or drush in order to load configuration from disk."</p>
+<p>Requiring the user to enter a key in the UI or drush would be counterproductive in the goal one wants to achieve,  the last thing you want as a requirement is manual/human interaction when automating setups.   therefore a feature like this should never be implemented  </p>
+<p>Luckily there seems to be  new idea around <a href="http://groups.drupal.org/node/157379" rel="nofollow">that</a> doesn't plan on using a raped json file<br />
+<cite>instead of storing the config files in a standard place, we store them in a directory that is named using a hash of your site's private key, like sites/default/config_723fd490de3fb7203c3a408abee8c0bf3c2d302392. The files in this directory would still be protected via .htaccess/web.config, but if that protection failed then the files would still be essentially impossible to find. This means we could store pure, native .json files everywhere instead, to still bring the benefits of JSON (human editable, syntax checkable, interoperability with external configuration management tools, native + speedy encoding/decoding functions), without the confusing and controversial PHP wrapper.</cite></p>
+<p>Figuring out the directory name for the configs from a configuration mgmt tool then could be done by something similar to  </p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">cd sites/default/conf/$(ls sites/default/conf|head -1)</div></li></ol></pre></div></p>
+<p>In general I think the proposed setup looks acceptable , it definitely goes in the right direction of providing systems people with a way to automate the deployment of Drupal sites and applications at scale.</p>
+<p>I`ll be keeping a eye on both the direction they are heading into and the evolution of the code !</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../drupal-and-configuration-mgmt-were-getting-there/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1042" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-05-25T23:18:08+02:00">
+  <span class="month">May</span>
+  <span class="day">25</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../beyond-configuration-mgmt/index.html">Beyond Configuration Mgmt</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1158 first active"><a href="index.html" rel="tag" title="" class="active">chef</a></li>
+<li class="taxonomy_term_1453"><a href="../cucumber/index.html" rel="tag" title="">cucumber</a></li>
+<li class="taxonomy_term_1328"><a href="../devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1455"><a href="../jmeter/index.html" rel="tag" title="">jmeter</a></li>
+<li class="taxonomy_term_439"><a href="../../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1363"><a href="../puppetcamp/index.html" rel="tag" title="">puppetcamp</a></li>
+<li class="taxonomy_term_1452"><a href="../selenium/index.html" rel="tag" title="">selenium</a></li>
+<li class="taxonomy_term_1454"><a href="../shai/index.html" rel="tag" title="">shai</a></li>
+<li class="taxonomy_term_1451 last"><a href="../testing/index.html" rel="tag" title="">testing</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>(This post has been sitting in the drafts folder for way to long,  I decided to push the publish button anyhow .. some people might get ideas from it..)</p>
+<p>We've all run in to the problem,  you've puppetized, or euh .. cooked ,  about every part of your infrastructure and then there's this one service which has no config files,  a broken api that doesn't allow you to configure antyhing, but a magnificent web gui to configure all aspects of the service.  Magnificent for the eye ,  full of AJAX and other fancy stuff which wget isn't really keen on.  Off course before it even starts working you need to set it's password , from that webgui.</p>
+<p>Sometimes when you are lucky they store al their config in a database, which you can dump, parse and replace all the host specific parameters for other deployments,   but is that an approach you like ?  As for each new version you'll need to reanalyze the db layout.  But no matter how you look at it ,dumping the DB and restoring it is an ugly hack you don't want.</p>
+<p>Other alternatives like sniffing the traffic and replaying the POSTS etc were considered ...   but fancy AJAX stuff and SSL make that less trivial than it seems </p>
+<p>Wo while discussing with an upstream project they proposed to actually screenscrape their config webgui .</p>
+<p>So screenscraping the config gui it is .. but how ...  I started looking at tools that are typically used for testing rather than for automation, with the purpose of replaying the scenarios one needs to configure the services.</p>
+<p>My first attempt was Selenium,  it plugs into a browser , so it's easy to acraully record what it has to do,  and it saves it's scenarios  in a somewhat readable/ editable format.<br />
+Having found the export to perl function it alll looked promising.   However the export to perl isn't really an export to perl as I epxected .. I assumed it would just generate the perl code to run the same scneario which would be awesome .. it however generates a perl script that instructs a selenium server to run the script.</p>
+<p>One of the annoyancies I ran into with Selenium is that a browser<br />
+doesn't accept self signed certificates , and one can't preprovision a browser easyily with those freshly created certificates. (Yes Karl I already read about certutil ... )</p>
+<p>I had heard good things about Cucumber so I was pretty eager to start testing it ...  In short Cucumber  lack documentation ,<br />
+I tried a couple of things but I couldn't get beyond testing if a certain string was on a page..  couldn't figure out how to fill in a form etc ...<br />
+Maybe if anyone could point me to some great documentation on how you should write recipe's here ... I didn't find the documentation all to  easy to find ..<br />
+Bummer as it really really looks promisiung .. specially since it is so lightweight ..</p>
+<p>IP played with JMeter and Sahi too .. but still</p>
+<p>So apart from filing bugs to the upstream project/product and hoping they understand your problem and are willing to oopen up their API , what other options do you folks suggest ?</p>
+<p>I gave a short talk about this at Puppetcamp in Amsterdam  and the audience came up with a bunch of other potential projects to look at .</p>
+<ul>
+<li>
+<a href="http://hpricot.com/" rel="nofollow">Hpricot</a>
+</li><li><a href="http://www.webinject.org/" rel="nofollow">WebInject</a>
+</li><li><a href="http://sikuli.org/" rel="nofollow">Project Sikuli</a>
+</li><li><a href="http://watir.com/" rel="nofollow">Watir</a> and
+</li></ul>
+<p>The main problem still is that all these are tools to automate testing , they don't provide you with a general purpose approach to solve the configuration mgmt problem, each time the upstream vendor modifies the layout of his page you hav e to do the work again  and that .. really doesn't sound promising ..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../beyond-configuration-mgmt/index.html#comments" title="Jump to the first comment of this posting.">6 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1025" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-12-18T22:23:39+01:00">
+  <span class="month">Dec</span>
+  <span class="day">18</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../guest-post-season/index.html">Guest Post Season</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1158 first active"><a href="index.html" rel="tag" title="" class="active">chef</a></li>
+<li class="taxonomy_term_1328"><a href="../devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_437"><a href="../../taxonomy/term/437/index.html" rel="tag" title="">dnsproblem</a></li>
+<li class="taxonomy_term_599"><a href="../../taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_439"><a href="../../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1433 last"><a href="../sysadvent/index.html" rel="tag" title="">sysadvent</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Apparently December is the month where everybody starts writing guest posts for other blogs.</p>
+<p>Earlier this month I wrote an article with the title of this blog for Sysadvent ,</p>
+<p><cite>It's a sysadmin relative of the Perl Advent Calendar: One article for each day of December, ending on the 25th article. With the goals of of sharing, openness, and mentoring, we aim to provide great articles about systems administration topics written by fellow sysadmins<br />
+</cite></p>
+<p>My article is <a href="http://sysadvent.blogspot.com/2010/12/day-8-everything-is-dns-problem.html" rel="nofollow">here</a>, but there's plenty more other articles written about a variety of topics, such as chef, tcpdump , how ls works, cucumber and Devops.</p>
+<p>On the other side, Matthias over at Agile Web Development and Operations is hosting a series on Devops where lots of Devops Advocates and Evangelists are having their say about Devops ...</p>
+<p>My entry about the Challenges the Devops Crowd faces was put online <a href="http://www.agileweboperations.com/challenges-for-the-devops-crowd" rel="nofollow">yesterday</a></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../guest-post-season/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-1008" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-06-01T23:10:29+02:00">
+  <span class="month">Jun</span>
+  <span class="day">01</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../beaker-devops/index.html">@Beaker on #Devops</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1179 first"><a href="../cfengine/index.html" rel="tag" title="">cfengine</a></li>
+<li class="taxonomy_term_1158 active"><a href="index.html" rel="tag" title="" class="active">chef</a></li>
+<li class="taxonomy_term_1401"><a href="../cim/index.html" rel="tag" title="">cim</a></li>
+<li class="taxonomy_term_1328"><a href="../devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1402"><a href="../dtmf/index.html" rel="tag" title="">dtmf</a></li>
+<li class="taxonomy_term_439"><a href="../../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1373 last"><a href="../secops/index.html" rel="tag" title="">SecOPS</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://www.rationalsurvivability.com/blog/?p=1890" rel="nofollow">Yesterday</a> @beaker posted his ideas on the #devops movement ...</p>
+<p>Apparently we haven't been stressing enough on the fact that it isn't just about Devs and Ops,<br />
+So let me <a href="http://www.krisbuytaert.be/blog/devops-secops-dbaops-netops">repeat</a> it's not just about Devs and Ops, it's about breaking silo's , about being good at our jobs, about getting conversation started, about talking to different stakeholders in the processes .  We are absolutely trying to include all groups, not exclude some.</p>
+<p>@beaker also seems to have seen many presentations where <cite>developers are shown to have evolved in practice and methodology, but operators (of all kinds) are described as being stuck in the dark ages. </cite>   , is that a different point of view on another continent \,  on this side of the Atlantic, it's mostly the Ops people that are already using agile methods spreading the word and it  isn't about Devs talking about Deopvs yet.  It's actually mostly the ops spreading the word because they feel most of the pain .</p>
+<p>Hoff also wonders about routers switches firewall and all the other boxen where we aren't running puppet or chef on , the boxes that are left out of our fully automated environments .<br />
+Indeed, Puppetcamp Europe once again woke up the discussion on how to tackle these boxen,  the lack of use of  existing standards was covered .. and some mentioned that CIM and family are pretty much death or irrelevant for real life usage  , both the Puppet and Chef communities are working on manifest, modules and recipes to solve the issues.</p>
+<p>But the good thing is that we now have the security people involved too, maybe they'll figure out how to survive longer than 6 months in a CSO position if they talk to the others and come out of their Ivory towers :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../beaker-devops/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-998" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-04-20T21:43:05+02:00">
+  <span class="month">Apr</span>
+  <span class="day">20</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../linux-open-administration-days-2010/index.html">Linux Open Administration Days 2010</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1179 first"><a href="../cfengine/index.html" rel="tag" title="">cfengine</a></li>
+<li class="taxonomy_term_1158 active"><a href="index.html" rel="tag" title="" class="active">chef</a></li>
+<li class="taxonomy_term_455"><a href="../../taxonomy/term/455/index.html" rel="tag" title="">conference</a></li>
+<li class="taxonomy_term_1328"><a href="../devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_449"><a href="../../taxonomy/term/449/index.html" rel="tag" title="">ha</a></li>
+<li class="taxonomy_term_1395"><a href="../load/index.html" rel="tag" title="">load</a></li>
+<li class="taxonomy_term_1386"><a href="../loadays/index.html" rel="tag" title="">loadays</a></li>
+<li class="taxonomy_term_458"><a href="../../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_1394"><a href="../mysql-ha/index.html" rel="tag" title="">mysql ha</a></li>
+<li class="taxonomy_term_439 last"><a href="../../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So about 4 monts ago <a href="http://blog.bdesmet.be/?p=272" rel="nofollow">there was the crazy idea</a> to start a new FOSS event in Belgium targeted  at sysadmins.</p>
+<p>What started out as an event for local people to meet local people with some local speakers actually ended up being a small local event with some top international speakers on onfiguration mananagement and system administration mixed with a bunch of good local ones !</p>
+<p>I had the honour to open the conference with an extremely short version of the Devops talk I gave earlier last year..  extremely short as I knew that over the course of the weekend the topic would reoccur a lot.</p>
+<p>We had the first european talk on <a href="http://wiki.opscode.com/display/chef/Home" rel="nofollow">Chef</a>, by Joshua Timberman,  and we had Puppet talks amongst by Dan Bode from Puppetlabs and CFengine talks ,  devops was a frequently dropped word,</p>
+<p>We had a book raffle where we handed out O'Reilly's .. we had a great free pizza party (got the idea from the saturday pizza event at LCA 2005) ,  and we had some free beer.      Sounds like a good combination for a geeky weekend.</p>
+<p>Apart from the regular talks there were plenty of Open Spaces where interesting topics were discussed ... we had spaces on Open Source vs Open Core , strong voices were heard when we discussed what we should do with the Open Core companies that claim to value Open Source , some people think we should actually list the fauxpensource ones somewhere and make sure the world knows about them</p>
+<p>We had an awesome configuration management discussion session  discussing Chef vs Puppet vs CFengine . And much much more ...</p>
+<p>Some people owe me plenty of Sushi as I had to do my MySQL HA talk before their Managing MySQL talk  , but other than that .. things just went fine..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-995" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-03-30T22:59:34+02:00">
+  <span class="month">Mar</span>
+  <span class="day">30</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../11-days-till-loadays/index.html">11 days till Loadays</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_492 first"><a href="../../taxonomy/term/492/index.html" rel="tag" title="">antwerp</a></li>
+<li class="taxonomy_term_1158 active"><a href="index.html" rel="tag" title="" class="active">chef</a></li>
+<li class="taxonomy_term_455"><a href="../../taxonomy/term/455/index.html" rel="tag" title="">conference</a></li>
+<li class="taxonomy_term_1328"><a href="../devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1386"><a href="../loadays/index.html" rel="tag" title="">loadays</a></li>
+<li class="taxonomy_term_461"><a href="../../taxonomy/term/461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_439"><a href="../../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_533 last"><a href="../../taxonomy/term/533/index.html" rel="tag" title="">wilrijk</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>That's right .. only 11 more ...<br />
+The <a href="http://www.loadays.org/schedule" rel="nofollow">schedule</a> looks promising, there will be some devops juice,  some open spaces, some tutorials, som regular talks .. it really looks promising ...  the schedule is packed ,</p>
+<p>Apart from the talks, tutorials and open spaces there's also the<br />
+Pizza party and the Beer event on saturday ...</p>
+<p>No need to register .. just show up ..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a href="index1.html?page=1" title="Go to page 2" class="active">2</a></li>
+<li class="pager-next"><a href="index1.html?page=1" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="index1.html?page=1" title="Go to last page" class="active">last »</a></li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/category/chef by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:22:38 GMT -->
+</html>

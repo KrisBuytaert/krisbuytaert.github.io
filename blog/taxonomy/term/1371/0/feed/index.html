@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - apt-get</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1371/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Packaging Drupal Modules  or not ?</title>
+ <link>http://127.0.0.1:8080/blog/packaging-drupal-modules-or-not</link>
+ <description>&lt;p&gt;So &lt;a href=&quot;http://bitfieldconsulting.com/puppet-drupal&quot; rel=&quot;nofollow&quot;&gt;John&lt;/a&gt; wrote down his experiences on deploying Drupal sites with Puppet .&lt;/p&gt;
+&lt;p&gt;It&#039;s not a secret that I&#039;ve been thinking about similar stuff and how I could get to the best possible setup.&lt;/p&gt;
+&lt;p&gt;John starts of with using Puppet to download Drush... while I want to use &lt;a href=&quot;http://repo.inuits.be/centos/5/os/noarch/drush-All-Versions-2.1-1.noarch.rpm&quot; rel=&quot;nofollow&quot;&gt;rpm&lt;/a&gt;  for that ...&lt;/p&gt;
+&lt;p&gt;I want my core infrastructure to be fully packaged... not downloaded and untarred.  I want to be able to reproduce my platform in a couple of months , with the exact same versions I`m using now .. not with the version that happens to be on ftp.drupal.org at that point in time, or with ftp.drupal.org being down.&lt;/p&gt;
+&lt;p&gt;Now the next question off course is what&#039;s the core infrastructure.&lt;br /&gt;
+Where does the infrastructure end and does the application start. There&#039;s little discussion about having a  puppet created vhost ,  an apache conf.d file, a matching .htaccess file if wanted , and the appropriate settings.php for a multisite drupal config.&lt;/p&gt;
+&lt;p&gt;There&#039;s also little doubt to me on using drush to run the updates, manage the drupal site etc . Reading John&#039;s  article made me think some further about what and when I want things packaged. &lt;/p&gt;
+&lt;p&gt;John&#039;s post lead to a discussion on #infra-talk on getting all drupal modules packaged for Centos with &lt;a href=&quot;http://www.karan.org/blog/&quot; rel=&quot;nofollow&quot;&gt;Karan&lt;/a&gt; and some others&lt;/p&gt;
+&lt;p&gt;In a development environment I probably want to have periodic drush updates getting the latest modules from the interwebs and potentially breaking my devs code.   But making sure that when you put a site in production it will be on a fairly up to date platform, and not on the platform you started developing on 24 months ago.&lt;/p&gt;
+&lt;p&gt;In a production environment however you  only want tested updates of your modules as indeed they will break code.&lt;/p&gt;
+&lt;p&gt;It&#039;s probably going to be a mix and match setup having a local rpm/deb repo with packaged  modules that have been tested and validated in your setup  and using drush to enable  or configure them for that  production setup.&lt;/p&gt;
+&lt;p&gt;But also having a CI environment wher Drush will get the new modules from the interwebs when needed.  and package them for you.&lt;/p&gt;
+&lt;p&gt;To me that sounds beter than getting all the available Drupal modules and packaging them, even automated, and preparing a repository of those modules of which only a small percentage will actually be used by people.&lt;/p&gt;
+&lt;p&gt;But I need to think about it some more :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/packaging-drupal-modules-or-not#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/apt-get">apt-get</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/473">yum</category>
+ <pubDate>Tue, 16 Feb 2010 20:20:13 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">987 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>To not yum or to not apt-get, that&#039;s NOT the question.</title>
+ <link>http://127.0.0.1:8080/blog/not-yum-or-not-apt-get-thats-not-question</link>
+ <description>&lt;p&gt;Over at the &lt;a href=&quot;http://code.openark.org/blog/mysql/to-not-yum-or-to-not-apt-get&quot; rel=&quot;nofollow&quot;&gt;OPenARK blog&lt;/a&gt; Shlomi Noach argues that using apt-get or yum to install your MySQL instance will one day most likeley break your MySQL setup.     Depdendencies, distros not shipping the MySQL version you want to use and on some distro&#039;s indeed the mysql vs MySQL issue,  agreed,  it all makes things less trivial.&lt;/p&gt;
+&lt;p&gt;However why give up a clean packaged system if there are other ways out ?&lt;/p&gt;
+&lt;p&gt;First of all by claiming that such an installation can break a working production environment looks to me like admitting you don&#039;t have a split development, production environment and that rather than testing stuff upfront indeed you just hack a long in production.&lt;/p&gt;
+&lt;p&gt;So rather than using a tarball for the MySQL instance an --force to satisfy the missing dependencies (hence also cluttering your system) , a much cleaner and less error prone setup is to only deploy from your own , self controlled  repository , in which you only allow  tested packages, most probably not the distro based package , hence packages that won&#039;t break your setups ;)   But still you will be using apt or yum and deploying rpm&#039;s and debs , perfectly satisfying dependency needs.&lt;/p&gt;
+&lt;p&gt;Apart from that .. watch out for Banquise .. :)  Coming to your favourite distro soon..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/not-yum-or-not-apt-get-thats-not-question#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/471">apt</category>
+ <category domain="http://127.0.0.1:8080/blog/category/apt-get">apt-get</category>
+ <category domain="http://127.0.0.1:8080/blog/category/banquise">banquise</category>
+ <category domain="http://127.0.0.1:8080/blog/category/deb">deb</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/473">yum</category>
+ <pubDate>Tue, 16 Feb 2010 20:13:33 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">986 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

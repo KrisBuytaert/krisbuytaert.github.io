@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/taxonomy/term/887?page=1 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:33:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>zabbix | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - zabbix" href="0/feed/index.html" />
+<link rel="shortcut icon" href="../../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../modules/taxonomy/taxonomy/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-taxonomy one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../../faq/index/index.html">FAQ</a> and  <a href="../../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../../index/index.html">Home</a></div></div>
+  <h2 id="title">zabbix</h2>
+<div class="content">
+<div id="node-718" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-08-27T20:19:20+02:00">
+  <span class="month">Aug</span>
+  <span class="day">27</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../node/718/index.html">Zabbix 1.5.4 Woes</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_599 first"><a href="../599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_887 last active"><a href="index.html" rel="tag" title="" class="active">zabbix</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>I was trying to check out the new Zabbix beta's when I ran into a couple of problems.  Mostly missing dependencies but also  some bugs.</p>
+<p>The big troubles start when trying to install the frontent.<br />
+It seems like php code shipped in the last release might well work when you are upgrading but it fails when you are doing a fresh install.  As I never got a Setup Wizard.</p>
+<p>The clue is to get the most recent code from their SVN repo svn co svn://svn.zabbix.com/trunk , that actually allows you to run the setup wizard.</p>
+<p>If you are installing  the latest RPM's they are also not really requiring all the dependencies you need to run the frontend.</p>
+<p>yum/apt-get install php-bcmath  php-pear</p>
+<p>Will get you a step further.</p>
+<p>Another thing is the new password policy.. it seems the Admin/blank is gone.<br />
+I have no clue what the new password is but you are encouraged to set it yourselve in the mysql database</p>
+<p>md5('new_pass') or echo -n new_pass | md5sum   will help you .</p>
+<p>Big thnx to the friendly folks over at #zabbix on irc.freenode.net for helping me out earlier.</p>
+<p>Next steps .. debugging autodiscovery :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-717" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-08-26T16:19:03+02:00">
+  <span class="month">Aug</span>
+  <span class="day">26</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../node/717/index.html">Matt Rechenburg of openQRM gets Interviewed</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1005 first"><a href="../1005/index.html" rel="tag" title="">enomalism</a></li>
+<li class="taxonomy_term_1006"><a href="../1006/index.html" rel="tag" title="">eucalyptus</a></li>
+<li class="taxonomy_term_889"><a href="../889/index.html" rel="tag" title="">hyperic</a></li>
+<li class="taxonomy_term_890"><a href="../890/index.html" rel="tag" title="">nagios</a></li>
+<li class="taxonomy_term_1004"><a href="../1004/index.html" rel="tag" title="">openebula</a></li>
+<li class="taxonomy_term_601"><a href="../601/index.html" rel="tag" title="">openqrm</a></li>
+<li class="taxonomy_term_599"><a href="../599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_887 active"><a href="index.html" rel="tag" title="" class="active">zabbix</a></li>
+<li class="taxonomy_term_888 last"><a href="../888/index.html" rel="tag" title="">zenoss</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://ostatic.com/170981-blog/interview-openqrms-open-source-systems-management" rel="nofollow">Ostatic</a> interviews my good friend <a href="#">Matt Rechenburg</a> of <a href="#">openQRM</a>  fame</p>
+<p>There is one part however where I think we need to elaborate ..<br />
+In the Question about the closest alternatives  Matt replies "There are some projects like Virtual Iron and Zenoss which are focusing on the same tasks as openQRM. Now  I have to disagree about Zenoss being in the same area as openQRM , But Zenoss..  totally different product , not even remotely close to what openQRM does. Zenoss is a competitor to Nagios, HypericHQ , Zabbix etc. You could have an Zenoss plugin in openQRM , just as you can have a Nagios or Hyperic HQ plugin for it .  <a href="http://www.inuits.be/">We</a> have <a href="http://www.krisbuytaert.be/blog/node/692">presented</a> about these different technologies earlier this year at OLS.  And you can still <a href="http://www.krisbuytaert.be/blog/node/684">vote</a> for your favorite tool.</p>
+<p>Competition for openQRM to me is  Enomalism, openNebula, Eucalyptus , with that difference that they don't do Physcial machines.<br />
+All of the Enomalsm, Nimbus , openNebula, OS Circular  etc projects  are focussing on managing Virtual Machines deploying them over the network . with that difference that they have or support an API to talk to and they are al rebranding to the overhyped Cloud terminology.   They are all focussing on just a subset of wat openQRM is doing and that's where openQRM has  the edge..  OpenQRM does more than just one type of Virtualization and it does more than just  virtual machines. Because of the fact that it supports more than 1 Virtualization platform it also comes with a complementary P2V and V2V migration  toolkit.  Apart from that it  integrates (Virtual) Machine Management with other tools and gives you a dashboard to work from .</p>
+<p><a href="http://blogs.the451group.com/opensource/2008/08/20/openqrm-lives-on/" rel="nofollow">The 451 group </a> has some more insights about the growth of openQRM since Qlusters set it free , seems like both the downloads and the traffic for at SF.net since the changes are up.  Obviously the community likes the new openQRM approach, and so do I ;)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../node/717/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-692" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-07-25T20:20:11+02:00">
+  <span class="month">Jul</span>
+  <span class="day">25</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../node/692/index.html">OLS 2008 Presentation</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_889 first"><a href="../889/index.html" rel="tag" title="">hyperic</a></li>
+<li class="taxonomy_term_955"><a href="../955/index.html" rel="tag" title="">linuxsymposium</a></li>
+<li class="taxonomy_term_890"><a href="../890/index.html" rel="tag" title="">nagios</a></li>
+<li class="taxonomy_term_863"><a href="../863/index.html" rel="tag" title="">ols</a></li>
+<li class="taxonomy_term_919"><a href="../919/index.html" rel="tag" title="">ols2008</a></li>
+<li class="taxonomy_term_599"><a href="../599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_887 active"><a href="index.html" rel="tag" title="" class="active">zabbix</a></li>
+<li class="taxonomy_term_888 last"><a href="../888/index.html" rel="tag" title="">zenoss</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So <a href="http://tdc.blogsite.org/" rel="nofollow">Tom </a> and I just finished our Systems Monitoring Shootout talk here at OLS 2008.</p>
+<p>The talk was fairly wel attended  and gained a lot of hallway afterchatter.  (We ran almost out of time so we took the Q&amp;A in the Hallway so the next speaker could start his talk).</p>
+<p>I've placed the presentation <a href="http://www.krisbuytaert.be/presentations/MonitoringShootOut.odp">online </a> already for your viewing pleasure ..</p>
+<p>The <a href="http://www.krisbuytaert.be/blog/node/684">Vote for your favourite monitoring tool is still open</a> so please vote !</p>
+<p>While here in Ottawa we got news that our talk was also selected for the upcoming Nagios conference in Germany in September.. so Tom will be presenting it there again.<br />
+Most probably with even more findings !</p>
+<p>Anyway .. back to the conference now .. trying to catch up with my other writings :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../node/692/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-686" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-07-20T16:10:39+02:00">
+  <span class="month">Jul</span>
+  <span class="day">20</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../node/686/index.html">Linux Symposium</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_455 first"><a href="../455/index.html" rel="tag" title="">conference</a></li>
+<li class="taxonomy_term_484"><a href="../484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_458"><a href="../458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_890"><a href="../890/index.html" rel="tag" title="">nagios</a></li>
+<li class="taxonomy_term_863"><a href="../863/index.html" rel="tag" title="">ols</a></li>
+<li class="taxonomy_term_601"><a href="../601/index.html" rel="tag" title="">openqrm</a></li>
+<li class="taxonomy_term_887 active"><a href="index.html" rel="tag" title="" class="active">zabbix</a></li>
+<li class="taxonomy_term_888 last"><a href="../888/index.html" rel="tag" title="">zenoss</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>As Tom and I will be heading to Ottawa for OLS Tomorrow you  can expect some active blogging here this week..  </p>
+<p>That is if we can manage to find quality Wifi and our batteries last long enough..<br />
+before we find power :)</p>
+<p>Anyway .. I`ll be heading to the <a href="http://virtminisummit.linux.hp.com/" rel="nofollow">Virtualization Mini Summit</a> on tuesday, and then of to <a href="http://www.linuxsymposium.org/2008/" rel="nofollow">the big conference.</a></p>
+<p>I`ll be presenting twice,  once on the miniconf about openQRM4 and Tom and I will be presenting our findings comparing different monitoring tools such as Nagios, Hyperic, Zabbix , Zenoss and others  at OLS itselve.</p>
+<p>But don't hesitate to talk to me about other interresting topics such as MySQL or Drupal :)</p>
+<p>Now first we have to cross a couple of borders, and an ocean :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../node/686/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-682" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-07-10T20:55:00+02:00">
+  <span class="month">Jul</span>
+  <span class="day">10</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../node/682/index.html">Fired because of Open Source</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_942 first"><a href="../942/index.html" rel="tag" title="">big four</a></li>
+<li class="taxonomy_term_944"><a href="../944/index.html" rel="tag" title="">diane greene</a></li>
+<li class="taxonomy_term_889"><a href="../889/index.html" rel="tag" title="">hyperic</a></li>
+<li class="taxonomy_term_943"><a href="../943/index.html" rel="tag" title="">little tree</a></li>
+<li class="taxonomy_term_890"><a href="../890/index.html" rel="tag" title="">nagios</a></li>
+<li class="taxonomy_term_461"><a href="../461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_599"><a href="../599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_945"><a href="../945/index.html" rel="tag" title="">openview</a></li>
+<li class="taxonomy_term_941"><a href="../941/index.html" rel="tag" title="">tivoli</a></li>
+<li class="taxonomy_term_555"><a href="../555/index.html" rel="tag" title="">vmware</a></li>
+<li class="taxonomy_term_887 active"><a href="index.html" rel="tag" title="" class="active">zabbix</a></li>
+<li class="taxonomy_term_888 last"><a href="../888/index.html" rel="tag" title="">zenoss</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>When <a href="http://blogs.zdnet.com/open-source/?p=2631" rel="nofollow">Dana Blankenhorn </a> asked yesterday if Open Source was one of the reasons why Diane Greene was <a href="http://virtualization.com/news/2008/07/08/diane-greene-vmware-paul-maritz/" rel="nofollow">fired at VMWare</a>  I had to smile a bit ..  obviously the economy is changing and Open Source is a real competitor to proprietary software ... but to fire the CEO  , nah .</p>
+<p>Firing developers that are working on an almost obsolete product however is a relevant thing to do.  IBM just <a href="http://www.newsobserver.com/business/story/1136520.html" rel="nofollow">let go 150</a> , <a href="http://www.johnmwillis.com/ibm/tivoli-layoffs/" rel="nofollow">30 </a> of which in their Tivoli department.</p>
+<p>Tools such as Tivoli, HP OpenView (what were they smoking when they chose that name) , and others are obviously feeling the heat from opensource.  With frameworks such as Nagios and tools such as Zabbix, Zenoss and HypericHQ their fate has been written already .</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-650" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-04-21T22:02:24+02:00">
+  <span class="month">Apr</span>
+  <span class="day">21</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../node/650/index.html">Big Four, Little Four`</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_889 first"><a href="../889/index.html" rel="tag" title="">hyperic</a></li>
+<li class="taxonomy_term_892"><a href="../892/index.html" rel="tag" title="">little four</a></li>
+<li class="taxonomy_term_439"><a href="../439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_893"><a href="../893/index.html" rel="tag" title="">qlusters</a></li>
+<li class="taxonomy_term_894"><a href="../894/index.html" rel="tag" title="">reductive labs</a></li>
+<li class="taxonomy_term_887 active"><a href="index.html" rel="tag" title="" class="active">zabbix</a></li>
+<li class="taxonomy_term_888 last"><a href="../888/index.html" rel="tag" title="">zenoss</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>With Qlusters being <a href="http://socializedsoftware.com/2008/04/13/the-little-3-of-open-source-systems-management/" rel="nofollow">"removed"</a> from the <a href="http://www.redmonk.com/cote/2007/01/16/open-platforms-in-systems-management/" rel="nofollow">Little 4</a> list I think there is room for a new 4th contender.<br />
+My vote is on either Reductive Labs or  Zabbix.</p>
+<p>Where is <a href="http://www.krisbuytaert.be/blog/node/649">your vote</a> ?</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../node/650/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-648" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-04-21T21:57:26+02:00">
+  <span class="month">Apr</span>
+  <span class="day">21</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../../node/648/index.html">Groundwork should be afraid</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_886 first"><a href="../886/index.html" rel="tag" title="">groundwork</a></li>
+<li class="taxonomy_term_889"><a href="../889/index.html" rel="tag" title="">hyperic</a></li>
+<li class="taxonomy_term_890"><a href="../890/index.html" rel="tag" title="">nagios</a></li>
+<li class="taxonomy_term_863"><a href="../863/index.html" rel="tag" title="">ols</a></li>
+<li class="taxonomy_term_891"><a href="../891/index.html" rel="tag" title="">opennms</a></li>
+<li class="taxonomy_term_887 active"><a href="index.html" rel="tag" title="" class="active">zabbix</a></li>
+<li class="taxonomy_term_888 last"><a href="../888/index.html" rel="tag" title="">zenoss</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>It seems that Groundworks <a href="http://www.johnmwillis.com/sugarcrm/groundwork-man-up/" rel="nofollow">is afraid</a><br />
+of John.  And with reason.  I looked into their product and hmm.. well.. I`m not gonna use the words John <a h ref="http://www.johnmwillis.com/opensource/zabbix-finds-a-home-in-usa/#comment-58">used</a>.</p>
+<p>But given the fact that hey manage to break a working apache setup during their installation,  fail to create a working installer and create RPMs that require environment variables to be set before you can install them .. </p>
+<p>Well my expectations were lowered drastically.   Oh and when you register at their site.. expect to be bothered by supportive sales people.  Multiple times :(</p>
+<p>Most people are talking about Hyperic, Zenoss , openNMS, Nagios and Groundwork,  weird that Zabbix is almost never in that list ..  yet</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../../../node/648/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="index.html" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-item"><a href="index.html" title="Go to page 1" class="active">1</a></li>
+<li class="pager-current last">2</li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/taxonomy/term/887?page=1 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:33:24 GMT -->
+</html>

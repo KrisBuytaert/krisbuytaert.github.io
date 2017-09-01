@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - monitoringsucks</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1469/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Love, MonitoringLove</title>
+ <link>http://127.0.0.1:8080/blog/love-monitoringlove</link>
+ <description>&lt;p&gt;Last year we were pretty negative about Monitoring, We shouted out that MonitoringSucked ... A year has passed and a lot has changed ... most importantly our new found love for monitoring,  thanks to an inspirational Ignite talk by &lt;a href=&quot;https://twitter.com/ulfmansson&quot; rel=&quot;nofollow&quot;&gt;Ulf Mansson&lt;/a&gt; at devopsdays Rome.&lt;/p&gt;
+&lt;p&gt;Right after Fosdem about 20 people showed up at the #monitoringlove hacksessions hosted at the &lt;a href=&quot;http://www.inuits.eu/&quot; rel=&quot;nofollow&quot;&gt;Inuits.eu&lt;/a&gt; offices to work on Open Source monitoring projects and exchange ideas.   Some completely new people,  some people with already a lot of experience.&lt;/p&gt;
+&lt;p&gt;Amongst the projects that were worked on was Maciej working on  Packaging graphite for Debian, Ohter people were fixing bugs in Puppet  , I spent some time with a  &lt;a href=&quot;https://github.com/krisbuytaert/vagrant-sensu&quot; rel=&quot;nofollow&quot;&gt;vagrant box&lt;/a&gt; to deploy Sensu using Puppet.  Last time I was playing with Sensu was on the flight back from PuppetCon , I gave up the fight with&lt;br /&gt;
+RabbitMQ and SSL because I had no internet connection .. and now Ulf just pointed out that I could disable SSL at all, which resulted in having a POC up and running in no time.&lt;/p&gt;
+&lt;p&gt;Patrick was  hacking on the Chef counterpart of the vagrant-puppet sensu setup a part of &lt;a href=&quot;https://github.com/monigusto&quot; rel=&quot;nofollow&quot;&gt;#monigusto&lt;/a&gt;. Ulf Mansson was getting &lt;a href=&quot;http://shopify.github.com/dashing/&quot; rel=&quot;nofollow&quot;&gt;dashing&lt;/a&gt; to display on a  Raspberry Pi  ... pretty cool stuff&lt;br /&gt;
+And Jelle Smet was working on &lt;a href=&quot;https://github.com/smetj/pyseps&quot; rel=&quot;nofollow&quot;&gt;Pyseps&lt;/a&gt; a Python based Simple Event Processing Server framework that  consume JSON docs from RabbitMQ and forwards them real time to other queues using MongoDB query syntax.&lt;/p&gt;
+&lt;p&gt;One of the more interesting discussion was around the topic of  alerting and modeling business rules and input from a lot of different sources&lt;br /&gt;
+in order to send the right alerts to the right people. &lt;/p&gt;
+&lt;p&gt;We explored different ideas like using BPM tools such as Activity or Rules engines like Ruby Rools. There exist some Saas providers that try to solve this need like PagerDuty and friends but obviously there is still a lot of work that needs to be done in order to create a viable alerting system based on different input sources.&lt;/p&gt;
+&lt;p&gt;The monitoring problem is not solved yet .. and it will stay around for a couple of years .. but with the advent of event such as &lt;a href=&quot;http://monitorama.com/&quot; rel=&quot;nofollow&quot;&gt;Monitorama&lt;/a&gt; its clear&lt;br /&gt;
+that an event like our #monitoring love hackessions is needed .. and is probably here to stay for a couple of years.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/love-monitoringlove#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/infracoders">infracoders</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/sensu">sensu</category>
+ <pubDate>Wed, 13 Feb 2013 17:10:32 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1077 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>check_graphite</title>
+ <link>http://127.0.0.1:8080/blog/checkgraphite</link>
+ <description>&lt;p&gt;During my Puppetcamp Gent talk last week, I explained how to get alerts based on trends from graphite. A number of people asked ,e how to do that.&lt;/p&gt;
+&lt;p&gt;First lets quickly explain why you might want to do that .&lt;br /&gt;
+Sometimes you don&#039;t care about the current value of a metric..as an example take  a Queing system .. there is no problem if there are messages added to the queue, not even if there are a lot of messages on the queue,  there might however be a problem if  over a certain period the number of messages on a queue stays to high.&lt;/p&gt;
+&lt;p&gt;In this example I`m monitoring the queue length of a hornetq setup which is exposed by JMX.&lt;br /&gt;
+On the server runnnig HornetQ I have an exported resource that tells the JMXTrans server to send the  MessageCount  to graphite&lt;br /&gt;
+(you could also do this using collectd plugins) &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;@@jmxtrans::graphite {&amp;quot;MessageCountMonitor-${::fqdn}&amp;quot;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    jmxhost =&amp;gt; hiera(&#039;hornetqserver&#039;),&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            jmxport =&amp;gt; &amp;quot;5446&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            objtype =&amp;gt; &#039;org.hornetq:type=Queue,*&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            attributes =&amp;gt;  &#039;&amp;quot;MessageCount&amp;quot;,&amp;quot;MessagesAdded&amp;quot;,&amp;quot;ConsrCount&amp;quot;&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            resultalias =&amp;gt; &amp;quot;hornetq&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            typenames =&amp;gt; &amp;quot;name&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            graphitehost =&amp;gt; hiera(&#039;graphite&#039;),&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            graphiteport =&amp;gt; &amp;quot;2003&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;}&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;This gives me a computable url on which I can get the graphite view &lt;/p&gt;
+&lt;p&gt;The next step then is to configure a nagios check that verifies this data. For that I need to use the &lt;a href=&quot;http://github.com/datacratic/check_graphite&quot; rel=&quot;nofollow&quot;&gt;check_graphite&lt;/a&gt; plugin from Datacratic ..&lt;/p&gt;
+&lt;p&gt;Which can work with an nrpe config like&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### File managed with puppet ###&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### Served by:        &#039;&amp;lt;%= scope.lookupvar(&#039;::servername&#039;) %&amp;gt;&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### Module:           &#039;&amp;lt;%= scope.to_hash[&#039;module_name&#039;] %&amp;gt;&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### Template source:  &#039;&amp;lt;%= template_source %&amp;gt;&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;command[check_hornetq]=/usr/lib64/nagios/plugins/check_graphite -u &amp;quot;http://&amp;lt;%= graphitehost%&amp;gt;/render?target=servers.&amp;lt;%= scope.lookupvar(&#039;::fqdn&#039;).gsub(/\./,&#039;_&#039;)%&amp;gt;_5446.hornetq.docstore_private_trigger_notification.MessageCount&amp;amp;from=-30minutes&amp;amp;rawData=true&amp;quot; -w 2000 -c 20000&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;I define this check on the host where HornetQ is running  as it then will map to that host on Icinga/Nagios  rather than throw a host error on an unrelated host.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/checkgraphite#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/icinga">icinga</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Tue, 05 Feb 2013 09:10:15 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1076 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>#monitoringlove hackfest</title>
+ <link>http://127.0.0.1:8080/blog/monitoringlove-hackfest</link>
+ <description>&lt;p&gt;The age of #monitoringsucks is over, we&#039;re now transitioning into a #monitoringlove period.  &lt;/p&gt;
+&lt;p&gt;That however doesn&#039;t mean al the work is done, we still need to do a lot of work and a lot of people are working on a lot of stuff.&lt;/p&gt;
+&lt;p&gt;Therefore like last year we are opening up our offices again right after Fosdem for a #monitoringlove hackfest&lt;/p&gt;
+&lt;p&gt;That&#039;s right on february 4 and 5 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp.  In short  a #monitoringlove hackathon&lt;/p&gt;
+&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert) know if you want to join us in Antwerp.  We&#039;ll provide caffeine, wireless, chairs and some snacks. &lt;/p&gt;
+&lt;p&gt;Please register upfront at : &lt;a href=&quot;http://monitoringlove2013.eventbrite.com/&quot; rel=&quot;nofollow&quot;&gt;http://monitoringlove2013.eventbrite.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Obviously if you can&#039;t make it to Antwerp you can join the effort on ##monitoringsucks on Freenode or on Twitter.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.inuits.eu/contact&quot; rel=&quot;nofollow&quot;&gt;location will be Duboistraat 50 , Antwerp&lt;/a&gt;&lt;br /&gt;
+It is about 10 minutes walk from the Antwerp Central Trainstation&lt;br /&gt;
+Depending on Traffic Antwerp is about half an hour north of Brussels and there are hotels at walking distance from the venue.&lt;/p&gt;
+&lt;p&gt;Plenty of parking space is available on the other side of the Park &lt;/p&gt;
+&lt;p&gt;Read last years report &lt;a href=&quot;http://www.krisbuytaert.be/blog/we-didnt-fix-it&quot;&gt;http://www.krisbuytaert.be/blog/we-didnt-fix-it&lt;/a&gt;  to get an idea of what will happen...&lt;/p&gt;
+&lt;p&gt;PS.  Yes I`m trying to get another event of the ground the days before Fosdem but I`m still awaiting confirmation of the venue ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoringlove-hackfest#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/768">fosdem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Tue, 13 Nov 2012 20:54:24 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1074 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Our #monitoringsucks rpm is repository available </title>
+ <link>http://127.0.0.1:8080/blog/our-monitoringsucks-rpm-repository-available</link>
+ <description>&lt;p&gt;Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.&lt;/p&gt;
+&lt;p&gt;You might have noticed a variety of vagrant- projects on my github acount&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://github.com/KrisBuytaert/vagrant-ganglia&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-ganglia &lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;//github.com/KrisBuytaert/vagrant-graphite&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://github.com/KrisBuytaert/vagrant-puppet-logstash&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-puppet-logstash,&lt;/a&gt;&lt;br /&gt;
+Being the #monitoringsucks part of them.     All of those Vagrant projects are basically my test setups to play with those new tools.&lt;/p&gt;
+&lt;p&gt;They contain a bunch of puppet modules that install and configure these tools.  (Note that they mostly consist of&lt;br /&gt;
+of git submodules to other puppet module repositories.&lt;/p&gt;
+&lt;p&gt;Given the fact that I also like to have my software cleanly installed from a package, that means that some of these tools had to be packaged,  or I had to create a personal / internal repository which had packages from upstream that were hiding on the internet available.&lt;/p&gt;
+&lt;p&gt;I&#039;ve forked of this repository off the internal Inuits epository so you all can also benefit from these efforts.&lt;br /&gt;
+(You gotta love pulp :))&lt;/p&gt;
+&lt;p&gt;That means you can now install all of the above mentionned #monitoringsucks tool from our public repo on &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;yumrepo { &#039;monitoringsucks&#039;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  baseurl    =&amp;gt; &#039;http://pulp.inuits.eu/pulp/repos/monitoring&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  descr      =&amp;gt; &#039;MonitoringSuck at Inuits&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  gpgcheck   =&amp;gt; &#039;0&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;}&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Patches to both the Vagrant projects and the puppet modules are welcome ...&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/our-monitoringsucks-rpm-repository-available#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logstash">logstash</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/repo">repo</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vagrant">vagrant</category>
+ <pubDate>Sat, 11 Aug 2012 19:49:39 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1068 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>The ultimate 2012 open source and devops conference</title>
+ <link>http://127.0.0.1:8080/blog/ultimate-2012-open-source-and-devops-conference</link>
+ <description>&lt;p&gt;Kent Skaar pinged me last week , asking for feedback on Lisa&#039;11 and input for Lisa 2012. &lt;/p&gt;
+&lt;p&gt;Thought I should share my advise to him with the rest of the world &lt;/p&gt;
+&lt;p&gt;So If I were to host an event similar to Lisa I&#039;d had either&lt;br /&gt;
+Jordan Sissel or Mitchell Hashimoto  give the keynote  because over the past 24 months those people have written more relevant tools for me than anyone else :)    &lt;/p&gt;
+&lt;p&gt;I&#039;d have someone talk about Kanban for Operations,  There&#039;s 2 names that pop up   Dominica DeGrandis  and Mattias Skarin&lt;/p&gt;
+&lt;p&gt;I&#039;d have the Ubuntu folks talk about JuJu and I&#039;d have RI Pienaar talk about MCollective .. while you have RI have him talk about Hiera too. Have Dean Wilson carry RI&#039;s bags and put him unknowingly on a panel.  (Masquerade it as a Pub with hidden cameras) &lt;/p&gt;
+&lt;p&gt;Obviously as #monitoringsucks you want to hear about new monitoring tools initiatives and how people are dealing with them , so you want people talking about Graphite, Collectd, Statsd, Sensu , Icinga-MQ  And how people are reviving Ganglia and using that in large scale environments.&lt;/p&gt;
+&lt;p&gt;You want someone to demistify Queues,  I mean .. who still knows about the differences between Active, Rabbit , Zero, Hornet and many other  Q&#039;s ?&lt;/p&gt;
+&lt;p&gt;You want people talking about how they deal with logs,  so talks about Logstash and Graylog2. &lt;/p&gt;
+&lt;p&gt;You want to cover Test Driven Infrastructure  How do you test your infrastructure    , someone to demystify Cucumber  and Webrat , and talk about testing Charms, Modules, and Cookbooks.&lt;/p&gt;
+&lt;p&gt;Oh and Filesystems  , distributed ones the Ceph, FraunhoverFS, Moose, KosmosFS,  Glusters, Swifts of this world ...  you want people to talk about their experiences , good and bad with any of the above,  someone who can actually compare those rather than heresay stuff. :)  With recent updates on what&#039;s going on in these projects.&lt;/p&gt;
+&lt;p&gt;Now someone please organise this for me :)  In a warm and sunny place ...  preferably with 27 holes next door ,  and daycare for my kids :) &lt;/p&gt;
+&lt;p&gt;PS. Yes the absence of any openstack related topic is on purpose .. that&#039;s for 2013 :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/ultimate-2012-open-source-and-devops-conference#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <pubDate>Fri, 10 Feb 2012 22:15:35 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1061 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>We didn&#039;t fix it </title>
+ <link>http://127.0.0.1:8080/blog/we-didnt-fix-it</link>
+ <description>&lt;p&gt;MonitoringSucks and we didn&#039;t fix it.&lt;/p&gt;
+&lt;p&gt;Earlier this week &lt;a href=&quot;http://www.inuits.eu&quot;&gt;Inuits&lt;/a&gt; hosted a 2 day hackfest titled #MonitoringSucks.  A good number of people with a variety of backgrounds showed up on monday morning. I don&#039;t know why but people had high expectations for this event ,  did they really expect us to fix the #monitoringsucks problem in a mere 2 days ?&lt;/p&gt;
+&lt;p&gt;Next to myselve we had  Patrick Debois , &lt;a href=&quot;https://twitter.com/#!/gkarekinian&quot;&gt;Grégory Karékinian&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/#!/sjourdan&quot;&gt;Stefan Jourdan&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/#!/hatofmonkeys&quot;&gt;Colin Humphreys&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/#!/acrmp&quot;&gt;Andrew Crump&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/#!/ohadlevy/&quot;&gt;Ohad Levy &lt;/a&gt;, Frank Marien, Toshaan Bharvani,  Devdas Bhagat, &lt;a href=&quot;https://twitter.com/#!/mpasternacki/&quot;&gt; Maciej Pasternacki &lt;/a&gt; &lt;a href=&quot;https://twitter.com/xtaran&quot;&gt;Axel Beckert&lt;/a&gt; &lt;a href=&quot;https://twitter.com/#!/smetj/&quot;&gt;Jelle Smet&lt;/a&gt;,   Noa Resare @blippie , John John Tedro @udoprog,  Christian Trabold @ctrabold and obviously some people I missed&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+A good mixture of Fosdem visitors that stayed a litte longer in our cold country and locals with ideas. We had people from TomTom, RedHat , Spotify, Booking.com, Inuits, Atlassian, coming from Belgium, The Netherlands France, Israel, the UK, Sweden, Germany, Poland and Switzerland if I`m not mistaken.&lt;/p&gt;
+&lt;p&gt;The format  was pretty open, much of the first day was spend around  the drawingboard.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/drawingboard.jpg&quot; alt=&quot;people around the drawingboard&quot; /&gt;&lt;br /&gt;
+(Ohad Levy, Jelle Smet, PatrickDebois and Frank Marien) discussing a variety of topics &lt;/p&gt;
+&lt;p&gt;This monitoring topic is complex, there are different areas that need to be covered. The drawing below documents how we splitted the problem into different areas , and listed the different tools people use for these areas.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/componnents.jpg&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Collection: Collectd, Nagios, Ganglia
+&lt;/li&gt;&lt;li&gt; Transport: XMPP, Smiple, Smtp, 0mq , APMQ, rsyslog, irc, stomp
+&lt;/li&gt;&lt;li&gt;Storage : rrd, graphite, opentsdb, hbase,
+&lt;/li&gt;&lt;li&gt;Filtering: logstash, esper,
+&lt;/li&gt;&lt;li&gt;Visualisation : Graphite,
+&lt;/li&gt;&lt;li&gt;Notifcation: PagerDuty
+&lt;/li&gt;&lt;li&gt;Reporting: Jasper
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Obviously above list is far from complete. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/morediscussions.jpg&quot; /&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+The afternoon discussion continued where we left of before lunch, just after the powercut. Only now we started refocussing on filtering and aggregating values using Logstash&lt;br /&gt;
+@patrickdebois had been talking about the idea to use Logstash as a way to collect data , transform it and throw it either to another tool, or onto a Queue before.&lt;br /&gt;
+Looking at Logstash it makes kind of sense.  Logstash already has a zillion of input types, filters and outputs.  Including popular queues such as amqp and zeromq. Yes, the default  behaviour for a lot of people is to  get data from different inputs,  filter it and then send it to ElasticSearch,  but much more  is possible with the available outputs.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://www.krisbuytaert.be/images/logstash.jpg&quot; /&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+It was only on tuesday that people really started writing code&lt;br /&gt;
+So what did really come out of the #monitoringsucks hackfest. ?&lt;/p&gt;
+&lt;p&gt;A couple of people were working on packaging existing tools for their favourite distro. Others were working on integrating a number of other already existing tools (e.g Patrick working on more inputs for Logstash.,  me working on replacing logster with Logstash, setting up Kibana etc. New tools were learned, items were added to todolists (Kibana, (doesn&#039;t work on older Firefox instances)  Tattle, statsd) and items were scratched from todolists  (Graylog2 (Kibana replaces that as a good Frontend for Logstash) )&lt;/p&gt;
+&lt;p&gt;A lot of experiences with different tools were exchanged&lt;/p&gt;
+&lt;p&gt;Frank Marien showed us a demo of his freshly release &lt;a href=&quot;https://extremon.org/&quot;&gt;ExtremeMon&lt;/a&gt; framework.   A really promising project.&lt;/p&gt;
+&lt;p&gt;The sad part about a workshop like this one is that you enter with a bunch of ideas , and leave with even more ideas, hence more work.  We haven&#039;t solved the problem yet, but a lot of more people are now thiking about the problem and how to solve it a more modulare (unix style) approach. With different litte tools, all being good at something and all being interconnectable.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/we-didnt-fix-it#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/extrememon">extrememon</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <pubDate>Thu, 09 Feb 2012 23:03:52 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1060 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>#monitoringsucks hackathon  6&amp;7 february  Practical details: </title>
+ <link>http://127.0.0.1:8080/blog/monitoringsucks-hackathon-67-february-practical-details</link>
+ <description>&lt;p&gt;As announced &lt;a href=&quot;http://www.krisbuytaert.be/blog/monitoringsucks-and-well-fix-it&quot;&gt;earlier&lt;/a&gt; next monday and tuesday we&#039;re opening up the Inuits offices for everybody working on monitoring problems.&lt;/p&gt;
+&lt;p&gt;There&#039;s already a &lt;a href=&quot;https://github.com/monitoringsucks/werefixingit/wiki&quot;&gt;good number of people&lt;/a&gt; that have confirmed their presence and some people have asked &lt;/p&gt;
+&lt;p&gt;As for practical details .. the plan is simple.&lt;br /&gt;
+I`m going to be at the place somewhere between 8:30 and 9:00 on monday.  ( Hey .. it&#039;s the day after Fosdem you know :)) &lt;/p&gt;
+&lt;p&gt;The only thing I&#039;ve planned is to do a get to know eachother round around 10:30  after that I`m expecting the hackathon to be self organising,  &lt;/p&gt;
+&lt;p&gt;There will be water, coffee , etc , IP connectivity, and electricity. &lt;/p&gt;
+&lt;p&gt;The location is still Duboisstraat 50, Antwerp&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.inuits.eu/sites/default/files/contact_inuitsmap.png&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;Free parking is on the Hardenvoort or Kempenstraat ( 3minutes walk) , paid parking right in front of the door.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoringsucks-hackathon-67-february-practical-details#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <pubDate>Wed, 01 Feb 2012 07:48:55 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1059 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Graphite, JMXTrans, Ganglia, Logster, Collectd,  say what  ? </title>
+ <link>http://127.0.0.1:8080/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what</link>
+ <description>&lt;p&gt;Given that @patrickdebois is working on improving data collection I thought it  would be a good idea to describe the setup I currently have hacked together.&lt;/p&gt;
+&lt;p&gt;(Something which can be used as a starting point to improve stuff, and I have to write documentation anyhow) &lt;/p&gt;
+&lt;p&gt;I currently have 3 sources ,  and  one target, which will  eventually expand to at least another target and most probably more sources too.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/VagrantGraphite.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The 3 sources are basically  typical system data which I collect using collectd,  However I`m using collectd-carbon from &lt;a href=&quot;https://github.com/indygreg/collectd-carbon.git&quot; title=&quot;https://github.com/indygreg/collectd-carbon.git&quot;&gt;https://github.com/indygreg/collectd-carbon.git&lt;/a&gt; to send data to Graphite.&lt;/p&gt;
+&lt;p&gt;I`m parsing the Apache and Tomcat logfiles with logster , currently sending them only to Graphite, but logster has an option to send them to Ganglia too.&lt;/p&gt;
+&lt;p&gt;And I`m using JMXTrans to collect JMX data from Java apps that have this data exposed and send it to Graphite.  (JMXTrans also comes with a Ganglia target option) &lt;/p&gt;
+&lt;p&gt;Rather than going in depth over the config it&#039;s probably easier to point to a Vagrant box I build &lt;a href=&quot;https://github.com/KrisBuytaert/vagrant-graphite&quot; title=&quot;https://github.com/KrisBuytaert/vagrant-graphite&quot;&gt;https://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt; which brings up a machine that does pretty much all of this  on localhost.&lt;/p&gt;
+&lt;p&gt;Obviously it&#039;s still a work in progress and lots of classes will need to be parametrized and cleaned up.   But it&#039;s a working setup,  and not just on my machine .. &lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/collectd">collectd</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jmxtrans">jmxtrans</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logster">logster</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <pubDate>Tue, 03 Jan 2012 20:46:47 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1058 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>#monitoringsucks and we&#039;ll fix it !</title>
+ <link>http://127.0.0.1:8080/blog/monitoringsucks-and-well-fix-it</link>
+ <description>&lt;p&gt;If you are hacking on monitoring solutions, and want to talk to your peers solving the problem&lt;br /&gt;
+Block the monday and tuesday after fosdem in your calendar !&lt;/p&gt;
+&lt;p&gt;That&#039;s right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp&lt;/p&gt;
+&lt;p&gt;In short  a #monitoringsucks hackathon&lt;/p&gt;
+&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp&lt;/p&gt;
+&lt;p&gt;Obviously if you can&#039;t make it to Antwerp you can join the effort on ##monitoringsucks on Freenode or on Twitter.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.inuits.eu/contact&quot; rel=&quot;nofollow&quot;&gt;location will be Duboistraat 50 , Antwerp&lt;/a&gt;&lt;br /&gt;
+It is about 10 minutes walk from the Antwerp Central Trainstation&lt;br /&gt;
+Depending on Traffic Antwerp is about half an hour north of Brussels and there are hotels at walking distance from the venue.&lt;/p&gt;
+&lt;p&gt;Plenty of parking space is available on the other side of the Park&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoringsucks-and-well-fix-it#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/collectd">collectd</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/icinga">icinga</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/category/munin">munin</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/890">nagios</category>
+ <category domain="http://127.0.0.1:8080/blog/category/rrd">rrd</category>
+ <pubDate>Tue, 03 Jan 2012 18:23:00 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1057 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

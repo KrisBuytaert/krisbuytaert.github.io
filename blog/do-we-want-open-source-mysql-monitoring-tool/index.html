@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/do-we-want-open-source-mysql-monitoring-tool by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:32:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Do we want an Open Source MySQL Monitoring tool  ? | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Do we want an Open Source MySQL Monitoring tool  ?</h2>
+<div class="content">
+<div id="node-769" class="node  blog">
+<div class="content"><p><a href="http://themattreid.com/wordpress/?p=77" rel="nofollow">Matt Reid</a> wants to know what we want in an Open Source MySQL monitoring solution ?</p>
+<p>He is working on the second incarnation of Monolith and wants input from the MySQL community.</p>
+<p>Now for me the bigger question is if we want an isolated tool that runs stand alone, or a tool which we can integrate it in something we already have.</p>
+<p>To me there is a difference between a tool that I want to use to debug my environment, such as Mytop or MySQL Activity Report, in that case I need  some tool that quickly installs with little dependencies and little impact.</p>
+<p>On the other side I want a tool that is constantly there, that tells me about trends and performance history.  But there I don't want an isolated toool, I want something fully integrated where I can correlate different measurements  from disk io, memory usage etc , that tool should also tell me about the things that go<br />
+ wrong.</p>
+<p><a href="http://www.inuits.be/">We</a> did some research earlier this year to figure out the current state of Open Source monitoring tools.  Different tools have a different audience.. some go for the network layer, others take the os level and other even try to go deep inside the applications.</p>
+<p>Given that knowledge we even had the  idea  to refocus that research comparing different monitoring tools such as Zabbix, Zenoss, Hyperic and Nagios again but this time with a focus on monitoring MySQL  and submit that as an abstract for the upcoming MySQL conference,  we didn't .. maybe next time.</p>
+<p>There's plenty of frameworks already that will allow you to send alerts on all of the occasions you list, or allow you to graph all the values you want.  And yes we want to see those values too.</p>
+<p>But do we want yet another tool , yet another URL to browse to or do we want those alerts and graphs  integrated  in an existing tool such as Zabbix, Zenoss or<br />
+Hyperic ..  I guess I prefer the integrated approach.</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Tue, 11/18/2008 - 00:44</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_889 first"><a href="../taxonomy/term/889/index.html" rel="tag" title="">hyperic</a></li>
+<li class="taxonomy_term_458"><a href="../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_890"><a href="../taxonomy/term/890/index.html" rel="tag" title="">nagios</a></li>
+<li class="taxonomy_term_461"><a href="../taxonomy/term/461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_887"><a href="../taxonomy/term/887/index.html" rel="tag" title="">zabbix</a></li>
+<li class="taxonomy_term_888 last"><a href="../taxonomy/term/888/index.html" rel="tag" title="">zenoss</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3423"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://themattreid.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/ed79610461418b40920eb7fbae78a6da.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="themattreid&#039;s picture" title="themattreid&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3423">#1</a>
+    <span class="author"><a href="http://themattreid.com/">themattreid</a></span>  : <span class="title"><a href="index.html#comment-3423" class="active">However, we don&#039;t get the following from other tools</a></span>
+  </h3>
+  <div class="content"><p>Reinventing the wheel and adding necessary features to the wheel are totally different approaches. I have no interest in spending hundreds of hours designing something that already exists. The whole reason for this application is to fill the need for something that does not already exist in the open source community. That said...</p>
+<p>Except for MySQL Enterprise Dashboard (which costs $1999 - $4999 per server per year) you're not getting the following from Zenoss (which we use for our systems level stuff), Nagios, Cacti, or any of the other monitoring systems I've found:</p>
+<p>1. automated performance tuning reports to improve your servers<br />
+2. automated alerting for &gt;50 custom mysql variables<br />
+3. trend graphing for things that actually matter for mysql servers - not like zenoss's defaults that are sorely lacking<br />
+4. an API that will let you integrate with other monitoring systems if you so choose<br />
+5. environment wide (not just single server) reports on data+index sizes, schema numbers and table statistics, etc<br />
+6. etc etc etc</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/23/2008 - 00:02</div>
+  </div>
+<a id="comment-3362"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.mysql.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/d76fa4886a9c1f49a1b1a83833deaca8.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Matthew Montgomery&#039;s picture" title="Matthew Montgomery&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3362">#2</a>
+    <span class="author"><a href="http://www.mysql.com/">Matthew Montgomery</a></span>  : <span class="title"><a href="index.html#comment-3362" class="active">MySQL&#039;s own monitoring</a></span>
+  </h3>
+  <div class="content"><p>MySQL's own monitoring solution relies upon Hyperic's SIGAR API to collect stats in an integrated way.</p>
+<p><a href="http://www.hyperic.com/news/releases/10_30_2006b.html" title="http://www.hyperic.com/news/releases/10_30_2006b.html" rel="nofollow">http://www.hyperic.com/news/releases/10_30_2006b.html</a></p>
+<p>It seems every monitoring community out there have developed a mysql plugin for their platform of choice.</p>
+<p><a href="http://support.hyperic.com/display/hypcomm/MySQL" title="http://support.hyperic.com/display/hypcomm/MySQL" rel="nofollow">http://support.hyperic.com/display/hypcomm/MySQL</a><br />
+<a href="http://www.nagiosexchange.org/cgi-bin/page.cgi?g=Detailed%2F1479.html;d=1" title="http://www.nagiosexchange.org/cgi-bin/page.cgi?g=Detailed%2F1479.html;d=1" rel="nofollow">http://www.nagiosexchange.org/cgi-bin/page.cgi?g=Detailed%2F1479.html;d=1</a><br />
+<a href="http://www.xaprb.com/blog/2008/04/27/improved-cacti-monitoring-templates-for-mysql/" title="http://www.xaprb.com/blog/2008/04/27/improved-cacti-monitoring-templates-for-mysql/" rel="nofollow">http://www.xaprb.com/blog/2008/04/27/improved-cacti-monitoring-templates...</a></p>
+<p>Working with those already out there to continue their improvement would be the direction I'd take rather than re-inventing the wheel.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/18/2008 - 16:36</div>
+  </div>
+<div class="indented"><a id="comment-3363"></a>
+<div id="comment-3" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3363">#3</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3363" class="active">Exactly</a></span>
+  </h3>
+  <div class="content"><p>Exactly  .. you got my point..</p>
+<p>Obviously you've been here before and you read my earlier rants on other people wanting to reinvent the wheel :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/18/2008 - 17:15</div>
+  </div>
+<div class="indented"><a id="comment-3365"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://openquery.com.au/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/e1f57ab099201ad1da2ac628f5b1ff86.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Arjen Lentz&#039;s picture" title="Arjen Lentz&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3365">#4</a>
+    <span class="author"><a href="http://openquery.com.au/">Arjen Lentz</a></span>  : <span class="title"><a href="index.html#comment-3365" class="active">but...</a></span>
+  </h3>
+  <div class="content"><p>unfortunately the mysql enterprise monitoring tool itself does not integrate into a platform, it just stands on its own. This IMHO makes it extremely awkward to deal with, as MySQL is never the only thing that you need to monitor.</p>
+<p>So, Kris, I firmly agree with you - there are enough mature platforms out there, anything sensible should integrate with them.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/19/2008 - 05:06</div>
+  </div>
+</div></div><a id="comment-3361"></a>
+<div id="comment-5" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3361">#5</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3361" class="active">Zabbix, Zenoss , Hyperic</a></span>
+  </h3>
+  <div class="content"><p>Obviously Zabbix isn't the only tool that does this..  so does Hyperic , so does ... :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/18/2008 - 10:07</div>
+  </div>
+<a id="comment-3360"></a>
+<div id="comment-6" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/9c1e94ba0c0247962f0b01aca8776359.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Mike C&#039;s picture" title="Mike C&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3360">#6</a>
+    <span class="author"><span class="anonymous" title="not verified">Mike C</span></span>  : <span class="title"><a href="index.html#comment-3360" class="active">A Zabbix solution</a></span>
+  </h3>
+  <div class="content"><p>I put this together for Zabbix, though it is stil rough:  <a href="http://www.zabbix.com/wiki/doku.php?id=extensive_mysql_monitoring_including_replication" title="http://www.zabbix.com/wiki/doku.php?id=extensive_mysql_monitoring_including_replication" rel="nofollow">http://www.zabbix.com/wiki/doku.php?id=extensive_mysql_monitoring_includ...</a></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/18/2008 - 03:26</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/do-we-want-open-source-mysql-monitoring-tool by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:32:58 GMT -->
+</html>

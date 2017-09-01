@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/35 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:36:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UKUUG Day 1 | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-story one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a></div></div>
+  <h2 id="title">UKUUG Day 1</h2>
+<div class="content">
+<div id="node-35" class="node  story">
+<div class="content"><p>I first went to the "Experiences of a large linux deployment in<br />
+education." talk of which the title already got changed to "a linux<br />
+deployment",  no  sign  of  the large part :( Which was rather<br />
+dissapointing for me. However the talk was interesting anyway. They<br />
+mainly discussed thin client solutions using LTSP. With 1 server<br />
+they serve about 35 users. (dual cpu 4Gb) Using blade servers (IBM)<br />
+only for standardisation reasons.</p>
+<p>They had a relevant complaint about Memory utilisation of both<br />
+OpenOffice,  Gnome  and  KDE, where's the time when we squezed everything into 4Kb :)</p>
+<p>Moving to adopting a driver where Matthew Wilcox explained how you<br />
+can end up maintaining a subsystem and called for more volunteers :)</p>
+<p>Linux and ACPI, a brave new world of power management, a good and<br />
+detailed explanation of why ACPI is so difficult, where's the time<br />
+that VGA mode was really VGA mode (just set a couple of registers and int 13h right ? )</p>
+<p>System Tap, rerun of an OLS 2005 talk , it introduces a new tool to<br />
+diagnose complex system problem while not having to rebuild / reboot<br />
+your environment too much. It's based on the kprobes infrastructure<br />
+and not only aimed at kernel developers alone ;)</p>
+<p>Lunch, great lunch, som curries with rice, nice .. reminds me of the<br />
+Lunches at LinuxKongress and the Pizza party at LCA.</p>
+<p>BSD Talk about Mitigating Security , somehow this reminds me of the<br />
+RedHat security talk at Fudconf 2005 Linux, well, at least some of<br />
+the parts do :)</p>
+<p>Missed Bdale's talk at linux.conf.au .. and now I finally know what<br />
+bouncing of the moon is :) The most interresting part of the talk is<br />
+the  reason why people have been working so hard on gnu radio,<br />
+because  this way they prevent legislation to disallow them to<br />
+reverse engineer hdtv since there already is an open source version   available that can display it.</p>
+<p>On to OpenStreetMap.com , Steve Coast claims to be the new Wikipedia<br />
+for but then for Maps, just as wikipedia was after their first year<br />
+they have a good starting point that contains some usefull maps and<br />
+with the help of the community it will grow, maybe I should hook up a GPS to my car and start feeding them some info. We need more<br />
+detailed freely available maps of Antwerp and surroundings :)</p>
+<p>Napi talk from Jamal Hadi Salim , with some benchmarking regardingNapi.</p>
+<p>Now am I asleep or did I just see Christoph having to use Jamals<br />
+laptop cause his Powerbook doesn't wan't to work on the projector ?<br />
+Anyway we can sleep safe since Christoph just confirmed that he is<br />
+not a spy working for Sco (anymore):)</p>
+<p>Seems like a hughe amount of presentations are having problems with<br />
+the projectors ;( There is some urgent need for people to fix this.</p>
+<p>After the Conference Dinner, we had Dave Miller giving the Keynote ,<br />
+he gave a nice overview of Netconf, on who is doing what, what we'll<br />
+see in the new kernels. I've got no notes as I was trying to make sure Dave didn't fall over my feet while giving his talk, and I<br />
+usually don't run around with my laptop at conference dinners :)</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Sun, 08/07/2005 - 14:12</div>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/35 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:36:30 GMT -->
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/installing-vagrant-ubuntu-natty by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Installing Vagrant, on Ubuntu Natty | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Installing Vagrant, on Ubuntu Natty</h2>
+<div class="content">
+<div id="node-1055" class="node  blog">
+<div class="content"><p>(Warning some Ubuntu ranting ahead) </p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">apt-get install virtualbox-ose </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">apt-get install rubygems</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">gem install vagrant</div></li></ol></pre></div></p>
+<p>That's what I assumed it would take me to install vagrant on a spare Ubuntu (Natty) laptop.</p>
+<p>Well it's not.   after that I was greeted with some weirdness.</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">$vagrant</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vagrant: command not found...</div></li></ol></pre></div></p>
+<p>Yet gem list --local showed the vagrant gem installed.</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">$ruby</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">ruby:  command not found</div></li></ol></pre></div></p>
+<p>I looked twice, checked again and indeed it seems you can install rubygems on natty with no  ruby installed  #dazedandconfused</p>
+<p>So unlike other distro's on Ubuntu doesn't add the rubygems binary path to it's default path<br />
+After  adding that to my .bashrc things started working better.</p>
+<p>The active reader has noticed that by now half of the Twittersphere was pointing me to the already implemented<br />
+above solution and the other half was telling me to not install rubygems using apt-get, or to use rvm for all my rubygem troubles</p>
+<p>Apart from the point that if you need tools to like rvm to fix things that are fundamentally broken,  the fact is that joe average java developer doens't want to be bothered with  RubyGem hell  , he just wants to do apt-get install Vagrant and get on with his real work,  and that's exactly what I'd expect from   Linux for human beings</p>
+<p>I'd expect any junior guy to be able to go to vagrantup.com  read the 4 commands on the main page and be up and running<br />
+Coz that's how it works on my  Bleeding Edge Enterprise Development Distro,  the one I usually would not advise those people (and my mother) to use.</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Thu, 12/29/2011 - 20:31</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1467 first"><a href="../category/ran/index.html" rel="tag" title="">ran</a></li>
+<li class="taxonomy_term_916"><a href="../taxonomy/term/916/index.html" rel="tag" title="">ubuntu</a></li>
+<li class="taxonomy_term_1439 last"><a href="../category/vagrant/index.html" rel="tag" title="">vagrant</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-4593"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.findahut.co.za/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/4b8bc186b5fb24c5ee8151865f796ab3.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Jaco&#039;s picture" title="Jaco&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4593">#1</a>
+    <span class="author"><a href="http://www.findahut.co.za/">Jaco</a></span>  : <span class="title"><a href="index.html#comment-4593" class="active">thanks</a></span>
+  </h3>
+  <div class="content"><p>Thank you!!! you are a life saver, been googling for 10 hours now</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/14/2012 - 19:19</div>
+  </div>
+<a id="comment-4555"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/42c9f98a79ade992f9a4f7e3080b25bd.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Bigon&#039;s picture" title="Bigon&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4555">#2</a>
+    <span class="author"><span class="anonymous" title="not verified">Bigon</span></span>  : <span class="title"><a href="index.html#comment-4555" class="active">RFP in debian</a></span>
+  </h3>
+  <div class="content"><p>Hey :)</p>
+<p>There is a RFP (Request For Packaging) for vagrant opened in the Debian BTS, as stated in it, debian is still missing some dependencies.</p>
+<p>I will try to see what could be done regarding this :)</p>
+<p><a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=628031" title="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=628031" rel="nofollow">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=628031</a></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/02/2012 - 18:25</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/installing-vagrant-ubuntu-natty by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:56 GMT -->
+</html>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - graphite</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1470/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Jenkins, Puppet, Graphite, Logstash and YOU</title>
+ <link>http://127.0.0.1:8080/blog/jenkins-puppet-graphite-logstash-and-you</link>
+ <description>&lt;p&gt;This is a repost of an article I wrote for the Acquia Blog some time ago.&lt;/p&gt;
+&lt;p&gt;As mentioned before, devops can be summarized by talking about culture, automation, monitoring metrics and sharing. Although devops is not about tooling, there are a number of open source tools out there that will be able to help you achieve your goals. Some of those tools will also enable better communication between your development and operations teams.&lt;/p&gt;
+&lt;p&gt;When we talk about Continuous Integration and Continuous Deployment we need a number of tools to help us there. We need to be able to build reproducible artifacts which we can test. And we need a reproducible infrastructure which we can manage in a fast and sane way. To do that we need a Continuous Integration framework like Jenkins.&lt;/p&gt;
+&lt;p&gt;Formerly known as Hudson, Jenkins has been around for a while. The open source project was initially very popular in the Java community but has now gained popularity in different environments. Jenkins allows you to create reproducible Build and Test scenarios and perform reporting on those. It will provide you with a uniform and managed way to , Build, Test, Release and Trigger the deployment of new Artifacts, both traditional software and infrastructure as code-based projects. Jenkins has a vibrant community that builds new plugins for the tool in different kinds of languages. People use it to build their deployment pipelines, automatically check out new versions of the source code, syntax test it and style test it. If needed, users can compile the software, triggering unit tests, uploading a tested artifact into a repository so it is ready to be deployed on a new platform level.&lt;/p&gt;
+&lt;p&gt;Jenkins then can trigger an automated way to deploy the tested software on its new target platform. Whether that be development, testing, user acceptance or production is just a parameter. Deployment should not be something we try first in production, it should be done the same on all platforms. The deltas between these platforms should be managed using a configuration management tool such as Puppet, Chef or friends.&lt;/p&gt;
+&lt;p&gt;In a way this means that Infrastructure as code is a testing dependency, as you also want to be able to deploy a platform to exactly the same state as it was before you ran your tests, so that you can compare the test results of your test runs and make sure they are correct. This means you need to be able to control the starting point of your test and tools like Puppet and Chef can help you here. Which tool you use is the least important part of the discussion, as the important part is that you adopt one of the tools and start treating your infrastructure the same way as you treat your code base: as a tested, stable, reproducible piece of software that you can deploy over and over in a predictable fashion.&lt;/p&gt;
+&lt;p&gt;Configuration management tools such as Puppet, Chef, CFengine are just a part of the ecosystem and integration with Orchestration and monitoring tools is needed as you want feedback on how your platform is behaving after the changes have been introduced. Lots of people measure the impact of a new deploy, and then we obviously move to the M part of CAMS.&lt;/p&gt;
+&lt;p&gt;There, Graphite is one of the most popular tools to store metrics. Plenty of other tools in the same area tried to go where Graphite is going , but both on flexibility, scalability and ease of use, not many tools allow developers and operations people to build dashboards for any metric they can think of in a matter of seconds.&lt;/p&gt;
+&lt;p&gt;Just sending a keyword, a timestamp and a value to the Graphite platform provides you with a large choice of actions that can be done with that metric. You can graph it, transform it, or even set an alert on it. Graphite takes out the complexity of similar tools together with an easy to use API for developers so they can integrate their own self service metrics into dashboards to be used by everyone.&lt;/p&gt;
+&lt;p&gt;One last tool that deserves our attention is Logstash. Initially just a tool to aggregate, index and search the log files of our platform, it is sometimes a huge missed source of relevant information about how our applications behave.. Logstash and it&#039;s Kibana+ElasticSearch ecosystem are now quickly evolving into a real time analytics platform. Implementing the Collect, Ship+Transform, Store and Display pattern we see emerge a lot in the #monitoringlove community. Logstash now allows us to turn boring old logfiles that people only started searching upon failure into valuable information that is being used by product owners and business manager to learn from on the behavior of their users.&lt;/p&gt;
+&lt;p&gt;Together with the Graphite-based dashboards we mentioned above, these tools help people start sharing their information and communicate better. When thinking about these tools, think about what you are doing, what goals you are trying to reach and where you need to improve. Because after all, devops is not solving a technical problem, it&#039;s trying to solve a business problem and bringing better value to the end user at a more sustainable pace. And in that way the biggest tool we need to use is YOU, as the person who enables communication.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/jenkins-puppet-graphite-logstash-and-you#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jenkins">jenkins</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logstash">logstash</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Wed, 04 Jun 2014 14:55:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1096 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>check_graphite</title>
+ <link>http://127.0.0.1:8080/blog/checkgraphite</link>
+ <description>&lt;p&gt;During my Puppetcamp Gent talk last week, I explained how to get alerts based on trends from graphite. A number of people asked ,e how to do that.&lt;/p&gt;
+&lt;p&gt;First lets quickly explain why you might want to do that .&lt;br /&gt;
+Sometimes you don&#039;t care about the current value of a metric..as an example take  a Queing system .. there is no problem if there are messages added to the queue, not even if there are a lot of messages on the queue,  there might however be a problem if  over a certain period the number of messages on a queue stays to high.&lt;/p&gt;
+&lt;p&gt;In this example I`m monitoring the queue length of a hornetq setup which is exposed by JMX.&lt;br /&gt;
+On the server runnnig HornetQ I have an exported resource that tells the JMXTrans server to send the  MessageCount  to graphite&lt;br /&gt;
+(you could also do this using collectd plugins) &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;@@jmxtrans::graphite {&amp;quot;MessageCountMonitor-${::fqdn}&amp;quot;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    jmxhost =&amp;gt; hiera(&#039;hornetqserver&#039;),&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            jmxport =&amp;gt; &amp;quot;5446&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            objtype =&amp;gt; &#039;org.hornetq:type=Queue,*&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            attributes =&amp;gt;  &#039;&amp;quot;MessageCount&amp;quot;,&amp;quot;MessagesAdded&amp;quot;,&amp;quot;ConsrCount&amp;quot;&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            resultalias =&amp;gt; &amp;quot;hornetq&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            typenames =&amp;gt; &amp;quot;name&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            graphitehost =&amp;gt; hiera(&#039;graphite&#039;),&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            graphiteport =&amp;gt; &amp;quot;2003&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;}&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;This gives me a computable url on which I can get the graphite view &lt;/p&gt;
+&lt;p&gt;The next step then is to configure a nagios check that verifies this data. For that I need to use the &lt;a href=&quot;http://github.com/datacratic/check_graphite&quot; rel=&quot;nofollow&quot;&gt;check_graphite&lt;/a&gt; plugin from Datacratic ..&lt;/p&gt;
+&lt;p&gt;Which can work with an nrpe config like&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### File managed with puppet ###&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### Served by:        &#039;&amp;lt;%= scope.lookupvar(&#039;::servername&#039;) %&amp;gt;&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### Module:           &#039;&amp;lt;%= scope.to_hash[&#039;module_name&#039;] %&amp;gt;&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### Template source:  &#039;&amp;lt;%= template_source %&amp;gt;&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;command[check_hornetq]=/usr/lib64/nagios/plugins/check_graphite -u &amp;quot;http://&amp;lt;%= graphitehost%&amp;gt;/render?target=servers.&amp;lt;%= scope.lookupvar(&#039;::fqdn&#039;).gsub(/\./,&#039;_&#039;)%&amp;gt;_5446.hornetq.docstore_private_trigger_notification.MessageCount&amp;amp;from=-30minutes&amp;amp;rawData=true&amp;quot; -w 2000 -c 20000&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;I define this check on the host where HornetQ is running  as it then will map to that host on Icinga/Nagios  rather than throw a host error on an unrelated host.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/checkgraphite#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/icinga">icinga</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Tue, 05 Feb 2013 09:10:15 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1076 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Our #monitoringsucks rpm is repository available </title>
+ <link>http://127.0.0.1:8080/blog/our-monitoringsucks-rpm-repository-available</link>
+ <description>&lt;p&gt;Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.&lt;/p&gt;
+&lt;p&gt;You might have noticed a variety of vagrant- projects on my github acount&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://github.com/KrisBuytaert/vagrant-ganglia&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-ganglia &lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;//github.com/KrisBuytaert/vagrant-graphite&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://github.com/KrisBuytaert/vagrant-puppet-logstash&quot; rel=&quot;nofollow&quot;&gt;http://github.com/KrisBuytaert/vagrant-puppet-logstash,&lt;/a&gt;&lt;br /&gt;
+Being the #monitoringsucks part of them.     All of those Vagrant projects are basically my test setups to play with those new tools.&lt;/p&gt;
+&lt;p&gt;They contain a bunch of puppet modules that install and configure these tools.  (Note that they mostly consist of&lt;br /&gt;
+of git submodules to other puppet module repositories.&lt;/p&gt;
+&lt;p&gt;Given the fact that I also like to have my software cleanly installed from a package, that means that some of these tools had to be packaged,  or I had to create a personal / internal repository which had packages from upstream that were hiding on the internet available.&lt;/p&gt;
+&lt;p&gt;I&#039;ve forked of this repository off the internal Inuits epository so you all can also benefit from these efforts.&lt;br /&gt;
+(You gotta love pulp :))&lt;/p&gt;
+&lt;p&gt;That means you can now install all of the above mentionned #monitoringsucks tool from our public repo on &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;yumrepo { &#039;monitoringsucks&#039;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  baseurl    =&amp;gt; &#039;http://pulp.inuits.eu/pulp/repos/monitoring&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  descr      =&amp;gt; &#039;MonitoringSuck at Inuits&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  gpgcheck   =&amp;gt; &#039;0&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;}&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Patches to both the Vagrant projects and the puppet modules are welcome ...&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/our-monitoringsucks-rpm-repository-available#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logstash">logstash</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/repo">repo</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vagrant">vagrant</category>
+ <pubDate>Sat, 11 Aug 2012 19:49:39 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1068 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>FlossUK and Puppetcamp Edinburgh</title>
+ <link>http://127.0.0.1:8080/blog/flossuk-and-puppetcamp-edinburgh</link>
+ <description>&lt;p&gt;I&#039;ve just finished presenting my talk on how I currently work on Puppet modules  at Puppetcamp here in Edinburgh where I&#039;ve been for the week talking on both FlossUK 2012 and Puppetcamp.&lt;/p&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_12093262&quot;&gt; &lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/7-tools-for-your-devops-stack&quot; title=&quot;7 tools for your devops stack&quot; target=&quot;_blank&quot;&gt;7 tools for your devops stack&lt;/a&gt;&lt;/strong&gt; &lt;iframe src=&quot;http://www.slideshare.net/slideshow/embed_code/12093262&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;padding:5px 0 12px&quot;&gt; View more &lt;a href=&quot;http://www.slideshare.net/&quot; target=&quot;_blank&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert&quot; target=&quot;_blank&quot;&gt;Kris Buytaert&lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Earlier this week I opened FlossUK 2012 with my talk on 7 tools for your devops stack &lt;/p&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_12130149&quot;&gt; &lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/how-ihackonpuppetmodules&quot; title=&quot;How I hack on puppet modules&quot; target=&quot;_blank&quot;&gt;How I hack on puppet modules&lt;/a&gt;&lt;/strong&gt; &lt;iframe src=&quot;http://www.slideshare.net/slideshow/embed_code/12130149&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;padding:5px 0 12px&quot;&gt; View more &lt;a href=&quot;http://www.slideshare.net/&quot; target=&quot;_blank&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert&quot; target=&quot;_blank&quot;&gt;Kris Buytaert&lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/flossuk-and-puppetcamp-edinburgh#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/455">conference</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logstash">logstash</category>
+ <category domain="http://127.0.0.1:8080/blog/category/mcollective">mcollective</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetcamp">puppetcamp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vagrant">vagrant</category>
+ <pubDate>Fri, 23 Mar 2012 14:49:47 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1064 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Graphite, JMXTrans, Ganglia, Logster, Collectd,  say what  ? </title>
+ <link>http://127.0.0.1:8080/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what</link>
+ <description>&lt;p&gt;Given that @patrickdebois is working on improving data collection I thought it  would be a good idea to describe the setup I currently have hacked together.&lt;/p&gt;
+&lt;p&gt;(Something which can be used as a starting point to improve stuff, and I have to write documentation anyhow) &lt;/p&gt;
+&lt;p&gt;I currently have 3 sources ,  and  one target, which will  eventually expand to at least another target and most probably more sources too.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/VagrantGraphite.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The 3 sources are basically  typical system data which I collect using collectd,  However I`m using collectd-carbon from &lt;a href=&quot;https://github.com/indygreg/collectd-carbon.git&quot; title=&quot;https://github.com/indygreg/collectd-carbon.git&quot;&gt;https://github.com/indygreg/collectd-carbon.git&lt;/a&gt; to send data to Graphite.&lt;/p&gt;
+&lt;p&gt;I`m parsing the Apache and Tomcat logfiles with logster , currently sending them only to Graphite, but logster has an option to send them to Ganglia too.&lt;/p&gt;
+&lt;p&gt;And I`m using JMXTrans to collect JMX data from Java apps that have this data exposed and send it to Graphite.  (JMXTrans also comes with a Ganglia target option) &lt;/p&gt;
+&lt;p&gt;Rather than going in depth over the config it&#039;s probably easier to point to a Vagrant box I build &lt;a href=&quot;https://github.com/KrisBuytaert/vagrant-graphite&quot; title=&quot;https://github.com/KrisBuytaert/vagrant-graphite&quot;&gt;https://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt; which brings up a machine that does pretty much all of this  on localhost.&lt;/p&gt;
+&lt;p&gt;Obviously it&#039;s still a work in progress and lots of classes will need to be parametrized and cleaned up.   But it&#039;s a working setup,  and not just on my machine .. &lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/collectd">collectd</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jmxtrans">jmxtrans</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logster">logster</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <pubDate>Tue, 03 Jan 2012 20:46:47 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1058 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>#monitoringsucks and we&#039;ll fix it !</title>
+ <link>http://127.0.0.1:8080/blog/monitoringsucks-and-well-fix-it</link>
+ <description>&lt;p&gt;If you are hacking on monitoring solutions, and want to talk to your peers solving the problem&lt;br /&gt;
+Block the monday and tuesday after fosdem in your calendar !&lt;/p&gt;
+&lt;p&gt;That&#039;s right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp&lt;/p&gt;
+&lt;p&gt;In short  a #monitoringsucks hackathon&lt;/p&gt;
+&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp&lt;/p&gt;
+&lt;p&gt;Obviously if you can&#039;t make it to Antwerp you can join the effort on ##monitoringsucks on Freenode or on Twitter.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.inuits.eu/contact&quot; rel=&quot;nofollow&quot;&gt;location will be Duboistraat 50 , Antwerp&lt;/a&gt;&lt;br /&gt;
+It is about 10 minutes walk from the Antwerp Central Trainstation&lt;br /&gt;
+Depending on Traffic Antwerp is about half an hour north of Brussels and there are hotels at walking distance from the venue.&lt;/p&gt;
+&lt;p&gt;Plenty of parking space is available on the other side of the Park&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoringsucks-and-well-fix-it#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/collectd">collectd</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/icinga">icinga</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/category/munin">munin</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/890">nagios</category>
+ <category domain="http://127.0.0.1:8080/blog/category/rrd">rrd</category>
+ <pubDate>Tue, 03 Jan 2012 18:23:00 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1057 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

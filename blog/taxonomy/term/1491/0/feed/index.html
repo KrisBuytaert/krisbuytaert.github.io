@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - monitoringlove</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1491/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Love, MonitoringLove</title>
+ <link>http://127.0.0.1:8080/blog/love-monitoringlove</link>
+ <description>&lt;p&gt;Last year we were pretty negative about Monitoring, We shouted out that MonitoringSucked ... A year has passed and a lot has changed ... most importantly our new found love for monitoring,  thanks to an inspirational Ignite talk by &lt;a href=&quot;https://twitter.com/ulfmansson&quot; rel=&quot;nofollow&quot;&gt;Ulf Mansson&lt;/a&gt; at devopsdays Rome.&lt;/p&gt;
+&lt;p&gt;Right after Fosdem about 20 people showed up at the #monitoringlove hacksessions hosted at the &lt;a href=&quot;http://www.inuits.eu/&quot; rel=&quot;nofollow&quot;&gt;Inuits.eu&lt;/a&gt; offices to work on Open Source monitoring projects and exchange ideas.   Some completely new people,  some people with already a lot of experience.&lt;/p&gt;
+&lt;p&gt;Amongst the projects that were worked on was Maciej working on  Packaging graphite for Debian, Ohter people were fixing bugs in Puppet  , I spent some time with a  &lt;a href=&quot;https://github.com/krisbuytaert/vagrant-sensu&quot; rel=&quot;nofollow&quot;&gt;vagrant box&lt;/a&gt; to deploy Sensu using Puppet.  Last time I was playing with Sensu was on the flight back from PuppetCon , I gave up the fight with&lt;br /&gt;
+RabbitMQ and SSL because I had no internet connection .. and now Ulf just pointed out that I could disable SSL at all, which resulted in having a POC up and running in no time.&lt;/p&gt;
+&lt;p&gt;Patrick was  hacking on the Chef counterpart of the vagrant-puppet sensu setup a part of &lt;a href=&quot;https://github.com/monigusto&quot; rel=&quot;nofollow&quot;&gt;#monigusto&lt;/a&gt;. Ulf Mansson was getting &lt;a href=&quot;http://shopify.github.com/dashing/&quot; rel=&quot;nofollow&quot;&gt;dashing&lt;/a&gt; to display on a  Raspberry Pi  ... pretty cool stuff&lt;br /&gt;
+And Jelle Smet was working on &lt;a href=&quot;https://github.com/smetj/pyseps&quot; rel=&quot;nofollow&quot;&gt;Pyseps&lt;/a&gt; a Python based Simple Event Processing Server framework that  consume JSON docs from RabbitMQ and forwards them real time to other queues using MongoDB query syntax.&lt;/p&gt;
+&lt;p&gt;One of the more interesting discussion was around the topic of  alerting and modeling business rules and input from a lot of different sources&lt;br /&gt;
+in order to send the right alerts to the right people. &lt;/p&gt;
+&lt;p&gt;We explored different ideas like using BPM tools such as Activity or Rules engines like Ruby Rools. There exist some Saas providers that try to solve this need like PagerDuty and friends but obviously there is still a lot of work that needs to be done in order to create a viable alerting system based on different input sources.&lt;/p&gt;
+&lt;p&gt;The monitoring problem is not solved yet .. and it will stay around for a couple of years .. but with the advent of event such as &lt;a href=&quot;http://monitorama.com/&quot; rel=&quot;nofollow&quot;&gt;Monitorama&lt;/a&gt; its clear&lt;br /&gt;
+that an event like our #monitoring love hackessions is needed .. and is probably here to stay for a couple of years.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/love-monitoringlove#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/infracoders">infracoders</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/sensu">sensu</category>
+ <pubDate>Wed, 13 Feb 2013 17:10:32 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1077 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>check_graphite</title>
+ <link>http://127.0.0.1:8080/blog/checkgraphite</link>
+ <description>&lt;p&gt;During my Puppetcamp Gent talk last week, I explained how to get alerts based on trends from graphite. A number of people asked ,e how to do that.&lt;/p&gt;
+&lt;p&gt;First lets quickly explain why you might want to do that .&lt;br /&gt;
+Sometimes you don&#039;t care about the current value of a metric..as an example take  a Queing system .. there is no problem if there are messages added to the queue, not even if there are a lot of messages on the queue,  there might however be a problem if  over a certain period the number of messages on a queue stays to high.&lt;/p&gt;
+&lt;p&gt;In this example I`m monitoring the queue length of a hornetq setup which is exposed by JMX.&lt;br /&gt;
+On the server runnnig HornetQ I have an exported resource that tells the JMXTrans server to send the  MessageCount  to graphite&lt;br /&gt;
+(you could also do this using collectd plugins) &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;@@jmxtrans::graphite {&amp;quot;MessageCountMonitor-${::fqdn}&amp;quot;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    jmxhost =&amp;gt; hiera(&#039;hornetqserver&#039;),&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            jmxport =&amp;gt; &amp;quot;5446&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            objtype =&amp;gt; &#039;org.hornetq:type=Queue,*&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            attributes =&amp;gt;  &#039;&amp;quot;MessageCount&amp;quot;,&amp;quot;MessagesAdded&amp;quot;,&amp;quot;ConsrCount&amp;quot;&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            resultalias =&amp;gt; &amp;quot;hornetq&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            typenames =&amp;gt; &amp;quot;name&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            graphitehost =&amp;gt; hiera(&#039;graphite&#039;),&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            graphiteport =&amp;gt; &amp;quot;2003&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;}&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;This gives me a computable url on which I can get the graphite view &lt;/p&gt;
+&lt;p&gt;The next step then is to configure a nagios check that verifies this data. For that I need to use the &lt;a href=&quot;http://github.com/datacratic/check_graphite&quot; rel=&quot;nofollow&quot;&gt;check_graphite&lt;/a&gt; plugin from Datacratic ..&lt;/p&gt;
+&lt;p&gt;Which can work with an nrpe config like&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### File managed with puppet ###&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### Served by:        &#039;&amp;lt;%= scope.lookupvar(&#039;::servername&#039;) %&amp;gt;&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### Module:           &#039;&amp;lt;%= scope.to_hash[&#039;module_name&#039;] %&amp;gt;&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### Template source:  &#039;&amp;lt;%= template_source %&amp;gt;&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;command[check_hornetq]=/usr/lib64/nagios/plugins/check_graphite -u &amp;quot;http://&amp;lt;%= graphitehost%&amp;gt;/render?target=servers.&amp;lt;%= scope.lookupvar(&#039;::fqdn&#039;).gsub(/\./,&#039;_&#039;)%&amp;gt;_5446.hornetq.docstore_private_trigger_notification.MessageCount&amp;amp;from=-30minutes&amp;amp;rawData=true&amp;quot; -w 2000 -c 20000&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;I define this check on the host where HornetQ is running  as it then will map to that host on Icinga/Nagios  rather than throw a host error on an unrelated host.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/checkgraphite#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/icinga">icinga</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Tue, 05 Feb 2013 09:10:15 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1076 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>#devops Conference Season heating up...</title>
+ <link>http://127.0.0.1:8080/blog/devops-conference-season-heating</link>
+ <description>&lt;p&gt;My last post has been a while ... in that I announced that there would be another event right before FOSDEM ... I totally forgot to announce it here but  I`m sure that most of you already know.  Yes. PuppetCamp Europe is coming back to it&#039;s roots... it&#039;s coming back to the city where we hosted it for the first time on this side of the ocean.. Gent.  (that&#039;s 31/1 and 1/2 ) &lt;/p&gt;
+&lt;p&gt;There is still time to register for the event &lt;a href=&quot;http://puppetcampghent2013.eventbrite.com/&quot; rel=&quot;nofollow&quot;&gt;http://puppetcampghent2013.eventbrite.com/&lt;/a&gt;   The schedule for the event will be published soonish (given that the selection was done on Friday evening and the speakers already received their feedback)&lt;/p&gt;
+&lt;p&gt;Co-located with PuppetCamp there will  another Build and Open Source cloud day&lt;br /&gt;
+&lt;a href=&quot;http://buildacloud.org/about-cloudstack/cloudstack-events/viewevent/140-build-a-cloud-day-ghent-2013.html&quot; rel=&quot;nofollow&quot;&gt;Build a Cloud day&lt;/a&gt; with interesting topics such as Cloudstack, Ceph, devops and a really interesting talk on how  the Spotify crowd is using Cloudstack.&lt;/p&gt;
+&lt;p&gt;So after those 2 days in Ghent, a lot of people will be warmed up for the open source event of the year FOSDEM.&lt;/p&gt;
+&lt;p&gt;And right after FOSDEM a bunch of people will gather at the Inuits office for 2 days of discussing, hacking and evangelizing around #monitoringlove (see previous post)&lt;/p&gt;
+&lt;p&gt;I almost forgot but even before the FOSDEM week-long there is the &lt;a href=&quot;http://conference.phpbenelux.eu/2013/&quot; rel=&quot;nofollow&quot;&gt;2013 PHP Benelux Conference&lt;/a&gt; where I`ll be running a fresh version of the 7 Tools for your devops stack &lt;/p&gt;
+&lt;p&gt;There is a ****load of #DevopsDays events being planned this year ....  the 2012 edition of New York will be taking place next week .&lt;br /&gt;
+Austin and London have been announced and have opened up their CFP and Registration   but different groups are organizing themselves to host events in Berlin, Mountain View, Tokyo, Barcelona, Paris, Amsterdam , Australia , Atlanta and many more .. &lt;/p&gt;
+&lt;p&gt;And  there&#039;s even more to come ..  April 6 and 7 will be the dates for the &lt;a href=&quot;http://loadays.org/&quot; rel=&quot;nofollow&quot;&gt;Linux Open Administration Days&lt;/a&gt; (Loadays 2013) in Antwerp again ... a nice small conference where people gather to discuss different interesting Linux topics ....     Call For Presentations is still open ..&lt;a href=&quot;http://loadays.org/pages/cfp-info.html&quot; rel=&quot;nofollow&quot;&gt;Submit here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On the other side of the ocean there&#039;s &lt;a href=&quot;http://portland2013.drupal.org/&quot; rel=&quot;nofollow&quot;&gt;DrupalCon Portland&lt;/a&gt; which once again is featuring a #devops track  , and also the folks over at &lt;a href=&quot;http://agile2013.agilealliance.org/&quot; rel=&quot;nofollow&quot;&gt;Agile 2013&lt;/a&gt; (Nashville)&lt;br /&gt;
+have a #devops track now.   Both events are still looking for speakers .. &lt;/p&gt;
+&lt;p&gt;So if by the end of this year you still don&#039;t know what devops is all about .. you probably don&#039;t care and shouldn&#039;t be in the IT industry anyhow.&lt;/p&gt;
+&lt;p&gt;And those are only the events I`m somehow involved in for the next couple of months&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/devops-conference-season-heating#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/agile">agile</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devopsdays">devopsdays</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/768">fosdem</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/phpbenelux">phpbenelux</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetcamp">puppetcamp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetzie">puppetzie</category>
+ <pubDate>Sun, 13 Jan 2013 10:21:11 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1075 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>#monitoringlove hackfest</title>
+ <link>http://127.0.0.1:8080/blog/monitoringlove-hackfest</link>
+ <description>&lt;p&gt;The age of #monitoringsucks is over, we&#039;re now transitioning into a #monitoringlove period.  &lt;/p&gt;
+&lt;p&gt;That however doesn&#039;t mean al the work is done, we still need to do a lot of work and a lot of people are working on a lot of stuff.&lt;/p&gt;
+&lt;p&gt;Therefore like last year we are opening up our offices again right after Fosdem for a #monitoringlove hackfest&lt;/p&gt;
+&lt;p&gt;That&#039;s right on february 4 and 5 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp.  In short  a #monitoringlove hackathon&lt;/p&gt;
+&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert) know if you want to join us in Antwerp.  We&#039;ll provide caffeine, wireless, chairs and some snacks. &lt;/p&gt;
+&lt;p&gt;Please register upfront at : &lt;a href=&quot;http://monitoringlove2013.eventbrite.com/&quot; rel=&quot;nofollow&quot;&gt;http://monitoringlove2013.eventbrite.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Obviously if you can&#039;t make it to Antwerp you can join the effort on ##monitoringsucks on Freenode or on Twitter.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.inuits.eu/contact&quot; rel=&quot;nofollow&quot;&gt;location will be Duboistraat 50 , Antwerp&lt;/a&gt;&lt;br /&gt;
+It is about 10 minutes walk from the Antwerp Central Trainstation&lt;br /&gt;
+Depending on Traffic Antwerp is about half an hour north of Brussels and there are hotels at walking distance from the venue.&lt;/p&gt;
+&lt;p&gt;Plenty of parking space is available on the other side of the Park &lt;/p&gt;
+&lt;p&gt;Read last years report &lt;a href=&quot;http://www.krisbuytaert.be/blog/we-didnt-fix-it&quot;&gt;http://www.krisbuytaert.be/blog/we-didnt-fix-it&lt;/a&gt;  to get an idea of what will happen...&lt;/p&gt;
+&lt;p&gt;PS.  Yes I`m trying to get another event of the ground the days before Fosdem but I`m still awaiting confirmation of the venue ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoringlove-hackfest#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/768">fosdem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Tue, 13 Nov 2012 20:54:24 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1074 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Linuxcon Europe, Barcelona</title>
+ <link>http://127.0.0.1:8080/blog/linuxcon-europe-barcelona</link>
+ <description>&lt;p&gt;I`m in Barcelona this week for LinuxCon Europe ..&lt;br /&gt;
+I`ll be hosting 3 sessions this week.&lt;/p&gt;
+&lt;p&gt;Today I`ll be helping &lt;a href=&quot;https://twitter.com/sebgoa&quot; rel=&quot;nofollow&quot;&gt;Sebastien Goasguen&lt;/a&gt; with his session &lt;a href=&quot;http://linuxconeurope2012.sched.org/event/8816c31538f6278779459b3337a45559#.UJi--tHtBrc&quot; rel=&quot;nofollow&quot;&gt;Building Foss Clouds&lt;/a&gt;,  I`ll be talking about how to use tools such as Puppet, Graphite and Icinga to monitor your clouds. Sebastian inherited the Building  FOSS Clouds tutorial last week and asked me to help out.  &lt;/p&gt;
+&lt;p&gt;Tomorrow I`ll be giving my &lt;a href=&quot;//linuxconeurope2012.sched.org/event/cd9a06295026ac8d17fb51cc26ff2ff2#.UJjD2NHtBrc&quot; rel=&quot;nofollow&quot;&gt;11 Open Source Tools for your Devops Stack &lt;/a&gt; talking.&lt;/p&gt;
+&lt;p&gt;And on thursday I will be giving a more general &quot;What&#039;s this #devops thing anyhow&quot; talk during the &lt;a href=&quot;http://cloudstack-linuxconeu.eventbrite.com/&quot; rel=&quot;nofollow&quot;&gt;Cloudstack&lt;/a&gt; event following LinuxCon.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/linuxcon-europe-barcelona#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/linuxcon">linuxcon</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Tue, 06 Nov 2012 08:12:51 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1073 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

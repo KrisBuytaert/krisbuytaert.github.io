@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/nines-damn-nines-and-more-nines by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:32:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nines , Damn Nines  and More Nines  | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Nines , Damn Nines  and More Nines </h2>
+<div class="content">
+<div id="node-951" class="node  blog">
+<div class="content"><p>Funny how different experiences lead to different evaluations of tools. The MySQL HA solutions <a href="http://www.mysqlperformanceblog.com/2009/10/16/finding-your-mysql-high-availability-solution-–-the-questions/" rel="nofollow">the MySQL Performanceblog</a> list, are almost listed in the complete opposited order of what  my impressions are.</p>
+<p>Ok agreed, I should probably not put my MySQL NDB experiences from 2-3 years ago with multiple Query of deaths and more problems than you into account  anymore ,  but back then went in the list Less stable than a single node.   I've had NDB POC setups going down for much more than 05:16 minutes<br />
+Ndb comes with a lot of restrictions, there are</p>
+<p>As for MySQL on DRBD, <a href="http://www.krisbuytaert.be/blog/mysql-and-drbd-often-say-no">I've said this before</a> , I love DRBD, but having to wait for a long InnoDB recovery after a failover  just kills your uptime ,<br />
+I remember being called by a customer during <a href="http://lefred.be/">Fred</a> last holiday who was waiting over 20 minutes for recovery , twice, so putting the DRBD/San setup second would not be my preference.   But agreed .. it's only listed at 99.9% meaning almost 9 hours of downtime per year are allowed.</p>
+<p>On the other hand we've seen database uptime of MySQL MultiMaster setups with Heartbeat reaching better figures than 99.99%  Heck I've seen single nodes  achieve better  than 99.99% :)</p>
+<p>So what does this teach us ... there is no golden rule for HA,  lots of situations are different,  it's the preferences of the customer, the size of the database,   the kind of application , and much<br />
+more ..  you always need to think and evaluate the environment ...</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Mon, 10/19/2009 - 23:46</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_433 first"><a href="../taxonomy/term/433/index.html" rel="tag" title="">cluster</a></li>
+<li class="taxonomy_term_899"><a href="../taxonomy/term/899/index.html" rel="tag" title="">drbd</a></li>
+<li class="taxonomy_term_449"><a href="../taxonomy/term/449/index.html" rel="tag" title="">ha</a></li>
+<li class="taxonomy_term_562"><a href="../taxonomy/term/562/index.html" rel="tag" title="">linux-ha</a></li>
+<li class="taxonomy_term_458"><a href="../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_1316 last"><a href="../category/nines/index.html" rel="tag" title="">nines</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3811"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/423a1a4f867f2773f553579fa721552c.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Anonymous&#039;s picture" title="Anonymous&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3811">#1</a>
+    <span class="author"><span class="anonymous" title="not verified">Anonymous</span></span>  : <span class="title"><a href="index.html#comment-3811" class="active">I&#039;ve recently set up</a></span>
+  </h3>
+  <div class="content"><p>I've recently set up mysql-mmm on a customers set up to handle their database requirements.  Two master DBs, 3 slaves.<br />
+I like it though it's no guarantee of 100% data accuracy.  Performance overhead is negligible too.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/24/2009 - 01:50</div>
+  </div>
+<a id="comment-3807"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/8f8a900543eb7905c406f3eb6b18a342.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Anonymous&#039;s picture" title="Anonymous&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3807">#2</a>
+    <span class="author"><span class="anonymous" title="not verified">Anonymous</span></span>  : <span class="title"><a href="index.html#comment-3807" class="active">To avoid innodb recovery time</a></span>
+  </h3>
+  <div class="content"><p>To avoid innodb recovery time on DRBD, run two nodes with XEN and the domU's on DRBD so when the primary dom0 fails over to the secondary, the domU's live migrate resulting in no downtime to MySQL which runs inside a domU instance.</p>
+<p>Then add the same setup in another geographically diverse datacenter and setup circular replication between the two domU's running MySQL so the two datacenters are connected.</p>
+<p>This setup also protects you from significant outages and routing mistakes made by the clowns working at datacenters, who are the ones responsible for the most downtime in any of my services.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/21/2009 - 03:14</div>
+  </div>
+<div class="indented"><a id="comment-3808"></a>
+<div id="comment-3" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3808">#3</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3808" class="active">Crash &amp; Live Migrate</a></span>
+  </h3>
+  <div class="content"><p>Dear Anonymous,</p>
+<p>When the primary dom0 fails, its usually to late to live migrate.</p>
+<p>When the primary domU should fail it is also to late to live migrate.</p>
+<p>Please explain how your fairy tail could ever work .</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/21/2009 - 09:07</div>
+  </div>
+<div class="indented"><a id="comment-3837"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/8f8a900543eb7905c406f3eb6b18a342.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Anonymous&#039;s picture" title="Anonymous&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3837">#4</a>
+    <span class="author"><span class="anonymous" title="not verified">Anonymous</span></span>  : <span class="title"><a href="index.html#comment-3837" class="active">My fairy tail as you put it</a></span>
+  </h3>
+  <div class="content"><p>My fairy tail as you put it can work with either of these 2 solutions;</p>
+<p><a href="http://www.citrix.com/English/ps2/products/feature.asp?contentID=1686940" title="http://www.citrix.com/English/ps2/products/feature.asp?contentID=1686940" rel="nofollow">http://www.citrix.com/English/ps2/products/feature.asp?contentID=1686940</a></p>
+<p>or</p>
+<p><a href="http://dsg.cs.ubc.ca/remus/" title="http://dsg.cs.ubc.ca/remus/" rel="nofollow">http://dsg.cs.ubc.ca/remus/</a></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/12/2009 - 02:25</div>
+  </div>
+<div class="indented"><a id="comment-3843"></a>
+<div id="comment-5" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3843">#5</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3843" class="active">Fairytale vs Production Ready</a></span>
+  </h3>
+  <div class="content"><p>I keep calling it a fairy tail tail till either  Remus or Kemari are production state.</p>
+<p>Or did I overlook that ?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/12/2009 - 22:29</div>
+  </div>
+</div></div></div><a id="comment-3806"></a>
+<div id="comment-6" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://eric.eisenhart.name/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/f9f349676938cdd38abbbe6e619d7315.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Eric Eisenhart&#039;s picture" title="Eric Eisenhart&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3806">#6</a>
+    <span class="author"><a href="http://eric.eisenhart.name/">Eric Eisenhart</a></span>  : <span class="title"><a href="index.html#comment-3806" class="active">Ignoring cost of complexity?</a></span>
+  </h3>
+  <div class="content"><p>It's important to differentiate between planned and unplanned downtime (downtime 3am local time that was announced ahead of time might be much less costly than unexpected "prime time" downtime).</p>
+<p>But it's also very important to take into account the complexity cost of different solutions.  A lot of the solutions that claim more 9's actually fare quite poorly because they're somewhat fragile. If you get good hardware with a lot of internal redundancy (RAID, redundant power supplies, UPS+generator, redundant fans, etc) and maybe also one of those expensive 2-hour support contracts (or a supply of spare parts) you can get to about 99.8% uptime without any special complexity.  Anything in excess of 99.8% uptime probably requires multiple data centers.</p>
+<p>To get some of the "HA" solutions to meet that you'll probably have to spend a lot of time learning every little detail of how they work, test them thoroughly, etc.  Otherwise it's likely that the "HA" itself will cause problems and get you lower uptime than a single resilient host could achieve.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/20/2009 - 23:15</div>
+  </div>
+<a id="comment-3801"></a>
+<div id="comment-7" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.mysqlperformanceblog.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/c4528992c16391a382b60052b85e061d.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Yves&#039;s picture" title="Yves&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3801">#7</a>
+    <span class="author"><a href="http://www.mysqlperformanceblog.com/">Yves</a></span>  : <span class="title"><a href="index.html#comment-3801" class="active">InnoDB recovery with DRBD</a></span>
+  </h3>
+  <div class="content"><p>How can InnoDB recovery kill your uptime?  It is fairly well known that you need a small InnoDB log file size, something like 128MB, for a short recovery.  With a pair of such log files, recovery is usually under one minute, which is not a problem.  Of course, a smaller log file means a lower write performance, but in most cases, it is fairly decent at 128MB.</p>
+<p>Yves</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/20/2009 - 15:00</div>
+  </div>
+<div class="indented"><a id="comment-3805"></a>
+<div id="comment-8" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.lefred.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/8138ef303fc01a03f8da04357d7cc77b.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="lefred&#039;s picture" title="lefred&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3805">#8</a>
+    <span class="author"><a href="http://www.lefred.be/">lefred</a></span>  : <span class="title"><a href="index.html#comment-3805" class="active">innodb recovery time</a></span>
+  </h3>
+  <div class="content"><p>just some more details : the db is &gt;2TB and we have the innodb log_file_size of 1G ! (still for historical reasons).<br />
+The setup is not on drbd but on a SAN and this DB should never crash... but... we had a bug with the SAN that put the lun in read only... then the db crashed... the recovery time could then reach 3h ! We have a huge amount of complex transaction per second (&gt;17k)<br />
+Of course on our DRBD-MySQL setup (for radius and dedicated JMS) we have a smaller log_file_size.</p>
+<p>So the hard thing is to find the best solution: performance, longer undo, longer recovery ?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/20/2009 - 22:41</div>
+  </div>
+</div></div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/nines-damn-nines-and-more-nines by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:32:12 GMT -->
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/will-containers-take-over by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:22:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Will containers take over ? | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Will containers take over ?</h2>
+<div class="content">
+<div id="node-1112" class="node  blog">
+<div class="content"><p>and if so why haven't they done so yet ?</p>
+<p>Unlike many people think, containers are not new, they have been around for more than a decade,  they however just became popular for a larger part of our ecosystem. <a href="http://cloudscaling.com/blog/cloud-computing/will-containers-replace-hypervisors-almost-certainly/" rel="nofollow">Some</a> people think  containers will eventually take over.</p>
+<p>Imvho It is  all about application workloads,  when  8 years ago <a href="http://virtualization.com/2008/03/10/looking-back-at-a-decade-of-open-source-virtualisation/" rel="nofollow"> I wrote</a> about a decade of open source virtualization,   we looked at containers as the solution for running a large number of isolated instances of something on a machine. And with large we meant hundreds or more instances  of apache, this was one of  the example use cases for an ISP that wanted to give a secure but isolated platform to his users. One container per user.</p>
+<p>The majority of enterprise  usecases however were full VM's   Partly because we were still consolidating existing services to VM's and weren't planning on changing the deployment patterns yet. But mainly because most organisations didn't have the need to run 100 similar or identical instances of an application or a service,  they were going from 4 bare metal servers to 40 something VM's but they had  not yet come to the need to run 100's of them.  The software architecture had just moved from FatClient applications that talked directly to bloated relational databases containing business logic, to web enabled multi-tier<br />
+applications.   In those days when you suggested to run 1 Tomcat instance per VM because VM's were cheap and it would make management easier,  (Oh oops I shut down the wrong tomcat instance)  , people gave you very weird looks</p>
+<p>Slowly software architectures are changing , today  the new breed of applications is small, single function, dedicated, and it interacts frequently with it's peers, together combined they provide similar functionality as a big fat application 10 years ago, But when you look at the market that new breed is a minority.  So a modern application might consist of 30-50 really small ones,  all with different deployment speeds.  And unlike 10 years ago where we needed to fight hard to be able to build both dev, acceptance and production platforms,  people now consider that practice normal.  So today we do get environments that quickly go to 100+ instances , but requiring similar CPU power as before,   so the use case for containers like we proposed it in the early days is now slowly becoming a more common use case.</p>
+<p>So yes containers might take over ...  but before that happens .. a lot of software architectures will need to change,  a lot of elephants will need to be sliced, and that  is usually what blocks cloud, container, agile and devops adoption.</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 06/15/2016 - 16:57</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1520 first"><a href="../category/containers/index.html" rel="tag" title="">containers</a></li>
+<li class="taxonomy_term_1542"><a href="../category/devoops/index.html" rel="tag" title="">devoops</a></li>
+<li class="taxonomy_term_1328"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1543"><a href="../category/microservices/index.html" rel="tag" title="">microservices</a></li>
+<li class="taxonomy_term_1541 last"><a href="../category/software-architecture/index.html" rel="tag" title="">software architecture</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-5559"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://codeminded.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/7222b3255e58a8b11e323b50a46514a2.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Philip Van Hoof&#039;s picture" title="Philip Van Hoof&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-5559">#1</a>
+    <span class="author"><a href="http://codeminded.be/">Philip Van Hoof</a></span>  : <span class="title"><a href="index.html#comment-5559" class="active">Embedded and mobile</a></span>
+  </h3>
+  <div class="content"><p>I see containers being used in embedded and mobile to jail and package untrustworthy softwares (the hype of today is to call them apps). I also see them being used for migrating an old dinosaur open embedded put together by idiots to a new OS: run the old software in a container with the crappy OS made by the guys of five years ago, run the new software in another container using a modern environment. If daemons of the old need to communicate with the new, you can even share unix domain sockets between the containers (and soon, if not already, D-Bus).</p>
+<p>It'll also be useful to package experimental applications that depend on unstable versions of system libraries: not prepared to upgrade glib, libc, qt and god knows what? But you do want to run the latest stuff? We'll package all you need in a lightweight container with all the dependencies - but stripped to the minimums. Run the container to start your application. Kinda like Portable applications. But then better and for Linux.</p>
+<p>And applications in containers will protect you against randsomware: the container will get minimal access. A music player's container gets access to /home/user/Music, but that's it. So a malware running in the container can encrypt your music. But not your other documents.</p>
+<p>Finally will applications in containers allow the user to protect his privacy by configuring the container's permissions. Want to run Google software without sharing your GPS location? Deny the container that runs the software access to the GPS hardware. But allow other containers.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">06/16/2016 - 22:08</div>
+  </div>
+<a id="comment-5557"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://dannyman.toldme.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/0acdaf9e3b86c151cd7186d90bd17586.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Danny Howard&#039;s picture" title="Danny Howard&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-5557">#2</a>
+    <span class="author"><a href="http://dannyman.toldme.com/">Danny Howard</a></span>  : <span class="title"><a href="index.html#comment-5557" class="active">tl;dr: No</a></span>
+  </h3>
+  <div class="content"><p>Containers are useful for certain cases and an encumbrance in others. Right now they are the hot shiny new thing and so a lot of folks will use them ... even when they aren't the best option. Every few years some container-type fad erupts, flares, presents its difficulties and limitations, and recedes. In the past we called them "chroot" and "jails" or even "big-ass tarballs" but really containers aren't anything new and anyone who has been around awhile understands that this is a useful tool in some cases, and the faddish uses will fade out and move on to the next shiny new thing.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">06/16/2016 - 00:03</div>
+  </div>
+<div class="indented"><a id="comment-5558"></a>
+<div id="comment-3" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-5558">#3</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-5558" class="active">Danny, 
+that&#039;s kinda the</a></span>
+  </h3>
+  <div class="content"><p>Danny, </p>
+<p>that's kinda the short summary of what I wrote indeed :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">06/16/2016 - 09:03</div>
+  </div>
+</div></div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/will-containers-take-over by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:22:13 GMT -->
+</html>

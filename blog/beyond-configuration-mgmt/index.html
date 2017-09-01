@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/beyond-configuration-mgmt by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:25:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Beyond Configuration Mgmt | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Beyond Configuration Mgmt</h2>
+<div class="content">
+<div id="node-1042" class="node  blog">
+<div class="content"><p>(This post has been sitting in the drafts folder for way to long,  I decided to push the publish button anyhow .. some people might get ideas from it..)</p>
+<p>We've all run in to the problem,  you've puppetized, or euh .. cooked ,  about every part of your infrastructure and then there's this one service which has no config files,  a broken api that doesn't allow you to configure antyhing, but a magnificent web gui to configure all aspects of the service.  Magnificent for the eye ,  full of AJAX and other fancy stuff which wget isn't really keen on.  Off course before it even starts working you need to set it's password , from that webgui.</p>
+<p>Sometimes when you are lucky they store al their config in a database, which you can dump, parse and replace all the host specific parameters for other deployments,   but is that an approach you like ?  As for each new version you'll need to reanalyze the db layout.  But no matter how you look at it ,dumping the DB and restoring it is an ugly hack you don't want.</p>
+<p>Other alternatives like sniffing the traffic and replaying the POSTS etc were considered ...   but fancy AJAX stuff and SSL make that less trivial than it seems </p>
+<p>Wo while discussing with an upstream project they proposed to actually screenscrape their config webgui .</p>
+<p>So screenscraping the config gui it is .. but how ...  I started looking at tools that are typically used for testing rather than for automation, with the purpose of replaying the scenarios one needs to configure the services.</p>
+<p>My first attempt was Selenium,  it plugs into a browser , so it's easy to acraully record what it has to do,  and it saves it's scenarios  in a somewhat readable/ editable format.<br />
+Having found the export to perl function it alll looked promising.   However the export to perl isn't really an export to perl as I epxected .. I assumed it would just generate the perl code to run the same scneario which would be awesome .. it however generates a perl script that instructs a selenium server to run the script.</p>
+<p>One of the annoyancies I ran into with Selenium is that a browser<br />
+doesn't accept self signed certificates , and one can't preprovision a browser easyily with those freshly created certificates. (Yes Karl I already read about certutil ... )</p>
+<p>I had heard good things about Cucumber so I was pretty eager to start testing it ...  In short Cucumber  lack documentation ,<br />
+I tried a couple of things but I couldn't get beyond testing if a certain string was on a page..  couldn't figure out how to fill in a form etc ...<br />
+Maybe if anyone could point me to some great documentation on how you should write recipe's here ... I didn't find the documentation all to  easy to find ..<br />
+Bummer as it really really looks promisiung .. specially since it is so lightweight ..</p>
+<p>IP played with JMeter and Sahi too .. but still</p>
+<p>So apart from filing bugs to the upstream project/product and hoping they understand your problem and are willing to oopen up their API , what other options do you folks suggest ?</p>
+<p>I gave a short talk about this at Puppetcamp in Amsterdam  and the audience came up with a bunch of other potential projects to look at .</p>
+<ul>
+<li>
+<a href="http://hpricot.com/" rel="nofollow">Hpricot</a>
+</li><li><a href="http://www.webinject.org/" rel="nofollow">WebInject</a>
+</li><li><a href="http://sikuli.org/" rel="nofollow">Project Sikuli</a>
+</li><li><a href="http://watir.com/" rel="nofollow">Watir</a> and
+</li></ul>
+<p>The main problem still is that all these are tools to automate testing , they don't provide you with a general purpose approach to solve the configuration mgmt problem, each time the upstream vendor modifies the layout of his page you hav e to do the work again  and that .. really doesn't sound promising ..</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 05/25/2011 - 23:18</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1158 first"><a href="../category/chef/index.html" rel="tag" title="">chef</a></li>
+<li class="taxonomy_term_1453"><a href="../category/cucumber/index.html" rel="tag" title="">cucumber</a></li>
+<li class="taxonomy_term_1328"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1455"><a href="../category/jmeter/index.html" rel="tag" title="">jmeter</a></li>
+<li class="taxonomy_term_439"><a href="../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1363"><a href="../category/puppetcamp/index.html" rel="tag" title="">puppetcamp</a></li>
+<li class="taxonomy_term_1452"><a href="../category/selenium/index.html" rel="tag" title="">selenium</a></li>
+<li class="taxonomy_term_1454"><a href="../category/shai/index.html" rel="tag" title="">shai</a></li>
+<li class="taxonomy_term_1451 last"><a href="../category/testing/index.html" rel="tag" title="">testing</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-4365"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.hghworks.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/9b7d26c27239db9ca99d3ce805257f51.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="hgh&#039;s picture" title="hgh&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4365">#1</a>
+    <span class="author"><a href="http://www.hghworks.com/">hgh</a></span>  : <span class="title"><a href="index.html#comment-4365" class="active">Wondering but how can you</a></span>
+  </h3>
+  <div class="content"><p>Wondering but how can you create your own self signed certificate as you mentioned? Be it Selenium or anything else, i feel, they msy always have problem with browser compatibility as well.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">06/23/2011 - 05:00</div>
+  </div>
+<a id="comment-4350"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/4a48ce370f17766b02e473aecfe1dbf2.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Fredie G.&#039;s picture" title="Fredie G.&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4350">#2</a>
+    <span class="author"><span class="anonymous" title="not verified">Fredie G.</span></span>  : <span class="title"><a href="index.html#comment-4350" class="active">I looked into the list with</a></span>
+  </h3>
+  <div class="content"><p>I looked into the list with potential projects that your audience at the Puppetcamp gave you and find the Watir particularly interesting. Will definitely check it out in more detail.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">06/13/2011 - 14:43</div>
+  </div>
+<a id="comment-4336"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://ygerasimov.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/42d7cb4fbe19a308cfd9d67303aeaa57.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Yuriy Gerasimov&#039;s picture" title="Yuriy Gerasimov&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4336">#3</a>
+    <span class="author"><a href="http://ygerasimov.com/">Yuriy Gerasimov</a></span>  : <span class="title"><a href="index.html#comment-4336" class="active">Very interesting</a></span>
+  </h3>
+  <div class="content"><p>Great article. I was shocked about Sikuli project.</p>
+<p>I believe Hpricot should be removed form the list as it is parsing library but not the framework.</p>
+<p>Cucumber is layer above testing framework to have tests written in "human" language. So Cucumber should be applied for already chosen testing framework.</p>
+<p>As being fan of Selenium I believe it can handle the task properly. But of course you need to have Selenium RC server running for that somewhere in your infrastructure.</p>
+<p>There are plenty of proprietary tools. The best list I have seen is here:<br />
+<a href="http://en.wikipedia.org/wiki/List_of_GUI_testing_tools" title="http://en.wikipedia.org/wiki/List_of_GUI_testing_tools" rel="nofollow">http://en.wikipedia.org/wiki/List_of_GUI_testing_tools</a></p>
+</div>
+        <br class="clear" />
+    <div class="submitted">05/31/2011 - 10:44</div>
+  </div>
+<div class="indented"><a id="comment-4338"></a>
+<div id="comment-4" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4338">#4</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-4338" class="active">Nice List</a></span>
+  </h3>
+  <div class="content"><p>Hadn't noticed that list on Wikipedia yet ....  nice looking list altough only the upper part interrests me .. </p>
+<p>I do work for an Open Source company after all :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">05/31/2011 - 19:22</div>
+  </div>
+</div><a id="comment-4328"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://twitter.com/rasputnik" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/a52b0e1c5d982f2512a03c5dbfd033d6.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Dick Davies&#039;s picture" title="Dick Davies&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4328">#5</a>
+    <span class="author"><a href="http://twitter.com/rasputnik">Dick Davies</a></span>  : <span class="title"><a href="index.html#comment-4328" class="active">HTML Unit</a></span>
+  </h3>
+  <div class="content"><p>We use HTML Unit for functional testing; it's a Java library with the Rhino Javascript engine embedded.</p>
+<p>Works great if you use JRuby to drive it; you can query the DOM with CSS selectors to find elements, click them etc.</p>
+<p>Even better then you can use IRB to explore the pages and build up a test script.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">05/26/2011 - 15:25</div>
+  </div>
+<a id="comment-4327"></a>
+<div id="comment-6" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://starjuice.net/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/747b0480986bd8ac5d91aafd74bea043.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Sheldon Hearn&#039;s picture" title="Sheldon Hearn&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4327">#6</a>
+    <span class="author"><a href="http://starjuice.net/">Sheldon Hearn</a></span>  : <span class="title"><a href="index.html#comment-4327" class="active">You are not alone</a></span>
+  </h3>
+  <div class="content"><p>Damn.  I sit in a small office with 4 other guys.  One of them shared this article with the rest of us.</p>
+<p>The near-collective groan of disappointment as we all realized that your article didn't present the Final Ultimate Solution was hilarious and tragic.</p>
+<p>You're not alone; Zabbix hates us too. :-)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">05/26/2011 - 10:10</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/beyond-configuration-mgmt by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:25:20 GMT -->
+</html>

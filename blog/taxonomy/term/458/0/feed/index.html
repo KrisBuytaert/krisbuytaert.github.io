@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - mysql</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/458/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Using broken development frameworks , or why we don&#039;t use Zurmo</title>
+ <link>http://127.0.0.1:8080/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo</link>
+ <description>&lt;p&gt;People often wonder why DBA&#039;s used to hate developers, and with DBA&#039;s also the System Engineers,&lt;br /&gt;
+(note that I just expanded devops by adding dba&#039;s to the picture..) &lt;/p&gt;
+&lt;p&gt;So let me tell you a story .. &lt;/p&gt;
+&lt;p&gt;A couple of weeks ago one of our customers wanted to start experimenting with a new type of CRM.  A gamified CRM.&lt;br /&gt;
+Zurmo ... &lt;/p&gt;
+&lt;p&gt;So we set this thing up in a dev environment and started playing with it , while at first it looks nice ..&lt;br /&gt;
+the application  actually felt pretty slow.. however given that is a low resource development environment we looked no further.&lt;/p&gt;
+&lt;p&gt;Yet the next step is that we run into missing features, such as the fact that every contact you create by default is&lt;br /&gt;
+set to private .. which really isn&#039;t productive for a CRM system where you want to be able to follow up on different&lt;br /&gt;
+customer and share information.  &lt;/p&gt;
+&lt;p&gt;So we tried figuring out what the database changes to do this in bulk would mean, surely it had to be a flag on the contact record .&lt;br /&gt;
+Wrong,  Zurmo uses an ORM for their database connectivity ...so their data model wasn&#039;t really trivial.&lt;/p&gt;
+&lt;p&gt;So we decided to look at the MySQL log file to figure out what db changes happened when updating the record&lt;br /&gt;
+Yes there&#039;s better approaches  but this one learned us a lot ..&lt;br /&gt;
+The procedure I followed was pointing my browser to the page where I wanted to switch the checkbox,&lt;br /&gt;
+log on to the mysql box,  set global logging on .  Clicked the checkbox and stopped global logging.&lt;/p&gt;
+&lt;p&gt;This gave me a log file with all the database actions required to make that one single change.&lt;br /&gt;
+I had to cross check a number of times ... the file created by this short and small action was.&lt;br /&gt;
+about 70K &lt;/p&gt;
+&lt;p&gt;Puzzled you start looking at the queries ...&lt;br /&gt;
+The query list was full with &quot;SELECT * FROM &quot; stanza&#039;s ..&lt;br /&gt;
+70K whopping K of queries that make your hair turn grey ... &lt;/p&gt;
+&lt;p&gt;I figured I&#039;d file a bug .. but I couldn&#039;t find  no bugtracker for Zurmo, only a forum (and forums are the most broken form of communication imvho) , yet the developers responded on Twitter.&lt;/p&gt;
+&lt;p&gt;The feedback wasn&#039;t really satisfying so we quickly decided that supporting this application was not something we would like to do..&lt;br /&gt;
+and abandonned it.. &lt;/p&gt;
+&lt;p&gt;The real question is  who needs a &lt;a href=&quot;http://dilbert.com/2013-05-19/&quot; rel=&quot;nofollow&quot;&gt;Gamified CRM&lt;/a&gt; anyhow...&lt;/p&gt;
+&lt;p&gt;PS.  So while finishing up this article on a late evening this week  I might not have put in clear enough that the generated logfile was 70Kb .. I fear some people misunderstood that it generated 70.000 queries.  Obviously a huge difference.  But still the log file shouldn&#039;t have been bigger han 1Kb There should have been 2-3 queries max (&lt;a href=&quot;https://github.com/KrisBuytaert/snippets/tree/master/zurmo&quot; title=&quot;https://github.com/KrisBuytaert/snippets/tree/master/zurmo&quot; rel=&quot;nofollow&quot;&gt;https://github.com/KrisBuytaert/snippets/tree/master/zurmo&lt;/a&gt;) &lt;/p&gt;
+&lt;p&gt;But imvho if the size of the queries you are generating is bigger than the page you are generating  you are most often doing it wrong.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/crm">crm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vtiger">vtiger</category>
+ <category domain="http://127.0.0.1:8080/blog/category/zurmo">zurmo</category>
+ <pubDate>Wed, 10 Jul 2013 20:08:58 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1083 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Gentwerpen Devops Meetup  &amp; Conference Season Update</title>
+ <link>http://127.0.0.1:8080/blog/gentwerpen-devops-meetup-conference-season-update</link>
+ <description>&lt;p&gt;A couple of us have been taking about it a lot already .. we wanted to host a one day #devops event in .be already last year.. then talks about starting a meetup group started again with @wonko_be  but it was @fs111 pushing the final button and calling the rest of the .be community to order, we&#039;ve set a date&lt;br /&gt;
+and the first session will take place (agenda still needs to be detirmined) &lt;/p&gt;
+&lt;p&gt;So all you Belgian devops enthousiasts, maark October 11th in your calendar and go &lt;a href=&quot;http://www.eventbrite.com/event/4352133348&quot; rel=&quot;nofollow&quot;&gt;register here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We already have 2 other venues (Gent, Boom) lined up .. but let&#039;s get this first one started :) &lt;/p&gt;
+&lt;p&gt;Next to that here&#039;s an update for the rest of my upcoming Conference Season : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Later this month I`ll be heading to San Francisco for a talk at  &lt;a href=&quot;http://puppetconf.com/&quot; rel=&quot;nofollow&quot;&gt;PuppetConf 2012&lt;/a&gt;.  I&#039;ll probably be around in the valley a bit earlier so if you anyone wants to meet up  I`m open for suggestions.&lt;br /&gt;
+(Yes I asked Nick Stielau of Pantheon to host a #monitoringsucks / #devops meetup &lt;a href=&quot;http://www.meetup.com/San-Francisco-DevOps/events/81251892/&quot; rel=&quot;nofollow&quot;&gt;about Sensu&lt;/a&gt; but I should have predicted it was about to clash with the PuppetConf speakers dinner :((
+&lt;/li&gt;&lt;li&gt;I was thinking to swing by the MySQL- Connect conference but given the pricetag I don&#039;t think I`ll bother ...  I am however thinking about crashing the hallway track , or tricking the &lt;a href=&quot;https://plus.google.com/102496134326414788199/posts/JXE1pRLwAsm&quot; rel=&quot;nofollow&quot;&gt;Foreman Meetup&lt;/a&gt; to be colocated with a MySQL event again just like at Fosdem earlier this year
+&lt;/li&gt;&lt;li&gt;I will be attending the Jenkins User conference in San Francisco however before flying back to Europe
+&lt;/li&gt;&lt;li&gt; If you haven&#039;t noticed yet , Devopsdays is going to be in Rome this year  on october 5 and 6. &lt;a href=&quot;http://devopsdays.org/events/2012-italy/registration/&quot; rel=&quot;nofollow&quot;&gt;Registration&lt;/a&gt;&lt;br /&gt;
+is still open !
+&lt;/li&gt;&lt;li&gt;During the last weekend of  october it&#039;s time for &lt;a href=&quot;http://www.t-dose.org/&quot; rel=&quot;nofollow&quot;&gt;t-dose.org&lt;/a&gt; again.   No news on the program yet.
+&lt;/li&gt;&lt;li&gt;And one week later I`ll be heading to Barcelona to speak at &lt;a href=&quot;https://events.linuxfoundation.org/events/linuxcon-europe&quot; rel=&quot;nofollow&quot;&gt;LinuxCon Europe&lt;/a&gt;  I`m really looking forward to that last one again as it looks like the good old LinuxKongresses in Germany .. deep technical topics !
+&lt;/li&gt;&lt;/ul&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/gentwerpen-devops-meetup-conference-season-update#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jenkins">jenkins</category>
+ <category domain="http://127.0.0.1:8080/blog/category/linuxcon">linuxcon</category>
+ <category domain="http://127.0.0.1:8080/blog/category/linuxconf">linuxconf</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/454">t-dose</category>
+ <pubDate>Thu, 13 Sep 2012 20:27:28 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1072 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Devops in Munich</title>
+ <link>http://127.0.0.1:8080/blog/devops-munich</link>
+ <description>&lt;p&gt;Devopsdays Mountainview sold out in a short 3 hours ..   but there&#039;s other events   that will breath devops this summer.&lt;br /&gt;
+DrupalCon in Munich will be one of them ..&lt;/p&gt;
+&lt;p&gt;Some of you might have noticed that I`m cochairing the devops track for DrupalCon Munich,&lt;br /&gt;
+The CFP is open till the 11th of this month and we are still actively looking for speakers.&lt;/p&gt;
+&lt;p&gt;We&#039;re trying to bridge the gap between drupal developers and the people that put their code to production, at scale.&lt;br /&gt;
+But also enhancing the knowledge of infrastructure components Drupal developers depend on.&lt;/p&gt;
+&lt;p&gt;We&#039;re looking for talks both on culture (both success stories and failure) ,   automation,&lt;br /&gt;
+specifically looking for people talking about drupal deployments , eg using tools like Capistrano, Chef, Puppet,&lt;br /&gt;
+We want to hear where Continuous Integration fits in your deployment ,  do you do Continuous Delivery of a drupal environment.&lt;br /&gt;
+And how do you test ... yes we like to hear a lot about testing , performance tests, security tests, application tests and so on.&lt;br /&gt;
+...  Or have you solved the content vs code vs config  deployment problem yet ? &lt;/p&gt;
+&lt;p&gt;How are you measuring and monitoring these deployments and adding metrics to them  so you can get good visibility on both&lt;br /&gt;
+system and user actions of your platform.  Have you build fancy dashboards showing your whole organisation the current state of your deployment ? &lt;/p&gt;
+&lt;p&gt;We&#039;re also looking  for people talking about introducing different data backends,  nosql,  scaling different search backends , building your own cdn using  smart  filesystem setups.&lt;br /&gt;
+Or making smart use of existing backends, such as tuning and scaling MySQL, memcached and others.&lt;/p&gt;
+&lt;p&gt;So lets make it clear to the community that drupal people do care about their code after they committed it in source control ! &lt;/p&gt;
+&lt;p&gt;Please submit your talks &lt;a href=&quot;http://munich2012.drupal.org/news/call-for-papers&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/devops-munich#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/456">cfp</category>
+ <category domain="http://127.0.0.1:8080/blog/category/configmgmt">configmgmt</category>
+ <category domain="http://127.0.0.1:8080/blog/category/deployment">deployment</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/measurement">measurement</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/testing">testing</category>
+ <pubDate>Tue, 01 May 2012 19:02:30 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1065 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>At Fosdem</title>
+ <link>http://127.0.0.1:8080/blog/fosdem</link>
+ <description>&lt;li&gt;on Friday evening , apparently having a confirmed reservation in a resto is not enough to actually be welcome at that  restaurant.
+&lt;/li&gt;&lt;li&gt;at DrupalDevdays,   only 2 laptops were open during our presentation
+&lt;/li&gt;&lt;li&gt;at DrupalDevdays,   almost nobody in the room was already using CI
+&lt;/li&gt;&lt;li&gt;at Fosdem , the parking lot is full before 11:30 on a saturday
+&lt;/li&gt;&lt;li&gt;at Fosdem ,  much less Macs than last years .
+&lt;/li&gt;&lt;li&gt;at Fosdem , way too much rooms are already at full capacity  so you need to have 2-3 backup alternatives ..
+&lt;/li&gt;&lt;li&gt;at Fosdem , people expect me to be in certain rooms, at the same time
+&lt;/li&gt;&lt;li&gt;at Fosdem , even with too much rooms already full one still misses a bunch of interresting talks
+&lt;/li&gt;&lt;li&gt;at Fosdem , one  doesn&#039;t even realize friends are speaking there too ..
+&lt;/li&gt;&lt;li&gt;at Fosdem , Android  is the standard ...
+&lt;/li&gt;&lt;li&gt;at Fosdem , you are confronted with the fact you probably forgot more names of people than you remember ;(
+&lt;/li&gt;&lt;li&gt;at Fosdem , you are surrounded by famous open source people, that aren&#039;t even on the schedule
+&lt;/li&gt;&lt;li&gt;at the MySQL Meetup Dinner, Monty brings &lt;a href=&quot;http://en.wikipedia.org/wiki/Salmiakki_Koskenkorva&quot; rel=&quot;nofollow&quot;&gt;Salmiakki&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;at Fosdem , you wonder how many other people have survived their 11th edition
+&lt;/li&gt;&lt;li&gt;at Fosdem , you can&#039;t get into any devroom on sunday morning
+&lt;/li&gt;&lt;li&gt;at Fosdem , begging on Twitter to get in to a devroom from the other side of the door works   (at least for me :))
+&lt;/li&gt;&lt;li&gt;at Fosdem , netbooks are much less popular as opposed to 2-3 years ago ..
+&lt;/li&gt;&lt;li&gt;after fosdem ... you crash ..&lt;br /&gt;
+&lt;/li&gt;</description>
+ <comments>http://127.0.0.1:8080/blog/fosdem#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/768">fosdem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Sun, 06 Feb 2011 20:06:12 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1033 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>MySQL &amp; Friends Meetup at Fosdem 2011</title>
+ <link>http://127.0.0.1:8080/blog/mysql-friends-meetup-fosdem-2011</link>
+ <description>&lt;p&gt;I admit .. I`m lazy ... unlike last year I did not organize MySQL and Friends meetup at Fosdem.  &lt;/p&gt;
+&lt;p&gt;I outsourced it to &lt;a href=&quot;http://twitter.com/#!/gryp/&quot; rel=&quot;nofollow&quot;&gt;Kenny&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More info and registration &lt;a href=&quot;http://www.eventbrite.com/event/1267253389/efbnen&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/mysql-friends-meetup-fosdem-2011#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/768">fosdem</category>
+ <category domain="http://127.0.0.1:8080/blog/category/meetup">meetup</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <pubDate>Tue, 01 Feb 2011 11:28:46 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1031 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>High Availability MySQL Cookbook , the review</title>
+ <link>http://127.0.0.1:8080/blog/high-availability-mysql-cookbook-review</link>
+ <description>&lt;p&gt;When I read on the internetz that Alex Davies was about the publish a &lt;a href=&quot;https://www.packtpub.com/high-availability-mysql-cookbook/book&quot; rel=&quot;nofollow&quot;&gt;Packt book on MySQL HA&lt;/a&gt;  I pinged my contacts at Packt and suggested that I&#039;d review the book .&lt;/p&gt;
+&lt;p&gt;I&#039;ve ran into &lt;a href=&quot;https://sites.google.com/a/davz.net/alex-davies/&quot; rel=&quot;nofollow&quot;&gt;Alex&lt;/a&gt; at some UKUUG conferences before and he&#039;s got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.&lt;/p&gt;
+&lt;p&gt;Alex starts of with a couple of indepth chapters on MySQL Cluster,  he does mention that it&#039;s not a fit for all problems, but I&#039;d hoped he did it a bit more prominently ...    an upfront chapter outlining the different approaches and when which approach is a match could have been better.    The avid reader now might be 80 pages into MySQL cluster before he realizes it&#039;s not going to be a match for his problem.&lt;/p&gt;
+&lt;p&gt;I really loved the part where Alex correcly mentions that you should probably be using Puppet or so to manage the config files of your environment, rather than scp them around your different boxes ..&lt;/p&gt;
+&lt;p&gt;Alex then goes on to describe setting up MySQL replication and Multi Master replication with the different approaches one can take here,  he gives some nice tips on using LVM to reduce the downtime of your MySQL when having to transfer the dataset of an already existing MySQL setup, good stuff.&lt;/p&gt;
+&lt;p&gt;He then goes on to describe MySQL with shared storage ...   if you only mount your redundant sandisk once on your MySQL nodes my preference would probably be a Pacemaker stack  rather than a RedHat Cluster based setup,  but his setup seems to work too.   Alex quickly touches on using GFS to have your data disk mounted simultaneously on both nodes (keep in mind with only 1 active MySQLd)  and then goes on to describe a full DRBD based MySQL HA setup&lt;/p&gt;
+&lt;p&gt;The last chapter titled Performance tuning gives some very nice tips on both tuning your regular storage, as your&lt;br /&gt;
+GFS setup but also the tuning parameters for MySQL Cluster&lt;/p&gt;
+&lt;p&gt;I was also really happy to see the Appendixes on the basic installation where he advocates the use of Cobbler , Kickstart and LVM ..&lt;/p&gt;
+&lt;p&gt;One of the better books I read the past couple of years .. certainly the best book from Packt so far , I hope there is more quality stuff coming from that direction !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/high-availability-mysql-cookbook-review#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/cobbler">cobbler</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/899">drbd</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pacemaker">pacemaker</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Wed, 03 Nov 2010 23:07:18 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1022 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>yum install mariadb</title>
+ <link>http://127.0.0.1:8080/blog/yum-install-mariadb</link>
+ <description>&lt;p&gt;I`m not the biggest fan of openSUSE but this weeks &lt;a href=&quot;http://www.bytebot.net/blog/archives/2010/07/17/opensuse-users-have-a-choice-of-database-now?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+ColinCharles+%28colin+charles+blog%29&quot; rel=&quot;nofollow&quot;&gt;post by Colin Charles&lt;/a&gt; makes me happy ..&lt;/p&gt;
+&lt;p&gt;openSUSE users can now do a mariadb install from their default repositories.&lt;/p&gt;
+&lt;p&gt;With all the fuzz about Snoracle and MySQL&#039;s future last year to me it became clear that we would end up having different MySQL based distributions,  probably with different names, and that it would be up to the Linux distributions to provide the users with what they preferred,  working with those Linux distributions&lt;br /&gt;
+therefore would be very important for the MySQL distributions.&lt;/p&gt;
+&lt;p&gt;Sadly my Fedora box doesn&#039;t allow me to do a yum install mariadb yet ... but I`m  sure that&#039;s only a matter of time ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/yum-install-mariadb#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/distributions">distributions</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/category/mariadb">mariadb</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/621">opensuse</category>
+ <category domain="http://127.0.0.1:8080/blog/category/snoracle">snoracle</category>
+ <pubDate>Mon, 19 Jul 2010 18:55:23 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1014 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Inuits Day </title>
+ <link>http://127.0.0.1:8080/blog/inuits-day</link>
+ <description>&lt;p&gt;Couple of Fridays ago we had one of our @Inuits days again.  Rather than having some people give talks and presentations about what they have been doing for the  past couple of months this time we set out to  research, test, and build stuff.&lt;/p&gt;
+&lt;p&gt;We split up in 3 different groups,  one focusing on CI and testing freshly build stuff with cucumber,   a second one setup and tested &lt;a href=&quot;http://www.codership.com/products/galera_replication&quot; rel=&quot;nofollow&quot;&gt;Galera&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We setup a 3 node Galera cluster , not really as smooth as we&#039;d like to ..&lt;/p&gt;
+&lt;p&gt;Our first bump was that the installation of the package on CentOS is hell, it needs manual interaction such as replacing  packages.  Deploying this from a repository is probably not going to be a straight forward option.&lt;/p&gt;
+&lt;p&gt;Galera only takes care of replicating data, just as with MySQL MM replication there still is a need for an external tool to define where to access the database, and implement monitoring in such a way that you are connecting to an up to date database.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://poke152.blogspot.com/&quot; rel=&quot;nofollow&quot;&gt;Karl&lt;/a&gt; started wondering about Galera&#039;s locking,  turns out the locks aren&#039;t cluster wide, locks within the same node work fine.. so if galera is solely used for HA with 1 active node and X failover nodes, it will work (so all transactions happening on 1 node).&lt;/p&gt;
+&lt;p&gt;We also ran into some issues when trying to start a node which couldn&#039;t contact the wsrep_cluster_address point (which is a node it will sync from at startup if specified in the wsrep.cnf file) , it just didn&#039;t want to start. This means that when the referenced node (configured in wsrep_cluster_address)is down, you will need to comment it out before you are able to start the mysql server.&lt;/p&gt;
+&lt;p&gt;The fact that Galera replicates everythying brought us to the discussion if we really wanted that , or if we wanted more finegrained control over which databases or even tables we want to replicate and which ones we didn&#039;t want to replicate.  A minority of people wanted to replicate everything,  the majority of our group wanted finere grained control over what is being replicated to another node.&lt;/p&gt;
+&lt;p&gt;I`m sure &lt;a href=&quot;http://www.lefred.be/&quot; rel=&quot;nofollow&quot;&gt;Lefred&lt;/a&gt; will shortly be writing about the progress his group made on &lt;a href=&quot;http://www.banquise.be/&quot; rel=&quot;nofollow&quot;&gt;Banquise&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The day ended as it should .. with BBQ and plenty of drinks&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/inuits-day#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/banquise">banquise</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ci">ci</category>
+ <category domain="http://127.0.0.1:8080/blog/category/galera">galera</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/category/inuits-day">inuits day</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <pubDate>Mon, 21 Jun 2010 19:14:12 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1012 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>MySQL HA , an alternative approach</title>
+ <link>http://127.0.0.1:8080/blog/mysql-ha-alternative-approach</link>
+ <description>&lt;p&gt;For those who&#039;ve seen my presentation on MySQL HA, you already know that I often use a multimaster setup with a meta OCF resource  that groups my favoured MySQL instance with the service ip ,  using a meta resource means that pacemaker monitors mysql, but it doesn&#039;t actually manage it.  It&#039;s an approach that works for us.&lt;/p&gt;
+&lt;p&gt;One of the other approaches I will be looking at soon is the freshly released OCF resource that &lt;a href=&quot;http://fghaas.wordpress.com/2010/04/21/mysql-masterslave-support-now-merged-into-linux-ha/&quot; rel=&quot;nofollow&quot;&gt;Florian&lt;/a&gt; announced last week.&lt;/p&gt;
+&lt;p&gt;Back in the days our approach meant we didn&#039;t have to use clone resources, which you might remember being pretty buggy in the v2 era,  not wanting to use clons resources isn&#039;t really a valid reason anymore these days .  I&#039;ve also frequently mentioned the combination of using DRBD and MultiMaster replication,  using this set of OCF resource makes that a lot more easy ..&lt;/p&gt;
+&lt;p&gt;Now all I need to do is find me some time to validate this setup.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/mysql-ha-alternative-approach#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/433">cluster</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <pubDate>Wed, 28 Apr 2010 21:17:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1001 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Linux Open Administration Days 2010</title>
+ <link>http://127.0.0.1:8080/blog/linux-open-administration-days-2010</link>
+ <description>&lt;p&gt;So about 4 monts ago &lt;a href=&quot;http://blog.bdesmet.be/?p=272&quot; rel=&quot;nofollow&quot;&gt;there was the crazy idea&lt;/a&gt; to start a new FOSS event in Belgium targeted  at sysadmins.&lt;/p&gt;
+&lt;p&gt;What started out as an event for local people to meet local people with some local speakers actually ended up being a small local event with some top international speakers on onfiguration mananagement and system administration mixed with a bunch of good local ones !&lt;/p&gt;
+&lt;p&gt;I had the honour to open the conference with an extremely short version of the Devops talk I gave earlier last year..  extremely short as I knew that over the course of the weekend the topic would reoccur a lot.&lt;/p&gt;
+&lt;p&gt;We had the first european talk on &lt;a href=&quot;http://wiki.opscode.com/display/chef/Home&quot; rel=&quot;nofollow&quot;&gt;Chef&lt;/a&gt;, by Joshua Timberman,  and we had Puppet talks amongst by Dan Bode from Puppetlabs and CFengine talks ,  devops was a frequently dropped word,&lt;/p&gt;
+&lt;p&gt;We had a book raffle where we handed out O&#039;Reilly&#039;s .. we had a great free pizza party (got the idea from the saturday pizza event at LCA 2005) ,  and we had some free beer.      Sounds like a good combination for a geeky weekend.&lt;/p&gt;
+&lt;p&gt;Apart from the regular talks there were plenty of Open Spaces where interesting topics were discussed ... we had spaces on Open Source vs Open Core , strong voices were heard when we discussed what we should do with the Open Core companies that claim to value Open Source , some people think we should actually list the fauxpensource ones somewhere and make sure the world knows about them&lt;/p&gt;
+&lt;p&gt;We had an awesome configuration management discussion session  discussing Chef vs Puppet vs CFengine . And much much more ...&lt;/p&gt;
+&lt;p&gt;Some people owe me plenty of Sushi as I had to do my MySQL HA talk before their Managing MySQL talk  , but other than that .. things just went fine..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/linux-open-administration-days-2010#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/cfengine">cfengine</category>
+ <category domain="http://127.0.0.1:8080/blog/category/chef">chef</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/455">conference</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/category/load">load</category>
+ <category domain="http://127.0.0.1:8080/blog/category/loadays">loadays</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/category/mysql-ha">mysql ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Tue, 20 Apr 2010 19:43:05 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">998 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

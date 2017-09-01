@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - whitespace</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1178/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Everything is a fine whitespace problem ... </title>
+ <link>http://127.0.0.1:8080/blog/everything-fine-whitespace-problem</link>
+ <description>&lt;p&gt;Couple of days ago I was working on a Linux Heartbeat v2 setup.&lt;br /&gt;
+Upon inserting an XML snippet into the cib  cib-adm started eating memory fast until the oom killer kicked in.&lt;/p&gt;
+&lt;p&gt;The environment  was running a fairly old heartbeat-2.0.8 version so I upgraded to  heartbeat-2.1.4-2.1  and there I got a nice warning that my XML sintax wasn&#039;t correct.&lt;/p&gt;
+&lt;p&gt;There was a whitespace in the XML syntax.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;expression attribute=&amp;quot;#replicationvalue&amp;quot; id=&amp;quot;is_lagged&amp;quot; operation =&amp;quot;gt&amp;quot;  ... &amp;gt;&amp;lt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Removing the  whitespace solves the problem, also on the older version.  So the problem is already fixed upstream.. but you might run into it anyhow.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/everything-fine-whitespace-problem#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/category/whitespace">whitespace</category>
+ <category domain="http://127.0.0.1:8080/blog/category/xml">xml</category>
+ <pubDate>Mon, 02 Feb 2009 21:00:36 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">869 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

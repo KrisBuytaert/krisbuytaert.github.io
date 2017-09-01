@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=5 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:22:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Everything is a Freaking DNS problem | Devops Needs Sushi</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../blogapi/rsd/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem RSS" href="../rss/index.xml" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="front not-logged-in page-node one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+<div class="content">
+<div id="node-1062" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-02-15T20:27:04+01:00">
+  <span class="month">Feb</span>
+  <span class="day">15</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../logstash-and-elasticsearch/index.html">Logstash and ElasticSearch</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>"An expert is a man who has made all the mistakes which can be made, in a narrow field."<br />
+Niels Bohr</p>
+<p>When I setup Logstash for the very first time I got bitten by an empty search,  aparently no logs were indexed.  Reading the log files indeed told me about<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">WARN: org.elasticsearch.discovery.zen.ping.unicast: [Blaire, Allison] failed to send ping to [[#zen_unicast_1#][inet[/127.0.0.1:9300]]]</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">INFO   | jvm 1    | 2012/02/06 22:45:55 | org.elasticsearch.transport.RemoteTransportException: [Page, Karen][inet[/127 .0.0.1:9300]][discovery/zen/unicast]</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">INFO   | jvm 1    | 2012/02/06 22:45:55 | Caused by: java.io.EOFException</div></li></ol></pre></div></p>
+<p>The above is the typical error when the ElasticSearch version you are using externally is not in sync with the one Logstash is using, yes those versions need to match.</p>
+<p>Fast forward a couple of weeks.. and I`m upgrading Logstash and therefore also ElasticSearch ..   I have a <a href="https://github.com/KrisBuytaert/vagrant-puppet-logstash" rel="nofollow">Vagrant setup</a> to play with so all of the components are running on 1 node.</p>
+<p>I kept running into a similar problem, this time however I saw log entries being indexed, I could get data from my ElasticSearch setup using<br />
+wget -q -S -O - <a href="http://localhost:9200/_status?pretty=true" title="http://localhost:9200/_status?pretty=true" rel="nofollow">http://localhost:9200/_status?pretty=true</a></p>
+<p>But the web interface kept showing no results ;( </p>
+<p>While nagging about it on irc .. Jordan gave me the insight :<br />
+<cite><br />
+2012-01-31.194347+0100CET.txt:(07:55:36 PM) whack: slight caveat that elasticsearch clients also join the cluster, so if you point everyone at 127.0.0.1:9300, that :9300 could be one of your clients, not the server<br />
+</cite></p>
+<p>Indeed when you by accident start any of the logstash instances (server/shipper/web) before you start your ElasticSearch instance you can be in trouble.<br />
+Ordering really matters , you really need to start ElasticSearch before you start the clients.</p>
+<p>Obviously is you don't use the unicast setup you don't run into this problem .. </p>
+<p>So what other mistakes should I make ?</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../logstash-and-elasticsearch/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1061" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-02-10T23:15:35+01:00">
+  <span class="month">Feb</span>
+  <span class="day">11</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../ultimate-2012-open-source-and-devops-conference/index.html">The ultimate 2012 open source and devops conference</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1469 last"><a href="../category/monitoringsucks/index.html" rel="tag" title="">monitoringsucks</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Kent Skaar pinged me last week , asking for feedback on Lisa'11 and input for Lisa 2012. </p>
+<p>Thought I should share my advise to him with the rest of the world </p>
+<p>So If I were to host an event similar to Lisa I'd had either<br />
+Jordan Sissel or Mitchell Hashimoto  give the keynote  because over the past 24 months those people have written more relevant tools for me than anyone else :)    </p>
+<p>I'd have someone talk about Kanban for Operations,  There's 2 names that pop up   Dominica DeGrandis  and Mattias Skarin</p>
+<p>I'd have the Ubuntu folks talk about JuJu and I'd have RI Pienaar talk about MCollective .. while you have RI have him talk about Hiera too. Have Dean Wilson carry RI's bags and put him unknowingly on a panel.  (Masquerade it as a Pub with hidden cameras) </p>
+<p>Obviously as #monitoringsucks you want to hear about new monitoring tools initiatives and how people are dealing with them , so you want people talking about Graphite, Collectd, Statsd, Sensu , Icinga-MQ  And how people are reviving Ganglia and using that in large scale environments.</p>
+<p>You want someone to demistify Queues,  I mean .. who still knows about the differences between Active, Rabbit , Zero, Hornet and many other  Q's ?</p>
+<p>You want people talking about how they deal with logs,  so talks about Logstash and Graylog2. </p>
+<p>You want to cover Test Driven Infrastructure  How do you test your infrastructure    , someone to demystify Cucumber  and Webrat , and talk about testing Charms, Modules, and Cookbooks.</p>
+<p>Oh and Filesystems  , distributed ones the Ceph, FraunhoverFS, Moose, KosmosFS,  Glusters, Swifts of this world ...  you want people to talk about their experiences , good and bad with any of the above,  someone who can actually compare those rather than heresay stuff. :)  With recent updates on what's going on in these projects.</p>
+<p>Now someone please organise this for me :)  In a warm and sunny place ...  preferably with 27 holes next door ,  and daycare for my kids :) </p>
+<p>PS. Yes the absence of any openstack related topic is on purpose .. that's for 2013 :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../ultimate-2012-open-source-and-devops-conference/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1060" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-02-10T00:03:52+01:00">
+  <span class="month">Feb</span>
+  <span class="day">10</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../we-didnt-fix-it/index.html">We didn&#039;t fix it </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1477"><a href="../category/extrememon/index.html" rel="tag" title="">extrememon</a></li>
+<li class="taxonomy_term_1469 last"><a href="../category/monitoringsucks/index.html" rel="tag" title="">monitoringsucks</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>MonitoringSucks and we didn't fix it.</p>
+<p>Earlier this week <a href="http://www.inuits.eu/">Inuits</a> hosted a 2 day hackfest titled #MonitoringSucks.  A good number of people with a variety of backgrounds showed up on monday morning. I don't know why but people had high expectations for this event ,  did they really expect us to fix the #monitoringsucks problem in a mere 2 days ?</p>
+<p>Next to myselve we had  Patrick Debois , <a href="https://twitter.com/#!/gkarekinian">Grégory Karékinian</a>, <a href="https://twitter.com/#!/sjourdan">Stefan Jourdan</a>, <a href="https://twitter.com/#!/hatofmonkeys">Colin Humphreys</a>, <a href="https://twitter.com/#!/acrmp">Andrew Crump</a>, <a href="https://twitter.com/#!/ohadlevy/">Ohad Levy </a>, Frank Marien, Toshaan Bharvani,  Devdas Bhagat, <a href="https://twitter.com/#!/mpasternacki/"> Maciej Pasternacki </a> <a href="https://twitter.com/xtaran">Axel Beckert</a> <a href="https://twitter.com/#!/smetj/">Jelle Smet</a>,   Noa Resare @blippie , John John Tedro @udoprog,  Christian Trabold @ctrabold and obviously some people I missed<br />
+<br /><br />
+A good mixture of Fosdem visitors that stayed a litte longer in our cold country and locals with ideas. We had people from TomTom, RedHat , Spotify, Booking.com, Inuits, Atlassian, coming from Belgium, The Netherlands France, Israel, the UK, Sweden, Germany, Poland and Switzerland if I`m not mistaken.</p>
+<p>The format  was pretty open, much of the first day was spend around  the drawingboard.</p>
+<p><img src="http://www.krisbuytaert.be/images/drawingboard.jpg" alt="people around the drawingboard" /><br />
+(Ohad Levy, Jelle Smet, PatrickDebois and Frank Marien) discussing a variety of topics </p>
+<p>This monitoring topic is complex, there are different areas that need to be covered. The drawing below documents how we splitted the problem into different areas , and listed the different tools people use for these areas.</p>
+<p><img src="http://www.krisbuytaert.be/images/componnents.jpg" /></p>
+<ul>
+<li>Collection: Collectd, Nagios, Ganglia
+</li><li> Transport: XMPP, Smiple, Smtp, 0mq , APMQ, rsyslog, irc, stomp
+</li><li>Storage : rrd, graphite, opentsdb, hbase,
+</li><li>Filtering: logstash, esper,
+</li><li>Visualisation : Graphite,
+</li><li>Notifcation: PagerDuty
+</li><li>Reporting: Jasper
+</li></ul>
+<p>Obviously above list is far from complete. </p>
+<p><img src="http://www.krisbuytaert.be/images/morediscussions.jpg" /><br />
+<br /><br />
+The afternoon discussion continued where we left of before lunch, just after the powercut. Only now we started refocussing on filtering and aggregating values using Logstash<br />
+@patrickdebois had been talking about the idea to use Logstash as a way to collect data , transform it and throw it either to another tool, or onto a Queue before.<br />
+Looking at Logstash it makes kind of sense.  Logstash already has a zillion of input types, filters and outputs.  Including popular queues such as amqp and zeromq. Yes, the default  behaviour for a lot of people is to  get data from different inputs,  filter it and then send it to ElasticSearch,  but much more  is possible with the available outputs.</p>
+<p><br /><br />
+<img src="http://www.krisbuytaert.be/images/logstash.jpg" /><br />
+<br /><br />
+It was only on tuesday that people really started writing code<br />
+So what did really come out of the #monitoringsucks hackfest. ?</p>
+<p>A couple of people were working on packaging existing tools for their favourite distro. Others were working on integrating a number of other already existing tools (e.g Patrick working on more inputs for Logstash.,  me working on replacing logster with Logstash, setting up Kibana etc. New tools were learned, items were added to todolists (Kibana, (doesn't work on older Firefox instances)  Tattle, statsd) and items were scratched from todolists  (Graylog2 (Kibana replaces that as a good Frontend for Logstash) )</p>
+<p>A lot of experiences with different tools were exchanged</p>
+<p>Frank Marien showed us a demo of his freshly release <a href="https://extremon.org/">ExtremeMon</a> framework.   A really promising project.</p>
+<p>The sad part about a workshop like this one is that you enter with a bunch of ideas , and leave with even more ideas, hence more work.  We haven't solved the problem yet, but a lot of more people are now thiking about the problem and how to solve it a more modulare (unix style) approach. With different litte tools, all being good at something and all being interconnectable.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../we-didnt-fix-it/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1059" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-02-01T08:48:55+01:00">
+  <span class="month">Feb</span>
+  <span class="day">01</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../monitoringsucks-hackathon-67-february-practical-details/index.html">#monitoringsucks hackathon  6&amp;7 february  Practical details: </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1469 last"><a href="../category/monitoringsucks/index.html" rel="tag" title="">monitoringsucks</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>As announced <a href="http://www.krisbuytaert.be/blog/monitoringsucks-and-well-fix-it">earlier</a> next monday and tuesday we're opening up the Inuits offices for everybody working on monitoring problems.</p>
+<p>There's already a <a href="https://github.com/monitoringsucks/werefixingit/wiki">good number of people</a> that have confirmed their presence and some people have asked </p>
+<p>As for practical details .. the plan is simple.<br />
+I`m going to be at the place somewhere between 8:30 and 9:00 on monday.  ( Hey .. it's the day after Fosdem you know :)) </p>
+<p>The only thing I've planned is to do a get to know eachother round around 10:30  after that I`m expecting the hackathon to be self organising,  </p>
+<p>There will be water, coffee , etc , IP connectivity, and electricity. </p>
+<p>The location is still Duboisstraat 50, Antwerp</p>
+<p><img src="http://www.inuits.eu/sites/default/files/contact_inuitsmap.png" /> </p>
+<p>Free parking is on the Hardenvoort or Kempenstraat ( 3minutes walk) , paid parking right in front of the door.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../monitoringsucks-hackathon-67-february-practical-details/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1058" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-01-03T21:46:47+01:00">
+  <span class="month">Jan</span>
+  <span class="day">03</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../graphite-jmxtrans-ganglia-logster-collectd-say-what/index.html">Graphite, JMXTrans, Ganglia, Logster, Collectd,  say what  ? </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1473 first"><a href="../category/collectd/index.html" rel="tag" title="">collectd</a></li>
+<li class="taxonomy_term_1328"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1471"><a href="../category/ganglia/index.html" rel="tag" title="">ganglia</a></li>
+<li class="taxonomy_term_1470"><a href="../category/graphite/index.html" rel="tag" title="">graphite</a></li>
+<li class="taxonomy_term_1475"><a href="../category/jmxtrans/index.html" rel="tag" title="">jmxtrans</a></li>
+<li class="taxonomy_term_1476"><a href="../category/logster/index.html" rel="tag" title="">logster</a></li>
+<li class="taxonomy_term_1469 last"><a href="../category/monitoringsucks/index.html" rel="tag" title="">monitoringsucks</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Given that @patrickdebois is working on improving data collection I thought it  would be a good idea to describe the setup I currently have hacked together.</p>
+<p>(Something which can be used as a starting point to improve stuff, and I have to write documentation anyhow) </p>
+<p>I currently have 3 sources ,  and  one target, which will  eventually expand to at least another target and most probably more sources too.</p>
+<p><img src="http://www.krisbuytaert.be/images/VagrantGraphite.jpg" /></p>
+<p>The 3 sources are basically  typical system data which I collect using collectd,  However I`m using collectd-carbon from <a href="https://github.com/indygreg/collectd-carbon.git" title="https://github.com/indygreg/collectd-carbon.git">https://github.com/indygreg/collectd-carbon.git</a> to send data to Graphite.</p>
+<p>I`m parsing the Apache and Tomcat logfiles with logster , currently sending them only to Graphite, but logster has an option to send them to Ganglia too.</p>
+<p>And I`m using JMXTrans to collect JMX data from Java apps that have this data exposed and send it to Graphite.  (JMXTrans also comes with a Ganglia target option) </p>
+<p>Rather than going in depth over the config it's probably easier to point to a Vagrant box I build <a href="https://github.com/KrisBuytaert/vagrant-graphite" title="https://github.com/KrisBuytaert/vagrant-graphite">https://github.com/KrisBuytaert/vagrant-graphite</a> which brings up a machine that does pretty much all of this  on localhost.</p>
+<p>Obviously it's still a work in progress and lots of classes will need to be parametrized and cleaned up.   But it's a working setup,  and not just on my machine .. </p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../graphite-jmxtrans-ganglia-logster-collectd-say-what/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1057" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-01-03T19:23:00+01:00">
+  <span class="month">Jan</span>
+  <span class="day">03</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../monitoringsucks-and-well-fix-it/index.html">#monitoringsucks and we&#039;ll fix it !</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1473 first"><a href="../category/collectd/index.html" rel="tag" title="">collectd</a></li>
+<li class="taxonomy_term_1328"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1471"><a href="../category/ganglia/index.html" rel="tag" title="">ganglia</a></li>
+<li class="taxonomy_term_1470"><a href="../category/graphite/index.html" rel="tag" title="">graphite</a></li>
+<li class="taxonomy_term_1292"><a href="../category/icinga/index.html" rel="tag" title="">icinga</a></li>
+<li class="taxonomy_term_938"><a href="../taxonomy/term/938/index.html" rel="tag" title="">monitoring</a></li>
+<li class="taxonomy_term_1469"><a href="../category/monitoringsucks/index.html" rel="tag" title="">monitoringsucks</a></li>
+<li class="taxonomy_term_1472"><a href="../category/munin/index.html" rel="tag" title="">munin</a></li>
+<li class="taxonomy_term_890"><a href="../taxonomy/term/890/index.html" rel="tag" title="">nagios</a></li>
+<li class="taxonomy_term_1474 last"><a href="../category/rrd/index.html" rel="tag" title="">rrd</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>If you are hacking on monitoring solutions, and want to talk to your peers solving the problem<br />
+Block the monday and tuesday after fosdem in your calendar !</p>
+<p>That's right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp</p>
+<p>In short  a #monitoringsucks hackathon</p>
+<p>Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp</p>
+<p>Obviously if you can't make it to Antwerp you can join the effort on ##monitoringsucks on Freenode or on Twitter.</p>
+<p>The <a href="http://www.inuits.eu/contact" rel="nofollow">location will be Duboistraat 50 , Antwerp</a><br />
+It is about 10 minutes walk from the Antwerp Central Trainstation<br />
+Depending on Traffic Antwerp is about half an hour north of Brussels and there are hotels at walking distance from the venue.</p>
+<p>Plenty of parking space is available on the other side of the Park</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../monitoringsucks-and-well-fix-it/index.html#comments" title="Jump to the first comment of this posting.">8 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1056" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-12-31T16:59:57+01:00">
+  <span class="month">Dec</span>
+  <span class="day">31</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../what-devops/index.html">What is devops ? </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1468 first"><a href="../category/culture/index.html" rel="tag" title="">culture</a></li>
+<li class="taxonomy_term_1328"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_484"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_599 last"><a href="../taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>I`m parsing the responses of the Deploying Drupal survey  I started a couple of months ago (more on that later) </p>
+<p>One of the questions in the survey is "What is devops" , apparently when you ask a zillion people (ok ok, just a large bunch of Tweeps..),  you get a large amount of different answers ranging from totally wrong to  spot on.</p>
+<p>So let's go over them  and see what we can learn from them .. </p>
+<p>The most Wrong definition one can give is probably : </p>
+<ul>
+<li> A buzzword
+</li></ul>
+<p>I think we've long passed the buzzword phase, definitely since it's not new, it's a new term we put to an existing practice.  A new term that gives a lot of people that were already doing devops , a common word to dicuss about it. Also lots of people still seem to think that devops is a specific role,  a job description , that it points to a specific group of people doing a certain job, it's not . Yes you'll see a lot of organisations  looing for  devops people,  and giving them a  devops job title.  But  it's kinda hard to be the only one doing devops in an organisation.</p>
+<p>I described one of my current roles as Devops Kickstarter, it pretty much describes what I`m doing and it does contain devops :) </p>
+<p>But devops also isn't </p>
+<ul>
+<li>The connection between operations and development.
+</li><li>people that keep it running
+</li><li>crazy little fellows who find beauty in black/white letters( aka code) rather than a view like that of Taj in a full moon light.
+</li><li>the combination of developer and operations into one overall functionality
+</li><li>The perfect mixture between a developer and a system engineer. Someone who can optimize and simplify certain flows that are required by developers and system engineers, but sometimes are just outside of the scope for both of them.
+</li><li>Proxy between developer and management
+</li><li>The people in charge of the build/release cycle and planning.
+</li><li>A creature, made from 8-bit cells, with the knowledge of a seasoned developer, the skillset of a trained systems engineer and the perseverence of a true hacker.
+</li><li>The people filling the gap between the developer world and the sysadmin world. They understand dev. issues and system issues as well. They use tools from both world to solve them.
+</li></ul>
+<p>Or</p>
+<ul>
+<li> Developers looking at the operations of the company and how we can save the company time and money
+</li></ul>
+<p>And it's definitely not </p>
+<ul>
+<li> Someone who mixes both a sysop and dev duties
+</li><li> developers who know how to deploy and manage sites, including content and configuration.
+</li><li>I believe there's a thin line line between Ops and Devs where we need to do parts of each others jobs (or at least try) to reach our common goal..
+</li><li> A developer that creates and maintains environments tools to help other developers be more successful in building and  releasing new products
+</li><li> Developers who also do IT operations, or visa versa.
+</li><li> Software developers that support development teams and assist with infrastructure systems
+</li></ul>
+<p>So no,  developers that take on systems roles next to their own role and want to go for NoOps isn't feasable at all ..you really want collaboration, you want people with  different skillsets that (try to) understand eachoter and (try to) work together towards a common goal. </p>
+<p>Devops is also not  just infrastructure as code </p>
+<ul>
+<li>Writing software to manage operations
+</li><li>system administrators with a development culture.
+</li><li>Bring code management to operations, automating system admin tasks.
+</li><li>The melding of the art of Systems Administration and the skill of development with a focus on automation. A side effect of devops is the tearing down of the virtual wall that has existed between SA's and developers.
+</li><li>Infrastructure as code.
+</li><li>Applying some of the development worlds techniques (eg source control, builds, testing etc) to the operations world.
+</li><li> Code for infrastructure
+</li></ul>
+<p>Sure infastructure as code is a big part of the Automation part listed in CAMS, but just because you are doing puppet/chef doesn't mean you are doing devops.<br />
+Devops is also not  just  continous delivery</p>
+<ul>
+<li>A way to let operations deploy sites in regular intervals to enable developers to interact on the systems earlier and make deployments easier.
+</li><li>Devops is the process of how you go from development to release.
+</li></ul>
+<p>Obviously lots of people doing devops also often try to achieve Continuous delivery, but just like Infrastructure as Code it devops is not limited to that :) </p>
+<p>But I guess the truth is somewhere in the definitions below ... </p>
+<ul>
+<li>That sweet spot between "operating system" or platform stack and the application layer. It is wanting sys admins who are willing to go beyond the normal package installers, and developers who know how to make their platform hum with their application.
+</li><li> Breaking the wall between dev and ops in the same way agile breaks the wall between business and dev e.g. coming to terms with changing requirements, iterative cycles
+</li><li> Not being an arsehole!
+</li><li> Sysadmin best-practise, using configuration as code, and facilitating communication between sysadmins and developers, with each understanding and participating in the activities of the other.
+</li><li> Devops is both the process of developers and system operators working closer together, as well as people who know (or who have worked in) both development and system operations.
+</li><li> Culture collaboration, tool-chains
+</li><li> Removing barriers to communication and efficiency through shared vocabulary, ideals, and business objectives to to deliver value.
+</li><li> A set of principles and good practices to improve the interactions between Operations and Development.
+</li><li> Collaboration between developers and sysadmins to work towards more reliable platforms
+</li><li> Building a bridge between development and operations
+</li><li> The systematic process of building, deploying, managing, and using an application or group of applications such as a drupal site.
+</li><li> Devops is collaboration and Integration between Software Development and System Administration.
+</li><li> Devops is an emerging set of principles, methods and practices for communication, collaboration and integration between software development (application/software engineering) and IT operations (systems administration/infrastructure) professionals.[1] It has developed in response to the emerging understanding of the interdependence and importance of both the development and operations disciplines in meeting an organization's goal of rapidly producing software products and services.
+</li><li> bringing together technology (development) &amp; content (management) closer together
+</li><li> Making developers and admins understand each other.
+</li><li> Communication between developers and systems folk.
+</li><li> a cultural movement to improve agility between dev and ops
+</li><li> The cultural extension of agile to bring operations into development teams.
+</li><li> Tight collaboration of developers, operations team (sys admins) and QA-team.
+</li></ul>
+<p>But I can only conclude that there is a huge amount of evangelisation that still needs to be done,  Lots of people still don't understand what devops is , or have a totally different view on it. </p>
+<p>A number of technology conferences are and have taken up devops as a part of their conference program,  inviting experienced people from outside of their focus field to talk about how they improve the quality of life !</p>
+<p>There is still a large number of devops related problems to solve,  so that's what I`ll be doing in 2012</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-1055" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-12-29T19:31:03+01:00">
+  <span class="month">Dec</span>
+  <span class="day">29</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../installing-vagrant-ubuntu-natty/index.html">Installing Vagrant, on Ubuntu Natty</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1467 first"><a href="../category/ran/index.html" rel="tag" title="">ran</a></li>
+<li class="taxonomy_term_916"><a href="../taxonomy/term/916/index.html" rel="tag" title="">ubuntu</a></li>
+<li class="taxonomy_term_1439 last"><a href="../category/vagrant/index.html" rel="tag" title="">vagrant</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>(Warning some Ubuntu ranting ahead) </p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">apt-get install virtualbox-ose </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">apt-get install rubygems</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">gem install vagrant</div></li></ol></pre></div></p>
+<p>That's what I assumed it would take me to install vagrant on a spare Ubuntu (Natty) laptop.</p>
+<p>Well it's not.   after that I was greeted with some weirdness.</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">$vagrant</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vagrant: command not found...</div></li></ol></pre></div></p>
+<p>Yet gem list --local showed the vagrant gem installed.</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">$ruby</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">ruby:  command not found</div></li></ol></pre></div></p>
+<p>I looked twice, checked again and indeed it seems you can install rubygems on natty with no  ruby installed  #dazedandconfused</p>
+<p>So unlike other distro's on Ubuntu doesn't add the rubygems binary path to it's default path<br />
+After  adding that to my .bashrc things started working better.</p>
+<p>The active reader has noticed that by now half of the Twittersphere was pointing me to the already implemented<br />
+above solution and the other half was telling me to not install rubygems using apt-get, or to use rvm for all my rubygem troubles</p>
+<p>Apart from the point that if you need tools to like rvm to fix things that are fundamentally broken,  the fact is that joe average java developer doens't want to be bothered with  RubyGem hell  , he just wants to do apt-get install Vagrant and get on with his real work,  and that's exactly what I'd expect from   Linux for human beings</p>
+<p>I'd expect any junior guy to be able to go to vagrantup.com  read the 4 commands on the main page and be up and running<br />
+Coz that's how it works on my  Bleeding Edge Enterprise Development Distro,  the one I usually would not advise those people (and my mother) to use.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../installing-vagrant-ubuntu-natty/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1054" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-12-19T17:06:39+01:00">
+  <span class="month">Dec</span>
+  <span class="day">19</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../how-i-my-java/index.html">How I like my Java </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>This is a repost of my article earlier posted at Jordan Sissel's awesome  <a href="http://sysadvent.blogspot.com/2011/12/day-2-strategies-for-java-deployment.html">SysAdvent</a></p>
+<p>After years of working in Java-based environments, there are a number of things that I like to implement together with the teams I`m working with - the application doesn't matter much, whether it's plain java, Tomcat, JBoss, etc, these deployment strategies will help your ops and dev teams build more managable services.</p>
+<h2 id="packaging">Packaging</h2>
+<p>The first step is to have the native operating system packages as build artifacts rolling out of your <a href="http://martinfowler.com/articles/continuousIntegration.html">continuous integration</a> server - No .ear, .war or .jar files: I want to have rpms or debs. With things like <a href="https://github.com/jordansissel/fpm#readme">fpm</a> or the <a href="http://mojo.codehaus.org/rpm-maven-plugin/">maven rpm</a> plugin this should not be an extra hassle, and the advantages you get from doing this are priceless.</p>
+<p>What advantages? Most native package systems support dependency resolution, file verification, and upgrades (or downgrades). These are things you would have to implement yourself or cobble together from multiple tools. As a bonus, your fellow sysadmins are likely already comfortable with the native package tool used on your systems, so why not do it?</p>
+<h2 id="proxied-not-running-as-root">Proxied, not running as root</h2>
+<p><em>Shaken, not stirred</em></p>
+<p>Just like any other daemon, for security reasons, I prefer to run run Tomcat or JBoss as its own user, rather than as root. In most cases, however, only root can bind to ports below 1024, so you need to put a proxy in front. This is a convenient requirement because proxying (with something like Apache) can be used to terminate SSL connections, give improved logging (access logs, etc), and provides the ability to run multiple java application server instances on the same infrastructure.</p>
+<h2 id="service-management">Service Management</h2>
+<p>Lots of Java application servers have a semi functional shell script that allows you to start the service. Often, these services don't daemonize in a clean way, so that's why I prefer to use the <a href="http://wrapper.tanukisoftware.com/doc/english/download.jsp">Java Service wrapper</a> from Tanuki to manage most Java based services. With a small config file, you get a clean way to stop and start java as a service and even the possibility to add some more monitoring to it.</p>
+<p>However, there are some problems the Java Service wrapper leaves unsolved. For example, after launching the service, the wrapper can return back with a successful exit code while your service is not ready yet. The application server might be ready, but your applications themselves are still starting up. If you are monitoring these applications (e.g for High Availability), you really only want to treat them as 'active' when the application is ready, so you don't want your wrapper script to return, &quot;OK,&quot; before the application has been deployed and ready. Otherwise, you end up with false positives or nodes that failover before the application has ever started. It's pretty easy to create a ping-pong service flapping scenario on a cluster this way.</p>
+<h2 id="one-application-per-host">One application per host</h2>
+<p>I prefer to deploy one application per host even though you can easily deploy multiple applications within a single Java VM. With one-per-host, management becomes much easier. Given the availability and popularity of good virtualization, the overhead of launching multiple Linux VM's for different applications is so low that there are more benefits than disadvantages.</p>
+<h2 id="configuration">Configuration</h2>
+<p>What about configuration of the application? Where should remote API urls, database settings, and other tunables go? A good approach is to create a standard location for all your applications, like <span class="geshifilter"><code class="text geshifilter-text">/etc/$vendor/app/</code></span>, where you place the appropriate configuration files. Volatile application configuration must be outside the artifact that comes out the build (.ear , .jar, .war, .rpm). The content of these files should be managed by a configuration management tool such as puppet, chef, or cfengine. The developers should be given a basic training so they can provide the systems team with the appropriate configuration templates.</p>
+<h2 id="logs">Logs</h2>
+<p>Logs are pretty important too, and very easy to neglect. There are plenty of alternative tools around to log from a Java application: Log4j, Logback, etc .. Use them and make sure that they are configured to log to syslog, then they can be collected centrally and parsed by tools much easier than if they were spread all over the filesystem.</p>
+<h2 id="monitoring">Monitoring</h2>
+<p>You also want your application to have some ways to monitor it besides just checking if it is running - it is usually insufficient to simply check if a tcp server is listening. A nice solution is to have a simple plain text page with a list of critical services and whether they are OK or not (true/false), for example:</p>
+<pre class="PROGRAMLISTING"><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">someService: true</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">otherService: false</div></li></ol></pre></div></pre><p>This benefits humans as well as machines. Tools like <a href="https://mon.wiki.kernel.org/">mon</a>, <a href="http://linux-ha.org/wiki/Heartbeat">heartbeat</a> or loadbalancers can just grep for &quot;false&quot; in the file. If the file contains false, it reports a failure and fails over. This page should live on a standard location for all your applications, maybe a pattern like this http://<span class="math"><em>h</em><em>o</em><em>s</em><em>t</em>&#8197;/&#8197;</span>servicename/health.html and an example &quot;http://10.0.129.10:8080/mrs-controller/health.html&quot;. The page should be accessible as soon as the app is deployed.</p>
+<p>This true/false health report should not be a static HTML file; it should be a dynamically generated page. Text means that you can also use curl, wget, or any command-line tool or browser to check the status of your service.</p>
+<p>The 'health.html' page should report honestly about health, executing any code necessary to compute 'health' before yielding a result. For example, if your app is a simple calculator, it should verify health by doing tests internally like adding up some numbers before sharing 'myCalculator:true' in the health report.</p>
+<p>The 'health.html' page should report honestly about health, executing any code necessary to compute 'health' before yielding a result. For example, if your app is a simple calculator, then before reporting health it should put two and two together and get four.</p>
+<p>This kind of approach could also be used to provide you with metrics you can't learn from the JVM, such as number of concurrent users or other valid application metadata for measurement and trending purposes.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>If you can't convince your developers, then maybe more data can help: Check out Martin Jackson's (presentation on java deployments) <a href="http://www.slideshare.net/actionjackx/automated-java-deployments-with-rpm">Automated Java Deployments with RPM</a></p>
+<p>With good strategies in packaging, deployment, logging, and monitoring, you are in a good position to have an easily manageable, reproducible, and scalable environment. You'll give your developers the opportunity to focus on writing the application, they can use the same setup on their local development boxes (e.g. by using vagrant) as you are using on production.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../how-i-my-java/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1053" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-12-14T19:10:12+01:00">
+  <span class="month">Dec</span>
+  <span class="day">14</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../lisa-2011/index.html">Lisa 2011</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_452 last"><a href="../taxonomy/term/452/index.html" rel="tag" title="">lisa</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Last week I was in Boston for my 1st and their 25th  Edition  of the Large Infrastructure System Administration Conferences<br />
+Lisa was pretty much all I expected from it.  Old Unix wizards with long hair and white beards,  the usual suspects, and a mix of devops practitioners on  a devops themed conference with on one  side awesome and well positioned content and on the other side absolutely basic stuff.</p>
+<p>On tuesday I had a devops bof scheduled for 2 hours.</p>
+<p>My goal of the session was to not talk myselve, and let the audience figure out the 4 key components of devops as documented by @botchagalupe and @damonedwards being ,  Culture, Automation, Measurement and Sharing.   I have to admit it  took me a while to get them to that point .. but they figured out themselves ..  the bof was standing room only , and there was a good discussion going on</p>
+<p>On wednesday I gave my talk  titled , Devops the Future is here, it's just not evenly distributed yet.</p>
+<div style="width:425px" id="__ss_10506745"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/KrisBuytaert/devops-the-future-is-here-its-just-not-evenly-distributed-yet" title="Devops, the future is here, it&#39;s just not evenly distributed yet." target="_blank">Devops, the future is here, it&#39;s just not evenly distributed yet.</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/10506745" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br />
+<div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/KrisBuytaert" target="_blank">Kris Buytaert</a> </div>
+</div>
+<p>During my talk I realized that there was some more explanation needed for the crowd explaining Vagrant ...   so I proposed a Bof on that topic too ...  I used @patrickdebois 's awesome slides and hosted a  small bof on Vagrant on thursday evening.</p>
+<div style="width:425px" id="__ss_8340999"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/jedi4ever/vagrant-devopsdays-mountain-view-2011" title="Vagrant devopsdays Mountain View 2011" target="_blank">Vagrant devopsdays Mountain View 2011</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/8340999" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br />
+<div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/jedi4ever" target="_blank">Patrick Debois</a> </div>
+</div>
+<p>Friday morning I was scheduled to be in a panel discussing featuring a #devops guy, a storage guy and a network guy ..<br />
+as my voice was starting to break down I wasn't really confident . however by the time the panel started I could talk normal again :)<br />
+The setup was weird.. it were basically 3 people with totally different backgrounds discussing a variety of topics.  There were no rea<br />
+lly opposing views , mostly we agreed with eachother , so I`m not really sure if the audience was really entertained :)</p>
+<p>Anyhow 2 bofs, a talk and a panel later .. I was exhausted and ready to fly back to Belgium.  </p>
+<p>Tomorrow I have another presentation together with Patrick at the <a href="http://www.bejug.org/confluenceBeJUG/display/BeJUG/DevOps">BeJug</a> ..  problem is .. I`m still looking for my voice ;(</p>
+<p>So worst case .. I`m just gonna turn on the recording that the Usenix folks made of my talk ... </p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/p-8UBYMMjp8" frameborder="0" allowfullscreen></iframe></p>
+<p>Must admit .. I've given better talks .. </p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="index4.html?page=4" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a href="index1.html?page=1" title="Go to page 2" class="active">2</a></li>
+<li class="pager-item"><a href="index2.html?page=2" title="Go to page 3" class="active">3</a></li>
+<li class="pager-item"><a href="index3.html?page=3" title="Go to page 4" class="active">4</a></li>
+<li class="pager-item"><a href="index4.html?page=4" title="Go to page 5" class="active">5</a></li>
+<li class="pager-current">6</li>
+<li class="pager-item"><a href="index6.html?page=6" title="Go to page 7" class="active">7</a></li>
+<li class="pager-item"><a href="index7.html?page=7" title="Go to page 8" class="active">8</a></li>
+<li class="pager-item"><a href="index8.html?page=8" title="Go to page 9" class="active">9</a></li>
+<li class="pager-item"><a href="index9.html?page=9" title="Go to page 10" class="active">10</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="index6.html?page=6" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="index103.html?page=103" title="Go to last page" class="active">last »</a></li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=5 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:22:53 GMT -->
+</html>

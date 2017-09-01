@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - ubuntu</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/916/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Installing Vagrant, on Ubuntu Natty</title>
+ <link>http://127.0.0.1:8080/blog/installing-vagrant-ubuntu-natty</link>
+ <description>&lt;p&gt;(Warning some Ubuntu ranting ahead) &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;apt-get install virtualbox-ose &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;apt-get install rubygems&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;gem install vagrant&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;That&#039;s what I assumed it would take me to install vagrant on a spare Ubuntu (Natty) laptop.&lt;/p&gt;
+&lt;p&gt;Well it&#039;s not.   after that I was greeted with some weirdness.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;$vagrant&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;vagrant: command not found...&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Yet gem list --local showed the vagrant gem installed.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;$ruby&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;ruby:  command not found&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;I looked twice, checked again and indeed it seems you can install rubygems on natty with no  ruby installed  #dazedandconfused&lt;/p&gt;
+&lt;p&gt;So unlike other distro&#039;s on Ubuntu doesn&#039;t add the rubygems binary path to it&#039;s default path&lt;br /&gt;
+After  adding that to my .bashrc things started working better.&lt;/p&gt;
+&lt;p&gt;The active reader has noticed that by now half of the Twittersphere was pointing me to the already implemented&lt;br /&gt;
+above solution and the other half was telling me to not install rubygems using apt-get, or to use rvm for all my rubygem troubles&lt;/p&gt;
+&lt;p&gt;Apart from the point that if you need tools to like rvm to fix things that are fundamentally broken,  the fact is that joe average java developer doens&#039;t want to be bothered with  RubyGem hell  , he just wants to do apt-get install Vagrant and get on with his real work,  and that&#039;s exactly what I&#039;d expect from   Linux for human beings&lt;/p&gt;
+&lt;p&gt;I&#039;d expect any junior guy to be able to go to vagrantup.com  read the 4 commands on the main page and be up and running&lt;br /&gt;
+Coz that&#039;s how it works on my  Bleeding Edge Enterprise Development Distro,  the one I usually would not advise those people (and my mother) to use.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/installing-vagrant-ubuntu-natty#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/ran">ran</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/916">ubuntu</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vagrant">vagrant</category>
+ <pubDate>Thu, 29 Dec 2011 18:31:03 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1055 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Fedora 12 Release Party</title>
+ <link>http://127.0.0.1:8080/blog/fedora-12-release-party</link>
+ <description>&lt;p&gt;I have a confession to make, I`m a Fedora user, have been since before it existed , I remember running RedHat 4.2 on my Multia and I`m pretty sur that wasn&#039;t my first RedHat install&lt;/p&gt;
+&lt;p&gt;I`m running Fedora on my laptop and corporate desktop for the simple reason that it will provide me with a preview of what CentOS might look like in the future.&lt;/p&gt;
+&lt;p&gt;So when my inbox started to show invites of a Fedora 12 release party at walking distance from my home , I replied I&#039;d join the party afer I had put the kids to bed.&lt;/p&gt;
+&lt;p&gt;Saturday came and I realized that given the short distance to the events place it might be a good idea to get the good old RedHat bike from the garage and check it&#039;s tires.   Just after I had put Margot to bed &lt;a href=&quot;http://twitter.com/biertie/status/6146841182&quot; rel=&quot;nofollow&quot;&gt;the crowd&lt;/a&gt; already wondered where I stayed.&lt;/p&gt;
+&lt;p&gt;I grabbed my Fedora and jumped on my bike, only to realize it&#039;s lights weren&#039;t working :(   The only remaining option was to drive by car.  A full 3 minutes later I was at the venue.&lt;/p&gt;
+&lt;p&gt;.Apparently nobody in the audience had seen a real Fedora before as Bert promplty stopped his presentation.&lt;/p&gt;
+&lt;p&gt;After the presentation we tried to create an OpenSpace and started introducing ourselves,  we used the Fedora as a talking stick,   on a regular day my Big Tux wears the Fedora, but apparently our cats had been playing with it a bit too much ... :)&lt;/p&gt;
+&lt;p&gt;More reports from &lt;a href=&quot;http://blog.vanderkussen.org/?p=52&amp;amp;cpage=1#comment-203&quot; rel=&quot;nofollow&quot;&gt;Vincent&lt;/a&gt;, &lt;a href=&quot;http://www.toshaan.be/?p=320&quot; rel=&quot;nofollow&quot;&gt;Tosh&lt;/a&gt; and &lt;a href=&quot;http://blog.bdesmet.be/?p=248&quot; rel=&quot;nofollow&quot;&gt;Bert&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oh, and I`m a Debian, Ubuntu, and CentOS user too :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/fedora-12-release-party#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/debian">debian</category>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/916">ubuntu</category>
+ <pubDate>Tue, 01 Dec 2009 18:37:13 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">964 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>SELinux is Dead !</title>
+ <link>http://127.0.0.1:8080/blog/node/714</link>
+ <description>&lt;p&gt;No really it isn&#039;t but so isn&#039;t AppArmor, altough &lt;a href=&quot;http://etbe.coker.com.au/2008/08/23/apparmor-is-dead/&quot;&gt;Russel&lt;/a&gt; claims it is. Weird how he totally rewords the &lt;a href=&quot;http://news.opensuse.org/2008/08/20/opensuse-to-add-selinux-basic-enablement-in-111/&quot;&gt;OpenSuse statements&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;From &quot;While our customer experience shows that AppArmor is the best solution for the vast majority of users, applications, and use cases, we want to give all of our users the ability to choose the security framework that’s appropriate for their respective environments and needs. We continue to enable AppArmor as our default Host Intrusion Prevention System......&quot;&lt;/p&gt;
+&lt;p&gt;To &quot;The next step will be to make SE Linux the default and AppArmor the one that exists in a repository, and the step after that will be to remove AppArmor.&quot;&lt;/p&gt;
+&lt;p&gt;Given &lt;a href=&quot;https://help.ubuntu.com/community/AppArmor&quot;&gt;Ubuntu&#039;s AppArmor adoption&lt;/a&gt; I don&#039;t see it die that fast ...&lt;/p&gt;
+&lt;p&gt;The real problem is who uses AppArmor or SELinux,  sadly most of the installations I run into have none of both technologies enabled.  Most Admins overrule their favourite distro&#039;s default config. The reason is pretty obvious as &lt;a href=&quot;http://www.krisbuytaert.be/blog/node/335&quot;&gt;I&#039;ve&lt;/a&gt; heard &lt;a href=&quot;http://www.sxw.org.uk/lighting/&quot;&gt;a lot of&lt;/a&gt; &lt;a href=&quot;http://en.wikipedia.org/wiki/SELinux#Quotes&quot;&gt;intelligent&lt;/a&gt; &lt;a href=&quot;http://thunk.org/tytso/&quot;&gt;people&lt;/a&gt; say &quot;Life Is Too short For SELinux&quot;&lt;/p&gt;
+&lt;p&gt;So I wonder, how can you die if you never were really alive ?&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/714#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1002">apparmor</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/621">opensuse</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1001">selinux</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/916">ubuntu</category>
+ <pubDate>Mon, 25 Aug 2008 19:05:55 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">714 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Distro Synchronisation</title>
+ <link>http://127.0.0.1:8080/blog/node/667</link>
+ <description>&lt;p&gt;Look Mark , Red Hat and Novell have &lt;a href=&quot;http://virtualization.com/news/2008/05/21/novell-and-red-hat-upgrade-linux-enterprise-distros-improve-virtualization-support/&quot; rel=&quot;nofollow&quot;&gt;Synced&lt;/a&gt; their releases :)&lt;/p&gt;
+&lt;p&gt;Well.. not really .. even different Xen versions :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/667#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/564">novell</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/704">redhat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/549">sarcasm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/916">ubuntu</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Thu, 22 May 2008 10:05:06 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">667 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

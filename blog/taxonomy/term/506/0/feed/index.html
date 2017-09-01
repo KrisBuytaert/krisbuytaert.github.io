@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - kvm</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/506/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Converting KVM to VirtualBox</title>
+ <link>http://127.0.0.1:8080/blog/converting-kvm-virtualbox</link>
+ <description>&lt;p&gt;I have had most of my test environment, aka puppetmasters, test mysql setups etc running in KVM for the past couple of years .. (yes I`m still using a lot of Xen in production environments, but we&#039;ve also been using KVM for a while already .. it&#039;s a good mix)  , Virtual box has always been the lesser loved Virtualization platform , however while playing more and more with Vagrant Up I realized I needed to convirt some boxen (e.g my PuppetMaster) to Virtualbox,  and google was really no good help(most people seem  to go the other way , or want to use some proprietary tools )&lt;/p&gt;
+&lt;p&gt;So I remembered VBoxManage and apparently I hade blogged about it myselve already ..&lt;br /&gt;
+I just  hate it when I search for  stuff and google points right back to &lt;a href=&quot;http://www.krisbuytaert.be/blog/kvm-vs-virtualbox&quot;&gt;me&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So I converted my puppetmaster&#039;s disks&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;VBoxManage convertdd Emtpy-clone.img  PuppetMasterroot.vdi&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;VBoxManage convertdd puppet-var.img  PuppetMastervar.vdi&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Now when booting the VM in Virtualbox , obviously the kernel panicked .. as my KVM disks are recognised as as /dev/hda and and Virtualbox defaults to /dev/sda  and LVM doesn&#039;t really like disks to be on another names&lt;br /&gt;
+No commandline fu here to help me, but using the VirtualBox gui to move the disks to the IDE controller rather than the SATA controller.&lt;/p&gt;
+&lt;p&gt;Now all I need to do is wait for some smart guy who comments that you probably could use VBoxManage storagectl to achieve the same goal :)&lt;/p&gt;
+&lt;p&gt;And wait till Vagrant Up start supporting KVM , so I can move back :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/converting-kvm-virtualbox#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vagrant">vagrant</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1046">virtualbox</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Tue, 22 Feb 2011 22:01:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1035 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Building Virtual Appliances</title>
+ <link>http://127.0.0.1:8080/blog/building-virtual-appliances</link>
+ <description>&lt;p&gt;Johan from &lt;a href=&quot;http://sizingservers.be/&quot;&gt;Sizing Servers&lt;/a&gt; asked me if I could talk about my experiences on building (virtual) appliances at their Advanced Virtualization and Hybrid Cloud seminar .    Off course I said yes .. &lt;/p&gt;
+&lt;p&gt;Slides are below ... Enjoy ..&lt;/p&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_4321121&quot;&gt;&lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/building-appliances&quot; title=&quot;Building appliances&quot;&gt;Building appliances&lt;/a&gt;&lt;/strong&gt;
+&lt;object id=&quot;__sse4321121&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=buildingappliances-100526211332-phpapp01&amp;stripped_title=building-appliances&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed name=&quot;__sse4321121&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=buildingappliances-100526211332-phpapp01&amp;stripped_title=building-appliances&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;padding:5px 0 12px&quot;&gt;View more &lt;a href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/building-virtual-appliances#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/775">automation</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1046">virtualbox</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Thu, 27 May 2010 08:03:29 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1005 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Disabling DHCP on a LibVirt setup</title>
+ <link>http://127.0.0.1:8080/blog/disabling-dhcp-libvirt-setup</link>
+ <description>&lt;p&gt;So you have this libvirt setup and you  want to have a dhcp server on the virtual machines you are playing with , or you want to have all static IP&#039;s.&lt;/p&gt;
+&lt;p&gt;Libvirt uses dnsmasq to provide dhcp services etc and when you  generate a config from the gui it will look like&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;network&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;name&amp;gt;piponet&amp;lt;/name&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;uuid&amp;gt;e87d3bf1-a2e7-96ca-e131-7ae51ac033f9&amp;lt;/uuid&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;bridge name=&#039;virbr2&#039; stp=&#039;on&#039; delay=&#039;0&#039; /&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;ip address=&#039;192.168.100.1&#039; netmask=&#039;255.255.255.0&#039;&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    &amp;lt;dhcp&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;      &amp;lt;range start=&#039;192.168.100.128&#039; end=&#039;192.168.100.254&#039; /&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    &amp;lt;/dhcp&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;/ip&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;/network&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;
+If you  fully remove the dhcp  section, then restart libvirt you&#039;ll notice dnsmasq running with no dhcpd on that subnet so you&#039;ll have full control again :)&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;network&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;name&amp;gt;piponet&amp;lt;/name&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;uuid&amp;gt;e87d3bf1-a2e7-96ca-e131-7ae51ac033f9&amp;lt;/uuid&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;bridge name=&#039;virbr2&#039; stp=&#039;on&#039; delay=&#039;0&#039; /&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;  &amp;lt;ip address=&#039;192.168.100.1&#039; netmask=&#039;255.255.255.0&#039;&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;     &amp;lt;/ip&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;/network&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/disabling-dhcp-libvirt-setup#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/dhcp">dhcp</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/category/libvirt">libvirt</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Fri, 04 Dec 2009 18:43:27 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">967 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>KVM vs Virtualbox </title>
+ <link>http://127.0.0.1:8080/blog/kvm-vs-virtualbox</link>
+ <description>&lt;p&gt;So you need that old FC9 instance on your fresh F11 install.&lt;/p&gt;
+&lt;p&gt;Obviously I started a KVM instance on my desktop and installed FC9 in a Virtual Machine,&lt;br /&gt;
+It took long to install, too long, so I looked if KVM was working correctly&lt;br /&gt;
+Kvm was loaded but not in use ..&lt;br /&gt;
+And then you remember why you had VirtualBox on that machine before it&#039;s upgrade .  indeed, this machine was to old it was not a VT Capable machine . VirtualBox performs much better there ..&lt;/p&gt;
+&lt;p&gt;But you already have a working installed Qemu image.&lt;br /&gt;
+What do you do ?  Google tells you about vidtool  but all you find are broken links ..&lt;/p&gt;
+&lt;p&gt;So you look further and you find that you can use VBoxManage for the same functionality&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;VBoxManage convertdd FC9.bin FC0.vdi&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/kvm-vs-virtualbox#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/category/novt">novt</category>
+ <category domain="http://127.0.0.1:8080/blog/category/stupidme">stupidme</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1046">virtualbox</category>
+ <pubDate>Thu, 30 Jul 2009 19:33:17 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">927 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>KVM or Xen</title>
+ <link>http://127.0.0.1:8080/blog/kvm-or-xen</link>
+ <description>&lt;p&gt;Over at &lt;a href=&quot;http://virtualization.com/guest-posts/2009/07/06/rhel-will-5.4-features-kvm/&quot;&gt;Virtualization.com&lt;/a&gt; I asked  the crowd what they planned to do when RedHat plans on finally migrating from Xen to KVM ..  you can have your say too . : &lt;/p&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/1761790.js&quot;&gt;&lt;/script&gt;&lt;p&gt;&lt;noscript&gt;&lt;br /&gt;
+&lt;a href=&quot;http://answers.polldaddy.com/poll/1761790/&quot;&gt;Will you migrate from Xen to KVM&lt;/a&gt;&lt;span style=&quot;font-size:9px;&quot;&gt;(&lt;a href=&quot;http://www.polldaddy.com&quot;&gt;poll&lt;/a&gt;)&lt;/span&gt;&lt;br /&gt;
+&lt;/noscript&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/kvm-or-xen#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Mon, 06 Jul 2009 20:47:17 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">925 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Slides updated</title>
+ <link>http://127.0.0.1:8080/blog/slides-updated</link>
+ <description>&lt;p&gt;I&#039;ve updated the slidedeck of my Open Source Virtualization talk, with the 2009 edition as I gave it last week at the UKUUG Spring conference.&lt;/p&gt;
+&lt;p&gt;Talk is up, both on &lt;a href=&quot;http://www.krisbuytaert.be/presentations/OSSVirt2009.odp&quot;&gt;my page&lt;/a&gt; as on &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/open-source-virtualization&quot;&gt;SlideShare&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&quot;width:425px;text-align:left&quot; id=&quot;__ss_637726&quot;&gt;&lt;a style=&quot;font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/KrisBuytaert/open-source-virtualization?type=powerpoint&quot; title=&quot;open source virtualization&quot;&gt;open source virtualization&lt;/a&gt;
+&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=open-source-virtualization-27314&amp;stripped_title=open-source-virtualization&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=open-source-virtualization-27314&amp;stripped_title=open-source-virtualization&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;&quot;&gt;View more &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Tom also updated our set of Open Source Monitoring Tool Shootout slides .&lt;br /&gt;
+They are also on &lt;a href=&quot;http://www.slideshare.net/tomdc/open-source-monitoring-tools-shootout&quot;&gt;SlideShare&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&quot;width:425px;text-align:left&quot; id=&quot;__ss_1226731&quot;&gt;&lt;a style=&quot;font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/tomdc/open-source-monitoring-tools-shootout?type=presentation&quot; title=&quot;Open Source Monitoring Tools Shootout&quot;&gt;Open Source Monitoring Tools Shootout&lt;/a&gt;
+&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=monitoringshootout-ukuug-090331062800-phpapp02&amp;stripped_title=open-source-monitoring-tools-shootout&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=monitoringshootout-ukuug-090331062800-phpapp02&amp;stripped_title=open-source-monitoring-tools-shootout&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;&quot;&gt;View more &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a style=&quot;text-decoration:underline;&quot; href=&quot;http://www.slideshare.net/tomdc&quot;&gt;tomdc&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/slides-updated#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/889">hyperic</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/427">ukuug</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/887">zabbix</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/888">zenoss</category>
+ <pubDate>Tue, 31 Mar 2009 17:04:55 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">894 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>UKUUG Spring 2009 Conference , here we come</title>
+ <link>http://127.0.0.1:8080/blog/ukuug-spring-2009-conference-here-we-come</link>
+ <description>&lt;p&gt;I`ll be heading to bed early today as tomorrow will be a busy day.  I have to get up early to catch my flight to London where&lt;br /&gt;
+&lt;a href=&quot;http://tdc.blogsite.org/index.php&quot; rel=&quot;nofollow&quot;&gt;Tom&lt;/a&gt; and I will be representing Inuits at the UKUUG 2009 Spring Conference.&lt;/p&gt;
+&lt;p&gt;Tom will be giving an updated version of our &lt;a href=&quot;http://www.ukuug.org/events/spring2009/programme/systems-monitoring-shootout.shtml&quot; rel=&quot;nofollow&quot;&gt;Open Source Monitoring Shootout&lt;/a&gt; talk again,  I`ll probably be skipping a couple of his slides as right after that &lt;a href=&quot;http://blog.zenoss.com/2009/03/23/jane-curry-zenoss-master/&quot; rel=&quot;nofollow&quot;&gt;Jane Curry&lt;/a&gt; will be covering Zenoss in depth and on thursday there will be an OpenNMS talk too.&lt;/p&gt;
+&lt;p&gt;On Thursday I will be giving another session of my Open Source Virtualization overview talk .. and I also plan on skipping slides and referring to the next speaker, as &lt;a href=&quot;http://mattinaction.blogspot.com/&quot; rel=&quot;nofollow&quot;&gt;Matt&lt;/a&gt; will be giving an &lt;a href=&quot;http://www.openqrm.com/&quot; rel=&quot;nofollow&quot;&gt;openQRM talk&lt;/a&gt; right after me :)&lt;/p&gt;
+&lt;p&gt;See you there !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/ukuug-spring-2009-conference-here-we-come#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/601">openqrm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/427">ukuug</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/887">zabbix</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/888">zenoss</category>
+ <pubDate>Tue, 24 Mar 2009 20:11:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">891 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Open Source Virtualization</title>
+ <link>http://127.0.0.1:8080/blog/node/738</link>
+ <description>&lt;p&gt;I&#039;ve just placed the presentation I gave both yesterday at the &lt;a href=&quot;http://www.opensourcedays.org/2008/&quot; rel=&quot;nofollow&quot;&gt;Open Source Days&lt;/a&gt; in Copenhagen , and last week in Zurich at the &lt;a href=&quot;http://openexpo.org/en&quot; rel=&quot;nofollow&quot;&gt;Open Expo&lt;/a&gt; , about Open Source Virtualization online.&lt;br /&gt;
+The presentation is based on a series of articles I wrote earlier this year for &lt;a href=&quot;http://virtualization.com/guides-howto-whitepaper-explanation/2008/03/10/looking-back-at-a-decade-of-open-source-virtualisation/&quot; rel=&quot;nofollow&quot;&gt;Virtualization.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can download it &lt;a href=&quot;http://www.krisbuytaert.be/presentations/OSSVirt.odp&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The presentation covers a fairly complete overview of what&#039;s around in Open Source Virtualization tools and and their Management frameworks.&lt;/p&gt;
+&lt;p&gt;I will be giving the same presentation again at the end of the month at &lt;a href=&quot;http://www.t-dose.org/&quot; rel=&quot;nofollow&quot;&gt;T-Dose&lt;/a&gt; in Eindhoven, The Netherlands&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/738#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/558">conferences</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1045">open source days</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/989">openexpo</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1046">virtualbox</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Sat, 04 Oct 2008 11:18:26 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">738 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Excuses</title>
+ <link>http://127.0.0.1:8080/blog/node/659</link>
+ <description>&lt;p&gt;Hmm.. need to find one to go &lt;a href=&quot;http://virtualization.com/guest-posts-guestposts/2008/04/28/kvm-forum-2008-schedule-has-been-announced/&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/659#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <pubDate>Tue, 06 May 2008 18:04:15 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">659 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>VMWare Revisited</title>
+ <link>http://127.0.0.1:8080/blog/node/579</link>
+ <description>&lt;p&gt;Last century I was sometimes noticed to be using VMWare to run a weird platform on my Linux Desktop , or to run some test installations.    With the introduction of Qemu and later Xen  there was no need for me to use the proprietary closed alternative.&lt;/p&gt;
+&lt;p&gt;So I got the question earlier this week to build a virtual instance of our bootstrapping environment so that field engineers could take that virtual machine on their laptop and do installations from there.&lt;/p&gt;
+&lt;p&gt;One of the collegues told me that  booting a fresh VMWare instance of  the network would be no problem so I took up on the challenge.&lt;/p&gt;
+&lt;p&gt;First of all a registration procedure so the nice folks over at VMWare can spam me with their marketing stuff during the next couple of months.  I needed to register as I seemed to need a Serial Number..  whow .. that was ages ago since I last needed such a beast.&lt;br /&gt;
+A full 101Mb download later I had an RPM ready to be installed.&lt;/p&gt;
+&lt;p&gt;&quot;Cool an RPM&quot; I tought, that means that I will be able to clean up all the mess they leave behind with a simple rpm -e.&lt;br /&gt;
+Wrong guess.  it seems like VMWare starts copying around files in different places on your filesystem and actually even wants to compile stuff against your running kernel.   All fine and well, but the result is  a bunch of unidentified files that are cluttering my filesystem.&lt;/p&gt;
+&lt;p&gt;The next step  required me to start the gui to create a virtual machine, suddenly the load of my machine skyrocketed.  Load 11 whew..  yep the VMware process was the guilty one..  luckily it went back to normal after a while .. but I`m still not sure what happened there.&lt;/p&gt;
+&lt;p&gt;Click, click, click and before I knew it VMware was allocating 4Gb on myfilesystem for an empty VM.  Noo.. don&#039;t allocate it yet.. retry.. ok .. take it when you need it .. that&#039;s better.  And why do you think I only want 256Mb for this machine ?   Hmm.. where&#039;s that config file.. aah.. clickerdy click again .&lt;/p&gt;
+&lt;p&gt;Start VM, F12 to boot of the network, wait, reboot done.&lt;/p&gt;
+&lt;p&gt;And thus we joined the era of transferring an unmanagable image that everyone will copy around wile slightly modifying things and never placing them in version control .  hence ending up one day with something nobody knows how we got there..&lt;/p&gt;
+&lt;p&gt;What did we learn, that the way I bootstrap a Virtual machine or a physical machine really doesn&#039;t matter,  and is still just a matter of mapping a MAC address to a HOSTNAME.&lt;/p&gt;
+&lt;p&gt;When working on the system, to check if the install was done correctly it felt like I was on a remotely bad connected machine,  not really slow, but really slow but still  (could have been because I logged on via the gui).   Certainly not like the paravirtualized Xen machines I`m used to work with,  more like the VirtualBox experience.  &lt;/p&gt;
+&lt;p&gt;The big problem with giving someone an image to play with however is that you loose all control over what is being deployed , configured or changed and it just becomes a change management nightmare.   At least reinstalling won&#039;t take much time.&lt;/p&gt;
+&lt;p&gt;But  I`ll go back to KVM and Xen for my daily work.. I&#039;ve seen enough GUI&#039;s for this month :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/579#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/761">i hate gui&#039;s</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/506">kvm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/764">nothingchanged</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/763">oldscool</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/762">quem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/507">virtualisation</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/555">vmware</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/470">xen</category>
+ <pubDate>Thu, 31 Jan 2008 17:58:40 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">579 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

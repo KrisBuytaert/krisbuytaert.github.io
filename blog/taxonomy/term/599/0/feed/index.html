@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - opensource</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/599/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Open Business Models         </title>
+ <link>http://127.0.0.1:8080/blog/open-business-models</link>
+ <description>&lt;p&gt;When I started writing this I wrote &quot;Last week Opscode came&quot; obviously now that is &quot;A couple of months ago Opscode came with a bunch of announcements ... one of them being that they are also going to  &lt;a href=&quot;http://www.opscode.com/blog/2013/02/04/announcing-commercial-support-for-open-source-chef/&quot; rel=&quot;nofollow&quot;&gt;support the Open Source Chef&lt;/a&gt; .. rather than only their own platform.&lt;/p&gt;
+&lt;p&gt;I&#039;d love to see more companies formally do this ..  Over the past couple of years I&#039;ve had numerous situations where organizations where happy to pay for support to an commercial backer of Open Source software... but they were not interested in , software updates, fancy dashboards , unneeded features.&lt;/p&gt;
+&lt;p&gt;Let alone being limited by some of the features of the Enterprise product (what do you mean there&#039;s no vlan support in Xen ? We&#039;ve been using that for ages (anno 2008)&lt;/p&gt;
+&lt;p&gt;Even right now I`m talking with a customer that is interested in getting commercial support for an open source project but he feels that by choosing the Enterprise version of the&lt;br /&gt;
+software he will be limiting his options... &lt;/p&gt;
+&lt;p&gt;We&#039;ve had this kind of situations with MySQL, Xen, Knowledgetree and others .. &lt;/p&gt;
+&lt;p&gt;The sad story is that with the growth of Open Source adoption, lots of companies are finding their commercial talents in the pool of people that used to work for the proprietary vendors,  the kind of sales people that don&#039;t get Open Source (aside from some exceptions) and are still trying to hardsell a product based on specsheets and feature roadmaps, where most quality open source software are build by people to solve problems , hence those new sales people keep doing their old job selling products while not listening to their actual customer needs.&lt;/p&gt;
+&lt;p&gt;I&#039;ve seen this escalate up to the point where people that are willing to support the Open Source project by paying a vendor for support don&#039;t do so because it&#039;s not the right form for them  eventually leading to even less revenue for the said vendor.&lt;/p&gt;
+&lt;p&gt;Yes I know that supporting a multitude of distributions , libary combinations and architectures is a complex thing to do, and a lot of the proprietary vendors ruined the market by inventing something like certified platforms on which they&lt;br /&gt;
+supported their software. &lt;/p&gt;
+&lt;p&gt;But if you as an open source software company are really interested in improving your product why wouldn&#039;t you take money from a customer that wants to pay for bugs to be fixed or features to be implemented in your  product.&lt;br /&gt;
+You&#039;ve already realized that the software industry is different from 10 years ago and that Open Source is here to stay  ..  yet you are still thinking in the sales model with products and specsheets of that era.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/open-business-models#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/busines-modules">busines modules</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/875">open source business models</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Wed, 10 Jul 2013 20:27:59 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1084 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Using broken development frameworks , or why we don&#039;t use Zurmo</title>
+ <link>http://127.0.0.1:8080/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo</link>
+ <description>&lt;p&gt;People often wonder why DBA&#039;s used to hate developers, and with DBA&#039;s also the System Engineers,&lt;br /&gt;
+(note that I just expanded devops by adding dba&#039;s to the picture..) &lt;/p&gt;
+&lt;p&gt;So let me tell you a story .. &lt;/p&gt;
+&lt;p&gt;A couple of weeks ago one of our customers wanted to start experimenting with a new type of CRM.  A gamified CRM.&lt;br /&gt;
+Zurmo ... &lt;/p&gt;
+&lt;p&gt;So we set this thing up in a dev environment and started playing with it , while at first it looks nice ..&lt;br /&gt;
+the application  actually felt pretty slow.. however given that is a low resource development environment we looked no further.&lt;/p&gt;
+&lt;p&gt;Yet the next step is that we run into missing features, such as the fact that every contact you create by default is&lt;br /&gt;
+set to private .. which really isn&#039;t productive for a CRM system where you want to be able to follow up on different&lt;br /&gt;
+customer and share information.  &lt;/p&gt;
+&lt;p&gt;So we tried figuring out what the database changes to do this in bulk would mean, surely it had to be a flag on the contact record .&lt;br /&gt;
+Wrong,  Zurmo uses an ORM for their database connectivity ...so their data model wasn&#039;t really trivial.&lt;/p&gt;
+&lt;p&gt;So we decided to look at the MySQL log file to figure out what db changes happened when updating the record&lt;br /&gt;
+Yes there&#039;s better approaches  but this one learned us a lot ..&lt;br /&gt;
+The procedure I followed was pointing my browser to the page where I wanted to switch the checkbox,&lt;br /&gt;
+log on to the mysql box,  set global logging on .  Clicked the checkbox and stopped global logging.&lt;/p&gt;
+&lt;p&gt;This gave me a log file with all the database actions required to make that one single change.&lt;br /&gt;
+I had to cross check a number of times ... the file created by this short and small action was.&lt;br /&gt;
+about 70K &lt;/p&gt;
+&lt;p&gt;Puzzled you start looking at the queries ...&lt;br /&gt;
+The query list was full with &quot;SELECT * FROM &quot; stanza&#039;s ..&lt;br /&gt;
+70K whopping K of queries that make your hair turn grey ... &lt;/p&gt;
+&lt;p&gt;I figured I&#039;d file a bug .. but I couldn&#039;t find  no bugtracker for Zurmo, only a forum (and forums are the most broken form of communication imvho) , yet the developers responded on Twitter.&lt;/p&gt;
+&lt;p&gt;The feedback wasn&#039;t really satisfying so we quickly decided that supporting this application was not something we would like to do..&lt;br /&gt;
+and abandonned it.. &lt;/p&gt;
+&lt;p&gt;The real question is  who needs a &lt;a href=&quot;http://dilbert.com/2013-05-19/&quot; rel=&quot;nofollow&quot;&gt;Gamified CRM&lt;/a&gt; anyhow...&lt;/p&gt;
+&lt;p&gt;PS.  So while finishing up this article on a late evening this week  I might not have put in clear enough that the generated logfile was 70Kb .. I fear some people misunderstood that it generated 70.000 queries.  Obviously a huge difference.  But still the log file shouldn&#039;t have been bigger han 1Kb There should have been 2-3 queries max (&lt;a href=&quot;https://github.com/KrisBuytaert/snippets/tree/master/zurmo&quot; title=&quot;https://github.com/KrisBuytaert/snippets/tree/master/zurmo&quot; rel=&quot;nofollow&quot;&gt;https://github.com/KrisBuytaert/snippets/tree/master/zurmo&lt;/a&gt;) &lt;/p&gt;
+&lt;p&gt;But imvho if the size of the queries you are generating is bigger than the page you are generating  you are most often doing it wrong.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/crm">crm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vtiger">vtiger</category>
+ <category domain="http://127.0.0.1:8080/blog/category/zurmo">zurmo</category>
+ <pubDate>Wed, 10 Jul 2013 20:08:58 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1083 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>#monitoringlove hackfest</title>
+ <link>http://127.0.0.1:8080/blog/monitoringlove-hackfest</link>
+ <description>&lt;p&gt;The age of #monitoringsucks is over, we&#039;re now transitioning into a #monitoringlove period.  &lt;/p&gt;
+&lt;p&gt;That however doesn&#039;t mean al the work is done, we still need to do a lot of work and a lot of people are working on a lot of stuff.&lt;/p&gt;
+&lt;p&gt;Therefore like last year we are opening up our offices again right after Fosdem for a #monitoringlove hackfest&lt;/p&gt;
+&lt;p&gt;That&#039;s right on february 4 and 5 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp.  In short  a #monitoringlove hackathon&lt;/p&gt;
+&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert) know if you want to join us in Antwerp.  We&#039;ll provide caffeine, wireless, chairs and some snacks. &lt;/p&gt;
+&lt;p&gt;Please register upfront at : &lt;a href=&quot;http://monitoringlove2013.eventbrite.com/&quot; rel=&quot;nofollow&quot;&gt;http://monitoringlove2013.eventbrite.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Obviously if you can&#039;t make it to Antwerp you can join the effort on ##monitoringsucks on Freenode or on Twitter.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.inuits.eu/contact&quot; rel=&quot;nofollow&quot;&gt;location will be Duboistraat 50 , Antwerp&lt;/a&gt;&lt;br /&gt;
+It is about 10 minutes walk from the Antwerp Central Trainstation&lt;br /&gt;
+Depending on Traffic Antwerp is about half an hour north of Brussels and there are hotels at walking distance from the venue.&lt;/p&gt;
+&lt;p&gt;Plenty of parking space is available on the other side of the Park &lt;/p&gt;
+&lt;p&gt;Read last years report &lt;a href=&quot;http://www.krisbuytaert.be/blog/we-didnt-fix-it&quot;&gt;http://www.krisbuytaert.be/blog/we-didnt-fix-it&lt;/a&gt;  to get an idea of what will happen...&lt;/p&gt;
+&lt;p&gt;PS.  Yes I`m trying to get another event of the ground the days before Fosdem but I`m still awaiting confirmation of the venue ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoringlove-hackfest#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/768">fosdem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Tue, 13 Nov 2012 20:54:24 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1074 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Open Source Certification , Friend or Foe</title>
+ <link>http://127.0.0.1:8080/blog/open-source-certification-friend-or-foe</link>
+ <description>&lt;p&gt;With 2 of the bigger Open Source projects I care about talking about certifications programs questions pop up again ... &lt;/p&gt;
+&lt;p&gt;Should we certify ourselves ? &lt;/p&gt;
+&lt;p&gt;So let me tell you about my experiences in getting Open Source related Certifications ..&lt;/p&gt;
+&lt;p&gt;Over a decade ago, (2001) when RedHat was still Redhat and not yet Fedora the company I was working for was about to partner with RedHat and needed to get a number of people certified for that. &lt;/p&gt;
+&lt;p&gt;So I took the challenge, I bored myselve to death during a 4 day RedHat fast track training and set out to do the exam the next day.   Obviosly I scored pretty well given my yearlong experience in the subject. Back then I was told that I scored the one but European Record on the exam which was actually held by another collegue (hey Ico) , our CTO however  was not amused when I told that I could have scored better but I didn&#039;t bother running a &lt;span class=&quot;geshifilter&quot;&gt;&lt;code class=&quot;text geshifilter-text&quot;&gt;chkconfig smb &amp;nbsp;on&lt;/code&gt;&lt;/span&gt;  since I didn&#039;t see the use in using windows fileshares in a unix environment (Yes I was young , we&#039;re all allowd to make stupid mistakes :)) &lt;/p&gt;
+&lt;p&gt;So I was certified,  we were expecting the requests to flow in en masse ... nothing happened... not a single customer request...  If I recall correctly we got 2 requests for certified engineers over the course of the following years. One was from a customer that wanted to have us do some junior level sysadmin work on their systems which we didn&#039;t care about, we proposed a more junior profile, but they insisted on having someone who was certified, The other one was from a Large institution that wanted certified people for their RedHat support, only to quickly learn that the budget they had planned for this project was about half the rate we usually charged ..&lt;/p&gt;
+&lt;p&gt;When RedHat introduced their certified Architect program my answer was, sure .. if you bring us the customer that will make the investment worthwhile , guess what..&lt;/p&gt;
+&lt;p&gt;My second experience with Open Source certification came a couple of years later with MySQL,  same story partnering etc, . only this time our trainer had put some focus on a couple of slides during the training (Hi Tobias)  and during the exam indeed one of those questions popped up,  The correct answer to &quot;What are the core values of MySQL AB&quot;  was &quot;We reply to email&quot; ,  I stood up and left the exam ...&lt;br /&gt;
+I ranted about this to a number of people including  Roland Bouman who back then was just starting on the MySQL (NDBD) Cluster certifciation track and I assisted him in making the book to study for that exam better.&lt;br /&gt;
+Once again .. pretty much no one asked for MySQL certification in Europe back in those days (2007  ?)  &lt;/p&gt;
+&lt;p&gt;I won&#039;t go deeper into discussing the Xen certification I got from Citrix, but it involved correcting slides from the presenters at the first European training.&lt;/p&gt;
+&lt;p&gt;Based on my experience with these certifications in Belgium/Europe you can see that I`m not a big fan of certifications  I have not seen a reason for me to certify yet&lt;/p&gt;
+&lt;p&gt;I actually think that noone within the Open Source community should be looking for certification,  we should be looking for people that are active in the community and that are contributing to projects.&lt;br /&gt;
+Unlike in the proprietary world where you have to cough up tons of money in order to get a license to play with a tool and learn itl In the open source world with projects such as both Drupal and Puppet, there are  absolutely no excuses for Junior people not to engage and prove themselves.    they have full access to anything they need, the only thing they need to do is want to get involved.&lt;/p&gt;
+&lt;p&gt;Sadly this world however is still full of  incompetent recruiters,  middlemarket agencies that will never understand this and will ask for cerftifications of some kind.   My fear is indeed that there will be a group of mediocre but certified developers swarming these growing markets at dumping rates and that the people with the real experience that have been involved in the communities for ages already will be the ones pulling the short straw. &lt;/p&gt;
+&lt;p&gt;Anyhow ... in just  a short couple of years everything will be fine again .. as by then my RHCE will be current again and the incompetent recruiters that need people that are RedHat 7 certified will start calling me  by the dozen.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/open-source-certification-friend-or-foe#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/certification">certification</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Sat, 25 Aug 2012 13:53:34 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1070 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>What is devops ? </title>
+ <link>http://127.0.0.1:8080/blog/what-devops</link>
+ <description>&lt;p&gt;I`m parsing the responses of the Deploying Drupal survey  I started a couple of months ago (more on that later) &lt;/p&gt;
+&lt;p&gt;One of the questions in the survey is &quot;What is devops&quot; , apparently when you ask a zillion people (ok ok, just a large bunch of Tweeps..),  you get a large amount of different answers ranging from totally wrong to  spot on.&lt;/p&gt;
+&lt;p&gt;So let&#039;s go over them  and see what we can learn from them .. &lt;/p&gt;
+&lt;p&gt;The most Wrong definition one can give is probably : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; A buzzword
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;I think we&#039;ve long passed the buzzword phase, definitely since it&#039;s not new, it&#039;s a new term we put to an existing practice.  A new term that gives a lot of people that were already doing devops , a common word to dicuss about it. Also lots of people still seem to think that devops is a specific role,  a job description , that it points to a specific group of people doing a certain job, it&#039;s not . Yes you&#039;ll see a lot of organisations  looing for  devops people,  and giving them a  devops job title.  But  it&#039;s kinda hard to be the only one doing devops in an organisation.&lt;/p&gt;
+&lt;p&gt;I described one of my current roles as Devops Kickstarter, it pretty much describes what I`m doing and it does contain devops :) &lt;/p&gt;
+&lt;p&gt;But devops also isn&#039;t &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The connection between operations and development.
+&lt;/li&gt;&lt;li&gt;people that keep it running
+&lt;/li&gt;&lt;li&gt;crazy little fellows who find beauty in black/white letters( aka code) rather than a view like that of Taj in a full moon light.
+&lt;/li&gt;&lt;li&gt;the combination of developer and operations into one overall functionality
+&lt;/li&gt;&lt;li&gt;The perfect mixture between a developer and a system engineer. Someone who can optimize and simplify certain flows that are required by developers and system engineers, but sometimes are just outside of the scope for both of them.
+&lt;/li&gt;&lt;li&gt;Proxy between developer and management
+&lt;/li&gt;&lt;li&gt;The people in charge of the build/release cycle and planning.
+&lt;/li&gt;&lt;li&gt;A creature, made from 8-bit cells, with the knowledge of a seasoned developer, the skillset of a trained systems engineer and the perseverence of a true hacker.
+&lt;/li&gt;&lt;li&gt;The people filling the gap between the developer world and the sysadmin world. They understand dev. issues and system issues as well. They use tools from both world to solve them.
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Or&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Developers looking at the operations of the company and how we can save the company time and money
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;And it&#039;s definitely not &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Someone who mixes both a sysop and dev duties
+&lt;/li&gt;&lt;li&gt; developers who know how to deploy and manage sites, including content and configuration.
+&lt;/li&gt;&lt;li&gt;I believe there&#039;s a thin line line between Ops and Devs where we need to do parts of each others jobs (or at least try) to reach our common goal..
+&lt;/li&gt;&lt;li&gt; A developer that creates and maintains environments tools to help other developers be more successful in building and  releasing new products
+&lt;/li&gt;&lt;li&gt; Developers who also do IT operations, or visa versa.
+&lt;/li&gt;&lt;li&gt; Software developers that support development teams and assist with infrastructure systems
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;So no,  developers that take on systems roles next to their own role and want to go for NoOps isn&#039;t feasable at all ..you really want collaboration, you want people with  different skillsets that (try to) understand eachoter and (try to) work together towards a common goal. &lt;/p&gt;
+&lt;p&gt;Devops is also not  just infrastructure as code &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Writing software to manage operations
+&lt;/li&gt;&lt;li&gt;system administrators with a development culture.
+&lt;/li&gt;&lt;li&gt;Bring code management to operations, automating system admin tasks.
+&lt;/li&gt;&lt;li&gt;The melding of the art of Systems Administration and the skill of development with a focus on automation. A side effect of devops is the tearing down of the virtual wall that has existed between SA&#039;s and developers.
+&lt;/li&gt;&lt;li&gt;Infrastructure as code.
+&lt;/li&gt;&lt;li&gt;Applying some of the development worlds techniques (eg source control, builds, testing etc) to the operations world.
+&lt;/li&gt;&lt;li&gt; Code for infrastructure
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Sure infastructure as code is a big part of the Automation part listed in CAMS, but just because you are doing puppet/chef doesn&#039;t mean you are doing devops.&lt;br /&gt;
+Devops is also not  just  continous delivery&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A way to let operations deploy sites in regular intervals to enable developers to interact on the systems earlier and make deployments easier.
+&lt;/li&gt;&lt;li&gt;Devops is the process of how you go from development to release.
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Obviously lots of people doing devops also often try to achieve Continuous delivery, but just like Infrastructure as Code it devops is not limited to that :) &lt;/p&gt;
+&lt;p&gt;But I guess the truth is somewhere in the definitions below ... &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;That sweet spot between &quot;operating system&quot; or platform stack and the application layer. It is wanting sys admins who are willing to go beyond the normal package installers, and developers who know how to make their platform hum with their application.
+&lt;/li&gt;&lt;li&gt; Breaking the wall between dev and ops in the same way agile breaks the wall between business and dev e.g. coming to terms with changing requirements, iterative cycles
+&lt;/li&gt;&lt;li&gt; Not being an arsehole!
+&lt;/li&gt;&lt;li&gt; Sysadmin best-practise, using configuration as code, and facilitating communication between sysadmins and developers, with each understanding and participating in the activities of the other.
+&lt;/li&gt;&lt;li&gt; Devops is both the process of developers and system operators working closer together, as well as people who know (or who have worked in) both development and system operations.
+&lt;/li&gt;&lt;li&gt; Culture collaboration, tool-chains
+&lt;/li&gt;&lt;li&gt; Removing barriers to communication and efficiency through shared vocabulary, ideals, and business objectives to to deliver value.
+&lt;/li&gt;&lt;li&gt; A set of principles and good practices to improve the interactions between Operations and Development.
+&lt;/li&gt;&lt;li&gt; Collaboration between developers and sysadmins to work towards more reliable platforms
+&lt;/li&gt;&lt;li&gt; Building a bridge between development and operations
+&lt;/li&gt;&lt;li&gt; The systematic process of building, deploying, managing, and using an application or group of applications such as a drupal site.
+&lt;/li&gt;&lt;li&gt; Devops is collaboration and Integration between Software Development and System Administration.
+&lt;/li&gt;&lt;li&gt; Devops is an emerging set of principles, methods and practices for communication, collaboration and integration between software development (application/software engineering) and IT operations (systems administration/infrastructure) professionals.[1] It has developed in response to the emerging understanding of the interdependence and importance of both the development and operations disciplines in meeting an organization&#039;s goal of rapidly producing software products and services.
+&lt;/li&gt;&lt;li&gt; bringing together technology (development) &amp;amp; content (management) closer together
+&lt;/li&gt;&lt;li&gt; Making developers and admins understand each other.
+&lt;/li&gt;&lt;li&gt; Communication between developers and systems folk.
+&lt;/li&gt;&lt;li&gt; a cultural movement to improve agility between dev and ops
+&lt;/li&gt;&lt;li&gt; The cultural extension of agile to bring operations into development teams.
+&lt;/li&gt;&lt;li&gt; Tight collaboration of developers, operations team (sys admins) and QA-team.
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;But I can only conclude that there is a huge amount of evangelisation that still needs to be done,  Lots of people still don&#039;t understand what devops is , or have a totally different view on it. &lt;/p&gt;
+&lt;p&gt;A number of technology conferences are and have taken up devops as a part of their conference program,  inviting experienced people from outside of their focus field to talk about how they improve the quality of life !&lt;/p&gt;
+&lt;p&gt;There is still a large number of devops related problems to solve,  so that&#039;s what I`ll be doing in 2012&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/what-devops#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/culture">culture</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Sat, 31 Dec 2011 15:59:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1056 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Fall , Winter and Spring Conference Season 2011 - 2012</title>
+ <link>http://127.0.0.1:8080/blog/fall-winter-and-spring-conference-season-2011-2012</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://www.jedi.be/blog/2011/09/06/what-conferences-to-attend/&quot;&gt;Patrick&lt;/a&gt; posted his upcoming conference schedule for the next couple of months.&lt;br /&gt;
+ as you can see there are a comple of overlapping conferences :)&lt;/p&gt;
+&lt;p&gt;Conferences I&#039;m speaking at or likely to attend are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The first week of October I`ll be in the Valley ,  I`ll be late for Jenkinsconf but I hope to pick up some events while I`m there.. suggestions are welcome , I`m also heading back to Europe earlier than planned so I will miss BadCamp :( ...
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://devopsdays.org/events/2011-goteborg/&quot;&gt;Devopsdays Goteborg, Sweden&lt;/a&gt; : &lt;i&gt;October 14,15&lt;/i&gt; - The yearly Europe devops event is happening in Goteborg this time. It&#039;s going to be really exciting this time , as the theme is inclusive. Eploring the boundaries of devops,  I`m once again in the organization of  this conference.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://t-dose.org/&quot;&gt;T-Dose 2011&lt;/a&gt;, The Technical Dutch Open Source Event, on 5 and 6 november 2011 , I will be talking again about my experiences with complex Puppet setups
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&quot;http://citconf.com/&quot;&gt;Citconf , London&lt;/a&gt;: &lt;i&gt;November 11-12&lt;/i&gt; - All you ever wanted to know about Continuous Integration. Period, registered, haven&#039;t booked flights yet.&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cloudcamp.org/ghent&quot;&gt;Cloudcamp Belgium&lt;/a&gt;: &lt;i&gt;November 21&lt;/i&gt; - I&#039;m looking forward to this year&#039;s event, as there will likely more practioners and less marketing folks.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.usenix.org/events/lisa11/tech/tech.html#Buytaert&quot;&gt;Lisa 2011&lt;/a&gt;, Boston, US,     I`m giving an Invited talk titled , Devops: The past and futre are here, It&#039;s just not evenly distributed (yet),  and I`ll be on a panel titled What Will Be HOt Next Year, really looking forward to this one :)
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://fosdem.org/&quot;&gt;Fosdem.org&lt;/a&gt; will take place on  4 and 5 February 2012 , and as every year  since it inception I&#039;ll be there &lt;/li&gt;
+&lt;li&gt;The UKUUG rebranded to &lt;a href=&quot;http://www.flossuk.org/Events/Spring2012/&quot;&gt;FlossUK&lt;/a&gt; , they are hosting their Annual Spring conference from 20th to 22nd March in Edinburgh , given their refound focus it will be even more interresting ! &lt;/li&gt;
+&lt;li&gt;And as announced earlier this week &lt;a href=&quot;http://loadays.org/&quot;&gt;Loadays.org&lt;/a&gt; will take place in Antwerp again this year on 31/3/2012 and 1/4/2012 , as the previous years I`m co organizing this conference&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And yes, I do work from time to time. Just that these conferences are a great way to capture and share new ideas. All worth it!&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/fall-winter-and-spring-conference-season-2011-2012#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/558">conferences</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Sat, 24 Sep 2011 12:53:29 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1050 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Upcoming 2011 Speaking Engagements</title>
+ <link>http://127.0.0.1:8080/blog/upcoming-2011-speaking-engagements</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://www.lenzg.net/&quot; rel=&quot;nofollow&quot;&gt;Lenz&lt;/a&gt; gave the good example so I`ll follow :)&lt;/p&gt;
+&lt;p&gt;Next weekend saturday  I`ll be giving a talk about devops at &lt;a href=&quot;http://brussels.startupweekend.org/speakers/&quot; rel=&quot;nofollow&quot;&gt;StartUp Weekend Brussels&lt;/a&gt;, from what I&#039;ve read so far  it promises to be an audience that needs the talk, &lt;/p&gt;
+&lt;p&gt;The week after I`ll be speaking at the &lt;a href=&quot;http://bxl2011.drupaldays.org/node/233&quot; rel=&quot;nofollow&quot;&gt;DrupalDevDays&lt;/a&gt;,  again about devops , however this time with a touch of Drupal  ,  giving a devops talk at Devoxx last year to a Java audience learned me that the devops evangelist  need to  go outside of their usual  conference audiences and als talk to the people that are usually in the other silos. &lt;/p&gt;
+&lt;p&gt;Next march   I`ll be speaking at the &lt;a href=&quot;http://www.ukuug.org/events/spring2011/programme/&quot; rel=&quot;nofollow&quot;&gt;UKUUG spring conference in Leeds&lt;/a&gt;  this time about my experiences on High Availability with Pacemaker&lt;/p&gt;
+&lt;p&gt;And who knows I might squeeze in a talk at &lt;a href=&quot;http://loadays.org/&quot; rel=&quot;nofollow&quot;&gt;Load&lt;/a&gt; this year also .. &lt;/p&gt;
+&lt;p&gt;If you are around at one of these confs and you want to talk Devops, Clustering, sipx or just have a beer .. don&#039;t hesitate !  There&#039;s already &lt;a href=&quot;http://twitter.com/#!/jpmens/status/28483625066430464&quot; rel=&quot;nofollow&quot;&gt;plenty of people&lt;/a&gt; promising me beers , and some even sushi :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/upcoming-2011-speaking-engagements#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/768">fosdem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/pacemaker">pacemaker</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/427">ukuug</category>
+ <pubDate>Sun, 23 Jan 2011 22:04:15 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1030 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Appliance or Not Appliance</title>
+ <link>http://127.0.0.1:8080/blog/appliance-or-not-appliance</link>
+ <description>&lt;p&gt;That&#039;s the question &lt;a href=&quot;http://blog.rootshell.be/2011/01/05/security-diy-or-plugnplay/&quot; rel=&quot;nofollow&quot;&gt;Xavier&lt;/a&gt; asks in his blog entry titled&lt;br /&gt;
+Security: DIY or Plug’n&#039;Play&lt;/p&gt;
+&lt;p&gt;To me the answer is simple,   most of the appliances I ran into so far have no way of configuring them apart from the ugly webgui they ship with their device.  That means that I can&#039;t integrate them with the configuration management framework I have in place for the rest of the infrastructure.      There is no way to automatically modify e.g firewall rules together with the relocation of a service which does happen automatically, and there is always some kind of manual interaction required.    Applicances tend to sit on a island,  either stay un managed ( be honest when&#039;s the last time you upgraded the firmware of that terminal server ? ) , or take a lot of additional efort to manage manually.  They require yet another set of tools than the set you are already using to manage your network.&lt;br /&gt;
+They don&#039;t integrate with your backup strategy,  and don&#039;t tell me they all come with perfect MIB&#039;s.&lt;/p&gt;
+&lt;p&gt;There&#039;s other arguments one could bring up against appliances, obviously people can spread fud about some organisation alledgedly paying people to put backdoors in certain operation systems.. so why would they not pay people to put backdoors in appliances , they don&#039;t even need to hide them in there ..  but my main concern is manageability .. and only a  web gui to manage the box to me just means that the &lt;a href=&quot;http://queue.acm.org/detail.cfm?id=1921361&quot; rel=&quot;nofollow&quot;&gt;vendor&lt;/a&gt; hates me and dooesn&#039;t want my business&lt;/p&gt;
+&lt;p&gt;A good Appliance (either security or other type) needs to provide me an API that I can use to configure it,  in all other cases I prefer a DIY platform, as I can keep it in line with all my other tools, config mgmtn, deployment, upgrade strategies etc.&lt;/p&gt;
+&lt;p&gt;Mabye a last question for Xavier to finish my reply ... I`m wondering how Xavier thinks he kan achieve High-availability by using a Virtual environment  for Virtual Appliances that are not cluster aware using the virtual environment.    A fake comfortable feeling of higher availability , maybe..  but High Availability  that I&#039;d like to see.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/appliance-or-not-appliance#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/775">automation</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/632">infrastructure</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/814">security</category>
+ <pubDate>Wed, 12 Jan 2011 20:28:58 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1028 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Fedora Annoyancies Resolved (Hopefully)</title>
+ <link>http://127.0.0.1:8080/blog/fedora-annoyancies-resolved-hopefully</link>
+ <description>&lt;p&gt;A couple of weeks ago I ranted about being able to crash about any available music player on Fedora,  and the gazillion bugs I filed for that ..&lt;/p&gt;
+&lt;p&gt;At last the  the problem is solved, as mentioned in  &lt;a href=&quot;https://bugzilla.redhat.com/show_bug.cgi?id=657971#c17&quot; rel=&quot;nofollow&quot;&gt;https://bugzilla.redhat.com/show_bug.cgi?id=657971#c17&lt;/a&gt;&lt;br /&gt;
+this is most probably a bug in ffmpeg which is provided by rpmfusion. and which is solved by installing gstreamer-plugins-ugly&lt;/p&gt;
+&lt;p&gt;At least it works for me :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/fedora-annoyancies-resolved-hopefully#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/fedora">fedora</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ffmpeg">ffmpeg</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/rhytmbox">rhytmbox</category>
+ <pubDate>Fri, 07 Jan 2011 20:39:36 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1027 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Guest Post Season</title>
+ <link>http://127.0.0.1:8080/blog/guest-post-season</link>
+ <description>&lt;p&gt;Apparently December is the month where everybody starts writing guest posts for other blogs.&lt;/p&gt;
+&lt;p&gt;Earlier this month I wrote an article with the title of this blog for Sysadvent ,&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;It&#039;s a sysadmin relative of the Perl Advent Calendar: One article for each day of December, ending on the 25th article. With the goals of of sharing, openness, and mentoring, we aim to provide great articles about systems administration topics written by fellow sysadmins&lt;br /&gt;
+&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;My article is &lt;a href=&quot;http://sysadvent.blogspot.com/2010/12/day-8-everything-is-dns-problem.html&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;, but there&#039;s plenty more other articles written about a variety of topics, such as chef, tcpdump , how ls works, cucumber and Devops.&lt;/p&gt;
+&lt;p&gt;On the other side, Matthias over at Agile Web Development and Operations is hosting a series on Devops where lots of Devops Advocates and Evangelists are having their say about Devops ...&lt;/p&gt;
+&lt;p&gt;My entry about the Challenges the Devops Crowd faces was put online &lt;a href=&quot;http://www.agileweboperations.com/challenges-for-the-devops-crowd&quot; rel=&quot;nofollow&quot;&gt;yesterday&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/guest-post-season#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/chef">chef</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/437">dnsproblem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/sysadvent">sysadvent</category>
+ <pubDate>Sat, 18 Dec 2010 21:23:39 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1025 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

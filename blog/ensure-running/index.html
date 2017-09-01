@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/ensure-running by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:27:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ensure Running | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Ensure Running</h2>
+<div class="content">
+<div id="node-1034" class="node  blog">
+<div class="content"><p>Has anyone noticed that pretty much every puppet module one finds on the internet by default enables the service they try to configure in the module</p>
+<p>When looking at it from a single machine point of view it makes sense to include the module , have it configure your service  and directly enable it by default.</p>
+<p>So I started wondering .. isn't there anybody out there who is building clusters ?   Where services have to configured on multiple nodes but should NOT be running acitvely on all nodes by default because there is an external tool which manages that for you (Pacemaker framework eg.)</p>
+<p>Agreed it's a small patch to get the functionality you want , but it brings an extra overhead when one upgrades the modules etc.</p>
+<p>So if it doesn't bother you  please split your puppet module in 2 parts.. one you call to configure the service,  another which you call to enable the service , if you want to.</p>
+<p>thnx !</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Thu, 02/10/2011 - 21:20</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_475"><a href="../taxonomy/term/475/index.html" rel="tag" title="">heartbeat</a></li>
+<li class="taxonomy_term_562"><a href="../taxonomy/term/562/index.html" rel="tag" title="">linux-ha</a></li>
+<li class="taxonomy_term_1438"><a href="../category/managed/index.html" rel="tag" title="">managed</a></li>
+<li class="taxonomy_term_1436"><a href="../category/modules/index.html" rel="tag" title="">modules</a></li>
+<li class="taxonomy_term_439"><a href="../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1437 last"><a href="../category/unmanaged/index.html" rel="tag" title="">unmanaged</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-4241"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="https://github.com/camptocamp" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/2d2f7a7f27009d80cb876111b3ddbbb6.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Marc Fournier&#039;s picture" title="Marc Fournier&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4241">#1</a>
+    <span class="author"><a href="https://github.com/camptocamp">Marc Fournier</a></span>  : <span class="title"><a href="index.html#comment-4241" class="active">I put ensure=&gt;undef in the cluster management module</a></span>
+  </h3>
+  <div class="content"><p>I got around this issue by creating classes in my pacemaker module, which take care of disabling given services at boot time.</p>
+<p>The general case (ensure=&gt;running) is defined in the service's module (for instance the apache module), because we reasonably almost always want services to be started at boot time and be running by default. When a special need arises (such as services managed by pacemaker), the problem belongs to whatever component triggered it (namely pacemaker) and has to be handled there.</p>
+<p>This basically boils down to:</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">class pacemaker::apache inherits apache {</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  Service[&quot;apache&quot;] {</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    ensure =&gt; undef,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    enable =&gt; false,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  }</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">}</div></li></ol></pre></div></p>
+<p>As a side note, for the specific case of pacemaker, in some cases, you can use the <a href="http://www.clusterlabs.org/doc/crm_cli.html#cmdhelp_configure_clone" rel="nofollow">clone resource</a>, which allows 2 instances of the same primitive to run simultaneously on 2 different nodes. For a webserver for example, it probably doesn't matter if it is also running on your failover node. For a R/W database, it may not be possible, of course...</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">primitive svc_apache ocf:heartbeat:apache ...</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">clone clone_apache svc_apache meta clone-max=2 clone-node-max=1</div></li></ol></pre></div></p>
+<p>Cheers,<br />
+Marc</p>
+<p>PS: thanks for the lift to the airport last week-end ;-)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/11/2011 - 16:52</div>
+  </div>
+<a id="comment-4239"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.spikelab.org/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/1b64d6d59dbb35e2a71009a3e259ce72.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Spike&#039;s picture" title="Spike&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4239">#2</a>
+    <span class="author"><a href="http://www.spikelab.org/">Spike</a></span>  : <span class="title"><a href="index.html#comment-4239" class="active">Inspired by example42 module guidelines</a></span>
+  </h3>
+  <div class="content"><p>Despite not being fully consistent across modules, the example42 folks have a rather good set of guidelines in how they structure their modules that solve this problem. Namely each module should implement the following subclasses:<br />
+* ::install<br />
+* ::config<br />
+* ::enable<br />
+* ::disableboot</p>
+<p>This seems to be good practice in general and I'm trying to standardize on it.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/11/2011 - 13:32</div>
+  </div>
+<a id="comment-4238"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/a345a509178744dda21f75b7ca138ffd.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="loupgaroublond&#039;s picture" title="loupgaroublond&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4238">#3</a>
+    <span class="author"><span class="anonymous" title="not verified">loupgaroublond</span></span>  : <span class="title"><a href="index.html#comment-4238" class="active">Maybe i&#039;m not as experienced</a></span>
+  </h3>
+  <div class="content"><p>Maybe i'm not as experienced with 'clustered' software, but everything we run in our shop comes up running on bootup. So from that perspective, i disagree. We cluster and scale by not using any resource management framework.</p>
+<p>Now Al's on to something by having a disabled subclass for everything. Still, it's a real mess to have to implement this all by hand, it's really just busy work for the module devs.</p>
+<p>What you really want is a system that delivers the configs and 'just works' for the small scale. When you need to introduce something larger scale, you can use something to apply triggers and take one time actions on said servers. We have to look into it ourselves, but i think you want something like mcollective.</p>
+<p>Above all, you don't want to break the workflow for newcomers. It should still just work.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/11/2011 - 09:51</div>
+  </div>
+<div class="indented"><a id="comment-4240"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.example42.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/3b9afc574837c445c9550f035135f043.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Al&#039;s picture" title="Al&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4240">#4</a>
+    <span class="author"><a href="http://www.example42.com/">Al</a></span>  : <span class="title"><a href="index.html#comment-4240" class="active">Modules templating is the (my) solution</a></span>
+  </h3>
+  <div class="content"><p>loupgaroublond, actually all the (newer) modules I do are based on a template called foo, so for me creating a full featured module with all the frills I want is , often, just a matter of running a script and changing only the params.pp class. Actually generally various other modifications are needed to comply to specific applications, but all these disable, absent, disableboot (but also debug, monitor, backup, firewall and so on) subclasses come out automatically and I hardly touch them in a newly generated module.</p>
+<p>Using qualified variables ($modulename::params::variable) and a params.pp class (or whatever name you might give to it) is the key to modules' standardization and quick cloning (kudos to Dan Bode for having convinced me about the usefulness of a params.pp class).</p>
+<p>Regards,<br />
+Al</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/11/2011 - 14:36</div>
+  </div>
+</div><a id="comment-4236"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.masterzen.fr/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/847d6074897a4fcf9ce929ca71ea7914.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="masterzen&#039;s picture" title="masterzen&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4236">#5</a>
+    <span class="author"><a href="http://www.masterzen.fr/">masterzen</a></span>  : <span class="title"><a href="index.html#comment-4236" class="active">Yes, you&#039;re completely right.</a></span>
+  </h3>
+  <div class="content"><p>Yes, you're completely right. I'm doing like Al since I started configuring clusters with puppet :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/11/2011 - 09:27</div>
+  </div>
+<a id="comment-4235"></a>
+<div id="comment-6" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.example42.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/3b9afc574837c445c9550f035135f043.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Al&#039;s picture" title="Al&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-4235">#6</a>
+    <span class="author"><a href="http://www.example42.com/">Al</a></span>  : <span class="title"><a href="index.html#comment-4235" class="active">Agree</a></span>
+  </h3>
+  <div class="content"><p>Nice point, and actually I've faced similar situations.<br />
+In my modules if you include the base class (include apache) you enable the service, but I alwyas provide also two subclasses:<br />
+apache::disable (ensure =&gt; stopped, enable =&gt; false)<br />
+apache::disableboot (enable =&gt; false)<br />
+This second case is typical for clusters where you don't want to manage the running status of the service and don' want to start it at boot (the cluster does it).<br />
+Maybe it's not the best naming convention even, but does what we need.</p>
+<p>cu<br />
+Al</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/11/2011 - 00:53</div>
+  </div>
+<div class="indented"><a id="comment-4237"></a>
+<div id="comment-7" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-4237">#7</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-4237" class="active">overlooked</a></span>
+  </h3>
+  <div class="content"><p>Hmm... that is farily well hidden in a separate file :)<br />
+I hadn't even noticed till you mentionned it that there is a separate disable.pp  in some of your modules.</p>
+<p>As for naming  , dare i suggest "unmanaged" .. as the service probably should be enabled, just not by puppet ..</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/11/2011 - 09:43</div>
+  </div>
+</div></div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/ensure-running by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:27:36 GMT -->
+</html>

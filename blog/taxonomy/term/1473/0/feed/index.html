@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - collectd</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1473/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Graphite, JMXTrans, Ganglia, Logster, Collectd,  say what  ? </title>
+ <link>http://127.0.0.1:8080/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what</link>
+ <description>&lt;p&gt;Given that @patrickdebois is working on improving data collection I thought it  would be a good idea to describe the setup I currently have hacked together.&lt;/p&gt;
+&lt;p&gt;(Something which can be used as a starting point to improve stuff, and I have to write documentation anyhow) &lt;/p&gt;
+&lt;p&gt;I currently have 3 sources ,  and  one target, which will  eventually expand to at least another target and most probably more sources too.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/VagrantGraphite.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The 3 sources are basically  typical system data which I collect using collectd,  However I`m using collectd-carbon from &lt;a href=&quot;https://github.com/indygreg/collectd-carbon.git&quot; title=&quot;https://github.com/indygreg/collectd-carbon.git&quot;&gt;https://github.com/indygreg/collectd-carbon.git&lt;/a&gt; to send data to Graphite.&lt;/p&gt;
+&lt;p&gt;I`m parsing the Apache and Tomcat logfiles with logster , currently sending them only to Graphite, but logster has an option to send them to Ganglia too.&lt;/p&gt;
+&lt;p&gt;And I`m using JMXTrans to collect JMX data from Java apps that have this data exposed and send it to Graphite.  (JMXTrans also comes with a Ganglia target option) &lt;/p&gt;
+&lt;p&gt;Rather than going in depth over the config it&#039;s probably easier to point to a Vagrant box I build &lt;a href=&quot;https://github.com/KrisBuytaert/vagrant-graphite&quot; title=&quot;https://github.com/KrisBuytaert/vagrant-graphite&quot;&gt;https://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt; which brings up a machine that does pretty much all of this  on localhost.&lt;/p&gt;
+&lt;p&gt;Obviously it&#039;s still a work in progress and lots of classes will need to be parametrized and cleaned up.   But it&#039;s a working setup,  and not just on my machine .. &lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/collectd">collectd</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jmxtrans">jmxtrans</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logster">logster</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <pubDate>Tue, 03 Jan 2012 20:46:47 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1058 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>#monitoringsucks and we&#039;ll fix it !</title>
+ <link>http://127.0.0.1:8080/blog/monitoringsucks-and-well-fix-it</link>
+ <description>&lt;p&gt;If you are hacking on monitoring solutions, and want to talk to your peers solving the problem&lt;br /&gt;
+Block the monday and tuesday after fosdem in your calendar !&lt;/p&gt;
+&lt;p&gt;That&#039;s right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp&lt;/p&gt;
+&lt;p&gt;In short  a #monitoringsucks hackathon&lt;/p&gt;
+&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp&lt;/p&gt;
+&lt;p&gt;Obviously if you can&#039;t make it to Antwerp you can join the effort on ##monitoringsucks on Freenode or on Twitter.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.inuits.eu/contact&quot; rel=&quot;nofollow&quot;&gt;location will be Duboistraat 50 , Antwerp&lt;/a&gt;&lt;br /&gt;
+It is about 10 minutes walk from the Antwerp Central Trainstation&lt;br /&gt;
+Depending on Traffic Antwerp is about half an hour north of Brussels and there are hotels at walking distance from the venue.&lt;/p&gt;
+&lt;p&gt;Plenty of parking space is available on the other side of the Park&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoringsucks-and-well-fix-it#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/collectd">collectd</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/icinga">icinga</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/category/munin">munin</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/890">nagios</category>
+ <category domain="http://127.0.0.1:8080/blog/category/rrd">rrd</category>
+ <pubDate>Tue, 03 Jan 2012 18:23:00 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1057 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

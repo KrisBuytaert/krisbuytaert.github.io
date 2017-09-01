@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - mollom</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/858/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Mollom and Views</title>
+ <link>http://127.0.0.1:8080/blog/mollom-and-views</link>
+ <description>&lt;p&gt;You might have noticed that this blog stopped accepting comments about a month ago.. well. stopped accepting is a big word.. I was still accepting comments, only they were never submitted to the database and after entering a comment to my blog people  ended up on a white page.&lt;/p&gt;
+&lt;p&gt;So upon returning from holliday I set out to debug the issue together with one of our Inuits Drupal geeks and quickly ran into the following error.&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;PHP Fatal error:  Call to a member function has_more_records() on a non-object in /somepath/modules/views/plugins/views_plugin_display.inc on line 1992, referer: http://www.krisbuytaert.be/blog/comment/reply/1014&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;So apparently my veasion of views  6.x-3.0-alpha3 didn&#039;t really like to play with Mollom,&lt;br /&gt;
+I downgraded views again to 6.x-2.11  and Mollom started showing its Captcha&#039;s etc  again .&lt;/p&gt;
+&lt;p&gt;So apart from wondering how I ended up installing that alpha3 version (I`m sure Drush didn&#039;t do that), all is back to normal. and you should be able to comment on this blog again&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/mollom-and-views#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/793">comments</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/858">mollom</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/485">php</category>
+ <category domain="http://127.0.0.1:8080/blog/category/views">views</category>
+ <pubDate>Tue, 03 Aug 2010 22:06:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1015 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Over 2 years of #mollom satisfaction</title>
+ <link>http://127.0.0.1:8080/blog/over-2-years-mollom-satisfaction</link>
+ <description>&lt;p&gt;Following up on &lt;a href=&quot;http://mostrey.be/two-years-mollom-satisfaction&quot;&gt;Wim&lt;/a&gt;&#039;s  example &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/MollomRules.png&quot; /&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/over-2-years-mollom-satisfaction#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/557">buytaert</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/858">mollom</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Sat, 22 May 2010 18:53:05 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1004 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Dear Mollom,</title>
+ <link>http://127.0.0.1:8080/blog/dear-mollom</link>
+ <description>&lt;p&gt;What I would like as a feature from Santa,  &lt;/p&gt;
+&lt;p&gt;I would like to be able to report a comment as URL Spam , you know the case where the content of a comment is perfectly OK, but the URL the commenter uses is a link to a NSF, pure spamming or absolutely unrelated site.&lt;/p&gt;
+&lt;p&gt;There&#039;s nofollow etc , but to keep my site clean I&#039;d have to report these commen&lt;br /&gt;
+ts as spam, however when you start analysing the content of the message and comparing that content to other posts you will eventually get false positives.&lt;/p&gt;
+&lt;p&gt;So a small option &quot;URL Link is spam, content is acceptable&quot; would probably help all of us&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/dear-mollom#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/858">mollom</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/511">spam</category>
+ <pubDate>Sat, 14 Nov 2009 09:33:22 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">959 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>It&#039;s Ham dammit ! </title>
+ <link>http://127.0.0.1:8080/blog/node/706</link>
+ <description>&lt;p&gt;Seems like my old spam module and Mollom were dissagreeing on comment spams.&lt;/p&gt;
+&lt;p&gt;Comment&#039;s that I had already approved  were still being deleted by the spam module during it&#039;s cron run.&lt;/p&gt;
+&lt;p&gt;spam_delete_comment: deleted comment &quot;openSUSEEE&quot;  &lt;/p&gt;
+&lt;p&gt;I just noticed this yesterday with 2-3 comments that disappeared.&lt;br /&gt;
+So the old Spam module is gone.. it&#039;s just Mollom and Moderation now ..&lt;br /&gt;
+If one of your comments is gone , please post it again :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/706#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/858">mollom</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/511">spam</category>
+ <pubDate>Wed, 06 Aug 2008 09:16:10 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">706 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Losing an argument</title>
+ <link>http://127.0.0.1:8080/blog/node/633</link>
+ <description>&lt;p&gt;About 2 months ago I sent a mail to &lt;a href=&quot;http://buytaert.net/&quot; rel=&quot;nofollow&quot;&gt;Dries&lt;/a&gt;,  telling him&lt;br /&gt;
+&lt;cite&gt;&lt;br /&gt;
+I`m losing an argument with &lt;a href=&quot;http://dag.wieers.com/blog/content/spamback&quot; rel=&quot;nofollow&quot;&gt;Dag&lt;/a&gt; , because I can&#039;t tell him how great Mollom is :( &lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Luckily Dries contacted Dag ,and now we can tell the world..  Mollom is great,   Mollom allowed me to open up my comments &lt;/p&gt;
+&lt;p&gt;Now if only I could do the same for trackbacks :)&lt;/p&gt;
+&lt;p&gt;It&#039;s funny how lots of &lt;a href=&quot;http://www.linkedin.com/pub/1/64a/281&quot; rel=&quot;nofollow&quot;&gt;oldskool&lt;/a&gt; &lt;a href=&quot;http://www.linkedin.com/in/lorenzbogaert&quot; rel=&quot;nofollow&quot;&gt; demoscene&lt;/a&gt; people tend to be involved in different interesting startups. &lt;a href=&quot;http://www.krisbuytaert.be/scene_articles/aasm95.html&quot;&gt;Back in the ninetees&lt;/a&gt; we were travelling Europe to party at our favourite demo events and now we are all meeting again.  You&#039;ll also recognize Uncle Bob, Emperor and others in &lt;a href=&quot;http://www.krisbuytaert.be/scene_articles/&quot;&gt;this bunch of antique articles&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It was &lt;a href=&quot;http://schrauwen.info/benjamin/&quot; rel=&quot;nofollow&quot;&gt;Uncle Bob&lt;/a&gt; who introduced me to Dries  about a decade ago, at  the sunny terrace of &lt;cite&gt;Den Hill&lt;/cite&gt; iirc&lt;/p&gt;
+&lt;p&gt;It&#039;s a small world ..  and it ain&#039;t growing bigger ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/633#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/557">buytaert</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/522">dag</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/859">demoscene</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/853">dries</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/858">mollom</category>
+ <pubDate>Tue, 01 Apr 2008 19:06:44 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">633 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

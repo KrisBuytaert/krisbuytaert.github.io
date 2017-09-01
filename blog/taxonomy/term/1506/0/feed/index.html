@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - vtiger</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1506/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Using broken development frameworks , or why we don&#039;t use Zurmo</title>
+ <link>http://127.0.0.1:8080/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo</link>
+ <description>&lt;p&gt;People often wonder why DBA&#039;s used to hate developers, and with DBA&#039;s also the System Engineers,&lt;br /&gt;
+(note that I just expanded devops by adding dba&#039;s to the picture..) &lt;/p&gt;
+&lt;p&gt;So let me tell you a story .. &lt;/p&gt;
+&lt;p&gt;A couple of weeks ago one of our customers wanted to start experimenting with a new type of CRM.  A gamified CRM.&lt;br /&gt;
+Zurmo ... &lt;/p&gt;
+&lt;p&gt;So we set this thing up in a dev environment and started playing with it , while at first it looks nice ..&lt;br /&gt;
+the application  actually felt pretty slow.. however given that is a low resource development environment we looked no further.&lt;/p&gt;
+&lt;p&gt;Yet the next step is that we run into missing features, such as the fact that every contact you create by default is&lt;br /&gt;
+set to private .. which really isn&#039;t productive for a CRM system where you want to be able to follow up on different&lt;br /&gt;
+customer and share information.  &lt;/p&gt;
+&lt;p&gt;So we tried figuring out what the database changes to do this in bulk would mean, surely it had to be a flag on the contact record .&lt;br /&gt;
+Wrong,  Zurmo uses an ORM for their database connectivity ...so their data model wasn&#039;t really trivial.&lt;/p&gt;
+&lt;p&gt;So we decided to look at the MySQL log file to figure out what db changes happened when updating the record&lt;br /&gt;
+Yes there&#039;s better approaches  but this one learned us a lot ..&lt;br /&gt;
+The procedure I followed was pointing my browser to the page where I wanted to switch the checkbox,&lt;br /&gt;
+log on to the mysql box,  set global logging on .  Clicked the checkbox and stopped global logging.&lt;/p&gt;
+&lt;p&gt;This gave me a log file with all the database actions required to make that one single change.&lt;br /&gt;
+I had to cross check a number of times ... the file created by this short and small action was.&lt;br /&gt;
+about 70K &lt;/p&gt;
+&lt;p&gt;Puzzled you start looking at the queries ...&lt;br /&gt;
+The query list was full with &quot;SELECT * FROM &quot; stanza&#039;s ..&lt;br /&gt;
+70K whopping K of queries that make your hair turn grey ... &lt;/p&gt;
+&lt;p&gt;I figured I&#039;d file a bug .. but I couldn&#039;t find  no bugtracker for Zurmo, only a forum (and forums are the most broken form of communication imvho) , yet the developers responded on Twitter.&lt;/p&gt;
+&lt;p&gt;The feedback wasn&#039;t really satisfying so we quickly decided that supporting this application was not something we would like to do..&lt;br /&gt;
+and abandonned it.. &lt;/p&gt;
+&lt;p&gt;The real question is  who needs a &lt;a href=&quot;http://dilbert.com/2013-05-19/&quot; rel=&quot;nofollow&quot;&gt;Gamified CRM&lt;/a&gt; anyhow...&lt;/p&gt;
+&lt;p&gt;PS.  So while finishing up this article on a late evening this week  I might not have put in clear enough that the generated logfile was 70Kb .. I fear some people misunderstood that it generated 70.000 queries.  Obviously a huge difference.  But still the log file shouldn&#039;t have been bigger han 1Kb There should have been 2-3 queries max (&lt;a href=&quot;https://github.com/KrisBuytaert/snippets/tree/master/zurmo&quot; title=&quot;https://github.com/KrisBuytaert/snippets/tree/master/zurmo&quot; rel=&quot;nofollow&quot;&gt;https://github.com/KrisBuytaert/snippets/tree/master/zurmo&lt;/a&gt;) &lt;/p&gt;
+&lt;p&gt;But imvho if the size of the queries you are generating is bigger than the page you are generating  you are most often doing it wrong.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/crm">crm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/vtiger">vtiger</category>
+ <category domain="http://127.0.0.1:8080/blog/category/zurmo">zurmo</category>
+ <pubDate>Wed, 10 Jul 2013 20:08:58 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1083 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

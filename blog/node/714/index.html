@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/714 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:24:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SELinux is Dead ! | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a> &#8594; <a href="../../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">SELinux is Dead !</h2>
+<div class="content">
+<div id="node-714" class="node  blog">
+<div class="content"><p>No really it isn't but so isn't AppArmor, altough <a href="http://etbe.coker.com.au/2008/08/23/apparmor-is-dead/">Russel</a> claims it is. Weird how he totally rewords the <a href="http://news.opensuse.org/2008/08/20/opensuse-to-add-selinux-basic-enablement-in-111/">OpenSuse statements</a></p>
+<p>From "While our customer experience shows that AppArmor is the best solution for the vast majority of users, applications, and use cases, we want to give all of our users the ability to choose the security framework that’s appropriate for their respective environments and needs. We continue to enable AppArmor as our default Host Intrusion Prevention System......"</p>
+<p>To "The next step will be to make SE Linux the default and AppArmor the one that exists in a repository, and the step after that will be to remove AppArmor."</p>
+<p>Given <a href="https://help.ubuntu.com/community/AppArmor">Ubuntu's AppArmor adoption</a> I don't see it die that fast ...</p>
+<p>The real problem is who uses AppArmor or SELinux,  sadly most of the installations I run into have none of both technologies enabled.  Most Admins overrule their favourite distro's default config. The reason is pretty obvious as <a href="http://www.krisbuytaert.be/blog/node/335">I've</a> heard <a href="http://www.sxw.org.uk/lighting/">a lot of</a> <a href="http://en.wikipedia.org/wiki/SELinux#Quotes">intelligent</a> <a href="http://thunk.org/tytso/">people</a> say "Life Is Too short For SELinux"</p>
+<p>So I wonder, how can you die if you never were really alive ?</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Mon, 08/25/2008 - 21:05</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1002 first"><a href="../../taxonomy/term/1002/index.html" rel="tag" title="">apparmor</a></li>
+<li class="taxonomy_term_461"><a href="../../taxonomy/term/461/index.html" rel="tag" title="">open source</a></li>
+<li class="taxonomy_term_621"><a href="../../taxonomy/term/621/index.html" rel="tag" title="">opensuse</a></li>
+<li class="taxonomy_term_1001"><a href="../../taxonomy/term/1001/index.html" rel="tag" title="">selinux</a></li>
+<li class="taxonomy_term_916 last"><a href="../../taxonomy/term/916/index.html" rel="tag" title="">ubuntu</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3189"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/3942f0a2833c6ca2ca15e83570b42ed8.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="neo&#039;s picture" title="neo&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3189">#1</a>
+    <span class="author"><span class="anonymous" title="not verified">neo</span></span>  : <span class="title"><a href="index.html#comment-3189" class="active">Ubuntu adopting something is</a></span>
+  </h3>
+  <div class="content"><p>Ubuntu adopting something is no guarantee of it's success since they have practically no upstream developers. Novell has a long long history of dropping technologies and later following Red Hat. Switching to GNOME in SLES, dropping reiserfs support etc etc. Make yourself aware of what Novell has been upto in the past and Rusell's reasoning becomes more apparent.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/26/2008 - 05:05</div>
+  </div>
+<a id="comment-3188"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://blog.ghosty.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/46d37333e79c30f899ed61dd2a5d84e5.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Ghosty&#039;s picture" title="Ghosty&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3188">#2</a>
+    <span class="author"><a href="http://blog.ghosty.be/">Ghosty</a></span>  : <span class="title"><a href="index.html#comment-3188" class="active">Thats just because they are lazy</a></span>
+  </h3>
+  <div class="content"><p>Yes I admit in the beginning I was also that lazy and just turned off SELinux.<br />
+Since I work in secure environments we just made a policy of it never to turn off SELinux (well except in testing if you want to debug some SELinux things ... It's not that hard to make your own modules for SELinux, so in our company you build an SELinux module for every package that requires extra privileges. It's a 5 min job so it won't kill you ...</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/26/2008 - 00:12</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/714 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:24:37 GMT -->
+</html>

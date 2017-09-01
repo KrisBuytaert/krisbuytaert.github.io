@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/checkgraphite by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:25:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>check_graphite | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">check_graphite</h2>
+<div class="content">
+<div id="node-1076" class="node  blog">
+<div class="content"><p>During my Puppetcamp Gent talk last week, I explained how to get alerts based on trends from graphite. A number of people asked ,e how to do that.</p>
+<p>First lets quickly explain why you might want to do that .<br />
+Sometimes you don't care about the current value of a metric..as an example take  a Queing system .. there is no problem if there are messages added to the queue, not even if there are a lot of messages on the queue,  there might however be a problem if  over a certain period the number of messages on a queue stays to high.</p>
+<p>In this example I`m monitoring the queue length of a hornetq setup which is exposed by JMX.<br />
+On the server runnnig HornetQ I have an exported resource that tells the JMXTrans server to send the  MessageCount  to graphite<br />
+(you could also do this using collectd plugins) </p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">@@jmxtrans::graphite {&quot;MessageCountMonitor-${::fqdn}&quot;:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    jmxhost =&gt; hiera('hornetqserver'),</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">            jmxport =&gt; &quot;5446&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">            objtype =&gt; 'org.hornetq:type=Queue,*',</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">            attributes =&gt;  '&quot;MessageCount&quot;,&quot;MessagesAdded&quot;,&quot;ConsrCount&quot;',</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">            resultalias =&gt; &quot;hornetq&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">            typenames =&gt; &quot;name&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">            graphitehost =&gt; hiera('graphite'),</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">            graphiteport =&gt; &quot;2003&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">}</div></li></ol></pre></div></p>
+<p>This gives me a computable url on which I can get the graphite view </p>
+<p>The next step then is to configure a nagios check that verifies this data. For that I need to use the <a href="http://github.com/datacratic/check_graphite" rel="nofollow">check_graphite</a> plugin from Datacratic ..</p>
+<p>Which can work with an nrpe config like<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">### File managed with puppet ###</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">### Served by:        '&lt;%= scope.lookupvar('::servername') %&gt;'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">### Module:           '&lt;%= scope.to_hash['module_name'] %&gt;'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">### Template source:  '&lt;%= template_source %&gt;'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">command[check_hornetq]=/usr/lib64/nagios/plugins/check_graphite -u &quot;http://&lt;%= graphitehost%&gt;/render?target=servers.&lt;%= scope.lookupvar('::fqdn').gsub(/\./,'_')%&gt;_5446.hornetq.docstore_private_trigger_notification.MessageCount&amp;from=-30minutes&amp;rawData=true&quot; -w 2000 -c 20000</div></li></ol></pre></div></p>
+<p>I define this check on the host where HornetQ is running  as it then will map to that host on Icinga/Nagios  rather than throw a host error on an unrelated host.</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Tue, 02/05/2013 - 11:10</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1470 first"><a href="../category/graphite/index.html" rel="tag" title="">graphite</a></li>
+<li class="taxonomy_term_1292"><a href="../category/icinga/index.html" rel="tag" title="">icinga</a></li>
+<li class="taxonomy_term_1491"><a href="../category/monitoringlove/index.html" rel="tag" title="">monitoringlove</a></li>
+<li class="taxonomy_term_1469"><a href="../category/monitoringsucks/index.html" rel="tag" title="">monitoringsucks</a></li>
+<li class="taxonomy_term_439 last"><a href="../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-5152"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://obfuscurity.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/1f1a3879e40c9418252a5aec3aed31b2.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Jason Dixon&#039;s picture" title="Jason Dixon&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-5152">#1</a>
+    <span class="author"><a href="http://obfuscurity.com/">Jason Dixon</a></span>  : <span class="title"><a href="index.html#comment-5152" class="active">another check_graphite</a></span>
+  </h3>
+  <div class="content"><p>I still prefer my <a href="https://github.com/obfuscurity/nagios-scripts/blob/master/check_graphite" rel="nofollow">check_graphite</a>. :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/06/2013 - 17:15</div>
+  </div>
+<div class="indented"><a id="comment-5154"></a>
+<div id="comment-2" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-5154">#2</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-5154" class="active">Hadn&#039;t</a></span>
+  </h3>
+  <div class="content"><p>Hadn't even noticed you had one too..</p>
+<p>:)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">02/06/2013 - 23:16</div>
+  </div>
+</div></div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/checkgraphite by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:25:37 GMT -->
+</html>

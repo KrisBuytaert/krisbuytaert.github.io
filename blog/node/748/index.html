@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/748 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:41:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MythTV Broken again  :( | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a> &#8594; <a href="../../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">MythTV Broken again  :(</h2>
+<div class="content">
+<div id="node-748" class="node  blog">
+<div class="content"><p>The <a href="http://www.krisbuytaert.be/blog/node/743">earlier posted</a> fix , getting my data from mythportal seemed to be a temporary solution.</p>
+<p>It also seems  the solution that was mentioned at <a href="http://kristof.vanhertum.be/?p=80" rel="nofollow">Kristof Vanhertum's blog</a> ,  the agent fix doesn't work anymore either.</p>
+<p>Somewhere in the comments of that post however people start referring to <a href="http://mc2xml.110mb.com/" rel="nofollow">mc2xml</a> a tool to get your info (even 14 days worth of it) from a really untrustworthy source and import it amongst other tools into MythTV </p>
+<p>No source code to be found, just a binary .. something that always scares me ..  But running the thing (first time as a dummy empty user, one never knows)  actually seems to give me an XML file with relevant data , to be used by mythfilldatabase.</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> ./mc2xml  -c be -g 2610 </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Loading ..... : mc2xml &lt;mc2xml@gmail.com&gt; (2008-09-15)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Connecting .. : microsoft.com</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Select lineup: </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  0: TER  Unmapped Analogue Terrestrial</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  1: TER  Unmapped Digital Terrestrial</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  2: CAB  Unmapped Analogue Cable</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  3: CAB  Unmapped Digital Cable</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  4: SAT  Unmapped Analogue Satellite</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  5: SAT  Unmapped Digital Satellite</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  6: SAT  TV Vlaanderen Digital Satellite</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  7: TER  TV Vlaanderen Digital terrestrial</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  8: CAB  Telenet Analog Kabel (132)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">(0-8): 8 </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Downloading . : microsoft.com</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Downloaded .. : 353944 bytes</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Source ...... : BDS</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Headend ..... : 7200116</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Version ..... : 2693590756</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Start time .. : 2008-10-23T00:00:00 UTC</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">End time .... : 2008-11-06T23:55:00 UTC</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Parsing ..... : Telenet Analog Kabel (132)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Writing ..... : xmltv.xml</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Writing ..... : mc2xml.dat</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Completed ... : 5384193 bytes in 26s, 27 channels, 9409 programs scheduled.</div></li></ol></pre></div></p>
+<p>Yes that's my actual postcode.  Different postcode values will give you other alternatives such as Coditel/Integan .. so you better use the right one.</p>
+<p>I`m not really satisfied however,  it fails to recognize my already defined channels.  So I seem to have something that at first sight looks like relevant data .  Only my channel numbers are way way way off ..   </p>
+<p>I need to fix that asap.  The only problem being that tomorrow it's <a href="http://www.geekdinnerr.be/" rel="nofollow">Geekdinner</a> and I`ll be spending the rest of the weekend at <a href="http://t-dose.org/" rel="nofollow">T-Dose</a>   hence I have no time to fix this anymore ... </p>
+<p>Anyone got a quick fix for that ?   Or will I just have to live with a weekend of non-recordings ? :) </p>
+<p>Well.. maybe next week will be a productive one then :)</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Thu, 10/23/2008 - 23:01</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1070 first"><a href="../../taxonomy/term/1070/index.html" rel="tag" title="">mc2xml</a></li>
+<li class="taxonomy_term_504"><a href="../../taxonomy/term/504/index.html" rel="tag" title="">mythtv</a></li>
+<li class="taxonomy_term_599"><a href="../../taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_1071"><a href="../../taxonomy/term/1071/index.html" rel="tag" title="">pygrab</a></li>
+<li class="taxonomy_term_1069 last"><a href="../../taxonomy/term/1069/index.html" rel="tag" title="">xmltv</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3378"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.bramkortleven.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/bd71ee94cacb3b45c89d7a69dfae235b.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="bram&#039;s picture" title="bram&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3378">#1</a>
+    <span class="author"><a href="http://www.bramkortleven.be/">bram</a></span>  : <span class="title"><a href="index.html#comment-3378" class="active">I tried using mc2xml too, but</a></span>
+  </h3>
+  <div class="content"><p>I tried using mc2xml too, but as I'm not that much of a scripter/programmer, I gave up rather quick, because I didn't get any decent workable input into my mythtv database. (instead it messed up my mythtv database quite a lot...)</p>
+<p>I found out that the EPG is being transmitted again over the cable, for now...</p>
+<p>As an extra input, I worked on a remote mythbuntu install over at my girlfriend's parents appartment, only 4km away from my home location. I'm in Borgerhout, and they are in Deurne. After having fought with the cable scan (using both the dvb-utils scan tool and the w_scan tool), giving me no sensible channel list but a 'there is signal on 9 transponder freqs but I cannot seem to give you any other info about what's in it', I installed a copy on my working cable connection, which led to 107 channels found at my place... So Telenet is definitely doing something on the cable network in Antwerp. This used to work and give sensible data over little 3 months ago.</p>
+<p>Well... for now, it works again for me... Doesn't it for you?<br />
+Let me know...</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/03/2008 - 17:00</div>
+  </div>
+<div class="indented"><a id="comment-3379"></a>
+<div id="comment-2" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3379">#2</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3379" class="active">EPG on the Cable</a></span>
+  </h3>
+  <div class="content"><p>You might want to blog about that EPG on the cable and how to get it to work :) </p>
+<p>And "now what works for you again" ?   </p>
+<p>Let me know :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/04/2008 - 11:31</div>
+  </div>
+</div><a id="comment-3302"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/ddb5aaf978d83a452202f276e0b07ec6.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Jeroen&#039;s picture" title="Jeroen&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3302">#3</a>
+    <span class="author"><span class="anonymous" title="not verified">Jeroen</span></span>  : <span class="title"><a href="index.html#comment-3302" class="active">I&#039;m currently also using</a></span>
+  </h3>
+  <div class="content"><p>I'm currently also using mc2xml as a (hopefully intermediate) solution.  I postprocess the resulting xmltv.xml to correct the channel_ids according to my mythtv's channel table.  It's quick-'n-dirty, but hey, what do you do when you're panicking ;-) :</p>
+<p>sed 's/\"I51.750821.microsoft.com\"/\"tv1.vrt.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I152.751666.microsoft.com\"/\"vtm.vrt.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I73.752139.microsoft.com\"/\"la1.rtbf.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I70.750822.microsoft.com\"/\"canvas.vrt.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I138.751678.microsoft.com\"/\"tvl.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I85.750832.microsoft.com\"/\"ned1.omroep.nl\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I86.750833.microsoft.com\"/\"ned2.omroep.nl\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I87.750834.microsoft.com\"/\"ned3.omroep.nl\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I11.70.microsoft.com\"/\"bbc1.bbc.co.uk\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I12.79.microsoft.com\"/\"bbc2.bbc.co.uk\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I48.750781.microsoft.com\"/\"ard.daserste.de\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I155.750795.microsoft.com\"/\"zdf.de\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I151.751668.microsoft.com\"/\"vt4.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I134.754708.microsoft.com\"/\"tmf.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I2.751667.microsoft.com\"/\"ka2.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I59.751869.microsoft.com\"/\"france2.fr\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I111.752171.microsoft.com\"/\"rtltvi.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I83.750678.microsoft.com\"/\"ngc.nationalgeographic.com\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+#nickolodeon is not present :-(<br />
+sed 's/\"I47.54932.microsoft.com\"/\"europe.cnn.com\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I56.750751.microsoft.com\"/\"eurosport.com\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I8.751041.microsoft.com\"/\"arte.arte-tv.com\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I13.205561.microsoft.com\"/\"world-tv.bbc.com\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I72.752159.microsoft.com\"/\"la2.rtbf.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I153.751099.microsoft.com\"/\"wdr.de\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I68.754564.microsoft.com\"/\"kanaalz.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I149.751671.microsoft.com\"/\"vitaya.tv\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I148.753795.microsoft.com\"/\"vijftv.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/24/2008 - 12:04</div>
+  </div>
+<a id="comment-3301"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/ddb5aaf978d83a452202f276e0b07ec6.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Jeroen&#039;s picture" title="Jeroen&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3301">#4</a>
+    <span class="author"><span class="anonymous" title="not verified">Jeroen</span></span>  : <span class="title"><a href="index.html#comment-3301" class="active">I&#039;m also using mc2xml as a</a></span>
+  </h3>
+  <div class="content"><p>I'm also using mc2xml as a (hopefully) temporary fix.<br />
+Regarding the non-matching channel_ids, I postprocess the xmltv.xml to get the channel_ids matching again (I know, it's quick 'n dirty, but hey what do you do when you're panicking ;-)):</p>
+<p>sed 's/\"I51.750821.microsoft.com\"/\"tv1.vrt.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I152.751666.microsoft.com\"/\"vtm.vrt.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I73.752139.microsoft.com\"/\"la1.rtbf.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I70.750822.microsoft.com\"/\"canvas.vrt.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I138.751678.microsoft.com\"/\"tvl.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I85.750832.microsoft.com\"/\"ned1.omroep.nl\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I86.750833.microsoft.com\"/\"ned2.omroep.nl\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I87.750834.microsoft.com\"/\"ned3.omroep.nl\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I11.70.microsoft.com\"/\"bbc1.bbc.co.uk\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I12.79.microsoft.com\"/\"bbc2.bbc.co.uk\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I48.750781.microsoft.com\"/\"ard.daserste.de\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I155.750795.microsoft.com\"/\"zdf.de\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I151.751668.microsoft.com\"/\"vt4.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I134.754708.microsoft.com\"/\"tmf.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I2.751667.microsoft.com\"/\"ka2.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I59.751869.microsoft.com\"/\"france2.fr\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I111.752171.microsoft.com\"/\"rtltvi.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I83.750678.microsoft.com\"/\"ngc.nationalgeographic.com\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+#nickolodeon is not present :-(<br />
+sed 's/\"I47.54932.microsoft.com\"/\"europe.cnn.com\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I56.750751.microsoft.com\"/\"eurosport.com\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I8.751041.microsoft.com\"/\"arte.arte-tv.com\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I13.205561.microsoft.com\"/\"world-tv.bbc.com\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I72.752159.microsoft.com\"/\"la2.rtbf.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I153.751099.microsoft.com\"/\"wdr.de\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I68.754564.microsoft.com\"/\"kanaalz.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I149.751671.microsoft.com\"/\"vitaya.tv\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+sed 's/\"I148.753795.microsoft.com\"/\"vijftv.be\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/24/2008 - 11:30</div>
+  </div>
+<div class="indented"><a id="comment-3306"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/ad8894e5351b792346462e9ae26e2921.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="chojin&#039;s picture" title="chojin&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3306">#5</a>
+    <span class="author"><span class="anonymous" title="not verified">chojin</span></span>  : <span class="title"><a href="index.html#comment-3306" class="active">Different I numbers</a></span>
+  </h3>
+  <div class="content"><p>I used the sed commands provided but soon found out the I numbers where completely different for me. Using sed commands like this:<br />
+sed 's/\"I[0-9]*.750821.microsoft.com\"/\"een\"/' xmltv.xml &gt; tmp_file; cp tmp_file xmltv.xml<br />
+made mc2xml also a temporarily solution for me..<br />
+However I don't seem to get content for a few channels like MTV, Kanaal Z, TRT, .. I do get the channel definitions in the xmltv.xml output but not any content..<br />
+So definitely no final solution..</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/26/2008 - 15:45</div>
+  </div>
+<div class="indented"><a id="comment-3307"></a>
+<div id="comment-6" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/ddb5aaf978d83a452202f276e0b07ec6.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Jeroen&#039;s picture" title="Jeroen&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3307">#6</a>
+    <span class="author"><span class="anonymous" title="not verified">Jeroen</span></span>  : <span class="title"><a href="index.html#comment-3307" class="active">I suppose the I* numbers</a></span>
+  </h3>
+  <div class="content"><p>I suppose the I* numbers depend on the postal code you provide to mc2xml?<br />
+For my first mc2xml trial I gave a bogus postal code (1000 something) but using  my proper postal code now, I remark that although the second part of the channel id is the same, the I* part indeed changed.  In that respect, your sed command is better than mine.</p>
+<p>Also the listing contents is different:  MTV/Nickelodeon (MTV and Nick are mixed on one channel in the Interelectra/Infrax area) wasn't present at first, but using my proper postal code it is (although only MTV shows are listed, no Nickelodeon, the kids will be happy).</p>
+<p>For the time being, I'm btw writing my own grabber, based on the entertainment/tv-gids pages of zita.be .  If no better solution pops up, I'll start using that one.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/26/2008 - 21:54</div>
+  </div>
+</div></div></div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/748 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:41:37 GMT -->
+</html>

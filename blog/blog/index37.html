@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=37 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:58:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Everything is a Freaking DNS problem | Devops Needs Sushi</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../blogapi/rsd/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem RSS" href="../rss/index.xml" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="front not-logged-in page-node one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+<div class="content">
+<div id="node-676" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-06-13T19:44:54+02:00">
+  <span class="month">Jun</span>
+  <span class="day">13</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../node/676/index.html">MySQL Trigger Woes</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_484 first"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_458"><a href="../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_931"><a href="../taxonomy/term/931/index.html" rel="tag" title="">mysqldump</a></li>
+<li class="taxonomy_term_930 last"><a href="../taxonomy/term/930/index.html" rel="tag" title="">trigger</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>After a period of inactivity I was hacking back on a Drupal project, I had taken a mysql dump from a production platform and imported into my local dev setup, just to have some realistic data.</p>
+<p>All of a sudden some forms started failing with  the following error:</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">user warning: There is no 'user'@'nonlocalhost registered query: insert into blah  (stuff,morestuff) values (x,y) in /var/vhost/drupal-tree/includes/database.mysql.inc on line 172.</div></li></ol></pre></div></p>
+<p>My Drupal data connection was correct and working for selects etc..  only a limited set of inserts failed.</p>
+<p>After some debugging I realised that the error was not Drupal related,  running the same query on my MySQL console gave the same error.</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">ERROR 1449 (HY000): There is no 'user'@'nonlocalhost' registered</div></li></ol></pre></div></p>
+<p>The error came from a trigger on the table I was inserting data into that had been created on the production machine by a user@'host'  that didn't exist on my development machine.  the user was identical but the host wasn't.</p>
+<p>MySQLdump includes that information in a dump and uses it to restore the same values.</p>
+<p>So recreating the trigger on the development machine solved the problem.<br />
+I should probably look a bit closer into the MySQL bugs to figure out if this is a bug or just expected behaviour.</p>
+<p>There might even be a parameter to disable this feature , but I didn't find it yet.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../node/676/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
+</ul></div>
+</div>
+<div id="node-675" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-06-10T21:12:51+02:00">
+  <span class="month">Jun</span>
+  <span class="day">10</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../node/675/index.html">Tax Time </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_927 first"><a href="../taxonomy/term/927/index.html" rel="tag" title="">beid</a></li>
+<li class="taxonomy_term_929"><a href="../taxonomy/term/929/index.html" rel="tag" title="">fc6</a></li>
+<li class="taxonomy_term_928 last"><a href="../taxonomy/term/928/index.html" rel="tag" title="">tax</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So it's Tax time here in Belgium ..<br />
+And this year the government forced me to replace my good old  identity card with an electronic one , hence creating a giant security gap.  There is a <em>private</em> key  involved.  One that I didn't create, one that has been created by someone I don't know, I don't even know who,  should I trust these people ?   Should I trust the fact that someone could have made backups of my keys ?  </p>
+<p>There is nothing private about the keys the government issued so I fail to see how they can identify me in a secure way..  There can be tons of people that have that key.</p>
+<p>Anyways.. for those local that happen to still have an FC6 box around (like I do) with a cardreader, here's the <a href="http://www.krisbuytaert.be/download/eid-belgium-2.6.0-1.rf.i386.rpm">rpm</a> for BEID, based on Dag's specfile.</p>
+<p>I`m off to loose yet another part of my privacy ..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../node/675/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-674" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-06-05T20:38:38+02:00">
+  <span class="month">Jun</span>
+  <span class="day">05</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../node/674/index.html">Virtsec , a real problem , or surfing  on the hype ? </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_814 first"><a href="../taxonomy/term/814/index.html" rel="tag" title="">security</a></li>
+<li class="taxonomy_term_926"><a href="../taxonomy/term/926/index.html" rel="tag" title="">virtsec</a></li>
+<li class="taxonomy_term_672 last"><a href="../taxonomy/term/672/index.html" rel="tag" title="">virtualization</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Yesterday I took part in an interesting  <a href="http://www.stacksafe.com/blog/virtualization-security-hits-center-stage/06/04/2008/" rel="nofollow">conf call</a> with different Virtualization Security  Industry leaders and Analysts</p>
+<p>I`ll be processing the confcall logs and publish them over at <a href="http://virtualization.com/" rel="nofollow">Virtualization.com</a></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-673" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-06-04T22:36:54+02:00">
+  <span class="month">Jun</span>
+  <span class="day">04</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../node/673/index.html">Drupal Track @ T-Dose.org</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_557 first"><a href="../taxonomy/term/557/index.html" rel="tag" title="">buytaert</a></li>
+<li class="taxonomy_term_456"><a href="../taxonomy/term/456/index.html" rel="tag" title="">cfp</a></li>
+<li class="taxonomy_term_455"><a href="../taxonomy/term/455/index.html" rel="tag" title="">conference</a></li>
+<li class="taxonomy_term_484"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_454"><a href="../taxonomy/term/454/index.html" rel="tag" title="">t-dose</a></li>
+<li class="taxonomy_term_925 last"><a href="../taxonomy/term/925/index.html" rel="tag" title="">toocryptic</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>In true <a href="http://buytaert.net/" rel="nofollow">Buytaert</a> style I slightly persuaded <a href="http://symbiotix.net/" rel="nofollow">Joeri</a> to organise a <a href="http://drupal.org/" rel="nofollow">Drupal</a> track at <a href="http://t-dose.org/" rel="nofollow">T-Dose 2008</a></p>
+<p>Joeri has just published <a href="http://symbiotix.net/articles/t-dose-2008-drupal-track-call-papers" rel="nofollow">the Call For Papers</a></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-672" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-06-03T20:06:44+02:00">
+  <span class="month">Jun</span>
+  <span class="day">03</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../node/672/index.html">Xcerion,  please abort your mission </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_874 first"><a href="../taxonomy/term/874/index.html" rel="tag" title="">beta</a></li>
+<li class="taxonomy_term_922"><a href="../taxonomy/term/922/index.html" rel="tag" title="">fucked company</a></li>
+<li class="taxonomy_term_923"><a href="../taxonomy/term/923/index.html" rel="tag" title="">obsolete</a></li>
+<li class="taxonomy_term_464"><a href="../taxonomy/term/464/index.html" rel="tag" title="">vapourware</a></li>
+<li class="taxonomy_term_924 last"><a href="../taxonomy/term/924/index.html" rel="tag" title="">xcerion</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So back in early may 2007 (yes 2007) I signed up for the Xcerion Beta program,  I`m always interested in the next new Internet OS etc so I tought it was a good idea to give it a try.</p>
+<p>In December of that same year I got a message stating that I made it to their Beta cloud.  Their mail stated </p>
+<p><cite><br />
+This is your invitation to participate in Xcerion's XIOS/3 Beta program. You are one of the first in the world to get access to XIOS/3.<br />
+We currently only support IE6+ browsers. We are working on adding Firefox support (high priority).<br />
+</cite></p>
+<p>Obviously  didn't sign up ..<br />
+In April when I got the invite mail for the 4th time .. I replied to the Xcerion folks .. </p>
+<p><cite><br />
+ As I am a Linux user .. I need firefox , since your initial mail<br />
+ december 21st last year you say that Firefoxx support is high<br />
+ priority ...<br />
+</cite></p>
+<p>Their reply: </p>
+<p><cite><br />
+We have made some great progress on the Firefox version. This is the most<br />
+complex and fully featured cloud OS available, which makes porting more time<br />
+consuming. We are also constantly adding a lot of features. Xcerion is also<br />
+considering doing a native Linux version :)</cite></p>
+<p>Today I got yet another mail from them guess what still isn't supported ? </p>
+<p><cite><br />
+We currently support IE6+ browsers. Rest assured that we are working on adding Firefox support (high priority). The Firefox support will also enable usage of icloud on Mac and Linux</cite></p>
+<p>It's time to give up guys .. you lost the battle.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../node/672/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-671" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-05-30T09:41:25+02:00">
+  <span class="month">May</span>
+  <span class="day">30</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../node/671/index.html">Am I expecting too much from my readers ?</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_456 first"><a href="../taxonomy/term/456/index.html" rel="tag" title="">cfp</a></li>
+<li class="taxonomy_term_484"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_490"><a href="../taxonomy/term/490/index.html" rel="tag" title="">geekdinner</a></li>
+<li class="taxonomy_term_458"><a href="../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_454 last"><a href="../taxonomy/term/454/index.html" rel="tag" title="">t-dose</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>My last post, titled  T-Dose CFP, got a comment from Bobby that people reading my feed from Planet MySQL couldn't possibly understand my post because of the lack of context. </p>
+<p>So let me repost it.. </p>
+<p><a href="http://www.geekdinner,be/" rel="nofollow">Geekdinner</a> is an unformal  dinner where geeks meet , here in Belgium , but also at other places around the world, Every couple of months we meet , have dinner and chat about geeky stuff , such as tech conferences, mysql, drupal, jboss and other topics.</p>
+<p>One of these topics was T-Dose  , The Technical Dutch Open Source Event,  which has their Call For Papers / Presentations available , so if you want to present there .. you have to tell them.</p>
+<p><a href="http://willy.boerland.com/myblog/" rel="nofollow">Bert Boerland</a> gave a talk about Drupal there last year   and <a href="http://someabstracttype.blogspot.com/" rel="nofollow">Some Abstract Type, aka Geert Vanderkelen</a> , MySQL/ Sun  has also been spotted there before.</p>
+<p>Would this be enough context or do you folks need more ? </p>
+<p>Is my idea that people click on links to get more info , or even that people understand what a CFP is  wrong ?</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../node/671/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-670" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-05-29T19:55:44+02:00">
+  <span class="month">May</span>
+  <span class="day">29</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../node/670/index.html">T-Dose 2008 CFP</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_456 first"><a href="../taxonomy/term/456/index.html" rel="tag" title="">cfp</a></li>
+<li class="taxonomy_term_484"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_490"><a href="../taxonomy/term/490/index.html" rel="tag" title="">geekdinner</a></li>
+<li class="taxonomy_term_458"><a href="../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_454 last"><a href="../taxonomy/term/454/index.html" rel="tag" title="">t-dose</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>At this weeks' <a href="http://bbbart.internationalgeneration.be/blog/archives/2008/05/21/index.html#e2008-05-21T10_07_13.txt" rel="nofollow">geekdinner </a> some people wondered what was up with T-Dose,  and guess what .. their <a href="http://www.t-dose.org/t-dose/2008" rel="nofollow">CFP</a> has been out for ages.</p>
+<p>Last year I just catched the end of <a href="http://willy.boerland.com/myblog/" rel="nofollow">Bert</a>'s talk  and <a href="http://someabstracttype.blogspot.com/" rel="nofollow">Some Abstract Type</a> has also been spotted there before.</p>
+<p>No reason to miss this year's edition.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../node/670/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-669" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-05-28T21:21:10+02:00">
+  <span class="month">May</span>
+  <span class="day">28</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../node/669/index.html">OpenID</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_718 first"><a href="../taxonomy/term/718/index.html" rel="tag" title="">openid</a></li>
+<li class="taxonomy_term_921"><a href="../taxonomy/term/921/index.html" rel="tag" title="">phishing</a></li>
+<li class="taxonomy_term_814 last"><a href="../taxonomy/term/814/index.html" rel="tag" title="">security</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>I'm getting second thoughts about OpenID.</p>
+<p><a href="http://idcorner.org/2007/08/22/the-problems-with-openid/" rel="nofollow">Here</a>'s why.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-668" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-05-28T21:17:45+02:00">
+  <span class="month">May</span>
+  <span class="day">28</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../node/668/index.html">OLS</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_863 first"><a href="../taxonomy/term/863/index.html" rel="tag" title="">ols</a></li>
+<li class="taxonomy_term_919"><a href="../taxonomy/term/919/index.html" rel="tag" title="">ols2008</a></li>
+<li class="taxonomy_term_920 last"><a href="../taxonomy/term/920/index.html" rel="tag" title="">ottawa</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Paper Submitted [OK]<br />
+Flight Booked   [OK]<br />
+Hotel Booked    [OK]</p>
+<p>Still stuff to do but heading the right direction</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div id="node-667" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-05-22T12:05:06+02:00">
+  <span class="month">May</span>
+  <span class="day">22</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../node/667/index.html">Distro Synchronisation</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_564 first"><a href="../taxonomy/term/564/index.html" rel="tag" title="">novell</a></li>
+<li class="taxonomy_term_704"><a href="../taxonomy/term/704/index.html" rel="tag" title="">redhat</a></li>
+<li class="taxonomy_term_549"><a href="../taxonomy/term/549/index.html" rel="tag" title="">sarcasm</a></li>
+<li class="taxonomy_term_916"><a href="../taxonomy/term/916/index.html" rel="tag" title="">ubuntu</a></li>
+<li class="taxonomy_term_470 last"><a href="../taxonomy/term/470/index.html" rel="tag" title="">xen</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Look Mark , Red Hat and Novell have <a href="http://virtualization.com/news/2008/05/21/novell-and-red-hat-upgrade-linux-enterprise-distros-improve-virtualization-support/" rel="nofollow">Synced</a> their releases :)</p>
+<p>Well.. not really .. even different Xen versions :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="index36.html?page=36" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a href="index33.html?page=33" title="Go to page 34" class="active">34</a></li>
+<li class="pager-item"><a href="index34.html?page=34" title="Go to page 35" class="active">35</a></li>
+<li class="pager-item"><a href="index35.html?page=35" title="Go to page 36" class="active">36</a></li>
+<li class="pager-item"><a href="index36.html?page=36" title="Go to page 37" class="active">37</a></li>
+<li class="pager-current">38</li>
+<li class="pager-item"><a href="index38.html?page=38" title="Go to page 39" class="active">39</a></li>
+<li class="pager-item"><a href="index39.html?page=39" title="Go to page 40" class="active">40</a></li>
+<li class="pager-item"><a href="index40.html?page=40" title="Go to page 41" class="active">41</a></li>
+<li class="pager-item"><a href="index41.html?page=41" title="Go to page 42" class="active">42</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="index38.html?page=38" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="index103.html?page=103" title="Go to last page" class="active">last »</a></li>
+</ul></div></div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=37 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:58:19 GMT -->
+</html>

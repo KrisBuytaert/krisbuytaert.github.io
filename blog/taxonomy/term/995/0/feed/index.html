@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - raid</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/995/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Implementing Raid Monitoring on a 3Ware 3w-9xxx based controller.</title>
+ <link>http://127.0.0.1:8080/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller</link>
+ <description>&lt;p&gt;When you pull out a disk from your Raid setup it shows a warning in syslog&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: WARNING (0x04:0x0019): Drive &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;removed:port=1.&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: ERROR (0x04:0x0002): Degraded&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; unit:unit=0, port=1.&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;However if no one is looking at syslog that won&#039;t really be helpfull.&lt;/p&gt;
+&lt;p&gt;3Ware provides a tool from their site called tw_cli which can be used to manage&lt;br /&gt;
+the raid setup from the command line.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;[EL860-root@EL860 admin]# tw_cli /c0 show &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;------------------------------------------------------------------------------&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;u0    RAID-1    REBUILDING     41%     -       -       232.82    RiW    ON     &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;VPort Status         Unit Size      Type  Phy Encl-Slot    Model&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;------------------------------------------------------------------------------&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;p0    OK             u0   232.88 GB SATA  0   -            ST3250310NS         &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;p1    DEGRADED       u0   232.88 GB SATA  1   -            ST3250310NS         &lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;I&#039;d figure I&#039;d either have to write wrapper script around that or find some other way of integrating it.&lt;br /&gt;
+Asking the question on ##infra-talk on irc.freenode.net  gave me the following link to a &lt;a href=&quot;http://github.com/stanaka/check_tw&quot; rel=&quot;nofollow&quot;&gt;check script&lt;/a&gt; on github&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;koollman: sdog: something like &lt;a href=&quot;http://github.com/stanaka/check_tw&quot; title=&quot;http://github.com/stanaka/check_tw&quot; rel=&quot;nofollow&quot;&gt;http://github.com/stanaka/check_tw&lt;/a&gt; should work. &lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;With that in your snmpd.conf you can get the info via snmp&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;[root snmp]#  snmpwalk  localhost   -v 2c  -c public  .1.3.6.1.4.1.2&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;021   | grep ext &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extIndex.1 = INTEGER: 1&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extNames.1 = STRING: TW_RAID&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extCommand.1 = STRING: /usr/local/sbin/check_tw&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extResult.1 = INTEGER: 2&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extOutput.1 = STRING: CRITICAL: Unit: u0, Type: RAID-1, Status: RE&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;BUILDING&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extErrFix.1 = INTEGER: 0&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::extErrFixCmd.1 = STRING: &lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::ssSysContext.0 = INTEGER: 2073&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-SNMP-MIB::ssRawContexts.0 = Counter32: 11781783&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;UCD-DLMOD-MIB::dlmodNextIndex.0 = INTEGER: 1&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/3w-9xxx">3w-9xxx</category>
+ <category domain="http://127.0.0.1:8080/blog/category/3ware">3ware</category>
+ <category domain="http://127.0.0.1:8080/blog/category/didimentionihateraid">didimentionihateraid</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/489">linux</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/995">raid</category>
+ <category domain="http://127.0.0.1:8080/blog/category/snmp">snmp</category>
+ <pubDate>Thu, 28 Jan 2010 18:41:42 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">981 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>The machine that vanished.</title>
+ <link>http://127.0.0.1:8080/blog/machine-vanished</link>
+ <description>&lt;p&gt;Today I lost a machine,  a physical one, I couldn&#039;t find it back in my rack anymore.   One moment I was logged on to it, and when I instructed it to boot off the network again for a fresh installation I couldn&#039;t find it back anymore, it was gone.&lt;/p&gt;
+&lt;p&gt;When you have different ad hoc build development environments, you often grab whatever hardware is available to add to your pool and hope it doesn&#039;t kick you back, time always works against you when you have to build a fresh platform from a pool of hardware ready to be reused.&lt;/p&gt;
+&lt;p&gt;I had half a rack of hardware ready to be redeployed,  the default boot order of most machines is   Disk, Network  so we trigger a fresh network install by overwriting the MBR.   So the one machine .. after doing a quick check  to see if there was nothing relevant on it anymore we sent it to the reboot pool.&lt;/p&gt;
+&lt;p&gt;The host  was supposed to boot of the network, but I didn&#039;t even see a dhcp request coming in.  So off to the lab it was .. where was that machine..  none of the consoles I tried was the correct one... until I found one box.. with a really really old installation , a machine that had returned from a different office.&lt;/p&gt;
+&lt;p&gt;And then it all came clear ... unlike all the other machines this machine had a 2 disk raid setup, which we actually weren&#039;t using , we indeed hat cleared the bootsector of the first disk, but not the second disk .. and we never had really cleared the 2nd disk.  So rather than booting of the network because the first disk failed it booted of the old copy on the second disk.&lt;/p&gt;
+&lt;p&gt;Scratching that 2nd disk solved the problem ..   for once it wasn&#039;t a DNS problem, but the RAID setup wasn&#039;t really helpfull either :)&lt;/p&gt;
+&lt;p&gt;PS.  Yes re-labeling the machines is still on the todolist .. maybe next year :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/machine-vanished#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/automating">automating</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/489">linux</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/995">raid</category>
+ <category domain="http://127.0.0.1:8080/blog/category/raid-sucks">raid sucks</category>
+ <pubDate>Fri, 15 May 2009 18:12:36 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">908 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Raid is obsolete</title>
+ <link>http://127.0.0.1:8080/blog/node/713</link>
+ <description>&lt;p&gt;In a lot of environments.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.mysqlperformanceblog.com/2008/08/21/rendundant-array-of-inexpensive-servers/&quot; rel=&quot;nofollow&quot;&gt;Peter&lt;/a&gt; gives a nice overview why you don&#039;t always need to invest in big fat redundant hardware.&lt;/p&gt;
+&lt;p&gt;We&#039;ve tackled the topic last year &lt;a href=&quot;http://www.krisbuytaert.be/blog/node/388&quot;&gt;already&lt;/a&gt; ..&lt;/p&gt;
+&lt;p&gt;Now I often get weird looks when I dare to mention that Raid is obsolete ..people fail to hear the &quot;in a lot of environments&quot;&lt;/p&gt;
+&lt;p&gt;Obviously the catch is in the second part, you won&#039;t be doing this for your small shop around the corner with just one machine.  You&#039;ll only be doing this in an environment where you can work with a redundant array of inexpensive disks. Not with a server that has to sit in a remote and isolated location.&lt;/p&gt;
+&lt;p&gt;Next to that there are situations where you will be using raid, but not for redundancy, but for disk throughput.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/713#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/999">availability</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/923">obsolete</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/998">performance</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/995">raid</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/997">raif</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/996">rais</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/630">scaling</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1000">troughput</category>
+ <pubDate>Mon, 25 Aug 2008 19:02:12 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">713 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

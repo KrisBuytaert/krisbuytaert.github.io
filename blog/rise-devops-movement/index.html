@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/rise-devops-movement by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:23:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Rise of the DevOps movement | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">The Rise of the DevOps movement</h2>
+<div class="content">
+<div id="node-1094" class="node  blog">
+<div class="content"><p>This is a repost of an article I wrote for the <a href="http://www.acquia.com/blog" rel="nofollow">Acquia Blog</a> some time ago.</p>
+<p>DevOps, DevOps, DevOps … the whole world is talking about DevOps, but what is DevOps?</p>
+<p>Since Munich 2012, DrupalCon had a dedicated devops track. After talking to<br />
+a lot of people in Prague last month, I realized that the concept of DevOps is still very unclear to a lot of developers. To a large part of the development community, DevOps development still means folks working on 'the infrastructure part' of the development life cycle and for some it just means simply deploying Drupal, being concerned about purely keeping the site alive etc.</p>
+<p>Obviously that's not what DevOps is about, so let's take a step back and find out how it all started.</p>
+<p>Like all good things, Drupal included, DevOps is a Belgian thing!</p>
+<p>Back in 2009 DevopsDays Europe was created because a group of people met over and over again at different conferences throughout the world and didn’t have a common devops conference to go to. These individuals would talk about software delivery, deployment, build, scale, clustering, management, failure, monitoring and all the important things one needs to think about when running a modern web operation. These folks included Patrick Debois, Julian Simpson, Gildas Le Nadan, Jezz Humble, Chris Read, Matt Rechenburg , John Willis, Lindsay Holmswood and me - Kris Buytaert.</p>
+<p>O’Reilly created a conference called, “Velocity,” and that sounded interesting to a bunch of us Europeans, but on our side of the ocean we had to resort to the existing Open Source, Unix, and Agile conferences. We didn't really have a common meeting ground yet. At CloudCamp Antwerp, in the Antwerp Zoo, I started talking to Patrick Debois about ways to fill this gap.</p>
+<p>Many different events and activities like John Allspaw and Paul Hammond’s talk at “Velocity”, multiple twitter discussions influenced Patrick to create a DevOps specific event in Gent, which became the very first ‘DevopsDays'. DevopsDays Gent was not your traditional conference, it was a mix between a couple of formal presentations in the morning and open spaces in the afternoon. And those open spaces were where people got most value. The opportunity to talk to people with the same complex problems, with actual experiences in solving them, with stories both about success and failure etc. How do you deal with that oldskool system admin that doesn’t understand what configuration management can bring him? How do you do Kanban for operations while the developers are working in 2 week sprints? What tools do you use to monitor a highly volatile and expanding infrastructure?</p>
+<p>From that very first DevopsDays in Gent several people spread out to organize other events John Willis and Damon Edwards started organizing DevopsDays Mountain View, and the European Edition started touring Europe. It wasn’t until this year that different local communities started organizing their own local DevopsDays, e.g in Atlanta, Portland, Austin, Berlin, Paris, Amsterdam, London, Barcelona and many more.</p>
+<p>From this group of events a community has grown of people that care about bridging the gap between development and operations, a community of people that cares about delivering holistic business value to their organization.</p>
+<p>As a community, we have realized that there needs to be more communication between the different stakeholders in an IT project lifecycle - business owners, developers, operations, network engineers, security engineers – everybody needs to be involved as soon as possible in the project in order to help each other and talk about solving potential pitfalls ages before the application goes live. And when it goes live the communication needs to stay alive too.. We need to talk about maintaining the application, scaling it, keeping it secure . Just think about how many Drupal sites are out there vulnerable to attackers because the required security updates have never been implemented. Why does this happen? It could be because many developers don't try to touch the site anymore..because they are afraid of breaking it.</p>
+<p>And this is where automation will help.. if we can do automatic deployments and upgrades of a site because it is automatically tested when developers push their code, upgrading won't be that difficult of a task. Typically when people only update once in 6 months, its a painful and difficult process but when its automated and done regularly, it makes life so much easier.</p>
+<p>This ultimately comes down to the idea that the involvement of developers doesn’t end at their last commit. Collaboration is key which allows every developer to play a key role in keeping the site up and running, for more happy users. After all software with no users has no value. The involvement of the developers in the ongoing operations of their software shouldn't end before the last end user stops using their applications.</p>
+<p>In order to keep users happy we need to get feedback and metrics, starting from the very first phases of development all the way up to production. It means we need to monitor both our application and infrastructure and get metrics from all possible aspects, with that feedback we can learn about potential problems but also about successes.</p>
+<p>Finally, summarizing this in an acronym coined by John Willis and Damon Edwards<br />
+- CAMS. CAMS says Devops is about Culture, Automation, Measurement and Sharing.<br />
+Getting the discussion going on how to do all of that, more specifically in a Drupal environment, is the sharing part .</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 06/04/2014 - 16:49</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_484 last"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/rise-devops-movement by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:23:26 GMT -->
+</html>

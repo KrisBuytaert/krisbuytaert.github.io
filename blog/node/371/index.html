@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/371 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:59:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NLUUG Report | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-story one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a></div></div>
+  <h2 id="title">NLUUG Report</h2>
+<div class="content">
+<div id="node-371" class="node  story">
+<div class="content"><p>As you can see I`m lagging on blog postings , there is still lost of stuff I want to talk about but I fail to find enough time to write down my ideas.  Almost 2 weeks ago the NLUUG Spring conference was held in Ede,  this years topic was Virtualisation.  As mentionned earlier I was invited to talk about Using openQRM to manage Virtual Machines, with Xen in particular.</p>
+<p>The day started with <a href="http://theinvisiblethings.blogspot.com/">Joanna Rutkowska</a> talking about Blue Pill the conecpt of moving a running operating system un the fly into a virtual machine, and the impact on security for these machines.  She started off with a fairly technical talk which I`m sure that not everybody in the audience understood, so gi<br />
+ven the early hour lots of them dozed off..  Too bad the occasional security joke was only noticed by few :(</p>
+<p>The next talk was the one from Vitaly Wool who got swapped with the one from Frank Weyns,  As a former MontaVista employee Vitaly dicussed the reasons for userland drivers in an embedded environment.  If you think about the fact that different mobile phones today still are running different operating systems on different cpu's , think what virtualisation in this area could do.</p>
+<p>After my own talk and the Lunch break Anil Madhavapeddy was up to give us an update on the current state of Xen<br />
+Anil at that time he told us that 3.0.5 could happen any time now.. which in the meanwhile has happened in the form of 3.1 The weird thing is that every time I see Anil giving a talk he has a new release ready :)<br />
+Maybe I should meet with him more often :)<br />
+He also gave us an overview of the interresting stuff that had just happened at the XenSummit and information on the Xen Roadmap</p>
+<p>Obviously I staid in the maintrack to see Avi Kivity present his work on KVM, I'd probably have come to this confere<br />
+nce as a visitor just to see this talk if I hadn't been a speaker.</p>
+<p>I Skipped Franks and the BSD talk, then tried to sneak into the Using Xen talk but it was so crowded and from the hallpath I could see there wasn't going to be much to be learned for me.</p>
+<p>Asia Slowinska  closed the day with a talk on Prospector, or how she used Qemu based virtual machines to analyse Sta<br />
+ck Overflows,  fairly interresting stuff .</p>
+<p>Tim and I wondered "Do you have to be female in order to be interrested in both Virtualisation and Security ?"<br />
+I haven't seen that many women giving such technical talks at conferences,  this was something totally different fro<br />
+m Creating new tracks in TuxRacer. (which also was a great talk btw)</p>
+<p>The Drink after the conference had a nice surprise for me.  There was a contest which Tim Hemel and I seemed to had won where Tim got an MP3 player and I got a Linksys WRT54GL.  More about that new toy in a later post.</p>
+<p>As I didn't want to get stuck in traffic hungry I had gladly  accepted to join the rest of the speakers for the conference dinner.  I`m not used to quality food in the Netherland so I wasn't expecting much but I was quite surprised with the quality of "Het Oude Politiebureau" in Ede.</p>
+<p>Anyway the Virtualisation conference was some time well spent !</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Mon, 05/21/2007 - 21:34</div>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/371 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:59:08 GMT -->
+</html>

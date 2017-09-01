@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - ip</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1031/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Crazy stuff over DNS </title>
+ <link>http://127.0.0.1:8080/blog/crazy-stuff-over-dns</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://pascal.vanhecke.info/&quot; rel=&quot;nofollow&quot;&gt;Pascal&lt;/a&gt; tweeted me te following &lt;a href=&quot;https://dgl.cx/wikipedia-dns&quot; rel=&quot;nofollow&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;From the site :&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;I had written some code to take wikipedia articles and summarise them. I wanted to offer this for use in various places, now the obvious way to offer it is just a web service (via REST, SOAP, etc), but that&#039;s boring and I had a cunning plan. Why not offer it over DNS - it is basically a huge associative array and DNS is designed for this stuff.&lt;br /&gt;
+&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Some people send way to much stuff over a TXT record .. and then one wonders why DNS is a problem.. it&#039;s being abused for all the things wasn&#039;t designed in the first place.  And people also trust it too much while it never was desgined for that either.&lt;/p&gt;
+&lt;p&gt;Oh well.. at least &lt;a href=&quot;http://thomer.com/howtos/nstx.html&quot; rel=&quot;nofollow&quot;&gt;IP over DNS&lt;/a&gt; is usefull :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/crazy-stuff-over-dns#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/451">dns</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/437">dnsproblem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1031">ip</category>
+ <category domain="http://127.0.0.1:8080/blog/category/wikipedia">wikipedia</category>
+ <pubDate>Wed, 07 Jan 2009 16:44:58 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">850 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Bug in ifconfig ? </title>
+ <link>http://127.0.0.1:8080/blog/bug-ifconfig</link>
+ <description>&lt;p&gt;So earlier this week I ran into the weirdest problem with Linux-HA.  Heartbeat was happily adding an IP address as an active resource so one of my nodes when needed, but upon removal it failed to remove the IP from the stack.  Further debugging learned that the Heartbeat scripts claimed the ip wasn&#039;t on the actual stack.&lt;/p&gt;
+&lt;p&gt;It was.. but it the output from ifconfig was different from what it expected it to be.&lt;/p&gt;
+&lt;p&gt;Heartbeat checks the output of ifconfig and expects to find the IP address it added itselve to be on a :0 or similar interface.     Now ifconfig only seems output 8 characters for the interface name  Which means that when you have an interface called eth0:0 the output perfectly lists it and heartbea&lt;br /&gt;
+t is smart enough to remove the ip again when the node goes to standby.  If however you have   a vlan with 3 digits on a bond interface Heartbeat will add :0 to bond0.129  , the Heartbeat resource will add the ip address perfectly but opon checking all the :0 interfaces the bond0.129:0 interface won&#039;t be parsed as ifconfig outputs it as bond0.129 , hence resulting in a potential painfull situation where 2 nodes still share an IP address.&lt;/p&gt;
+&lt;p&gt;So where&#039;s the actual problem ifconfig, or heartbeat,   I&#039;d say both, but the easiest fix will be in  Heartbeat,  afterall there are other preferred ways of adding an ip addres to an interface. ip addr add comes to mind :)&lt;/p&gt;
+&lt;p&gt;So I filed a &lt;a href=&quot;http://developerbugs.linux-foundation.org/show_bug.cgi?id=1968&quot; rel=&quot;nofollow&quot;&gt;bug report&lt;/a&gt; :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/bug-ifconfig#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/449">ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1032">ifconfig</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1031">ip</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <pubDate>Wed, 24 Sep 2008 15:27:26 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">730 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

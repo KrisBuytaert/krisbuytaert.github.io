@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/systemd-and-devops by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>On Systemd and devops  | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">On Systemd and devops </h2>
+<div class="content">
+<div id="node-1100" class="node  blog">
+<div class="content"><p>If it's not broken , don't fix it.<br />
+Those who don't understand Unix are doomed to reinvent it, poorly<br />
+Complexity is the enemy of reliability.</p>
+<p>Are some of the more frequently heard arguments in the systemd discussion.   Indeed I see and hear a lot of senior Linux people react openly and probably way to late against the introduction of systemd in a lot of our  favorite Linux distributions. </p>
+<p>To me this is a typical example of the devops gap.  The gap between developers writing code and operations needing to manage that code on production platforms at scale.<br />
+Often developers writing code that they think is useful and relevant while they are not listening to their target audience , in this case not the end users of the systems but the people that are maintaining the platforms.  The people that work on a daily base with these tools.</p>
+<p>I have had numerous conversations with people in favor and against systemd,  till today I have not found a single general purpose use case that could  convince me of the relevance of this large change in our platforms.   I've found edge cases where it might be relevant. but not mainstream ones.  I've also seen much more people against it than in favor.  I've invited speakers to conference to come and teach me.  I've probably spoken to the wrong people,  </p>
+<p>But this is not supposed to be yet another systemd rant.. I want to tackle a bigger problem.  The problem that this change and some others have been forced upon us by distributions that should be open, and listen to their users, apparently both Debian and Fedora/RHEL failed largely    but somehow fail to listen to their respective communities.    Yes we know that e.g Fedora is the development platform and acts as a preview of what might come up in RHEL and thus CentOS later , but not everything eventually ends up in RHEL. So it's not like we didn't have an 'acceptance' platform  where we could play with the new technology.  The main problem here is that we had no simple  way to stop the pipeline,  it really feels like that long ago Friday evening rush deploy.  Not like a good  conversation between developers and actual ops on the benefits and problems of implementing these changes.   This feels like the developers of the distributions deciding what goes in from their own little silo and voting in 'private' committee. </p>
+<p>It also feels like the ops people being to busy to react, "Someone else will respond to this change, it's trivial this change is wrong , someone else will block this for sure",</p>
+<p>And the fact that indeed Operating System developers, like Fedora and Debian  friends kinda live in their own silo.  (specifically not listing CentOS here..) </p>
+<p>So my bigger question is .. how do we prevent this from happening again..  how do we make sure that distributions actually listen to their core users and not just the distribution developers.</p>
+<p>Rest assured, Systemd is not the only case with this problem .. there's plenty of cases where features that were used by people, sometimes even the something people considered the core feature of a project got changed or even got ripped out by the developers because they didn't realize they were being used,  sometimes almost killing that Open Source project by accident.<br />
+And I don't want that to happen to some of my favourite open source projects ..</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Sat, 09/20/2014 - 19:52</div>
+      <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-5519"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/3504529d68fda65592702c58f72ef9ef.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Michael&#039;s picture" title="Michael&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-5519">#1</a>
+    <span class="author"><span class="anonymous" title="not verified">Michael</span></span>  : <span class="title"><a href="index.html#comment-5519" class="active">It is not gonna happen</a></span>
+  </h3>
+  <div class="content"><p>To be honest, it is not gonna happen for a while. Customer service and marketing are specific skills for a reason, and as long as we will think this is less useful than just having technical people in the project, things will not improve. There is no proper feedback loop for users to people who do the work. So in the end, people on the distribution side have to take the raw feedback from users, and having been there, I can tell you that </p>
+<p>1) there is too much feedback to handle ( I counted that spending 5 minutes on every mail received the first day of mageia project would have required me to work 5 days non stop, 8h per day ). It is fine if you do that full time, but in a free software project, either you answer to everybody, or you produce the software. So you need to do some sampling, which bring to the 2nd point</p>
+<p>2) some users are just abusive. Sometime, that's because they do not realize. Speaking by mail, in a foreign language, not being sure, all are factor that result into misunderstanding. And sometime, no. Sometime, you just see people forgetting a human is on the other side. This post from Sam Kottler is quite spot on : <a href="http://shk.io/2014/08/27/open-source/" title="http://shk.io/2014/08/27/open-source/" rel="nofollow">http://shk.io/2014/08/27/open-source/</a> </p>
+<p>3) since you can't listen to everybody due to lack of ressources, you have to select. And since you will select based on who is shouting the most often or who is making people react, and since all of them will say that they are more important, so they must be listened, you end with a perception that part of your users are highly annoying, while they are not when you stop, step back, and reflect.</p>
+<p>So the net result is that after a while, you either stop to do anything, or you start to drop all empathy for people. The astute reader will see that this also look closely to the symptom of burnout...</p>
+<p>I know very few people wanting to be front line support. but with free software, when you say "listening to users", that's exactly what happen. And while at least people on support or marketing can avoid being too engaged, since that's mostly just a job, this is not the case for free software developpers or distributions makers. For you, that's just a software. For them, they sometime put lots of efforts in it. </p>
+<p>Being in ops, you are protected from that ugly side, you do not see people complaining on how they would do better the network and this kind of stuff. But if you want to see what it mean and how it work, I would suggest to try and participate to a distribution. Even better start by forums, read stuff there, and see how exhausting it can be. </p>
+<p>Then maybe this will bring a idea that others didn't have. Maybe we need people to do that job, so the idea would be to recruit people for that. Maybe we need better software to handle the feedback. Or maybe we should start to nurture a community of people to bring more than technical stuff, by bringing more diversity.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/26/2014 - 02:18</div>
+  </div>
+<a id="comment-5516"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.myittips.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/c589243384d051bceb536f5164dbcbed.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kenneth Martins&#039;s picture" title="Kenneth Martins&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-5516">#2</a>
+    <span class="author"><a href="http://www.myittips.com/">Kenneth Martins</a></span>  : <span class="title"><a href="index.html#comment-5516" class="active">I can understand your point</a></span>
+  </h3>
+  <div class="content"><p>I can understand your point of view, I also ask myself the same questions...</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/22/2014 - 15:53</div>
+  </div>
+<a id="comment-5514"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://robyn.io/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/465fd41d7b1070a6414f2d4818ac9cb4.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Robyn Bergeron&#039;s picture" title="Robyn Bergeron&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-5514">#3</a>
+    <span class="author"><a href="http://robyn.io/">Robyn Bergeron</a></span>  : <span class="title"><a href="index.html#comment-5514" class="active">I have a thousand things to</a></span>
+  </h3>
+  <div class="content"><p>I have a thousand things to say... surprising, right? :) ... but better suited to a blog post than in a comment. So I'll do that in the next day or so. :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/22/2014 - 04:46</div>
+  </div>
+<a id="comment-5513"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/2d3de4cd0e00771a627d11a0b778ec01.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="dirk dierickx&#039;s picture" title="dirk dierickx&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-5513">#4</a>
+    <span class="author"><span class="anonymous" title="not verified">dirk dierickx</span></span>  : <span class="title"><a href="index.html#comment-5513" class="active">redhad &amp; others</a></span>
+  </h3>
+  <div class="content"><p>I can somewhat understand that RH is going this way, they developed it and seem to be on some mission to replace the unixy parts of linux with something else (for unknown reasons).</p>
+<p>I don't get it why all other distros are jumping on this bandwagon. Why are debian, arch, ... doing this? Ok, Gnome3 also builds further on systemd, but;</p>
+<p>1. gnome 3 is of no interest on the server<br />
+2. less people would cry foul if gnome 3 would no longer be available compared to the number of people complaining about systemd being the default init.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/21/2014 - 18:03</div>
+  </div>
+<a id="comment-5511"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://linux-training.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/a6731f524e4b2dd47bc021aabea1db6d.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Paul Cobbaut&#039;s picture" title="Paul Cobbaut&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-5511">#5</a>
+    <span class="author"><a href="http://linux-training.be/">Paul Cobbaut</a></span>  : <span class="title"><a href="index.html#comment-5511" class="active">Debian</a></span>
+  </h3>
+  <div class="content"><p>I am still hoping for Debian to make a systemd-less version of their distro... idle hope probably.</p>
+<p>p</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/21/2014 - 10:54</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/systemd-and-devops by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:15 GMT -->
+</html>

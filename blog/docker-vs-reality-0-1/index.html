@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/docker-vs-reality-0-1 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:23:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Docker vs Reality , 0 - 1 | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Docker vs Reality , 0 - 1</h2>
+<div class="content">
+<div id="node-1090" class="node  blog">
+<div class="content"><p>(aka the opinionated summary of the #devopsdays London November OpenSpace on  , Containers and the new flood of Image Sprawl)</p>
+<p>There's a bunch of people out there that think I don't like docker,  they are wrong.</p>
+<p>I just never understood the hype about it since I didn't see, (and still don't) see it being used at large and people seem to understand that as being against it.</p>
+<p>So let me put a couple of things straight :</p>
+<p>There's absolutely nothing wrong with using a <strong>container</strong> based approach when deploying your infrastructure.  If you remember my talks about the rise of Open Source Virtualization some years ago you've noticed that I've always mentioned OpenVZ and friends  as good alternatives if you wanted to have a lot of isolated platforms on one machine.     LXC and friends have grown .. they are even more usable these days.  Years ago people bought bare metal and ran Hypervisors on it to isolate resources.  These days people rent VM's and also want the same functionality so the use of the combination of Virtualization and Container based technologies is a very good match there.</p>
+<p>There's also nothing wrong with using Infrastructure as Code tools to build an reproducable image you are going to deploy will  provide you with a disposable image which allows you to quickly launch a reproducable and versionned platform for your application  if that application is supposed to be shortlived.     The tooling around today is not yet there to have these images long lived as you still need to manage the config inside the containers as your application will evolve, it will change, your environment will change (think even about changing to a different loghost..) , but when you don't have to keep state you can dispose the image and redeploy a new reproducable one.</p>
+<p>In the embedded world, this kind of approach with multiple banks has been a round for a while , one image running, a second bank as a fallback, and when you upgrade the passive bank you can swap the roles and still have roll back.</p>
+<p>There's is also nothing wrong on combining these to approaches and using tools such as Docker and Packer. </p>
+<p>But there is lot wrong with building images that then start living their own life,  tools like Veewee etc saw the light to create an easy way to make sure the JeOS image (Just Enough Operating System) we created was reproducable, not to ship around virtual appliances. </p>
+<p>But, lets be realistic,  the number of applications that are suitable for this kind of environment  is small.   Most applications these days are still very statefull,  and when your application contains state you need to manage that<br />
+that state, you can't just dispose an image which has state.  Specially in an Enterprise environment stateless, immutable applications are really the exception rather than the rule.</p>
+<p>When your application maps with stateless and short lived,  or a some people like to call it Immutable please do so..  but if it doesn't please remember that we started using configuration management tools like CFengine, Puppet and Chef to prevent Image Sprawl and Config Drift<br />
+There's proprietary businesses out there building tools to detect config drift and extort organisations to solve problems that shouldn't have existed in the first place.</p>
+<p>Luckily the majority of smart people I've spoken to over the past couple of weeks pretty much confirmed this ...<br />
+Like one of the larger devops minded appliation hosting outsourcers in emea, I asked them how much % of their customer base they could all "Immutable"   , exactly 0% was the answer.</p>
+<p>Image Based Container solutions are definitely not a one size fits all solution, and we have along way to go before we get there if at all ..</p>
+<p>Till then I like not to diffuse my attention to too many different types of deploying platforms, just not to make stuff more complex than it already is...as complexity is the enemy of reliability</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 11/27/2013 - 23:36</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1522 first"><a href="../category/antipatterns-newbies/index.html" rel="tag" title="">antipatterns newbies</a></li>
+<li class="taxonomy_term_1520"><a href="../category/containers/index.html" rel="tag" title="">containers</a></li>
+<li class="taxonomy_term_1328"><a href="../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1244"><a href="../category/image-sprawl/index.html" rel="tag" title="">image sprawl</a></li>
+<li class="taxonomy_term_1521"><a href="../category/images/index.html" rel="tag" title="">images</a></li>
+<li class="taxonomy_term_1517"><a href="../category/infrastructure-code/index.html" rel="tag" title="">infrastructure as code</a></li>
+<li class="taxonomy_term_1518"><a href="../category/jeos/index.html" rel="tag" title="">jeos</a></li>
+<li class="taxonomy_term_1519"><a href="../category/packer/index.html" rel="tag" title="">packer</a></li>
+<li class="taxonomy_term_439"><a href="../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1501"><a href="../category/puppetize/index.html" rel="tag" title="">puppetize</a></li>
+<li class="taxonomy_term_672 last"><a href="../taxonomy/term/672/index.html" rel="tag" title="">virtualization</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-5449"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://docker.io/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/ec01ad7f203004b5b9b2935e4d535b4e.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Solomon Hykes&#039;s picture" title="Solomon Hykes&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-5449">#1</a>
+    <span class="author"><a href="http://docker.io/">Solomon Hykes</a></span>  : <span class="title"><a href="index.html#comment-5449" class="active">A few corrections on state and repeatability</a></span>
+  </h3>
+  <div class="content"><p>Hi Kris! I'm pretty sure we met at Fosdem in 2009 around a Belgian pint, so hi again :)</p>
+<p>Thanks for taking the time to write this! I agree that containers and configuration management are not mutually exclusive, and I believe in the end containers are a facilitator of "infrastructure as code", not a replacement.</p>
+<p>I think that there is some misunderstanding on both the *goals* and *capabilities* of docker regarding state management, configuration drift, repeatability, etc. I find your title a bit unfair, as it seems to imply that people using and developing Docker are not in touch with the reality of ops - when in fact many seasoned ops and infrastructure use Docker extensively, at large scale, in the real world. Since we are all reasonable, experienced systems people I'm sure we can reach an understanding on the relative strengths and weaknesses of our favorite tools, without doubting the experience and professionalism of others :)</p>
+<p>So here are the corrections I would like to submit to you:</p>
+<p>1) The container model is not the same thing as the vm appliance model. You seem to conflate the 2, for example by putting Docker in the same category as appliance building tools like Packer and Veewee. There are superficial similarities but the 2 are fundamentally different. Container engines are neither in the category of "dynamic configuration management" nor in "server image baking". They are in a 3d category of their own. Realizing this will help us discuss the pros and cons of container engines which are really specific to them (including docker).</p>
+<p>2) Container engines are not just for stateless applications. Docker has primitives for persistent data volumes. These primitives are typically used to designate persistent parts of the container like database files. Volumes continue to exist separately from the lifecycle of an individual container, and can be shared or transferred across containers. This is how database updates are implemented, or how you might update eg. a wordpress installation with user-uploaded assets. The nice thing about this model is that it gives you the best of both worlds: you still get a fresh new container for each version, which means every change anywhere on your infrastructure maps 1:1 to a new container - from a one-liner fix to your configuration to security updates in openssh, it's right there in your audit trail with a unique ID, inputs and outputs, and all other properties of a containers. But at the same time you can use volumes to maintain a whitelist of exceptions - the data you know needs to be shared. This is better for the same reason that "deny-by-default" firewalling is better.</p>
+<p>3) Docker containers can be built from source repeatably. This is a key feature of docker. With the 'docker build' command you get a 1-to-1 transformation from a source repository to a runnable container. Building a container is very different from building a VM image (again: docker is not at all in the same category as veewee and packer). To the developer it feels like compiling a binary - the speed, resource usage and portability characteristics are roughly the same. So your argument of "if you don't run a configuration management agent in the container, it will drift!" is incorrect. You can measure drift from the outside (just run 'docker diff'). You can solve drift entirely at any time by simply nuking your container and running a new one. As explained in point 2, *you can do this for stateful applications too* thanks to volumes.</p>
+<p>In short: I respect the experience and accumulated lessons that went into the current devops tools - I've been a sysadmin too :) But I feel that a lot of the criticism against Docker comes from knee-jerk "get off my lawn" reactions, assuming that everyone using or advocating Docker is a hipster who's never seen a real production environment. I assure you that is far from the case. I know that Docker is pretty hyped right now - I personally think it's a mixed blessing for exactly this reason: unexperienced people are bound to talk about Docker, and say stupid things about what Docker can do and how to use it. I wish I could magically prevent this. But all I can do is emphasize that some of us know what we're doing :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/28/2013 - 21:50</div>
+  </div>
+<a id="comment-5448"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://t9productions.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/0069a24c13ba9ca6bbb1b27108192f8a.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Nathaniel Eliot&#039;s picture" title="Nathaniel Eliot&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-5448">#2</a>
+    <span class="author"><a href="http://t9productions.com/">Nathaniel Eliot</a></span>  : <span class="title"><a href="index.html#comment-5448" class="active">Claiming that enterprise</a></span>
+  </h3>
+  <div class="content"><p>Claiming that enterprise software is 100% stateful is misleading. Instead of asking "what % of your customers are immutable", you should ask "what % of your systems hold state".</p>
+<p>Pretty much all software stacks are at some point stateful. Individual components, however, are often designed to be stateless to make 'burn and turn' upgrades easier. Many data stores (especially newer ones) can be treated as psuedo-stateless, in that they recover their data from peers when replaced. And even the most stateful machines can be made easily recapitulable by clever use of attached persistent storage.</p>
+<p>Docker doesn't magically enable any of these scenarios, however, so I do agree with your conclusion. While neat, it isn't quite as revolutionary as it's hyped to be. It provides capabilities that folks using IaaS (and/or local virtualization) have already relied on for years, just somewhat more efficiently.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/28/2013 - 21:36</div>
+  </div>
+<a id="comment-5446"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://sysadminsjourney.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/29be2ed93ef4cc97565a550d446f4ae9.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Justin Ellison&#039;s picture" title="Justin Ellison&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-5446">#3</a>
+    <span class="author"><a href="http://sysadminsjourney.com/">Justin Ellison</a></span>  : <span class="title"><a href="index.html#comment-5446" class="active">Copy + Paste</a></span>
+  </h3>
+  <div class="content"><p>Hey Kris,</p>
+<p>Great article, I agree whole-heartedly. Docker vs CM is truly Apples vs Oranges.</p>
+<p>Quick note, it looks like you pasted a blurb twice in your post.  Search for "But there is lot wrong with building images that then start living their own life" and you'll see it.</p>
+<p>Justin</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/28/2013 - 00:04</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/docker-vs-reality-0-1 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:23:20 GMT -->
+</html>

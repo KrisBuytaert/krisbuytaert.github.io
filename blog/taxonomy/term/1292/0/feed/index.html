@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - icinga</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1292/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>check_graphite</title>
+ <link>http://127.0.0.1:8080/blog/checkgraphite</link>
+ <description>&lt;p&gt;During my Puppetcamp Gent talk last week, I explained how to get alerts based on trends from graphite. A number of people asked ,e how to do that.&lt;/p&gt;
+&lt;p&gt;First lets quickly explain why you might want to do that .&lt;br /&gt;
+Sometimes you don&#039;t care about the current value of a metric..as an example take  a Queing system .. there is no problem if there are messages added to the queue, not even if there are a lot of messages on the queue,  there might however be a problem if  over a certain period the number of messages on a queue stays to high.&lt;/p&gt;
+&lt;p&gt;In this example I`m monitoring the queue length of a hornetq setup which is exposed by JMX.&lt;br /&gt;
+On the server runnnig HornetQ I have an exported resource that tells the JMXTrans server to send the  MessageCount  to graphite&lt;br /&gt;
+(you could also do this using collectd plugins) &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;@@jmxtrans::graphite {&amp;quot;MessageCountMonitor-${::fqdn}&amp;quot;:&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;    jmxhost =&amp;gt; hiera(&#039;hornetqserver&#039;),&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            jmxport =&amp;gt; &amp;quot;5446&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            objtype =&amp;gt; &#039;org.hornetq:type=Queue,*&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            attributes =&amp;gt;  &#039;&amp;quot;MessageCount&amp;quot;,&amp;quot;MessagesAdded&amp;quot;,&amp;quot;ConsrCount&amp;quot;&#039;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            resultalias =&amp;gt; &amp;quot;hornetq&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            typenames =&amp;gt; &amp;quot;name&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            graphitehost =&amp;gt; hiera(&#039;graphite&#039;),&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;            graphiteport =&amp;gt; &amp;quot;2003&amp;quot;,&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;}&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;This gives me a computable url on which I can get the graphite view &lt;/p&gt;
+&lt;p&gt;The next step then is to configure a nagios check that verifies this data. For that I need to use the &lt;a href=&quot;http://github.com/datacratic/check_graphite&quot; rel=&quot;nofollow&quot;&gt;check_graphite&lt;/a&gt; plugin from Datacratic ..&lt;/p&gt;
+&lt;p&gt;Which can work with an nrpe config like&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### File managed with puppet ###&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### Served by:        &#039;&amp;lt;%= scope.lookupvar(&#039;::servername&#039;) %&amp;gt;&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### Module:           &#039;&amp;lt;%= scope.to_hash[&#039;module_name&#039;] %&amp;gt;&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;### Template source:  &#039;&amp;lt;%= template_source %&amp;gt;&#039;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;command[check_hornetq]=/usr/lib64/nagios/plugins/check_graphite -u &amp;quot;http://&amp;lt;%= graphitehost%&amp;gt;/render?target=servers.&amp;lt;%= scope.lookupvar(&#039;::fqdn&#039;).gsub(/\./,&#039;_&#039;)%&amp;gt;_5446.hornetq.docstore_private_trigger_notification.MessageCount&amp;amp;from=-30minutes&amp;amp;rawData=true&amp;quot; -w 2000 -c 20000&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;I define this check on the host where HornetQ is running  as it then will map to that host on Icinga/Nagios  rather than throw a host error on an unrelated host.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/checkgraphite#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/icinga">icinga</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringlove">monitoringlove</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Tue, 05 Feb 2013 09:10:15 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1076 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>#monitoringsucks and we&#039;ll fix it !</title>
+ <link>http://127.0.0.1:8080/blog/monitoringsucks-and-well-fix-it</link>
+ <description>&lt;p&gt;If you are hacking on monitoring solutions, and want to talk to your peers solving the problem&lt;br /&gt;
+Block the monday and tuesday after fosdem in your calendar !&lt;/p&gt;
+&lt;p&gt;That&#039;s right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp&lt;/p&gt;
+&lt;p&gt;In short  a #monitoringsucks hackathon&lt;/p&gt;
+&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp&lt;/p&gt;
+&lt;p&gt;Obviously if you can&#039;t make it to Antwerp you can join the effort on ##monitoringsucks on Freenode or on Twitter.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.inuits.eu/contact&quot; rel=&quot;nofollow&quot;&gt;location will be Duboistraat 50 , Antwerp&lt;/a&gt;&lt;br /&gt;
+It is about 10 minutes walk from the Antwerp Central Trainstation&lt;br /&gt;
+Depending on Traffic Antwerp is about half an hour north of Brussels and there are hotels at walking distance from the venue.&lt;/p&gt;
+&lt;p&gt;Plenty of parking space is available on the other side of the Park&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoringsucks-and-well-fix-it#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/collectd">collectd</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ganglia">ganglia</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/icinga">icinga</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/category/monitoringsucks">monitoringsucks</category>
+ <category domain="http://127.0.0.1:8080/blog/category/munin">munin</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/890">nagios</category>
+ <category domain="http://127.0.0.1:8080/blog/category/rrd">rrd</category>
+ <pubDate>Tue, 03 Jan 2012 18:23:00 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1057 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>MonitoringForge</title>
+ <link>http://127.0.0.1:8080/blog/monitoringforge</link>
+ <description>&lt;p&gt;I found the  initial announcement in my Spambox, thats where I send all the mails from GroundWork as unsubscribing from their marketing lists doesn&#039;t seem to work ..&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.adventuresinoss.com/?p=1117&quot; rel=&quot;nofollow&quot;&gt;Tarus&lt;/a&gt; pointed it out.. he already mentionned Marketing, low community imput etc..&lt;/p&gt;
+&lt;p&gt;Nevertheles I had a look,  and my first and last impression was,  NagiosForge, no active community, and empty pages on other imvho more relevant Monitoring Projects created by GroundWork employees.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.johnmwillis.com/&quot; rel=&quot;nofollow&quot;&gt;Big John &lt;/a&gt; coined the &quot;to pull a GroundWork&quot; phrase aiming at their early products, err logo placements.   When &lt;a href=&quot;http://www.inuits.be&quot;&gt;we&lt;/a&gt; were evaluating differen Open Source monitoring tools for our OLS paper about 18 months ago we looked at the tool and it  didn&#039;t make the cut .. it failed in all areas where it claimed to be strong,  ease of installation , lack of errorhandling during the installation, etc  ... some while later another collegue tried again  and we ran into similar problems&lt;/p&gt;
+&lt;p&gt;Yet some people claim it to be a great product..   I&#039;m not a fan yet ...maybe one day they they&#039;ll know to convince me .. but for now&lt;br /&gt;
+When I need Nagios .. I`ll be looking at &lt;a href=&quot;http://djagios.org/&quot; rel=&quot;nofollow&quot;&gt;Djagios&lt;/a&gt; , &lt;a href=&quot;http://opsview.org/&quot; rel=&quot;nofollow&quot;&gt;Opsview&lt;/a&gt; , &lt;a href=&quot;http://www.icinga.org/&quot; rel=&quot;nofollow&quot;&gt;Icinga&lt;/a&gt; or the real thing.&lt;/p&gt;
+&lt;p&gt;However, ther&#039;s still Hyperic, Zenoss and Zabbix :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/monitoringforge#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/889">hyperic</category>
+ <category domain="http://127.0.0.1:8080/blog/category/icinga">icinga</category>
+ <category domain="http://127.0.0.1:8080/blog/category/look-no-link">look no link</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/938">monitoring</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/890">nagios</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/887">zabbix</category>
+ <category domain="http://127.0.0.1:8080/blog/category/zenos">zenos</category>
+ <pubDate>Wed, 23 Sep 2009 19:20:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">939 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

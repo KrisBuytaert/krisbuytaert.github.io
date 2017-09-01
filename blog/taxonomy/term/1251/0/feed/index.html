@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - raid sucks</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1251/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>The machine that vanished.</title>
+ <link>http://127.0.0.1:8080/blog/machine-vanished</link>
+ <description>&lt;p&gt;Today I lost a machine,  a physical one, I couldn&#039;t find it back in my rack anymore.   One moment I was logged on to it, and when I instructed it to boot off the network again for a fresh installation I couldn&#039;t find it back anymore, it was gone.&lt;/p&gt;
+&lt;p&gt;When you have different ad hoc build development environments, you often grab whatever hardware is available to add to your pool and hope it doesn&#039;t kick you back, time always works against you when you have to build a fresh platform from a pool of hardware ready to be reused.&lt;/p&gt;
+&lt;p&gt;I had half a rack of hardware ready to be redeployed,  the default boot order of most machines is   Disk, Network  so we trigger a fresh network install by overwriting the MBR.   So the one machine .. after doing a quick check  to see if there was nothing relevant on it anymore we sent it to the reboot pool.&lt;/p&gt;
+&lt;p&gt;The host  was supposed to boot of the network, but I didn&#039;t even see a dhcp request coming in.  So off to the lab it was .. where was that machine..  none of the consoles I tried was the correct one... until I found one box.. with a really really old installation , a machine that had returned from a different office.&lt;/p&gt;
+&lt;p&gt;And then it all came clear ... unlike all the other machines this machine had a 2 disk raid setup, which we actually weren&#039;t using , we indeed hat cleared the bootsector of the first disk, but not the second disk .. and we never had really cleared the 2nd disk.  So rather than booting of the network because the first disk failed it booted of the old copy on the second disk.&lt;/p&gt;
+&lt;p&gt;Scratching that 2nd disk solved the problem ..   for once it wasn&#039;t a DNS problem, but the RAID setup wasn&#039;t really helpfull either :)&lt;/p&gt;
+&lt;p&gt;PS.  Yes re-labeling the machines is still on the todolist .. maybe next year :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/machine-vanished#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/automating">automating</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/489">linux</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/995">raid</category>
+ <category domain="http://127.0.0.1:8080/blog/category/raid-sucks">raid sucks</category>
+ <pubDate>Fri, 15 May 2009 18:12:36 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">908 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

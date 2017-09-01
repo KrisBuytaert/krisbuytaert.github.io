@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - unmanaged</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1437/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Ensure Running</title>
+ <link>http://127.0.0.1:8080/blog/ensure-running</link>
+ <description>&lt;p&gt;Has anyone noticed that pretty much every puppet module one finds on the internet by default enables the service they try to configure in the module&lt;/p&gt;
+&lt;p&gt;When looking at it from a single machine point of view it makes sense to include the module , have it configure your service  and directly enable it by default.&lt;/p&gt;
+&lt;p&gt;So I started wondering .. isn&#039;t there anybody out there who is building clusters ?   Where services have to configured on multiple nodes but should NOT be running acitvely on all nodes by default because there is an external tool which manages that for you (Pacemaker framework eg.)&lt;/p&gt;
+&lt;p&gt;Agreed it&#039;s a small patch to get the functionality you want , but it brings an extra overhead when one upgrades the modules etc.&lt;/p&gt;
+&lt;p&gt;So if it doesn&#039;t bother you  please split your puppet module in 2 parts.. one you call to configure the service,  another which you call to enable the service , if you want to.&lt;/p&gt;
+&lt;p&gt;thnx !&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/ensure-running#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/475">heartbeat</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/562">linux-ha</category>
+ <category domain="http://127.0.0.1:8080/blog/category/managed">managed</category>
+ <category domain="http://127.0.0.1:8080/blog/category/modules">modules</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/unmanaged">unmanaged</category>
+ <pubDate>Thu, 10 Feb 2011 19:20:44 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1034 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

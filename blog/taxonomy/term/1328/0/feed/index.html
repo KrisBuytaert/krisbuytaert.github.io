@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - devops</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1328/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Will containers take over ?</title>
+ <link>http://127.0.0.1:8080/blog/will-containers-take-over</link>
+ <description>&lt;p&gt;and if so why haven&#039;t they done so yet ?&lt;/p&gt;
+&lt;p&gt;Unlike many people think, containers are not new, they have been around for more than a decade,  they however just became popular for a larger part of our ecosystem. &lt;a href=&quot;http://cloudscaling.com/blog/cloud-computing/will-containers-replace-hypervisors-almost-certainly/&quot; rel=&quot;nofollow&quot;&gt;Some&lt;/a&gt; people think  containers will eventually take over.&lt;/p&gt;
+&lt;p&gt;Imvho It is  all about application workloads,  when  8 years ago &lt;a href=&quot;http://virtualization.com/2008/03/10/looking-back-at-a-decade-of-open-source-virtualisation/&quot; rel=&quot;nofollow&quot;&gt; I wrote&lt;/a&gt; about a decade of open source virtualization,   we looked at containers as the solution for running a large number of isolated instances of something on a machine. And with large we meant hundreds or more instances  of apache, this was one of  the example use cases for an ISP that wanted to give a secure but isolated platform to his users. One container per user.&lt;/p&gt;
+&lt;p&gt;The majority of enterprise  usecases however were full VM&#039;s   Partly because we were still consolidating existing services to VM&#039;s and weren&#039;t planning on changing the deployment patterns yet. But mainly because most organisations didn&#039;t have the need to run 100 similar or identical instances of an application or a service,  they were going from 4 bare metal servers to 40 something VM&#039;s but they had  not yet come to the need to run 100&#039;s of them.  The software architecture had just moved from FatClient applications that talked directly to bloated relational databases containing business logic, to web enabled multi-tier&lt;br /&gt;
+applications.   In those days when you suggested to run 1 Tomcat instance per VM because VM&#039;s were cheap and it would make management easier,  (Oh oops I shut down the wrong tomcat instance)  , people gave you very weird looks&lt;/p&gt;
+&lt;p&gt;Slowly software architectures are changing , today  the new breed of applications is small, single function, dedicated, and it interacts frequently with it&#039;s peers, together combined they provide similar functionality as a big fat application 10 years ago, But when you look at the market that new breed is a minority.  So a modern application might consist of 30-50 really small ones,  all with different deployment speeds.  And unlike 10 years ago where we needed to fight hard to be able to build both dev, acceptance and production platforms,  people now consider that practice normal.  So today we do get environments that quickly go to 100+ instances , but requiring similar CPU power as before,   so the use case for containers like we proposed it in the early days is now slowly becoming a more common use case.&lt;/p&gt;
+&lt;p&gt;So yes containers might take over ...  but before that happens .. a lot of software architectures will need to change,  a lot of elephants will need to be sliced, and that  is usually what blocks cloud, container, agile and devops adoption.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/will-containers-take-over#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/containers">containers</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devoops">devoops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/microservices">microservices</category>
+ <category domain="http://127.0.0.1:8080/blog/category/software-architecture">software architecture</category>
+ <pubDate>Wed, 15 Jun 2016 14:57:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1112 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Jenkins DSL and Heisenbugs</title>
+ <link>http://127.0.0.1:8080/blog/jenkins-dsl-and-heisenbugs</link>
+ <description>&lt;p&gt;I`m working on getting even more moving parts automated,  those who use Jenkins frequently probably also have  Love - Hate relationship with it. &lt;/p&gt;
+&lt;p&gt;The love coming from the flexibility , stability and the power you get from it,  the hate from it&#039;s UI.   If you&#039;ve ever had to create a new Jenkins job or even pipeline based on one that already existed you&#039;ve gone trough the horror of click and paste errors , and you know where the hate breeds.&lt;/p&gt;
+&lt;p&gt;We&#039;ve been trying to automate this with different levels of success,  we&#039;ve puppetized the XML jobs,  we&#039;ve used the  Buildflow Plugin (reusing the same job for different pipelines is a bad idea..)  We played with JJB running into issues with some plugins (Promoted Build)  and most recently we have put our hope in  the Job DSL. &lt;/p&gt;
+&lt;p&gt;While toying with the DSL I ran into a couple of interresting behaviours.  Imagine you have an entry like this which is supposed to replace the $foldername with the content of the variable and actually take the correct upstream&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;cloneWorkspace(&#039;${foldername}/dashing-dashboard-test&#039;, &#039;Successful&#039;)&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;You generate the job, look inside the Jenkins UI to verify what the build result was .. save the job and run it .. success ..&lt;br /&gt;
+Then a couple of times later that same job gives an error ... It can&#039;t find the upstream job  to copy the workspace from. You once again open up the job in the UI, look at it .. save it , run it again and then it works.. a typical case of  Heisenbug .. &lt;/p&gt;
+&lt;p&gt;When you start looking closer to the XML of the job you notice ..&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;parentJobName&amp;gt;${foldername}/dashing-dashboard-test&amp;lt;/parentJobName&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;obviously wrong .. I should have used double quotes ..&lt;/p&gt;
+&lt;p&gt;But why doesn&#039;t it look wrong in the UI ?  That&#039;s because the UI autoselects the first option from it&#039;s autogenerated pull down list ..  Which actually contains the right upstream workplace I wanted to trigger (that will teach me to use 00 as a prefix for the  foldername  for all my tests..)&lt;/p&gt;
+&lt;p&gt;So when working with the DSL .. review the generated XML .. not just if the job works ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/jenkins-dsl-and-heisenbugs#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/automate">automate</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/dsl">dsl</category>
+ <category domain="http://127.0.0.1:8080/blog/category/inception">inception</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jenkins">jenkins</category>
+ <pubDate>Mon, 13 Jun 2016 19:04:03 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1111 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>The power of packaging software, package all the things</title>
+ <link>http://127.0.0.1:8080/blog/power-packaging-software-package-all-things</link>
+ <description>&lt;p&gt;Software delivery is hard, plenty of people all over this planet are struggling with delivering software in their own controlled environment. They have invented great patterns that will build an artifact, then do some magic and the application is up and running.&lt;/p&gt;
+&lt;p&gt;When talking about continuous delivery, people invariably discus their delivery pipeline and the different components that need to be in that pipeline.&lt;br /&gt;
+Often, the focus on getting the application deployed or upgraded from that pipeline is so strong that teams&lt;br /&gt;
+forget how to deploy their environment from scratch.&lt;/p&gt;
+&lt;p&gt;After running a number of tests on the code , compiling it where needed, people want to move forward quickly and deploy their release artifact on an actual platform.&lt;br /&gt;
+This deployment is typically via a file upload or a checkout from a source-control tool from the dedicated computer on which the application resides.&lt;br /&gt;
+Sometimes, dedicated tools are integrated to simulate what a developer would do manually on a computer to get the application running.  Copy three files left, one right, and make sure you restart the service. Although this is obviously already a large improvement  over people manually pasting commands from a 42 page run book, it doesn’t solve all problems.&lt;/p&gt;
+&lt;p&gt;Like the guy who quickly makes a change on the production server, never to commit the change, (say goodbye to git pull for your upgrade process)&lt;br /&gt;
+If you package your software there are a couple of things you get for free from your packaging system.&lt;br /&gt;
+Questions like, has this file been modified since I deployed it,  where did this file come from, when was it deployed,&lt;br /&gt;
+what version of software  X do I have running on all my servers, are easily answered by the same&lt;br /&gt;
+tools we use already for every other package on the system.   Not only can you use existing tools you are also using tools that are well known by your ops team and that they&lt;br /&gt;
+already use for every other piece of software on your system.&lt;/p&gt;
+&lt;p&gt;If your build process creates a package and uploads it to a package repository which is available for the hosts in the environment you want to deploy to, there is no need anymore for&lt;br /&gt;
+a script that copies the artifact from a 3rd party location , and even less for that 42 page text document which never gets updated and still tells you to download yaja.3.1.9.war  from a location where you can only find&lt;br /&gt;
+3.2 and 3.1.8 and the developer that knows if you can use 3.2 or why 3.1.9 got removed just left for the long weekend.&lt;/p&gt;
+&lt;p&gt;Another, and maybe even more important thing, is the current sadly growing practice of having yet another tool in place that translates that 42 page text document to a bunch of shell scripts created from a drag and drop interface,  typically that &quot;deploy tool&quot; is even triggered from within the pipeline.   Apart from the fact that it usually stimulates a pattern of non reusable code, distributing even more ssh  keys , or adding yet another agent on all systems. it doesn’t take into account that you want to think of your servers as cattle and be able to deploy new instances of your application fast.&lt;br /&gt;
+Do you really want to deploy your five new nodes on AWS  with a full Apache stack ready for production, then reconfigure your load balancers only to figure out that someone needs to go click in your continuous integration tool or deployment  to deploy the application to the new hosts? That one manual action someone forgets?&lt;br /&gt;
+Imvho Deployment tools are a phase in the maturity process of a product team.. yes it&#039;s a step up from manually deploying software but it creates more and other problems , once your team grows in maturity refactoring out that tool is trivial.&lt;/p&gt;
+&lt;p&gt;The obvious and trivial approach to this problem, and it comes with even more benefits. is called packaging. When you package your artifacts as operating system (e.g., .deb or .rpm) packages,&lt;br /&gt;
+you can include that package in the list of packages to be deployed at installation time (via Kickstart or debootstrap). Similarly, when your configuration management tool&lt;br /&gt;
+(e.g., Puppet or Chef) provisions the computer, you can specify which version of the application you want to have deployed by default.&lt;/p&gt;
+&lt;p&gt;So, when you’re designing how you want to deploy your application, think about deploying new instances or deploying to existing setups (or rather, upgrading your application).&lt;br /&gt;
+Doing so will make life so much easier when you want to deploy a new batch of servers.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/power-packaging-software-package-all-things#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/cd">cd</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ci">ci</category>
+ <category domain="http://127.0.0.1:8080/blog/category/deb">deb</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/opslife">opslife</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/472">rpm</category>
+ <pubDate>Tue, 28 Jul 2015 06:35:13 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1104 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>What done REALLY looks like in devops</title>
+ <link>http://127.0.0.1:8080/blog/what-done-really-looks-devops</link>
+ <description>&lt;p&gt;Steve Ropa blogged about &lt;a href=&quot;http://blogs.versionone.com/agile_management/2015/04/30/what-done-looks-like-in-devops/&quot;&gt;What done looks like in devops&lt;/a&gt; ,   I must say I respecfullly , but fully disagree with Steve here.&lt;/p&gt;
+&lt;p&gt;For those of you that remember I gave an Ignite about my views on the use of the Definition of Done back ad #deovpsdays 2013 in Amsterdam.&lt;/p&gt;
+&lt;p&gt;In the early days we talked about the #devops movement partly being a reaction against the  late friday night deployments where the ops people got a tarball with some minimalistic notes and were supposed to put stuff in production.  The work of the development team was Done, but the operations team work just started.  &lt;/p&gt;
+&lt;p&gt;Things have improved .. like Steve mentions for a lot of teams done now means that that their software is deployable, that we have metrics from them, that we can monitor the application.&lt;/p&gt;
+&lt;p&gt;But lets face it .. even if all of that is in place there is still going to be maintenance, security fixes,  major stack upgrades, minor application changes,  we all still need to keep the delivery pipelines running.&lt;/p&gt;
+&lt;p&gt;A security patch on an appliction stack means that both the ops and the developers need to figure out the required changes together.&lt;/p&gt;
+&lt;p&gt;Building and delivering value to your end users is something that never ends, we are never actually done. &lt;/p&gt;
+&lt;p&gt;So let me repeat ,&lt;/p&gt;
+&lt;p&gt;&quot;Done is when your last enduser is in his grave&quot;&lt;br /&gt;
+In other words, when the application is decomissioned.&lt;/p&gt;
+&lt;p&gt;And that is the shared responsability mindset devops really brings,  everybody is caring about the value they are bringing to their customers, both developers and operations people.  Thinking about keeping the application running.  And not assuming that because a list of requirements have been validated at the end of a sprint we are done.  Because we never are...&lt;/p&gt;
+&lt;p&gt;BTW. Here&#039;s my original slides for that #devopsdays Amsterdam talk.&lt;/p&gt;
+&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/JhgnyP2eJbulns&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/KrisBuytaert/do-disnot-done&quot; title=&quot;Dod is not done&quot; target=&quot;_blank&quot;&gt;Dod is not done&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/KrisBuytaert&quot; target=&quot;_blank&quot;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;/p&gt;</description>
+ <comments>http://127.0.0.1:8080/blog/what-done-really-looks-devops#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/done">done</category>
+ <pubDate>Sun, 03 May 2015 17:05:29 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1102 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Jenkins, Puppet, Graphite, Logstash and YOU</title>
+ <link>http://127.0.0.1:8080/blog/jenkins-puppet-graphite-logstash-and-you</link>
+ <description>&lt;p&gt;This is a repost of an article I wrote for the Acquia Blog some time ago.&lt;/p&gt;
+&lt;p&gt;As mentioned before, devops can be summarized by talking about culture, automation, monitoring metrics and sharing. Although devops is not about tooling, there are a number of open source tools out there that will be able to help you achieve your goals. Some of those tools will also enable better communication between your development and operations teams.&lt;/p&gt;
+&lt;p&gt;When we talk about Continuous Integration and Continuous Deployment we need a number of tools to help us there. We need to be able to build reproducible artifacts which we can test. And we need a reproducible infrastructure which we can manage in a fast and sane way. To do that we need a Continuous Integration framework like Jenkins.&lt;/p&gt;
+&lt;p&gt;Formerly known as Hudson, Jenkins has been around for a while. The open source project was initially very popular in the Java community but has now gained popularity in different environments. Jenkins allows you to create reproducible Build and Test scenarios and perform reporting on those. It will provide you with a uniform and managed way to , Build, Test, Release and Trigger the deployment of new Artifacts, both traditional software and infrastructure as code-based projects. Jenkins has a vibrant community that builds new plugins for the tool in different kinds of languages. People use it to build their deployment pipelines, automatically check out new versions of the source code, syntax test it and style test it. If needed, users can compile the software, triggering unit tests, uploading a tested artifact into a repository so it is ready to be deployed on a new platform level.&lt;/p&gt;
+&lt;p&gt;Jenkins then can trigger an automated way to deploy the tested software on its new target platform. Whether that be development, testing, user acceptance or production is just a parameter. Deployment should not be something we try first in production, it should be done the same on all platforms. The deltas between these platforms should be managed using a configuration management tool such as Puppet, Chef or friends.&lt;/p&gt;
+&lt;p&gt;In a way this means that Infrastructure as code is a testing dependency, as you also want to be able to deploy a platform to exactly the same state as it was before you ran your tests, so that you can compare the test results of your test runs and make sure they are correct. This means you need to be able to control the starting point of your test and tools like Puppet and Chef can help you here. Which tool you use is the least important part of the discussion, as the important part is that you adopt one of the tools and start treating your infrastructure the same way as you treat your code base: as a tested, stable, reproducible piece of software that you can deploy over and over in a predictable fashion.&lt;/p&gt;
+&lt;p&gt;Configuration management tools such as Puppet, Chef, CFengine are just a part of the ecosystem and integration with Orchestration and monitoring tools is needed as you want feedback on how your platform is behaving after the changes have been introduced. Lots of people measure the impact of a new deploy, and then we obviously move to the M part of CAMS.&lt;/p&gt;
+&lt;p&gt;There, Graphite is one of the most popular tools to store metrics. Plenty of other tools in the same area tried to go where Graphite is going , but both on flexibility, scalability and ease of use, not many tools allow developers and operations people to build dashboards for any metric they can think of in a matter of seconds.&lt;/p&gt;
+&lt;p&gt;Just sending a keyword, a timestamp and a value to the Graphite platform provides you with a large choice of actions that can be done with that metric. You can graph it, transform it, or even set an alert on it. Graphite takes out the complexity of similar tools together with an easy to use API for developers so they can integrate their own self service metrics into dashboards to be used by everyone.&lt;/p&gt;
+&lt;p&gt;One last tool that deserves our attention is Logstash. Initially just a tool to aggregate, index and search the log files of our platform, it is sometimes a huge missed source of relevant information about how our applications behave.. Logstash and it&#039;s Kibana+ElasticSearch ecosystem are now quickly evolving into a real time analytics platform. Implementing the Collect, Ship+Transform, Store and Display pattern we see emerge a lot in the #monitoringlove community. Logstash now allows us to turn boring old logfiles that people only started searching upon failure into valuable information that is being used by product owners and business manager to learn from on the behavior of their users.&lt;/p&gt;
+&lt;p&gt;Together with the Graphite-based dashboards we mentioned above, these tools help people start sharing their information and communicate better. When thinking about these tools, think about what you are doing, what goals you are trying to reach and where you need to improve. Because after all, devops is not solving a technical problem, it&#039;s trying to solve a business problem and bringing better value to the end user at a more sustainable pace. And in that way the biggest tool we need to use is YOU, as the person who enables communication.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/jenkins-puppet-graphite-logstash-and-you#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/graphite">graphite</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jenkins">jenkins</category>
+ <category domain="http://127.0.0.1:8080/blog/category/logstash">logstash</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <pubDate>Wed, 04 Jun 2014 14:55:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1096 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Why Does DevOps Matter?</title>
+ <link>http://127.0.0.1:8080/blog/why-does-devops-matter</link>
+ <description>&lt;p&gt;This is a repost of an article I wrote for the &lt;a href=&quot;http://www.acquia.com/blog&quot; rel=&quot;nofollow&quot;&gt;Acquia Blog&lt;/a&gt; some time ago.&lt;/p&gt;
+&lt;p&gt;People often ask, why does DevOps matter?&lt;/p&gt;
+&lt;p&gt;The honest answer to that question is...because having the development and operations team work together is the only way IT is successful.&lt;/p&gt;
+&lt;p&gt;Over the past few decades I&#039;ve worked in different environments that include: small web start ups, big pharmaceutical companies, hardware engineering shops and large software companies and banks. All were trying different approaches to deliver quality software to their end users, customers, but most of them were failing badly.&lt;/p&gt;
+&lt;p&gt;Operations people were being pulled in at the last minute. A marketing campaign needed to go live at 5 p.m. because that&#039;s when the first radio commercial was scheduled to be broadcasted. At 11 a.m., the operations people still didn&#039;t know the campaign existed.&lt;/p&gt;
+&lt;p&gt;It was always the other person’s fault. Waterfall projects and large PID documents were the solution to all the problems. But people learned; they figured out that we can&#039;t expect humans to predict how long it would take to implement something they have never done before. Unfortunately, even today, only a small set of people understand the value of being agile and that we cannot break a project down to its granular details without factoring in the “unpredictable.” The key element here is the “uncertainty” of the many project pieces.&lt;/p&gt;
+&lt;p&gt;So on came the agile movement and software development became much smoother.&lt;br /&gt;
+People agreed on time boxing a reasonable set of work that would result in delivering useful functionality in frequent batches. Yet, on the day of deployment, all hell breaks loose because someone forgot to loop in the Ops team.&lt;/p&gt;
+&lt;p&gt;This is where my personal experience differs from a lot of others, because I was part of a development team building a product where the developers were sitting right next to the system administration team. Within sprints, our DevOps team was building both system features and application features, making the application highly available was a story on the board next to an actual end user feature.&lt;/p&gt;
+&lt;p&gt;In the old days, a new feature that was scheduled for Friday couldn&#039;t be brought online for a couple of days because it couldn&#039;t be deployed to production. In the new setup, deploying to production was a no brainer as we had already tested the automated deployment to the acceptance platform.&lt;/p&gt;
+&lt;p&gt;This brings us to the first benefit : Actually being able to go live.&lt;/p&gt;
+&lt;p&gt;The next problem came on a Wednesday evening. A major security issue had popped up in Drupal and an upgrade needed to be performed, however nobody dared to perform the upgrade as they were afraid of breaking the site. Some people had made changes, they hadn&#039;t put their config back in code base, and thus the site didn&#039;t get updated. This is the typical state of the majority of any type of website where people build something, deploy it and never look back. This is the case until disaster strikes and it hits the evening news.&lt;/p&gt;
+&lt;p&gt;Teams then learn that not only do they need to implement features and put their config changes in code, but also do continuous integration testing on their sites.&lt;/p&gt;
+&lt;p&gt;From doing continuous integration, they go to continuous delivery and continuous deployment, where an upgrade isn&#039;t a risk anymore but a normal event which happens automatically when all the tests are green. By implementing infrastructure as code, they now have achieved 2 goals. By implementing tests, we build the confidence that the code was working, but also made sure that the number of defects in that code base went down so the number of times people needed to dig back into old code to fix issue also came down.&lt;/p&gt;
+&lt;p&gt;By delivering better software in a much more regular way, it enables the security issues to be fixed faster, but also brings new features to market faster. With faster, we often mean that there is an change from releasing software on a bi-yearly basis to a release each sprint, to a release whenever a commit has passed a number of test criteria.&lt;/p&gt;
+&lt;p&gt;Because they started to involve other stakeholders, the value of their application grew as they had faster feedback and better usage statistics. The faster feedback meant that they weren&#039;t spending as much time on features nobody used, but focusing their efforts on things that mattered.&lt;/p&gt;
+&lt;p&gt;Having other stakeholders like systems and security teams involved with early metrics and taking in the non functional requirements into the backlog planning meant that the stability of the platform was growing. Rather than people spending hours and nights fixing production problems, Potential issues are now being tackled upfront because of the&lt;br /&gt;
+communication between devs and ops. Also, scale and high availability have been built into the application upfront, rather than afterwards -- when it is too late.&lt;/p&gt;
+&lt;p&gt;So, in the end it comes down to the most important part, which is that devops creates more happiness. It creates more happy customers, developers, operations teams, managers, and investors and for a lot of people it improves not only application quality, but also their life quality.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/why-does-devops-matter#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <pubDate>Wed, 04 Jun 2014 14:54:23 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1095 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>The Rise of the DevOps movement</title>
+ <link>http://127.0.0.1:8080/blog/rise-devops-movement</link>
+ <description>&lt;p&gt;This is a repost of an article I wrote for the &lt;a href=&quot;http://www.acquia.com/blog&quot; rel=&quot;nofollow&quot;&gt;Acquia Blog&lt;/a&gt; some time ago.&lt;/p&gt;
+&lt;p&gt;DevOps, DevOps, DevOps … the whole world is talking about DevOps, but what is DevOps?&lt;/p&gt;
+&lt;p&gt;Since Munich 2012, DrupalCon had a dedicated devops track. After talking to&lt;br /&gt;
+a lot of people in Prague last month, I realized that the concept of DevOps is still very unclear to a lot of developers. To a large part of the development community, DevOps development still means folks working on &#039;the infrastructure part&#039; of the development life cycle and for some it just means simply deploying Drupal, being concerned about purely keeping the site alive etc.&lt;/p&gt;
+&lt;p&gt;Obviously that&#039;s not what DevOps is about, so let&#039;s take a step back and find out how it all started.&lt;/p&gt;
+&lt;p&gt;Like all good things, Drupal included, DevOps is a Belgian thing!&lt;/p&gt;
+&lt;p&gt;Back in 2009 DevopsDays Europe was created because a group of people met over and over again at different conferences throughout the world and didn’t have a common devops conference to go to. These individuals would talk about software delivery, deployment, build, scale, clustering, management, failure, monitoring and all the important things one needs to think about when running a modern web operation. These folks included Patrick Debois, Julian Simpson, Gildas Le Nadan, Jezz Humble, Chris Read, Matt Rechenburg , John Willis, Lindsay Holmswood and me - Kris Buytaert.&lt;/p&gt;
+&lt;p&gt;O’Reilly created a conference called, “Velocity,” and that sounded interesting to a bunch of us Europeans, but on our side of the ocean we had to resort to the existing Open Source, Unix, and Agile conferences. We didn&#039;t really have a common meeting ground yet. At CloudCamp Antwerp, in the Antwerp Zoo, I started talking to Patrick Debois about ways to fill this gap.&lt;/p&gt;
+&lt;p&gt;Many different events and activities like John Allspaw and Paul Hammond’s talk at “Velocity”, multiple twitter discussions influenced Patrick to create a DevOps specific event in Gent, which became the very first ‘DevopsDays&#039;. DevopsDays Gent was not your traditional conference, it was a mix between a couple of formal presentations in the morning and open spaces in the afternoon. And those open spaces were where people got most value. The opportunity to talk to people with the same complex problems, with actual experiences in solving them, with stories both about success and failure etc. How do you deal with that oldskool system admin that doesn’t understand what configuration management can bring him? How do you do Kanban for operations while the developers are working in 2 week sprints? What tools do you use to monitor a highly volatile and expanding infrastructure?&lt;/p&gt;
+&lt;p&gt;From that very first DevopsDays in Gent several people spread out to organize other events John Willis and Damon Edwards started organizing DevopsDays Mountain View, and the European Edition started touring Europe. It wasn’t until this year that different local communities started organizing their own local DevopsDays, e.g in Atlanta, Portland, Austin, Berlin, Paris, Amsterdam, London, Barcelona and many more.&lt;/p&gt;
+&lt;p&gt;From this group of events a community has grown of people that care about bridging the gap between development and operations, a community of people that cares about delivering holistic business value to their organization.&lt;/p&gt;
+&lt;p&gt;As a community, we have realized that there needs to be more communication between the different stakeholders in an IT project lifecycle - business owners, developers, operations, network engineers, security engineers – everybody needs to be involved as soon as possible in the project in order to help each other and talk about solving potential pitfalls ages before the application goes live. And when it goes live the communication needs to stay alive too.. We need to talk about maintaining the application, scaling it, keeping it secure . Just think about how many Drupal sites are out there vulnerable to attackers because the required security updates have never been implemented. Why does this happen? It could be because many developers don&#039;t try to touch the site anymore..because they are afraid of breaking it.&lt;/p&gt;
+&lt;p&gt;And this is where automation will help.. if we can do automatic deployments and upgrades of a site because it is automatically tested when developers push their code, upgrading won&#039;t be that difficult of a task. Typically when people only update once in 6 months, its a painful and difficult process but when its automated and done regularly, it makes life so much easier.&lt;/p&gt;
+&lt;p&gt;This ultimately comes down to the idea that the involvement of developers doesn’t end at their last commit. Collaboration is key which allows every developer to play a key role in keeping the site up and running, for more happy users. After all software with no users has no value. The involvement of the developers in the ongoing operations of their software shouldn&#039;t end before the last end user stops using their applications.&lt;/p&gt;
+&lt;p&gt;In order to keep users happy we need to get feedback and metrics, starting from the very first phases of development all the way up to production. It means we need to monitor both our application and infrastructure and get metrics from all possible aspects, with that feedback we can learn about potential problems but also about successes.&lt;/p&gt;
+&lt;p&gt;Finally, summarizing this in an acronym coined by John Willis and Damon Edwards&lt;br /&gt;
+- CAMS. CAMS says Devops is about Culture, Automation, Measurement and Sharing.&lt;br /&gt;
+Getting the discussion going on how to do all of that, more specifically in a Drupal environment, is the sharing part .&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/rise-devops-movement#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <pubDate>Wed, 04 Jun 2014 14:49:23 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1094 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>FOSDEM 2014 is coming</title>
+ <link>http://127.0.0.1:8080/blog/fosdem-2014-coming</link>
+ <description>&lt;p&gt;and with that almost a full week of side events.&lt;br /&gt;
+For those who don&#039;t know FOSDEM, (where have you been hiding for the past 13 years ? )  Fosdem is the annual Free and Open Source Developers European meeting. If you are into open source , you just can&#039;t mis this event where thousands of likeminded people will meet.&lt;/p&gt;
+&lt;p&gt;And if 2 days of FOSDEM madness isn&#039;t enough people organise events around it.&lt;/p&gt;
+&lt;p&gt;Last year I organised PuppetCamp in Gent, the days before Fosdem and a MonitoringLove Hackfest in our office the 2 days after FOSDEM This year another marathon is planned.&lt;/p&gt;
+&lt;p&gt;On Friday (31/1/2014) the CentOs community is hosting a &lt;a href=&quot;http://wiki.centos.org/Events/Dojo/Brussels2014&quot; rel=&quot;nofollow&quot;&gt;Dojo in Brussels&lt;/a&gt; at the IBM Forum. (Free, but registration required by the venue)&lt;/p&gt;
+&lt;p&gt;After the success of PuppetCamp in Gent last year we decided to open up the discussion and get more Infrastructure as Code people involved in a &lt;a href=&quot;http://cfgmgmtcamp.eu/&quot; rel=&quot;nofollow&quot;&gt;CfgMgmtCamp.eu&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;The keynotes for CfgMgmtCamp will include the leaders of the 3 most popular tools around ,  both Mark Burgess, Luke Kanies and Adam Jacob will present at the event which will take place in Gent  right after Fosdem.  We expect people from all the major communities including, but not limited to , Ansible, Salt, Chef, Puppet, CFengine, Rudder, Foreman and Juju (Free but registration required for catering)&lt;/p&gt;
+&lt;p&gt;And because 3 events in one week isn&#039;t enough the RedHat Community is hosting their &lt;a href=&quot;http://community.redhat.com/blog/2013/12/announcing-infrastructure-next/&quot; rel=&quot;nofollow&quot;&gt;Infrastructure.next&lt;/a&gt; conference after CfgMgmtCamp at the same venue.  (Free but registration required for catering)&lt;/p&gt;
+&lt;p&gt;cya in Belgium next year..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/fosdem-2014-coming#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/cfengine">cfengine</category>
+ <category domain="http://127.0.0.1:8080/blog/category/chef">chef</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/465">community</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1076">events</category>
+ <category domain="http://127.0.0.1:8080/blog/category/keynotes">keynotes</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetize">puppetize</category>
+ <pubDate>Sun, 22 Dec 2013 20:04:04 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1092 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Docker vs Reality , 0 - 1</title>
+ <link>http://127.0.0.1:8080/blog/docker-vs-reality-0-1</link>
+ <description>&lt;p&gt;(aka the opinionated summary of the #devopsdays London November OpenSpace on  , Containers and the new flood of Image Sprawl)&lt;/p&gt;
+&lt;p&gt;There&#039;s a bunch of people out there that think I don&#039;t like docker,  they are wrong.&lt;/p&gt;
+&lt;p&gt;I just never understood the hype about it since I didn&#039;t see, (and still don&#039;t) see it being used at large and people seem to understand that as being against it.&lt;/p&gt;
+&lt;p&gt;So let me put a couple of things straight :&lt;/p&gt;
+&lt;p&gt;There&#039;s absolutely nothing wrong with using a &lt;strong&gt;container&lt;/strong&gt; based approach when deploying your infrastructure.  If you remember my talks about the rise of Open Source Virtualization some years ago you&#039;ve noticed that I&#039;ve always mentioned OpenVZ and friends  as good alternatives if you wanted to have a lot of isolated platforms on one machine.     LXC and friends have grown .. they are even more usable these days.  Years ago people bought bare metal and ran Hypervisors on it to isolate resources.  These days people rent VM&#039;s and also want the same functionality so the use of the combination of Virtualization and Container based technologies is a very good match there.&lt;/p&gt;
+&lt;p&gt;There&#039;s also nothing wrong with using Infrastructure as Code tools to build an reproducable image you are going to deploy will  provide you with a disposable image which allows you to quickly launch a reproducable and versionned platform for your application  if that application is supposed to be shortlived.     The tooling around today is not yet there to have these images long lived as you still need to manage the config inside the containers as your application will evolve, it will change, your environment will change (think even about changing to a different loghost..) , but when you don&#039;t have to keep state you can dispose the image and redeploy a new reproducable one.&lt;/p&gt;
+&lt;p&gt;In the embedded world, this kind of approach with multiple banks has been a round for a while , one image running, a second bank as a fallback, and when you upgrade the passive bank you can swap the roles and still have roll back.&lt;/p&gt;
+&lt;p&gt;There&#039;s is also nothing wrong on combining these to approaches and using tools such as Docker and Packer. &lt;/p&gt;
+&lt;p&gt;But there is lot wrong with building images that then start living their own life,  tools like Veewee etc saw the light to create an easy way to make sure the JeOS image (Just Enough Operating System) we created was reproducable, not to ship around virtual appliances. &lt;/p&gt;
+&lt;p&gt;But, lets be realistic,  the number of applications that are suitable for this kind of environment  is small.   Most applications these days are still very statefull,  and when your application contains state you need to manage that&lt;br /&gt;
+that state, you can&#039;t just dispose an image which has state.  Specially in an Enterprise environment stateless, immutable applications are really the exception rather than the rule.&lt;/p&gt;
+&lt;p&gt;When your application maps with stateless and short lived,  or a some people like to call it Immutable please do so..  but if it doesn&#039;t please remember that we started using configuration management tools like CFengine, Puppet and Chef to prevent Image Sprawl and Config Drift&lt;br /&gt;
+There&#039;s proprietary businesses out there building tools to detect config drift and extort organisations to solve problems that shouldn&#039;t have existed in the first place.&lt;/p&gt;
+&lt;p&gt;Luckily the majority of smart people I&#039;ve spoken to over the past couple of weeks pretty much confirmed this ...&lt;br /&gt;
+Like one of the larger devops minded appliation hosting outsourcers in emea, I asked them how much % of their customer base they could all &quot;Immutable&quot;   , exactly 0% was the answer.&lt;/p&gt;
+&lt;p&gt;Image Based Container solutions are definitely not a one size fits all solution, and we have along way to go before we get there if at all ..&lt;/p&gt;
+&lt;p&gt;Till then I like not to diffuse my attention to too many different types of deploying platforms, just not to make stuff more complex than it already is...as complexity is the enemy of reliability&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/docker-vs-reality-0-1#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/antipatterns-newbies">antipatterns newbies</category>
+ <category domain="http://127.0.0.1:8080/blog/category/containers">containers</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/image-sprawl">image sprawl</category>
+ <category domain="http://127.0.0.1:8080/blog/category/images">images</category>
+ <category domain="http://127.0.0.1:8080/blog/category/infrastructure-code">infrastructure as code</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jeos">jeos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/packer">packer</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetize">puppetize</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <pubDate>Wed, 27 Nov 2013 21:36:07 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1090 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Velocity 2013 Slides</title>
+ <link>http://127.0.0.1:8080/blog/velocity-2013-slides</link>
+ <description>&lt;p&gt;&lt;iframe src=&quot;http://www.slideshare.net/slideshow/embed_code/28285391&quot; width=&quot;427&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;https://www.slideshare.net/KrisBuytaert/velocity2013-mh&quot; title=&quot;The Journey of devops and continuous delivery in a Large Financial Institution&quot; target=&quot;_blank&quot;&gt;The Journey of devops and continuous delivery in a Large Financial Institution&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;http://www.slideshare.net/KrisBuytaert&quot; target=&quot;_blank&quot;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;/p&gt;</description>
+ <comments>http://127.0.0.1:8080/blog/velocity-2013-slides#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/velocity">velocity</category>
+ <pubDate>Wed, 27 Nov 2013 15:15:06 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1088 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

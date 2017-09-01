@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - php</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/485/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Mollom and Views</title>
+ <link>http://127.0.0.1:8080/blog/mollom-and-views</link>
+ <description>&lt;p&gt;You might have noticed that this blog stopped accepting comments about a month ago.. well. stopped accepting is a big word.. I was still accepting comments, only they were never submitted to the database and after entering a comment to my blog people  ended up on a white page.&lt;/p&gt;
+&lt;p&gt;So upon returning from holliday I set out to debug the issue together with one of our Inuits Drupal geeks and quickly ran into the following error.&lt;br /&gt;
+&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;PHP Fatal error:  Call to a member function has_more_records() on a non-object in /somepath/modules/views/plugins/views_plugin_display.inc on line 1992, referer: http://www.krisbuytaert.be/blog/comment/reply/1014&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;So apparently my veasion of views  6.x-3.0-alpha3 didn&#039;t really like to play with Mollom,&lt;br /&gt;
+I downgraded views again to 6.x-2.11  and Mollom started showing its Captcha&#039;s etc  again .&lt;/p&gt;
+&lt;p&gt;So apart from wondering how I ended up installing that alpha3 version (I`m sure Drush didn&#039;t do that), all is back to normal. and you should be able to comment on this blog again&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/mollom-and-views#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/793">comments</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/858">mollom</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/485">php</category>
+ <category domain="http://127.0.0.1:8080/blog/category/views">views</category>
+ <pubDate>Tue, 03 Aug 2010 22:06:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1015 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Planet , Drupal Style</title>
+ <link>http://127.0.0.1:8080/blog/planet-drupal-style</link>
+ <description>&lt;p&gt;So when you setup an aggregator there&#039;s this one thing you miss from a regular planet ...the list of blogs with their individual Feeds.&lt;/p&gt;
+&lt;p&gt;I wanted to use this for planet.loadays.org again and realized I don&#039;t know where I got this snippet from or if I wrote it myselve or whatever .. but I do realize that unless I document it here I won&#039;t be able to point other people to it again :)  So just create a block like this one :&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;geshifilter&quot;&gt;&lt;pre class=&quot;text geshifilter-text&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;ol&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;lt;?php&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; $subscriptions = db_query(&#039;SELECT title,link,url FROM {aggregator_feed} ORDER BY title&#039;);&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt; while ($list = db_fetch_object($subscriptions)) {&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;      print &amp;quot;&amp;lt;a href=\&amp;quot;$list-&amp;gt;link\&amp;quot;&amp;gt;$list-&amp;gt;title&amp;lt;/a&amp;gt; (&amp;lt;a href=\&amp;quot;$list-&amp;gt;url\&amp;quot;&amp;gt;feed&amp;lt;/a&amp;gt;)&amp;lt;br&amp;gt;\n&amp;quot;;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;      }&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: monospace; font-weight: normal;&quot;&gt;&lt;div style=&quot;font-family: monospace; font-weight: normal; font-style: normal&quot;&gt;?&amp;gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/planet-drupal-style#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/code">code</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/485">php</category>
+ <category domain="http://127.0.0.1:8080/blog/category/planet">planet</category>
+ <pubDate>Fri, 15 Jan 2010 19:02:21 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">977 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Option D</title>
+ <link>http://127.0.0.1:8080/blog/option-d</link>
+ <description>&lt;p&gt;Lots of people writing about Snorkle again  today ,Monty &lt;a href=&quot;http://monty-says.blogspot.com/2009/12/help-saving-mysql.html&quot; rel=&quot;nofollow&quot;&gt;Says, help saving MySQL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;He gives us different options, a , b or c .. but I , and some others, want an option d &lt;/p&gt;
+&lt;p&gt;No I don&#039;t trust Oracle,  it&#039;s not like they have been a very good Open Source Citizen, yes they contribute to the kernel and other projects but my feeling says it&#039;s only because they have to (Kernel, Xen and others ) not because they Want to (thinking about Unfakable etc) , if they would really want to they probably would work with the CentOS community more etc, and as Monty mentions their InnoDB track record could be better.&lt;/p&gt;
+&lt;p&gt;But on the other hand I don&#039;t think the EU should block the deal because Monty wants his baby back , cheap , as honestly imvho that&#039;s what they really want, be able to buy MySQL back for a nice price,  either beceause Oracle is being forced by the EU to split up Sun, or eventually the deal doesn&#039;t come trough and they can buy MySQL back when Sun really goes belly up (which is what probably happens when option a)  is chosen.&lt;/p&gt;
+&lt;p&gt;According to &lt;a href=&quot;http://money.cnn.com/news/newsfeeds/articles/marketwire/0568514.htm&quot; rel=&quot;nofollow&quot;&gt;CNN&lt;/a&gt; , Oracle has made some pledges about MySQL earlier today.&lt;br /&gt;
+My main question there however is about the Opposite of option 5.  which is exactly what created the problem.&lt;br /&gt;
+&lt;cite&gt;&lt;br /&gt;
+5. Support not mandatory. Customers will not be required to purchase support services from Oracle as a condition to obtaining a commercial license to MySQL. &lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Yes we want support, but no we don&#039;t want a commercial license with it, we want support on the GPL version, which is a problem lots of Open Source vendors struggle with , some of them&lt;br /&gt;
+force people wanting to buy support to go for the commercial license.  And it is exaclty that  upselling  that  got MySQL in the troubles it has  today .&lt;/p&gt;
+&lt;p&gt;Josh Berkus has a point declaring&lt;br /&gt;
+&lt;a href=&quot;http://it.toolbox.com/blogs/database-soup/snoracle-mysql-and-the-death-of-duallicensing-35850?rss=1&quot; rel=&quot;nofollow&quot;&gt;Dual Licensing dead&lt;/a&gt;, just as I he  sees much more future in the Percona like model than in the Dual License model MySQL used to have ..&lt;/p&gt;
+&lt;p&gt;Dries &lt;a href=&quot;http://pooteeweet.org/blog/0/1639#m1639&quot; rel=&quot;nofollow&quot;&gt; points&lt;/a&gt; to one of the comments  on&lt;br /&gt;
+&lt;a href=&quot;http://twitter.com/Dries/status/6660856340&quot; rel=&quot;nofollow&quot;&gt;  Lukas  Kahwe  Smith &#039;s Come On Money er Monty article&lt;/a&gt;  stating&lt;br /&gt;
+&lt;cite&gt;Monty walks away with several millions in hard cash, while [PHP +] MySQL cheerleaders who bet on &quot;MySQL&quot; franchise only walk away with a cute dolphin T-shirt&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Which makes me wonder when I`ll be getting a nice Acquia T-shirt :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/option-d#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/870">acquia</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/category/eu">eu</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/467">oracle</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/485">php</category>
+ <category domain="http://127.0.0.1:8080/blog/category/snorkle">snorkle</category>
+ <pubDate>Mon, 14 Dec 2009 20:30:42 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">969 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Geekdinner Antwerp Edition 2</title>
+ <link>http://127.0.0.1:8080/blog/geekdinner-antwerp-edition-2</link>
+ <description>&lt;p&gt;Last Wednesday after the LSec event with Bruce Schneier and the R ans S from RSA , we already had a mini AdHoc GeekDinner in Leuven, one that pretty would have  matched Philips requirements for having it called Geek dinner&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.paeps.cx/weblog/life/proliferation_of_geek_events.html&quot; rel=&quot;nofollow&quot;&gt;Philip&lt;/a&gt; has been ranting this week about different events titled &quot;Geek&quot; not attrackting real geeks. that know hex and binary is but merely atrackting the Startup/Web crowd,  now there&#039;s nothing wrong with both crowds, and I happen to be part of both but it can cause strange situations&lt;br /&gt;
+&lt;a href=&quot;http://www.geekdinner.be/&quot; rel=&quot;nofollow&quot;&gt;Geekdinner.be&lt;/a&gt;Tom K arranged a nice deal with &lt;a href=&quot;http://detroubadour.be/&quot; rel=&quot;nofollow&quot;&gt;De Troubadour&lt;/a&gt; so foodwise it promises to be great.&lt;/p&gt;
+&lt;p&gt;And with the list currently showing a variety of&lt;br /&gt;
+ Linux and BSD geeks,  (both on Kernel and System Level it seems)  the Apache geeks , some Ruby geeks, some Legal geeks, some Java geeks, etc  that part should be covered ..&lt;/p&gt;
+&lt;p&gt;So I`m pretty sure that the majority of Geeks at the upcoming Geekdinner will realize there are only 10 kind of people&lt;/p&gt;
+&lt;p&gt;Still missing however from that list are the Drupal and PHP folks, the Django crowd,  some Distribution geeks, some Gnome Geeks and some KDE geeks.   Heck you all know I`m talking about you .. so go and subscribe &lt;a href=&quot;http://geekdinner20090331.pbwiki.com/FrontPage&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I hope we aren&#039;t scaring away too much folks with this really Open Source oriented GeekDinner :) &lt;/p&gt;
+&lt;p&gt;PS. And yes I think it&#039;s time for &lt;a href=&quot;http://blog.elisehuard.be&quot; rel=&quot;nofollow&quot;&gt;Elise&lt;/a&gt; to organise a Real Belgian Girl Geek Dinner :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/geekdinner-antwerp-edition-2#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/antwerpen">antwerpen</category>
+ <category domain="http://127.0.0.1:8080/blog/category/apache">apache</category>
+ <category domain="http://127.0.0.1:8080/blog/category/detroubadour">detroubadour</category>
+ <category domain="http://127.0.0.1:8080/blog/category/django">django</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/490">geekdinner</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/489">linux</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/485">php</category>
+ <pubDate>Sun, 01 Mar 2009 19:14:29 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">882 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>This should *never* happen!</title>
+ <link>http://127.0.0.1:8080/blog/node/724</link>
+ <description>&lt;p&gt;While playing around with the great &lt;a href=&quot;http://gert.sos.be/en/&quot; rel=&quot;nofollow&quot;&gt;MySQL Activity Reporter&lt;/a&gt; , I ran into the following error.&lt;/p&gt;
+&lt;p&gt;[client 192.168.254.72] PHP Fatal error:  strftime() [&lt;a href=&#039;function.strftime&#039;&gt;function.strftime&lt;/a&gt;]: Timezone database is corrupt - this should *never* happen! in /var/lib/mysqlard/mysqlar.php on line 62&lt;/p&gt;
+&lt;p&gt;Now the error is clear .. the Timezone database is corrupt and I`m the one to blame for ..   this was on a pretty stripped down Centos that lives in UTC.  So there wasn&#039;t a real Timezone database.&lt;/p&gt;
+&lt;p&gt;Obviously a quick apt-get install tzdata  solved  the problem, but once again the lesson is.. don&#039;t strip too much .. you&#039;ll eventually endup needing those 3 Kb of free space you gained anyhow.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/724#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/480">centos</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1014">mysqlar</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/485">php</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1015">timezone</category>
+ <pubDate>Wed, 10 Sep 2008 18:23:48 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">724 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Stupid PHP Error</title>
+ <link>http://127.0.0.1:8080/blog/node/447</link>
+ <description>&lt;p&gt;Dear Future self,&lt;/p&gt;
+&lt;p&gt;The next time you run into PHP Fatal error:  Call to undefined method DB_Error::query()  and you are pretty sure all the correct libraries are installed , check if you can connect to the database with the username / password you have configured.   Just as today you might have migrated to a new mysql server and forgotten to update the connection string.&lt;/p&gt;
+&lt;p&gt;thank you for your attention.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/447#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/486">error</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/485">php</category>
+ <pubDate>Tue, 11 Sep 2007 21:03:07 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">447 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

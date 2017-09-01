@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - galera</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1409/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Inuits Day </title>
+ <link>http://127.0.0.1:8080/blog/inuits-day</link>
+ <description>&lt;p&gt;Couple of Fridays ago we had one of our @Inuits days again.  Rather than having some people give talks and presentations about what they have been doing for the  past couple of months this time we set out to  research, test, and build stuff.&lt;/p&gt;
+&lt;p&gt;We split up in 3 different groups,  one focusing on CI and testing freshly build stuff with cucumber,   a second one setup and tested &lt;a href=&quot;http://www.codership.com/products/galera_replication&quot; rel=&quot;nofollow&quot;&gt;Galera&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We setup a 3 node Galera cluster , not really as smooth as we&#039;d like to ..&lt;/p&gt;
+&lt;p&gt;Our first bump was that the installation of the package on CentOS is hell, it needs manual interaction such as replacing  packages.  Deploying this from a repository is probably not going to be a straight forward option.&lt;/p&gt;
+&lt;p&gt;Galera only takes care of replicating data, just as with MySQL MM replication there still is a need for an external tool to define where to access the database, and implement monitoring in such a way that you are connecting to an up to date database.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://poke152.blogspot.com/&quot; rel=&quot;nofollow&quot;&gt;Karl&lt;/a&gt; started wondering about Galera&#039;s locking,  turns out the locks aren&#039;t cluster wide, locks within the same node work fine.. so if galera is solely used for HA with 1 active node and X failover nodes, it will work (so all transactions happening on 1 node).&lt;/p&gt;
+&lt;p&gt;We also ran into some issues when trying to start a node which couldn&#039;t contact the wsrep_cluster_address point (which is a node it will sync from at startup if specified in the wsrep.cnf file) , it just didn&#039;t want to start. This means that when the referenced node (configured in wsrep_cluster_address)is down, you will need to comment it out before you are able to start the mysql server.&lt;/p&gt;
+&lt;p&gt;The fact that Galera replicates everythying brought us to the discussion if we really wanted that , or if we wanted more finegrained control over which databases or even tables we want to replicate and which ones we didn&#039;t want to replicate.  A minority of people wanted to replicate everything,  the majority of our group wanted finere grained control over what is being replicated to another node.&lt;/p&gt;
+&lt;p&gt;I`m sure &lt;a href=&quot;http://www.lefred.be/&quot; rel=&quot;nofollow&quot;&gt;Lefred&lt;/a&gt; will shortly be writing about the progress his group made on &lt;a href=&quot;http://www.banquise.be/&quot; rel=&quot;nofollow&quot;&gt;Banquise&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The day ended as it should .. with BBQ and plenty of drinks&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/inuits-day#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/banquise">banquise</category>
+ <category domain="http://127.0.0.1:8080/blog/category/ci">ci</category>
+ <category domain="http://127.0.0.1:8080/blog/category/galera">galera</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/520">inuits</category>
+ <category domain="http://127.0.0.1:8080/blog/category/inuits-day">inuits day</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/458">mysql</category>
+ <pubDate>Mon, 21 Jun 2010 19:14:12 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1012 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

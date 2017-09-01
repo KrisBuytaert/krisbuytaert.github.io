@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - containers</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1520/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Will containers take over ?</title>
+ <link>http://127.0.0.1:8080/blog/will-containers-take-over</link>
+ <description>&lt;p&gt;and if so why haven&#039;t they done so yet ?&lt;/p&gt;
+&lt;p&gt;Unlike many people think, containers are not new, they have been around for more than a decade,  they however just became popular for a larger part of our ecosystem. &lt;a href=&quot;http://cloudscaling.com/blog/cloud-computing/will-containers-replace-hypervisors-almost-certainly/&quot; rel=&quot;nofollow&quot;&gt;Some&lt;/a&gt; people think  containers will eventually take over.&lt;/p&gt;
+&lt;p&gt;Imvho It is  all about application workloads,  when  8 years ago &lt;a href=&quot;http://virtualization.com/2008/03/10/looking-back-at-a-decade-of-open-source-virtualisation/&quot; rel=&quot;nofollow&quot;&gt; I wrote&lt;/a&gt; about a decade of open source virtualization,   we looked at containers as the solution for running a large number of isolated instances of something on a machine. And with large we meant hundreds or more instances  of apache, this was one of  the example use cases for an ISP that wanted to give a secure but isolated platform to his users. One container per user.&lt;/p&gt;
+&lt;p&gt;The majority of enterprise  usecases however were full VM&#039;s   Partly because we were still consolidating existing services to VM&#039;s and weren&#039;t planning on changing the deployment patterns yet. But mainly because most organisations didn&#039;t have the need to run 100 similar or identical instances of an application or a service,  they were going from 4 bare metal servers to 40 something VM&#039;s but they had  not yet come to the need to run 100&#039;s of them.  The software architecture had just moved from FatClient applications that talked directly to bloated relational databases containing business logic, to web enabled multi-tier&lt;br /&gt;
+applications.   In those days when you suggested to run 1 Tomcat instance per VM because VM&#039;s were cheap and it would make management easier,  (Oh oops I shut down the wrong tomcat instance)  , people gave you very weird looks&lt;/p&gt;
+&lt;p&gt;Slowly software architectures are changing , today  the new breed of applications is small, single function, dedicated, and it interacts frequently with it&#039;s peers, together combined they provide similar functionality as a big fat application 10 years ago, But when you look at the market that new breed is a minority.  So a modern application might consist of 30-50 really small ones,  all with different deployment speeds.  And unlike 10 years ago where we needed to fight hard to be able to build both dev, acceptance and production platforms,  people now consider that practice normal.  So today we do get environments that quickly go to 100+ instances , but requiring similar CPU power as before,   so the use case for containers like we proposed it in the early days is now slowly becoming a more common use case.&lt;/p&gt;
+&lt;p&gt;So yes containers might take over ...  but before that happens .. a lot of software architectures will need to change,  a lot of elephants will need to be sliced, and that  is usually what blocks cloud, container, agile and devops adoption.&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/will-containers-take-over#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/containers">containers</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devoops">devoops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/microservices">microservices</category>
+ <category domain="http://127.0.0.1:8080/blog/category/software-architecture">software architecture</category>
+ <pubDate>Wed, 15 Jun 2016 14:57:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1112 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>It&#039;s just rubber , with some air in it.</title>
+ <link>http://127.0.0.1:8080/blog/its-just-rubber-some-air-it</link>
+ <description>&lt;p&gt;- A child balloon&lt;br /&gt;
+ you inflate it, play with it for a while, then it explodes, you throw it away  you inflate another one, maybe even a different color. the kid plays with it .. till it breaks, then you throw it away... &lt;/p&gt;
+&lt;p&gt;- An inflatable castle.&lt;br /&gt;
+ you inflate it, play with it for a while,  deflate it, move it around,  inflate it again,  if it has a hole in it, you patch the hole. &lt;/p&gt;
+&lt;p&gt;- The tyres on your kids bike,.&lt;br /&gt;
+ You inflate it , kid rides on it, if it starts losing air, you fix it asap so you can continue using it.&lt;/p&gt;
+&lt;p&gt;All of the 3 are really valuable use cases for rubber with air in it,&lt;br /&gt;
+in a way they are all equally valuable, but serve different purposes, different use cases.&lt;/p&gt;
+&lt;p&gt;Now think about this next time you spin up a container, that&#039;s running a database, application server and where your users ssh to.  &lt;/p&gt;
+&lt;p&gt;It&#039;s not just another VirtualMachine&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/its-just-rubber-some-air-it#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/containers">containers</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <pubDate>Wed, 23 Mar 2016 21:38:34 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1108 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>Docker vs Reality , 0 - 1</title>
+ <link>http://127.0.0.1:8080/blog/docker-vs-reality-0-1</link>
+ <description>&lt;p&gt;(aka the opinionated summary of the #devopsdays London November OpenSpace on  , Containers and the new flood of Image Sprawl)&lt;/p&gt;
+&lt;p&gt;There&#039;s a bunch of people out there that think I don&#039;t like docker,  they are wrong.&lt;/p&gt;
+&lt;p&gt;I just never understood the hype about it since I didn&#039;t see, (and still don&#039;t) see it being used at large and people seem to understand that as being against it.&lt;/p&gt;
+&lt;p&gt;So let me put a couple of things straight :&lt;/p&gt;
+&lt;p&gt;There&#039;s absolutely nothing wrong with using a &lt;strong&gt;container&lt;/strong&gt; based approach when deploying your infrastructure.  If you remember my talks about the rise of Open Source Virtualization some years ago you&#039;ve noticed that I&#039;ve always mentioned OpenVZ and friends  as good alternatives if you wanted to have a lot of isolated platforms on one machine.     LXC and friends have grown .. they are even more usable these days.  Years ago people bought bare metal and ran Hypervisors on it to isolate resources.  These days people rent VM&#039;s and also want the same functionality so the use of the combination of Virtualization and Container based technologies is a very good match there.&lt;/p&gt;
+&lt;p&gt;There&#039;s also nothing wrong with using Infrastructure as Code tools to build an reproducable image you are going to deploy will  provide you with a disposable image which allows you to quickly launch a reproducable and versionned platform for your application  if that application is supposed to be shortlived.     The tooling around today is not yet there to have these images long lived as you still need to manage the config inside the containers as your application will evolve, it will change, your environment will change (think even about changing to a different loghost..) , but when you don&#039;t have to keep state you can dispose the image and redeploy a new reproducable one.&lt;/p&gt;
+&lt;p&gt;In the embedded world, this kind of approach with multiple banks has been a round for a while , one image running, a second bank as a fallback, and when you upgrade the passive bank you can swap the roles and still have roll back.&lt;/p&gt;
+&lt;p&gt;There&#039;s is also nothing wrong on combining these to approaches and using tools such as Docker and Packer. &lt;/p&gt;
+&lt;p&gt;But there is lot wrong with building images that then start living their own life,  tools like Veewee etc saw the light to create an easy way to make sure the JeOS image (Just Enough Operating System) we created was reproducable, not to ship around virtual appliances. &lt;/p&gt;
+&lt;p&gt;But, lets be realistic,  the number of applications that are suitable for this kind of environment  is small.   Most applications these days are still very statefull,  and when your application contains state you need to manage that&lt;br /&gt;
+that state, you can&#039;t just dispose an image which has state.  Specially in an Enterprise environment stateless, immutable applications are really the exception rather than the rule.&lt;/p&gt;
+&lt;p&gt;When your application maps with stateless and short lived,  or a some people like to call it Immutable please do so..  but if it doesn&#039;t please remember that we started using configuration management tools like CFengine, Puppet and Chef to prevent Image Sprawl and Config Drift&lt;br /&gt;
+There&#039;s proprietary businesses out there building tools to detect config drift and extort organisations to solve problems that shouldn&#039;t have existed in the first place.&lt;/p&gt;
+&lt;p&gt;Luckily the majority of smart people I&#039;ve spoken to over the past couple of weeks pretty much confirmed this ...&lt;br /&gt;
+Like one of the larger devops minded appliation hosting outsourcers in emea, I asked them how much % of their customer base they could all &quot;Immutable&quot;   , exactly 0% was the answer.&lt;/p&gt;
+&lt;p&gt;Image Based Container solutions are definitely not a one size fits all solution, and we have along way to go before we get there if at all ..&lt;/p&gt;
+&lt;p&gt;Till then I like not to diffuse my attention to too many different types of deploying platforms, just not to make stuff more complex than it already is...as complexity is the enemy of reliability&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/docker-vs-reality-0-1#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/antipatterns-newbies">antipatterns newbies</category>
+ <category domain="http://127.0.0.1:8080/blog/category/containers">containers</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/image-sprawl">image sprawl</category>
+ <category domain="http://127.0.0.1:8080/blog/category/images">images</category>
+ <category domain="http://127.0.0.1:8080/blog/category/infrastructure-code">infrastructure as code</category>
+ <category domain="http://127.0.0.1:8080/blog/category/jeos">jeos</category>
+ <category domain="http://127.0.0.1:8080/blog/category/packer">packer</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/439">puppet</category>
+ <category domain="http://127.0.0.1:8080/blog/category/puppetize">puppetize</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/672">virtualization</category>
+ <pubDate>Wed, 27 Nov 2013 21:36:07 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1090 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

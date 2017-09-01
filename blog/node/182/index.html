@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/182 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:57:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LinuxTag 2006  20060505 | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-story one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a></div></div>
+  <h2 id="title">LinuxTag 2006  20060505</h2>
+<div class="content">
+<div id="node-182" class="node  story">
+<div class="content"><p>So after breakfast it's time to figure out where the conference actually is..<br />
+Whee.. that's far ..   and you have to cross a street .. dangerous ..  at least compared to stepping out of the Dorint's doors in Karlsruhe :)<br />
+It's right across the street , but the conference  entrance  is around the corner..</p>
+<p>Well hidden on the schedule is a talk about OpenVZ  it's in one of the Community workshop rooms. It means I'll have to miss AGK's talk about LVM fun... tough choice ...</p>
+<p>They go over a short overview of the different Virtualisation types etc interresting to see that they claim as the advantages compared to their collegues ..</p>
+<p>One of the claims against Qemu and VMWare is the  one by one management etc.Hello .Large Scale management anyone ?<br />
+As cons for Para Virtualisation the  "Needs modified guest OS" is acceptable but "Static Resource Allocation , bad scalability and bad manageability.. they don't consider it different from vmware. and also one by one management..<br />
+According to them "ballooning" isn't a kind of real solution but just a hack.. works for me ;)<br />
+And the fact that I can add disks on the fly when I need to is also not really static for my needs.</p>
+<p>Also I personally  really prefer to have identical tools for my physical and virtual  the fact that a collegue just doesn't need to know about wether this host is physical or virtual and use the same tools he is used to makes it a lot easier.</p>
+<p>3rd kind is OS level virtualisation .. BSD Jails, VServer .. Solaris Zones  , OpenVZ.    no multiple kernels..  single kernel ...<br />
+Hmm.. this won't fix eg netfilter conflict issues .. Xen does ..  I want to be able to runn different kernels in different environments.  Say old and antique 2.4 kernels on a machine that is phyiscally only supported on a 2.6 kernel.  because we have to keep an old legacy application around.. (yeah those already exist on Linux .. strange huh ..  )</p>
+<p>Nice viewpoint on the evolution from Multitask to MultiUser to multiple Execution envirnments ...<br />
+Open VZ has also checkpointing and Migration support  altough according to their <a href="http://community.livejournal.com/openvz/4789.html">blog</a> it is really recent.</p>
+<p>The real fun part is how competing projects often don't know the correct facts aoubt their peers,  "If the sshd on your xen box dies you have to reboot it because you can't access it ?"  Huh .. strange .. I must have misheard   but it certainly ain't true ....  I definitely don't claim to know everytyhing about other projects.. but   I won't make claims I do ..  and I know it's difficult to catch up and keep track of what's happening as we are only humans..</p>
+<p>Got in late into the Git/ Cogito talk , Gitk really really looks nice<br />
+It's really really time I set up that openMosix Git tree sometime...</p>
+<p>I ran into Matt after that talk.. he just arrived ..with a small hmm.. not that small surprise .. Matt already mailed about doing a Aaron visits Europe and Matt the USA.. but I really didn't expect to meet him here... really great to finally meet him..   We had lunch downstairs (much better Food arrangements than Karlsruhe btw !)  and then moved on to the Kerneltrack Keynote by Andrew Morton</p>
+<p>The talk went over the which trees exist , what's the model for review,  and how to get your code included...</p>
+<p>Andrew wonders if kernels are getting les stable day by day , he thinks so but he doesn't have real data about it.. it's just an impression.<br />
+Maybe we should take all the kernel hackers after an event such as OLS and lock them in a room for 24 hours  forcing them to do nothing else but fixing bugs</p>
+<p>On to the questions then .. lots of them around ..</p>
+<p>Q: USB is "slow" these days<br />
+A:...vfat is the actual problem ...<br />
+distributions implmented mounting usb sticks with a "stynk"  option..<br />
+eheh :)</p>
+<p>Q "Version numbers are marketing not technical stuff.. so where is 2.7 ? "<br />
+A "We have no plans on currently going to 2.7 or anything else..."</p>
+<p>Q: why are the X drivers not in in kernelspace<br />
+A: because Linux isn't the only OS using X.</p>
+<p>Q: What's the status of virtualisation in the kernel A: Andrew expect Xen to be in the linux tree within the next 12 months..<br />
+Xen people seem to be reluctant to talk to the general kernel people..<br />
+they talk more to the distro people ...  Lets fix up Steve with Andrew tonight :)<br />
+Andrew doesn't want to choose between different virtualisation techniques.</p>
+<p>Maybe rather than choosing there should be an API one way or another.. a common api that works for different types of virtualisation techniques.</p>
+<p>There seems to be a need for a Meta Change log for the kernel rather than a great detailed changelog.. a quick 1-2 page overview where you can see in which compomponents stuff has drastically changed.</p>
+<p>Isn't Kerneltrap and Zach's stuff enough summary ..</p>
+<p>Matt's talk ...<br />
+ff course it didn't attract the huge public Andrew attracted but still fairly well attended ,  everyone who doesn't know what iSCSI is about , knows now.<br />
+Hmm.. so I wonder where my test setup has gone again .. I think I was exporting the USB disk at home via iSCSI. Maybe I should actually use iSCSI to export my MythTV and Music storage.  Ah.. the lack of time..</p>
+<p>Then on to the OCFS2 talk...It's extremely difficult to have to fly into a conference, give a talk, which you are not used to giving,  didn't write yourselve  but have to give since the marketing people planned.. annoying  which explains why they guy presenting has .. some things on the slides he just doesnt know about.. so after about 25-30 minutes in the talk .. after the room has partly flooded  the guy decides that rather than reading full parts  of his notes he'd better start with a Q&amp;A session. which was a really really good decision ...<br />
+but still <a href="http://blogs.oracle.com/wim/">  .. We want Wim.. We want Wim .. We want Wim ..  ..</a></p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Fri, 05/05/2006 - 17:03</div>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/node/182 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:57:01 GMT -->
+</html>

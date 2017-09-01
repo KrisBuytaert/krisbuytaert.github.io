@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from 127.0.0.1:8080/blog/scaling-drupal by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:35:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Scaling Drupal | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?9" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">Scaling Drupal</h2>
+<div class="content">
+<div id="node-504" class="node  blog">
+<div class="content"><p><a href="http://www.johnandcailin.com/usernode/john" rel="nofollow">John Quinn</a> writes about <a href="http://www.johnandcailin.com/blog/john/scaling-drupal-open-source-infrastructure-high-traffic-drupal-sites" rel="nofollow">Scaling Drupal</a>  he is taking a one step at a time approach and is still writing his 4th and 5 stages.</p>
+<p>His first step obviously is separating the drupal from a separate database server,  and he chooses mysql for this purpose, moving your DB to a different machine is a good thing to do.</p>
+<p>However then he gets this crazy idea of using NFS to share his his drupal shared files :(<br />
+(he even dares to mention that the setup ease is good)  Folks,  we abandonned NFS in the late nineties. NFS is still a recipe for disaster,  it has performance issues , it as stability issues (stale locks), and no security admin in his right mind will tolerate portmap to be running in his DMZ.<br />
+(Also think about the IO path that one has to follow to serve a static file to a surfer when the file is stored on a remote NFS volume) </p>
+<p>On top of that he adds complexity in a phase where it isn't needed yet.  Because of the fact he needs to manage and secure NFS and he is storing his critical files on the other side of the ethernet cable he did create a single point of failure he didn't need creating yet.<br />
+Yes as soon as you start to scale you need to look at a scalable and redundant way to share your files.<br />
+When those files are pretty static you'll start out with a set of rsync scripts or scripts that push them to different servers upon deploying your application.  When they are changing often you start looking into filesystems or block devices that bring you replication, such as DRBD or Lustre<br />
+But if today his NFS server goes down he is screwed,  much harder than when his database has a hickup.</p>
+<p>One could discuss the order of scaling,  but adding more webservers might not always be the first step to take,   one might want to tackle the database first depending on the application.<br />
+He decides to share the load of his application over multiple Drupal instances using apache mod_proxy ,  then adds Linux-HA to make it highly available.<br />
+I`m interested in knowing  why he chose for apache mod_proxy and not for LVS  </p>
+<p>Although using NFS for me belongs in a <cite>How NOT to scale</cite> tutorial, his other steps give you  a good idea of the steps to take.  </p>
+<p>I`m looking forward to his next steps :) I hope that in part 4 he also removes NFS in favour of a solution with no performance and locking issues that really takes away a big fat single point of failure. In part 5 he discusses how to scale your database environment.  The actual order of implementing step 2 and 5  will be different for each setup.   </p>
+<p>Anyway.. I`m following up on his next steps.. interesting reading</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Sat, 11/10/2007 - 17:54</div>
+     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_484 first"><a href="../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_449"><a href="../taxonomy/term/449/index.html" rel="tag" title="">ha</a></li>
+<li class="taxonomy_term_631"><a href="../taxonomy/term/631/index.html" rel="tag" title="">hpc</a></li>
+<li class="taxonomy_term_632"><a href="../taxonomy/term/632/index.html" rel="tag" title="">infrastructure</a></li>
+<li class="taxonomy_term_458"><a href="../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_630 last"><a href="../taxonomy/term/630/index.html" rel="tag" title="">scaling</a></li>
+</ul></div>
+     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="comments">
+  <h2>Comments</h2>
+  <a id="comment-3457"></a>
+<div id="comment-1" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/cb7aea47c5cef9ef081e6924a64e1e4d.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Thomas Reitz&#039;s picture" title="Thomas Reitz&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3457">#1</a>
+    <span class="author"><span class="anonymous" title="not verified">Thomas Reitz</span></span>  : <span class="title"><a href="index.html#comment-3457" class="active">Hardware</a></span>
+  </h3>
+  <div class="content"><p>"Thanks for provide me this informative info. Great! I am really waiting for your next post.</p>
+<p>Thanks for sharing!"</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">01/10/2009 - 06:32</div>
+  </div>
+<a id="comment-3428"></a>
+<div id="comment-2" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.my-forexblog.info/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/aaed5901ac56c267a72cdf9ac81b5fb6.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="ForexMan&#039;s picture" title="ForexMan&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3428">#2</a>
+    <span class="author"><a href="http://www.my-forexblog.info/">ForexMan</a></span>  : <span class="title"><a href="index.html#comment-3428" class="active">I prefer WordPress</a></span>
+  </h3>
+  <div class="content"><p>Thank you. Of course, this choice of everyone, but I prefer WordPress. I have a question for you - why do you prefer Drupal? It is faster, less heavy server requests? you do not have sarvnitelny analizetih systems?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/25/2008 - 08:48</div>
+  </div>
+<a id="comment-3405"></a>
+<div id="comment-3" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://server-met.info/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/9eacf92dc25991437a54c504634b4064.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="emule-server&#039;s picture" title="emule-server&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3405">#3</a>
+    <span class="author"><a href="http://server-met.info/">emule-server</a></span>  : <span class="title"><a href="index.html#comment-3405" class="active">Thanks</a></span>
+  </h3>
+  <div class="content"><p>Hi m8,</p>
+<p>thanks for your blog. I searched another things but found your blog. So thanks for your work!!!</p>
+<p>Best wishes from a still reader from belgium :-]</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/12/2008 - 18:16</div>
+  </div>
+<a id="comment-3372"></a>
+<div id="comment-4" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://by-proxy.net/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/741228a17716a4c0bcdf2306b3f3d1b8.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="myspace proxy&#039;s picture" title="myspace proxy&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3372">#4</a>
+    <span class="author"><a href="http://by-proxy.net/">myspace proxy</a></span>  : <span class="title"><a href="index.html#comment-3372" class="active">proxy servers</a></span>
+  </h3>
+  <div class="content"><p>Oh those dang DNS servers really annoy me sometimes. When I try to point a domain sometimes I see i did it wrong and need to wait agian. I have banged my head off the pc screen with DNS errors.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/29/2008 - 17:12</div>
+  </div>
+<a id="comment-3340"></a>
+<div id="comment-5" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.webdesignexperts4u.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/532a9314a14619d99ebef34f1b57e987.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Professional Web Design Company USA&#039;s picture" title="Professional Web Design Company USA&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3340">#5</a>
+    <span class="author"><a href="http://www.webdesignexperts4u.com/">Professional Web Design Company USA</a></span>  : <span class="title"><a href="index.html#comment-3340" class="active">tips on Joomla sought</a></span>
+  </h3>
+  <div class="content"><p>I'm with Marina Andrew and would love to hear tips on Joomla from you.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/06/2008 - 08:17</div>
+  </div>
+<a id="comment-3289"></a>
+<div id="comment-6" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/9d90320ae9e294bccfdc96dcda4a0eac.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Artur&#039;s picture" title="Artur&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3289">#6</a>
+    <span class="author"><span class="anonymous" title="not verified">Artur</span></span>  : <span class="title"><a href="index.html#comment-3289" class="active">Very useful information for</a></span>
+  </h3>
+  <div class="content"><p>Very useful information for me!<br />
+Thank you!</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">10/20/2008 - 09:07</div>
+  </div>
+<a id="comment-3214"></a>
+<div id="comment-7" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.marocainannonce.com/annonces/immobilier" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/0ad4ddbe468bc5a6ce3cb42cc5c8315c.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="immobilier maroc&#039;s picture" title="immobilier maroc&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3214">#7</a>
+    <span class="author"><a href="http://www.marocainannonce.com/annonces/immobilier">immobilier maroc</a></span>  : <span class="title"><a href="index.html#comment-3214" class="active">GFS or OCFS2</a></span>
+  </h3>
+  <div class="content"><p>Hi,</p>
+<p>I'm considering different options for a SAN. Are there anyone who knows<br />
+of a comparison of the GFS,  GFS2 and OCFS2 filesystems?<br />
+Mostly i'm concerned about performance and stability (maturity).</p>
+<p>It'll be running on a RHEL 5. </p>
+<p>Kind regards</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/13/2008 - 03:43</div>
+  </div>
+<a id="comment-3202"></a>
+<div id="comment-8" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.lookpdf.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/a1341d1a6fdc0f46aa62bfadf5acb9db.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Marina Andrew&#039;s picture" title="Marina Andrew&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3202">#8</a>
+    <span class="author"><a href="http://www.lookpdf.com/">Marina Andrew</a></span>  : <span class="title"><a href="index.html#comment-3202" class="active">i&#039;ve already try to use</a></span>
+  </h3>
+  <div class="content"><p>i've already try to use drupal for my web but i prefer use joomla, do you have any article about joomla?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/07/2008 - 02:51</div>
+  </div>
+<div class="indented"><a id="comment-3367"></a>
+<div id="comment-9" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://nayna.in/blog" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/a09624ac91b9054e15e83c925edca5aa.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Nayna&#039;s picture" title="Nayna&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3367">#9</a>
+    <span class="author"><a href="http://nayna.in/blog">Nayna</a></span>  : <span class="title"><a href="index.html#comment-3367" class="active">joomla</a></span>
+  </h3>
+  <div class="content"><p>is joomla really that good. I thought it was pretty outdated?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/19/2008 - 07:41</div>
+  </div>
+</div><a id="comment-3201"></a>
+<div id="comment-10" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.antibraces.cm/invisalign-teen-to-target-13-19-years-old" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/9898c5ae81619eab9bac257ec6aa3112.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Invisalign Teen&#039;s picture" title="Invisalign Teen&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3201">#10</a>
+    <span class="author"><a href="http://www.antibraces.cm/invisalign-teen-to-target-13-19-years-old">Invisalign Teen</a></span>  : <span class="title"><a href="index.html#comment-3201" class="active">Scaling Drupal</a></span>
+  </h3>
+  <div class="content"><p>[...Setting up shared files without NFS could be done by GFS or OCFS2 if you like , heck even SMB or DAV is a better alternative to NFS...] Completely agree. Use OCFS2</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">09/06/2008 - 00:32</div>
+  </div>
+<a id="comment-3179"></a>
+<div id="comment-11" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://choseit.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/67350609358d3ca17b89d7cd3f7ef79c.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Tyrone&#039;s picture" title="Tyrone&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3179">#11</a>
+    <span class="author"><a href="http://choseit.com/">Tyrone</a></span>  : <span class="title"><a href="index.html#comment-3179" class="active">I have been commenting here</a></span>
+  </h3>
+  <div class="content"><p>I have been commenting here for so long but where does my comments go?</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/19/2008 - 08:31</div>
+  </div>
+<div class="indented"><a id="comment-3180"></a>
+<div id="comment-12" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-3180">#12</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-3180" class="active">Mollom</a></span>
+  </h3>
+  <div class="content"><p>If your comments don't show up in the moderation queue .. Mollom has decided you're a spammer ..</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/19/2008 - 08:49</div>
+  </div>
+</div><a id="comment-3163"></a>
+<div id="comment-13" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.bangthebook.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/ce096a5bf3c11414619584a359324d72.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Dueces&#039;s picture" title="Dueces&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3163">#13</a>
+    <span class="author"><a href="http://www.bangthebook.com/">Dueces</a></span>  : <span class="title"><a href="index.html#comment-3163" class="active">What&#039;s NFS? Is it Need for</a></span>
+  </h3>
+  <div class="content"><p>What's NFS? Is it Need for speed :P or what I can't get this abbreviation:(</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/12/2008 - 20:37</div>
+  </div>
+<a id="comment-3160"></a>
+<div id="comment-14" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://war-universe.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/a910682732f543bb067bd946e7bdba8a.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Warhammer Online&#039;s picture" title="Warhammer Online&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-3160">#14</a>
+    <span class="author"><a href="http://war-universe.com/">Warhammer Online</a></span>  : <span class="title"><a href="index.html#comment-3160" class="active">Thanks for the scaling tips.</a></span>
+  </h3>
+  <div class="content"><p>Thanks for the scaling tips.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">08/08/2008 - 23:57</div>
+  </div>
+<a id="comment-2839"></a>
+<div id="comment-15" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.thespeed.com/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/daa6be99708a6cfdaf6921c058c0bb85.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Performance guy&#039;s picture" title="Performance guy&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2839">#15</a>
+    <span class="author"><a href="http://www.thespeed.com/">Performance guy</a></span>  : <span class="title"><a href="index.html#comment-2839" class="active">Scaling</a></span>
+  </h3>
+  <div class="content"><p>I would suggest memcache for sessions instead of NFS share. Content sync is pretty straightforward nowadays.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">03/01/2008 - 16:29</div>
+  </div>
+<a id="comment-2693"></a>
+<div id="comment-16" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.magda.ca/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/0797990f4ff35a86b23d3be332744268.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="David Magda&#039;s picture" title="David Magda&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2693">#16</a>
+    <span class="author"><a href="http://www.magda.ca/">David Magda</a></span>  : <span class="title"><a href="index.html#comment-2693" class="active">NFS and Linux</a></span>
+  </h3>
+  <div class="content"><p>&gt;[NFS] has performance issues , it as stability issues (stale locks)</p>
+<p>Troll-ish comment, but:</p>
+<p>Is this inherit in NFS or simply Linux's implementation of it? Solaris (client and server) and FreeBSD (client more so) have good NFS implementations.</p>
+<p>This doesn't help you if you're using pure LAMP, but NFS has gotten a bad reputation because of one bad implemenation IMHO.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">12/08/2007 - 20:02</div>
+  </div>
+<a id="comment-2663"></a>
+<div id="comment-17" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://drupal.org/user/227" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/40a00b5f974e6603e90de868b3747d67.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Gerhard Killesreiter&#039;s picture" title="Gerhard Killesreiter&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2663">#17</a>
+    <span class="author"><a href="http://drupal.org/user/227">Gerhard Killesreiter</a></span>  : <span class="title"><a href="index.html#comment-2663" class="active">NFS not so bad</a></span>
+  </h3>
+  <div class="content"><p>Drupal.org is using NFS to share both the PHP files as well as the uploaded files. I can remember one minor disruption of NFS service within thelast year.<br />
+Cheers,<br />
+Gerhard</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/11/2007 - 13:51</div>
+  </div>
+<a id="comment-2662"></a>
+<div id="comment-18" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://blog.riff.org/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/bb663a87ae6ad9b975ab060d73e72254.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="FGM&#039;s picture" title="FGM&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2662">#18</a>
+    <span class="author"><a href="http://blog.riff.org/">FGM</a></span>  : <span class="title"><a href="index.html#comment-2662" class="active">No stale locks in NFS</a></span>
+  </h3>
+  <div class="content"><p>Having written several NFS implementations myself, I feel you generalize too broadly: the NFS protocol does <em>not</em> have a "stale lock" problem, for the simple reason that NFS does not have locking at all, so no stale locks problem.</p>
+<p>You can check this in <a href="http://www.ietf.org/rfc/rfc1813.txt?number=1813" rel="nofollow">RFC 1813</a>.</p>
+<p>When using NFS, locking is optionally handled by a separate service, most often the NLM protocol, as bundled in the NFSv4 suite. But it remains an option, and alternative locking solutions are possible.</p>
+<p>NFS' statelesness offers an interesting property in such situations: the ability to handle crashes and restarts without any reconfiguration nor interrupted requests, everything continuing after the crash just like it was before, possibly hours later. Although admittedly unpleasant to the end user as unresponsive, it is an efficient way to avoid various error recovery techniques that can be required otherwise.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/11/2007 - 10:46</div>
+  </div>
+<a id="comment-2661"></a>
+<div id="comment-19" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/be7025d62cbe4aed8f065d991379f761.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Grugnog&#039;s picture" title="Grugnog&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-2661">#19</a>
+    <span class="author"><span class="anonymous" title="not verified">Grugnog</span></span>  : <span class="title"><a href="index.html#comment-2661" class="active">Slashdot.org and NFS</a></span>
+  </h3>
+  <div class="content"><p>Some random thoughts...</p>
+<p>I had similar impressions of NFS until I read that slashdot.org has used NFS since 2002 without any major problems: <a href="http://meta.slashdot.org/article.pl?sid=07/10/22/145209" title="http://meta.slashdot.org/article.pl?sid=07/10/22/145209" rel="nofollow">http://meta.slashdot.org/article.pl?sid=07/10/22/145209</a></p>
+<p>We have used DRBD quite a bit - and I think that is a very useful tool with both rsync and NFS type setups.</p>
+<p>I agree that rsync is probably the better &amp; simpler solution for most sites, although if you start having serious numbers of files you will probably need to rig up some kind of inotify setup for this to work efficiently.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/11/2007 - 04:03</div>
+  </div>
+<a id="comment-2659"></a>
+<div id="comment-20" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.johnandcailin.com/john" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/40a0e3b8c251916bade47dbe0f538559.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Anonymous&#039;s picture" title="Anonymous&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2659">#20</a>
+    <span class="author"><a href="http://www.johnandcailin.com/john">Anonymous</a></span>  : <span class="title"><a href="index.html#comment-2659" class="active">nfs vs rsync for a scalable drupal architecture</a></span>
+  </h3>
+  <div class="content"><p>kris, </p>
+<p>thanks a lot for taking the time to read and comment on my blog. while i agree that nfs creates probably an unnecessary choke point, it doesn't really add another single-point-of-failure, since if your database server goes down, you're SOL anyway.</p>
+<p>i've had the NFS configuration running in a fairly high traffic production environment for 6 months now, without issue.</p>
+<p>having said that, i still think that the rsync option that you outline is a better solution, despite lucs (valid) concerns about file system growth.</p>
+<p>i'll update my blog with your thoughts.</p>
+<p>thanks again.</p>
+<p>p.s. my girlfriend (cailin) isn't happy with you, since i just made her discuss file system scaling techniques over our weekend brunch ;)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/10/2007 - 23:11</div>
+  </div>
+<div class="indented"><a id="comment-2677"></a>
+<div id="comment-21" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.bokt.nl/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/5d5f0a3879d7274ce34d26d33bafc099.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Bart van Bragt&#039;s picture" title="Bart van Bragt&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2677">#21</a>
+    <span class="author"><a href="http://www.bokt.nl/">Bart van Bragt</a></span>  : <span class="title"><a href="index.html#comment-2677" class="active">Single point of failure</a></span>
+  </h3>
+  <div class="content"><p><cite>thanks a lot for taking the time to read and comment on my blog. while i agree that nfs creates probably an unnecessary choke point, it doesn't really add another single-point-of-failure, since if your database server goes down, you're SOL anyway.</cite></p>
+<p>This is true but only from a hardware perspective. If for some reason your NFS server dies (and your DB server doesn't) you still have a problem. So using NFS does add an extra single point of failure, at least in it's default setup.</p>
+<p>I'm currently looking into distributed/clustered/etc filesystems for a (small) webcluster that I'm building. It's not going to be using Drupal (yet) but that doesn't matter much for the problem at hand.</p>
+<p>I've looked into OCFS2 and GFS but they seem to cause more problems than they solve. They are hardly a panacea. Hard to setup, problems with performance, bad support, etc, etc. I haven't been able to find a lot of succes stories, mostly people that have abandoned implementing these systems and who have reverted to NFS...</p>
+<p>I don't really like NFS and the principles behind it but so far it seems to be the best thing out there (for a lot of situations anyway). I'm afraid I'm going to implement a HA NFS server with hearthbeat and DRBD. It seems like GFS and OCFS2 are mainly interesting from an academic point of view but I'd like to be proven wrong by people who are actually successfully using those systems in production on busy sites/systems.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/16/2007 - 22:35</div>
+  </div>
+<div class="indented"><a id="comment-2678"></a>
+<div id="comment-22" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-2678">#22</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-2678" class="active">Failing GFS and OCFS setups ? </a></span>
+  </h3>
+  <div class="content"><p>Bart,</p>
+<p>I'd love to read about people rolling back from GFS/ OCFS2 to NFS and their reasons for doing so .. I haven't met any  yet.<br />
+Back in the early days GFS indeed was a pain to setup and little or no documentation was available.   Also OCFS wasn't really what people expected it to be.   But if we look today at OCFS2 and recent GFS versions there are lots of people out there implementing it , combinded with Xen </p>
+<p>If you talk about academic setups then AFS and Lustre come to mind  because honestly I yet have to see a relevant AFS implementation outside an  academic  environment.  (Please point me to other cases) </p>
+<p>The whole problem however is what you need as a feature set .. so there is no one good solution for all of the different cases.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/17/2007 - 12:03</div>
+  </div>
+</div><a id="comment-2666"></a>
+<div id="comment-23" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.johnandcailin.com/john" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/2ae53e07844183044355270052d49bd4.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="John&#039;s picture" title="John&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2666">#23</a>
+    <span class="author"><a href="http://www.johnandcailin.com/john">John</a></span>  : <span class="title"><a href="index.html#comment-2666" class="active">more on nfs vs rsync</a></span>
+  </h3>
+  <div class="content"><p>kris, i had a crack at writing up an rsync based alternative based on your comments; </p>
+<p><a href="http://www.johnandcailin.com/blog/john/scaling-drupal-step-one-b-nfs-vs-rsync" title="http://www.johnandcailin.com/blog/john/scaling-drupal-step-one-b-nfs-vs-rsync" rel="nofollow">http://www.johnandcailin.com/blog/john/scaling-drupal-step-one-b-nfs-vs-...</a></p>
+<p>i hope i captured your thoughts properly. it's great to hear from everyone on their different ideas and approaches.</p>
+<p>john.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/11/2007 - 23:06</div>
+  </div>
+<div class="indented"><a id="comment-2667"></a>
+<div id="comment-24" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-2667">#24</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-2667" class="active">More to come</a></span>
+  </h3>
+  <div class="content"><p>John,</p>
+<p>Given the huge interest in this topic I`ll be cranking up some more pointers on how to tackle this issue , taking in account different use cases.</p>
+<p>No promise on a timeframe however :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/12/2007 - 11:27</div>
+  </div>
+</div><a id="comment-2665"></a>
+<div id="comment-25" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.stroobant.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/0d29351bf293e427b3433036aefaaa2d.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Luc Stroobant&#039;s picture" title="Luc Stroobant&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2665">#25</a>
+    <span class="author"><a href="http://www.stroobant.be/">Luc Stroobant</a></span>  : <span class="title"><a href="index.html#comment-2665" class="active">NFS without issues...</a></span>
+  </h3>
+  <div class="content"><p>If your NFS share becomes unreachable and your webservers are not aware of that (so the system thinks the share is still mounted) your Apaches will try to read the files and choke. After a few minutes, the whole site will go down because your Apaches hit MaxClients. I've seen it happening...</p>
+<p>For the database server: we'll be using MySQL replication with a virtual IP (heartbeat) for HA. I did some tests with that and it seems to work fine. If everything goes well, we'll put that in production during the next few weeks.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/11/2007 - 14:28</div>
+  </div>
+<a id="comment-2660"></a>
+<div id="comment-26" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-2660">#26</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-2660" class="active">Weekend Brunch</a></span>
+  </h3>
+  <div class="content"><p>I need to find out where you can discuss filesystem scaling issues over Brunch..<br />
+Guess your Girlfriend needs to meet my wife.</p>
+<p>I suggest we invite Dang also  :)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/10/2007 - 23:18</div>
+  </div>
+</div><a id="comment-2658"></a>
+<div id="comment-27" class="comment comment-by-node-author comment-node-author clear-block">
+  <div class="picture">
+  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
+<h3>
+    <a class="id" href="#comment-2658">#27</a>
+    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-2658" class="active">rsync  ocfs</a></span>
+  </h3>
+  <div class="content"><p>Luc,</p>
+<p>Memcached would probably be part 6 or 7 in his list as he already mentionned where he will be going in his 5 articles :)</p>
+<p>Setting up shared files without NFS could be done by GFS or OCFS2 if you like , heck even SMB or DAV is a better alternative to NFS.<br />
+GFS or OCFS2  will give you really shared access to files complete with locking etc. </p>
+<p>If rsync is not an option .. csync2 might be. .  The other question is  , where are the files coming from ?<br />
+If you are the one generating them and pushing them to your servers rsync stays an option as you should be getting files out of your version control system on to your production platforms.  It becomes a more complex story once you have UCG.</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/10/2007 - 22:00</div>
+  </div>
+<div class="indented"><a id="comment-2664"></a>
+<div id="comment-28" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.stroobant.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/0d29351bf293e427b3433036aefaaa2d.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Luc Stroobant&#039;s picture" title="Luc Stroobant&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2664">#28</a>
+    <span class="author"><a href="http://www.stroobant.be/">Luc Stroobant</a></span>  : <span class="title"><a href="index.html#comment-2664" class="active">Re: rsync ocfs</a></span>
+  </h3>
+  <div class="content"><p>On a community site there is almost always user generated content in your files directory, there's no way to avoid that. (avatars...) For the sync story: once you start syncing between 3 or more servers, that might become a problem. And don't forget that the syncing will take more CPU once your files directory grows larger (we have an UGC site with 50GB files...).</p>
+<p>About GFS and OCFS2 (or GPFS), I know it's possible, but I wonder if those are really the solution.  It adds a serious level of complexity to your "simple" webfarm nodes. Personally, I think it might be better to fix this by adapting Drupal to make it possible to store the files on other servers. After all, it's rather stupid to serve your static files with an expensive 15-20 MB preforked Apache with PHP in it. So if we could tell Drupal to put that content on another (redundant) system with a webserver optimized to serve static files, that could be a great improvement for the bigger Drupal sites.</p>
+<p>Another thing I've been thinking about is to (NFS?)-mount the files directory on the webserver nodes, but use your reverse proxies to rewrite the <a href="http://yoursite/files/" title="http://yoursite/files/" rel="nofollow">http://yoursite/files/</a>... requests to <a href="http://files.yoursite/" title="http://files.yoursite/" rel="nofollow">http://files.yoursite/</a>... which is served from a different httpd on the fileserver. That way NFS will only be used to write the files and not to read them afterwards. (but it's still NFS...)</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/11/2007 - 14:18</div>
+  </div>
+</div><a id="comment-2657"></a>
+<div id="comment-29" class="comment comment-by-anonymous clear-block">
+  <div class="picture">
+  <a href="http://www.stroobant.be/" title="View user website." rel="external nofollow"><img src="http://www.gravatar.com/avatar/0d29351bf293e427b3433036aefaaa2d.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Luc Stroobant&#039;s picture" title="Luc Stroobant&#039;s picture"  /></a></div>
+<h3>
+    <a class="id" href="#comment-2657">#29</a>
+    <span class="author"><a href="http://www.stroobant.be/">Luc Stroobant</a></span>  : <span class="title"><a href="index.html#comment-2657" class="active">Scaling Drupal</a></span>
+  </h3>
+  <div class="content"><p>One of the things in step 4 &amp; 5 is probably adding memcached in the setup. We did some tests with it for stubru.be and the results are very impressive.</p>
+<p>For NFS: you could create a redundant fileserver with NFS (drbd, Sun cluster...). We'll also add reverse proxies (Squid or Varnish, no mod proxy...) to cache most of the files on NFS in memory.  I'm very interested to hear other ideas to setup shared files on more than two webservers without NFS.<br />
+Rsync is not an option for drupal shared files, unless you find a way to delete unused files. The rsync delete flag is not an option here. Without --delete, your files directory will keep growing, with --delete, you'll delete newly added files on webserver x if you rsync from webserver y...</p>
+</div>
+        <br class="clear" />
+    <div class="submitted">11/10/2007 - 20:12</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:8080/blog/scaling-drupal by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:35:21 GMT -->
+</html>
