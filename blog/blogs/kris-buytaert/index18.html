@@ -3,7 +3,7 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=18 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:52:31 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=18 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 20:09:05 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -69,7 +69,36 @@
   <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a></div></div>
   <h2 id="title">Kris Buytaert's blog</h2>
 <div class="content">
-<div class="item-list"></div><div id="node-927" class="node teaser blog cal">
+<div class="item-list"></div><div id="node-928" class="node teaser blog cal">
+    <acronym class="calendar published" title="2009-07-30T21:37:34+02:00">
+  <span class="month">Jul</span>
+  <span class="day">30</span>
+    <span class="year">2009</span>
+    </acronym>
+    <h2 class="title"><a href="../../rivermuse-first-impressions/index.html">Rivermuse First Impressions</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_890 first"><a href="../../taxonomy/term/890/index.html" rel="tag" title="">nagios</a></li>
+<li class="taxonomy_term_599"><a href="../../taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_1278"><a href="../../category/rivermuse/index.html" rel="tag" title="">rivermuse</a></li>
+<li class="taxonomy_term_887"><a href="../../taxonomy/term/887/index.html" rel="tag" title="">zabbix</a></li>
+<li class="taxonomy_term_888 last"><a href="../../taxonomy/term/888/index.html" rel="tag" title="">zenoss</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>First of all, I don't come from a Tivoli, OpenView background  , I have never touched the commercial network monitoring tools and  I`m not a network guy . I'm an infrastructure  guy whith a focus on Open Source platforms so I have been using Nagios and more recently Zabbix, Zenoss  etc for the better part of the last 2 decades in large to very large environments.<br />
+My syslogs go to a central (r)syslog)-ng) server where I frequently abuse grep.   So If my experience with RiverMuse is not what it should be , there's work to be done on both sides ;) </p>
+<p>So When looking at my Rivermuse setup (in a VirtualBox FC9 setup) my first tought is "Those Rivermuse folks will really need to explain me what their tool is all about .. as to me it's just a fancy colortail integrated with snmp traps."</p>
+<p>Hopefully it's not just that and it all becomes clear in a couple of days ..  Apart from the FC9 annoyancy there is the  frequent  Unresponsive script errors.</p>
+<p><img src="http://www.krisbuytaert.be/images/RiverMuse.png" /></p>
+<p>And those I fear will be the real killer problems  for RiverMuse</p>
+<p>On the other hand, RiverMuse does good  job in displaying the actual  events in your network and following up the actions that one ... after a while  you'll get a good overview of the actual issues as opposed to all the relevant events</p>
+<p>I've dropped RiverMuse into my blade test setup (more on that subject later) and I`ll be keeping a look on what I can learn from it but the dreaded Unresponsive scripts that I know so well from Bamboo really need to be fixed :)</p>
+<p>Well time will tell :) </p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../rivermuse-first-impressions/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
+</ul></div>
+</div>
+<div id="node-927" class="node teaser blog cal">
     <acronym class="calendar published" title="2009-07-30T21:33:17+02:00">
   <span class="month">Jul</span>
   <span class="day">30</span>
@@ -304,28 +333,6 @@ I used Istanbul to record the session and realized later that I should have done
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../twitter-woes/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
 </ul></div>
 </div>
-<div id="node-914" class="node teaser blog cal">
-    <acronym class="calendar published" title="2009-06-04T11:19:21+02:00">
-  <span class="month">Jun</span>
-  <span class="day">04</span>
-    <span class="year">2009</span>
-    </acronym>
-    <h2 class="title"><a href="../../resolvconf-problem/index.html">resolv.conf problem</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_437 first last"><a href="../../taxonomy/term/437/index.html" rel="tag" title="">dnsproblem</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>Collegue troubleshooting a machine that he couldn't log into anymore </p>
-<p>root@Validation_Radio3_Ku_VN1:~# cat /etc/shadow<br />
-# /etc/resolv.conf generated on 20090604022133 by<br />
-/etc-ro/rc.d/resolvdotconf.pl<br />
-nameserver 192.168.104.1<br />
-</p>
-<p>Really folks .. Everything is a fine dns problem :) </p>
-<p>PS.  Yeah yeah .. the real problem was a filesystem corrupted</p>
-</div>
-</div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index17.html?page=17" title="Go to previous page" class="active">‹ previous</a></li>
 <li class="pager-ellipsis">…</li>
@@ -355,5 +362,5 @@ nameserver 192.168.104.1<br />
 
 </body>
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=18 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:52:31 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=18 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 20:09:05 GMT -->
 </html>

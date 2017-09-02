@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - lisa</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/452/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Lisa 2011</title>
+ <link>http://127.0.0.1:8080/blog/lisa-2011</link>
+ <description>&lt;p&gt;Last week I was in Boston for my 1st and their 25th  Edition  of the Large Infrastructure System Administration Conferences&lt;br /&gt;
+Lisa was pretty much all I expected from it.  Old Unix wizards with long hair and white beards,  the usual suspects, and a mix of devops practitioners on  a devops themed conference with on one  side awesome and well positioned content and on the other side absolutely basic stuff.&lt;/p&gt;
+&lt;p&gt;On tuesday I had a devops bof scheduled for 2 hours.&lt;/p&gt;
+&lt;p&gt;My goal of the session was to not talk myselve, and let the audience figure out the 4 key components of devops as documented by @botchagalupe and @damonedwards being ,  Culture, Automation, Measurement and Sharing.   I have to admit it  took me a while to get them to that point .. but they figured out themselves ..  the bof was standing room only , and there was a good discussion going on&lt;/p&gt;
+&lt;p&gt;On wednesday I gave my talk  titled , Devops the Future is here, it&#039;s just not evenly distributed yet.&lt;/p&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_10506745&quot;&gt; &lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/KrisBuytaert/devops-the-future-is-here-its-just-not-evenly-distributed-yet&quot; title=&quot;Devops, the future is here, it&amp;#39;s just not evenly distributed yet.&quot; target=&quot;_blank&quot;&gt;Devops, the future is here, it&amp;#39;s just not evenly distributed yet.&lt;/a&gt;&lt;/strong&gt; &lt;iframe src=&quot;http://www.slideshare.net/slideshow/embed_code/10506745&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;padding:5px 0 12px&quot;&gt; View more &lt;a href=&quot;http://www.slideshare.net/&quot; target=&quot;_blank&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/KrisBuytaert&quot; target=&quot;_blank&quot;&gt;Kris Buytaert&lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;During my talk I realized that there was some more explanation needed for the crowd explaining Vagrant ...   so I proposed a Bof on that topic too ...  I used @patrickdebois &#039;s awesome slides and hosted a  small bof on Vagrant on thursday evening.&lt;/p&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_8340999&quot;&gt; &lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/jedi4ever/vagrant-devopsdays-mountain-view-2011&quot; title=&quot;Vagrant devopsdays Mountain View 2011&quot; target=&quot;_blank&quot;&gt;Vagrant devopsdays Mountain View 2011&lt;/a&gt;&lt;/strong&gt; &lt;iframe src=&quot;http://www.slideshare.net/slideshow/embed_code/8340999&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;padding:5px 0 12px&quot;&gt; View more &lt;a href=&quot;http://www.slideshare.net/&quot; target=&quot;_blank&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/jedi4ever&quot; target=&quot;_blank&quot;&gt;Patrick Debois&lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Friday morning I was scheduled to be in a panel discussing featuring a #devops guy, a storage guy and a network guy ..&lt;br /&gt;
+as my voice was starting to break down I wasn&#039;t really confident . however by the time the panel started I could talk normal again :)&lt;br /&gt;
+The setup was weird.. it were basically 3 people with totally different backgrounds discussing a variety of topics.  There were no rea&lt;br /&gt;
+lly opposing views , mostly we agreed with eachother , so I`m not really sure if the audience was really entertained :)&lt;/p&gt;
+&lt;p&gt;Anyhow 2 bofs, a talk and a panel later .. I was exhausted and ready to fly back to Belgium.  &lt;/p&gt;
+&lt;p&gt;Tomorrow I have another presentation together with Patrick at the &lt;a href=&quot;http://www.bejug.org/confluenceBeJUG/display/BeJUG/DevOps&quot;&gt;BeJug&lt;/a&gt; ..  problem is .. I`m still looking for my voice ;(&lt;/p&gt;
+&lt;p&gt;So worst case .. I`m just gonna turn on the recording that the Usenix folks made of my talk ... &lt;/p&gt;
+&lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/p-8UBYMMjp8&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;Must admit .. I&#039;ve given better talks .. &lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/lisa-2011#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/452">lisa</category>
+ <pubDate>Wed, 14 Dec 2011 18:10:12 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1053 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>UKUUG Spring 2009 Conference,  the after post</title>
+ <link>http://127.0.0.1:8080/blog/ukuug-spring-2009-conference-after-post</link>
+ <description>&lt;p&gt;Last week the &lt;a href=&quot;http://www.ukuug.org/events/spring2009/&quot; rel=&quot;nofollow&quot;&gt;UKUUG Spring , Large Scale Infrastructure conference&lt;/a&gt; took place in London,&lt;/p&gt;
+&lt;p&gt;Altough only 1 track was scheduled,  the content was very good, some talks were a bit short, others were a bit too long.   And luckily the talks that didn&#039;t really bring me new content were entertaining :) Also the after conf chatter in the pub across the street was so much fun we almost failed to catch our plane back to Antwerp.&lt;/p&gt;
+&lt;p&gt;However lots of people wondered where the real action is going.   Not sure but maybe the fact that ApacheCon was scheduled around the same time might have pulled some people to Amsterdam.   Truth is that there is a need for a real Unix Sysadmin conference on mainland Europe,  sure we got Fosdem and different local Open Source events, but there isn&#039;t any focus on the sysadmin part of the job, or rather the devministration part , the large scale part, the automating part etc.&lt;/p&gt;
+&lt;p&gt;There is the &lt;a href=&quot;http://www.netways.de/english/osdc/y2009/&quot; rel=&quot;nofollow&quot;&gt;Open Source Datacenter Conference (OSDC)&lt;/a&gt; which looks interresting, but won&#039;t attrackt an international crowd as sadly a big part of the talks are in German , but it also&lt;br /&gt;
+ seems &lt;a href=&quot;http://www.sane.nl/&quot; rel=&quot;nofollow&quot;&gt;Sane&lt;/a&gt; hopes to be back in 2009 , so maybe there is some hope ..&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/ukuug-spring-2009-conference-after-post#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1077">devministration</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/452">lisa</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/427">ukuug</category>
+ <pubDate>Tue, 31 Mar 2009 17:02:57 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">893 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>What does your BOFH want ? :)</title>
+ <link>http://127.0.0.1:8080/blog/what-does-your-bofh-want</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://www.garfieldtech.com/blog/drupal-system-tools&quot; rel=&quot;nofollow&quot;&gt;Larry&lt;/a&gt;, I`m glad  you asked ..&lt;/p&gt;
+&lt;p&gt;With the risk of receiving a flood of comments pointing me to already existing tools here&#039;s my go at what I as a sysadmin of often large deployments am looking for in Drupalland .&lt;/p&gt;
+&lt;p&gt;You suggest LDAP and syslog integration .. guess we already have that don&#039;t we ? &lt;/p&gt;
+&lt;p&gt;But what I haven&#039;t found yet ..&lt;br /&gt;
+An rpm/deb repository  of Drupal modules So we can do an apt-get install drupal-package , yes I know about Drush, but I want the files on my system to be in a package and clearly identified, it helps me keeping my system uncluttered.&lt;/p&gt;
+&lt;p&gt;apt-get update drupal-package  , or yum install drupal-package would be a luxury,  same for themes btw.&lt;/p&gt;
+&lt;p&gt;It would be lovely if the postinstalls of those package also trigger a database upgrade if needed.&lt;/p&gt;
+&lt;p&gt;Which brings me to the next issue.   If I have a multisite setup  and I update a module in sites/all/modules,  I usually have to go trough each and every site hosted there to update the databases.    No really something I like to do for 10+ euh 3+ sites.&lt;/p&gt;
+&lt;p&gt;Also think big, don&#039;t waste your time on desktop apps or guis .since as long as you only have  1 site to manage point an click is fine,  for you ,  Think in terms of what if you have 10 sites, 100 sites, or more .. do you really want to do that kind of administration via a browser or gui ? Some wise man once said &lt;cite&gt;If your computer can&#039;t install it the installer is broken&lt;/cite&gt;.  A script should or automation tool should be able to interact with the sites,  not a human operating a mouse ;)  It&#039;s not just the RSI , but also the fact that to err is human, and if the computer fails a script you can patch it :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/what-does-your-bofh-want#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/775">automation</category>
+ <category domain="http://127.0.0.1:8080/blog/category/bof">bof</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1077">devministration</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/452">lisa</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/system-administration">system administration</category>
+ <pubDate>Wed, 28 Jan 2009 22:29:29 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">866 at http://127.0.0.1:8080/blog</guid>
+</item>
+<item>
+ <title>UKUUG Spring 2008 Conference</title>
+ <link>http://127.0.0.1:8080/blog/node/435</link>
+ <description>&lt;p&gt;The UKUUG Spring 2008 Conference on Large Installations System Administration  is announced and will take place from&lt;br /&gt;
+31st March to 2nd April 2008 in Birmingham (not in Oxford as announced earlier) &lt;/p&gt;
+&lt;p&gt;And also there is no focus on Configuration management as rumoured but again a focus on Virtualisation .&lt;/p&gt;
+&lt;p&gt;More info on &lt;a href=&quot;http://www.ukuug.org/events/spring2008/&quot; title=&quot;http://www.ukuug.org/events/spring2008/&quot; rel=&quot;nofollow&quot;&gt;http://www.ukuug.org/events/spring2008/&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/435#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/453">birmingham</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/428">cambridge</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/452">lisa</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/427">ukuug</category>
+ <pubDate>Sun, 02 Sep 2007 16:42:07 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">435 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

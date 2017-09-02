@@ -3,7 +3,7 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=29 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:57:17 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=29 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 20:15:42 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -59,7 +59,7 @@
   <div id="sidebar-left" class="sidebar">
   <div class="block block-block" id="block-block-5">
   <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
-<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="/blog/social/index/index.html">Social Media Policy</a></p>
+<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
 <p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
 </div>
 </div>
@@ -68,6 +68,38 @@
 
 <div id="main">
 <div class="content">
+<div id="node-757" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-10-28T18:25:19+01:00">
+  <span class="month">Oct</span>
+  <span class="day">28</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/757/index.html">Virtualizing MySQL , are you stupid ?</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1085 first"><a href="/blog/taxonomy/term/1085/index.html" rel="tag" title="">i hate it when the marketeers join in</a></li>
+<li class="taxonomy_term_1084"><a href="/blog/taxonomy/term/1084/index.html" rel="tag" title="">marketing sucks</a></li>
+<li class="taxonomy_term_458"><a href="/blog/taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_488"><a href="/blog/taxonomy/term/488/index.html" rel="tag" title="">sun</a></li>
+<li class="taxonomy_term_672"><a href="/blog/taxonomy/term/672/index.html" rel="tag" title="">virtualization</a></li>
+<li class="taxonomy_term_470"><a href="/blog/taxonomy/term/470/index.html" rel="tag" title="">xen</a></li>
+<li class="taxonomy_term_1083 last"><a href="/blog/taxonomy/term/1083/index.html" rel="tag" title="">xvm</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>or timebound ? <strong> or don't you have any load on your DB at all ?</strong></p>
+<p>I personally don't see many reasons to virtualize your database,  apart from the , we plan to start small and scale out, or the we need it now and we don't have the hardware yet  , putting your database on a virtual platform where you have to share resources with other virtual machines doesn't really sound like a tempting proposition to me.   Small, almost idle databases , maybe.  But enterprise production level databases no thnx.</p>
+<p><a href="http://www.pythian.com/blogs/1321/virtualizing-mysql" rel="nofollow">Sheeri Cabral</a> also mentions the above reasons ..  and there also .. Enterprise Production use isn't listed.</p>
+<p>Databases typically  require a good amount of memory , and steady disk access.<br />
+So if you are in a production environment with a fairly loaded database, would you want a 4Gb machine with full direct memory access,  Or 3.5Gb of virtual memory that can be ballooned to 3 if underused.   My pick is at the 4Gb real memory.</p>
+<p>The original article at Sun argues the use of Virtual Harddisk to move around workloads between different servers or even Virtualization platforms.  But it fails to describe the guaranteed performance penalty of not using raw disks but a filesystem on top of a loopback device.  How many layers do you want before actually write to the disks. Good practice in a virtual environment is to dedicate full disks or LVM parts to the virtual machine hence lowering the overhead, but most (default) setups do the opposite.</p>
+<p>And don't get me started about <a href="http://www.krisbuytaert.be/blog/node/750">the myth</a> of using virtualization for high-availability :)</p>
+<p>Now can somebody please remove all the clueless marketing people from planetmysql.org , thnx.  (they can be identified with by a blogs.sun.com source and posts that  mainly talk about Sun products including only a slight hint to MySQL)</p>
+<p>(PS. What's a  Market Development Engineer's  job description anyhow  ? , that's just a different name for Marketing Assistant right ?)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/node/757/index.html#comments" title="Jump to the first comment of this posting.">17 comments</a></li>
+</ul></div>
+</div>
 <div id="node-756" class="node teaser blog cal">
     <acronym class="calendar published" title="2008-10-27T21:39:13+01:00">
   <span class="month">Oct</span>
@@ -290,35 +322,6 @@ You simply cannot afford to reboot or even boot a full machine and the related d
 <li class="comment_comments last"><a href="/blog/node/748/index.html#comments" title="Jump to the first comment of this posting.">6 comments</a></li>
 </ul></div>
 </div>
-<div id="node-747" class="node teaser blog cal">
-    <acronym class="calendar published" title="2008-10-20T20:21:55+02:00">
-  <span class="month">Oct</span>
-  <span class="day">20</span>
-    <span class="year">2008</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/node/747/index.html">I wrote more books than I remember</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_685 first"><a href="/blog/taxonomy/term/685/index.html" rel="tag" title="">book</a></li>
-<li class="taxonomy_term_1068"><a href="/blog/taxonomy/term/1068/index.html" rel="tag" title="">damn</a></li>
-<li class="taxonomy_term_1067"><a href="/blog/taxonomy/term/1067/index.html" rel="tag" title="">syngres</a></li>
-<li class="taxonomy_term_555"><a href="/blog/taxonomy/term/555/index.html" rel="tag" title="">vmware</a></li>
-<li class="taxonomy_term_470 last"><a href="/blog/taxonomy/term/470/index.html" rel="tag" title="">xen</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>Well kinda, I contributed to more books than I was aware off.  Couple of weeks ago  we were having some fun Googling for pictures of collegues when Mario came up with a <a href="http://www.bookpool.com/sm/1597492175">Link to a bookcover</a> that had meta information with my name on.</p>
-<p>"The Best Damn Server Virtualization Book Period"</p>
-<p>I had never heard of the book, but it was published by  Syngress with whom last year I worked on the Virtualization with Xen book.  As the cover of the book on Amazon told me that I was involved in the book I set on to find  a PDF of the book which one of the collegues quickly found. And indeed my name was in the book , and also the chapters I had written for the Xen book seemed to be inside.</p>
-<p>So I contacted my editor at syngress again to get some more information and hopefully also the book.<br />
-And eventually they got back to me and send me a copy of the book</p>
-<p><img src="http://www.krisbuytaert.be/images/damnbook.jpg" /></p>
-<p>So with 2007 being on of my most busiest years so far I managed to do even more than I knew of .. I didn't write a significant part of just 1 book but 2.</p>
-<p>Whow .. and all of that while I became a father,  started a new <a href="http://www.inuits.be/">company</a></p>
-<p>Still not sure what to think about it .. </p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-</ul></div>
-</div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index28.html?page=28" title="Go to previous page" class="active">‹ previous</a></li>
 <li class="pager-ellipsis">…</li>
@@ -333,7 +336,7 @@ And eventually they got back to me and send me a copy of the book</p>
 <li class="pager-item"><a href="index33.html?page=33" title="Go to page 34" class="active">34</a></li>
 <li class="pager-ellipsis">…</li>
 <li class="pager-next"><a href="index30.html?page=30" title="Go to next page" class="active">next ›</a></li>
-<li class="pager-last last"><a href="index103.html?page=103" title="Go to last page" class="active">last »</a></li>
+<li class="pager-last last"><a href="index104.html?page=104" title="Go to last page" class="active">last »</a></li>
 </ul></div></div>
 </div>
 
@@ -348,5 +351,5 @@ And eventually they got back to me and send me a copy of the book</p>
 
 </body>
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=29 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:57:17 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=29 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 20:15:42 GMT -->
 </html>

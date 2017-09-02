@@ -3,7 +3,7 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=52 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:39:28 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=52 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:23:16 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -69,7 +69,41 @@
   <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a></div></div>
   <h2 id="title">Kris Buytaert's blog</h2>
 <div class="content">
-<div class="item-list"></div><div id="node-521" class="node teaser blog cal">
+<div class="item-list"></div><div id="node-522" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-12-02T23:56:45+01:00">
+  <span class="month">Dec</span>
+  <span class="day">03</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="../../node/522/index.html">SELECT vs select</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_484 first"><a href="../../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_458"><a href="../../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_526"><a href="../../taxonomy/term/526/index.html" rel="tag" title="">newbie</a></li>
+<li class="taxonomy_term_659"><a href="../../taxonomy/term/659/index.html" rel="tag" title="">pager</a></li>
+<li class="taxonomy_term_661"><a href="../../taxonomy/term/661/index.html" rel="tag" title="">rtfc</a></li>
+<li class="taxonomy_term_660 last"><a href="../../taxonomy/term/660/index.html" rel="tag" title="">stupid</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>I spent way too much time this weekend trying to get the <a href="http://api.drupal.org/api/file/includes/pager.inc/5" rel="nofollow">pager</a> stuff in Drupal working for a module I`m playing with.  </p>
+<p>I had learned a lot from the watchdog module on how paging was supposed to be working and I was trying to do the same with another database.    As I got a page limited by the number of records I wanted but I couldn't find any of the fancy next, previous and page number thingies that I wanted.    </p>
+<p>The watchdog module worked for me and I started stripping the watchdog module till I could actually replace my function with watchdog_overview function.    Even replaced the watchdog query with my qeury..  but not such luck.. I couldn't get   $output .= <span class="geshifilter"><code class="text geshifilter-text">theme('pager', NULL, 50, 0);</code></span>  to work.</p>
+<p>So as every open source geek does.. I started looking into the code.  pager.inc<br />
+The header told me  the author.. I could mail him and wait or even call him , , but I read on.<br />
+<span class="geshifilter"><code class="text geshifilter-text">$pager_total_items[$element] = db_result(db_query($count_query, $args));</code></span><br />
+Never returned  anything useful.., my mysql log learned me there never was any query with a count ..<br />
+Till I modified the pager.inc file to actually perform the query I wanted it to do.. and it started working.<br />
+Then I took a closer look at the regexp that was being used to create the $count_qeury<br />
+<span class="geshifilter"><code class="text geshifilter-text">$count_query = preg_replace(array('/SELECT.*?FROM /As', '/ORDER BY .*/'), array('SELECT COUNT(*) FROM ', ''),$query);</code></span><br />
+However my query was all in lowercase so the count was never inserted.</p>
+<p>The only difference between the working watchdog module and my own code was in the use of uppercase SQL statements.<br />
+So call me lazy :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../node/522/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-521" class="node teaser blog cal">
     <acronym class="calendar published" title="2007-12-02T23:27:33+01:00">
   <span class="month">Dec</span>
   <span class="day">03</span>
@@ -255,37 +289,6 @@ little annoyancies such as not being able to print a timesheet if you only have 
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../node/512/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
 </ul></div>
 </div>
-<div id="node-511" class="node teaser blog cal">
-    <acronym class="calendar published" title="2007-11-23T17:58:14+01:00">
-  <span class="month">Nov</span>
-  <span class="day">23</span>
-    <span class="year">2007</span>
-    </acronym>
-    <h2 class="title"><a href="../../node/511/index.html">ReInventing the wheel, over and over , and over , and over again </a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_599 first"><a href="../../taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
-<li class="taxonomy_term_641"><a href="../../taxonomy/term/641/index.html" rel="tag" title="">otrs</a></li>
-<li class="taxonomy_term_640"><a href="../../taxonomy/term/640/index.html" rel="tag" title="">request tracker</a></li>
-<li class="taxonomy_term_643"><a href="../../taxonomy/term/643/index.html" rel="tag" title="">rt</a></li>
-<li class="taxonomy_term_642"><a href="../../taxonomy/term/642/index.html" rel="tag" title="">simtplicket</a></li>
-<li class="taxonomy_term_639"><a href="../../taxonomy/term/639/index.html" rel="tag" title="">timewaster</a></li>
-<li class="taxonomy_term_638 last"><a href="../../taxonomy/term/638/index.html" rel="tag" title="">useless</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>Over at <a href="http://blogs.cnet.com/8301-13505_1-9822336-16.html?tag=head" rel="nofollow">CNet , Matt Assay</a> found out about SimpleTicket.</p>
-<p><cite>SimpleTicket was developed by Architel in 2005 for internal use. We looked at Heat, Remedy and hosted solutions like Parature, but most of them were too complicated and expensive for our needs. Next we looked at lowend solutions like Intuit?s TrackIt and found it lacking in several ways. We needed a simple to use system that was flexible enough for us to add features on the fly. We decided to build it ourselves. SimpleTicket was the result....<br />
-</cite><br />
-So I don't know the guys over at Architel and I can't comment on their background or their real experience, so I`m a bit abusing this case as a worst case scenario.<br />
-But when I read something like that I wonder.  Why didn't those people look at the existing Open Source alternatives in the first place ?  I think we have been using OTRS since before 2003 (don't know the exact year)  and there are other alternatives out there such as RT.  And even if you don't like the features or you need some more.. that's wha open source is all about .. you should improve the product , add the functionality you need and contribute it back to the community.     </p>
-<p>When I read a n article like the one above to me it translates as <cite>Back in 2005 we were idiots not knowing about the whole other software world that was called Open Source, we were shopping<br />
-for a (proprietary) ticketing system and we couldn't find one that had a correct price tag.  We decided to build ourselves, SimpleTicket was the restult.<br />
-Now 2 years later we realise that a ticketing system is not our core business and we decided to Open Source it.  Doing so will not only free our time as we don't need to develop it ourselve anymore but it will also give us  visibility on the market </cite><br />
-I exaggerate a bit .. and while SimpleTicket might not be like this others are.. and it's just not the way opensource works.</p>
-<p>I see too much people reinventing the wheel these days...   maybe if we could all have a look at what's out there first, improve on that so we can use the time we have available to build something that really needs to be build ? </p>
-<p>Like a good multilayer calendaring solution.   Or a working Timesheet application ?</p>
-</div>
-</div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index51.html?page=51" title="Go to previous page" class="active">‹ previous</a></li>
 <li class="pager-ellipsis">…</li>
@@ -315,5 +318,5 @@ I exaggerate a bit .. and while SimpleTicket might not be like this others are..
 
 </body>
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=52 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:39:28 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=52 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:23:16 GMT -->
 </html>

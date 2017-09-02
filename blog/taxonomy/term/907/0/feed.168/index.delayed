@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - tagger</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/907/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>This week in Gent</title>
+ <link>http://127.0.0.1:8080/blog/node/661</link>
+ <description>&lt;p&gt;On Wednesday Gent hosted the &lt;a href=&quot;http://events.ibbt.be/brokerage/&quot; rel=&quot;nofollow&quot;&gt;IBBT Brokerage event&lt;/a&gt;,  some usual crowd, lots of unusual crowd  .. but mostly trying to figure out what&#039;s the difference between the startups I usually run into and the ones I saw at the IBBT  event.  The weirdest part .. the language .. Dutch... &lt;/p&gt;
+&lt;p&gt;Thursday was the &lt;a href=&quot;http://outerthought.org/en/events/oscmsfschat.html&quot; rel=&quot;nofollow&quot;&gt;Fireside chat&lt;/a&gt;  with &lt;a href=&quot;http://www.contenthere.net/&quot; rel=&quot;nofollow&quot;&gt;Seth&lt;/a&gt; , again some usual suspects ,  but also some unexpected people .. Seth gave an interesting overview of the current Java Content management platforms , Daisy, &lt;a href=&quot;http://buytaert.net/france24-using-drupal&quot; rel=&quot;nofollow&quot;&gt;Magnolia&lt;/a&gt;, &lt;/p&gt;
+&lt;p&gt;Obviously the language debate came up , I really need to finish that blog post :)&lt;/p&gt;
+&lt;p&gt;The format, 1 presentation followed by   2 shorter group brainstorm sessions where one member of the group presented the findings was really interesting,  you ended up speaking to people you don&#039;t always run into. Altough the 25 minute brainstorm sessions migyt be a bit longer.  Definitely worth another version.  Just the food afterwards...  3 times spare Ribs at Amadeus in 4 months time is just too much ..  next time Gekroonde Hoofden please :)&lt;/p&gt;
+&lt;p&gt;Then Friday, &lt;a href=&quot;http://mattinaction.blogspot.com/&quot; rel=&quot;nofollow&quot;&gt;Matt&lt;/a&gt; and I spent the day in Gent brainstorming about that &lt;a href=&quot;http://openqrm.sourceforge.net/&quot; rel=&quot;nofollow&quot;&gt;undead project &lt;/a&gt;:)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/node/661#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/903">alfresco</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/906">daisy</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/681">gent</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/908">ghent</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/905">IBBT</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/601">openqrm</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/907">tagger</category>
+ <pubDate>Sat, 10 May 2008 19:40:45 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">661 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

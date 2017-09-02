@@ -3,7 +3,7 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=3 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:22:52 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=3 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:40:11 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -59,7 +59,7 @@
   <div id="sidebar-left" class="sidebar">
   <div class="block block-block" id="block-block-5">
   <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
-<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="/blog/social/index/index.html">Social Media Policy</a></p>
+<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
 <p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
 </div>
 </div>
@@ -68,6 +68,55 @@
 
 <div id="main">
 <div class="content">
+<div id="node-1083" class="node teaser blog cal">
+    <acronym class="calendar published" title="2013-07-10T22:08:58+02:00">
+  <span class="month">Jul</span>
+  <span class="day">10</span>
+    <span class="year">2013</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/index.html">Using broken development frameworks , or why we don&#039;t use Zurmo</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1302 first"><a href="/blog/category/crm/index.html" rel="tag" title="">crm</a></li>
+<li class="taxonomy_term_458"><a href="/blog/taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_599"><a href="/blog/taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_1506"><a href="/blog/category/vtiger/index.html" rel="tag" title="">vtiger</a></li>
+<li class="taxonomy_term_1505 last"><a href="/blog/category/zurmo/index.html" rel="tag" title="">zurmo</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>People often wonder why DBA's used to hate developers, and with DBA's also the System Engineers,<br />
+(note that I just expanded devops by adding dba's to the picture..) </p>
+<p>So let me tell you a story .. </p>
+<p>A couple of weeks ago one of our customers wanted to start experimenting with a new type of CRM.  A gamified CRM.<br />
+Zurmo ... </p>
+<p>So we set this thing up in a dev environment and started playing with it , while at first it looks nice ..<br />
+the application  actually felt pretty slow.. however given that is a low resource development environment we looked no further.</p>
+<p>Yet the next step is that we run into missing features, such as the fact that every contact you create by default is<br />
+set to private .. which really isn't productive for a CRM system where you want to be able to follow up on different<br />
+customer and share information.  </p>
+<p>So we tried figuring out what the database changes to do this in bulk would mean, surely it had to be a flag on the contact record .<br />
+Wrong,  Zurmo uses an ORM for their database connectivity ...so their data model wasn't really trivial.</p>
+<p>So we decided to look at the MySQL log file to figure out what db changes happened when updating the record<br />
+Yes there's better approaches  but this one learned us a lot ..<br />
+The procedure I followed was pointing my browser to the page where I wanted to switch the checkbox,<br />
+log on to the mysql box,  set global logging on .  Clicked the checkbox and stopped global logging.</p>
+<p>This gave me a log file with all the database actions required to make that one single change.<br />
+I had to cross check a number of times ... the file created by this short and small action was.<br />
+about 70K </p>
+<p>Puzzled you start looking at the queries ...<br />
+The query list was full with "SELECT * FROM " stanza's ..<br />
+70K whopping K of queries that make your hair turn grey ... </p>
+<p>I figured I'd file a bug .. but I couldn't find  no bugtracker for Zurmo, only a forum (and forums are the most broken form of communication imvho) , yet the developers responded on Twitter.</p>
+<p>The feedback wasn't really satisfying so we quickly decided that supporting this application was not something we would like to do..<br />
+and abandonned it.. </p>
+<p>The real question is  who needs a <a href="http://dilbert.com/2013-05-19/" rel="nofollow">Gamified CRM</a> anyhow...</p>
+<p>PS.  So while finishing up this article on a late evening this week  I might not have put in clear enough that the generated logfile was 70Kb .. I fear some people misunderstood that it generated 70.000 queries.  Obviously a huge difference.  But still the log file shouldn't have been bigger han 1Kb There should have been 2-3 queries max (<a href="https://github.com/KrisBuytaert/snippets/tree/master/zurmo" title="https://github.com/KrisBuytaert/snippets/tree/master/zurmo" rel="nofollow">https://github.com/KrisBuytaert/snippets/tree/master/zurmo</a>) </p>
+<p>But imvho if the size of the queries you are generating is bigger than the page you are generating  you are most often doing it wrong.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
+</ul></div>
+</div>
 <div id="node-1082" class="node teaser blog cal">
     <acronym class="calendar published" title="2013-07-03T00:05:49+02:00">
   <span class="month">Jul</span>
@@ -395,31 +444,6 @@ Depending on Traffic Antwerp is about half an hour north of Brussels and there a
 <li class="comment_comments last"><a href="/blog/monitoringlove-hackfest/index.html#comments" title="Jump to the first comment of this posting.">6 comments</a></li>
 </ul></div>
 </div>
-<div id="node-1073" class="node teaser blog cal">
-    <acronym class="calendar published" title="2012-11-06T09:12:51+01:00">
-  <span class="month">Nov</span>
-  <span class="day">06</span>
-    <span class="year">2012</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/linuxcon-europe-barcelona/index.html">Linuxcon Europe, Barcelona</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="/blog/category/devops/index.html" rel="tag" title="">devops</a></li>
-<li class="taxonomy_term_1489"><a href="/blog/category/linuxcon/index.html" rel="tag" title="">linuxcon</a></li>
-<li class="taxonomy_term_1491"><a href="/blog/category/monitoringlove/index.html" rel="tag" title="">monitoringlove</a></li>
-<li class="taxonomy_term_439 last"><a href="/blog/taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>I`m in Barcelona this week for LinuxCon Europe ..<br />
-I`ll be hosting 3 sessions this week.</p>
-<p>Today I`ll be helping <a href="https://twitter.com/sebgoa" rel="nofollow">Sebastien Goasguen</a> with his session <a href="http://linuxconeurope2012.sched.org/event/8816c31538f6278779459b3337a45559#.UJi--tHtBrc" rel="nofollow">Building Foss Clouds</a>,  I`ll be talking about how to use tools such as Puppet, Graphite and Icinga to monitor your clouds. Sebastian inherited the Building  FOSS Clouds tutorial last week and asked me to help out.  </p>
-<p>Tomorrow I`ll be giving my <a href="http://linuxconeurope2012.sched.org/event/cd9a06295026ac8d17fb51cc26ff2ff2#.UJjD2NHtBrc" rel="nofollow">11 Open Source Tools for your Devops Stack </a> talking.</p>
-<p>And on thursday I will be giving a more general "What's this #devops thing anyhow" talk during the <a href="http://cloudstack-linuxconeu.eventbrite.com/" rel="nofollow">Cloudstack</a> event following LinuxCon.</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-<li class="comment_comments last"><a href="/blog/linuxcon-europe-barcelona/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
-</ul></div>
-</div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index2.html?page=2" title="Go to previous page" class="active">‹ previous</a></li>
 <li class="pager-item"><a href="index.html" title="Go to page 1" class="active">1</a></li>
@@ -433,7 +457,7 @@ I`ll be hosting 3 sessions this week.</p>
 <li class="pager-item"><a href="index8.html?page=8" title="Go to page 9" class="active">9</a></li>
 <li class="pager-ellipsis">…</li>
 <li class="pager-next"><a href="index4.html?page=4" title="Go to next page" class="active">next ›</a></li>
-<li class="pager-last last"><a href="index103.html?page=103" title="Go to last page" class="active">last »</a></li>
+<li class="pager-last last"><a href="index104.html?page=104" title="Go to last page" class="active">last »</a></li>
 </ul></div></div>
 </div>
 
@@ -448,5 +472,5 @@ I`ll be hosting 3 sessions this week.</p>
 
 </body>
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=3 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:22:52 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=3 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:40:11 GMT -->
 </html>

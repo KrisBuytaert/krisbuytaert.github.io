@@ -3,7 +3,7 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=9 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:30:41 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=9 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:49:45 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -69,7 +69,37 @@
   <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a></div></div>
   <h2 id="title">Kris Buytaert's blog</h2>
 <div class="content">
-<div class="item-list"></div><div id="node-1019" class="node teaser blog cal">
+<div class="item-list"></div><div id="node-1020" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-11-01T20:20:30+01:00">
+  <span class="month">Nov</span>
+  <span class="day">01</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../package-and-what-package/index.html">To Package,  and what to package</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_471 first"><a href="../../taxonomy/term/471/index.html" rel="tag" title="">apt</a></li>
+<li class="taxonomy_term_1328"><a href="../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1351"><a href="../../category/package/index.html" rel="tag" title="">package</a></li>
+<li class="taxonomy_term_472 last"><a href="../../taxonomy/term/472/index.html" rel="tag" title="">rpm</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>One of the open sessions last week (corr: last month) at Devopsdays 2010 Hamburg was the one on packaging software.   It's always a big question on wether you package the software that runs in your infrastructure or not.     And if you package it .. what do you package ..</p>
+<p>The general consensus of the open space was pretty much that you always package the software you deploy, unless you have some very good reasons not to.  Pretty much the way I've been doing for ages ..</p>
+<p>Good reasons that were mentionned were the use of scripting languages that update extremely frequently, but certainly not for compiled code,  compiling code on a production machine also is a big nono.</p>
+<p>There also was a consensus that you DO NOT PUT CONFIGURATION inside a package.  You can put in default templates, but you don't put in config files that should change frequently ..  There's plenty of configuration mgmt systems out there do that kind of stuff for you.</p>
+<p>The naysayers claimed that packaging brings way to much overhead ... and others claim it takes to much time... however I feel it<br />
+should just be a 1 time effort that brings devs and ops closer to eachother and from there on it should automated<br />
+New versions of software don't mean that the packaging effort needs to be done again..</p>
+<p>Another topic that gathered lots of questions was if you should be capable of installing multiple versions of the same package  , lots of people mentionned they didn't like fiddling with symlinks however the best comment in that discussion was that there is already a system out there , the <cite>alternatives</cite> setup .. provide by most operating systems that allow you to do so in a pretty clean way. I must admit I should look into <cite>alternatives</cite> more in depth too ..</p>
+<p>The ever recurring question is wether one should package war files ?  Sure  as you then can also use the dependency models a package mgmt system brings to deploy the dependent libraries.</p>
+<p>However when people ship products, rather than a live service   they seem to package everything , mainly because the code in the product isn't changing as quickly as a live website, or internally used application.</p>
+<p>The biggest problem however is the frustration people have with  GEM or CPAN  packages .. they add yet another layer of management to a system,  most lots of CPAN packages are already packaged.. but when it comes to GEM's disaster strikes.   There's a lot of work left for distributions to integrate GEM and CPAN style packages.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../package-and-what-package/index.html#comments" title="Jump to the first comment of this posting.">6 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1019" class="node teaser blog cal">
     <acronym class="calendar published" title="2010-10-30T16:35:01+02:00">
   <span class="month">Oct</span>
   <span class="day">30</span>
@@ -315,32 +345,6 @@ It wasn't really the moment to do the upgrade. </p>
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../htc-hero-upgrade/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
 </ul></div>
 </div>
-<div id="node-1010" class="node teaser blog cal">
-    <acronym class="calendar published" title="2010-06-14T22:51:41+02:00">
-  <span class="month">Jun</span>
-  <span class="day">14</span>
-    <span class="year">2010</span>
-    </acronym>
-    <h2 class="title"><a href="../../giving-devs-dev-platform/index.html">Giving Devs a Dev platform</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_480 first"><a href="../../taxonomy/term/480/index.html" rel="tag" title="">centos</a></li>
-<li class="taxonomy_term_1328"><a href="../../category/devops/index.html" rel="tag" title="">devops</a></li>
-<li class="taxonomy_term_1404"><a href="../../category/platform/index.html" rel="tag" title="">platform</a></li>
-<li class="taxonomy_term_1405 last"><a href="../../category/standardize/index.html" rel="tag" title="">standardize</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>It's a typical situation,  the developers develop on their own boxen, they only start to integrate their code on on the  production platform 3 hours before the deadline.   And then the problems start, the typical "But it works on my system"  , "its your problem now" is something nobody really likes to hear .</p>
-<p>So how do you tackle this problem ? <a href="http://devops-abyss.blogspot.com/2010/03/application-is-only-running-on.html" rel="nofollow">As Christian already mentions Talking</a>  is the first step of the solution,</p>
-<p>But one of the most satisfying approaches to solve this problem is to provide your development teams with a standard platform that you support, and a platform they can play with ,  if you can't provide them with a fully defined platform, give them a set of guide lines on what they can expect.  Things like library versions, database types , memory availability and storage availability  are key components of such guidelines.</p>
-<p>My platform of choice for this kind of projects today is to for an Enterprise Level distro,  a distro that stays stable for a longer period, not one that is bleeding edge and changes every other week.  So a CentOS or a Debian based distro is probably going to be the platform of choice.  But a stable standard platform also means that all the latest nice features a developer wants to have from the bleeding edge libraries he is using aren't going to be available .</p>
-<p>Sometimes your devs really need those features, sometimes its just a nice to have.  On the other hand you as an ops guy don't want to be packaging and configurating every single tool they dream off.  As usual in a Devops environment the key can be found in communication ... Talking with the devs will teach you what features they really need and how they might solve things in a different, more standardized way</p>
-<p>We've learned that by giving them a default platform   and keeping an open conversation  helps,  some developers take longer to understand the process others jump in right away .. but in the long term  you really need to talk to your devs as soon as possible when they think of implementing a new project  that has to run on your platorms.</p>
-<p>Lets you sleep at night ..</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../giving-devs-dev-platform/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
-</ul></div>
-</div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index8.html?page=8" title="Go to previous page" class="active">‹ previous</a></li>
 <li class="pager-ellipsis">…</li>
@@ -370,5 +374,5 @@ It wasn't really the moment to do the upgrade. </p>
 
 </body>
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=9 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:30:41 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=9 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:49:45 GMT -->
 </html>

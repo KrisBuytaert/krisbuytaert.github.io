@@ -3,7 +3,7 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=88 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:42:32 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=88 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:26:21 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -59,7 +59,7 @@
   <div id="sidebar-left" class="sidebar">
   <div class="block block-block" id="block-block-5">
   <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
-<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="/blog/social/index/index.html">Social Media Policy</a></p>
+<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
 <p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
 </div>
 </div>
@@ -68,6 +68,23 @@
 
 <div id="main">
 <div class="content">
+<div id="node-161" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-04-06T21:25:09+02:00">
+  <span class="month">Apr</span>
+  <span class="day">06</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/161/index.html">MySQL Bugs: #17605: MySQL Cluster not cleaning up / freeing tablespaces after delete</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>A quick workaround for the tablespace bug I reported earlier to MySQL.</p>
+<blockquote><p>
+An extent can't be reused to another table until a LCP has been performed. You can force a LCP by using 'ndb_mgm -e "all dump 7099"'</p>
+</blockquote>
+<p>At least now you can cotinue adding stuff to your database while not having to add extra tablespaces altough you deleted the data ...   to be continued :)</p>
+</div>
+</div>
 <div id="node-160" class="node teaser story cal">
     <acronym class="calendar published" title="2006-04-06T21:21:06+02:00">
   <span class="month">Apr</span>
@@ -226,37 +243,6 @@ The Register's talk on their Apache infrastructure is matchining really with his
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/152/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
 </ul></div>
 </div>
-<div id="node-151" class="node teaser story cal">
-    <acronym class="calendar published" title="2006-03-23T19:52:52+01:00">
-  <span class="month">Mar</span>
-  <span class="day">23</span>
-    <span class="year">2006</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/node/151/index.html">Report of the UKUUG Spring Conference  Day 1(delayed)</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-            </div>
-  <div class="content"><p>The next couple of blog entries have been written offline and pasted here when I finally had time and network access, so some stuff might be out of sequence :)</p>
-<p>Pieter and I flew from Zaventem to Newcastle on tuesday, then the Metro to from Newcastle Airport to Newcastle Train Station , then the train from Newcastle Station to Durham station, then the Bus to Collingwood college where we are staying.</p>
-<p>So here we are now UKUUG Spring Conference Day 1 :)<br />
-Our first talk was the  LDAP tutorial, the lack of IP feed is really annoying, seems the Durham Uni is using some kind of wifi auth that is only working for some weird platforms ..<br />
-The LDAP tutorial was fairly good, altough the number of things I learned from it was minimal,  but that mostly to blame myselve as I've been working with LDAP for a couple of years now</p>
-<p>Something went wrong with one of the keynote speakers laptop so the only keynote we got was from  James Youngman  from Google  crawling and indexing<br />
-Some notes,  according to Google   "HA comes in for free, with scaling" , now how comes that when I say that HA shouldn't be more expensive when taught about upfront people don't believe me but when Google says it ..<br />
-There is a paper about GoogleFS which is in userland not in kernelspace on <a href="http://labs.google.com/papers/gfs.html">labs.google.com</a><br />
-Use cheaper hardware, use multiple instances, replicate , hmm.. that sounds familiar to the the kind of architecture I'm working with daily :)<br />
-Automate yourselve out of a job each 18 months, yep that's true that way I can move on to doing new and other interresting stuff and spreading knowledge ..</p>
-<p>Then it was Pieter's turn to talk about Juliux,  we really need to get that domain registered and small site to get started with.  People are really interrested by the concept and some even want to contribute it seems, great stuff</p>
-<p>Then the CFengine talk , I was really looking forward to this talk ...  oh my .. this Kpresent presentation is the most annoying I have ever seen.. what's with the baby and dolphin pictures in this presentation ?  Apart from that the presentation was<br />
-good for an introductory talk  I was hoping to learn a lot here.. well it didn't happen.. I learned some stuff however  I`ll be looking at replacing  filereaper cfengine  soon on some platforms,</p>
-<p>My biggest question was how do you do the Initial key distribution ? Seems like you can do something with cfrun initially,  I have to look into that</p>
-<p>Ahhr.. the network really, really sucks here.. even the wired stuff in the terminal room upstairs doesn't work.. , after the "registration" I should be able to access the network but it keeps telling me I`m not registered,  however when I try again it tells me I`m already registered,  let's not even mention the fact that wifi was only available for some proprietary platforms, and it didn't even work for these people.</p>
-<p>The Exim talk , hmm I   should look into ho how this stuff can be done on Postfix also :)</p>
-<p>Finally I figured out I had ip connectivity at my room in Collingwood College but as we had to hurry to the Conference Dinner  then to "Vix"  these postings will still be late ;)</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/151/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
-</ul></div>
-</div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index87.html?page=87" title="Go to previous page" class="active">‹ previous</a></li>
 <li class="pager-ellipsis">…</li>
@@ -271,7 +257,7 @@ good for an introductory talk  I was hoping to learn a lot here.. well it didn't
 <li class="pager-item"><a href="index92.html?page=92" title="Go to page 93" class="active">93</a></li>
 <li class="pager-ellipsis">…</li>
 <li class="pager-next"><a href="index89.html?page=89" title="Go to next page" class="active">next ›</a></li>
-<li class="pager-last last"><a href="index103.html?page=103" title="Go to last page" class="active">last »</a></li>
+<li class="pager-last last"><a href="index104.html?page=104" title="Go to last page" class="active">last »</a></li>
 </ul></div></div>
 </div>
 
@@ -286,5 +272,5 @@ good for an introductory talk  I was hoping to learn a lot here.. well it didn't
 
 </body>
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=88 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:42:32 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=88 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:26:21 GMT -->
 </html>

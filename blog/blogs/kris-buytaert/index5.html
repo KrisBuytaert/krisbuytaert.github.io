@@ -3,7 +3,7 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=5 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:23:44 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=5 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:41:33 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -69,7 +69,38 @@
   <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a></div></div>
   <h2 id="title">Kris Buytaert's blog</h2>
 <div class="content">
-<div class="item-list"></div><div id="node-1061" class="node teaser blog cal">
+<div class="item-list"></div><div id="node-1062" class="node teaser blog cal">
+    <acronym class="calendar published" title="2012-02-15T20:27:04+01:00">
+  <span class="month">Feb</span>
+  <span class="day">15</span>
+    <span class="year">2012</span>
+    </acronym>
+    <h2 class="title"><a href="../../logstash-and-elasticsearch/index.html">Logstash and ElasticSearch</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>"An expert is a man who has made all the mistakes which can be made, in a narrow field."<br />
+Niels Bohr</p>
+<p>When I setup Logstash for the very first time I got bitten by an empty search,  aparently no logs were indexed.  Reading the log files indeed told me about<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">WARN: org.elasticsearch.discovery.zen.ping.unicast: [Blaire, Allison] failed to send ping to [[#zen_unicast_1#][inet[/127.0.0.1:9300]]]</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">INFO   | jvm 1    | 2012/02/06 22:45:55 | org.elasticsearch.transport.RemoteTransportException: [Page, Karen][inet[/127 .0.0.1:9300]][discovery/zen/unicast]</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">INFO   | jvm 1    | 2012/02/06 22:45:55 | Caused by: java.io.EOFException</div></li></ol></pre></div></p>
+<p>The above is the typical error when the ElasticSearch version you are using externally is not in sync with the one Logstash is using, yes those versions need to match.</p>
+<p>Fast forward a couple of weeks.. and I`m upgrading Logstash and therefore also ElasticSearch ..   I have a <a href="https://github.com/KrisBuytaert/vagrant-puppet-logstash" rel="nofollow">Vagrant setup</a> to play with so all of the components are running on 1 node.</p>
+<p>I kept running into a similar problem, this time however I saw log entries being indexed, I could get data from my ElasticSearch setup using<br />
+wget -q -S -O - <a href="http://localhost:9200/_status?pretty=true" title="http://localhost:9200/_status?pretty=true" rel="nofollow">http://localhost:9200/_status?pretty=true</a></p>
+<p>But the web interface kept showing no results ;( </p>
+<p>While nagging about it on irc .. Jordan gave me the insight :<br />
+<cite><br />
+2012-01-31.194347+0100CET.txt:(07:55:36 PM) whack: slight caveat that elasticsearch clients also join the cluster, so if you point everyone at 127.0.0.1:9300, that :9300 could be one of your clients, not the server<br />
+</cite></p>
+<p>Indeed when you by accident start any of the logstash instances (server/shipper/web) before you start your ElasticSearch instance you can be in trouble.<br />
+Ordering really matters , you really need to start ElasticSearch before you start the clients.</p>
+<p>Obviously is you don't use the unicast setup you don't run into this problem .. </p>
+<p>So what other mistakes should I make ?</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../logstash-and-elasticsearch/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1061" class="node teaser blog cal">
     <acronym class="calendar published" title="2012-02-10T23:15:35+01:00">
   <span class="month">Feb</span>
   <span class="day">11</span>
@@ -447,26 +478,6 @@ lly opposing views , mostly we agreed with eachother , so I`m not really sure if
 <p>Must admit .. I've given better talks .. </p>
 </div>
 </div>
-<div id="node-1052" class="node teaser blog cal">
-    <acronym class="calendar published" title="2011-11-13T21:31:23+01:00">
-  <span class="month">Nov</span>
-  <span class="day">13</span>
-    <span class="year">2011</span>
-    </acronym>
-    <h2 class="title"><a href="../../qr-encode/index.html">QR Encode</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1466 first last"><a href="../../category/notetoself/index.html" rel="tag" title="">notetoself</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>For further reference .. and preventing me from googling it a 3rd time</p>
-<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">qrencode &quot;http://www.krisbuytaert.be/&quot;  -o qrcode.png  -s 10</div></li></ol></pre></div></p>
-<p>or<br />
-<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">cat Kris_Buytaert.vcf  | qrencode  -o vcf.png -s 5 </div></li></ol></pre></div></p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../qr-encode/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
-</ul></div>
-</div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index4.html?page=4" title="Go to previous page" class="active">‹ previous</a></li>
 <li class="pager-ellipsis">…</li>
@@ -496,5 +507,5 @@ lly opposing views , mostly we agreed with eachother , so I`m not really sure if
 
 </body>
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=5 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:23:44 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=5 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:41:33 GMT -->
 </html>

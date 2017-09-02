@@ -3,7 +3,7 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=1 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:23:43 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=1 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:41:32 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -69,7 +69,45 @@
   <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a></div></div>
   <h2 id="title">Kris Buytaert's blog</h2>
 <div class="content">
-<div class="item-list"></div><div id="node-1102" class="node teaser blog cal">
+<div class="item-list"></div><div id="node-1103" class="node teaser blog cal">
+    <acronym class="calendar published" title="2015-05-11T20:06:23+02:00">
+  <span class="month">May</span>
+  <span class="day">11</span>
+    <span class="year">2015</span>
+    </acronym>
+    <h2 class="title"><a href="../../importance-idempotence/index.html">On the importance of idempotence.</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>A couple of months ago we were seeing weird behaviour with consul not knowing all it's members at a customer where we had deployed Consul for service registration as a POC<br />
+The first couple of weeks we hadn't noticed any difficulties but after a while we had the impression that the number of nodes in the cluster wasn't stable.</p>
+<p>Obviously the first thought is that such a new tool probably isn't stable enough so it's expected behaviour , but rest asured that was not the case.</p>
+<p>We set out to frequently monitor the number of nodes<br />
+a simple cron to create a graph.</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">NOW=`date +%s`</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">HOST=`hostname -f`</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">MEMBERS=`/usr/local/bin/consul members | wc -l`</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">echo &quot;consul_members.$HOST $MEMBERS $NOW&quot;  | graphite 2003</div></li></ol></pre></div></p>
+<p>It didn't take us very long to see that indeed the number members in the cluster wasn't stable,  frequently there were less nodes in a cluster then slowly the expected number of nodes came back on our graph.</p>
+<p>Some digging learned us that the changes in number of nodes was in sync with our puppetruns.<br />
+But we weren't reconfiguring consul anymore, there were no changes in the configuration of our nodes.<br />
+Yet puppet triggered a restart of consul on every run.    The restart was because knew it had rewritten the consul config file.<br />
+Which was weird as the values in that file were the same.</p>
+<p>On closer inspection we noticed that the values in the file didn't change, however the order of the values in the file<br />
+changed.   From a functional point of view that did not introduce any changes, but puppet rightfully assumed the configuration file<br />
+had changed and thus restarted the service dutyfully.</p>
+<p>The actually problem lied  in the implementation of the writing of the config file which was in JSON,<br />
+The ancient Ruby library just took the hash and wrote it in no specific order, each time potentially resulting<br />
+in a file with the content in a different order.</p>
+<p>A <a href="https://github.com/solarkennedy/puppet-consul/issues/45" rel="nofollow">bug fix</a> to the puppet module made sure that the hash was written out in a sorted way , so each time resulting in the<br />
+same file being generated.</p>
+<p>After that bugfix  obviously our graph of the number of nodes in the cluster flatlined as restarts were not being introduced anymore.</p>
+<p>This is yet another example of the importance of idempotence . When we trigger a configuration run , we want to<br />
+be absolutely sure that it won't change the state of the system if it already has been defined the way we want.<br />
+Rewriting the config file should only happen if it gets new content.</p>
+<p>The yak is shaved .. and sometimes it's not a funky dns problem but just a legacy ruby library one ..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../importance-idempotence/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-1102" class="node teaser blog cal">
     <acronym class="calendar published" title="2015-05-03T19:05:29+02:00">
   <span class="month">May</span>
   <span class="day">03</span>
@@ -315,39 +353,6 @@ a lot of people in Prague last month, I realized that the concept of DevOps is s
 Getting the discussion going on how to do all of that, more specifically in a Drupal environment, is the sharing part .</p>
 </div>
 </div>
-<div id="node-1092" class="node teaser blog cal">
-    <acronym class="calendar published" title="2013-12-22T21:04:04+01:00">
-  <span class="month">Dec</span>
-  <span class="day">22</span>
-    <span class="year">2013</span>
-    </acronym>
-    <h2 class="title"><a href="../../fosdem-2014-coming/index.html">FOSDEM 2014 is coming</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_480 first"><a href="../../taxonomy/term/480/index.html" rel="tag" title="">centos</a></li>
-<li class="taxonomy_term_1179"><a href="../../category/cfengine/index.html" rel="tag" title="">cfengine</a></li>
-<li class="taxonomy_term_1158"><a href="../../category/chef/index.html" rel="tag" title="">chef</a></li>
-<li class="taxonomy_term_465"><a href="../../taxonomy/term/465/index.html" rel="tag" title="">community</a></li>
-<li class="taxonomy_term_1328"><a href="../../category/devops/index.html" rel="tag" title="">devops</a></li>
-<li class="taxonomy_term_1076"><a href="../../taxonomy/term/1076/index.html" rel="tag" title="">events</a></li>
-<li class="taxonomy_term_1524"><a href="../../category/keynotes/index.html" rel="tag" title="">keynotes</a></li>
-<li class="taxonomy_term_461"><a href="../../taxonomy/term/461/index.html" rel="tag" title="">open source</a></li>
-<li class="taxonomy_term_1501 last"><a href="../../category/puppetize/index.html" rel="tag" title="">puppetize</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>and with that almost a full week of side events.<br />
-For those who don't know FOSDEM, (where have you been hiding for the past 13 years ? )  Fosdem is the annual Free and Open Source Developers European meeting. If you are into open source , you just can't mis this event where thousands of likeminded people will meet.</p>
-<p>And if 2 days of FOSDEM madness isn't enough people organise events around it.</p>
-<p>Last year I organised PuppetCamp in Gent, the days before Fosdem and a MonitoringLove Hackfest in our office the 2 days after FOSDEM This year another marathon is planned.</p>
-<p>On Friday (31/1/2014) the CentOs community is hosting a <a href="http://wiki.centos.org/Events/Dojo/Brussels2014" rel="nofollow">Dojo in Brussels</a> at the IBM Forum. (Free, but registration required by the venue)</p>
-<p>After the success of PuppetCamp in Gent last year we decided to open up the discussion and get more Infrastructure as Code people involved in a <a href="http://cfgmgmtcamp.eu/" rel="nofollow">CfgMgmtCamp.eu</a>  </p>
-<p>The keynotes for CfgMgmtCamp will include the leaders of the 3 most popular tools around ,  both Mark Burgess, Luke Kanies and Adam Jacob will present at the event which will take place in Gent  right after Fosdem.  We expect people from all the major communities including, but not limited to , Ansible, Salt, Chef, Puppet, CFengine, Rudder, Foreman and Juju (Free but registration required for catering)</p>
-<p>And because 3 events in one week isn't enough the RedHat Community is hosting their <a href="http://community.redhat.com/blog/2013/12/announcing-infrastructure-next/" rel="nofollow">Infrastructure.next</a> conference after CfgMgmtCamp at the same venue.  (Free but registration required for catering)</p>
-<p>cya in Belgium next year..</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../fosdem-2014-coming/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
-</ul></div>
-</div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index.html" title="Go to previous page" class="active">‹ previous</a></li>
 <li class="pager-item"><a href="index.html" title="Go to page 1" class="active">1</a></li>
@@ -376,5 +381,5 @@ For those who don't know FOSDEM, (where have you been hiding for the past 13 yea
 
 </body>
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=1 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:23:43 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blogs/kris-buytaert?page=1 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:41:32 GMT -->
 </html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - system administration</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1173/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>What does your BOFH want ? :)</title>
+ <link>http://127.0.0.1:8080/blog/what-does-your-bofh-want</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://www.garfieldtech.com/blog/drupal-system-tools&quot; rel=&quot;nofollow&quot;&gt;Larry&lt;/a&gt;, I`m glad  you asked ..&lt;/p&gt;
+&lt;p&gt;With the risk of receiving a flood of comments pointing me to already existing tools here&#039;s my go at what I as a sysadmin of often large deployments am looking for in Drupalland .&lt;/p&gt;
+&lt;p&gt;You suggest LDAP and syslog integration .. guess we already have that don&#039;t we ? &lt;/p&gt;
+&lt;p&gt;But what I haven&#039;t found yet ..&lt;br /&gt;
+An rpm/deb repository  of Drupal modules So we can do an apt-get install drupal-package , yes I know about Drush, but I want the files on my system to be in a package and clearly identified, it helps me keeping my system uncluttered.&lt;/p&gt;
+&lt;p&gt;apt-get update drupal-package  , or yum install drupal-package would be a luxury,  same for themes btw.&lt;/p&gt;
+&lt;p&gt;It would be lovely if the postinstalls of those package also trigger a database upgrade if needed.&lt;/p&gt;
+&lt;p&gt;Which brings me to the next issue.   If I have a multisite setup  and I update a module in sites/all/modules,  I usually have to go trough each and every site hosted there to update the databases.    No really something I like to do for 10+ euh 3+ sites.&lt;/p&gt;
+&lt;p&gt;Also think big, don&#039;t waste your time on desktop apps or guis .since as long as you only have  1 site to manage point an click is fine,  for you ,  Think in terms of what if you have 10 sites, 100 sites, or more .. do you really want to do that kind of administration via a browser or gui ? Some wise man once said &lt;cite&gt;If your computer can&#039;t install it the installer is broken&lt;/cite&gt;.  A script should or automation tool should be able to interact with the sites,  not a human operating a mouse ;)  It&#039;s not just the RSI , but also the fact that to err is human, and if the computer fails a script you can patch it :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/what-does-your-bofh-want#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/775">automation</category>
+ <category domain="http://127.0.0.1:8080/blog/category/bof">bof</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/1077">devministration</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/484">drupal</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/452">lisa</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/461">open source</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/category/system-administration">system administration</category>
+ <pubDate>Wed, 28 Jan 2009 22:29:29 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">866 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

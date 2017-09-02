@@ -3,7 +3,7 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=9 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:58 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=9 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:44:38 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -59,7 +59,7 @@
   <div id="sidebar-left" class="sidebar">
   <div class="block block-block" id="block-block-5">
   <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
-<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="/blog/social/index/index.html">Social Media Policy</a></p>
+<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
 <p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
 </div>
 </div>
@@ -68,6 +68,40 @@
 
 <div id="main">
 <div class="content">
+<div id="node-1022" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-11-04T00:07:18+01:00">
+  <span class="month">Nov</span>
+  <span class="day">04</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/high-availability-mysql-cookbook-review/index.html">High Availability MySQL Cookbook , the review</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1430 first"><a href="/blog/category/cobbler/index.html" rel="tag" title="">cobbler</a></li>
+<li class="taxonomy_term_899"><a href="/blog/taxonomy/term/899/index.html" rel="tag" title="">drbd</a></li>
+<li class="taxonomy_term_449"><a href="/blog/taxonomy/term/449/index.html" rel="tag" title="">ha</a></li>
+<li class="taxonomy_term_475"><a href="/blog/taxonomy/term/475/index.html" rel="tag" title="">heartbeat</a></li>
+<li class="taxonomy_term_562"><a href="/blog/taxonomy/term/562/index.html" rel="tag" title="">linux-ha</a></li>
+<li class="taxonomy_term_458"><a href="/blog/taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_1336"><a href="/blog/category/pacemaker/index.html" rel="tag" title="">pacemaker</a></li>
+<li class="taxonomy_term_439 last"><a href="/blog/taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>When I read on the internetz that Alex Davies was about the publish a <a href="https://www.packtpub.com/high-availability-mysql-cookbook/book" rel="nofollow">Packt book on MySQL HA</a>  I pinged my contacts at Packt and suggested that I'd review the book .</p>
+<p>I've ran into <a href="https://sites.google.com/a/davz.net/alex-davies/" rel="nofollow">Alex</a> at some UKUUG conferences before and he's got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.</p>
+<p>Alex starts of with a couple of indepth chapters on MySQL Cluster,  he does mention that it's not a fit for all problems, but I'd hoped he did it a bit more prominently ...    an upfront chapter outlining the different approaches and when which approach is a match could have been better.    The avid reader now might be 80 pages into MySQL cluster before he realizes it's not going to be a match for his problem.</p>
+<p>I really loved the part where Alex correcly mentions that you should probably be using Puppet or so to manage the config files of your environment, rather than scp them around your different boxes ..</p>
+<p>Alex then goes on to describe setting up MySQL replication and Multi Master replication with the different approaches one can take here,  he gives some nice tips on using LVM to reduce the downtime of your MySQL when having to transfer the dataset of an already existing MySQL setup, good stuff.</p>
+<p>He then goes on to describe MySQL with shared storage ...   if you only mount your redundant sandisk once on your MySQL nodes my preference would probably be a Pacemaker stack  rather than a RedHat Cluster based setup,  but his setup seems to work too.   Alex quickly touches on using GFS to have your data disk mounted simultaneously on both nodes (keep in mind with only 1 active MySQLd)  and then goes on to describe a full DRBD based MySQL HA setup</p>
+<p>The last chapter titled Performance tuning gives some very nice tips on both tuning your regular storage, as your<br />
+GFS setup but also the tuning parameters for MySQL Cluster</p>
+<p>I was also really happy to see the Appendixes on the basic installation where he advocates the use of Cobbler , Kickstart and LVM ..</p>
+<p>One of the better books I read the past couple of years .. certainly the best book from Packt so far , I hope there is more quality stuff coming from that direction !</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/high-availability-mysql-cookbook-review/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
+</ul></div>
+</div>
 <div id="node-1021" class="node teaser blog cal">
     <acronym class="calendar published" title="2010-11-03T21:46:32+01:00">
   <span class="month">Nov</span>
@@ -330,37 +364,6 @@ therefore would be very important for the MySQL distributions.</p>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 </ul></div>
 </div>
-<div id="node-1012" class="node teaser blog cal">
-    <acronym class="calendar published" title="2010-06-21T21:14:12+02:00">
-  <span class="month">Jun</span>
-  <span class="day">21</span>
-    <span class="year">2010</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/inuits-day/index.html">Inuits Day </a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1372 first"><a href="/blog/category/banquise/index.html" rel="tag" title="">banquise</a></li>
-<li class="taxonomy_term_1410"><a href="/blog/category/ci/index.html" rel="tag" title="">ci</a></li>
-<li class="taxonomy_term_1409"><a href="/blog/category/galera/index.html" rel="tag" title="">galera</a></li>
-<li class="taxonomy_term_520"><a href="/blog/taxonomy/term/520/index.html" rel="tag" title="">inuits</a></li>
-<li class="taxonomy_term_1408"><a href="/blog/category/inuits-day/index.html" rel="tag" title="">inuits day</a></li>
-<li class="taxonomy_term_458 last"><a href="/blog/taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>Couple of Fridays ago we had one of our @Inuits days again.  Rather than having some people give talks and presentations about what they have been doing for the  past couple of months this time we set out to  research, test, and build stuff.</p>
-<p>We split up in 3 different groups,  one focusing on CI and testing freshly build stuff with cucumber,   a second one setup and tested <a href="http://www.codership.com/products/galera_replication" rel="nofollow">Galera</a></p>
-<p>We setup a 3 node Galera cluster , not really as smooth as we'd like to ..</p>
-<p>Our first bump was that the installation of the package on CentOS is hell, it needs manual interaction such as replacing  packages.  Deploying this from a repository is probably not going to be a straight forward option.</p>
-<p>Galera only takes care of replicating data, just as with MySQL MM replication there still is a need for an external tool to define where to access the database, and implement monitoring in such a way that you are connecting to an up to date database.</p>
-<p><a href="http://poke152.blogspot.com/" rel="nofollow">Karl</a> started wondering about Galera's locking,  turns out the locks aren't cluster wide, locks within the same node work fine.. so if galera is solely used for HA with 1 active node and X failover nodes, it will work (so all transactions happening on 1 node).</p>
-<p>We also ran into some issues when trying to start a node which couldn't contact the wsrep_cluster_address point (which is a node it will sync from at startup if specified in the wsrep.cnf file) , it just didn't want to start. This means that when the referenced node (configured in wsrep_cluster_address)is down, you will need to comment it out before you are able to start the mysql server.</p>
-<p>The fact that Galera replicates everythying brought us to the discussion if we really wanted that , or if we wanted more finegrained control over which databases or even tables we want to replicate and which ones we didn't want to replicate.  A minority of people wanted to replicate everything,  the majority of our group wanted finere grained control over what is being replicated to another node.</p>
-<p>I`m sure <a href="http://www.lefred.be/" rel="nofollow">Lefred</a> will shortly be writing about the progress his group made on <a href="http://www.banquise.be/" rel="nofollow">Banquise</a></p>
-<p>The day ended as it should .. with BBQ and plenty of drinks</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-</ul></div>
-</div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index8.html?page=8" title="Go to previous page" class="active">‹ previous</a></li>
 <li class="pager-ellipsis">…</li>
@@ -375,7 +378,7 @@ therefore would be very important for the MySQL distributions.</p>
 <li class="pager-item"><a href="index13.html?page=13" title="Go to page 14" class="active">14</a></li>
 <li class="pager-ellipsis">…</li>
 <li class="pager-next"><a href="index10.html?page=10" title="Go to next page" class="active">next ›</a></li>
-<li class="pager-last last"><a href="index103.html?page=103" title="Go to last page" class="active">last »</a></li>
+<li class="pager-last last"><a href="index104.html?page=104" title="Go to last page" class="active">last »</a></li>
 </ul></div></div>
 </div>
 
@@ -390,5 +393,5 @@ therefore would be very important for the MySQL distributions.</p>
 
 </body>
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=9 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:26:58 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=9 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:44:38 GMT -->
 </html>

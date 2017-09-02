@@ -3,7 +3,7 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=51 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:59:15 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=51 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:33:55 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -59,7 +59,7 @@
   <div id="sidebar-left" class="sidebar">
   <div class="block block-block" id="block-block-5">
   <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
-<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="/blog/social/index/index.html">Social Media Policy</a></p>
+<p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
 <p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
 </div>
 </div>
@@ -68,6 +68,33 @@
 
 <div id="main">
 <div class="content">
+<div id="node-535" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-12-19T22:02:23+01:00">
+  <span class="month">Dec</span>
+  <span class="day">19</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/getting-rid-blogger/index.html">Getting rid of Blogger</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_675 first"><a href="/blog/taxonomy/term/675/index.html" rel="tag" title="">blogger</a></li>
+<li class="taxonomy_term_484 last"><a href="/blog/taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So time had come to move all my other blogs to drupal and move them away from blogger.<br />
+When I migrated this blog from dotclear  to Drupal I found a php script that grabbed all the content from my dotclear setup and migrated it to a fresly installed drupal.  I was hoping to find a similar tool for Blogger .</p>
+<p>Well no such luck ..  most of the links I found instructed me to first install wordpress, use the import functionality of wordpress then migrate from wordpress to Drupal.</p>
+<p>Setting up a Wordpress and importing the Blogger postings took me about 10 minutes. Then the hunt for a WordPress to Drupal migration tool started .. first I ran into into a binary one that seemed to be able to connect too my database but couldn't find the wordpress databases.  Next I ran into a drupal module that only worked on 4.6  But luckily at last I ran into <a href="http://dojotoolkit.org/~ktiedt/wp2drupal5.tar.gz" title="http://dojotoolkit.org/~ktiedt/wp2drupal5.tar.gz" rel="nofollow">http://dojotoolkit.org/~ktiedt/wp2drupal5.tar.gz</a>  A drupal module that works with 5.X  well. not sure if it does .X  but at least with .1 ..  (as one of the tests I ran waas on a 5.2 and it failed there) </p>
+<p>So a couple of manual changes of users mappings , setting up new themes  and some postings on the old blogs that there was a new feed to be subscribed to I was ready to go...</p>
+<p>Untill.. I couldn't log on to one of the blogs anymore .. I could ask for a onetime login session, ,manage from there .. then try to log on with the new password and promptly I was shown an Access Denied page .  Weird..<br />
+The watchdog logs told me that the logon was successfull. but the next entry told me that it was the anonymous user failing access to the protected pages .</p>
+<p>Thxn  to gnat_x on #drupal_support I cleared my cookies and seemed to solve the issue.<br />
+He told me he had seen issues before with settings where <a href="http://www.example.com/" title="www.example.com" rel="nofollow">www.example.com</a> and example.com conflicted or it might have been beta.example.com and blog.example.com ..   He was right..  so I`ll need to figure out how to set my base_url for the different drupals I have running :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/getting-rid-blogger/index.html#comments" title="Jump to the first comment of this posting.">20 comments</a></li>
+</ul></div>
+</div>
 <div id="node-534" class="node teaser blog cal">
     <acronym class="calendar published" title="2007-12-18T17:22:45+01:00">
   <span class="month">Dec</span>
@@ -253,30 +280,6 @@ If anyone around has one ..  I`d love to test if it is actually usable as a Lapt
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 </ul></div>
 </div>
-<div id="node-525" class="node teaser blog cal">
-    <acronym class="calendar published" title="2007-12-12T15:11:28+01:00">
-  <span class="month">Dec</span>
-  <span class="day">12</span>
-    <span class="year">2007</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/node/525/index.html">ProfOSS Virtualisation</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_558 first"><a href="/blog/taxonomy/term/558/index.html" rel="tag" title="">conferences</a></li>
-<li class="taxonomy_term_506"><a href="/blog/taxonomy/term/506/index.html" rel="tag" title="">kvm</a></li>
-<li class="taxonomy_term_613"><a href="/blog/taxonomy/term/613/index.html" rel="tag" title="">profoss</a></li>
-<li class="taxonomy_term_507"><a href="/blog/taxonomy/term/507/index.html" rel="tag" title="">virtualisation</a></li>
-<li class="taxonomy_term_470 last"><a href="/blog/taxonomy/term/470/index.html" rel="tag" title="">xen</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>For those of you reading my blog the old fashioned way with a browser  you might have seen the ProfOss Virtualisation conference  Badge popping up on the right.  </p>
-<p>For the others:<br />
-<a href="http://www.profoss.eu/events/january-2008-virtualisation/"><img src="http://www.profoss.eu/images/profoss_speaker_200801.gif" /></a></p>
-<p>So come and hear me speak at ProfOSS next January ! </p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-</ul></div>
-</div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index50.html?page=50" title="Go to previous page" class="active">‹ previous</a></li>
 <li class="pager-ellipsis">…</li>
@@ -291,7 +294,7 @@ If anyone around has one ..  I`d love to test if it is actually usable as a Lapt
 <li class="pager-item"><a href="index55.html?page=55" title="Go to page 56" class="active">56</a></li>
 <li class="pager-ellipsis">…</li>
 <li class="pager-next"><a href="index52.html?page=52" title="Go to next page" class="active">next ›</a></li>
-<li class="pager-last last"><a href="index103.html?page=103" title="Go to last page" class="active">last »</a></li>
+<li class="pager-last last"><a href="index104.html?page=104" title="Go to last page" class="active">last »</a></li>
 </ul></div></div>
 </div>
 
@@ -306,5 +309,5 @@ If anyone around has one ..  I`d love to test if it is actually usable as a Lapt
 
 </body>
 
-<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=51 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 06:59:15 GMT -->
+<!-- Mirrored from 127.0.0.1:8080/blog/blog?page=51 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2017 19:33:55 GMT -->
 </html>

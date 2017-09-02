@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - devoxx</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1422/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Busy weeks coming up ..</title>
+ <link>http://127.0.0.1:8080/blog/busy-weeks-coming</link>
+ <description>&lt;p&gt;The next 2 months promise to be the more busier of the year for me .&lt;/p&gt;
+&lt;p&gt;On october 11th I`ll be giving a presentation ab out Linux and High Availability at the &lt;a href=&quot;http://eduserv.kahosl.be/celiak/2010/09/22/techmonday-1-11-oktober/&quot; rel=&quot;nofollow&quot;&gt;KAHO Sint Lieven in Gent &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Just 2 days later I`ll be leaving to Hamburg for the next European version of &lt;a href=&quot;http://www.devopsdays.org/&quot; rel=&quot;nofollow&quot;&gt;DevopsDays 2010&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Between Devopsdays Hamburg and Leaving for Malaga I`ll  visit &lt;a href=&quot;http://www.cloudcamp.org/ghent&quot; rel=&quot;nofollow&quot;&gt;CloudCamp Ghent&lt;/a&gt; om October 20th.&lt;/p&gt;
+&lt;p&gt;I&#039;ll be in Malaga for the &lt;a href=&quot;http://www.opensourceworldconference.com/malaga10/&quot; rel=&quot;nofollow&quot;&gt;Software Libre Open Source World Conference&lt;/a&gt; which will take place on 27 and 28 october&lt;/p&gt;
+&lt;p&gt;The first weekend of November I`ll be at &lt;a href=&quot;http://www.t-dose.org&quot; rel=&quot;nofollow&quot;&gt;T-Dose&lt;/a&gt; , where I`ll give 2 presentations on Devops.&lt;/p&gt;
+&lt;p&gt;As I`m part of the program comittee of this years &lt;a href=&quot;http://www.nluug.nl/activiteiten/events/nj10/&quot; rel=&quot;nofollow&quot;&gt;NLUUG Najaars conference on Security &lt;/a&gt; , I`ll be spending my official Belgian holliday &quot;working&quot; at a conference in the Netherlands.&lt;/p&gt;
+&lt;p&gt;And to finish off I`ll be talking Devops again at &lt;a href=&quot;http://www.devoxx.com/display/Devoxx2K10/Home&quot; rel=&quot;nofollow&quot;&gt;Devoxx 2010&lt;/a&gt; together with &lt;a href=&quot;http://jedi.be/blog/&quot; rel=&quot;nofollow&quot;&gt;Patrick Debois&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Don&#039;t hesitate to say hi when you bump in to me :)&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/busy-weeks-coming#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/devops">devops</category>
+ <category domain="http://127.0.0.1:8080/blog/category/devoxx">devoxx</category>
+ <category domain="http://127.0.0.1:8080/blog/category/nluug">nluug</category>
+ <category domain="http://127.0.0.1:8080/blog/category/tdose">tdose</category>
+ <pubDate>Sat, 02 Oct 2010 19:11:58 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1017 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>

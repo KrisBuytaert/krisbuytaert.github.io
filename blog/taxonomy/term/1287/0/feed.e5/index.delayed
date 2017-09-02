@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://127.0.0.1:8080/blog"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Everything is a Freaking DNS problem - obscurity</title>
+ <link>http://127.0.0.1:8080/blog/taxonomy/term/1287/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Some people just don&#039;t get it</title>
+ <link>http://127.0.0.1:8080/blog/some-people-just-dont-get-it</link>
+ <description>&lt;p&gt;I mean, we are heading towards  2010 , some of us have been using Open Source for decades,  the Open Source vs Free Software discussion was like last millenium, and we&#039;ve been doing open source consultancy for over a decade,  yet today companies still think their customers are stupid,&lt;/p&gt;
+&lt;p&gt;Fancy this story on &lt;a href=&quot;http://news.zdnet.co.uk/itmanagement/0,1000000308,39760362,00.htm?s_cid=260&quot; rel=&quot;nofollow&quot;&gt;ZDNet&lt;/a&gt; today ..  there&#039;s actually companies out there claiming that &quot;Bind&quot; because of it&#039;s FreeWare nature  , yes that&#039;s right you&#039;ve Read FREEWARE , (hadn&#039;t heard that word for over 5 years..) ,  is less secure than their proprietary offering in the Cloud.   So the very nature of their Secure product is offering Security by Obscurity in an insecure environment .&lt;/p&gt;
+&lt;p&gt;The sad part is that they probably get customers that believe their story, afterall it&#039;s hosted in the Cloud .. so it must be good not ?&lt;/p&gt;
+&lt;p&gt;Oh well... &lt;a href=&quot;http://twitter.com/mcgoverntheory/status/4312964980&quot; rel=&quot;nofollow&quot;&gt;James McGovern&lt;/a&gt;  had a nice comment on that earlier today &quot;&lt;/p&gt;
+&lt;p&gt;&quot;The goal of the security market is to make money, not to ensure the customer&#039;s security&quot;&lt;/p&gt;
+&lt;p&gt;I&#039;ll keep my security infrastructure  &lt;a href=&quot;http://en.wikipedia.org/wiki/Open-source_software&quot; rel=&quot;nofollow&quot;&gt;Open&lt;/a&gt;, thank you very much&lt;/p&gt;
+&lt;p&gt;But afterall everything is a fine DNS Problem ...&lt;/p&gt;
+</description>
+ <comments>http://127.0.0.1:8080/blog/some-people-just-dont-get-it#comments</comments>
+ <category domain="http://127.0.0.1:8080/blog/category/bind">bind</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/437">dnsproblem</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/462">morons</category>
+ <category domain="http://127.0.0.1:8080/blog/category/obscurity">obscurity</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/599">opensource</category>
+ <category domain="http://127.0.0.1:8080/blog/taxonomy/term/814">security</category>
+ <pubDate>Wed, 23 Sep 2009 19:14:07 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">937 at http://127.0.0.1:8080/blog</guid>
+</item>
+</channel>
+</rss>
