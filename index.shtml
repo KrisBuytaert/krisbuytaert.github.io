@@ -41,19 +41,32 @@ hence trying to build infrastructures that can survive the 10th floor test, bett
 
 <br> 
 <br> 
+<b>2018</b>
+<ul>
+<li>June 2018,  Devops Meetup Porto, Porto , Portugal
+<li>June 2018,  Devops Meetup Lisbon, Lisbon , Portugal
+<li>May 2018 , Devopsdays Zurich,  Zurich Winterhur, Switzerland
+<li>26 April 2018, <a href="https://www.slideshare.net/KrisBuytaert/pipeline-as-code-79524946">Pipeline as Code</a> ,Floss UK 2018, Edinburg UK 
+<li>26 April 2018, <a href="https://www.slideshare.net/KrisBuytaert/moby-is-killing-your-devops-efforts">Moby is Killing your Devops Efforts</a>, FLOSS UK 2018, Edinburgh, UK
+<li>9 March 2018, Keynote:  <a href="https://www.slideshare.net/KrisBuytaert/the-return-of-the-dull-stack-engineer">The Return of the Dull Stack Engineer</a> , Incontro Devops, Bologna, Italy 
+<li>5 February 2018, <a href="https://www.slideshare.net/KrisBuytaert/looking-back-at-5-years-of-cfgmgmtcamp">Looking back at 5 years of @cfgmgmtcamp</a>, Config Management Camp Gent, Gent, Belgium
+<li>2 February 2018, <a href="https://www.slideshare.net/KrisBuytaert/deploying-your-saas-stack-onprem">Deploying your Saas on Prem</a>, CentOS Dojo Brussels, Belgium
+</ul>
 <b>2017</b>
 <ul>
-<li>November 2017, Groovy there's a Docker in my Dashing Pipeline, Open Source Monitoring Conference, Nuremberg , Germany
-<li>November  2017, TBA, Devopsdays Warsaw, Warsaw, Poland
-<li>October 2017, Pipeline as Code for Your Infrastructure as Code,  Open Source Summit Europe, Prague, Czech Republic
-<li>October 2017, Docker is Killing your Devops Efforts, Open Source Summit Europe, Prague, Czech Republic
-<li>September 2017, Fully Managed MySQL setups with Puppet, Percona Live Europe 2017, Dublin, Ireland
-<li>September 2017, The Return of the Dull Stack Engineer, Devopsdays  Riga , Riga, Latvia
-<li>September 2017, Moby is Killing your Devops Efforts, CodeConf , Code CPH, Copenhagen, Denmark
-<li>September 2017, Groovy There is a Docker in My Dashing Pipeline, Devops Meetup CopenHagen, Denmark 
-<li>September 2017, Docker is Killing your Devops Efforts, Software Circus, Amsterdam, The Netherlands
-<li>September 2017, Pipeline as Code , Devopsdays London, London, UK
-<li>1 August 2017, <a href="https://www.slideshare.net/KrisBuytaert/looking-back-at-75-years-of-devopsdays-dod-pdx">7.5 years of #devopsdays</a> Devopsdays Portland, Orgeon, USA
+<li>22 November  2017, <a href="https://www.slideshare.net/KrisBuytaert/groovy-theres-a-docker-in-my-application-pipeline">Groovy There is a Docker in My Dashing Pipeline</a>, Open Source Monitoring Conference, Nuremberg , Germany
+<li>20 November 2017, <a href="https://www.slideshare.net/KrisBuytaert/pipeline-as-code-79524946">Pipeline as Code</a> , Devopsdays Warsaw, Warsaw,, Poland 
+<li>20 November  2017, Keynote: <a href="https://www.slideshare.net/KrisBuytaert/moby-is-killing-your-devops-efforts">Moby is Killing your Devops Efforts</a>, Devopsdays Warsaw, Warsa, Poland 
+<li>25 October 2017, <a href="https://www.slideshare.net/KrisBuytaert/moby-is-killing-your-devops-efforts">Docker is Killing your Devops Efforts</a>, Open Source Summit Europe, Prague, Czech Republic
+<li>24 October  2017, <a href="https://www.slideshare.net/KrisBuytaert/the-return-of-the-dull-stack-engineer">The Return of the Dull Stack Engineer</a>, Devops Meetup Prague, Prague, Czeech Republic
+<li>24 October 2017, <a href="https://www.slideshare.net/KrisBuytaert/pipeline-as-code-for-your-infrastructure-as-code">Pipeline as Code for Your Infrastructure as Code</a>,  Open Source Summit Europe, Prague, Czech Republic
+<li>26 september 2017, <a href="https://www.slideshare.net/KrisBuytaert/automating-mysql-operations-with-puppet">Fully Managed MySQL setups with Puppet</a> (With Julien Pivotto) , Percona Live Europe 2017, Dublin, Ireland
+<li>18 September 2017, Keynote: <a href="https://www.slideshare.net/KrisBuytaert/the-return-of-the-dull-stack-engineer">The Return of the Dull Stack Engineer</a>, Devopsdays  Riga , Riga, Latvia
+<li>12 September 2017, <a href="https://www.slideshare.net/KrisBuytaert/moby-is-killing-your-devops-efforts">Moby is Killing your Devops Efforts</a>, CodeConf , Code CPH, Copenhagen, Denmark
+<li>11 September 2017, <a href="https://www.slideshare.net/KrisBuytaert/groovy-theres-a-docker-in-my-application-pipeline">Groovy There is a Docker in My Dashing Pipeline</a>, Devops Meetup CopenHagen, Denmark 
+<li>8 September 2017, <a href="https://www.slideshare.net/KrisBuytaert/moby-is-killing-your-devops-efforts">Docker is Killing your Devops Efforts</a>, Software Circus, Amsterdam, The Netherlands
+<li>7 September 2017, <a href="https://www.slideshare.net/KrisBuytaert/pipeline-as-code-79524946">Pipeline as Code</a> , Devopsdays London, London, UK
+<li>1 August 2017, Keynote :<a href="https://www.slideshare.net/KrisBuytaert/looking-back-at-75-years-of-devopsdays-dod-pdx">7.5 years of #devopsdays</a> Devopsdays Portland, Orgeon, USA
 <li>28 June 2017, Devopsdays Amsterdam, <a href="https://www.slideshare.net/KrisBuytaert/devopsdays-amsterdam-2017-keynote-looking-back-at-5-years-of-ams">7.5 years of #devopsdays  , 5 years in Amsterdam </a>
 <li>26 April, Craft Conference Meetups, Budapest, Hungary , <a href="https://www.slideshare.net/KrisBuytaert/docker-is-killing-your-devops-efforts">Moby is killing your devops efforts</a>
 <li>25 April, Delivery of Things World, Berlin, Germany , Keynote , <a href="https://www.slideshare.net/KrisBuytaert/devops-is-dead-long-live-devops-75382819">devops is dead, long live devops</a>
