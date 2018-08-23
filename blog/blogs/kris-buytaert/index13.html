@@ -68,7 +68,32 @@
   <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a></div></div>
   <h2 id="title">Kris Buytaert's blog</h2>
 <div class="content">
-<div class="item-list"></div><div id="node-979" class="node teaser blog cal">
+<div class="item-list"></div><div id="node-980" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-01-19T20:34:21+01:00">
+  <span class="month">Jan</span>
+  <span class="day">19</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../f12-dependency-failure/index.html">F12 Dependency failure </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1358 first"><a href="../../category/compiz/index.html" rel="tag" title="">compiz</a></li>
+<li class="taxonomy_term_1356"><a href="../../category/f12/index.html" rel="tag" title="">f12</a></li>
+<li class="taxonomy_term_1109"><a href="../../category/fedora/index.html" rel="tag" title="">fedora</a></li>
+<li class="taxonomy_term_1357"><a href="../../category/mesa/index.html" rel="tag" title="">mesa</a></li>
+<li class="taxonomy_term_472 last"><a href="../../taxonomy/term/472/index.html" rel="tag" title="">rpm</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Fresh laptop arrived, obviously the first thing to do is to install the latest fedora.  then do a full yum update. </p>
+<p>However that failed  with the following failed dependency<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">mesa-libGL-7.7-2.fc12.i686 from updates has depsolving problems</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  --&gt; Missing Dependency: libdrm &gt;= 2.4.17-1 is needed by package mesa-libGL-7.7-2.fc12.i686 (updates)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Error: Missing Dependency: libdrm &gt;= 2.4.17-1 is needed by package mesa-libGL-7.7-2.fc12.i686 (updates)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> You could try using --skip-broken to work around the problem</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> You could try running: package-cleanup --problems</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                        package-cleanup --dupes</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                        rpm -Va --nofiles --nodigest</div></li></ol></pre></div><br />
+Now I don't really use all the fancy compiz stuff so for now I can just solve it by running </p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[root@stillmine ~]# yum remove  mesa-libGL </div></li></ol></pre></div></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../f12-dependency-failure/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-979" class="node teaser blog cal">
     <acronym class="calendar published" title="2010-01-15T21:38:54+01:00">
   <span class="month">Jan</span>
   <span class="day">15</span>
@@ -319,27 +344,6 @@ I'm not alone with this opinion, Some people already gave their opinion about th
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../barcamp-gent-3/index.html#comments" title="Jump to the first comment of this posting.">8 comments</a></li>
 </ul></div>
-</div>
-<div id="node-970" class="node teaser blog cal">
-    <acronym class="calendar published" title="2009-12-20T14:24:12+01:00">
-  <span class="month">Dec</span>
-  <span class="day">20</span>
-    <span class="year">2009</span>
-    </acronym>
-    <h2 class="title"><a href="../../devops-barcamp-gent-3-talk/index.html">Devops , a Barcamp Gent 3 Talk</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_617 first"><a href="../../taxonomy/term/617/index.html" rel="tag" title="">barcamp</a></li>
-<li class="taxonomy_term_1344"><a href="../../category/bcg3/index.html" rel="tag" title="">bcg3</a></li>
-<li class="taxonomy_term_1077"><a href="../../taxonomy/term/1077/index.html" rel="tag" title="">devministration</a></li>
-<li class="taxonomy_term_1328 last"><a href="../../category/devops/index.html" rel="tag" title="">devops</a></li>
-</ul></span>
-        </div>
-  <div class="content"><div style="width:425px;text-align:left" id="__ss_2749587"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/KrisBuytaert/devops-2749587" title="Devops">Devops</a>
-<object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=devops-091219080639-phpapp02&amp;stripped_title=devops-2749587" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=devops-091219080639-phpapp02&amp;stripped_title=devops-2749587" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">View more <a style="text-decoration:underline;" href="http://www.slideshare.net/">presentations</a> from <a style="text-decoration:underline;" href="http://www.slideshare.net/KrisBuytaert">Kris Buytaert</a>.</div>
-</div>
-<p>Too bad the majority of the audience already knew what I was a bout to say .... </p>
-</div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index12.html?page=12" title="Go to previous page" class="active">‹ previous</a></li>

@@ -59,6 +59,7 @@
   <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
 <p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
 <p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+<p><a href="../rss/index.xml">Feed</a></p>
 </div>
 </div>
 
@@ -66,6 +67,41 @@
 
 <div id="main">
 <div class="content">
+<div id="node-981" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-01-28T19:41:42+01:00">
+  <span class="month">Jan</span>
+  <span class="day">28</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../implementing-raid-monitoring-3ware-3w-9xxx-based-controller/index.html">Implementing Raid Monitoring on a 3Ware 3w-9xxx based controller.</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1360 first"><a href="../category/3w-9xxx/index.html" rel="tag" title="">3w-9xxx</a></li>
+<li class="taxonomy_term_1359"><a href="../category/3ware/index.html" rel="tag" title="">3ware</a></li>
+<li class="taxonomy_term_1361"><a href="../category/didimentionihateraid/index.html" rel="tag" title="">didimentionihateraid</a></li>
+<li class="taxonomy_term_489"><a href="../taxonomy/term/489/index.html" rel="tag" title="">linux</a></li>
+<li class="taxonomy_term_938"><a href="../taxonomy/term/938/index.html" rel="tag" title="">monitoring</a></li>
+<li class="taxonomy_term_599"><a href="../taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_995"><a href="../taxonomy/term/995/index.html" rel="tag" title="">raid</a></li>
+<li class="taxonomy_term_1362 last"><a href="../category/snmp/index.html" rel="tag" title="">snmp</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>When you pull out a disk from your Raid setup it shows a warning in syslog</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: WARNING (0x04:0x0019): Drive </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">removed:port=1.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: ERROR (0x04:0x0002): Degraded</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> unit:unit=0, port=1.</div></li></ol></pre></div></p>
+<p>However if no one is looking at syslog that won't really be helpfull.</p>
+<p>3Ware provides a tool from their site called tw_cli which can be used to manage<br />
+the raid setup from the command line.</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[EL860-root@EL860 admin]# tw_cli /c0 show </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">------------------------------------------------------------------------------</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">u0    RAID-1    REBUILDING     41%     -       -       232.82    RiW    ON     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">VPort Status         Unit Size      Type  Phy Encl-Slot    Model</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">------------------------------------------------------------------------------</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">p0    OK             u0   232.88 GB SATA  0   -            ST3250310NS         </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">p1    DEGRADED       u0   232.88 GB SATA  1   -            ST3250310NS         </div></li></ol></pre></div></p>
+<p>I'd figure I'd either have to write wrapper script around that or find some other way of integrating it.<br />
+Asking the question on ##infra-talk on irc.freenode.net  gave me the following link to a <a href="http://github.com/stanaka/check_tw" rel="nofollow">check script</a> on github</p>
+<p><cite>koollman: sdog: something like <a href="http://github.com/stanaka/check_tw" title="http://github.com/stanaka/check_tw" rel="nofollow">http://github.com/stanaka/check_tw</a> should work. </cite></p>
+<p>With that in your snmpd.conf you can get the info via snmp</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[root snmp]#  snmpwalk  localhost   -v 2c  -c public  .1.3.6.1.4.1.2</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">021   | grep ext </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">UCD-SNMP-MIB::extIndex.1 = INTEGER: 1</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">UCD-SNMP-MIB::extNames.1 = STRING: TW_RAID</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">UCD-SNMP-MIB::extCommand.1 = STRING: /usr/local/sbin/check_tw</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">UCD-SNMP-MIB::extResult.1 = INTEGER: 2</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">UCD-SNMP-MIB::extOutput.1 = STRING: CRITICAL: Unit: u0, Type: RAID-1, Status: RE</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">BUILDING</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">UCD-SNMP-MIB::extErrFix.1 = INTEGER: 0</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">UCD-SNMP-MIB::extErrFixCmd.1 = STRING: </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">UCD-SNMP-MIB::ssSysContext.0 = INTEGER: 2073</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">UCD-SNMP-MIB::ssRawContexts.0 = Counter32: 11781783</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">UCD-DLMOD-MIB::dlmodNextIndex.0 = INTEGER: 1</div></li></ol></pre></div></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../implementing-raid-monitoring-3ware-3w-9xxx-based-controller/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
 <div id="node-980" class="node teaser blog cal">
     <acronym class="calendar published" title="2010-01-19T20:34:21+01:00">
   <span class="month">Jan</span>
@@ -321,38 +357,6 @@ fixes.  6 is out, and has been for awhile, but we have the following:</cite></p>
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 <li class="comment_comments last"><a href="../drupal-6-epel/index.html#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
-</ul></div>
-</div>
-<div id="node-971" class="node teaser blog cal">
-    <acronym class="calendar published" title="2009-12-20T21:38:13+01:00">
-  <span class="month">Dec</span>
-  <span class="day">20</span>
-    <span class="year">2009</span>
-    </acronym>
-    <h2 class="title"><a href="../barcamp-gent-3/index.html">Barcamp Gent 3</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_617 first"><a href="../taxonomy/term/617/index.html" rel="tag" title="">barcamp</a></li>
-<li class="taxonomy_term_1345"><a href="../category/bgc3/index.html" rel="tag" title="">bgc3</a></li>
-<li class="taxonomy_term_491"><a href="../taxonomy/term/491/index.html" rel="tag" title="">geeks</a></li>
-<li class="taxonomy_term_1346 last"><a href="../category/non-tech/index.html" rel="tag" title="">non tech</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>Barcamp Gent 3, the one that took place yesterday is probably going to be my last Barcamp in Belgium.    I already had my doubts upfront when looking at the suggested talks, but once there I realized it was much worse than I expected.</p>
-<p>Lemme repoint you folks to what I wrote about the first <a href="http://www.krisbuytaert.be/blog/node/195">Barcamp</a> in Belgium back in 2006<br />
-<cite><br />
-Maybe my expectations on what kind of people / talks to meet and see there were a bit wrong.. when looking at other barcamps where people such as whurley and Moshe were present, I was maybe hoping for a bit more of system level innovation etc. or at least more technology innovation rather than Bloggers meet and talk about Blogging tools. I wasn't sure on what I should talk about as most of the topics I usually speak about would have been so out of scope and probably wouldn't have reached any potientiel audience.<br />
-</cite></p>
-<p>So for 3+ years I kept hoping for change,  there's always an amount of interesting people that show up that make the day interesting, but yesterday there were timeslots with no relevant topics for me at all.  Don't get me wrong ... I really liked Ine's presentation preparing to travel and work for a year, but that's not why I go to Barcamp.     Maybe it was because people that normally wouldn't give a presentation were forced to give a presentation and came up with these kind of topics, or maybe it's because Barcamps have changed,  luckily there were different other talks tackling the Semantic Web, Hackerspaces etc  that did catch my attention.</p>
-<p>But maybe the majority of Belgian Barcampers needs to realize that what they want is not a Barcamp but TwitCamp, Blogcamp or maybe even  LifeCamp,  For me topics such as Pension Plans,  Makeup, Beer, Travel Advice, etc don't belong on a Barcamp.  I`m not part or the Belgian Twitter and Bloggers community,  I`m part the Belgian Tech community, blogging on Open Source  and new technologies .  But when someone tells me "Hey there the Paris Hilton of the Belgian Bloggers" my reaction is ,wtf is Paris Hilton and why should I care</p>
-<p>The best <a href="http://www.slideshare.net/ehuard/barcamp-ghent2009" rel="nofollow">talk</a> of Barcamp this year was a talk titled "Where are my Keys" ,  Elise was running around with a problem, and a partial solution,  the discussion and input during that talk could have lead to actuall building something and nferis nferis<br />
-I'm not alone with this opinion, Some people already gave their opinion about the Belgian Barcamps buy just not showing up anymore ...  and in <a href="http://www.infil00p.org/blog/2009/08/27/barcamp-we-need-bazcamp/" rel="nofollow">other parts</a> of the world other barcamps seem to have the same problems.</p>
-<p>Barcamp has had his different spinoffs. There's GovCamp, MobileCamps, CaseCamp, NoSQLCamp, SQLCamp, CloudCamp, DemoCamp, LAMPCamp , WordCamps, DrupalCamps  and many more ... and you'll probably bump into me on the more specialized ones .. given enough Android topics you'll see me at a MobileCamp, you'll see me at <a href="http://loadays.org/" rel="nofollow">LoadAys</a> (a new conf on Linux and Open Source Administration topics), <a href="http://devopsdays.org/" rel="nofollow">DevopsDays</a> .  I hope to be able to go to the new and upcoming <a href="http://www.hackerspace.be/" rel="nofollow">Hackerspaces </a> a bit more</p>
-<p>Unless the next Barcamp heads back in another direction :)</p>
-<p>But until then...so long   thnx for al the fish</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-<li class="comment_comments last"><a href="../barcamp-gent-3/index.html#comments" title="Jump to the first comment of this posting.">8 comments</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

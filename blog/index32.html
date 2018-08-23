@@ -67,6 +67,31 @@
 
 <div id="main">
 <div class="content">
+<div id="node-728" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-09-24T10:25:56+02:00">
+  <span class="month">Sep</span>
+  <span class="day">24</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/new-comment-spam/index.html">The new comment spam :(</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1028 first"><a href="/blog/taxonomy/term/1028/index.html" rel="tag" title="">commentspam</a></li>
+<li class="taxonomy_term_484"><a href="/blog/taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_599"><a href="/blog/taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_511 last"><a href="/blog/taxonomy/term/511/index.html" rel="tag" title="">spam</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>The past couple of weeks my blog is being annoyed by different comment spams,  the content of the comment seems perfectly relevant, often even correctly tackling the topic, or sometimes even  almost insightful follow up questions.</p>
+<p>However the link to the author site is totally bogus.</p>
+<p>If talking about drupal and high availability , a question on GFS or OCFS2 is obviously on topic.  However I don't want my blog to link to lot of irrelevant sites.</p>
+<p>On the other hand I can't tell Mollom the content of the article is crap.  I do want to tell Mollom the "author" of the comment is crap.   I even might want to have the comment visible but not link back to the author.</p>
+<p>Anyone got good ideas on that ?</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/new-comment-spam/index.html#comments" title="Jump to the first comment of this posting.">25 comments</a></li>
+</ul></div>
+</div>
 <div id="node-727" class="node teaser blog cal">
     <acronym class="calendar published" title="2008-09-16T23:44:36+02:00">
   <span class="month">Sep</span>
@@ -297,35 +322,6 @@ On the other hand .. you wrote LinuxKongress, but you probably meant Linuxconf.e
 <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/PLHjT5-XM9o&amp;hl=en&amp;fs=1" /><param name="allowFullScreen" value="true" /><embed src="http://www.youtube.com/v/PLHjT5-XM9o&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object></div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 <li class="comment_comments last"><a href="/blog/node/719/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
-</ul></div>
-</div>
-<div id="node-718" class="node teaser blog cal">
-    <acronym class="calendar published" title="2008-08-27T20:19:20+02:00">
-  <span class="month">Aug</span>
-  <span class="day">27</span>
-    <span class="year">2008</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/node/718/index.html">Zabbix 1.5.4 Woes</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_599 first"><a href="/blog/taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
-<li class="taxonomy_term_887 last"><a href="/blog/taxonomy/term/887/index.html" rel="tag" title="">zabbix</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>I was trying to check out the new Zabbix beta's when I ran into a couple of problems.  Mostly missing dependencies but also  some bugs.</p>
-<p>The big troubles start when trying to install the frontent.<br />
-It seems like php code shipped in the last release might well work when you are upgrading but it fails when you are doing a fresh install.  As I never got a Setup Wizard.</p>
-<p>The clue is to get the most recent code from their SVN repo svn co svn://svn.zabbix.com/trunk , that actually allows you to run the setup wizard.</p>
-<p>If you are installing  the latest RPM's they are also not really requiring all the dependencies you need to run the frontend.</p>
-<p>yum/apt-get install php-bcmath  php-pear</p>
-<p>Will get you a step further.</p>
-<p>Another thing is the new password policy.. it seems the Admin/blank is gone.<br />
-I have no clue what the new password is but you are encouraged to set it yourselve in the mysql database</p>
-<p>md5('new_pass') or echo -n new_pass | md5sum   will help you .</p>
-<p>Big thnx to the friendly folks over at #zabbix on irc.freenode.net for helping me out earlier.</p>
-<p>Next steps .. debugging autodiscovery :)</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

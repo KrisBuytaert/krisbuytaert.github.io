@@ -59,6 +59,7 @@
   <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
 <p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="/blog/social/index/index.html">Social Media Policy</a></p>
 <p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+<p><a href="/blog/rss/index.xml">Feed</a></p>
 </div>
 </div>
 
@@ -66,6 +67,29 @@
 
 <div id="main">
 <div class="content">
+<div id="node-1115" class="node teaser blog cal">
+    <acronym class="calendar published" title="2018-08-22T21:50:23+02:00">
+  <span class="month">Aug</span>
+  <span class="day">22</span>
+    <span class="time">21:50</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/115-factor-apps/index.html">11.5 Factor apps</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Each time someone talks about the 12 Factor Application a weird feeling overcomes me .. Because I like the concept .. but it feels awkward .. it feels as if someone with 0 operational experience wrote it. And this devil is in a really small detail.</p>
+<p>And that is Part III. Config ...   For me (and a lot of other folks I've talked to about this topic) , using environment variables (as in real environment variables) are just one of the worst ideas ever.  Environment variables are typically set   manually , or from a script that is being executed and there's little or trace to see fast how a specific config is set.</p>
+<p>Imagine I launch an app with an env variable X=foo ,    then your collegue stops that app, and launches it with X=bar.  The systems integrity has not changed,  no config or binaries have been changed, but the application behaviour could have completely changed.    </p>
+<p>Sure I can go in to /proc/pid/environ  to find the params it was launched with ... But I want to know what state the system is supposed to be in .. and have tooling around that verified that the system  indeed is in that state.  </p>
+<p><a href="https://12factor.net/config" rel="nofollow">https://12factor.net/config</a> claims that using config files that are not stored<br />
+in revision control are a huge step forward from hardcoded config in code, but they claim that config files now start ending  up all over the place.    This obviously feels written by someone who never experienced the power of modern configuration management.  Templates which are dynamically populated  , or configs that are even calculated on the spot depending on the environment an application lives in are the norm in modern infrastructure as code ..  yet people seem to think that managing an environment variable would be less painfull. </p>
+<p>I feel the idea of what they wanted to achieve was good, but the way they suggest the implementation was foobar. I don't ever want critical config of an application (like wether is is talking to the PROD or DEV database) to be set from  an environment variable that can be modified.   This has to come from an automated system.</p>
+<p>This kind of config should be idempotent,  one should be able to trace back where it came from and who modified it (version control), and every redeploy of the application should end up with the same result.   It can even be dynamic (service discovery), but placing it in an Environment variable is the last place where a config deserves to live.</p>
+<p>So please let's stop calling it the 12 Factor application .. and call it the 11.5 Factor application ..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
 <div id="node-1114" class="node teaser blog cal">
     <acronym class="calendar published" title="2017-09-01T21:02:57+02:00">
   <span class="month">Sep</span>
@@ -291,7 +315,7 @@ We ask this question  because we have rooms in different sizes and we don't want
 <p>But it also gives us to opportunity to build some very interesting graph over the potential evolution of the communities.</p>
 <p>So looking at the figures ... the overall community is obviously growing,From 350 to 420, to just short of 600 people registered now.   </p>
 <p>The Puppet Community is not the biggest anymore, that spot went to the Ansible Community room.   And all but the CFengine communities are growing.</p>
-<p><img src="https://www.krisbuytaert.be/images/RoomSizes2016.png" /></p>
+<p><img src="http://www.krisbuytaert.be/images/RoomSizes2016.png" /></p>
 <p>One more thing ,  The organisation team discussed several times if we should rebrand the event.   We opted not to ..  Infracoders.eu  could have been an alternative name .. but we decided to stick with the name that already is known,<br />
 the content will evolve.. but Config Management Camp will stay the place where people that care about Infrastructure as Code and Infrastructure automation meet.</p>
 </div>
@@ -345,52 +369,6 @@ the content will evolve.. but Config Management Camp will stay the place where p
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 <li class="comment_comments last"><a href="/blog/bimodal-it-redefined/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
-</ul></div>
-</div>
-<div id="node-1104" class="node teaser blog cal">
-    <acronym class="calendar published" title="2015-07-28T08:35:13+02:00">
-  <span class="month">Jul</span>
-  <span class="day">28</span>
-    <span class="year">2015</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/power-packaging-software-package-all-things/index.html">The power of packaging software, package all the things</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1531 first"><a href="/blog/category/cd/index.html" rel="tag" title="">cd</a></li>
-<li class="taxonomy_term_1410"><a href="/blog/category/ci/index.html" rel="tag" title="">ci</a></li>
-<li class="taxonomy_term_1370"><a href="/blog/category/deb/index.html" rel="tag" title="">deb</a></li>
-<li class="taxonomy_term_1328"><a href="/blog/category/devops/index.html" rel="tag" title="">devops</a></li>
-<li class="taxonomy_term_1530"><a href="/blog/category/opslife/index.html" rel="tag" title="">opslife</a></li>
-<li class="taxonomy_term_472 last"><a href="/blog/taxonomy/term/472/index.html" rel="tag" title="">rpm</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>Software delivery is hard, plenty of people all over this planet are struggling with delivering software in their own controlled environment. They have invented great patterns that will build an artifact, then do some magic and the application is up and running.</p>
-<p>When talking about continuous delivery, people invariably discus their delivery pipeline and the different components that need to be in that pipeline.<br />
-Often, the focus on getting the application deployed or upgraded from that pipeline is so strong that teams<br />
-forget how to deploy their environment from scratch.</p>
-<p>After running a number of tests on the code , compiling it where needed, people want to move forward quickly and deploy their release artifact on an actual platform.<br />
-This deployment is typically via a file upload or a checkout from a source-control tool from the dedicated computer on which the application resides.<br />
-Sometimes, dedicated tools are integrated to simulate what a developer would do manually on a computer to get the application running.  Copy three files left, one right, and make sure you restart the service. Although this is obviously already a large improvement  over people manually pasting commands from a 42 page run book, it doesn’t solve all problems.</p>
-<p>Like the guy who quickly makes a change on the production server, never to commit the change, (say goodbye to git pull for your upgrade process)<br />
-If you package your software there are a couple of things you get for free from your packaging system.<br />
-Questions like, has this file been modified since I deployed it,  where did this file come from, when was it deployed,<br />
-what version of software  X do I have running on all my servers, are easily answered by the same<br />
-tools we use already for every other package on the system.   Not only can you use existing tools you are also using tools that are well known by your ops team and that they<br />
-already use for every other piece of software on your system.</p>
-<p>If your build process creates a package and uploads it to a package repository which is available for the hosts in the environment you want to deploy to, there is no need anymore for<br />
-a script that copies the artifact from a 3rd party location , and even less for that 42 page text document which never gets updated and still tells you to download yaja.3.1.9.war  from a location where you can only find<br />
-3.2 and 3.1.8 and the developer that knows if you can use 3.2 or why 3.1.9 got removed just left for the long weekend.</p>
-<p>Another, and maybe even more important thing, is the current sadly growing practice of having yet another tool in place that translates that 42 page text document to a bunch of shell scripts created from a drag and drop interface,  typically that "deploy tool" is even triggered from within the pipeline.   Apart from the fact that it usually stimulates a pattern of non reusable code, distributing even more ssh  keys , or adding yet another agent on all systems. it doesn’t take into account that you want to think of your servers as cattle and be able to deploy new instances of your application fast.<br />
-Do you really want to deploy your five new nodes on AWS  with a full Apache stack ready for production, then reconfigure your load balancers only to figure out that someone needs to go click in your continuous integration tool or deployment  to deploy the application to the new hosts? That one manual action someone forgets?<br />
-Imvho Deployment tools are a phase in the maturity process of a product team.. yes it's a step up from manually deploying software but it creates more and other problems , once your team grows in maturity refactoring out that tool is trivial.</p>
-<p>The obvious and trivial approach to this problem, and it comes with even more benefits. is called packaging. When you package your artifacts as operating system (e.g., .deb or .rpm) packages,<br />
-you can include that package in the list of packages to be deployed at installation time (via Kickstart or debootstrap). Similarly, when your configuration management tool<br />
-(e.g., Puppet or Chef) provisions the computer, you can specify which version of the application you want to have deployed by default.</p>
-<p>So, when you’re designing how you want to deploy your application, think about deploying new instances or deploying to existing setups (or rather, upgrading your application).<br />
-Doing so will make life so much easier when you want to deploy a new batch of servers.</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-<li class="comment_comments last"><a href="/blog/power-packaging-software-package-all-things/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-current first">1</li>

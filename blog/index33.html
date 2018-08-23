@@ -67,6 +67,35 @@
 
 <div id="main">
 <div class="content">
+<div id="node-718" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-08-27T20:19:20+02:00">
+  <span class="month">Aug</span>
+  <span class="day">27</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/718/index.html">Zabbix 1.5.4 Woes</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_599 first"><a href="/blog/taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_887 last"><a href="/blog/taxonomy/term/887/index.html" rel="tag" title="">zabbix</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>I was trying to check out the new Zabbix beta's when I ran into a couple of problems.  Mostly missing dependencies but also  some bugs.</p>
+<p>The big troubles start when trying to install the frontent.<br />
+It seems like php code shipped in the last release might well work when you are upgrading but it fails when you are doing a fresh install.  As I never got a Setup Wizard.</p>
+<p>The clue is to get the most recent code from their SVN repo svn co svn://svn.zabbix.com/trunk , that actually allows you to run the setup wizard.</p>
+<p>If you are installing  the latest RPM's they are also not really requiring all the dependencies you need to run the frontend.</p>
+<p>yum/apt-get install php-bcmath  php-pear</p>
+<p>Will get you a step further.</p>
+<p>Another thing is the new password policy.. it seems the Admin/blank is gone.<br />
+I have no clue what the new password is but you are encouraged to set it yourselve in the mysql database</p>
+<p>md5('new_pass') or echo -n new_pass | md5sum   will help you .</p>
+<p>Big thnx to the friendly folks over at #zabbix on irc.freenode.net for helping me out earlier.</p>
+<p>Next steps .. debugging autodiscovery :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
 <div id="node-717" class="node teaser blog cal">
     <acronym class="calendar published" title="2008-08-26T16:19:03+02:00">
   <span class="month">Aug</span>
@@ -315,30 +344,6 @@ A brand will become more popular because lots of people will be pointing to the 
 <p>:))</p>
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-</ul></div>
-</div>
-<div id="node-708" class="node teaser blog cal">
-    <acronym class="calendar published" title="2008-08-14T18:57:59+02:00">
-  <span class="month">Aug</span>
-  <span class="day">14</span>
-    <span class="year">2008</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/node/708/index.html">Poor man&#039;s unix management</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_978 first"><a href="/blog/taxonomy/term/978/index.html" rel="tag" title="">dssh</a></li>
-<li class="taxonomy_term_979"><a href="/blog/taxonomy/term/979/index.html" rel="tag" title="">ntp</a></li>
-<li class="taxonomy_term_439 last"><a href="/blog/taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p><a href="http://bbbart.internationalgeneration.be/blog/archives/2008/08/13/index.html#e2008-08-13T10_07_44.txt" rel="nofollow">Bart</a>, this is not a poor man's ntp.   This is a stupid man's Unix management :)</p>
-<p>Do you plan on running that script from cron each day ?  Or do you plan on eventually configuring ntp for the boxen ?</p>
-<p>Your poor man's configuration management solution would be to use a tool such as <a href="http://dssh.subverted.net/" rel="nofollow">dssh</a> or <a href="http://clusterssh.wiki.sourceforge.net/Main+Page" rel="nofollow">Cluster SSH</a></p>
-<p>However what you really want to do is look into a tool like Puppet and instruct puppet to  "Configure NTP on host X-Y-Z"</p>
-<p>There's a great article from chromatic about Puppet and Luke over at <a href="http://news.oreilly.com/2008/08/luke-kanies-wants-to-modernize.html" rel="nofollow">O'Reilly</a>, you might want to check it out .</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-<li class="comment_comments last"><a href="/blog/node/708/index.html#comments" title="Jump to the first comment of this posting.">5 comments</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

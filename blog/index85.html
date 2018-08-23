@@ -67,6 +67,32 @@
 
 <div id="main">
 <div class="content">
+<div id="node-192" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-05-19T16:52:02+02:00">
+  <span class="month">May</span>
+  <span class="day">19</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/192/index.html">Attacks to our  DNS system,  how vulnerable is the internet ?</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Most of you already know that one of my default replies to a question is "It's a DNS Problem"  , and lots of you already came back afterwards confirming that I indeed was right.<br />
+Apart from configuration errors and performance issues ,  there are more issues on the internet that are  DNS related.</p>
+<p>Spam is one of them .. one of the main reasons behind spam is that other than an MX record to send mail to,  the original mail architecture did not provide us with a way to guarantee that mails were actually coming from<br />
+the domain they claim to come from.   Luckily today we have <a href="http://www.openspf.org/">openSPF</a> and other techniques that are helping us , however not widespread enough ..<br />
+Think about the bad things that can happen when someone can take over your DNS server...  yep.. that kind of stuff...</p>
+<p>Or even worse .. think about what happens if you ask for the IP address for a server and get no reply...  do you still know the IP address of your mailserver, default gateway,  or even DNS server ?<br />
+So what happens when the idiots that think we are interrested in their spam  feel attacked by a company that tries to help us fight spam start fighting the company by attacking their ISP's  DNS servers ?<br />
+Indeed they get caught and are forced to manually reply to DNS requests for the rest of their lives ..  oh no.. that's not reality :(    They actually bring some DNS servers down by sending it more traffic than the ISP's network can ever handle.</p>
+<p>The dns system is one of the most important parts of todays internet .. yet it is broken as ...<br />
+I spend lots of time thinking how we could fix it...  and I`m probably not the only one ..  so what are your ideas ?</p>
+<p>Anyway... if you want to read on about an actually story with this sad story line  go<br />
+<a href="http://blog.washingtonpost.com/securityfix/2006/05/blue_security_surrenders_but_s.html">here</a></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/192/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
 <div id="node-191" class="node teaser story cal">
     <acronym class="calendar published" title="2006-05-17T15:36:22+02:00">
   <span class="month">May</span>
@@ -226,60 +252,6 @@ I've seen LinuxTag from different viewpoints already.. as a regular visitor, as 
 <p>I didn't catch all the names but AGK, Heinz, Jan Blunck, Jorg Engel, Christophe "I got a new Haircut so I can attack unsuspecting speakers with questions again"  Andrew Morton, Marcel Holzmann</p>
 <p>The award for the most funny introduction goes  to<br />
 "I`m Andrew Morton .. I maintain the 3Com network driver "</p>
-</div>
-</div>
-<div id="node-182" class="node teaser story cal">
-    <acronym class="calendar published" title="2006-05-05T17:03:18+02:00">
-  <span class="month">May</span>
-  <span class="day">05</span>
-    <span class="year">2006</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/node/182/index.html">LinuxTag 2006  20060505</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-            </div>
-  <div class="content"><p>So after breakfast it's time to figure out where the conference actually is..<br />
-Whee.. that's far ..   and you have to cross a street .. dangerous ..  at least compared to stepping out of the Dorint's doors in Karlsruhe :)<br />
-It's right across the street , but the conference  entrance  is around the corner..</p>
-<p>Well hidden on the schedule is a talk about OpenVZ  it's in one of the Community workshop rooms. It means I'll have to miss AGK's talk about LVM fun... tough choice ...</p>
-<p>They go over a short overview of the different Virtualisation types etc interresting to see that they claim as the advantages compared to their collegues ..</p>
-<p>One of the claims against Qemu and VMWare is the  one by one management etc.Hello .Large Scale management anyone ?<br />
-As cons for Para Virtualisation the  "Needs modified guest OS" is acceptable but "Static Resource Allocation , bad scalability and bad manageability.. they don't consider it different from vmware. and also one by one management..<br />
-According to them "ballooning" isn't a kind of real solution but just a hack.. works for me ;)<br />
-And the fact that I can add disks on the fly when I need to is also not really static for my needs.</p>
-<p>Also I personally  really prefer to have identical tools for my physical and virtual  the fact that a collegue just doesn't need to know about wether this host is physical or virtual and use the same tools he is used to makes it a lot easier.</p>
-<p>3rd kind is OS level virtualisation .. BSD Jails, VServer .. Solaris Zones  , OpenVZ.    no multiple kernels..  single kernel ...<br />
-Hmm.. this won't fix eg netfilter conflict issues .. Xen does ..  I want to be able to runn different kernels in different environments.  Say old and antique 2.4 kernels on a machine that is phyiscally only supported on a 2.6 kernel.  because we have to keep an old legacy application around.. (yeah those already exist on Linux .. strange huh ..  )</p>
-<p>Nice viewpoint on the evolution from Multitask to MultiUser to multiple Execution envirnments ...<br />
-Open VZ has also checkpointing and Migration support  altough according to their <a href="http://community.livejournal.com/openvz/4789.html">blog</a> it is really recent.</p>
-<p>The real fun part is how competing projects often don't know the correct facts aoubt their peers,  "If the sshd on your xen box dies you have to reboot it because you can't access it ?"  Huh .. strange .. I must have misheard   but it certainly ain't true ....  I definitely don't claim to know everytyhing about other projects.. but   I won't make claims I do ..  and I know it's difficult to catch up and keep track of what's happening as we are only humans..</p>
-<p>Got in late into the Git/ Cogito talk , Gitk really really looks nice<br />
-It's really really time I set up that openMosix Git tree sometime...</p>
-<p>I ran into Matt after that talk.. he just arrived ..with a small hmm.. not that small surprise .. Matt already mailed about doing a Aaron visits Europe and Matt the USA.. but I really didn't expect to meet him here... really great to finally meet him..   We had lunch downstairs (much better Food arrangements than Karlsruhe btw !)  and then moved on to the Kerneltrack Keynote by Andrew Morton</p>
-<p>The talk went over the which trees exist , what's the model for review,  and how to get your code included...</p>
-<p>Andrew wonders if kernels are getting les stable day by day , he thinks so but he doesn't have real data about it.. it's just an impression.<br />
-Maybe we should take all the kernel hackers after an event such as OLS and lock them in a room for 24 hours  forcing them to do nothing else but fixing bugs</p>
-<p>On to the questions then .. lots of them around ..</p>
-<p>Q: USB is "slow" these days<br />
-A:...vfat is the actual problem ...<br />
-distributions implmented mounting usb sticks with a "stynk"  option..<br />
-eheh :)</p>
-<p>Q "Version numbers are marketing not technical stuff.. so where is 2.7 ? "<br />
-A "We have no plans on currently going to 2.7 or anything else..."</p>
-<p>Q: why are the X drivers not in in kernelspace<br />
-A: because Linux isn't the only OS using X.</p>
-<p>Q: What's the status of virtualisation in the kernel A: Andrew expect Xen to be in the linux tree within the next 12 months..<br />
-Xen people seem to be reluctant to talk to the general kernel people..<br />
-they talk more to the distro people ...  Lets fix up Steve with Andrew tonight :)<br />
-Andrew doesn't want to choose between different virtualisation techniques.</p>
-<p>Maybe rather than choosing there should be an API one way or another.. a common api that works for different types of virtualisation techniques.</p>
-<p>There seems to be a need for a Meta Change log for the kernel rather than a great detailed changelog.. a quick 1-2 page overview where you can see in which compomponents stuff has drastically changed.</p>
-<p>Isn't Kerneltrap and Zach's stuff enough summary ..</p>
-<p>Matt's talk ...<br />
-ff course it didn't attract the huge public Andrew attracted but still fairly well attended ,  everyone who doesn't know what iSCSI is about , knows now.<br />
-Hmm.. so I wonder where my test setup has gone again .. I think I was exporting the USB disk at home via iSCSI. Maybe I should actually use iSCSI to export my MythTV and Music storage.  Ah.. the lack of time..</p>
-<p>Then on to the OCFS2 talk...It's extremely difficult to have to fly into a conference, give a talk, which you are not used to giving,  didn't write yourselve  but have to give since the marketing people planned.. annoying  which explains why they guy presenting has .. some things on the slides he just doesnt know about.. so after about 25-30 minutes in the talk .. after the room has partly flooded  the guy decides that rather than reading full parts  of his notes he'd better start with a Q&amp;A session. which was a really really good decision ...<br />
-but still <a href="http://blogs.oracle.com/wim/">  .. We want Wim.. We want Wim .. We want Wim ..  ..</a></p>
 </div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

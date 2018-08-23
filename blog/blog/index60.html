@@ -67,6 +67,88 @@
 
 <div id="main">
 <div class="content">
+<div id="node-445" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-09-11T20:23:45+02:00">
+  <span class="month">Sep</span>
+  <span class="day">11</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="../node/445/index.html">Taking over management of a Xen box</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_480 first"><a href="../taxonomy/term/480/index.html" rel="tag" title="">centos</a></li>
+<li class="taxonomy_term_479"><a href="../taxonomy/term/479/index.html" rel="tag" title="">rhel</a></li>
+<li class="taxonomy_term_470 last"><a href="../taxonomy/term/470/index.html" rel="tag" title="">xen</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So once in a while you get to take over the management of a machine someone installed with no documentation, with lots of playing around and no clue on how it should be reproducible.  You're pretty sure that if you reboot the machine it won't come up with the right services, or in this case with the right Virtual machines  up and running.</p>
+<p>So I got this box with about 7 different xen configs in /etc/xen  and none in /etc/xen/auto .. however different lvm volumes were created and 3 virtual machines were running.   The  different xen configs looked all the same.<br />
+web1, web, web.orig, web.working   you know :(</p>
+<p>So my challenge was to figure out the config of the running virtual machines<br />
+Luckily I bumped into some Redhat articles that tought me virsh dumpxml<br />
+Now I`m not really a fan of xml based config but it got me quite far.</p>
+<p>Eg. on one of my own machines the output looks pretty good.</p>
+<p><xmp><br />
+[root@core named]# xm list<br />
+Name                                      ID Mem(MiB) VCPUs State   Time(s)<br />
+Domain-0                                   0      619     1 r-----   1242.5<br />
+web.hs62.be                              1      511     1 -b----   4648.2<br />
+[root@core named]# virsh dumpxml 1</xmp></p>
+<p><domain type='xen' id='1'><br />
+  <name>web.hs62.be</name><br />
+  <uuid>f7cb62b9d3aa8a07489604285fe3d842</uuid><br />
+  <os><br />
+    <type>linux</type><br />
+    <kernel>/boot/vmlinuz-2.6-xen</kernel><br />
+    <initrd>/boot/initrd-2.6-xen.img</initrd><br />
+    <root>/dev/sda1 rw</root><br />
+    <cmdline>selinux=0  3</cmdline><br />
+  </os><br />
+  <memory>524288</memory><br />
+  <vcpu>1</vcpu><br />
+  <on_poweroff>destroy</on_poweroff><br />
+  <on_reboot>restart</on_reboot><br />
+  <on_crash>restart</on_crash><br />
+  <devices><br />
+    <interface type='bridge'><br />
+      <source bridge='xenbr0'/><br />
+      <mac address='00:16:3e:0a:e8:9b'/></mac></source></interface></devices></domain></p>
+<script path='vif-bridge'/>
+    
+    <disk type='block' device='disk'>
+      <driver name='phy'/>
+      <source dev='vm_volumes/root-web.hs62.be'/>
+      <target dev='sda1'/>
+    </target></source></driver></disk>
+    <disk type='block' device='disk'>
+      <driver name='phy'/>
+      <source dev='vm_volumes/tmp-web.hs62.be'/>
+      <target dev='sda2'/>
+    </target></source></driver></disk>
+    <disk type='block' device='disk'>
+      <driver name='phy'/>
+      <source dev='vm_volumes/usr-web.hs62.be'/>
+      <target dev='sda3'/>
+    </target></source></driver></disk>
+    <disk type='block' device='disk'>
+      <driver name='phy'/>
+ <source dev='vm_volumes/swap-web.hs62.be'/>
+      <target dev='sda4'/>
+    </target></source></driver></disk>
+    <disk type='block' device='disk'>
+      <driver name='phy'/>
+      <source dev='vm_volumes/home-web.hs62.be'/>
+      <target dev='sda5'/>
+    </target></source></driver></disk>
+    <console tty='/dev/pts/0'/>
+  
+
+
+
+Might come handy some day</console></script></div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
 <div id="node-444" class="node teaser blog cal">
     <acronym class="calendar published" title="2007-09-10T22:59:45+02:00">
   <span class="month">Sep</span>
@@ -282,29 +364,6 @@ One of the  features that came in puppet that made me rethink Juliux was the fac
 <p>The ideas were good, but we really didn't have time to focus on developing the things we wanted to write.  So when I ran into <a href="http://reductivelabs.com/projects/puppet/documentation/rails-puppet-manager" rel="nofollow">PuppetShow</a> the time was right to refocus the little efforts we were spending and as Raf announced he now will be working on PuppetShow when he has time.</p>
 <p>Funny . there was a time when I was thinking about rebranding Julux to PuppetMaster,  or Master of Puppets,  but I actually like PuppetShow better .. So we had similar ideas , only Luke had more time to implement his ideas .    </p>
 <p>Time often is an issue in opensource development.  There's lots of stuff that I have in my head that could easily be written .. but I don't always have time to do it myselve or other people available that can write it for me .. :(  Well.. maybe one day :)</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-</ul></div>
-</div>
-<div id="node-435" class="node teaser blog cal">
-    <acronym class="calendar published" title="2007-09-02T18:42:07+02:00">
-  <span class="month">Sep</span>
-  <span class="day">02</span>
-    <span class="year">2007</span>
-    </acronym>
-    <h2 class="title"><a href="../node/435/index.html">UKUUG Spring 2008 Conference</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_453 first"><a href="../taxonomy/term/453/index.html" rel="tag" title="">birmingham</a></li>
-<li class="taxonomy_term_428"><a href="../taxonomy/term/428/index.html" rel="tag" title="">cambridge</a></li>
-<li class="taxonomy_term_452"><a href="../taxonomy/term/452/index.html" rel="tag" title="">lisa</a></li>
-<li class="taxonomy_term_427 last"><a href="../taxonomy/term/427/index.html" rel="tag" title="">ukuug</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>The UKUUG Spring 2008 Conference on Large Installations System Administration  is announced and will take place from<br />
-31st March to 2nd April 2008 in Birmingham (not in Oxford as announced earlier) </p>
-<p>And also there is no focus on Configuration management as rumoured but again a focus on Virtualisation .</p>
-<p>More info on <a href="http://www.ukuug.org/events/spring2008/" title="http://www.ukuug.org/events/spring2008/" rel="nofollow">http://www.ukuug.org/events/spring2008/</a></p>
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 </ul></div>

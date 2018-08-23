@@ -67,6 +67,37 @@
 
 <div id="main">
 <div class="content">
+<div id="node-748" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-10-23T23:01:11+02:00">
+  <span class="month">Oct</span>
+  <span class="day">23</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../node/748/index.html">MythTV Broken again  :(</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1070 first"><a href="../taxonomy/term/1070/index.html" rel="tag" title="">mc2xml</a></li>
+<li class="taxonomy_term_504"><a href="../taxonomy/term/504/index.html" rel="tag" title="">mythtv</a></li>
+<li class="taxonomy_term_599"><a href="../taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+<li class="taxonomy_term_1071"><a href="../taxonomy/term/1071/index.html" rel="tag" title="">pygrab</a></li>
+<li class="taxonomy_term_1069 last"><a href="../taxonomy/term/1069/index.html" rel="tag" title="">xmltv</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>The <a href="http://www.krisbuytaert.be/blog/node/743">earlier posted</a> fix , getting my data from mythportal seemed to be a temporary solution.</p>
+<p>It also seems  the solution that was mentioned at <a href="http://kristof.vanhertum.be/?p=80" rel="nofollow">Kristof Vanhertum's blog</a> ,  the agent fix doesn't work anymore either.</p>
+<p>Somewhere in the comments of that post however people start referring to <a href="http://mc2xml.110mb.com/" rel="nofollow">mc2xml</a> a tool to get your info (even 14 days worth of it) from a really untrustworthy source and import it amongst other tools into MythTV </p>
+<p>No source code to be found, just a binary .. something that always scares me ..  But running the thing (first time as a dummy empty user, one never knows)  actually seems to give me an XML file with relevant data , to be used by mythfilldatabase.</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> ./mc2xml  -c be -g 2610 </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Loading ..... : mc2xml &lt;mc2xml@gmail.com&gt; (2008-09-15)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Connecting .. : microsoft.com</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Select lineup: </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  0: TER  Unmapped Analogue Terrestrial</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  1: TER  Unmapped Digital Terrestrial</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  2: CAB  Unmapped Analogue Cable</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  3: CAB  Unmapped Digital Cable</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  4: SAT  Unmapped Analogue Satellite</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  5: SAT  Unmapped Digital Satellite</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  6: SAT  TV Vlaanderen Digital Satellite</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  7: TER  TV Vlaanderen Digital terrestrial</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  8: CAB  Telenet Analog Kabel (132)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">(0-8): 8 </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Downloading . : microsoft.com</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Downloaded .. : 353944 bytes</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Source ...... : BDS</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Headend ..... : 7200116</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Version ..... : 2693590756</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Start time .. : 2008-10-23T00:00:00 UTC</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">End time .... : 2008-11-06T23:55:00 UTC</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Parsing ..... : Telenet Analog Kabel (132)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Writing ..... : xmltv.xml</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Writing ..... : mc2xml.dat</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Completed ... : 5384193 bytes in 26s, 27 channels, 9409 programs scheduled.</div></li></ol></pre></div></p>
+<p>Yes that's my actual postcode.  Different postcode values will give you other alternatives such as Coditel/Integan .. so you better use the right one.</p>
+<p>I`m not really satisfied however,  it fails to recognize my already defined channels.  So I seem to have something that at first sight looks like relevant data .  Only my channel numbers are way way way off ..   </p>
+<p>I need to fix that asap.  The only problem being that tomorrow it's <a href="http://www.geekdinnerr.be/" rel="nofollow">Geekdinner</a> and I`ll be spending the rest of the weekend at <a href="http://t-dose.org/" rel="nofollow">T-Dose</a>   hence I have no time to fix this anymore ... </p>
+<p>Anyone got a quick fix for that ?   Or will I just have to live with a weekend of non-recordings ? :) </p>
+<p>Well.. maybe next week will be a productive one then :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../node/748/index.html#comments" title="Jump to the first comment of this posting.">6 comments</a></li>
+</ul></div>
+</div>
 <div id="node-747" class="node teaser blog cal">
     <acronym class="calendar published" title="2008-10-20T20:21:55+02:00">
   <span class="month">Oct</span>
@@ -356,34 +387,6 @@ When you work you .. people complain when things go wrong.. they don't cheer whe
 <p>Reminds me of this situation at a customer where the Cisco people that fail to automate their work and  get to travel around the qworld to do  their work using their serial console , where as the Linux platform team has automated their work so far they get to stay home and watch the machines boot  then do a quick check over ssh to see if they actually work.</p>
 <p>Anyhow.. the talk really wasn't focusing on how developers could cooperate better with sysadmins, apart from a couple of general tips  so it really missed its goal.</p>
 <p>I popped into the Lightning talk about Ubuntu on EEE talk , hoping to learn something, apart from 1 url that I should read I guess it was the otherway around  , it's usually a bad sign when a speaker starts every 2 slides with "I haven't tested this myselve but " ...</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-</ul></div>
-</div>
-<div id="node-738" class="node teaser blog cal">
-    <acronym class="calendar published" title="2008-10-04T13:18:26+02:00">
-  <span class="month">Oct</span>
-  <span class="day">04</span>
-    <span class="year">2008</span>
-    </acronym>
-    <h2 class="title"><a href="../node/738/index.html">Open Source Virtualization</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_558 first"><a href="../taxonomy/term/558/index.html" rel="tag" title="">conferences</a></li>
-<li class="taxonomy_term_506"><a href="../taxonomy/term/506/index.html" rel="tag" title="">kvm</a></li>
-<li class="taxonomy_term_461"><a href="../taxonomy/term/461/index.html" rel="tag" title="">open source</a></li>
-<li class="taxonomy_term_1045"><a href="../taxonomy/term/1045/index.html" rel="tag" title="">open source days</a></li>
-<li class="taxonomy_term_989"><a href="../taxonomy/term/989/index.html" rel="tag" title="">openexpo</a></li>
-<li class="taxonomy_term_1046"><a href="../taxonomy/term/1046/index.html" rel="tag" title="">virtualbox</a></li>
-<li class="taxonomy_term_672"><a href="../taxonomy/term/672/index.html" rel="tag" title="">virtualization</a></li>
-<li class="taxonomy_term_470 last"><a href="../taxonomy/term/470/index.html" rel="tag" title="">xen</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>I've just placed the presentation I gave both yesterday at the <a href="http://www.opensourcedays.org/2008/" rel="nofollow">Open Source Days</a> in Copenhagen , and last week in Zurich at the <a href="http://openexpo.org/en" rel="nofollow">Open Expo</a> , about Open Source Virtualization online.<br />
-The presentation is based on a series of articles I wrote earlier this year for <a href="http://virtualization.com/guides-howto-whitepaper-explanation/2008/03/10/looking-back-at-a-decade-of-open-source-virtualisation/" rel="nofollow">Virtualization.com</a></p>
-<p>You can download it <a href="http://www.krisbuytaert.be/presentations/OSSVirt.odp">here</a></p>
-<p>The presentation covers a fairly complete overview of what's around in Open Source Virtualization tools and and their Management frameworks.</p>
-<p>I will be giving the same presentation again at the end of the month at <a href="http://www.t-dose.org/" rel="nofollow">T-Dose</a> in Eindhoven, The Netherlands</p>
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 </ul></div>

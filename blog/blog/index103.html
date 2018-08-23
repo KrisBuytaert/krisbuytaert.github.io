@@ -59,6 +59,7 @@
   <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
 <p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
 <p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+<p><a href="../rss/index.xml">Feed</a></p>
 </div>
 </div>
 
@@ -66,6 +67,27 @@
 
 <div id="main">
 <div class="content">
+<div id="node-12" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-06-12T22:10:02+02:00">
+  <span class="month">Jun</span>
+  <span class="day">12</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="../node/12/index.html">Getting Nightmares from Hardware Vendors</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Before I start.. I have no preferences for any hardware vendor , I mostly work with IBM/HP/Dell material, and all of them ocassionaly have good and bad material.<br />
+But this month they all seem to screw up :(</p>
+<p>We have a simple need , we need machines 1U with SCSI and a Free PCI slot and be easy to deploy with 2.4 based. kernels.<br />
+One hardware vendor got the idea to add 20 cm's to his devices when upgrading to a newer version,  The machine worked flawless on a 2.4.25 (SystemImager's standard), however didn't fit in<br />
+most of our customers racks.  So we asked for an alternative.  The Alternative they came up with was aimed directly at the HPC market,  so I was really interrested in testing it.  It requires SATA.  But non of the libata patches I tried seem to work.   Works fine in 2.6 but still didn't get the SATA working on 2.4.X.  So let's try with the SCSI version.  hmm.. oops you need to sacrifice your PCI slot, now that's not an alternative.</p>
+<p>So I started contacting other vendors,  one vendor shipped me a Demo Unit that looked interresting  but not available anymore so all our test were in vain since the new machine might be totally different.<br />
+Another told us that there was no need to test the machine since his technical people were 100% sure it would work.  When I finally received the machine the network drivers weren't functioning. I still need to test if more recent driver versions work ..</p>
+<p>Our roadmap has an upgrade to 2.6, but we need to have 2.4 supported for deployments today.  We test and test again before we place machines at clients , the timeframe now is to short to upgrade.</p>
+<p>I see a trend where Hardware Vendors that wan't to place equipment in a HPC market don't realise what software will run on that platform.Lots of  SSI style clustering environments are still on 2.4 and working on 2.6 releases,  which means that a hughe part of the market these vendors are aiming at simply can't use their hardware yet.  Now how's that for knowing your clients :(</p>
+</div>
+</div>
 <div id="node-11" class="node teaser story cal">
     <acronym class="calendar published" title="2005-06-02T12:42:32+02:00">
   <span class="month">Jun</span>
@@ -218,25 +240,6 @@ Do you know others ?</p>
   <div class="content"><p>Everybody seems to think that we live in an extremely small country and therefore nobody is doing relevant stuff within the open source world.<br />
 I`ll prove you wrong.  Belgian people are doing lots of open source work, we just don't brag about it enough :)</p>
 </div>
-</div>
-<div id="node-2" class="node teaser story cal">
-    <acronym class="calendar published" title="2005-05-22T11:47:35+02:00">
-  <span class="month">May</span>
-  <span class="day">22</span>
-    <span class="year">2005</span>
-    </acronym>
-    <h2 class="title"><a href="../node/2/index.html">Bizzie Lizzie</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-            </div>
-  <div class="content"><p><a href="http://www.resto.be/">resto.be</a> allows restaurants to decide wether they can have comments or not.<br />
-We went to <a href="http://www.resto.be/ware/details.jsp?businessid=2318" hreflang="nl">Bizzie Lizzie</a> a couple of months ago and they made a hughe mistake with the coffee.</p>
-<p>Can you imagine a  restaurant that serves cookies from the cheapest store in town (<a href="http://www.aldi.be/" hreflang="nl">Aldi</a>) and doesn't even bother to<br />
-hide it ?</p>
-<p>Must be a hell of a reason for Bizzie Lizzie not to allow people to post comments on the  <a href="http://www.resto.be/">resto.be</a> site</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../node/2/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
-</ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index102.html?page=102" title="Go to previous page" class="active">‹ previous</a></li>

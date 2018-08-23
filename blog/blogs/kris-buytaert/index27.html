@@ -68,7 +68,27 @@
   <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a></div></div>
   <h2 id="title">Kris Buytaert's blog</h2>
 <div class="content">
-<div class="item-list"></div><div id="node-834" class="node teaser blog cal">
+<div class="item-list"></div><div id="node-835" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-12-06T10:13:32+01:00">
+  <span class="month">Dec</span>
+  <span class="day">06</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../wordpress-slow/index.html">Wordpress is Slow ! </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_437 first"><a href="../../taxonomy/term/437/index.html" rel="tag" title="">dnsproblem</a></li>
+<li class="taxonomy_term_484"><a href="../../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
+<li class="taxonomy_term_1118 last"><a href="../../category/wordpress/index.html" rel="tag" title="">wordpress</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p><a href="http://blog.avirtualhome.com/2008/12/03/wordpress-being-slow-a-dns-problem/" rel="nofollow">because of a fine DNS problem</a></p>
+<p>So it can obviously happen to other platforms as well :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../wordpress-slow/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
+<div id="node-834" class="node teaser blog cal">
     <acronym class="calendar published" title="2008-12-04T14:01:37+01:00">
   <span class="month">Dec</span>
   <span class="day">04</span>
@@ -303,34 +323,6 @@ Hyperic ..  I guess I prefer the integrated approach.</p>
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../migrate-multisite-and-restyle/index.html#comments" title="Jump to the first comment of this posting.">8 comments</a></li>
 </ul></div>
-</div>
-<div id="node-766" class="node teaser blog cal">
-    <acronym class="calendar published" title="2008-11-14T19:50:30+01:00">
-  <span class="month">Nov</span>
-  <span class="day">14</span>
-    <span class="year">2008</span>
-    </acronym>
-    <h2 class="title"><a href="../../technorati-rrd/index.html">Technorati RRD</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1066 first"><a href="../../taxonomy/term/1066/index.html" rel="tag" title="">rrdtool</a></li>
-<li class="taxonomy_term_1102"><a href="../../category/stats/index.html" rel="tag" title="">stats</a></li>
-<li class="taxonomy_term_1101 last"><a href="../../category/technorati/index.html" rel="tag" title="">technorati</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p><a href="http://blog.verwilst.be/">Bort</a> is in to graphs and stats these days, so he was interested in my little Technorati hack.</p>
-<p>Lots of us bloggers are using Technorati to track who's joining the discussion on articles we posts.   Technorati gives you details on how many blogs link to you, and how much they link to you and translate that into an Authority rank.   Now what they don't give you is an idea on how that rank evolves.</p>
-<p>Technorati also as an API which allows you to get that same information.<br />
-As I was explaining the concept of RRDTool to someone a couple of months ago I thought it was a good idea to track a Technorati rank and grab that with RRDTool.</p>
-<p>So I wrote a small script that gets the bloginfo data for my blog from Technorati,<br />
-parses out the number of inboundblogs  , writes that info to an RRD file and creates a graph from it</p>
-<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">wget -O $NOW.html  &quot;http://api.technorati.com/bloginfo?key=getyourown&amp;url=www.krisbuytaert.be/blog/&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">VALUE=`cat $NOW.html   | grep inboundblogs  | head -n 1  | sed -e &quot;s/&lt;//g&quot;  | sed -e &quot;s/inboundblogs//g&quot;  | sed -e &quot;s/\///g&quot; | sed -e &quot;s/&gt;//g&quot; | sed -e &quot;s/ //g&quot; `</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">rrdtool update technorati.rrd $UNIXNOW:$VALUE</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">rrdtool  graph ../public_html/images/technorati.png --start 1218548820  --vertical-label TechnoratiRank DEF</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">:myrank=technorati.rrd:rank:AVERAGE   LINE2:myrank#FF0000 -m 2</div></li></ol></pre></div></p>
-<p>The result looks like<br />
-<img src="http://www.krisbuytaert.be/images/technorati.png" /></p>
-<p>As you can see somewhere in week 37 Technorati was pretty much not working.  And 180 days before week 42 my blog got a lot of fresh , but non recurring inbound links.</p>
-<p>Now I have a couple of more ideas to build on this.. just no time.. but if you are interested lemme know ..</p>
-<p>Anyhow it's all lies, damn lies and statistics ;)</p>
-</div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index26.html?page=26" title="Go to previous page" class="active">‹ previous</a></li>

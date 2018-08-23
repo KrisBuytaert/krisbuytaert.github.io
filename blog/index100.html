@@ -59,6 +59,7 @@
   <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
 <p>Questions, want to contact me please read my <a href="/blog/faq/index/index.html">FAQ</a> and  <a href="/blog/social/index/index.html">Social Media Policy</a></p>
 <p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+<p><a href="/blog/rss/index.xml">Feed</a></p>
 </div>
 </div>
 
@@ -66,6 +67,26 @@
 
 <div id="main">
 <div class="content">
+<div id="node-42" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-09-01T23:09:29+02:00">
+  <span class="month">Sep</span>
+  <span class="day">01</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/42/index.html">Desktop login failing</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>I`m struggling with a bad adsl connection latelty.  So bad that my connection often dies for hours,  It's supposed to be my internal telephone line which I've replaced by now so I`m hoping for the best.</p>
+<p>Anyway .. we had short power outage yesterday night and my iMac (running ubuntu) got rebooted.  When trying to log in, the screen went brown and nothing else happened.<br />
+Strange.. didn't see any errors in the logs , when switching to console mode one error catched my eye,  some files couldn't be untarred because they were in the future.<br />
+While looking at the permissions of files in /tmp where  gnome etc tend to throw some files , I noticed that a lot of files were dated 1 january 1904 (yes that's right 1904 !!).<br />
+Which meant that ntpdate had failed,  it couldn't look up the hostname for it's ntp server  (in this case because I had no ip connectivity).</p>
+<p>So because a <strong>DNS lookup failed I</strong> could not log on to my desktop..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/42/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
 <div id="node-41" class="node teaser story cal">
     <acronym class="calendar published" title="2005-08-25T14:13:25+02:00">
   <span class="month">Aug</span>
@@ -290,22 +311,6 @@ I at least saw a bit of Swansea , conference is dinner tomorrow so :)</p>
 <p>I've got some other topics I'm preparing articles for these days ... Virtualisation, Large Scale Deployments, High Availability, and off course the biggest problem of them all, the fscking dns problem :)</p>
 <pre></pre></div>
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/33/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
-</ul></div>
-</div>
-<div id="node-32" class="node teaser story cal">
-    <acronym class="calendar published" title="2005-08-01T17:04:25+02:00">
-  <span class="month">Aug</span>
-  <span class="day">01</span>
-    <span class="year">2005</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/node/32/index.html">Heading to UKUUG</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-            </div>
-  <div class="content"><p>I`m leaving tonight direction <a href="http://www.ukuuug.org/events/linux2005/">UKUUG Linux Technical Conference</a> , planning on arriving there thursday.<br />
-Uff course the trip won't take that long but I`m taking a couple of days off in the UK as well, in order to catch up on some reading and do some siteseeing :)</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/32/index.html#comments" title="Jump to the first comment of this posting.">20 comments</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

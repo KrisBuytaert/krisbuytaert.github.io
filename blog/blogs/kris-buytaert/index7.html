@@ -58,6 +58,7 @@
   <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
 <p>Questions, want to contact me please read my <a href="../../faq/index/index.html">FAQ</a> and  <a href="../../social/index/index.html">Social Media Policy</a></p>
 <p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+<p><a href="../../rss/index.xml">Feed</a></p>
 </div>
 </div>
 
@@ -67,7 +68,56 @@
   <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a></div></div>
   <h2 id="title">Kris Buytaert's blog</h2>
 <div class="content">
-<div class="item-list"></div><div id="node-1041" class="node teaser blog cal">
+<div class="item-list"></div><div id="node-1042" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-05-25T23:18:08+02:00">
+  <span class="month">May</span>
+  <span class="day">25</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="../../beyond-configuration-mgmt/index.html">Beyond Configuration Mgmt</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1158 first"><a href="../../category/chef/index.html" rel="tag" title="">chef</a></li>
+<li class="taxonomy_term_1453"><a href="../../category/cucumber/index.html" rel="tag" title="">cucumber</a></li>
+<li class="taxonomy_term_1328"><a href="../../category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1455"><a href="../../category/jmeter/index.html" rel="tag" title="">jmeter</a></li>
+<li class="taxonomy_term_439"><a href="../../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1363"><a href="../../category/puppetcamp/index.html" rel="tag" title="">puppetcamp</a></li>
+<li class="taxonomy_term_1452"><a href="../../category/selenium/index.html" rel="tag" title="">selenium</a></li>
+<li class="taxonomy_term_1454"><a href="../../category/shai/index.html" rel="tag" title="">shai</a></li>
+<li class="taxonomy_term_1451 last"><a href="../../category/testing/index.html" rel="tag" title="">testing</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>(This post has been sitting in the drafts folder for way to long,  I decided to push the publish button anyhow .. some people might get ideas from it..)</p>
+<p>We've all run in to the problem,  you've puppetized, or euh .. cooked ,  about every part of your infrastructure and then there's this one service which has no config files,  a broken api that doesn't allow you to configure antyhing, but a magnificent web gui to configure all aspects of the service.  Magnificent for the eye ,  full of AJAX and other fancy stuff which wget isn't really keen on.  Off course before it even starts working you need to set it's password , from that webgui.</p>
+<p>Sometimes when you are lucky they store al their config in a database, which you can dump, parse and replace all the host specific parameters for other deployments,   but is that an approach you like ?  As for each new version you'll need to reanalyze the db layout.  But no matter how you look at it ,dumping the DB and restoring it is an ugly hack you don't want.</p>
+<p>Other alternatives like sniffing the traffic and replaying the POSTS etc were considered ...   but fancy AJAX stuff and SSL make that less trivial than it seems </p>
+<p>Wo while discussing with an upstream project they proposed to actually screenscrape their config webgui .</p>
+<p>So screenscraping the config gui it is .. but how ...  I started looking at tools that are typically used for testing rather than for automation, with the purpose of replaying the scenarios one needs to configure the services.</p>
+<p>My first attempt was Selenium,  it plugs into a browser , so it's easy to acraully record what it has to do,  and it saves it's scenarios  in a somewhat readable/ editable format.<br />
+Having found the export to perl function it alll looked promising.   However the export to perl isn't really an export to perl as I epxected .. I assumed it would just generate the perl code to run the same scneario which would be awesome .. it however generates a perl script that instructs a selenium server to run the script.</p>
+<p>One of the annoyancies I ran into with Selenium is that a browser<br />
+doesn't accept self signed certificates , and one can't preprovision a browser easyily with those freshly created certificates. (Yes Karl I already read about certutil ... )</p>
+<p>I had heard good things about Cucumber so I was pretty eager to start testing it ...  In short Cucumber  lack documentation ,<br />
+I tried a couple of things but I couldn't get beyond testing if a certain string was on a page..  couldn't figure out how to fill in a form etc ...<br />
+Maybe if anyone could point me to some great documentation on how you should write recipe's here ... I didn't find the documentation all to  easy to find ..<br />
+Bummer as it really really looks promisiung .. specially since it is so lightweight ..</p>
+<p>IP played with JMeter and Sahi too .. but still</p>
+<p>So apart from filing bugs to the upstream project/product and hoping they understand your problem and are willing to oopen up their API , what other options do you folks suggest ?</p>
+<p>I gave a short talk about this at Puppetcamp in Amsterdam  and the audience came up with a bunch of other potential projects to look at .</p>
+<ul>
+<li>
+<a href="http://hpricot.com/" rel="nofollow">Hpricot</a>
+</li><li><a href="http://www.webinject.org/" rel="nofollow">WebInject</a>
+</li><li><a href="http://sikuli.org/" rel="nofollow">Project Sikuli</a>
+</li><li><a href="http://watir.com/" rel="nofollow">Watir</a> and
+</li></ul>
+<p>The main problem still is that all these are tools to automate testing , they don't provide you with a general purpose approach to solve the configuration mgmt problem, each time the upstream vendor modifies the layout of his page you hav e to do the work again  and that .. really doesn't sound promising ..</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../beyond-configuration-mgmt/index.html#comments" title="Jump to the first comment of this posting.">6 comments</a></li>
+</ul></div>
+</div>
+<div id="node-1041" class="node teaser blog cal">
     <acronym class="calendar published" title="2011-05-02T22:31:17+02:00">
   <span class="month">May</span>
   <span class="day">02</span>
@@ -337,27 +387,6 @@ No commandline fu here to help me, but using the VirtualBox gui to move the disk
 </li><li>after fosdem ... you crash ..<br />
 </li></div>
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../fosdem/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
-</ul></div>
-</div>
-<div id="node-1032" class="node teaser blog cal">
-    <acronym class="calendar published" title="2011-02-05T14:23:48+01:00">
-  <span class="month">Feb</span>
-  <span class="day">05</span>
-    <span class="year">2011</span>
-    </acronym>
-    <h2 class="title"><a href="../../reservation-confirmed/index.html">Reservation Confirmed</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../../category/devops/index.html" rel="tag" title="">devops</a></li>
-<li class="taxonomy_term_1435"><a href="../../category/falstaff/index.html" rel="tag" title="">falstaff</a></li>
-<li class="taxonomy_term_1123 last"><a href="../../category/meetup/index.html" rel="tag" title="">meetup</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>Apparently I don't understand french :(</p>
-<p>Copied from my inbox ... </p>
-<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">From: 	Info Falstaff &lt;info@lefalstaff.be&gt;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">To: 	'Kris Buytaert' &lt;Kris.Buytaert@youalreadyknowmyaddy.be&gt;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Subject: 	RE: Reservation Next Friday 4/2/2011</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Date: 	Fri, 28 Jan 2011 16:55:45 +0100</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">je confirme votre  reservation pour le vendredi 04 02 2011</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vous trouverez ci-joint nos differentes formules</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">bien à vous</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">guy Lommen chef de cuisine</div></li></ol></pre></div></p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../reservation-confirmed/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
