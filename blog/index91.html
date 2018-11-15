@@ -67,6 +67,30 @@
 
 <div id="main">
 <div class="content">
+<div id="node-133" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-02-19T21:22:07+01:00">
+  <span class="month">Feb</span>
+  <span class="day">19</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/133/index.html">Upgrading  and Upgrading</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p><strong>Upgrading MySQL-Cluster</strong></p>
+<p>So MySQL Cluster is heading towards disk storage , time to upgrade my development environment in that direction.<br />
+After the upgrade I ran into the following problem</p>
+<pre>mysql&gt; create table blah (i int, c char) engine=ndb;
+ERROR 1005 (HY000): Can't create table './test/blah.frm' (errno: 4009)</pre><p>And the mysql error database doesn't really help :)</p>
+<pre>perror --ndb 4009
+OS error code 4009:  Cluster Failure: Unknown result: Unknown result error</pre><p>In the ndbd log it showed that the MySQL nodes connect but never really continued to start, strange no more logs and no help on the error.<br />
+Took me a while to figure out that MySQL-Max wasn't upgraded . MySQL-Max used to be required for NDB (dunno if it still is) and all of MySQL packages were already at 5.1.6 except for the Max package which deamon was actually running and which was still at 4.1.12 :)</p>
+<p>You obviously know what I'll be testing next :)</p>
+<p><strong>Fedora Upgrading.</strong></p>
+<p>Has it ever occured to anyone that each time you want to do an upgrade of a Fedora Core box. either online or via CD it always fails because your / or  /usr/local or whatever filesystem isnt' big enough. Each time you run into the dreadfull "Need 128Mb more free space on /"  actually when upgrading from CD it used to just<br />
+crash witouth this error.  Dunno if that is alraedy fixed.. filed a bug ages ago on that iirc.   Anyway  apt-get dist-upgrade is running on my iMac now :)</p>
+</div>
+</div>
 <div id="node-132" class="node teaser story cal">
     <acronym class="calendar published" title="2006-02-17T09:48:13+01:00">
   <span class="month">Feb</span>
@@ -219,34 +243,6 @@ which one would you prefer ?</p>
 <p>PS. Tim O'Reilly already told us that in his Fosdem 2004 Keynote.</p>
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/124/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
-</ul></div>
-</div>
-<div id="node-123" class="node teaser story cal">
-    <acronym class="calendar published" title="2006-02-05T20:23:15+01:00">
-  <span class="month">Feb</span>
-  <span class="day">05</span>
-    <span class="year">2006</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/node/123/index.html">Multiple Front-End Solutions for Email and Calendaring?</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-            </div>
-  <div class="content"><p>A nice comment in anotherwise boring/<a href="http://ask.slashdot.org/comments.pl?sid=176271&amp;cid=14645386">Multiple Front-End Solutions for Email and Calendaring?</a><br />
-/. thread. <a href="http://www.treblig.org/">Dave Gilbert</a> says :</p>
-<blockquote><p>Lets get some convergence here - please can we actually lock the<br />
-Zimbra, Open Exchange, Sunbird, Open Groupware, Kolab<br />
-(I must have missed some....)<br />
-guys in a cave without food for a while until they actually agree to work together?<br />
-For a concession I'll let caffeinated beverages in and a few computers with a copy<br />
-of all known calendaring specs.</p>
-<p>
-(please toss in a couple of guys with MS programming experience so we can get Outlook<br />
-to talk to the servers).</p>
-</blockquote>
-<p>Great  idea,  so what about some conference organises a "Calendaring" track.  Or Maybe a devroom for next year  <a href="http://www.fosdem.org/">Raph</a>? <a href="http://www.linuxtag.org/">Nils</a>  ? <a href="http://conferences.oreillynet.com/">Anyone</a> ?</p>
-<p>Maybe <a href="/blog/www.x-tend/index.html">we</a> can even throw in some funding for the food fight afterwards :-)</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/123/index.html#comments" title="Jump to the first comment of this posting.">25 comments</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

@@ -68,7 +68,36 @@
   <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a></div></div>
   <h2 id="title">Kris Buytaert's blog</h2>
 <div class="content">
-<div class="item-list"></div><div id="node-1011" class="node teaser blog cal">
+<div class="item-list"></div><div id="node-1012" class="node teaser blog cal">
+    <acronym class="calendar published" title="2010-06-21T21:14:12+02:00">
+  <span class="month">Jun</span>
+  <span class="day">21</span>
+    <span class="year">2010</span>
+    </acronym>
+    <h2 class="title"><a href="../../inuits-day/index.html">Inuits Day </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1372 first"><a href="../../category/banquise/index.html" rel="tag" title="">banquise</a></li>
+<li class="taxonomy_term_1410"><a href="../../category/ci/index.html" rel="tag" title="">ci</a></li>
+<li class="taxonomy_term_1409"><a href="../../category/galera/index.html" rel="tag" title="">galera</a></li>
+<li class="taxonomy_term_520"><a href="../../taxonomy/term/520/index.html" rel="tag" title="">inuits</a></li>
+<li class="taxonomy_term_1408"><a href="../../category/inuits-day/index.html" rel="tag" title="">inuits day</a></li>
+<li class="taxonomy_term_458 last"><a href="../../taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Couple of Fridays ago we had one of our @Inuits days again.  Rather than having some people give talks and presentations about what they have been doing for the  past couple of months this time we set out to  research, test, and build stuff.</p>
+<p>We split up in 3 different groups,  one focusing on CI and testing freshly build stuff with cucumber,   a second one setup and tested <a href="http://www.codership.com/products/galera_replication" rel="nofollow">Galera</a></p>
+<p>We setup a 3 node Galera cluster , not really as smooth as we'd like to ..</p>
+<p>Our first bump was that the installation of the package on CentOS is hell, it needs manual interaction such as replacing  packages.  Deploying this from a repository is probably not going to be a straight forward option.</p>
+<p>Galera only takes care of replicating data, just as with MySQL MM replication there still is a need for an external tool to define where to access the database, and implement monitoring in such a way that you are connecting to an up to date database.</p>
+<p><a href="http://poke152.blogspot.com/" rel="nofollow">Karl</a> started wondering about Galera's locking,  turns out the locks aren't cluster wide, locks within the same node work fine.. so if galera is solely used for HA with 1 active node and X failover nodes, it will work (so all transactions happening on 1 node).</p>
+<p>We also ran into some issues when trying to start a node which couldn't contact the wsrep_cluster_address point (which is a node it will sync from at startup if specified in the wsrep.cnf file) , it just didn't want to start. This means that when the referenced node (configured in wsrep_cluster_address)is down, you will need to comment it out before you are able to start the mysql server.</p>
+<p>The fact that Galera replicates everythying brought us to the discussion if we really wanted that , or if we wanted more finegrained control over which databases or even tables we want to replicate and which ones we didn't want to replicate.  A minority of people wanted to replicate everything,  the majority of our group wanted finere grained control over what is being replicated to another node.</p>
+<p>I`m sure <a href="http://www.lefred.be/" rel="nofollow">Lefred</a> will shortly be writing about the progress his group made on <a href="http://www.banquise.be/" rel="nofollow">Banquise</a></p>
+<p>The day ended as it should .. with BBQ and plenty of drinks</p>
+</div>
+</div>
+<div id="node-1011" class="node teaser blog cal">
     <acronym class="calendar published" title="2010-06-18T22:50:40+02:00">
   <span class="month">Jun</span>
   <span class="day">18</span>
@@ -342,25 +371,6 @@ slides is there to misguide the audience ... :)   Everybody knows drinking beer 
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../nluug-spring-conference-2010/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
 </ul></div>
-</div>
-<div id="node-1002" class="node teaser blog cal">
-    <acronym class="calendar published" title="2010-05-05T19:28:32+02:00">
-  <span class="month">May</span>
-  <span class="day">05</span>
-    <span class="year">2010</span>
-    </acronym>
-    <h2 class="title"><a href="../../today-everything-could-have-been-freaking-dnssec-problem/index.html">Today everything could have been  a freaking dnssec problem</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1387 first"><a href="../../category/dnsproble/index.html" rel="tag" title="">dnsproble</a></li>
-<li class="taxonomy_term_1391"><a href="../../category/dnssec/index.html" rel="tag" title="">dnssec</a></li>
-<li class="taxonomy_term_1352 last"><a href="../../category/eiafdp/index.html" rel="tag" title="">eiafdp</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>You might have read about it .. al over the internets.  but today a big step for the implementation of global  DnsSec implementation is being made .</p>
-<p>You might want to <a href="http://etherealmind.com/dnssec-and-why-the-internet-probably-wont-break-today/" rel="nofollow">read up</a> about the impact. </p>
-<p>And <a href="https://www.dns-oarc.net/oarc/services/replysizetest" rel="nofollow">test here</a> if you are unsure about your situation.</p>
-</div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index9.html?page=9" title="Go to previous page" class="active">‹ previous</a></li>

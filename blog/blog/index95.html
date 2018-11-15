@@ -67,6 +67,60 @@
 
 <div id="main">
 <div class="content">
+<div id="node-93" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-12-30T10:05:45+01:00">
+  <span class="month">Dec</span>
+  <span class="day">30</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="../node/93/index.html">MegaIDE  and DMRaid</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>I've ranted before about the difficulties of getting a 2.6 kernel to work with a  Silicon Image  ATA  Controller , Afterall  it seemed that it was just a case of bad habits</p>
+<p>The problems I was running into was that I could partition a disk,  say /dev/hdd1 make a filesystem on it but not mount it,  or when I got so lucky to mount it and write on it, at the next reboot the data wasn't there anymore.<br />
+I repeatedly spent a couple of minutes looking after a replacement for the  MegaIDE that existed in 2.4 for a 2.6 kernel, never found one.<br />
+Now it seems that support has been there al the time  and that dmraid seemed to be my friend all along,</p>
+<p>As soon as you realise that you know you have to stop using /dev/hdwhatever and use /dev/mapper/$devicename , and that seems to work like a charm :)</p>
+<pre><a href="../root%40cnode1%20_/index.html">root@cnode1 ~</a># dmraid -s
+*** Active Set
+name   : lsi_cdhajaiciia
+size   : 78165359
+stride : 128
+type   : stripe
+status : ok
+subsets: 0
+devs   : 1
+spares : 0
+*** Active Set
+name   : lsi_cdhajaiciib
+size   : 78165359
+stride : 128
+type   : stripe
+status : ok
+subsets: 0
+devs   : 1
+spares : 0
+*** Active Set
+name   : lsi_cdhajaiciic
+size   : 78165359
+stride : 128
+type   : stripe
+status : ok
+subsets: 0
+devs   : 1
+spares : 0
+*** Active Set
+name   : lsi_cdhajaiciid
+size   : 78165359
+stride : 128
+type   : stripe
+status : ok
+subsets: 0
+devs   : 1
+spares : 0</pre><p>I only needed access to 4 separate disks,  but off course the moment you really want to put these disk in raid you'll have to get this into your initrd.</p>
+</div>
+</div>
 <div id="node-92" class="node teaser story cal">
     <acronym class="calendar published" title="2005-12-29T20:27:24+01:00">
   <span class="month">Dec</span>
@@ -224,25 +278,6 @@ Today I also received the invitation to speak at <a href="http://www.linuxdays.l
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../node/84/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
 </ul></div>
-</div>
-<div id="node-83" class="node teaser story cal">
-    <acronym class="calendar published" title="2005-12-07T16:36:38+01:00">
-  <span class="month">Dec</span>
-  <span class="day">07</span>
-    <span class="year">2005</span>
-    </acronym>
-    <h2 class="title"><a href="../node/83/index.html">Xen 3 , Everythying is a ...</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-            </div>
-  <div class="content"><pre>bash-3.00# /etc/init.d/xend start
-Exception starting xend: (-3, 'Temporary failure in name resolution')
-.........-bash-3.00#vi /etc/hosts
--bash-3.00# /etc/init.d/xend start
--bash-3.00# xm list
-Name                              ID Mem(MiB) VCPUs State  Time(s)
-Domain-0                           0     1894     2 r<del></del>-   187.3</pre><p>No further comment required.</p>
-</div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index94.html?page=94" title="Go to previous page" class="active">‹ previous</a></li>

@@ -6,6 +6,48 @@
  <description></description>
  <language>en</language>
 <item>
+ <title>The return of the Dull Stack Engineer.</title>
+ <link>http://krisbuytaert.be/blog/return-dull-stack-engineer</link>
+ <description>&lt;p&gt;Every day we get emails from recruiters who are looking for a devops engineer to help their customer.&lt;/p&gt;
+&lt;p&gt;When we ask them if they are looking for a developer or an operations person they have no clue what to answer. Because a devops engineer doesn&#039;t exist.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt; DevOps Engineer is not a title&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The DevOps community has a long time ago established that DevOps is not a job title, it&#039;s not a Java developer running production, and it&#039;s not an Ops girl patching java code. Neither is it the person in charge of tooling. And it certainly  isn&#039;t an engineer working in a DevOps team.&lt;/p&gt;
+&lt;p&gt;But for a lot of recruiters and some IT professionals that are still working in a a traditional top/down environment and who want to become more agile, a #devops engineer simply sounds better than a senior Linux engineer, which is what they typically are looking for.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt; The Myth of the Full Stack Engineer&lt;/em&gt;&lt;br /&gt;
+And when that mythical all in one DevOps engineer that could both write code and design, run and manage platforms couldn&#039;t be found, they narrowed their search margin.&lt;/p&gt;
+&lt;p&gt;They started looking for a Full Stack Engineer, who pretty much needed to be capable of doing the same. Or not... Because most so called  full stack engineers are  actually  MEAN  stack engineers. Engineers that typically barely understand the stack he is really working with aka the Mean Stack... Which is the stack composed of MongoDB, Express.js AngularJS and Node.js.&lt;/p&gt;
+&lt;p&gt;What a full stack engineer really means is an engineer who has experience in all components of the stack that its application touches. From the Linux kernel, to the networking, the middleware and the database components, all the way up to the web server and the frontend application.&lt;/p&gt;
+&lt;p&gt;But how many people do you know that both have their names in the Linux Kernel, can performance tune a SQL stack, debug a Java Stack-trace and even build customer facing web applications ?&lt;/p&gt;
+&lt;p&gt;Indeed,  we don&#039;t know that many people with those skills or experiences And the people that mark all the checkboxes have their experience stretched over multiple  decades... They didn&#039;t do all of those things together.&lt;/p&gt;
+&lt;p&gt;So both the concept of the Full Stack Engineer and the #devops engineer have come with a common problem : those people really don&#039;t exist...&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The Knowledge is in the team&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Building  cross-functional application teams, it is about getting people with all of those skills  to collaborate with each other and understanding each other.  It&#039;s not about that one human being doing all the things. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt; Hype Driven Development&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The second pattern we&#039;ve seen is the concept of hype driven, conference driven, or   CV driven development. Three variants of the same problem.&lt;/p&gt;
+&lt;p&gt;A developer forgets about the operational requirements for the applications being built, forgets about the non-functional requirements and jumps on the latest and newest fancy technology he/she wants to learn. Either because he/she just heard about it at a conference, because the tool he/she wants to use is really really being hyped. Or just because they want to build  experience with that tool so they can add it to their CV to get that next job they want to have.&lt;/p&gt;
+&lt;p&gt;Often tools need a couple of releases to mature  before they are ready to use in production, and before they are stable enough to trust with your data.  It&#039;s not uncommon that frequently used tools lack crucial functionality so it can be used in a production environment. Things like support for good metrics and monitoring, or consistent data snapshots for backups.&lt;/p&gt;
+&lt;p&gt;But they jump on the hype... We take the fancy new tool and act like the cool kids. The fact that this new tool doesn&#039;t even come close to solving the business need they have, the fact that it actually often widens the gap between  developers and operations people isn&#039;t important to them.&lt;/p&gt;
+&lt;p&gt;We fall into the trap  and forget the most important #DevOps principle: Collaboration to bring business value.&lt;/p&gt;
+&lt;p&gt;Boring is Powerful, Boring is stable&lt;/p&gt;
+&lt;p&gt;The container movement of the past 4 years is often sadly a good example of this tendency to be driven by hype. Many organizations have jumped on Docker and other container tools, thinking that a tool adoption will help them become more &quot;DevOps&quot; and use microservices to gain speed and innovate faster.&lt;/p&gt;
+&lt;p&gt;Bridget Kromhout has been quoted to say &quot;Putting your monolith in a container does not make it a micro service&quot; - yet it&#039;s the default adoption pattern for a lot of Enterprises. They believe that containers are going to save them and solve all their development problems.&lt;/p&gt;
+&lt;p&gt;This isn&#039;t what #devops is about. DevOps was never about fancy new devops tools.   Have we all forgotten one of the key principles of agile is &quot;People over processes and tools&quot; ?&lt;br /&gt;
+DevOps was from the start about bringing value to the end user, the business, the customer.&lt;/p&gt;
+&lt;p&gt;And yes new technology is fun, but it doesn&#039;t mean it&#039;s stable or performant. Like Jon Topper mentioned at DevopsDays London:&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt; &quot;Boring is Powerfull, boring is stable&quot;&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;A platform that is boring often means that there aren&#039;t any bleeding edges around it. It often means that it is more stable. Think about an engineer who is on call. He wants to be bored. He does not want to being paged every other hour.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt; And here is the Dull Stack Engineer&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So imagine a number of people at a conference discussing this problem, joking about those Full Stack engineers with their fancy new tools who fail to collaborate. And by accident saying &quot;Dull stack Engineer&quot;&lt;/p&gt;
+&lt;p&gt;This is when I realized that this is actually what we want. People who care about the business and collaborating with their peers, rather than jumping on the latest and shiniest new tooling. A Dull Stack engineer.&lt;/p&gt;
+&lt;p&gt;The concept being born on a swing at a conference in Bucharest, quickly started to live it&#039;s own life. More engineers started taking pictures of themselves on a swing and endorsing others for Dull Stack engineering on LinkedIn.&lt;/p&gt;
+&lt;p&gt;Building stable platforms that brings value to your business can happen with boring old tools, there&#039;s nothing wrong with your team if they don&#039;t go for fancy containers but stick with trusted automation in VM&#039;s or even bare metal.&lt;/p&gt;
+&lt;p&gt;Because DevOps is about collaborating with your peers, it&#039;s not about tools, and once we realize that... The on-call engineers might be bored again :)&lt;/p&gt;
+</description>
+ <pubDate>Tue, 13 Nov 2018 20:13:06 +0000</pubDate>
+ <dc:creator>Kris Buytaert</dc:creator>
+ <guid isPermaLink="false">1116 at http://krisbuytaert.be/blog</guid>
+</item>
+<item>
  <title>11.5 Factor apps</title>
  <link>http://krisbuytaert.be/blog/115-factor-apps</link>
  <description>&lt;p&gt;Each time someone talks about the 12 Factor Application a weird feeling overcomes me .. Because I like the concept .. but it feels awkward .. it feels as if someone with 0 operational experience wrote it. And this devil is in a really small detail.&lt;/p&gt;
@@ -192,7 +234,7 @@ We ask this question  because we have rooms in different sizes and we don&#039;t
 &lt;p&gt;But it also gives us to opportunity to build some very interesting graph over the potential evolution of the communities.&lt;/p&gt;
 &lt;p&gt;So looking at the figures ... the overall community is obviously growing,From 350 to 420, to just short of 600 people registered now.   &lt;/p&gt;
 &lt;p&gt;The Puppet Community is not the biggest anymore, that spot went to the Ansible Community room.   And all but the CFengine communities are growing.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://www.krisbuytaert.be/images/RoomSizes2016.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.krisbuytaert.be/images/RoomSizes2016.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;One more thing ,  The organisation team discussed several times if we should rebrand the event.   We opted not to ..  Infracoders.eu  could have been an alternative name .. but we decided to stick with the name that already is known,&lt;br /&gt;
 the content will evolve.. but Config Management Camp will stay the place where people that care about Infrastructure as Code and Infrastructure automation meet.&lt;/p&gt;
 </description>
@@ -214,14 +256,14 @@ the content will evolve.. but Config Management Camp will stay the place where p
  <link>http://krisbuytaert.be/blog/recent-and-upcoming-talks</link>
  <description>&lt;p&gt;I gave a couple of new and updated talks the last couple of months.&lt;/p&gt;
 &lt;p&gt;At Fosdem, I opened up the Distributions Devroom with a talk on how we could improve the collaboration between the developers of a distro, and their users, the ops folks.  I seemed to not be the only person with similar ideas as the smart folks over at the CentOS project were already actively talking about their efforts into making some my ideas become reality the day before at the CentOS Dojo.&lt;/p&gt;
-&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/7Pf3zfdlflWvei&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;br /&gt;
-&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/KrisBuytaert/closing-the-gap-between-distrosdevs-and-their-usersops&quot; title=&quot;Closing the gap between Distros(devs) and their Users(ops)&quot; target=&quot;_blank&quot;&gt;Closing the gap between Distros(devs) and their Users(ops)&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;//www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;p&gt;&lt;iframe src=&quot;https://www.slideshare.net/slideshow/embed_code/key/7Pf3zfdlflWvei&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;https://www.slideshare.net/KrisBuytaert/closing-the-gap-between-distrosdevs-and-their-usersops&quot; title=&quot;Closing the gap between Distros(devs) and their Users(ops)&quot; target=&quot;_blank&quot;&gt;Closing the gap between Distros(devs) and their Users(ops)&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
 &lt;/p&gt;&lt;p&gt;Another talk of early this year was an update on the why Security is requires a devops aproach, why you want to embed security as a standard practice in your development process and why continuous delivery actually is a security requirement. &lt;/p&gt;
-&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/aEg8OJ3MS8wkzR&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;br /&gt;
-&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/KrisBuytaert/dev-secops-opsec-devsec-devops&quot; title=&quot;Dev secops opsec, devsec, devops ?&quot; target=&quot;_blank&quot;&gt;Dev secops opsec, devsec, devops ?&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;//www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;p&gt;&lt;iframe src=&quot;https://www.slideshare.net/slideshow/embed_code/key/aEg8OJ3MS8wkzR&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;https://www.slideshare.net/KrisBuytaert/dev-secops-opsec-devsec-devops&quot; title=&quot;Dev secops opsec, devsec, devops ?&quot; target=&quot;_blank&quot;&gt;Dev secops opsec, devsec, devops ?&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
 &lt;/p&gt;&lt;p&gt;At last weeks FLOSS UK Conference in London , I gave an updated version of My MonitoringLove talk, giving an opinionated overview of the current state of Open Source Monitoring tools.&lt;/p&gt;
-&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/ebCtrEP90Iufn&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;br /&gt;
-&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/KrisBuytaert/from-monitoringsucks-to-monitoring-love-2016-edition&quot; title=&quot;From MonitoringSucks to Monitoring Love , 2016 Edition&quot; target=&quot;_blank&quot;&gt;From MonitoringSucks to Monitoring Love , 2016 Edition&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;//www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;p&gt;&lt;iframe src=&quot;https://www.slideshare.net/slideshow/embed_code/key/ebCtrEP90Iufn&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;br /&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;https://www.slideshare.net/KrisBuytaert/from-monitoringsucks-to-monitoring-love-2016-edition&quot; title=&quot;From MonitoringSucks to Monitoring Love , 2016 Edition&quot; target=&quot;_blank&quot;&gt;From MonitoringSucks to Monitoring Love , 2016 Edition&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.slideshare.net/KrisBuytaert&quot;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
 &lt;/p&gt;&lt;p&gt;I was scheduled to give the Opening Keynote today (23/3/2016) at the &lt;a href=&quot;http://mossconf.ro/&quot;&gt;Making Open Source Software Conference &lt;/a&gt; , but sadly I had to cancel that due to yesterdays (22/3/2016) events at Brussels Airport.  My flight to Bucharest was obviously cancelled.&lt;/p&gt;
 &lt;p&gt;I`m scheduled to open up the 2nd day of the the upcoming &lt;a href=&quot;http://www.devopsdays.org/events/2016-london/program/&quot;&gt;Devopsdays London Edition &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;And &lt;a href=&quot;https://twitter.com/gethash&quot;&gt;Bernd Erk&lt;/a&gt; tricked me into giving a follow up talk on my popular 7 tools for your devops stack talk, aptly titled &lt;a href=&quot;https://www.netways.de/en/events_trainings/osdc/program/kris_buytaert_another_7_tools_for_your_devops_stack/&quot;&gt;Another 7 tools for your devops stack&lt;a/&gt;&lt;/a/&gt;&lt;/a&gt;&lt;/p&gt;
@@ -232,19 +274,6 @@ the content will evolve.. but Config Management Camp will stay the place where p
  <pubDate>Wed, 23 Mar 2016 20:58:16 +0000</pubDate>
  <dc:creator>Kris Buytaert</dc:creator>
  <guid isPermaLink="false">1106 at http://krisbuytaert.be/blog</guid>
-</item>
-<item>
- <title>Bimodal IT , redefined</title>
- <link>http://krisbuytaert.be/blog/bimodal-it-redefined</link>
- <description>&lt;p&gt;There&#039;s been a lot of discussion about the sillynes of the term BiModal IT, aka the next big thing for IT-organisations that don&#039;t dare to change, but still want to sound cool.&lt;/p&gt;
-&lt;p&gt;So here is my idea to reuse that term for something relevant.&lt;/p&gt;
-&lt;p&gt;BiModal IT, is the idea where you take a fully automated infrastructure which has been build on the principles of Infrastructure as Code. Which gets periodic idempodent updates (e.g every 15 or 30 minutes, or when you orchestrate it), and consistency checks , where the source code for that infrastructure is versioned , tested and delivered trough  a traditional Continuous Delivery pipeline for the majority of your services. and add realtime reconfiguration capacities based on service discovery for the other services that really change fast, or in a real elastic way, using  tools like Consul, Consul_template, etcd etc..&lt;/p&gt;
-&lt;p&gt;That way you have 2 modes of managing your infrastructure, aka  BiModal&lt;/p&gt;
-</description>
- <comments>http://krisbuytaert.be/blog/bimodal-it-redefined#comments</comments>
- <pubDate>Thu, 07 Jan 2016 08:48:15 +0000</pubDate>
- <dc:creator>Kris Buytaert</dc:creator>
- <guid isPermaLink="false">1105 at http://krisbuytaert.be/blog</guid>
 </item>
 </channel>
 </rss>

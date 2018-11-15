@@ -67,6 +67,33 @@
 
 <div id="main">
 <div class="content">
+<div id="node-908" class="node teaser blog cal">
+    <acronym class="calendar published" title="2009-05-15T20:12:36+02:00">
+  <span class="month">May</span>
+  <span class="day">15</span>
+    <span class="year">2009</span>
+    </acronym>
+    <h2 class="title"><a href="../machine-vanished/index.html">The machine that vanished.</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1159 first"><a href="../category/automating/index.html" rel="tag" title="">automating</a></li>
+<li class="taxonomy_term_489"><a href="../taxonomy/term/489/index.html" rel="tag" title="">linux</a></li>
+<li class="taxonomy_term_995"><a href="../taxonomy/term/995/index.html" rel="tag" title="">raid</a></li>
+<li class="taxonomy_term_1251 last"><a href="../category/raid-sucks/index.html" rel="tag" title="">raid sucks</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Today I lost a machine,  a physical one, I couldn't find it back in my rack anymore.   One moment I was logged on to it, and when I instructed it to boot off the network again for a fresh installation I couldn't find it back anymore, it was gone.</p>
+<p>When you have different ad hoc build development environments, you often grab whatever hardware is available to add to your pool and hope it doesn't kick you back, time always works against you when you have to build a fresh platform from a pool of hardware ready to be reused.</p>
+<p>I had half a rack of hardware ready to be redeployed,  the default boot order of most machines is   Disk, Network  so we trigger a fresh network install by overwriting the MBR.   So the one machine .. after doing a quick check  to see if there was nothing relevant on it anymore we sent it to the reboot pool.</p>
+<p>The host  was supposed to boot of the network, but I didn't even see a dhcp request coming in.  So off to the lab it was .. where was that machine..  none of the consoles I tried was the correct one... until I found one box.. with a really really old installation , a machine that had returned from a different office.</p>
+<p>And then it all came clear ... unlike all the other machines this machine had a 2 disk raid setup, which we actually weren't using , we indeed hat cleared the bootsector of the first disk, but not the second disk .. and we never had really cleared the 2nd disk.  So rather than booting of the network because the first disk failed it booted of the old copy on the second disk.</p>
+<p>Scratching that 2nd disk solved the problem ..   for once it wasn't a DNS problem, but the RAID setup wasn't really helpfull either :)</p>
+<p>PS.  Yes re-labeling the machines is still on the todolist .. maybe next year :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../machine-vanished/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
+</ul></div>
+</div>
 <div id="node-907" class="node teaser blog cal">
     <acronym class="calendar published" title="2009-05-05T22:36:02+02:00">
   <span class="month">May</span>
@@ -326,35 +353,6 @@ Obviously this is the kind of partners the RedHat's  and Open Core vendors of th
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 <li class="comment_comments last"><a href="../ugly-clothing/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
-</ul></div>
-</div>
-<div id="node-898" class="node teaser blog cal">
-    <acronym class="calendar published" title="2009-04-10T21:21:53+02:00">
-  <span class="month">Apr</span>
-  <span class="day">10</span>
-    <span class="year">2009</span>
-    </acronym>
-    <h2 class="title"><a href="../cloudcamp-antwerp-0/index.html">CloudCamp Antwerp</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1202 first"><a href="../category/antwerpen/index.html" rel="tag" title="">antwerpen</a></li>
-<li class="taxonomy_term_1037"><a href="../taxonomy/term/1037/index.html" rel="tag" title="">cloud</a></li>
-<li class="taxonomy_term_1228"><a href="../category/marketeers/index.html" rel="tag" title="">marketeers</a></li>
-<li class="taxonomy_term_672"><a href="../taxonomy/term/672/index.html" rel="tag" title="">virtualization</a></li>
-<li class="taxonomy_term_470"><a href="../taxonomy/term/470/index.html" rel="tag" title="">xen</a></li>
-<li class="taxonomy_term_1216 last"><a href="../category/zoo/index.html" rel="tag" title="">zoo</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>So yesterday a 100+ crowd met in the Antwerp Zoo.<br />
-I heard different comments from that crowd... some of them liked the event,  good networking, interresting topics , a broad overview, meeting new vendors active in the Cloud, others of them didn't .. it wasn't a real camp , just some vendors pitching,  they didn't hear any new stuff , or we didn't touch the real stuff.</p>
-<p>So different opinions from different expectations... </p>
-<p>Anyhow  for all those who could't read the slides :  </p>
-<div style="width:425px;text-align:left" id="__ss_1271663"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/KrisBuytaert/cloudsec-dont-forget-security-in-the-cloud?type=presentation" title="CloudSec , don&#39;t forget Security in the Cloud !">CloudSec , don&#39;t forget Security in the Cloud !</a>
-<object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=cloudsec-090410031348-phpapp02&amp;stripped_title=cloudsec-dont-forget-security-in-the-cloud" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=cloudsec-090410031348-phpapp02&amp;stripped_title=cloudsec-dont-forget-security-in-the-cloud" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">View more <a style="text-decoration:underline;" href="http://www.slideshare.net/">presentations</a> from <a style="text-decoration:underline;" href="http://www.slideshare.net/KrisBuytaert">Kris Buytaert</a>.</div>
-</div>
-<p>Or <a href=ihttp://www.krisbuytaert.be/presentations/CloudSec.odp">here</a></p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

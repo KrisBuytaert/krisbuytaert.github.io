@@ -67,6 +67,19 @@
 
 <div id="main">
 <div class="content">
+<div id="node-103" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-01-18T10:41:28+01:00">
+  <span class="month">Jan</span>
+  <span class="day">18</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="../node/103/index.html">770  (again)</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Remember me ranting on the 770 not being usable for lefthanded people ? I need to test <a href="http://syslog.movial.fi/archives/7-xrandr-on-nokia-770.html">this</a> someday</p>
+</div>
+</div>
 <div id="node-102" class="node teaser story cal">
     <acronym class="calendar published" title="2006-01-18T10:21:47+01:00">
   <span class="month">Jan</span>
@@ -232,60 +245,6 @@ I`m lucky I took notes while reading it because otherwise this review would neve
             </div>
   <div class="content"><p>Tab just sent me mail that he fixed some issues in 2.6, So  I checked out revision 9.</p>
 <p>However not the one we are hunting after yet,  We are  looking closer at the problem once again by running different applications. Dammit my soup just burned to the pan :(  I'll get back to you folks with my testing updates after this intervention.  (I hope)</p>
-</div>
-</div>
-<div id="node-93" class="node teaser story cal">
-    <acronym class="calendar published" title="2005-12-30T10:05:45+01:00">
-  <span class="month">Dec</span>
-  <span class="day">30</span>
-    <span class="year">2005</span>
-    </acronym>
-    <h2 class="title"><a href="../node/93/index.html">MegaIDE  and DMRaid</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-            </div>
-  <div class="content"><p>I've ranted before about the difficulties of getting a 2.6 kernel to work with a  Silicon Image  ATA  Controller , Afterall  it seemed that it was just a case of bad habits</p>
-<p>The problems I was running into was that I could partition a disk,  say /dev/hdd1 make a filesystem on it but not mount it,  or when I got so lucky to mount it and write on it, at the next reboot the data wasn't there anymore.<br />
-I repeatedly spent a couple of minutes looking after a replacement for the  MegaIDE that existed in 2.4 for a 2.6 kernel, never found one.<br />
-Now it seems that support has been there al the time  and that dmraid seemed to be my friend all along,</p>
-<p>As soon as you realise that you know you have to stop using /dev/hdwhatever and use /dev/mapper/$devicename , and that seems to work like a charm :)</p>
-<pre><a href="../root%40cnode1%20_/index.html">root@cnode1 ~</a># dmraid -s
-*** Active Set
-name   : lsi_cdhajaiciia
-size   : 78165359
-stride : 128
-type   : stripe
-status : ok
-subsets: 0
-devs   : 1
-spares : 0
-*** Active Set
-name   : lsi_cdhajaiciib
-size   : 78165359
-stride : 128
-type   : stripe
-status : ok
-subsets: 0
-devs   : 1
-spares : 0
-*** Active Set
-name   : lsi_cdhajaiciic
-size   : 78165359
-stride : 128
-type   : stripe
-status : ok
-subsets: 0
-devs   : 1
-spares : 0
-*** Active Set
-name   : lsi_cdhajaiciid
-size   : 78165359
-stride : 128
-type   : stripe
-status : ok
-subsets: 0
-devs   : 1
-spares : 0</pre><p>I only needed access to 4 separate disks,  but off course the moment you really want to put these disk in raid you'll have to get this into your initrd.</p>
 </div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

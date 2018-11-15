@@ -67,6 +67,29 @@
 
 <div id="main">
 <div class="content">
+<div id="node-932" class="node teaser blog cal">
+    <acronym class="calendar published" title="2009-08-03T23:14:41+02:00">
+  <span class="month">Aug</span>
+  <span class="day">03</span>
+    <span class="year">2009</span>
+    </acronym>
+    <h2 class="title"><a href="../centos-fine-dns-problem/index.html">Centos, a fine DNS problem </a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_480 first"><a href="../taxonomy/term/480/index.html" rel="tag" title="">centos</a></li>
+<li class="taxonomy_term_437"><a href="../taxonomy/term/437/index.html" rel="tag" title="">dnsproblem</a></li>
+<li class="taxonomy_term_599 last"><a href="../taxonomy/term/599/index.html" rel="tag" title="">opensource</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>You must have noticed the fuzz around CentOS,  <a href="http://lists.centos.org/pipermail/centos/2009-July/079767.html" rel="nofollow">the open Letter</a>  , and luckily Lance  <a href="http://www.centos.org/" rel="nofollow">showing up</a> again ..   </p>
+<p>I've been a long time CentOS user , so this kind of events are pretty close to my heart, I never really worried about the future of the project  ,  the CentOS community is was standing behind their message as one group.  If Lance wouldn't have shown up again  quoting <a href="http://www.arrfab.net/blog/" rel="nofollow">Arrfab</a>:<br />
+"The worst would be to switch to another domain name .. but you already know that everything is a fscking DNS problem"</p>
+<p>In this case it would actually be more of a mareketing problem :)</p>
+<p>Fact is that <a href="http://www.icinga.org/" rel="nofollow">sometimes</a> an active community standing up against a lesser active project lead has it's results, however  this time there probably won't be any other DNS entries to be added , but I hope one day the logo will become better :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
 <div id="node-931" class="node teaser blog cal">
     <acronym class="calendar published" title="2009-08-03T22:54:50+02:00">
   <span class="month">Aug</span>
@@ -283,48 +306,6 @@ rpms</p>
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 <li class="comment_comments last"><a href="../webbased-administration-interfaces/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
-</ul></div>
-</div>
-<div id="node-922" class="node teaser blog cal">
-    <acronym class="calendar published" title="2009-07-01T16:01:57+02:00">
-  <span class="month">Jul</span>
-  <span class="day">01</span>
-    <span class="year">2009</span>
-    </acronym>
-    <h2 class="title"><a href="../drbd2-ocfs2-unexplained-crashes/index.html">DRBD2, OCFS2,  Unexplained crashes</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_899 first"><a href="../taxonomy/term/899/index.html" rel="tag" title="">drbd</a></li>
-<li class="taxonomy_term_434"><a href="../taxonomy/term/434/index.html" rel="tag" title="">gfs</a></li>
-<li class="taxonomy_term_449"><a href="../taxonomy/term/449/index.html" rel="tag" title="">ha</a></li>
-<li class="taxonomy_term_1268"><a href="../category/iscsi/index.html" rel="tag" title="">iscsi</a></li>
-<li class="taxonomy_term_1269"><a href="../category/netconsole/index.html" rel="tag" title="">netconsole</a></li>
-<li class="taxonomy_term_1267 last"><a href="../category/ocfs2/index.html" rel="tag" title="">ocfs2</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>I was trying to setup a dual-primary DRBD environment, with a shared disk with either OCFS2 or GFS.   The environment is a Centos 5.3 with DRBD82 (but also tried with DRBD83 from testing) .</p>
-<p>Setting up a single primary disk and running bonnie++ on it worked Setting up a dual-primary disk, only mounting it on one node (ext3) and running bonnie++  worked</p>
-<p>When setting up ocfs2 on the /dev/drbd0 disk and mounting it on both nodes, basic functionality seemed in place but usually less than 5-10 minutes after I start bonnie++ as a test on one of the nodes , both nodes power cycle  with no errors in the logfiles, just a crash.</p>
-<p>When at the console at the time of crash it looks like a disk IO (you can type , but actions happen)  block happens  then a reboot, no panics, no oops , nothing. ( sysctl panic values set to timeouts etc )<br />
-Setting up a dual-primary disk , with ocfs2 only mounting it on one node and starting bonnie++ causes only that node to crash.</p>
-<p>On DRBD level I got the following error when that node disappears<br />
-<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">drbd0: PingAck did not arrive in time.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">drbd0: peer( Primary -&gt; Unknown ) conn( Connected -&gt; NetworkFailure )</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">pdsk(UpToDate -&gt; DUnknown )</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">drbd0: asender terminated</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">drbd0: Terminating asender thread</div></li></ol></pre></div><br />
-That however is an expected error because of the reboot.</p>
-<p>At first I assumed OCFS2 to be the root of this problem ..so I moved forward and setup an ISCSI target on a 3rd node, and used that device with the same OCFS2 setup. There no crashes occured and bonnie++ flawlessly completed it test run. </p>
-<p>So my attention went  back to the combination of DRBD and OCFS<br />
-I tried both DRBD 8.2 drbd82-8.2.6-1.el5.centos kmod-drbd82-8.2.6-2  and the 83 variant from Centos Testing</p>
-<p>At first I was trying with the ocfs2 1.4.1-1.el5.i386.rpm verson but upgrading to  1.4.2-1.el5.i386.rpm didn't change the behaviour </p>
-<p>Both the DRBD as the OCFS mailinglist were fairly supportive pointing me out that it was probably OCFS2 fencing both hosts after missing the heartbeat, and suggested increasing the deathtimetimeout values.</p>
-<p>I however wanted to confirm that. As I got no entries in syslog I attached a Cyclades err Avocent Terminal server to the device in the hope that I'd capture the last kernel messsages there ...   no such luck either.</p>
-<p>On the OCFS2 mailinlist people pointed out that i'd use netconsole to catch the logs on a remote node<br />
-I set up netconsole using</p>
-<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">modprobe  netconsole netconsole=&quot;@/,@172.16.32.1/&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">sysctl -w kernel.printk=&quot;7 4 1 7&quot;</div></li></ol></pre></div></p>
-<p>After which indeed I catched error on my remote host..<br />
-<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[base-root@CCMT-A ~]# nc -l -u -p 6666</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">(8,0):o2hb_write_timeout:166 ERROR: Heartbeat write timeout to device</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">drbd0 after 478000 milliseconds</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">(8,0):o2hb_stop_all_regions:1873 ERROR: stopping heartbeat on all active</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">regions.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">ocfs2 is very sorry to be fencing this system by restarting</div></li></ol></pre></div></p>
-<p>One'd think that it output over Serial console before it log over the network :)   It doesn't .</p>
-<p>Next step is that I`ll start fiddling some more with the timeout values :)  (note the ":)")</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

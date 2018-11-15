@@ -68,7 +68,25 @@
   <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a></div></div>
   <h2 id="title">Kris Buytaert's blog</h2>
 <div class="content">
-<div class="item-list"></div><div id="node-633" class="node teaser blog cal">
+<div class="item-list"></div><div id="node-634" class="node teaser blog cal">
+    <acronym class="calendar published" title="2008-04-01T21:25:11+02:00">
+  <span class="month">Apr</span>
+  <span class="day">01</span>
+    <span class="year">2008</span>
+    </acronym>
+    <h2 class="title"><a href="../../node/634/index.html">openID for Locations ?</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_860 first"><a href="../../taxonomy/term/860/index.html" rel="tag" title="">FireEagle</a></li>
+<li class="taxonomy_term_861 last"><a href="../../taxonomy/term/861/index.html" rel="tag" title="">mashup.openid</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Seems like not only <a href="http://kanonnenpoetser.blogspot.com/2008/03/barcamp-gent-2008.html" rel="nofollow">(I)Guy</a>  heard <a href="#">my pray</a> for a more mashed up Web.</p>
+<p>The nice folks over at <a href="http://fireeagle.yahoo.net/" rel="nofollow">FireEagle</a>  actually <a href="http://radar.oreilly.com/archives/2008/03/sharing-my-location-just-the-w.html" rel="nofollow">seem to have implemented</a> some of the features we discussed yet.</p>
+<p>Waiting for the invitation !</p>
+</div>
+</div>
+<div id="node-633" class="node teaser blog cal">
     <acronym class="calendar published" title="2008-04-01T21:06:44+02:00">
   <span class="month">Apr</span>
   <span class="day">01</span>
@@ -268,28 +286,6 @@ and realised I wasn't using Shareomatic enough ..   Probably because as far as I
         </div>
   <div class="content"><p><a href="http://blog.kriskerremans.be/" rel="nofollow">Kris</a>  has a blog these days ..  t<br />
 His <a href="http://blog.kriskerremans.be/?p=5" rel="nofollow">last post</a> shows how NOT to apply for a job with <a href="http://www.inuits.be/">us</a></p>
-</div>
-</div>
-<div id="node-624" class="node teaser blog cal">
-    <acronym class="calendar published" title="2008-03-17T20:17:18+01:00">
-  <span class="month">Mar</span>
-  <span class="day">17</span>
-    <span class="year">2008</span>
-    </acronym>
-    <h2 class="title"><a href="../../node/624/index.html">How NOT to figure out a  nameserver</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_437 first last"><a href="../../taxonomy/term/437/index.html" rel="tag" title="">dnsproblem</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>So I was trying to install this piece of software that I wanted to test ..<br />
-It came with a weird installscript that kept telling me it couldn't ping tom my nameserver </p>
-<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">.. checking network access via ping to DNS/IP: IN</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">...... unable to ping: IN : ping returned: 2</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">unable to ping DNS name server: IN</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">192.168.1.209 : ping returned code: 2</div></li></ol></pre></div></p>
-<p>Now why would it tro to ping IN ? </p>
-<p>This is why ..  the scripts tries to find out my nameserver using dig<br />
-<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">root@C51 ~]# dig localhost | grep SERVER  | cut -d# -f 1| awk '{print</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">$3}'</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">IN</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">192.168.1.209</div></li></ol></pre></div></p>
-<p>It didn't expect to get this feedback from dig<br />
-<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[root@C51 ~]# dig localhost</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">; &lt;&lt;&gt;&gt; DiG 9.3.3rc2 &lt;&lt;&gt;&gt; localhost</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">;; global options:  printcmd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">;; Got answer:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NXDOMAIN, id: 32043</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 0</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">;; QUESTION SECTION:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">;localhost.                     IN      A</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">;; AUTHORITY SECTION:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">.                       10215   IN      SOA     A.ROOT-SERVERS.NET.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">NSTLD.VERISIGN-GRS.COM. 2008031700 1800 900 604800 86400</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">;; Query time: 7 msec</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">;; SERVER: 192.168.1.209#53(192.168.1.209)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">;; WHEN: Mon Mar 17 21:02:50 2008</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">;; MSG SIZE  rcvd: 102</div></li></ol></pre></div></p>
 </div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

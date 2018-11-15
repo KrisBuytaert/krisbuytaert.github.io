@@ -67,6 +67,42 @@
 
 <div id="main">
 <div class="content">
+<div id="node-478" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-10-17T12:54:35+02:00">
+  <span class="month">Oct</span>
+  <span class="day">17</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="../node/478/index.html">Virtual Machine Replication</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_561 first"><a href="../taxonomy/term/561/index.html" rel="tag" title="">clustering</a></li>
+<li class="taxonomy_term_560"><a href="../taxonomy/term/560/index.html" rel="tag" title="">dreaming</a></li>
+<li class="taxonomy_term_449"><a href="../taxonomy/term/449/index.html" rel="tag" title="">ha</a></li>
+<li class="taxonomy_term_475"><a href="../taxonomy/term/475/index.html" rel="tag" title="">heartbeat</a></li>
+<li class="taxonomy_term_562"><a href="../taxonomy/term/562/index.html" rel="tag" title="">linux-ha</a></li>
+<li class="taxonomy_term_464"><a href="../taxonomy/term/464/index.html" rel="tag" title="">vapourware</a></li>
+<li class="taxonomy_term_563"><a href="../taxonomy/term/563/index.html" rel="tag" title="">virtual iron</a></li>
+<li class="taxonomy_term_555"><a href="../taxonomy/term/555/index.html" rel="tag" title="">vmware</a></li>
+<li class="taxonomy_term_470 last"><a href="../taxonomy/term/470/index.html" rel="tag" title="">xen</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>I don't know on which planet I have been for the past couple of years , days  or hours  but since when do <a href="http://blogs.zdnet.com/virtualization/?p=256" rel="nofollow"><br />
+VMware’s Vmotion, XenSource’s Xenmotion or Virtual Iron’s Virtual Iron support  Replication ?  </a></p>
+<p>Live Migration yes, but Replication ,  No.  </p>
+<p>I discussed this kind of technologies  with Mark and Vincent , Moshe and others already  a zillion times..  Continuously mirroring or realtime replication of a virtual machine is really difficult to do.  And I haven't heard from a working  scalable solution yet .. (Shared Memory issues such as we had with openMosix  still are amongst the issue to be tackled) </p>
+<p>Live Replication would mean that you mirror the full state of your virtual machine realtime to another running virtual machine.  Every piece of disk/memory and screen you are using has to be replicated to the other side of the wire realtime.  Yes you can take snapshots of filesystems and checkpoints of virtual machines.  But continuous checkpointing over the network  , I'd love to see that.. (outside of a lab)</p>
+<p>So with a promise  like that .. our good friends the CIO will be dreaming and the vendors will be blamed for not delivering what was promised to them.</p>
+<p>But on the subject of using just Live Migration features as an alternative for a real High Availability solution  , I know different vendors are singing this song,  but it's a bad one.</p>
+<p>Using Live migration in your infrastructure will give you the opportunity to move your applications away from a bad behaving machine when you notice it starts behaving badly, hence giving you a better overall uptime.  If however you don't notice the machine is failing, or if it just suddenly stops working, or if your application crashes you are out of luck.<br />
+Live migration won't work anymore since you are to late,  you can't migrate a machine that's dead.  The only thing you can do is quickly redeploy your virtual machine on another node, which for me doesn't really qualify as a Clustered or HA solution.</p>
+<p>Real HA looks at all the aspects of an application,  the state of the application, the state of the server it is running on and the state of the network it is connected to.  It has an alternative ready if any of these aspects fail.  Session data is replicated,  data storage is done redundantly and your network has multiple paths.    If your monitoring decides something went wrong another alternative should take over with no visible interruption for the end user.  You don't have to wait till your application is restarted on the other side of the network, you don't have to wait till your virtual machine is rebooted, your filesystems are rechecked and your database has recovered no it happens right away .</p>
+<p>But Virtual Machine Replication as an alternative for HA ?  I'd call that wishfull thinking and vapourware today</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../node/478/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
 <div id="node-476" class="node teaser blog cal">
     <acronym class="calendar published" title="2007-10-15T23:44:41+02:00">
   <span class="month">Oct</span>
@@ -289,30 +325,6 @@ And it seems that in the upcoming 5 release the nodes provide you with an URL  a
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 <li class="comment_comments last"><a href="../node/467/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
-</ul></div>
-</div>
-<div id="node-466" class="node teaser blog cal">
-    <acronym class="calendar published" title="2007-10-09T10:26:10+02:00">
-  <span class="month">Oct</span>
-  <span class="day">09</span>
-    <span class="year">2007</span>
-    </acronym>
-    <h2 class="title"><a href="../node/466/index.html">Announcing GeekDinner 6, Antwerp Edition</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_492 first"><a href="../taxonomy/term/492/index.html" rel="tag" title="">antwerp</a></li>
-<li class="taxonomy_term_493"><a href="../taxonomy/term/493/index.html" rel="tag" title="">doodle</a></li>
-<li class="taxonomy_term_490"><a href="../taxonomy/term/490/index.html" rel="tag" title="">geekdinner</a></li>
-<li class="taxonomy_term_491"><a href="../taxonomy/term/491/index.html" rel="tag" title="">geeks</a></li>
-<li class="taxonomy_term_532"><a href="../taxonomy/term/532/index.html" rel="tag" title="">steytelinck</a></li>
-<li class="taxonomy_term_533 last"><a href="../taxonomy/term/533/index.html" rel="tag" title="">wilrijk</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>So we doodled and now we have a Date , a Location , and a Page to Sign up for the evening.</p>
-<p>The majority of votes said we should meet on monday October 22 the which is what we'll do.  I figured out that <a href="http://www.steytelinck.be/" rel="nofollow">Kasteel Steytelinck in Wilrijk</a> would be a good location with parking space and easy to reach from different highways. </p>
-<p>And we also have a Wiki  where you can <a href="http://www.geekdinner.be/index.php/ITPRO200709" rel="nofollow">Sign up</a> for the event so we at least have an idea a how how many people will show up</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

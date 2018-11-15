@@ -67,6 +67,37 @@
 
 <div id="main">
 <div class="content">
+<div id="node-952" class="node teaser blog cal">
+    <acronym class="calendar published" title="2009-10-22T20:22:55+02:00">
+  <span class="month">Oct</span>
+  <span class="day">22</span>
+    <span class="year">2009</span>
+    </acronym>
+    <h2 class="title"><a href="../apparently-there-are-borders/index.html">Apparently there are Borders</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_437 first"><a href="../taxonomy/term/437/index.html" rel="tag" title="">dnsproblem</a></li>
+<li class="taxonomy_term_1318"><a href="../category/inuitsbe/index.html" rel="tag" title="">inuits.be</a></li>
+<li class="taxonomy_term_1320"><a href="../category/inuitseu/index.html" rel="tag" title="">inuits.eu</a></li>
+<li class="taxonomy_term_1319"><a href="../category/inuitsnl/index.html" rel="tag" title="">inuits.nl</a></li>
+<li class="taxonomy_term_1317 last"><a href="../category/zonefiles/index.html" rel="tag" title="">zonefiles</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>And therefore, sometimes you need to register domains in different countries.<br />
+So how does one proceed, one takes the zone file of the existing domain e.g. .be and creates a symlink for the different countries to the original zonefile e.g .nl and .eu .  Afterall, you want to have te same hosts available in every country and you want to keep the hassle down when you update a host.</p>
+<p>You tell your registrar, to reg the same domain for the other tld's with the usueal Nameservers , you know . the one that are listed in your original zonefile</p>
+<p>So your host file might look like this<br />
+<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        IN      NS      ns1</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        IN      NS      ns2</div></li></ol></pre></div></p>
+<p>Any idea what the effect is ?</p>
+<p>Exactly  your zone file tells the world to use ns1.domain.nl for each and every country you create it. So not ns1.domain.be  as you intened.</p>
+<p>Now some TLD's don't really care, but <a href="http://frank.be/" rel="nofollow">Frank</a> teached me that .nl DOES check this.  To technically I had to give myselve a "Freaking DNS" T-Shirt.  Apart from that it is just better practise to keep your setup correct anyhow.</p>
+<p>PS. Obviously same goes for .org .net and .com series.</p>
+<p>PS2.  Yes the title of my blog is Everything is a Freaking DNS problem, doesn't mean I don't make mistakes or that I know all the answers,  I just figured it's a big cause of  problems :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="../apparently-there-are-borders/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
+</ul></div>
+</div>
 <div id="node-951" class="node teaser blog cal">
     <acronym class="calendar published" title="2009-10-19T23:46:41+02:00">
   <span class="month">Oct</span>
@@ -297,30 +328,6 @@ I actually missed talks that I had wanted to see.. just because I was in the mid
 <p>On Sunday I did a rerun of my <a href="http://www.krisbuytaert.be/blog/virtsec-and-open-source">VirtSec</a> talk ,  the discussion was different this time  more open :)</p>
 <p>After my talk <a href="http://blog.sejo.be/?p=249" rel="nofollow">Sejo</a> gave his first talk on Djagios .. it went great .. albeit some members of the audience fiddling with his live demo.</p>
 <p>(Ok I plead guilty.. but it was just too tempting..)</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-</ul></div>
-</div>
-<div id="node-942" class="node teaser blog cal">
-    <acronym class="calendar published" title="2009-10-01T19:50:57+02:00">
-  <span class="month">Oct</span>
-  <span class="day">01</span>
-    <span class="year">2009</span>
-    </acronym>
-    <h2 class="title"><a href="../its-solutions-you-build-it/index.html">It&#039;s the solutions you build with it !</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1197 first"><a href="../category/open-core/index.html" rel="tag" title="">open core</a></li>
-<li class="taxonomy_term_461"><a href="../taxonomy/term/461/index.html" rel="tag" title="">open source</a></li>
-<li class="taxonomy_term_875 last"><a href="../taxonomy/term/875/index.html" rel="tag" title="">open source business models</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>I`m gonna have to quote <a href="http://www.adventuresinoss.com/?p=1141" rel="nofollow">Tarus</a>  once again : </p>
-<p><cite><br />
-For years now I’ve been struggling to educate the market on the fact that the business around open source software is not about software. It’s about solutions.</cite></p>
-<p>Let me repeat that .. it's not about selling software ... </p>
-<p><strong>It's about solutions</strong></p>
-<p>And obviously FLOSS  is the Ideal platform to build value for your customers</p>
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 </ul></div>

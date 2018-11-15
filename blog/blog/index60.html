@@ -67,6 +67,33 @@
 
 <div id="main">
 <div class="content">
+<div id="node-446" class="node teaser blog cal">
+    <acronym class="calendar published" title="2007-09-11T20:28:51+02:00">
+  <span class="month">Sep</span>
+  <span class="day">11</span>
+    <span class="year">2007</span>
+    </acronym>
+    <h2 class="title"><a href="../node/446/index.html">Multiple Bond Interfaces in Centos/RHEL</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_481 first"><a href="../taxonomy/term/481/index.html" rel="tag" title="">bond</a></li>
+<li class="taxonomy_term_482"><a href="../taxonomy/term/482/index.html" rel="tag" title="">bond0</a></li>
+<li class="taxonomy_term_483"><a href="../taxonomy/term/483/index.html" rel="tag" title="">bond1</a></li>
+<li class="taxonomy_term_480"><a href="../taxonomy/term/480/index.html" rel="tag" title="">centos</a></li>
+<li class="taxonomy_term_479 last"><a href="../taxonomy/term/479/index.html" rel="tag" title="">rhel</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So earlier today I was fighting with </p>
+<p><cite>bond1: error fetching interface information: Device not found</cite></p>
+<p>I had a machine with 4 nics that I wanted to bond 2 by to.   I had no problem getting the bond0 device up witn any of the interfaces, however getting a bond1 up always resulted in the above error.</p>
+<p>The friendly guys from #centos on freenode pointed me to the missing config.</p>
+<p><cite>options bonding mode=4 max_bonds=4</cite></p>
+<p>The important part being max_bonds<br />
+it seems that the default is 1  so adding one more fails.</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
 <div id="node-445" class="node teaser blog cal">
     <acronym class="calendar published" title="2007-09-11T20:23:45+02:00">
   <span class="month">Sep</span>
@@ -338,32 +365,6 @@ Next up was Olaf "thank god I`m not doing nfs anymore" Kirch (who also listens w
 One of these days I hope to find myself on the Great Barrier Reef and do scuba diving (which I love), but for some reason I've always ended up in other parts.<br />
 </cite></p>
 <p>So might I suggest Brisbane some time soon as a Linux.conf.au location ? :)</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-</ul></div>
-</div>
-<div id="node-436" class="node teaser blog cal">
-    <acronym class="calendar published" title="2007-09-02T19:11:24+02:00">
-  <span class="month">Sep</span>
-  <span class="day">02</span>
-    <span class="year">2007</span>
-    </acronym>
-    <h2 class="title"><a href="../node/436/index.html">Juliux End of Life Announcement</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_440 first"><a href="../taxonomy/term/440/index.html" rel="tag" title="">configuration management</a></li>
-<li class="taxonomy_term_442"><a href="../taxonomy/term/442/index.html" rel="tag" title="">juliux</a></li>
-<li class="taxonomy_term_439"><a href="../taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
-<li class="taxonomy_term_441 last"><a href="../taxonomy/term/441/index.html" rel="tag" title="">ruby</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>Raf posted the Juliux End Of Life announcement a couple of days ago, <a href="http://www.x-tend.be/pipermail/juliux-dev/2007-August.txt" title="http://www.x-tend.be/pipermail/juliux-dev/2007-August.txt" rel="nofollow">http://www.x-tend.be/pipermail/juliux-dev/2007-August.txt</a><br />
-We started Juliux about 2 years ago with as idea to create an open source alternative for  the back then proprietary RedHat Satelite and the back then totally broken ZLM from Novell. We set out to build a webbased platform from where you could do package management for a hybrid set of servers, with as a second version target to also integrate some form of configuration management.  We even presented our proof of Concept at the 2006 UKUUG Lisa Conference</p>
-<p>RedHat in the meanwhile announced open sourceing Satellite,  but more importantly Puppet became more popular and more feature rich.<br />
-One of the  features that came in puppet that made me rethink Juliux was the fact that you could do package management including installation etc within Juliux,  so I started thinking about making Juliux a webfrontend that used Puppet as a back end.</p>
-<p>The ideas were good, but we really didn't have time to focus on developing the things we wanted to write.  So when I ran into <a href="http://reductivelabs.com/projects/puppet/documentation/rails-puppet-manager" rel="nofollow">PuppetShow</a> the time was right to refocus the little efforts we were spending and as Raf announced he now will be working on PuppetShow when he has time.</p>
-<p>Funny . there was a time when I was thinking about rebranding Julux to PuppetMaster,  or Master of Puppets,  but I actually like PuppetShow better .. So we had similar ideas , only Luke had more time to implement his ideas .    </p>
-<p>Time often is an issue in opensource development.  There's lots of stuff that I have in my head that could easily be written .. but I don't always have time to do it myselve or other people available that can write it for me .. :(  Well.. maybe one day :)</p>
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 </ul></div>

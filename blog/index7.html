@@ -67,6 +67,41 @@
 
 <div id="main">
 <div class="content">
+<div id="node-1044" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-06-10T16:26:18+02:00">
+  <span class="month">Jun</span>
+  <span class="day">10</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/case-augeas/index.html">The case for Augeas</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1458 first"><a href="/blog/category/augeas/index.html" rel="tag" title="">augeas</a></li>
+<li class="taxonomy_term_1328"><a href="/blog/category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_1460"><a href="/blog/category/lens/index.html" rel="tag" title="">lens</a></li>
+<li class="taxonomy_term_439"><a href="/blog/taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1459"><a href="/blog/category/sipxecs/index.html" rel="tag" title="">sipxecs</a></li>
+<li class="taxonomy_term_1177 last"><a href="/blog/category/xml/index.html" rel="tag" title="">xml</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Ever since I met David Lutterkort over steaks at OLS 2007  augeas was this tool in the back of my mind that I couldn't place...  I never saw the need for it... or it seemed to be huge overkill for the problem that needed solving .</p>
+<p>Till I ran into sipxecs rewriting XML files on the fly .. and putting values in their XML that I could not trace back to an original source.  As of Augeas 0.8.x there's an XML lens out there.</p>
+<p>Digging innot blah.xml with augtool you can do stuff like</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">set /augeas/load/Xml/incl[3] /tmp/blah.xml</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">set /augeas/load/Xml/lens Xml.lns</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">load</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">print /files/tmp/blah.xml/profile/settings/param[17]/</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[17] = &quot;#empty&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[17]/#attribute</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[17]/#attribute/name = &quot;sip-ip&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[17]/#attribute/value = &quot;10.255.202.90&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">augtool&gt; print /files/tmp/blah.xml/profile/settings/param[18]/</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[18] = &quot;#empty&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[18]/#attribute</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[18]/#attribute/name = &quot;ext-rtp-ip&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[18]/#attribute/value = &quot;auto-nat&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">augtool&gt; print /files/tmp/blah.xml/profile/settings/param[16]/</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[16] = &quot;#empty&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[16]/#attribute</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[16]/#attribute/name = &quot;rtp-ip&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/tmp/blah.xml/profile/settings/param[16]/#attribute/value = &quot;10.255.202.90&quot;</div></li></ol></pre></div></p>
+<p>and get and set</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">augtool&gt; get  /files/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml/profile/settings/param[17]/#attribute/value</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/files/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml/profile/settings/param[17]/#attribute/value = 10.255.202.90</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">augtool&gt; set /files/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml/profile/settings/param[16]/#attribute/value 10.0.0.2</div></li></ol></pre></div></p>
+<p>Putting that into puppet however isn't that tvivial .</p>
+<p>When you try to do this</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">augeas{&quot;sipxprofile&quot; :</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        changes =&gt; [</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        &quot;set /augeas/load/Xml/incl[last()+1] /etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        &quot;set /files/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml/profile/settings/param[16]/#attribute/value 10.0.0.2&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        &quot;set /files/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml/profile/settings/param[17]/#attribute/value 10.0.0.2&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        ],</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        }</div></li></ol></pre></div></p>
+<p>Puppet really doesn't output what you want to do ... it only outputs the snippet you modify ..<br />
+It's the load statement above that is the really important piece but puppet can't directly work with that so you need to go around that using<br />
+The way to solve this is</p>
+<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">augeas{&quot;sipxprofile&quot; :</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        lens    =&gt; &quot;Xml.lns&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        incl    =&gt; &quot;/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        context =&gt; &quot;/files/etc/sipxpbx/freeswitch/conf/sip_profiles/sipX_profile.xml&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        changes =&gt; [</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">          &quot;set profile/settings/param[16]/#attribute/value $ipaddress&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">          &quot;set profile/settings/param[17]/#attribute/value $ipaddress&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        ],</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        onlyif  =&gt; &quot;get profile/settings/param[16]/#attribute/value != $ipaddress&quot;,</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">}</div></li></ol></pre></div></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/case-augeas/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
 <div id="node-1043" class="node teaser blog cal">
     <acronym class="calendar published" title="2011-06-08T17:29:33+02:00">
   <span class="month">Jun</span>
@@ -352,35 +387,6 @@ No commandline fu here to help me, but using the VirtualBox gui to move the disk
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 <li class="comment_comments last"><a href="/blog/converting-kvm-virtualbox/index.html#comments" title="Jump to the first comment of this posting.">3 comments</a></li>
-</ul></div>
-</div>
-<div id="node-1034" class="node teaser blog cal">
-    <acronym class="calendar published" title="2011-02-10T20:20:44+01:00">
-  <span class="month">Feb</span>
-  <span class="day">10</span>
-    <span class="year">2011</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/ensure-running/index.html">Ensure Running</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="/blog/category/devops/index.html" rel="tag" title="">devops</a></li>
-<li class="taxonomy_term_475"><a href="/blog/taxonomy/term/475/index.html" rel="tag" title="">heartbeat</a></li>
-<li class="taxonomy_term_562"><a href="/blog/taxonomy/term/562/index.html" rel="tag" title="">linux-ha</a></li>
-<li class="taxonomy_term_1438"><a href="/blog/category/managed/index.html" rel="tag" title="">managed</a></li>
-<li class="taxonomy_term_1436"><a href="/blog/category/modules/index.html" rel="tag" title="">modules</a></li>
-<li class="taxonomy_term_439"><a href="/blog/taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
-<li class="taxonomy_term_1437 last"><a href="/blog/category/unmanaged/index.html" rel="tag" title="">unmanaged</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>Has anyone noticed that pretty much every puppet module one finds on the internet by default enables the service they try to configure in the module</p>
-<p>When looking at it from a single machine point of view it makes sense to include the module , have it configure your service  and directly enable it by default.</p>
-<p>So I started wondering .. isn't there anybody out there who is building clusters ?   Where services have to configured on multiple nodes but should NOT be running acitvely on all nodes by default because there is an external tool which manages that for you (Pacemaker framework eg.)</p>
-<p>Agreed it's a small patch to get the functionality you want , but it brings an extra overhead when one upgrades the modules etc.</p>
-<p>So if it doesn't bother you  please split your puppet module in 2 parts.. one you call to configure the service,  another which you call to enable the service , if you want to.</p>
-<p>thnx !</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-<li class="comment_comments last"><a href="/blog/ensure-running/index.html#comments" title="Jump to the first comment of this posting.">7 comments</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

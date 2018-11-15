@@ -67,6 +67,31 @@
 
 <div id="main">
 <div class="content">
+<div id="node-243" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-09-01T19:26:03+02:00">
+  <span class="month">Sep</span>
+  <span class="day">01</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="../node/243/index.html">MySQL Cluster woes ... solved !</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>Those who were present at the 1st Belgian MySQL UG might have overheard that I had spend the better part of tuesday , fighting with an unstable MySQL cluster,  ndb nodes dying with no reason whatsoever and no traces in the MySQL logfiles.</p>
+<p>I found the issue wednesday evening,  it wasn't even MySQL related.</p>
+<pre> Aug 30 12:30:30 DB-A kernel: __alloc_pages: 0-order allocation failed (gfp=0x1f0/0)
+ Aug 30 12:30:30 DB-A last message repeated 6 times
+ Aug 30 12:30:43 DB-A kernel: __alloc_pages: 0-order allocation failed (gfp=0x1d2/0)
+ Aug 30 12:30:44 DB-A kernel: __alloc_pages: 0-order allocation failed (gfp=0x1f0/0)
+ Aug 30 12:30:44 DB-A kernel: __alloc_pages: 0-order allocation failed (gfp=0x1f0/0)
+ Aug 30 12:30:44 DB-A kernel: __alloc_pages: 0-order allocation failed (gfp=0x1d2/0)
+ Aug 30 12:30:44 DB-A kernel: __alloc_pages: 0-order allocation failed (gfp=0xf0/0)
+ Aug 30 12:30:45 DB-A kernel: __alloc_pages: 0-order allocation failed (gfp=0x1d2/0)
+ Aug 30 12:30:45 DB-A kernel: VM: killing process ndbd</pre><p>Thing was that I was testing on one of the older platforms which don't have the 2Gb of memory I`m used to on my test platforms, but only have 512.<br />
+Addedd some more bars :)</p>
+<p>On a related note , someone just posted a comment spam to one of my former MySQL articles pointing to some site trying to sell a product converting a MySQL database to some proprietary file format  ,  so I`m wondering .. which moron would want to do that ?  Just as I wonder which morons would actually buy stuff they get offered in spam anyway ..</p>
+</div>
+</div>
 <div id="node-242" class="node teaser story cal">
     <acronym class="calendar published" title="2006-08-25T17:25:37+02:00">
   <span class="month">Aug</span>
@@ -249,24 +274,6 @@ customer@XenBox:~&gt; w
   <div class="content"><p><a href="http://www.ukuug.org/sysadminday/">Happy SysAdmin day from the UKUUG</a></p>
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../node/234/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
-</ul></div>
-</div>
-<div id="node-233" class="node teaser story cal">
-    <acronym class="calendar published" title="2006-07-26T12:02:04+02:00">
-  <span class="month">Jul</span>
-  <span class="day">26</span>
-    <span class="year">2006</span>
-    </acronym>
-    <h2 class="title"><a href="../node/233/index.html">OSCON presentation</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-            </div>
-  <div class="content"><p>Luke Kanies on  Web 2.0 vs Open Source Infrastructure companies at  <a href="http://madstop.com/articles/2006/07/25/oscon-presentation">OSCON presentation</a></p>
-<blockquote><p>I'm definitely still tainted from the Web 2.0 conference last year; I keep wanting to make snide jokes about the froth that surrounded the conference, and I'm still pretty bitter how much attention web companies with no business model get when infrastructure companies with a pretty good model just get ignored.</p>
-</blockquote>
-<p>Well Said !</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../node/233/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

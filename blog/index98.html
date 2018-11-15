@@ -67,6 +67,19 @@
 
 <div id="main">
 <div class="content">
+<div id="node-63" class="node teaser story cal">
+    <acronym class="calendar published" title="2005-11-04T10:29:46+01:00">
+  <span class="month">Nov</span>
+  <span class="day">04</span>
+    <span class="year">2005</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/63/index.html">RPMStrap for Centos 4.2</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p><a href="http://trac.samhart.net/trac/ticket/17">RPMStrap</a> now has an initial script for CentOS 4.2 , works for x86 only.</p>
+</div>
+</div>
 <div id="node-62" class="node teaser story cal">
     <acronym class="calendar published" title="2005-11-03T23:10:22+01:00">
   <span class="month">Nov</span>
@@ -248,42 +261,6 @@ testing, Philip told us yesterday that he didn't have time yet to do   OCFS2  te
 <p>The conference closes with a Future of Linux Distributions discussion , opening with the question "Are there to many distributions and isthis a problem ?" Joey, of debian security fame, notes that we might need to look at why people start  working  on  different  Distributions,  are the currentdistributions not listening enough  ?  Off course some distributions have their own specific goal, but a fork just for the reason of forking or just to be able "I maintain my own linux distribution (wich is used by me, my grandmother and my niece)" , that shouldn't happen.</p>
 <pre></pre><p>There was some discussion going on about what's still missing in Linux,  with suggestions ranging from Process migration , which obviously already exists for ages as in the form of the <a href="http://openmosix.sf.net/">openMosix</a> project  trough automated system management tools.  (I`m still wondering on which planet the guy who asked for those has been living for the past say .. 5 years.)</p>
 <p>Headed back to the hotel and then into Hamburg City to eat .. a Hamburger with some other .be people</p>
-</div>
-</div>
-<div id="node-53" class="node teaser story cal">
-    <acronym class="calendar published" title="2005-10-17T20:43:15+02:00">
-  <span class="month">Oct</span>
-  <span class="day">17</span>
-    <span class="year">2005</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/node/53/index.html">LinuxKongress 2005 Hamburg . Day 1</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-            </div>
-  <div class="content"><p>Yesterday evening was the speaker dinner it was in some Turkish<br />
-restaurant near the conference venue .. I was sitting with some of<br />
-the Xen people and Till "I kill the Rainforest" Kampetter , some<br />
-interresting  stuff has been talked about..I bailed out "early<br />
-because of my talk today .. "</p>
-<p>Keynote time, Olaf Kirch on the past and the future of the linux<br />
-kernel. In his Dear Santa letter we noticed NFSv5. What is NFS v5 ?<br />
-He goes on discussing the end of binary only modules, one day there<br />
-will be a "big bang" and we won't be allowing binary kernel modules<br />
-anymore, this won't be such a problem since mostly only 3D stuff<br />
-isn't relevant anyway ;).</p>
-<p>Olaf's tells us that he knows that his week is ruined when on Monday<br />
-morning he gets a mail "Very Important Customer reports bad NFS<br />
-performance. Please fix immediately" It shouldn't be since the obvious and easy fix is probably vi /etc/hosts .</p>
-<p>During the break Alan ran up to me and made some remark about my  Everything is a Fscking DNS T-Shirt I should have traded it for a HAt :)<br />
-Alan is giving his regular "Why do you need Linux-HA", and We (the  open source people) can afford HA since we haven't spent an arm and a leg to expensive software and hardware introduction It's all about "Blame" management. He then goes on describing the new features in   LinuxHA v2, build-in resource monitoring, sophisticated dependency   model where you can even define dependencies on remote machines or   constraints that define resource you don't want to see together on the same machines, or resources that have to be on the same machine.   Time dependent constraints such as only failback during such and such time, but failover when it is required. Resource management   becomes more important, I should have a closer look at OCF, the   Resources will have multiple states, started-as-slave, started as master, stopped, running etc.. About complexity: Isn't the v2 model   significantly more complex than the v1 model ? LMB answers : you   should    see    it    as   more   consulting   opportunities.</p>
-<p>As  everybody keept telling it as time to drop the 0. from the  version number or DRBD , so DRBD made a hughe version step from 0.7  to 8. As a shared storage box is is a SPOF we obviously prefer a  shared nothing environment, DRBD enables this for us.   The most important new feature in DRBD: Shared disk semantics Allow   both nodes RW access to mirrored storage. Usefull for shared disk   file GFS, OCFS2, GPFS  It seems that theperformance cutback for using DRBD is only 4%   (according to Bonnie) , supporting up to 4TB -128Mb :) A commercial   DRBD, DRBD+, version is now also available from Linbit. A DRBD   version pre 8 is about to be released when Philip gets back from the   conference.</p>
-<p>Csync2 , a nice feature is adding triggers to the event of a file   transfer, e.g an apache restart could be triggerd after an apache   config file has been modified. It uses a database sqlite to store  it's metadata which makes it a bit heavier than one might want the   environment.</p>
-<p>Csync2 looks to me (and Clifford) as a good tool to keep a simple   cluster's config/data files in sync. Not as a way to manage your   infrastructure or as a replacement for cfengine. Another difference   is that csync2 uses a meshed architecture as opposed to a central   repository in Cfengine.</p>
-<p>Gerd Knorr gave a good overview of Xen which was very well attended  even while he was scheduled next to Harald who usually atracts full<br />
-auditoria. Having seen Ian giving his Xen talk in Swansea already there wasn't that much new in it for me.</p>
-<p>Then there was some speaker with stuff about how to deploy  Xen in large environments. I already knew most of that stuff hmm.. Been there , done that .. gave the talk :)</p>
-<p>Just before the boattrip to Social Event in the museum of work there was a talk about Freenigma which a lot of people missed since they<br />
-wanted to go back to the hotel first (including me). The social  event location reminded me of the Linux.conf.au delegates session venue, it's a great concept to combine "technology"museum visits    with a social event. Nils Magnus announced that LinuxTag will be getting more support from GUUG and moves to Wiesbaden next year, as    Germany is totally in Football chaos during June it will also be   early May for a change.</p>
 </div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

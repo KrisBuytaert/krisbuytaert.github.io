@@ -67,6 +67,35 @@
 
 <div id="main">
 <div class="content">
+<div id="node-1034" class="node teaser blog cal">
+    <acronym class="calendar published" title="2011-02-10T20:20:44+01:00">
+  <span class="month">Feb</span>
+  <span class="day">10</span>
+    <span class="year">2011</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/ensure-running/index.html">Ensure Running</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="/blog/category/devops/index.html" rel="tag" title="">devops</a></li>
+<li class="taxonomy_term_475"><a href="/blog/taxonomy/term/475/index.html" rel="tag" title="">heartbeat</a></li>
+<li class="taxonomy_term_562"><a href="/blog/taxonomy/term/562/index.html" rel="tag" title="">linux-ha</a></li>
+<li class="taxonomy_term_1438"><a href="/blog/category/managed/index.html" rel="tag" title="">managed</a></li>
+<li class="taxonomy_term_1436"><a href="/blog/category/modules/index.html" rel="tag" title="">modules</a></li>
+<li class="taxonomy_term_439"><a href="/blog/taxonomy/term/439/index.html" rel="tag" title="">puppet</a></li>
+<li class="taxonomy_term_1437 last"><a href="/blog/category/unmanaged/index.html" rel="tag" title="">unmanaged</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>Has anyone noticed that pretty much every puppet module one finds on the internet by default enables the service they try to configure in the module</p>
+<p>When looking at it from a single machine point of view it makes sense to include the module , have it configure your service  and directly enable it by default.</p>
+<p>So I started wondering .. isn't there anybody out there who is building clusters ?   Where services have to configured on multiple nodes but should NOT be running acitvely on all nodes by default because there is an external tool which manages that for you (Pacemaker framework eg.)</p>
+<p>Agreed it's a small patch to get the functionality you want , but it brings an extra overhead when one upgrades the modules etc.</p>
+<p>So if it doesn't bother you  please split your puppet module in 2 parts.. one you call to configure the service,  another which you call to enable the service , if you want to.</p>
+<p>thnx !</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+<li class="comment_comments last"><a href="/blog/ensure-running/index.html#comments" title="Jump to the first comment of this posting.">7 comments</a></li>
+</ul></div>
+</div>
 <div id="node-1033" class="node teaser blog cal">
     <acronym class="calendar published" title="2011-02-06T21:06:12+01:00">
   <span class="month">Feb</span>
@@ -302,56 +331,6 @@ this is most probably a bug in ffmpeg which is provided by rpmfusion. and which 
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 <li class="comment_comments last"><a href="/blog/guest-post-season/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
-</ul></div>
-</div>
-<div id="node-1024" class="node teaser poll cal">
-    <acronym class="calendar published" title="2010-11-21T18:43:28+01:00">
-  <span class="month">Nov</span>
-  <span class="day">21</span>
-    <span class="year">2010</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/which-open-source-virtualization-cloud-platform-are-you-using-evaluating/index.html">Which Open Source Virtualization/ Cloud  Platform  are you using / evaluating</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-            </div>
-  <div class="content"><form action="http://127.0.0.1:8080/blog/blog?page=8"  accept-charset="UTF-8" method="post" id="poll-view-voting">
-<div><div class="poll">
-  <div class="vote-form">
-    <div class="choices">
-            <div class="form-radios"><div class="form-item" id="edit-choice-0-wrapper">
- <label class="option" for="edit-choice-0"><input type="radio" id="edit-choice-0" name="choice" value="0"   class="form-radio" /> openQRM</label>
-</div>
-<div class="form-item" id="edit-choice-1-wrapper">
- <label class="option" for="edit-choice-1"><input type="radio" id="edit-choice-1" name="choice" value="1"   class="form-radio" /> Abiquo</label>
-</div>
-<div class="form-item" id="edit-choice-2-wrapper">
- <label class="option" for="edit-choice-2"><input type="radio" id="edit-choice-2" name="choice" value="2"   class="form-radio" /> Cloud.com</label>
-</div>
-<div class="form-item" id="edit-choice-3-wrapper">
- <label class="option" for="edit-choice-3"><input type="radio" id="edit-choice-3" name="choice" value="3"   class="form-radio" /> Enomaly ECP</label>
-</div>
-<div class="form-item" id="edit-choice-4-wrapper">
- <label class="option" for="edit-choice-4"><input type="radio" id="edit-choice-4" name="choice" value="4"   class="form-radio" /> Eucalyptus </label>
-</div>
-<div class="form-item" id="edit-choice-5-wrapper">
- <label class="option" for="edit-choice-5"><input type="radio" id="edit-choice-5" name="choice" value="5"   class="form-radio" /> Openstack</label>
-</div>
-<div class="form-item" id="edit-choice-6-wrapper">
- <label class="option" for="edit-choice-6"><input type="radio" id="edit-choice-6" name="choice" value="6"   class="form-radio" /> Convirture</label>
-</div>
-<div class="form-item" id="edit-choice-7-wrapper">
- <label class="option" for="edit-choice-7"><input type="radio" id="edit-choice-7" name="choice" value="7"   class="form-radio" /> other (please use comment to specify) </label>
-</div>
-</div>    </div>
-    <input type="submit" name="op" id="edit-vote" value="Vote"  class="form-submit" />
-  </div>
-    <input type="hidden" name="form_build_id" id="form-Y-amFMzvxECk3FLW4tZ--FHm5Mu3ws3zuj0E1Q0gkQU" value="form-Y-amFMzvxECk3FLW4tZ--FHm5Mu3ws3zuj0E1Q0gkQU"  />
-<input type="hidden" name="form_id" id="edit-poll-view-voting" value="poll_view_voting"  />
-</div>
-
-</div></form>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/which-open-source-virtualization-cloud-platform-are-you-using-evaluating/index.html#comments" title="Jump to the first comment of this posting.">11 comments</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

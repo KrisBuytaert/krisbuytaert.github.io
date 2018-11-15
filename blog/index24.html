@@ -67,6 +67,31 @@
 
 <div id="main">
 <div class="content">
+<div id="node-868" class="node teaser blog cal">
+    <acronym class="calendar published" title="2009-02-02T21:52:25+01:00">
+  <span class="month">Feb</span>
+  <span class="day">02</span>
+    <span class="year">2009</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/open-source-database-poll/index.html">Open Source Database Poll</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_716 first"><a href="/blog/taxonomy/term/716/index.html" rel="tag" title="">database</a></li>
+<li class="taxonomy_term_1175"><a href="/blog/category/derby/index.html" rel="tag" title="">derby</a></li>
+<li class="taxonomy_term_1176"><a href="/blog/category/ingres/index.html" rel="tag" title="">ingres</a></li>
+<li class="taxonomy_term_458"><a href="/blog/taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_1174 last"><a href="/blog/category/posgresql/index.html" rel="tag" title="">posgresql</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>So  <a href="http://www.lefred.be/" rel="nofollow">Fred</a>  and I were wondering what people were planning to use as a Database the next couple of months / years or now.</p>
+<p><a href="http://www.inuits.be/">We</a> mostly see MySQL deployments and a little PostgreSQL</p>
+<p>But there's other stuff around ..  </p>
+<p>So what are you using, , or planning on using ? </p>
+<p><a href="http://www.krisbuytaert.be/blog/node/867">Vote Here !</a></p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
 <div id="node-867" class="node teaser poll cal">
     <acronym class="calendar published" title="2009-02-02T21:19:03+01:00">
   <span class="month">Feb</span>
@@ -108,7 +133,7 @@
 </div>    </div>
     <input type="submit" name="op" id="edit-vote" value="Vote"  class="form-submit" />
   </div>
-    <input type="hidden" name="form_build_id" id="form-zjl9wq5B_dA01EyKDCOxY3Pav19s8uMOQQi6UTqr5uU" value="form-zjl9wq5B_dA01EyKDCOxY3Pav19s8uMOQQi6UTqr5uU"  />
+    <input type="hidden" name="form_build_id" id="form-hd1pzrs8HDZ_vKy03GEN32pNdX_XSvyN1_Pmt3XCe6k" value="form-hd1pzrs8HDZ_vKy03GEN32pNdX_XSvyN1_Pmt3XCe6k"  />
 <input type="hidden" name="form_id" id="edit-poll-view-voting" value="poll_view_voting"  />
 </div>
 
@@ -338,32 +363,6 @@ I'd write Vendor Certifications however .. as independent  certifications might 
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 <li class="comment_comments last"><a href="/blog/how-suck-security/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
-</ul></div>
-</div>
-<div id="node-858" class="node teaser blog cal">
-    <acronym class="calendar published" title="2009-01-18T14:04:09+01:00">
-  <span class="month">Jan</span>
-  <span class="day">18</span>
-    <span class="year">2009</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/filesystem-layouts/index.html">On Filesystem Layouts</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_540 first"><a href="/blog/taxonomy/term/540/index.html" rel="tag" title="">lvm</a></li>
-<li class="taxonomy_term_1151"><a href="/blog/category/no-root/index.html" rel="tag" title="">no root</a></li>
-<li class="taxonomy_term_1150 last"><a href="/blog/category/root/index.html" rel="tag" title="">root</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p><a href="http://grep.be/blog/en/computer/filesystem_layouts?show_comments=yes" rel="nofollow">Wouter</a> blogged  about his favourite Laptop filesystem layout , just one filesystem , and <a href="http://blog.andrew.net.au/2009/01/15#filesystem_layouts" rel="nofollow">some geeks</a> think that's a bad idea.</p>
-<p>Actually I can understand Wouter not wanting to have different /usr/ /var or other partitions on his laptop , the 20Mb left and 300Mb right you loose on different partitions are exactly what you want to use on your laptop, however isolating partitions also has it's benefits</p>
-<p>My setup looks similar to this :<br />
-<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/home</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/opt</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">/altroot</div></li></ol></pre></div></p>
-<p>/ and altroot so you can run 2 distros, keeping my local data on a different partition so I can upgrade , switch distro etc..   and /opt .. for the software that isn't shipped as a package.</p>
-<p>Obviously I use LVM so I can use these different partitions also as storage for virtual machines that can boot a different distro either on the physical or the virtual machine.</p>
-<p>And obviously the rules for servers are different than the ones for laptops or even personal desktops for that matter</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-<li class="comment_comments last"><a href="/blog/filesystem-layouts/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

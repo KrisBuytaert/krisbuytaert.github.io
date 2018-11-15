@@ -68,7 +68,25 @@
   <div id="breadcrumb"><div class="breadcrumb"><a href="../../index/index.html">Home</a> &#8594; <a href="../../blog/index.html">Blogs</a></div></div>
   <h2 id="title">Kris Buytaert's blog</h2>
 <div class="content">
-<div class="item-list"></div><div id="node-1104" class="node teaser blog cal">
+<div class="item-list"></div><div id="node-1105" class="node teaser blog cal">
+    <acronym class="calendar published" title="2016-01-07T09:48:15+01:00">
+  <span class="month">Jan</span>
+  <span class="day">07</span>
+    <span class="year">2016</span>
+    </acronym>
+    <h2 class="title"><a href="../../bimodal-it-redefined/index.html">Bimodal IT , redefined</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>There's been a lot of discussion about the sillynes of the term BiModal IT, aka the next big thing for IT-organisations that don't dare to change, but still want to sound cool.</p>
+<p>So here is my idea to reuse that term for something relevant.</p>
+<p>BiModal IT, is the idea where you take a fully automated infrastructure which has been build on the principles of Infrastructure as Code. Which gets periodic idempodent updates (e.g every 15 or 30 minutes, or when you orchestrate it), and consistency checks , where the source code for that infrastructure is versioned , tested and delivered trough  a traditional Continuous Delivery pipeline for the majority of your services. and add realtime reconfiguration capacities based on service discovery for the other services that really change fast, or in a real elastic way, using  tools like Consul, Consul_template, etcd etc..</p>
+<p>That way you have 2 modes of managing your infrastructure, aka  BiModal</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="../../bimodal-it-redefined/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
+<div id="node-1104" class="node teaser blog cal">
     <acronym class="calendar published" title="2015-07-28T08:35:13+02:00">
   <span class="month">Jul</span>
   <span class="day">28</span>
@@ -328,40 +346,6 @@ which is where you need to be.   </p>
 <p>Just sending a keyword, a timestamp and a value to the Graphite platform provides you with a large choice of actions that can be done with that metric. You can graph it, transform it, or even set an alert on it. Graphite takes out the complexity of similar tools together with an easy to use API for developers so they can integrate their own self service metrics into dashboards to be used by everyone.</p>
 <p>One last tool that deserves our attention is Logstash. Initially just a tool to aggregate, index and search the log files of our platform, it is sometimes a huge missed source of relevant information about how our applications behave.. Logstash and it's Kibana+ElasticSearch ecosystem are now quickly evolving into a real time analytics platform. Implementing the Collect, Ship+Transform, Store and Display pattern we see emerge a lot in the #monitoringlove community. Logstash now allows us to turn boring old logfiles that people only started searching upon failure into valuable information that is being used by product owners and business manager to learn from on the behavior of their users.</p>
 <p>Together with the Graphite-based dashboards we mentioned above, these tools help people start sharing their information and communicate better. When thinking about these tools, think about what you are doing, what goals you are trying to reach and where you need to improve. Because after all, devops is not solving a technical problem, it's trying to solve a business problem and bringing better value to the end user at a more sustainable pace. And in that way the biggest tool we need to use is YOU, as the person who enables communication.</p>
-</div>
-</div>
-<div id="node-1095" class="node teaser blog cal">
-    <acronym class="calendar published" title="2014-06-04T16:54:23+02:00">
-  <span class="month">Jun</span>
-  <span class="day">04</span>
-    <span class="year">2014</span>
-    </acronym>
-    <h2 class="title"><a href="../../why-does-devops-matter/index.html">Why Does DevOps Matter?</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_1328 first"><a href="../../category/devops/index.html" rel="tag" title="">devops</a></li>
-<li class="taxonomy_term_484 last"><a href="../../taxonomy/term/484/index.html" rel="tag" title="">drupal</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>This is a repost of an article I wrote for the <a href="http://www.acquia.com/blog" rel="nofollow">Acquia Blog</a> some time ago.</p>
-<p>People often ask, why does DevOps matter?</p>
-<p>The honest answer to that question is...because having the development and operations team work together is the only way IT is successful.</p>
-<p>Over the past few decades I've worked in different environments that include: small web start ups, big pharmaceutical companies, hardware engineering shops and large software companies and banks. All were trying different approaches to deliver quality software to their end users, customers, but most of them were failing badly.</p>
-<p>Operations people were being pulled in at the last minute. A marketing campaign needed to go live at 5 p.m. because that's when the first radio commercial was scheduled to be broadcasted. At 11 a.m., the operations people still didn't know the campaign existed.</p>
-<p>It was always the other person’s fault. Waterfall projects and large PID documents were the solution to all the problems. But people learned; they figured out that we can't expect humans to predict how long it would take to implement something they have never done before. Unfortunately, even today, only a small set of people understand the value of being agile and that we cannot break a project down to its granular details without factoring in the “unpredictable.” The key element here is the “uncertainty” of the many project pieces.</p>
-<p>So on came the agile movement and software development became much smoother.<br />
-People agreed on time boxing a reasonable set of work that would result in delivering useful functionality in frequent batches. Yet, on the day of deployment, all hell breaks loose because someone forgot to loop in the Ops team.</p>
-<p>This is where my personal experience differs from a lot of others, because I was part of a development team building a product where the developers were sitting right next to the system administration team. Within sprints, our DevOps team was building both system features and application features, making the application highly available was a story on the board next to an actual end user feature.</p>
-<p>In the old days, a new feature that was scheduled for Friday couldn't be brought online for a couple of days because it couldn't be deployed to production. In the new setup, deploying to production was a no brainer as we had already tested the automated deployment to the acceptance platform.</p>
-<p>This brings us to the first benefit : Actually being able to go live.</p>
-<p>The next problem came on a Wednesday evening. A major security issue had popped up in Drupal and an upgrade needed to be performed, however nobody dared to perform the upgrade as they were afraid of breaking the site. Some people had made changes, they hadn't put their config back in code base, and thus the site didn't get updated. This is the typical state of the majority of any type of website where people build something, deploy it and never look back. This is the case until disaster strikes and it hits the evening news.</p>
-<p>Teams then learn that not only do they need to implement features and put their config changes in code, but also do continuous integration testing on their sites.</p>
-<p>From doing continuous integration, they go to continuous delivery and continuous deployment, where an upgrade isn't a risk anymore but a normal event which happens automatically when all the tests are green. By implementing infrastructure as code, they now have achieved 2 goals. By implementing tests, we build the confidence that the code was working, but also made sure that the number of defects in that code base went down so the number of times people needed to dig back into old code to fix issue also came down.</p>
-<p>By delivering better software in a much more regular way, it enables the security issues to be fixed faster, but also brings new features to market faster. With faster, we often mean that there is an change from releasing software on a bi-yearly basis to a release each sprint, to a release whenever a commit has passed a number of test criteria.</p>
-<p>Because they started to involve other stakeholders, the value of their application grew as they had faster feedback and better usage statistics. The faster feedback meant that they weren't spending as much time on features nobody used, but focusing their efforts on things that mattered.</p>
-<p>Having other stakeholders like systems and security teams involved with early metrics and taking in the non functional requirements into the backlog planning meant that the stability of the platform was growing. Rather than people spending hours and nights fixing production problems, Potential issues are now being tackled upfront because of the<br />
-communication between devs and ops. Also, scale and high availability have been built into the application upfront, rather than afterwards -- when it is too late.</p>
-<p>So, in the end it comes down to the most important part, which is that devops creates more happiness. It creates more happy customers, developers, operations teams, managers, and investors and for a lot of people it improves not only application quality, but also their life quality.</p>
 </div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

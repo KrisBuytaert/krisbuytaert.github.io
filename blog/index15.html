@@ -67,6 +67,33 @@
 
 <div id="main">
 <div class="content">
+<div id="node-962" class="node teaser blog cal">
+    <acronym class="calendar published" title="2009-11-23T21:17:52+01:00">
+  <span class="month">Nov</span>
+  <span class="day">23</span>
+    <span class="year">2009</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/nosql-vs-mysql/index.html">NoSQL vs MySQL</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_451 first"><a href="/blog/taxonomy/term/451/index.html" rel="tag" title="">dns</a></li>
+<li class="taxonomy_term_437"><a href="/blog/taxonomy/term/437/index.html" rel="tag" title="">dnsproblem</a></li>
+<li class="taxonomy_term_458"><a href="/blog/taxonomy/term/458/index.html" rel="tag" title="">mysql</a></li>
+<li class="taxonomy_term_1337 last"><a href="/blog/category/nosql/index.html" rel="tag" title="">nosql</a></li>
+</ul></span>
+        </div>
+  <div class="content"><p>No I did NOT post the following <a href="http://www.ruturaj.net/redis-memcached-tokyo-tyrant-mysql-comparison#comment-22565" rel="nofollow">comment</a><br />
+<cite><br />
+This is ridiculous. You didn't test MySQL, you tested a failing DNS lookup on authentication.</cite></p>
+<p>resulting in the follow up <a href="http://www.ruturaj.net/myisam-innodb" rel="nofollow">post</a> : </p>
+<p><cite><br />
+My previous post Redis, Memcache, Tokyp Tyrant, MySQL comparison had a flaw as pointed out by this comment. The MySQL was taking a huge time for doing a reverse DNS lookup.<br />
+</cite></p>
+<p>But as always ... Everything is just a Freaking dns problem :)</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+</div>
 <div id="node-961" class="node teaser blog cal">
     <acronym class="calendar published" title="2009-11-18T21:09:30+01:00">
   <span class="month">Nov</span>
@@ -307,37 +334,6 @@ e ,  however some domains just don't want a MX record.</p>
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
 <li class="comment_comments last"><a href="/blog/dns-tools/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
-</ul></div>
-</div>
-<div id="node-952" class="node teaser blog cal">
-    <acronym class="calendar published" title="2009-10-22T20:22:55+02:00">
-  <span class="month">Oct</span>
-  <span class="day">22</span>
-    <span class="year">2009</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/apparently-there-are-borders/index.html">Apparently there are Borders</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-              <span class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_437 first"><a href="/blog/taxonomy/term/437/index.html" rel="tag" title="">dnsproblem</a></li>
-<li class="taxonomy_term_1318"><a href="/blog/category/inuitsbe/index.html" rel="tag" title="">inuits.be</a></li>
-<li class="taxonomy_term_1320"><a href="/blog/category/inuitseu/index.html" rel="tag" title="">inuits.eu</a></li>
-<li class="taxonomy_term_1319"><a href="/blog/category/inuitsnl/index.html" rel="tag" title="">inuits.nl</a></li>
-<li class="taxonomy_term_1317 last"><a href="/blog/category/zonefiles/index.html" rel="tag" title="">zonefiles</a></li>
-</ul></span>
-        </div>
-  <div class="content"><p>And therefore, sometimes you need to register domains in different countries.<br />
-So how does one proceed, one takes the zone file of the existing domain e.g. .be and creates a symlink for the different countries to the original zonefile e.g .nl and .eu .  Afterall, you want to have te same hosts available in every country and you want to keep the hassle down when you update a host.</p>
-<p>You tell your registrar, to reg the same domain for the other tld's with the usueal Nameservers , you know . the one that are listed in your original zonefile</p>
-<p>So your host file might look like this<br />
-<div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        IN      NS      ns1</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        IN      NS      ns2</div></li></ol></pre></div></p>
-<p>Any idea what the effect is ?</p>
-<p>Exactly  your zone file tells the world to use ns1.domain.nl for each and every country you create it. So not ns1.domain.be  as you intened.</p>
-<p>Now some TLD's don't really care, but <a href="http://frank.be/" rel="nofollow">Frank</a> teached me that .nl DOES check this.  To technically I had to give myselve a "Freaking DNS" T-Shirt.  Apart from that it is just better practise to keep your setup correct anyhow.</p>
-<p>PS. Obviously same goes for .org .net and .com series.</p>
-<p>PS2.  Yes the title of my blog is Everything is a Freaking DNS problem, doesn't mean I don't make mistakes or that I know all the answers,  I just figured it's a big cause of  problems :)</p>
-</div>
-  <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first"><a href="/blog/blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-<li class="comment_comments last"><a href="/blog/apparently-there-are-borders/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
 </ul></div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>

@@ -67,6 +67,33 @@
 
 <div id="main">
 <div class="content">
+<div id="node-113" class="node teaser story cal">
+    <acronym class="calendar published" title="2006-01-25T21:56:44+01:00">
+  <span class="month">Jan</span>
+  <span class="day">25</span>
+    <span class="year">2006</span>
+    </acronym>
+    <h2 class="title"><a href="/blog/node/113/index.html">2.6.15-om migrates processes</a></h2>
+      <div class="submitted">
+          <span class="author">By: Kris Buytaert</span>
+            </div>
+  <div class="content"><p>It took a while but the annoying crash on migration has vanihsed .. , we can now migrate processes</p>
+<pre><a href="/blog/root%40cnode2%20_/index.html">root@cnode2 ~</a># ./asm1
+<a href="/blog/root%40cnode2%2012747/index.html">root@cnode2 12747</a># cd om/ 
+<a href="/blog/root%40cnode2%20om/index.html">root@cnode2 om</a># ls
+debug  stay  where
+<a href="/blog/root%40cnode2%20om/index.html">root@cnode2 om</a># echo "10.0.11.20" &gt; where</pre><p>And on the second node :</p>
+<pre>
+<a href="/blog/root%40cnode1%20tmp/index.html">root@cnode1 tmp</a># ps -ef | grep asm
+root     10995   286 99 22:47 ?        00:00:08 ./asm1
+root     11014  3303  0 22:47 pts/0    00:00:00 grep asm</pre><p>Now this is a step in the good direction but there still Is a lot of work to be done.<br />
+On the other hand I also got a beta userland tool from Carl Radford today which I`ll be looking at later ..<br />
+Next to that Matteo and his friends also are really active providing feedback to Tab.<br />
+I`ll keep you folks posted on our progress !</p>
+</div>
+  <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/113/index.html#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul></div>
+</div>
 <div id="node-112" class="node teaser story cal">
     <acronym class="calendar published" title="2006-01-22T21:52:24+01:00">
   <span class="month">Jan</span>
@@ -211,19 +238,6 @@ And all of that to upgrade to a more recent version of Evolution in order to see
 </div>
   <div class="links">&raquo; <ul class="links inline"><li class="comment_comments first last"><a href="/blog/node/104/index.html#comments" title="Jump to the first comment of this posting.">2 comments</a></li>
 </ul></div>
-</div>
-<div id="node-103" class="node teaser story cal">
-    <acronym class="calendar published" title="2006-01-18T10:41:28+01:00">
-  <span class="month">Jan</span>
-  <span class="day">18</span>
-    <span class="year">2006</span>
-    </acronym>
-    <h2 class="title"><a href="/blog/node/103/index.html">770  (again)</a></h2>
-      <div class="submitted">
-          <span class="author">By: Kris Buytaert</span>
-            </div>
-  <div class="content"><p>Remember me ranting on the 770 not being usable for lefthanded people ? I need to test <a href="http://syslog.movial.fi/archives/7-xrandr-on-nokia-770.html">this</a> someday</p>
-</div>
 </div>
 <div class="item-list"><ul class="pager"><li class="pager-first first"><a href="index.html" title="Go to first page" class="active">« first</a></li>
 <li class="pager-previous"><a href="index92.html?page=92" title="Go to previous page" class="active">‹ previous</a></li>
