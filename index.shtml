@@ -13,6 +13,8 @@
 [<a href="http://www.linkedin.com/in/krisbuytaert">My LinkedIn Profile</a>]
 [<a href="http://github.com/KrisBuytaert/">Kris on Github</a>]
 [<a href="http://twitter.com/KrisBuytaert/">Kris on Twitter</a>]
+[<a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a>]
+
 
 [<a href="#howto">HOWTO's</a>]
 [<a href="#papers">Papers & Articles</a>]
@@ -38,8 +40,9 @@ Titled "Everything is a Freaking DNS Problem" ,it can be found at  <a href="http
 <b>2022</b>
 <ul>
 
+  <li>3 november 2022, Devops.Barcelona,  <a href="https://www.slideshare.net/KrisBuytaert/years-of-not-learning-from-devops-to-devoops">13 years of not learning #devoops</a>
   <li>21 september 2022, Devopsdays Berlin Berlin ,  <a href="https://www.slideshare.net/KrisBuytaert/observability-will-not-fix-your-broken-monitoring-ignite">Observability will not fix your Broken monitoring (ignite version)<a/>
-  <li>20 july 2022, StackConf Berlin ,  <a href="https://www.slideshare.net/KrisBuytaert/from-devoops-to-devops-13-years-of-not-learning">From devoops to devops, 13 years of (not) learning</a>, Berlin (replacing another speaker)
+  <li>20 july 2022, StackConf Berlin <a href="https://www.slideshare.net/KrisBuytaert/from-devoops-to-devops-13-years-of-not-learning">From devoops to devops, 13 years of (not) learning</a>, Berlin (replacing another speaker)
   <li>19 july 2022 StackConf Berlin , Infrastructure Automation (anti) patterns , Berlin
   <li>21 june 2022, Hashiconf Europe, Observing the HashiCorp Ecosystem From Prometheus with Julien Pivotto, Amsterdam
   <li>24 may 2022, Devopsdays Prague ,
