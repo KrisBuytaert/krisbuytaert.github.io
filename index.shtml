@@ -37,6 +37,21 @@ Titled "Everything is a Freaking DNS Problem" ,it can be found at  <a href="http
 
 <br> 
 <br> 
+<b>2023</b>
+<ul> 
+<!-- 
+  <li> Chicago ,  Everything Changed, Everything is still the same
+  <li> Amsterdam ,  What if we were wrong ?
+  <li> Birmingham , 14 years of #devops , but what have we really learned
+  ---> 
+  <li>
+  <li>22 may 2023, Devopsdays Prague, Observability will not fix your broken Monitoring, Prague , Czech Republic
+  <li>2 may 2023, Devopsdays Copenhagen , Observability will not fix your broken Monitoring, Copenhagen, Denmark
+  <li>25 april 2023, Devopsdays Geneva, 14 years of #devops, but what have we really learned, Geneva , Switzerland
+
+    
+
+</ul>
 <b>2022</b>
 <ul> 
   <li>13 december 2022, Open Cloudification , Fa(i)(l)ling into the "Cloud" , Antwerp, Belgium 
@@ -49,7 +64,7 @@ Titled "Everything is a Freaking DNS Problem" ,it can be found at  <a href="http
   <li>19 july 2022 StackConf Berlin , Infrastructure Automation (anti) patterns , Berlin
   <li>21 june 2022, Hashiconf Europe, Observing the HashiCorp Ecosystem From Prometheus with Julien Pivotto, Amsterdam
   <li>24 may 2022, Devopsdays Prague Keynote ,
-    <a href="https://www.slideshare.net/KrisBuytaert/from-devoops-to-devops-13-years-of-not-learning">From devoops to devops, 13 years of (not) learning</a>, Prague
+    <a href="https://www.slideshare.net/KrisBuytaert/from-devoops-to-devops-13-years-of-not-learning">From devoops to devops, 13 years of (not) learning</a>, Prague , Czech Republic 
   <li>24 february 2022, Tetra OpencloudEdge End seminar, <a href="https://www.opencloudedge.be/documents/nomad-Inuits.pdf">Nomad, your lightweight container Orchestration Platform</a>
   <li>25 january 2022, DevOpStars 2022 ,   <a href="https://www.slideshare.net/KrisBuytaert/">Observability will not fix your broken monitoring</a>, Online
 </ul>
