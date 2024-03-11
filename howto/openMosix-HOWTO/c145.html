@@ -1,0 +1,340 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>So what is openMosix Anyway ? </TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Introduction"
+HREF="p105.html"><LINK
+REL="PREVIOUS"
+TITLE="Feedback"
+HREF="x141.html"><LINK
+REL="NEXT"
+TITLE="The story so far"
+HREF="x184.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x141.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x184.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="WHAT"
+></A
+>So what is openMosix Anyway ? </H1
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN147"
+>A very, very brief introduction to clustering</A
+></H1
+><P
+>&#13; Most of the time, your computer is bored. Start a program like xload
+  or top that monitors your system use, and you will probably find that
+  your processor load is not even hitting the 1.0 mark. If you have two
+  or more computers, chances are that at any given time, at least one
+  of them is doing nothing. Unfortunately, when you really do need CPU
+ power - during a C++ compile, or encoding Ogg Vorbis music files -
+ you need a lot of it at once. The idea behind clustering is to spread
+  these loads among all available computers, using the resources that
+  are free on other machines.&#13;</P
+><P
+>&#13; The basic unit of a cluster is a single computer, also called a
+  "node". Clusters can grow in size - they "scale" - by adding more
+  machines. A cluster as a whole will be more powerful the faster the
+  individual computers and the faster their connection speeds are. In
+  addition, the operating system of the cluster must make the best use
+  of the available hardware in response to changing conditions. This
+  becomes more of a challenge if the cluster is composed of different
+  hardware types (a "heterogeneous" cluster), if the configuration of
+  the cluster changes unpredictably (machines joining and leaving the
+  cluster), and the loads cannot be predicted ahead of time.  &#13;</P
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN151"
+>A very, very brief introduction to clustering</A
+></H2
+><DIV
+CLASS="SECT3"
+><H3
+CLASS="SECT3"
+><A
+NAME="AEN153"
+>HPC vs Fail-over vs Load-balancing</A
+></H3
+><P
+>Basically there are 3 types of clusters, 
+Fail-over, Load-balancing and HIGH Performance Computing, 
+The most deployed ones are probably the Failover cluster and the Load-balancing Cluster.&#13;</P
+><P
+></P
+><UL
+><LI
+><P
+><I
+CLASS="EMPHASIS"
+>Fail-over Clusters</I
+> consist of 2 or more network connected
+computers with a separate heartbeat connection between the 2 hosts.
+The Heartbeat connection between the 2 machines is being used to
+monitor whether all the services are still in use: as soon as a
+service on one machine breaks down the other machines try to take
+over.</P
+></LI
+><LI
+><P
+>With load-balancing clusters the concept is that when a request for
+say a web-server comes in, the cluster checks which machine is the
+least busy and then sends the request to that machine.  Actually most
+of the times a Load-balancing cluster is also a Fail-over cluster but
+with the extra load balancing functionality and often with more nodes.</P
+></LI
+><LI
+><P
+>The last variation of clustering is the High Performance Computing
+Cluster: the machines are being configured specially to give data
+centers that require extreme performance what they need.  Beowulfs
+have been developed especially to give research facilities the
+computing speed they need. These kind of clusters also have some
+load-balancing features; they try to spread different processes to
+more machines in order to gain performance. But what it mainly comes
+down to in this situation is that a process is being parallelized and
+that routines that can be ran separately will be spread on different
+machines instead of having to wait till they get done one after
+another.</P
+></LI
+></UL
+><P
+>Most common known examples of loadbalancing and failover clusters are webfarms, databases or firewalls.
+People want to have a 99,99999% uptime for their services, the internet is open 24/24 7/7/ 365/365 
+not unlike in the old days when you could shut down your server when the office closed. </P
+><P
+>People that are in need of cpu cycles often can afford to schedule downtime for their environments, 
+as long as they can use the maximum power of their machines when they need it.</P
+></DIV
+><DIV
+CLASS="SECT3"
+><H3
+CLASS="SECT3"
+><A
+NAME="AEN166"
+>Supercomputers vs. clusters</A
+></H3
+><P
+>&#13;Traditionally Supercomputers have only been built by a 
+selected number of vendors: a company or organization that required
+the performance of such a machine had to have a huge budget available
+for its Supercomputer.  Lots of universities could not afford the
+costs of a Supercomputer by themselves, therefore other alternatives
+were being researched by them.  The concept of a cluster was born when
+people first tried to spread different jobs over more computers and
+then gather back the data those jobs produced.  With cheaper and more
+common hardware available to everybody, results similar to real
+Supercomputers were only to be dreamed of during the first years, but
+as the PC platform developed further, the performance gap between a
+Supercomputer and a cluster of multiple personal computers became
+smaller.&#13;</P
+></DIV
+><DIV
+CLASS="SECT3"
+><H3
+CLASS="SECT3"
+><A
+NAME="AEN169"
+>Cluster models [(N)UMA,  PVM/MPI]</A
+></H3
+><P
+>There are different ways of doing parallel processing: (N)UMA, DSM,
+PVM and MPI are all different kinds of Parallel Processing schemes. Some of them are implemented in hardware, 
+others in software, others in both.</P
+><P
+>(N)UMA ((Non-)Uniform Memory Access), machines for example have
+shared access to the memory where they can execute their code.  In the
+Linux kernel there is a NUMA implementation that varies the memory
+access times for different regions of memory.  It then is the kernel's
+task to use the memory that is the closest to the CPU it is using.</P
+><P
+><I
+CLASS="EMPHASIS"
+>DSM</I
+> aka Distributed Shared memory, has been implemented in both software and hardware , 
+the concept is to provide an abstraction layer for physically distributed memory.</P
+><P
+>PVM and  MPI are the tools that are most commonly being used when people
+talk about GNU/Linux based Beowulfs. </P
+><P
+> MPI stands for Message Passing
+Interface. It is the open standard specification for message passing
+libraries.  MPICH is one of the most used implementations of MPI. Next
+to MPICH you also can find LAM, another implementation of MPI based on
+the free reference implementation of the libraries.&#13;</P
+><P
+>PVM or Parallel Virtual Machine is another cousin of MPI that is also
+quite often being used as a tool to create a Beowulf.  PVM lives in
+user space so no special kernel modifications are required: basically
+each user with enough rights can run PVM.
+&#13;</P
+></DIV
+><DIV
+CLASS="SECT3"
+><H3
+CLASS="SECT3"
+><A
+NAME="AEN178"
+>openMosix's role</A
+></H3
+><P
+>&#13;  The openMosix software package turns networked computers running
+  GNU/Linux into a cluster. It automatically balances the load between
+  different nodes of the cluster, and nodes can join or leave the
+  running cluster without disruption of the service. The load is
+  spread out among nodes according to their connection and CPU speeds.&#13;</P
+><P
+>&#13;  Since openMosix is part of the kernel and maintains full
+  compatibility with Linux, a user's programs, files, and other
+  resources will all work as before without any further changes. The
+  casual user will not notice the difference between a Linux and an
+  openMosix system. To her, the whole cluster will function as one
+  (fast) GNU/Linux system.&#13;</P
+><P
+>openMosix is a Linux-kernel patch which provides full compatibility
+with standard Linux for IA32-compatible platforms. The internal
+load-balancing algorithm transparently migrates processes to other
+cluster members.  The advantage is a better load-sharing between the
+nodes. The cluster itself tries to optimize utilization at any time
+(of course the sysadmin can affect the automatic load-balancing by
+manual configuration during runtime).</P
+><P
+>This transparent process-migration feature makes the whole cluster
+look like a BIG SMP-system with as many processors as available
+cluster-nodes (of course multiplied with X for X-processor systems
+such as dual/quad systems and so on).  openMosix also provides a
+powerful optimized File System (oMFS) for HPC-applications, which
+unlike NFS provides cache, time stamp and link consistency.</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x141.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x184.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Feedback</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="p105.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>The story so far</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

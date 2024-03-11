@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>openMosixcollector</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="openMosixview"
+HREF="c925.html"><LINK
+REL="PREVIOUS"
+TITLE="openMosixprocs"
+HREF="x1073.html"><LINK
+REL="NEXT"
+TITLE="openMosixanalyzer"
+HREF="x1116.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x1073.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>openMosixview</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x1116.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1106"
+>openMosixcollector</A
+></H1
+><P
+> The openMosixcollector is a daemon which should/could be started on one cluster-member. 
+It logs the openMosix-load of each node to the directory /tmp/openmosixcollector/* 
+These history log-files analyzed by the openMosixanalyzer (as described later) 
+gives an nonstop overview of the load, memory and processes in your cluster. 
+There is one main log-file called /tmp/openmosixcollector/cluster 
+Additional to this there are additional files in this directory to which the 
+data is written. </P
+><P
+>&#13;At startup the openMosixcollector writes its PID (process id) to 
+/var/run/openMosixcollector.pid </P
+><P
+>&#13;The openMosixcollector-daemon restarts every 12 hours and saves the current history to 
+/tmp/openmosixcollector[date]/* 
+These backups are done automatically but you can also trigger this manual. </P
+><P
+>&#13;There is an option to write a checkpoint to the history. 
+These checkpoints are graphically marked as a blue vertical line if you analyze 
+the history log-files with the openMosixanalyzer. 
+For example you can set a checkpoint when you start a job on your cluster 
+and another one at the end.. </P
+><P
+>&#13;Here is the explanation of the possible commandline-arguments: 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>openmosixcollector -d      //starts the collector as a daemon 
+openmosixcollector -k      //stops the collector 
+openmosixcollector -n      //writes a checkpoint to the history 
+openmosixcollector -r      //saves the current history and starts a new one 
+openmosixcollector         //print out a short help </PRE
+></TD
+></TR
+></TABLE
+>&#13;</P
+><P
+>&#13;You can start this daemon with its init-script in /etc/init.d or /etc/rc.d/init.d. 
+You just have to create a symbolic link to one of the runlevels for automatic startup. </P
+><P
+>&#13;How to analyze the created logfiles is described in the openMosixanalyzer-section. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#13;</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x1073.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x1116.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>openMosixprocs</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c925.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>openMosixanalyzer</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

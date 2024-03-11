@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Components</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="So what is openMosix Anyway ? "
+HREF="c145.html"><LINK
+REL="PREVIOUS"
+TITLE="openMosix in action: An example"
+HREF="x216.html"><LINK
+REL="NEXT"
+TITLE="openMosix Test Drive"
+HREF="x237.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x216.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>So what is openMosix Anyway ?</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x237.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN222"
+>Components</A
+></H1
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN224"
+>Process migration</A
+></H2
+><P
+>&#13;With openMosix you can start a process on one machine and find out it
+actually runs on another machine in the cluster.  Each process has its
+own Unique Home Node (UHN) where it gets created.</P
+><P
+>&#13;Migration means that a process is splitted in 2 parts, a user part and
+a system part.  The user part will be moved to a remote node while the
+system part will stay on the UHN.  This system-part is sometimes
+called the deputy process: this process takes care of resolving most
+of the system calls.</P
+><P
+>openMosix takes care of the communication between these 2 processes.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN229"
+>The openMosix File System (oMFS)</A
+></H2
+><P
+><I
+CLASS="EMPHASIS"
+>Please note that oMFS has been removed from the openMosix patch as of 2.4.26-om1</I
+></P
+><P
+>&#13;oMFS is a feature of openMosix which allows you to access remote
+filesystems in a cluster as if they were locally mounted.  The
+filesystems of your other nodes can be mounted on /mfs and you will,
+for instance, find the files in /home on node 3 on each machine in
+/mfs/3/home.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN234"
+>Direct File System Access (DFSA)</A
+></H2
+><P
+>Both Mosix and openMosix provide a cluster-wide file-system (MFS) with
+the DFSA-option (Direct File-System Access). It provides access to all
+local and remote file-systems of the nodes in a Mosix or openMosix
+cluster.</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x216.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x237.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>openMosix in action: An example</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c145.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>openMosix Test Drive</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

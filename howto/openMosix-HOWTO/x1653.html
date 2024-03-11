@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>File Systems</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="the openMosix FAQ"
+HREF="c1521.html"><LINK
+REL="PREVIOUS"
+TITLE="Kernel Questions"
+HREF="x1623.html"><LINK
+REL="NEXT"
+TITLE="Programming openMosix"
+HREF="x1676.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x1623.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>the openMosix FAQ</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x1676.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1653"
+>File Systems</A
+></H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>Q: <A
+HREF="x1653.html#AEN1657"
+>&#13;What's oMFS, how do I use, and where do I get it?:</A
+></DT
+><DT
+>Q: <A
+HREF="x1653.html#AEN1672"
+>&#13;Can somebody explain to me the difference bewteen MFS and DFSA, and why I would need DFSA?:</A
+></DT
+></DL
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1657"
+></A
+><B
+>Q: 
+What's oMFS, how do I use, and where do I get it?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+The openMosix File System (oMFS) is the filesystem used by openMosix kernels. You get it by installing an openMosix kernel 
+on the nodes of your cluster with oMFS enabled in the kernel-config. (It should be enabled in the openMosix RPMs by 
+default.)</P
+><P
+>&#13;	You should also enable Direct Filesystem Access (DFSA) which allows a migrated process to execute many syscalls on the 
+	remote node locally without the need to migrate it back to its home node.</P
+><P
+>&#13;	The use and administration of oMFS is very similar to NFS, but unlike NFS, oMFS features:
+<P
+></P
+><UL
+><LI
+><P
+> Cache consistency</P
+></LI
+><LI
+><P
+> Timestamp consistency</P
+></LI
+><LI
+><P
+> Link consistency</P
+></LI
+></UL
+>
+	The DFSA layer on top of oMFS makes sure to move the process to the data, instead of vice versa, whenever it makes sense.</P
+><P
+>&#13;	Please read more about oMFS and how to use it in earlier chapters of the HOWTO.
+	</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1672"
+></A
+><B
+>Q: 
+Can somebody explain to me the difference bewteen MFS and DFSA, and why I would need DFSA?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+DFSA stands for Direct File System Access and is an optimization. It allows remote proccesses to perform some file system 
+system calls locally rather then sending them to their home node. MFS stands for Mosix File System and allows all nodes 
+access to all node filesystems. DFSA runs on top of a cluster filesystem, in this case MFS.</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x1623.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x1676.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Kernel Questions</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c1521.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Programming openMosix</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

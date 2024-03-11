@@ -1,0 +1,270 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Troubleshooting autodiscovery</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="2.4 Autodiscovery"
+HREF="c486.html"><LINK
+REL="PREVIOUS"
+TITLE="Compiling auto-discovering"
+HREF="x501.html"><LINK
+REL="NEXT"
+TITLE="openMosix at 2.6"
+HREF="c519.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x501.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>2.4 Autodiscovery</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c519.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN506"
+>Troubleshooting autodiscovery</A
+></H1
+><P
+>Sometimes however autodiscovery does not function as you would like,  
+for example a node might not see multicast traffic from other nodes.
+ This has occurred with some
+ PCMCIA ethernet drivers.  One solution is to place the interface in 
+ promiscuous and or multicast mode as detailed below:
+
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>Aug 31 20:45:58 localhost kernel: openMosix configuration changed: This is openMosix #98 (of 1 configured)
+Aug 31 20:45:58 localhost kernel: openMosix #98 is at IP address 10.0.0.98Aug 31 20:45:58 localhost omdiscd[1627]: Notified kernel to activate 
+openMosix  Aug 31 20:45:58 localhost kernel: Received an unauthorized information request from 10.0.0.99</PRE
+></TD
+></TR
+></TABLE
+>
+
+
+What you should to then is try to force your NIC
+ into promiscuous and/ 
+or multicast mode 
+manually. 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>ifconfig ethx promisc
+or
+ifconfig ethx multicast </PRE
+></TD
+></TR
+></TABLE
+>
+You might also want to run 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>tcpdump -i eth0 ether multicast </PRE
+></TD
+></TR
+></TABLE
+>
+which will have the same effect but you will now also be able to see the 
+packages yourself.&#13;</P
+><P
+>On some Layer 3 switches you other configs might be required.
+An openMosix user 
+found out that on his Switch Summit48Si (Extreme Networks) he had to run
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>disable ipmcforwarding (to deactivate the routing of multicast paquets)
+disable igmp snooping</PRE
+></TD
+></TR
+></TABLE
+>
+before he was the different omdiscd's were able to see eachother, other switches might require similar configs.</P
+><P
+>&#13;<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>Aug 31 22:14:43 inspon omdiscd[1422]: Simulated notification to activate openMosix
+[root@inspon root]# showmap
+My Node-Id: 0x0063
+
+Base Node-Id Address          Count
+------------ ---------------- -----
+0x0063       10.0.0.99        1
+[root@inspon root]# /etc/init.d/openmosix status
+OpenMosix is currently disabled
+[root@inspon root]# </PRE
+></TD
+></TR
+></TABLE
+>
+
+If you see the <I
+CLASS="EMPHASIS"
+>simulated</I
+> you have probably forgotten 
+to put the 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>#define ALPHA</PRE
+></TD
+></TR
+></TABLE
+>
+in comment.</P
+><P
+>I have also noticed that autodiscovery does not work with FireWire 
+based network cards.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x501.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c519.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Compiling auto-discovering</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c486.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>openMosix at 2.6</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

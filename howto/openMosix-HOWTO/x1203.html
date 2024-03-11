@@ -1,0 +1,342 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>openmosixview FAQ</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="openMosixview"
+HREF="c945.html"><LINK
+REL="PREVIOUS"
+TITLE="openMosixmigmon"
+HREF="x1181.html"><LINK
+REL="NEXT"
+TITLE="openMosixview + ssh:"
+HREF="x1231.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x1181.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>openMosixview</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x1231.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1203"
+>openmosixview FAQ</A
+></H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>Q: <A
+HREF="x1203.html#AEN1207"
+>I cannot compile openMosixview on my system?&#13;</A
+></DT
+><DT
+>Q: <A
+HREF="x1203.html#AEN1212"
+>Can I use openMosixview with SSH? </A
+></DT
+><DT
+>Q: <A
+HREF="x1203.html#AEN1217"
+>&#13;I started openMosixview but only the splash-screen appears. What is wrong? </A
+></DT
+><DT
+>Q: <A
+HREF="x1203.html#AEN1222"
+>&#13;The openMosixviewprocs/mosixview_client is not working for me!</A
+></DT
+><DT
+>Q: <A
+HREF="x1203.html#AEN1227"
+>&#13;
+
+
+Why are the buttons in the openMosixview-configuration dialog not preselected? &#13;</A
+></DT
+></DL
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1207"
+></A
+><B
+>Q: I cannot compile openMosixview on my system?&#13;</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>At first QT &#62;= 2.3.x is required. 
+The QTDIR -environment variable has to be set to your QT-installation 
+directories like it is well described in the INSTALL- file. 
+In versions &#60; 0.6 you can do a "make clean" and delete the two files: 
+/openmosixview/Makefile 
+/openmosixview/config.cache 
+and try to compile again because i alway left the binary- 
+and object-files in older versions. 
+If you have any other problems post them to the 
+openMosixview-mailinglist (or directly to me). &#13;</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1212"
+></A
+><B
+>Q: Can I use openMosixview with SSH? </B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>Yes, until version 0.7 there is a built-in SSH-support. 
+You have to be able to ssh to each node in your cluster without password 
+(just like the same with using RSH this is required) </P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1217"
+></A
+><B
+>Q: 
+I started openMosixview but only the splash-screen appears. What is wrong? </B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+Do not fork openMosixview in the background with &#38; (e.g. openMosixview &#38;). 
+Maybe you cannot rsh/ssh (depends on what you want to use) as user root 
+without password to each node? 
+Try "rsh hostname" as root. You should not been promped for a password 
+but soon get a login shell. 
+(If you use SSH try "ssh hostname" as root.) 
+You have to be root on the cluster because that is the only way the 
+administrative commands executed by openMosixview requires root-privileges. 
+openMosixview uses "rsh" as the default! 
+If you only have "ssh" installed on your cluster 
+edit (or create) the file /root/.openMosixview and put "1111" in it. 
+This is the main-configuration 
+file for openMosixview and the last "1" stands for "use ssh instead of rsh". 
+This will cause openMosixview to use "ssh" even for the first start. &#13;</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1222"
+></A
+><B
+>Q: 
+The openMosixviewprocs/mosixview_client is not working for me!</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+The openMosixview-client is executed per rsh 
+(or ssh which you can configer whith a checkbox) 
+on the remote host. It has to be installed in /usr/bin/ on each node. 
+If you use RSH try: 
+"xhost +hostname" 
+"rsh hostname /usr/bin/openMosixview_client -display your_local_host_name:0.0" 
+or if you use SSH try: 
+"xhost +hostname" 
+"ssh hostname /usr/bin/openMosixview_client -display your_local_host_name:0.0" 
+If this works it will work in openMosixview too. 
+openMosixview crashes with "segmentation fault"! 
+Maybe you still use an old version of openMosixview/Mosixview ? 
+in the mosix.map-parser (which is completly removed in openMosixview !!) 
+(the versions openMosixview 1.2 and Mosixview &#62; 1.0 are stable) </P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1227"
+></A
+><B
+>Q: 
+
+
+
+Why are the buttons in the openMosixview-configuration dialog not preselected? &#13;</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+(automigration on/off, blocking on/off......) 
+I want them to be preselected too. 
+
+The problem is to get the information of node. 
+You have to login to each cluster-node because these information 
+are not cluster-wide (to my mind). 
+The status of each node is stored in the /proc/hpc/admin directory 
+of each node. Everybody who knows a good way to get these information 
+easy is invited to mail me. 
+&#13;</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x1181.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x1231.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>openMosixmigmon</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c945.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>openMosixview + ssh:</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

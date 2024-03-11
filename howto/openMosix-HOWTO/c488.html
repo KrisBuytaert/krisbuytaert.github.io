@@ -1,0 +1,287 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>2.4 Autodiscovery</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Installing openMosix"
+HREF="p291.html"><LINK
+REL="PREVIOUS"
+TITLE="Other distributions"
+HREF="x485.html"><LINK
+REL="NEXT"
+TITLE="Compiling auto-discovering"
+HREF="x503.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x485.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x503.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="AUTODISCOVERY"
+></A
+>2.4 Autodiscovery</H1
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN490"
+>Easy Configuration</A
+></H1
+><P
+>The auto-discovery daemon (omdiscd) provides a way to automatically configure 
+an openMosix cluster hence 
+eliminating the need of a /etc/mosix.map or similar manual 
+configurations.  
+Auto-discovery   uses multicast packages to 
+notify  other nodes that it is an openMosix node.
+This way adding an extra node to your mosix cluster means that you just 
+have to start the omdiscd on your machine and it will join the cluster.</P
+><P
+>&#13;However there are some small requirements, Like with any openMosix cluster
+, you need to have networking configured correctly.  mainly the routing.  
+Without a default route, you must specify an interface to omdiscd with the
+-i option. Otherwise omdiscd will exit with an error like.
+
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>Aug 31 20:41:49 localhost omdiscd[1290]: Unable to determine address of 
+default interface.  This may happen because there is no default route 
+configured.  Without a default route, an interface must be: Network is 
+unreachable 
+Aug 31 20:41:49 localhost omdiscd[1290]: Unable to initialize network.  
+Exiting. </PRE
+></TD
+></TR
+></TABLE
+>
+
+An example of a correct routing is below
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>[root@localhost log]# route -n 
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+10.0.0.0        0.0.0.0         255.0.0.0       U     0      0        0 eth0
+127.0.0.0       0.0.0.0         255.0.0.0       U     0      0        0 lo
+0.0.0.0         10.0.0.99       0.0.0.0         UG    0      0        0 eth0</PRE
+></TD
+></TR
+></TABLE
+>
+
+
+Basically from now on everything will get easier.  
+Just start 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>omdiscd</PRE
+></TD
+></TR
+></TABLE
+>
+
+And have a look at your logfiles you should see something similar to this
+ 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>Sep  2 10:00:49 oscar0 kernel: openMosix configuration changed: This is openMosix #2780 (of 6 configured)
+Sep  2 10:00:49 oscar0 kernel: openMosix #2780 is at IP address 192.168.10.220
+Sep  2 10:00:49 oscar0 kernel: openMosix #2638 is at IP address 192.168.10.78
+Sep  2 10:00:49 oscar0 kernel: openMosix #2646 is at IP address 192.168.10.86
+Sep  2 10:00:49 oscar0 kernel: openMosix #2627 is at IP address 192.168.10.67
+Sep  2 10:00:49 oscar0 kernel: openMosix #2634 is at IP address 192.168.10.74</PRE
+></TD
+></TR
+></TABLE
+>
+
+
+Congratulations , your openMosix cluster is now working.</P
+><P
+>omdiscd has some other options that you can use.
+You can either run omdiscd as a daemon (default) or in the foreground 
+where output goes to the screen (standard output) 
+omdiscd -n .  An interface can be specified with the -i option.</P
+><P
+>&#13;Now lets still have a short look at the other tool , it's showmap. This tool will show you the newly auto generated 
+openMosix map.
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>[root@oscar0 root]# showmap
+My Node-Id: 0x0adc
+
+Base Node-Id Address          Count
+------------ ---------------- -----
+0x0adc       192.168.10.220   1
+0x0a4e       192.168.10.78    1
+0x0a56       192.168.10.86    1
+0x0a43       192.168.10.67    1
+0x0a4a       192.168.10.74    1</PRE
+></TD
+></TR
+></TABLE
+>&#13;</P
+><P
+>Auto-discovery has some other features not listed here such as a routing
+mechanism for clusters with more than one network.  More detailed 
+information
+can be found in the README and DESIGN files in the user-land tools source
+tree.&#13;</P
+><P
+>More recent versions of the openMosix rc scripts will first 
+verify wether an /etc/openmosix.map file or similar exists before 
+trying to use autoconfiguration. </P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x485.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x503.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Other distributions</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="p291.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Compiling auto-discovering</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

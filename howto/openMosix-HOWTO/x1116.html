@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>openMosixanalyzer</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="openMosixview"
+HREF="c925.html"><LINK
+REL="PREVIOUS"
+TITLE="openMosixcollector"
+HREF="x1106.html"><LINK
+REL="NEXT"
+TITLE="openMosixmigmon"
+HREF="x1161.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x1106.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>openMosixview</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x1161.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1116"
+>openMosixanalyzer</A
+></H1
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN1118"
+>the load-overview</A
+></H2
+><P
+>&#13; This picture shows the graphical Load-overview in the openMosixanalyzer (Click to enlarge) </P
+><DIV
+CLASS="MEDIAOBJECT"
+><P
+><IMG
+SRC="omview7.gif"></P
+></DIV
+><P
+>&#13;With the openMosixanalyzer you can have a non-stop openMosix-history of your cluster. 
+The history log-files created by openMosixcollector are displayed in a graphically way 
+so that you have a long-time overview what happened and happens on your cluster. 
+The openMosixanalyzer can analyze the current "online" logfiles but you can also open older backups 
+of your openMosixcollector history logs by the filemenu. 
+The logfiles are placed in /tmp/openmosixcollector/* (the backups in /tmp/openmosixcollector[date]/*) 
+and you have to open only the main history file "cluster" to take a look at older load-informations. 
+(the [date] in the backup directories for the log-files is the date the history is saved) 
+The start time is displayed on the top and you have a full-day view in the openMosixanalyzer (12 h). </P
+><P
+>&#13;If you are using the openMosixanalyzer for looking at "online"-logfiles (current history) 
+you can enable the "refresh"-checkbox and the view will auto-refresh. </P
+><P
+>&#13;The load-lines are normally black. If the load increases to &#62;75 the lines are drawn red. 
+These values are openMosix--informations. The openMosixanalyzer gets these informations 
+from the files /proc/hpc/nodes/[openMosix ID]/* </P
+><P
+>&#13;The Find-out-button of each nodes calculates several useful statistic values. 
+Clicking it will open a small new window in which you get the average load- and mem values 
+and some more statically and dynamic informations about the specific node or the whole cluster. </P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN1130"
+>statistical informations about a cluster-node</A
+></H2
+><DIV
+CLASS="MEDIAOBJECT"
+><P
+><IMG
+SRC="omview9.gif"></P
+></DIV
+><P
+>&#13;
+ If there are checkpoints written to the load-history by the openMosixcollector they are 
+displayed as a vertical blue line. You now can compare the load values at a certain moment 
+much easier. </P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN1138"
+>the memory-overview</A
+></H2
+><DIV
+CLASS="MEDIAOBJECT"
+><P
+><IMG
+SRC="omview8.gif"></P
+></DIV
+><P
+> This picture shows the graphical 
+Memory-overview in the openMosixanalyzer  </P
+><P
+>&#13;With Memory-overview in the openMosixanalyzer you can have a non-stop memory history 
+similar to the Load-overview. The history log-files created by openMosixcollector 
+are displayed in a graphically way so that you have a long-time overview what happened 
+and happens on your cluster. 
+It analyze the current "online" logfiles but you can also open older backups of your 
+openMosixcollector history logs by the filemenu. </P
+><P
+>&#13;The displayed values are openMosix-informations. The openMosixanalyzer gets these 
+informations from the files 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>/proc/hpc/nodes/[openMosix-ID]/mem. 
+/proc/hpc/nodes/[openMosix-ID]/rmem. 
+/proc/hpc/nodes/[openMosix-ID]/tmem. </PRE
+></TD
+></TR
+></TABLE
+>&#13;</P
+><P
+>&#13;
+
+If there are checkpoints written to the memory-history by the openMosixcollector 
+they are displayed as a vertical blue line. </P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN1150"
+>openMosixhistory</A
+></H2
+><DIV
+CLASS="MEDIAOBJECT"
+><P
+><IMG
+SRC="omview10.gif"></P
+></DIV
+><P
+>&#13;displays the processlist from the 
+past&#13;</P
+><P
+>openMosixhistory
+
+gives a detailed overview which 
+process was running on 
+which node. 
+The openMosixcollector saves the processlist from the host the collector was started 
+on and you can browse this log-data with openMosixhistory. You can easy change the 
+browsing time in openMosixhistory by the time-slider. </P
+><P
+>&#13;openMosixhistory can analyze the current "online" logfiles but you can also open older 
+backups of your openMosixcollector history logs by the filemenu. </P
+><P
+>&#13;
+The logfiles are placed in /tmp/openmosixcollector/* 
+(the backups in /tmp/openmosixcollector[date]/*) and you have to open only the main history 
+file "cluster" to take a look at older load-informations. 
+(the [date] in the backup directories for the log-files is the date the history is saved) 
+The start time is displayed on the top/left and you have a 12 hour view in openMosixhistory. 
+&#13;</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x1106.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x1161.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>openMosixcollector</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c925.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>openMosixmigmon</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

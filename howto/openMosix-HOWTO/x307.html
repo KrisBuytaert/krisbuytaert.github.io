@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Planning your Cluster</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Requirements and Planning"
+HREF="c291.html"><LINK
+REL="PREVIOUS"
+TITLE="Software requirements"
+HREF="x304.html"><LINK
+REL="NEXT"
+TITLE="Classrooms"
+HREF="x321.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x304.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Requirements and Planning</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x321.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN307"
+>Planning your Cluster</A
+></H1
+><P
+> When it comes to configuring openMosix Clusters with a pool of
+servers and a set of (personal) workstations, you have different
+options that will have their advantages and disadvantages.
+
+
+<P
+></P
+><UL
+><LI
+><P
+>In a <I
+CLASS="EMPHASIS"
+>Single-pool</I
+> configuration all the servers
+and workstations are used as a single cluster: each machine is a part
+of the cluster and can migrate processes to each other existing node.
+This of course makes your workstation a part of the pool.</P
+></LI
+><LI
+><P
+>In an environment that is called a <I
+CLASS="EMPHASIS"
+>Server-pool</I
+>,
+servers are a part of the cluster while workstations aren't part of
+it, they don't even have openMosix kernel.  If you want to run 
+applications on the cluster you will need to
+specifically log on to these servers.  However your workstation will also 
+stay
+clean and no remote processes will migrate to it.</P
+></LI
+><LI
+><P
+>A third alternative is called an <I
+CLASS="EMPHASIS"
+>Adaptive-pool</I
+>
+configuration: here servers are shared while workstations join or
+leave the cluster. Imagine your workstation being used during daytime
+by yourself but, as soon as you log out in the evening, a script tells
+the workstation to join the cluster and start crunching numbers. This
+way your machine is being used while you don't need it. If you need
+the resources of the machine again just run the openmosix stop script
+and your processes will stay away from the cluster and vice-versa.</P
+><P
+>Practically this means that you will change the role of your machine 
+by using mosctl.</P
+></LI
+></UL
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x304.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x321.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Software requirements</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c291.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Classrooms</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Cluster Mask</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Administrating openMosix"
+HREF="c606.html"><LINK
+REL="PREVIOUS"
+TITLE="the userspace-tools"
+HREF="x775.html"><LINK
+REL="NEXT"
+TITLE="Tuning Mosix"
+HREF="c911.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x775.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Administrating openMosix</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c911.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN897"
+>Cluster Mask</A
+></H1
+><P
+>(by Moshe Bar)</P
+><P
+>Several people have asked for a feature in openMosix which allows to 
+specifiy to which nodes a given process and it's children can migrate 
+and to which nodes it cannot.</P
+><P
+>Simone Ettore has just committed a new patch to the CVS which allows 
+you to do just that.</P
+><P
+>Here is how it works:
+
+<P
+></P
+><UL
+><LI
+><P
+>/proc/[pid]/migfilter enable/disable the capability of filter migration.</P
+></LI
+><LI
+><P
+>/proc/[pid]/mignodes is a bit-list of nodes. The bit position of a node 
+is calculated as 2^(PE-1). PE is node number.</P
+></LI
+><LI
+><P
+>/proc/[pid]/migpolicy is the policy of the filtering:
+0=DENY: the process can migrate in all nodes except when the relative
+bit on mignodes is 1
+1=ALLOW: the process can migrate in all nodes where the relative bit on
+mignodes is 1</P
+></LI
+></UL
+></P
+><P
+>&#13;We are shortly going to release also a simple user-land tool to set the 
+node mask, but I would like you guys to give it a try asap before we 
+release it as openMosix 2.4.20-3.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x775.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c911.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>the userspace-tools</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c606.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Tuning Mosix</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

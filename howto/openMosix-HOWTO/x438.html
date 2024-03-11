@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Red Hat and openMosix</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Distribution specific installations (2.4) "
+HREF="c324.html"><LINK
+REL="PREVIOUS"
+TITLE="openMosix General Instructions"
+HREF="x344.html"><LINK
+REL="NEXT"
+TITLE="Suse and openMosix"
+HREF="x451.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x344.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Distribution specific installations (2.4)</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x451.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN438"
+>Red Hat and openMosix</A
+></H1
+><P
+>If you are running a RedHat 7.2, 7.3 or 8.0 version, this is probably
+the easiest *Mosix install you have ever done.  Choose the appropriate
+openMosix RPMs from sourceforge.  They have precompiled kernels (as I
+write this 2.4.20) that work seamlessly: I have tested them on several
+machines including Laptops with PCMCIA cards and Servers with SCSI
+disks.  If you are a grub user, the kernel rpm even modifies your
+grub.conf.  So all you have to do is install 2 RPMs:
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>rpm -Uvh openmosix-kernel-2.4.20-openmosix2.i686.rpm openmosix-tools-0.2.4-1.i386.rpm</PRE
+></TD
+></TR
+></TABLE
+>
+
+and edit your /etc/openmosix.map if you don't wish to use the
+autodiscovery daemon (omdiscd).
+
+Since this seems to be a problem for lots of people, let's go with
+another example.  Say you have 3 machines: 192.168.10.220,
+192.168.10.78 and 192.168.10.84.
+
+Your openmosix.map will look like this.
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>[root@oscar0 root]# more /etc/openmosix.map 
+# openMosix CONFIGURATION
+# ===================
+#
+# Each line should contain 3 fields, mapping IP addresses to openMosix node-numbers:
+# 1) first openMosix node-number in range.
+# 2) IP address of the above node (or node-name from /etc/hosts).
+# 3) number of nodes in this range.
+#
+# Example: 10 machines with IP 192.168.1.50 - 192.168.1.59
+# 1	   192.168.1.50	    10
+#
+# openMosix-#  IP  number-of-nodes
+# ============================
+1 192.168.10.220 1
+2 192.168.10.78  1
+3 192.168.10.84  1</PRE
+></TD
+></TR
+></TABLE
+>
+
+
+Now by rebooting the different machines with the newly installed
+kernel you will get one step closer to having a working cluster.</P
+><P
+>Most RedHat installations have one extra thing to fix. You often get
+the following error:
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>[root@inspon root]# /etc/init.d/openmosix start 
+Initializing openMosix...
+setpe: the supplied table is well-formatted,
+but my IP address (127.0.0.1) is not there!</PRE
+></TD
+></TR
+></TABLE
+>
+
+This means that your hostname is not listed in /etc/hosts with the
+same ip as in your openmosix.map.  You might have a machine called
+omosix1.localhost.org in your hostfile listed as
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>127.0.0.1	omosix1.localhost.org localhost </PRE
+></TD
+></TR
+></TABLE
+>
+
+If you modify your /etc/hosts to look like below, openMosix will have
+less troubles starting up.
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>192.168.10.78   omosix1.localhost.org
+127.0.0.1       localhost </PRE
+></TD
+></TR
+></TABLE
+>
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>[root@inspon root]# /etc/init.d/openmosix start 
+Initializing openMosix...
+[root@inspon root]# /etc/init.d/openmosix status
+This is openMosix node #2
+Network protocol: 2 (AF_INET)
+openMosix range     1-1     begins at 192.168.10.220
+openMosix range     2-2     begins at inspon.localhost.be
+openMosix range     3-3     begins at 192.168.10.84
+Total configured: 3</PRE
+></TD
+></TR
+></TABLE
+>
+ </P
+><P
+>If you would like to use more bleeding edge patches, you can always 
+opt for the src rpm and run rpmbuild --rebuild on it.
+This will install the source for you and create an initial config file.
+From there you can go further applying patches to openMosix</P
+><P
+>A tutorial on how to build your own openMosix RPM's can be found in the Appendixes.
+&#13;</P
+><P
+>As new RedHat versions come out, they might be supported out of
+the box so, feel free to drop the author a note and help him keeping
+this information updated.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x344.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x451.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>openMosix General Instructions</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c324.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Suse and openMosix</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

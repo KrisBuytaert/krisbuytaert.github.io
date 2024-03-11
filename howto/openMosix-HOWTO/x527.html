@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>How does it work?</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="PlumpOS"
+HREF="c521.html"><LINK
+REL="PREVIOUS"
+TITLE="PlumpOS"
+HREF="c521.html"><LINK
+REL="NEXT"
+TITLE="Requirements"
+HREF="x532.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c521.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>PlumpOS</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x532.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN527"
+>How does it work?</A
+></H1
+><P
+>First of all, set up your machine's BIOS in order to make it boot from
+CD. Check your motherboard's manual to see how to set up this.  Upon
+booting up you will receive a prompt to boot PlumpOS using a specific
+kernel; several ones have been provided for you but, you also have the
+option of providing your own kernel + modules. This will be explained
+later in the ``Getting Started'' section. The boot menu should tell
+you all the kernels available for you to use; simply type the name of
+one (and optionally some kernel arguments) and press return/enter.</P
+><P
+>At boot-time, PlumpOS will auto-probe for network cards and, if any
+gets detected, it'll try and configure them via DHCP. If successful,
+it will fire up omdiscd on each interface a DHCP lease is received
+on. Currently this has only been tested in PCs with 1 network card so
+YMMV.</P
+><P
+>It works for myself, but may not work for you; if you experience
+difficulties, please email me with as much information about your
+system as possible -- after you have investigated the problem. (Check
+the sourceforge homepage for PlumpOS's mailing list, sign up and post
+your question with as much detailed information as possible. The
+openMosix-general and openMosix-devel lists are NOT for PlumpOS
+problems, they are for openMosix-specific problems, and if you can't
+tell the difference just send it to the PlumpOS list or my contact
+email).</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c521.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x532.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>PlumpOS</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c521.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Requirements</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

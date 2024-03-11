@@ -1,0 +1,425 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>My processes won't migrate</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Common Problems"
+HREF="c1254.html"><LINK
+REL="PREVIOUS"
+TITLE="Common Problems"
+HREF="c1254.html"><LINK
+REL="NEXT"
+TITLE="I don't see all my nodes"
+HREF="x1284.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c1254.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Common Problems</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x1284.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1260"
+>My processes won't migrate</A
+></H1
+><P
+><I
+CLASS="EMPHASIS"
+>Help  process XYZ doesn't migrate.  </I
+>
+
+Moshe Bar explains below why some processes migrate and why some don't.
+But before that you can always look in /proc/$pid/, there often is a 
+<I
+CLASS="EMPHASIS"
+>cantmove</I
+> file which will tell you why a certain 
+process can't migrate.</P
+><P
+>Processes can also be locked.  
+You can check if a process is locked with:
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>cat /proc/$PID/lock</PRE
+></TD
+></TR
+></TABLE
+>
+where $PID is the processid of the process in question.&#13;</P
+><P
+>Now  listen to what  Moshe himself has to say about this 
+topic.&#13;</P
+><P
+>Often people have the same kernel but on a different 
+distribution, say a mixed environment of RedHat and Debian ,rc 
+scripts from different distros tend to start openmosix 
+differently.    Some implementations completely modify 
+/etc/inittab to start all daemons (and their children) with 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>mosrun -h</PRE
+></TD
+></TR
+></TABLE
+>. So that they won't migrate.  
+Therefore all these processes have a 1 in 
+/proc/pid/lock  when you start. You can force them to migrate 
+by writing a 0 to this file .</P
+><P
+>&#13;
+
+Ok, this simple program should always migrate if launched more times than
+number of local CPUs. So for a 2-way SMP system, starting this program 3
+times will start migration if the other nodes in the cluster have at least
+the same speed like the local ones:
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>int main() {
+    unsigned int i;
+    while (1) {
+        i++;
+    }
+    return 0;
+}</PRE
+></TD
+></TR
+></TABLE
+>
+
+On a Pentium 800Mhz CPU it takes quite a while to overflow.&#13;</P
+><P
+>&#13;
+
+This sample program with content like this will never migrate:
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>#include &#60;sys/types.h&#62;
+#include &#60;sys/ipc.h&#62;
+#include &#60;sys/shm.h&#62;
+
+...
+
+key_t key; /* key to be passed to shmget() */
+int shmflg; /* shmflg to be passed to shmget() */
+int shmid; /* return value from shmget() */
+int size; /* size to be passed to shmget() */
+
+...
+
+key = ...
+size = ...
+shmflg) = ...
+
+if ((shmid = shmget (key, size, shmflg)) == -1) {
+   perror("shmget: shmget failed"); exit(1); } else {
+   (void) fprintf(stderr, "shmget: shmget returned %d\n", shmid);
+   exit(0);
+  }
+...</PRE
+></TD
+></TR
+></TABLE
+>&#13;</P
+><P
+>&#13;Program using pipes like this do migrate nicely:
+
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>&#13;int pdes[2];
+
+pipe(pdes);
+if ( fork() == 0 )
+  { /* child */
+                                 close(pdes[1]); /* not required */
+                                 read( pdes[0]); /* read from parent */
+                                 .....
+                 }
+else
+                 { close(pdes[0]); /* not required */
+                                 write( pdes[1]); /* write to child */
+                                 .....
+                 }</PRE
+></TD
+></TR
+></TABLE
+>
+
+<I
+CLASS="EMPHASIS"
+>MODIFIED</I
+>
+Programs using pthreads since version 2.4.17 don't migrate, however they 
+don't segfault anymore.
+
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>//
+// Very simple program demonstrating the use of threads.
+//
+// Command-line argument is P (number of threads).
+//
+// Each thread writes "hello" message to standard output, with
+//   no attempt to synchronize.  Output will likely be garbled.
+//
+#include &#60;iostream&#62;
+#include &#60;cstdlib&#62;              // has exit(), etc.
+#include &#60;unistd.h&#62;             // has usleep()
+#include &#60;pthread.h&#62;            // has pthread_ routines
+
+// declaration for function to be executed by each thread
+void * printHello(void * threadArg);
+
+// ---- Main program -------------------------------------------------
+
+int main(int argc, char* argv[]) {
+
+  if (argc &#60; 2) {
+    cerr &#60;&#60; "Usage:  " &#60;&#60; argv[0] &#60;&#60; " numThreads\n";
+    exit(EXIT_FAILURE);
+  }
+  int P = atoi(argv[1]);
+
+  // Set up IDs for threads (need a separate variable for each
+  //   since they're shared among threads).
+  int * threadIDs = new int[P];
+  for (int i = 0; i &#60; P; ++i)
+    threadIDs[i] = i;
+
+  // Start P new threads, each with different ID.
+  pthread_t * threads = new pthread_t[P];
+  for (int i = 0; i &#60; P; ++i)
+    pthread_create(&#38;threads[i], NULL, printHello,
+                   (void *) &#38;threadIDs[i]);
+
+  // Wait for all threads to complete.
+  for (int i = 0; i &#60; P; ++i)
+    pthread_join(threads[i], NULL);
+
+  // Clean up and exit.
+  delete [] threadIDs;
+  delete [] threads;
+  cout &#60;&#60; "That's all, folks!\n";
+  return EXIT_SUCCESS;
+}
+
+// ---- Code to be executed by each thread ---------------------------
+
+// pre:  *threadArg is an integer "thread ID".
+// post:  "hello" message printed to standard output.
+//        return value is null pointer.
+void * printHello(void * threadArg) {
+  int * myID = (int *) threadArg;
+  cout &#60;&#60; "hello, world, ";
+  // pointless pause, included to make the effects of
+  //   synchronization (or lack thereof) more obvious
+  usleep(10);
+  cout &#60;&#60; "from thread " &#60;&#60; *myID &#60;&#60; endl;
+  pthread_exit((void* ) NULL);
+}
+&#13;</PRE
+></TD
+></TR
+></TABLE
+>
+
+
+
+Programs using all kinds of file descriptors, including sockets do migrate
+(sockets are not migrated with the process however, files are migrated if
+using oMFS/DFSA)</P
+><P
+>&#13;(all above code is by Moshe  as Moshe Bar or by Moshe as CTO of Qlusters, Inc.)&#13;</P
+><P
+>Please also refer to the man pages of openMosix , they also give an 
+adequate explanation why processes don't migrate.&#13;</P
+><P
+>If for some reason your processes stay locked while they shouldn't. You 
+can try to allow locked processes to migrate by simply putting
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+># tell shells to allow subprocs to migrate to other nodes
+echo 0 &#62; /proc/self/lock</PRE
+></TD
+></TR
+></TABLE
+>
+
+into
+<SPAN
+CLASS="QUOTE"
+>"/etc/profile"</SPAN
+>
+Warning : this fix will allow <I
+CLASS="EMPHASIS"
+>all</I
+> process to migrate 
+not just the ones you want. To only allow specific process to migrate 
+use 'mosrun  -l' to unlock only the desired process.
+&#13;</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c1254.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x1284.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Common Problems</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c1254.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>I don't see all my nodes</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

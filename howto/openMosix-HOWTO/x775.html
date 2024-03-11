@@ -1,0 +1,524 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>the userspace-tools</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Administrating openMosix"
+HREF="c606.html"><LINK
+REL="PREVIOUS"
+TITLE="Configuration"
+HREF="x612.html"><LINK
+REL="NEXT"
+TITLE="Cluster Mask"
+HREF="x897.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x612.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Administrating openMosix</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x897.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN775"
+>the userspace-tools</A
+></H1
+><P
+>&#13;These following tools are providing easy administration to openMosix 
+clusters.
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>migrate -send a migrate request to a process
+                syntax: 
+                        migrate [PID] [openMosix_ID]</PRE
+></TD
+></TR
+></TABLE
+>
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>&#13;
+mon             -is a ncurses-based terminal monitor
+                 several informations about the current status are displayed in bar-charts</PRE
+></TD
+></TR
+></TABLE
+>
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>&#13;mosctl          -is the openMosix main configuration utility
+                syntax:
+                        mosctl  [stay|nostay]
+                                [lstay|nolstay]
+                                [block|noblock]
+                                [quiet|noquiet]
+                                [nomfs|mfs]
+                                [expel|bring]
+                                [gettune|getyard|getdecay]
+
+                        mosctl  whois   [openMosix_ID|IP-address|hostname]
+
+                        mosctl  [getload|getspeed|status|isup|getmem|getfree|getutil]   [openMosix_ID]
+
+                        mosctl  setyard [Processor-Type|openMosix_ID||this]
+
+                        mosctl  setspeed        interger-value
+
+                        mosctl  setdecay interval       [slow fast]</PRE
+></TD
+></TR
+></TABLE
+>
+
+<DIV
+CLASS="TABLE"
+><A
+NAME="AEN781"
+></A
+><P
+><B
+>Table 6. more detailed</B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TBODY
+><TR
+><TD
+>&#13;
+stay            </TD
+><TD
+>no automatic process migration</TD
+></TR
+><TR
+><TD
+>&#13;nostay          </TD
+><TD
+>automatic process migration (default)</TD
+></TR
+><TR
+><TD
+>lstay           </TD
+><TD
+>local processes should stay</TD
+></TR
+><TR
+><TD
+>nolstay         </TD
+><TD
+>local processes could migrate</TD
+></TR
+><TR
+><TD
+>block           </TD
+><TD
+>block arriving of guest processes</TD
+></TR
+><TR
+><TD
+>noblock         </TD
+><TD
+>allow arriving of guest processes</TD
+></TR
+><TR
+><TD
+>quiet           </TD
+><TD
+>disable gathering of load-balancing informations</TD
+></TR
+><TR
+><TD
+>noquiet         </TD
+><TD
+>enable gathering of load-balancing informations</TD
+></TR
+><TR
+><TD
+>nomfs           </TD
+><TD
+>disables MFS</TD
+></TR
+><TR
+><TD
+>mfs             </TD
+><TD
+>enables MFS</TD
+></TR
+><TR
+><TD
+>expel           </TD
+><TD
+>send away guest processes</TD
+></TR
+><TR
+><TD
+>bring           </TD
+><TD
+>bring all migrated processes home</TD
+></TR
+><TR
+><TD
+>gettune         </TD
+><TD
+>shows the current overhead parameter</TD
+></TR
+><TR
+><TD
+>getyard         </TD
+><TD
+>shows the current used Yardstick</TD
+></TR
+><TR
+><TD
+>getdecay        </TD
+><TD
+>shows the current decay parameter</TD
+></TR
+><TR
+><TD
+>whois           </TD
+><TD
+>resolves openMosix-ID, ip-addresses and hostnames of the cluster</TD
+></TR
+><TR
+><TD
+>getload         </TD
+><TD
+>display the (openMosix-) load</TD
+></TR
+><TR
+><TD
+>getspeed        </TD
+><TD
+>shows the (openMosix-) speed</TD
+></TR
+><TR
+><TD
+>status          </TD
+><TD
+>displays the current status and configuration</TD
+></TR
+><TR
+><TD
+>isup            </TD
+><TD
+>is a node up or down (openMosix kind of ping)</TD
+></TR
+><TR
+><TD
+>getmem          </TD
+><TD
+>shows logical free memory</TD
+></TR
+><TR
+><TD
+>getfree         </TD
+><TD
+>shows physical free mem</TD
+></TR
+><TR
+><TD
+>getutil         </TD
+><TD
+>display utilization</TD
+></TR
+><TR
+><TD
+>setyard         </TD
+><TD
+>sets a new Yardstick-value</TD
+></TR
+><TR
+><TD
+>setspeed        </TD
+><TD
+>sets a new (openMosix-) speed value</TD
+></TR
+><TR
+><TD
+>setdecay        </TD
+><TD
+>sets a new decay-interval</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+
+
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>&#13;mosrun          -run a special configured command on a chosen node
+                syntax:
+                        mosrun  [-h|openMosix_ID| list_of_openMosix_IDs] command [arguments]</PRE
+></TD
+></TR
+></TABLE
+></P
+><P
+>The mosrun command can be executed with several more commandline options. 
+To ease this up there are several preconfigured run-scripts for executing 
+jobs with a special (openMosix) configuration.</P
+><DIV
+CLASS="TABLE"
+><A
+NAME="AEN865"
+></A
+><P
+><B
+>Table 7. extra options for mosrun</B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TBODY
+><TR
+><TD
+>nomig           </TD
+><TD
+>runs a command which process(es) won't migrate</TD
+></TR
+><TR
+><TD
+>runhome         </TD
+><TD
+>executes a command locked to its home node</TD
+></TR
+><TR
+><TD
+>runon           </TD
+><TD
+>runs a command which will be directly migrated and locked to a node</TD
+></TR
+><TR
+><TD
+>cpujob  	</TD
+><TD
+>tells the openMosix cluster that this is a cpu-bound process</TD
+></TR
+><TR
+><TD
+>iojob           </TD
+><TD
+>tells the openMosix cluster that this is a io-bound process</TD
+></TR
+><TR
+><TD
+>nodecay         </TD
+><TD
+>executes a command and tells the cluster not to refresh the load-balancing statistics</TD
+></TR
+><TR
+><TD
+>slowdecay       </TD
+><TD
+>executes a command with a slow decay interval for collecting load-balancing statistics</TD
+></TR
+><TR
+><TD
+>fastdecay       </TD
+><TD
+>executes a command with a fast decay interval for collecting load-balancing statistics</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>&#13;setpe           -manual node configuration utility
+                syntax:
+                        setpe   -w -f   [hpc_map]
+                        setpe   -r [-f  [hpc_map]]
+                        setpe   -off
+
+-w reads the openMosix configuration from a file (typically /etc/hpc.map)
+-r writes the current openMosix configuration to a file (typically /etc/hpc.map)
+-off turns the current openMosix configuration off</PRE
+></TD
+></TR
+></TABLE
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>&#13;tune            openMosix calibration and optimizations utility.
+                (for further informations review the tune-man page)&#13;</PRE
+></TD
+></TR
+></TABLE
+><P
+>Additional to the /proc interface and the commandline-openMosix utilities 
+(which are using the 
+/proc interface) there is a patched "ps" and "top" available (they are 
+called "mps" and "mtop")
+which displays also the openMosix-node ID on a column. This is useful for 
+finding out where a
+specific process is currently being computed.</P
+><P
+>This actually summarised the command line tools, but have a look at 
+openMosixview which is 
+a 
+
+GUI for the most common 
+administration tasks, and which ill be discussed in a future chapter.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x612.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x897.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Configuration</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c606.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Cluster Mask</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,376 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>openMosixview + ssh:</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="openMosixview"
+HREF="c945.html"><LINK
+REL="PREVIOUS"
+TITLE="openmosixview FAQ"
+HREF="x1203.html"><LINK
+REL="NEXT"
+TITLE="Other openMosix related Programs"
+HREF="c1254.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x1203.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>openMosixview</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c1254.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1231"
+>openMosixview + ssh:</A
+></H1
+><P
+> (this HowTo is for SSH2) 
+
+
+You can read the reasons why you should use SSH instead of RSH everyday 
+on the newspaper when another script-kiddy hacked into an insecure system/network. 
+So SSH is a good decision at all. 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>freedom x security = constant    (from a security newsgroup) </PRE
+></TD
+></TR
+></TABLE
+>
+
+That is why it is a bit tricky to configure SSH. SSH is secure even if you use 
+it to login without being prompted for a password. 
+Here is a (one) way to configure it. </P
+><P
+>At first a running secure-shell daemon on the remote site is required. 
+If it is not already installed install it! 
+(rpm -i [sshd_rpm_packeage_from_your_linux_distribution_cd]) 
+If it is not already running start it with: 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>/etc/init.d/ssh start </PRE
+></TD
+></TR
+></TABLE
+>
+
+Now you have to generate a keypair for SSH on your local computer whith ssh-keygen. 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>ssh-keygen </PRE
+></TD
+></TR
+></TABLE
+>
+
+You will be prompt for a passphrase for that keypair. 
+The passphrase normally is longer than a password and may be a whole sentence. 
+The keypair is encrypted with that passphrase and saved in 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>/root/.ssh/identity    //your private key 
+and 
+/root/.ssh/identity.pub     //your public key </PRE
+></TD
+></TR
+></TABLE
+>
+
+<I
+CLASS="EMPHASIS"
+>Do NOT give your private-key to anybody!!! </I
+>
+
+Now copy the whole content of /root/.ssh/identity.pub 
+(your public-key which should be one long line) into /root/.ssh/authorized_keys 
+on the remote host. 
+(also copy the content of /root/.ssh/identity.pub to 
+your local /root/.ssh/authorized_keys like you did it with the remote-node 
+because openMosixview needed password-less login to the local-node too!) </P
+><P
+>&#13;If you ssh to this remote host now you will be prompted for the passphrase 
+of your public-key. Giving the right passphrase should give you a login. </P
+><P
+>&#13;What is the advantage right now??? 
+The passphrase is normally a lot longer than a password! </P
+><P
+>&#13;The advantage you can get using the ssh-agent. 
+It manages the passphrase during ssh login. 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>ssh-agent </PRE
+></TD
+></TR
+></TABLE
+>
+
+The ssh-agent is started now and gives you two environment-variables you should set 
+(if not set already). 
+Type: 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>echo $SSH_AUTH_SOCK 
+and 
+echo $SSH_AGENT_PID </PRE
+></TD
+></TR
+></TABLE
+>
+
+to see if they are exported to your shell right now. 
+If not just cut and paste from your terminal. 
+e.g. for the bash-shell: 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>SSH_AUTH_SOCK=/tmp/ssh-XXYqbMRe/agent.1065 
+export SSH_AUTH_SOCK 
+SSH_AGENT_PID=1066 
+export SSH_AGENT_PID </PRE
+></TD
+></TR
+></TABLE
+>
+
+example for the csh-shell: 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>setenv SSH_AUTH_SOCK /tmp/ssh-XXYqbMRe/agent.1065 
+setenv SSH_AGENT_PID 1066 </PRE
+></TD
+></TR
+></TABLE
+>
+
+With these variables the remote-sshd-daemon can connect your local ssh-agent 
+by using the socket-file in /tmp (in this example /tmp/ssh-XXYqbMRe/agent.1065). 
+The ssh-agent can now give the passphrase to the remote host by using this socket 
+(it is of course an encrypted transfer)! </P
+><P
+>&#13;You just have to add your public-key to the ssh-agent with the ssh-add command. 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>ssh-add </PRE
+></TD
+></TR
+></TABLE
+>
+
+Now you should be able to login using ssh to the remote host without 
+being prompted for a passwod! </P
+><P
+>&#13;You could (should) add the ssh-agent and ssh-add commands in your 
+login-profile e.g. 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>eval `ssh-agent` 
+ ssh-add </PRE
+></TD
+></TR
+></TABLE
+>
+
+Now it is started when you login on your local workstation. 
+You have done it! I wish you secure logins now. </P
+><P
+>&#13;<I
+CLASS="EMPHASIS"
+>openMosixview </I
+>
+
+There is a menu-entry which toggles using rsh/ssh with openMosixview. 
+Just enable this and you can use openMosixview even in insecure 
+network-environments. You should also save this configuration 
+(the possibility for saveing the current config in openMosixview 
+was added in the 0.7 version) because it gets initial data from the slave 
+using rsh or ssh (just like you configured). &#13;</P
+><P
+>&#13;If you choose a service wich is not installed properly openMosixview will not work! 
+(e.g. if you cannot rsh to a slave without being prompted for a password 
+you cannot use openMosixview with RSH; if you cannot ssh to a slave 
+without being prompted for a password you cannot use openMosixview with SSH) &#13;</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x1203.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c1254.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>openmosixview FAQ</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c945.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Other openMosix related Programs</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

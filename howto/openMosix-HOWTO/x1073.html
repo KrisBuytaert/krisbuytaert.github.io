@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>openMosixprocs</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="openMosixview"
+HREF="c925.html"><LINK
+REL="PREVIOUS"
+TITLE="using openMosixview"
+HREF="x995.html"><LINK
+REL="NEXT"
+TITLE="openMosixcollector"
+HREF="x1106.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x995.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>openMosixview</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x1106.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1073"
+>openMosixprocs</A
+></H1
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN1075"
+>intro</A
+></H2
+><P
+>&#13;This process-box is really useful for managing the processes running on your cluster. 
+
+ <DIV
+CLASS="MEDIAOBJECT"
+><P
+><IMG
+SRC="omview4.gif"></P
+></DIV
+>
+
+You should install it on every cluster-node! </P
+><P
+>&#13;The processlist gives an overview what is running where. 
+The second column displays the openMosix-node ID of each process. 
+0 means local, all other values are remote nodes. Migrated processes are marked with a 
+green icon and non movable processes have a lock. </P
+><P
+>&#13;By double-clicking a process from the list the migrator-window will pop-up for managing 
+e.g. migrating the process. 
+There are also options to migrate the remote processes away, send SIGSTOP and 
+SIGCONT to it or to "renice" it. </P
+><P
+>&#13;If you click on the "manage procs from remote" button a new window will come up 
+(the remote-procs windows) displaying the process currently migrated to this host. </P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN1086"
+>the migrator-window</A
+></H2
+><P
+>This dialog will pop up if process 
+
+from the process box is clicked. &#13;</P
+><DIV
+CLASS="MEDIAOBJECT"
+><P
+><IMG
+SRC="omview5.gif"></P
+></DIV
+><P
+>&#13;The openMosixview-migrator window displays all nodes in your openMosix-cluster. 
+This window is for managing one process (with additional status-information). 
+By double-clicking on an host from the list the process will migrate to this host. 
+After a short moment the process-icon for the managed process will be green, 
+which means it is running remote. </P
+><P
+>&#13;The "home"-button sends the process to its home node. 
+With the "best"-button the process is send to the best available node in your cluster. 
+This migration is influenced by the load, speed, CPU's and what openMosix "thinks" 
+of each node. It maybe will migrate to the host with the most CPU's and/or the best speed. 
+With the "kill"-button you can kill the process immediately. </P
+><P
+>&#13;To pause a program just click the "SIGSTOP"-button and to continue the "SIGCONT"-button. 
+
+With the renice-slider below you can renice the current managed process 
+(-20 means very fast, 0 normal and 20 very slow) </P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN1097"
+>managing processes from remote</A
+></H2
+><P
+>&#13; This dialog will pop up 
+if the "manage procs from remote"-button 
+beneath the process-box is clicked </P
+><DIV
+CLASS="MEDIAOBJECT"
+><P
+><IMG
+SRC="omview6.gif"></P
+></DIV
+><P
+>&#13;The TabView displays processes that are migrated to the local host. 
+The procs are coming from other nodes in your cluster and currently computed 
+on the host openMosixview is started on. 
+Similar to the two buttons in the migrator-window the process is send home 
+by the "goto home node"-button and send to the best available node by the 
+"goto best node"-button. &#13;</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x995.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x1106.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>using openMosixview</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c925.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>openMosixcollector</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

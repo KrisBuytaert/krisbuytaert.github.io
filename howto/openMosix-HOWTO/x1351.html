@@ -1,0 +1,366 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Perl Proggie by Charles Nadeau</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="(stress)Testing your openMosix installation"
+HREF="c1341.html"><LINK
+REL="PREVIOUS"
+TITLE="(stress)Testing your openMosix installation"
+HREF="c1341.html"><LINK
+REL="NEXT"
+TITLE="the openMosix stress-test
+
+
+
+"
+HREF="x1358.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c1341.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>(stress)Testing your openMosix installation</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x1358.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1351"
+>Perl Proggie by Charles Nadeau</A
+></H1
+><P
+> Perl program 
+to test an openMosix Cluster.</P
+><P
+>&#13;Here is a is quick program I wrote to test an openMosix cluster. This is taken from a posting I made to the 
+openMosix-devel mailing list on March 6th, 2002:
+
+<SPAN
+CLASS="QUOTE"
+>"Charles  wrote this little program (in Perl) to stress test his  home cluster (3 P200MMX and a P166). It is a 
+program simulating different sets of stocks in a portfolio for a given period of time. The code is well documented and it 
+should be easy to add/remove stocks and change the average monthly yield and standard deviation for each stock. 
+Since the problem of portfolio optimization cannot be solved analytically, it simulate a lot of portfolios and 
+report the results at the end. 
+Please note that this program does not take stock correlation into account. It is 
+not finished yet but it's a good start. I plan to add more code at the end of the program to improve the reporting 
+format of the data (generating SVG graph on the fly). But the simulation part works very well. In order to take 
+advantage of the parallelism offered by openMosix, it uses the Perl module Parallel::?ForkManager (from CPAN) to 
+span threads that openMosix can then assign to all the machines of the cluster (it also require another module for 
+the statistical calculations, don't forget to install both, I provide the URLs in the comments of the code). Take a 
+look at it and tell me what you think. Cheers!"</SPAN
+></P
+><P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>#! /usr/bin/perl -w
+
+# this mill unlock this process and all tis childs
+sub unlock { 
+open (OUTFILE,"&#62;/proc/self/lock") || 
+die "Could not unlock myself!\n"; 
+print OUTFILE "0"; 
+} 
+
+unlock;
+
+# this will count the nodes
+sub cpucount {
+ $CLUSTERDIR="/proc/hpc/nodes/";
+ $howmany=0;
+ opendir($nodes, $CLUSTERDIR);
+ while(readdir($nodes)) {
+  $howmany++;
+ }
+
+ $howmany--;
+ $howmany--;
+ closedir ($nodes);
+ return $howmany;
+}
+
+my $processes=cpucount;
+$processes=$processes*3;
+
+print("starting $processes processes\n");
+
+#Portfolio.pl, version 0.1
+#Perl program that simulate a portfolios for various stock composition for a given period of time
+#We run various scenarios to find the mix of assets that give the best performance/risk ratio
+#This method is base on the book "The intelligent asset allocator" by William Bernstein
+#Can be used to test an OpenMosix cluster
+#This program is licensed under GPL
+#Author: Charles-E. Nadeau Ph.D., (c) 2002
+#E-mail address: charlesnadeau AT hotmail DOT com
+
+use Parallel::ForkManager; #We use a module to parallelize the calculation
+
+#Available at http://theoryx5.uwinnipeg.ca/mod_perl/cpan-search?filetype=%20distribution%20name%20or%20description;join=and;arrange=file;download=auto;stem=no;case=clike;site=ftp.funet.fi;age=;distinfo=2589
+
+use Statistics::Descriptive::Discrete; #A module providing statistical values
+
+#Available at http://theoryx5.uwinnipeg.ca/mod_perl/cpan-search?new=Search;filetype=%20distribution%20name%20or%20description;join=and;arrange=file;download=auto;stem=no;case=clike;site=ftp.funet.fi;age=;distinfo=2988
+
+srand; #We initialize the random number generator
+
+#Initializing constant
+$NumberOfSimulation=$processes;  #Number of simulation to run
+$NumberOfMonth=100000; #Number of month for wich to run the simulation
+$NumberOfStock=6; #Number of different stocks in the simulation
+
+#Portfolio to simulate
+#TODO: Read the stock details from a file
+$Stock[0][0]="BRKB"; #Stock ticker
+$Stock[0][1]=0.01469184; #Stock average monthly return
+$Stock[0][2]=0.071724934; #Stock average monthly standard deviation
+$Stock[1][0]="TEST "; #Stock ticker
+$Stock[1][1]=-0.01519; #Stock average monthly return
+$Stock[1][2]=0.063773903; #Stock average monthly standard deviation
+$Stock[2][0]="SPDR"; #Stock ticker
+$Stock[2][1]=0.008922718; #Stock average monthly return
+$Stock[2][2]=0.041688404; #Stock average monthly standard deviation
+$Stock[3][0]="BRKB"; #Stock ticker
+$Stock[3][1]=0.01469184; #Stock average monthly return
+$Stock[3][2]=0.071724934; #Stock average monthly standard deviation
+$Stock[4][0]="TEST "; #Stock ticker
+$Stock[4][1]=-0.01519; #Stock average monthly return
+$Stock[4][2]=0.063773903; #Stock average monthly standard deviation
+$Stock[5][0]="SPDR"; #Stock ticker
+$Stock[5][1]=0.008922718; #Stock average monthly return
+$Stock[5][2]=0.041688404; #Stock average monthly standard deviation
+
+
+
+
+my $pm = new Parallel::ForkManager($NumberOfSimulation); #Specify the number of threads to span
+
+$pm-&#62;run_on_start(
+  sub { my ($pid,$ident)=@_;
+  print "started, pid: $pid\n";
+  }
+);
+
+
+
+#We initialize the array that will contain the results
+@Results=();
+for $i (0..$NumberOfSimulation-1){
+	for $j (0..$NumberOfStock+3){
+		$Results[$i][$j]=0.0; #Equal to 0.0 to start
+	}
+}
+
+for $i (0..$NumberOfSimulation-1){ #Loop on the number of simulation to run
+	$Results[$i][0]=$i; #The first column of each line is the number of the simulation
+	$pm-&#62;start and next; #Start the thread
+
+		$TotalRatio=1; #The sum of the proprtion of each stock
+
+		#Here we calculate the portion of each investment in the portfolio for a given simulation
+		for $j (0..$NumberOfStock-2){ #We loop on all stock until the second to last one
+			#TODO: Replace rand by something from Math::TrulyRandom
+			$Ratio[$j]=rand($TotalRatio);
+			$Results[$i][$j+1]=$Ratio[$j]; #We store the ratio associated to this stock
+			$TotalRatio=$TotalRatio-$Ratio[$j];
+		}
+		$Ratio[$NumberOfStock-1]=$TotalRatio; #In order to have a total of the ratios equal to one, we set the last ratio to be the remainder
+		$Results[$i][$NumberOfStock]=$Ratio[$NumberOfStock-1]; #We store the ratio associated to this stock. Special case for the last stock
+
+		$InvestmentValue=1; #Initially the investment value is 1 time the initial capital amount.
+		my $stats=new Statistics::Descriptive::Discrete; #We initialize the module used to calculate the means and standard deviations
+
+		for $j (1..$NumberOfMonth){ #Loop on the number of months
+
+			$MonthlyGrowth[$j]=0.0; #By how much did we grow this month. Initially, no growth yet.
+
+			#We loop on each stock to find its monthly contribution to the yield 
+			for $k (0..$NumberOfStock-1){
+
+			$MonthlyGrowth[$j]=$MonthlyGrowth[$j]+($Ratio[$k]*((gaussian_rand()*$Stock[$k][2])+$Stock[$k][1])); #We had the growth for this stock to the stock already calculated for the preceding stocks
+			}
+
+			$stats-&#62;add_data($MonthlyGrowth[$j]); #Add the yield for this month so we can later on have the mean and standard deviation for this simulation
+			$InvestmentValue=$InvestmentValue*(1+$MonthlyGrowth[$j]); #Value of the Investment after this month
+		}
+		$Results[$i][$NumberOfStock+1]=$stats-&#62;mean(); #Calculate the average monthly growth
+		$Results[$i][$NumberOfStock+2]=$stats-&#62;standard_deviation(); #Calculate the standard deviation of the monthly growth
+
+	$pm-&#62;finish; #Finish the thread
+}
+$pm-&#62;wait_all_children; #We wait until all threads are finished
+
+#Printing the results
+print "Simulation ";
+for $j (0..$NumberOfStock-1){
+	print "Ratio$Stock[$j][0] ";
+}
+print "  Mean StdDev YieldRatio\n";
+for $i (0..$NumberOfSimulation-1){
+	printf "%10d ", $Results[$i][0];
+	for $j (1..$NumberOfStock){
+		printf "   %6.2f ",$Results[$i][$j];
+	}
+
+	if($Results[$i][$NumberOfStock+2]!=0) {
+		printf "%5.4f %5.4f    %5.4f\n", $Results[$i][$NumberOfStock+1], $Results[$i][$NumberOfStock+2], ($Results[$i][$NumberOfStock+1]/$Results[$i][$NumberOfStock+2]);
+
+	} else {
+		printf "%5.4f %5.4f    %5.4f\n", $Results[$i][$NumberOfStock+1], $Results[$i][$NumberOfStock+2], 0;
+
+	}
+}
+
+
+
+#Subroutines
+
+#Subroutine to generate two numbers normally distributed
+#From "The Perl Cookbook", recipe 2.10
+sub gaussian_rand {
+	my ($u1, $u2);
+	my $w;
+	my ($g1, $g2);
+
+	do {
+		$u1=2*rand()-1;
+		$u2=2*rand()-1;
+		$w=$u1*$u1+$u2*$u2;
+	} while ($w&#62;=1 || $w==0); #There was an error in the recipe, I corrected it here
+
+	$w=sqrt(-2*log($w)/$w);
+	$g2=$u1*$w;
+	$g1=$u2*$w;
+	return wantarray ? ($g1,$g2) : $g1;
+
+}</PRE
+></TD
+></TR
+></TABLE
+>
+
+
+ </P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c1341.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x1358.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>(stress)Testing your openMosix installation</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c1341.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>the openMosix stress-test</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

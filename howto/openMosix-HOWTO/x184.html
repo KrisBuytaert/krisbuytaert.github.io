@@ -1,0 +1,338 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>The story so far</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="So what is openMosix Anyway ? "
+HREF="c145.html"><LINK
+REL="PREVIOUS"
+TITLE="So what is openMosix Anyway ? "
+HREF="c145.html"><LINK
+REL="NEXT"
+TITLE="openMosix in action: An example"
+HREF="x216.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c145.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>So what is openMosix Anyway ?</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x216.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN184"
+>The story so far</A
+></H1
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN186"
+>Historical Development</A
+></H2
+><P
+>&#13;Rumours say that Mosix comes from Moshe Unix. 
+Initially Mosix started out as an application running on BSD/OS 3.0.
+
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>Announcing MO6 for BSD/OS 3.0
+Oren Laadan (orenl@cs.huji.ac.il)
+Tue, 9 Sep 1997 19:50:12 +0300 (IDT)
+
+Hi:
+
+We are pleased to announce the availability of MO6 Version 3.0
+Release 1.04 (beta-4) - compatible with BSD/OS 3.0, patch level
+K300-001 through M300-029.
+
+MO6 is a 6 processor version of the MOSIX multicomputer enhancements
+of BSD/OS for a PC Cluster. If you have 2 to 6 PC's connected by a
+LAN, you can experience truly multi-computing environment by using
+the MO6 enhancements.
+
+The MO6 Distribution
+--------------------
+MO6 is available either in "source" or "binary" distribution. It is
+installed as a patch to BSD/OS, using an interactive installation
+script.
+
+MO6 is available at http://www.cnds.jhu.edu/mirrors/mosix/
+or at our site: http://www.cs.huji.ac.il/mosix/
+
+Main highlights of the current release:
+--------------------------------------
+- Memory ushering (depletion prevention) by process migration.
+- Improved installation procedure.
+- Enhanced migration control.
+- Improved administration tools.
+- More user utilities.
+- More documentation and new man pages.
+- Dynamic configurations.
+
+Please send feedback and comments to mosix@cs.huji.ac.il.
+-------------------</PRE
+></TD
+></TR
+></TABLE
+>
+
+GNU/Linux was chosen as a development platform for the 7th
+incarnation in 1999.
+
+Early  1999 Mosix M06 Beta was released for Linux 2.2.1 
+
+At the end of 2001 and early 2002 openMosix, the open version of Mosix was 
+born (more in the next paragraph).  </P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN190"
+>openMosix</A
+></H2
+><P
+>openMosix is in addition to whatever you find at mosix.org and in full 
+appreciation and respect for Prof. Barak's leadership in the
+outstanding Mosix project.</P
+><P
+>Moshe Bar has been involved for a number of years with the Mosix
+project (www.mosix.com) and was co-project manager of the Mosix
+project and general manager of the commercial Mosix company.</P
+><P
+>After a difference of opinions on the commercial future of Mosix, he
+has started a new clustering company - Qlusters, Inc. - and
+Prof. Barak has decided not to participate for the moment in this
+venture (although he did seriously consider joining) and held long
+running negotiations with investors.
+
+It appears that Mosix is not any longer supported openly as a GPL
+project.  Because there is a significant user base out there (about
+1000 installations world-wide), Moshe Bar has decided to continue the
+development and support of the Mosix project under a new name:
+openMosix and under the full GPL2 license. Whatever code in openMosix
+comes from the old Mosix project is Copyright 2002 by Amnon Barak. All
+the new code is Copyright 2002 by Moshe Bar.</P
+><P
+>There could (and will) be significant changes in the architecture of
+the future openMosix versions.  New concepts about auto-configuration,
+node-discovery and new user-land tools are being discussed in the
+openMosix mailing lists. Most of these new functionalities are already
+implemented while some of them, such as DSM (Distributed Shared
+Memory) are still being worked on at the moment I write this (march
+2003).</P
+><P
+>To approach standardization and future compatibility the
+proc-interface has changed from /proc/mosix to /proc/hpc and the
+/etc/mosix.map was changed to /etc/hpc.map. More recently the standard
+for the config file has been set to be located in /etc/openmosix.map
+(this is in fact the first config file the /etc/init.d/openmosix
+script will look for).  Adapted command-line user-space tools for
+openMosix are already available on the web-page of the project.</P
+><P
+>The openmosix.map config file can be replaced with a
+node-auto-discovery system which is called omdiscd (openMosix auto
+DISCovery Daemon) about which we will discuss later.</P
+><P
+>openMosix is supported by various competent people (see
+openmosix.sourceforge.net) working together around the world.  The
+main goal of the project is to create a standardized
+clustering-environment for all kinds of HPC-applications.</P
+><P
+>openMosix has also a project web-page at <A
+HREF="http://openMosix.sourceforge.net"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://openMosix.sourceforge.net</I
+></A
+>
+with a CVS tree and mailing-lists for developers as well as users.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN202"
+>Current state</A
+></H2
+><P
+>  Like most active Open Source programs, openMosix's rate of change
+  tends to outstrip the followers' ability to keep the documentation
+  up to date.</P
+><P
+>  As I write this part in February 2003 openMosix 2.4.20 is available
+  and openMosix Userland Tools v0.2.4 are available, including the new
+autodiscovery tools.</P
+><P
+>For a more recent state of development please take a look at the <A
+HREF="http://openmosix.sf.net/"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>openMosix website</I
+></A
+></P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN209"
+>Which applications work</A
+></H2
+><P
+>It is almost impossible to give a list off all the applications that 
+work with openMosix.  The community however tries to keep track of the 
+applications that 
+<A
+HREF="http://howto.ipng.be/openMosixWiki/index.php/work%20smoothly"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>migrate </I
+></A
+>
+
+and the ones who 
+<A
+HREF="http://howto.ipng.be/openMosixWiki/index.php/don%27t"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>don't</I
+></A
+>.
+ </P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c145.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x216.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>So what is openMosix Anyway ?</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c145.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>openMosix in action: An example</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

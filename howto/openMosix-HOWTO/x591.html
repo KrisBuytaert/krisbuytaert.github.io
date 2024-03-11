@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>DSH,  Distributed Shell</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Cluster Installation"
+HREF="c586.html"><LINK
+REL="PREVIOUS"
+TITLE="Cluster Installation"
+HREF="c586.html"><LINK
+REL="NEXT"
+TITLE="Administrating openMosix"
+HREF="p604.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c586.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Cluster Installation</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="p604.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN591"
+>DSH,  Distributed Shell</A
+></H1
+><P
+>  
+At the time of this writing (May 2003) DSH's most current release is 
+available from <A
+HREF="http://www.netfort.gr.jp/~dancer/software/downloads/"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://www.netfort.gr.jp/~dancer/software/downloads/</I
+></A
+>
+
+More info on the package can be found on 
+<A
+HREF="http://www.netfort.gr.jp/~dancer/software/dsh.html"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://www.netfort.gr.jp/~dancer/software/dsh.html</I
+></A
+>
+
+The latest version available for download is 0.23.6
+You will need both libdshconfig-0.20.8.tar.gz  and dsh-0.23.5.tar.gz  
+
+Start with installing libdshconfig 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>./configure
+make
+make install </PRE
+></TD
+></TR
+></TABLE
+>
+
+Repeat the process for the dsh package.</P
+><P
+>Say we have a small cluster with a couple of nodes.  
+To make life easier we want type each command once but have it executed 
+on each node.  You then have to create a file in 
+$HOME/.dsh/group/clusterwname that lists the ip's of your cluster.
+eg.
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>[root@inspon root]# cat .dsh/group/mosix 
+192.168.10.220
+192.168.10.84</PRE
+></TD
+></TR
+></TABLE
+>
+
+As an example we run ls on each of these machines 
+We use -g to use the mosix group (this way you can create subsets of a 
+group with different configurations)
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>[root@inspon root]# dsh -r ssh -g mosix ls
+192.168.10.84: anaconda-ks.cfg
+192.168.10.84: id_rsa.pub
+192.168.10.84: install.log
+192.168.10.84: install.log.syslog
+192.168.10.84: openmosix-kernel-2.4.17-openmosix1.i686.rpm
+192.168.10.84: openmosix-tools-0.2.0-1.i386.rpm
+192.168.10.220: anaconda-ks.cfg
+192.168.10.220: id_dsa.pub
+192.168.10.220: id_rsa.pub
+192.168.10.220: openmosix-kernel-2.4.17-openmosix1.i686.rpm
+192.168.10.220: openmosix-tools-0.2.0-1.i386.rpm
+192.168.10.220: oscar-1.2.1rh72
+192.168.10.220: oscar-1.2.1rh72.tar.gz</PRE
+></TD
+></TR
+></TABLE
+>
+
+Note that neither of the machines ask for a password.
+This is because we have set up RSA authentication between the different 
+accounts.    If you want to run commands with multiple parameters you will 
+either have to put the command between quotes. 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>[root@inspon root]# dsh -r ssh -g mosix "uname -a"
+192.168.10.84: Linux omosix2.office.be.stone-it.com 2.4.17-openmosix1 #1 
+Wed May 29 14:32:28 CEST 2002 i686 unknown
+192.168.10.220: Linux oscar0 2.4.17-openmosix1 #1 Wed May 29 14:32:28 CEST 
+2002 i686 unknown</PRE
+></TD
+></TR
+></TABLE
+>
+
+or use the -c --  option. Both give basically the same output.
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>[root@inspon root]# dsh -r ssh -g mosix -c -- uname -a 
+192.168.10.220: Linux oscar0 2.4.17-openmosix1 #1 Wed May 29 14:32:28 CEST 
+2002 i686 unknown
+192.168.10.84: Linux omosix2.office.be.stone-it.com 2.4.17-openmosix1 #1 
+Wed May 29 14:32:28 CEST 2002 i686 unknown</PRE
+></TD
+></TR
+></TABLE
+>
+&#13;</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c586.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="p604.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Cluster Installation</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c586.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Administrating openMosix</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

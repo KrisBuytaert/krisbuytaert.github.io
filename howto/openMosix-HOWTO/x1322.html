@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>DFSA ? MFS ? </TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Common Problems"
+HREF="c1274.html"><LINK
+REL="PREVIOUS"
+TITLE="I often get errors: No such process"
+HREF="x1317.html"><LINK
+REL="NEXT"
+TITLE="Python Troubles"
+HREF="x1330.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x1317.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Common Problems</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x1330.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1322"
+>DFSA ? MFS ?</A
+></H1
+><P
+>As of 2.4.26-om1 oMFS has been removed from openMosix</P
+><P
+>People often get confused about what exactly MFS and DFSA 
+are.  
+As discussed before in the howto MFS is the feature of openMosix 
+that enables you access to remote filesystems as if those 
+filesystems were locally mounted.  They are mostly mounted on 
+/mfs . A common misunderstanding is that you need MFS in order 
+to have openMosix working, this is not true, however it can make 
+things easier.  
+
+
+ </P
+><P
+>With DFSA enabled, system calls  will be executed on the remote 
+node withouth migrating the process back to it's home node. This 
+behaviour (direct filesystem access) causes processes migratiing 
+to the data and not the other way around (which is common).  If 
+DFSA is not enabled MfS is "just" a non-caching 
+network-filesystem.</P
+><P
+>&#13;
+Very generally speaking, if you don't have DFSA turned on, each and 
+every I/O will go to the home node for execution. With DFSA turned on, 
+if the file happens to be residing on the node where the process finds 
+itself then the I/O will happen locally.&#13;</P
+><P
+>&#13;A very common error is that people mix kernels with DFSA enabled 
+and disabled.  So one has to have a way to find out wether DFSA 
+is actually enabled. This information can be obtained by typing
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>cat /proc/hpc/admin/version</PRE
+></TD
+></TR
+></TABLE
+>&#13;</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x1317.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x1330.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>I often get errors: No such process</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c1274.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Python Troubles</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

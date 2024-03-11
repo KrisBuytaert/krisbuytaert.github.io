@@ -1,0 +1,302 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Optimizing Mosix </TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Tuning Mosix"
+HREF="c891.html"><LINK
+REL="PREVIOUS"
+TITLE='Creating a "Master" node'
+HREF="x896.html"><LINK
+REL="NEXT"
+TITLE="Channel Bonding Made Easy"
+HREF="x914.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x896.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Tuning Mosix</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x914.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN903"
+>Optimizing Mosix</A
+></H1
+><P
+>Editorial Comment: To be checked with openMosix versions&#13;</P
+><P
+>Login a normal terminal as root. Type
+
+ 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>       setpe -r </PRE
+></TD
+></TR
+></TABLE
+>
+ 
+
+     which, if everything went right, will give you a listing of your
+     /etc/mosix.map. If things did not go right, try 
+
+ 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>        setpe -w -f /etc/mosix.map </PRE
+></TD
+></TR
+></TABLE
+>
+ 
+
+     to set up your node. 
+     
+     Then, type 
+
+  
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>       cat /proc/$$/lock</PRE
+></TD
+></TR
+></TABLE
+>
+ 
+
+     to see if your child processes are locked in your mode (1) or can
+     migrate (0). If for some reason you find your processes are locked, 
+     you can change this with 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>        echo 0 &#62; /proc/$$/lock</PRE
+></TD
+></TR
+></TABLE
+>
+
+     until you fix the problem. 
+
+   Repeat the whole configuration scheme for a second computer. 
+
+   The programs tune_kernel and prep_tune that Mosix uses to calibrate
+     the individual nodes do not work with the SuSE distribution.
+     However, you can fake it. First, bring the computer you want to
+     tune and another computer with Mosix installed down to single user  
+mode by typing
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>        init 1</PRE
+></TD
+></TR
+></TABLE
+>
+
+     as root. All other computers on the network should be shutdown if
+     possible. 
+
+   On both machines, run the following commands:
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>        /etc/init.d/network start
+        /etc/init.d/mosix start
+        echo 1 &#62; /proc/mosix/admin/quiet</PRE
+></TD
+></TR
+></TABLE
+>
+
+     This fakes prep_tune and the first parts of tune_kernel. Note that
+     if you have a laptop with a pcmcia network card, you will have to 
+     run
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>        /etc/init.d/pcmcia start</PRE
+></TD
+></TR
+></TABLE
+>
+
+     instead of "/etc/init.d/network start". 
+
+   On the computer you want to tune, run tune_kernel and follow 
+     instructions. Depending on your machines, this can take a while -
+     if you have a dog, this might be the time to go on that long, long
+     walk you've always promised him.
+
+     tune_kernel will create a program called "pg" in /root for testing
+     reasons. Ignore it. 
+
+  After tuning is over, copy the contents of /tmp/overheads to the
+     file /etc/overheads (and/or recompile the kernel). 
+
+   Repeat the tuning procedure for each computer. Reboot, enjoy Mosix, 
+and
+     don't forget to brag to your friends about your new cluster.
+&#13;</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x896.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x914.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Creating a "Master" node</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c891.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Channel Bonding Made Easy</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,432 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Miscellaneous</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="the openMosix FAQ"
+HREF="c1541.html"><LINK
+REL="PREVIOUS"
+TITLE="Resources"
+HREF="x1709.html"><LINK
+REL="NEXT"
+TITLE="PlumpOS FAQ"
+HREF="c1785.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x1709.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>the openMosix FAQ</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c1785.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1734"
+>Miscellaneous</A
+></H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>Q: <A
+HREF="x1734.html#AEN1738"
+>&#13;I don't see all my nodes. What's happening?:</A
+></DT
+><DT
+>Q: <A
+HREF="x1734.html#AEN1750"
+>&#13;Whats the difference between /etc/mosix.map , /etc/hpc.map , /etc/openmosix.map:</A
+></DT
+><DT
+>Q: <A
+HREF="x1734.html#AEN1755"
+>&#13;setpe: the supplied table is well-formatted, but my IP address (127.0.0.1) is not there!:</A
+></DT
+><DT
+>Q: <A
+HREF="x1734.html#AEN1764"
+>&#13;I want to install openMosix but I am afraid my machines are too weak for this:</A
+></DT
+><DT
+>Q: <A
+HREF="x1734.html#AEN1770"
+>&#13;Under what conditions does VMWare work with openMosix:</A
+></DT
+><DT
+>Q: <A
+HREF="x1734.html#AEN1776"
+>&#13;What architectures besides x86 (e.g. SPARC, AXP, PPC...) are supported by openMosix?:</A
+></DT
+><DT
+>Q: <A
+HREF="x1734.html#AEN1781"
+>&#13;Is there a parallel make tool for openMosix such as MPmake?:</A
+></DT
+></DL
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1738"
+></A
+><B
+>Q: 
+I don't see all my nodes. What's happening?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+When you run 'mosmon', press 't' to see the total number of machines running. Does it warn you that openMosix is not 
+running?</P
+><P
+>&#13;If it does, then make sure your machine's IP address is included in /etc/openmosix.map. Don't use 
+127.0.0.1. If you do, you will 
+probably have problems with your DHCP server or your DNS nameserver.</P
+><P
+>&#13;If it does not, then see what machines show up. Do you see only your machine?</P
+><P
+>&#13;If yes, then your machine is most likely running a firewall and is not letting openMosix through.</P
+><P
+>&#13;If not, then the problem is most likely with the machine that doesn't show up.</P
+><P
+>&#13;Also: Do you have two NIC cards on a node? If so, you have to edit /etc/hosts to have a line that has the following format
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>&#60;non-cluster ip&#62; &#60;cluster-hostname&#62;.&#60;cluster-domain&#62; &#60;cluster-hostname&#62;</PRE
+></TD
+></TR
+></TABLE
+>
+You might also need to set up a routing table, which is an entirely different subject. </P
+><P
+>&#13;Maybe you used different kernel-parameters on each machine? Especially if you use the 'Support clusters with a complex 
+network topology' option you should take care that you use the same value for the also appearing option 'Maximum 
+network-topology complexity support' on each machine.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1750"
+></A
+><B
+>Q: 
+Whats the difference between /etc/mosix.map , /etc/hpc.map , /etc/openmosix.map:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+They represent three stages of Mosix/openmosix growth. The file /etc/mosix.map is the orginal Mosix map name, The file 
+/etc/hpc.map was an early openMosix map name (and 'hpc' is still used for the /proc files in openMosix). The current map 
+name is /etc/openmosix.map.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1755"
+></A
+><B
+>Q: 
+setpe: the supplied table is well-formatted, but my IP address (127.0.0.1) is not there!:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+You'll need to modify your /etc/hosts file. On Red Hat machines mostly the /etc/hosts file includes a line like
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>127.0.0.1 hostname.domain.com localhost</PRE
+></TD
+></TR
+></TABLE
+></P
+><P
+>&#13;If hostname.domain.com has an IP address of 192.168.10.250, and if you looked up hostname.domain.com you might get 127.0.0.1 
+as an answer.</P
+><P
+>&#13;However, if you put
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>192.168.10.250 hostname.domain.com 
+127.0.0.1 localhost</PRE
+></TD
+></TR
+></TABLE
+>
+in your /etc/hosts, openMosix won't complain.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1764"
+></A
+><B
+>Q: 
+I want to install openMosix but I am afraid my machines are too weak for this:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>A machine is never too weak: I have three P200s (64MB each) and two P166s (one with 48MB and one with 192MB). 
+Two of them 
+are on 10Base-T and the other three on 100Base-T. Even with these antiquated machines and "heterogenous" network, I get 
+perfect load balancing to run simulation programs that I write in Perl. (Look at our 
+ProgramToTestACluster"). Don't be held back 
+by the fact your machines are old. To us this is a nice feature of openMosix: you can add newer machines 
+to an existing 
+cluster as they become available. And you do not need to have all identical machines. That's fantastic!</P
+><P
+>&#13;However, a 100Base-T network is recommended!
+Contributed by Charles Nadeau.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1770"
+></A
+><B
+>Q: 
+Under what conditions does VMWare work with openMosix:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+If you intend to run VMWare under openMosix so that openMosix would load-balance several instances of that (yes, that 
+works). But, if you want to run openMosix in several VMWare instances and let these instances load balance (that fails).</P
+><P
+>&#13;The first case works. The latter case does not work because VMware has a bug in its Pentium emulation that makes VMware 
+crash (not openMosix, but the VMware binary) on the first migration.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1776"
+></A
+><B
+>Q: 
+What architectures besides x86 (e.g. SPARC, AXP, PPC...) are supported by openMosix?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+Only IA-32 is currently supported. The port of openMosix to the Intel(r) Itanium(tm) IA-64 Processor Family is complete. 
+Project plans for openMosix' second year include porting to the 64-bit AMD Opteron(tm) processor.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1781"
+></A
+><B
+>Q: 
+Is there a parallel make tool for openMosix such as MPmake?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+> You can use regular gcc make. just use make -j #, where the # 
+represents how many child proccesses to spawn.</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x1709.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c1785.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Resources</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c1541.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>PlumpOS FAQ</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

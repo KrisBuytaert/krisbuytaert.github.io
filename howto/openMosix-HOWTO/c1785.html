@@ -1,0 +1,460 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>PlumpOS FAQ</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="FAQ"
+HREF="p1539.html"><LINK
+REL="PREVIOUS"
+TITLE="Miscellaneous"
+HREF="x1734.html"><LINK
+REL="NEXT"
+TITLE="How to produce openMosix's Kernel RPM files"
+HREF="a1830.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x1734.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="a1830.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="PLUMPOS-FAQ"
+></A
+>PlumpOS FAQ</H1
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1787"
+>Frequently Asked Questions</A
+></H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>Q: <A
+HREF="c1785.html#AEN1791"
+>    
+
+What is PlumpOS?
+
+  </A
+></DT
+><DT
+>Q: <A
+HREF="c1785.html#AEN1796"
+>    
+
+Why would I use PlumpOS?
+
+  </A
+></DT
+><DT
+>Q: <A
+HREF="c1785.html#AEN1801"
+>    
+
+How does it work?
+
+  </A
+></DT
+><DT
+>Q: <A
+HREF="c1785.html#AEN1806"
+>    
+
+Where can I go for more help?
+
+  </A
+></DT
+><DT
+>Q: <A
+HREF="c1785.html#AEN1819"
+>    
+
+Where is your homepage?
+
+  </A
+></DT
+><DT
+>Q: <A
+HREF="c1785.html#AEN1826"
+>    
+
+The penguins are gonna eat the poor halibut in the logo!
+
+  </A
+></DT
+></DL
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1791"
+></A
+><B
+>Q:     
+
+What is PlumpOS?
+
+  </B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>      
+
+PlumpOS is a mini linux distribution aimed at an easy way to add nodes
+to an openMosix cluster without a lot of work or even thought. The
+original idea came from (and current development is inspired by)
+ClumpOS, the now deceased project by Jean-David Marrow with a very
+similar goal for MOSIX clusters.
+
+  </P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1796"
+></A
+><B
+>Q:     
+
+Why would I use PlumpOS?
+
+  </B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>      
+
+The first reason to use PlumpOS is to try out openMosix clusters in a
+simple and convenient fashion. The second reason is to add nodes to an
+existing cluster without a lot of work. PlumpOS is in no way a
+replacement for enterprise clusters nor does it strive to be some kind
+of super duper cluster project; it merely presents a quick and easy
+way to turn your average 586+ PC into another node for your cluster.
+
+  </P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1801"
+></A
+><B
+>Q:     
+
+How does it work?
+
+  </B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>      
+
+From a developer's standpoint it's somewhat difficult but to the
+common user it's quite simple: simply burn an ISO with all the
+required files on it, pop it into a computer's CDROM drive, boot up
+the PC (making sure there's a working network card and cable
+installed) and there you have one more computer to distribute
+load/forked processes to. Because it's a child/slave node, you have to
+already have an openMosix box up and running to run tasks for PlumpOS
+computers to process. Without a master node, PlumpOS is pretty
+useless. That computer or some other network device must already be
+serving DHCP addresses or you'll find yourself configuring all your
+PlumpOS nodes by hand (which won't make for a happy network
+administrator - but then again that's why we have junior admins ^_^).
+
+Also, make sure you have the openMosix autodiscovery daemon (aka
+omdiscd) running on your master node. The autodiscovery daemon can be
+found into openMosix's userspace-tools package.
+
+  </P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1806"
+></A
+><B
+>Q:     
+
+Where can I go for more help?
+
+  </B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>      
+
+Well, for PlumpOS specific help you should join the PlumpOS mailing
+list at <A
+HREF="http://lists.sourceforge.net/lists/listinfo/plumpos-general"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://lists.sourceforge.net/lists/listinfo/plumpos-general</I
+></A
+>
+and ask a question (that wasn't answered on this FAQ) or go to <A
+HREF="irc://irc.freenode.net/%23PlumpOS"
+TARGET="_top"
+> <I
+CLASS="CITETITLE"
+>irc.freenode.net
+#PlumpOS</I
+></A
+>. For openMosix related questions you
+should join the openMosix-general or openMosix-devel mailing list at
+<A
+HREF="http://openmosix.sourceforge.net/mailing.html"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://openmosix.sourceforge.net/mailing.html</I
+></A
+>
+or visit <A
+HREF="irc://irc.freenode.net/%23openMosix"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>irc.freenode.net #openMosix</I
+></A
+>.
+
+  </P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1819"
+></A
+><B
+>Q:     
+
+Where is your homepage?
+
+  </B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>      
+
+The official PlumpOS homepage is at <A
+HREF="http://PlumpOS.sourceforge.net/"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://PlumpOS.sourceforge.net/</I
+></A
+>. You will find updated versions of this document there, as
+well as updated news, info, etc.
+
+  </P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1826"
+></A
+><B
+>Q:     
+
+The penguins are gonna eat the poor halibut in the logo!
+
+  </B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>      
+
+Yes, but not to worry: no halibuts were harmed in the making of the
+logo. The halibut was found deceased on an ice drift after having
+suffered a heart attack. Also, any resemblance the halibut may have to
+another operating system's mascot of choice is purely coincidental.
+
+  </P
+></DIV
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x1734.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="a1830.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Miscellaneous</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="p1539.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>How to produce openMosix's Kernel RPM files</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

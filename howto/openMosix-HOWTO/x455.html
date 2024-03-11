@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Debian and openMosix</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Distribution specific installations (2.4) "
+HREF="c324.html"><LINK
+REL="PREVIOUS"
+TITLE="Suse and openMosix"
+HREF="x451.html"><LINK
+REL="NEXT"
+TITLE="openMosix and Gentoo"
+HREF="x477.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x451.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Distribution specific installations (2.4)</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x477.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN455"
+>Debian and openMosix</A
+></H1
+><P
+>Installing openMosix ``the Debian way'' can be easily done as
+described below.</P
+><P
+>The first step consists in downloading the packages from the net.  I
+had to use a 2.4.19 kernel since the openMosix patches package is not
+yet available for 2.4.20 at the moment I write this. Since we are
+using a Debian setup we needed:
+
+<A
+HREF="http://packages.debian.org/unstable/net/openmosix.html"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://packages.debian.org/unstable/net/openmosix.html</I
+></A
+>,
+
+<A
+HREF="http://packages.debian.org/unstable/net/kernel-patch-openmosix.html"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://packages.debian.org/unstable/net/kernel-patch-openmosix.html</I
+></A
+>,
+
+<A
+HREF="http://packages.debian.org/unstable/misc/kernel-package.html"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://packages.debian.org/unstable/misc/kernel-package.html</I
+></A
+>,
+
+<A
+HREF="http://packages.debian.org/unstable/devel/kernel-source-2.4.19.html"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://packages.debian.org/unstable/devel/kernel-source-2.4.19.html</I
+></A
+>.
+
+You can also apt-get install them ;).</P
+><P
+>&#13;The next part is making the kernel openMosix capable.</P
+><P
+>Basically, the procedure to follow is:
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>cd /usr/src
+apt-get install kernel-source-2.4.19 kernel-package \
+        openmosix kernel-patch-openmosix
+tar vxjf kernel-source-2.4.19.tar.bz2
+ln -s /usr/src/kernel-source-2.4.19 /usr/src/linux
+cd /usr/src/linux
+../kernel-patches/i386/apply/openmosix
+make menuconfig
+make-kpkg kernel_image modules_image
+cd ..
+dpkg -i kernel-image-*-openmosix-*.deb</PRE
+></TD
+></TR
+></TABLE
+>
+
+You now will need to edit your /etc/openmosix.map.  Please follow the
+instructions given in the ``Syntax of /etc/openmosix.map'' part of
+this HOWTO.</P
+><P
+>After rebooting with this kernel and a configured /etc/openmosix.map,
+you should then have a cluster of openMosix machines that talk to
+each-other and that do migration of processes.</P
+><P
+>&#13;You can test that by running the following small script:
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>awk 'BEGIN {for(i=0;i&#60;10000;i++)for(j=0;j&#60;10000;j++);}'</PRE
+></TD
+></TR
+></TABLE
+>
+a couple of times, and monitor its behaviour with "mosmon" where you
+will see that it spreads the load between the different nodes.</P
+><P
+>We also setup openMosixView on the Debian machine:
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>apt-get install openmosixview</PRE
+></TD
+></TR
+></TABLE
+>
+
+In order to be able to actually use openMosixView you will need to run
+it from a user who can log in to the different nodes as root.  We
+suggest you set this up using ssh.  Please note that there is a
+difference between the ssh and ssh2 implementations. If you do have an
+identity.pub file, ssh will check authorized_keys, while if you do have
+an id_dsa.pub you will need authorized_keys2!</P
+><P
+>&#13;openMosixView gives you a nice interface that shows the load of
+different machines and gives you the possibility to migrate processes
+manually.</P
+><P
+>A detailed discussion of openMosixView can be found elsewhere in this
+document.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x451.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x477.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Suse and openMosix</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c324.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>openMosix and Gentoo</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,312 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Kernel Questions</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="the openMosix FAQ"
+HREF="c1521.html"><LINK
+REL="PREVIOUS"
+TITLE="Getting, building, installing and running openMosix"
+HREF="x1590.html"><LINK
+REL="NEXT"
+TITLE="File Systems"
+HREF="x1653.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x1590.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>the openMosix FAQ</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x1653.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1623"
+>Kernel Questions</A
+></H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>Q: <A
+HREF="x1623.html#AEN1627"
+>&#13;What kernel versions does openMosix support?:</A
+></DT
+><DT
+>Q: <A
+HREF="x1623.html#AEN1632"
+>&#13;I'm trying to compile an openMosix-patched kernel. What compiler version should I use?:</A
+></DT
+><DT
+>Q: <A
+HREF="x1623.html#AEN1639"
+>&#13;I've compiled the kernel from the sources. How do I add it to the bootloader (LILO, GRUB, other)?:</A
+></DT
+><DT
+>Q: <A
+HREF="x1623.html#AEN1644"
+>&#13;I installed a Linux distribution and it says that its kernel is x.x.x-x. The openMosix README says not to mix kernel 
+versions. Does that mean that the openmosix-x.x.x-y RPM will not work on my machine?:</A
+></DT
+><DT
+>Q: <A
+HREF="x1623.html#AEN1649"
+>&#13;What does the phrase the same kernel on every machine mean? Does it mean the same kernel version, or the same kernel image?:</A
+></DT
+></DL
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1627"
+></A
+><B
+>Q: 
+What kernel versions does openMosix support?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+The latest Linux kernel supported is 2.4.19. Later versions of the 2.4 series will be supported, as will kernel versions in 
+the 2.5 series.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1632"
+></A
+><B
+>Q: 
+I'm trying to compile an openMosix-patched kernel. What compiler version should I use?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+You should use gcc-2.95.3 as this is the recommended compiler for 2.4 kernels. This is a Linux kernel requirement, not just 
+an openMosix requirement. However, nothing precludes you from having, on the same system, gcc-2.95.3 for kernel compiles and 
+gcc-3.x for non-kernel compiles.</P
+><P
+>&#13;Additional notes: There are many kernel-related issues with gcc-3.x compilers. Inlining, optimization and page alignment do 
+strange things to operating systems kernels. The standard Linux kernel is only guaranteed to compile and work properly with 
+gcc 2.95.3.</P
+><P
+>&#13;However, the Red Hat gcc 2.96 compiler is 2.95 + RH patches. In this case, you should ensure you use gcc-2.96-74 or later. 
+gcc-2.96-54 will not build the kernel correctly. In addition, please pay attention to compiler optimization. Anything 
+greater than -O2 may not be wise. Similarly, if you choose to use gcc-2.95.x or derivatives, be sure not to use 
+-fstrict-aliasing (which, depending on your version of gcc 2.95.x, may necessitate using -fno-strict-aliasing).</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1639"
+></A
+><B
+>Q: 
+I've compiled the kernel from the sources. How do I add it to the bootloader (LILO, GRUB, other)?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+Treat an openMosix kernel just like any other kernel. The openMosix system is simply an extension to the kernel, and will be 
+treated like a standard kernel by your bootloader.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1644"
+></A
+><B
+>Q: 
+I installed a Linux distribution and it says that its kernel is x.x.x-x. The openMosix README says not to mix kernel 
+versions. Does that mean that the openmosix-x.x.x-y RPM will not work on my machine?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+No. It means is that if you install openMosix on your cluster, all your machines should have the openmosix-x.x.x-y kernel 
+installed. You should not mix kernels which have different kernel versions, i.e. do not mix openmosix-x.x.z-x, and 
+openmosix-x.x.x-y, etc.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1649"
+></A
+><B
+>Q: 
+What does the phrase the same kernel on every machine mean? Does it mean the same kernel version, or the same kernel image?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+It means the same kernel version. You can build different kernel images of the same source version to meet the 
+hardware/software needs of a given node.</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x1590.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x1653.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Getting, building, installing and running openMosix</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c1521.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>File Systems</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

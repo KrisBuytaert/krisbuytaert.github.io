@@ -1,0 +1,425 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>the openMosix stress-test
+
+
+&#13;</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="(stress)Testing your openMosix installation"
+HREF="c1361.html"><LINK
+REL="PREVIOUS"
+TITLE="Perl Proggie by Charles Nadeau"
+HREF="x1371.html"><LINK
+REL="NEXT"
+TITLE="Running Applications on openMosix"
+HREF="p1432.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x1371.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>(stress)Testing your openMosix installation</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="p1432.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1378"
+>the openMosix stress-test</A
+></H1
+><P
+>by Matt Rechenburg</P
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN1381"
+>General description</A
+></H2
+><P
+>This stress test is made to test an openMosix cluster + kernel. It will 
+perform several application + kernel tests for checking the stability and 
+other features of openMosix (e.g. process migration, mfs, ...). During 
+this test the cluster will be mostly loaded so you should stop other 
+running applications before starting it. When it finished it generates a 
+fully detailed report about each component which was tested.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN1384"
+>Detailed description</A
+></H2
+><P
+>&#13;The openMosix stress-test runs several programs to check the functionality 
+of the whole system. In the following part you will find a description of 
+each test-application:
+<P
+></P
+><UL
+><LI
+><P
+><I
+CLASS="EMPHASIS"
+>distkeygen</I
+>:
+This applicaton is used to generate 4000 RSA key pairs with 1024 bits of 
+key length. It is destributed into as many processes as processors in your 
+openMosix cluster via fork.</P
+><P
+>Requires : gcc compiler and OpenSSL library
+Copyright (C) 2001 Ying-Hung Chen (GPL)
+http://www.yingternet.com/mosix</P
+></LI
+><LI
+><P
+><I
+CLASS="EMPHASIS"
+>portfolio</I
+>
+'portfolio' is a perl program that simulate a portfolios for various stock 
+composition for a given period of time. This method is base on the book 
+"The intelligent asset allocator" by William Bernstein.</P
+><P
+>This program is licensed under GPL
+Author: Charles-E. Nadeau Ph.D., (c) 2002
+E-mail address: charlesnadeau AT hotmail DOT com</P
+></LI
+><LI
+><P
+><I
+CLASS="EMPHASIS"
+>eatmem </I
+>:
+Simply calculates sin+sqrt from a value 1000000 times and outputs it 
+outputs the loop count to a file (which will grow a lot) This tests is 
+started as many times at once as many processors you have in your 
+openMosix cluster automatically.</P
+></LI
+><LI
+><P
+><I
+CLASS="EMPHASIS"
+>forkit</I
+>:
+The 'forkit' test is similar to the 'eatmem' test but uses fork to create 
+multiple process (3*[processors_in_your_openMosix_cluster]) expect it does 
+not write to files.</P
+></LI
+><LI
+><P
+><I
+CLASS="EMPHASIS"
+> kernel syscall test</I
+>:
+The Linux Test Project is a joint project with SGI, IBM, OSDL, and Bull 
+with a goal to deliver test suites to the open source community that 
+validate the reliability, robustness, and stability of Linux. The Linux 
+Test Project is a collection of tools for testing the Linux kernel and 
+related features. The goal is to improve the Linux kernel by bring test 
+automation to the kernel testing effort. Interested open source 
+contributors are encouraged to join the project.
+For more informations visit : http://ltp.sf.net</P
+></LI
+><LI
+><P
+><I
+CLASS="EMPHASIS"
+>moving</I
+>:
+The 'moving.sh' will move the 'start_openMosix_test.sh' around each node 
+in your openMosix cluster while running the stress-test itself. So 
+'start_openMosix_test.sh' will migrate every minute to another node during 
+the test-run. Dependent on how long the test will run on your cluster it 
+will be migrated 20-40 times.</P
+></LI
+></UL
+></P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN1408"
+>Installing the strestest suite</A
+></H2
+><P
+>First of all download the rpm or source package from 
+<A
+HREF="http://www.openmosixview.com/omtest/"
+TARGET="_top"
+><I
+CLASS="CITETITLE"
+>http://www.openmosixview.com/omtest/</I
+></A
+></P
+><P
+><P
+></P
+><UL
+><LI
+><P
+><I
+CLASS="EMPHASIS"
+>using the source package :</I
+></P
+><P
+>      Unzip and untar the openMosix stress-test with the following 
+commands in e.g. /usr/local:
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="90%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>          gunzip omtest.tar.gz
+          tar -xvf omtest.gz</PRE
+></TD
+></TR
+></TABLE
+>
+      Then 'cd' into the /usr/local/omtest directory and execute:
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="90%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>          ./compile_tests.sh</PRE
+></TD
+></TR
+></TABLE
+>
+
+      This will install the required perl modules and compile the 
+test-programs.
+      The installation of these modules requires root-privileges.
+      Later you can run the openMosix stress-test also as a regular user.
+      (you maybe have to delete old temporary files from root's test-runs
+      in /tmp because you won't have the permission to overwrite it as 
+regular user)
+      You are ready to run the test now with the command:
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="90%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>          ./start_openMosix_test.sh</PRE
+></TD
+></TR
+></TABLE
+></P
+></LI
+><LI
+><P
+><I
+CLASS="EMPHASIS"
+>using the RPM-package</I
+></P
+><P
+>There are some requirements to be met when installing the omtest.rpm,
+you will need e.g expect and compat-libstdc++-7.3-2.96.110
+(If you are on RH 8.0) 
+
+
+      Just install the omtest.rpm with the following command:
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="90%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>          rpm -ihv omtest.rpm</PRE
+></TD
+></TR
+></TABLE
+>
+      Now you can start the openMosix stress test with the command:
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="90%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>          start_openMosix_test.sh</PRE
+></TD
+></TR
+></TABLE
+>
+
+      (The RPM-package will be installed in /usr/local/omtest)
+
+(Please not that the RPM wil allso install some perl modules).&#13;</P
+></LI
+></UL
+></P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN1428"
+>Running the tests</A
+></H2
+><P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>[root@dhcp51 omtest]# ./start_openMosix_test.sh
+
+
+starting the openMosix stress test now!
+
+the results will be saved in : /tmp/openMosix-stress-test-report-03/16/2003-11:27:02.txt
+
+oMFS is not mounted at /mfs! oMFS-test will be disabled.
+Please mount oMFS before running this openMosix-test
+You will find instructions how to configure and use oMFS at:
+http://howto.ipng.be/openMosix-HOWTO/x222.htm#AEN243
+
+
+(return to continue, ctrl-c for cancel)</PRE
+></TD
+></TR
+></TABLE
+></P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x1371.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="p1432.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Perl Proggie by Charles Nadeau</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c1361.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Running Applications on openMosix</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

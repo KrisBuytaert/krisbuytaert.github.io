@@ -1,0 +1,950 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>The openMosix HOWTO</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="NEXT"
+TITLE="Introduction"
+HREF="p105.html"></HEAD
+><BODY
+CLASS="BOOK"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="BOOK"
+><A
+NAME="OPENMOSIX-HOWTO"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="TITLE"
+><A
+NAME="AEN2"
+>The openMosix HOWTO</A
+></H1
+><H2
+CLASS="SUBTITLE"
+>Live free() or die()</H2
+><H3
+CLASS="AUTHOR"
+><A
+NAME="AEN9"
+></A
+>Kris Buytaert</H3
+><DIV
+CLASS="AFFILIATION"
+><DIV
+CLASS="ADDRESS"
+><P
+CLASS="ADDRESS"
+><CODE
+CLASS="EMAIL"
+>&#60;<A
+HREF="mailto:buytaert@x-tend.be"
+>buytaert@x-tend.be</A
+>&#62;</CODE
+></P
+></DIV
+></DIV
+><H3
+CLASS="AUTHOR"
+><A
+NAME="AEN15"
+></A
+>and Others</H3
+><HR></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+>I. <A
+HREF="p105.html"
+>Introduction</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c107.html"
+>Introduction</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c107.html#AEN109"
+>openMosix HOWTO</A
+></DT
+><DT
+><A
+HREF="x114.html"
+>Introduction</A
+></DT
+><DT
+><A
+HREF="x123.html"
+>Disclaimer</A
+></DT
+><DT
+><A
+HREF="x129.html"
+>Distribution policy</A
+></DT
+><DT
+><A
+HREF="x132.html"
+>New versions of this document</A
+></DT
+><DT
+><A
+HREF="x141.html"
+>Feedback</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c145.html"
+>So what is openMosix Anyway ?</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c145.html#AEN147"
+>A very, very brief introduction to clustering</A
+></DT
+><DT
+><A
+HREF="x184.html"
+>The story so far</A
+></DT
+><DT
+><A
+HREF="x216.html"
+>openMosix in action: An example</A
+></DT
+><DT
+><A
+HREF="x222.html"
+>Components</A
+></DT
+><DT
+><A
+HREF="x237.html"
+>openMosix Test Drive</A
+></DT
+><DT
+><A
+HREF="x243.html"
+>Pros of openMosix</A
+></DT
+><DT
+><A
+HREF="x274.html"
+>Cons of openMosix</A
+></DT
+></DL
+></DD
+></DL
+></DD
+><DT
+>II. <A
+HREF="p289.html"
+>Installing openMosix</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c291.html"
+>Requirements and Planning</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c291.html#AEN293"
+>Hardware requirements</A
+></DT
+><DT
+><A
+HREF="x299.html"
+>Hardware Setup Guidelines</A
+></DT
+><DT
+><A
+HREF="x304.html"
+>Software requirements</A
+></DT
+><DT
+><A
+HREF="x307.html"
+>Planning your Cluster</A
+></DT
+><DT
+><A
+HREF="x321.html"
+>Classrooms</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c324.html"
+>Distribution specific installations (2.4)</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c324.html#AEN326"
+>Installing openMosix</A
+></DT
+><DT
+><A
+HREF="x332.html"
+>Before getting openMosix</A
+></DT
+><DT
+><A
+HREF="x338.html"
+>Getting openMosix</A
+></DT
+><DT
+><A
+HREF="x344.html"
+>openMosix General Instructions</A
+></DT
+><DT
+><A
+HREF="x438.html"
+>Red Hat and openMosix</A
+></DT
+><DT
+><A
+HREF="x451.html"
+>Suse and openMosix</A
+></DT
+><DT
+><A
+HREF="x455.html"
+>Debian and openMosix</A
+></DT
+><DT
+><A
+HREF="x477.html"
+>openMosix and Gentoo</A
+></DT
+><DT
+><A
+HREF="x483.html"
+>Other distributions</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c486.html"
+>2.4 Autodiscovery</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c486.html#AEN488"
+>Easy Configuration</A
+></DT
+><DT
+><A
+HREF="x501.html"
+>Compiling auto-discovering</A
+></DT
+><DT
+><A
+HREF="x506.html"
+>Troubleshooting autodiscovery</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c519.html"
+>openMosix at 2.6</A
+></DT
+><DT
+><A
+HREF="c521.html"
+>PlumpOS</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c521.html#AEN523"
+>What Plump/OS is</A
+></DT
+><DT
+><A
+HREF="x527.html"
+>How does it work?</A
+></DT
+><DT
+><A
+HREF="x532.html"
+>Requirements</A
+></DT
+><DT
+><A
+HREF="x552.html"
+>Getting Started</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c566.html"
+>Cluster Installation</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c566.html#AEN568"
+>Cluster Installations</A
+></DT
+><DT
+><A
+HREF="x571.html"
+>DSH,  Distributed Shell</A
+></DT
+></DL
+></DD
+></DL
+></DD
+><DT
+>III. <A
+HREF="p584.html"
+>Administrating openMosix</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c586.html"
+>Administrating openMosix</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c586.html#AEN588"
+>Basic Administration</A
+></DT
+><DT
+><A
+HREF="x592.html"
+>Configuration</A
+></DT
+><DT
+><A
+HREF="x755.html"
+>the userspace-tools</A
+></DT
+><DT
+><A
+HREF="x877.html"
+>Cluster Mask</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c891.html"
+>Tuning Mosix</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c891.html#AEN893"
+>Introduction</A
+></DT
+><DT
+><A
+HREF="x896.html"
+>Creating a "Master" node</A
+></DT
+><DT
+><A
+HREF="x903.html"
+>Optimizing Mosix</A
+></DT
+><DT
+><A
+HREF="x914.html"
+>Channel Bonding Made Easy</A
+></DT
+><DT
+><A
+HREF="x920.html"
+>openMosix and FireWire</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c925.html"
+>openMosixview</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c925.html#AEN927"
+>Introduction</A
+></DT
+><DT
+><A
+HREF="x943.html"
+>openMosixview vs  Mosixview</A
+></DT
+><DT
+><A
+HREF="x959.html"
+>Installation</A
+></DT
+><DT
+><A
+HREF="x995.html"
+>using openMosixview</A
+></DT
+><DT
+><A
+HREF="x1073.html"
+>openMosixprocs</A
+></DT
+><DT
+><A
+HREF="x1106.html"
+>openMosixcollector</A
+></DT
+><DT
+><A
+HREF="x1116.html"
+>openMosixanalyzer</A
+></DT
+><DT
+><A
+HREF="x1161.html"
+>openMosixmigmon</A
+></DT
+><DT
+><A
+HREF="x1183.html"
+>openmosixview FAQ</A
+></DT
+><DT
+><A
+HREF="x1211.html"
+>openMosixview + ssh:</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c1234.html"
+>Other openMosix related Programs</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1234.html#AEN1236"
+>Introduction</A
+></DT
+><DT
+><A
+HREF="x1239.html"
+>openMosixView</A
+></DT
+><DT
+><A
+HREF="x1242.html"
+>openMosixapplet</A
+></DT
+><DT
+><A
+HREF="x1245.html"
+>wmonload</A
+></DT
+><DT
+><A
+HREF="x1248.html"
+>openMosixWebView</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c1254.html"
+>Common Problems</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1254.html#AEN1256"
+>Introduction</A
+></DT
+><DT
+><A
+HREF="x1260.html"
+>My processes won't migrate</A
+></DT
+><DT
+><A
+HREF="x1284.html"
+>I don't see all my nodes</A
+></DT
+><DT
+><A
+HREF="x1297.html"
+>I often get errors: No such process</A
+></DT
+><DT
+><A
+HREF="x1302.html"
+>DFSA ? MFS ?</A
+></DT
+><DT
+><A
+HREF="x1310.html"
+>Python Troubles</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c1314.html"
+>Hints and Tips</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1314.html#AEN1316"
+>Locked Processes</A
+></DT
+><DT
+><A
+HREF="x1320.html"
+>Choosing your processes</A
+></DT
+><DT
+><A
+HREF="x1323.html"
+>Java and openMosix</A
+></DT
+><DT
+><A
+HREF="x1330.html"
+>openMosix and Hyperthreading</A
+></DT
+><DT
+><A
+HREF="x1336.html"
+>openMosix and Firewalls</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c1341.html"
+>(stress)Testing your openMosix installation</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1341.html#AEN1343"
+>A small Test Script</A
+></DT
+><DT
+><A
+HREF="x1351.html"
+>Perl Proggie by Charles Nadeau</A
+></DT
+><DT
+><A
+HREF="x1358.html"
+>the openMosix stress-test</A
+></DT
+></DL
+></DD
+></DL
+></DD
+><DT
+>IV. <A
+HREF="p1412.html"
+>Running Applications on openMosix</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1414.html"
+>Improving Compiling Performance</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1414.html#AEN1416"
+>Introduction</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c1423.html"
+>Imaging with  openMosix</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1423.html#AEN1425"
+>Introduction</A
+></DT
+><DT
+><A
+HREF="x1430.html"
+>Povray</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c1446.html"
+>BioInformatics and  openMosix</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1446.html#AEN1448"
+>Introduction</A
+></DT
+><DT
+><A
+HREF="x1453.html"
+>Blast</A
+></DT
+></DL
+></DD
+></DL
+></DD
+><DT
+>V. <A
+HREF="p1462.html"
+>openMosix Development</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1464.html"
+>Getting started with openMosix internals</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1464.html#AEN1466"
+>Introduction</A
+></DT
+></DL
+></DD
+></DL
+></DD
+><DT
+>VI. <A
+HREF="p1519.html"
+>FAQ</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1521.html"
+>the openMosix FAQ</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1521.html#AEN1523"
+>General</A
+></DT
+><DT
+><A
+HREF="x1590.html"
+>Getting, building, installing and running openMosix</A
+></DT
+><DT
+><A
+HREF="x1623.html"
+>Kernel Questions</A
+></DT
+><DT
+><A
+HREF="x1653.html"
+>File Systems</A
+></DT
+><DT
+><A
+HREF="x1676.html"
+>Programming openMosix</A
+></DT
+><DT
+><A
+HREF="x1689.html"
+>Resources</A
+></DT
+><DT
+><A
+HREF="x1714.html"
+>Miscellaneous</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="c1765.html"
+>PlumpOS FAQ</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="c1765.html#AEN1767"
+>Frequently Asked Questions</A
+></DT
+></DL
+></DD
+></DL
+></DD
+><DT
+><A
+HREF="a1810.html"
+>How to produce openMosix's Kernel RPM files</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="a1810.html#AEN1812"
+>How to produce openMosix's Kernel RPM files</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="a1853.html"
+>More Info</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="a1853.html#AEN1855"
+>irc</A
+></DT
+><DT
+><A
+HREF="x1858.html"
+>Further Reading</A
+></DT
+><DT
+><A
+HREF="x1861.html"
+>Translations</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="x1861.html#AEN1865"
+>Chinese</A
+></DT
+><DT
+><A
+HREF="x1861.html#AEN1874"
+>Spanish</A
+></DT
+><DT
+><A
+HREF="x1861.html#AEN1879"
+>Russian</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="x1884.html"
+>Links</A
+></DT
+><DT
+><A
+HREF="x1985.html"
+>Mailing List</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="a2001.html"
+>Credits</A
+></DT
+><DT
+><A
+HREF="a2108.html"
+>GNU Free Documentation License</A
+></DT
+><DD
+><DL
+><DT
+>0. <A
+HREF="a2108.html#AEN2113"
+>PREAMBLE</A
+></DT
+><DT
+>1. <A
+HREF="x2118.html"
+>APPLICABILITY AND DEFINITIONS</A
+></DT
+><DT
+>2. <A
+HREF="x2128.html"
+>VERBATIM COPYING</A
+></DT
+><DT
+>3. <A
+HREF="x2132.html"
+>COPYING IN QUANTITY</A
+></DT
+><DT
+>4. <A
+HREF="x2138.html"
+>MODIFICATIONS</A
+></DT
+><DT
+>5. <A
+HREF="x2174.html"
+>COMBINING DOCUMENTS</A
+></DT
+><DT
+>6. <A
+HREF="x2179.html"
+>COLLECTIONS OF DOCUMENTS</A
+></DT
+><DT
+>7. <A
+HREF="x2183.html"
+>AGGREGATION WITH INDEPENDENT WORKS</A
+></DT
+><DT
+>8. <A
+HREF="x2187.html"
+>TRANSLATION</A
+></DT
+><DT
+>9. <A
+HREF="x2190.html"
+>TERMINATION</A
+></DT
+><DT
+>10. <A
+HREF="x2193.html"
+>FUTURE REVISIONS OF THIS LICENSE</A
+></DT
+><DT
+><A
+HREF="x2198.html"
+>How to use this License for your documents</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="i2205.html"
+>Index</A
+></DT
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="p105.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Introduction</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

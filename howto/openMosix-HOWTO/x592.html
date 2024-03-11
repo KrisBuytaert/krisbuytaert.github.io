@@ -1,0 +1,539 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Configuration</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Administrating openMosix"
+HREF="c586.html"><LINK
+REL="PREVIOUS"
+TITLE="Administrating openMosix"
+HREF="c586.html"><LINK
+REL="NEXT"
+TITLE="the userspace-tools"
+HREF="x755.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c586.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Administrating openMosix</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x755.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN592"
+>Configuration</A
+></H1
+><P
+>The values in the flat files in the /proc/hpc/admin directory presenting 
+the current configuration of
+the cluster. Also the administrator can write its own values into these 
+files to change the configuration 
+during runtime, e.g.</P
+><DIV
+CLASS="TABLE"
+><A
+NAME="AEN595"
+></A
+><P
+><B
+>Table 1. Changing /proc/hpc parameters</B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TBODY
+><TR
+><TD
+>echo 1 &#62; /proc/hpc/admin/block</TD
+><TD
+>blocks the arrival of remote processes</TD
+></TR
+><TR
+><TD
+>echo 1 &#62; /proc/hpc/admin/bring</TD
+><TD
+>bring all migrated processes home</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+><P
+>...</P
+><DIV
+CLASS="TABLE"
+><A
+NAME="AEN606"
+></A
+><P
+><B
+>Table 2. /proc/hpc/admin/</B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TBODY
+><TR
+><TD
+>(binary files) </TD
+><TD
+>         config          			</TD
+><TD
+>					the main configuration file (written by the setpe util)</TD
+></TR
+><TR
+><TD
+>(flat files)</TD
+><TD
+>            block </TD
+><TD
+>          allow/forbid arrival of remote processes</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>                        bring  </TD
+><TD
+>         bring home all migrated processes</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>  
+                        dfsalinks </TD
+><TD
+>      list of current symbolic dfsa-links</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>  
+                        expel  </TD
+><TD
+>          sending guest processes home</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>  
+                        gateways     </TD
+><TD
+>    maximum number of gateways</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>  
+                        lstay      </TD
+><TD
+>      local processes should stay&#13;</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>  
+
+                        mospe      </TD
+><TD
+>      contains the openMosix node id</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>  
+                        nomfs    </TD
+><TD
+>        disables/enables MFS</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>  
+                        overheads    </TD
+><TD
+>    for tuning</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>  
+                        quiet  </TD
+><TD
+>          stop collecting load-load-balancing informations</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>  
+                        decay-interval  </TD
+><TD
+>  interval for collecting informations about load-balancing</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>  
+                        slow-decay      </TD
+><TD
+>  default 975</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+> 
+                        fast-decay   </TD
+><TD
+>     default 926</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>  
+                        speed  </TD
+><TD
+>          speed relative to PIII/1GHz)</TD
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+>  
+                        stay      </TD
+><TD
+>       enables/disables automatic process migration</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+><DIV
+CLASS="TABLE"
+><A
+NAME="AEN674"
+></A
+><P
+><B
+>Table 3. Writing a 1 to the following files /proc/hpc/decay/</B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TBODY
+><TR
+><TD
+>&#13;                        clear </TD
+><TD
+>          clears the decay statistics</TD
+></TR
+><TR
+><TD
+>&#13;                        cpujob      </TD
+><TD
+>    tells openMosix that the process is cpu-bound</TD
+></TR
+><TR
+><TD
+>                        iojob    </TD
+><TD
+>       tells openMosix that the process is io-bound</TD
+></TR
+><TR
+><TD
+>&#13;                        slow    </TD
+><TD
+>        tells openMosix to decay its statistics slow</TD
+></TR
+><TR
+><TD
+>                        fast     </TD
+><TD
+>       tells openMosix to decay its statistics fast</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+><DIV
+CLASS="TABLE"
+><A
+NAME="AEN693"
+></A
+><P
+><B
+>Table 4. Informations about the other nodes</B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TBODY
+><TR
+><TD
+>/proc/hpc/nodes/[openMosix_ID]/CPUs </TD
+><TD
+>            how many CPU's the node has</TD
+></TR
+><TR
+><TD
+>&#13;/proc/hpc/nodes/[openMosix_ID]/load  </TD
+><TD
+>            the openMosix load of this node</TD
+></TR
+><TR
+><TD
+>/proc/hpc/nodes/[openMosix_ID]/mem         </TD
+><TD
+>      available memory as openMosix believes</TD
+></TR
+><TR
+><TD
+>/proc/hpc/nodes/[openMosix_ID]/rmem  </TD
+><TD
+>            available memory as Linux believes</TD
+></TR
+><TR
+><TD
+>/proc/hpc/nodes/[openMosix_ID]/speed    </TD
+><TD
+>         speed of the node relative to PIII/1GHz</TD
+></TR
+><TR
+><TD
+>/proc/hpc/nodes/[openMosix_ID]/status       </TD
+><TD
+>     status of the node</TD
+></TR
+><TR
+><TD
+>/proc/hpc/nodes/[openMosix_ID]/tmem  </TD
+><TD
+>            available memory</TD
+></TR
+><TR
+><TD
+>/proc/hpc/nodes/[openMosix_ID]/util        </TD
+><TD
+>      utilization of the node</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+><DIV
+CLASS="TABLE"
+><A
+NAME="AEN721"
+></A
+><P
+><B
+>Table 5. Additional Informations about local processes</B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TBODY
+><TR
+><TD
+>&#13;/proc/[PID]/cantmove         </TD
+><TD
+>           reason why a process cannot be migrated</TD
+></TR
+><TR
+><TD
+>/proc/[PID]/goto                      </TD
+><TD
+>  to which node the process should migrate</TD
+></TR
+><TR
+><TD
+>/proc/[PID]/lock                        </TD
+><TD
+>if a process is locked to its home node</TD
+></TR
+><TR
+><TD
+>/proc/[PID]/nmigs                       </TD
+><TD
+>how many times the process migrated</TD
+></TR
+><TR
+><TD
+>/proc/[PID]/where                       </TD
+><TD
+>where the process is currently being computed</TD
+></TR
+><TR
+><TD
+>/proc/[PID]/migrate                     </TD
+><TD
+>same as goto remote processes</TD
+></TR
+><TR
+><TD
+>/proc/hpc/remote/from                   </TD
+><TD
+>the home node of the process</TD
+></TR
+><TR
+><TD
+>/proc/hpc/remote/identity               </TD
+><TD
+>additional informations about the process</TD
+></TR
+><TR
+><TD
+>/proc/hpc/remote/statm                  </TD
+><TD
+>memory statistic of the process</TD
+></TR
+><TR
+><TD
+>/proc/hpc/remote/stats                  </TD
+><TD
+>cpu statistics of the process&#13;</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c586.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x755.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Administrating openMosix</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c586.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>the userspace-tools</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

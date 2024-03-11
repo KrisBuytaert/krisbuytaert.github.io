@@ -1,0 +1,452 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Installation</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="openMosixview"
+HREF="c925.html"><LINK
+REL="PREVIOUS"
+TITLE="openMosixview vs  Mosixview "
+HREF="x943.html"><LINK
+REL="NEXT"
+TITLE="using openMosixview"
+HREF="x995.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x943.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>openMosixview</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x995.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN959"
+>Installation</A
+></H1
+><P
+>&#13;Requirements 
+
+<P
+></P
+><TABLE
+BORDER="0"
+><TBODY
+><TR
+><TD
+>QT library</TD
+></TR
+><TR
+><TD
+>root rights ! </TD
+></TR
+><TR
+><TD
+>rlogin and rsh (or ssh) to all cluster-nodes without password 
+the openMosix userland-tools mosctl, migrate, runon, iojob, cpujob ... 
+    (download them from the www.openmosix.org website) </TD
+></TR
+></TBODY
+></TABLE
+><P
+></P
+>
+On a RH 8.0 you will need at least the following rpm's
+qt-3.0.5-17, libmng-1.0.4, XFree86-Mesa-libGLU-4.2.0, glut-3.7 
+etc ...&#13;</P
+><P
+>Documentation about openMosixview 
+There is a full HTML-documentation about openMosixview included 
+in every package. You find the startpage of the documentation in your 
+openMosixview installation directory: 
+openmosixview/openmosixview/docs/en/index.html </P
+><P
+>&#13;The RPM-packages have their installation directories in: 
+/usr/local/openmosixview </P
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN968"
+>Installation of the RPM-distribution</A
+></H2
+><P
+>&#13;Download the latest version of openMosixview rpm-package. 
+ Then just execute e.g.: 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>rpm -i openmosixview-1.4.rpm </PRE
+></TD
+></TR
+></TABLE
+>
+
+This will install all binaries in /usr/bin 
+To uninstall: 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>rpm -e openmosixview </PRE
+></TD
+></TR
+></TABLE
+></P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN973"
+>Installation of the source-distribution</A
+></H2
+><P
+>&#13;Download the latest version of openMosixview and 
+unzip+untar the sources and copy 
+the tarball to e.g. /usr/local/. 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>gunzip openmosixview-1.4.tar.gz 
+tar -xvf openmosixview-1.4.tar </PRE
+></TD
+></TR
+></TABLE
+></P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN977"
+>Automatic setup-script</A
+></H2
+><P
+>&#13;Just cd to the openmosixview-directory and execute 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>./setup [your_qt_2.3.x_installation_directory] </PRE
+></TD
+></TR
+></TABLE
+></P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN981"
+>Manual compiling</A
+></H2
+><P
+>Set the QTDIR-Variable to your actual QT-Distribution, e.g. 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>export QTDIR=/usr/lib/qt-2.3.0 (for bash) 
+or 
+setenv QTDIR /usr/lib/qt-2.3.0 (for csh) </PRE
+></TD
+></TR
+></TABLE
+>&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN985"
+>Hints</A
+></H2
+><P
+> 
+
+(from the testers of openMosixview/Mosixview who compiled it on different 
+linux-distributions, thanks again) 
+Create the link /usr/lib/qt pointing to your QT-2.3.x installation 
+e.g. if QT-2.3.x is installed in /usr/local/qt-2.3.0 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>ln -s /usr/local/qt-2.3.0 /usr/lib/qt </PRE
+></TD
+></TR
+></TABLE
+>
+
+Then you have to set the QTDIR environment variable to 
+
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>export QTDIR=/usr/lib/qt (for bash) 
+or 
+setenv QTDIR /usr/lib/qt (for csh) </PRE
+></TD
+></TR
+></TABLE
+>
+
+After that the rest should work fine: 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>./configure 
+make </PRE
+></TD
+></TR
+></TABLE
+>
+
+then do the same in the subdirectory openmosixcollector, openmosixanalyzer, 
+openmosixhistory and openmosixviewprocs. 
+
+Copy all binaries to /usr/bin 
+
+ 
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>cp openmosixview/openmosixview /usr/bin 
+cp openmosixviewproc/openmosixviewprocs/mosixviewprocs /usr/bin 
+cp openmosixcollector/openmosixcollector/openmosixcollector /usr/bin 
+cp openmosixanalyzer/openmosixanalyzer/openmosixanalyzer /usr/bin 
+cp openmosixhistory/openmosixhistory/openmosixhistory /usr/bin </PRE
+></TD
+></TR
+></TABLE
+>
+
+And the openmosixcollector init-script to your init-directory e.g. 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>cp openmosixcollector/openmosixcollector.init /etc/init.d/openmosixcollector 
+or 
+cp openmosixcollector/openmosixcollector.init /etc/rc.d/init.d/openmosixcollector </PRE
+></TD
+></TR
+></TABLE
+>
+
+Now copy the openmosixprocs binary on each of your cluster-nodes to /usr/bin/openmosixprocs 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>rcp openmosixprocs/openmosixprocs your_node:/usr/bin/openmosixprocs </PRE
+></TD
+></TR
+></TABLE
+>
+
+You can now execute mosixview 
+
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>openmosixview </PRE
+></TD
+></TR
+></TABLE
+>
+
+
+
+ 
+
+&#13;</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x943.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x995.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>openMosixview vs  Mosixview</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c925.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>using openMosixview</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

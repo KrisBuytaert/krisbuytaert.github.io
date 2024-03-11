@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Getting, building, installing and running openMosix</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="The openMosix HOWTO"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="the openMosix FAQ"
+HREF="c1541.html"><LINK
+REL="PREVIOUS"
+TITLE="the openMosix FAQ"
+HREF="c1541.html"><LINK
+REL="NEXT"
+TITLE="Kernel Questions"
+HREF="x1643.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The openMosix HOWTO: Live free() or die()</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c1541.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>the openMosix FAQ</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x1643.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN1610"
+>Getting, building, installing and running openMosix</A
+></H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>Q: <A
+HREF="x1610.html#AEN1614"
+>&#13;
+Where do I get openMosix?:</A
+></DT
+><DT
+>Q: <A
+HREF="x1610.html#AEN1620"
+>&#13;Can I mix MOSIX and openMosix nodes in the same cluster?:</A
+></DT
+><DT
+>Q: <A
+HREF="x1610.html#AEN1625"
+>&#13;How do I build openMosix?:</A
+></DT
+><DT
+>Q: <A
+HREF="x1610.html#AEN1639"
+>What are userland tools?:</A
+></DT
+></DL
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1614"
+></A
+><B
+>Q: 
+
+Where do I get openMosix?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+The RPMs and source for openMosix are available from our Downloads/Files Section. Please read the release notes first!</P
+><P
+>&#13;Also, Gentoo Linux's emerge sys-apps/openmosix-user and Debian GNU/Linux openMosix packages are available.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1620"
+></A
+><B
+>Q: 
+Can I mix MOSIX and openMosix nodes in the same cluster?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+No. Just like the older MOSIX, you should not mix nodes because the protocols are subject to unannounced changes from 
+version to version. In addition, every new version has bug fixes which warrant updating to the new kernels.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1625"
+></A
+><B
+>Q: 
+How do I build openMosix?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+><P
+></P
+><OL
+TYPE="1"
+><LI
+><P
+> 
+
+      Start by unpacking both the Linux kernel sources and the corresponding openMosix distribution in a directory, say 
+/usr/src.</P
+></LI
+><LI
+><P
+>      Then
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="90%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>$ cd /usr/src; tar xzf linux-2.x.xx.tar.gz ;gunzip openMosix2.x.xx.gz</PRE
+></TD
+></TR
+></TABLE
+></P
+></LI
+><LI
+><P
+>      Apply the openMosix patches to the pristine Linux kernel sources with
+<TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="90%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>      $ patch -p1 openMosix2.x.xx-x</PRE
+></TD
+></TR
+></TABLE
+>
+The directory /usr/src/linux-2.x.xx now contains the 2.x.xx kernel sources with the openMosix patches. Compile and install 
+the resulting kernel as usual.</P
+></LI
+></OL
+></P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><BIG
+><A
+NAME="AEN1639"
+></A
+><B
+>Q: What are userland tools?:</B
+></BIG
+></P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+>A: </B
+>
+Userland tools are a collection of administrative tools used to examine and control an openMosix node.&#13;</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c1541.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x1643.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>the openMosix FAQ</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c1541.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Kernel Questions</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>
