@@ -36,7 +36,17 @@ Titled "Everything is a Freaking DNS Problem" ,it can be found at  <a href="http
 <br> <a name="presentations"><b>Presentations & Conference Appeareances</b></a>
 
 <br> 
-<br> 
+<b>2024</b>
+<ul> 
+  <!-- 
+  <li>5 june 2024, Icinga Summit  2024,  From #monitoringsucks to #monitoringlove and back , Berlin, Germany
+  <li>21 may 2024, NLUUG VJ 2024,  Open Source Observability and Monitoring , where are we now ?,  Utrecht, The Netherlands
+  -->
+  <li>16 april 2024, CloudNative Meetup Gotheborg, 14 years of #devops , but what have we really learned #container edition, Gotheborg ,Sweden
+  <li>15 april 2024, Foss North,  Infrastructure Automation (anti) patterns , Gotheborg, Sweden
+</ul>
+
+
 <b>2023</b>
 <ul> 
   <li>6 december 2023, Open Source Experience Paris, Open Source Observability and Monitoring , where are we now ?,  Paris, France 
@@ -44,9 +54,6 @@ Titled "Everything is a Freaking DNS Problem" ,it can be found at  <a href="http
   <li>22 may 2023, Devopsdays Prague, Observability will not fix your broken Monitoring, Prague , Czech Republic
   <li>2 may 2023, Devopsdays Copenhagen , Observability will not fix your broken Monitoring, Copenhagen, Denmark
   <li>25 april 2023, Devopsdays Geneva, 14 years of #devops, but what have we really learned, Geneva , Switzerland
-
-    
-
 </ul>
 <b>2022</b>
 <ul> 
