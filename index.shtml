@@ -22,7 +22,7 @@
 <br>
 
 <p>
-Kris Buytaert is a long time Linux and Open Source Consultant. He's one of instigators of the devops movement, working for Inuits.eu / o11y.eu </p>
+Kris Buytaert is a long time Devops and Open Source Expert.  He's one of instigators of the devops movement, working for Inuits.eu / o11y.eu </p>
 <p>
 He started more than one conference series and lost count on how many times he spoke at other events.
 He spends most of his time working on bridging the gap between developers and operations  , while warning people not to make the mistakes he made.
@@ -38,6 +38,11 @@ Titled "Everything is a Freaking DNS Problem" ,it can be found at  <a href="http
 <br> 
 <b>2024</b>
 <ul> 
+  <!--
+  <li>November 2024 Oredev , Malmo
+  <li>September 2024 Devopsdays Portugal
+  <li>September 2024 Devopsdays Vilnius
+  -->
   <li>5 june 2024, Icinga Summit  2024,  From #monitoringsucks to #monitoringlove and back , Berlin, Germany
   <li>21 may 2024, NLUUG VJ 2024,  Open Source Observability and Monitoring , where are we now ?,  Utrecht, The Netherlands
   <li>16 april 2024, CloudNative Meetup Gotheborg, 14 years of #devops , but what have we really learned #container edition, Gotheborg ,Sweden
