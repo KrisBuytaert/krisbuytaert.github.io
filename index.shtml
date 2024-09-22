@@ -12,7 +12,7 @@
 [<a href="blog/">Blog</a>]
 [<a href="http://www.linkedin.com/in/krisbuytaert">My LinkedIn Profile</a>]
 [<a href="http://github.com/KrisBuytaert/">Kris on Github</a>]
-[<a href="http://twitter.com/KrisBuytaert/">Kris on Twitter</a>]
+<!-- [<a href="http://twitter.com/KrisBuytaert/">Kris on Twitter</a>] --> 
 [<a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a>]
 
 
@@ -39,10 +39,13 @@ Titled "Everything is a Freaking DNS Problem" ,it can be found at  <a href="http
 <b>2024</b>
 <ul> 
   <!--
+  <li>November 2024 OSM , Nue , Bow for me for I am CoRoot 
   <li>November 2024 Oredev , Malmo
-  <li>September 2024 Devopsdays Portugal
-  <li>September 2024 Devopsdays Vilnius
+  <li>23 September 2024, Devopsdays Porto, Observability will not fix your broken Monitoring, Porto, Portugal
+  <li>23 September 2024, Devopsdays Porto, 15 years of #devops, but what have we really learned ? ,Porto, Portugal, 
   -->
+  <li>11 September 2024, Devopsdays Vilnius, Observability will not fix your broken Monitoring, Vilnius, Lithuania
+  <li>11 September 2024, Devopsdays Vilnius, 15 years of #devops, but what have we really learned ? , Vilnius, Lithuania
   <li>5 june 2024, Icinga Summit  2024,  From #monitoringsucks to #monitoringlove and back , Berlin, Germany
   <li>21 may 2024, NLUUG VJ 2024,  Open Source Observability and Monitoring , where are we now ?,  Utrecht, The Netherlands
   <li>16 april 2024, CloudNative Meetup Gotheborg, 14 years of #devops , but what have we really learned #container edition, Gotheborg ,Sweden
