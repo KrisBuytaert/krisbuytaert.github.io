@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coordinate Map Pinner</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        #map { height: 80vh; width: 100%; }
+        #controls { padding: 10px; background: #f0f0f0; }
+        textarea { width: 100%; height: 60px; }
+        button { padding: 5px 10px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <h3>Enter Coordinates (e.g., N 51° 09.332 E 004° 26.459):</h3>
+        <textarea id="coordinates" placeholder="N 51° 09.332 E 004° 26.459&#10;N 51° 10.000 E 004° 27.000"></textarea>
+        <button onclick="plotCoordinates()">Plot on Map</button>
+        <button onclick="clearMap()">Clear Map</button>
+    </div>
+    <div id="map"></div>
+
+    <script>
+        const map = L.map('map').setView([51.22, 4.41], 12);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        let markers = [];
+
+        function parseCoordinate(coordStr) {
+            const parts = coordStr.trim().split(/[\s°]+/);
+            console.log("Parsing:", coordStr, "Parts:", parts);
+            if (parts.length !== 6) {
+                console.log("Invalid format: expected 6 parts, got", parts.length);
+                return null;
+            }
+
+            const latDir = parts[0];
+            const latDeg = parseFloat(parts[1]);
+            const latMin = parseFloat(parts[2]);
+            const lngDir = parts[3];
+            const lngDeg = parseFloat(parts[4]);
+            const lngMin = parseFloat(parts[5]);
+
+            if (isNaN(latDeg) || isNaN(latMin) || isNaN(lngDeg) || isNaN(lngMin)) {
+                console.log("Could not parse numbers from:", parts);
+                return null;
+            }
+
+            let lat = latDeg + (latMin / 60.0);
+            if (latDir === 'S') lat = -lat;
+
+            let lng = lngDeg + (lngMin / 60.0);
+            if (lngDir === 'W') lng = -lng;
+
+            console.log("Parsed to:", lat, lng);
+            return [lat, lng];
+        }
+
+        function plotCoordinates() {
+            clearMap();
+            const coordsText = document.getElementById('coordinates').value;
+            const lines = coordsText.split('\n');
+            console.log("Input lines:", lines);
+
+            lines.forEach(line => {
+                if (line.trim() === "") return;
+                const coord = parseCoordinate(line);
+                if (coord) {
+                    const [lat, lng] = coord;
+                    const marker = L.marker([lat, lng]).addTo(map)
+                        .bindPopup(`Coord: ${line}<br>LatLng: ${lat}, ${lng}`);
+                    markers.push(marker);
+                    console.log("Added marker at:", lat, lng);
+                } else {
+                    console.log("Failed to parse:", line);
+                }
+            });
+
+            if (markers.length > 0) {
+                const group = new L.featureGroup(markers);
+                map.fitBounds(group.getBounds());
+            } else {
+                console.log("No valid coordinates found.");
+            }
+        }
+
+        function clearMap() {
+            markers.forEach(marker => map.removeLayer(marker));
+            markers = [];
+        }
+    </script>
+</body>
+</html>
+

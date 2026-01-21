@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Formula Solver</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container { max-width: 64rem; margin: 0 auto; }
+        .card { background: white; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
+        .header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+        .title { font-size: 1.875rem; font-weight: bold; color: #1f2937; }
+        .icon { width: 32px; height: 32px; color: #4f46e5; }
+        .result-box { background: #eef2ff; border: 2px solid #c7d2fe; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1.5rem; }
+        .result-label { font-size: 1.125rem; font-weight: 600; color: #374151; margin-bottom: 0.5rem; }
+        .result-value { font-size: 1.5rem; font-family: monospace; color: #4f46e5; }
+        .section-title { font-size: 1.25rem; font-weight: bold; color: #1f2937; margin-bottom: 1rem; }
+        .form-group { margin-bottom: 1rem; }
+        .label { display: block; font-size: 0.875rem; font-weight: 500; color: #374151; margin-bottom: 0.5rem; }
+        .select, .input { width: 100%; padding: 0.5rem 0.75rem; border: 1px solid #d1d5db; border-radius: 0.375rem; font-size: 1rem; }
+        .select:focus, .input:focus { outline: none; border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1); }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+        .coord-row { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .toggle-btn { padding: 0.5rem 1rem; background: #4f46e5; color: white; border: none; border-radius: 0.375rem; font-weight: 600; cursor: pointer; min-width: 60px; }
+        .toggle-btn:hover { background: #4338ca; }
+        .action-btn { padding: 0.5rem 1rem; background: #10b981; color: white; border: none; border-radius: 0.375rem; font-weight: 600; cursor: pointer; }
+        .action-btn:hover { background: #059669; }
+        .browser-btn { background: #f59e0b; }
+        .browser-btn:hover { background: #d97706; }
+        .coord-input { width: 4rem; padding: 0.5rem; border: 1px solid #d1d5db; border-radius: 0.375rem; text-align: center; }
+        .coord-input:focus { outline: none; border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1); }
+        .separator { font-size: 1.25rem; font-weight: bold; }
+        .tip-box { margin-top: 1rem; padding: 1rem; background: #f9fafb; border-radius: 0.375rem; }
+        .tip-text { font-size: 0.875rem; color: #4b5563; }
+        .help-text { font-size: 0.875rem; color: #6b7280; margin-bottom: 1rem; }
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .modal-overlay.active {
+            display: flex;
+        }
+        .modal {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .formula-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .formula-item {
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .formula-item:hover {
+            background: #f3f4f6;
+            border-color: #4f46e5;
+        }
+        .formula-name {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.25rem;
+        }
+        .formula-code {
+            font-size: 0.875rem;
+            color: #4f46e5;
+            font-family: monospace;
+        }
+        .formula-date {
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+        .delete-btn {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            font-size: 0.75rem;
+        }
+        .delete-btn:hover {
+            background: #dc2626;
+        }
+        .modal-actions {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .modal-close {
+            background: #6b7280;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .modal-close:hover {
+            background: #4b5563;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="container">
+            <div class="card">
+                <div class="header">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                    <h1 class="title">Mystery Formula Solver</h1>
+                </div>
+                
+                <div class="form-group">
+                    <label class="label">Geocache Code (for filename):</label>
+                    <input type="text" id="cacheCode" class="input" placeholder="e.g., GC6KPVG" />
+                </div>
+                
+                <div class="form-group">
+                    <label class="label">Geocache Name (optional):</label>
+                    <input type="text" id="cacheName" class="input" placeholder="e.g., Mystery in the Forest" />
+                </div>
+                
+                <div class="result-box">
+                    <h2 class="result-label">Calculated Coordinate:</h2>
+                    <p class="result-value" id="calculatedCoord">N ° . E ° .</p>
+                </div>
+                
+                <div class="btn-group">
+                    <button id="saveBtn" class="action-btn">Save to File</button>
+                    <button id="loadBtn" class="action-btn">Load from File</button>
+                    <button id="saveBrowserBtn" class="action-btn browser-btn">Save to Browser</button>
+                    <button id="loadBrowserBtn" class="action-btn browser-btn">Load from Browser</button>
+                    <button id="clearBtn" class="action-btn" style="background: #ef4444;">Clear All</button>
+                    <input type="file" id="fileInput" accept=".json" style="display: none;" />
+                </div>
+                
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #374151; cursor: pointer;">
+                        <input type="checkbox" id="saveParamValues" checked style="cursor: pointer;" />
+                        <span>Save parameter values (A, B, C, etc.) when saving</span>
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label class="label">Load from URL:</label>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <input type="text" id="urlInput" class="input" placeholder="https://example.com/formula.json" />
+                        <button id="loadUrlBtn" class="action-btn" style="white-space: nowrap;">Load URL</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="section-title">Step 1: Define Parameters</h2>
+                
+                <div class="form-group">
+                    <label class="label">Parameter Range:</label>
+                    <select id="paramRange" class="select"></select>
+                </div>
+
+                <div class="grid" id="paramInputs"></div>
+            </div>
+
+            <div class="card">
+                <h2 class="section-title">Step 2: Define Formula</h2>
+                <p class="help-text">
+                    Enter numbers or formulas using parameters (e.g., A+B*2). Format: N DD° MM.MMM E DDD° MM.MMM
+                </p>
+
+                <div class="coord-row">
+                    <button id="toggleNS" class="toggle-btn">N</button>
+                    <input class="coord-input" data-index="0" placeholder="5" />
+                    <input class="coord-input" data-index="1" placeholder="1" />
+                    <span class="separator">°</span>
+                    <input class="coord-input" data-index="2" placeholder="0" />
+                    <input class="coord-input" data-index="3" placeholder="7" />
+                    <span class="separator">.</span>
+                    <input class="coord-input" data-index="4" placeholder="3" />
+                    <input class="coord-input" data-index="5" placeholder="5" />
+                    <input class="coord-input" data-index="6" placeholder="8" />
+                </div>
+
+                <div class="coord-row">
+                    <button id="toggleEW" class="toggle-btn">E</button>
+                    <input class="coord-input" data-index="7" placeholder="0" />
+                    <input class="coord-input" data-index="8" placeholder="0" />
+                    <input class="coord-input" data-index="9" placeholder="4" />
+                    <span class="separator">°</span>
+                    <input class="coord-input" data-index="10" placeholder="2" />
+                    <input class="coord-input" data-index="11" placeholder="6" />
+                    <span class="separator">.</span>
+                    <input class="coord-input" data-index="12" placeholder="9" />
+                    <input class="coord-input" data-index="13" placeholder="0" />
+                    <input class="coord-input" data-index="14" placeholder="6" />
+                </div>
+
+                <div class="tip-box">
+                    <p class="tip-text">
+                        <strong>Tip:</strong> Use parameter names (A, B, C, etc.) in formulas. Examples: "A+B", "C*2+5", "A-B/2"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loadModal" class="modal-overlay">
+        <div class="modal">
+            <h2 class="modal-title">Load Saved Formula</h2>
+            <ul id="formulaList" class="formula-list"></ul>
+            <div class="modal-actions">
+                <button id="closeModal" class="modal-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var state = {
+            cacheCode: '',
+            cacheName: '',
+            paramRange: 'A-B',
+            paramValues: {},
+            northSouth: 'N',
+            eastWest: 'E',
+            coordValues: ['','','','','','','','','','','','','','','']
+        };
+
+        function init() {
+            populateParamRangeSelect();
+            setupEventListeners();
+            updateParamInputs();
+            updateCalculatedCoordinate();
+            
+            // Check for URL parameter
+            var urlParams = new URLSearchParams(window.location.search);
+            var loadUrl = urlParams.get('load');
+            if (loadUrl) {
+                document.getElementById('urlInput').value = loadUrl;
+                loadFromUrl();
+            }
+        }
+
+        function populateParamRangeSelect() {
+            var select = document.getElementById('paramRange');
+            for (var i = 0; i < 26; i++) {
+                var option = document.createElement('option');
+                var end = String.fromCharCode(65 + i);
+                option.value = 'A-' + end;
+                option.textContent = 'A-' + end;
+                select.appendChild(option);
+            }
+            select.value = state.paramRange;
+        }
+
+        function getCurrentParams() {
+            var endChar = state.paramRange.split('-')[1];
+            var count = endChar.charCodeAt(0) - 64;
+            var params = [];
+            for (var i = 0; i < count; i++) {
+                params.push(String.fromCharCode(65 + i));
+            }
+            return params;
+        }
+
+        function updateParamInputs() {
+            var container = document.getElementById('paramInputs');
+            container.innerHTML = '';
+            
+            var params = getCurrentParams();
+            for (var i = 0; i < params.length; i++) {
+                var param = params[i];
+                var div = document.createElement('div');
+                var label = document.createElement('label');
+                label.className = 'label';
+                label.textContent = param + ':';
+                
+                var input = document.createElement('input');
+                input.type = 'number';
+                input.className = 'input';
+                input.placeholder = 'Value';
+                input.dataset.param = param;
+                input.value = state.paramValues[param] || '';
+                input.addEventListener('input', handleParamInput);
+                
+                div.appendChild(label);
+                div.appendChild(input);
+                container.appendChild(div);
+            }
+        }
+
+        function evaluateFormula(formula) {
+            if (!formula || formula.trim() === '') return '';
+            if (!isNaN(formula)) return formula;
+            
+            var expression = formula;
+            for (var param in state.paramValues) {
+                if (state.paramValues.hasOwnProperty(param)) {
+                    var value = state.paramValues[param];
+                    if (value !== '') {
+                        expression = expression.replace(new RegExp(param, 'g'), value);
+                    }
+                }
+            }
+            
+            try {
+                var result = eval(expression);
+                return Math.floor(result).toString();
+            } catch (e) {
+                return '?';
+            }
+        }
+
+        function updateCalculatedCoordinate() {
+            var vals = [];
+            for (var i = 0; i < state.coordValues.length; i++) {
+                vals.push(evaluateFormula(state.coordValues[i]));
+            }
+            var coord = state.northSouth + ' ' + vals[0] + vals[1] + '° ' + vals[2] + vals[3] + '.' + vals[4] + vals[5] + vals[6] + ' ' + state.eastWest + ' ' + vals[7] + vals[8] + vals[9] + '° ' + vals[10] + vals[11] + '.' + vals[12] + vals[13] + vals[14];
+            document.getElementById('calculatedCoord').textContent = coord;
+        }
+
+        function handleParamRangeChange(e) {
+            state.paramRange = e.target.value;
+            state.paramValues = {};
+            updateParamInputs();
+            updateCalculatedCoordinate();
+        }
+
+        function handleParamInput(e) {
+            var param = e.target.dataset.param;
+            state.paramValues[param] = e.target.value;
+            updateCalculatedCoordinate();
+        }
+
+        function handleCoordInput(e) {
+            var index = parseInt(e.target.dataset.index);
+            state.coordValues[index] = e.target.value;
+            updateCalculatedCoordinate();
+        }
+
+        function toggleNorthSouth() {
+            state.northSouth = state.northSouth === 'N' ? 'S' : 'N';
+            document.getElementById('toggleNS').textContent = state.northSouth;
+            updateCalculatedCoordinate();
+        }
+
+        function toggleEastWest() {
+            state.eastWest = state.eastWest === 'E' ? 'W' : 'E';
+            document.getElementById('toggleEW').textContent = state.eastWest;
+            updateCalculatedCoordinate();
+        }
+
+        function saveFormula() {
+            var cacheCode = document.getElementById('cacheCode').value.trim();
+            var cacheName = document.getElementById('cacheName').value.trim();
+            var saveParamValues = document.getElementById('saveParamValues').checked;
+            
+            var data = {
+                cacheCode: cacheCode,
+                cacheName: cacheName,
+                paramRange: state.paramRange,
+                northSouth: state.northSouth,
+                eastWest: state.eastWest,
+                coordValues: state.coordValues
+            };
+            
+            if (saveParamValues) {
+                data.paramValues = state.paramValues;
+            }
+            
+            var json = JSON.stringify(data, null, 2);
+            var blob = new Blob([json], { type: 'application/json' });
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            
+            var filename;
+            if (cacheCode) {
+                filename = cacheCode + '.json';
+            } else {
+                var timestamp = new Date().toISOString().split('T')[0];
+                filename = 'GC_mystery_formula_' + timestamp + '.json';
+            }
+            
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function loadFormula(e) {
+            var file = e.target.files[0];
+            if (!file) return;
+            
+            var reader = new FileReader();
+            reader.onload = function(event) {
+                try {
+                    var data = JSON.parse(event.target.result);
+                    applyLoadedData(data);
+                    alert('Formula loaded successfully!');
+                } catch (error) {
+                    alert('Error loading file: ' + error.message);
+                }
+            };
+            reader.readAsText(file);
+            e.target.value = '';
+        }
+
+        function saveToBrowser() {
+            var cacheCode = document.getElementById('cacheCode').value.trim();
+            var cacheName = document.getElementById('cacheName').value.trim();
+            
+            if (!cacheCode) {
+                alert('Please enter a Geocache Code before saving to browser');
+                return;
+            }
+            
+            var saveParamValues = document.getElementById('saveParamValues').checked;
+            
+            var data = {
+                cacheCode: cacheCode,
+                cacheName: cacheName,
+                paramRange: state.paramRange,
+                northSouth: state.northSouth,
+                eastWest: state.eastWest,
+                coordValues: state.coordValues,
+                savedAt: new Date().toISOString()
+            };
+            
+            if (saveParamValues) {
+                data.paramValues = state.paramValues;
+            }
+            
+            try {
+                var storageKey = 'gc_formula_' + cacheCode;
+                localStorage.setItem(storageKey, JSON.stringify(data));
+                
+                var savedList = localStorage.getItem('gc_formula_list');
+                var list = savedList ? JSON.parse(savedList) : [];
+                if (list.indexOf(cacheCode) === -1) {
+                    list.push(cacheCode);
+                    localStorage.setItem('gc_formula_list', JSON.stringify(list));
+                }
+                
+                alert('Formula saved to browser storage as "' + cacheCode + '"');
+            } catch (e) {
+                alert('Error saving to browser: ' + e.message);
+            }
+        }
+
+        function loadFromBrowser() {
+            try {
+                var savedList = localStorage.getItem('gc_formula_list');
+                if (!savedList) {
+                    alert('No formulas saved in browser yet');
+                    return;
+                }
+                
+                var list = JSON.parse(savedList);
+                if (list.length === 0) {
+                    alert('No formulas saved in browser yet');
+                    return;
+                }
+                
+                var modal = document.getElementById('loadModal');
+                var formulaList = document.getElementById('formulaList');
+                formulaList.innerHTML = '';
+                
+                for (var i = 0; i < list.length; i++) {
+                    var cacheCode = list[i];
+                    var storageKey = 'gc_formula_' + cacheCode;
+                    var savedData = localStorage.getItem(storageKey);
+                    
+                    if (savedData) {
+                        var data = JSON.parse(savedData);
+                        var li = document.createElement('li');
+                        li.className = 'formula-item';
+                        
+                        var div = document.createElement('div');
+                        div.style.flex = '1';
+                        div.style.cursor = 'pointer';
+                        
+                        var nameDiv = document.createElement('div');
+                        nameDiv.className = 'formula-name';
+                        nameDiv.textContent = data.cacheName || cacheCode;
+                        
+                        var codeDiv = document.createElement('div');
+                        codeDiv.className = 'formula-code';
+                        codeDiv.textContent = cacheCode;
+                        
+                        var dateDiv = document.createElement('div');
+                        dateDiv.className = 'formula-date';
+                        if (data.savedAt) {
+                            var date = new Date(data.savedAt);
+                            dateDiv.textContent = 'Saved: ' + date.toLocaleString();
+                        }
+                        
+                        div.appendChild(nameDiv);
+                        div.appendChild(codeDiv);
+                        div.appendChild(dateDiv);
+                        
+                        div.onclick = (function(code) {
+                            return function() {
+                                loadFormulaByCode(code);
+                                modal.classList.remove('active');
+                            };
+                        })(cacheCode);
+                        
+                        var deleteBtn = document.createElement('button');
+                        deleteBtn.className = 'delete-btn';
+                        deleteBtn.textContent = 'Delete';
+                        deleteBtn.onclick = (function(code) {
+                            return function(e) {
+                                e.stopPropagation();
+                                deleteFormula(code);
+                            };
+                        })(cacheCode);
+                        
+                        li.appendChild(div);
+                        li.appendChild(deleteBtn);
+                        formulaList.appendChild(li);
+                    }
+                }
+                
+                modal.classList.add('active');
+            } catch (e) {
+                alert('Error loading from browser: ' + e.message);
+            }
+        }
+
+        function loadFormulaByCode(code) {
+            try {
+                var storageKey = 'gc_formula_' + code;
+                var savedData = localStorage.getItem(storageKey);
+                
+                if (!savedData) {
+                    alert('Formula "' + code + '" not found');
+                    return;
+                }
+                
+                var data = JSON.parse(savedData);
+                applyLoadedData(data);
+                alert('Formula "' + code + '" loaded successfully!');
+            } catch (e) {
+                alert('Error loading formula: ' + e.message);
+            }
+        }
+
+        function deleteFormula(code) {
+            if (!confirm('Are you sure you want to delete "' + code + '"?')) {
+                return;
+            }
+            
+            try {
+                var storageKey = 'gc_formula_' + code;
+                localStorage.removeItem(storageKey);
+                
+                var savedList = localStorage.getItem('gc_formula_list');
+                if (savedList) {
+                    var list = JSON.parse(savedList);
+                    var index = list.indexOf(code);
+                    if (index > -1) {
+                        list.splice(index, 1);
+                        localStorage.setItem('gc_formula_list', JSON.stringify(list));
+                    }
+                }
+                
+                loadFromBrowser();
+            } catch (e) {
+                alert('Error deleting formula: ' + e.message);
+            }
+        }
+
+        function loadFromUrl() {
+            var url = document.getElementById('urlInput').value.trim();
+            if (!url) {
+                alert('Please enter a URL');
+                return;
+            }
+            
+            var corsProxy = 'https://corsproxy.io/?';
+            var fetchUrl = url.startsWith('http://') || url.startsWith('https://') ? corsProxy + encodeURIComponent(url) : url;
+            
+            fetch(fetchUrl)
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok: ' + response.status);
+                    }
+                    return response.text();
+                })
+                .then(function(text) {
+                    var data = JSON.parse(text);
+                    applyLoadedData(data);
+                    alert('Formula loaded successfully from URL!');
+                })
+                .catch(function(error) {
+                    alert('Error loading from URL: ' + error.message + '\n\nNote: The URL must allow cross-origin requests or be a direct file link. You can try uploading the file directly using "Load from File" instead.');
+                });
+        }
+
+        function applyLoadedData(data) {
+            state.cacheCode = data.cacheCode || '';
+            state.cacheName = data.cacheName || '';
+            state.paramRange = data.paramRange || 'A-B';
+            state.paramValues = data.paramValues || {};
+            state.northSouth = data.northSouth || 'N';
+            state.eastWest = data.eastWest || 'E';
+            state.coordValues = data.coordValues || ['','','','','','','','','','','','','','',''];
+            
+            document.getElementById('cacheCode').value = state.cacheCode;
+            document.getElementById('cacheName').value = state.cacheName;
+            document.getElementById('paramRange').value = state.paramRange;
+            document.getElementById('toggleNS').textContent = state.northSouth;
+            document.getElementById('toggleEW').textContent = state.eastWest;
+            
+            updateParamInputs();
+            
+            var coordInputs = document.querySelectorAll('.coord-input');
+            for (var i = 0; i < coordInputs.length; i++) {
+                var input = coordInputs[i];
+                var index = parseInt(input.dataset.index);
+                input.value = state.coordValues[index] || '';
+            }
+            
+            updateCalculatedCoordinate();
+        }
+
+        function clearAll() {
+            if (!confirm('Are you sure you want to clear all fields? This cannot be undone.')) {
+                return;
+            }
+            
+            state.cacheCode = '';
+            state.cacheName = '';
+            state.paramRange = 'A-B';
+            state.paramValues = {};
+            state.northSouth = 'N';
+            state.eastWest = 'E';
+            state.coordValues = ['','','','','','','','','','','','','','',''];
+            
+            document.getElementById('cacheCode').value = '';
+            document.getElementById('cacheName').value = '';
+            document.getElementById('paramRange').value = 'A-B';
+            document.getElementById('toggleNS').textContent = 'N';
+            document.getElementById('toggleEW').textContent = 'E';
+            document.getElementById('urlInput').value = '';
+            
+            updateParamInputs();
+            
+            var coordInputs = document.querySelectorAll('.coord-input');
+            for (var i = 0; i < coordInputs.length; i++) {
+                coordInputs[i].value = '';
+            }
+            
+            updateCalculatedCoordinate();
+        }
+
+        function setupEventListeners() {
+            document.getElementById('cacheCode').addEventListener('input', function(e) {
+                state.cacheCode = e.target.value;
+            });
+            document.getElementById('cacheName').addEventListener('input', function(e) {
+                state.cacheName = e.target.value;
+            });
+            document.getElementById('paramRange').addEventListener('change', handleParamRangeChange);
+            document.getElementById('toggleNS').addEventListener('click', toggleNorthSouth);
+            document.getElementById('toggleEW').addEventListener('click', toggleEastWest);
+            document.getElementById('saveBtn').addEventListener('click', saveFormula);
+            document.getElementById('loadBtn').addEventListener('click', function() {
+                document.getElementById('fileInput').click();
+            });
+            document.getElementById('fileInput').addEventListener('change', loadFormula);
+            document.getElementById('saveBrowserBtn').addEventListener('click', saveToBrowser);
+            document.getElementById('loadBrowserBtn').addEventListener('click', loadFromBrowser);
+            document.getElementById('loadUrlBtn').addEventListener('click', loadFromUrl);
+            document.getElementById('clearBtn').addEventListener('click', clearAll);
+            
+            document.getElementById('closeModal').addEventListener('click', function() {
+                document.getElementById('loadModal').classList.remove('active');
+            });
+            
+            document.getElementById('loadModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                }
+            });
+            
+            var coordInputs = document.querySelectorAll('.coord-input');
+            for (var i = 0; i < coordInputs.length; i++) {
+                coordInputs[i].addEventListener('input', handleCoordInput);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
