@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Cache Waypoint Solver</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container { max-width: 64rem; margin: 0 auto; }
+        .card { background: white; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
+        .header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+        .title { font-size: 1.875rem; font-weight: bold; color: #1f2937; }
+        .icon { width: 32px; height: 32px; color: #4f46e5; }
+        .section-title { font-size: 1.25rem; font-weight: bold; color: #1f2937; margin-bottom: 1rem; }
+        .form-group { margin-bottom: 1rem; }
+        .label { display: block; font-size: 0.875rem; font-weight: 500; color: #374151; margin-bottom: 0.5rem; }
+        .select, .input { width: 100%; padding: 0.5rem 0.75rem; border: 1px solid #d1d5db; border-radius: 0.375rem; font-size: 1rem; }
+        .select:focus, .input:focus { outline: none; border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1); }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+        .coord-row { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .toggle-btn { padding: 0.5rem 1rem; background: #4f46e5; color: white; border: none; border-radius: 0.375rem; font-weight: 600; cursor: pointer; min-width: 60px; }
+        .toggle-btn:hover { background: #4338ca; }
+        .action-btn { padding: 0.5rem 1rem; background: #10b981; color: white; border: none; border-radius: 0.375rem; font-weight: 600; cursor: pointer; }
+        .action-btn:hover { background: #059669; }
+        .browser-btn { background: #f59e0b; }
+        .browser-btn:hover { background: #d97706; }
+        .coord-input { width: 4rem; padding: 0.5rem; border: 1px solid #d1d5db; border-radius: 0.375rem; text-align: center; }
+        .coord-input:focus { outline: none; border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1); }
+        .separator { font-size: 1.25rem; font-weight: bold; }
+        .tip-box { margin-top: 1rem; padding: 1rem; background: #f9fafb; border-radius: 0.375rem; }
+        .tip-text { font-size: 0.875rem; color: #4b5563; }
+        .help-text { font-size: 0.875rem; color: #6b7280; margin-bottom: 1rem; }
+        .btn-group { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .waypoint-card { background: white; border: 2px solid #c7d2fe; border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem; }
+        .waypoint-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e5e7eb; }
+        .waypoint-title { font-size: 1.25rem; font-weight: bold; color: #4f46e5; }
+        .waypoint-result { background: #eef2ff; border: 2px solid #c7d2fe; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem; }
+        .waypoint-result-label { font-size: 0.875rem; font-weight: 600; color: #374151; margin-bottom: 0.25rem; }
+        .waypoint-result-value { font-size: 1.125rem; font-family: monospace; color: #4f46e5; }
+        .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); display: none; align-items: center; justify-content: center; z-index: 1000; }
+        .modal-overlay.active { display: flex; }
+        .modal { background: white; border-radius: 0.5rem; padding: 2rem; max-width: 500px; width: 90%; max-height: 80vh; overflow-y: auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .modal-title { font-size: 1.5rem; font-weight: bold; color: #1f2937; margin-bottom: 1rem; }
+        .formula-list { list-style: none; padding: 0; margin: 0; }
+        .formula-item { padding: 0.75rem; margin-bottom: 0.5rem; border: 1px solid #d1d5db; border-radius: 0.375rem; cursor: pointer; transition: all 0.2s; display: flex; justify-content: space-between; align-items: center; }
+        .formula-item:hover { background: #f3f4f6; border-color: #4f46e5; }
+        .formula-name { font-weight: 600; color: #1f2937; margin-bottom: 0.25rem; }
+        .formula-code { font-size: 0.875rem; color: #4f46e5; font-family: monospace; }
+        .formula-date { font-size: 0.75rem; color: #6b7280; }
+        .delete-btn { background: #ef4444; color: white; border: none; padding: 0.25rem 0.5rem; border-radius: 0.25rem; cursor: pointer; font-size: 0.75rem; }
+        .delete-btn:hover { background: #dc2626; }
+        .modal-actions { margin-top: 1rem; display: flex; justify-content: flex-end; }
+        .modal-close { background: #6b7280; color: white; border: none; padding: 0.5rem 1rem; border-radius: 0.375rem; cursor: pointer; font-weight: 600; }
+        .modal-close:hover { background: #4b5563; }
+        .wp-count-selector { display: inline-block; width: auto; min-width: 100px; }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="container">
+            <div class="card">
+                <div class="header">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <h1 class="title">Multi-Cache Waypoint Solver</h1>
+                </div>
+                
+                <div class="form-group">
+                    <label class="label">Geocache Code (for filename):</label>
+                    <input type="text" id="cacheCode" class="input" placeholder="e.g., GC6KPVG" />
+                </div>
+                
+                <div class="form-group">
+                    <label class="label">Geocache Name (optional):</label>
+                    <input type="text" id="cacheName" class="input" placeholder="e.g., Multi-Stage Adventure" />
+                </div>
+                
+                <div class="btn-group">
+                    <button id="saveBtn" class="action-btn">Save to File</button>
+                    <button id="loadBtn" class="action-btn">Load from File</button>
+                    <button id="saveBrowserBtn" class="action-btn browser-btn">Save to Browser</button>
+                    <button id="loadBrowserBtn" class="action-btn browser-btn">Load from Browser</button>
+                    <button id="clearBtn" class="action-btn" style="background: #ef4444;">Clear All</button>
+                    <input type="file" id="fileInput" accept=".json" style="display: none;" />
+                </div>
+                
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #374151; cursor: pointer;">
+                        <input type="checkbox" id="saveParamValues" checked style="cursor: pointer;" />
+                        <span>Save parameter values (A, B, C, etc.) when saving</span>
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label class="label">Load from URL:</label>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <input type="text" id="urlInput" class="input" placeholder="https://example.com/formula.json" />
+                        <button id="loadUrlBtn" class="action-btn" style="white-space: nowrap;">Load URL</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="section-title">Step 1: Define Parameters</h2>
+                
+                <div class="form-group">
+                    <label class="label">Parameter Range:</label>
+                    <select id="paramRange" class="select"></select>
+                </div>
+
+                <div class="grid" id="paramInputs"></div>
+            </div>
+
+            <div class="card">
+                <h2 class="section-title">Step 2: Number of Waypoints</h2>
+                <div class="form-group">
+                    <label class="label">How many waypoints does this multi-cache have?</label>
+                    <input type="number" id="waypointCount" class="input wp-count-selector" min="1" max="50" value="1" placeholder="e.g., 5" />
+                </div>
+            </div>
+
+            <div id="waypointsContainer"></div>
+
+            <div class="tip-box">
+                <p class="tip-text">
+                    <strong>Tip:</strong> As you progress through the multi-cache, fill in the parameter values you discover. Each waypoint's coordinates will update automatically based on your formulas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="loadModal" class="modal-overlay">
+        <div class="modal">
+            <h2 class="modal-title">Load Saved Formula</h2>
+            <ul id="formulaList" class="formula-list"></ul>
+            <div class="modal-actions">
+                <button id="closeModal" class="modal-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var state = {
+            cacheCode: '',
+            cacheName: '',
+            paramRange: 'A-B',
+            paramValues: {},
+            waypointCount: 1,
+            waypoints: []
+        };
+
+        function init() {
+            populateParamRangeSelect();
+            setupEventListeners();
+            updateParamInputs();
+            updateWaypoints();
+            
+            var urlParams = new URLSearchParams(window.location.search);
+            var loadUrl = urlParams.get('load');
+            if (loadUrl) {
+                document.getElementById('urlInput').value = loadUrl;
+                loadFromUrl();
+            }
+        }
+
+        function populateParamRangeSelect() {
+            var select = document.getElementById('paramRange');
+            for (var i = 0; i < 26; i++) {
+                var option = document.createElement('option');
+                var end = String.fromCharCode(65 + i);
+                option.value = 'A-' + end;
+                option.textContent = 'A-' + end;
+                select.appendChild(option);
+            }
+            select.value = state.paramRange;
+        }
+
+        function getCurrentParams() {
+            var endChar = state.paramRange.split('-')[1];
+            var count = endChar.charCodeAt(0) - 64;
+            var params = [];
+            for (var i = 0; i < count; i++) {
+                params.push(String.fromCharCode(65 + i));
+            }
+            return params;
+        }
+
+        function updateParamInputs() {
+            var container = document.getElementById('paramInputs');
+            container.innerHTML = '';
+            
+            var params = getCurrentParams();
+            for (var i = 0; i < params.length; i++) {
+                var param = params[i];
+                var div = document.createElement('div');
+                var label = document.createElement('label');
+                label.className = 'label';
+                label.textContent = param + ':';
+                
+                var input = document.createElement('input');
+                input.type = 'number';
+                input.className = 'input';
+                input.placeholder = 'Value';
+                input.dataset.param = param;
+                input.value = state.paramValues[param] || '';
+                input.addEventListener('input', handleParamInput);
+                
+                div.appendChild(label);
+                div.appendChild(input);
+                container.appendChild(div);
+            }
+        }
+
+        function updateWaypoints() {
+            var container = document.getElementById('waypointsContainer');
+            container.innerHTML = '';
+            
+            while (state.waypoints.length < state.waypointCount) {
+                state.waypoints.push({
+                    northSouth: 'N',
+                    eastWest: 'E',
+                    coordValues: ['','','','','','','','','','','','','','','']
+                });
+            }
+            
+            if (state.waypoints.length > state.waypointCount) {
+                state.waypoints = state.waypoints.slice(0, state.waypointCount);
+            }
+            
+            for (var wpIndex = 0; wpIndex < state.waypointCount; wpIndex++) {
+                var wpCard = createWaypointCard(wpIndex);
+                container.appendChild(wpCard);
+            }
+        }
+
+        function createWaypointCard(wpIndex) {
+            var card = document.createElement('div');
+            card.className = 'waypoint-card';
+            
+            var header = document.createElement('div');
+            header.className = 'waypoint-header';
+            
+            var title = document.createElement('div');
+            title.className = 'waypoint-title';
+            title.textContent = 'Waypoint ' + (wpIndex + 1);
+            header.appendChild(title);
+            
+            card.appendChild(header);
+            
+            var resultBox = document.createElement('div');
+            resultBox.className = 'waypoint-result';
+            
+            var resultLabel = document.createElement('div');
+            resultLabel.className = 'waypoint-result-label';
+            resultLabel.textContent = 'Calculated Coordinate:';
+            
+            var resultValue = document.createElement('div');
+            resultValue.className = 'waypoint-result-value';
+            resultValue.id = 'wpResult' + wpIndex;
+            resultValue.textContent = 'N ° . E ° .';
+            
+            resultBox.appendChild(resultLabel);
+            resultBox.appendChild(resultValue);
+            card.appendChild(resultBox);
+            
+            var helpText = document.createElement('p');
+            helpText.className = 'help-text';
+            helpText.textContent = 'Enter numbers or formulas using parameters (e.g., A+B*2). Format: N DD° MM.MMM E DDD° MM.MMM';
+            card.appendChild(helpText);
+            
+            var coordRow1 = document.createElement('div');
+            coordRow1.className = 'coord-row';
+            
+            var toggleNS = document.createElement('button');
+            toggleNS.className = 'toggle-btn';
+            toggleNS.textContent = state.waypoints[wpIndex].northSouth;
+            toggleNS.onclick = function() { toggleDirection(wpIndex, 'northSouth'); };
+            coordRow1.appendChild(toggleNS);
+            
+            for (var i = 0; i < 7; i++) {
+                if (i === 2) {
+                    var sep = document.createElement('span');
+                    sep.className = 'separator';
+                    sep.textContent = '°';
+                    coordRow1.appendChild(sep);
+                } else if (i === 4) {
+                    var sep = document.createElement('span');
+                    sep.className = 'separator';
+                    sep.textContent = '.';
+                    coordRow1.appendChild(sep);
+                }
+                
+                var input = document.createElement('input');
+                input.className = 'coord-input';
+                input.dataset.wpindex = wpIndex;
+                input.dataset.index = i;
+                input.value = state.waypoints[wpIndex].coordValues[i] || '';
+                input.placeholder = ['5','1','0','7','3','5','8'][i];
+                input.addEventListener('input', handleCoordInput);
+                coordRow1.appendChild(input);
+            }
+            
+            card.appendChild(coordRow1);
+            
+            var coordRow2 = document.createElement('div');
+            coordRow2.className = 'coord-row';
+            
+            var toggleEW = document.createElement('button');
+            toggleEW.className = 'toggle-btn';
+            toggleEW.textContent = state.waypoints[wpIndex].eastWest;
+            toggleEW.onclick = function() { toggleDirection(wpIndex, 'eastWest'); };
+            coordRow2.appendChild(toggleEW);
+            
+            for (var i = 7; i < 15; i++) {
+                if (i === 10) {
+                    var sep = document.createElement('span');
+                    sep.className = 'separator';
+                    sep.textContent = '°';
+                    coordRow2.appendChild(sep);
+                } else if (i === 12) {
+                    var sep = document.createElement('span');
+                    sep.className = 'separator';
+                    sep.textContent = '.';
+                    coordRow2.appendChild(sep);
+                }
+                
+                var input = document.createElement('input');
+                input.className = 'coord-input';
+                input.dataset.wpindex = wpIndex;
+                input.dataset.index = i;
+                input.value = state.waypoints[wpIndex].coordValues[i] || '';
+                input.placeholder = ['0','0','4','2','6','9','0','6'][i-7];
+                input.addEventListener('input', handleCoordInput);
+                coordRow2.appendChild(input);
+            }
+            
+            card.appendChild(coordRow2);
+            
+            updateWaypointCoordinate(wpIndex);
+            
+            return card;
+        }
+
+        function evaluateFormula(formula) {
+            if (!formula || formula.trim() === '') return '';
+            if (!isNaN(formula)) return formula;
+            
+            var expression = formula;
+            for (var param in state.paramValues) {
+                if (state.paramValues.hasOwnProperty(param)) {
+                    var value = state.paramValues[param];
+                    if (value !== '') {
+                        expression = expression.replace(new RegExp(param, 'g'), value);
+                    }
+                }
+            }
+            
+            try {
+                var result = eval(expression);
+                return Math.floor(result).toString();
+            } catch (e) {
+                return '?';
+            }
+        }
+
+        function updateWaypointCoordinate(wpIndex) {
+            var wp = state.waypoints[wpIndex];
+            var vals = [];
+            for (var i = 0; i < wp.coordValues.length; i++) {
+                vals.push(evaluateFormula(wp.coordValues[i]));
+            }
+            var coord = wp.northSouth + ' ' + vals[0] + vals[1] + '° ' + vals[2] + vals[3] + '.' + vals[4] + vals[5] + vals[6] + ' ' + wp.eastWest + ' ' + vals[7] + vals[8] + vals[9] + '° ' + vals[10] + vals[11] + '.' + vals[12] + vals[13] + vals[14];
+            var resultElement = document.getElementById('wpResult' + wpIndex);
+            if (resultElement) {
+                resultElement.textContent = coord;
+            }
+        }
+
+        function updateAllWaypointCoordinates() {
+            for (var i = 0; i < state.waypoints.length; i++) {
+                updateWaypointCoordinate(i);
+            }
+        }
+
+        function handleParamRangeChange(e) {
+            state.paramRange = e.target.value;
+            state.paramValues = {};
+            updateParamInputs();
+            updateAllWaypointCoordinates();
+        }
+
+        function handleParamInput(e) {
+            var param = e.target.dataset.param;
+            state.paramValues[param] = e.target.value;
+            updateAllWaypointCoordinates();
+        }
+
+        function handleCoordInput(e) {
+            var wpIndex = parseInt(e.target.dataset.wpindex);
+            var index = parseInt(e.target.dataset.index);
+            state.waypoints[wpIndex].coordValues[index] = e.target.value;
+            updateWaypointCoordinate(wpIndex);
+        }
+
+        function toggleDirection(wpIndex, type) {
+            if (type === 'northSouth') {
+                state.waypoints[wpIndex].northSouth = state.waypoints[wpIndex].northSouth === 'N' ? 'S' : 'N';
+            } else {
+                state.waypoints[wpIndex].eastWest = state.waypoints[wpIndex].eastWest === 'E' ? 'W' : 'E';
+            }
+            updateWaypoints();
+        }
+
+        function handleWaypointCountChange() {
+            var count = parseInt(document.getElementById('waypointCount').value);
+            if (isNaN(count) || count < 1) count = 1;
+            if (count > 50) count = 50;
+            state.waypointCount = count;
+            document.getElementById('waypointCount').value = count;
+            updateWaypoints();
+        }
+
+        function saveFormula() {
+            var cacheCode = document.getElementById('cacheCode').value.trim();
+            var cacheName = document.getElementById('cacheName').value.trim();
+            var saveParamValues = document.getElementById('saveParamValues').checked;
+            
+            var data = {
+                cacheCode: cacheCode,
+                cacheName: cacheName,
+                paramRange: state.paramRange,
+                waypointCount: state.waypointCount,
+                waypoints: state.waypoints
+            };
+            
+            if (saveParamValues) {
+                data.paramValues = state.paramValues;
+            }
+            
+            var json = JSON.stringify(data, null, 2);
+            var blob = new Blob([json], { type: 'application/json' });
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            
+            var filename;
+            if (cacheCode) {
+                filename = cacheCode + '.json';
+            } else {
+                var timestamp = new Date().toISOString().split('T')[0];
+                filename = 'GC_multi_cache_' + timestamp + '.json';
+            }
+            
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function loadFormula(e) {
+            var file = e.target.files[0];
+            if (!file) return;
+            
+            var reader = new FileReader();
+            reader.onload = function(event) {
+                try {
+                    var data = JSON.parse(event.target.result);
+                    applyLoadedData(data);
+                    alert('Formula loaded successfully!');
+                } catch (error) {
+                    alert('Error loading file: ' + error.message);
+                }
+            };
+            reader.readAsText(file);
+            e.target.value = '';
+        }
+
+        function saveToBrowser() {
+            var cacheCode = document.getElementById('cacheCode').value.trim();
+            var cacheName = document.getElementById('cacheName').value.trim();
+            
+            if (!cacheCode) {
+                alert('Please enter a Geocache Code before saving to browser');
+                return;
+            }
+            
+            var saveParamValues = document.getElementById('saveParamValues').checked;
+            
+            var data = {
+                cacheCode: cacheCode,
+                cacheName: cacheName,
+                paramRange: state.paramRange,
+                waypointCount: state.waypointCount,
+                waypoints: state.waypoints,
+                savedAt: new Date().toISOString()
+            };
+            
+            if (saveParamValues) {
+                data.paramValues = state.paramValues;
+            }
+            
+            try {
+                var storageKey = 'gc_multi_' + cacheCode;
+                localStorage.setItem(storageKey, JSON.stringify(data));
+                
+                var savedList = localStorage.getItem('gc_multi_list');
+                var list = savedList ? JSON.parse(savedList) : [];
+                if (list.indexOf(cacheCode) === -1) {
+                    list.push(cacheCode);
+                    localStorage.setItem('gc_multi_list', JSON.stringify(list));
+                }
+                
+                alert('Formula saved to browser storage as "' + cacheCode + '"');
+            } catch (e) {
+                alert('Error saving to browser: ' + e.message);
+            }
+        }
+
+        function loadFromBrowser() {
+            try {
+                var savedList = localStorage.getItem('gc_multi_list');
+                if (!savedList) {
+                    alert('No formulas saved in browser yet');
+                    return;
+                }
+                
+                var list = JSON.parse(savedList);
+                if (list.length === 0) {
+                    alert('No formulas saved in browser yet');
+                    return;
+                }
+                
+                var modal = document.getElementById('loadModal');
+                var formulaList = document.getElementById('formulaList');
+                formulaList.innerHTML = '';
+                
+                for (var i = 0; i < list.length; i++) {
+                    var cacheCode = list[i];
+                    var storageKey = 'gc_multi_' + cacheCode;
+                    var savedData = localStorage.getItem(storageKey);
+                    
+                    if (savedData) {
+                        var data = JSON.parse(savedData);
+                        var li = document.createElement('li');
+                        li.className = 'formula-item';
+                        
+                        var div = document.createElement('div');
+                        div.style.flex = '1';
+                        div.style.cursor = 'pointer';
+                        
+                        var nameDiv = document.createElement('div');
+                        nameDiv.className = 'formula-name';
+                        nameDiv.textContent = data.cacheName || cacheCode;
+                        
+                        var codeDiv = document.createElement('div');
+                        codeDiv.className = 'formula-code';
+                        codeDiv.textContent = cacheCode + ' (' + data.waypointCount + ' waypoints)';
+                        
+                        var dateDiv = document.createElement('div');
+                        dateDiv.className = 'formula-date';
+                        if (data.savedAt) {
+                            var date = new Date(data.savedAt);
+                            dateDiv.textContent = 'Saved: ' + date.toLocaleString();
+                        }
+                        
+                        div.appendChild(nameDiv);
+                        div.appendChild(codeDiv);
+                        div.appendChild(dateDiv);
+                        
+                        div.onclick = (function(code) {
+                            return function() {
+                                loadFormulaByCode(code);
+                                modal.classList.remove('active');
+                            };
+                        })(cacheCode);
+                        
+                        var deleteBtn = document.createElement('button');
+                        deleteBtn.className = 'delete-btn';
+                        deleteBtn.textContent = 'Delete';
+                        deleteBtn.onclick = (function(code) {
+                            return function(e) {
+                                e.stopPropagation();
+                                deleteFormula(code);
+                            };
+                        })(cacheCode);
+                        
+                        li.appendChild(div);
+                        li.appendChild(deleteBtn);
+                        formulaList.appendChild(li);
+                    }
+                }
+                
+                modal.classList.add('active');
+            } catch (e) {
+                alert('Error loading from browser: ' + e.message);
+            }
+        }
+
+        function loadFormulaByCode(code) {
+            try {
+                var storageKey = 'gc_multi_' + code;
+                var savedData = localStorage.getItem(storageKey);
+                
+                if (!savedData) {
+                    alert('Formula "' + code + '" not found');
+                    return;
+                }
+                
+                var data = JSON.parse(savedData);
+                applyLoadedData(data);
+                alert('Formula "' + code + '" loaded successfully!');
+            } catch (e) {
+                alert('Error loading formula: ' + e.message);
+            }
+        }
+
+        function deleteFormula(code) {
+            if (!confirm('Are you sure you want to delete "' + code + '"?')) {
+                return;
+            }
+            
+            try {
+                var storageKey = 'gc_multi_' + code;
+                localStorage.removeItem(storageKey);
+                
+                var savedList = localStorage.getItem('gc_multi_list');
+                if (savedList) {
+                    var list = JSON.parse(savedList);
+                    var index = list.indexOf(code);
+                    if (index > -1) {
+                        list.splice(index, 1);
+                        localStorage.setItem('gc_multi_list', JSON.stringify(list));
+                    }
+                }
+                
+                loadFromBrowser();
+            } catch (e) {
+                alert('Error deleting formula: ' + e.message);
+            }
+        }
+
+        function loadFromUrl() {
+            var url = document.getElementById('urlInput').value.trim();
+            if (!url) {
+                alert('Please enter a URL');
+                return;
+            }
+            
+            var corsProxy = 'https://corsproxy.io/?';
+            var fetchUrl = url.startsWith('http://') || url.startsWith('https://') ? corsProxy + encodeURIComponent(url) : url;
+            
+            fetch(fetchUrl)
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok: ' + response.status);
+                    }
+                    return response.text();
+                })
+                .then(function(text) {
+                    var data = JSON.parse(text);
+                    applyLoadedData(data);
+                    alert('Formula loaded successfully from URL!');
+                })
+                .catch(function(error) {
+                    alert('Error loading from URL: ' + error.message + '\n\nNote: The URL must allow cross-origin requests or be a direct file link. You can try uploading the file directly using "Load from File" instead.');
+                });
+        }
+
+        function applyLoadedData(data) {
+            state.cacheCode = data.cacheCode || '';
+            state.cacheName = data.cacheName || '';
+            state.paramRange = data.paramRange || 'A-B';
+            state.paramValues = data.paramValues || {};
+            state.waypointCount = data.waypointCount || 1;
+            state.waypoints = data.waypoints || [];
+            
+            document.getElementById('cacheCode').value = state.cacheCode;
+            document.getElementById('cacheName').value = state.cacheName;
+            document.getElementById('paramRange').value = state.paramRange;
+            document.getElementById('waypointCount').value = state.waypointCount;
+            
+            updateParamInputs();
+            updateWaypoints();
+        }
+
+        function clearAll() {
+            if (!confirm('Are you sure you want to clear all fields? This cannot be undone.')) {
+                return;
+            }
+            
+            state.cacheCode = '';
+            state.cacheName = '';
+            state.paramRange = 'A-B';
+            state.paramValues = {};
+            state.waypointCount = 1;
+            state.waypoints = [];
+            
+            document.getElementById('cacheCode').value = '';
+            document.getElementById('cacheName').value = '';
+            document.getElementById('paramRange').value = 'A-B';
+            document.getElementById('waypointCount').value = '1';
+            document.getElementById('urlInput').value = '';
+            
+            updateParamInputs();
+            updateWaypoints();
+        }
+
+        function setupEventListeners() {
+            document.getElementById('cacheCode').addEventListener('input', function(e) {
+                state.cacheCode = e.target.value;
+            });
+            document.getElementById('cacheName').addEventListener('input', function(e) {
+                state.cacheName = e.target.value;
+            });
+            document.getElementById('paramRange').addEventListener('change', handleParamRangeChange);
+            document.getElementById('waypointCount').addEventListener('change', handleWaypointCountChange);
+            document.getElementById('waypointCount').addEventListener('blur', handleWaypointCountChange);
+            document.getElementById('saveBtn').addEventListener('click', saveFormula);
+            document.getElementById('loadBtn').addEventListener('click', function() {
+                document.getElementById('fileInput').click();
+            });
+            document.getElementById('fileInput').addEventListener('change', loadFormula);
+            document.getElementById('saveBrowserBtn').addEventListener('click', saveToBrowser);
+            document.getElementById('loadBrowserBtn').addEventListener('click', loadFromBrowser);
+            document.getElementById('loadUrlBtn').addEventListener('click', loadFromUrl);
+            document.getElementById('clearBtn').addEventListener('click', clearAll);
+            
+            document.getElementById('closeModal').addEventListener('click', function() {
+                document.getElementById('loadModal').classList.remove('active');
+            });
+            
+            document.getElementById('loadModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
