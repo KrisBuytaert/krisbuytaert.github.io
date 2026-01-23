@@ -76,12 +76,12 @@
                 
                 <div class="form-group">
                     <label class="label">Geocache Code (for filename):</label>
-                    <input type="text" id="cacheCode" class="input" placeholder="e.g., GC6KPVG" />
+                    <input type="text" id="cacheCode" class="input" placeholder="e.g., GC40" value="GC40" />
                 </div>
                 
                 <div class="form-group">
                     <label class="label">Geocache Name (optional):</label>
-                    <input type="text" id="cacheName" class="input" placeholder="e.g., Multi-Stage Adventure" />
+                    <input type="text" id="cacheName" class="input" placeholder="e.g., Multi-Stage Adventure" value="The Original Stash Tribute" />
                 </div>
                 
                 <div class="btn-group">
@@ -113,8 +113,22 @@
                 <h2 class="section-title">Step 1: Define Parameters</h2>
                 
                 <div class="form-group">
+                    <label class="label">Parameter Selection Method:</label>
+                    <select id="paramMethod" class="select">
+                        <option value="range">Range (A-B, A-C, etc.)</option>
+                        <option value="custom">Custom List (A,B,C,K,L,M, etc.)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" id="rangeGroup">
                     <label class="label">Parameter Range:</label>
-                    <select id="paramRange" class="select"></select>
+                    <select id="paramRangeSelect" class="select"></select>
+                </div>
+                
+                <div class="form-group" id="customGroup" style="display: none;">
+                    <label class="label">Custom Parameters (comma-separated):</label>
+                    <input type="text" id="paramCustom" class="input" placeholder="e.g., A,B,C,K,L,M,X,Y,Z" />
+                    <p style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Enter parameter names separated by commas. Use any single letters (A-Z).</p>
                 </div>
 
                 <div class="grid" id="paramInputs"></div>
@@ -150,10 +164,13 @@
 
     <script>
         var state = {
-            cacheCode: '',
-            cacheName: '',
+            cacheCode: 'GC40',
+            cacheName: 'The Original Stash Tribute',
+            paramMethod: 'range',
             paramRange: 'A-B',
+            paramCustom: '',
             paramValues: {},
+            paramComments: {},
             waypointCount: 1,
             waypoints: []
         };
@@ -173,7 +190,7 @@
         }
 
         function populateParamRangeSelect() {
-            var select = document.getElementById('paramRange');
+            var select = document.getElementById('paramRangeSelect');
             for (var i = 0; i < 26; i++) {
                 var option = document.createElement('option');
                 var end = String.fromCharCode(65 + i);
@@ -185,13 +202,48 @@
         }
 
         function getCurrentParams() {
-            var endChar = state.paramRange.split('-')[1];
-            var count = endChar.charCodeAt(0) - 64;
-            var params = [];
-            for (var i = 0; i < count; i++) {
-                params.push(String.fromCharCode(65 + i));
+            if (state.paramMethod === 'custom') {
+                var paramString = state.paramCustom.trim();
+                if (!paramString) return [];
+                
+                var params = paramString.split(',').map(function(p) {
+                    return p.trim().toUpperCase();
+                }).filter(function(p) {
+                    return p.length === 1 && p >= 'A' && p <= 'Z';
+                });
+                
+                var unique = [];
+                for (var i = 0; i < params.length; i++) {
+                    if (unique.indexOf(params[i]) === -1) {
+                        unique.push(params[i]);
+                    }
+                }
+                
+                return unique;
+            } else {
+                var endChar = state.paramRange.split('-')[1];
+                var count = endChar.charCodeAt(0) - 64;
+                var params = [];
+                for (var i = 0; i < count; i++) {
+                    params.push(String.fromCharCode(65 + i));
+                }
+                return params;
             }
-            return params;
+        }
+
+        function handleParamMethodChange(e) {
+            state.paramMethod = e.target.value;
+            
+            if (state.paramMethod === 'range') {
+                document.getElementById('rangeGroup').style.display = 'block';
+                document.getElementById('customGroup').style.display = 'none';
+            } else {
+                document.getElementById('rangeGroup').style.display = 'none';
+                document.getElementById('customGroup').style.display = 'block';
+            }
+            
+            updateParamInputs();
+            updateAllWaypointCoordinates();
         }
 
         function updateParamInputs() {
@@ -202,6 +254,8 @@
             for (var i = 0; i < params.length; i++) {
                 var param = params[i];
                 var div = document.createElement('div');
+                div.style.gridColumn = 'span 1';
+                
                 var label = document.createElement('label');
                 label.className = 'label';
                 label.textContent = param + ':';
@@ -213,9 +267,21 @@
                 input.dataset.param = param;
                 input.value = state.paramValues[param] || '';
                 input.addEventListener('input', handleParamInput);
+                input.style.marginBottom = '0.5rem';
+                
+                var commentInput = document.createElement('input');
+                commentInput.type = 'text';
+                commentInput.className = 'input';
+                commentInput.placeholder = 'Note (optional)';
+                commentInput.dataset.param = param;
+                commentInput.value = state.paramComments ? (state.paramComments[param] || '') : '';
+                commentInput.addEventListener('input', handleCommentInput);
+                commentInput.style.fontSize = '0.875rem';
+                commentInput.style.backgroundColor = '#f9fafb';
                 
                 div.appendChild(label);
                 div.appendChild(input);
+                div.appendChild(commentInput);
                 container.appendChild(div);
             }
         }
@@ -304,7 +370,7 @@
                 input.dataset.wpindex = wpIndex;
                 input.dataset.index = i;
                 input.value = state.waypoints[wpIndex].coordValues[i] || '';
-                input.placeholder = ['5','1','0','7','3','5','8'][i];
+                input.placeholder = ['5','0','0','0','0','0','0'][i];
                 input.addEventListener('input', handleCoordInput);
                 coordRow1.appendChild(input);
             }
@@ -338,7 +404,7 @@
                 input.dataset.wpindex = wpIndex;
                 input.dataset.index = i;
                 input.value = state.waypoints[wpIndex].coordValues[i] || '';
-                input.placeholder = ['0','0','4','2','6','9','0','6'][i-7];
+                input.placeholder = ['0','0','5','0','0','0','0','0'][i-7];
                 input.addEventListener('input', handleCoordInput);
                 coordRow2.appendChild(input);
             }
@@ -393,7 +459,48 @@
 
         function handleParamRangeChange(e) {
             state.paramRange = e.target.value;
-            state.paramValues = {};
+            var oldParams = Object.keys(state.paramValues);
+            var newParams = getCurrentParams();
+            
+            var newParamValues = {};
+            var newParamComments = {};
+            
+            for (var i = 0; i < newParams.length; i++) {
+                var param = newParams[i];
+                if (state.paramValues[param] !== undefined) {
+                    newParamValues[param] = state.paramValues[param];
+                }
+                if (state.paramComments[param] !== undefined) {
+                    newParamComments[param] = state.paramComments[param];
+                }
+            }
+            
+            state.paramValues = newParamValues;
+            state.paramComments = newParamComments;
+            updateParamInputs();
+            updateAllWaypointCoordinates();
+        }
+
+        function handleParamCustomChange(e) {
+            state.paramCustom = e.target.value;
+            var oldParams = Object.keys(state.paramValues);
+            var newParams = getCurrentParams();
+            
+            var newParamValues = {};
+            var newParamComments = {};
+            
+            for (var i = 0; i < newParams.length; i++) {
+                var param = newParams[i];
+                if (state.paramValues[param] !== undefined) {
+                    newParamValues[param] = state.paramValues[param];
+                }
+                if (state.paramComments[param] !== undefined) {
+                    newParamComments[param] = state.paramComments[param];
+                }
+            }
+            
+            state.paramValues = newParamValues;
+            state.paramComments = newParamComments;
             updateParamInputs();
             updateAllWaypointCoordinates();
         }
@@ -402,6 +509,14 @@
             var param = e.target.dataset.param;
             state.paramValues[param] = e.target.value;
             updateAllWaypointCoordinates();
+        }
+
+        function handleCommentInput(e) {
+            var param = e.target.dataset.param;
+            if (!state.paramComments) {
+                state.paramComments = {};
+            }
+            state.paramComments[param] = e.target.value;
         }
 
         function handleCoordInput(e) {
@@ -437,9 +552,12 @@
             var data = {
                 cacheCode: cacheCode,
                 cacheName: cacheName,
+                paramMethod: state.paramMethod,
                 paramRange: state.paramRange,
+                paramCustom: state.paramCustom,
                 waypointCount: state.waypointCount,
-                waypoints: state.waypoints
+                waypoints: state.waypoints,
+                paramComments: state.paramComments
             };
             
             if (saveParamValues) {
@@ -499,9 +617,12 @@
             var data = {
                 cacheCode: cacheCode,
                 cacheName: cacheName,
+                paramMethod: state.paramMethod,
                 paramRange: state.paramRange,
+                paramCustom: state.paramCustom,
                 waypointCount: state.waypointCount,
                 waypoints: state.waypoints,
+                paramComments: state.paramComments,
                 savedAt: new Date().toISOString()
             };
             
@@ -679,15 +800,28 @@
         function applyLoadedData(data) {
             state.cacheCode = data.cacheCode || '';
             state.cacheName = data.cacheName || '';
+            state.paramMethod = data.paramMethod || 'range';
             state.paramRange = data.paramRange || 'A-B';
+            state.paramCustom = data.paramCustom || '';
             state.paramValues = data.paramValues || {};
+            state.paramComments = data.paramComments || {};
             state.waypointCount = data.waypointCount || 1;
             state.waypoints = data.waypoints || [];
             
             document.getElementById('cacheCode').value = state.cacheCode;
             document.getElementById('cacheName').value = state.cacheName;
-            document.getElementById('paramRange').value = state.paramRange;
+            document.getElementById('paramMethod').value = state.paramMethod;
+            document.getElementById('paramRangeSelect').value = state.paramRange;
+            document.getElementById('paramCustom').value = state.paramCustom;
             document.getElementById('waypointCount').value = state.waypointCount;
+            
+            if (state.paramMethod === 'range') {
+                document.getElementById('rangeGroup').style.display = 'block';
+                document.getElementById('customGroup').style.display = 'none';
+            } else {
+                document.getElementById('rangeGroup').style.display = 'none';
+                document.getElementById('customGroup').style.display = 'block';
+            }
             
             updateParamInputs();
             updateWaypoints();
@@ -700,16 +834,24 @@
             
             state.cacheCode = '';
             state.cacheName = '';
+            state.paramMethod = 'range';
             state.paramRange = 'A-B';
+            state.paramCustom = '';
             state.paramValues = {};
+            state.paramComments = {};
             state.waypointCount = 1;
             state.waypoints = [];
             
             document.getElementById('cacheCode').value = '';
             document.getElementById('cacheName').value = '';
-            document.getElementById('paramRange').value = 'A-B';
+            document.getElementById('paramMethod').value = 'range';
+            document.getElementById('paramRangeSelect').value = 'A-B';
+            document.getElementById('paramCustom').value = '';
             document.getElementById('waypointCount').value = '1';
             document.getElementById('urlInput').value = '';
+            
+            document.getElementById('rangeGroup').style.display = 'block';
+            document.getElementById('customGroup').style.display = 'none';
             
             updateParamInputs();
             updateWaypoints();
@@ -722,7 +864,10 @@
             document.getElementById('cacheName').addEventListener('input', function(e) {
                 state.cacheName = e.target.value;
             });
-            document.getElementById('paramRange').addEventListener('change', handleParamRangeChange);
+            document.getElementById('paramMethod').addEventListener('change', handleParamMethodChange);
+            document.getElementById('paramRangeSelect').addEventListener('change', handleParamRangeChange);
+            document.getElementById('paramCustom').addEventListener('input', handleParamCustomChange);
+            document.getElementById('paramCustom').addEventListener('blur', handleParamCustomChange);
             document.getElementById('waypointCount').addEventListener('change', handleWaypointCountChange);
             document.getElementById('waypointCount').addEventListener('blur', handleWaypointCountChange);
             document.getElementById('saveBtn').addEventListener('click', saveFormula);
