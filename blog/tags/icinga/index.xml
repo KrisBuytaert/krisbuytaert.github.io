@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Icinga on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/icinga/</link>
+    <link>http://localhost:1313/blog/tags/icinga/</link>
     <description>Recent content in Icinga on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Feb 2013 11:10:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/icinga/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/icinga/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>check_graphite</title>
-      <link>https://krisbuytaert.github.io/blog/checkgraphite/</link>
+      <link>http://localhost:1313/blog/checkgraphite/</link>
       <pubDate>Tue, 05 Feb 2013 11:10:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/checkgraphite/</guid>
+      <guid>http://localhost:1313/blog/checkgraphite/</guid>
       <description>&lt;p&gt;During my Puppetcamp Gent talk last week, I explained how to get alerts based on trends from graphite. A number of people asked ,e how to do that.&lt;/p&gt;&#xA;&lt;p&gt;First lets quickly explain why you might want to do that .&lt;br&gt;&#xA;Sometimes you don&amp;rsquo;t care about the current value of a metric..as an example take a Queing system .. there is no problem if there are messages added to the queue, not even if there are a lot of messages on the queue, there might however be a problem if over a certain period the number of messages on a queue stays to high.&lt;/p&gt;</description>
     </item>
     <item>
       <title>#monitoringsucks and we&#39;ll fix it !</title>
-      <link>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</link>
+      <link>http://localhost:1313/blog/monitoringsucks-and-well-fix-it/</link>
       <pubDate>Tue, 03 Jan 2012 20:23:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</guid>
+      <guid>http://localhost:1313/blog/monitoringsucks-and-well-fix-it/</guid>
       <description>&lt;p&gt;If you are hacking on monitoring solutions, and want to talk to your peers solving the problem&lt;br&gt;&#xA;Block the monday and tuesday after fosdem in your calendar !&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp&lt;/p&gt;&#xA;&lt;p&gt;In short a #monitoringsucks hackathon&lt;/p&gt;&#xA;&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp&lt;/p&gt;</description>
     </item>
     <item>
       <title>MonitoringForge</title>
-      <link>https://krisbuytaert.github.io/blog/monitoringforge/</link>
+      <link>http://localhost:1313/blog/monitoringforge/</link>
       <pubDate>Wed, 23 Sep 2009 21:20:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoringforge/</guid>
+      <guid>http://localhost:1313/blog/monitoringforge/</guid>
       <description>&lt;p&gt;I found the initial announcement in my Spambox, thats where I send all the mails from GroundWork as unsubscribing from their marketing lists doesn&amp;rsquo;t seem to work ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.adventuresinoss.com/?p=1117&#34;&gt;Tarus&lt;/a&gt; pointed it out.. he already mentionned Marketing, low community imput etc..&lt;/p&gt;&#xA;&lt;p&gt;Nevertheles I had a look, and my first and last impression was, NagiosForge, no active community, and empty pages on other imvho more relevant Monitoring Projects created by GroundWork employees.&lt;/p&gt;</description>
     </item>
   </channel>

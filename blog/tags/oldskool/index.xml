@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oldskool on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/oldskool/</link>
+    <link>http://localhost:1313/blog/tags/oldskool/</link>
     <description>Recent content in Oldskool on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Jan 2009 20:56:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/oldskool/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/oldskool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oldskool, Fuck the Cloud</title>
-      <link>https://krisbuytaert.github.io/blog/oldskool-fuck-cloud/</link>
+      <link>http://localhost:1313/blog/oldskool-fuck-cloud/</link>
       <pubDate>Wed, 21 Jan 2009 20:56:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/oldskool-fuck-cloud/</guid>
+      <guid>http://localhost:1313/blog/oldskool-fuck-cloud/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://ascii.textfiles.com/archives/1717#comment-7292&#34;&gt;This comment&lt;/a&gt; by Jim Leonard, &lt;a href=&#34;http://trixter.wordpress.com/&#34;&gt;Trixter/Hornet&lt;/a&gt; for those who still remember our &lt;a href=&#34;http://www.krisbuytaert.be/ceevee/democeevee.html&#34;&gt;previous lives&lt;/a&gt;  , is right on the spot.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;This is the longest post I’ve ever seen that says “do not put your only copy of data on a site you do not pay for or trust.”&lt;/p&gt;&#xA;&lt;p&gt;Weird, how you suddenly bump online into someone you haven&amp;rsquo;t heard from for over a decade, and even weirder how they still seem to have similar ideas to yours :-)&lt;/p&gt;</description>
     </item>
   </channel>

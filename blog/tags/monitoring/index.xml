@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Monitoring on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/monitoring/</link>
+    <link>http://localhost:1313/blog/tags/monitoring/</link>
     <description>Recent content in Monitoring on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Aug 2012 21:49:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/monitoring/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/monitoring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Our #monitoringsucks rpm is repository available</title>
-      <link>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</link>
+      <link>http://localhost:1313/blog/our-monitoringsucks-rpm-repository-available/</link>
       <pubDate>Sat, 11 Aug 2012 21:49:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</guid>
+      <guid>http://localhost:1313/blog/our-monitoringsucks-rpm-repository-available/</guid>
       <description>&lt;p&gt;Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.&lt;/p&gt;&#xA;&lt;p&gt;You might have noticed a variety of vagrant- projects on my github acount&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-ganglia&#34;&gt;http://github.com/KrisBuytaert/vagrant-ganglia&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-graphite&#34;&gt;http://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-puppet-logstash&#34;&gt;http://github.com/KrisBuytaert/vagrant-puppet-logstash,&lt;/a&gt;&lt;br&gt;&#xA;Being the #monitoringsucks part of them. All of those Vagrant projects are basically my test setups to play with those new tools.&lt;/p&gt;&#xA;&lt;p&gt;They contain a bunch of puppet modules that install and configure these tools. (Note that they mostly consist of&lt;br&gt;&#xA;of git submodules to other puppet module repositories.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Devops in Munich</title>
-      <link>https://krisbuytaert.github.io/blog/devops-munich/</link>
+      <link>http://localhost:1313/blog/devops-munich/</link>
       <pubDate>Tue, 01 May 2012 21:02:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/devops-munich/</guid>
+      <guid>http://localhost:1313/blog/devops-munich/</guid>
       <description>&lt;p&gt;Devopsdays Mountainview sold out in a short 3 hours .. but there&amp;rsquo;s other events that will breath devops this summer.&lt;br&gt;&#xA;DrupalCon in Munich will be one of them ..&lt;/p&gt;&#xA;&lt;p&gt;Some of you might have noticed that I`m cochairing the devops track for DrupalCon Munich,&lt;br&gt;&#xA;The CFP is open till the 11th of this month and we are still actively looking for speakers.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;re trying to bridge the gap between drupal developers and the people that put their code to production, at scale.&lt;br&gt;&#xA;But also enhancing the knowledge of infrastructure components Drupal developers depend on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>#monitoringsucks and we&#39;ll fix it !</title>
-      <link>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</link>
+      <link>http://localhost:1313/blog/monitoringsucks-and-well-fix-it/</link>
       <pubDate>Tue, 03 Jan 2012 20:23:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</guid>
+      <guid>http://localhost:1313/blog/monitoringsucks-and-well-fix-it/</guid>
       <description>&lt;p&gt;If you are hacking on monitoring solutions, and want to talk to your peers solving the problem&lt;br&gt;&#xA;Block the monday and tuesday after fosdem in your calendar !&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp&lt;/p&gt;&#xA;&lt;p&gt;In short a #monitoringsucks hackathon&lt;/p&gt;&#xA;&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp&lt;/p&gt;</description>
     </item>
     <item>
       <title>Watching the Guards</title>
-      <link>https://krisbuytaert.github.io/blog/watching-guards/</link>
+      <link>http://localhost:1313/blog/watching-guards/</link>
       <pubDate>Thu, 10 Mar 2011 20:44:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/watching-guards/</guid>
+      <guid>http://localhost:1313/blog/watching-guards/</guid>
       <description>&lt;p&gt;A couple of weeks ago I noticed a weird drop in web usage stats on the site you are browsing now. Kinda weird as the drop was right around Fosdem when usually there is a spike in traffic. &lt;img src=&#34;http://www.krisbuytaert.be/images/PiwiwFail.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;So before you start.. no I don&amp;rsquo;t preach on practice on my own blog, it&amp;rsquo;s a blog dammit, so I do the occasional upgrades on the actual platform , with backups available, do some sanity tests and move on, yes I break the theme pretty often but ya&amp;rsquo;ll reading this trough RSS anyhow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Better days Arrive when Dev Meet Ops</title>
-      <link>https://krisbuytaert.github.io/blog/better-days-arrive-when-dev-meet-ops/</link>
+      <link>http://localhost:1313/blog/better-days-arrive-when-dev-meet-ops/</link>
       <pubDate>Sat, 06 Mar 2010 15:03:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/better-days-arrive-when-dev-meet-ops/</guid>
+      <guid>http://localhost:1313/blog/better-days-arrive-when-dev-meet-ops/</guid>
       <description>&lt;p&gt;A couple of weeks a go &lt;a href=&#34;http://twitter.com/LinuxScribe&#34;&gt;Brian Profitt&lt;/a&gt; pinged me for a chat about Devops , the result of that chat , his article can now be found on the Zenoss blog, it&amp;rsquo;s titled &lt;a href=&#34;http://community.zenoss.org/blogs/zenossblog/2010/03/05/datacenter-barometer-better-days-arrive-when-dev-meets-ops&#34;&gt;Datacenter Barometer: Better days arrive when dev meets ops&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s a very nice read with some pointers to places regular readers of my blog should already know ;)&lt;br&gt;&#xA;So with lots of leading Open Source infrastructure companies on different levels, such as config management (OpsCode and Reductive Labs) , monitoring (Zenoss) , deployment (openQRM, RPath, and obviously &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Consultancy&lt;/a&gt; companies , the upcoming Devops conferences around the planet promise to be a lot of fun ! ;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Implementing Raid Monitoring on a 3Ware 3w-9xxx based controller.</title>
-      <link>https://krisbuytaert.github.io/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</link>
+      <link>http://localhost:1313/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</link>
       <pubDate>Thu, 28 Jan 2010 20:41:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</guid>
+      <guid>http://localhost:1313/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</guid>
       <description>&lt;p&gt;When you pull out a disk from your Raid setup it shows a warning in syslog&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: WARNING (0x04:0x0019): Drive&#xA;2. removed:port=1.&#xA;3. Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: ERROR (0x04:0x0002): Degraded&#xA;4. unit:unit=0, port=1.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;However if no one is looking at syslog that won&amp;rsquo;t really be helpfull.&lt;/p&gt;&#xA;&lt;p&gt;3Ware provides a tool from their site called tw_cli which can be used to manage&lt;br&gt;&#xA;the raid setup from the command line.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monitoring MySQL</title>
-      <link>https://krisbuytaert.github.io/blog/monitoring-mysql-0/</link>
+      <link>http://localhost:1313/blog/monitoring-mysql-0/</link>
       <pubDate>Sun, 11 Oct 2009 20:18:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoring-mysql-0/</guid>
+      <guid>http://localhost:1313/blog/monitoring-mysql-0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://ronaldbradford.com/blog/what-alert-monitoring-do-you-use-2009-10-07/&#34;&gt;Ronald Bradford&lt;/a&gt; wants to know what kind of Monitoring you use..&lt;br&gt;&#xA;He specifically wants to know about Alerting tools&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s different cases , looking at it from a full infrastructure point my current favourite is Zabbix or good old Nagios,&lt;/p&gt;&#xA;&lt;p&gt;But when looking at it from a debugging perspective you have MySQLAR or Hyperic, but those aren&amp;rsquo;t in the alerting list.&lt;/p&gt;&#xA;&lt;p&gt;However, when you are building HA clusters, you have custom scripts running either from mon or from pacemaker ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>MonitoringForge</title>
-      <link>https://krisbuytaert.github.io/blog/monitoringforge/</link>
+      <link>http://localhost:1313/blog/monitoringforge/</link>
       <pubDate>Wed, 23 Sep 2009 21:20:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoringforge/</guid>
+      <guid>http://localhost:1313/blog/monitoringforge/</guid>
       <description>&lt;p&gt;I found the initial announcement in my Spambox, thats where I send all the mails from GroundWork as unsubscribing from their marketing lists doesn&amp;rsquo;t seem to work ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.adventuresinoss.com/?p=1117&#34;&gt;Tarus&lt;/a&gt; pointed it out.. he already mentionned Marketing, low community imput etc..&lt;/p&gt;&#xA;&lt;p&gt;Nevertheles I had a look, and my first and last impression was, NagiosForge, no active community, and empty pages on other imvho more relevant Monitoring Projects created by GroundWork employees.&lt;/p&gt;</description>
     </item>
   </channel>

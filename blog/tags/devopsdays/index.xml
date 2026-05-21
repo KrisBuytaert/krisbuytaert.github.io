@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devopsdays on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/devopsdays/</link>
+    <link>http://localhost:1313/blog/tags/devopsdays/</link>
     <description>Recent content in Devopsdays on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jul 2013 00:05:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/devopsdays/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/devopsdays/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Done  Ignite</title>
-      <link>https://krisbuytaert.github.io/blog/done-ignite/</link>
+      <link>http://localhost:1313/blog/done-ignite/</link>
       <pubDate>Wed, 03 Jul 2013 00:05:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/done-ignite/</guid>
+      <guid>http://localhost:1313/blog/done-ignite/</guid>
       <description>&lt;p&gt;Last month I gave an 5 minute Ignite talk at #devopsdays Amsterdam.&lt;/p&gt;&#xA;&lt;p&gt;To summarize .. it was a rant against people that think that the end of a sprint their work is done, an idea they might have gotten from a broken definition of done.&lt;/p&gt;&#xA;&lt;p&gt;Both the video recording and the slides are embedded below.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/do-disnot-done&#34; title=&#34;Dod is not done&#34;&gt;Dod is not done&lt;/a&gt;&lt;/strong&gt;  from &lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>#devops Conference Season heating up...</title>
-      <link>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</link>
+      <link>http://localhost:1313/blog/devops-conference-season-heating/</link>
       <pubDate>Sun, 13 Jan 2013 12:21:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</guid>
+      <guid>http://localhost:1313/blog/devops-conference-season-heating/</guid>
       <description>&lt;p&gt;My last post has been a while &amp;hellip; in that I announced that there would be another event right before FOSDEM &amp;hellip; I totally forgot to announce it here but I`m sure that most of you already know. Yes. PuppetCamp Europe is coming back to it&amp;rsquo;s roots&amp;hellip; it&amp;rsquo;s coming back to the city where we hosted it for the first time on this side of the ocean.. Gent. (that&amp;rsquo;s 31/1 and 1/2 )&lt;/p&gt;</description>
     </item>
     <item>
       <title>Breaking the Silence.</title>
-      <link>https://krisbuytaert.github.io/blog/breaking-silence/</link>
+      <link>http://localhost:1313/blog/breaking-silence/</link>
       <pubDate>Mon, 06 Aug 2012 08:51:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/breaking-silence/</guid>
+      <guid>http://localhost:1313/blog/breaking-silence/</guid>
       <description>&lt;p&gt;3+ months is probably the biggest timeout I&amp;rsquo;ve taken from blogging in a while..&lt;br&gt;&#xA;Not that I didn&amp;rsquo;t have anything to write ..but more that I was prioritizing writing different content over&lt;br&gt;&#xA;over writing blogposts.&lt;/p&gt;&#xA;&lt;p&gt;Blogging tech snippets and contributing documentation used to be one now all of that has evolved.&lt;br&gt;&#xA;Anyhow ..&lt;/p&gt;&#xA;&lt;p&gt;So to get things going here&amp;rsquo;s my preliminary Conference schedule for the next couple of months.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;First up, in about one week (august 20-24) I&lt;code&gt;ll be chairing the #devops track at [DrupalCon Munich](http://munich2012.drupal.org/)\ Next to talking there myselve explaining the [Drupal Crowd what devops is](http://munich2012.drupal.org/program/sessions/whats-devops-thing-anyhow)\ Plenty of interresting content there ranging from culture over to tooling and back. I&lt;/code&gt;m really looking forward to this one.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upcoming Conference Talks</title>
-      <link>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</link>
+      <link>http://localhost:1313/blog/upcoming-conference-talks/</link>
       <pubDate>Mon, 01 Feb 2010 22:04:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</guid>
+      <guid>http://localhost:1313/blog/upcoming-conference-talks/</guid>
       <description>&lt;p&gt;I know the biggest part of my fanclub already booked tickets for my upcoming presentations, but the other 2 might want to check their calendars to see if they aren&amp;rsquo;t missing out on the good stuff :)&lt;/p&gt;&#xA;&lt;p&gt;Next Sunday I`ll giving a shortish overview of &lt;a href=&#34;http://www.fosdem.org/2010/schedule/events/mysql_ha&#34;&gt;MySQL HA alternatives&lt;/a&gt; in the MySQL and Friends devroom at Fosdem.&lt;/p&gt;&#xA;&lt;p&gt;March will bring me to Manchester again for the &lt;a href=&#34;http://spring2010.ukuug.org/Timetable&#34;&gt;UKUUG Spring conference&lt;/a&gt; where I`ll be giving a longer version of that presentation with a strong focus on integrating with PaceMaker, and automating the whole boostrap procedure of a HA setup.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A long overdue report of DevopsDays</title>
-      <link>https://krisbuytaert.github.io/blog/long-overdue-report-devopsdays/</link>
+      <link>http://localhost:1313/blog/long-overdue-report-devopsdays/</link>
       <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/long-overdue-report-devopsdays/</guid>
+      <guid>http://localhost:1313/blog/long-overdue-report-devopsdays/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s how it started :&lt;/p&gt;&#xA;&lt;p&gt;So I used to be a software developer, writing perl for the web, then C, then Java, then PHP, till I realized nobody ever configured my servers correctly and I changed trades becoming a system engineer, while teaching new developers the basics of their trade, whom grew into doing Infrastructure Architecture .. familiar story for much of the crowd at DevopsDays &amp;hellip; a crowd that wants to stopping the war between developers and system engineering , a crowd that wants to automate builds, integrate testing, deploy, deploy on very large scale, deploy in the cloud and much more.&lt;/p&gt;</description>
     </item>
   </channel>

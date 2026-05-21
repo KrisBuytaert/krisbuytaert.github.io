@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Heartbeat on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/heartbeat/</link>
+    <link>http://localhost:1313/blog/tags/heartbeat/</link>
     <description>Recent content in Heartbeat on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 10 Feb 2011 21:20:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/heartbeat/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/heartbeat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ensure Running</title>
-      <link>https://krisbuytaert.github.io/blog/ensure-running/</link>
+      <link>http://localhost:1313/blog/ensure-running/</link>
       <pubDate>Thu, 10 Feb 2011 21:20:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/ensure-running/</guid>
+      <guid>http://localhost:1313/blog/ensure-running/</guid>
       <description>&lt;p&gt;Has anyone noticed that pretty much every puppet module one finds on the internet by default enables the service they try to configure in the module&lt;/p&gt;&#xA;&lt;p&gt;When looking at it from a single machine point of view it makes sense to include the module , have it configure your service and directly enable it by default.&lt;/p&gt;&#xA;&lt;p&gt;So I started wondering .. isn&amp;rsquo;t there anybody out there who is building clusters ? Where services have to configured on multiple nodes but should NOT be running acitvely on all nodes by default because there is an external tool which manages that for you (Pacemaker framework eg.)&lt;/p&gt;</description>
     </item>
     <item>
       <title>High Availability MySQL Cookbook , the review</title>
-      <link>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</link>
+      <link>http://localhost:1313/blog/high-availability-mysql-cookbook-review/</link>
       <pubDate>Thu, 04 Nov 2010 01:07:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</guid>
+      <guid>http://localhost:1313/blog/high-availability-mysql-cookbook-review/</guid>
       <description>&lt;p&gt;When I read on the internetz that Alex Davies was about the publish a &lt;a href=&#34;https://www.packtpub.com/high-availability-mysql-cookbook/book&#34;&gt;Packt book on MySQL HA&lt;/a&gt; I pinged my contacts at Packt and suggested that I&amp;rsquo;d review the book .&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve ran into &lt;a href=&#34;https://sites.google.com/a/davz.net/alex-davies/&#34;&gt;Alex&lt;/a&gt; at some UKUUG conferences before and he&amp;rsquo;s got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.&lt;/p&gt;&#xA;&lt;p&gt;Alex starts of with a couple of indepth chapters on MySQL Cluster, he does mention that it&amp;rsquo;s not a fit for all problems, but I&amp;rsquo;d hoped he did it a bit more prominently &amp;hellip; an upfront chapter outlining the different approaches and when which approach is a match could have been better. The avid reader now might be 80 pages into MySQL cluster before he realizes it&amp;rsquo;s not going to be a match for his problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Got Interviewed</title>
-      <link>https://krisbuytaert.github.io/blog/got-interviewed/</link>
+      <link>http://localhost:1313/blog/got-interviewed/</link>
       <pubDate>Wed, 18 Nov 2009 22:05:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/got-interviewed/</guid>
+      <guid>http://localhost:1313/blog/got-interviewed/</guid>
       <description>&lt;p&gt;by &lt;a href=&#34;http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/&#34;&gt;@botchagalupe&lt;/a&gt;&lt;br&gt;&#xA;on Virtualization, Open Source tools and DNS Problems&lt;/p&gt;</description>
     </item>
     <item>
       <title>Heartbeat 2 OpenAIS</title>
-      <link>https://krisbuytaert.github.io/blog/heartbeat-2-openais/</link>
+      <link>http://localhost:1313/blog/heartbeat-2-openais/</link>
       <pubDate>Fri, 16 Oct 2009 20:53:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/heartbeat-2-openais/</guid>
+      <guid>http://localhost:1313/blog/heartbeat-2-openais/</guid>
       <description>&lt;p&gt;While upgrading a pretty recent Heartbeat cluster to OpenAis earlier today I ran into the following weird situation\&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. Last updated: Fri Oct 16 08:50:03 2009&#xA;2. Stack: openais&#xA;3. Current DC: CO_NMS-1 - partition with quorum&#xA;4. Version: 1.0.5-462f1569a43740667daf7b0f6b521742e9eb8fa7&#xA;5. 4 Nodes configured, 2 expected votes&#xA;6. 1 Resources configured.&#xA;7. ============&#xA;&#xA;9. Online: [ CO_NMS-1 CO_NMS-2 ]&#xA;10. OFFLINE: [ co_nms-1 co_nms-2 ]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. crm(live)node# show&#xA;2. co_nms-1(5c48ab4f-767f-e2dc-20ec-5969cddad152): normal&#xA;3. co_nms-2(922ff786-eca9-bed0-d79d-8222727a2c5b): normal&#xA;4. CO_NMS-1: normal&#xA;5. CO_NMS-2: normal&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Whohoo.. OpenAIS must have realized I have upperase and lowercase cores :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Everything is a fine whitespace problem ...</title>
-      <link>https://krisbuytaert.github.io/blog/everything-fine-whitespace-problem/</link>
+      <link>http://localhost:1313/blog/everything-fine-whitespace-problem/</link>
       <pubDate>Mon, 02 Feb 2009 23:00:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/everything-fine-whitespace-problem/</guid>
+      <guid>http://localhost:1313/blog/everything-fine-whitespace-problem/</guid>
       <description>&lt;p&gt;Couple of days ago I was working on a Linux Heartbeat v2 setup.&lt;br&gt;&#xA;Upon inserting an XML snippet into the cib cib-adm started eating memory fast until the oom killer kicked in.&lt;/p&gt;&#xA;&lt;p&gt;The environment was running a fairly old heartbeat-2.0.8 version so I upgraded to heartbeat-2.1.4-2.1 and there I got a nice warning that my XML sintax wasn&amp;rsquo;t correct.&lt;/p&gt;&#xA;&lt;p&gt;There was a whitespace in the XML syntax.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. &amp;lt;expression attribute=&amp;#34;#replicationvalue&amp;#34; id=&amp;#34;is_lagged&amp;#34; operation =&amp;#34;gt&amp;#34;  ... &amp;gt;&amp;lt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Removing the whitespace solves the problem, also on the older version. So the problem is already fixed upstream.. but you might run into it anyhow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bug in ifconfig ?</title>
-      <link>https://krisbuytaert.github.io/blog/bug-ifconfig/</link>
+      <link>http://localhost:1313/blog/bug-ifconfig/</link>
       <pubDate>Wed, 24 Sep 2008 17:27:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/bug-ifconfig/</guid>
+      <guid>http://localhost:1313/blog/bug-ifconfig/</guid>
       <description>&lt;p&gt;So earlier this week I ran into the weirdest problem with Linux-HA. Heartbeat was happily adding an IP address as an active resource so one of my nodes when needed, but upon removal it failed to remove the IP from the stack. Further debugging learned that the Heartbeat scripts claimed the ip wasn&amp;rsquo;t on the actual stack.&lt;/p&gt;&#xA;&lt;p&gt;It was.. but it the output from ifconfig was different from what it expected it to be.&lt;/p&gt;</description>
     </item>
   </channel>

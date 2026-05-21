@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Repo on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/repo/</link>
+    <link>http://localhost:1313/blog/tags/repo/</link>
     <description>Recent content in Repo on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Aug 2012 21:49:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/repo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/repo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Our #monitoringsucks rpm is repository available</title>
-      <link>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</link>
+      <link>http://localhost:1313/blog/our-monitoringsucks-rpm-repository-available/</link>
       <pubDate>Sat, 11 Aug 2012 21:49:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</guid>
+      <guid>http://localhost:1313/blog/our-monitoringsucks-rpm-repository-available/</guid>
       <description>&lt;p&gt;Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.&lt;/p&gt;&#xA;&lt;p&gt;You might have noticed a variety of vagrant- projects on my github acount&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-ganglia&#34;&gt;http://github.com/KrisBuytaert/vagrant-ganglia&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-graphite&#34;&gt;http://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-puppet-logstash&#34;&gt;http://github.com/KrisBuytaert/vagrant-puppet-logstash,&lt;/a&gt;&lt;br&gt;&#xA;Being the #monitoringsucks part of them. All of those Vagrant projects are basically my test setups to play with those new tools.&lt;/p&gt;&#xA;&lt;p&gt;They contain a bunch of puppet modules that install and configure these tools. (Note that they mostly consist of&lt;br&gt;&#xA;of git submodules to other puppet module repositories.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ruby Gems Yum Repo</title>
-      <link>https://krisbuytaert.github.io/blog/ruby-gems-yum-repo/</link>
+      <link>http://localhost:1313/blog/ruby-gems-yum-repo/</link>
       <pubDate>Wed, 08 Aug 2012 22:28:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/ruby-gems-yum-repo/</guid>
+      <guid>http://localhost:1313/blog/ruby-gems-yum-repo/</guid>
       <description>&lt;p&gt;For those of you that are looking for my old build-gems Github repo, given that lots of other Inuits collegues are using it too I&amp;rsquo;ve transferred ownership of that repo to the Inuits group.&lt;/p&gt;&#xA;&lt;p&gt;It can now be found on &lt;a href=&#34;https://github.com/Inuits/build-gems/&#34;&gt;https://github.com/Inuits/build-gems/&lt;/a&gt; (Yes directory indexes are disabled on purpose..)&lt;/p&gt;&#xA;&lt;p&gt;The build result has also been moved. We&amp;rsquo;ve replaced our static repo.inuits.be with a &lt;a href=&#34;http://pulpproject.org/&#34;&gt;Pulp&lt;/a&gt; powered yum repo.&lt;/p&gt;&#xA;&lt;p&gt;The new location of the rubygems rpm repo now is at &lt;a href=&#34;http://pulp.inuits.eu/pulp/repos/rubygems/&#34;&gt;http://pulp.inuits.eu/pulp/repos/rubygems/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

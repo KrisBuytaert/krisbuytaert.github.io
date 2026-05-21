@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Whitespace on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/whitespace/</link>
+    <link>http://localhost:1313/blog/tags/whitespace/</link>
     <description>Recent content in Whitespace on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Feb 2009 23:00:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/whitespace/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/whitespace/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Everything is a fine whitespace problem ...</title>
-      <link>https://krisbuytaert.github.io/blog/everything-fine-whitespace-problem/</link>
+      <link>http://localhost:1313/blog/everything-fine-whitespace-problem/</link>
       <pubDate>Mon, 02 Feb 2009 23:00:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/everything-fine-whitespace-problem/</guid>
+      <guid>http://localhost:1313/blog/everything-fine-whitespace-problem/</guid>
       <description>&lt;p&gt;Couple of days ago I was working on a Linux Heartbeat v2 setup.&lt;br&gt;&#xA;Upon inserting an XML snippet into the cib cib-adm started eating memory fast until the oom killer kicked in.&lt;/p&gt;&#xA;&lt;p&gt;The environment was running a fairly old heartbeat-2.0.8 version so I upgraded to heartbeat-2.1.4-2.1 and there I got a nice warning that my XML sintax wasn&amp;rsquo;t correct.&lt;/p&gt;&#xA;&lt;p&gt;There was a whitespace in the XML syntax.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. &amp;lt;expression attribute=&amp;#34;#replicationvalue&amp;#34; id=&amp;#34;is_lagged&amp;#34; operation =&amp;#34;gt&amp;#34;  ... &amp;gt;&amp;lt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Removing the whitespace solves the problem, also on the older version. So the problem is already fixed upstream.. but you might run into it anyhow.&lt;/p&gt;</description>
     </item>
   </channel>

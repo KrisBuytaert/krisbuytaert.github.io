@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cim on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/cim/</link>
+    <link>http://localhost:1313/blog/tags/cim/</link>
     <description>Recent content in Cim on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jun 2010 23:10:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/cim/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/cim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>@Beaker on #Devops</title>
-      <link>https://krisbuytaert.github.io/blog/beaker-devops/</link>
+      <link>http://localhost:1313/blog/beaker-devops/</link>
       <pubDate>Tue, 01 Jun 2010 23:10:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/beaker-devops/</guid>
+      <guid>http://localhost:1313/blog/beaker-devops/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.rationalsurvivability.com/blog/?p=1890&#34;&gt;Yesterday&lt;/a&gt; @beaker posted his ideas on the #devops movement &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Apparently we haven&amp;rsquo;t been stressing enough on the fact that it isn&amp;rsquo;t just about Devs and Ops,&lt;br&gt;&#xA;So let me &lt;a href=&#34;http://www.krisbuytaert.be/blog/devops-secops-dbaops-netops&#34;&gt;repeat&lt;/a&gt; it&amp;rsquo;s not just about Devs and Ops, it&amp;rsquo;s about breaking silo&amp;rsquo;s , about being good at our jobs, about getting conversation started, about talking to different stakeholders in the processes . We are absolutely trying to include all groups, not exclude some.&lt;/p&gt;</description>
     </item>
   </channel>

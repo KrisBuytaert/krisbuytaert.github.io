@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IBM on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/ibm/</link>
+    <link>http://localhost:1313/blog/tags/ibm/</link>
     <description>Recent content in IBM on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Apr 2009 21:48:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/ibm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/ibm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dear IBM</title>
-      <link>https://krisbuytaert.github.io/blog/dear-ibm/</link>
+      <link>http://localhost:1313/blog/dear-ibm/</link>
       <pubDate>Mon, 06 Apr 2009 21:48:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/dear-ibm/</guid>
+      <guid>http://localhost:1313/blog/dear-ibm/</guid>
       <description>&lt;p&gt;When you eventually will buy Sun ..&lt;/p&gt;&#xA;&lt;p&gt;Oh nooos.. I started this post last week and now it al seems in vain :(&lt;/p&gt;&#xA;&lt;p&gt;Steven has some clues on what could have &lt;a href=&#34;http://blogs.computerworld.com/good_bye_solaris_the_fate_of_suns_top_5_technologies&#34;&gt;happened&lt;/a&gt;, I think he is right on the spot on with his Solaris prediction ..&lt;/p&gt;&#xA;&lt;p&gt;He wonders why IBM would spend even another dime on Solaris, actually even today I can&amp;rsquo;t even see why Sun is spending any more money on developing Solaris. But even with no acquisition his prediction of the future of Open Solaris imvho is spot on:&lt;/p&gt;</description>
     </item>
   </channel>

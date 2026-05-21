@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Talks on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/talks/</link>
+    <link>http://localhost:1313/blog/tags/talks/</link>
     <description>Recent content in Talks on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Mar 2016 22:58:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/talks/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/talks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recent and Upcoming Talks</title>
-      <link>https://krisbuytaert.github.io/blog/recent-and-upcoming-talks/</link>
+      <link>http://localhost:1313/blog/recent-and-upcoming-talks/</link>
       <pubDate>Wed, 23 Mar 2016 22:58:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/recent-and-upcoming-talks/</guid>
+      <guid>http://localhost:1313/blog/recent-and-upcoming-talks/</guid>
       <description>&lt;p&gt;I gave a couple of new and updated talks the last couple of months.&lt;/p&gt;&#xA;&lt;p&gt;At Fosdem, I opened up the Distributions Devroom with a talk on how we could improve the collaboration between the developers of a distro, and their users, the ops folks. I seemed to not be the only person with similar ideas as the smart folks over at the CentOS project were already actively talking about their efforts into making some my ideas become reality the day before at the CentOS Dojo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monitoring MySQL</title>
-      <link>https://krisbuytaert.github.io/blog/monitoring-mysql/</link>
+      <link>http://localhost:1313/blog/monitoring-mysql/</link>
       <pubDate>Sun, 08 Feb 2009 16:16:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoring-mysql/</guid>
+      <guid>http://localhost:1313/blog/monitoring-mysql/</guid>
       <description>&lt;p&gt;The slides for my Monitoring MySQL talk , which I gave earlier today in an overcrowded MySQl Developersroom at Fosdem are now online, both at &lt;a href=&#34;http://www.krisbuytaert.be/presentations/MySQLMonitoringShootOut.odp&#34;&gt;my site&lt;/a&gt; and at &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out&#34;&gt;Slideshare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;As of now I actually expect people to use those slides for schoolwork or next year in a main Fosdem track :)&lt;br&gt;&#xA;As afterall that is the goal of Open Source and spreading the word ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out?type=presentation&#34; title=&#34;MySQL Monitoring Shoot Out&#34;&gt;MySQL Monitoring Shoot Out&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

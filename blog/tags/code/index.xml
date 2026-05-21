@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/code/</link>
+    <link>http://localhost:1313/blog/tags/code/</link>
     <description>Recent content in Code on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Jan 2010 21:02:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Planet , Drupal Style</title>
-      <link>https://krisbuytaert.github.io/blog/planet-drupal-style/</link>
+      <link>http://localhost:1313/blog/planet-drupal-style/</link>
       <pubDate>Fri, 15 Jan 2010 21:02:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/planet-drupal-style/</guid>
+      <guid>http://localhost:1313/blog/planet-drupal-style/</guid>
       <description>&lt;p&gt;So when you setup an aggregator there&amp;rsquo;s this one thing you miss from a regular planet &amp;hellip;the list of blogs with their individual Feeds.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to use this for planet.loadays.org again and realized I don&amp;rsquo;t know where I got this snippet from or if I wrote it myselve or whatever .. but I do realize that unless I document it here I won&amp;rsquo;t be able to point other people to it again :) So just create a block like this one :&lt;/p&gt;</description>
     </item>
     <item>
       <title>&#34;Idle&#34;</title>
-      <link>https://krisbuytaert.github.io/blog/idle/</link>
+      <link>http://localhost:1313/blog/idle/</link>
       <pubDate>Wed, 23 Sep 2009 21:25:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/idle/</guid>
+      <guid>http://localhost:1313/blog/idle/</guid>
       <description>&lt;p&gt;For those who wonder why my blogging is so low these days (apart from today) .. I`m actually writing more Lines of Code than Blog Entries the last couple of weeks:)&lt;/p&gt;&#xA;&lt;p&gt;And when I&lt;code&gt;m not writing code I&lt;/code&gt;m reading :) Either proofreading an upcoming book on &lt;a href=&#34;http://www.packtpub.com/zabbix-1-6-network-monitoring/book&#34;&gt;Zabbix&lt;/a&gt; or reading &lt;a href=&#34;http://www.packtpub.com/build-social-networking-website-with-drupal-6/book&#34;&gt;some&lt;/a&gt; of the &lt;a href=&#34;http://www.packtpub.com/building-enterprise-ready-telephony-systems-with-sipxecs-4-0/book&#34;&gt;other&lt;/a&gt; books Packt sent me.&lt;/p&gt;&#xA;&lt;p&gt;Next to that I`m busy preparing &lt;a href=&#34;http://www.t-dose.org/2009/talk/virtsec&#34;&gt;my T-Dose&lt;/a&gt; presentation&lt;/p&gt;&#xA;&lt;p&gt;Oh and did I mention a 40 something questions questionnaire about some merger ?&lt;/p&gt;</description>
     </item>
   </channel>

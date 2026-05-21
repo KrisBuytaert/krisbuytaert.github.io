@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Php on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/php/</link>
+    <link>http://localhost:1313/blog/tags/php/</link>
     <description>Recent content in Php on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Aug 2010 00:06:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/php/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mollom and Views</title>
-      <link>https://krisbuytaert.github.io/blog/mollom-and-views/</link>
+      <link>http://localhost:1313/blog/mollom-and-views/</link>
       <pubDate>Wed, 04 Aug 2010 00:06:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/mollom-and-views/</guid>
+      <guid>http://localhost:1313/blog/mollom-and-views/</guid>
       <description>&lt;p&gt;You might have noticed that this blog stopped accepting comments about a month ago.. well. stopped accepting is a big word.. I was still accepting comments, only they were never submitted to the database and after entering a comment to my blog people ended up on a white page.&lt;/p&gt;&#xA;&lt;p&gt;So upon returning from holliday I set out to debug the issue together with one of our Inuits Drupal geeks and quickly ran into the following error.\&lt;/p&gt;</description>
     </item>
     <item>
       <title>Planet , Drupal Style</title>
-      <link>https://krisbuytaert.github.io/blog/planet-drupal-style/</link>
+      <link>http://localhost:1313/blog/planet-drupal-style/</link>
       <pubDate>Fri, 15 Jan 2010 21:02:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/planet-drupal-style/</guid>
+      <guid>http://localhost:1313/blog/planet-drupal-style/</guid>
       <description>&lt;p&gt;So when you setup an aggregator there&amp;rsquo;s this one thing you miss from a regular planet &amp;hellip;the list of blogs with their individual Feeds.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to use this for planet.loadays.org again and realized I don&amp;rsquo;t know where I got this snippet from or if I wrote it myselve or whatever .. but I do realize that unless I document it here I won&amp;rsquo;t be able to point other people to it again :) So just create a block like this one :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Option D</title>
-      <link>https://krisbuytaert.github.io/blog/option-d/</link>
+      <link>http://localhost:1313/blog/option-d/</link>
       <pubDate>Mon, 14 Dec 2009 22:30:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/option-d/</guid>
+      <guid>http://localhost:1313/blog/option-d/</guid>
       <description>&lt;p&gt;Lots of people writing about Snorkle again today ,Monty &lt;a href=&#34;http://monty-says.blogspot.com/2009/12/help-saving-mysql.html&#34;&gt;Says, help saving MySQL&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;He gives us different options, a , b or c .. but I , and some others, want an option d&lt;/p&gt;&#xA;&lt;p&gt;No I don&amp;rsquo;t trust Oracle, it&amp;rsquo;s not like they have been a very good Open Source Citizen, yes they contribute to the kernel and other projects but my feeling says it&amp;rsquo;s only because they have to (Kernel, Xen and others ) not because they Want to (thinking about Unfakable etc) , if they would really want to they probably would work with the CentOS community more etc, and as Monty mentions their InnoDB track record could be better.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Geekdinner Antwerp Edition 2</title>
-      <link>https://krisbuytaert.github.io/blog/geekdinner-antwerp-edition-2/</link>
+      <link>http://localhost:1313/blog/geekdinner-antwerp-edition-2/</link>
       <pubDate>Sun, 01 Mar 2009 21:14:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/geekdinner-antwerp-edition-2/</guid>
+      <guid>http://localhost:1313/blog/geekdinner-antwerp-edition-2/</guid>
       <description>&lt;p&gt;Last Wednesday after the LSec event with Bruce Schneier and the R ans S from RSA , we already had a mini AdHoc GeekDinner in Leuven, one that pretty would have matched Philips requirements for having it called Geek dinner&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.paeps.cx/weblog/life/proliferation_of_geek_events.html&#34;&gt;Philip&lt;/a&gt; has been ranting this week about different events titled &amp;ldquo;Geek&amp;rdquo; not attrackting real geeks. that know hex and binary is but merely atrackting the Startup/Web crowd, now there&amp;rsquo;s nothing wrong with both crowds, and I happen to be part of both but it can cause strange situations&lt;br&gt;&#xA;&lt;a href=&#34;http://www.geekdinner.be/&#34;&gt;Geekdinner.be&lt;/a&gt;Tom K arranged a nice deal with &lt;a href=&#34;http://detroubadour.be/&#34;&gt;De Troubadour&lt;/a&gt; so foodwise it promises to be great.&lt;/p&gt;</description>
     </item>
   </channel>

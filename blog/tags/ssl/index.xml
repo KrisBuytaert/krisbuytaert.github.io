@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ssl on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/ssl/</link>
+    <link>http://localhost:1313/blog/tags/ssl/</link>
     <description>Recent content in Ssl on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Mar 2011 01:42:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/ssl/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/ssl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>24 hours of Puppet Drama</title>
-      <link>https://krisbuytaert.github.io/blog/24-hours-puppet-drama/</link>
+      <link>http://localhost:1313/blog/24-hours-puppet-drama/</link>
       <pubDate>Fri, 04 Mar 2011 01:42:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/24-hours-puppet-drama/</guid>
+      <guid>http://localhost:1313/blog/24-hours-puppet-drama/</guid>
       <description>&lt;p&gt;Over the past couple of days I&amp;rsquo;ve been fighting with a weird puppet problem , we eventually cracked it , but I promised a bunch of you to fully explain it here ;)&lt;/p&gt;&#xA;&lt;p&gt;So we were deploying 2 Blade chassis at a pretty remote location with a mix of phyisical and virtual machines, some 48 instances in total. This is a pretty standard rollout, we&amp;rsquo;ve got a bunch of similar platforms in our lab , so we knew about a couple of glitches, what to expect etc.&lt;/p&gt;</description>
     </item>
   </channel>

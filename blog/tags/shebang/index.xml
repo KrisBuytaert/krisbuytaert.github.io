@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shebang on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/shebang/</link>
+    <link>http://localhost:1313/blog/tags/shebang/</link>
     <description>Recent content in Shebang on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Oct 2010 16:35:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/shebang/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/shebang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Puppet broke my Xen</title>
-      <link>https://krisbuytaert.github.io/blog/puppet-broke-my-xen/</link>
+      <link>http://localhost:1313/blog/puppet-broke-my-xen/</link>
       <pubDate>Sat, 30 Oct 2010 16:35:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/puppet-broke-my-xen/</guid>
+      <guid>http://localhost:1313/blog/puppet-broke-my-xen/</guid>
       <description>&lt;p&gt;Actually it didn&amp;rsquo;t , but now I got your attention.&lt;br&gt;&#xA;We just adopted the use of adding headers to all of our files that are managed by puppet so people will know not to touch it&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. file {&#xA;2. &amp;#34;/etc/xen/scripts/network-custom-vlan-bridges&amp;#34;:&#xA;3. owner =&amp;gt; &amp;#34;root&amp;#34;,&#xA;4. group =&amp;gt; &amp;#34;root&amp;#34;,&#xA;5. mode =&amp;gt; &amp;#34;0755&amp;#34;,&#xA;6. content =&amp;gt; template(&#xA;7. &amp;#34;headers/header-hash.erb&amp;#39;,&#xA;8. &amp;#34;xen/co-mmx-network-custom-vlan-bridges.erb&amp;#34;);&#xA;9. }&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;All worked nice however upon bootstrapping our Xen host the bridges stopped working .. running the network-custom-vlan-bridges script manually solved everything and created the appropriate bridges. But at boottime it didn&amp;rsquo;t..&lt;/p&gt;</description>
     </item>
   </channel>

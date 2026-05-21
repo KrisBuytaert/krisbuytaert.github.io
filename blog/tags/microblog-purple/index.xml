@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Microblog-Purple on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/microblog-purple/</link>
+    <link>http://localhost:1313/blog/tags/microblog-purple/</link>
     <description>Recent content in Microblog-Purple on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Mar 2009 23:11:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/microblog-purple/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/microblog-purple/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Identi.ca</title>
-      <link>https://krisbuytaert.github.io/blog/identica/</link>
+      <link>http://localhost:1313/blog/identica/</link>
       <pubDate>Mon, 23 Mar 2009 23:11:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/identica/</guid>
+      <guid>http://localhost:1313/blog/identica/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.foo.be/cgi-bin/wiki.pl/2008-10-19_Why_You_Should_Use_Identica_and_not_Twitter&#34;&gt;Alexandre&lt;/a&gt; urges us too microblog on &lt;a href=&#34;http://identi.ca/krisbuytaert&#34;&gt;Identica&lt;/a&gt; rather than on &lt;a href=&#34;http://twitter.com/krisbuytaert&#34;&gt;Twitter&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;As an opensource evangelist I probably should do so .. Crossposting from Identi.ca to Twitter works&amp;hellip; but there is one big thing that&amp;rsquo;s blocking me to do this by default and that&amp;rsquo;s &lt;a href=&#34;http://code.google.com/p/microblog-purple/issues/detail?id=73&amp;amp;q=laconi&#34;&gt;a bug in microblog-purple&lt;/a&gt; which currently blocks me from using Identi.ca in Pidgin. Which is what I use to Tweet ..&lt;/p&gt;&#xA;&lt;p&gt;As afteral .. Twitter is nothing more than world wide searchable irc , isn&amp;rsquo;t it ? And I want them all from 1 interface, irc, jabber, twitter, &amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>

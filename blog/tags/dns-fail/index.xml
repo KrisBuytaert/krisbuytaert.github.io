@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dns Fail on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/dns-fail/</link>
+    <link>http://localhost:1313/blog/tags/dns-fail/</link>
     <description>Recent content in Dns Fail on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Nov 2008 20:36:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/dns-fail/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/dns-fail/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DNS FAIL</title>
-      <link>https://krisbuytaert.github.io/blog/dns-fail/</link>
+      <link>http://localhost:1313/blog/dns-fail/</link>
       <pubDate>Fri, 14 Nov 2008 20:36:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/dns-fail/</guid>
+      <guid>http://localhost:1313/blog/dns-fail/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://failblog.files.wordpress.com/2008/11/fail-owned-vista-dns-fail.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Seen over at &lt;a href=&#34;http://failblog.org/2008/11/14/dns-fail/&#34;&gt;Failblog&lt;/a&gt;, you could call it OS fail also actually .. maybe one day people will realize that  &lt;a href=&#34;http://securityandthe.net/2008/11/10/avg-virus-scanner-removes-critical-windows-file/&#34;&gt;AVG correctly identified the Trojan&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

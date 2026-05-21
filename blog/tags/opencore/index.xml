@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opencore on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/opencore/</link>
+    <link>http://localhost:1313/blog/tags/opencore/</link>
     <description>Recent content in Opencore on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Sep 2009 21:17:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/opencore/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/opencore/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open Source  Business Models</title>
-      <link>https://krisbuytaert.github.io/blog/open-source-business-models/</link>
+      <link>http://localhost:1313/blog/open-source-business-models/</link>
       <pubDate>Wed, 23 Sep 2009 21:17:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/open-source-business-models/</guid>
+      <guid>http://localhost:1313/blog/open-source-business-models/</guid>
       <description>&lt;p&gt;There is once again a lot of fuzz going on about Open Source Business models,&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.openlogic.com/blogs/2009/09/customers-not-thrilled-with-open-source-business-models-preferred-by-many-vcs-open-source-companies/&#34;&gt;First on my eyballs was the article that Customers don&amp;rsquo;t seem to like openCore&lt;/a&gt; what a big &lt;a href=&#34;http://www.adventuresinoss.com/?p=611&#34;&gt;surprise ..&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;So that&amp;rsquo;s not the one that makes the customers happy ,&lt;/p&gt;&#xA;&lt;p&gt;Then there is the other side of the coin, the people that create open source&lt;br&gt;&#xA;&lt;a href=&#34;http://blogs.the451group.com/opensource/2009/09/15/oracle-could-kill-off-mysql-but-probably-wont/&#34;&gt;Authors realize the dual licensing model comes hunting back at you&lt;/a&gt;  after a merger or a hostile acquisition, yes they still have the source code to build on but they can&amp;rsquo;t sell commercial licenses to their customers anymore they way they used to.&lt;/p&gt;</description>
     </item>
   </channel>

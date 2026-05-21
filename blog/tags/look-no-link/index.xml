@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Look No Link on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/look-no-link/</link>
+    <link>http://localhost:1313/blog/tags/look-no-link/</link>
     <description>Recent content in Look No Link on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Sep 2009 21:20:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/look-no-link/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/look-no-link/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MonitoringForge</title>
-      <link>https://krisbuytaert.github.io/blog/monitoringforge/</link>
+      <link>http://localhost:1313/blog/monitoringforge/</link>
       <pubDate>Wed, 23 Sep 2009 21:20:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoringforge/</guid>
+      <guid>http://localhost:1313/blog/monitoringforge/</guid>
       <description>&lt;p&gt;I found the initial announcement in my Spambox, thats where I send all the mails from GroundWork as unsubscribing from their marketing lists doesn&amp;rsquo;t seem to work ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.adventuresinoss.com/?p=1117&#34;&gt;Tarus&lt;/a&gt; pointed it out.. he already mentionned Marketing, low community imput etc..&lt;/p&gt;&#xA;&lt;p&gt;Nevertheles I had a look, and my first and last impression was, NagiosForge, no active community, and empty pages on other imvho more relevant Monitoring Projects created by GroundWork employees.&lt;/p&gt;</description>
     </item>
   </channel>

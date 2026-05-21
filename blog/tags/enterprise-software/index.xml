@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Enterprise Software on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/enterprise-software/</link>
+    <link>http://localhost:1313/blog/tags/enterprise-software/</link>
     <description>Recent content in Enterprise Software on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Apr 2009 23:55:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/enterprise-software/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/enterprise-software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Open Source &#34;Channel&#34;</title>
-      <link>https://krisbuytaert.github.io/blog/open-source-channel/</link>
+      <link>http://localhost:1313/blog/open-source-channel/</link>
       <pubDate>Wed, 15 Apr 2009 23:55:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/open-source-channel/</guid>
+      <guid>http://localhost:1313/blog/open-source-channel/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.redhat.com/about/news/prarchive/2009/open-source-channel-alliance.html&#34;&gt;RedHat&lt;/a&gt; announced the launch of the Open Source Channel Alliance, and &lt;a href=&#34;http://opendotdotdot.blogspot.com/2009/04/channelling-power-of-open-source.html&#34;&gt;different folks&lt;/a&gt; already commented on it ..&lt;/p&gt;&#xA;&lt;p&gt;Frankly I think the Open Source &amp;ldquo;Channel&amp;rdquo; shouldn&amp;rsquo;t exist ..&lt;/p&gt;&#xA;&lt;p&gt;So let&amp;rsquo;s take a step back and see what the &amp;ldquo;Channel&amp;rdquo; actually means.&lt;/p&gt;&#xA;&lt;p&gt;It used to mean that a vendor didn&amp;rsquo;t want to manage the logistics of shipping and delivering his product to the end user, you know .. like the big boxen used 3rd parties to provide the logistics, often that &amp;ldquo;enduser&amp;rdquo; being a local system integrator that wasn&amp;rsquo;t allowed, and still isn&amp;rsquo;t, to order his stuff from the actual vendor, either because he is ordering in too small quantities or any other reasons. Logistics became marketing support , offering training and sometimes presales support.&lt;/p&gt;</description>
     </item>
   </channel>

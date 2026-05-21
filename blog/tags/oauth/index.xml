@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oauth on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/oauth/</link>
+    <link>http://localhost:1313/blog/tags/oauth/</link>
     <description>Recent content in Oauth on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Sep 2010 20:53:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/oauth/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/oauth/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pidgin and OAUth</title>
-      <link>https://krisbuytaert.github.io/blog/pidgin-and-oauth/</link>
+      <link>http://localhost:1313/blog/pidgin-and-oauth/</link>
       <pubDate>Wed, 01 Sep 2010 20:53:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/pidgin-and-oauth/</guid>
+      <guid>http://localhost:1313/blog/pidgin-and-oauth/</guid>
       <description>&lt;p&gt;So earlier today the nice folks over at twitter figured it was a good time to change all the authentication to oauth &amp;hellip; they might have announced it all over the place .. but it never catched my attention&lt;/p&gt;&#xA;&lt;p&gt;The onlything that did catch my attention was that after not having ued pidgin for about 2 weeks I didn&amp;rsquo;t have access to twitter anymore.&lt;/p&gt;&#xA;&lt;p&gt;I`m using the &lt;a href=&#34;http://code.google.com/p/microblog-purple/&#34;&gt;purple-microblog plugin&lt;/a&gt; and the default version of that plugin in Fedora 12 wasn&amp;rsquo;t really up2date. The plugin supports OAuth as of 3.0 which was released ages ago.&lt;/p&gt;</description>
     </item>
   </channel>

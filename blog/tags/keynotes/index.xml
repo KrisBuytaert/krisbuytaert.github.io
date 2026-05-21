@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Keynotes on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/keynotes/</link>
+    <link>http://localhost:1313/blog/tags/keynotes/</link>
     <description>Recent content in Keynotes on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Dec 2013 22:04:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/keynotes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/keynotes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FOSDEM 2014 is coming</title>
-      <link>https://krisbuytaert.github.io/blog/fosdem-2014-coming/</link>
+      <link>http://localhost:1313/blog/fosdem-2014-coming/</link>
       <pubDate>Sun, 22 Dec 2013 22:04:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/fosdem-2014-coming/</guid>
+      <guid>http://localhost:1313/blog/fosdem-2014-coming/</guid>
       <description>&lt;p&gt;and with that almost a full week of side events.&lt;br&gt;&#xA;For those who don&amp;rsquo;t know FOSDEM, (where have you been hiding for the past 13 years ? ) Fosdem is the annual Free and Open Source Developers European meeting. If you are into open source , you just can&amp;rsquo;t mis this event where thousands of likeminded people will meet.&lt;/p&gt;&#xA;&lt;p&gt;And if 2 days of FOSDEM madness isn&amp;rsquo;t enough people organise events around it.&lt;/p&gt;</description>
     </item>
   </channel>

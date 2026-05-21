@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eu on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/eu/</link>
+    <link>http://localhost:1313/blog/tags/eu/</link>
     <description>Recent content in Eu on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 14 Dec 2009 22:30:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/eu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/eu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Option D</title>
-      <link>https://krisbuytaert.github.io/blog/option-d/</link>
+      <link>http://localhost:1313/blog/option-d/</link>
       <pubDate>Mon, 14 Dec 2009 22:30:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/option-d/</guid>
+      <guid>http://localhost:1313/blog/option-d/</guid>
       <description>&lt;p&gt;Lots of people writing about Snorkle again today ,Monty &lt;a href=&#34;http://monty-says.blogspot.com/2009/12/help-saving-mysql.html&#34;&gt;Says, help saving MySQL&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;He gives us different options, a , b or c .. but I , and some others, want an option d&lt;/p&gt;&#xA;&lt;p&gt;No I don&amp;rsquo;t trust Oracle, it&amp;rsquo;s not like they have been a very good Open Source Citizen, yes they contribute to the kernel and other projects but my feeling says it&amp;rsquo;s only because they have to (Kernel, Xen and others ) not because they Want to (thinking about Unfakable etc) , if they would really want to they probably would work with the CentOS community more etc, and as Monty mentions their InnoDB track record could be better.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oracle, MySQL and the EU</title>
-      <link>https://krisbuytaert.github.io/blog/oracle-mysql-and-eu/</link>
+      <link>http://localhost:1313/blog/oracle-mysql-and-eu/</link>
       <pubDate>Mon, 03 Aug 2009 22:54:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/oracle-mysql-and-eu/</guid>
+      <guid>http://localhost:1313/blog/oracle-mysql-and-eu/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://identi.ca/notice/7477327&#34;&gt;Jan Wildeboer&lt;/a&gt; pointed us to the &lt;a href=&#34;http://blog.thinkphp.de/archives/416-A-letter-from-the-European-commission-regarding-the-OracleSun-merger.html&#34;&gt;Mayflower post&lt;/a&gt; about their letter from the European Commission.&lt;/p&gt;&#xA;&lt;p&gt;It seems like the the European Commision , more specifically the Directorate General for Competition , really is interested in our input regarding the matter, I mailed them and also got a questionnaire to fill in.&lt;/p&gt;&#xA;&lt;p&gt;So if you have something interesting to tell them don&amp;rsquo;t hesitate to &lt;a href=&#34;mailto:Vera.POZZATO@ec.europa.eu&#34;&gt;contact them&lt;/a&gt; too.&lt;/p&gt;</description>
     </item>
   </channel>

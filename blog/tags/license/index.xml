@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>License on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/license/</link>
+    <link>http://localhost:1313/blog/tags/license/</link>
     <description>Recent content in License on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 19 Feb 2009 23:41:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/license/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/license/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dear Windows Admin, you have now been replaced by a Cat</title>
-      <link>https://krisbuytaert.github.io/blog/dear-windows-admin-you-have-now-been-replaced-cat/</link>
+      <link>http://localhost:1313/blog/dear-windows-admin-you-have-now-been-replaced-cat/</link>
       <pubDate>Thu, 19 Feb 2009 23:41:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/dear-windows-admin-you-have-now-been-replaced-cat/</guid>
+      <guid>http://localhost:1313/blog/dear-windows-admin-you-have-now-been-replaced-cat/</guid>
       <description>&lt;p&gt;I`m one of those guys that really doesn&amp;rsquo;t like to agree with certain EULA&amp;rsquo;s&lt;/p&gt;&#xA;&lt;p&gt;While it&amp;rsquo;s sad enough that Dell still fails to sell an Ubuntu based laptop in Belgium and claims they have to charge extra for removing the irrelevant software from Redmond hence trying to trick you into paying more money for freedom there are things you can work around easily, I won&amp;rsquo;t be accepting the EULA that comes with those new boxen.&lt;/p&gt;</description>
     </item>
   </channel>

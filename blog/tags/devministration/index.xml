@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devministration on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/devministration/</link>
+    <link>http://localhost:1313/blog/tags/devministration/</link>
     <description>Recent content in Devministration on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Dec 2009 15:24:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/devministration/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/devministration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Devops , a Barcamp Gent 3 Talk</title>
-      <link>https://krisbuytaert.github.io/blog/devops-barcamp-gent-3-talk/</link>
+      <link>http://localhost:1313/blog/devops-barcamp-gent-3-talk/</link>
       <pubDate>Sun, 20 Dec 2009 15:24:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/devops-barcamp-gent-3-talk/</guid>
+      <guid>http://localhost:1313/blog/devops-barcamp-gent-3-talk/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/devops-2749587&#34; title=&#34;Devops&#34;&gt;Devops&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Too bad the majority of the audience already knew what I was a bout to say &amp;hellip;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UKUUG Spring 2009 Conference,  the after post</title>
-      <link>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-after-post/</link>
+      <link>http://localhost:1313/blog/ukuug-spring-2009-conference-after-post/</link>
       <pubDate>Tue, 31 Mar 2009 19:02:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-after-post/</guid>
+      <guid>http://localhost:1313/blog/ukuug-spring-2009-conference-after-post/</guid>
       <description>&lt;p&gt;Last week the &lt;a href=&#34;http://www.ukuug.org/events/spring2009/&#34;&gt;UKUUG Spring , Large Scale Infrastructure conference&lt;/a&gt; took place in London,&lt;/p&gt;&#xA;&lt;p&gt;Altough only 1 track was scheduled, the content was very good, some talks were a bit short, others were a bit too long. And luckily the talks that didn&amp;rsquo;t really bring me new content were entertaining :) Also the after conf chatter in the pub across the street was so much fun we almost failed to catch our plane back to Antwerp.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Image Sprawl , and the new cure ..</title>
-      <link>https://krisbuytaert.github.io/blog/image-sprawl-and-new-cure/</link>
+      <link>http://localhost:1313/blog/image-sprawl-and-new-cure/</link>
       <pubDate>Fri, 06 Feb 2009 00:24:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/image-sprawl-and-new-cure/</guid>
+      <guid>http://localhost:1313/blog/image-sprawl-and-new-cure/</guid>
       <description>&lt;p&gt;When I tell people that the concept of copying VM&amp;rsquo;s around as frequently done in the VMWare world is one of the most stupid ideas on this planet, I get the weirdest looks.&lt;/p&gt;&#xA;&lt;p&gt;In my world it is, I want my infrastructure to be reproducible , I want to be able to throw any machine in my infrastructure out of the 10th floor of a building and be up and running again in no time. If I spread a bunch of VM copies around who knows what kind of life they start leading. Some will get upgrades, some won&amp;rsquo;t ..&lt;br&gt;&#xA;If I get an image from someone, how did he get there ? Nobody knows ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>What does your BOFH want ? :)</title>
-      <link>https://krisbuytaert.github.io/blog/what-does-your-bofh-want/</link>
+      <link>http://localhost:1313/blog/what-does-your-bofh-want/</link>
       <pubDate>Thu, 29 Jan 2009 00:29:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/what-does-your-bofh-want/</guid>
+      <guid>http://localhost:1313/blog/what-does-your-bofh-want/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.garfieldtech.com/blog/drupal-system-tools&#34;&gt;Larry&lt;/a&gt;, I`m glad you asked ..&lt;/p&gt;&#xA;&lt;p&gt;With the risk of receiving a flood of comments pointing me to already existing tools here&amp;rsquo;s my go at what I as a sysadmin of often large deployments am looking for in Drupalland .&lt;/p&gt;&#xA;&lt;p&gt;You suggest LDAP and syslog integration .. guess we already have that don&amp;rsquo;t we ?&lt;/p&gt;&#xA;&lt;p&gt;But what I haven&amp;rsquo;t found yet ..&lt;br&gt;&#xA;An rpm/deb repository of Drupal modules So we can do an apt-get install drupal-package , yes I know about Drush, but I want the files on my system to be in a package and clearly identified, it helps me keeping my system uncluttered.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Is anybody else confused about Chef ?</title>
-      <link>https://krisbuytaert.github.io/blog/anybody-else-confused-about-chef/</link>
+      <link>http://localhost:1313/blog/anybody-else-confused-about-chef/</link>
       <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/anybody-else-confused-about-chef/</guid>
+      <guid>http://localhost:1313/blog/anybody-else-confused-about-chef/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://wiki.opscode.com/display/chef/Home&#34;&gt;Chef&lt;/a&gt; absolutely confuses me..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://madstop.com/2009/01/16/opscode-announces-chef-a-puppet-competitor/&#34;&gt;Luke&lt;/a&gt; is confused too ..&lt;br&gt;&#xA;I’m clearly disappointed that someone who has been a high-profile user of Puppet but has never contributed much in the way of code (Ohloh claims 2 commits) would decide to start a whole new project rather than attempt to contribute to Puppet&lt;/p&gt;&#xA;&lt;p&gt;Now , if you know me a bit you know that reinventing the wheel, or creating identical projects with no clear reasons is something I dislike .&lt;/p&gt;</description>
     </item>
   </channel>

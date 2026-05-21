@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Msql on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/msql/</link>
+    <link>http://localhost:1313/blog/tags/msql/</link>
     <description>Recent content in Msql on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Oct 2009 20:18:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/msql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/msql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monitoring MySQL</title>
-      <link>https://krisbuytaert.github.io/blog/monitoring-mysql-0/</link>
+      <link>http://localhost:1313/blog/monitoring-mysql-0/</link>
       <pubDate>Sun, 11 Oct 2009 20:18:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoring-mysql-0/</guid>
+      <guid>http://localhost:1313/blog/monitoring-mysql-0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://ronaldbradford.com/blog/what-alert-monitoring-do-you-use-2009-10-07/&#34;&gt;Ronald Bradford&lt;/a&gt; wants to know what kind of Monitoring you use..&lt;br&gt;&#xA;He specifically wants to know about Alerting tools&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s different cases , looking at it from a full infrastructure point my current favourite is Zabbix or good old Nagios,&lt;/p&gt;&#xA;&lt;p&gt;But when looking at it from a debugging perspective you have MySQLAR or Hyperic, but those aren&amp;rsquo;t in the alerting list.&lt;/p&gt;&#xA;&lt;p&gt;However, when you are building HA clusters, you have custom scripts running either from mon or from pacemaker ..&lt;/p&gt;</description>
     </item>
   </channel>

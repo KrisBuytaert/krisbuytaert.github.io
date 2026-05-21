@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NetOps on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/netops/</link>
+    <link>http://localhost:1313/blog/tags/netops/</link>
     <description>Recent content in NetOps on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Mar 2010 23:39:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/netops/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/netops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DevOPS, SecOPS, DBAOps, NetOps</title>
-      <link>https://krisbuytaert.github.io/blog/devops-secops-dbaops-netops/</link>
+      <link>http://localhost:1313/blog/devops-secops-dbaops-netops/</link>
       <pubDate>Tue, 09 Mar 2010 23:39:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/devops-secops-dbaops-netops/</guid>
+      <guid>http://localhost:1313/blog/devops-secops-dbaops-netops/</guid>
       <description>&lt;p&gt;This post is long overdue, as the idea struck me when dicussing with &lt;a href=&#34;http://lefred.be/&#34;&gt;Lefred&lt;/a&gt; while preparing his &lt;a href=&#34;http://www.lefred.be/?q=node/113&#34;&gt;Fosdem talk&lt;/a&gt; on Maintaining too big tables&lt;/p&gt;&#xA;&lt;p&gt;I got triggered finishing this post by &lt;a href=&#34;http://www.build-doctor.com/2010/03/09/devops-is-a-good-cause-but-what-about-opsops/&#34;&gt;Mr BuidlDoctor&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fred has been struggling with a typical DevOps problem resulting in the most unmanageable database setup possible, there&amp;rsquo;s little room for him to move but he managed is way out .. because he is &lt;a href=&#34;http://www.krisbuytaert.be/blog/apparently-devops-not-jobtitle#comment-3992&#34;&gt;good at his job&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;It set the mark for me that because in different organisations even the Opsteam is fragmented `in different groups that there also we need to get the Devops idea going.&lt;/p&gt;</description>
     </item>
   </channel>

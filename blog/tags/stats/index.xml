@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stats on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/stats/</link>
+    <link>http://localhost:1313/blog/tags/stats/</link>
     <description>Recent content in Stats on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Nov 2008 20:50:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/stats/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/stats/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Technorati RRD</title>
-      <link>https://krisbuytaert.github.io/blog/technorati-rrd/</link>
+      <link>http://localhost:1313/blog/technorati-rrd/</link>
       <pubDate>Fri, 14 Nov 2008 20:50:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/technorati-rrd/</guid>
+      <guid>http://localhost:1313/blog/technorati-rrd/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://blog.verwilst.be/&#34;&gt;Bort&lt;/a&gt; is in to graphs and stats these days, so he was interested in my little Technorati hack.&lt;/p&gt;&#xA;&lt;p&gt;Lots of us bloggers are using Technorati to track who&amp;rsquo;s joining the discussion on articles we posts. Technorati gives you details on how many blogs link to you, and how much they link to you and translate that into an Authority rank. Now what they don&amp;rsquo;t give you is an idea on how that rank evolves.&lt;/p&gt;</description>
     </item>
   </channel>

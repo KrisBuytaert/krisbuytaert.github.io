@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gradening on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/gradening/</link>
+    <link>http://localhost:1313/blog/tags/gradening/</link>
     <description>Recent content in Gradening on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 May 2013 22:33:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/gradening/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/gradening/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing the RoboMow 510</title>
-      <link>https://krisbuytaert.github.io/blog/testing-robomow-510/</link>
+      <link>http://localhost:1313/blog/testing-robomow-510/</link>
       <pubDate>Wed, 22 May 2013 22:33:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/testing-robomow-510/</guid>
+      <guid>http://localhost:1313/blog/testing-robomow-510/</guid>
       <description>&lt;p&gt;A couple of weeks ago I noted fellow geek &lt;a href=&#34;http://www.nettooor.be/&#34;&gt;Peter Vanwelkenhuysen&lt;/a&gt; was talking about his #robomowtest experiences. obviously I wanted to know how he got to test one.&lt;/p&gt;&#xA;&lt;p&gt;Some tweets and mails later I was making arrangements with Lennert van der Pols from Friendly Robotics too.&lt;br&gt;&#xA;I&amp;rsquo;ve been thinking about buying a RoboMower for years . always have been delaying the purchase since we were planning to move&lt;br&gt;&#xA;Since we moved, my wife has been a bit sceptic&lt;/p&gt;</description>
     </item>
   </channel>

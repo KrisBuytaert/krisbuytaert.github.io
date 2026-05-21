@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Openmosix on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/openmosix/</link>
+    <link>http://localhost:1313/blog/tags/openmosix/</link>
     <description>Recent content in Openmosix on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 14 Jun 2010 21:32:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/openmosix/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/openmosix/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FAQ:</title>
-      <link>https://krisbuytaert.github.io/blog/faq/</link>
+      <link>http://localhost:1313/blog/faq/</link>
       <pubDate>Mon, 14 Jun 2010 21:32:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/faq/</guid>
+      <guid>http://localhost:1313/blog/faq/</guid>
       <description>&lt;p&gt;Q: Is &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; your Brother ?&lt;br&gt;&#xA;A: No he isn&amp;rsquo;t.&lt;/p&gt;&#xA;&lt;p&gt;Q: Are you related to &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; ?&lt;br&gt;&#xA;A: No we aren&amp;rsquo;t (as far as we know)&lt;/p&gt;&#xA;&lt;p&gt;Q: Do you know &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; ?&lt;br&gt;&#xA;A: Yeah .. I&amp;rsquo;ve known him since before he started his work on Drupal, now can you stop asking about Dries and refocus on me ?&lt;/p&gt;&#xA;&lt;p&gt;Q: Are you related to Thomas Buytaert&lt;br&gt;&#xA;A: No.&lt;/p&gt;&#xA;&lt;p&gt;Q: Why are you sdog on irc ?&lt;br&gt;&#xA;A: Back in my DemoScene days my nick was Sleeping Dog , whch was too long for a unix account name , sleeping didn&amp;rsquo;t feel like a good choice and neither did dog, so the abbrev became sdog&lt;/p&gt;</description>
     </item>
   </channel>

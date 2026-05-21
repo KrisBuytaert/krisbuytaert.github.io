@@ -95,7 +95,7 @@ main {
   display: inline;
 }
 
-.tags li::after {
+.tags li:not(:last-child)::after {
   content: ' · ';
   color: var(--border);
 }
