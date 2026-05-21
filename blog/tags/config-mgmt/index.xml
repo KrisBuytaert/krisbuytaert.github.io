@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Config Mgmt on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/config-mgmt/</link>
+    <link>http://localhost:1313/blog/tags/config-mgmt/</link>
     <description>Recent content in Config Mgmt on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Jan 2009 15:08:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/config-mgmt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/config-mgmt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Is anybody else confused about Chef ?</title>
-      <link>https://krisbuytaert.github.io/blog/anybody-else-confused-about-chef/</link>
+      <link>http://localhost:1313/blog/anybody-else-confused-about-chef/</link>
       <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/anybody-else-confused-about-chef/</guid>
+      <guid>http://localhost:1313/blog/anybody-else-confused-about-chef/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://wiki.opscode.com/display/chef/Home&#34;&gt;Chef&lt;/a&gt; absolutely confuses me..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://madstop.com/2009/01/16/opscode-announces-chef-a-puppet-competitor/&#34;&gt;Luke&lt;/a&gt; is confused too ..&lt;br&gt;&#xA;I’m clearly disappointed that someone who has been a high-profile user of Puppet but has never contributed much in the way of code (Ohloh claims 2 commits) would decide to start a whole new project rather than attempt to contribute to Puppet&lt;/p&gt;&#xA;&lt;p&gt;Now , if you know me a bit you know that reinventing the wheel, or creating identical projects with no clear reasons is something I dislike .&lt;/p&gt;</description>
     </item>
   </channel>

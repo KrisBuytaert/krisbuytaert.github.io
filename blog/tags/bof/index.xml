@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bof on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/bof/</link>
+    <link>http://localhost:1313/blog/tags/bof/</link>
     <description>Recent content in Bof on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Jan 2009 00:29:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/bof/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/bof/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What does your BOFH want ? :)</title>
-      <link>https://krisbuytaert.github.io/blog/what-does-your-bofh-want/</link>
+      <link>http://localhost:1313/blog/what-does-your-bofh-want/</link>
       <pubDate>Thu, 29 Jan 2009 00:29:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/what-does-your-bofh-want/</guid>
+      <guid>http://localhost:1313/blog/what-does-your-bofh-want/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.garfieldtech.com/blog/drupal-system-tools&#34;&gt;Larry&lt;/a&gt;, I`m glad you asked ..&lt;/p&gt;&#xA;&lt;p&gt;With the risk of receiving a flood of comments pointing me to already existing tools here&amp;rsquo;s my go at what I as a sysadmin of often large deployments am looking for in Drupalland .&lt;/p&gt;&#xA;&lt;p&gt;You suggest LDAP and syslog integration .. guess we already have that don&amp;rsquo;t we ?&lt;/p&gt;&#xA;&lt;p&gt;But what I haven&amp;rsquo;t found yet ..&lt;br&gt;&#xA;An rpm/deb repository of Drupal modules So we can do an apt-get install drupal-package , yes I know about Drush, but I want the files on my system to be in a package and clearly identified, it helps me keeping my system uncluttered.&lt;/p&gt;</description>
     </item>
   </channel>

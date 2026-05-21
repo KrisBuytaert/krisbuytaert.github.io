@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personaldocs on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/personaldocs/</link>
+    <link>http://localhost:1313/blog/tags/personaldocs/</link>
     <description>Recent content in Personaldocs on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 Jun 2011 17:29:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/personaldocs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/personaldocs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Killing VirtualBox</title>
-      <link>https://krisbuytaert.github.io/blog/killing-virtualbox/</link>
+      <link>http://localhost:1313/blog/killing-virtualbox/</link>
       <pubDate>Wed, 08 Jun 2011 17:29:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/killing-virtualbox/</guid>
+      <guid>http://localhost:1313/blog/killing-virtualbox/</guid>
       <description>&lt;p&gt;Note to self :&lt;br&gt;&#xA;when virtualbox acts up again .&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. [sdog@stillmine ~]$  VBoxManage list runningvms&#xA;2. &amp;#34;vagrant-etherpad_1307533136&amp;#34; {60697a54-35fc-44e7-96b6-008cde6995a6}&#xA;3. [sdog@stillmine ~]$ VBoxManage controlvm vagrant-etherpad_1307533136 poweroff&#xA;4. 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>

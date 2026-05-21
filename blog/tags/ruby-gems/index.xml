@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby Gems on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/ruby-gems/</link>
+    <link>http://localhost:1313/blog/tags/ruby-gems/</link>
     <description>Recent content in Ruby Gems on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 Aug 2012 22:28:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/ruby-gems/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/ruby-gems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ruby Gems Yum Repo</title>
-      <link>https://krisbuytaert.github.io/blog/ruby-gems-yum-repo/</link>
+      <link>http://localhost:1313/blog/ruby-gems-yum-repo/</link>
       <pubDate>Wed, 08 Aug 2012 22:28:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/ruby-gems-yum-repo/</guid>
+      <guid>http://localhost:1313/blog/ruby-gems-yum-repo/</guid>
       <description>&lt;p&gt;For those of you that are looking for my old build-gems Github repo, given that lots of other Inuits collegues are using it too I&amp;rsquo;ve transferred ownership of that repo to the Inuits group.&lt;/p&gt;&#xA;&lt;p&gt;It can now be found on &lt;a href=&#34;https://github.com/Inuits/build-gems/&#34;&gt;https://github.com/Inuits/build-gems/&lt;/a&gt; (Yes directory indexes are disabled on purpose..)&lt;/p&gt;&#xA;&lt;p&gt;The build result has also been moved. We&amp;rsquo;ve replaced our static repo.inuits.be with a &lt;a href=&#34;http://pulpproject.org/&#34;&gt;Pulp&lt;/a&gt; powered yum repo.&lt;/p&gt;&#xA;&lt;p&gt;The new location of the rubygems rpm repo now is at &lt;a href=&#34;http://pulp.inuits.eu/pulp/repos/rubygems/&#34;&gt;http://pulp.inuits.eu/pulp/repos/rubygems/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

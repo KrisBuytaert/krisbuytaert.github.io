@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ukuug on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/ukuug/</link>
+    <link>http://localhost:1313/blog/tags/ukuug/</link>
     <description>Recent content in Ukuug on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 24 Jan 2011 00:04:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/ukuug/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/ukuug/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Upcoming 2011 Speaking Engagements</title>
-      <link>https://krisbuytaert.github.io/blog/upcoming-2011-speaking-engagements/</link>
+      <link>http://localhost:1313/blog/upcoming-2011-speaking-engagements/</link>
       <pubDate>Mon, 24 Jan 2011 00:04:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/upcoming-2011-speaking-engagements/</guid>
+      <guid>http://localhost:1313/blog/upcoming-2011-speaking-engagements/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.lenzg.net/&#34;&gt;Lenz&lt;/a&gt; gave the good example so I`ll follow :)&lt;/p&gt;&#xA;&lt;p&gt;Next weekend saturday I`ll be giving a talk about devops at &lt;a href=&#34;http://brussels.startupweekend.org/speakers/&#34;&gt;StartUp Weekend Brussels&lt;/a&gt;, from what I&amp;rsquo;ve read so far it promises to be an audience that needs the talk,&lt;/p&gt;&#xA;&lt;p&gt;The week after I`ll be speaking at the &lt;a href=&#34;http://bxl2011.drupaldays.org/node/233&#34;&gt;DrupalDevDays&lt;/a&gt;, again about devops , however this time with a touch of Drupal , giving a devops talk at Devoxx last year to a Java audience learned me that the devops evangelist need to go outside of their usual conference audiences and als talk to the people that are usually in the other silos.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UKUUG Spring Conference 2010</title>
-      <link>https://krisbuytaert.github.io/blog/ukuug-spring-conference-2010/</link>
+      <link>http://localhost:1313/blog/ukuug-spring-conference-2010/</link>
       <pubDate>Wed, 07 Apr 2010 19:16:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-conference-2010/</guid>
+      <guid>http://localhost:1313/blog/ukuug-spring-conference-2010/</guid>
       <description>&lt;p&gt;Last week I was in Manchester for the 2010 UKUUG Spring Conference, right .. make that 2 weeks ago , :)&lt;/p&gt;&#xA;&lt;p&gt;The UKUUG usually hosts the more interesting conferences around &amp;hellip; , it&amp;rsquo;s not just the schedule that attrackts me , yes there&amp;rsquo;s the strong focus towards Larger Scale Unix (and mostly Linux) deployments and how to manage them, but there&amp;rsquo;s also the opportunity to chat in real life with the Devops from across the chunnel.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upcoming Conference Talks</title>
-      <link>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</link>
+      <link>http://localhost:1313/blog/upcoming-conference-talks/</link>
       <pubDate>Mon, 01 Feb 2010 22:04:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</guid>
+      <guid>http://localhost:1313/blog/upcoming-conference-talks/</guid>
       <description>&lt;p&gt;I know the biggest part of my fanclub already booked tickets for my upcoming presentations, but the other 2 might want to check their calendars to see if they aren&amp;rsquo;t missing out on the good stuff :)&lt;/p&gt;&#xA;&lt;p&gt;Next Sunday I`ll giving a shortish overview of &lt;a href=&#34;http://www.fosdem.org/2010/schedule/events/mysql_ha&#34;&gt;MySQL HA alternatives&lt;/a&gt; in the MySQL and Friends devroom at Fosdem.&lt;/p&gt;&#xA;&lt;p&gt;March will bring me to Manchester again for the &lt;a href=&#34;http://spring2010.ukuug.org/Timetable&#34;&gt;UKUUG Spring conference&lt;/a&gt; where I`ll be giving a longer version of that presentation with a strong focus on integrating with PaceMaker, and automating the whole boostrap procedure of a HA setup.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Slides updated</title>
-      <link>https://krisbuytaert.github.io/blog/slides-updated/</link>
+      <link>http://localhost:1313/blog/slides-updated/</link>
       <pubDate>Tue, 31 Mar 2009 19:04:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/slides-updated/</guid>
+      <guid>http://localhost:1313/blog/slides-updated/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve updated the slidedeck of my Open Source Virtualization talk, with the 2009 edition as I gave it last week at the UKUUG Spring conference.&lt;/p&gt;&#xA;&lt;p&gt;Talk is up, both on &lt;a href=&#34;http://www.krisbuytaert.be/presentations/OSSVirt2009.odp&#34;&gt;my page&lt;/a&gt; as on &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/open-source-virtualization&#34;&gt;SlideShare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/open-source-virtualization?type=powerpoint&#34; title=&#34;open source virtualization&#34;&gt;open source virtualization&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Tom also updated our set of Open Source Monitoring Tool Shootout slides .&lt;br&gt;&#xA;They are also on &lt;a href=&#34;http://www.slideshare.net/tomdc/open-source-monitoring-tools-shootout&#34;&gt;SlideShare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/tomdc/open-source-monitoring-tools-shootout?type=presentation&#34; title=&#34;Open Source Monitoring Tools Shootout&#34;&gt;Open Source Monitoring Tools Shootout&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/tomdc&#34;&gt;tomdc&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UKUUG Spring 2009 Conference,  the after post</title>
-      <link>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-after-post/</link>
+      <link>http://localhost:1313/blog/ukuug-spring-2009-conference-after-post/</link>
       <pubDate>Tue, 31 Mar 2009 19:02:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-after-post/</guid>
+      <guid>http://localhost:1313/blog/ukuug-spring-2009-conference-after-post/</guid>
       <description>&lt;p&gt;Last week the &lt;a href=&#34;http://www.ukuug.org/events/spring2009/&#34;&gt;UKUUG Spring , Large Scale Infrastructure conference&lt;/a&gt; took place in London,&lt;/p&gt;&#xA;&lt;p&gt;Altough only 1 track was scheduled, the content was very good, some talks were a bit short, others were a bit too long. And luckily the talks that didn&amp;rsquo;t really bring me new content were entertaining :) Also the after conf chatter in the pub across the street was so much fun we almost failed to catch our plane back to Antwerp.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UKUUG Spring 2009 Conference , here we come</title>
-      <link>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-here-we-come/</link>
+      <link>http://localhost:1313/blog/ukuug-spring-2009-conference-here-we-come/</link>
       <pubDate>Tue, 24 Mar 2009 22:11:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-here-we-come/</guid>
+      <guid>http://localhost:1313/blog/ukuug-spring-2009-conference-here-we-come/</guid>
       <description>&lt;p&gt;I`ll be heading to bed early today as tomorrow will be a busy day. I have to get up early to catch my flight to London where&lt;br&gt;&#xA;&lt;a href=&#34;http://tdc.blogsite.org/index.php&#34;&gt;Tom&lt;/a&gt; and I will be representing Inuits at the UKUUG 2009 Spring Conference.&lt;/p&gt;&#xA;&lt;p&gt;Tom will be giving an updated version of our &lt;a href=&#34;http://www.ukuug.org/events/spring2009/programme/systems-monitoring-shootout.shtml&#34;&gt;Open Source Monitoring Shootout&lt;/a&gt; talk again, I`ll probably be skipping a couple of his slides as right after that &lt;a href=&#34;http://blog.zenoss.com/2009/03/23/jane-curry-zenoss-master/&#34;&gt;Jane Curry&lt;/a&gt; will be covering Zenoss in depth and on thursday there will be an OpenNMS talk too.&lt;/p&gt;</description>
     </item>
   </channel>

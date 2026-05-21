@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloud Cafe on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/cloud-cafe/</link>
+    <link>http://localhost:1313/blog/tags/cloud-cafe/</link>
     <description>Recent content in Cloud Cafe on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Nov 2008 21:31:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/cloud-cafe/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/cloud-cafe/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CloudCafe !</title>
-      <link>https://krisbuytaert.github.io/blog/cloudcafe/</link>
+      <link>http://localhost:1313/blog/cloudcafe/</link>
       <pubDate>Mon, 03 Nov 2008 21:31:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/cloudcafe/</guid>
+      <guid>http://localhost:1313/blog/cloudcafe/</guid>
       <description>&lt;p&gt;I`m in John&amp;rsquo;s &lt;a href=&#34;http://www.johnmwillis.com/cloudcafe/cloud-cafe-20-cloud-camp-brussels/&#34;&gt;Cloud Cafe&lt;/a&gt; !&lt;/p&gt;</description>
     </item>
   </channel>

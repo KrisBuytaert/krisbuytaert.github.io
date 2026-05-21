@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ext4 on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/ext4/</link>
+    <link>http://localhost:1313/blog/tags/ext4/</link>
     <description>Recent content in Ext4 on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Apr 2009 09:31:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/ext4/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/ext4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bits and Bytes .. on a disk</title>
-      <link>https://krisbuytaert.github.io/blog/bits-and-bytes-disk/</link>
+      <link>http://localhost:1313/blog/bits-and-bytes-disk/</link>
       <pubDate>Sat, 18 Apr 2009 09:31:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/bits-and-bytes-disk/</guid>
+      <guid>http://localhost:1313/blog/bits-and-bytes-disk/</guid>
       <description>&lt;p&gt;Armijn asked me to spread the news about the upcoming NLUUG Voorjaarsconference that will as usually take place in EDE.&lt;/p&gt;&#xA;&lt;p&gt;Every bit counts. From a single byte to billions of images, from one line of text to a gigantic tangled semantic web of documents, from clay tablets to 3D holographic memory, storage and the means to organize storage have always been important to humanity. Never underestimate the bandwidth of a station wagon full of tapes, it was said; a sailboat crossing the Atlantic still manages rates of a little over 1GB/s end-to-end.\&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Drupal6 on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/drupal6/</link>
+    <link>http://localhost:1313/blog/tags/drupal6/</link>
     <description>Recent content in Drupal6 on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 Jan 2010 00:48:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/drupal6/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/drupal6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Drupal6 in EPEL</title>
-      <link>https://krisbuytaert.github.io/blog/drupal6-epel/</link>
+      <link>http://localhost:1313/blog/drupal6-epel/</link>
       <pubDate>Wed, 06 Jan 2010 00:48:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/drupal6-epel/</guid>
+      <guid>http://localhost:1313/blog/drupal6-epel/</guid>
       <description>&lt;p&gt;Dear Drupal Community,&lt;/p&gt;&#xA;&lt;p&gt;If any of you are interrested in getting a packaged version of Drupal 6 into Fedora&amp;rsquo;s EPEL repository (Extra Packages for Enterprise Linux) and therefore usable in RHEL and Centos,&lt;br&gt;&#xA;please comment on the &lt;a href=&#34;https://bugzilla.redhat.com/show_bug.cgi?id=552717&#34;&gt;Bug&lt;/a&gt; I filed to get it&amp;rsquo;s introduction started.&lt;/p&gt;&#xA;&lt;p&gt;Any pitfalls, benefits etc are welcome ..&lt;/p&gt;&#xA;&lt;p&gt;thnx in advance !&lt;/p&gt;</description>
     </item>
     <item>
       <title>ShareoMatic Drupal6</title>
-      <link>https://krisbuytaert.github.io/blog/shareomatic-drupal6/</link>
+      <link>http://localhost:1313/blog/shareomatic-drupal6/</link>
       <pubDate>Wed, 14 Jan 2009 20:54:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/shareomatic-drupal6/</guid>
+      <guid>http://localhost:1313/blog/shareomatic-drupal6/</guid>
       <description>&lt;p&gt;As asked long time ago by different users I finally ported the &lt;a href=&#34;http://drupal.org/project/shareomatic&#34;&gt;Shareomatic&lt;/a&gt; module to Drupal6 .&lt;/p&gt;&#xA;&lt;p&gt;Bug reports are welcome. as is an affordable bigger house.&lt;/p&gt;&#xA;&lt;p&gt;Anyhow Enjoy !&lt;/p&gt;</description>
     </item>
   </channel>

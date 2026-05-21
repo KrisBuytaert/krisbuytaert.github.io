@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dns on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/dns/</link>
+    <link>http://localhost:1313/blog/tags/dns/</link>
     <description>Recent content in Dns on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Jun 2016 09:00:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/dns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Troubleshooting 101 , 2016 Edition</title>
-      <link>https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/</link>
+      <link>http://localhost:1313/blog/linux-troubleshooting-101-2016-edition/</link>
       <pubDate>Wed, 01 Jun 2016 09:00:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/</guid>
+      <guid>http://localhost:1313/blog/linux-troubleshooting-101-2016-edition/</guid>
       <description>&lt;p&gt;Back in 2006 I wrote a &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/177&#34;&gt;blog post&lt;/a&gt; about linux troubleshoooting. &lt;a href=&#34;https://twitter.com/bertvanvreckem/status/737761421879054336&#34;&gt;Bert Van Vreckem&lt;/a&gt; pointed out that it might be time for an update ..&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s not that much that has changed .. however :)&lt;/p&gt;&#xA;&lt;p&gt;Everything is a DNS Problem&lt;/p&gt;&#xA;&lt;p&gt;Everything is a Fscking DNS Problem&lt;br&gt;&#xA;No really, Everything is a Fscking DNS Problem&lt;br&gt;&#xA;If it&amp;rsquo;s not a fucking DNS Problem ..&lt;br&gt;&#xA;It&amp;rsquo;s a Full Filesystem Problem&lt;br&gt;&#xA;If your filesystem isn&amp;rsquo;t full&lt;br&gt;&#xA;It is a SELinux problem&lt;br&gt;&#xA;If you have SELinux disabled&lt;br&gt;&#xA;It might be an ntp problem&lt;br&gt;&#xA;If it&amp;rsquo;s not an ntp problem&lt;br&gt;&#xA;It&amp;rsquo;s an arp problem&lt;br&gt;&#xA;If it&amp;rsquo;s not an arp problem&amp;hellip;&lt;br&gt;&#xA;It is a Java Garbage Collection problem&lt;br&gt;&#xA;If you ain&amp;rsquo;t running Java&lt;br&gt;&#xA;It&amp;rsquo;s a natting problem&lt;br&gt;&#xA;If you are already on IPv6&lt;br&gt;&#xA;It&amp;rsquo;s a Spanning Tree problem&lt;br&gt;&#xA;If it&amp;rsquo;s not a spanning Tree problem&amp;hellip;&lt;br&gt;&#xA;It&amp;rsquo;s a USB problem&lt;br&gt;&#xA;If it&amp;rsquo;s not a USB Problem&lt;br&gt;&#xA;It&amp;rsquo;s a sharing IRQ Problem&lt;br&gt;&#xA;If it&amp;rsquo;s not a sharing IRQ Problem&lt;br&gt;&#xA;But most often .. its a Freaking Dns Problem !&lt;/p&gt;</description>
     </item>
     <item>
       <title>Starting a Collection</title>
-      <link>https://krisbuytaert.github.io/blog/starting-collection/</link>
+      <link>http://localhost:1313/blog/starting-collection/</link>
       <pubDate>Fri, 02 Apr 2010 19:38:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/starting-collection/</guid>
+      <guid>http://localhost:1313/blog/starting-collection/</guid>
       <description>&lt;p&gt;Apparently I started a collection ..&lt;br&gt;&#xA;Of DNS books signed by their author &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/AlternativeDNS.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;As already mentioned on twitter, &lt;a href=&#34;http://blog.fupps.com/&#34;&gt;Jan-Piet Mens&lt;/a&gt; kindly gave me a signed copy of his alternative DNS Servers book, last week at the UKUUG 2010 Spring Conference&lt;/p&gt;&#xA;&lt;p&gt;When I got that book I didn&amp;rsquo;t even know yet that this morning I was going to be at a seminar on DNS sec by &lt;a href=&#34;http://www.cricketondns.com/%22&#34;&gt;Cricket Liu&lt;/a&gt;&lt;br&gt;&#xA;and because of having registered so late for the event I certainly wasn&amp;rsquo;t expecting to get one of the books that were going to be handed out to the first 50 people that signed up &amp;hellip; but I was lucky ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>NoSQL vs MySQL</title>
-      <link>https://krisbuytaert.github.io/blog/nosql-vs-mysql/</link>
+      <link>http://localhost:1313/blog/nosql-vs-mysql/</link>
       <pubDate>Mon, 23 Nov 2009 22:17:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/nosql-vs-mysql/</guid>
+      <guid>http://localhost:1313/blog/nosql-vs-mysql/</guid>
       <description>&lt;p&gt;No I did NOT post the following &lt;a href=&#34;http://www.ruturaj.net/redis-memcached-tokyo-tyrant-mysql-comparison#comment-22565&#34;&gt;comment&lt;/a&gt;&lt;br&gt;&#xA;This is ridiculous. You didn&amp;rsquo;t test MySQL, you tested a failing DNS lookup on authentication.&lt;/p&gt;&#xA;&lt;p&gt;resulting in the follow up &lt;a href=&#34;http://www.ruturaj.net/myisam-innodb&#34;&gt;post&lt;/a&gt; :&lt;/p&gt;&#xA;&lt;p&gt;My previous post Redis, Memcache, Tokyp Tyrant, MySQL comparison had a flaw as pointed out by this comment. The MySQL was taking a huge time for doing a reverse DNS lookup.\&lt;/p&gt;&#xA;&lt;p&gt;But as always &amp;hellip; Everything is just a Freaking dns problem :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>What DNS is Not</title>
-      <link>https://krisbuytaert.github.io/blog/what-dns-not/</link>
+      <link>http://localhost:1313/blog/what-dns-not/</link>
       <pubDate>Mon, 09 Nov 2009 23:40:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/what-dns-not/</guid>
+      <guid>http://localhost:1313/blog/what-dns-not/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://queue.acm.org/detail.cfm?id=1647302&#34;&gt;This article&lt;/a&gt; by Paul Vixie is a must read if you want to know what DNS is not about .. and how people abuse it for the sake of extorting money from morons.&lt;/p&gt;&#xA;&lt;p&gt;Ah well.. nothing we didn&amp;rsquo;t already know.. just more proof that&lt;br&gt;&#xA;Everything is a Freaking DNS problem.&lt;/p&gt;&#xA;&lt;p&gt;Not sure on which layer the problem is.. must be on a layer even above the religious one.. the &amp;ldquo;Greed&amp;rdquo; one.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DNS Tools</title>
-      <link>https://krisbuytaert.github.io/blog/dns-tools/</link>
+      <link>http://localhost:1313/blog/dns-tools/</link>
       <pubDate>Wed, 28 Oct 2009 22:52:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/dns-tools/</guid>
+      <guid>http://localhost:1313/blog/dns-tools/</guid>
       <description>&lt;p&gt;In my latest DNS Problem related post I mentionned that don&amp;rsquo;t know all the answers, I however know about some good tools to help you setup a clean DNS server.&lt;/p&gt;&#xA;&lt;p&gt;Ages ago via &lt;a href=&#34;http://planet.fedoraproject.org/&#34;&gt;Planet Fedora&lt;/a&gt; I ran into an article from &lt;a href=&#34;http://www.alphatek.info/2008/11/29/dnsknifecom-meet-the-online-dig/&#34;&gt;Steven Moix&lt;/a&gt; about a tool he and his fellow students build for a summer project.&lt;/p&gt;&#xA;&lt;p&gt;The tool is &lt;a href=&#34;http://www.dnsknife.com/&#34;&gt;DNSKnife&lt;/a&gt; and it&amp;rsquo;s really interresting.&lt;/p&gt;&#xA;&lt;p&gt;DNS Knife is a good tool to check if your DNS setup is ok, it checks the parent servers, it checks for if your nameservers are listed on the parent server, checks if all your nameservers are reachable and are authorative .&lt;br&gt;&#xA;And so on and so on &amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Diaper Needs Service Problem</title>
-      <link>https://krisbuytaert.github.io/blog/diaper-needs-service-problem/</link>
+      <link>http://localhost:1313/blog/diaper-needs-service-problem/</link>
       <pubDate>Mon, 29 Jun 2009 20:53:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/diaper-needs-service-problem/</guid>
+      <guid>http://localhost:1313/blog/diaper-needs-service-problem/</guid>
       <description>&lt;p&gt;Last Saturday late, Sandy gave birth to our 2nd daughter&lt;br&gt;&#xA;Amber, pics etc are on &lt;a href=&#34;http://www.babietje.be/&#34;&gt;her own site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;So we&amp;rsquo;ll be changing diapers of 2 little Buytaert kids for a while )&lt;/p&gt;&#xA;&lt;p&gt;PS. Craig from &lt;a href=&#34;http://www.oreillygmt.co.uk/&#34;&gt;O&amp;rsquo;ReillyGMT&lt;/a&gt; gets the credit for inventing the new DNS acronym,&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Story Repeats</title>
-      <link>https://krisbuytaert.github.io/blog/story-repeats/</link>
+      <link>http://localhost:1313/blog/story-repeats/</link>
       <pubDate>Tue, 10 Feb 2009 23:55:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/story-repeats/</guid>
+      <guid>http://localhost:1313/blog/story-repeats/</guid>
       <description>&lt;p&gt;I covered this one &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/702&#34;&gt;before&lt;/a&gt; .. but as it struck twiced today .. I think it&amp;rsquo;s worth repeating. Both my &lt;a href=&#34;http://poke152.blogspot.com/&#34;&gt;collegue Karl&lt;/a&gt; and &lt;a href=&#34;http://blogs.sun.com/trentlloyd/entry/this_week_s_tip_the&#34;&gt;Trent&lt;/a&gt; ran into the same problem , within hours hours of eachother, a missing or failing reverse dns mapping that caused performance issues .. and a lot of log entries..&lt;/p&gt;&#xA;&lt;p&gt;Karl denies having a second life in Perth but I`m not really sure about that &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;But I guess they both have to agree&amp;hellip; Everything is a fscking DNS problem.&lt;br&gt;&#xA;(I noticed other people using that spelling this weekend, on stage in the Janson)&lt;/p&gt;</description>
     </item>
     <item>
       <title>This week in DNS problems</title>
-      <link>https://krisbuytaert.github.io/blog/week-dns-problems/</link>
+      <link>http://localhost:1313/blog/week-dns-problems/</link>
       <pubDate>Wed, 21 Jan 2009 20:29:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/week-dns-problems/</guid>
+      <guid>http://localhost:1313/blog/week-dns-problems/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://isc.sans.org/diary.html?storyid=5713&#34;&gt;SANS&lt;/a&gt; notes a weird DOS atack on different namesevers. People quering for &amp;ldquo;.&amp;rdquo; a lot.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://ward.vandewege.net/blog/2009/01/whats-going-on-with-the-org-nameservers/&#34;&gt;Ward&lt;/a&gt; wondering what&amp;rsquo;s going on with the .org nameservers&lt;/p&gt;&#xA;&lt;p&gt;And &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; migrating his site.&lt;br&gt;&#xA;&lt;img src=&#34;http://www.krisbuytaert.be/images/buytaert.net.dns.png&#34; alt=&#34;&#34;&gt;\&lt;/p&gt;</description>
     </item>
     <item>
       <title>Crazy stuff over DNS</title>
-      <link>https://krisbuytaert.github.io/blog/crazy-stuff-over-dns/</link>
+      <link>http://localhost:1313/blog/crazy-stuff-over-dns/</link>
       <pubDate>Wed, 07 Jan 2009 18:44:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/crazy-stuff-over-dns/</guid>
+      <guid>http://localhost:1313/blog/crazy-stuff-over-dns/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://pascal.vanhecke.info/&#34;&gt;Pascal&lt;/a&gt; tweeted me te following &lt;a href=&#34;https://dgl.cx/wikipedia-dns&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;From the site :&lt;/p&gt;&#xA;&lt;p&gt;I had written some code to take wikipedia articles and summarise them. I wanted to offer this for use in various places, now the obvious way to offer it is just a web service (via REST, SOAP, etc), but that&amp;rsquo;s boring and I had a cunning plan. Why not offer it over DNS - it is basically a huge associative array and DNS is designed for this stuff.\&lt;/p&gt;</description>
     </item>
     <item>
       <title>Phrase from nearest book meme</title>
-      <link>https://krisbuytaert.github.io/blog/phrase-nearest-book-meme/</link>
+      <link>http://localhost:1313/blog/phrase-nearest-book-meme/</link>
       <pubDate>Wed, 12 Nov 2008 21:53:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/phrase-nearest-book-meme/</guid>
+      <guid>http://localhost:1313/blog/phrase-nearest-book-meme/</guid>
       <description>&lt;p&gt;Meme from &lt;a href=&#34;http://www.outflux.net/blog/&#34;&gt;codeblog&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;* Grab the nearest book.&lt;br&gt;&#xA;* Open it to page 56.&lt;br&gt;&#xA;* Find the fifth sentence.&lt;br&gt;&#xA;* Post the text of the sentence in your journal along with these instructions.&lt;br&gt;&#xA;* Don’t dig for your favorite book, the cool book, or the intellectual one: pick the CLOSEST.&lt;/p&gt;&#xA;&lt;p&gt;My result:&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;We&amp;rsquo;ll cover more on where to place your name servers in Chapter 8, Growing Your Domains.&amp;rdquo; - DNS and BIND , 2nd Edition , Paul Albitz &amp;amp; Cricket Liu&lt;/p&gt;</description>
     </item>
     <item>
       <title>Everything is a Funky DNS Problem</title>
-      <link>https://krisbuytaert.github.io/blog/everything-funky-dns-problem/</link>
+      <link>http://localhost:1313/blog/everything-funky-dns-problem/</link>
       <pubDate>Sun, 02 Nov 2008 21:11:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/everything-funky-dns-problem/</guid>
+      <guid>http://localhost:1313/blog/everything-funky-dns-problem/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.sid3windr.be/&#34;&gt;Tom&lt;/a&gt; dropped me a mail today letting me know that all the links to my RSS feed were broken.&lt;br&gt;&#xA;I tested, and tested again and failed to reproduce the problem.&lt;/p&gt;&#xA;&lt;p&gt;The only things I had changed recently where the administrator menu module and Pathauto module, apart from that I had not made any changes. So I tried uninstalling the modules to see if that helped, it didn&amp;rsquo;t. There was no difference between the 2 setups.&lt;/p&gt;</description>
     </item>
   </channel>

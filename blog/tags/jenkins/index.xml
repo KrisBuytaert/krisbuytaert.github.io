@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jenkins on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/jenkins/</link>
+    <link>http://localhost:1313/blog/tags/jenkins/</link>
     <description>Recent content in Jenkins on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Jun 2016 21:04:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jenkins DSL and Heisenbugs</title>
-      <link>https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/</link>
+      <link>http://localhost:1313/blog/jenkins-dsl-and-heisenbugs/</link>
       <pubDate>Mon, 13 Jun 2016 21:04:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/</guid>
+      <guid>http://localhost:1313/blog/jenkins-dsl-and-heisenbugs/</guid>
       <description>&lt;p&gt;I`m working on getting even more moving parts automated, those who use Jenkins frequently probably also have Love - Hate relationship with it.&lt;/p&gt;&#xA;&lt;p&gt;The love coming from the flexibility , stability and the power you get from it, the hate from it&amp;rsquo;s UI. If you&amp;rsquo;ve ever had to create a new Jenkins job or even pipeline based on one that already existed you&amp;rsquo;ve gone trough the horror of click and paste errors , and you know where the hate breeds.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jenkins, Puppet, Graphite, Logstash and YOU</title>
-      <link>https://krisbuytaert.github.io/blog/jenkins-puppet-graphite-logstash-and-you/</link>
+      <link>http://localhost:1313/blog/jenkins-puppet-graphite-logstash-and-you/</link>
       <pubDate>Wed, 04 Jun 2014 16:55:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/jenkins-puppet-graphite-logstash-and-you/</guid>
+      <guid>http://localhost:1313/blog/jenkins-puppet-graphite-logstash-and-you/</guid>
       <description>&lt;p&gt;This is a repost of an article I wrote for the Acquia Blog some time ago.&lt;/p&gt;&#xA;&lt;p&gt;As mentioned before, devops can be summarized by talking about culture, automation, monitoring metrics and sharing. Although devops is not about tooling, there are a number of open source tools out there that will be able to help you achieve your goals. Some of those tools will also enable better communication between your development and operations teams.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gentwerpen Devops Meetup  &amp; Conference Season Update</title>
-      <link>https://krisbuytaert.github.io/blog/gentwerpen-devops-meetup-conference-season-update/</link>
+      <link>http://localhost:1313/blog/gentwerpen-devops-meetup-conference-season-update/</link>
       <pubDate>Thu, 13 Sep 2012 22:27:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/gentwerpen-devops-meetup-conference-season-update/</guid>
+      <guid>http://localhost:1313/blog/gentwerpen-devops-meetup-conference-season-update/</guid>
       <description>&lt;p&gt;A couple of us have been taking about it a lot already .. we wanted to host a one day #devops event in .be already last year.. then talks about starting a meetup group started again with @wonko_be but it was @fs111 pushing the final button and calling the rest of the .be community to order, we&amp;rsquo;ve set a date&lt;br&gt;&#xA;and the first session will take place (agenda still needs to be detirmined)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ruby Gems Yum Repo</title>
-      <link>https://krisbuytaert.github.io/blog/ruby-gems-yum-repo/</link>
+      <link>http://localhost:1313/blog/ruby-gems-yum-repo/</link>
       <pubDate>Wed, 08 Aug 2012 22:28:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/ruby-gems-yum-repo/</guid>
+      <guid>http://localhost:1313/blog/ruby-gems-yum-repo/</guid>
       <description>&lt;p&gt;For those of you that are looking for my old build-gems Github repo, given that lots of other Inuits collegues are using it too I&amp;rsquo;ve transferred ownership of that repo to the Inuits group.&lt;/p&gt;&#xA;&lt;p&gt;It can now be found on &lt;a href=&#34;https://github.com/Inuits/build-gems/&#34;&gt;https://github.com/Inuits/build-gems/&lt;/a&gt; (Yes directory indexes are disabled on purpose..)&lt;/p&gt;&#xA;&lt;p&gt;The build result has also been moved. We&amp;rsquo;ve replaced our static repo.inuits.be with a &lt;a href=&#34;http://pulpproject.org/&#34;&gt;Pulp&lt;/a&gt; powered yum repo.&lt;/p&gt;&#xA;&lt;p&gt;The new location of the rubygems rpm repo now is at &lt;a href=&#34;http://pulp.inuits.eu/pulp/repos/rubygems/&#34;&gt;http://pulp.inuits.eu/pulp/repos/rubygems/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>A different shade of green</title>
-      <link>https://krisbuytaert.github.io/blog/different-shade-green/</link>
+      <link>http://localhost:1313/blog/different-shade-green/</link>
       <pubDate>Sun, 30 Oct 2011 21:51:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/different-shade-green/</guid>
+      <guid>http://localhost:1313/blog/different-shade-green/</guid>
       <description>&lt;p&gt;Back in late 1997 I had spent way too much time helping people to build websites and was fed up with customers wanting a different shade of green for the background of their website. I was fed up with the graphic artists that didn&amp;rsquo;t want to understand the concept of a color pallet and browser safe colors and didn&amp;rsquo;t understand the differences between print and web. So I decided to try not to work for the wannabe webexperts anymore and doing some real software.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opendbcamp on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/opendbcamp/</link>
+    <link>http://localhost:1313/blog/tags/opendbcamp/</link>
     <description>Recent content in Opendbcamp on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Aug 2011 20:53:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/opendbcamp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/opendbcamp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Back from opendbcamp  and Froscon</title>
-      <link>https://krisbuytaert.github.io/blog/back-opendbcamp-and-froscon/</link>
+      <link>http://localhost:1313/blog/back-opendbcamp-and-froscon/</link>
       <pubDate>Sun, 21 Aug 2011 20:53:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/back-opendbcamp-and-froscon/</guid>
+      <guid>http://localhost:1313/blog/back-opendbcamp-and-froscon/</guid>
       <description>&lt;p&gt;I`m back from my second opendbcamp this year, and my first Froscon :)&lt;/p&gt;&#xA;&lt;p&gt;With Sankt Augustin being only a 2.5 hour drive , it was one of the only conferences in Europe so close to home that I hadn&amp;rsquo;t visited yet. Overall it&amp;rsquo;s a good conference, it&amp;rsquo;s a good sized, not too crowded event which attracted a bunch of interesting speakers.&lt;/p&gt;&#xA;&lt;p&gt;Sadly they managed to do way to much changes to the schedule last minute which were not updated in their Android app.. so I ended up arriving in the wrong room multiple times .. Also Sadly German conferences still tend to have way to much German language presentations, for foreign speakers from different parts of the world that limits the choice of talks they can visit.&lt;/p&gt;</description>
     </item>
   </channel>

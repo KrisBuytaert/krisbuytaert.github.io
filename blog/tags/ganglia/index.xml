@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ganglia on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/ganglia/</link>
+    <link>http://localhost:1313/blog/tags/ganglia/</link>
     <description>Recent content in Ganglia on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Aug 2012 21:49:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/ganglia/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/ganglia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Our #monitoringsucks rpm is repository available</title>
-      <link>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</link>
+      <link>http://localhost:1313/blog/our-monitoringsucks-rpm-repository-available/</link>
       <pubDate>Sat, 11 Aug 2012 21:49:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</guid>
+      <guid>http://localhost:1313/blog/our-monitoringsucks-rpm-repository-available/</guid>
       <description>&lt;p&gt;Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.&lt;/p&gt;&#xA;&lt;p&gt;You might have noticed a variety of vagrant- projects on my github acount&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-ganglia&#34;&gt;http://github.com/KrisBuytaert/vagrant-ganglia&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-graphite&#34;&gt;http://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-puppet-logstash&#34;&gt;http://github.com/KrisBuytaert/vagrant-puppet-logstash,&lt;/a&gt;&lt;br&gt;&#xA;Being the #monitoringsucks part of them. All of those Vagrant projects are basically my test setups to play with those new tools.&lt;/p&gt;&#xA;&lt;p&gt;They contain a bunch of puppet modules that install and configure these tools. (Note that they mostly consist of&lt;br&gt;&#xA;of git submodules to other puppet module repositories.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Graphite, JMXTrans, Ganglia, Logster, Collectd,  say what  ?</title>
-      <link>https://krisbuytaert.github.io/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</link>
+      <link>http://localhost:1313/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</link>
       <pubDate>Tue, 03 Jan 2012 22:46:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</guid>
+      <guid>http://localhost:1313/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</guid>
       <description>&lt;p&gt;Given that @patrickdebois is working on improving data collection I thought it would be a good idea to describe the setup I currently have hacked together.&lt;/p&gt;&#xA;&lt;p&gt;(Something which can be used as a starting point to improve stuff, and I have to write documentation anyhow)&lt;/p&gt;&#xA;&lt;p&gt;I currently have 3 sources , and one target, which will eventually expand to at least another target and most probably more sources too.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/VagrantGraphite.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>#monitoringsucks and we&#39;ll fix it !</title>
-      <link>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</link>
+      <link>http://localhost:1313/blog/monitoringsucks-and-well-fix-it/</link>
       <pubDate>Tue, 03 Jan 2012 20:23:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</guid>
+      <guid>http://localhost:1313/blog/monitoringsucks-and-well-fix-it/</guid>
       <description>&lt;p&gt;If you are hacking on monitoring solutions, and want to talk to your peers solving the problem&lt;br&gt;&#xA;Block the monday and tuesday after fosdem in your calendar !&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp&lt;/p&gt;&#xA;&lt;p&gt;In short a #monitoringsucks hackathon&lt;/p&gt;&#xA;&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp&lt;/p&gt;</description>
     </item>
   </channel>

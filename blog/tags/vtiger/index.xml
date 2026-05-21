@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vtiger on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/vtiger/</link>
+    <link>http://localhost:1313/blog/tags/vtiger/</link>
     <description>Recent content in Vtiger on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Jul 2013 22:08:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/vtiger/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/vtiger/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using broken development frameworks , or why we don&#39;t use Zurmo</title>
-      <link>https://krisbuytaert.github.io/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</link>
+      <link>http://localhost:1313/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</link>
       <pubDate>Wed, 10 Jul 2013 22:08:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</guid>
+      <guid>http://localhost:1313/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</guid>
       <description>&lt;p&gt;People often wonder why DBA&amp;rsquo;s used to hate developers, and with DBA&amp;rsquo;s also the System Engineers,&lt;br&gt;&#xA;(note that I just expanded devops by adding dba&amp;rsquo;s to the picture..)&lt;/p&gt;&#xA;&lt;p&gt;So let me tell you a story ..&lt;/p&gt;&#xA;&lt;p&gt;A couple of weeks ago one of our customers wanted to start experimenting with a new type of CRM. A gamified CRM.&lt;br&gt;&#xA;Zurmo &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;So we set this thing up in a dev environment and started playing with it , while at first it looks nice ..&lt;br&gt;&#xA;the application actually felt pretty slow.. however given that is a low resource development environment we looked no further.&lt;/p&gt;</description>
     </item>
   </channel>

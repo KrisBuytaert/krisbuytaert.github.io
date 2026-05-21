@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Brancherestaurant Antwerpen on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/brancherestaurant-antwerpen/</link>
+    <link>http://localhost:1313/blog/tags/brancherestaurant-antwerpen/</link>
     <description>Recent content in Brancherestaurant Antwerpen on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Dec 2008 15:01:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/brancherestaurant-antwerpen/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/brancherestaurant-antwerpen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ripped of at RestaurantWeek.be</title>
-      <link>https://krisbuytaert.github.io/blog/ripped-restaurantweekbe/</link>
+      <link>http://localhost:1313/blog/ripped-restaurantweekbe/</link>
       <pubDate>Thu, 04 Dec 2008 15:01:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/ripped-restaurantweekbe/</guid>
-      <description>&lt;p&gt;My mother suggested that she would babysit while the 2 of us went out to eat yesterday. The idea was to have a good dinner in one of the restaurants that took part of the &lt;a href=&#34;https://krisbuytaert.github.io/blog/restaurantweek/index.html&#34;&gt;Restaurantweek.be&lt;/a&gt; action.&lt;/p&gt;&#xA;&lt;p&gt;The idea is that you get a 3 course dinner for 25 Euro a person in a good quality restaurant .. therefore no brasserie or pubfood. With different of the top restaurants of antwerp taking part of the action we decided to pic a new one we didn&amp;rsquo;t know yet.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/ripped-restaurantweekbe/</guid>
+      <description>&lt;p&gt;My mother suggested that she would babysit while the 2 of us went out to eat yesterday. The idea was to have a good dinner in one of the restaurants that took part of the &lt;a href=&#34;http://localhost:1313/blog/restaurantweek/index.html&#34;&gt;Restaurantweek.be&lt;/a&gt; action.&lt;/p&gt;&#xA;&lt;p&gt;The idea is that you get a 3 course dinner for 25 Euro a person in a good quality restaurant .. therefore no brasserie or pubfood. With different of the top restaurants of antwerp taking part of the action we decided to pic a new one we didn&amp;rsquo;t know yet.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

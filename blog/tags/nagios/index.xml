@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nagios on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/nagios/</link>
+    <link>http://localhost:1313/blog/tags/nagios/</link>
     <description>Recent content in Nagios on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Jan 2012 20:23:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/nagios/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/nagios/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>#monitoringsucks and we&#39;ll fix it !</title>
-      <link>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</link>
+      <link>http://localhost:1313/blog/monitoringsucks-and-well-fix-it/</link>
       <pubDate>Tue, 03 Jan 2012 20:23:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</guid>
+      <guid>http://localhost:1313/blog/monitoringsucks-and-well-fix-it/</guid>
       <description>&lt;p&gt;If you are hacking on monitoring solutions, and want to talk to your peers solving the problem&lt;br&gt;&#xA;Block the monday and tuesday after fosdem in your calendar !&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp&lt;/p&gt;&#xA;&lt;p&gt;In short a #monitoringsucks hackathon&lt;/p&gt;&#xA;&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp&lt;/p&gt;</description>
     </item>
     <item>
       <title>Packaging Djagios</title>
-      <link>https://krisbuytaert.github.io/blog/packaging-djagios/</link>
+      <link>http://localhost:1313/blog/packaging-djagios/</link>
       <pubDate>Sun, 20 Dec 2009 22:42:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/packaging-djagios/</guid>
+      <guid>http://localhost:1313/blog/packaging-djagios/</guid>
       <description>&lt;p&gt;After all the politics involved in getting a package in a distro, or not it was time for a nice small and clean package of a fresh and promising open source project. &lt;a href=&#34;http://www.djagios.org/&#34;&gt;Djagios&lt;/a&gt; was an easy choice.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve uploade the &lt;a href=&#34;http://repo.inuits.be/centos/5/os/noarch/djagios-0.1.3-1.noarch.rpm&#34;&gt;rpm&lt;/a&gt; and &lt;a href=&#34;http://repo.inuits.be/centos/5/os/SRPMS/djagios-0.1.3-1.src.rpm&#34;&gt;Source RPM&lt;/a&gt; to repo.inuits.be and getting the SPEC file in the upstream repo was 10 minutes work.&lt;/p&gt;&#xA;&lt;p&gt;Next step is to get it into Fedora , and EPEL :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>MonitoringForge</title>
-      <link>https://krisbuytaert.github.io/blog/monitoringforge/</link>
+      <link>http://localhost:1313/blog/monitoringforge/</link>
       <pubDate>Wed, 23 Sep 2009 21:20:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoringforge/</guid>
+      <guid>http://localhost:1313/blog/monitoringforge/</guid>
       <description>&lt;p&gt;I found the initial announcement in my Spambox, thats where I send all the mails from GroundWork as unsubscribing from their marketing lists doesn&amp;rsquo;t seem to work ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.adventuresinoss.com/?p=1117&#34;&gt;Tarus&lt;/a&gt; pointed it out.. he already mentionned Marketing, low community imput etc..&lt;/p&gt;&#xA;&lt;p&gt;Nevertheles I had a look, and my first and last impression was, NagiosForge, no active community, and empty pages on other imvho more relevant Monitoring Projects created by GroundWork employees.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rivermuse First Impressions</title>
-      <link>https://krisbuytaert.github.io/blog/rivermuse-first-impressions/</link>
+      <link>http://localhost:1313/blog/rivermuse-first-impressions/</link>
       <pubDate>Thu, 30 Jul 2009 21:37:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/rivermuse-first-impressions/</guid>
+      <guid>http://localhost:1313/blog/rivermuse-first-impressions/</guid>
       <description>&lt;p&gt;First of all, I don&amp;rsquo;t come from a Tivoli, OpenView background , I have never touched the commercial network monitoring tools and I`m not a network guy . I&amp;rsquo;m an infrastructure guy whith a focus on Open Source platforms so I have been using Nagios and more recently Zabbix, Zenoss etc for the better part of the last 2 decades in large to very large environments.&lt;br&gt;&#xA;My syslogs go to a central (r)syslog)-ng) server where I frequently abuse grep. So If my experience with RiverMuse is not what it should be , there&amp;rsquo;s work to be done on both sides ;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Learning Nagios 3.0</title>
-      <link>https://krisbuytaert.github.io/blog/learning-nagios-30/</link>
+      <link>http://localhost:1313/blog/learning-nagios-30/</link>
       <pubDate>Mon, 23 Mar 2009 01:00:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/learning-nagios-30/</guid>
+      <guid>http://localhost:1313/blog/learning-nagios-30/</guid>
       <description>&lt;p&gt;Late last year Packt send me yet another book to review&lt;br&gt;&#xA;the &lt;a href=&#34;http://www.packtpub.com/guide-for-learning-nagios-3/book&#34;&gt;The Learning Nagios 3&lt;/a&gt; book, a bit more in my field of expertise than the &lt;a href=&#34;http://www.krisbuytaert.be/blog/drupal-multimedia-reviewed&#34;&gt;Drupal Multimedia&lt;/a&gt; one which I also appreciated,&lt;br&gt;&#xA;I already posted I wasn&amp;rsquo;t going to have time to review it before &lt;a href=&#34;http://www.fosdem.org/&#34;&gt;Fosdem&lt;/a&gt; but I finally managed.&lt;br&gt;&#xA;Having used Nagios on and of for the better part of the decade but not really having touched ground with Nagios 3 yet I had mixed feelings, generally the book gives a good beginner targeted overview of Nagios, with the usual What is, installing and getting started chapters.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monitoring MySQL</title>
-      <link>https://krisbuytaert.github.io/blog/monitoring-mysql/</link>
+      <link>http://localhost:1313/blog/monitoring-mysql/</link>
       <pubDate>Sun, 08 Feb 2009 16:16:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoring-mysql/</guid>
+      <guid>http://localhost:1313/blog/monitoring-mysql/</guid>
       <description>&lt;p&gt;The slides for my Monitoring MySQL talk , which I gave earlier today in an overcrowded MySQl Developersroom at Fosdem are now online, both at &lt;a href=&#34;http://www.krisbuytaert.be/presentations/MySQLMonitoringShootOut.odp&#34;&gt;my site&lt;/a&gt; and at &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out&#34;&gt;Slideshare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;As of now I actually expect people to use those slides for schoolwork or next year in a main Fosdem track :)&lt;br&gt;&#xA;As afterall that is the goal of Open Source and spreading the word ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out?type=presentation&#34; title=&#34;MySQL Monitoring Shoot Out&#34;&gt;MySQL Monitoring Shoot Out&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drupal Multimedia ..  reviewed.</title>
-      <link>https://krisbuytaert.github.io/blog/drupal-multimedia-reviewed/</link>
+      <link>http://localhost:1313/blog/drupal-multimedia-reviewed/</link>
       <pubDate>Sat, 17 Jan 2009 21:37:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/drupal-multimedia-reviewed/</guid>
+      <guid>http://localhost:1313/blog/drupal-multimedia-reviewed/</guid>
       <description>&lt;p&gt;After &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/726&#34;&gt;reviewing&lt;/a&gt; the &lt;a href=&#34;http://www.packtpub.com/zenoss-core-network-and-system-monitoring/book&#34;&gt;Zenoss book&lt;/a&gt; , Packt asked me if I would be interested in reviewing one of their fresh Drupal books, they first suggested a book on Theming but but I opted for the [MultiMedia by &lt;a href=&#34;http://aaronwinborn.com/&#34;&gt;Aaron Winborn&lt;/a&gt; one as Theming really isn&amp;rsquo;t my cup of tee](&lt;a href=&#34;http://www.packtpub.com/create-multimedia-website-with-drupal/book&#34;&gt;http://www.packtpub.com/create-multimedia-website-with-drupal/book&lt;/a&gt;)&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/drupalmultimedia.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It took me a while to get the book finished , mostly because of other priorities that kept popping up and being ill for the first week of the year .. but I finally managed&lt;/p&gt;</description>
     </item>
     <item>
       <title>Do we want an Open Source MySQL Monitoring tool  ?</title>
-      <link>https://krisbuytaert.github.io/blog/do-we-want-open-source-mysql-monitoring-tool/</link>
+      <link>http://localhost:1313/blog/do-we-want-open-source-mysql-monitoring-tool/</link>
       <pubDate>Tue, 18 Nov 2008 00:44:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/do-we-want-open-source-mysql-monitoring-tool/</guid>
+      <guid>http://localhost:1313/blog/do-we-want-open-source-mysql-monitoring-tool/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://themattreid.com/wordpress/?p=77&#34;&gt;Matt Reid&lt;/a&gt; wants to know what we want in an Open Source MySQL monitoring solution ?&lt;/p&gt;&#xA;&lt;p&gt;He is working on the second incarnation of Monolith and wants input from the MySQL community.&lt;/p&gt;&#xA;&lt;p&gt;Now for me the bigger question is if we want an isolated tool that runs stand alone, or a tool which we can integrate it in something we already have.&lt;/p&gt;&#xA;&lt;p&gt;To me there is a difference between a tool that I want to use to debug my environment, such as Mytop or MySQL Activity Report, in that case I need some tool that quickly installs with little dependencies and little impact.&lt;/p&gt;</description>
     </item>
   </channel>

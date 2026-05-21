@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apt on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/apt/</link>
+    <link>http://localhost:1313/blog/tags/apt/</link>
     <description>Recent content in Apt on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Nov 2010 21:20:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/apt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/apt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>To Package,  and what to package</title>
-      <link>https://krisbuytaert.github.io/blog/package-and-what-package/</link>
+      <link>http://localhost:1313/blog/package-and-what-package/</link>
       <pubDate>Mon, 01 Nov 2010 21:20:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/package-and-what-package/</guid>
+      <guid>http://localhost:1313/blog/package-and-what-package/</guid>
       <description>&lt;p&gt;One of the open sessions last week (corr: last month) at Devopsdays 2010 Hamburg was the one on packaging software. It&amp;rsquo;s always a big question on wether you package the software that runs in your infrastructure or not. And if you package it .. what do you package ..&lt;/p&gt;&#xA;&lt;p&gt;The general consensus of the open space was pretty much that you always package the software you deploy, unless you have some very good reasons not to. Pretty much the way I&amp;rsquo;ve been doing for ages ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>To not yum or to not apt-get, that&#39;s NOT the question.</title>
-      <link>https://krisbuytaert.github.io/blog/not-yum-or-not-apt-get-thats-not-question/</link>
+      <link>http://localhost:1313/blog/not-yum-or-not-apt-get-thats-not-question/</link>
       <pubDate>Tue, 16 Feb 2010 22:13:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/not-yum-or-not-apt-get-thats-not-question/</guid>
+      <guid>http://localhost:1313/blog/not-yum-or-not-apt-get-thats-not-question/</guid>
       <description>&lt;p&gt;Over at the &lt;a href=&#34;http://code.openark.org/blog/mysql/to-not-yum-or-to-not-apt-get&#34;&gt;OPenARK blog&lt;/a&gt; Shlomi Noach argues that using apt-get or yum to install your MySQL instance will one day most likeley break your MySQL setup. Depdendencies, distros not shipping the MySQL version you want to use and on some distro&amp;rsquo;s indeed the mysql vs MySQL issue, agreed, it all makes things less trivial.&lt;/p&gt;&#xA;&lt;p&gt;However why give up a clean packaged system if there are other ways out ?&lt;/p&gt;&#xA;&lt;p&gt;First of all by claiming that such an installation can break a working production environment looks to me like admitting you don&amp;rsquo;t have a split development, production environment and that rather than testing stuff upfront indeed you just hack a long in production.&lt;/p&gt;</description>
     </item>
   </channel>

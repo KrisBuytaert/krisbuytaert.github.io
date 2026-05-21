@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dns Problem on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/dns-problem/</link>
+    <link>http://localhost:1313/blog/tags/dns-problem/</link>
     <description>Recent content in Dns Problem on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Feb 2009 23:55:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/dns-problem/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/dns-problem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Story Repeats</title>
-      <link>https://krisbuytaert.github.io/blog/story-repeats/</link>
+      <link>http://localhost:1313/blog/story-repeats/</link>
       <pubDate>Tue, 10 Feb 2009 23:55:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/story-repeats/</guid>
+      <guid>http://localhost:1313/blog/story-repeats/</guid>
       <description>&lt;p&gt;I covered this one &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/702&#34;&gt;before&lt;/a&gt; .. but as it struck twiced today .. I think it&amp;rsquo;s worth repeating. Both my &lt;a href=&#34;http://poke152.blogspot.com/&#34;&gt;collegue Karl&lt;/a&gt; and &lt;a href=&#34;http://blogs.sun.com/trentlloyd/entry/this_week_s_tip_the&#34;&gt;Trent&lt;/a&gt; ran into the same problem , within hours hours of eachother, a missing or failing reverse dns mapping that caused performance issues .. and a lot of log entries..&lt;/p&gt;&#xA;&lt;p&gt;Karl denies having a second life in Perth but I`m not really sure about that &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;But I guess they both have to agree&amp;hellip; Everything is a fscking DNS problem.&lt;br&gt;&#xA;(I noticed other people using that spelling this weekend, on stage in the Janson)&lt;/p&gt;</description>
     </item>
     <item>
       <title>This week in DNS problems</title>
-      <link>https://krisbuytaert.github.io/blog/week-dns-problems/</link>
+      <link>http://localhost:1313/blog/week-dns-problems/</link>
       <pubDate>Wed, 21 Jan 2009 20:29:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/week-dns-problems/</guid>
+      <guid>http://localhost:1313/blog/week-dns-problems/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://isc.sans.org/diary.html?storyid=5713&#34;&gt;SANS&lt;/a&gt; notes a weird DOS atack on different namesevers. People quering for &amp;ldquo;.&amp;rdquo; a lot.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://ward.vandewege.net/blog/2009/01/whats-going-on-with-the-org-nameservers/&#34;&gt;Ward&lt;/a&gt; wondering what&amp;rsquo;s going on with the .org nameservers&lt;/p&gt;&#xA;&lt;p&gt;And &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; migrating his site.&lt;br&gt;&#xA;&lt;img src=&#34;http://www.krisbuytaert.be/images/buytaert.net.dns.png&#34; alt=&#34;&#34;&gt;\&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zenoss, &#34;mail&#34; problem ?</title>
-      <link>https://krisbuytaert.github.io/blog/zenoss-mail-problem/</link>
+      <link>http://localhost:1313/blog/zenoss-mail-problem/</link>
       <pubDate>Sat, 17 Jan 2009 22:53:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/zenoss-mail-problem/</guid>
+      <guid>http://localhost:1313/blog/zenoss-mail-problem/</guid>
       <description>&lt;p&gt;Funny how people call clear and obvious DNS problems a&lt;br&gt;&#xA;&lt;a href=&#34;http://www.vanderkussen.org/2009/01/15/zenoss-mail-problems&#34;&gt;&amp;ldquo;mail&amp;rdquo;&lt;/a&gt; problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DNS FAIL</title>
-      <link>https://krisbuytaert.github.io/blog/dns-fail/</link>
+      <link>http://localhost:1313/blog/dns-fail/</link>
       <pubDate>Fri, 14 Nov 2008 20:36:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/dns-fail/</guid>
+      <guid>http://localhost:1313/blog/dns-fail/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://failblog.files.wordpress.com/2008/11/fail-owned-vista-dns-fail.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Seen over at &lt;a href=&#34;http://failblog.org/2008/11/14/dns-fail/&#34;&gt;Failblog&lt;/a&gt;, you could call it OS fail also actually .. maybe one day people will realize that  &lt;a href=&#34;http://securityandthe.net/2008/11/10/avg-virus-scanner-removes-critical-windows-file/&#34;&gt;AVG correctly identified the Trojan&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Everything is a Funky DNS Problem</title>
-      <link>https://krisbuytaert.github.io/blog/everything-funky-dns-problem/</link>
+      <link>http://localhost:1313/blog/everything-funky-dns-problem/</link>
       <pubDate>Sun, 02 Nov 2008 21:11:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/everything-funky-dns-problem/</guid>
+      <guid>http://localhost:1313/blog/everything-funky-dns-problem/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.sid3windr.be/&#34;&gt;Tom&lt;/a&gt; dropped me a mail today letting me know that all the links to my RSS feed were broken.&lt;br&gt;&#xA;I tested, and tested again and failed to reproduce the problem.&lt;/p&gt;&#xA;&lt;p&gt;The only things I had changed recently where the administrator menu module and Pathauto module, apart from that I had not made any changes. So I tried uninstalling the modules to see if that helped, it didn&amp;rsquo;t. There was no difference between the 2 setups.&lt;/p&gt;</description>
     </item>
   </channel>

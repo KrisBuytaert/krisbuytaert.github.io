@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Music on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/music/</link>
+    <link>http://localhost:1313/blog/tags/music/</link>
     <description>Recent content in Music on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 May 2009 22:36:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/music/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I love Last.fm</title>
-      <link>https://krisbuytaert.github.io/blog/i-love-lastfm/</link>
+      <link>http://localhost:1313/blog/i-love-lastfm/</link>
       <pubDate>Tue, 05 May 2009 22:36:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/i-love-lastfm/</guid>
+      <guid>http://localhost:1313/blog/i-love-lastfm/</guid>
       <description>&lt;p&gt;But I won&amp;rsquo;t become a paid subscriber when they close down access for some countries&lt;/p&gt;&#xA;&lt;p&gt;Last.fm is awesome .. it learned about my music habits, and it got really good at streaming me My Music, yes.. you read that correctly .. about 85% of the music it sends to my rhythmbox also lives in /home/MyMusic , that&amp;rsquo;s like the CD&amp;rsquo;s I bought and ripped to play anywhere I go.. I already paid for those, so why would I want to pay for them again ?&lt;/p&gt;</description>
     </item>
   </channel>

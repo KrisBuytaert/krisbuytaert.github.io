@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conference Season on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/conference-season/</link>
+    <link>http://localhost:1313/blog/tags/conference-season/</link>
     <description>Recent content in Conference Season on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Aug 2014 21:23:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/conference-season/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/conference-season/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Upcoming Conferences</title>
-      <link>https://krisbuytaert.github.io/blog/upcoming-conferences/</link>
+      <link>http://localhost:1313/blog/upcoming-conferences/</link>
       <pubDate>Tue, 12 Aug 2014 21:23:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/upcoming-conferences/</guid>
+      <guid>http://localhost:1313/blog/upcoming-conferences/</guid>
       <description>&lt;p&gt;After not being able to give my planned Ignite at #devopsdays Amsterdam because I was down with the flu here&amp;rsquo;s some fresh opportunities to listen to my rants :)&lt;/p&gt;&#xA;&lt;p&gt;In September I`ll be talking at PuppetConf 2014, San Francisco , USA about some of the horror stories we went trough over the past couple of years when deploying infrastructure the automated fasion.&lt;/p&gt;&#xA;&lt;p&gt;Just one week later I`ll be opening the #devops track at DrupalCon Amsterdam together with @cyberswat (Kevin Bridges) where we&amp;rsquo;ll talk about the current state of #drupal and #devops , We&amp;rsquo;ll be reopening the #drupal and #devops survey shortly, more info about that later here..&lt;/p&gt;</description>
     </item>
   </channel>

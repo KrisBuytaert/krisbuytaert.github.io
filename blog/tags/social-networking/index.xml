@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Social Networking on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/social-networking/</link>
+    <link>http://localhost:1313/blog/tags/social-networking/</link>
     <description>Recent content in Social Networking on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Feb 2010 22:15:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/social-networking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/social-networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Irc vs Twitter err.. Identi.ca</title>
-      <link>https://krisbuytaert.github.io/blog/irc-vs-twitter-err-identica/</link>
+      <link>http://localhost:1313/blog/irc-vs-twitter-err-identica/</link>
       <pubDate>Fri, 12 Feb 2010 22:15:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/irc-vs-twitter-err-identica/</guid>
+      <guid>http://localhost:1313/blog/irc-vs-twitter-err-identica/</guid>
       <description>&lt;p&gt;Over 1.5 decade ago, a bunch of us were addicted to irc, I lived on channels such as #coders, #nlcoders, #demoscene, sneaked in on #vlaanderen to see when the Leuven locals were heading to the pub, then started joining multiple Linux and Open Source related channels around 94&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Then some weirdos had an alternative way of chatting ICQ, then the folks from Redmond reinvented the wheel&amp;hellip; Luckily XMPP arrived and Jabber became the open alternative, but still all of this time irc stayed&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drupal 6 , Social Networking</title>
-      <link>https://krisbuytaert.github.io/blog/drupal-6-social-networking/</link>
+      <link>http://localhost:1313/blog/drupal-6-social-networking/</link>
       <pubDate>Fri, 04 Dec 2009 00:09:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/drupal-6-social-networking/</guid>
+      <guid>http://localhost:1313/blog/drupal-6-social-networking/</guid>
       <description>&lt;p&gt;As &lt;a href=&#34;http://www.krisbuytaert.be/blog/idle&#34;&gt;posted earlier&lt;/a&gt; Packt was so kind to send me their &lt;a href=&#34;http://www.packtpub.com/build-social-networking-websitewith-drupal-6/book&#34;&gt;Drupal 6 , Social Networking&lt;/a&gt; for review.&lt;/p&gt;&#xA;&lt;p&gt;My hopes were high, I was hoping for some info on how to integrate with different existing networks, content about existing frameworks, maybe some mentioning of &lt;a href=&#34;http://openatrium.com/&#34;&gt;openAtrium&lt;/a&gt; or so, or integrating with Twitter or other existing platforms.&lt;/p&gt;&#xA;&lt;p&gt;Sadly the book only briefly touches similar content, the Google API , in Chapter 7&lt;/p&gt;&#xA;&lt;p&gt;While a good read, and a good introduction to Drupal for new users I didn&amp;rsquo;t learn anything till chapter 7 and anything after Chapter 7 ;( And I don&amp;rsquo;t consider myselve as a Drupal Expert&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Social Network “Friend” Policy (Updated again)</title>
-      <link>https://krisbuytaert.github.io/blog/policy/</link>
+      <link>http://localhost:1313/blog/policy/</link>
       <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/policy/</guid>
+      <guid>http://localhost:1313/blog/policy/</guid>
       <description>&lt;p&gt;Over the past few years I have joined several social networking sites and continue to use a few of them regularly. These sites serve different purposes for me and I have started to come up with strategies of whom to connect with where. Here are the general guidelines that I have developed (subject to spontaneous change and arbitrary override).&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;On &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;LinkedIn&lt;/a&gt; I only link with people that I know in person , worked with in real life or have worked with online intensively in different open source projects. , have communicated with over different media. there are couple of exceptions in my connections from my early days when I didn&amp;rsquo;t have my own set of rules yet. (Some of them have been unlinked now actually)&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Social Network “Friend” Policy (Updated again)</title>
-      <link>https://krisbuytaert.github.io/blog/social/</link>
+      <link>http://localhost:1313/blog/social/</link>
       <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/social/</guid>
+      <guid>http://localhost:1313/blog/social/</guid>
       <description>&lt;p&gt;Over the past few years I have joined several social networking sites and continue to use a few of them regularly. These sites serve different purposes for me and I have started to come up with strategies of whom to connect with where. Here are the general guidelines that I have developed (subject to spontaneous change and arbitrary override).&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;On &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;LinkedIn&lt;/a&gt; I only link with people that I know in person , worked with in real life or have worked with online intensively in different open source projects. , have communicated with over different media. there are couple of exceptions in my connections from my early days when I didn&amp;rsquo;t have my own set of rules yet. (Some of them have been unlinked now actually)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Will Poken  catch on ?</title>
-      <link>https://krisbuytaert.github.io/blog/will-poken-catch/</link>
+      <link>http://localhost:1313/blog/will-poken-catch/</link>
       <pubDate>Thu, 29 Jan 2009 00:29:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/will-poken-catch/</guid>
+      <guid>http://localhost:1313/blog/will-poken-catch/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://doyoupoken.com/&#34;&gt;Poken&lt;/a&gt; is the new gadget in town. &lt;a href=&#34;http://streamlinedmind.com/2008/12/03/poken-the-future-of-social-networking/&#34;&gt;Some&lt;/a&gt; people called it the future of social networking.&lt;/p&gt;&#xA;&lt;p&gt;The idea of exchanging data at the click of a button , or less has been here fore ages. The problem always is that the tool needs to gain Critical Mass before it becomes useful.&lt;/p&gt;&#xA;&lt;p&gt;I remember transferring my VCard from my Palm Pilot or Handspring Visor to other people&amp;rsquo;s Palm Pilot , or using different IrDA protocols to transfer my details between different phones, that worked fine, for the happy few that had similar devices. These days we transfer details over SMS&amp;rsquo; messages or Bluetooth, but then they are stuck in the mobile phone, with the Palm I at least imported them in my PIM.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Velocity on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/velocity/</link>
+    <link>http://localhost:1313/blog/tags/velocity/</link>
     <description>Recent content in Velocity on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Nov 2013 17:15:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/velocity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/velocity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Velocity 2013 Slides</title>
-      <link>https://krisbuytaert.github.io/blog/velocity-2013-slides/</link>
+      <link>http://localhost:1313/blog/velocity-2013-slides/</link>
       <pubDate>Wed, 27 Nov 2013 17:15:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/velocity-2013-slides/</guid>
+      <guid>http://localhost:1313/blog/velocity-2013-slides/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/KrisBuytaert/velocity2013-mh&#34; title=&#34;The Journey of devops and continuous delivery in a Large Financial Institution&#34;&gt;The Journey of devops and continuous delivery in a Large Financial Institution&lt;/a&gt;&lt;/strong&gt;  from &lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

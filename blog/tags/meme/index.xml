@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meme on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/meme/</link>
+    <link>http://localhost:1313/blog/tags/meme/</link>
     <description>Recent content in Meme on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Nov 2008 21:53:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/meme/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/meme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Phrase from nearest book meme</title>
-      <link>https://krisbuytaert.github.io/blog/phrase-nearest-book-meme/</link>
+      <link>http://localhost:1313/blog/phrase-nearest-book-meme/</link>
       <pubDate>Wed, 12 Nov 2008 21:53:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/phrase-nearest-book-meme/</guid>
+      <guid>http://localhost:1313/blog/phrase-nearest-book-meme/</guid>
       <description>&lt;p&gt;Meme from &lt;a href=&#34;http://www.outflux.net/blog/&#34;&gt;codeblog&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;* Grab the nearest book.&lt;br&gt;&#xA;* Open it to page 56.&lt;br&gt;&#xA;* Find the fifth sentence.&lt;br&gt;&#xA;* Post the text of the sentence in your journal along with these instructions.&lt;br&gt;&#xA;* Don’t dig for your favorite book, the cool book, or the intellectual one: pick the CLOSEST.&lt;/p&gt;&#xA;&lt;p&gt;My result:&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;We&amp;rsquo;ll cover more on where to place your name servers in Chapter 8, Growing Your Domains.&amp;rdquo; - DNS and BIND , 2nd Edition , Paul Albitz &amp;amp; Cricket Liu&lt;/p&gt;</description>
     </item>
   </channel>

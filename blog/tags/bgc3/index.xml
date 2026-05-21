@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bgc3 on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/bgc3/</link>
+    <link>http://localhost:1313/blog/tags/bgc3/</link>
     <description>Recent content in Bgc3 on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Dec 2009 22:38:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/bgc3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/bgc3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Barcamp Gent 3</title>
-      <link>https://krisbuytaert.github.io/blog/barcamp-gent-3/</link>
+      <link>http://localhost:1313/blog/barcamp-gent-3/</link>
       <pubDate>Sun, 20 Dec 2009 22:38:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/barcamp-gent-3/</guid>
+      <guid>http://localhost:1313/blog/barcamp-gent-3/</guid>
       <description>&lt;p&gt;Barcamp Gent 3, the one that took place yesterday is probably going to be my last Barcamp in Belgium. I already had my doubts upfront when looking at the suggested talks, but once there I realized it was much worse than I expected.&lt;/p&gt;&#xA;&lt;p&gt;Lemme repoint you folks to what I wrote about the first &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/195&#34;&gt;Barcamp&lt;/a&gt; in Belgium back in 2006&lt;br&gt;&#xA;Maybe my expectations on what kind of people / talks to meet and see there were a bit wrong.. when looking at other barcamps where people such as whurley and Moshe were present, I was maybe hoping for a bit more of system level innovation etc. or at least more technology innovation rather than Bloggers meet and talk about Blogging tools. I wasn&amp;rsquo;t sure on what I should talk about as most of the topics I usually speak about would have been so out of scope and probably wouldn&amp;rsquo;t have reached any potientiel audience.\&lt;/p&gt;</description>
     </item>
   </channel>

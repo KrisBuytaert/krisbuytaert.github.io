@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Microformats on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/microformats/</link>
+    <link>http://localhost:1313/blog/tags/microformats/</link>
     <description>Recent content in Microformats on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Nov 2008 20:56:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/microformats/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/microformats/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrate, MultiSite and Restyle</title>
-      <link>https://krisbuytaert.github.io/blog/migrate-multisite-and-restyle/</link>
+      <link>http://localhost:1313/blog/migrate-multisite-and-restyle/</link>
       <pubDate>Fri, 14 Nov 2008 20:56:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/migrate-multisite-and-restyle/</guid>
+      <guid>http://localhost:1313/blog/migrate-multisite-and-restyle/</guid>
       <description>&lt;p&gt;Done&lt;/p&gt;&#xA;&lt;p&gt;Some of my lower traffic sites were still on an old Drupal 5, others were at 6.4 and lots of modules were outdated. So I set out to migrate all the sites to a multisite setup. I now have a set of shared modules , shared themes and some specific ones .. just as it is meant to be. And I only have 1 central Drupal instance to upgrade. Next step is figuring out how to trigger the database upgrades from 1 central place.&lt;/p&gt;</description>
     </item>
   </channel>
