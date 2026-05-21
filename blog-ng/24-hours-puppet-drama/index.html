@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>24 hours of Puppet Drama | Everything is a Freaking DNS problem</title>
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
+</head>
+<body>
+  <header>
+    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <p class="tagline">Devops Needs Sushi</p>
+  </header>
+  <div class="layout">
+    <main>
+      
+<article>
+  <h1>24 hours of Puppet Drama</h1>
+  <p class="meta">
+    <time datetime="2011-03-04">March 4, 2011</time>
+    
+      &middot;
+      <a href="https://krisbuytaert.github.io/blog/tags/devops/">Devops</a> <a href="https://krisbuytaert.github.io/blog/tags/passenger/">Passenger</a> <a href="https://krisbuytaert.github.io/blog/tags/puppet/">Puppet</a> <a href="https://krisbuytaert.github.io/blog/tags/ruby/">Ruby</a> <a href="https://krisbuytaert.github.io/blog/tags/ssl/">Ssl</a> <a href="https://krisbuytaert.github.io/blog/tags/webrick/">Webrick</a> 
+    
+  </p>
+  <div class="post-body">
+    <p>Over the past couple of days I&rsquo;ve been fighting with a weird puppet problem , we eventually cracked it , but I promised a bunch of you to fully explain it here ;)</p>
+<p>So we were deploying 2 Blade chassis at a pretty remote location with a mix of phyisical and virtual machines, some 48 instances in total. This is a pretty standard rollout, we&rsquo;ve got a bunch of similar platforms in our lab , so we knew about a couple of glitches, what to expect etc.</p>
+<p>I was just keeping an eye on the deployment, looking at the logs seeing if things were running fine, when suddenly a couple of puppet runs didn&rsquo;t come trough, we had seen such behaviour before, usually it&rsquo;s a matter of running them a gain a couple of times and they will come trough. (Upgrading ruby and putting passenger in front of puppet actually solved those issues,<br>
+We&rsquo;d even had a loop built in the platform that runs puppet a couple of times till it returns with the correct exit code just to make sure. )</p>
+<p>We were first scratching the A chain of our setup, so that in the event of failure we could still bring up the B chain of the platform and be up and running again. Actually machines were coming up.. slowly .. some of them took a bit longer . One of the machine&rsquo;s clock was seriously off .. the SSL was barfing on it , so we set the bios clock, and restarted .. it was the machine with 6VM&rsquo;s took a while but everything was back on schedule.. then suddenly things were going down fast more and more puppetruns started failing and .. , at some point in time actually none of our puppet runs were working again .<br>
+I&rsquo;d see the puppetmaster perfectly compile it&rsquo;s catalog</p>
+<pre tabindex="0"><code>1. notice: Compiled catalog for ctl-0-a
+</code></pre><p>Then the client .. not wanting to get it ..</p>
+<pre tabindex="0"><code>1. Mar  1 11:10:45 ctl-0-a puppet-agent[3674]: Not using expired catalog for ctl-0-a from cache; expired at Tue Mar 01 09:50:06 +0000 2011
+2. Mar  1 11:10:45 ctl-0-a puppet-agent[3674]: Using cached catalog
+3. Mar  1 11:10:45 ctl-0-a puppet-agent[3674]: Could not retrieve catalog; skipping run
+</code></pre><p>We had gone from about 60% of our fresly deployed boxen working fine, to not one<br>
+So what do you do .. indeed .. you turn on debugging.<br>
+You put both your puppetmaster and client in debug. Nothing, no errors no nothing ..</p>
+<p>I asked some collegues, asked on irc .. much ideas but none of them that actually cracked the problem. I did what I knew that solve similar problems before,</p>
+<p>I switched our serialization format from yaml back to pson , and back, no luck.<br>
+I upgraded ruby to a version from the <a href="http://yum.glei.ch/">glei.ch</a> repository. No luck.<br>
+I upgraded our Puppet version 2.6 to a version from <a href="http://tmz.fedorapeople.org/repo/puppet/epel/5/i386/">the TMZ Epel repo</a> , we cleaned out ssl the certificates on all sides multiple times. Cleaned out /var/lib/puppet , We uninstalled puppet and reinstalled it.<br>
+It wasn&rsquo;t a DNS Problem</p>
+<p>I had started stripping my manifests to empty runs, those worked, then started uncommenting the actual manifests again &hellip; Then in the middle of the debug our VPN connection to the remote location broke down, we&rsquo;d only be getting it back in the morning ..about 12 hours later not fun. Murphy obviously ..</p>
+<p>So the next morning we dived right back in &hellip; making those manifests bigger again, removing all the stages, 1 or 2 successful runs, then with the same config .. back to failure. On and off.. successfull and unscussessful. &hellip; it wasn&rsquo;t in the manifests ..</p>
+<p>So we decided to roll the puppetmaster back to it&rsquo;s previous version, that one was known to be stable, there obviously was something really fishy going, so that was the safest bet.</p>
+<p>Wrong, the machine came up, but it took longer than expected, and when trying to connect new clients to it .. nothing worked anymore .. same problem as before .. puppetmaster compiles catalog, clients didn&rsquo;t get anything. we started to suspect faulty hardware .. but how could that bee.. the puppetclient looked liked the only malfunctioning thing around .</p>
+<p>Then <a href="http://twitter.com/#!/dim0">Dim0</a> suggested me to look at the that one logfile I hadn&rsquo;t looked , /var/log/puppet/masterhttp.log and then we saw it . it was being flooded with ssl errors, ssl errors from clients that shouldn&rsquo;t even be connecting to the puppetmaster at all.</p>
+<pre tabindex="0"><code>1. [2011-03-02 13:32:00] ERROR OpenSSL::SSL::SSLError: tlsv1 alert decrypt error
+2. /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:44:in `accept&#39;
+3. /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:44:in `listen&#39;
+4. /usr/lib/ruby/1.8/webrick/server.rb:173:in `call&#39;
+5. /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread&#39;
+6. /usr/lib/ruby/1.8/webrick/server.rb:162:in `start&#39;
+7. /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread&#39;
+8. /usr/lib/ruby/1.8/webrick/server.rb:95:in `start&#39;
+9. /usr/lib/ruby/1.8/webrick/server.rb:92:in `each&#39;
+10. /usr/lib/ruby/1.8/webrick/server.rb:92:in `start&#39;
+11. /usr/lib/ruby/1.8/webrick/server.rb:23:in `start&#39;
+12. /usr/lib/ruby/1.8/webrick/server.rb:82:in `start&#39;
+13. /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:42:in `listen&#39;
+14. /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:41:in `initialize&#39;
+15. /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:41:in `new&#39;
+16. /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:41:in `listen&#39;
+17. /usr/lib/ruby/1.8/thread.rb:135:in `synchronize&#39;
+18. /usr/lib/ruby/site_ruby/1.8/puppet/network/http/webrick.rb:38:in `listen&#39;
+19. /usr/lib/ruby/site_ruby/1.8/puppet/network/server.rb:127:in `listen&#39;
+20. /usr/lib/ruby/site_ruby/1.8/puppet/network/server.rb:142:in `start&#39;
+21. /usr/lib/ruby/site_ruby/1.8/puppet/daemon.rb:124:in `start&#39;
+22. /usr/lib/ruby/site_ruby/1.8/puppet/application/master.rb:114:in `main&#39;
+23. /usr/lib/ruby/site_ruby/1.8/puppet/application/master.rb:46:in `run_command&#39;
+24. /usr/lib/ruby/site_ruby/1.8/puppet/application.rb:287:in `run&#39;
+25. /usr/lib/ruby/site_ruby/1.8/puppet/application.rb:393:in `exit_on_fail&#39;
+26. /usr/lib/ruby/site_ruby/1.8/puppet/application.rb:287:in `run&#39;
+27. /usr/sbin/puppetmasterd:4
+28. [2011-03-02 13:32:00] ERROR OpenSSL::SSL::SSLError: tlsv1 alert decrypt error
+</code></pre><p>What happened was that &lsquo;we&rsquo; decided to bring of the one backup machines back online, afterall once the slow starting server came trough, it would be the passive node in the cluster , no worries there, right ? Wrong,<br>
+This physical machine had 6 virtual machines with old ssl certificates that got stuck in an loop which was put there to sure their puppetrun came trough correctly at boot time.</p>
+<p>Those 7 rogue clients which generated little to no relevant traffic on the network were saturating the default webrick, killing them solved the problem and we were back to regular deployment in no time.</p>
+<p>The sad part is that our upcoming release already has passenger , a fresher version of ruby etc .. and that most of the above mentioned errors won&rsquo;t occur anymore there.<br>
+But in short .. don&rsquo;t use the default webrick .. it will kill you :)</p>
+<p>And no , not everything is a freaking dns problem, ssl is a big pain in the B too .. :)</p>
+
+  </div>
+</article>
+<nav class="post-nav">
+  <a href="/blog/dhcpd-shared-networks/">&#8592; dhcpd on Shared Networks</a>
+  <a href="/blog/watching-guards/">Watching the Guards &#8594;</a>
+</nav>
+
+    </main>
+    <aside class="sidebar">
+
+  <section class="bio">
+    <h3>About Kris Buytaert</h3>
+    <p>Kris Buytaert is a long time Linux and Open Source Consultant and engineering leader. 
+    He's one of the instigators of the devops movement. 
+
+    <p>He frequently speaks at and organizes international conferences, and has written
+    about the same subjects in different books, papers and articles.</p>
+  </section>
+
+  <section class="nav-links">
+    <h3>Links</h3>
+    <ul>
+      <li><a href="https://www.krisbuytaert.be/">Main page</a></li>
+      <li><a href="http://www.linkedin.com/in/krisbuytaert">My LinkedIn Profile</a>
+      <li><a href="http://github.com/KrisBuytaert/">Kris on Github</a>
+      <li><a href="http://codeberg.org/KrisBuytaert/">Kris on Codeberg</a>
+      <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a>
+
+
+      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+
+
+      <li><a href="https://devopsdays.org">devopsdays.org</a></li>
+      <li><a href="https://cfgmgmtcamp.org">cfgmgmtcamp.org</a></li>
+      <li><a href="https://belibre.be">belibre.be</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Recent Posts</h3>
+    <ul>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/docker-and-volumes-hell/">Docker and volumes hell</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/its-just-rubber-some-air-it/">It&#39;s just rubber , with some air in it.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/">Lies, Damn Lies and Statistics, 2016 Edition</a></li>
+      
+    </ul>
+  </section>
+
+  
+  <section>
+    <h3>Tags</h3>
+    <ul class="tags">
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      <li><a href="https://krisbuytaert.github.io/tags/devops/">devops</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/drupal/">drupal</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/mysql/">mysql</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/puppet/">puppet</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/open-source/">open source</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/opensource/">opensource</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dnsproblem/">dnsproblem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/ha/">ha</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fosdem/">fosdem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/chef/">chef</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dns/">dns</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fedora/">fedora</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/virtualization/">virtualization</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/xen/">xen</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/centos/">centos</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/conference/">conference</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/monitoringsucks/">monitoringsucks</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/rpm/">rpm</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/kvm/">kvm</a></li>
+      
+    </ul>
+  </section>
+  
+
+</aside>
+
+  </div>
+  <footer>
+    <p>No really .. everything is a funky DNS problem, you'll realise I'm right pretty soon!</p>
+  </footer>
+</body>
+</html>

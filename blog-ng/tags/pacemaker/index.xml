@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pacemaker on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/pacemaker/</link>
+    <description>Recent content in Pacemaker on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Jan 2011 00:04:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/pacemaker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upcoming 2011 Speaking Engagements</title>
+      <link>https://krisbuytaert.github.io/blog/upcoming-2011-speaking-engagements/</link>
+      <pubDate>Mon, 24 Jan 2011 00:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/upcoming-2011-speaking-engagements/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.lenzg.net/&#34;&gt;Lenz&lt;/a&gt; gave the good example so I`ll follow :)&lt;/p&gt;&#xA;&lt;p&gt;Next weekend saturday I`ll be giving a talk about devops at &lt;a href=&#34;http://brussels.startupweekend.org/speakers/&#34;&gt;StartUp Weekend Brussels&lt;/a&gt;, from what I&amp;rsquo;ve read so far it promises to be an audience that needs the talk,&lt;/p&gt;&#xA;&lt;p&gt;The week after I`ll be speaking at the &lt;a href=&#34;http://bxl2011.drupaldays.org/node/233&#34;&gt;DrupalDevDays&lt;/a&gt;, again about devops , however this time with a touch of Drupal , giving a devops talk at Devoxx last year to a Java audience learned me that the devops evangelist need to go outside of their usual conference audiences and als talk to the people that are usually in the other silos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>High Availability MySQL Cookbook , the review</title>
+      <link>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</link>
+      <pubDate>Thu, 04 Nov 2010 01:07:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</guid>
+      <description>&lt;p&gt;When I read on the internetz that Alex Davies was about the publish a &lt;a href=&#34;https://www.packtpub.com/high-availability-mysql-cookbook/book&#34;&gt;Packt book on MySQL HA&lt;/a&gt; I pinged my contacts at Packt and suggested that I&amp;rsquo;d review the book .&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve ran into &lt;a href=&#34;https://sites.google.com/a/davz.net/alex-davies/&#34;&gt;Alex&lt;/a&gt; at some UKUUG conferences before and he&amp;rsquo;s got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.&lt;/p&gt;&#xA;&lt;p&gt;Alex starts of with a couple of indepth chapters on MySQL Cluster, he does mention that it&amp;rsquo;s not a fit for all problems, but I&amp;rsquo;d hoped he did it a bit more prominently &amp;hellip; an upfront chapter outlining the different approaches and when which approach is a match could have been better. The avid reader now might be 80 pages into MySQL cluster before he realizes it&amp;rsquo;s not going to be a match for his problem.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Got Interviewed</title>
+      <link>https://krisbuytaert.github.io/blog/got-interviewed/</link>
+      <pubDate>Wed, 18 Nov 2009 22:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/got-interviewed/</guid>
+      <description>&lt;p&gt;by &lt;a href=&#34;http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/&#34;&gt;@botchagalupe&lt;/a&gt;&lt;br&gt;&#xA;on Virtualization, Open Source tools and DNS Problems&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

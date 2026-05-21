@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xen on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/xen/</link>
+    <description>Recent content in Xen on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Feb 2011 00:01:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/xen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Converting KVM to VirtualBox</title>
+      <link>https://krisbuytaert.github.io/blog/converting-kvm-virtualbox/</link>
+      <pubDate>Wed, 23 Feb 2011 00:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/converting-kvm-virtualbox/</guid>
+      <description>&lt;p&gt;I have had most of my test environment, aka puppetmasters, test mysql setups etc running in KVM for the past couple of years .. (yes I`m still using a lot of Xen in production environments, but we&amp;rsquo;ve also been using KVM for a while already .. it&amp;rsquo;s a good mix) , Virtual box has always been the lesser loved Virtualization platform , however while playing more and more with Vagrant Up I realized I needed to convirt some boxen (e.g my PuppetMaster) to Virtualbox, and google was really no good help(most people seem to go the other way , or want to use some proprietary tools )&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Puppet broke my Xen</title>
+      <link>https://krisbuytaert.github.io/blog/puppet-broke-my-xen/</link>
+      <pubDate>Sat, 30 Oct 2010 16:35:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/puppet-broke-my-xen/</guid>
+      <description>&lt;p&gt;Actually it didn&amp;rsquo;t , but now I got your attention.&lt;br&gt;&#xA;We just adopted the use of adding headers to all of our files that are managed by puppet so people will know not to touch it&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. file {&#xA;2. &amp;#34;/etc/xen/scripts/network-custom-vlan-bridges&amp;#34;:&#xA;3. owner =&amp;gt; &amp;#34;root&amp;#34;,&#xA;4. group =&amp;gt; &amp;#34;root&amp;#34;,&#xA;5. mode =&amp;gt; &amp;#34;0755&amp;#34;,&#xA;6. content =&amp;gt; template(&#xA;7. &amp;#34;headers/header-hash.erb&amp;#39;,&#xA;8. &amp;#34;xen/co-mmx-network-custom-vlan-bridges.erb&amp;#34;);&#xA;9. }&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;All worked nice however upon bootstrapping our Xen host the bridges stopped working .. running the network-custom-vlan-bridges script manually solved everything and created the appropriate bridges. But at boottime it didn&amp;rsquo;t..&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building Virtual Appliances</title>
+      <link>https://krisbuytaert.github.io/blog/building-virtual-appliances/</link>
+      <pubDate>Thu, 27 May 2010 10:03:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/building-virtual-appliances/</guid>
+      <description>&lt;p&gt;Johan from &lt;a href=&#34;http://sizingservers.be/&#34;&gt;Sizing Servers&lt;/a&gt; asked me if I could talk about my experiences on building (virtual) appliances at their Advanced Virtualization and Hybrid Cloud seminar . Off course I said yes ..&lt;/p&gt;&#xA;&lt;p&gt;Slides are below &amp;hellip; Enjoy ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/building-appliances&#34; title=&#34;Building appliances&#34;&gt;Building appliances&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Disabling DHCP on a LibVirt setup</title>
+      <link>https://krisbuytaert.github.io/blog/disabling-dhcp-libvirt-setup/</link>
+      <pubDate>Fri, 04 Dec 2009 20:43:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/disabling-dhcp-libvirt-setup/</guid>
+      <description>&lt;p&gt;So you have this libvirt setup and you want to have a dhcp server on the virtual machines you are playing with , or you want to have all static IP&amp;rsquo;s.&lt;/p&gt;&#xA;&lt;p&gt;Libvirt uses dnsmasq to provide dhcp services etc and when you generate a config from the gui it will look like\&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. &amp;lt;network&amp;gt;&#xA;2. &amp;lt;name&amp;gt;piponet&amp;lt;/name&amp;gt;&#xA;3. &amp;lt;uuid&amp;gt;e87d3bf1-a2e7-96ca-e131-7ae51ac033f9&amp;lt;/uuid&amp;gt;&#xA;4. &amp;lt;bridge name=&amp;#39;virbr2&amp;#39; stp=&amp;#39;on&amp;#39; delay=&amp;#39;0&amp;#39; /&amp;gt;&#xA;5. &amp;lt;ip address=&amp;#39;192.168.100.1&amp;#39; netmask=&amp;#39;255.255.255.0&amp;#39;&amp;gt;&#xA;6. &amp;lt;dhcp&amp;gt;&#xA;7. &amp;lt;range start=&amp;#39;192.168.100.128&amp;#39; end=&amp;#39;192.168.100.254&amp;#39; /&amp;gt;&#xA;8. &amp;lt;/dhcp&amp;gt;&#xA;9. &amp;lt;/ip&amp;gt;&#xA;10. &amp;lt;/network&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&#xA;If you fully remove the dhcp section, then restart libvirt you&amp;rsquo;ll notice dnsmasq running with no dhcpd on that subnet so you&amp;rsquo;ll have full control again :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Got Interviewed</title>
+      <link>https://krisbuytaert.github.io/blog/got-interviewed/</link>
+      <pubDate>Wed, 18 Nov 2009 22:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/got-interviewed/</guid>
+      <description>&lt;p&gt;by &lt;a href=&#34;http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/&#34;&gt;@botchagalupe&lt;/a&gt;&lt;br&gt;&#xA;on Virtualization, Open Source tools and DNS Problems&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>KVM or Xen</title>
+      <link>https://krisbuytaert.github.io/blog/kvm-or-xen/</link>
+      <pubDate>Mon, 06 Jul 2009 22:47:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/kvm-or-xen/</guid>
+      <description>&lt;p&gt;Over at &lt;a href=&#34;http://virtualization.com/guest-posts/2009/07/06/rhel-will-5.4-features-kvm/&#34;&gt;Virtualization.com&lt;/a&gt; I asked the crowd what they planned to do when RedHat plans on finally migrating from Xen to KVM .. you can have your say too . :&lt;/p&gt;&#xA;&lt;p&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://answers.polldaddy.com/poll/1761790/&#34;&gt;Will you migrate from Xen to KVM&lt;/a&gt;(&lt;a href=&#34;http://www.polldaddy.com/&#34;&gt;poll&lt;/a&gt;)\&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Upcoming Training opportunities</title>
+      <link>https://krisbuytaert.github.io/blog/upcoming-training-opportunities/</link>
+      <pubDate>Thu, 16 Apr 2009 23:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/upcoming-training-opportunities/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.kuleuven-kortrijk.be/nl/PAV/Opleidingsaanbod/Meerdaagse/Opleiding/?code=1534&#34;&gt;Next month&lt;/a&gt; I`ll be teaching a course on Virtualization at the KULAK.&lt;/p&gt;&#xA;&lt;p&gt;Apart from my training there is also a &lt;a href=&#34;http://reductivelabs.com/training/&#34;&gt;Puppet training&lt;/a&gt; planned in Belgium.&lt;/p&gt;&#xA;&lt;p&gt;As I assisted Luke in finding a location for the training I tought it might be a good idea to have a Puppet Users meetup while some people are already gathering in Leuven&lt;/p&gt;&#xA;&lt;p&gt;Current plan is to meet up somewhere in Leuven on the evening of the 25th , more announcements later ..&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CloudCamp Antwerp</title>
+      <link>https://krisbuytaert.github.io/blog/cloudcamp-antwerp-0/</link>
+      <pubDate>Fri, 10 Apr 2009 21:21:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/cloudcamp-antwerp-0/</guid>
+      <description>&lt;p&gt;So yesterday a 100+ crowd met in the Antwerp Zoo.&lt;br&gt;&#xA;I heard different comments from that crowd&amp;hellip; some of them liked the event, good networking, interresting topics , a broad overview, meeting new vendors active in the Cloud, others of them didn&amp;rsquo;t .. it wasn&amp;rsquo;t a real camp , just some vendors pitching, they didn&amp;rsquo;t hear any new stuff , or we didn&amp;rsquo;t touch the real stuff.&lt;/p&gt;&#xA;&lt;p&gt;So different opinions from different expectations&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>We are rebranding !</title>
+      <link>https://krisbuytaert.github.io/blog/we-are-rebranding/</link>
+      <pubDate>Wed, 01 Apr 2009 01:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/we-are-rebranding/</guid>
+      <description>&lt;p&gt;So the cat is out of the bag,&lt;/p&gt;&#xA;&lt;p&gt;As of today Inuits is rebranding to Pinuits,&lt;br&gt;&#xA;The press release is &lt;a href=&#34;http://www.pinuits.be/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ve had good feedback on the new name so far. Different people told me the name matched better to what we are doing . Actually my wife thinks our new name is much better as at least the Pin in Pinuits refers to our favourite Tux again ..&lt;/p&gt;&#xA;&lt;p&gt;Finding an appropriate name for an Open Source consultancy company, with focus on Linux, Open Source Monitoring, MySQL, Open Source Virtualization , Large Scale Deployments , High Availability and Drupal, isn&amp;rsquo;t easy .. you want to show both community involvement and professionality. And find a domain that&amp;rsquo;s still available.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Slides updated</title>
+      <link>https://krisbuytaert.github.io/blog/slides-updated/</link>
+      <pubDate>Tue, 31 Mar 2009 19:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/slides-updated/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve updated the slidedeck of my Open Source Virtualization talk, with the 2009 edition as I gave it last week at the UKUUG Spring conference.&lt;/p&gt;&#xA;&lt;p&gt;Talk is up, both on &lt;a href=&#34;http://www.krisbuytaert.be/presentations/OSSVirt2009.odp&#34;&gt;my page&lt;/a&gt; as on &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/open-source-virtualization&#34;&gt;SlideShare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/open-source-virtualization?type=powerpoint&#34; title=&#34;open source virtualization&#34;&gt;open source virtualization&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Tom also updated our set of Open Source Monitoring Tool Shootout slides .&lt;br&gt;&#xA;They are also on &lt;a href=&#34;http://www.slideshare.net/tomdc/open-source-monitoring-tools-shootout&#34;&gt;SlideShare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/tomdc/open-source-monitoring-tools-shootout?type=presentation&#34; title=&#34;Open Source Monitoring Tools Shootout&#34;&gt;Open Source Monitoring Tools Shootout&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/tomdc&#34;&gt;tomdc&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UKUUG Spring 2009 Conference , here we come</title>
+      <link>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-here-we-come/</link>
+      <pubDate>Tue, 24 Mar 2009 22:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-here-we-come/</guid>
+      <description>&lt;p&gt;I`ll be heading to bed early today as tomorrow will be a busy day. I have to get up early to catch my flight to London where&lt;br&gt;&#xA;&lt;a href=&#34;http://tdc.blogsite.org/index.php&#34;&gt;Tom&lt;/a&gt; and I will be representing Inuits at the UKUUG 2009 Spring Conference.&lt;/p&gt;&#xA;&lt;p&gt;Tom will be giving an updated version of our &lt;a href=&#34;http://www.ukuug.org/events/spring2009/programme/systems-monitoring-shootout.shtml&#34;&gt;Open Source Monitoring Shootout&lt;/a&gt; talk again, I`ll probably be skipping a couple of his slides as right after that &lt;a href=&#34;http://blog.zenoss.com/2009/03/23/jane-curry-zenoss-master/&#34;&gt;Jane Curry&lt;/a&gt; will be covering Zenoss in depth and on thursday there will be an OpenNMS talk too.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

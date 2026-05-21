@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MythTV recover Lost&#43;Found | Everything is a Freaking DNS problem</title>
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
+</head>
+<body>
+  <header>
+    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <p class="tagline">Devops Needs Sushi</p>
+  </header>
+  <div class="layout">
+    <main>
+      
+<article>
+  <h1>MythTV recover Lost&#43;Found</h1>
+  <p class="meta">
+    <time datetime="2008-12-19">December 19, 2008</time>
+    
+      &middot;
+      <a href="https://krisbuytaert.github.io/blog/tags/crash/">Crash</a> <a href="https://krisbuytaert.github.io/blog/tags/lost&#43;found/">Lost&#43;found</a> <a href="https://krisbuytaert.github.io/blog/tags/mysql/">Mysql</a> <a href="https://krisbuytaert.github.io/blog/tags/mythtv/">Mythtv</a> <a href="https://krisbuytaert.github.io/blog/tags/opensource/">Opensource</a> <a href="https://krisbuytaert.github.io/blog/tags/recovery/">Recovery</a> <a href="https://krisbuytaert.github.io/blog/tags/scripting/">Scripting</a> 
+    
+  </p>
+  <div class="post-body">
+    <p>My MythTV store lives on an LVM volume that is spread over 2 disks, one of them is an external USB disk. So the cleaninglady seems to have touched a cable and after coming back from holiday I had a read-only filesystem that afer a remount had about 350Gb in lost+found with irrelevant filenames.</p>
+<pre tabindex="0"><code>1. total 337407844
+2. drwx------   2 tv   tv         4096 Dec 17 22:47 .
+3. drwxrwxrwx  15 tv   tv         4096 Dec 17 22:44 ..
+4. -rw-r--r--   1 root root  423343556 Dec 14 07:10 I303109.RCN
+5. -rw-r--r--   1 root root 2990538924 Dec 13 19:05 I303107.RCN
+6. -rw-r--r--   1 root root 1023691768 Dec 13 08:10 I319494.RCN
+7. -rw-r--r--   1 root root 1023622348 Dec 13 07:45 I327684.RCN
+8. -rw-r--r--   1 root root  423735892 Dec 13 07:10 I327682.RCN
+9. -rw-r--r--   1 root root  466749476 Dec 12 15:43 I135169.RCN
+10. -rw-r--r--   1 root root 1023314212 Dec 12 07:45 I098309.RCN
+11. -rw-r--r--   1 root root 1022459928 Dec 12 06:35 I098306.RCN
+12. -rw-r--r--   1 root root 2458822948 Dec  9 22:50 I139264.RCN
+13. -rw-r--r--   1 root root 2129683736 Dec  9 21:30 I323592.RCN
+14. -rw-r--r--   1 root root  466735992 Dec  9 15:43 I323590.RCN
+15. -rw-r--r--   1 root root 1022747296 Dec  9 07:45 I323588.RCN
+</code></pre><p>Obviously I wanted to recover my data.<br>
+So I had files with a wrong filename on a filesystem but with a correct timestamp and probably the right filesize.<br>
+Luckily the mythconverg.recorded table also gives me lots of information about the files that mythtv had originally stored the content in.</p>
+<pre tabindex="0"><code>1. mysql&gt; select basename,lastmodified,filesize from recorded limit 10;
+2. +---------------------------+---------------------+------------+
+3. | basename                  | lastmodified        | filesize   |
+4. +---------------------------+---------------------+------------+
+5. | 1003_20081003230000.mpg   | 2008-10-07 21:53:49 | 6197765380 |
+6. | 1093_20080320232600.mpg   | 2008-03-20 23:25:31 |          0 |
+7. | 1075_20060301191300.mpg   | 2006-03-24 22:48:42 |          0 |
+8. | 1002_20080729160500.mpg   | 2008-07-29 19:20:30 | 3679223940 |
+9. | 592251_20081217072000.mpg | 2008-12-17 07:20:02 |          0 |
+10. | 1002_20080911143500.mpg   | 2008-09-11 16:41:44 | 3486101572 |
+11. | 1002_20080923143500.mpg   | 2008-09-23 16:49:41 | 3679789684 |
+12. | 1033_20081110153500.mpg   | 2008-11-10 15:47:12 |  338877000 |
+13. | 1002_20080922144000.mpg   | 2008-09-22 16:47:38 | 3485505140 |
+14. | 1002_20080721160500.mpg   | 2008-07-23 20:52:16 | 3679559444 |
+15. +---------------------------+---------------------+------------+
+16. 10 rows in set (0.00 sec)
+</code></pre><p>My first idea was to use <a href="http://code.google.com/p/mysql-filesystem-engine/">the mysql filesystem engine</a> to query the filesytem and write me a simple query however I totally failed to build that engine :(<br>
+(Anyone else successfull here ? )</p>
+<p>So I created a temp table</p>
+<pre tabindex="0"><code>1. CREATE TABLE `temp2` (
+2. `size` bigint(20) default NULL,
+3. `oldname` varchar(255) default NULL,
+4. `lastmod` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
+5. ) ENGINE=MyISAM DEFAULT CHARSET=latin1
+</code></pre><p>And parsed the content of my lost+found directory into a set of insert statements\</p>
+<pre tabindex="0"><code>1. ls -l --time-style=long-iso | awk  -F&#39; &#39; &#39;{print &#34;insert into temp2 values (&#34;  $5 &#34;,\&#34;&#34;  $8&#34;\&#34;,\&#34;&#34;$6&#34; &#34;$7&#34;\&#34;);&#34;}&#39;
+</code></pre><p>From there is a matter of grabbing the matching filenames</p>
+<pre tabindex="0"><code>1. echo &#34;select \&#34;mv \&#34; , oldname, basename from recorded, temp2 where temp2.size= recorded.filesize ;&#34; | mysql mythconverg
+</code></pre><p>And moving the actual files &hellip; now all is back to normal ..</p>
+
+  </div>
+</article>
+<nav class="post-nav">
+  <a href="/blog/mysql-51-fedora-10/">&#8592; MySQL 5.1 on Fedora 10</a>
+  <a href="/blog/planet-grepbe-meetup/">Planet Grep.be meetup &#8594;</a>
+</nav>
+
+    </main>
+    <aside class="sidebar">
+
+  <section class="bio">
+    <h3>About Kris Buytaert</h3>
+    <p>Kris Buytaert is a long time Linux and Open Source Consultant and engineering leader. 
+    He's one of the instigators of the devops movement. 
+
+    <p>He frequently speaks at and organizes international conferences, and has written
+    about the same subjects in different books, papers and articles.</p>
+  </section>
+
+  <section class="nav-links">
+    <h3>Links</h3>
+    <ul>
+      <li><a href="https://www.krisbuytaert.be/">Main page</a></li>
+      <li><a href="http://www.linkedin.com/in/krisbuytaert">My LinkedIn Profile</a>
+      <li><a href="http://github.com/KrisBuytaert/">Kris on Github</a>
+      <li><a href="http://codeberg.org/KrisBuytaert/">Kris on Codeberg</a>
+      <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a>
+
+
+      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+
+
+      <li><a href="https://devopsdays.org">devopsdays.org</a></li>
+      <li><a href="https://cfgmgmtcamp.org">cfgmgmtcamp.org</a></li>
+      <li><a href="https://belibre.be">belibre.be</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Recent Posts</h3>
+    <ul>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/docker-and-volumes-hell/">Docker and volumes hell</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/its-just-rubber-some-air-it/">It&#39;s just rubber , with some air in it.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/">Lies, Damn Lies and Statistics, 2016 Edition</a></li>
+      
+    </ul>
+  </section>
+
+  
+  <section>
+    <h3>Tags</h3>
+    <ul class="tags">
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      <li><a href="https://krisbuytaert.github.io/tags/devops/">devops</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/drupal/">drupal</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/mysql/">mysql</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/puppet/">puppet</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/open-source/">open source</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/opensource/">opensource</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dnsproblem/">dnsproblem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/ha/">ha</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fosdem/">fosdem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/chef/">chef</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dns/">dns</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fedora/">fedora</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/virtualization/">virtualization</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/xen/">xen</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/centos/">centos</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/conference/">conference</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/monitoringsucks/">monitoringsucks</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/rpm/">rpm</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/kvm/">kvm</a></li>
+      
+    </ul>
+  </section>
+  
+
+</aside>
+
+  </div>
+  <footer>
+    <p>No really .. everything is a funky DNS problem, you'll realise I'm right pretty soon!</p>
+  </footer>
+</body>
+</html>

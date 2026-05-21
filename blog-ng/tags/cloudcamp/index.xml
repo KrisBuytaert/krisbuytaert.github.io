@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloudcamp on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/cloudcamp/</link>
+    <description>Recent content in Cloudcamp on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Mar 2009 22:28:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/cloudcamp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CloudCamp Antwerp</title>
+      <link>https://krisbuytaert.github.io/blog/cloudcamp-antwerp/</link>
+      <pubDate>Tue, 17 Mar 2009 22:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/cloudcamp-antwerp/</guid>
+      <description>&lt;p&gt;After CloudCamp London , having approx 5-600 visitors according to certain &lt;a href=&#34;http://www.cloudave.com/link/cloudcamp-gets-big-in-london&#34;&gt;blog posts&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;One of the next up is line is &lt;a href=&#34;http://cloudcamp-antwerp-09.eventbrite.com/&#34;&gt;CloudCamp Antwerp&lt;/a&gt; , I`m pretty sure there won&amp;rsquo;t be 500-600 showing up at the Zoo to watch the penguins , great location &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;For those of you travelling from abroad, note that London City Airport is less than an hour from Antwerp , so no excuses there.. that and we have much better beer !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Defining Open Source</title>
+      <link>https://krisbuytaert.github.io/blog/defining-open-source/</link>
+      <pubDate>Sun, 02 Nov 2008 20:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/defining-open-source/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://bbbart.internationalgeneration.be/archives/2008/11/02/index.html#e2008-11-02T00_30_19.txt&#34;&gt;Bart&lt;/a&gt; wonders why my definition of Open Source is.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://opensource.org/docs/osd&#34;&gt;The Open Source Definition&lt;/a&gt; pretty much defines what Open Source is to me.&lt;/p&gt;&#xA;&lt;p&gt;But it&amp;rsquo;s mostly because of that definition that you get a lot of other things for free.&lt;/p&gt;&#xA;&lt;p&gt;It gives you freedom to learn, to improve, it gives you an ecosystem in which you can solve problems rather than having to tell your customer that your hands are tied and you can&amp;rsquo;t help them&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

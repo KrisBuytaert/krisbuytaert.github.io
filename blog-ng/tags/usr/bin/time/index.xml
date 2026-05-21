@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>/Usr/Bin/Time on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags//usr/bin/time/</link>
+    <description>Recent content in /Usr/Bin/Time on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Aug 2008 20:13:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags//usr/bin/time/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Time vs Time</title>
+      <link>https://krisbuytaert.github.io/blog/time-vs-time/</link>
+      <pubDate>Fri, 22 Aug 2008 20:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/time-vs-time/</guid>
+      <description>&lt;p&gt;While playing with &lt;a href=&#34;http://dag.wieers.com/rpm/packages/unixbench/&#34;&gt;unixbench&lt;/a&gt; there was a small note that you need /usr/bin/time ,&lt;br&gt;&#xA;As my system by default didn&amp;rsquo;t have /usr/bin/time I assumed it was ok to modify the script and just let it run time . My First run came up with a 0 score.&lt;br&gt;&#xA;Bad idea .. so it seems you really meed /usr/bin/time which is in the time rpm.&lt;/p&gt;&#xA;&lt;p&gt;One day I`ll figure out the small differences :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

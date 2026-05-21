@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crm on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/crm/</link>
+    <description>Recent content in Crm on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jul 2013 22:08:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/crm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using broken development frameworks , or why we don&#39;t use Zurmo</title>
+      <link>https://krisbuytaert.github.io/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</link>
+      <pubDate>Wed, 10 Jul 2013 22:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</guid>
+      <description>&lt;p&gt;People often wonder why DBA&amp;rsquo;s used to hate developers, and with DBA&amp;rsquo;s also the System Engineers,&lt;br&gt;&#xA;(note that I just expanded devops by adding dba&amp;rsquo;s to the picture..)&lt;/p&gt;&#xA;&lt;p&gt;So let me tell you a story ..&lt;/p&gt;&#xA;&lt;p&gt;A couple of weeks ago one of our customers wanted to start experimenting with a new type of CRM. A gamified CRM.&lt;br&gt;&#xA;Zurmo &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;So we set this thing up in a dev environment and started playing with it , while at first it looks nice ..&lt;br&gt;&#xA;the application actually felt pretty slow.. however given that is a low resource development environment we looked no further.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why learn to type ?</title>
+      <link>https://krisbuytaert.github.io/blog/why-learn-type/</link>
+      <pubDate>Fri, 09 Oct 2009 12:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/why-learn-type/</guid>
+      <description>&lt;p&gt;When your machine knows what you mean ..&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. [s3p-root@XMS-1 tomcat6]# crm configure&#xA;2. crm(live)configure# bye&#xA;3. [s3p-root@XMS-1 tomcat6]# crm confiure&#xA;4. crm(live)configure# bye&#xA;5. [s3p-root@XMS-1 tomcat6]# crm confiture&#xA;6. crm(live)configure# bye&#xA;7. [s3p-root@XMS-1 tomcat6]#&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I&amp;rsquo;d better\&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. apt-get install coffee&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

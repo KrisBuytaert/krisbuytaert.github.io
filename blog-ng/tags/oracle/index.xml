@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oracle on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/oracle/</link>
+    <description>Recent content in Oracle on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Dec 2009 22:30:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Option D</title>
+      <link>https://krisbuytaert.github.io/blog/option-d/</link>
+      <pubDate>Mon, 14 Dec 2009 22:30:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/option-d/</guid>
+      <description>&lt;p&gt;Lots of people writing about Snorkle again today ,Monty &lt;a href=&#34;http://monty-says.blogspot.com/2009/12/help-saving-mysql.html&#34;&gt;Says, help saving MySQL&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;He gives us different options, a , b or c .. but I , and some others, want an option d&lt;/p&gt;&#xA;&lt;p&gt;No I don&amp;rsquo;t trust Oracle, it&amp;rsquo;s not like they have been a very good Open Source Citizen, yes they contribute to the kernel and other projects but my feeling says it&amp;rsquo;s only because they have to (Kernel, Xen and others ) not because they Want to (thinking about Unfakable etc) , if they would really want to they probably would work with the CentOS community more etc, and as Monty mentions their InnoDB track record could be better.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dear Oracle,</title>
+      <link>https://krisbuytaert.github.io/blog/dear-oracle/</link>
+      <pubDate>Thu, 30 Apr 2009 23:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/dear-oracle/</guid>
+      <description>&lt;p&gt;A couple of weeks ago I wrote a post titled &lt;a href=&#34;http://www.krisbuytaert.be/blog/dear-ibm&#34;&gt;Dear IBM&lt;/a&gt; , I was too late .. I was on holliday last week when people started sending me text messages , such as .. &amp;ldquo;Game Over MySQL , Long live Ingress&amp;rdquo; or &amp;ldquo;No Eclipse for IBM&amp;rdquo;, etc &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;I had ideas regarding the future of certain Sun products at IBM, now the game has changed .. it&amp;rsquo;ss how they will live on at Oracle :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

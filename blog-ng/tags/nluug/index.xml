@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nluug on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/nluug/</link>
+    <description>Recent content in Nluug on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Oct 2010 21:11:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/nluug/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Busy weeks coming up ..</title>
+      <link>https://krisbuytaert.github.io/blog/busy-weeks-coming/</link>
+      <pubDate>Sat, 02 Oct 2010 21:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/busy-weeks-coming/</guid>
+      <description>&lt;p&gt;The next 2 months promise to be the more busier of the year for me .&lt;/p&gt;&#xA;&lt;p&gt;On october 11th I`ll be giving a presentation ab out Linux and High Availability at the &lt;a href=&#34;http://eduserv.kahosl.be/celiak/2010/09/22/techmonday-1-11-oktober/&#34;&gt;KAHO Sint Lieven in Gent&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Just 2 days later I`ll be leaving to Hamburg for the next European version of &lt;a href=&#34;http://www.devopsdays.org/&#34;&gt;DevopsDays 2010&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Between Devopsdays Hamburg and Leaving for Malaga I`ll visit &lt;a href=&#34;http://www.cloudcamp.org/ghent&#34;&gt;CloudCamp Ghent&lt;/a&gt; om October 20th.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll be in Malaga for the &lt;a href=&#34;http://www.opensourceworldconference.com/malaga10/&#34;&gt;Software Libre Open Source World Conference&lt;/a&gt; which will take place on 27 and 28 october&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Call For Abstracts : NLUUG Fall Conference on Security</title>
+      <link>https://krisbuytaert.github.io/blog/call-abstracts-nluug-fall-conference-security/</link>
+      <pubDate>Tue, 01 Jun 2010 19:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/call-abstracts-nluug-fall-conference-security/</guid>
+      <description>&lt;p&gt;For all the security experts : the NLUUG has published it&amp;rsquo;s &lt;a href=&#34;http://www.nluug.nl/activiteiten/events/nj10/cfp-en.html&#34;&gt;Call For Abstracts&lt;/a&gt; for it&amp;rsquo;s Fall conference.. as you might have guessed the topic is Security, we welcome all abstracts tackling security in a broad sense.&lt;/p&gt;&#xA;&lt;p&gt;Possible topics include:&lt;/p&gt;&#xA;&lt;p&gt;* cloud security&lt;br&gt;&#xA;* online privacy&lt;br&gt;&#xA;* rfid hacking&lt;br&gt;&#xA;* secure programming&lt;br&gt;&#xA;* programma-analysis-tools&lt;br&gt;&#xA;* web services security&lt;br&gt;&#xA;* web browser security&lt;br&gt;&#xA;* embedded hardware hacking&lt;br&gt;&#xA;* incident response and forensics&lt;br&gt;&#xA;* malware and rootkits&lt;br&gt;&#xA;* responsible disclosure&lt;br&gt;&#xA;* legal response&lt;br&gt;&#xA;* fighting spam&lt;br&gt;&#xA;* patch policies&lt;br&gt;&#xA;* identity management&lt;br&gt;&#xA;* central point of administration&lt;br&gt;&#xA;* DNSsec&lt;br&gt;&#xA;* VPN based WANs&lt;br&gt;&#xA;* etc.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NLUUG Spring Conference 2010</title>
+      <link>https://krisbuytaert.github.io/blog/nluug-spring-conference-2010/</link>
+      <pubDate>Tue, 11 May 2010 22:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/nluug-spring-conference-2010/</guid>
+      <description>&lt;p&gt;Last week the NLUUG Spring Conference was held in Ede, this years topic was System Administration in general.. which means there was a pretty wide range of talks &amp;hellip; &lt;a href=&#34;http://www.slideshare.net/tomdc/monitoring-shootout-loadays&#34;&gt;some&lt;/a&gt; of the talks were extremely interesting and gathered a lot of people , others really shouldn&amp;rsquo;t have been put in the main room.. Frequenly organising them myselve it&amp;rsquo;s always a difficult choice for a conference organiser.&lt;/p&gt;&#xA;&lt;p&gt;Must say this was one of my better talks .. it all went smooth and nicely fit within time. Probably the promise of drinks and food after my talk helped some.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Upcoming Conference Talks</title>
+      <link>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</link>
+      <pubDate>Mon, 01 Feb 2010 22:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</guid>
+      <description>&lt;p&gt;I know the biggest part of my fanclub already booked tickets for my upcoming presentations, but the other 2 might want to check their calendars to see if they aren&amp;rsquo;t missing out on the good stuff :)&lt;/p&gt;&#xA;&lt;p&gt;Next Sunday I`ll giving a shortish overview of &lt;a href=&#34;http://www.fosdem.org/2010/schedule/events/mysql_ha&#34;&gt;MySQL HA alternatives&lt;/a&gt; in the MySQL and Friends devroom at Fosdem.&lt;/p&gt;&#xA;&lt;p&gt;March will bring me to Manchester again for the &lt;a href=&#34;http://spring2010.ukuug.org/Timetable&#34;&gt;UKUUG Spring conference&lt;/a&gt; where I`ll be giving a longer version of that presentation with a strong focus on integrating with PaceMaker, and automating the whole boostrap procedure of a HA setup.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bits and Bytes .. on a disk</title>
+      <link>https://krisbuytaert.github.io/blog/bits-and-bytes-disk/</link>
+      <pubDate>Sat, 18 Apr 2009 09:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/bits-and-bytes-disk/</guid>
+      <description>&lt;p&gt;Armijn asked me to spread the news about the upcoming NLUUG Voorjaarsconference that will as usually take place in EDE.&lt;/p&gt;&#xA;&lt;p&gt;&lt;br&gt;&#xA;Every bit counts. From a single byte to billions of images, from one line of text to a gigantic tangled semantic web of documents, from clay tablets to 3D holographic memory, storage and the means to organize storage have always been important to humanity. Never underestimate the bandwidth of a station wagon full of tapes, it was said; a sailboat crossing the Atlantic still manages rates of a little over 1GB/s end-to-end.\&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

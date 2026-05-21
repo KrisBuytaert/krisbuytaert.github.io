@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Results on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/results/</link>
+    <description>Recent content in Results on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Mar 2012 22:51:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/results/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Devops and Drupal, the Survey, the Results</title>
+      <link>https://krisbuytaert.github.io/blog/devops-and-drupal-survey-results/</link>
+      <pubDate>Thu, 08 Mar 2012 22:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/devops-and-drupal-survey-results/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve just finished presenting the results of our &lt;a href=&#34;http://surveys.inuits.eu/limesurvey/index.php?sid=81259&#34;&gt;Drupal and Devops&lt;/a&gt; survey at the Belgian Drupal User Group meetup at &lt;a href=&#34;http://inuits.eu/&#34;&gt;our office&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;and I&amp;rsquo;ve uploaded the slides to slideshare for the rest of the world to &lt;del&gt;cry&lt;/del&gt; read.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/drupal-and-devops-the-survey-results&#34; title=&#34;Drupal and Devops , the Survey Results&#34;&gt;Drupal and Devops , the Survey Results&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Honestly I was hoping for the audience to prove me wrong and I was expecting all of them to claim they were doing automated and repeatable deployments.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

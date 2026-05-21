@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rss Feed on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/rss-feed/</link>
+    <description>Recent content in Rss Feed on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Nov 2008 21:11:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/rss-feed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Everything is a Funky DNS Problem</title>
+      <link>https://krisbuytaert.github.io/blog/everything-funky-dns-problem/</link>
+      <pubDate>Sun, 02 Nov 2008 21:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/everything-funky-dns-problem/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.sid3windr.be/&#34;&gt;Tom&lt;/a&gt; dropped me a mail today letting me know that all the links to my RSS feed were broken.&lt;br&gt;&#xA;I tested, and tested again and failed to reproduce the problem.&lt;/p&gt;&#xA;&lt;p&gt;The only things I had changed recently where the administrator menu module and Pathauto module, apart from that I had not made any changes. So I tried uninstalling the modules to see if that helped, it didn&amp;rsquo;t. There was no difference between the 2 setups.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

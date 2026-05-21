@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eiafdp on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/eiafdp/</link>
+    <description>Recent content in Eiafdp on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jun 2010 21:32:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/eiafdp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FAQ:</title>
+      <link>https://krisbuytaert.github.io/blog/faq/</link>
+      <pubDate>Mon, 14 Jun 2010 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/faq/</guid>
+      <description>&lt;p&gt;Q: Is &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; your Brother ?&lt;br&gt;&#xA;A: No he isn&amp;rsquo;t.&lt;/p&gt;&#xA;&lt;p&gt;Q: Are you related to &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; ?&lt;br&gt;&#xA;A: No we aren&amp;rsquo;t (as far as we know)&lt;/p&gt;&#xA;&lt;p&gt;Q: Do you know &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; ?&lt;br&gt;&#xA;A: Yeah .. I&amp;rsquo;ve known him since before he started his work on Drupal, now can you stop asking about Dries and refocus on me ?&lt;/p&gt;&#xA;&lt;p&gt;Q: Are you related to Thomas Buytaert&lt;br&gt;&#xA;A: No.&lt;/p&gt;&#xA;&lt;p&gt;Q: Why are you sdog on irc ?&lt;br&gt;&#xA;A: Back in my DemoScene days my nick was Sleeping Dog , whch was too long for a unix account name , sleeping didn&amp;rsquo;t feel like a good choice and neither did dog, so the abbrev became sdog&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Today everything could have been  a freaking dnssec problem</title>
+      <link>https://krisbuytaert.github.io/blog/today-everything-could-have-been-freaking-dnssec-problem/</link>
+      <pubDate>Wed, 05 May 2010 19:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/today-everything-could-have-been-freaking-dnssec-problem/</guid>
+      <description>&lt;p&gt;You might have read about it .. al over the internets. but today a big step for the implementation of global DnsSec implementation is being made .&lt;/p&gt;&#xA;&lt;p&gt;You might want to &lt;a href=&#34;http://etherealmind.com/dnssec-and-why-the-internet-probably-wont-break-today/&#34;&gt;read up&lt;/a&gt; about the impact.&lt;/p&gt;&#xA;&lt;p&gt;And &lt;a href=&#34;https://www.dns-oarc.net/oarc/services/replysizetest&#34;&gt;test here&lt;/a&gt; if you are unsure about your situation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Starting a Collection</title>
+      <link>https://krisbuytaert.github.io/blog/starting-collection/</link>
+      <pubDate>Fri, 02 Apr 2010 19:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/starting-collection/</guid>
+      <description>&lt;p&gt;Apparently I started a collection ..&lt;br&gt;&#xA;Of DNS books signed by their author &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/AlternativeDNS.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;As already mentioned on twitter, &lt;a href=&#34;http://blog.fupps.com/&#34;&gt;Jan-Piet Mens&lt;/a&gt; kindly gave me a signed copy of his alternative DNS Servers book, last week at the UKUUG 2010 Spring Conference&lt;/p&gt;&#xA;&lt;p&gt;When I got that book I didn&amp;rsquo;t even know yet that this morning I was going to be at a seminar on DNS sec by &lt;a href=&#34;http://www.cricketondns.com/%22&#34;&gt;Cricket Liu&lt;/a&gt;&lt;br&gt;&#xA;and because of having registered so late for the event I certainly wasn&amp;rsquo;t expecting to get one of the books that were going to be handed out to the first 50 people that signed up &amp;hellip; but I was lucky ..&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IntoDns</title>
+      <link>https://krisbuytaert.github.io/blog/intodns/</link>
+      <pubDate>Fri, 15 Jan 2010 21:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/intodns/</guid>
+      <description>&lt;p&gt;So a couple of weeks ago I blogged about &lt;a href=&#34;http://www.krisbuytaert.be/blog/category/dnsknife&#34;&gt;DNS Knife&lt;/a&gt; late last year I ran into an even better tool.&lt;/p&gt;&#xA;&lt;p&gt;Enter &lt;a href=&#34;http://intodns.com/&#34;&gt;IntoDNS&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Apparently IntoDNS.com finds more issues like the zone file listing different nameservers from the ones you defined &amp;hellip;etc..&lt;/p&gt;&#xA;&lt;p&gt;So change your bookmarks, browse that page :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

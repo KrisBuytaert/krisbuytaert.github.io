@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ghent on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/ghent/</link>
+    <description>Recent content in Ghent on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Jun 2010 21:59:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/ghent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PuppetCamp Europe  2010</title>
+      <link>https://krisbuytaert.github.io/blog/puppetcamp-europe-2010/</link>
+      <pubDate>Tue, 01 Jun 2010 21:59:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/puppetcamp-europe-2010/</guid>
+      <description>&lt;p&gt;Last week was pretty heavy on conferences for me. On wednesday I had to give my &lt;a href=&#34;http://www.krisbuytaert.be/blog/building-virtual-apliances&#34;&gt;Building Virtual Appliances&lt;/a&gt; talk at the at the Sizing Server event on Advanced Virtualization and Hybrid Cloud Computing , but the most important part of the week was the first edition of Puppetcamp Europe.&lt;/p&gt;&#xA;&lt;p&gt;When the first ideas about PuppetCamp Europe started I asked Luke when and where it&amp;rsquo;d be held. He replied that I should know as I was supposed to organise it&amp;hellip; I thanked for the honour , he went on to ask &lt;a href=&#34;http://jedi.be/blog/&#34;&gt;Patrick&lt;/a&gt; , he accepted &amp;hellip; I hope I helped him out enough :) I even handed out a personal invitation to some of the most famous configuration mgmt people on this planet and &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; sponsored the event too&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

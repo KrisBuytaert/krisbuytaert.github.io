@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Views on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/views/</link>
+    <description>Recent content in Views on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Aug 2010 00:06:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/views/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mollom and Views</title>
+      <link>https://krisbuytaert.github.io/blog/mollom-and-views/</link>
+      <pubDate>Wed, 04 Aug 2010 00:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/mollom-and-views/</guid>
+      <description>&lt;p&gt;You might have noticed that this blog stopped accepting comments about a month ago.. well. stopped accepting is a big word.. I was still accepting comments, only they were never submitted to the database and after entering a comment to my blog people ended up on a white page.&lt;/p&gt;&#xA;&lt;p&gt;So upon returning from holliday I set out to debug the issue together with one of our Inuits Drupal geeks and quickly ran into the following error.\&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CCK &amp; Views, My First Experiences</title>
+      <link>https://krisbuytaert.github.io/blog/cck-views-my-first-experiences/</link>
+      <pubDate>Sun, 07 Dec 2008 23:44:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/cck-views-my-first-experiences/</guid>
+      <description>&lt;p&gt;and probably my last one ..&lt;/p&gt;&#xA;&lt;p&gt;I &lt;a href=&#34;http://www.krisbuytaert.be/blog/migrate-multisite-and-restyle&#34;&gt;mentioned&lt;/a&gt;  a couple of weeks ago that I was looking into a way of converting my static page with published papers, articles and presentations in a more dynamic page where I could create RSS feeds from the updates and feed them into &lt;a href=&#34;http://www.inuits.be/&#34;&gt;another site&lt;/a&gt; for everybody to use.&lt;/p&gt;&#xA;&lt;p&gt;Some people suggested that I&amp;rsquo;d have a look at CCK &amp;amp; Views for this. While up till now when creating an app I had usually written my own Drupal module with my own database schema and manually written SQL Queries. This indeed looked like the perfect opportunity to dig into the CCK and Views thingie.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

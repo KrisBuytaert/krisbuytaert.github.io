@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snmp on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/snmp/</link>
+    <description>Recent content in Snmp on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jan 2010 20:41:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/snmp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing Raid Monitoring on a 3Ware 3w-9xxx based controller.</title>
+      <link>https://krisbuytaert.github.io/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</link>
+      <pubDate>Thu, 28 Jan 2010 20:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</guid>
+      <description>&lt;p&gt;When you pull out a disk from your Raid setup it shows a warning in syslog&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: WARNING (0x04:0x0019): Drive&#xA;2. removed:port=1.&#xA;3. Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: ERROR (0x04:0x0002): Degraded&#xA;4. unit:unit=0, port=1.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;However if no one is looking at syslog that won&amp;rsquo;t really be helpfull.&lt;/p&gt;&#xA;&lt;p&gt;3Ware provides a tool from their site called tw_cli which can be used to manage&lt;br&gt;&#xA;the raid setup from the command line.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

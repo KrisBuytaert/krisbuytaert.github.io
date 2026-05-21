@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zarafasummercamp on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/zarafasummercamp/</link>
+    <description>Recent content in Zarafasummercamp on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Jun 2010 21:19:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/zarafasummercamp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A parallel universe</title>
+      <link>https://krisbuytaert.github.io/blog/parallel-universe/</link>
+      <pubDate>Mon, 21 Jun 2010 21:19:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/parallel-universe/</guid>
+      <description>&lt;p&gt;What happens when you mention &lt;a href=&#34;http://www.youtube.com/watch?v=ph6ZeEDnFmc&#34;&gt;Open Office and Firewall&lt;/a&gt; in once sentence, in public ?&lt;/p&gt;&#xA;&lt;p&gt;People start actually building &lt;a href=&#34;http://www.wzdftpd.net/blog/index.php?2010/06/16/46-le-pare-feu-openoffice&#34;&gt;it&lt;/a&gt; (French Article)&lt;/p&gt;&#xA;&lt;p&gt;Then add to that list that there&amp;rsquo;s also people out there that think that running MySQL over NFS is providing them High Availability, or that using DNS Round Robin will provide them a scalable setup,&lt;/p&gt;&#xA;&lt;p&gt;So yes .. apparently there is indeed a parallel universe out there.&lt;/p&gt;&#xA;&lt;p&gt;And no .. I don&amp;rsquo;t want to see &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/building-appliances&#34;&gt;Webmin&lt;/a&gt; in any Appliance .. that is a joke&amp;hellip;, or rather a rant ..&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configure on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/configure/</link>
+    <description>Recent content in Configure on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Oct 2009 12:06:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/configure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why learn to type ?</title>
+      <link>https://krisbuytaert.github.io/blog/why-learn-type/</link>
+      <pubDate>Fri, 09 Oct 2009 12:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/why-learn-type/</guid>
+      <description>&lt;p&gt;When your machine knows what you mean ..&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. [s3p-root@XMS-1 tomcat6]# crm configure&#xA;2. crm(live)configure# bye&#xA;3. [s3p-root@XMS-1 tomcat6]# crm confiure&#xA;4. crm(live)configure# bye&#xA;5. [s3p-root@XMS-1 tomcat6]# crm confiture&#xA;6. crm(live)configure# bye&#xA;7. [s3p-root@XMS-1 tomcat6]#&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I&amp;rsquo;d better\&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. apt-get install coffee&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

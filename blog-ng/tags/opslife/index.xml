@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Opslife on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/opslife/</link>
+    <description>Recent content in Opslife on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jul 2015 08:35:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/opslife/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The power of packaging software, package all the things</title>
+      <link>https://krisbuytaert.github.io/blog/power-packaging-software-package-all-things/</link>
+      <pubDate>Tue, 28 Jul 2015 08:35:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/power-packaging-software-package-all-things/</guid>
+      <description>&lt;p&gt;Software delivery is hard, plenty of people all over this planet are struggling with delivering software in their own controlled environment. They have invented great patterns that will build an artifact, then do some magic and the application is up and running.&lt;/p&gt;&#xA;&lt;p&gt;When talking about continuous delivery, people invariably discus their delivery pipeline and the different components that need to be in that pipeline.&lt;br&gt;&#xA;Often, the focus on getting the application deployed or upgraded from that pipeline is so strong that teams&lt;br&gt;&#xA;forget how to deploy their environment from scratch.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

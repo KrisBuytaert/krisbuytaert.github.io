@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ovf on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/ovf/</link>
+    <description>Recent content in Ovf on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Apr 2009 20:32:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/ovf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>To exaggerate , or not ...</title>
+      <link>https://krisbuytaert.github.io/blog/exaggerate-or-not/</link>
+      <pubDate>Mon, 27 Apr 2009 20:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/exaggerate-or-not/</guid>
+      <description>&lt;p&gt;Sometimes you have to &lt;a href=&#34;http://virtualization.com/guest-posts/2009/04/17/on-the-dangers-of-ovf/&#34;&gt;step out of line&lt;/a&gt; to get a message through just write a viewpoint down in totally black, ignoring the white parts.&lt;/p&gt;&#xA;&lt;p&gt;Earlier examples of these tricks were my rants on &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/713&#34;&gt;raid&lt;/a&gt; :)&lt;/p&gt;&#xA;&lt;p&gt;The original work title of the &lt;a href=&#34;http://www.virtualization.com/&#34;&gt;Virtualization.com&lt;/a&gt; post actually was &amp;ldquo;VMWare, the New Microsoft, they gave us point and click and no clue for the user&amp;rdquo; But I selfmoderated that down to a more gentle title, not attacking a vendor :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

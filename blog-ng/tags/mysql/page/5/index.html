@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mysql | Everything is a Freaking DNS problem</title>
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
+</head>
+<body>
+  <header>
+    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <p class="tagline">Devops Needs Sushi</p>
+  </header>
+  <div class="layout">
+    <main>
+      
+<h2>Mysql</h2>
+
+<article class="summary">
+  <h3><a href="/blog/mysql-51-fedora-10/">MySQL 5.1 on Fedora 10</a></h3>
+  <p class="meta"><time datetime="2008-12-19">December 19, 2008</time></p>
+  <p><p>So I wanted a fresh MySQL 5.1 release on my Fedora 10 box.<br>
+Fedora comes with a mysql 5.0 package and the MySQL community packages for 5.1 conflict with that in different ways. (to start with MySQL vs mysql)</p>
+<p>For some weird reason libmysqlclient (in mysql-libs) is required by redland, which is required by openoffice.org-core. I probaly never need the RDF funtionalities that redland provides me but I`m stuck with them anyhow.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/free-beer-planetgrepbe-meetup/">Free Beer, planet.grep.be Meetup</a></h3>
+  <p class="meta"><time datetime="2008-12-18">December 18, 2008</time></p>
+  <p><p><a href="http://planet.grep.be/">planet.grep.be</a> today has a lot of active open source users and contributors.<br>
+The weird thing is that we never meet apart from Fosdem.<br>
+Yes, we occasionally run into eachother at other events but there&rsquo;s not enough beer involved.</p>
+<p>I&rsquo;ve had different people ask me what and where are the Open Source gatherings in Belgium, and we must admit that apart<br>
+from Fosdem there isn&rsquo;t that much in our little country.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/cck-views-my-first-experiences/">CCK &amp; Views, My First Experiences</a></h3>
+  <p class="meta"><time datetime="2008-12-07">December 7, 2008</time></p>
+  <p><p>and probably my last one ..</p>
+<p>I <a href="http://www.krisbuytaert.be/blog/migrate-multisite-and-restyle">mentioned</a>  a couple of weeks ago that I was looking into a way of converting my static page with published papers, articles and presentations in a more dynamic page where I could create RSS feeds from the updates and feed them into <a href="http://www.inuits.be/">another site</a> for everybody to use.</p>
+<p>Some people suggested that I&rsquo;d have a look at CCK &amp; Views for this. While up till now when creating an app I had usually written my own Drupal module with my own database schema and manually written SQL Queries. This indeed looked like the perfect opportunity to dig into the CCK and Views thingie.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/eclipse-sun/">The Eclipse of Sun</a></h3>
+  <p class="meta"><time datetime="2008-12-06">December 6, 2008</time></p>
+  <p><p>If you&rsquo;ve been reading this blog for a while you&rsquo;ll know that<br>
+for the past decade I&rsquo;ve had a love-hate relation ship with Sun.</p>
+<p>Sun has done a lot of good things in their open source journey such as MySQL, openOffice , Virtualbox and opensourcing Java. But on the other hand they had troubles with creating really organic opensource.</p>
+<p>I&rsquo;ve always wondered why a company that bought StarDivision because it was cheaper than buying the MS Office license keeps wasting money on building it&rsquo;s own operating systems, albeit in a pretty open model, but with zero to no relevant community.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/tab-dump-drupal-performance/">Tab Dump , Drupal Performance</a></h3>
+  <p class="meta"><time datetime="2008-12-01">December 1, 2008</time></p>
+  <p><p>Have to close some tabs .. what more can I say ..</p>
+<p>2 interresting articles about Drupal and MySQL performance tuning</p>
+<p><a href="http://marksitblog.blogspot.com/2008/11/improving-drupal-performance-part-iii.html">here</a> and <a href="http://www.pronovix.com/blog/my-favorite-drupal-performance-hacks">here</a></p>
+<p>Enjoy</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/do-we-want-open-source-mysql-monitoring-tool/">Do we want an Open Source MySQL Monitoring tool  ?</a></h3>
+  <p class="meta"><time datetime="2008-11-18">November 18, 2008</time></p>
+  <p><p><a href="http://themattreid.com/wordpress/?p=77">Matt Reid</a> wants to know what we want in an Open Source MySQL monitoring solution ?</p>
+<p>He is working on the second incarnation of Monolith and wants input from the MySQL community.</p>
+<p>Now for me the bigger question is if we want an isolated tool that runs stand alone, or a tool which we can integrate it in something we already have.</p>
+<p>To me there is a difference between a tool that I want to use to debug my environment, such as Mytop or MySQL Activity Report, in that case I need some tool that quickly installs with little dependencies and little impact.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/want-be-social-network/">The Want to be Social Network</a></h3>
+  <p class="meta"><time datetime="2008-11-01">November 1, 2008</time></p>
+  <p><p><a href="http://blogs.mysql.com/kaj/2008/10/31/dopplr-joining-the-social-network-for-travellers/">Kaj</a> wrote about using <a href="http://www.dopplr.com/traveller/KrisBuytaert">Dopplr</a> to keep track of where colegues and friends are traveling and finding out about accidental meetups. (I even use it to track where one of the Inuits collegues work plans)<br>
+Now I have never met <a href="http://datacharmer.blogspot.com/">Giuseppe</a> , but we shared slides before so I&rsquo;d love to meet him one day .. connecting to him via Dopplr gives me that opportunity .. who knows one day Dopplr will tell me we have matching travel schedules.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/mysql-and-drbd-often-say-no/">MySQL and DRBD, Often say NO :)</a></h3>
+  <p class="meta"><time datetime="2008-04-28">April 28, 2008</time></p>
+  <p><p><a href="http://fghaas.wordpress.com/2008/04/27/drbd-and-mysql-just-say-yes/">Florian</a> is replying to <a href="http://www.jebriggs.com/blog/mysql/drbd-and-mysql-just-say-no.html">James</a> on the subject of using DRBD for MySQL HA. A discussion started earlier <a href="http://ebergen.net/wordpress/2007/04/02/drbd-in-the-real-world/">by Eric</a> Florian is refuting most of the arguments that James has against using MySQL and DRBD together.</p>
+<p>I`m also saying NO to MySQL and DRBD in most of the cases.. but not for any of the reasons James mentions.</p>
+<p>I must say upfront I love DRBD and I have been using it in production for a long time but not for MySQL HA.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/scaling-drupal/">Scaling Drupal</a></h3>
+  <p class="meta"><time datetime="2007-11-10">November 10, 2007</time></p>
+  <p><p><a href="http://www.johnandcailin.com/usernode/john">John Quinn</a> writes about <a href="http://www.johnandcailin.com/blog/john/scaling-drupal-open-source-infrastructure-high-traffic-drupal-sites">Scaling Drupal</a> he is taking a one step at a time approach and is still writing his 4th and 5 stages.</p>
+<p>His first step obviously is separating the drupal from a separate database server, and he chooses mysql for this purpose, moving your DB to a different machine is a good thing to do.</p>
+<p>However then he gets this crazy idea of using NFS to share his his drupal shared files :(<br>
+(he even dares to mention that the setup ease is good) Folks, we abandonned NFS in the late nineties. NFS is still a recipe for disaster, it has performance issues , it as stability issues (stale locks), and no security admin in his right mind will tolerate portmap to be running in his DMZ.<br>
+(Also think about the IO path that one has to follow to serve a static file to a surfer when the file is stored on a remote NFS volume)</p></p>
+</article>
+
+
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/blog/tags/mysql/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/tags/mysql/page/4/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/tags/mysql/" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/tags/mysql/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/tags/mysql/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/tags/mysql/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 5" class="page-link" role="button">5</a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+
+    </main>
+    <aside class="sidebar">
+
+  <section class="bio">
+    <h3>About Kris Buytaert</h3>
+    <p>Kris Buytaert is a long time Linux and Open Source Consultant and engineering leader. 
+    He's one of the instigators of the devops movement. 
+
+    <p>He frequently speaks at and organizes international conferences, and has written
+    about the same subjects in different books, papers and articles.</p>
+  </section>
+
+  <section class="nav-links">
+    <h3>Links</h3>
+    <ul>
+      <li><a href="https://www.krisbuytaert.be/">Main page</a></li>
+      <li><a href="http://www.linkedin.com/in/krisbuytaert">My LinkedIn Profile</a>
+      <li><a href="http://github.com/KrisBuytaert/">Kris on Github</a>
+      <li><a href="http://codeberg.org/KrisBuytaert/">Kris on Codeberg</a>
+      <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a>
+
+
+      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+
+
+      <li><a href="https://devopsdays.org">devopsdays.org</a></li>
+      <li><a href="https://cfgmgmtcamp.org">cfgmgmtcamp.org</a></li>
+      <li><a href="https://belibre.be">belibre.be</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Recent Posts</h3>
+    <ul>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/docker-and-volumes-hell/">Docker and volumes hell</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/its-just-rubber-some-air-it/">It&#39;s just rubber , with some air in it.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/">Lies, Damn Lies and Statistics, 2016 Edition</a></li>
+      
+    </ul>
+  </section>
+
+  
+  <section>
+    <h3>Tags</h3>
+    <ul class="tags">
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      <li><a href="https://krisbuytaert.github.io/tags/devops/">devops</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/drupal/">drupal</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/mysql/">mysql</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/puppet/">puppet</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/open-source/">open source</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/opensource/">opensource</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dnsproblem/">dnsproblem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/ha/">ha</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fosdem/">fosdem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/chef/">chef</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dns/">dns</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fedora/">fedora</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/virtualization/">virtualization</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/xen/">xen</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/centos/">centos</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/conference/">conference</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/monitoringsucks/">monitoringsucks</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/rpm/">rpm</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/kvm/">kvm</a></li>
+      
+    </ul>
+  </section>
+  
+
+</aside>
+
+  </div>
+  <footer>
+    <p>No really .. everything is a funky DNS problem, you'll realise I'm right pretty soon!</p>
+  </footer>
+</body>
+</html>

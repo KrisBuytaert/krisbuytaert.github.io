@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Image Sprawl on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/image-sprawl/</link>
+    <description>Recent content in Image Sprawl on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Nov 2013 23:36:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/image-sprawl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker vs Reality , 0 - 1</title>
+      <link>https://krisbuytaert.github.io/blog/docker-vs-reality-0-1/</link>
+      <pubDate>Wed, 27 Nov 2013 23:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/docker-vs-reality-0-1/</guid>
+      <description>&lt;p&gt;(aka the opinionated summary of the #devopsdays London November OpenSpace on , Containers and the new flood of Image Sprawl)&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a bunch of people out there that think I don&amp;rsquo;t like docker, they are wrong.&lt;/p&gt;&#xA;&lt;p&gt;I just never understood the hype about it since I didn&amp;rsquo;t see, (and still don&amp;rsquo;t) see it being used at large and people seem to understand that as being against it.&lt;/p&gt;&#xA;&lt;p&gt;So let me put a couple of things straight :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>To exaggerate , or not ...</title>
+      <link>https://krisbuytaert.github.io/blog/exaggerate-or-not/</link>
+      <pubDate>Mon, 27 Apr 2009 20:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/exaggerate-or-not/</guid>
+      <description>&lt;p&gt;Sometimes you have to &lt;a href=&#34;http://virtualization.com/guest-posts/2009/04/17/on-the-dangers-of-ovf/&#34;&gt;step out of line&lt;/a&gt; to get a message through just write a viewpoint down in totally black, ignoring the white parts.&lt;/p&gt;&#xA;&lt;p&gt;Earlier examples of these tricks were my rants on &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/713&#34;&gt;raid&lt;/a&gt; :)&lt;/p&gt;&#xA;&lt;p&gt;The original work title of the &lt;a href=&#34;http://www.virtualization.com/&#34;&gt;Virtualization.com&lt;/a&gt; post actually was &amp;ldquo;VMWare, the New Microsoft, they gave us point and click and no clue for the user&amp;rdquo; But I selfmoderated that down to a more gentle title, not attacking a vendor :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

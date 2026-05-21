@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Puppet Meetup on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/puppet-meetup/</link>
+    <description>Recent content in Puppet Meetup on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 May 2009 12:33:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/puppet-meetup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Puppet Meetup Leuven</title>
+      <link>https://krisbuytaert.github.io/blog/puppet-meetup-leuven/</link>
+      <pubDate>Tue, 19 May 2009 12:33:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/puppet-meetup-leuven/</guid>
+      <description>&lt;p&gt;As &lt;a href=&#34;http://www.reductivelabs.com/training/&#34;&gt;Teyo&lt;/a&gt; will be in Leuven (Belgium) next week for the training , some folks had the idea to meetup after the training for a Puppet Users Meetup.&lt;/p&gt;&#xA;&lt;p&gt;So the plan is to meet for Drinks and Puppettalk, next week wednesday as of 20u00 in the Domus in Leuven&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.domusleuven.be/&#34; title=&#34;http://www.domusleuven.be/&#34;&gt;http://www.domusleuven.be/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I hope to meet a bunch of you there !&lt;/p&gt;&#xA;&lt;p&gt;PS. Feel free to spread the news.&lt;br&gt;&#xA;PPS. There is a chances I won&amp;rsquo;t make it myselve which shouldn&amp;rsquo;t keep you folks back :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

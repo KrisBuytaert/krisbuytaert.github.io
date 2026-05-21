@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Definition of Done on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/definition-of-done/</link>
+    <description>Recent content in Definition of Done on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Jul 2013 00:05:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/definition-of-done/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Done  Ignite</title>
+      <link>https://krisbuytaert.github.io/blog/done-ignite/</link>
+      <pubDate>Wed, 03 Jul 2013 00:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/done-ignite/</guid>
+      <description>&lt;p&gt;Last month I gave an 5 minute Ignite talk at #devopsdays Amsterdam.&lt;/p&gt;&#xA;&lt;p&gt;To summarize .. it was a rant against people that think that the end of a sprint their work is done, an idea they might have gotten from a broken definition of done.&lt;/p&gt;&#xA;&lt;p&gt;Both the video recording and the slides are embedded below.&lt;/p&gt;&#xA;&lt;p&gt;\&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/do-disnot-done&#34; title=&#34;Dod is not done&#34;&gt;Dod is not done&lt;/a&gt;&lt;/strong&gt;  from &lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

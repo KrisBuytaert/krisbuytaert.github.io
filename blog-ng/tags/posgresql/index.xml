@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posgresql on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/posgresql/</link>
+    <description>Recent content in Posgresql on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Feb 2009 22:52:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/posgresql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open Source Database Poll</title>
+      <link>https://krisbuytaert.github.io/blog/open-source-database-poll/</link>
+      <pubDate>Mon, 02 Feb 2009 22:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/open-source-database-poll/</guid>
+      <description>&lt;p&gt;So &lt;a href=&#34;http://www.lefred.be/&#34;&gt;Fred&lt;/a&gt; and I were wondering what people were planning to use as a Database the next couple of months / years or now.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.inuits.be/&#34;&gt;We&lt;/a&gt; mostly see MySQL deployments and a little PostgreSQL&lt;/p&gt;&#xA;&lt;p&gt;But there&amp;rsquo;s other stuff around ..&lt;/p&gt;&#xA;&lt;p&gt;So what are you using, , or planning on using ?&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.krisbuytaert.be/blog/node/867&#34;&gt;Vote Here !&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

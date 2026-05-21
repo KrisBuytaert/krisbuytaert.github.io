@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infrastructure on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/infrastructure/</link>
+    <description>Recent content in Infrastructure on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Jan 2011 22:28:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Appliance or Not Appliance</title>
+      <link>https://krisbuytaert.github.io/blog/appliance-or-not-appliance/</link>
+      <pubDate>Wed, 12 Jan 2011 22:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/appliance-or-not-appliance/</guid>
+      <description>&lt;p&gt;That&amp;rsquo;s the question &lt;a href=&#34;http://blog.rootshell.be/2011/01/05/security-diy-or-plugnplay/&#34;&gt;Xavier&lt;/a&gt; asks in his blog entry titled&lt;br&gt;&#xA;Security: DIY or Plug’n&amp;rsquo;Play&lt;/p&gt;&#xA;&lt;p&gt;To me the answer is simple, most of the appliances I ran into so far have no way of configuring them apart from the ugly webgui they ship with their device. That means that I can&amp;rsquo;t integrate them with the configuration management framework I have in place for the rest of the infrastructure. There is no way to automatically modify e.g firewall rules together with the relocation of a service which does happen automatically, and there is always some kind of manual interaction required. Applicances tend to sit on a island, either stay un managed ( be honest when&amp;rsquo;s the last time you upgraded the firmware of that terminal server ? ) , or take a lot of additional efort to manage manually. They require yet another set of tools than the set you are already using to manage your network.&lt;br&gt;&#xA;They don&amp;rsquo;t integrate with your backup strategy, and don&amp;rsquo;t tell me they all come with perfect MIB&amp;rsquo;s.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Scaling Drupal</title>
+      <link>https://krisbuytaert.github.io/blog/scaling-drupal/</link>
+      <pubDate>Sat, 10 Nov 2007 17:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/scaling-drupal/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.johnandcailin.com/usernode/john&#34;&gt;John Quinn&lt;/a&gt; writes about &lt;a href=&#34;http://www.johnandcailin.com/blog/john/scaling-drupal-open-source-infrastructure-high-traffic-drupal-sites&#34;&gt;Scaling Drupal&lt;/a&gt; he is taking a one step at a time approach and is still writing his 4th and 5 stages.&lt;/p&gt;&#xA;&lt;p&gt;His first step obviously is separating the drupal from a separate database server, and he chooses mysql for this purpose, moving your DB to a different machine is a good thing to do.&lt;/p&gt;&#xA;&lt;p&gt;However then he gets this crazy idea of using NFS to share his his drupal shared files :(&lt;br&gt;&#xA;(he even dares to mention that the setup ease is good) Folks, we abandonned NFS in the late nineties. NFS is still a recipe for disaster, it has performance issues , it as stability issues (stale locks), and no security admin in his right mind will tolerate portmap to be running in his DMZ.&lt;br&gt;&#xA;(Also think about the IO path that one has to follow to serve a static file to a surfer when the file is stored on a remote NFS volume)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

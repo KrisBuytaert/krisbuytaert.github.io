@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogger on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/blogger/</link>
+    <description>Recent content in Blogger on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Dec 2007 23:02:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/blogger/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting rid of Blogger</title>
+      <link>https://krisbuytaert.github.io/blog/getting-rid-blogger/</link>
+      <pubDate>Wed, 19 Dec 2007 23:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/getting-rid-blogger/</guid>
+      <description>&lt;p&gt;So time had come to move all my other blogs to drupal and move them away from blogger.&lt;br&gt;&#xA;When I migrated this blog from dotclear to Drupal I found a php script that grabbed all the content from my dotclear setup and migrated it to a fresly installed drupal. I was hoping to find a similar tool for Blogger .&lt;/p&gt;&#xA;&lt;p&gt;Well no such luck .. most of the links I found instructed me to first install wordpress, use the import functionality of wordpress then migrate from wordpress to Drupal.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

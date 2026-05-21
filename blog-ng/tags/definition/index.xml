@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Definition on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/definition/</link>
+    <description>Recent content in Definition on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Nov 2008 20:45:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/definition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Defining Open Source</title>
+      <link>https://krisbuytaert.github.io/blog/defining-open-source/</link>
+      <pubDate>Sun, 02 Nov 2008 20:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/defining-open-source/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://bbbart.internationalgeneration.be/archives/2008/11/02/index.html#e2008-11-02T00_30_19.txt&#34;&gt;Bart&lt;/a&gt; wonders why my definition of Open Source is.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://opensource.org/docs/osd&#34;&gt;The Open Source Definition&lt;/a&gt; pretty much defines what Open Source is to me.&lt;/p&gt;&#xA;&lt;p&gt;But it&amp;rsquo;s mostly because of that definition that you get a lot of other things for free.&lt;/p&gt;&#xA;&lt;p&gt;It gives you freedom to learn, to improve, it gives you an ecosystem in which you can solve problems rather than having to tell your customer that your hands are tied and you can&amp;rsquo;t help them&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

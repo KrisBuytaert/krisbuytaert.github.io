@@ -1,0 +1,4177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/</link>
+    <description>Recent content in Tags on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Sep 2017 21:02:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal</title>
+      <link>https://krisbuytaert.github.io/blog/tags/drupal/</link>
+      <pubDate>Fri, 01 Sep 2017 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/drupal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Github</title>
+      <link>https://krisbuytaert.github.io/blog/tags/github/</link>
+      <pubDate>Fri, 01 Sep 2017 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pages</title>
+      <link>https://krisbuytaert.github.io/blog/tags/pages/</link>
+      <pubDate>Fri, 01 Sep 2017 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/pages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Static</title>
+      <link>https://krisbuytaert.github.io/blog/tags/static/</link>
+      <pubDate>Fri, 01 Sep 2017 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/static/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Containers</title>
+      <link>https://krisbuytaert.github.io/blog/tags/containers/</link>
+      <pubDate>Wed, 15 Jun 2016 16:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/containers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devoops</title>
+      <link>https://krisbuytaert.github.io/blog/tags/devoops/</link>
+      <pubDate>Wed, 15 Jun 2016 16:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/devoops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devops</title>
+      <link>https://krisbuytaert.github.io/blog/tags/devops/</link>
+      <pubDate>Wed, 15 Jun 2016 16:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microservices</title>
+      <link>https://krisbuytaert.github.io/blog/tags/microservices/</link>
+      <pubDate>Wed, 15 Jun 2016 16:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/microservices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software Architecture</title>
+      <link>https://krisbuytaert.github.io/blog/tags/software-architecture/</link>
+      <pubDate>Wed, 15 Jun 2016 16:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/software-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automate</title>
+      <link>https://krisbuytaert.github.io/blog/tags/automate/</link>
+      <pubDate>Mon, 13 Jun 2016 21:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/automate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dsl</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dsl/</link>
+      <pubDate>Mon, 13 Jun 2016 21:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dsl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inception</title>
+      <link>https://krisbuytaert.github.io/blog/tags/inception/</link>
+      <pubDate>Mon, 13 Jun 2016 21:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/inception/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jenkins</title>
+      <link>https://krisbuytaert.github.io/blog/tags/jenkins/</link>
+      <pubDate>Mon, 13 Jun 2016 21:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/jenkins/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/arp/</link>
+      <pubDate>Wed, 01 Jun 2016 09:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/arp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dns</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dns/</link>
+      <pubDate>Wed, 01 Jun 2016 09:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iptables</title>
+      <link>https://krisbuytaert.github.io/blog/tags/iptables/</link>
+      <pubDate>Wed, 01 Jun 2016 09:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/iptables/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ntp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ntp/</link>
+      <pubDate>Wed, 01 Jun 2016 09:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ntp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Selinux</title>
+      <link>https://krisbuytaert.github.io/blog/tags/selinux/</link>
+      <pubDate>Wed, 01 Jun 2016 09:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/selinux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>https://krisbuytaert.github.io/blog/tags/docker/</link>
+      <pubDate>Sat, 28 May 2016 13:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fpm</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fpm/</link>
+      <pubDate>Sat, 28 May 2016 13:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fpm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Virtualization</title>
+      <link>https://krisbuytaert.github.io/blog/tags/virtualization/</link>
+      <pubDate>Wed, 23 Mar 2016 23:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/virtualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ansible</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ansible/</link>
+      <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ansible/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cfengine</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cfengine/</link>
+      <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cfengine/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cfgmgmtcamp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cfgmgmtcamp/</link>
+      <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cfgmgmtcamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chef</title>
+      <link>https://krisbuytaert.github.io/blog/tags/chef/</link>
+      <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/chef/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Communities</title>
+      <link>https://krisbuytaert.github.io/blog/tags/communities/</link>
+      <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/communities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Juju</title>
+      <link>https://krisbuytaert.github.io/blog/tags/juju/</link>
+      <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/juju/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Puppet</title>
+      <link>https://krisbuytaert.github.io/blog/tags/puppet/</link>
+      <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/puppet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Salt</title>
+      <link>https://krisbuytaert.github.io/blog/tags/salt/</link>
+      <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/salt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Presentations</title>
+      <link>https://krisbuytaert.github.io/blog/tags/presentations/</link>
+      <pubDate>Wed, 23 Mar 2016 22:58:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/presentations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Talks</title>
+      <link>https://krisbuytaert.github.io/blog/tags/talks/</link>
+      <pubDate>Wed, 23 Mar 2016 22:58:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/talks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cd</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cd/</link>
+      <pubDate>Tue, 28 Jul 2015 08:35:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ci</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ci/</link>
+      <pubDate>Tue, 28 Jul 2015 08:35:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ci/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deb</title>
+      <link>https://krisbuytaert.github.io/blog/tags/deb/</link>
+      <pubDate>Tue, 28 Jul 2015 08:35:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/deb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opslife</title>
+      <link>https://krisbuytaert.github.io/blog/tags/opslife/</link>
+      <pubDate>Tue, 28 Jul 2015 08:35:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/opslife/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rpm</title>
+      <link>https://krisbuytaert.github.io/blog/tags/rpm/</link>
+      <pubDate>Tue, 28 Jul 2015 08:35:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/rpm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Done</title>
+      <link>https://krisbuytaert.github.io/blog/tags/done/</link>
+      <pubDate>Sun, 03 May 2015 19:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/done/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Foreman</title>
+      <link>https://krisbuytaert.github.io/blog/tags/foreman/</link>
+      <pubDate>Mon, 09 Feb 2015 22:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/foreman/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Saltstack</title>
+      <link>https://krisbuytaert.github.io/blog/tags/saltstack/</link>
+      <pubDate>Mon, 09 Feb 2015 22:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/saltstack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conference Season</title>
+      <link>https://krisbuytaert.github.io/blog/tags/conference-season/</link>
+      <pubDate>Tue, 12 Aug 2014 21:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/conference-season/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Graphite</title>
+      <link>https://krisbuytaert.github.io/blog/tags/graphite/</link>
+      <pubDate>Wed, 04 Jun 2014 16:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/graphite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logstash</title>
+      <link>https://krisbuytaert.github.io/blog/tags/logstash/</link>
+      <pubDate>Wed, 04 Jun 2014 16:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/logstash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Centos</title>
+      <link>https://krisbuytaert.github.io/blog/tags/centos/</link>
+      <pubDate>Sun, 22 Dec 2013 22:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/centos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Community</title>
+      <link>https://krisbuytaert.github.io/blog/tags/community/</link>
+      <pubDate>Sun, 22 Dec 2013 22:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/community/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Events</title>
+      <link>https://krisbuytaert.github.io/blog/tags/events/</link>
+      <pubDate>Sun, 22 Dec 2013 22:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/events/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Keynotes</title>
+      <link>https://krisbuytaert.github.io/blog/tags/keynotes/</link>
+      <pubDate>Sun, 22 Dec 2013 22:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/keynotes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Source</title>
+      <link>https://krisbuytaert.github.io/blog/tags/open-source/</link>
+      <pubDate>Sun, 22 Dec 2013 22:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Puppetize</title>
+      <link>https://krisbuytaert.github.io/blog/tags/puppetize/</link>
+      <pubDate>Sun, 22 Dec 2013 22:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/puppetize/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trolling</title>
+      <link>https://krisbuytaert.github.io/blog/tags/trolling/</link>
+      <pubDate>Thu, 12 Dec 2013 22:42:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/trolling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Antipatterns Newbies</title>
+      <link>https://krisbuytaert.github.io/blog/tags/antipatterns-newbies/</link>
+      <pubDate>Wed, 27 Nov 2013 23:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/antipatterns-newbies/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Image Sprawl</title>
+      <link>https://krisbuytaert.github.io/blog/tags/image-sprawl/</link>
+      <pubDate>Wed, 27 Nov 2013 23:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/image-sprawl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Images</title>
+      <link>https://krisbuytaert.github.io/blog/tags/images/</link>
+      <pubDate>Wed, 27 Nov 2013 23:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/images/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Infrastructure as Code</title>
+      <link>https://krisbuytaert.github.io/blog/tags/infrastructure-as-code/</link>
+      <pubDate>Wed, 27 Nov 2013 23:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/infrastructure-as-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jeos</title>
+      <link>https://krisbuytaert.github.io/blog/tags/jeos/</link>
+      <pubDate>Wed, 27 Nov 2013 23:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/jeos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Packer</title>
+      <link>https://krisbuytaert.github.io/blog/tags/packer/</link>
+      <pubDate>Wed, 27 Nov 2013 23:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/packer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>#Devops</title>
+      <link>https://krisbuytaert.github.io/blog/tags/%23devops/</link>
+      <pubDate>Wed, 27 Nov 2013 17:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/%23devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>#Docker</title>
+      <link>https://krisbuytaert.github.io/blog/tags/%23docker/</link>
+      <pubDate>Wed, 27 Nov 2013 17:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/%23docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>#Future</title>
+      <link>https://krisbuytaert.github.io/blog/tags/%23future/</link>
+      <pubDate>Wed, 27 Nov 2013 17:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/%23future/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>#Infrastructureascode</title>
+      <link>https://krisbuytaert.github.io/blog/tags/%23infrastructureascode/</link>
+      <pubDate>Wed, 27 Nov 2013 17:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/%23infrastructureascode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>#Puppet</title>
+      <link>https://krisbuytaert.github.io/blog/tags/%23puppet/</link>
+      <pubDate>Wed, 27 Nov 2013 17:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/%23puppet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>#Puppetize</title>
+      <link>https://krisbuytaert.github.io/blog/tags/%23puppetize/</link>
+      <pubDate>Wed, 27 Nov 2013 17:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/%23puppetize/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>#Today</title>
+      <link>https://krisbuytaert.github.io/blog/tags/%23today/</link>
+      <pubDate>Wed, 27 Nov 2013 17:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/%23today/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Velocity</title>
+      <link>https://krisbuytaert.github.io/blog/tags/velocity/</link>
+      <pubDate>Wed, 27 Nov 2013 17:15:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/velocity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Robomow</title>
+      <link>https://krisbuytaert.github.io/blog/tags/robomow/</link>
+      <pubDate>Sun, 28 Jul 2013 09:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/robomow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Robomowtest</title>
+      <link>https://krisbuytaert.github.io/blog/tags/robomowtest/</link>
+      <pubDate>Sun, 28 Jul 2013 09:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/robomowtest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Busines Modules</title>
+      <link>https://krisbuytaert.github.io/blog/tags/busines-modules/</link>
+      <pubDate>Wed, 10 Jul 2013 22:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/busines-modules/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Source Business Models</title>
+      <link>https://krisbuytaert.github.io/blog/tags/open-source-business-models/</link>
+      <pubDate>Wed, 10 Jul 2013 22:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/open-source-business-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opensource</title>
+      <link>https://krisbuytaert.github.io/blog/tags/opensource/</link>
+      <pubDate>Wed, 10 Jul 2013 22:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/opensource/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crm</title>
+      <link>https://krisbuytaert.github.io/blog/tags/crm/</link>
+      <pubDate>Wed, 10 Jul 2013 22:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/crm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mysql</title>
+      <link>https://krisbuytaert.github.io/blog/tags/mysql/</link>
+      <pubDate>Wed, 10 Jul 2013 22:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/mysql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vtiger</title>
+      <link>https://krisbuytaert.github.io/blog/tags/vtiger/</link>
+      <pubDate>Wed, 10 Jul 2013 22:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/vtiger/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zurmo</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zurmo/</link>
+      <pubDate>Wed, 10 Jul 2013 22:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zurmo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agile</title>
+      <link>https://krisbuytaert.github.io/blog/tags/agile/</link>
+      <pubDate>Wed, 03 Jul 2013 00:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/agile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Amsterdam</title>
+      <link>https://krisbuytaert.github.io/blog/tags/amsterdam/</link>
+      <pubDate>Wed, 03 Jul 2013 00:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/amsterdam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Definition of Done</title>
+      <link>https://krisbuytaert.github.io/blog/tags/definition-of-done/</link>
+      <pubDate>Wed, 03 Jul 2013 00:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/definition-of-done/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devopsdays</title>
+      <link>https://krisbuytaert.github.io/blog/tags/devopsdays/</link>
+      <pubDate>Wed, 03 Jul 2013 00:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/devopsdays/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Infracoders</title>
+      <link>https://krisbuytaert.github.io/blog/tags/infracoders/</link>
+      <pubDate>Wed, 22 May 2013 23:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/infracoders/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gadgets</title>
+      <link>https://krisbuytaert.github.io/blog/tags/gadgets/</link>
+      <pubDate>Wed, 22 May 2013 22:33:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/gadgets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gradening</title>
+      <link>https://krisbuytaert.github.io/blog/tags/gradening/</link>
+      <pubDate>Wed, 22 May 2013 22:33:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/gradening/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evolution</title>
+      <link>https://krisbuytaert.github.io/blog/tags/evolution/</link>
+      <pubDate>Fri, 19 Apr 2013 22:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/evolution/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gcr</title>
+      <link>https://krisbuytaert.github.io/blog/tags/gcr/</link>
+      <pubDate>Fri, 19 Apr 2013 22:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/gcr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gmail</title>
+      <link>https://krisbuytaert.github.io/blog/tags/gmail/</link>
+      <pubDate>Fri, 19 Apr 2013 22:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/gmail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Yum</title>
+      <link>https://krisbuytaert.github.io/blog/tags/yum/</link>
+      <pubDate>Fri, 19 Apr 2013 22:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/yum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loadays</title>
+      <link>https://krisbuytaert.github.io/blog/tags/loadays/</link>
+      <pubDate>Tue, 19 Mar 2013 14:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/loadays/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monitoringlove</title>
+      <link>https://krisbuytaert.github.io/blog/tags/monitoringlove/</link>
+      <pubDate>Wed, 13 Feb 2013 19:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/monitoringlove/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monitoringsucks</title>
+      <link>https://krisbuytaert.github.io/blog/tags/monitoringsucks/</link>
+      <pubDate>Wed, 13 Feb 2013 19:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/monitoringsucks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sensu</title>
+      <link>https://krisbuytaert.github.io/blog/tags/sensu/</link>
+      <pubDate>Wed, 13 Feb 2013 19:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/sensu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Icinga</title>
+      <link>https://krisbuytaert.github.io/blog/tags/icinga/</link>
+      <pubDate>Tue, 05 Feb 2013 11:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/icinga/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fosdem</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fosdem/</link>
+      <pubDate>Sun, 13 Jan 2013 12:21:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fosdem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Phpbenelux</title>
+      <link>https://krisbuytaert.github.io/blog/tags/phpbenelux/</link>
+      <pubDate>Sun, 13 Jan 2013 12:21:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/phpbenelux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Puppetcamp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/puppetcamp/</link>
+      <pubDate>Sun, 13 Jan 2013 12:21:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/puppetcamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Puppetzie</title>
+      <link>https://krisbuytaert.github.io/blog/tags/puppetzie/</link>
+      <pubDate>Sun, 13 Jan 2013 12:21:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/puppetzie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inuits</title>
+      <link>https://krisbuytaert.github.io/blog/tags/inuits/</link>
+      <pubDate>Tue, 13 Nov 2012 22:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/inuits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linuxcon</title>
+      <link>https://krisbuytaert.github.io/blog/tags/linuxcon/</link>
+      <pubDate>Tue, 06 Nov 2012 10:12:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/linuxcon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linuxconf</title>
+      <link>https://krisbuytaert.github.io/blog/tags/linuxconf/</link>
+      <pubDate>Thu, 13 Sep 2012 22:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/linuxconf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>T-Dose</title>
+      <link>https://krisbuytaert.github.io/blog/tags/t-dose/</link>
+      <pubDate>Thu, 13 Sep 2012 22:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/t-dose/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vagrant</title>
+      <link>https://krisbuytaert.github.io/blog/tags/vagrant/</link>
+      <pubDate>Sat, 25 Aug 2012 23:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/vagrant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Certification</title>
+      <link>https://krisbuytaert.github.io/blog/tags/certification/</link>
+      <pubDate>Sat, 25 Aug 2012 15:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/certification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Munich</title>
+      <link>https://krisbuytaert.github.io/blog/tags/munich/</link>
+      <pubDate>Fri, 17 Aug 2012 21:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/munich/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ganglia</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ganglia/</link>
+      <pubDate>Sat, 11 Aug 2012 21:49:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ganglia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monitoring</title>
+      <link>https://krisbuytaert.github.io/blog/tags/monitoring/</link>
+      <pubDate>Sat, 11 Aug 2012 21:49:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Repo</title>
+      <link>https://krisbuytaert.github.io/blog/tags/repo/</link>
+      <pubDate>Sat, 11 Aug 2012 21:49:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/repo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pulp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/pulp/</link>
+      <pubDate>Wed, 08 Aug 2012 22:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/pulp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ruby Gems</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ruby-gems/</link>
+      <pubDate>Wed, 08 Aug 2012 22:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ruby-gems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conferences</title>
+      <link>https://krisbuytaert.github.io/blog/tags/conferences/</link>
+      <pubDate>Mon, 06 Aug 2012 08:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/conferences/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drupalcon</title>
+      <link>https://krisbuytaert.github.io/blog/tags/drupalcon/</link>
+      <pubDate>Mon, 06 Aug 2012 08:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/drupalcon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cfp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cfp/</link>
+      <pubDate>Tue, 01 May 2012 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cfp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Configmgmt</title>
+      <link>https://krisbuytaert.github.io/blog/tags/configmgmt/</link>
+      <pubDate>Tue, 01 May 2012 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/configmgmt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deployment</title>
+      <link>https://krisbuytaert.github.io/blog/tags/deployment/</link>
+      <pubDate>Tue, 01 May 2012 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/deployment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Measurement</title>
+      <link>https://krisbuytaert.github.io/blog/tags/measurement/</link>
+      <pubDate>Tue, 01 May 2012 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/measurement/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>https://krisbuytaert.github.io/blog/tags/testing/</link>
+      <pubDate>Tue, 01 May 2012 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conference</title>
+      <link>https://krisbuytaert.github.io/blog/tags/conference/</link>
+      <pubDate>Fri, 23 Mar 2012 16:49:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/conference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mcollective</title>
+      <link>https://krisbuytaert.github.io/blog/tags/mcollective/</link>
+      <pubDate>Fri, 23 Mar 2012 16:49:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/mcollective/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Results</title>
+      <link>https://krisbuytaert.github.io/blog/tags/results/</link>
+      <pubDate>Thu, 08 Mar 2012 22:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/results/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Survey</title>
+      <link>https://krisbuytaert.github.io/blog/tags/survey/</link>
+      <pubDate>Thu, 08 Mar 2012 22:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/survey/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Extrememon</title>
+      <link>https://krisbuytaert.github.io/blog/tags/extrememon/</link>
+      <pubDate>Fri, 10 Feb 2012 01:03:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/extrememon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Collectd</title>
+      <link>https://krisbuytaert.github.io/blog/tags/collectd/</link>
+      <pubDate>Tue, 03 Jan 2012 22:46:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/collectd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jmxtrans</title>
+      <link>https://krisbuytaert.github.io/blog/tags/jmxtrans/</link>
+      <pubDate>Tue, 03 Jan 2012 22:46:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/jmxtrans/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logster</title>
+      <link>https://krisbuytaert.github.io/blog/tags/logster/</link>
+      <pubDate>Tue, 03 Jan 2012 22:46:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/logster/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Munin</title>
+      <link>https://krisbuytaert.github.io/blog/tags/munin/</link>
+      <pubDate>Tue, 03 Jan 2012 20:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/munin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nagios</title>
+      <link>https://krisbuytaert.github.io/blog/tags/nagios/</link>
+      <pubDate>Tue, 03 Jan 2012 20:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/nagios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rrd</title>
+      <link>https://krisbuytaert.github.io/blog/tags/rrd/</link>
+      <pubDate>Tue, 03 Jan 2012 20:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/rrd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Culture</title>
+      <link>https://krisbuytaert.github.io/blog/tags/culture/</link>
+      <pubDate>Sat, 31 Dec 2011 17:59:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/culture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ran</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ran/</link>
+      <pubDate>Thu, 29 Dec 2011 20:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ran/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubuntu</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ubuntu/</link>
+      <pubDate>Thu, 29 Dec 2011 20:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lisa</title>
+      <link>https://krisbuytaert.github.io/blog/tags/lisa/</link>
+      <pubDate>Wed, 14 Dec 2011 20:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/lisa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Notetoself</title>
+      <link>https://krisbuytaert.github.io/blog/tags/notetoself/</link>
+      <pubDate>Sun, 13 Nov 2011 22:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/notetoself/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Veewee</title>
+      <link>https://krisbuytaert.github.io/blog/tags/veewee/</link>
+      <pubDate>Wed, 24 Aug 2011 10:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/veewee/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Froscon</title>
+      <link>https://krisbuytaert.github.io/blog/tags/froscon/</link>
+      <pubDate>Sun, 21 Aug 2011 20:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/froscon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opendbcamp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/opendbcamp/</link>
+      <pubDate>Sun, 21 Aug 2011 20:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/opendbcamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Puppet Devops</title>
+      <link>https://krisbuytaert.github.io/blog/tags/puppet-devops/</link>
+      <pubDate>Sun, 21 Aug 2011 20:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/puppet-devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Configuration Management</title>
+      <link>https://krisbuytaert.github.io/blog/tags/configuration-management/</link>
+      <pubDate>Sun, 17 Jul 2011 22:39:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/configuration-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Augeas</title>
+      <link>https://krisbuytaert.github.io/blog/tags/augeas/</link>
+      <pubDate>Fri, 10 Jun 2011 16:26:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/augeas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lens</title>
+      <link>https://krisbuytaert.github.io/blog/tags/lens/</link>
+      <pubDate>Fri, 10 Jun 2011 16:26:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/lens/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sipxecs</title>
+      <link>https://krisbuytaert.github.io/blog/tags/sipxecs/</link>
+      <pubDate>Fri, 10 Jun 2011 16:26:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/sipxecs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xml</title>
+      <link>https://krisbuytaert.github.io/blog/tags/xml/</link>
+      <pubDate>Fri, 10 Jun 2011 16:26:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/xml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Googlewillfindit</title>
+      <link>https://krisbuytaert.github.io/blog/tags/googlewillfindit/</link>
+      <pubDate>Wed, 08 Jun 2011 17:29:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/googlewillfindit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Personaldocs</title>
+      <link>https://krisbuytaert.github.io/blog/tags/personaldocs/</link>
+      <pubDate>Wed, 08 Jun 2011 17:29:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/personaldocs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cucumber</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cucumber/</link>
+      <pubDate>Wed, 25 May 2011 23:18:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cucumber/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jmeter</title>
+      <link>https://krisbuytaert.github.io/blog/tags/jmeter/</link>
+      <pubDate>Wed, 25 May 2011 23:18:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/jmeter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Selenium</title>
+      <link>https://krisbuytaert.github.io/blog/tags/selenium/</link>
+      <pubDate>Wed, 25 May 2011 23:18:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/selenium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shai</title>
+      <link>https://krisbuytaert.github.io/blog/tags/shai/</link>
+      <pubDate>Wed, 25 May 2011 23:18:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/shai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Virtualbox</title>
+      <link>https://krisbuytaert.github.io/blog/tags/virtualbox/</link>
+      <pubDate>Mon, 02 May 2011 22:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/virtualbox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>https://krisbuytaert.github.io/blog/tags/automation/</link>
+      <pubDate>Wed, 20 Apr 2011 22:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sipx</title>
+      <link>https://krisbuytaert.github.io/blog/tags/sipx/</link>
+      <pubDate>Wed, 20 Apr 2011 22:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/sipx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uid</title>
+      <link>https://krisbuytaert.github.io/blog/tags/uid/</link>
+      <pubDate>Wed, 20 Apr 2011 22:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/uid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ageas</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ageas/</link>
+      <pubDate>Tue, 29 Mar 2011 20:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ageas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ruby</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ruby/</link>
+      <pubDate>Tue, 29 Mar 2011 20:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ruby/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Piwik</title>
+      <link>https://krisbuytaert.github.io/blog/tags/piwik/</link>
+      <pubDate>Thu, 10 Mar 2011 20:44:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/piwik/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Passenger</title>
+      <link>https://krisbuytaert.github.io/blog/tags/passenger/</link>
+      <pubDate>Fri, 04 Mar 2011 01:42:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/passenger/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ssl</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ssl/</link>
+      <pubDate>Fri, 04 Mar 2011 01:42:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ssl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webrick</title>
+      <link>https://krisbuytaert.github.io/blog/tags/webrick/</link>
+      <pubDate>Fri, 04 Mar 2011 01:42:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/webrick/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Alias</title>
+      <link>https://krisbuytaert.github.io/blog/tags/alias/</link>
+      <pubDate>Wed, 23 Feb 2011 00:12:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/alias/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Configuration</title>
+      <link>https://krisbuytaert.github.io/blog/tags/configuration/</link>
+      <pubDate>Wed, 23 Feb 2011 00:12:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/configuration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dhcpd</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dhcpd/</link>
+      <pubDate>Wed, 23 Feb 2011 00:12:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dhcpd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network</title>
+      <link>https://krisbuytaert.github.io/blog/tags/network/</link>
+      <pubDate>Wed, 23 Feb 2011 00:12:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kvm</title>
+      <link>https://krisbuytaert.github.io/blog/tags/kvm/</link>
+      <pubDate>Wed, 23 Feb 2011 00:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/kvm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xen</title>
+      <link>https://krisbuytaert.github.io/blog/tags/xen/</link>
+      <pubDate>Wed, 23 Feb 2011 00:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/xen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Heartbeat</title>
+      <link>https://krisbuytaert.github.io/blog/tags/heartbeat/</link>
+      <pubDate>Thu, 10 Feb 2011 21:20:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/heartbeat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux-Ha</title>
+      <link>https://krisbuytaert.github.io/blog/tags/linux-ha/</link>
+      <pubDate>Thu, 10 Feb 2011 21:20:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/linux-ha/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Managed</title>
+      <link>https://krisbuytaert.github.io/blog/tags/managed/</link>
+      <pubDate>Thu, 10 Feb 2011 21:20:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/managed/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modules</title>
+      <link>https://krisbuytaert.github.io/blog/tags/modules/</link>
+      <pubDate>Thu, 10 Feb 2011 21:20:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/modules/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unmanaged</title>
+      <link>https://krisbuytaert.github.io/blog/tags/unmanaged/</link>
+      <pubDate>Thu, 10 Feb 2011 21:20:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/unmanaged/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Falstaff</title>
+      <link>https://krisbuytaert.github.io/blog/tags/falstaff/</link>
+      <pubDate>Sat, 05 Feb 2011 15:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/falstaff/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Meetup</title>
+      <link>https://krisbuytaert.github.io/blog/tags/meetup/</link>
+      <pubDate>Sat, 05 Feb 2011 15:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/meetup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pacemaker</title>
+      <link>https://krisbuytaert.github.io/blog/tags/pacemaker/</link>
+      <pubDate>Mon, 24 Jan 2011 00:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/pacemaker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ukuug</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ukuug/</link>
+      <pubDate>Mon, 24 Jan 2011 00:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ukuug/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Infrastructure</title>
+      <link>https://krisbuytaert.github.io/blog/tags/infrastructure/</link>
+      <pubDate>Wed, 12 Jan 2011 22:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://krisbuytaert.github.io/blog/tags/security/</link>
+      <pubDate>Wed, 12 Jan 2011 22:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fedora</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fedora/</link>
+      <pubDate>Fri, 07 Jan 2011 22:39:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fedora/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ffmpeg</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ffmpeg/</link>
+      <pubDate>Fri, 07 Jan 2011 22:39:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rhytmbox</title>
+      <link>https://krisbuytaert.github.io/blog/tags/rhytmbox/</link>
+      <pubDate>Fri, 07 Jan 2011 22:39:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/rhytmbox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dnsproblem</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dnsproblem/</link>
+      <pubDate>Sat, 18 Dec 2010 23:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dnsproblem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sysadvent</title>
+      <link>https://krisbuytaert.github.io/blog/tags/sysadvent/</link>
+      <pubDate>Sat, 18 Dec 2010 23:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/sysadvent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Clementine</title>
+      <link>https://krisbuytaert.github.io/blog/tags/clementine/</link>
+      <pubDate>Thu, 11 Nov 2010 15:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/clementine/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cobbler</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cobbler/</link>
+      <pubDate>Thu, 04 Nov 2010 01:07:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cobbler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drbd</title>
+      <link>https://krisbuytaert.github.io/blog/tags/drbd/</link>
+      <pubDate>Thu, 04 Nov 2010 01:07:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/drbd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ha</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ha/</link>
+      <pubDate>Thu, 04 Nov 2010 01:07:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ha/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bugbuddy</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bugbuddy/</link>
+      <pubDate>Wed, 03 Nov 2010 22:46:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bugbuddy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bugmaster</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bugmaster/</link>
+      <pubDate>Wed, 03 Nov 2010 22:46:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bugmaster/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gwibber</title>
+      <link>https://krisbuytaert.github.io/blog/tags/gwibber/</link>
+      <pubDate>Wed, 03 Nov 2010 22:46:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/gwibber/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apt</title>
+      <link>https://krisbuytaert.github.io/blog/tags/apt/</link>
+      <pubDate>Mon, 01 Nov 2010 21:20:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/apt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Package</title>
+      <link>https://krisbuytaert.github.io/blog/tags/package/</link>
+      <pubDate>Mon, 01 Nov 2010 21:20:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/package/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shebang</title>
+      <link>https://krisbuytaert.github.io/blog/tags/shebang/</link>
+      <pubDate>Sat, 30 Oct 2010 16:35:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/shebang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Android</title>
+      <link>https://krisbuytaert.github.io/blog/tags/android/</link>
+      <pubDate>Mon, 18 Oct 2010 20:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/android/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ipad</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ipad/</link>
+      <pubDate>Mon, 18 Oct 2010 20:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ipad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://krisbuytaert.github.io/blog/tags/linux/</link>
+      <pubDate>Mon, 18 Oct 2010 20:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tabled</title>
+      <link>https://krisbuytaert.github.io/blog/tags/tabled/</link>
+      <pubDate>Mon, 18 Oct 2010 20:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/tabled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devoxx</title>
+      <link>https://krisbuytaert.github.io/blog/tags/devoxx/</link>
+      <pubDate>Sat, 02 Oct 2010 21:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/devoxx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nluug</title>
+      <link>https://krisbuytaert.github.io/blog/tags/nluug/</link>
+      <pubDate>Sat, 02 Oct 2010 21:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/nluug/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tdose</title>
+      <link>https://krisbuytaert.github.io/blog/tags/tdose/</link>
+      <pubDate>Sat, 02 Oct 2010 21:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/tdose/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oauth</title>
+      <link>https://krisbuytaert.github.io/blog/tags/oauth/</link>
+      <pubDate>Wed, 01 Sep 2010 20:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/oauth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pidgin</title>
+      <link>https://krisbuytaert.github.io/blog/tags/pidgin/</link>
+      <pubDate>Wed, 01 Sep 2010 20:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/pidgin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Twitter</title>
+      <link>https://krisbuytaert.github.io/blog/tags/twitter/</link>
+      <pubDate>Wed, 01 Sep 2010 20:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/twitter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Comments</title>
+      <link>https://krisbuytaert.github.io/blog/tags/comments/</link>
+      <pubDate>Wed, 04 Aug 2010 00:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/comments/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mollom</title>
+      <link>https://krisbuytaert.github.io/blog/tags/mollom/</link>
+      <pubDate>Wed, 04 Aug 2010 00:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/mollom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Php</title>
+      <link>https://krisbuytaert.github.io/blog/tags/php/</link>
+      <pubDate>Wed, 04 Aug 2010 00:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/php/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Views</title>
+      <link>https://krisbuytaert.github.io/blog/tags/views/</link>
+      <pubDate>Wed, 04 Aug 2010 00:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/views/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distributions</title>
+      <link>https://krisbuytaert.github.io/blog/tags/distributions/</link>
+      <pubDate>Mon, 19 Jul 2010 20:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/distributions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mariadb</title>
+      <link>https://krisbuytaert.github.io/blog/tags/mariadb/</link>
+      <pubDate>Mon, 19 Jul 2010 20:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/mariadb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opensuse</title>
+      <link>https://krisbuytaert.github.io/blog/tags/opensuse/</link>
+      <pubDate>Mon, 19 Jul 2010 20:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/opensuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Snoracle</title>
+      <link>https://krisbuytaert.github.io/blog/tags/snoracle/</link>
+      <pubDate>Mon, 19 Jul 2010 20:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/snoracle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Firewall</title>
+      <link>https://krisbuytaert.github.io/blog/tags/firewall/</link>
+      <pubDate>Mon, 21 Jun 2010 21:19:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/firewall/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openoffice</title>
+      <link>https://krisbuytaert.github.io/blog/tags/openoffice/</link>
+      <pubDate>Mon, 21 Jun 2010 21:19:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/openoffice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Presentation</title>
+      <link>https://krisbuytaert.github.io/blog/tags/presentation/</link>
+      <pubDate>Mon, 21 Jun 2010 21:19:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/presentation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weridows</title>
+      <link>https://krisbuytaert.github.io/blog/tags/weridows/</link>
+      <pubDate>Mon, 21 Jun 2010 21:19:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/weridows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zarafa</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zarafa/</link>
+      <pubDate>Mon, 21 Jun 2010 21:19:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zarafa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zarafacamp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zarafacamp/</link>
+      <pubDate>Mon, 21 Jun 2010 21:19:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zarafacamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zarafasummercamp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zarafasummercamp/</link>
+      <pubDate>Mon, 21 Jun 2010 21:19:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zarafasummercamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Banquise</title>
+      <link>https://krisbuytaert.github.io/blog/tags/banquise/</link>
+      <pubDate>Mon, 21 Jun 2010 21:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/banquise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Galera</title>
+      <link>https://krisbuytaert.github.io/blog/tags/galera/</link>
+      <pubDate>Mon, 21 Jun 2010 21:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/galera/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inuits Day</title>
+      <link>https://krisbuytaert.github.io/blog/tags/inuits-day/</link>
+      <pubDate>Mon, 21 Jun 2010 21:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/inuits-day/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hero</title>
+      <link>https://krisbuytaert.github.io/blog/tags/hero/</link>
+      <pubDate>Fri, 18 Jun 2010 22:50:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/hero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ota</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ota/</link>
+      <pubDate>Fri, 18 Jun 2010 22:50:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ota/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Upgrade</title>
+      <link>https://krisbuytaert.github.io/blog/tags/upgrade/</link>
+      <pubDate>Fri, 18 Jun 2010 22:50:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/upgrade/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Platform</title>
+      <link>https://krisbuytaert.github.io/blog/tags/platform/</link>
+      <pubDate>Mon, 14 Jun 2010 22:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/platform/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Standardize</title>
+      <link>https://krisbuytaert.github.io/blog/tags/standardize/</link>
+      <pubDate>Mon, 14 Jun 2010 22:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/standardize/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Buytaert</title>
+      <link>https://krisbuytaert.github.io/blog/tags/buytaert/</link>
+      <pubDate>Mon, 14 Jun 2010 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/buytaert/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dries</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dries/</link>
+      <pubDate>Mon, 14 Jun 2010 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dries/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eiafdp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/eiafdp/</link>
+      <pubDate>Mon, 14 Jun 2010 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/eiafdp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Faq</title>
+      <link>https://krisbuytaert.github.io/blog/tags/faq/</link>
+      <pubDate>Mon, 14 Jun 2010 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/faq/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kris Buytaert</title>
+      <link>https://krisbuytaert.github.io/blog/tags/kris-buytaert/</link>
+      <pubDate>Mon, 14 Jun 2010 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/kris-buytaert/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openmosix</title>
+      <link>https://krisbuytaert.github.io/blog/tags/openmosix/</link>
+      <pubDate>Mon, 14 Jun 2010 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/openmosix/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cim</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cim/</link>
+      <pubDate>Tue, 01 Jun 2010 23:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dtmf</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dtmf/</link>
+      <pubDate>Tue, 01 Jun 2010 23:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dtmf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SecOPS</title>
+      <link>https://krisbuytaert.github.io/blog/tags/secops/</link>
+      <pubDate>Tue, 01 Jun 2010 23:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/secops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Configuration Mgmt</title>
+      <link>https://krisbuytaert.github.io/blog/tags/configuration-mgmt/</link>
+      <pubDate>Tue, 01 Jun 2010 21:59:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/configuration-mgmt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Curry</title>
+      <link>https://krisbuytaert.github.io/blog/tags/curry/</link>
+      <pubDate>Tue, 01 Jun 2010 21:59:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/curry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ghent</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ghent/</link>
+      <pubDate>Tue, 01 Jun 2010 21:59:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ghent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jruby</title>
+      <link>https://krisbuytaert.github.io/blog/tags/jruby/</link>
+      <pubDate>Tue, 01 Jun 2010 21:59:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/jruby/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zebrastraat</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zebrastraat/</link>
+      <pubDate>Tue, 01 Jun 2010 21:59:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zebrastraat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Secdevops</title>
+      <link>https://krisbuytaert.github.io/blog/tags/secdevops/</link>
+      <pubDate>Tue, 01 Jun 2010 19:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/secdevops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dnsproble</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dnsproble/</link>
+      <pubDate>Wed, 05 May 2010 19:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dnsproble/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dnssec</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dnssec/</link>
+      <pubDate>Wed, 05 May 2010 19:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dnssec/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cluster</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cluster/</link>
+      <pubDate>Wed, 28 Apr 2010 23:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cluster/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cloud/</link>
+      <pubDate>Wed, 28 Apr 2010 23:15:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>History</title>
+      <link>https://krisbuytaert.github.io/blog/tags/history/</link>
+      <pubDate>Wed, 28 Apr 2010 23:15:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/history/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marketing</title>
+      <link>https://krisbuytaert.github.io/blog/tags/marketing/</link>
+      <pubDate>Wed, 28 Apr 2010 23:15:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/marketing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book</title>
+      <link>https://krisbuytaert.github.io/blog/tags/book/</link>
+      <pubDate>Wed, 28 Apr 2010 23:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/book/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Packt</title>
+      <link>https://krisbuytaert.github.io/blog/tags/packt/</link>
+      <pubDate>Wed, 28 Apr 2010 23:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/packt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zabbix</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zabbix/</link>
+      <pubDate>Wed, 28 Apr 2010 23:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zabbix/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Load</title>
+      <link>https://krisbuytaert.github.io/blog/tags/load/</link>
+      <pubDate>Tue, 20 Apr 2010 21:43:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/load/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mysql Ha</title>
+      <link>https://krisbuytaert.github.io/blog/tags/mysql-ha/</link>
+      <pubDate>Tue, 20 Apr 2010 21:43:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/mysql-ha/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manchester</title>
+      <link>https://krisbuytaert.github.io/blog/tags/manchester/</link>
+      <pubDate>Wed, 07 Apr 2010 19:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/manchester/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Simon</title>
+      <link>https://krisbuytaert.github.io/blog/tags/simon/</link>
+      <pubDate>Wed, 07 Apr 2010 19:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/simon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Authors</title>
+      <link>https://krisbuytaert.github.io/blog/tags/authors/</link>
+      <pubDate>Fri, 02 Apr 2010 19:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/authors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Books</title>
+      <link>https://krisbuytaert.github.io/blog/tags/books/</link>
+      <pubDate>Fri, 02 Apr 2010 19:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/books/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ukuuug</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ukuuug/</link>
+      <pubDate>Fri, 02 Apr 2010 19:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ukuuug/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Antwerp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/antwerp/</link>
+      <pubDate>Tue, 30 Mar 2010 22:59:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/antwerp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wilrijk</title>
+      <link>https://krisbuytaert.github.io/blog/tags/wilrijk/</link>
+      <pubDate>Tue, 30 Mar 2010 22:59:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/wilrijk/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Beer</title>
+      <link>https://krisbuytaert.github.io/blog/tags/beer/</link>
+      <pubDate>Tue, 30 Mar 2010 22:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/beer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Androidparty</title>
+      <link>https://krisbuytaert.github.io/blog/tags/androidparty/</link>
+      <pubDate>Wed, 10 Mar 2010 20:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/androidparty/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Begging</title>
+      <link>https://krisbuytaert.github.io/blog/tags/begging/</link>
+      <pubDate>Wed, 10 Mar 2010 20:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/begging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cafen</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cafen/</link>
+      <pubDate>Wed, 10 Mar 2010 20:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cafen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hey I Can Try !</title>
+      <link>https://krisbuytaert.github.io/blog/tags/hey-i-can-try-/</link>
+      <pubDate>Wed, 10 Mar 2010 20:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/hey-i-can-try-/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>N900</title>
+      <link>https://krisbuytaert.github.io/blog/tags/n900/</link>
+      <pubDate>Wed, 10 Mar 2010 20:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/n900/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nag Nag Nag</title>
+      <link>https://krisbuytaert.github.io/blog/tags/nag-nag-nag/</link>
+      <pubDate>Wed, 10 Mar 2010 20:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/nag-nag-nag/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Plugg</title>
+      <link>https://krisbuytaert.github.io/blog/tags/plugg/</link>
+      <pubDate>Wed, 10 Mar 2010 20:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/plugg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sonyericsson</title>
+      <link>https://krisbuytaert.github.io/blog/tags/sonyericsson/</link>
+      <pubDate>Wed, 10 Mar 2010 20:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/sonyericsson/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>X10</title>
+      <link>https://krisbuytaert.github.io/blog/tags/x10/</link>
+      <pubDate>Wed, 10 Mar 2010 20:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/x10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xperia</title>
+      <link>https://krisbuytaert.github.io/blog/tags/xperia/</link>
+      <pubDate>Wed, 10 Mar 2010 20:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/xperia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DBAOps</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dbaops/</link>
+      <pubDate>Tue, 09 Mar 2010 23:39:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dbaops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NetOps</title>
+      <link>https://krisbuytaert.github.io/blog/tags/netops/</link>
+      <pubDate>Tue, 09 Mar 2010 23:39:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/netops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Krisbuytaert</title>
+      <link>https://krisbuytaert.github.io/blog/tags/krisbuytaert/</link>
+      <pubDate>Sat, 06 Mar 2010 15:03:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/krisbuytaert/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zenoss</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zenoss/</link>
+      <pubDate>Sat, 06 Mar 2010 15:03:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zenoss/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apt-Get</title>
+      <link>https://krisbuytaert.github.io/blog/tags/apt-get/</link>
+      <pubDate>Tue, 16 Feb 2010 22:20:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/apt-get/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Irc</title>
+      <link>https://krisbuytaert.github.io/blog/tags/irc/</link>
+      <pubDate>Fri, 12 Feb 2010 22:15:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/irc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Social Media</title>
+      <link>https://krisbuytaert.github.io/blog/tags/social-media/</link>
+      <pubDate>Fri, 12 Feb 2010 22:15:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/social-media/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Social Networking</title>
+      <link>https://krisbuytaert.github.io/blog/tags/social-networking/</link>
+      <pubDate>Fri, 12 Feb 2010 22:15:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/social-networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Antwerpen</title>
+      <link>https://krisbuytaert.github.io/blog/tags/antwerpen/</link>
+      <pubDate>Thu, 11 Feb 2010 22:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/antwerpen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Talk</title>
+      <link>https://krisbuytaert.github.io/blog/tags/talk/</link>
+      <pubDate>Thu, 11 Feb 2010 22:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/talk/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tstad</title>
+      <link>https://krisbuytaert.github.io/blog/tags/tstad/</link>
+      <pubDate>Thu, 11 Feb 2010 22:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/tstad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nosql</title>
+      <link>https://krisbuytaert.github.io/blog/tags/nosql/</link>
+      <pubDate>Tue, 09 Feb 2010 22:30:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/nosql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fanclubsarcasm</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fanclubsarcasm/</link>
+      <pubDate>Mon, 01 Feb 2010 22:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fanclubsarcasm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opscamp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/opscamp/</link>
+      <pubDate>Mon, 01 Feb 2010 22:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/opscamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3w-9xxx</title>
+      <link>https://krisbuytaert.github.io/blog/tags/3w-9xxx/</link>
+      <pubDate>Thu, 28 Jan 2010 20:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/3w-9xxx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3ware</title>
+      <link>https://krisbuytaert.github.io/blog/tags/3ware/</link>
+      <pubDate>Thu, 28 Jan 2010 20:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/3ware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Didimentionihateraid</title>
+      <link>https://krisbuytaert.github.io/blog/tags/didimentionihateraid/</link>
+      <pubDate>Thu, 28 Jan 2010 20:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/didimentionihateraid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Raid</title>
+      <link>https://krisbuytaert.github.io/blog/tags/raid/</link>
+      <pubDate>Thu, 28 Jan 2010 20:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/raid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Snmp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/snmp/</link>
+      <pubDate>Thu, 28 Jan 2010 20:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/snmp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Compiz</title>
+      <link>https://krisbuytaert.github.io/blog/tags/compiz/</link>
+      <pubDate>Tue, 19 Jan 2010 21:34:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/compiz/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>F12</title>
+      <link>https://krisbuytaert.github.io/blog/tags/f12/</link>
+      <pubDate>Tue, 19 Jan 2010 21:34:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/f12/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mesa</title>
+      <link>https://krisbuytaert.github.io/blog/tags/mesa/</link>
+      <pubDate>Tue, 19 Jan 2010 21:34:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/mesa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Meeting</title>
+      <link>https://krisbuytaert.github.io/blog/tags/meeting/</link>
+      <pubDate>Fri, 15 Jan 2010 22:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/meeting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Code</title>
+      <link>https://krisbuytaert.github.io/blog/tags/code/</link>
+      <pubDate>Fri, 15 Jan 2010 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Planet</title>
+      <link>https://krisbuytaert.github.io/blog/tags/planet/</link>
+      <pubDate>Fri, 15 Jan 2010 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/planet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dnsknife</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dnsknife/</link>
+      <pubDate>Fri, 15 Jan 2010 21:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dnsknife/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Intodns</title>
+      <link>https://krisbuytaert.github.io/blog/tags/intodns/</link>
+      <pubDate>Fri, 15 Jan 2010 21:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/intodns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drupal6</title>
+      <link>https://krisbuytaert.github.io/blog/tags/drupal6/</link>
+      <pubDate>Wed, 06 Jan 2010 00:48:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/drupal6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Epel</title>
+      <link>https://krisbuytaert.github.io/blog/tags/epel/</link>
+      <pubDate>Wed, 06 Jan 2010 00:48:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/epel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Djagios</title>
+      <link>https://krisbuytaert.github.io/blog/tags/djagios/</link>
+      <pubDate>Sun, 20 Dec 2009 22:42:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/djagios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Packaging</title>
+      <link>https://krisbuytaert.github.io/blog/tags/packaging/</link>
+      <pubDate>Sun, 20 Dec 2009 22:42:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/packaging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rhel</title>
+      <link>https://krisbuytaert.github.io/blog/tags/rhel/</link>
+      <pubDate>Sun, 20 Dec 2009 22:42:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/rhel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drush</title>
+      <link>https://krisbuytaert.github.io/blog/tags/drush/</link>
+      <pubDate>Sun, 20 Dec 2009 22:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/drush/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Guidelines</title>
+      <link>https://krisbuytaert.github.io/blog/tags/guidelines/</link>
+      <pubDate>Sun, 20 Dec 2009 22:39:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/guidelines/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Politics</title>
+      <link>https://krisbuytaert.github.io/blog/tags/politics/</link>
+      <pubDate>Sun, 20 Dec 2009 22:39:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/politics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Barcamp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/barcamp/</link>
+      <pubDate>Sun, 20 Dec 2009 22:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/barcamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bgc3</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bgc3/</link>
+      <pubDate>Sun, 20 Dec 2009 22:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bgc3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Geeks</title>
+      <link>https://krisbuytaert.github.io/blog/tags/geeks/</link>
+      <pubDate>Sun, 20 Dec 2009 22:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/geeks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Non Tech</title>
+      <link>https://krisbuytaert.github.io/blog/tags/non-tech/</link>
+      <pubDate>Sun, 20 Dec 2009 22:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/non-tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bcg3</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bcg3/</link>
+      <pubDate>Sun, 20 Dec 2009 15:24:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bcg3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devministration</title>
+      <link>https://krisbuytaert.github.io/blog/tags/devministration/</link>
+      <pubDate>Sun, 20 Dec 2009 15:24:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/devministration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Acquia</title>
+      <link>https://krisbuytaert.github.io/blog/tags/acquia/</link>
+      <pubDate>Mon, 14 Dec 2009 22:30:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/acquia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eu</title>
+      <link>https://krisbuytaert.github.io/blog/tags/eu/</link>
+      <pubDate>Mon, 14 Dec 2009 22:30:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/eu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oracle</title>
+      <link>https://krisbuytaert.github.io/blog/tags/oracle/</link>
+      <pubDate>Mon, 14 Dec 2009 22:30:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/oracle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Snorkle</title>
+      <link>https://krisbuytaert.github.io/blog/tags/snorkle/</link>
+      <pubDate>Mon, 14 Dec 2009 22:30:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/snorkle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devrooms</title>
+      <link>https://krisbuytaert.github.io/blog/tags/devrooms/</link>
+      <pubDate>Wed, 09 Dec 2009 20:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/devrooms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dhcp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dhcp/</link>
+      <pubDate>Fri, 04 Dec 2009 20:43:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dhcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Libvirt</title>
+      <link>https://krisbuytaert.github.io/blog/tags/libvirt/</link>
+      <pubDate>Fri, 04 Dec 2009 20:43:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/libvirt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evil</title>
+      <link>https://krisbuytaert.github.io/blog/tags/evil/</link>
+      <pubDate>Thu, 03 Dec 2009 22:39:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/evil/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google</title>
+      <link>https://krisbuytaert.github.io/blog/tags/google/</link>
+      <pubDate>Thu, 03 Dec 2009 22:39:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/google/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Debian</title>
+      <link>https://krisbuytaert.github.io/blog/tags/debian/</link>
+      <pubDate>Tue, 01 Dec 2009 20:37:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/debian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dnsproblenm</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dnsproblenm/</link>
+      <pubDate>Tue, 24 Nov 2009 21:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dnsproblenm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Serialnr</title>
+      <link>https://krisbuytaert.github.io/blog/tags/serialnr/</link>
+      <pubDate>Tue, 24 Nov 2009 21:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/serialnr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zonefile</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zonefile/</link>
+      <pubDate>Tue, 24 Nov 2009 21:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zonefile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spam</title>
+      <link>https://krisbuytaert.github.io/blog/tags/spam/</link>
+      <pubDate>Sat, 14 Nov 2009 11:33:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/spam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux-Cluster</title>
+      <link>https://krisbuytaert.github.io/blog/tags/linux-cluster/</link>
+      <pubDate>Thu, 12 Nov 2009 23:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/linux-cluster/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bind</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bind/</link>
+      <pubDate>Mon, 09 Nov 2009 23:40:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bind/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Freaking Dns Problem</title>
+      <link>https://krisbuytaert.github.io/blog/tags/freaking-dns-problem/</link>
+      <pubDate>Mon, 09 Nov 2009 23:40:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/freaking-dns-problem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Isc</title>
+      <link>https://krisbuytaert.github.io/blog/tags/isc/</link>
+      <pubDate>Mon, 09 Nov 2009 23:40:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/isc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Funambol</title>
+      <link>https://krisbuytaert.github.io/blog/tags/funambol/</link>
+      <pubDate>Fri, 06 Nov 2009 21:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/funambol/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zimbra</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zimbra/</link>
+      <pubDate>Fri, 06 Nov 2009 21:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zimbra/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Botchagalupe</title>
+      <link>https://krisbuytaert.github.io/blog/tags/botchagalupe/</link>
+      <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/botchagalupe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dev</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dev/</link>
+      <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dev/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eucalyptus</title>
+      <link>https://krisbuytaert.github.io/blog/tags/eucalyptus/</link>
+      <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/eucalyptus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gent</title>
+      <link>https://krisbuytaert.github.io/blog/tags/gent/</link>
+      <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/gent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IBBT</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ibbt/</link>
+      <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ibbt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openqr</title>
+      <link>https://krisbuytaert.github.io/blog/tags/openqr/</link>
+      <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/openqr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ops</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ops/</link>
+      <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bluetooth</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bluetooth/</link>
+      <pubDate>Thu, 05 Nov 2009 20:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bluetooth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Htc Hero</title>
+      <link>https://krisbuytaert.github.io/blog/tags/htc-hero/</link>
+      <pubDate>Thu, 05 Nov 2009 20:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/htc-hero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Everything</title>
+      <link>https://krisbuytaert.github.io/blog/tags/everything/</link>
+      <pubDate>Wed, 28 Oct 2009 22:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/everything/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inuits.be</title>
+      <link>https://krisbuytaert.github.io/blog/tags/inuits.be/</link>
+      <pubDate>Thu, 22 Oct 2009 20:22:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/inuits.be/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inuits.eu</title>
+      <link>https://krisbuytaert.github.io/blog/tags/inuits.eu/</link>
+      <pubDate>Thu, 22 Oct 2009 20:22:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/inuits.eu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inuits.nl</title>
+      <link>https://krisbuytaert.github.io/blog/tags/inuits.nl/</link>
+      <pubDate>Thu, 22 Oct 2009 20:22:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/inuits.nl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zonefiles</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zonefiles/</link>
+      <pubDate>Thu, 22 Oct 2009 20:22:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zonefiles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nines</title>
+      <link>https://krisbuytaert.github.io/blog/tags/nines/</link>
+      <pubDate>Mon, 19 Oct 2009 23:46:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/nines/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>High Availability</title>
+      <link>https://krisbuytaert.github.io/blog/tags/high-availability/</link>
+      <pubDate>Fri, 16 Oct 2009 20:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/high-availability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openais</title>
+      <link>https://krisbuytaert.github.io/blog/tags/openais/</link>
+      <pubDate>Fri, 16 Oct 2009 20:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/openais/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fauxpen Source</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fauxpen-source/</link>
+      <pubDate>Tue, 13 Oct 2009 22:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fauxpen-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Core</title>
+      <link>https://krisbuytaert.github.io/blog/tags/open-core/</link>
+      <pubDate>Tue, 13 Oct 2009 22:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/open-core/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Snore</title>
+      <link>https://krisbuytaert.github.io/blog/tags/open-snore/</link>
+      <pubDate>Tue, 13 Oct 2009 22:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/open-snore/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dot</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dot/</link>
+      <pubDate>Tue, 13 Oct 2009 14:25:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sweden</title>
+      <link>https://krisbuytaert.github.io/blog/tags/sweden/</link>
+      <pubDate>Tue, 13 Oct 2009 14:25:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/sweden/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bt</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bt/</link>
+      <pubDate>Mon, 12 Oct 2009 21:24:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>London</title>
+      <link>https://krisbuytaert.github.io/blog/tags/london/</link>
+      <pubDate>Mon, 12 Oct 2009 21:24:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/london/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Free Software</title>
+      <link>https://krisbuytaert.github.io/blog/tags/free-software/</link>
+      <pubDate>Sun, 11 Oct 2009 20:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/free-software/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Freesoftware</title>
+      <link>https://krisbuytaert.github.io/blog/tags/freesoftware/</link>
+      <pubDate>Sun, 11 Oct 2009 20:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/freesoftware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hacker</title>
+      <link>https://krisbuytaert.github.io/blog/tags/hacker/</link>
+      <pubDate>Sun, 11 Oct 2009 20:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/hacker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Junkie</title>
+      <link>https://krisbuytaert.github.io/blog/tags/junkie/</link>
+      <pubDate>Sun, 11 Oct 2009 20:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/junkie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Msql</title>
+      <link>https://krisbuytaert.github.io/blog/tags/msql/</link>
+      <pubDate>Sun, 11 Oct 2009 20:18:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/msql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zenos</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zenos/</link>
+      <pubDate>Sun, 11 Oct 2009 20:18:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zenos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Configure</title>
+      <link>https://krisbuytaert.github.io/blog/tags/configure/</link>
+      <pubDate>Fri, 09 Oct 2009 12:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/configure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eindhoven</title>
+      <link>https://krisbuytaert.github.io/blog/tags/eindhoven/</link>
+      <pubDate>Thu, 08 Oct 2009 22:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/eindhoven/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Source Community</title>
+      <link>https://krisbuytaert.github.io/blog/tags/open-source-community/</link>
+      <pubDate>Thu, 08 Oct 2009 22:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/open-source-community/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bsa</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bsa/</link>
+      <pubDate>Mon, 28 Sep 2009 19:59:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bsa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Racketeering</title>
+      <link>https://krisbuytaert.github.io/blog/tags/racketeering/</link>
+      <pubDate>Mon, 28 Sep 2009 19:59:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/racketeering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blogging</title>
+      <link>https://krisbuytaert.github.io/blog/tags/blogging/</link>
+      <pubDate>Wed, 23 Sep 2009 21:25:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/blogging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>European Comission</title>
+      <link>https://krisbuytaert.github.io/blog/tags/european-comission/</link>
+      <pubDate>Wed, 23 Sep 2009 21:25:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/european-comission/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reading</title>
+      <link>https://krisbuytaert.github.io/blog/tags/reading/</link>
+      <pubDate>Wed, 23 Sep 2009 21:25:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/reading/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reviewing</title>
+      <link>https://krisbuytaert.github.io/blog/tags/reviewing/</link>
+      <pubDate>Wed, 23 Sep 2009 21:25:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/reviewing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sun</title>
+      <link>https://krisbuytaert.github.io/blog/tags/sun/</link>
+      <pubDate>Wed, 23 Sep 2009 21:25:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/sun/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hyperic</title>
+      <link>https://krisbuytaert.github.io/blog/tags/hyperic/</link>
+      <pubDate>Wed, 23 Sep 2009 21:20:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/hyperic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Look No Link</title>
+      <link>https://krisbuytaert.github.io/blog/tags/look-no-link/</link>
+      <pubDate>Wed, 23 Sep 2009 21:20:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/look-no-link/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Business</title>
+      <link>https://krisbuytaert.github.io/blog/tags/business/</link>
+      <pubDate>Wed, 23 Sep 2009 21:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/business/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Licensing</title>
+      <link>https://krisbuytaert.github.io/blog/tags/licensing/</link>
+      <pubDate>Wed, 23 Sep 2009 21:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/licensing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opencore</title>
+      <link>https://krisbuytaert.github.io/blog/tags/opencore/</link>
+      <pubDate>Wed, 23 Sep 2009 21:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/opencore/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Morons</title>
+      <link>https://krisbuytaert.github.io/blog/tags/morons/</link>
+      <pubDate>Wed, 23 Sep 2009 21:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/morons/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Obscurity</title>
+      <link>https://krisbuytaert.github.io/blog/tags/obscurity/</link>
+      <pubDate>Wed, 23 Sep 2009 21:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/obscurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bugs</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bugs/</link>
+      <pubDate>Sat, 12 Sep 2009 08:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bugs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gnome</title>
+      <link>https://krisbuytaert.github.io/blog/tags/gnome/</link>
+      <pubDate>Sat, 12 Sep 2009 08:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/gnome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2009</title>
+      <link>https://krisbuytaert.github.io/blog/tags/2009/</link>
+      <pubDate>Thu, 20 Aug 2009 21:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/2009/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Plone</title>
+      <link>https://krisbuytaert.github.io/blog/tags/plone/</link>
+      <pubDate>Sun, 09 Aug 2009 22:44:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/plone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orace</title>
+      <link>https://krisbuytaert.github.io/blog/tags/orace/</link>
+      <pubDate>Mon, 03 Aug 2009 22:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/orace/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rivermuse</title>
+      <link>https://krisbuytaert.github.io/blog/tags/rivermuse/</link>
+      <pubDate>Fri, 31 Jul 2009 15:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/rivermuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network Monitoring</title>
+      <link>https://krisbuytaert.github.io/blog/tags/network-monitoring/</link>
+      <pubDate>Thu, 30 Jul 2009 22:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/network-monitoring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Sourcen</title>
+      <link>https://krisbuytaert.github.io/blog/tags/open-sourcen/</link>
+      <pubDate>Thu, 30 Jul 2009 22:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/open-sourcen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Novt</title>
+      <link>https://krisbuytaert.github.io/blog/tags/novt/</link>
+      <pubDate>Thu, 30 Jul 2009 21:33:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/novt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stupidme</title>
+      <link>https://krisbuytaert.github.io/blog/tags/stupidme/</link>
+      <pubDate>Thu, 30 Jul 2009 21:33:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/stupidme/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fc11</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fc11/</link>
+      <pubDate>Wed, 01 Jul 2009 16:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fc11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Live Install</title>
+      <link>https://krisbuytaert.github.io/blog/tags/live-install/</link>
+      <pubDate>Wed, 01 Jul 2009 16:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/live-install/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Squashfs</title>
+      <link>https://krisbuytaert.github.io/blog/tags/squashfs/</link>
+      <pubDate>Wed, 01 Jul 2009 16:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/squashfs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HP</title>
+      <link>https://krisbuytaert.github.io/blog/tags/hp/</link>
+      <pubDate>Wed, 01 Jul 2009 16:07:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/hp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ILO</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ilo/</link>
+      <pubDate>Wed, 01 Jul 2009 16:07:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ilo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>KVM/IP</title>
+      <link>https://krisbuytaert.github.io/blog/tags/kvm/ip/</link>
+      <pubDate>Wed, 01 Jul 2009 16:07:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/kvm/ip/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ssh</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ssh/</link>
+      <pubDate>Wed, 01 Jul 2009 16:07:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ssh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tunnel</title>
+      <link>https://krisbuytaert.github.io/blog/tags/tunnel/</link>
+      <pubDate>Wed, 01 Jul 2009 16:07:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/tunnel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gfs</title>
+      <link>https://krisbuytaert.github.io/blog/tags/gfs/</link>
+      <pubDate>Wed, 01 Jul 2009 16:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/gfs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iscsi</title>
+      <link>https://krisbuytaert.github.io/blog/tags/iscsi/</link>
+      <pubDate>Wed, 01 Jul 2009 16:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/iscsi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Netconsole</title>
+      <link>https://krisbuytaert.github.io/blog/tags/netconsole/</link>
+      <pubDate>Wed, 01 Jul 2009 16:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/netconsole/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ocfs2</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ocfs2/</link>
+      <pubDate>Wed, 01 Jul 2009 16:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ocfs2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Amber</title>
+      <link>https://krisbuytaert.github.io/blog/tags/amber/</link>
+      <pubDate>Mon, 29 Jun 2009 20:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/amber/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bz2</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bz2/</link>
+      <pubDate>Wed, 24 Jun 2009 19:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bz2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gz</title>
+      <link>https://krisbuytaert.github.io/blog/tags/gz/</link>
+      <pubDate>Wed, 24 Jun 2009 19:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/gz/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mc</title>
+      <link>https://krisbuytaert.github.io/blog/tags/mc/</link>
+      <pubDate>Wed, 24 Jun 2009 19:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/mc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Midnight Commander</title>
+      <link>https://krisbuytaert.github.io/blog/tags/midnight-commander/</link>
+      <pubDate>Wed, 24 Jun 2009 19:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/midnight-commander/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tar</title>
+      <link>https://krisbuytaert.github.io/blog/tags/tar/</link>
+      <pubDate>Wed, 24 Jun 2009 19:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/tar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Omg</title>
+      <link>https://krisbuytaert.github.io/blog/tags/omg/</link>
+      <pubDate>Mon, 15 Jun 2009 20:30:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/omg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stability</title>
+      <link>https://krisbuytaert.github.io/blog/tags/stability/</link>
+      <pubDate>Mon, 15 Jun 2009 20:30:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/stability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dnsproblems</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dnsproblems/</link>
+      <pubDate>Tue, 02 Jun 2009 23:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dnsproblems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Barcamp Antwerp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/barcamp-antwerp/</link>
+      <pubDate>Tue, 26 May 2009 22:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/barcamp-antwerp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fucking Dns Problems</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fucking-dns-problems/</link>
+      <pubDate>Tue, 26 May 2009 22:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fucking-dns-problems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zoocamp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zoocamp/</link>
+      <pubDate>Tue, 26 May 2009 22:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zoocamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Puppet Meetup</title>
+      <link>https://krisbuytaert.github.io/blog/tags/puppet-meetup/</link>
+      <pubDate>Tue, 19 May 2009 12:33:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/puppet-meetup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zoo</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zoo/</link>
+      <pubDate>Tue, 19 May 2009 12:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zoo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docs.google</title>
+      <link>https://krisbuytaert.github.io/blog/tags/docs.google/</link>
+      <pubDate>Fri, 15 May 2009 20:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/docs.google/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Googledoocs</title>
+      <link>https://krisbuytaert.github.io/blog/tags/googledoocs/</link>
+      <pubDate>Fri, 15 May 2009 20:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/googledoocs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Url Mangling</title>
+      <link>https://krisbuytaert.github.io/blog/tags/url-mangling/</link>
+      <pubDate>Fri, 15 May 2009 20:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/url-mangling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automating</title>
+      <link>https://krisbuytaert.github.io/blog/tags/automating/</link>
+      <pubDate>Fri, 15 May 2009 20:12:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/automating/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Raid Sucks</title>
+      <link>https://krisbuytaert.github.io/blog/tags/raid-sucks/</link>
+      <pubDate>Fri, 15 May 2009 20:12:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/raid-sucks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bait and Switch</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bait-and-switch/</link>
+      <pubDate>Tue, 05 May 2009 22:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bait-and-switch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Last.fm</title>
+      <link>https://krisbuytaert.github.io/blog/tags/last.fm/</link>
+      <pubDate>Tue, 05 May 2009 22:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/last.fm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Music</title>
+      <link>https://krisbuytaert.github.io/blog/tags/music/</link>
+      <pubDate>Tue, 05 May 2009 22:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/music/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sushi</title>
+      <link>https://krisbuytaert.github.io/blog/tags/sushi/</link>
+      <pubDate>Thu, 30 Apr 2009 23:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/sushi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Btrtfs</title>
+      <link>https://krisbuytaert.github.io/blog/tags/btrtfs/</link>
+      <pubDate>Thu, 30 Apr 2009 23:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/btrtfs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solaris</title>
+      <link>https://krisbuytaert.github.io/blog/tags/solaris/</link>
+      <pubDate>Thu, 30 Apr 2009 23:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/solaris/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zfs</title>
+      <link>https://krisbuytaert.github.io/blog/tags/zfs/</link>
+      <pubDate>Thu, 30 Apr 2009 23:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/zfs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloudsec</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cloudsec/</link>
+      <pubDate>Mon, 27 Apr 2009 20:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cloudsec/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ovf</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ovf/</link>
+      <pubDate>Mon, 27 Apr 2009 20:32:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ovf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ext4</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ext4/</link>
+      <pubDate>Sat, 18 Apr 2009 09:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ext4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tytso</title>
+      <link>https://krisbuytaert.github.io/blog/tags/tytso/</link>
+      <pubDate>Sat, 18 Apr 2009 09:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/tytso/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Voorjaarsconferentie</title>
+      <link>https://krisbuytaert.github.io/blog/tags/voorjaarsconferentie/</link>
+      <pubDate>Sat, 18 Apr 2009 09:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/voorjaarsconferentie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Way It Is</title>
+      <link>https://krisbuytaert.github.io/blog/tags/the-way-it-is/</link>
+      <pubDate>Fri, 17 Apr 2009 10:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/the-way-it-is/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kulak</title>
+      <link>https://krisbuytaert.github.io/blog/tags/kulak/</link>
+      <pubDate>Thu, 16 Apr 2009 23:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/kulak/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Leuven</title>
+      <link>https://krisbuytaert.github.io/blog/tags/leuven/</link>
+      <pubDate>Thu, 16 Apr 2009 23:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/leuven/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Training</title>
+      <link>https://krisbuytaert.github.io/blog/tags/training/</link>
+      <pubDate>Thu, 16 Apr 2009 23:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/training/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Enterprise Software</title>
+      <link>https://krisbuytaert.github.io/blog/tags/enterprise-software/</link>
+      <pubDate>Wed, 15 Apr 2009 23:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/enterprise-software/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Selling Software 1.0</title>
+      <link>https://krisbuytaert.github.io/blog/tags/selling-software-1.0/</link>
+      <pubDate>Wed, 15 Apr 2009 23:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/selling-software-1.0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Channel Should Die</title>
+      <link>https://krisbuytaert.github.io/blog/tags/the-channel-should-die/</link>
+      <pubDate>Wed, 15 Apr 2009 23:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/the-channel-should-die/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Augusta</title>
+      <link>https://krisbuytaert.github.io/blog/tags/augusta/</link>
+      <pubDate>Wed, 15 Apr 2009 20:50:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/augusta/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Golf</title>
+      <link>https://krisbuytaert.github.io/blog/tags/golf/</link>
+      <pubDate>Wed, 15 Apr 2009 20:50:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/golf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Green</title>
+      <link>https://krisbuytaert.github.io/blog/tags/green/</link>
+      <pubDate>Wed, 15 Apr 2009 20:50:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/green/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Masters</title>
+      <link>https://krisbuytaert.github.io/blog/tags/masters/</link>
+      <pubDate>Wed, 15 Apr 2009 20:50:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/masters/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opennms</title>
+      <link>https://krisbuytaert.github.io/blog/tags/opennms/</link>
+      <pubDate>Wed, 15 Apr 2009 20:50:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/opennms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marketeers</title>
+      <link>https://krisbuytaert.github.io/blog/tags/marketeers/</link>
+      <pubDate>Fri, 10 Apr 2009 21:21:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/marketeers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IBM</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ibm/</link>
+      <pubDate>Mon, 06 Apr 2009 21:48:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ibm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>April Fools</title>
+      <link>https://krisbuytaert.github.io/blog/tags/april-fools/</link>
+      <pubDate>Mon, 06 Apr 2009 19:09:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/april-fools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linuits</title>
+      <link>https://krisbuytaert.github.io/blog/tags/linuits/</link>
+      <pubDate>Mon, 06 Apr 2009 19:09:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/linuits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pinuits</title>
+      <link>https://krisbuytaert.github.io/blog/tags/pinuits/</link>
+      <pubDate>Mon, 06 Apr 2009 19:09:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/pinuits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apache</title>
+      <link>https://krisbuytaert.github.io/blog/tags/apache/</link>
+      <pubDate>Wed, 01 Apr 2009 01:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/apache/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lamp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/lamp/</link>
+      <pubDate>Wed, 01 Apr 2009 01:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/lamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openqrm</title>
+      <link>https://krisbuytaert.github.io/blog/tags/openqrm/</link>
+      <pubDate>Tue, 24 Mar 2009 22:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/openqrm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Identi.ca</title>
+      <link>https://krisbuytaert.github.io/blog/tags/identi.ca/</link>
+      <pubDate>Mon, 23 Mar 2009 23:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/identi.ca/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Identica</title>
+      <link>https://krisbuytaert.github.io/blog/tags/identica/</link>
+      <pubDate>Mon, 23 Mar 2009 23:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/identica/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microblog</title>
+      <link>https://krisbuytaert.github.io/blog/tags/microblog/</link>
+      <pubDate>Mon, 23 Mar 2009 23:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/microblog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microblog-Purple</title>
+      <link>https://krisbuytaert.github.io/blog/tags/microblog-purple/</link>
+      <pubDate>Mon, 23 Mar 2009 23:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/microblog-purple/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Purple</title>
+      <link>https://krisbuytaert.github.io/blog/tags/purple/</link>
+      <pubDate>Mon, 23 Mar 2009 23:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/purple/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloudcamp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cloudcamp/</link>
+      <pubDate>Tue, 17 Mar 2009 22:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cloudcamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linuxjournal</title>
+      <link>https://krisbuytaert.github.io/blog/tags/linuxjournal/</link>
+      <pubDate>Tue, 17 Mar 2009 22:12:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/linuxjournal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Old</title>
+      <link>https://krisbuytaert.github.io/blog/tags/old/</link>
+      <pubDate>Tue, 17 Mar 2009 22:12:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/old/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Diamonds</title>
+      <link>https://krisbuytaert.github.io/blog/tags/diamonds/</link>
+      <pubDate>Mon, 16 Mar 2009 23:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/diamonds/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sad</title>
+      <link>https://krisbuytaert.github.io/blog/tags/sad/</link>
+      <pubDate>Mon, 16 Mar 2009 23:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/sad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hypes</title>
+      <link>https://krisbuytaert.github.io/blog/tags/hypes/</link>
+      <pubDate>Mon, 16 Mar 2009 20:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/hypes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lsec</title>
+      <link>https://krisbuytaert.github.io/blog/tags/lsec/</link>
+      <pubDate>Mon, 16 Mar 2009 20:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/lsec/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reality</title>
+      <link>https://krisbuytaert.github.io/blog/tags/reality/</link>
+      <pubDate>Mon, 16 Mar 2009 20:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/reality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Slideshare</title>
+      <link>https://krisbuytaert.github.io/blog/tags/slideshare/</link>
+      <pubDate>Mon, 16 Mar 2009 20:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/slideshare/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Virtsec</title>
+      <link>https://krisbuytaert.github.io/blog/tags/virtsec/</link>
+      <pubDate>Mon, 16 Mar 2009 20:51:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/virtsec/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sarcasm</title>
+      <link>https://krisbuytaert.github.io/blog/tags/sarcasm/</link>
+      <pubDate>Sun, 08 Mar 2009 14:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/sarcasm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fat</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fat/</link>
+      <pubDate>Mon, 02 Mar 2009 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gpl</title>
+      <link>https://krisbuytaert.github.io/blog/tags/gpl/</link>
+      <pubDate>Mon, 02 Mar 2009 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/gpl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Patent</title>
+      <link>https://krisbuytaert.github.io/blog/tags/patent/</link>
+      <pubDate>Mon, 02 Mar 2009 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/patent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tomtom</title>
+      <link>https://krisbuytaert.github.io/blog/tags/tomtom/</link>
+      <pubDate>Mon, 02 Mar 2009 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/tomtom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Detroubadour</title>
+      <link>https://krisbuytaert.github.io/blog/tags/detroubadour/</link>
+      <pubDate>Sun, 01 Mar 2009 21:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/detroubadour/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Django</title>
+      <link>https://krisbuytaert.github.io/blog/tags/django/</link>
+      <pubDate>Sun, 01 Mar 2009 21:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/django/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Geekdinner</title>
+      <link>https://krisbuytaert.github.io/blog/tags/geekdinner/</link>
+      <pubDate>Sun, 01 Mar 2009 21:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/geekdinner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dell</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dell/</link>
+      <pubDate>Thu, 19 Feb 2009 23:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eula</title>
+      <link>https://krisbuytaert.github.io/blog/tags/eula/</link>
+      <pubDate>Thu, 19 Feb 2009 23:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/eula/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>License</title>
+      <link>https://krisbuytaert.github.io/blog/tags/license/</link>
+      <pubDate>Thu, 19 Feb 2009 23:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/license/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dopplr</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dopplr/</link>
+      <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dopplr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Doyoupoken</title>
+      <link>https://krisbuytaert.github.io/blog/tags/doyoupoken/</link>
+      <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/doyoupoken/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Facebook</title>
+      <link>https://krisbuytaert.github.io/blog/tags/facebook/</link>
+      <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/facebook/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linkedin</title>
+      <link>https://krisbuytaert.github.io/blog/tags/linkedin/</link>
+      <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/linkedin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Naymz</title>
+      <link>https://krisbuytaert.github.io/blog/tags/naymz/</link>
+      <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/naymz/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Plaxo</title>
+      <link>https://krisbuytaert.github.io/blog/tags/plaxo/</link>
+      <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/plaxo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poken</title>
+      <link>https://krisbuytaert.github.io/blog/tags/poken/</link>
+      <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/poken/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spock</title>
+      <link>https://krisbuytaert.github.io/blog/tags/spock/</link>
+      <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/spock/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wink</title>
+      <link>https://krisbuytaert.github.io/blog/tags/wink/</link>
+      <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/wink/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jbilling</title>
+      <link>https://krisbuytaert.github.io/blog/tags/jbilling/</link>
+      <pubDate>Wed, 11 Feb 2009 18:09:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/jbilling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sugarcrm</title>
+      <link>https://krisbuytaert.github.io/blog/tags/sugarcrm/</link>
+      <pubDate>Wed, 11 Feb 2009 18:09:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/sugarcrm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Adi Shamir</title>
+      <link>https://krisbuytaert.github.io/blog/tags/adi-shamir/</link>
+      <pubDate>Wed, 11 Feb 2009 16:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/adi-shamir/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bruce Schneier</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bruce-schneier/</link>
+      <pubDate>Wed, 11 Feb 2009 16:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bruce-schneier/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encryption</title>
+      <link>https://krisbuytaert.github.io/blog/tags/encryption/</link>
+      <pubDate>Wed, 11 Feb 2009 16:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/encryption/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>L-Sec</title>
+      <link>https://krisbuytaert.github.io/blog/tags/l-sec/</link>
+      <pubDate>Wed, 11 Feb 2009 16:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/l-sec/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ron Rivest</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ron-rivest/</link>
+      <pubDate>Wed, 11 Feb 2009 16:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ron-rivest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rsa</title>
+      <link>https://krisbuytaert.github.io/blog/tags/rsa/</link>
+      <pubDate>Wed, 11 Feb 2009 16:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/rsa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Syscon</title>
+      <link>https://krisbuytaert.github.io/blog/tags/syscon/</link>
+      <pubDate>Wed, 11 Feb 2009 00:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/syscon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ulitzer</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ulitzer/</link>
+      <pubDate>Wed, 11 Feb 2009 00:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ulitzer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dns Problem</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dns-problem/</link>
+      <pubDate>Tue, 10 Feb 2009 23:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dns-problem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reverse Dns</title>
+      <link>https://krisbuytaert.github.io/blog/tags/reverse-dns/</link>
+      <pubDate>Tue, 10 Feb 2009 23:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/reverse-dns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Skip_name_resolve</title>
+      <link>https://krisbuytaert.github.io/blog/tags/skip_name_resolve/</link>
+      <pubDate>Tue, 10 Feb 2009 23:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/skip_name_resolve/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fosdem2009</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fosdem2009/</link>
+      <pubDate>Sun, 08 Feb 2009 16:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fosdem2009/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mysql Monitoring</title>
+      <link>https://krisbuytaert.github.io/blog/tags/mysql-monitoring/</link>
+      <pubDate>Sun, 08 Feb 2009 16:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/mysql-monitoring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Free Beer</title>
+      <link>https://krisbuytaert.github.io/blog/tags/free-beer/</link>
+      <pubDate>Sat, 07 Feb 2009 12:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/free-beer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hype</title>
+      <link>https://krisbuytaert.github.io/blog/tags/hype/</link>
+      <pubDate>Fri, 06 Feb 2009 00:24:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/hype/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LinuxKongress</title>
+      <link>https://krisbuytaert.github.io/blog/tags/linuxkongress/</link>
+      <pubDate>Fri, 06 Feb 2009 00:24:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/linuxkongress/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Systemimager</title>
+      <link>https://krisbuytaert.github.io/blog/tags/systemimager/</link>
+      <pubDate>Fri, 06 Feb 2009 00:24:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/systemimager/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Toldyaso</title>
+      <link>https://krisbuytaert.github.io/blog/tags/toldyaso/</link>
+      <pubDate>Fri, 06 Feb 2009 00:24:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/toldyaso/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Whitespace</title>
+      <link>https://krisbuytaert.github.io/blog/tags/whitespace/</link>
+      <pubDate>Mon, 02 Feb 2009 23:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/whitespace/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://krisbuytaert.github.io/blog/tags/database/</link>
+      <pubDate>Mon, 02 Feb 2009 22:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Derby</title>
+      <link>https://krisbuytaert.github.io/blog/tags/derby/</link>
+      <pubDate>Mon, 02 Feb 2009 22:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/derby/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ingres</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ingres/</link>
+      <pubDate>Mon, 02 Feb 2009 22:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ingres/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Posgresql</title>
+      <link>https://krisbuytaert.github.io/blog/tags/posgresql/</link>
+      <pubDate>Mon, 02 Feb 2009 22:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/posgresql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bof</title>
+      <link>https://krisbuytaert.github.io/blog/tags/bof/</link>
+      <pubDate>Thu, 29 Jan 2009 00:29:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/bof/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>System Administration</title>
+      <link>https://krisbuytaert.github.io/blog/tags/system-administration/</link>
+      <pubDate>Thu, 29 Jan 2009 00:29:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/system-administration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Usb</title>
+      <link>https://krisbuytaert.github.io/blog/tags/usb/</link>
+      <pubDate>Thu, 29 Jan 2009 00:29:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/usb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Patents</title>
+      <link>https://krisbuytaert.github.io/blog/tags/patents/</link>
+      <pubDate>Mon, 26 Jan 2009 11:25:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/patents/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Demoscene</title>
+      <link>https://krisbuytaert.github.io/blog/tags/demoscene/</link>
+      <pubDate>Wed, 21 Jan 2009 20:56:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/demoscene/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hornet</title>
+      <link>https://krisbuytaert.github.io/blog/tags/hornet/</link>
+      <pubDate>Wed, 21 Jan 2009 20:56:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/hornet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oldskool</title>
+      <link>https://krisbuytaert.github.io/blog/tags/oldskool/</link>
+      <pubDate>Wed, 21 Jan 2009 20:56:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/oldskool/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Natives</title>
+      <link>https://krisbuytaert.github.io/blog/tags/the-natives/</link>
+      <pubDate>Wed, 21 Jan 2009 20:56:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/the-natives/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dns Annoyancy</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dns-annoyancy/</link>
+      <pubDate>Wed, 21 Jan 2009 20:29:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dns-annoyancy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Config Mgmt</title>
+      <link>https://krisbuytaert.github.io/blog/tags/config-mgmt/</link>
+      <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/config-mgmt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Launchpad</title>
+      <link>https://krisbuytaert.github.io/blog/tags/launchpad/</link>
+      <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/launchpad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mysql Proxy</title>
+      <link>https://krisbuytaert.github.io/blog/tags/mysql-proxy/</link>
+      <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/mysql-proxy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opensoure</title>
+      <link>https://krisbuytaert.github.io/blog/tags/opensoure/</link>
+      <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/opensoure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proprietary Crap</title>
+      <link>https://krisbuytaert.github.io/blog/tags/proprietary-crap/</link>
+      <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/proprietary-crap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>False Feeling of Security</title>
+      <link>https://krisbuytaert.github.io/blog/tags/false-feeling-of-security/</link>
+      <pubDate>Sun, 18 Jan 2009 15:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/false-feeling-of-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Life Style</title>
+      <link>https://krisbuytaert.github.io/blog/tags/life-style/</link>
+      <pubDate>Sun, 18 Jan 2009 15:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/life-style/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lvm</title>
+      <link>https://krisbuytaert.github.io/blog/tags/lvm/</link>
+      <pubDate>Sun, 18 Jan 2009 15:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/lvm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>No Root</title>
+      <link>https://krisbuytaert.github.io/blog/tags/no-root/</link>
+      <pubDate>Sun, 18 Jan 2009 15:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/no-root/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Root</title>
+      <link>https://krisbuytaert.github.io/blog/tags/root/</link>
+      <pubDate>Sun, 18 Jan 2009 15:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/root/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Everything Is a Funky Dns Problem</title>
+      <link>https://krisbuytaert.github.io/blog/tags/everything-is-a-funky-dns-problem/</link>
+      <pubDate>Sat, 17 Jan 2009 22:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/everything-is-a-funky-dns-problem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book Review</title>
+      <link>https://krisbuytaert.github.io/blog/tags/book-review/</link>
+      <pubDate>Sat, 17 Jan 2009 21:37:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/book-review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multimedia</title>
+      <link>https://krisbuytaert.github.io/blog/tags/multimedia/</link>
+      <pubDate>Sat, 17 Jan 2009 21:37:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/multimedia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chocolate</title>
+      <link>https://krisbuytaert.github.io/blog/tags/chocolate/</link>
+      <pubDate>Sat, 17 Jan 2009 21:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/chocolate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tux</title>
+      <link>https://krisbuytaert.github.io/blog/tags/tux/</link>
+      <pubDate>Sat, 17 Jan 2009 21:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/tux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monitoring Tools</title>
+      <link>https://krisbuytaert.github.io/blog/tags/monitoring-tools/</link>
+      <pubDate>Wed, 14 Jan 2009 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/monitoring-tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Porting</title>
+      <link>https://krisbuytaert.github.io/blog/tags/porting/</link>
+      <pubDate>Wed, 14 Jan 2009 20:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/porting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shareomatic</title>
+      <link>https://krisbuytaert.github.io/blog/tags/shareomatic/</link>
+      <pubDate>Wed, 14 Jan 2009 20:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/shareomatic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ip</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ip/</link>
+      <pubDate>Wed, 07 Jan 2009 18:44:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ip/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wikipedia</title>
+      <link>https://krisbuytaert.github.io/blog/tags/wikipedia/</link>
+      <pubDate>Wed, 07 Jan 2009 18:44:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/wikipedia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Buddylist</title>
+      <link>https://krisbuytaert.github.io/blog/tags/buddylist/</link>
+      <pubDate>Tue, 06 Jan 2009 20:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/buddylist/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Friendlist</title>
+      <link>https://krisbuytaert.github.io/blog/tags/friendlist/</link>
+      <pubDate>Tue, 06 Jan 2009 20:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/friendlist/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hoosgot</title>
+      <link>https://krisbuytaert.github.io/blog/tags/hoosgot/</link>
+      <pubDate>Tue, 06 Jan 2009 20:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/hoosgot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lazyweb</title>
+      <link>https://krisbuytaert.github.io/blog/tags/lazyweb/</link>
+      <pubDate>Tue, 06 Jan 2009 20:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/lazyweb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Doxpara</title>
+      <link>https://krisbuytaert.github.io/blog/tags/doxpara/</link>
+      <pubDate>Tue, 06 Jan 2009 20:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/doxpara/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kaminsky</title>
+      <link>https://krisbuytaert.github.io/blog/tags/kaminsky/</link>
+      <pubDate>Tue, 06 Jan 2009 20:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/kaminsky/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kulminator</title>
+      <link>https://krisbuytaert.github.io/blog/tags/kulminator/</link>
+      <pubDate>Tue, 30 Dec 2008 13:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/kulminator/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oops</title>
+      <link>https://krisbuytaert.github.io/blog/tags/oops/</link>
+      <pubDate>Tue, 30 Dec 2008 13:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/oops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Planet.grep.be</title>
+      <link>https://krisbuytaert.github.io/blog/tags/planet.grep.be/</link>
+      <pubDate>Tue, 30 Dec 2008 13:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/planet.grep.be/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stable</title>
+      <link>https://krisbuytaert.github.io/blog/tags/stable/</link>
+      <pubDate>Mon, 29 Dec 2008 15:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/stable/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Planet.grep Grep Beer Kulminator</title>
+      <link>https://krisbuytaert.github.io/blog/tags/planet.grep-grep-beer-kulminator/</link>
+      <pubDate>Tue, 23 Dec 2008 18:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/planet.grep-grep-beer-kulminator/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crash</title>
+      <link>https://krisbuytaert.github.io/blog/tags/crash/</link>
+      <pubDate>Fri, 19 Dec 2008 20:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/crash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lost&#43;found</title>
+      <link>https://krisbuytaert.github.io/blog/tags/lost&#43;found/</link>
+      <pubDate>Fri, 19 Dec 2008 20:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/lost&#43;found/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mythtv</title>
+      <link>https://krisbuytaert.github.io/blog/tags/mythtv/</link>
+      <pubDate>Fri, 19 Dec 2008 20:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/mythtv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recovery</title>
+      <link>https://krisbuytaert.github.io/blog/tags/recovery/</link>
+      <pubDate>Fri, 19 Dec 2008 20:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/recovery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scripting</title>
+      <link>https://krisbuytaert.github.io/blog/tags/scripting/</link>
+      <pubDate>Fri, 19 Dec 2008 20:41:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/scripting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fedora10</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fedora10/</link>
+      <pubDate>Fri, 19 Dec 2008 20:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fedora10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eeubuntu</title>
+      <link>https://krisbuytaert.github.io/blog/tags/eeubuntu/</link>
+      <pubDate>Fri, 19 Dec 2008 20:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/eeubuntu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Experience</title>
+      <link>https://krisbuytaert.github.io/blog/tags/experience/</link>
+      <pubDate>Fri, 19 Dec 2008 20:35:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/experience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>https://krisbuytaert.github.io/blog/tags/learning/</link>
+      <pubDate>Fri, 19 Dec 2008 20:35:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>School</title>
+      <link>https://krisbuytaert.github.io/blog/tags/school/</link>
+      <pubDate>Fri, 19 Dec 2008 20:35:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/school/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cck</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cck/</link>
+      <pubDate>Sun, 07 Dec 2008 23:44:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cck/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fud</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fud/</link>
+      <pubDate>Sun, 07 Dec 2008 21:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Incompetent Marketeers</title>
+      <link>https://krisbuytaert.github.io/blog/tags/incompetent-marketeers/</link>
+      <pubDate>Sun, 07 Dec 2008 21:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/incompetent-marketeers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Puppies</title>
+      <link>https://krisbuytaert.github.io/blog/tags/puppies/</link>
+      <pubDate>Sun, 07 Dec 2008 21:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/puppies/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wordpress</title>
+      <link>https://krisbuytaert.github.io/blog/tags/wordpress/</link>
+      <pubDate>Sat, 06 Dec 2008 11:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Branche Restaurant</title>
+      <link>https://krisbuytaert.github.io/blog/tags/branche-restaurant/</link>
+      <pubDate>Thu, 04 Dec 2008 15:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/branche-restaurant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Branche Restaurant Antwerpen</title>
+      <link>https://krisbuytaert.github.io/blog/tags/branche-restaurant-antwerpen/</link>
+      <pubDate>Thu, 04 Dec 2008 15:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/branche-restaurant-antwerpen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Brancherestaurant</title>
+      <link>https://krisbuytaert.github.io/blog/tags/brancherestaurant/</link>
+      <pubDate>Thu, 04 Dec 2008 15:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/brancherestaurant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Brancherestaurant Antwerpen</title>
+      <link>https://krisbuytaert.github.io/blog/tags/brancherestaurant-antwerpen/</link>
+      <pubDate>Thu, 04 Dec 2008 15:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/brancherestaurant-antwerpen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Restaurantweek</title>
+      <link>https://krisbuytaert.github.io/blog/tags/restaurantweek/</link>
+      <pubDate>Thu, 04 Dec 2008 15:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/restaurantweek/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drupal Performance Tuning</title>
+      <link>https://krisbuytaert.github.io/blog/tags/drupal-performance-tuning/</link>
+      <pubDate>Mon, 01 Dec 2008 22:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/drupal-performance-tuning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Skype</title>
+      <link>https://krisbuytaert.github.io/blog/tags/skype/</link>
+      <pubDate>Mon, 01 Dec 2008 22:40:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/skype/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fedora 10</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fedora-10/</link>
+      <pubDate>Mon, 01 Dec 2008 22:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fedora-10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>X86_64</title>
+      <link>https://krisbuytaert.github.io/blog/tags/x86_64/</link>
+      <pubDate>Mon, 01 Dec 2008 22:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/x86_64/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Barcampgent</title>
+      <link>https://krisbuytaert.github.io/blog/tags/barcampgent/</link>
+      <pubDate>Fri, 28 Nov 2008 20:12:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/barcampgent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monitoring Is Sexy</title>
+      <link>https://krisbuytaert.github.io/blog/tags/monitoring-is-sexy/</link>
+      <pubDate>Tue, 25 Nov 2008 13:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/monitoring-is-sexy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unix Is Sexy</title>
+      <link>https://krisbuytaert.github.io/blog/tags/unix-is-sexy/</link>
+      <pubDate>Tue, 25 Nov 2008 13:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/unix-is-sexy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Virtualization.com</title>
+      <link>https://krisbuytaert.github.io/blog/tags/virtualization.com/</link>
+      <pubDate>Tue, 18 Nov 2008 10:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/virtualization.com/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Feed</title>
+      <link>https://krisbuytaert.github.io/blog/tags/feed/</link>
+      <pubDate>Fri, 14 Nov 2008 20:56:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/feed/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microformats</title>
+      <link>https://krisbuytaert.github.io/blog/tags/microformats/</link>
+      <pubDate>Fri, 14 Nov 2008 20:56:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/microformats/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rrdtool</title>
+      <link>https://krisbuytaert.github.io/blog/tags/rrdtool/</link>
+      <pubDate>Fri, 14 Nov 2008 20:50:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/rrdtool/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stats</title>
+      <link>https://krisbuytaert.github.io/blog/tags/stats/</link>
+      <pubDate>Fri, 14 Nov 2008 20:50:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/stats/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technorati</title>
+      <link>https://krisbuytaert.github.io/blog/tags/technorati/</link>
+      <pubDate>Fri, 14 Nov 2008 20:50:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/technorati/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dns Fail</title>
+      <link>https://krisbuytaert.github.io/blog/tags/dns-fail/</link>
+      <pubDate>Fri, 14 Nov 2008 20:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/dns-fail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Meme</title>
+      <link>https://krisbuytaert.github.io/blog/tags/meme/</link>
+      <pubDate>Wed, 12 Nov 2008 21:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/meme/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Cafe</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cloud-cafe/</link>
+      <pubDate>Mon, 03 Nov 2008 21:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cloud-cafe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloudcafe</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cloudcafe/</link>
+      <pubDate>Mon, 03 Nov 2008 21:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cloudcafe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>John Willis</title>
+      <link>https://krisbuytaert.github.io/blog/tags/john-willis/</link>
+      <pubDate>Mon, 03 Nov 2008 21:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/john-willis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Podcast</title>
+      <link>https://krisbuytaert.github.io/blog/tags/podcast/</link>
+      <pubDate>Mon, 03 Nov 2008 21:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/podcast/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rss Feed</title>
+      <link>https://krisbuytaert.github.io/blog/tags/rss-feed/</link>
+      <pubDate>Sun, 02 Nov 2008 21:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/rss-feed/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vhost</title>
+      <link>https://krisbuytaert.github.io/blog/tags/vhost/</link>
+      <pubDate>Sun, 02 Nov 2008 21:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/vhost/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloudcamp_bxl</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cloudcamp_bxl/</link>
+      <pubDate>Sun, 02 Nov 2008 20:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cloudcamp_bxl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Definition</title>
+      <link>https://krisbuytaert.github.io/blog/tags/definition/</link>
+      <pubDate>Sun, 02 Nov 2008 20:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/definition/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Social Network</title>
+      <link>https://krisbuytaert.github.io/blog/tags/social-network/</link>
+      <pubDate>Sat, 01 Nov 2008 13:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/social-network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ifconfig</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ifconfig/</link>
+      <pubDate>Wed, 24 Sep 2008 17:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ifconfig/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Commentspam</title>
+      <link>https://krisbuytaert.github.io/blog/tags/commentspam/</link>
+      <pubDate>Wed, 24 Sep 2008 10:25:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/commentspam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>/Usr/Bin/Time</title>
+      <link>https://krisbuytaert.github.io/blog/tags//usr/bin/time/</link>
+      <pubDate>Fri, 22 Aug 2008 20:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags//usr/bin/time/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Time</title>
+      <link>https://krisbuytaert.github.io/blog/tags/time/</link>
+      <pubDate>Fri, 22 Aug 2008 20:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/time/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unix</title>
+      <link>https://krisbuytaert.github.io/blog/tags/unix/</link>
+      <pubDate>Fri, 22 Aug 2008 20:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/unix/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blogger</title>
+      <link>https://krisbuytaert.github.io/blog/tags/blogger/</link>
+      <pubDate>Wed, 19 Dec 2007 23:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/blogger/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hpc</title>
+      <link>https://krisbuytaert.github.io/blog/tags/hpc/</link>
+      <pubDate>Sat, 10 Nov 2007 17:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/hpc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scaling</title>
+      <link>https://krisbuytaert.github.io/blog/tags/scaling/</link>
+      <pubDate>Sat, 10 Nov 2007 17:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/scaling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lustre</title>
+      <link>https://krisbuytaert.github.io/blog/tags/lustre/</link>
+      <pubDate>Fri, 14 Sep 2007 11:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/lustre/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

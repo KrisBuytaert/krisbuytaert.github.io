@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marketing on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/marketing/</link>
+    <description>Recent content in Marketing on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Apr 2010 23:15:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/marketing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Devops and Cloud</title>
+      <link>https://krisbuytaert.github.io/blog/devops-and-cloud/</link>
+      <pubDate>Wed, 28 Apr 2010 23:15:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/devops-and-cloud/</guid>
+      <description>&lt;p&gt;Whenever I give my Cloud security talk there&amp;rsquo;s a slide in there talking about the most scary idea about Cloud and Security, the fact that Marketing people will build things on their own while IT, or any other departement isn&amp;rsquo;t involved, and as we all know marketing people have no clue about security, it&amp;rsquo;s not on their mind they won&amp;rsquo;t even think about adding some sort of security to their application.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Conspiracy Theory</title>
+      <link>https://krisbuytaert.github.io/blog/conspiracy-theory/</link>
+      <pubDate>Sun, 08 Mar 2009 14:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/conspiracy-theory/</guid>
+      <description>&lt;p&gt;&lt;code&gt;&amp;lt;conspiracy mode&amp;gt;&lt;/code&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://nxadm.wordpress.com/2009/03/03/still-no-javafx-for-linux/&#34;&gt;Claudio&lt;/a&gt; , Isn&amp;rsquo;t it obvious, Sun doesn&amp;rsquo;t want you to use Linux, they will do everything in their power to prevent that , such as slowing down releases of software for our preferred platform, so that you might even start to consider choosing for Slowaris&lt;br&gt;&#xA;&lt;code&gt;&amp;lt;/conspiracy mode&amp;gt;&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

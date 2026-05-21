@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sweden on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/sweden/</link>
+    <description>Recent content in Sweden on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Oct 2009 14:25:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/sweden/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Everything is a Swedish dot Problem</title>
+      <link>https://krisbuytaert.github.io/blog/everything-swedish-dot-problem/</link>
+      <pubDate>Tue, 13 Oct 2009 14:25:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/everything-swedish-dot-problem/</guid>
+      <description>&lt;p&gt;Via &lt;a href=&#34;http://twitter.com/frank_be/&#34;&gt;@frank_be&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://smalltalk.frank.be/een-puntje-vergeten-kan-ernstige-gevolgen-heb&#34;&gt;.se goes down after a dns config issue&lt;/a&gt;&lt;br&gt;&#xA;We have spoken to a number of industry insiders and what happened is that when updating the data, the script did not add a terminating “.” to the DNS records in the .se zone. That trailing dot is necessary in the settings for DNS to understand that “.se” is the top-level domain. It is a seemingly small detail, but without it, the whole DNS lookup chain broke down.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

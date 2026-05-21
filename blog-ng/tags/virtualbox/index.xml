@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualbox on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/virtualbox/</link>
+    <description>Recent content in Virtualbox on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 May 2011 22:31:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>And then vagrant gave up ...  for a while</title>
+      <link>https://krisbuytaert.github.io/blog/and-then-vagrant-gave-while/</link>
+      <pubDate>Mon, 02 May 2011 22:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/and-then-vagrant-gave-while/</guid>
+      <description>&lt;p&gt;Don&amp;rsquo;t you just love Ruby errors &amp;hellip; like the one below ?&lt;/p&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t they almost make Java stack traces look readable ?&lt;br&gt;&#xA;57 lines of jibberish &amp;hellip; where all I wanted to read was &amp;ldquo;VirtualBox in error state, check gui&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;People like &lt;a href=&#34;https://twitter.com/#!/sonofhans&#34;&gt;Randall Hanssen&lt;/a&gt; deserve much more visibility .. they do understand how to write a good error message and there are lots of projects that need improvement there.&lt;/p&gt;&#xA;&lt;p&gt;Anywhow&amp;hellip; vagrant had suddenly stopped working on me with the error below&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Converting KVM to VirtualBox</title>
+      <link>https://krisbuytaert.github.io/blog/converting-kvm-virtualbox/</link>
+      <pubDate>Wed, 23 Feb 2011 00:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/converting-kvm-virtualbox/</guid>
+      <description>&lt;p&gt;I have had most of my test environment, aka puppetmasters, test mysql setups etc running in KVM for the past couple of years .. (yes I`m still using a lot of Xen in production environments, but we&amp;rsquo;ve also been using KVM for a while already .. it&amp;rsquo;s a good mix) , Virtual box has always been the lesser loved Virtualization platform , however while playing more and more with Vagrant Up I realized I needed to convirt some boxen (e.g my PuppetMaster) to Virtualbox, and google was really no good help(most people seem to go the other way , or want to use some proprietary tools )&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building Virtual Appliances</title>
+      <link>https://krisbuytaert.github.io/blog/building-virtual-appliances/</link>
+      <pubDate>Thu, 27 May 2010 10:03:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/building-virtual-appliances/</guid>
+      <description>&lt;p&gt;Johan from &lt;a href=&#34;http://sizingservers.be/&#34;&gt;Sizing Servers&lt;/a&gt; asked me if I could talk about my experiences on building (virtual) appliances at their Advanced Virtualization and Hybrid Cloud seminar . Off course I said yes ..&lt;/p&gt;&#xA;&lt;p&gt;Slides are below &amp;hellip; Enjoy ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/building-appliances&#34; title=&#34;Building appliances&#34;&gt;Building appliances&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>KVM vs Virtualbox</title>
+      <link>https://krisbuytaert.github.io/blog/kvm-vs-virtualbox/</link>
+      <pubDate>Thu, 30 Jul 2009 21:33:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/kvm-vs-virtualbox/</guid>
+      <description>&lt;p&gt;So you need that old FC9 instance on your fresh F11 install.&lt;/p&gt;&#xA;&lt;p&gt;Obviously I started a KVM instance on my desktop and installed FC9 in a Virtual Machine,&lt;br&gt;&#xA;It took long to install, too long, so I looked if KVM was working correctly&lt;br&gt;&#xA;Kvm was loaded but not in use ..&lt;br&gt;&#xA;And then you remember why you had VirtualBox on that machine before it&amp;rsquo;s upgrade . indeed, this machine was to old it was not a VT Capable machine . VirtualBox performs much better there ..&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Eclipse of Sun</title>
+      <link>https://krisbuytaert.github.io/blog/eclipse-sun/</link>
+      <pubDate>Sat, 06 Dec 2008 11:42:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/eclipse-sun/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;ve been reading this blog for a while you&amp;rsquo;ll know that&lt;br&gt;&#xA;for the past decade I&amp;rsquo;ve had a love-hate relation ship with Sun.&lt;/p&gt;&#xA;&lt;p&gt;Sun has done a lot of good things in their open source journey such as MySQL, openOffice , Virtualbox and opensourcing Java. But on the other hand they had troubles with creating really organic opensource.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve always wondered why a company that bought StarDivision because it was cheaper than buying the MS Office license keeps wasting money on building it&amp;rsquo;s own operating systems, albeit in a pretty open model, but with zero to no relevant community.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

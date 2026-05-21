@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Posts | Everything is a Freaking DNS problem</title>
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
+</head>
+<body>
+  <header>
+    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <p class="tagline">Devops Needs Sushi</p>
+  </header>
+  <div class="layout">
+    <main>
+      
+<h2>Posts</h2>
+
+<article class="summary">
+  <h3><a href="/blog/nosql-vs-mysql/">NoSQL vs MySQL</a></h3>
+  <p class="meta"><time datetime="2009-11-23">November 23, 2009</time></p>
+  <p><p>No I did NOT post the following <a href="http://www.ruturaj.net/redis-memcached-tokyo-tyrant-mysql-comparison#comment-22565">comment</a><br>
+<br>
+This is ridiculous. You didn&rsquo;t test MySQL, you tested a failing DNS lookup on authentication.</p>
+<p>resulting in the follow up <a href="http://www.ruturaj.net/myisam-innodb">post</a> :</p>
+<p><br>
+My previous post Redis, Memcache, Tokyp Tyrant, MySQL comparison had a flaw as pointed out by this comment. The MySQL was taking a huge time for doing a reverse DNS lookup.\</p>
+<p>But as always &hellip; Everything is just a Freaking dns problem :)</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/tom-limoncelli-wrong/">Tom Limoncelli is wrong</a></h3>
+  <p class="meta"><time datetime="2009-11-18">November 18, 2009</time></p>
+  <p><p><a href="http://everythingsysadmin.com/2009/11/a-list-of-dumb-things-to-check.html">Tom Limoncelli</a> is so wrong , he list DNS problem only as nr 33 on his <a href="http://whatexit.org/tal/mywritings/dumb-things-to-check.html">dumb-things to check</a> list.</p>
+<p>And obviously it should be the very First thing you check !</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/got-interviewed/">Got Interviewed</a></h3>
+  <p class="meta"><time datetime="2009-11-18">November 18, 2009</time></p>
+  <p><p>by <a href="http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/">@botchagalupe</a><br>
+on Virtualization, Open Source tools and DNS Problems</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/dear-mollom/">Dear Mollom,</a></h3>
+  <p class="meta"><time datetime="2009-11-14">November 14, 2009</time></p>
+  <p><p>What I would like as a feature from Santa,</p>
+<p>I would like to be able to report a comment as URL Spam , you know the case where the content of a comment is perfectly OK, but the URL the commenter uses is a link to a NSF, pure spamming or absolutely unrelated site.</p>
+<p>There&rsquo;s nofollow etc , but to keep my site clean I&rsquo;d have to report these commen<br>
+ts as spam, however when you start analysing the content of the message and comparing that content to other posts you will eventually get false positives.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/yet-another-dns-issue/">Yet Another DNS Issue</a></h3>
+  <p class="meta"><time datetime="2009-11-12">November 12, 2009</time></p>
+  <p><p>While browsing trough my enormous mailinglist backlog I ran into the following message from Gianluca Cecchi on the DRBD-user mailing list</p>
+<p>guess I`ll have to give Lars a T-Shirt when we next meet ;)</p>
+<pre tabindex="0"><code>1. From: Gianluca Cecchi
+2. To: drbd-user@lists.linbit.com
+3. Subject: [DRBD-user] notes on 8.3.2
+
+
+6. - drbdadm create-md r0 segfaults when the command &#34;hostname&#34; on the
+7. server contains the fully qualified domain name but you have put only
+8. the hostname part in drbd.conf
+9. Instead, the command &#34;drbdadm dump&#34; correctly gives you a warning in
+10. this case (suggesting how to correct the error you made....):
+
+12. suppose complete hostname is virtfed.domainname.com and you put
+13. virtfed alone in drbd.conf
+14. [root@virtfed ~]# drbdadm dump
+15. WARN: no normal resources defined for this host (virtfed.domainname.com)!?
+
+17. while
+18. [root@virtfed ~]# drbdadm create-md r0
+19. Segmentation fault
+</code></pre><p>Guess I`ll have to give the Linbit crowd a T-Shirt when we next meet ;)</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/what-dns-not/">What DNS is Not</a></h3>
+  <p class="meta"><time datetime="2009-11-09">November 9, 2009</time></p>
+  <p><p><a href="http://queue.acm.org/detail.cfm?id=1647302">This article</a> by Paul Vixie is a must read if you want to know what DNS is not about .. and how people abuse it for the sake of extorting money from morons.</p>
+<p>Ah well.. nothing we didn&rsquo;t already know.. just more proof that<br>
+Everything is a Freaking DNS problem.</p>
+<p>Not sure on which layer the problem is.. must be on a layer even above the religious one.. the &ldquo;Greed&rdquo; one.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/funambol-android/">Funambol on Android</a></h3>
+  <p class="meta"><time datetime="2009-11-06">November 6, 2009</time></p>
+  <p><p>So <a href="http://www.inuits.be/">we</a> have a Zimbra, and a Funambol and I have an Android, so what would you think I want to test .. exactly .. run the Android Funambol client on my phone.</p>
+<p><a href="https://android-client.forge.funambol.org/">On forge.funambol.org</a> it looks great .. nice screenshot .. then you look closer ..<br>
+Contacts OK, Calendar Not supported (yet) .. apparently it has been like that sincs it got released which is over a year ago.</p>
+<p>So I`m looking for other ideas on how to sync my Zimbra Calendar with my Android</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/long-overdue-report-devopsdays/">A long overdue report of DevopsDays</a></h3>
+  <p class="meta"><time datetime="2009-11-05">November 5, 2009</time></p>
+  <p><p>Here&rsquo;s how it started :</p>
+<p>So I used to be a software developer, writing perl for the web, then C, then Java, then PHP, till I realized nobody ever configured my servers correctly and I changed trades becoming a system engineer, while teaching new developers the basics of their trade, whom grew into doing Infrastructure Architecture .. familiar story for much of the crowd at DevopsDays &hellip; a crowd that wants to stopping the war between developers and system engineering , a crowd that wants to automate builds, integrate testing, deploy, deploy on very large scale, deploy in the cloud and much more.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/life-android/">Life with an Android</a></h3>
+  <p class="meta"><time datetime="2009-11-05">November 5, 2009</time></p>
+  <p><p>I&rsquo;ve have never been a really an HTC fan, because of the platform they used before, I have been a Ericsson GA628, SH888, then Sony Ericsson fanboy for all my life T39m, K700, K800i , so this is my first attempt into using a different brand of phone , I&rsquo;ve been wanting an Open Phone for ages.. but I&rsquo;ve been waiting for Godot, er the openMoko, for way to long now so with the introduction of the HTC and my K800i being long overdue for a replacement.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/dns-tools/">DNS Tools</a></h3>
+  <p class="meta"><time datetime="2009-10-28">October 28, 2009</time></p>
+  <p><p>In my latest DNS Problem related post I mentionned that don&rsquo;t know all the answers, I however know about some good tools to help you setup a clean DNS server.</p>
+<p>Ages ago via <a href="http://planet.fedoraproject.org/">Planet Fedora</a> I ran into an article from <a href="http://www.alphatek.info/2008/11/29/dnsknifecom-meet-the-online-dig/">Steven Moix</a> about a tool he and his fellow students build for a summer project.</p>
+<p>The tool is <a href="http://www.dnsknife.com/">DNSKnife</a> and it&rsquo;s really interresting.</p>
+<p>DNS Knife is a good tool to check if your DNS setup is ok, it checks the parent servers, it checks for if your nameservers are listed on the parent server, checks if all your nameservers are reachable and are authorative .<br>
+And so on and so on &hellip;</p></p>
+</article>
+
+
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/blog/posts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/page/15/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/page/14/" aria-label="Page 14" class="page-link" role="button">14</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/page/15/" aria-label="Page 15" class="page-link" role="button">15</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 16" class="page-link" role="button">16</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/page/17/" aria-label="Page 17" class="page-link" role="button">17</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/page/18/" aria-label="Page 18" class="page-link" role="button">18</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/page/17/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/page/30/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+
+    </main>
+    <aside class="sidebar">
+
+  <section class="bio">
+    <h3>About Kris Buytaert</h3>
+    <p>Kris Buytaert is a long time Linux and Open Source Consultant and engineering leader. 
+    He's one of the instigators of the devops movement. 
+
+    <p>He frequently speaks at and organizes international conferences, and has written
+    about the same subjects in different books, papers and articles.</p>
+  </section>
+
+  <section class="nav-links">
+    <h3>Links</h3>
+    <ul>
+      <li><a href="https://www.krisbuytaert.be/">Main page</a></li>
+      <li><a href="http://www.linkedin.com/in/krisbuytaert">My LinkedIn Profile</a>
+      <li><a href="http://github.com/KrisBuytaert/">Kris on Github</a>
+      <li><a href="http://codeberg.org/KrisBuytaert/">Kris on Codeberg</a>
+      <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a>
+
+
+      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+
+
+      <li><a href="https://devopsdays.org">devopsdays.org</a></li>
+      <li><a href="https://cfgmgmtcamp.org">cfgmgmtcamp.org</a></li>
+      <li><a href="https://belibre.be">belibre.be</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Recent Posts</h3>
+    <ul>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/docker-and-volumes-hell/">Docker and volumes hell</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/its-just-rubber-some-air-it/">It&#39;s just rubber , with some air in it.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/">Lies, Damn Lies and Statistics, 2016 Edition</a></li>
+      
+    </ul>
+  </section>
+
+  
+  <section>
+    <h3>Tags</h3>
+    <ul class="tags">
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      <li><a href="https://krisbuytaert.github.io/tags/devops/">devops</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/drupal/">drupal</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/mysql/">mysql</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/puppet/">puppet</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/open-source/">open source</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/opensource/">opensource</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dnsproblem/">dnsproblem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/ha/">ha</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fosdem/">fosdem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/chef/">chef</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dns/">dns</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fedora/">fedora</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/virtualization/">virtualization</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/xen/">xen</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/centos/">centos</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/conference/">conference</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/monitoringsucks/">monitoringsucks</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/rpm/">rpm</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/kvm/">kvm</a></li>
+      
+    </ul>
+  </section>
+  
+
+</aside>
+
+  </div>
+  <footer>
+    <p>No really .. everything is a funky DNS problem, you'll realise I'm right pretty soon!</p>
+  </footer>
+</body>
+</html>

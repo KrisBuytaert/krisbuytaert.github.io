@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infracoders on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/infracoders/</link>
+    <description>Recent content in Infracoders on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 May 2013 23:11:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/infracoders/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why you shouldn&#39;t hire a devops</title>
+      <link>https://krisbuytaert.github.io/blog/why-you-shouldnt-hire-devops/</link>
+      <pubDate>Wed, 22 May 2013 23:11:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/why-you-shouldnt-hire-devops/</guid>
+      <description>&lt;p&gt;Lately there have been a lot of organisations trying to hire a devops engineer.&lt;br&gt;&#xA;I myselve have been asked to fill in devops roles ..&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a number of issues with that.&lt;/p&gt;&#xA;&lt;p&gt;The biggest problem is that I always have to ask what exactly the organisation is looking for.&lt;/p&gt;&#xA;&lt;p&gt;So you want a devops engineer with experience in Linux, MongoDB, MySQL and Java , does that mean you want a Java developer who is familiar with MySQL and Linux and breaths a devops Culture.&lt;br&gt;&#xA;Or a Linux expert who understands Java developers and knows how to tune Mongo and MySQL ?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Love, MonitoringLove</title>
+      <link>https://krisbuytaert.github.io/blog/love-monitoringlove/</link>
+      <pubDate>Wed, 13 Feb 2013 19:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/love-monitoringlove/</guid>
+      <description>&lt;p&gt;Last year we were pretty negative about Monitoring, We shouted out that MonitoringSucked &amp;hellip; A year has passed and a lot has changed &amp;hellip; most importantly our new found love for monitoring, thanks to an inspirational Ignite talk by &lt;a href=&#34;https://twitter.com/ulfmansson&#34;&gt;Ulf Mansson&lt;/a&gt; at devopsdays Rome.&lt;/p&gt;&#xA;&lt;p&gt;Right after Fosdem about 20 people showed up at the #monitoringlove hacksessions hosted at the &lt;a href=&#34;http://www.inuits.eu/&#34;&gt;Inuits.eu&lt;/a&gt; offices to work on Open Source monitoring projects and exchange ideas. Some completely new people, some people with already a lot of experience.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

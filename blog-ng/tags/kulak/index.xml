@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kulak on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/kulak/</link>
+    <description>Recent content in Kulak on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Apr 2009 23:45:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/kulak/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upcoming Training opportunities</title>
+      <link>https://krisbuytaert.github.io/blog/upcoming-training-opportunities/</link>
+      <pubDate>Thu, 16 Apr 2009 23:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/upcoming-training-opportunities/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.kuleuven-kortrijk.be/nl/PAV/Opleidingsaanbod/Meerdaagse/Opleiding/?code=1534&#34;&gt;Next month&lt;/a&gt; I`ll be teaching a course on Virtualization at the KULAK.&lt;/p&gt;&#xA;&lt;p&gt;Apart from my training there is also a &lt;a href=&#34;http://reductivelabs.com/training/&#34;&gt;Puppet training&lt;/a&gt; planned in Belgium.&lt;/p&gt;&#xA;&lt;p&gt;As I assisted Luke in finding a location for the training I tought it might be a good idea to have a Puppet Users meetup while some people are already gathering in Leuven&lt;/p&gt;&#xA;&lt;p&gt;Current plan is to meet up somewhere in Leuven on the evening of the 25th , more announcements later ..&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphite on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/graphite/</link>
+    <description>Recent content in Graphite on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Jun 2014 16:55:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/graphite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jenkins, Puppet, Graphite, Logstash and YOU</title>
+      <link>https://krisbuytaert.github.io/blog/jenkins-puppet-graphite-logstash-and-you/</link>
+      <pubDate>Wed, 04 Jun 2014 16:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/jenkins-puppet-graphite-logstash-and-you/</guid>
+      <description>&lt;p&gt;This is a repost of an article I wrote for the Acquia Blog some time ago.&lt;/p&gt;&#xA;&lt;p&gt;As mentioned before, devops can be summarized by talking about culture, automation, monitoring metrics and sharing. Although devops is not about tooling, there are a number of open source tools out there that will be able to help you achieve your goals. Some of those tools will also enable better communication between your development and operations teams.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>check_graphite</title>
+      <link>https://krisbuytaert.github.io/blog/checkgraphite/</link>
+      <pubDate>Tue, 05 Feb 2013 11:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/checkgraphite/</guid>
+      <description>&lt;p&gt;During my Puppetcamp Gent talk last week, I explained how to get alerts based on trends from graphite. A number of people asked ,e how to do that.&lt;/p&gt;&#xA;&lt;p&gt;First lets quickly explain why you might want to do that .&lt;br&gt;&#xA;Sometimes you don&amp;rsquo;t care about the current value of a metric..as an example take a Queing system .. there is no problem if there are messages added to the queue, not even if there are a lot of messages on the queue, there might however be a problem if over a certain period the number of messages on a queue stays to high.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Our #monitoringsucks rpm is repository available</title>
+      <link>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</link>
+      <pubDate>Sat, 11 Aug 2012 21:49:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</guid>
+      <description>&lt;p&gt;Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.&lt;/p&gt;&#xA;&lt;p&gt;You might have noticed a variety of vagrant- projects on my github acount&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-ganglia&#34;&gt;http://github.com/KrisBuytaert/vagrant-ganglia&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-graphite&#34;&gt;http://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-puppet-logstash&#34;&gt;http://github.com/KrisBuytaert/vagrant-puppet-logstash,&lt;/a&gt;&lt;br&gt;&#xA;Being the #monitoringsucks part of them. All of those Vagrant projects are basically my test setups to play with those new tools.&lt;/p&gt;&#xA;&lt;p&gt;They contain a bunch of puppet modules that install and configure these tools. (Note that they mostly consist of&lt;br&gt;&#xA;of git submodules to other puppet module repositories.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FlossUK and Puppetcamp Edinburgh</title>
+      <link>https://krisbuytaert.github.io/blog/flossuk-and-puppetcamp-edinburgh/</link>
+      <pubDate>Fri, 23 Mar 2012 16:49:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/flossuk-and-puppetcamp-edinburgh/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve just finished presenting my talk on how I currently work on Puppet modules at Puppetcamp here in Edinburgh where I&amp;rsquo;ve been for the week talking on both FlossUK 2012 and Puppetcamp.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/7-tools-for-your-devops-stack&#34; title=&#34;7 tools for your devops stack&#34;&gt;7 tools for your devops stack&lt;/a&gt;&lt;/strong&gt; \&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Earlier this week I opened FlossUK 2012 with my talk on 7 tools for your devops stack&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/how-ihackonpuppetmodules&#34; title=&#34;How I hack on puppet modules&#34;&gt;How I hack on puppet modules&lt;/a&gt;&lt;/strong&gt; \&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Graphite, JMXTrans, Ganglia, Logster, Collectd,  say what  ?</title>
+      <link>https://krisbuytaert.github.io/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</link>
+      <pubDate>Tue, 03 Jan 2012 22:46:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</guid>
+      <description>&lt;p&gt;Given that @patrickdebois is working on improving data collection I thought it would be a good idea to describe the setup I currently have hacked together.&lt;/p&gt;&#xA;&lt;p&gt;(Something which can be used as a starting point to improve stuff, and I have to write documentation anyhow)&lt;/p&gt;&#xA;&lt;p&gt;I currently have 3 sources , and one target, which will eventually expand to at least another target and most probably more sources too.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/VagrantGraphite.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>#monitoringsucks and we&#39;ll fix it !</title>
+      <link>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</link>
+      <pubDate>Tue, 03 Jan 2012 20:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</guid>
+      <description>&lt;p&gt;If you are hacking on monitoring solutions, and want to talk to your peers solving the problem&lt;br&gt;&#xA;Block the monday and tuesday after fosdem in your calendar !&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp&lt;/p&gt;&#xA;&lt;p&gt;In short a #monitoringsucks hackathon&lt;/p&gt;&#xA;&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

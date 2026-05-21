@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dnsknife on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/dnsknife/</link>
+    <description>Recent content in Dnsknife on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Jan 2010 21:00:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/dnsknife/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IntoDns</title>
+      <link>https://krisbuytaert.github.io/blog/intodns/</link>
+      <pubDate>Fri, 15 Jan 2010 21:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/intodns/</guid>
+      <description>&lt;p&gt;So a couple of weeks ago I blogged about &lt;a href=&#34;http://www.krisbuytaert.be/blog/category/dnsknife&#34;&gt;DNS Knife&lt;/a&gt; late last year I ran into an even better tool.&lt;/p&gt;&#xA;&lt;p&gt;Enter &lt;a href=&#34;http://intodns.com/&#34;&gt;IntoDNS&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Apparently IntoDNS.com finds more issues like the zone file listing different nameservers from the ones you defined &amp;hellip;etc..&lt;/p&gt;&#xA;&lt;p&gt;So change your bookmarks, browse that page :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DNS Tools</title>
+      <link>https://krisbuytaert.github.io/blog/dns-tools/</link>
+      <pubDate>Wed, 28 Oct 2009 22:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/dns-tools/</guid>
+      <description>&lt;p&gt;In my latest DNS Problem related post I mentionned that don&amp;rsquo;t know all the answers, I however know about some good tools to help you setup a clean DNS server.&lt;/p&gt;&#xA;&lt;p&gt;Ages ago via &lt;a href=&#34;http://planet.fedoraproject.org/&#34;&gt;Planet Fedora&lt;/a&gt; I ran into an article from &lt;a href=&#34;http://www.alphatek.info/2008/11/29/dnsknifecom-meet-the-online-dig/&#34;&gt;Steven Moix&lt;/a&gt; about a tool he and his fellow students build for a summer project.&lt;/p&gt;&#xA;&lt;p&gt;The tool is &lt;a href=&#34;http://www.dnsknife.com/&#34;&gt;DNSKnife&lt;/a&gt; and it&amp;rsquo;s really interresting.&lt;/p&gt;&#xA;&lt;p&gt;DNS Knife is a good tool to check if your DNS setup is ok, it checks the parent servers, it checks for if your nameservers are listed on the parent server, checks if all your nameservers are reachable and are authorative .&lt;br&gt;&#xA;And so on and so on &amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

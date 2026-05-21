@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Piwik on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/piwik/</link>
+    <description>Recent content in Piwik on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Mar 2011 20:44:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/piwik/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Watching the Guards</title>
+      <link>https://krisbuytaert.github.io/blog/watching-guards/</link>
+      <pubDate>Thu, 10 Mar 2011 20:44:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/watching-guards/</guid>
+      <description>&lt;p&gt;A couple of weeks ago I noticed a weird drop in web usage stats on the site you are browsing now. Kinda weird as the drop was right around Fosdem when usually there is a spike in traffic. &lt;img src=&#34;http://www.krisbuytaert.be/images/PiwiwFail.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;So before you start.. no I don&amp;rsquo;t preach on practice on my own blog, it&amp;rsquo;s a blog dammit, so I do the occasional upgrades on the actual platform , with backups available, do some sanity tests and move on, yes I break the theme pretty often but ya&amp;rsquo;ll reading this trough RSS anyhow.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/docker/</link>
+    <description>Recent content in Docker on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 May 2016 13:16:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker and volumes hell</title>
+      <link>https://krisbuytaert.github.io/blog/docker-and-volumes-hell/</link>
+      <pubDate>Sat, 28 May 2016 13:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/docker-and-volumes-hell/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re increasingly using Docker to build packages, a fresh chroot in which we prepare a number of packages, builds typically for ruby (rvm) , or python (virtualenv) or node stuf where the language ecosystem fails on us &amp;hellip; and fpm the whole tree as a working artifact.&lt;/p&gt;&#xA;&lt;p&gt;An example of such a build is my work on packaging Dashing. &lt;a href=&#34;https://github.com/KrisBuytaert/build-dashing&#34;&gt;https://github.com/KrisBuytaert/build-dashing&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Now part of that build is running the actual build script in docker with a local volume mounted inside the container This is your typical -v=/home/src/dashing-docker/package-scripts:/scripts param.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Root on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/root/</link>
+    <description>Recent content in Root on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Jan 2009 15:04:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/root/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Filesystem Layouts</title>
+      <link>https://krisbuytaert.github.io/blog/filesystem-layouts/</link>
+      <pubDate>Sun, 18 Jan 2009 15:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/filesystem-layouts/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://grep.be/blog/en/computer/filesystem_layouts?show_comments=yes&#34;&gt;Wouter&lt;/a&gt; blogged about his favourite Laptop filesystem layout , just one filesystem , and &lt;a href=&#34;http://blog.andrew.net.au/2009/01/15#filesystem_layouts&#34;&gt;some geeks&lt;/a&gt; think that&amp;rsquo;s a bad idea.&lt;/p&gt;&#xA;&lt;p&gt;Actually I can understand Wouter not wanting to have different /usr/ /var or other partitions on his laptop , the 20Mb left and 300Mb right you loose on different partitions are exactly what you want to use on your laptop, however isolating partitions also has it&amp;rsquo;s benefits&lt;/p&gt;&#xA;&lt;p&gt;My setup looks similar to this :\&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

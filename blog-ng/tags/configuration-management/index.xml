@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuration Management on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/configuration-management/</link>
+    <description>Recent content in Configuration Management on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jul 2011 22:39:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/configuration-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal and Configuration Mgmt, we&#39;re getting there ...</title>
+      <link>https://krisbuytaert.github.io/blog/drupal-and-configuration-mgmt-were-getting-there/</link>
+      <pubDate>Sun, 17 Jul 2011 22:39:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/drupal-and-configuration-mgmt-were-getting-there/</guid>
+      <description>&lt;p&gt;For those who haven&amp;rsquo;t noticed yet .. I&lt;code&gt;m into devops .. I&lt;/code&gt;m also a little bit into Drupal, (blame my last name..) , so one of the frustrations I&amp;rsquo;ve been having with Drupal (an much other software) is the automation of deployment and upgrades of Drupal sites &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;So for the past couple of days I&amp;rsquo;ve been trying to catch up to the ongoing discussion regarding the results of the &lt;a href=&#34;http://groups.drupal.org/node/155559&#34;&gt;configuration mgmt sprint&lt;/a&gt; , I&amp;rsquo;ve been looking at it mainly from a systems point of view , being with the use of Puppet/ Chef or similar tools in mind .. I know I`m late to the discussion but hey , some people take holidays in this season :) So below you can read a bunch of my comments &amp;hellip; and thoughts on the topic ..&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

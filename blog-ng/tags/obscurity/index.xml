@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Obscurity on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/obscurity/</link>
+    <description>Recent content in Obscurity on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Sep 2009 21:14:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/obscurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some people just don&#39;t get it</title>
+      <link>https://krisbuytaert.github.io/blog/some-people-just-dont-get-it/</link>
+      <pubDate>Wed, 23 Sep 2009 21:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/some-people-just-dont-get-it/</guid>
+      <description>&lt;p&gt;I mean, we are heading towards 2010 , some of us have been using Open Source for decades, the Open Source vs Free Software discussion was like last millenium, and we&amp;rsquo;ve been doing open source consultancy for over a decade, yet today companies still think their customers are stupid,&lt;/p&gt;&#xA;&lt;p&gt;Fancy this story on &lt;a href=&#34;http://news.zdnet.co.uk/itmanagement/0,1000000308,39760362,00.htm?s_cid=260&#34;&gt;ZDNet&lt;/a&gt; today .. there&amp;rsquo;s actually companies out there claiming that &amp;ldquo;Bind&amp;rdquo; because of it&amp;rsquo;s FreeWare nature , yes that&amp;rsquo;s right you&amp;rsquo;ve Read FREEWARE , (hadn&amp;rsquo;t heard that word for over 5 years..) , is less secure than their proprietary offering in the Cloud. So the very nature of their Secure product is offering Security by Obscurity in an insecure environment .&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gcr on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/gcr/</link>
+    <description>Recent content in Gcr on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Apr 2013 22:54:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/gcr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evolution Woes and yum magic</title>
+      <link>https://krisbuytaert.github.io/blog/evolution-woes-and-yum-magic/</link>
+      <pubDate>Fri, 19 Apr 2013 22:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/evolution-woes-and-yum-magic/</guid>
+      <description>&lt;p&gt;I`m an oldschool guy .. I still love pop3(s) to get my mails locally and read them with my fat email client. Evolution.&lt;/p&gt;&#xA;&lt;p&gt;So when gmail breaks their pop/imap infra I`m screwed for a while. I hate reading mail from a web gui and the collapsed threading model gmail uses makes me nauseus.&lt;/p&gt;&#xA;&lt;p&gt;So I fiddled with my config .. disabled it.. deleted the account.. created it again. But even after gmail was up again . I couldn&amp;rsquo;t access my mail from my favourite client. Yet from other clients it seemed to work.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

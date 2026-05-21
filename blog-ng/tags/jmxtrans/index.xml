@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jmxtrans on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/jmxtrans/</link>
+    <description>Recent content in Jmxtrans on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Jan 2012 22:46:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/jmxtrans/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Graphite, JMXTrans, Ganglia, Logster, Collectd,  say what  ?</title>
+      <link>https://krisbuytaert.github.io/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</link>
+      <pubDate>Tue, 03 Jan 2012 22:46:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</guid>
+      <description>&lt;p&gt;Given that @patrickdebois is working on improving data collection I thought it would be a good idea to describe the setup I currently have hacked together.&lt;/p&gt;&#xA;&lt;p&gt;(Something which can be used as a starting point to improve stuff, and I have to write documentation anyhow)&lt;/p&gt;&#xA;&lt;p&gt;I currently have 3 sources , and one target, which will eventually expand to at least another target and most probably more sources too.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/VagrantGraphite.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

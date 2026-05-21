@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inuits.eu on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/inuits.eu/</link>
+    <description>Recent content in Inuits.eu on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Oct 2009 20:22:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/inuits.eu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apparently there are Borders</title>
+      <link>https://krisbuytaert.github.io/blog/apparently-there-are-borders/</link>
+      <pubDate>Thu, 22 Oct 2009 20:22:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/apparently-there-are-borders/</guid>
+      <description>&lt;p&gt;And therefore, sometimes you need to register domains in different countries.&lt;br&gt;&#xA;So how does one proceed, one takes the zone file of the existing domain e.g. .be and creates a symlink for the different countries to the original zonefile e.g .nl and .eu . Afterall, you want to have te same hosts available in every country and you want to keep the hassle down when you update a host.&lt;/p&gt;&#xA;&lt;p&gt;You tell your registrar, to reg the same domain for the other tld&amp;rsquo;s with the usueal Nameservers , you know . the one that are listed in your original zonefile&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

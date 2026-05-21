@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ip on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/ip/</link>
+    <description>Recent content in Ip on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Jan 2009 18:44:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/ip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crazy stuff over DNS</title>
+      <link>https://krisbuytaert.github.io/blog/crazy-stuff-over-dns/</link>
+      <pubDate>Wed, 07 Jan 2009 18:44:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/crazy-stuff-over-dns/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pascal.vanhecke.info/&#34;&gt;Pascal&lt;/a&gt; tweeted me te following &lt;a href=&#34;https://dgl.cx/wikipedia-dns&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;From the site :&lt;/p&gt;&#xA;&lt;p&gt;I had written some code to take wikipedia articles and summarise them. I wanted to offer this for use in various places, now the obvious way to offer it is just a web service (via REST, SOAP, etc), but that&amp;rsquo;s boring and I had a cunning plan. Why not offer it over DNS - it is basically a huge associative array and DNS is designed for this stuff.\&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bug in ifconfig ?</title>
+      <link>https://krisbuytaert.github.io/blog/bug-ifconfig/</link>
+      <pubDate>Wed, 24 Sep 2008 17:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/bug-ifconfig/</guid>
+      <description>&lt;p&gt;So earlier this week I ran into the weirdest problem with Linux-HA. Heartbeat was happily adding an IP address as an active resource so one of my nodes when needed, but upon removal it failed to remove the IP from the stack. Further debugging learned that the Heartbeat scripts claimed the ip wasn&amp;rsquo;t on the actual stack.&lt;/p&gt;&#xA;&lt;p&gt;It was.. but it the output from ifconfig was different from what it expected it to be.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

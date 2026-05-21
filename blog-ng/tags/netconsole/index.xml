@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Netconsole on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/netconsole/</link>
+    <description>Recent content in Netconsole on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jul 2009 16:01:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/netconsole/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DRBD2, OCFS2,  Unexplained crashes</title>
+      <link>https://krisbuytaert.github.io/blog/drbd2-ocfs2-unexplained-crashes/</link>
+      <pubDate>Wed, 01 Jul 2009 16:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/drbd2-ocfs2-unexplained-crashes/</guid>
+      <description>&lt;p&gt;I was trying to setup a dual-primary DRBD environment, with a shared disk with either OCFS2 or GFS. The environment is a Centos 5.3 with DRBD82 (but also tried with DRBD83 from testing) .&lt;/p&gt;&#xA;&lt;p&gt;Setting up a single primary disk and running bonnie++ on it worked Setting up a dual-primary disk, only mounting it on one node (ext3) and running bonnie++ worked&lt;/p&gt;&#xA;&lt;p&gt;When setting up ocfs2 on the /dev/drbd0 disk and mounting it on both nodes, basic functionality seemed in place but usually less than 5-10 minutes after I start bonnie++ as a test on one of the nodes , both nodes power cycle with no errors in the logfiles, just a crash.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

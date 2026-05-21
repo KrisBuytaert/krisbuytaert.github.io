@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualization.com on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/virtualization.com/</link>
+    <description>Recent content in Virtualization.com on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Nov 2008 10:27:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/virtualization.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>openQRM.com</title>
+      <link>https://krisbuytaert.github.io/blog/openqrmcom/</link>
+      <pubDate>Tue, 18 Nov 2008 10:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/openqrmcom/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://virtualization.com/guest-posts/2008/11/16/openqrm-4.2-released-includes-cloud-sauce/&#34;&gt;Last weekend&lt;/a&gt; I blogged about openQRM 4.2 being released.&lt;/p&gt;&#xA;&lt;p&gt;This morning Matt finally let me know the long waiting fresh and new Drupal based &lt;a href=&#34;http://openqrm.com/&#34;&gt;openQRM.com&lt;/a&gt; is live !&lt;/p&gt;&#xA;&lt;p&gt;Feed Added!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

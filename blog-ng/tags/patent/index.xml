@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patent on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/patent/</link>
+    <description>Recent content in Patent on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Mar 2009 21:02:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/patent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FAT</title>
+      <link>https://krisbuytaert.github.io/blog/fat/</link>
+      <pubDate>Mon, 02 Mar 2009 21:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/fat/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://laforge.gnumonks.org/weblog/2009/02/27/#20090227-microsoft_patent_lawsuit&#34;&gt;Harald&lt;/a&gt; has a nice overview of the FUD that is being spread again by some company from RedMond ..&lt;/p&gt;&#xA;&lt;p&gt;Now why are they targeting TomTom ? Surely because Canon and Sony and different others are to big to sue, Both my EOS400D, Ixus400 and K800i , are using a way to FAT filesystem to store files on,&lt;br&gt;&#xA;I tried putting ext2 formatted disks in them but that failed :)&lt;br&gt;&#xA;(Not running Linux or already having paid up might be another reason)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

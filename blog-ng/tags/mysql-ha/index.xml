@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mysql Ha on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/mysql-ha/</link>
+    <description>Recent content in Mysql Ha on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Apr 2010 21:43:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/mysql-ha/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Open Administration Days 2010</title>
+      <link>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</link>
+      <pubDate>Tue, 20 Apr 2010 21:43:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</guid>
+      <description>&lt;p&gt;So about 4 monts ago &lt;a href=&#34;http://blog.bdesmet.be/?p=272&#34;&gt;there was the crazy idea&lt;/a&gt; to start a new FOSS event in Belgium targeted at sysadmins.&lt;/p&gt;&#xA;&lt;p&gt;What started out as an event for local people to meet local people with some local speakers actually ended up being a small local event with some top international speakers on onfiguration mananagement and system administration mixed with a bunch of good local ones !&lt;/p&gt;&#xA;&lt;p&gt;I had the honour to open the conference with an extremely short version of the Devops talk I gave earlier last year.. extremely short as I knew that over the course of the weekend the topic would reoccur a lot.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

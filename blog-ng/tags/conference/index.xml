@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conference on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/conference/</link>
+    <description>Recent content in Conference on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Mar 2012 16:49:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/conference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FlossUK and Puppetcamp Edinburgh</title>
+      <link>https://krisbuytaert.github.io/blog/flossuk-and-puppetcamp-edinburgh/</link>
+      <pubDate>Fri, 23 Mar 2012 16:49:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/flossuk-and-puppetcamp-edinburgh/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve just finished presenting my talk on how I currently work on Puppet modules at Puppetcamp here in Edinburgh where I&amp;rsquo;ve been for the week talking on both FlossUK 2012 and Puppetcamp.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/7-tools-for-your-devops-stack&#34; title=&#34;7 tools for your devops stack&#34;&gt;7 tools for your devops stack&lt;/a&gt;&lt;/strong&gt; \&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Earlier this week I opened FlossUK 2012 with my talk on 7 tools for your devops stack&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/how-ihackonpuppetmodules&#34; title=&#34;How I hack on puppet modules&#34;&gt;How I hack on puppet modules&lt;/a&gt;&lt;/strong&gt; \&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Call For Abstracts : NLUUG Fall Conference on Security</title>
+      <link>https://krisbuytaert.github.io/blog/call-abstracts-nluug-fall-conference-security/</link>
+      <pubDate>Tue, 01 Jun 2010 19:53:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/call-abstracts-nluug-fall-conference-security/</guid>
+      <description>&lt;p&gt;For all the security experts : the NLUUG has published it&amp;rsquo;s &lt;a href=&#34;http://www.nluug.nl/activiteiten/events/nj10/cfp-en.html&#34;&gt;Call For Abstracts&lt;/a&gt; for it&amp;rsquo;s Fall conference.. as you might have guessed the topic is Security, we welcome all abstracts tackling security in a broad sense.&lt;/p&gt;&#xA;&lt;p&gt;Possible topics include:&lt;/p&gt;&#xA;&lt;p&gt;* cloud security&lt;br&gt;&#xA;* online privacy&lt;br&gt;&#xA;* rfid hacking&lt;br&gt;&#xA;* secure programming&lt;br&gt;&#xA;* programma-analysis-tools&lt;br&gt;&#xA;* web services security&lt;br&gt;&#xA;* web browser security&lt;br&gt;&#xA;* embedded hardware hacking&lt;br&gt;&#xA;* incident response and forensics&lt;br&gt;&#xA;* malware and rootkits&lt;br&gt;&#xA;* responsible disclosure&lt;br&gt;&#xA;* legal response&lt;br&gt;&#xA;* fighting spam&lt;br&gt;&#xA;* patch policies&lt;br&gt;&#xA;* identity management&lt;br&gt;&#xA;* central point of administration&lt;br&gt;&#xA;* DNSsec&lt;br&gt;&#xA;* VPN based WANs&lt;br&gt;&#xA;* etc.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NLUUG Spring Conference 2010</title>
+      <link>https://krisbuytaert.github.io/blog/nluug-spring-conference-2010/</link>
+      <pubDate>Tue, 11 May 2010 22:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/nluug-spring-conference-2010/</guid>
+      <description>&lt;p&gt;Last week the NLUUG Spring Conference was held in Ede, this years topic was System Administration in general.. which means there was a pretty wide range of talks &amp;hellip; &lt;a href=&#34;http://www.slideshare.net/tomdc/monitoring-shootout-loadays&#34;&gt;some&lt;/a&gt; of the talks were extremely interesting and gathered a lot of people , others really shouldn&amp;rsquo;t have been put in the main room.. Frequenly organising them myselve it&amp;rsquo;s always a difficult choice for a conference organiser.&lt;/p&gt;&#xA;&lt;p&gt;Must say this was one of my better talks .. it all went smooth and nicely fit within time. Probably the promise of drinks and food after my talk helped some.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux Open Administration Days 2010</title>
+      <link>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</link>
+      <pubDate>Tue, 20 Apr 2010 21:43:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</guid>
+      <description>&lt;p&gt;So about 4 monts ago &lt;a href=&#34;http://blog.bdesmet.be/?p=272&#34;&gt;there was the crazy idea&lt;/a&gt; to start a new FOSS event in Belgium targeted at sysadmins.&lt;/p&gt;&#xA;&lt;p&gt;What started out as an event for local people to meet local people with some local speakers actually ended up being a small local event with some top international speakers on onfiguration mananagement and system administration mixed with a bunch of good local ones !&lt;/p&gt;&#xA;&lt;p&gt;I had the honour to open the conference with an extremely short version of the Devops talk I gave earlier last year.. extremely short as I knew that over the course of the weekend the topic would reoccur a lot.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UKUUG Spring Conference 2010</title>
+      <link>https://krisbuytaert.github.io/blog/ukuug-spring-conference-2010/</link>
+      <pubDate>Wed, 07 Apr 2010 19:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-conference-2010/</guid>
+      <description>&lt;p&gt;Last week I was in Manchester for the 2010 UKUUG Spring Conference, right .. make that 2 weeks ago , :)&lt;/p&gt;&#xA;&lt;p&gt;The UKUUG usually hosts the more interesting conferences around &amp;hellip; , it&amp;rsquo;s not just the schedule that attrackts me , yes there&amp;rsquo;s the strong focus towards Larger Scale Unix (and mostly Linux) deployments and how to manage them, but there&amp;rsquo;s also the opportunity to chat in real life with the Devops from across the chunnel.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>11 days till Loadays</title>
+      <link>https://krisbuytaert.github.io/blog/11-days-till-loadays/</link>
+      <pubDate>Tue, 30 Mar 2010 22:59:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/11-days-till-loadays/</guid>
+      <description>&lt;p&gt;That&amp;rsquo;s right .. only 11 more &amp;hellip;&lt;br&gt;&#xA;The &lt;a href=&#34;http://www.loadays.org/schedule&#34;&gt;schedule&lt;/a&gt; looks promising, there will be some devops juice, some open spaces, some tutorials, som regular talks .. it really looks promising &amp;hellip; the schedule is packed ,&lt;/p&gt;&#xA;&lt;p&gt;Apart from the talks, tutorials and open spaces there&amp;rsquo;s also the&lt;br&gt;&#xA;Pizza party and the Beer event on saturday &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;No need to register .. just show up ..&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Loadays CFP</title>
+      <link>https://krisbuytaert.github.io/blog/loadays-cfp/</link>
+      <pubDate>Thu, 11 Feb 2010 22:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/loadays-cfp/</guid>
+      <description>&lt;p&gt;I would like to point the crowd to the Call For Presentaions of Loadays. , the Linux Open Administration Days .&lt;/p&gt;&#xA;&lt;p&gt;&lt;br&gt;&#xA;The Linux Open Administration days 2010 will be the first edition of a new conference focusing on Linux and Open Administration, we are trying to fill a gap for System Engineers and Administrators using Open Source technologies&amp;quot;&lt;/p&gt;&#xA;&lt;p&gt;More details on the &lt;a href=&#34;http://loadays.org/news/call-presentations&#34;&gt;Linux Open Administration Days site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll probably be there .. given the fact that the event will be 5 minutes from where I live .&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Upcoming Conference Talks</title>
+      <link>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</link>
+      <pubDate>Mon, 01 Feb 2010 22:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</guid>
+      <description>&lt;p&gt;I know the biggest part of my fanclub already booked tickets for my upcoming presentations, but the other 2 might want to check their calendars to see if they aren&amp;rsquo;t missing out on the good stuff :)&lt;/p&gt;&#xA;&lt;p&gt;Next Sunday I`ll giving a shortish overview of &lt;a href=&#34;http://www.fosdem.org/2010/schedule/events/mysql_ha&#34;&gt;MySQL HA alternatives&lt;/a&gt; in the MySQL and Friends devroom at Fosdem.&lt;/p&gt;&#xA;&lt;p&gt;March will bring me to Manchester again for the &lt;a href=&#34;http://spring2010.ukuug.org/Timetable&#34;&gt;UKUUG Spring conference&lt;/a&gt; where I`ll be giving a longer version of that presentation with a strong focus on integrating with PaceMaker, and automating the whole boostrap procedure of a HA setup.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Enterprise Open Source Adoption at BT, London</title>
+      <link>https://krisbuytaert.github.io/blog/enterprise-open-source-adoption-bt-london/</link>
+      <pubDate>Mon, 12 Oct 2009 21:24:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/enterprise-open-source-adoption-bt-london/</guid>
+      <description>&lt;p&gt;Repost from our &lt;a href=&#34;http://www.inuits.be/news/enterprise-open-source-adoption-conference-bt-london&#34;&gt;corporate blog&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Last monday some &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; quickly crossed the channel for a day of speeches and talks regarding Open Source and its Adoption, the event organised at BT brought together a mixture of techies, legal persons and management to listen to and discuss about the current state of Enterprise Open Source adoption&lt;/p&gt;&#xA;&lt;p&gt;The short introduction was done by JP of Confused In Calcutta , who mainly introduced Mark &amp;ldquo;I`m from outer space&amp;rdquo; Shuttleworth. Mark keynoted about Ubuntu .. he talked about Aubergine being the new Brown &amp;hellip; ranted (as everybody) about the Cloud , talked about a stronger focus to services rather than product building , talked about the ecosystem of &amp;ldquo;people close to you&amp;rdquo; for supporting solutions .&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>T-Dose 2009</title>
+      <link>https://krisbuytaert.github.io/blog/t-dose-2009/</link>
+      <pubDate>Thu, 08 Oct 2009 22:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/t-dose-2009/</guid>
+      <description>&lt;p&gt;As every year in october a small crowd navigated to Eindhoven to spend 2 days discussing Open Source , Free Software and Beer&lt;/p&gt;&#xA;&lt;p&gt;The good part about T-Dose is the fact that it is so small, you actually get the chance to talk to a lot of people, you get the chance to sit down with them and play with the code they have been working on ,&lt;/p&gt;&#xA;&lt;p&gt;T-Dose had talks on IPv6, Bind10 , Linux Auto Update USB, eTokens on Linux , VirtSec, Django , Puppet and other topics.&lt;br&gt;&#xA;I actually missed talks that I had wanted to see.. just because I was in the middel of interresting discussions with people. That&amp;rsquo;s totally different from some other conferences where I don&amp;rsquo;t even make it to the talks because of the smalltalk :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

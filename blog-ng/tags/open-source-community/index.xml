@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source Community on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/open-source-community/</link>
+    <description>Recent content in Open Source Community on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Oct 2009 22:28:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/open-source-community/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>T-Dose 2009</title>
+      <link>https://krisbuytaert.github.io/blog/t-dose-2009/</link>
+      <pubDate>Thu, 08 Oct 2009 22:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/t-dose-2009/</guid>
+      <description>&lt;p&gt;As every year in october a small crowd navigated to Eindhoven to spend 2 days discussing Open Source , Free Software and Beer&lt;/p&gt;&#xA;&lt;p&gt;The good part about T-Dose is the fact that it is so small, you actually get the chance to talk to a lot of people, you get the chance to sit down with them and play with the code they have been working on ,&lt;/p&gt;&#xA;&lt;p&gt;T-Dose had talks on IPv6, Bind10 , Linux Auto Update USB, eTokens on Linux , VirtSec, Django , Puppet and other topics.&lt;br&gt;&#xA;I actually missed talks that I had wanted to see.. just because I was in the middel of interresting discussions with people. That&amp;rsquo;s totally different from some other conferences where I don&amp;rsquo;t even make it to the talks because of the smalltalk :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KVM/IP on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/kvm/ip/</link>
+    <description>Recent content in KVM/IP on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jul 2009 16:07:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/kvm/ip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Webbased Administration Interfaces</title>
+      <link>https://krisbuytaert.github.io/blog/webbased-administration-interfaces/</link>
+      <pubDate>Wed, 01 Jul 2009 16:07:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/webbased-administration-interfaces/</guid>
+      <description>&lt;p&gt;Dear Hardware / Appliance and any other kind of being that creates web interfaces to manage devices remotely. Pleaze keep in mind that plenty of these kind of machines are being managed from behind a ssh tunnel so people often connect to them using &lt;a href=&#34;http://localhost:8080/&#34; title=&#34;http://localhost:8080/&#34;&gt;http://localhost:8080/&lt;/a&gt; where 8080 locally is mapped e.g. via ssh to the port 80 on the remote port.&lt;/p&gt;&#xA;&lt;p&gt;If your application does anything closely to rewriting the localhost:8080 part to localhost it will fail and I as a potential purchaser of your device wil vote against buying your stuff.&lt;br&gt;&#xA;(This is specifically annoying if I want to tunnel 16 KVM/IP boxen to my localhost 8001:8016)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

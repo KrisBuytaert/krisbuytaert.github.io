@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zfs on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/zfs/</link>
+    <description>Recent content in Zfs on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Apr 2009 23:00:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/zfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dear Oracle,</title>
+      <link>https://krisbuytaert.github.io/blog/dear-oracle/</link>
+      <pubDate>Thu, 30 Apr 2009 23:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/dear-oracle/</guid>
+      <description>&lt;p&gt;A couple of weeks ago I wrote a post titled &lt;a href=&#34;http://www.krisbuytaert.be/blog/dear-ibm&#34;&gt;Dear IBM&lt;/a&gt; , I was too late .. I was on holliday last week when people started sending me text messages , such as .. &amp;ldquo;Game Over MySQL , Long live Ingress&amp;rdquo; or &amp;ldquo;No Eclipse for IBM&amp;rdquo;, etc &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;I had ideas regarding the future of certain Sun products at IBM, now the game has changed .. it&amp;rsquo;ss how they will live on at Oracle :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

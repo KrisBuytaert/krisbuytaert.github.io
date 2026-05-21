@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fosdem on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/fosdem/</link>
+    <description>Recent content in Fosdem on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Jan 2013 12:21:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/fosdem/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#devops Conference Season heating up...</title>
+      <link>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</link>
+      <pubDate>Sun, 13 Jan 2013 12:21:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</guid>
+      <description>&lt;p&gt;My last post has been a while &amp;hellip; in that I announced that there would be another event right before FOSDEM &amp;hellip; I totally forgot to announce it here but I`m sure that most of you already know. Yes. PuppetCamp Europe is coming back to it&amp;rsquo;s roots&amp;hellip; it&amp;rsquo;s coming back to the city where we hosted it for the first time on this side of the ocean.. Gent. (that&amp;rsquo;s 31/1 and 1/2 )&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>#monitoringlove hackfest</title>
+      <link>https://krisbuytaert.github.io/blog/monitoringlove-hackfest/</link>
+      <pubDate>Tue, 13 Nov 2012 22:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/monitoringlove-hackfest/</guid>
+      <description>&lt;p&gt;The age of #monitoringsucks is over, we&amp;rsquo;re now transitioning into a #monitoringlove period.&lt;/p&gt;&#xA;&lt;p&gt;That however doesn&amp;rsquo;t mean al the work is done, we still need to do a lot of work and a lot of people are working on a lot of stuff.&lt;/p&gt;&#xA;&lt;p&gt;Therefore like last year we are opening up our offices again right after Fosdem for a #monitoringlove hackfest&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s right on february 4 and 5 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp. In short a #monitoringlove hackathon&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>At Fosdem</title>
+      <link>https://krisbuytaert.github.io/blog/fosdem/</link>
+      <pubDate>Sun, 06 Feb 2011 22:06:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/fosdem/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;on Friday evening , apparently having a confirmed reservation in a resto is not enough to actually be welcome at that restaurant.&lt;/li&gt;&#xA;&lt;li&gt;at DrupalDevdays, only 2 laptops were open during our presentation&lt;/li&gt;&#xA;&lt;li&gt;at DrupalDevdays, almost nobody in the room was already using CI&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , the parking lot is full before 11:30 on a saturday&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , much less Macs than last years .&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , way too much rooms are already at full capacity so you need to have 2-3 backup alternatives ..&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , people expect me to be in certain rooms, at the same time&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , even with too much rooms already full one still misses a bunch of interresting talks&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , one doesn&amp;rsquo;t even realize friends are speaking there too ..&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , Android is the standard &amp;hellip;&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , you are confronted with the fact you probably forgot more names of people than you remember ;(&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , you are surrounded by famous open source people, that aren&amp;rsquo;t even on the schedule&lt;/li&gt;&#xA;&lt;li&gt;at the MySQL Meetup Dinner, Monty brings &lt;a href=&#34;http://en.wikipedia.org/wiki/Salmiakki_Koskenkorva&#34;&gt;Salmiakki&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , you wonder how many other people have survived their 11th edition&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , you can&amp;rsquo;t get into any devroom on sunday morning&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , begging on Twitter to get in to a devroom from the other side of the door works (at least for me :))&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , netbooks are much less popular as opposed to 2-3 years ago ..&lt;/li&gt;&#xA;&lt;li&gt;after fosdem &amp;hellip; you crash ..\&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>MySQL &amp; Friends Meetup at Fosdem 2011</title>
+      <link>https://krisbuytaert.github.io/blog/mysql-friends-meetup-fosdem-2011/</link>
+      <pubDate>Tue, 01 Feb 2011 13:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/mysql-friends-meetup-fosdem-2011/</guid>
+      <description>&lt;p&gt;I admit .. I`m lazy &amp;hellip; unlike last year I did not organize MySQL and Friends meetup at Fosdem.&lt;/p&gt;&#xA;&lt;p&gt;I outsourced it to &lt;a href=&#34;http://twitter.com/#!/gryp/&#34;&gt;Kenny&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;More info and registration &lt;a href=&#34;http://www.eventbrite.com/event/1267253389/efbnen&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Upcoming 2011 Speaking Engagements</title>
+      <link>https://krisbuytaert.github.io/blog/upcoming-2011-speaking-engagements/</link>
+      <pubDate>Mon, 24 Jan 2011 00:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/upcoming-2011-speaking-engagements/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.lenzg.net/&#34;&gt;Lenz&lt;/a&gt; gave the good example so I`ll follow :)&lt;/p&gt;&#xA;&lt;p&gt;Next weekend saturday I`ll be giving a talk about devops at &lt;a href=&#34;http://brussels.startupweekend.org/speakers/&#34;&gt;StartUp Weekend Brussels&lt;/a&gt;, from what I&amp;rsquo;ve read so far it promises to be an audience that needs the talk,&lt;/p&gt;&#xA;&lt;p&gt;The week after I`ll be speaking at the &lt;a href=&#34;http://bxl2011.drupaldays.org/node/233&#34;&gt;DrupalDevDays&lt;/a&gt;, again about devops , however this time with a touch of Drupal , giving a devops talk at Devoxx last year to a Java audience learned me that the devops evangelist need to go outside of their usual conference audiences and als talk to the people that are usually in the other silos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Devops  Meetups before Fosdem , 2011 Edition</title>
+      <link>https://krisbuytaert.github.io/blog/devops-meetups-fosdem-2011-edition/</link>
+      <pubDate>Sun, 16 Jan 2011 21:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/devops-meetups-fosdem-2011-edition/</guid>
+      <description>&lt;p&gt;Just last last year we&amp;rsquo;ll have a Devops meetup just before Fosdem,&lt;br&gt;&#xA;I&amp;rsquo;ve setup a &lt;a href=&#34;http://devopsfosdem2011.eventbrite.com/&#34;&gt;page&lt;/a&gt; for registrations , that way we&amp;rsquo;ll know how many people to make reservations for.&lt;/p&gt;&#xA;&lt;p&gt;If possible we&amp;rsquo;ll go to the same place as last year .. walking distance from the Fosdem Beer event.&lt;/p&gt;&#xA;&lt;p&gt;Feel free to spread the news !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fosdem 2010</title>
+      <link>https://krisbuytaert.github.io/blog/fosdem-2010/</link>
+      <pubDate>Tue, 09 Feb 2010 22:30:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/fosdem-2010/</guid>
+      <description>&lt;p&gt;Fosdem 2010 was my 10th fosdem Edition (including the first OSDEM)&lt;br&gt;&#xA;As every year Fosdem suffered even more from it&amp;rsquo;s own success.&lt;/p&gt;&#xA;&lt;p&gt;On Friday evening ther was the obligatory Beer event&amp;hellip; however as people need to eat to .. the Devops crowd fled the scene&lt;/p&gt;&#xA;&lt;p&gt;I had made reservations for a 20 something group and with the CentOS crowd joining us (as there was some overlap anyhow) we were 25 when we arrived in the restaurant .&lt;br&gt;&#xA;&lt;img src=&#34;http://www.krisbuytaert.be/images/DevopsMeet.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MySQL &amp; Friends Meetup @ Fosdem</title>
+      <link>https://krisbuytaert.github.io/blog/mysql-friends-meetup-fosdem/</link>
+      <pubDate>Fri, 15 Jan 2010 22:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/mysql-friends-meetup-fosdem/</guid>
+      <description>&lt;p&gt;Fosdem is coming up again .. It&amp;rsquo;s going to be the 10th edition already So it&amp;rsquo;s going to be 2 days and nights of fun, tech and geek stuff&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blogs.sun.com/MySQL/entry/mysql_friends_devroom_schedule_published&#34;&gt;Lenz&lt;/a&gt; already posted the announcement , but allow me to recapitulate.&lt;/p&gt;&#xA;&lt;p&gt;The MySQL &amp;amp; Friends meetup is on saturday evening , we&amp;rsquo;ll meet around 1900 in front of the under the big tree in front of the AW building&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;del&gt;As with the &lt;a href=&#34;http://www.krisbuytaert.be/blog/devops-meetup-fosdem&#34;&gt;Devops Meetup&lt;/a&gt; you can once again vote for your preferred &lt;a href=&#34;http://www.doodle.com/v8emakg77bdgk4it&#34;&gt;food&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Devops Meetup @ Fosdem</title>
+      <link>https://krisbuytaert.github.io/blog/devops-meetup-fosdem/</link>
+      <pubDate>Fri, 15 Jan 2010 22:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/devops-meetup-fosdem/</guid>
+      <description>&lt;p&gt;The Devops crowd does not have it&amp;rsquo;s own devroom at Fosdem but will be meeting on Friday evening for food in a location close to the BeerEvent.&lt;/p&gt;&#xA;&lt;p&gt;&lt;del&gt;If you want to join us please let us know by voting on your favourite choice of Food. Using &lt;a href=&#34;http://www.doodle.com/8p35w92p7cs9gg7i&#34;&gt;this&lt;/a&gt; doodle.&lt;/del&gt;&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s already about 15 people that are voting for the food selection &amp;hellip;.&lt;/p&gt;&#xA;&lt;p&gt;Plan is to meet outside of the &lt;a href=&#34;http://www.fosdem.org/2010/beerevent&#34;&gt;BeerEvent&lt;/a&gt; around 2000 and&lt;br&gt;&#xA;then move to a preferred food location.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fosdem 2010 is getting closer</title>
+      <link>https://krisbuytaert.github.io/blog/fosdem-2010-getting-closer/</link>
+      <pubDate>Wed, 09 Dec 2009 20:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/fosdem-2010-getting-closer/</guid>
+      <description>&lt;p&gt;The 10th edition of Fosdem is getting closer, yes .. I said 10 ,10 decimal that means ten, not two :)&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s kinda hard to imagine that this is actually going to be my 10th fosdem , it feels weird ..&lt;/p&gt;&#xA;&lt;p&gt;Anyhow.. &lt;a href=&#34;http://www.lenzg.net/&#34;&gt;Lenz&lt;/a&gt; just &lt;a href=&#34;http://blogs.sun.com/MySQL/entry/call_for_papers_for_mysql&#34;&gt;announced&lt;/a&gt; a call for participation for the MySQL and Friends devroom.&lt;/p&gt;&#xA;&lt;p&gt;I`m guessing a talk on &lt;a href=&#34;http://www.aaronbassett.com/tag/lolsql/&#34;&gt;.LolSQL&lt;/a&gt; might be a good fit for the &amp;ldquo;and Friends&amp;rdquo; part.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.fosdem.org/&#34;&gt;&lt;img src=&#34;http://www.fosdem.org/promo/fosdem&#34; alt=&#34;FOSDEM, the Free and Open Source Software Developers&amp;rsquo; European Meeting&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Open Conference Organizing</title>
+      <link>https://krisbuytaert.github.io/blog/open-conference-organizing/</link>
+      <pubDate>Wed, 25 Mar 2009 16:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/open-conference-organizing/</guid>
+      <description>&lt;p&gt;There are a lot of great Open Source conferences out there, some of them organized by volunteers, some of them oranized by user groups, some by commecial entities, but none of them is so open as the last DrupalCon,&lt;/p&gt;&#xA;&lt;p&gt;In all its awesomeness the DrupalCon DC organization actually&lt;br&gt;&#xA;&lt;a href=&#34;http://dc2009.drupalcon.org/news/drupalcon-dc-numbers-community-profit-and-sustainability&#34;&gt;published&lt;/a&gt; it&amp;rsquo;s internal financial details for everybody to view.&lt;/p&gt;&#xA;&lt;p&gt;Try beating that :)&lt;/p&gt;&#xA;&lt;p&gt;Oh and while we are talking about conferences .. Fosdem has a &lt;a href=&#34;http://www.youtube.com/profile?user=fosdemtalks&amp;amp;view=videos&amp;amp;start=40&#34;&gt;YouTube&lt;/a&gt; channel with a lot of recorded fosdem talks available.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Story Repeats</title>
+      <link>https://krisbuytaert.github.io/blog/story-repeats/</link>
+      <pubDate>Tue, 10 Feb 2009 23:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/story-repeats/</guid>
+      <description>&lt;p&gt;I covered this one &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/702&#34;&gt;before&lt;/a&gt; .. but as it struck twiced today .. I think it&amp;rsquo;s worth repeating. Both my &lt;a href=&#34;http://poke152.blogspot.com/&#34;&gt;collegue Karl&lt;/a&gt; and &lt;a href=&#34;http://blogs.sun.com/trentlloyd/entry/this_week_s_tip_the&#34;&gt;Trent&lt;/a&gt; ran into the same problem , within hours hours of eachother, a missing or failing reverse dns mapping that caused performance issues .. and a lot of log entries..&lt;/p&gt;&#xA;&lt;p&gt;Karl denies having a second life in Perth but I`m not really sure about that &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;But I guess they both have to agree&amp;hellip; Everything is a fscking DNS problem.&lt;br&gt;&#xA;(I noticed other people using that spelling this weekend, on stage in the Janson)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MySQL Presentation on Slideshare</title>
+      <link>https://krisbuytaert.github.io/blog/mysql-presentation-slideshare/</link>
+      <pubDate>Mon, 09 Feb 2009 10:04:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/mysql-presentation-slideshare/</guid>
+      <description>&lt;p&gt;I just got mail that my presentation on &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out&#34;&gt;MySQL Monitoring ShootOut&lt;/a&gt; is currently being showcased on the &lt;a href=&#34;http://www.slideshare.net/category/technology&#34;&gt;&amp;lsquo;Technology&amp;rsquo; page&lt;/a&gt; by the slideshare editorial team.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s likely to be there for the next 16-20 hours&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Thnx folks !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Monitoring MySQL</title>
+      <link>https://krisbuytaert.github.io/blog/monitoring-mysql/</link>
+      <pubDate>Sun, 08 Feb 2009 16:16:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/monitoring-mysql/</guid>
+      <description>&lt;p&gt;The slides for my Monitoring MySQL talk , which I gave earlier today in an overcrowded MySQl Developersroom at Fosdem are now online, both at &lt;a href=&#34;http://www.krisbuytaert.be/presentations/MySQLMonitoringShootOut.odp&#34;&gt;my site&lt;/a&gt; and at &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out&#34;&gt;Slideshare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;As of now I actually expect people to use those slides for schoolwork or next year in a main Fosdem track :)&lt;br&gt;&#xA;As afterall that is the goal of Open Source and spreading the word ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out?type=presentation&#34; title=&#34;MySQL Monitoring Shoot Out&#34;&gt;MySQL Monitoring Shoot Out&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Free Beer</title>
+      <link>https://krisbuytaert.github.io/blog/free-beer/</link>
+      <pubDate>Sat, 07 Feb 2009 12:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/free-beer/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s a fact .. I suck at handing out Free beer, last december we managed to meet in a pub that was closed , and yesterday at the&lt;br&gt;&#xA;Fosdem beer event when Philip asked me to hand out some plates of beer I managed getting them out then started wondering why peo&lt;br&gt;&#xA;ple didn&amp;rsquo;t grab them till I started shouting FREE BEER &amp;hellip; that worked .. ..&lt;/p&gt;&#xA;&lt;p&gt;As usual the Beer event was lots of fun bumping into people you iknow but whose name you need to think about for over a minute beo&lt;br&gt;&#xA;fre you can remember it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How popular  is an Open Source project ?</title>
+      <link>https://krisbuytaert.github.io/blog/how-popular-open-source-project/</link>
+      <pubDate>Thu, 15 Jan 2009 19:36:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/how-popular-open-source-project/</guid>
+      <description>&lt;p&gt;There is a really easy way to figure out &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Look at the size of of the devrooms , if at all , a project gets at Fosdem&lt;br&gt;&#xA;It&amp;rsquo;s really interresting to see the Embedded room move to a 500 seat room which it really needed when the first openMoko talk was held there in a previous edition.&lt;/p&gt;&#xA;&lt;p&gt;The FDO , Drupal, Mozilla, Centos/Fedora and Suse rooms stay in similar size rooms as last year.. But it seems lik the BSD and PostgreSQL room which was pretty crowded moved to a bigger location.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

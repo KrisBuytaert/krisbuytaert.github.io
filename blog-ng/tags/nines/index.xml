@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nines on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/nines/</link>
+    <description>Recent content in Nines on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Oct 2009 23:46:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/nines/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nines , Damn Nines  and More Nines</title>
+      <link>https://krisbuytaert.github.io/blog/nines-damn-nines-and-more-nines/</link>
+      <pubDate>Mon, 19 Oct 2009 23:46:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/nines-damn-nines-and-more-nines/</guid>
+      <description>&lt;p&gt;Funny how different experiences lead to different evaluations of tools. The MySQL HA solutions &lt;a href=&#34;http://www.mysqlperformanceblog.com/2009/10/16/finding-your-mysql-high-availability-solution-%E2%80%93-the-questions/&#34;&gt;the MySQL Performanceblog&lt;/a&gt; list, are almost listed in the complete opposited order of what my impressions are.&lt;/p&gt;&#xA;&lt;p&gt;Ok agreed, I should probably not put my MySQL NDB experiences from 2-3 years ago with multiple Query of deaths and more problems than you into account anymore , but back then went in the list Less stable than a single node. I&amp;rsquo;ve had NDB POC setups going down for much more than 05:16 minutes&lt;br&gt;&#xA;Ndb comes with a lot of restrictions, there are&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

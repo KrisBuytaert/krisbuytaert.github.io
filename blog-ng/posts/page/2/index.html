@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Posts | Everything is a Freaking DNS problem</title>
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
+</head>
+<body>
+  <header>
+    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <p class="tagline">Devops Needs Sushi</p>
+  </header>
+  <div class="layout">
+    <main>
+      
+<h2>Posts</h2>
+
+<article class="summary">
+  <h3><a href="/blog/recent-and-upcoming-talks/">Recent and Upcoming Talks</a></h3>
+  <p class="meta"><time datetime="2016-03-23">March 23, 2016</time></p>
+  <p><p>I gave a couple of new and updated talks the last couple of months.</p>
+<p>At Fosdem, I opened up the Distributions Devroom with a talk on how we could improve the collaboration between the developers of a distro, and their users, the ops folks. I seemed to not be the only person with similar ideas as the smart folks over at the CentOS project were already actively talking about their efforts into making some my ideas become reality the day before at the CentOS Dojo.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/bimodal-it-redefined/">Bimodal IT , redefined</a></h3>
+  <p class="meta"><time datetime="2016-01-07">January 7, 2016</time></p>
+  <p><p>There&rsquo;s been a lot of discussion about the sillynes of the term BiModal IT, aka the next big thing for IT-organisations that don&rsquo;t dare to change, but still want to sound cool.</p>
+<p>So here is my idea to reuse that term for something relevant.</p>
+<p>BiModal IT, is the idea where you take a fully automated infrastructure which has been build on the principles of Infrastructure as Code. Which gets periodic idempodent updates (e.g every 15 or 30 minutes, or when you orchestrate it), and consistency checks , where the source code for that infrastructure is versioned , tested and delivered trough a traditional Continuous Delivery pipeline for the majority of your services. and add realtime reconfiguration capacities based on service discovery for the other services that really change fast, or in a real elastic way, using tools like Consul, Consul_template, etcd etc..</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/power-packaging-software-package-all-things/">The power of packaging software, package all the things</a></h3>
+  <p class="meta"><time datetime="2015-07-28">July 28, 2015</time></p>
+  <p><p>Software delivery is hard, plenty of people all over this planet are struggling with delivering software in their own controlled environment. They have invented great patterns that will build an artifact, then do some magic and the application is up and running.</p>
+<p>When talking about continuous delivery, people invariably discus their delivery pipeline and the different components that need to be in that pipeline.<br>
+Often, the focus on getting the application deployed or upgraded from that pipeline is so strong that teams<br>
+forget how to deploy their environment from scratch.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/importance-idempotence/">On the importance of idempotence.</a></h3>
+  <p class="meta"><time datetime="2015-05-11">May 11, 2015</time></p>
+  <p><p>A couple of months ago we were seeing weird behaviour with consul not knowing all it&rsquo;s members at a customer where we had deployed Consul for service registration as a POC<br>
+The first couple of weeks we hadn&rsquo;t noticed any difficulties but after a while we had the impression that the number of nodes in the cluster wasn&rsquo;t stable.</p>
+<p>Obviously the first thought is that such a new tool probably isn&rsquo;t stable enough so it&rsquo;s expected behaviour , but rest asured that was not the case.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/what-done-really-looks-devops/">What done REALLY looks like in devops</a></h3>
+  <p class="meta"><time datetime="2015-05-03">May 3, 2015</time></p>
+  <p><p>Steve Ropa blogged about <a href="http://blogs.versionone.com/agile_management/2015/04/30/what-done-looks-like-in-devops/">What done looks like in devops</a> , I must say I respecfullly , but fully disagree with Steve here.</p>
+<p>For those of you that remember I gave an Ignite about my views on the use of the Definition of Done back ad #deovpsdays 2013 in Amsterdam.</p>
+<p>In the early days we talked about the #devops movement partly being a reaction against the late friday night deployments where the ops people got a tarball with some minimalistic notes and were supposed to put stuff in production. The work of the development team was Done, but the operations team work just started.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/2014-vs-2015-interest-open-source-configuration-management/">2014 vs 2015 interest in Open Source Configuration Management</a></h3>
+  <p class="meta"><time datetime="2015-02-09">February 9, 2015</time></p>
+  <p><p>A couple of people asked me to results of the survey of the 2015 vs 2014 Configuration Management Camp room interrests.</p>
+<p>This is a bunch of 350 last year and 420 people telling us what tools they are interested in so we can map the right roomsizes to the communities.</p>
+<p>2014 :</p>
+<p><img src="http://krisbuytaert.be/pics/2014.png" alt=""></p>
+<p>2015:</p>
+<p><img src="http://krisbuytaert.be/pics/2015.png" alt=""></p>
+<p>Enjoy.. but remember there&rsquo;s Lies, Damn Lies and Statistics ..<br>
+PS. this is a mostly European Audience .</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/systemd-and-devops/">On Systemd and devops</a></h3>
+  <p class="meta"><time datetime="2014-09-20">September 20, 2014</time></p>
+  <p><p>If it&rsquo;s not broken , don&rsquo;t fix it.<br>
+Those who don&rsquo;t understand Unix are doomed to reinvent it, poorly<br>
+Complexity is the enemy of reliability.</p>
+<p>Are some of the more frequently heard arguments in the systemd discussion. Indeed I see and hear a lot of senior Linux people react openly and probably way to late against the introduction of systemd in a lot of our favorite Linux distributions.</p>
+<p>To me this is a typical example of the devops gap. The gap between developers writing code and operations needing to manage that code on production platforms at scale.<br>
+Often developers writing code that they think is useful and relevant while they are not listening to their target audience , in this case not the end users of the systems but the people that are maintaining the platforms. The people that work on a daily base with these tools.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/upcoming-conferences/">Upcoming Conferences</a></h3>
+  <p class="meta"><time datetime="2014-08-12">August 12, 2014</time></p>
+  <p><p>After not being able to give my planned Ignite at #devopsdays Amsterdam because I was down with the flu here&rsquo;s some fresh opportunities to listen to my rants :)</p>
+<p>In September I`ll be talking at PuppetConf 2014, San Francisco , USA about some of the horror stories we went trough over the past couple of years when deploying infrastructure the automated fasion.</p>
+<p>Just one week later I`ll be opening the #devops track at DrupalCon Amsterdam together with @cyberswat (Kevin Bridges) where we&rsquo;ll talk about the current state of #drupal and #devops , We&rsquo;ll be reopening the #drupal and #devops survey shortly, more info about that later here..</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/fedora-20-annoyancies/">Fedora 20 Annoyancies</a></h3>
+  <p class="meta"><time datetime="2014-08-12">August 12, 2014</time></p>
+  <p><pre tabindex="0"><code>1. yum install docker
+
+3. docker run --rm -i -t -e &#34;FLAPJACK_BUILD_REF=6ba5794&#34; \
+4. &gt;   -e &#34;FLAPJACK_PACKAGE_VERSION=1.0.0~rc3~20140729T232100-6ba5794-1&#34; \
+5. &gt;   flapjack/omnibus-ubuntu bash -c \
+6. &gt;   &#34;cd omnibus-flapjack ; \
+7. &gt;   git pull ; \
+8. &gt;   bundle install --binstubs ; \
+9. &gt;   bin/omnibus build --log-level=info flapjack ; \
+10. &gt;   bash&#34;
+11. docker - version 1.5
+12. Copyright 2003, Ben Jansens &lt;ben@orodu.net&gt;
+
+14. Usage: docker [OPTIONS]
+
+16. Options:
+17. -help             Show this help.
+18. -display DISLPAY  The X display to connect to.
+19. -border           The width of the border to put around the
+20. system tray icons. Defaults to 1.
+21. -vertical         Line up the icons vertically. Defaults to
+22. horizontally.
+23. -wmaker           WindowMaker mode. This makes docker a
+24. fixed size (64x64) to appear nicely in
+25. in WindowMaker.
+26. Note: In this mode, you have a fixed
+27. number of icons that docker can hold.
+28. -iconsize SIZE    The size (width and height) to display
+29. icons as in the system tray. Defaults to
+30. 24.
+
+
+33. [root@mine ~]# rpm -qf /bin/docker
+34. docker-1.5-10.fc20.x86_64
+35. [root@mine ~]# rpm -qi docker
+36. Name        : docker
+37. Version     : 1.5
+38. Release     : 10.fc20
+39. Architecture: x86_64
+40. Install Date: Sun 03 Aug 2014 12:41:57 PM CEST
+41. Group       : User Interface/X
+42. Size        : 40691
+43. License     : GPL+
+44. Signature   : RSA/SHA256, Wed 07 Aug 2013 10:02:56 AM CEST, Key ID 2eb161fa246110c1
+45. Source RPM  : docker-1.5-10.fc20.src.rpm
+46. Build Date  : Sat 03 Aug 2013 10:30:23 AM CEST
+47. Build Host  : buildvm-07.phx2.fedoraproject.org
+48. Relocations : (not relocatable)
+49. Packager    : Fedora Project
+50. Vendor      : Fedora Project
+51. URL         : &lt;a href=&#34;http://icculus.org/openbox/2/docker/&lt;br /&gt;
+52. Summary&#34; title=&#34;http://icculus.org/openbox/2/docker/&lt;br /&gt;
+53. Summary&#34;&gt;http://icculus.org/openbox/2/docker/&lt;br /&gt;
+54. Summary&lt;/a&gt;     : KDE and GNOME2 system tray replacement docking application
+55. Description :
+56. Docker is a docking application (WindowMaker dock app) which acts as a system
+57. tray for KDE and GNOME2. It can be used to replace the panel in either
+58. environment, allowing you to have a system tray without running the KDE/GNOME
+59. panel or environment.
+60. [root@mine ~]# yum remove docker
+61. [root@mine ~]# yum install docker-io
+
+63. Installed:
+64. docker-io.x86_64 0:1.0.0-9.fc20
+
+66. Complete!
+</code></pre></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/ubuntu-1404-dell-xps-15-9530/">Ubuntu 14.04 on an Dell XPS 15 9530</a></h3>
+  <p class="meta"><time datetime="2014-08-12">August 12, 2014</time></p>
+  <p><p>So I had the chance to unbox and install a fresh Dell XPS-15 9530<br>
+Dell ships the XPS13&rsquo;s with Ubuntu, but for some crazy reason it does not do the same with the XPS15 which imvho is much more<br>
+appropriate for a developer as it actually has a usable size screen.</p>
+<p>That means they also force you to boot into some proprietary OS the very first time before you can even try get into the boot options menu.<br>
+which is where you need to be.</p></p>
+</article>
+
+
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/blog/posts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/page/3/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/posts/page/30/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+
+    </main>
+    <aside class="sidebar">
+
+  <section class="bio">
+    <h3>About Kris Buytaert</h3>
+    <p>Kris Buytaert is a long time Linux and Open Source Consultant and engineering leader. 
+    He's one of the instigators of the devops movement. 
+
+    <p>He frequently speaks at and organizes international conferences, and has written
+    about the same subjects in different books, papers and articles.</p>
+  </section>
+
+  <section class="nav-links">
+    <h3>Links</h3>
+    <ul>
+      <li><a href="https://www.krisbuytaert.be/">Main page</a></li>
+      <li><a href="http://www.linkedin.com/in/krisbuytaert">My LinkedIn Profile</a>
+      <li><a href="http://github.com/KrisBuytaert/">Kris on Github</a>
+      <li><a href="http://codeberg.org/KrisBuytaert/">Kris on Codeberg</a>
+      <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a>
+
+
+      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+
+
+      <li><a href="https://devopsdays.org">devopsdays.org</a></li>
+      <li><a href="https://cfgmgmtcamp.org">cfgmgmtcamp.org</a></li>
+      <li><a href="https://belibre.be">belibre.be</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Recent Posts</h3>
+    <ul>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/docker-and-volumes-hell/">Docker and volumes hell</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/its-just-rubber-some-air-it/">It&#39;s just rubber , with some air in it.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/">Lies, Damn Lies and Statistics, 2016 Edition</a></li>
+      
+    </ul>
+  </section>
+
+  
+  <section>
+    <h3>Tags</h3>
+    <ul class="tags">
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      <li><a href="https://krisbuytaert.github.io/tags/devops/">devops</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/drupal/">drupal</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/mysql/">mysql</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/puppet/">puppet</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/open-source/">open source</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/opensource/">opensource</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dnsproblem/">dnsproblem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/ha/">ha</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fosdem/">fosdem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/chef/">chef</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dns/">dns</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fedora/">fedora</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/virtualization/">virtualization</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/xen/">xen</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/centos/">centos</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/conference/">conference</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/monitoringsucks/">monitoringsucks</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/rpm/">rpm</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/kvm/">kvm</a></li>
+      
+    </ul>
+  </section>
+  
+
+</aside>
+
+  </div>
+  <footer>
+    <p>No really .. everything is a funky DNS problem, you'll realise I'm right pretty soon!</p>
+  </footer>
+</body>
+</html>

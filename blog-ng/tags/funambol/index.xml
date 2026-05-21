@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Funambol on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/funambol/</link>
+    <description>Recent content in Funambol on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Nov 2009 21:13:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/funambol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Funambol on Android</title>
+      <link>https://krisbuytaert.github.io/blog/funambol-android/</link>
+      <pubDate>Fri, 06 Nov 2009 21:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/funambol-android/</guid>
+      <description>&lt;p&gt;So &lt;a href=&#34;http://www.inuits.be/&#34;&gt;we&lt;/a&gt; have a Zimbra, and a Funambol and I have an Android, so what would you think I want to test .. exactly .. run the Android Funambol client on my phone.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://android-client.forge.funambol.org/&#34;&gt;On forge.funambol.org&lt;/a&gt; it looks great .. nice screenshot .. then you look closer ..&lt;br&gt;&#xA;Contacts OK, Calendar Not supported (yet) .. apparently it has been like that sincs it got released which is over a year ago.&lt;/p&gt;&#xA;&lt;p&gt;So I`m looking for other ideas on how to sync my Zimbra Calendar with my Android&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

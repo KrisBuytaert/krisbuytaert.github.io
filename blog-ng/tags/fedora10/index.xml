@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fedora10 on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/fedora10/</link>
+    <description>Recent content in Fedora10 on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Dec 2008 20:38:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/fedora10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL 5.1 on Fedora 10</title>
+      <link>https://krisbuytaert.github.io/blog/mysql-51-fedora-10/</link>
+      <pubDate>Fri, 19 Dec 2008 20:38:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/mysql-51-fedora-10/</guid>
+      <description>&lt;p&gt;So I wanted a fresh MySQL 5.1 release on my Fedora 10 box.&lt;br&gt;&#xA;Fedora comes with a mysql 5.0 package and the MySQL community packages for 5.1 conflict with that in different ways. (to start with MySQL vs mysql)&lt;/p&gt;&#xA;&lt;p&gt;For some weird reason libmysqlclient (in mysql-libs) is required by redland, which is required by openoffice.org-core. I probaly never need the RDF funtionalities that redland provides me but I`m stuck with them anyhow.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skype on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/skype/</link>
+    <description>Recent content in Skype on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Dec 2008 22:40:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/skype/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Next Step, Done</title>
+      <link>https://krisbuytaert.github.io/blog/next-step-done/</link>
+      <pubDate>Mon, 01 Dec 2008 22:40:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/next-step-done/</guid>
+      <description>&lt;p&gt;I &lt;a href=&#34;http://www.krisbuytaert.be/blog/upgrading-fedora-10&#34;&gt;just blogged&lt;/a&gt; that I wanted the skype plugin to work in my pidgin, only to have 1 central chat window.&lt;/p&gt;&#xA;&lt;p&gt;Guess what .. &lt;a href=&#34;http://eion.robbmob.com/&#34;&gt;this&lt;/a&gt; really works. it&amp;rsquo;s that simple .. copy the 2 files, then setup the account .. I just had to disable the annoying skype sounds :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Upgrading to Fedora 10</title>
+      <link>https://krisbuytaert.github.io/blog/upgrading-fedora-10/</link>
+      <pubDate>Mon, 01 Dec 2008 22:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/upgrading-fedora-10/</guid>
+      <description>&lt;p&gt;As some of you know I run Fedora on my main Laptop, and Ubuntu on my EEE and my office Desktop. My Ubuntu installs were pretty fresh, but my fedora was long due for an upgrade. As after years of abuse (&amp;ndash;force &amp;ndash;nodeps) it usually is impossible to do a regular upgrade, so my best way out was a quick and fresh install on an isolated root partition. (my /home/ etc live on separate volumes)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

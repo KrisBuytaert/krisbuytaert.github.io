@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dnsproblem on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/dnsproblem/</link>
+    <description>Recent content in Dnsproblem on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Dec 2010 23:23:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/dnsproblem/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guest Post Season</title>
+      <link>https://krisbuytaert.github.io/blog/guest-post-season/</link>
+      <pubDate>Sat, 18 Dec 2010 23:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/guest-post-season/</guid>
+      <description>&lt;p&gt;Apparently December is the month where everybody starts writing guest posts for other blogs.&lt;/p&gt;&#xA;&lt;p&gt;Earlier this month I wrote an article with the title of this blog for Sysadvent ,&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s a sysadmin relative of the Perl Advent Calendar: One article for each day of December, ending on the 25th article. With the goals of of sharing, openness, and mentoring, we aim to provide great articles about systems administration topics written by fellow sysadmins\&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IntoDns</title>
+      <link>https://krisbuytaert.github.io/blog/intodns/</link>
+      <pubDate>Fri, 15 Jan 2010 21:00:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/intodns/</guid>
+      <description>&lt;p&gt;So a couple of weeks ago I blogged about &lt;a href=&#34;http://www.krisbuytaert.be/blog/category/dnsknife&#34;&gt;DNS Knife&lt;/a&gt; late last year I ran into an even better tool.&lt;/p&gt;&#xA;&lt;p&gt;Enter &lt;a href=&#34;http://intodns.com/&#34;&gt;IntoDNS&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Apparently IntoDNS.com finds more issues like the zone file listing different nameservers from the ones you defined &amp;hellip;etc..&lt;/p&gt;&#xA;&lt;p&gt;So change your bookmarks, browse that page :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Changing the title of my Blog</title>
+      <link>https://krisbuytaert.github.io/blog/changing-title-my-blog/</link>
+      <pubDate>Thu, 03 Dec 2009 22:39:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/changing-title-my-blog/</guid>
+      <description>&lt;p&gt;After what &lt;a href=&#34;http://googlecode.blogspot.com/2009/12/introducing-google-public-dns-new-dns.html&#34;&gt;google announced today&lt;/a&gt; it&amp;rsquo;s pretty clear who to blame as of now, no it&amp;rsquo;s not Dim0 anymore,, it&amp;rsquo;s not a Freaking DNS Problem anymore its just plain old google.&lt;/p&gt;&#xA;&lt;p&gt;Yep Google announced they will be providing a public open DNS server . So rather than claiming that Everything is a Freaking DNS Problem, now everything is a Freaking Google Problem.&lt;/p&gt;&#xA;&lt;p&gt;Google tracking which sites you visits while not using earch, it&amp;rsquo;s a DNS Problem , Google tracking different Google Profiles you have and matching them together indeed, another Fine DNS Proble, Google tracking what different users are working the same computer and mapping them it&amp;rsquo;s a DNS Problem,&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NoSQL vs MySQL</title>
+      <link>https://krisbuytaert.github.io/blog/nosql-vs-mysql/</link>
+      <pubDate>Mon, 23 Nov 2009 22:17:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/nosql-vs-mysql/</guid>
+      <description>&lt;p&gt;No I did NOT post the following &lt;a href=&#34;http://www.ruturaj.net/redis-memcached-tokyo-tyrant-mysql-comparison#comment-22565&#34;&gt;comment&lt;/a&gt;&lt;br&gt;&#xA;&lt;br&gt;&#xA;This is ridiculous. You didn&amp;rsquo;t test MySQL, you tested a failing DNS lookup on authentication.&lt;/p&gt;&#xA;&lt;p&gt;resulting in the follow up &lt;a href=&#34;http://www.ruturaj.net/myisam-innodb&#34;&gt;post&lt;/a&gt; :&lt;/p&gt;&#xA;&lt;p&gt;&lt;br&gt;&#xA;My previous post Redis, Memcache, Tokyp Tyrant, MySQL comparison had a flaw as pointed out by this comment. The MySQL was taking a huge time for doing a reverse DNS lookup.\&lt;/p&gt;&#xA;&lt;p&gt;But as always &amp;hellip; Everything is just a Freaking dns problem :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tom Limoncelli is wrong</title>
+      <link>https://krisbuytaert.github.io/blog/tom-limoncelli-wrong/</link>
+      <pubDate>Wed, 18 Nov 2009 22:09:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tom-limoncelli-wrong/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://everythingsysadmin.com/2009/11/a-list-of-dumb-things-to-check.html&#34;&gt;Tom Limoncelli&lt;/a&gt; is so wrong , he list DNS problem only as nr 33 on his &lt;a href=&#34;http://whatexit.org/tal/mywritings/dumb-things-to-check.html&#34;&gt;dumb-things to check&lt;/a&gt; list.&lt;/p&gt;&#xA;&lt;p&gt;And obviously it should be the very First thing you check !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Got Interviewed</title>
+      <link>https://krisbuytaert.github.io/blog/got-interviewed/</link>
+      <pubDate>Wed, 18 Nov 2009 22:05:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/got-interviewed/</guid>
+      <description>&lt;p&gt;by &lt;a href=&#34;http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/&#34;&gt;@botchagalupe&lt;/a&gt;&lt;br&gt;&#xA;on Virtualization, Open Source tools and DNS Problems&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Yet Another DNS Issue</title>
+      <link>https://krisbuytaert.github.io/blog/yet-another-dns-issue/</link>
+      <pubDate>Thu, 12 Nov 2009 23:01:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/yet-another-dns-issue/</guid>
+      <description>&lt;p&gt;While browsing trough my enormous mailinglist backlog I ran into the following message from Gianluca Cecchi on the DRBD-user mailing list&lt;/p&gt;&#xA;&lt;p&gt;guess I`ll have to give Lars a T-Shirt when we next meet ;)&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. From: Gianluca Cecchi&#xA;2. To: drbd-user@lists.linbit.com&#xA;3. Subject: [DRBD-user] notes on 8.3.2&#xA;&#xA;&#xA;6. - drbdadm create-md r0 segfaults when the command &amp;#34;hostname&amp;#34; on the&#xA;7. server contains the fully qualified domain name but you have put only&#xA;8. the hostname part in drbd.conf&#xA;9. Instead, the command &amp;#34;drbdadm dump&amp;#34; correctly gives you a warning in&#xA;10. this case (suggesting how to correct the error you made....):&#xA;&#xA;12. suppose complete hostname is virtfed.domainname.com and you put&#xA;13. virtfed alone in drbd.conf&#xA;14. [root@virtfed ~]# drbdadm dump&#xA;15. WARN: no normal resources defined for this host (virtfed.domainname.com)!?&#xA;&#xA;17. while&#xA;18. [root@virtfed ~]# drbdadm create-md r0&#xA;19. Segmentation fault&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Guess I`ll have to give the Linbit crowd a T-Shirt when we next meet ;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DNS Tools</title>
+      <link>https://krisbuytaert.github.io/blog/dns-tools/</link>
+      <pubDate>Wed, 28 Oct 2009 22:52:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/dns-tools/</guid>
+      <description>&lt;p&gt;In my latest DNS Problem related post I mentionned that don&amp;rsquo;t know all the answers, I however know about some good tools to help you setup a clean DNS server.&lt;/p&gt;&#xA;&lt;p&gt;Ages ago via &lt;a href=&#34;http://planet.fedoraproject.org/&#34;&gt;Planet Fedora&lt;/a&gt; I ran into an article from &lt;a href=&#34;http://www.alphatek.info/2008/11/29/dnsknifecom-meet-the-online-dig/&#34;&gt;Steven Moix&lt;/a&gt; about a tool he and his fellow students build for a summer project.&lt;/p&gt;&#xA;&lt;p&gt;The tool is &lt;a href=&#34;http://www.dnsknife.com/&#34;&gt;DNSKnife&lt;/a&gt; and it&amp;rsquo;s really interresting.&lt;/p&gt;&#xA;&lt;p&gt;DNS Knife is a good tool to check if your DNS setup is ok, it checks the parent servers, it checks for if your nameservers are listed on the parent server, checks if all your nameservers are reachable and are authorative .&lt;br&gt;&#xA;And so on and so on &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Apparently there are Borders</title>
+      <link>https://krisbuytaert.github.io/blog/apparently-there-are-borders/</link>
+      <pubDate>Thu, 22 Oct 2009 20:22:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/apparently-there-are-borders/</guid>
+      <description>&lt;p&gt;And therefore, sometimes you need to register domains in different countries.&lt;br&gt;&#xA;So how does one proceed, one takes the zone file of the existing domain e.g. .be and creates a symlink for the different countries to the original zonefile e.g .nl and .eu . Afterall, you want to have te same hosts available in every country and you want to keep the hassle down when you update a host.&lt;/p&gt;&#xA;&lt;p&gt;You tell your registrar, to reg the same domain for the other tld&amp;rsquo;s with the usueal Nameservers , you know . the one that are listed in your original zonefile&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Everything is a Swedish dot Problem</title>
+      <link>https://krisbuytaert.github.io/blog/everything-swedish-dot-problem/</link>
+      <pubDate>Tue, 13 Oct 2009 14:25:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/everything-swedish-dot-problem/</guid>
+      <description>&lt;p&gt;Via &lt;a href=&#34;http://twitter.com/frank_be/&#34;&gt;@frank_be&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://smalltalk.frank.be/een-puntje-vergeten-kan-ernstige-gevolgen-heb&#34;&gt;.se goes down after a dns config issue&lt;/a&gt;&lt;br&gt;&#xA;We have spoken to a number of industry insiders and what happened is that when updating the data, the script did not add a terminating “.” to the DNS records in the .se zone. That trailing dot is necessary in the settings for DNS to understand that “.se” is the top-level domain. It is a seemingly small detail, but without it, the whole DNS lookup chain broke down.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Some people just don&#39;t get it</title>
+      <link>https://krisbuytaert.github.io/blog/some-people-just-dont-get-it/</link>
+      <pubDate>Wed, 23 Sep 2009 21:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/some-people-just-dont-get-it/</guid>
+      <description>&lt;p&gt;I mean, we are heading towards 2010 , some of us have been using Open Source for decades, the Open Source vs Free Software discussion was like last millenium, and we&amp;rsquo;ve been doing open source consultancy for over a decade, yet today companies still think their customers are stupid,&lt;/p&gt;&#xA;&lt;p&gt;Fancy this story on &lt;a href=&#34;http://news.zdnet.co.uk/itmanagement/0,1000000308,39760362,00.htm?s_cid=260&#34;&gt;ZDNet&lt;/a&gt; today .. there&amp;rsquo;s actually companies out there claiming that &amp;ldquo;Bind&amp;rdquo; because of it&amp;rsquo;s FreeWare nature , yes that&amp;rsquo;s right you&amp;rsquo;ve Read FREEWARE , (hadn&amp;rsquo;t heard that word for over 5 years..) , is less secure than their proprietary offering in the Cloud. So the very nature of their Secure product is offering Security by Obscurity in an insecure environment .&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Centos, a fine DNS problem</title>
+      <link>https://krisbuytaert.github.io/blog/centos-fine-dns-problem/</link>
+      <pubDate>Mon, 03 Aug 2009 23:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/centos-fine-dns-problem/</guid>
+      <description>&lt;p&gt;You must have noticed the fuzz around CentOS, &lt;a href=&#34;http://lists.centos.org/pipermail/centos/2009-July/079767.html&#34;&gt;the open Letter&lt;/a&gt; , and luckily Lance &lt;a href=&#34;http://www.centos.org/&#34;&gt;showing up&lt;/a&gt; again ..&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been a long time CentOS user , so this kind of events are pretty close to my heart, I never really worried about the future of the project , the CentOS community is was standing behind their message as one group. If Lance wouldn&amp;rsquo;t have shown up again quoting &lt;a href=&#34;http://www.arrfab.net/blog/&#34;&gt;Arrfab&lt;/a&gt;:&lt;br&gt;&#xA;&amp;ldquo;The worst would be to switch to another domain name .. but you already know that everything is a fscking DNS problem&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>resolv.conf problem</title>
+      <link>https://krisbuytaert.github.io/blog/resolvconf-problem/</link>
+      <pubDate>Thu, 04 Jun 2009 11:19:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/resolvconf-problem/</guid>
+      <description>&lt;p&gt;Collegue troubleshooting a machine that he couldn&amp;rsquo;t log into anymore&lt;/p&gt;&#xA;&lt;p&gt;root@Validation_Radio3_Ku_VN1:~# cat /etc/shadow\&lt;/p&gt;&#xA;&lt;h1 id=&#34;etcresolvconf-generated-on-20090604022133-by&#34;&gt;/etc/resolv.conf generated on 20090604022133 by\&lt;/h1&gt;&#xA;&lt;p&gt;/etc-ro/rc.d/resolvdotconf.pl&lt;br&gt;&#xA;nameserver 192.168.104.1\&lt;/p&gt;&#xA;&lt;p&gt;Really folks .. Everything is a fine dns problem :)&lt;/p&gt;&#xA;&lt;p&gt;PS. Yeah yeah .. the real problem was a filesystem corrupted&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Crazy stuff over DNS</title>
+      <link>https://krisbuytaert.github.io/blog/crazy-stuff-over-dns/</link>
+      <pubDate>Wed, 07 Jan 2009 18:44:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/crazy-stuff-over-dns/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pascal.vanhecke.info/&#34;&gt;Pascal&lt;/a&gt; tweeted me te following &lt;a href=&#34;https://dgl.cx/wikipedia-dns&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;From the site :&lt;/p&gt;&#xA;&lt;p&gt;I had written some code to take wikipedia articles and summarise them. I wanted to offer this for use in various places, now the obvious way to offer it is just a web service (via REST, SOAP, etc), but that&amp;rsquo;s boring and I had a cunning plan. Why not offer it over DNS - it is basically a huge associative array and DNS is designed for this stuff.\&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Everything is a Funky DNS problem.</title>
+      <link>https://krisbuytaert.github.io/blog/everything-funky-dns-problem-0/</link>
+      <pubDate>Tue, 06 Jan 2009 20:27:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/everything-funky-dns-problem-0/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.linux-magazine.com/online/news/25c3_dan_kaminsky_invokes_dnssec&#34;&gt;Nils&lt;/a&gt; has a good writeup of what &lt;a href=&#34;http://www.doxpara.com/&#34;&gt;Dan Kaminsky&lt;/a&gt; talked about at 25C3 Interesting read as after al.. Everything is a funky DNS problem.&lt;/p&gt;&#xA;&lt;p&gt;Should send him a T-Shirt one day .. he seems to appreciate my site slogan :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Everything is a funky Twitter problem ..</title>
+      <link>https://krisbuytaert.github.io/blog/everything-funky-twitter-problem/</link>
+      <pubDate>Mon, 05 Jan 2009 14:30:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/everything-funky-twitter-problem/</guid>
+      <description>&lt;p&gt;When your favourite ex yahoo employee and mysql guru blogs about a &amp;ldquo;dns problem&amp;rdquo; and how &lt;a href=&#34;http://jeremy.zawodny.com/blog/archives/010835.html&#34;&gt;he solved it using Twitter&lt;/a&gt; you can only smile ;) At last some useful use for Twitter .. when it&amp;rsquo;s up at least ..&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wordpress is Slow !</title>
+      <link>https://krisbuytaert.github.io/blog/wordpress-slow/</link>
+      <pubDate>Sat, 06 Dec 2008 11:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/wordpress-slow/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://blog.avirtualhome.com/2008/12/03/wordpress-being-slow-a-dns-problem/&#34;&gt;because of a fine DNS problem&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;So it can obviously happen to other platforms as well :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CloudCafe !</title>
+      <link>https://krisbuytaert.github.io/blog/cloudcafe/</link>
+      <pubDate>Mon, 03 Nov 2008 21:31:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/cloudcafe/</guid>
+      <description>&lt;p&gt;I`m in John&amp;rsquo;s &lt;a href=&#34;http://www.johnmwillis.com/cloudcafe/cloud-cafe-20-cloud-camp-brussels/&#34;&gt;Cloud Cafe&lt;/a&gt; !&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

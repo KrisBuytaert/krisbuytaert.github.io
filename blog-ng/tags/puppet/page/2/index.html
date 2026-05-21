@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Puppet | Everything is a Freaking DNS problem</title>
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
+</head>
+<body>
+  <header>
+    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <p class="tagline">Devops Needs Sushi</p>
+  </header>
+  <div class="layout">
+    <main>
+      
+<h2>Puppet</h2>
+
+<article class="summary">
+  <h3><a href="/blog/gentwerpen-devops-meetup-conference-season-update/">Gentwerpen Devops Meetup  &amp; Conference Season Update</a></h3>
+  <p class="meta"><time datetime="2012-09-13">September 13, 2012</time></p>
+  <p><p>A couple of us have been taking about it a lot already .. we wanted to host a one day #devops event in .be already last year.. then talks about starting a meetup group started again with @wonko_be but it was @fs111 pushing the final button and calling the rest of the .be community to order, we&rsquo;ve set a date<br>
+and the first session will take place (agenda still needs to be detirmined)</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/vagrant-and-drupal-winning-team/">Vagrant and Drupal, a winning team</a></h3>
+  <p class="meta"><time datetime="2012-08-25">August 25, 2012</time></p>
+  <p><p>While heading back home from DrupalCon Munich after 4 days of good interaction with lots of Drupal folks.<br>
+I realized to my big suprise that there are a lot of people using Vagrant to make sure that developers are not working on platforms they invented their own. Lots of people have realized that &ldquo;It works on my computer&rdquo; is not something they want to hear from a developer and are reaching out to give them viable solutions to work on shared and reproducible solutions.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/open-source-certification-friend-or-foe/">Open Source Certification , Friend or Foe</a></h3>
+  <p class="meta"><time datetime="2012-08-25">August 25, 2012</time></p>
+  <p><p>With 2 of the bigger Open Source projects I care about talking about certifications programs questions pop up again &hellip;</p>
+<p>Should we certify ourselves ?</p>
+<p>So let me tell you about my experiences in getting Open Source related Certifications ..</p>
+<p>Over a decade ago, (2001) when RedHat was still Redhat and not yet Fedora the company I was working for was about to partner with RedHat and needed to get a number of people certified for that.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/our-monitoringsucks-rpm-repository-available/">Our #monitoringsucks rpm is repository available</a></h3>
+  <p class="meta"><time datetime="2012-08-11">August 11, 2012</time></p>
+  <p><p>Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.</p>
+<p>You might have noticed a variety of vagrant- projects on my github acount</p>
+<p><a href="http://github.com/KrisBuytaert/vagrant-ganglia">http://github.com/KrisBuytaert/vagrant-ganglia</a><br>
+<a href="http://github.com/KrisBuytaert/vagrant-graphite">http://github.com/KrisBuytaert/vagrant-graphite</a><br>
+<a href="http://github.com/KrisBuytaert/vagrant-puppet-logstash">http://github.com/KrisBuytaert/vagrant-puppet-logstash,</a><br>
+Being the #monitoringsucks part of them. All of those Vagrant projects are basically my test setups to play with those new tools.</p>
+<p>They contain a bunch of puppet modules that install and configure these tools. (Note that they mostly consist of<br>
+of git submodules to other puppet module repositories.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/breaking-silence/">Breaking the Silence.</a></h3>
+  <p class="meta"><time datetime="2012-08-06">August 6, 2012</time></p>
+  <p><p>3+ months is probably the biggest timeout I&rsquo;ve taken from blogging in a while..<br>
+Not that I didn&rsquo;t have anything to write ..but more that I was prioritizing writing different content over<br>
+over writing blogposts.</p>
+<p>Blogging tech snippets and contributing documentation used to be one now all of that has evolved.<br>
+Anyhow ..</p>
+<p>So to get things going here&rsquo;s my preliminary Conference schedule for the next couple of months.</p>
+<ul>
+<li>
+<p>First up, in about one week (august 20-24) I<code>ll be chairing the #devops track at [DrupalCon Munich](http://munich2012.drupal.org/)\ Next to talking there myselve explaining the [Drupal Crowd what devops is](http://munich2012.drupal.org/program/sessions/whats-devops-thing-anyhow)\ Plenty of interresting content there ranging from culture over to tooling and back. I</code>m really looking forward to this one.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/devops-munich/">Devops in Munich</a></h3>
+  <p class="meta"><time datetime="2012-05-01">May 1, 2012</time></p>
+  <p><p>Devopsdays Mountainview sold out in a short 3 hours .. but there&rsquo;s other events that will breath devops this summer.<br>
+DrupalCon in Munich will be one of them ..</p>
+<p>Some of you might have noticed that I`m cochairing the devops track for DrupalCon Munich,<br>
+The CFP is open till the 11th of this month and we are still actively looking for speakers.</p>
+<p>We&rsquo;re trying to bridge the gap between drupal developers and the people that put their code to production, at scale.<br>
+But also enhancing the knowledge of infrastructure components Drupal developers depend on.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/flossuk-and-puppetcamp-edinburgh/">FlossUK and Puppetcamp Edinburgh</a></h3>
+  <p class="meta"><time datetime="2012-03-23">March 23, 2012</time></p>
+  <p><p>I&rsquo;ve just finished presenting my talk on how I currently work on Puppet modules at Puppetcamp here in Edinburgh where I&rsquo;ve been for the week talking on both FlossUK 2012 and Puppetcamp.</p>
+<p><strong><a href="http://www.slideshare.net/KrisBuytaert/7-tools-for-your-devops-stack" title="7 tools for your devops stack">7 tools for your devops stack</a></strong> \</p>
+<p>View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/KrisBuytaert">Kris Buytaert</a></p>
+<p>Earlier this week I opened FlossUK 2012 with my talk on 7 tools for your devops stack</p>
+<p><strong><a href="http://www.slideshare.net/KrisBuytaert/how-ihackonpuppetmodules" title="How I hack on puppet modules">How I hack on puppet modules</a></strong> \</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/fall-winter-and-spring-conference-season-2011-2012/">Fall , Winter and Spring Conference Season 2011 - 2012</a></h3>
+  <p class="meta"><time datetime="2011-09-24">September 24, 2011</time></p>
+  <p><p><a href="http://www.jedi.be/blog/2011/09/06/what-conferences-to-attend/">Patrick</a> posted his upcoming conference schedule for the next couple of months.<br>
+as you can see there are a comple of overlapping conferences :)</p>
+<p>Conferences I&rsquo;m speaking at or likely to attend are:</p>
+<ul>
+<li>The first week of October I<code>ll be in the Valley , I</code>ll be late for Jenkinsconf but I hope to pick up some events while I<code>m there.. suggestions are welcome , I</code>m also heading back to Europe earlier than planned so I will miss BadCamp :( &hellip;</li>
+<li><a href="http://devopsdays.org/events/2011-goteborg/">Devopsdays Goteborg, Sweden</a> : <em>October 14,15</em> - The yearly Europe devops event is happening in Goteborg this time. It&rsquo;s going to be really exciting this time , as the theme is inclusive. Eploring the boundaries of devops, I`m once again in the organization of this conference.</li>
+<li><a href="http://t-dose.org/">T-Dose 2011</a>, The Technical Dutch Open Source Event, on 5 and 6 november 2011 , I will be talking again about my experiences with complex Puppet setups</li>
+<li><del><a href="http://citconf.com/">Citconf , London</a>: <em>November 11-12</em> - All you ever wanted to know about Continuous Integration. Period, registered, haven&rsquo;t booked flights yet.</del></li>
+<li><a href="http://www.cloudcamp.org/ghent">Cloudcamp Belgium</a>: <em>November 21</em> - I&rsquo;m looking forward to this year&rsquo;s event, as there will likely more practioners and less marketing folks.</li>
+<li><a href="http://www.usenix.org/events/lisa11/tech/tech.html#Buytaert">Lisa 2011</a>, Boston, US, I<code>m giving an Invited talk titled , Devops: The past and futre are here, It's just not evenly distributed (yet), and I</code>ll be on a panel titled What Will Be HOt Next Year, really looking forward to this one :)</li>
+<li><a href="http://fosdem.org/">Fosdem.org</a> will take place on 4 and 5 February 2012 , and as every year since it inception I&rsquo;ll be there</li>
+<li>The UKUUG rebranded to <a href="http://www.flossuk.org/Events/Spring2012/">FlossUK</a> , they are hosting their Annual Spring conference from 20th to 22nd March in Edinburgh , given their refound focus it will be even more interresting !</li>
+<li>And as announced earlier this week <a href="http://loadays.org/">Loadays.org</a> will take place in Antwerp again this year on 31/3/2012 and 1/4/2012 , as the previous years I`m co organizing this conference</li>
+</ul>
+<p>And yes, I do work from time to time. Just that these conferences are a great way to capture and share new ideas. All worth it!</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/using-veewee/">Using Veewee</a></h3>
+  <p class="meta"><time datetime="2011-08-24">August 24, 2011</time></p>
+  <p><p>With @dancarley and @patrickebois just discussing the origin of the name of Veewee I figured I still had that piece of documentation I wrote up for myselve flying around &hellip;</p>
+<p>So with no other reason than having my docs mirrored on the internet .</p>
+<pre tabindex="0"><code>1. gem install veewee
+</code></pre><pre tabindex="0"><code>1. veewee templates
+</code></pre><p><br>
+shows you what templates we have around ..</p>
+<pre tabindex="0"><code>1. $veewee init natty ubuntu-11.04-server-amd64
+2. Init a new box natty, starting from template ubuntu-11.04-server-amd64
+3. The basebox &#39;natty&#39; has been successfully created from the template &#39;&#39;ubuntu-11.04-server-amd64&#39;
+4. You can now edit the definition files stored in definitions/natty
+5. or build the box with:
+6. vagrant basebox build &#39;natty&#39;
+</code></pre><p>As noted this will generate the definition for your natty box,<br>
+It will create a definition.rb file which describes your box.<br>
+A preseed (or kickstart or similar file) and a postinstall file</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/drupal-and-configuration-mgmt-were-getting-there/">Drupal and Configuration Mgmt, we&#39;re getting there ...</a></h3>
+  <p class="meta"><time datetime="2011-07-17">July 17, 2011</time></p>
+  <p><p>For those who haven&rsquo;t noticed yet .. I<code>m into devops .. I</code>m also a little bit into Drupal, (blame my last name..) , so one of the frustrations I&rsquo;ve been having with Drupal (an much other software) is the automation of deployment and upgrades of Drupal sites &hellip;</p>
+<p>So for the past couple of days I&rsquo;ve been trying to catch up to the ongoing discussion regarding the results of the <a href="http://groups.drupal.org/node/155559">configuration mgmt sprint</a> , I&rsquo;ve been looking at it mainly from a systems point of view , being with the use of Puppet/ Chef or similar tools in mind .. I know I`m late to the discussion but hey , some people take holidays in this season :) So below you can read a bunch of my comments &hellip; and thoughts on the topic ..</p></p>
+</article>
+
+
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/blog/tags/puppet/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/tags/puppet/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/tags/puppet/" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/tags/puppet/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/tags/puppet/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/tags/puppet/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/tags/puppet/page/3/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/blog/tags/puppet/page/5/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+
+    </main>
+    <aside class="sidebar">
+
+  <section class="bio">
+    <h3>About Kris Buytaert</h3>
+    <p>Kris Buytaert is a long time Linux and Open Source Consultant and engineering leader. 
+    He's one of the instigators of the devops movement. 
+
+    <p>He frequently speaks at and organizes international conferences, and has written
+    about the same subjects in different books, papers and articles.</p>
+  </section>
+
+  <section class="nav-links">
+    <h3>Links</h3>
+    <ul>
+      <li><a href="https://www.krisbuytaert.be/">Main page</a></li>
+      <li><a href="http://www.linkedin.com/in/krisbuytaert">My LinkedIn Profile</a>
+      <li><a href="http://github.com/KrisBuytaert/">Kris on Github</a>
+      <li><a href="http://codeberg.org/KrisBuytaert/">Kris on Codeberg</a>
+      <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a>
+
+
+      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+
+
+      <li><a href="https://devopsdays.org">devopsdays.org</a></li>
+      <li><a href="https://cfgmgmtcamp.org">cfgmgmtcamp.org</a></li>
+      <li><a href="https://belibre.be">belibre.be</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Recent Posts</h3>
+    <ul>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/docker-and-volumes-hell/">Docker and volumes hell</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/its-just-rubber-some-air-it/">It&#39;s just rubber , with some air in it.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/">Lies, Damn Lies and Statistics, 2016 Edition</a></li>
+      
+    </ul>
+  </section>
+
+  
+  <section>
+    <h3>Tags</h3>
+    <ul class="tags">
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      <li><a href="https://krisbuytaert.github.io/tags/devops/">devops</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/drupal/">drupal</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/mysql/">mysql</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/puppet/">puppet</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/open-source/">open source</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/opensource/">opensource</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dnsproblem/">dnsproblem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/ha/">ha</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fosdem/">fosdem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/chef/">chef</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dns/">dns</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fedora/">fedora</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/virtualization/">virtualization</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/xen/">xen</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/centos/">centos</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/conference/">conference</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/monitoringsucks/">monitoringsucks</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/rpm/">rpm</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/kvm/">kvm</a></li>
+      
+    </ul>
+  </section>
+  
+
+</aside>
+
+  </div>
+  <footer>
+    <p>No really .. everything is a funky DNS problem, you'll realise I'm right pretty soon!</p>
+  </footer>
+</body>
+</html>

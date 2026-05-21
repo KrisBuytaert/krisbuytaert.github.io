@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Opensuse on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/opensuse/</link>
+    <description>Recent content in Opensuse on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Jul 2010 20:55:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/opensuse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>yum install mariadb</title>
+      <link>https://krisbuytaert.github.io/blog/yum-install-mariadb/</link>
+      <pubDate>Mon, 19 Jul 2010 20:55:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/yum-install-mariadb/</guid>
+      <description>&lt;p&gt;I`m not the biggest fan of openSUSE but this weeks &lt;a href=&#34;http://www.bytebot.net/blog/archives/2010/07/17/opensuse-users-have-a-choice-of-database-now?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+ColinCharles+%28colin+charles+blog%29&#34;&gt;post by Colin Charles&lt;/a&gt; makes me happy ..&lt;/p&gt;&#xA;&lt;p&gt;openSUSE users can now do a mariadb install from their default repositories.&lt;/p&gt;&#xA;&lt;p&gt;With all the fuzz about Snoracle and MySQL&amp;rsquo;s future last year to me it became clear that we would end up having different MySQL based distributions, probably with different names, and that it would be up to the Linux distributions to provide the users with what they preferred, working with those Linux distributions&lt;br&gt;&#xA;therefore would be very important for the MySQL distributions.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

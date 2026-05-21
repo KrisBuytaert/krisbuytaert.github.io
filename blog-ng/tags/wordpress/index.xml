@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wordpress on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/wordpress/</link>
+    <description>Recent content in Wordpress on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Dec 2008 11:13:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wordpress is Slow !</title>
+      <link>https://krisbuytaert.github.io/blog/wordpress-slow/</link>
+      <pubDate>Sat, 06 Dec 2008 11:13:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/wordpress-slow/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://blog.avirtualhome.com/2008/12/03/wordpress-being-slow-a-dns-problem/&#34;&gt;because of a fine DNS problem&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;So it can obviously happen to other platforms as well :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

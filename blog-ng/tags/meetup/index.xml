@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meetup on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/meetup/</link>
+    <description>Recent content in Meetup on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Feb 2011 15:23:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/meetup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reservation Confirmed</title>
+      <link>https://krisbuytaert.github.io/blog/reservation-confirmed/</link>
+      <pubDate>Sat, 05 Feb 2011 15:23:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/reservation-confirmed/</guid>
+      <description>&lt;p&gt;Apparently I don&amp;rsquo;t understand french :(&lt;/p&gt;&#xA;&lt;p&gt;Copied from my inbox &amp;hellip;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. From: &#x9;Info Falstaff &amp;lt;info@lefalstaff.be&amp;gt;&#xA;2. To: &#x9;&amp;#39;Kris Buytaert&amp;#39; &amp;lt;Kris.Buytaert@youalreadyknowmyaddy.be&amp;gt;&#xA;3. Subject: &#x9;RE: Reservation Next Friday 4/2/2011&#xA;4. Date: &#x9;Fri, 28 Jan 2011 16:55:45 +0100&#xA;&#xA;6. je confirme votre  reservation pour le vendredi 04 02 2011&#xA;&#xA;8. vous trouverez ci-joint nos differentes formules&#xA;&#xA;10. bien à vous&#xA;&#xA;12. guy Lommen chef de cuisine&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>MySQL &amp; Friends Meetup at Fosdem 2011</title>
+      <link>https://krisbuytaert.github.io/blog/mysql-friends-meetup-fosdem-2011/</link>
+      <pubDate>Tue, 01 Feb 2011 13:28:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/mysql-friends-meetup-fosdem-2011/</guid>
+      <description>&lt;p&gt;I admit .. I`m lazy &amp;hellip; unlike last year I did not organize MySQL and Friends meetup at Fosdem.&lt;/p&gt;&#xA;&lt;p&gt;I outsourced it to &lt;a href=&#34;http://twitter.com/#!/gryp/&#34;&gt;Kenny&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;More info and registration &lt;a href=&#34;http://www.eventbrite.com/event/1267253389/efbnen&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Devops  Meetups before Fosdem , 2011 Edition</title>
+      <link>https://krisbuytaert.github.io/blog/devops-meetups-fosdem-2011-edition/</link>
+      <pubDate>Sun, 16 Jan 2011 21:45:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/devops-meetups-fosdem-2011-edition/</guid>
+      <description>&lt;p&gt;Just last last year we&amp;rsquo;ll have a Devops meetup just before Fosdem,&lt;br&gt;&#xA;I&amp;rsquo;ve setup a &lt;a href=&#34;http://devopsfosdem2011.eventbrite.com/&#34;&gt;page&lt;/a&gt; for registrations , that way we&amp;rsquo;ll know how many people to make reservations for.&lt;/p&gt;&#xA;&lt;p&gt;If possible we&amp;rsquo;ll go to the same place as last year .. walking distance from the Fosdem Beer event.&lt;/p&gt;&#xA;&lt;p&gt;Feel free to spread the news !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>#Devops / Ruby  Meetup  , Antwerp, April 8, 2010</title>
+      <link>https://krisbuytaert.github.io/blog/devops-ruby-meetup-antwerp-april-8-2010/</link>
+      <pubDate>Tue, 30 Mar 2010 22:57:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/devops-ruby-meetup-antwerp-april-8-2010/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://twitter.com/jtimberman&#34;&gt;Joshua Timberman&lt;/a&gt; will be in town, (Antwerpen) that is, for &lt;a href=&#34;http://loadays.org/&#34;&gt;Loadays&lt;/a&gt; as he is arriving on thursday Botchagalupe suggested we should have a Devops / Ruby get together.&lt;/p&gt;&#xA;&lt;p&gt;So I&amp;rsquo;m dutyfully announcing the Devops/Ruby meetup next thursday april 8th, in Antwerp&lt;/p&gt;&#xA;&lt;p&gt;The plan is to meet up for beers and chatter in our favourite Antwerp geek pub in , Kulminator , Vleminckveld 32 , Antwerp , around 20h00 ish..&lt;/p&gt;&#xA;&lt;p&gt;Topics will be devops, ruby and much more :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Free Beer, planet.grep.be Meetup</title>
+      <link>https://krisbuytaert.github.io/blog/free-beer-planetgrepbe-meetup/</link>
+      <pubDate>Thu, 18 Dec 2008 23:14:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/free-beer-planetgrepbe-meetup/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://planet.grep.be/&#34;&gt;planet.grep.be&lt;/a&gt; today has a lot of active open source users and contributors.&lt;br&gt;&#xA;The weird thing is that we never meet apart from Fosdem.&lt;br&gt;&#xA;Yes, we occasionally run into eachother at other events but there&amp;rsquo;s not enough beer involved.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve had different people ask me what and where are the Open Source gatherings in Belgium, and we must admit that apart&lt;br&gt;&#xA;from Fosdem there isn&amp;rsquo;t that much in our little country.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

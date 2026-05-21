@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monitoringlove on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/monitoringlove/</link>
+    <description>Recent content in Monitoringlove on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Feb 2013 19:10:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/monitoringlove/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Love, MonitoringLove</title>
+      <link>https://krisbuytaert.github.io/blog/love-monitoringlove/</link>
+      <pubDate>Wed, 13 Feb 2013 19:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/love-monitoringlove/</guid>
+      <description>&lt;p&gt;Last year we were pretty negative about Monitoring, We shouted out that MonitoringSucked &amp;hellip; A year has passed and a lot has changed &amp;hellip; most importantly our new found love for monitoring, thanks to an inspirational Ignite talk by &lt;a href=&#34;https://twitter.com/ulfmansson&#34;&gt;Ulf Mansson&lt;/a&gt; at devopsdays Rome.&lt;/p&gt;&#xA;&lt;p&gt;Right after Fosdem about 20 people showed up at the #monitoringlove hacksessions hosted at the &lt;a href=&#34;http://www.inuits.eu/&#34;&gt;Inuits.eu&lt;/a&gt; offices to work on Open Source monitoring projects and exchange ideas. Some completely new people, some people with already a lot of experience.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>check_graphite</title>
+      <link>https://krisbuytaert.github.io/blog/checkgraphite/</link>
+      <pubDate>Tue, 05 Feb 2013 11:10:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/checkgraphite/</guid>
+      <description>&lt;p&gt;During my Puppetcamp Gent talk last week, I explained how to get alerts based on trends from graphite. A number of people asked ,e how to do that.&lt;/p&gt;&#xA;&lt;p&gt;First lets quickly explain why you might want to do that .&lt;br&gt;&#xA;Sometimes you don&amp;rsquo;t care about the current value of a metric..as an example take a Queing system .. there is no problem if there are messages added to the queue, not even if there are a lot of messages on the queue, there might however be a problem if over a certain period the number of messages on a queue stays to high.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>#devops Conference Season heating up...</title>
+      <link>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</link>
+      <pubDate>Sun, 13 Jan 2013 12:21:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</guid>
+      <description>&lt;p&gt;My last post has been a while &amp;hellip; in that I announced that there would be another event right before FOSDEM &amp;hellip; I totally forgot to announce it here but I`m sure that most of you already know. Yes. PuppetCamp Europe is coming back to it&amp;rsquo;s roots&amp;hellip; it&amp;rsquo;s coming back to the city where we hosted it for the first time on this side of the ocean.. Gent. (that&amp;rsquo;s 31/1 and 1/2 )&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>#monitoringlove hackfest</title>
+      <link>https://krisbuytaert.github.io/blog/monitoringlove-hackfest/</link>
+      <pubDate>Tue, 13 Nov 2012 22:54:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/monitoringlove-hackfest/</guid>
+      <description>&lt;p&gt;The age of #monitoringsucks is over, we&amp;rsquo;re now transitioning into a #monitoringlove period.&lt;/p&gt;&#xA;&lt;p&gt;That however doesn&amp;rsquo;t mean al the work is done, we still need to do a lot of work and a lot of people are working on a lot of stuff.&lt;/p&gt;&#xA;&lt;p&gt;Therefore like last year we are opening up our offices again right after Fosdem for a #monitoringlove hackfest&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s right on february 4 and 5 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp. In short a #monitoringlove hackathon&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linuxcon Europe, Barcelona</title>
+      <link>https://krisbuytaert.github.io/blog/linuxcon-europe-barcelona/</link>
+      <pubDate>Tue, 06 Nov 2012 10:12:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/linuxcon-europe-barcelona/</guid>
+      <description>&lt;p&gt;I&lt;code&gt;m in Barcelona this week for LinuxCon Europe ..\ I&lt;/code&gt;ll be hosting 3 sessions this week.&lt;/p&gt;&#xA;&lt;p&gt;Today I&lt;code&gt;ll be helping [Sebastien Goasguen](https://twitter.com/sebgoa) with his session [Building Foss Clouds](http://linuxconeurope2012.sched.org/event/8816c31538f6278779459b3337a45559#.UJi--tHtBrc), I&lt;/code&gt;ll be talking about how to use tools such as Puppet, Graphite and Icinga to monitor your clouds. Sebastian inherited the Building FOSS Clouds tutorial last week and asked me to help out.&lt;/p&gt;&#xA;&lt;p&gt;Tomorrow I`ll be giving my &lt;a href=&#34;http://linuxconeurope2012.sched.org/event/cd9a06295026ac8d17fb51cc26ff2ff2#.UJjD2NHtBrc&#34;&gt;11 Open Source Tools for your Devops Stack&lt;/a&gt;  talking.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

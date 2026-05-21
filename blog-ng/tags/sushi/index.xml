@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sushi on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/sushi/</link>
+    <description>Recent content in Sushi on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Apr 2009 23:02:00 +0100</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/sushi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sushi and DNS Problems</title>
+      <link>https://krisbuytaert.github.io/blog/sushi-and-dns-problems/</link>
+      <pubDate>Thu, 30 Apr 2009 23:02:00 +0100</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/sushi-and-dns-problems/</guid>
+      <description>&lt;p&gt;There seem to be different repeating topics within the Open Source and Geek community.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://delvauxkoen.blogspot.com/2009/04/how-belgian-firewall-would-block-naked.html&#34;&gt;Koen&lt;/a&gt; did a good job explaining how the Great Belgian Firewall reall can&amp;rsquo;t be solved using DNS tricks.&lt;/p&gt;&#xA;&lt;p&gt;And &lt;a href=&#34;http://datacharmer.blogspot.com/2009/04/mysql-community-and-sushi.html&#34;&gt;Giuseppe&lt;/a&gt; tackles the ever recurring Sushi. It has to be said &amp;hellip; Geeks love Sushi and not just the MySQl geeks , every conference we go to we try to squeeze in at least 1 Sushi visit.. sometimes more &amp;hellip;.. Nurenberg, Manchester, Cambridge, Ottawa , &amp;hellip; and there&amp;rsquo;s more to come .. :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
