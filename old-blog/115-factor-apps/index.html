@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>11.5 Factor apps | Everything is a Freaking DNS problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?i" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?i" />
+<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?i" />
+</head>
+
+<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
+<div id="wrapper">
+
+<div id="header" class="p1">
+
+  <div id="branding">
+      <div id="logo">
+    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
+    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
+    </a></div>
+        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
+        <div class="slogan">Devops Needs Sushi</div>
+    </div>
+
+  
+  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
+
+  
+  <div id="menu">
+      </div>
+</div>
+
+<div id="content">
+
+  <div id="sidebar-left" class="sidebar">
+  <div class="block block-block" id="block-block-5">
+  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
+<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
+<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
+<p><a href="../rss/index.xml">Feed</a></p>
+</div>
+</div>
+
+  </div>
+
+<div id="main">
+  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
+  <h2 id="title">11.5 Factor apps</h2>
+<div class="content">
+<div id="node-1115" class="node  blog">
+<div class="content"><p>Each time someone talks about the 12 Factor Application a weird feeling overcomes me .. Because I like the concept .. but it feels awkward .. it feels as if someone with 0 operational experience wrote it. And this devil is in a really small detail.</p>
+<p>And that is Part III. Config ...   For me (and a lot of other folks I've talked to about this topic) , using environment variables (as in real environment variables) are just one of the worst ideas ever.  Environment variables are typically set   manually , or from a script that is being executed and there's little or trace to see fast how a specific config is set.</p>
+<p>Imagine I launch an app with an env variable X=foo ,    then your collegue stops that app, and launches it with X=bar.  The systems integrity has not changed,  no config or binaries have been changed, but the application behaviour could have completely changed.    </p>
+<p>Sure I can go in to /proc/pid/environ  to find the params it was launched with ... But I want to know what state the system is supposed to be in .. and have tooling around that verified that the system  indeed is in that state.  </p>
+<p><a href="https://12factor.net/config" rel="nofollow">https://12factor.net/config</a> claims that using config files that are not stored<br />
+in revision control are a huge step forward from hardcoded config in code, but they claim that config files now start ending  up all over the place.    This obviously feels written by someone who never experienced the power of modern configuration management.  Templates which are dynamically populated  , or configs that are even calculated on the spot depending on the environment an application lives in are the norm in modern infrastructure as code ..  yet people seem to think that managing an environment variable would be less painfull. </p>
+<p>I feel the idea of what they wanted to achieve was good, but the way they suggest the implementation was foobar. I don't ever want critical config of an application (like wether is is talking to the PROD or DEV database) to be set from  an environment variable that can be modified.   This has to come from an automated system.</p>
+<p>This kind of config should be idempotent,  one should be able to trace back where it came from and who modified it (version control), and every redeploy of the application should end up with the same result.   It can even be dynamic (service discovery), but placing it in an Environment variable is the last place where a config deserves to live.</p>
+<p>So please let's stop calling it the 12 Factor application .. and call it the 11.5 Factor application ..</p>
+</div>
+  <div class="meta">
+   <div class="submitted">Submitted by Kris Buytaert on Wed, 08/22/2018 - 21:50</div>
+      <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
+</ul></div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="footer" class="footer">
+  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
+  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
+</div>
+
+</div>
+
+</body>
+</html>

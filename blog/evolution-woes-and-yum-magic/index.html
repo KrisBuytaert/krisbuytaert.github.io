@@ -1,136 +1,1403 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head profile="http://gmpg.org/xfn/11">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Evolution Woes and yum magic | Everything is a Freaking DNS problem</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?i" />
-<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?i" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evolution Woes and yum magic | Everything is a Freaking DNS problem</title>
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
 </head>
-
-<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
-<div id="wrapper">
-
-<div id="header" class="p1">
-
-  <div id="branding">
-      <div id="logo">
-    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
-    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
-    </a></div>
-        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
-        <div class="slogan">Devops Needs Sushi</div>
-    </div>
-
-  
-  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
-
-  
-  <div id="menu">
-      </div>
-</div>
-
-<div id="content">
-
-  <div id="sidebar-left" class="sidebar">
-  <div class="block block-block" id="block-block-5">
-  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
-<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
-<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
-<p><a href="../rss/index.xml">Feed</a></p>
-</div>
-</div>
-
-  </div>
-
-<div id="main">
-  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
-  <h2 id="title">Evolution Woes and yum magic</h2>
-<div class="content">
-<div id="node-1079" class="node  blog">
-<div class="content"><p>I`m an oldschool guy .. I still love pop3(s) to get my mails locally and read them with my fat email client.  Evolution.</p>
+<body>
+  <header>
+    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <p class="tagline">Devops Needs Sushi</p>
+  </header>
+  <div class="layout">
+    <main>
+      
+<article>
+  <h1>Evolution Woes and yum magic</h1>
+  <p class="meta">
+    <time datetime="2013-04-19">April 19, 2013</time>
+    
+      &middot;
+      <a href="https://krisbuytaert.github.io/blog/tags/evolution/">Evolution</a> <a href="https://krisbuytaert.github.io/blog/tags/gcr/">Gcr</a> <a href="https://krisbuytaert.github.io/blog/tags/gmail/">Gmail</a> <a href="https://krisbuytaert.github.io/blog/tags/yum/">Yum</a> 
+    
+  </p>
+  <div class="post-body">
+    <p>I`m an oldschool guy .. I still love pop3(s) to get my mails locally and read them with my fat email client. Evolution.</p>
 <p>So when gmail breaks their pop/imap infra I`m screwed for a while. I hate reading mail from a web gui and the collapsed threading model gmail uses makes me nauseus.</p>
-<p>So I fiddled with my config .. disabled it.. deleted the account.. created it again. But even after gmail was up again . I couldn't  access my mail from my favourite client. Yet from other clients it seemed to work.</p>
+<p>So I fiddled with my config .. disabled it.. deleted the account.. created it again. But even after gmail was up again . I couldn&rsquo;t access my mail from my favourite client. Yet from other clients it seemed to work.</p>
 <p>This obviously is real fun when you are travelling and trying to keep an eye on a number of different email threads ..</p>
 <p>So I`m back home from Paris now and spend some 10 minutes figuring out what could be wrong.</p>
-<p>I ran into <a href="https://bugzilla.redhat.com/show_bug.cgi?id=949180" title="https://bugzilla.redhat.com/show_bug.cgi?id=949180" rel="nofollow">https://bugzilla.redhat.com/show_bug.cgi?id=949180</a>  which points out that for newly created there is a problem with the keyring prompting</p>
-<p>And refers to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=953641" title="https://bugzilla.redhat.com/show_bug.cgi?id=953641" rel="nofollow">https://bugzilla.redhat.com/show_bug.cgi?id=953641</a> accounts   Which states that gcr-3.6.2-3 breaks password prompt/keyring unlocks.</p>
-<p>And indeed .. </p>
-<p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">yum shell</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Loaded plugins: langpacks, presto, ps, puppetverify, refresh-packagekit</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&gt; remove gcr</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&gt; install gcr-3.6.2-1.fc18</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">adobe-linux-x86_64                                       |  951 B     00:00     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">fedora/18/x86_64/metalink                                |  31 kB     00:00     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">google-chrome                                            |  951 B     00:00     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">google-earth                                             |  951 B     00:00     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">google-talkplugin                                        |  951 B     00:00     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">rpmfusion-free-updates                                   | 3.3 kB     00:00     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">rpmfusion-nonfree-updates                                | 3.3 kB     00:00     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">updates/18/x86_64/metalink                               |  24 kB     00:00     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">rpmfusion-free-updates/primary_db                          | 279 kB   00:01     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&gt; run</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> --&gt; Running transaction check</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">---&gt; Package gcr.x86_64 0:3.6.2-1.fc18 will be installed</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">---&gt; Package gcr.x86_64 0:3.6.2-3.fc18 will be erased</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> --&gt; Finished Dependency Resolution</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> ================================================================================</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  Package       Arch             Version                Repository          Size</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> ================================================================================</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  Installing:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   gcr           x86_64           3.6.2-1.fc18           fedora             627 k</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  Removing:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    gcr           x86_64           3.6.2-3.fc18           @updates           2.3 M</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    Transaction Summary</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> ================================================================================</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  Install  1 Package</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  Remove   1 Package</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    Total download size: 627 k</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    Is this ok [y/N]: y</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    Downloading Packages:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    gcr-3.6.2-1.fc18.x86_64.rpm                                | 627 kB   00:02     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    Running Transaction Check</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    Running Transaction Test</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    Transaction Test Succeeded</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    Running Transaction</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">      Installing : gcr-3.6.2-1.fc18.x86_64                                      1/2 </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">      Cleanup    : gcr-3.6.2-3.fc18.x86_64                                      2/2 </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">      Verifying  : gcr-3.6.2-1.fc18.x86_64                                      1/2 </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">      Verifying  : gcr-3.6.2-3.fc18.x86_64                                      2/2 </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">           Removed:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">              gcr.x86_64 0:3.6.2-3.fc18                                                     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">           Installed:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">             gcr.x86_64 0:3.6.2-1.fc18                                                     </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">               Finished Transaction</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                &gt; quit</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">             &gt; Leaving Shell</div></li></ol></pre></div></p>
-<p>Solved the problem</p>
-</div>
-  <div class="meta">
-   <div class="submitted">Submitted by Kris Buytaert on Fri, 04/19/2013 - 22:54</div>
-     <div class="taxonomy">Tags: <ul class="links inline"><li class="taxonomy_term_712 first"><a href="../taxonomy/term/712/index.html" rel="tag" title="">evolution</a></li>
-<li class="taxonomy_term_1497"><a href="../category/gcr/index.html" rel="tag" title="">gcr</a></li>
-<li class="taxonomy_term_1498"><a href="../category/gmail/index.html" rel="tag" title="">gmail</a></li>
-<li class="taxonomy_term_473 last"><a href="../taxonomy/term/473/index.html" rel="tag" title="">yum</a></li>
-</ul></div>
-     <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-</ul></div>
+<p>I ran into <a href="https://bugzilla.redhat.com/show_bug.cgi?id=949180" title="https://bugzilla.redhat.com/show_bug.cgi?id=949180">https://bugzilla.redhat.com/show_bug.cgi?id=949180</a> which points out that for newly created there is a problem with the keyring prompting</p>
+<p>And refers to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=953641" title="https://bugzilla.redhat.com/show_bug.cgi?id=953641">https://bugzilla.redhat.com/show_bug.cgi?id=953641</a> accounts Which states that gcr-3.6.2-3 breaks password prompt/keyring unlocks.</p>
+<p>And indeed ..</p>
+<pre tabindex="0"><code>1. yum shell
+2. Loaded plugins: langpacks, presto, ps, puppetverify, refresh-packagekit
+3. &gt; remove gcr
+4. &gt; install gcr-3.6.2-1.fc18
+5. adobe-linux-x86_64                                       |  951 B     00:00
+6. fedora/18/x86_64/metalink                                |  31 kB     00:00
+7. google-chrome                                            |  951 B     00:00
+8. google-earth                                             |  951 B     00:00
+9. google-talkplugin                                        |  951 B     00:00
+10. rpmfusion-free-updates                                   | 3.3 kB     00:00
+11. rpmfusion-nonfree-updates                                | 3.3 kB     00:00
+12. updates/18/x86_64/metalink                               |  24 kB     00:00
+13. rpmfusion-free-updates/primary_db                          | 279 kB   00:01
+14. &gt; run
+15. --&gt; Running transaction check
+16. ---&gt; Package gcr.x86_64 0:3.6.2-1.fc18 will be installed
+17. ---&gt; Package gcr.x86_64 0:3.6.2-3.fc18 will be erased
+18. --&gt; Finished Dependency Resolution
+
+20. ================================================================================
+21. Package       Arch             Version                Repository          Size
+22. ================================================================================
+23. Installing:
+24. gcr           x86_64           3.6.2-1.fc18           fedora             627 k
+25. Removing:
+26. gcr           x86_64           3.6.2-3.fc18           @updates           2.3 M
+
+28. Transaction Summary
+29. ================================================================================
+30. Install  1 Package
+31. Remove   1 Package
+
+33. Total download size: 627 k
+34. Is this ok [y/N]: y
+35. Downloading Packages:
+36. gcr-3.6.2-1.fc18.x86_64.rpm                                | 627 kB   00:02
+37. Running Transaction Check
+38. Running Transaction Test
+39. Transaction Test Succeeded
+40. Running Transaction
+41. Installing : gcr-3.6.2-1.fc18.x86_64                                      1/2
+42. Cleanup    : gcr-3.6.2-3.fc18.x86_64                                      2/2
+43. Verifying  : gcr-3.6.2-1.fc18.x86_64                                      1/2
+44. Verifying  : gcr-3.6.2-3.fc18.x86_64                                      2/2
+45. Removed:
+46. gcr.x86_64 0:3.6.2-3.fc18
+47. Installed:
+48. gcr.x86_64 0:3.6.2-1.fc18
+
+50. Finished Transaction
+51. &gt; quit
+52. &gt; Leaving Shell
+</code></pre><p>Solved the problem</p>
+
   </div>
-</div>
-<div id="comments">
-  <h2>Comments</h2>
-  <a id="comment-5350"></a>
-<div id="comment-1" class="comment comment-by-anonymous clear-block">
-  <div class="picture">
-  <img src="http://www.gravatar.com/avatar/82e1ca2f85fb9ca184ed136eeddb046a.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Zaptac&#039;s picture" title="Zaptac&#039;s picture"  /></div>
-<h3>
-    <a class="id" href="#comment-5350">#1</a>
-    <span class="author"><span class="anonymous" title="not verified">Zaptac</span></span>  : <span class="title"><a href="index.html#comment-5350" class="active">yum magic</a></span>
-  </h3>
-  <div class="content"><p>You can also do "yum downgrade gcr" or "yum downgrade gcr-3.6.2-1.fc18".</p>
-</div>
-        <br class="clear" />
-    <div class="submitted">04/20/2013 - 08:55</div>
+</article>
+<nav class="post-nav">
+  <a href="/blog/initial-loadays-speakers-announced/">&#8592; Initial  loadays speakers announced</a>
+  <a href="/blog/testing-robomow-510/">Testing the RoboMow 510 &#8594;</a>
+</nav>
+
+    </main>
+    <aside class="sidebar">
+
+  <section class="bio">
+    <h3>About Kris Buytaert</h3>
+    <p>Kris Buytaert is a long time Linux and Open Source Consultant and engineering leader. 
+    He's one of the instigators of the devops movement. 
+
+    <p>He frequently speaks at and organizes international conferences, and has written
+    about the same subjects in different books, papers and articles.</p>
+  </section>
+
+  <section class="nav-links">
+    <h3>Links</h3>
+    <ul>
+      <li><a href="https://www.krisbuytaert.be/">Main page</a></li>
+      <li><a href="http://www.linkedin.com/in/krisbuytaert">My LinkedIn Profile</a>
+      <li><a href="http://github.com/KrisBuytaert/">Kris on Github</a>
+      <li><a href="http://codeberg.org/KrisBuytaert/">Kris on Codeberg</a>
+      <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a>
+
+
+      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+
+
+      <li><a href="https://devopsdays.org">devopsdays.org</a></li>
+      <li><a href="https://cfgmgmtcamp.org">cfgmgmtcamp.org</a></li>
+      <li><a href="https://belibre.be">belibre.be</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Recent Posts</h3>
+    <ul>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/docker-and-volumes-hell/">Docker and volumes hell</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/its-just-rubber-some-air-it/">It&#39;s just rubber , with some air in it.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/">Lies, Damn Lies and Statistics, 2016 Edition</a></li>
+      
+    </ul>
+  </section>
+
+  
+  <section>
+    <h3>Tags</h3>
+    <ul class="tags">
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      <li><a href="https://krisbuytaert.github.io/tags/devops/">devops</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/drupal/">drupal</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/mysql/">mysql</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/puppet/">puppet</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/open-source/">open source</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/opensource/">opensource</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dnsproblem/">dnsproblem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/ha/">ha</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fosdem/">fosdem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/chef/">chef</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dns/">dns</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fedora/">fedora</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/virtualization/">virtualization</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/xen/">xen</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/centos/">centos</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/conference/">conference</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/monitoringsucks/">monitoringsucks</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/rpm/">rpm</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/kvm/">kvm</a></li>
+      
+    </ul>
+  </section>
+  
+
+</aside>
+
   </div>
-<div class="indented"><a id="comment-5351"></a>
-<div id="comment-2" class="comment comment-by-node-author comment-node-author clear-block">
-  <div class="picture">
-  <img src="http://www.gravatar.com/avatar/70c5686357dd9db5d6f777f6d5624235.jpg?d=http%3A%2F%2F127.0.0.1%3A8080%2Fblog%2Fsites%2Fall%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G" alt="Kris Buytaert&#039;s picture" title="Kris Buytaert&#039;s picture"  /></div>
-<h3>
-    <a class="id" href="#comment-5351">#2</a>
-    <span class="author">Kris Buytaert</span>  : <span class="title"><a href="index.html#comment-5351" class="active">yum magic</a></span>
-  </h3>
-  <div class="content"><p>I know .. just was in the moood to test yum shell :)</p>
-</div>
-        <br class="clear" />
-    <div class="submitted">04/20/2013 - 10:12</div>
-  </div>
-</div></div>
-</div>
-</div>
-
-</div>
-
-<div id="footer" class="footer">
-  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
-  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
-</div>
-
-</div>
-
+  <footer>
+    <p>No really .. everything is a funky DNS problem, you'll realise I'm right pretty soon!</p>
+  </footer>
 </body>
 </html>

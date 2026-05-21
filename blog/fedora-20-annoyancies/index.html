@@ -1,93 +1,1405 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head profile="http://gmpg.org/xfn/11">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Fedora 20 Annoyancies  | Everything is a Freaking DNS problem</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="../misc/favicon/index.ico" type="image/x-icon" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/aggregator/aggregator/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/node/node/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/poll/poll/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/date/date/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/geshifilter/geshifilter/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../misc/farbtastic/farbtastic/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/calendar/calendar/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/modules/fieldgroup/fieldgroup/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/views/css/views/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../modules/comment/comment/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/typography/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/layout/index.css?i" />
-<link type="text/css" rel="stylesheet" media="all" href="../sites/default/themes/barlow/style/index.css?i" />
-<link type="text/css" rel="stylesheet" media="print" href="../sites/default/themes/barlow/print/index.css?i" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fedora 20 Annoyancies | Everything is a Freaking DNS problem</title>
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
 </head>
+<body>
+  <header>
+    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <p class="tagline">Devops Needs Sushi</p>
+  </header>
+  <div class="layout">
+    <main>
+      
+<article>
+  <h1>Fedora 20 Annoyancies</h1>
+  <p class="meta">
+    <time datetime="2014-08-12">August 12, 2014</time>
+    
+  </p>
+  <div class="post-body">
+    <pre tabindex="0"><code>1. yum install docker
 
-<body class="not-front not-logged-in page-node node-type-blog one-sidebar sidebar-left">
-<div id="wrapper">
+3. docker run --rm -i -t -e &#34;FLAPJACK_BUILD_REF=6ba5794&#34; \
+4. &gt;   -e &#34;FLAPJACK_PACKAGE_VERSION=1.0.0~rc3~20140729T232100-6ba5794-1&#34; \
+5. &gt;   flapjack/omnibus-ubuntu bash -c \
+6. &gt;   &#34;cd omnibus-flapjack ; \
+7. &gt;   git pull ; \
+8. &gt;   bundle install --binstubs ; \
+9. &gt;   bin/omnibus build --log-level=info flapjack ; \
+10. &gt;   bash&#34;
+11. docker - version 1.5
+12. Copyright 2003, Ben Jansens &lt;ben@orodu.net&gt;
 
-<div id="header" class="p1">
+14. Usage: docker [OPTIONS]
 
-  <div id="branding">
-      <div id="logo">
-    <a href="../index/index.html" title="Everything is a Freaking DNS problem" rel="home">
-    <img src="../files/me_small/index.jpg" alt="Everything is a Freaking DNS problem" id="logo-image" />
-    </a></div>
-        <h1><a href="../index/index.html" title="Home" rel="home">Everything is a Freaking DNS problem</a></h1>
-        <div class="slogan">Devops Needs Sushi</div>
-    </div>
+16. Options:
+17. -help             Show this help.
+18. -display DISLPAY  The X display to connect to.
+19. -border           The width of the border to put around the
+20. system tray icons. Defaults to 1.
+21. -vertical         Line up the icons vertically. Defaults to
+22. horizontally.
+23. -wmaker           WindowMaker mode. This makes docker a
+24. fixed size (64x64) to appear nicely in
+25. in WindowMaker.
+26. Note: In this mode, you have a fixed
+27. number of icons that docker can hold.
+28. -iconsize SIZE    The size (width and height) to display
+29. icons as in the system tray. Defaults to
+30. 24.
+
+
+33. [root@mine ~]# rpm -qf /bin/docker
+34. docker-1.5-10.fc20.x86_64
+35. [root@mine ~]# rpm -qi docker
+36. Name        : docker
+37. Version     : 1.5
+38. Release     : 10.fc20
+39. Architecture: x86_64
+40. Install Date: Sun 03 Aug 2014 12:41:57 PM CEST
+41. Group       : User Interface/X
+42. Size        : 40691
+43. License     : GPL+
+44. Signature   : RSA/SHA256, Wed 07 Aug 2013 10:02:56 AM CEST, Key ID 2eb161fa246110c1
+45. Source RPM  : docker-1.5-10.fc20.src.rpm
+46. Build Date  : Sat 03 Aug 2013 10:30:23 AM CEST
+47. Build Host  : buildvm-07.phx2.fedoraproject.org
+48. Relocations : (not relocatable)
+49. Packager    : Fedora Project
+50. Vendor      : Fedora Project
+51. URL         : &lt;a href=&#34;http://icculus.org/openbox/2/docker/&lt;br /&gt;
+52. Summary&#34; title=&#34;http://icculus.org/openbox/2/docker/&lt;br /&gt;
+53. Summary&#34;&gt;http://icculus.org/openbox/2/docker/&lt;br /&gt;
+54. Summary&lt;/a&gt;     : KDE and GNOME2 system tray replacement docking application
+55. Description :
+56. Docker is a docking application (WindowMaker dock app) which acts as a system
+57. tray for KDE and GNOME2. It can be used to replace the panel in either
+58. environment, allowing you to have a system tray without running the KDE/GNOME
+59. panel or environment.
+60. [root@mine ~]# yum remove docker
+61. [root@mine ~]# yum install docker-io
+
+63. Installed:
+64. docker-io.x86_64 0:1.0.0-9.fc20
+
+66. Complete!
+</code></pre>
+  </div>
+</article>
+<nav class="post-nav">
+  <a href="/blog/ubuntu-1404-dell-xps-15-9530/">&#8592; Ubuntu 14.04 on an Dell XPS 15 9530</a>
+  <a href="/blog/upcoming-conferences/">Upcoming Conferences &#8594;</a>
+</nav>
+
+    </main>
+    <aside class="sidebar">
+
+  <section class="bio">
+    <h3>About Kris Buytaert</h3>
+    <p>Kris Buytaert is a long time Linux and Open Source Consultant and engineering leader. 
+    He's one of the instigators of the devops movement. 
+
+    <p>He frequently speaks at and organizes international conferences, and has written
+    about the same subjects in different books, papers and articles.</p>
+  </section>
+
+  <section class="nav-links">
+    <h3>Links</h3>
+    <ul>
+      <li><a href="https://www.krisbuytaert.be/">Main page</a></li>
+      <li><a href="http://www.linkedin.com/in/krisbuytaert">My LinkedIn Profile</a>
+      <li><a href="http://github.com/KrisBuytaert/">Kris on Github</a>
+      <li><a href="http://codeberg.org/KrisBuytaert/">Kris on Codeberg</a>
+      <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a>
+
+
+      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+
+
+      <li><a href="https://devopsdays.org">devopsdays.org</a></li>
+      <li><a href="https://cfgmgmtcamp.org">cfgmgmtcamp.org</a></li>
+      <li><a href="https://belibre.be">belibre.be</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Recent Posts</h3>
+    <ul>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/docker-and-volumes-hell/">Docker and volumes hell</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/its-just-rubber-some-air-it/">It&#39;s just rubber , with some air in it.</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/">Lies, Damn Lies and Statistics, 2016 Edition</a></li>
+      
+    </ul>
+  </section>
 
   
-  <div class="skip"><a href="#content" title="Skip to site content" accesskey="2">Skip to content</a></div>
-
+  <section>
+    <h3>Tags</h3>
+    <ul class="tags">
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      <li><a href="https://krisbuytaert.github.io/tags/devops/">devops</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/drupal/">drupal</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/mysql/">mysql</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/puppet/">puppet</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/open-source/">open source</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/opensource/">opensource</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dnsproblem/">dnsproblem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/ha/">ha</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fosdem/">fosdem</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/chef/">chef</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/dns/">dns</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/fedora/">fedora</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/virtualization/">virtualization</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/xen/">xen</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/centos/">centos</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/conference/">conference</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/monitoringsucks/">monitoringsucks</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/rpm/">rpm</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="https://krisbuytaert.github.io/tags/kvm/">kvm</a></li>
+      
+    </ul>
+  </section>
   
-  <div id="menu">
-      </div>
-</div>
 
-<div id="content">
-
-  <div id="sidebar-left" class="sidebar">
-  <div class="block block-block" id="block-block-5">
-  <div class="content"><p>This is the blog where <a href="http://www.krisbuytaert.be/bio.shtml">Kris Buytaert</a> points you to extremely interresting and totally irrelevant stuff that happens in Life , The Universe and Everything</p>
-<p>Questions, want to contact me please read my <a href="../faq/index/index.html">FAQ</a> and  <a href="../social/index/index.html">Social Media Policy</a></p>
-<p>You can hire me! I work as a consultant for <a href="http://www.inuits.eu/">Inuits.eu</a></p>
-<p><a href="../rss/index.xml">Feed</a></p>
-</div>
-</div>
+</aside>
 
   </div>
-
-<div id="main">
-  <div id="breadcrumb"><div class="breadcrumb"><a href="../index/index.html">Home</a> &#8594; <a href="../blog/index.html">Blogs</a> &#8594; <a href="../blogs/kris-buytaert/index.html">Kris Buytaert&#039;s blog</a></div></div>
-  <h2 id="title">Fedora 20 Annoyancies </h2>
-<div class="content">
-<div id="node-1098" class="node  blog">
-<div class="content"><p><div class="geshifilter"><pre class="text geshifilter-text" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">yum install docker</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">docker run --rm -i -t -e &quot;FLAPJACK_BUILD_REF=6ba5794&quot; \</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&gt;   -e &quot;FLAPJACK_PACKAGE_VERSION=1.0.0~rc3~20140729T232100-6ba5794-1&quot; \</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&gt;   flapjack/omnibus-ubuntu bash -c \</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&gt;   &quot;cd omnibus-flapjack ; \</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&gt;   git pull ; \</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&gt;   bundle install --binstubs ; \</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&gt;   bin/omnibus build --log-level=info flapjack ; \</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&gt;   bash&quot;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">docker - version 1.5</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Copyright 2003, Ben Jansens &lt;ben@orodu.net&gt;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Usage: docker [OPTIONS]</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Options:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  -help             Show this help.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  -display DISLPAY  The X display to connect to.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  -border           The width of the border to put around the</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                    system tray icons. Defaults to 1.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  -vertical         Line up the icons vertically. Defaults to</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                    horizontally.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  -wmaker           WindowMaker mode. This makes docker a</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                    fixed size (64x64) to appear nicely in</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                    in WindowMaker.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                    Note: In this mode, you have a fixed</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                    number of icons that docker can hold.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  -iconsize SIZE    The size (width and height) to display</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                    icons as in the system tray. Defaults to</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">                    24.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[root@mine ~]# rpm -qf /bin/docker</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">docker-1.5-10.fc20.x86_64</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[root@mine ~]# rpm -qi docker</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Name        : docker</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Version     : 1.5</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Release     : 10.fc20</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Architecture: x86_64</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Install Date: Sun 03 Aug 2014 12:41:57 PM CEST</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Group       : User Interface/X</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Size        : 40691</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">License     : GPL+</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Signature   : RSA/SHA256, Wed 07 Aug 2013 10:02:56 AM CEST, Key ID 2eb161fa246110c1</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Source RPM  : docker-1.5-10.fc20.src.rpm</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Build Date  : Sat 03 Aug 2013 10:30:23 AM CEST</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Build Host  : buildvm-07.phx2.fedoraproject.org</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Relocations : (not relocatable)</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Packager    : Fedora Project</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Vendor      : Fedora Project</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">URL         : &lt;a href=&quot;http://icculus.org/openbox/2/docker/&lt;br /&gt;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Summary&quot; title=&quot;http://icculus.org/openbox/2/docker/&lt;br /&gt;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Summary&quot;&gt;http://icculus.org/openbox/2/docker/&lt;br /&gt;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Summary&lt;/a&gt;     : KDE and GNOME2 system tray replacement docking application</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Description :</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Docker is a docking application (WindowMaker dock app) which acts as a system</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">tray for KDE and GNOME2. It can be used to replace the panel in either</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">environment, allowing you to have a system tray without running the KDE/GNOME</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">panel or environment.</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[root@mine ~]# yum remove docker</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">[root@mine ~]# yum install docker-io</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Installed:</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">  docker-io.x86_64 0:1.0.0-9.fc20                                                                                      </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">&nbsp;</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">Complete!</div></li></ol></pre></div></p>
-</div>
-  <div class="meta">
-   <div class="submitted">Submitted by Kris Buytaert on Tue, 08/12/2014 - 21:18</div>
-      <div class="links">&raquo; <ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/kris-buytaert/index.html" title="Read Kris Buytaert&#039;s latest blog entries.">Kris Buytaert&#039;s blog</a></li>
-</ul></div>
-  </div>
-</div>
-</div>
-</div>
-
-</div>
-
-<div id="footer" class="footer">
-  No really .. everything is a funky DNS problem , you'll realise I`m right pretty soon !   
-  <p class="credits">Powered by <a href="http://www.drupal.org/">Drupal</a> and the <a href="http://www.drupal.org/project/barlow">Barlow</a> theme by <a href="http://egonbianchet.net/">Egon Bianchet</a>.</p>
-</div>
-
-</div>
-
+  <footer>
+    <p>No really .. everything is a funky DNS problem, you'll realise I'm right pretty soon!</p>
+  </footer>
 </body>
 </html>
