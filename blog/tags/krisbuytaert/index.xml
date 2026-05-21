@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Krisbuytaert on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/krisbuytaert/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/krisbuytaert/</link>
     <description>Recent content in Krisbuytaert on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Mar 2010 15:03:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/krisbuytaert/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/krisbuytaert/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Better days Arrive when Dev Meet Ops</title>
-      <link>http://localhost:1313/blog/better-days-arrive-when-dev-meet-ops/</link>
+      <link>https://krisbuytaert.github.io/blog/better-days-arrive-when-dev-meet-ops/</link>
       <pubDate>Sat, 06 Mar 2010 15:03:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/better-days-arrive-when-dev-meet-ops/</guid>
+      <guid>https://krisbuytaert.github.io/blog/better-days-arrive-when-dev-meet-ops/</guid>
       <description>&lt;p&gt;A couple of weeks a go &lt;a href=&#34;http://twitter.com/LinuxScribe&#34;&gt;Brian Profitt&lt;/a&gt; pinged me for a chat about Devops , the result of that chat , his article can now be found on the Zenoss blog, it&amp;rsquo;s titled &lt;a href=&#34;http://community.zenoss.org/blogs/zenossblog/2010/03/05/datacenter-barometer-better-days-arrive-when-dev-meets-ops&#34;&gt;Datacenter Barometer: Better days arrive when dev meets ops&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s a very nice read with some pointers to places regular readers of my blog should already know ;)&lt;br&gt;&#xA;So with lots of leading Open Source infrastructure companies on different levels, such as config management (OpsCode and Reductive Labs) , monitoring (Zenoss) , deployment (openQRM, RPath, and obviously &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Consultancy&lt;/a&gt; companies , the upcoming Devops conferences around the planet promise to be a lot of fun ! ;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ulitzer</title>
-      <link>http://localhost:1313/blog/ulitzer/</link>
+      <link>https://krisbuytaert.github.io/blog/ulitzer/</link>
       <pubDate>Wed, 11 Feb 2009 00:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/ulitzer/</guid>
+      <guid>https://krisbuytaert.github.io/blog/ulitzer/</guid>
       <description>&lt;p&gt;I ran into &lt;a href=&#34;http://krisbuytaert.ulitzer.com/&#34;&gt;this&lt;/a&gt; page yesterday. Yep that&amp;rsquo;s my name, with an obsolete affiliation and the only content on the page is the abstract I sent in for a conference Sys-con organized back in 2006, needless to say they never got back to me with any information regarding that conference, no positive or negative news.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://search.sys-con.com/node/818661&#34;&gt;Ulitzer&lt;/a&gt;  seems to plan on launching 6,000 new author sites for the leading technology authors and software industry rock stars. Yeah , I bet they can find 6000 old profiles from people online &amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>

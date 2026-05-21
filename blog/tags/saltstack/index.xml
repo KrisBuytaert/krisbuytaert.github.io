@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Saltstack on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/saltstack/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/saltstack/</link>
     <description>Recent content in Saltstack on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 09 Feb 2015 22:05:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/saltstack/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/saltstack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2014 vs 2015 interest in Open Source Configuration Management</title>
-      <link>http://localhost:1313/blog/2014-vs-2015-interest-open-source-configuration-management/</link>
+      <link>https://krisbuytaert.github.io/blog/2014-vs-2015-interest-open-source-configuration-management/</link>
       <pubDate>Mon, 09 Feb 2015 22:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/2014-vs-2015-interest-open-source-configuration-management/</guid>
+      <guid>https://krisbuytaert.github.io/blog/2014-vs-2015-interest-open-source-configuration-management/</guid>
       <description>&lt;p&gt;A couple of people asked me to results of the survey of the 2015 vs 2014 Configuration Management Camp room interrests.&lt;/p&gt;&#xA;&lt;p&gt;This is a bunch of 350 last year and 420 people telling us what tools they are interested in so we can map the right roomsizes to the communities.&lt;/p&gt;&#xA;&lt;p&gt;2014 :&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://krisbuytaert.be/pics/2014.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;2015:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://krisbuytaert.be/pics/2015.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Enjoy.. but remember there&amp;rsquo;s Lies, Damn Lies and Statistics ..&lt;br&gt;&#xA;PS. this is a mostly European Audience .&lt;/p&gt;</description>
     </item>
   </channel>

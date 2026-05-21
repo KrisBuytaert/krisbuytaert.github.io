@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cck on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/cck/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/cck/</link>
     <description>Recent content in Cck on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Dec 2008 23:44:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/cck/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/cck/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CCK &amp; Views, My First Experiences</title>
-      <link>http://localhost:1313/blog/cck-views-my-first-experiences/</link>
+      <link>https://krisbuytaert.github.io/blog/cck-views-my-first-experiences/</link>
       <pubDate>Sun, 07 Dec 2008 23:44:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/cck-views-my-first-experiences/</guid>
+      <guid>https://krisbuytaert.github.io/blog/cck-views-my-first-experiences/</guid>
       <description>&lt;p&gt;and probably my last one ..&lt;/p&gt;&#xA;&lt;p&gt;I &lt;a href=&#34;http://www.krisbuytaert.be/blog/migrate-multisite-and-restyle&#34;&gt;mentioned&lt;/a&gt;  a couple of weeks ago that I was looking into a way of converting my static page with published papers, articles and presentations in a more dynamic page where I could create RSS feeds from the updates and feed them into &lt;a href=&#34;http://www.inuits.be/&#34;&gt;another site&lt;/a&gt; for everybody to use.&lt;/p&gt;&#xA;&lt;p&gt;Some people suggested that I&amp;rsquo;d have a look at CCK &amp;amp; Views for this. While up till now when creating an app I had usually written my own Drupal module with my own database schema and manually written SQL Queries. This indeed looked like the perfect opportunity to dig into the CCK and Views thingie.&lt;/p&gt;</description>
     </item>
   </channel>

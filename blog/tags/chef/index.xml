@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chef on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/chef/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/chef/</link>
     <description>Recent content in Chef on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Mar 2016 23:28:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/chef/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/chef/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lies, Damn Lies and Statistics, 2016 Edition</title>
-      <link>http://localhost:1313/blog/lies-damn-lies-and-statistics-2016-edition/</link>
+      <link>https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/</link>
       <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/lies-damn-lies-and-statistics-2016-edition/</guid>
+      <guid>https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/</guid>
       <description>&lt;p&gt;When people sign up for Configuration Management Camp, we ask them what community room they are mostly interested in.&lt;br&gt;&#xA;We ask this question because we have rooms in different sizes and we don&amp;rsquo;t want to put communities with 20 people showing interest in a 120 seat room and we don&amp;rsquo;t want to put a community with 200 people in a 60 seat room.&lt;/p&gt;&#xA;&lt;p&gt;But it also gives us to opportunity to build some very interesting graph over the potential evolution of the communities.&lt;/p&gt;</description>
     </item>
     <item>
       <title>2014 vs 2015 interest in Open Source Configuration Management</title>
-      <link>http://localhost:1313/blog/2014-vs-2015-interest-open-source-configuration-management/</link>
+      <link>https://krisbuytaert.github.io/blog/2014-vs-2015-interest-open-source-configuration-management/</link>
       <pubDate>Mon, 09 Feb 2015 22:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/2014-vs-2015-interest-open-source-configuration-management/</guid>
+      <guid>https://krisbuytaert.github.io/blog/2014-vs-2015-interest-open-source-configuration-management/</guid>
       <description>&lt;p&gt;A couple of people asked me to results of the survey of the 2015 vs 2014 Configuration Management Camp room interrests.&lt;/p&gt;&#xA;&lt;p&gt;This is a bunch of 350 last year and 420 people telling us what tools they are interested in so we can map the right roomsizes to the communities.&lt;/p&gt;&#xA;&lt;p&gt;2014 :&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://krisbuytaert.be/pics/2014.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;2015:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://krisbuytaert.be/pics/2015.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Enjoy.. but remember there&amp;rsquo;s Lies, Damn Lies and Statistics ..&lt;br&gt;&#xA;PS. this is a mostly European Audience .&lt;/p&gt;</description>
     </item>
     <item>
       <title>FOSDEM 2014 is coming</title>
-      <link>http://localhost:1313/blog/fosdem-2014-coming/</link>
+      <link>https://krisbuytaert.github.io/blog/fosdem-2014-coming/</link>
       <pubDate>Sun, 22 Dec 2013 22:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fosdem-2014-coming/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fosdem-2014-coming/</guid>
       <description>&lt;p&gt;and with that almost a full week of side events.&lt;br&gt;&#xA;For those who don&amp;rsquo;t know FOSDEM, (where have you been hiding for the past 13 years ? ) Fosdem is the annual Free and Open Source Developers European meeting. If you are into open source , you just can&amp;rsquo;t mis this event where thousands of likeminded people will meet.&lt;/p&gt;&#xA;&lt;p&gt;And if 2 days of FOSDEM madness isn&amp;rsquo;t enough people organise events around it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vagrant and Drupal, a winning team</title>
-      <link>http://localhost:1313/blog/vagrant-and-drupal-winning-team/</link>
+      <link>https://krisbuytaert.github.io/blog/vagrant-and-drupal-winning-team/</link>
       <pubDate>Sat, 25 Aug 2012 23:51:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/vagrant-and-drupal-winning-team/</guid>
+      <guid>https://krisbuytaert.github.io/blog/vagrant-and-drupal-winning-team/</guid>
       <description>&lt;p&gt;While heading back home from DrupalCon Munich after 4 days of good interaction with lots of Drupal folks.&lt;br&gt;&#xA;I realized to my big suprise that there are a lot of people using Vagrant to make sure that developers are not working on platforms they invented their own. Lots of people have realized that &amp;ldquo;It works on my computer&amp;rdquo; is not something they want to hear from a developer and are reaching out to give them viable solutions to work on shared and reproducible solutions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drupal and Configuration Mgmt, we&#39;re getting there ...</title>
-      <link>http://localhost:1313/blog/drupal-and-configuration-mgmt-were-getting-there/</link>
+      <link>https://krisbuytaert.github.io/blog/drupal-and-configuration-mgmt-were-getting-there/</link>
       <pubDate>Sun, 17 Jul 2011 22:39:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/drupal-and-configuration-mgmt-were-getting-there/</guid>
+      <guid>https://krisbuytaert.github.io/blog/drupal-and-configuration-mgmt-were-getting-there/</guid>
       <description>&lt;p&gt;For those who haven&amp;rsquo;t noticed yet .. I&lt;code&gt;m into devops .. I&lt;/code&gt;m also a little bit into Drupal, (blame my last name..) , so one of the frustrations I&amp;rsquo;ve been having with Drupal (an much other software) is the automation of deployment and upgrades of Drupal sites &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;So for the past couple of days I&amp;rsquo;ve been trying to catch up to the ongoing discussion regarding the results of the &lt;a href=&#34;http://groups.drupal.org/node/155559&#34;&gt;configuration mgmt sprint&lt;/a&gt; , I&amp;rsquo;ve been looking at it mainly from a systems point of view , being with the use of Puppet/ Chef or similar tools in mind .. I know I`m late to the discussion but hey , some people take holidays in this season :) So below you can read a bunch of my comments &amp;hellip; and thoughts on the topic ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Beyond Configuration Mgmt</title>
-      <link>http://localhost:1313/blog/beyond-configuration-mgmt/</link>
+      <link>https://krisbuytaert.github.io/blog/beyond-configuration-mgmt/</link>
       <pubDate>Wed, 25 May 2011 23:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/beyond-configuration-mgmt/</guid>
+      <guid>https://krisbuytaert.github.io/blog/beyond-configuration-mgmt/</guid>
       <description>&lt;p&gt;(This post has been sitting in the drafts folder for way to long, I decided to push the publish button anyhow .. some people might get ideas from it..)&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ve all run in to the problem, you&amp;rsquo;ve puppetized, or euh .. cooked , about every part of your infrastructure and then there&amp;rsquo;s this one service which has no config files, a broken api that doesn&amp;rsquo;t allow you to configure antyhing, but a magnificent web gui to configure all aspects of the service. Magnificent for the eye , full of AJAX and other fancy stuff which wget isn&amp;rsquo;t really keen on. Off course before it even starts working you need to set it&amp;rsquo;s password , from that webgui.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Guest Post Season</title>
-      <link>http://localhost:1313/blog/guest-post-season/</link>
+      <link>https://krisbuytaert.github.io/blog/guest-post-season/</link>
       <pubDate>Sat, 18 Dec 2010 23:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/guest-post-season/</guid>
+      <guid>https://krisbuytaert.github.io/blog/guest-post-season/</guid>
       <description>&lt;p&gt;Apparently December is the month where everybody starts writing guest posts for other blogs.&lt;/p&gt;&#xA;&lt;p&gt;Earlier this month I wrote an article with the title of this blog for Sysadvent ,&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s a sysadmin relative of the Perl Advent Calendar: One article for each day of December, ending on the 25th article. With the goals of of sharing, openness, and mentoring, we aim to provide great articles about systems administration topics written by fellow sysadmins\&lt;/p&gt;</description>
     </item>
     <item>
       <title>@Beaker on #Devops</title>
-      <link>http://localhost:1313/blog/beaker-devops/</link>
+      <link>https://krisbuytaert.github.io/blog/beaker-devops/</link>
       <pubDate>Tue, 01 Jun 2010 23:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/beaker-devops/</guid>
+      <guid>https://krisbuytaert.github.io/blog/beaker-devops/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.rationalsurvivability.com/blog/?p=1890&#34;&gt;Yesterday&lt;/a&gt; @beaker posted his ideas on the #devops movement &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Apparently we haven&amp;rsquo;t been stressing enough on the fact that it isn&amp;rsquo;t just about Devs and Ops,&lt;br&gt;&#xA;So let me &lt;a href=&#34;http://www.krisbuytaert.be/blog/devops-secops-dbaops-netops&#34;&gt;repeat&lt;/a&gt; it&amp;rsquo;s not just about Devs and Ops, it&amp;rsquo;s about breaking silo&amp;rsquo;s , about being good at our jobs, about getting conversation started, about talking to different stakeholders in the processes . We are absolutely trying to include all groups, not exclude some.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux Open Administration Days 2010</title>
-      <link>http://localhost:1313/blog/linux-open-administration-days-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</link>
       <pubDate>Tue, 20 Apr 2010 21:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/linux-open-administration-days-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</guid>
       <description>&lt;p&gt;So about 4 monts ago &lt;a href=&#34;http://blog.bdesmet.be/?p=272&#34;&gt;there was the crazy idea&lt;/a&gt; to start a new FOSS event in Belgium targeted at sysadmins.&lt;/p&gt;&#xA;&lt;p&gt;What started out as an event for local people to meet local people with some local speakers actually ended up being a small local event with some top international speakers on onfiguration mananagement and system administration mixed with a bunch of good local ones !&lt;/p&gt;&#xA;&lt;p&gt;I had the honour to open the conference with an extremely short version of the Devops talk I gave earlier last year.. extremely short as I knew that over the course of the weekend the topic would reoccur a lot.&lt;/p&gt;</description>
     </item>
     <item>
       <title>11 days till Loadays</title>
-      <link>http://localhost:1313/blog/11-days-till-loadays/</link>
+      <link>https://krisbuytaert.github.io/blog/11-days-till-loadays/</link>
       <pubDate>Tue, 30 Mar 2010 22:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/11-days-till-loadays/</guid>
+      <guid>https://krisbuytaert.github.io/blog/11-days-till-loadays/</guid>
       <description>&lt;p&gt;That&amp;rsquo;s right .. only 11 more &amp;hellip;&lt;br&gt;&#xA;The &lt;a href=&#34;http://www.loadays.org/schedule&#34;&gt;schedule&lt;/a&gt; looks promising, there will be some devops juice, some open spaces, some tutorials, som regular talks .. it really looks promising &amp;hellip; the schedule is packed ,&lt;/p&gt;&#xA;&lt;p&gt;Apart from the talks, tutorials and open spaces there&amp;rsquo;s also the&lt;br&gt;&#xA;Pizza party and the Beer event on saturday &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;No need to register .. just show up ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>#Devops / Ruby  Meetup  , Antwerp, April 8, 2010</title>
-      <link>http://localhost:1313/blog/devops-ruby-meetup-antwerp-april-8-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-ruby-meetup-antwerp-april-8-2010/</link>
       <pubDate>Tue, 30 Mar 2010 22:57:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-ruby-meetup-antwerp-april-8-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-ruby-meetup-antwerp-april-8-2010/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://twitter.com/jtimberman&#34;&gt;Joshua Timberman&lt;/a&gt; will be in town, (Antwerpen) that is, for &lt;a href=&#34;http://loadays.org/&#34;&gt;Loadays&lt;/a&gt; as he is arriving on thursday Botchagalupe suggested we should have a Devops / Ruby get together.&lt;/p&gt;&#xA;&lt;p&gt;So I&amp;rsquo;m dutyfully announcing the Devops/Ruby meetup next thursday april 8th, in Antwerp&lt;/p&gt;&#xA;&lt;p&gt;The plan is to meet up for beers and chatter in our favourite Antwerp geek pub in , Kulminator , Vleminckveld 32 , Antwerp , around 20h00 ish..&lt;/p&gt;&#xA;&lt;p&gt;Topics will be devops, ruby and much more :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Is anybody else confused about Chef ?</title>
-      <link>http://localhost:1313/blog/anybody-else-confused-about-chef/</link>
+      <link>https://krisbuytaert.github.io/blog/anybody-else-confused-about-chef/</link>
       <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/anybody-else-confused-about-chef/</guid>
+      <guid>https://krisbuytaert.github.io/blog/anybody-else-confused-about-chef/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://wiki.opscode.com/display/chef/Home&#34;&gt;Chef&lt;/a&gt; absolutely confuses me..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://madstop.com/2009/01/16/opscode-announces-chef-a-puppet-competitor/&#34;&gt;Luke&lt;/a&gt; is confused too ..&lt;br&gt;&#xA;I’m clearly disappointed that someone who has been a high-profile user of Puppet but has never contributed much in the way of code (Ohloh claims 2 commits) would decide to start a whole new project rather than attempt to contribute to Puppet&lt;/p&gt;&#xA;&lt;p&gt;Now , if you know me a bit you know that reinventing the wheel, or creating identical projects with no clear reasons is something I dislike .&lt;/p&gt;</description>
     </item>
     <item>
       <title>New interesting open Source releases</title>
-      <link>http://localhost:1313/blog/new-interesting-open-source-releases/</link>
+      <link>https://krisbuytaert.github.io/blog/new-interesting-open-source-releases/</link>
       <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/new-interesting-open-source-releases/</guid>
+      <guid>https://krisbuytaert.github.io/blog/new-interesting-open-source-releases/</guid>
       <description>&lt;p&gt;In case you haven&amp;rsquo;t noticed them yet ..&lt;br&gt;&#xA;&lt;a href=&#34;http://jan.kneschke.de/2009/1/13/mysql-proxy-public-repo-moved-to-launchpad&#34;&gt;MySQL Proxy&lt;/a&gt; has a new release and moved it&amp;rsquo;s public repo to Launchpad.&lt;/p&gt;&#xA;&lt;p&gt;(Still Launchpad isn&amp;rsquo;t open source yet .. a matter of time .. but in the meanwhile Jira and Confluence are sadly gaining adoption in the market)&lt;/p&gt;&#xA;&lt;p&gt;In the devministration area there is a new Puppet module that automagically populates puppet managed machines in &lt;a href=&#34;http://blog.zenoss.com/2009/01/13/new-zenoss-module-for-puppet/&#34;&gt;Zenoss&lt;/a&gt; , I&amp;rsquo;ve seen different people using Puppet to populate their Nagios configs, but adding Zenoss to the list is new.. so when will we see the Zabbix and Hyperic plugins ?&lt;/p&gt;</description>
     </item>
   </channel>

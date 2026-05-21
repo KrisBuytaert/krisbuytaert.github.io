@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spam on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/spam/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/spam/</link>
     <description>Recent content in Spam on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Nov 2009 11:33:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/spam/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/spam/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dear Mollom,</title>
-      <link>http://localhost:1313/blog/dear-mollom/</link>
+      <link>https://krisbuytaert.github.io/blog/dear-mollom/</link>
       <pubDate>Sat, 14 Nov 2009 11:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/dear-mollom/</guid>
+      <guid>https://krisbuytaert.github.io/blog/dear-mollom/</guid>
       <description>&lt;p&gt;What I would like as a feature from Santa,&lt;/p&gt;&#xA;&lt;p&gt;I would like to be able to report a comment as URL Spam , you know the case where the content of a comment is perfectly OK, but the URL the commenter uses is a link to a NSF, pure spamming or absolutely unrelated site.&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s nofollow etc , but to keep my site clean I&amp;rsquo;d have to report these commen&lt;br&gt;&#xA;ts as spam, however when you start analysing the content of the message and comparing that content to other posts you will eventually get false positives.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The new comment spam :(</title>
-      <link>http://localhost:1313/blog/new-comment-spam/</link>
+      <link>https://krisbuytaert.github.io/blog/new-comment-spam/</link>
       <pubDate>Wed, 24 Sep 2008 10:25:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/new-comment-spam/</guid>
+      <guid>https://krisbuytaert.github.io/blog/new-comment-spam/</guid>
       <description>&lt;p&gt;The past couple of weeks my blog is being annoyed by different comment spams, the content of the comment seems perfectly relevant, often even correctly tackling the topic, or sometimes even almost insightful follow up questions.&lt;/p&gt;&#xA;&lt;p&gt;However the link to the author site is totally bogus.&lt;/p&gt;&#xA;&lt;p&gt;If talking about drupal and high availability , a question on GFS or OCFS2 is obviously on topic. However I don&amp;rsquo;t want my blog to link to lot of irrelevant sites.&lt;/p&gt;</description>
     </item>
   </channel>

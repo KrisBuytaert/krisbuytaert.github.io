@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open Sourcen on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/open-sourcen/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/open-sourcen/</link>
     <description>Recent content in Open Sourcen on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Jul 2009 22:01:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/open-sourcen/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/open-sourcen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Djagios</title>
-      <link>http://localhost:1313/blog/djagios/</link>
+      <link>https://krisbuytaert.github.io/blog/djagios/</link>
       <pubDate>Thu, 30 Jul 2009 22:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/djagios/</guid>
+      <guid>https://krisbuytaert.github.io/blog/djagios/</guid>
       <description>&lt;p&gt;Probably every day there&amp;rsquo;s a new Open Source project popping up left or right, sometimes they dissapear quickly , others are here to stay.&lt;/p&gt;&#xA;&lt;p&gt;Enter &lt;a href=&#34;http://djagios.org/&#34;&gt;Djagios&lt;/a&gt;, a Nagios configuration tool written in Django. At this time it&amp;rsquo;s in development phase but development is going pretty good now, Djagios has been incepted by fellow &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuit&lt;/a&gt;  &lt;a href=&#34;http://sejo.be/&#34;&gt;Jochen Maes&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;It aims at filling the gap between the vi and emacs Nagios guru&amp;rsquo;s and the manegerial type who just wants to and make Nagios usable for them.&lt;/p&gt;</description>
     </item>
   </channel>

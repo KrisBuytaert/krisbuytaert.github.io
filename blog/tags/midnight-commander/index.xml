@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Midnight Commander on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/midnight-commander/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/midnight-commander/</link>
     <description>Recent content in Midnight Commander on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Jun 2009 19:32:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/midnight-commander/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/midnight-commander/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Weird Scenes inside the Tarball, Midnight Commander woes</title>
-      <link>http://localhost:1313/blog/weird-scenes-inside-tarball-midnight-commander-woes/</link>
+      <link>https://krisbuytaert.github.io/blog/weird-scenes-inside-tarball-midnight-commander-woes/</link>
       <pubDate>Wed, 24 Jun 2009 19:32:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/weird-scenes-inside-tarball-midnight-commander-woes/</guid>
+      <guid>https://krisbuytaert.github.io/blog/weird-scenes-inside-tarball-midnight-commander-woes/</guid>
       <description>&lt;p&gt;I was transferring an apt repository to a remote site using the tarbal I created locally. When the first machines tried to do an apt-get update from that repository they failed to getthe package list.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. Jun 24 11:01:28 10.99.2.253 root: Failed to fetch &amp;lt;a href=&amp;#34;http://10.99.0.1/repo/ntc/i386/base/pkglist.CentOsDistro&amp;#34; title=&amp;#34;http://10.99.0.1/repo/ntc/i386/base/pkglist.CentOsDistro&amp;#34;&amp;gt;http://10.99.0.1/repo/ntc/i386/base/pkglist.CentOsDistro&amp;lt;/a&amp;gt;  404 Not Found&#xA;2. Jun 24 11:09:29 10.99.2.253 root: Err &amp;lt;a href=&amp;#34;http://10.99.0.1&amp;#34; title=&amp;#34;http://10.99.0.1&amp;#34;&amp;gt;http://10.99.0.1&amp;lt;/a&amp;gt; i386/CentOsDistro pkglist&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;However at first sight the appropriate files were in place&lt;/p&gt;</description>
     </item>
   </channel>

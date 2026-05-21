@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dhcpd on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/dhcpd/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/dhcpd/</link>
     <description>Recent content in Dhcpd on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Feb 2011 00:12:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/dhcpd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/dhcpd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>dhcpd on Shared Networks</title>
-      <link>http://localhost:1313/blog/dhcpd-shared-networks/</link>
+      <link>https://krisbuytaert.github.io/blog/dhcpd-shared-networks/</link>
       <pubDate>Wed, 23 Feb 2011 00:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/dhcpd-shared-networks/</guid>
+      <guid>https://krisbuytaert.github.io/blog/dhcpd-shared-networks/</guid>
       <description>&lt;p&gt;And as I always forget (getting old remember) how to have dhcpd configured to serve for multiple networks on one interface (e.g with aliases)&lt;br&gt;&#xA;(as in test setups eg. ) I`ll write it down here, So next time google can point right back to me&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. shared-network thisismessy {&#xA;2. subnet 10.8.0.0 netmask 255.255.0.0 {&#xA;3. option routers 10.8.0.1;&#xA;4. }&#xA;5. subnet 10.12.0.0 netmask 255.255.0.0 {&#xA;6. option routers 10.12.0.1;&#xA;7. }&#xA;8. subnet 10.16.0.0 netmask 255.255.0.0 {&#xA;9. option routers 10.16.0.1;&#xA;10. }&#xA;11. }&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>

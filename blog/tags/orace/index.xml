@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Orace on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/orace/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/orace/</link>
     <description>Recent content in Orace on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Aug 2009 22:54:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/orace/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/orace/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oracle, MySQL and the EU</title>
-      <link>http://localhost:1313/blog/oracle-mysql-and-eu/</link>
+      <link>https://krisbuytaert.github.io/blog/oracle-mysql-and-eu/</link>
       <pubDate>Mon, 03 Aug 2009 22:54:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/oracle-mysql-and-eu/</guid>
+      <guid>https://krisbuytaert.github.io/blog/oracle-mysql-and-eu/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://identi.ca/notice/7477327&#34;&gt;Jan Wildeboer&lt;/a&gt; pointed us to the &lt;a href=&#34;http://blog.thinkphp.de/archives/416-A-letter-from-the-European-commission-regarding-the-OracleSun-merger.html&#34;&gt;Mayflower post&lt;/a&gt; about their letter from the European Commission.&lt;/p&gt;&#xA;&lt;p&gt;It seems like the the European Commision , more specifically the Directorate General for Competition , really is interested in our input regarding the matter, I mailed them and also got a questionnaire to fill in.&lt;/p&gt;&#xA;&lt;p&gt;So if you have something interesting to tell them don&amp;rsquo;t hesitate to &lt;a href=&#34;mailto:Vera.POZZATO@ec.europa.eu&#34;&gt;contact them&lt;/a&gt; too.&lt;/p&gt;</description>
     </item>
   </channel>

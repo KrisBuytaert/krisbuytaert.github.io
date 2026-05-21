@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Planet on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/planet/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/planet/</link>
     <description>Recent content in Planet on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Jan 2010 21:02:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/planet/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/planet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Planet , Drupal Style</title>
-      <link>http://localhost:1313/blog/planet-drupal-style/</link>
+      <link>https://krisbuytaert.github.io/blog/planet-drupal-style/</link>
       <pubDate>Fri, 15 Jan 2010 21:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/planet-drupal-style/</guid>
+      <guid>https://krisbuytaert.github.io/blog/planet-drupal-style/</guid>
       <description>&lt;p&gt;So when you setup an aggregator there&amp;rsquo;s this one thing you miss from a regular planet &amp;hellip;the list of blogs with their individual Feeds.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to use this for planet.loadays.org again and realized I don&amp;rsquo;t know where I got this snippet from or if I wrote it myselve or whatever .. but I do realize that unless I document it here I won&amp;rsquo;t be able to point other people to it again :) So just create a block like this one :&lt;/p&gt;</description>
     </item>
   </channel>

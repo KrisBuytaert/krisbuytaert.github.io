@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cfp on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/cfp/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/cfp/</link>
     <description>Recent content in Cfp on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 May 2012 21:02:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/cfp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/cfp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Devops in Munich</title>
-      <link>http://localhost:1313/blog/devops-munich/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-munich/</link>
       <pubDate>Tue, 01 May 2012 21:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-munich/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-munich/</guid>
       <description>&lt;p&gt;Devopsdays Mountainview sold out in a short 3 hours .. but there&amp;rsquo;s other events that will breath devops this summer.&lt;br&gt;&#xA;DrupalCon in Munich will be one of them ..&lt;/p&gt;&#xA;&lt;p&gt;Some of you might have noticed that I`m cochairing the devops track for DrupalCon Munich,&lt;br&gt;&#xA;The CFP is open till the 11th of this month and we are still actively looking for speakers.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;re trying to bridge the gap between drupal developers and the people that put their code to production, at scale.&lt;br&gt;&#xA;But also enhancing the knowledge of infrastructure components Drupal developers depend on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Call For Abstracts : NLUUG Fall Conference on Security</title>
-      <link>http://localhost:1313/blog/call-abstracts-nluug-fall-conference-security/</link>
+      <link>https://krisbuytaert.github.io/blog/call-abstracts-nluug-fall-conference-security/</link>
       <pubDate>Tue, 01 Jun 2010 19:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/call-abstracts-nluug-fall-conference-security/</guid>
+      <guid>https://krisbuytaert.github.io/blog/call-abstracts-nluug-fall-conference-security/</guid>
       <description>&lt;p&gt;For all the security experts : the NLUUG has published it&amp;rsquo;s &lt;a href=&#34;http://www.nluug.nl/activiteiten/events/nj10/cfp-en.html&#34;&gt;Call For Abstracts&lt;/a&gt; for it&amp;rsquo;s Fall conference.. as you might have guessed the topic is Security, we welcome all abstracts tackling security in a broad sense.&lt;/p&gt;&#xA;&lt;p&gt;Possible topics include:&lt;/p&gt;&#xA;&lt;p&gt;* cloud security&lt;br&gt;&#xA;* online privacy&lt;br&gt;&#xA;* rfid hacking&lt;br&gt;&#xA;* secure programming&lt;br&gt;&#xA;* programma-analysis-tools&lt;br&gt;&#xA;* web services security&lt;br&gt;&#xA;* web browser security&lt;br&gt;&#xA;* embedded hardware hacking&lt;br&gt;&#xA;* incident response and forensics&lt;br&gt;&#xA;* malware and rootkits&lt;br&gt;&#xA;* responsible disclosure&lt;br&gt;&#xA;* legal response&lt;br&gt;&#xA;* fighting spam&lt;br&gt;&#xA;* patch policies&lt;br&gt;&#xA;* identity management&lt;br&gt;&#xA;* central point of administration&lt;br&gt;&#xA;* DNSsec&lt;br&gt;&#xA;* VPN based WANs&lt;br&gt;&#xA;* etc.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Loadays CFP</title>
-      <link>http://localhost:1313/blog/loadays-cfp/</link>
+      <link>https://krisbuytaert.github.io/blog/loadays-cfp/</link>
       <pubDate>Thu, 11 Feb 2010 22:55:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/loadays-cfp/</guid>
+      <guid>https://krisbuytaert.github.io/blog/loadays-cfp/</guid>
       <description>&lt;p&gt;I would like to point the crowd to the Call For Presentaions of Loadays. , the Linux Open Administration Days .&lt;/p&gt;&#xA;&lt;p&gt;The Linux Open Administration days 2010 will be the first edition of a new conference focusing on Linux and Open Administration, we are trying to fill a gap for System Engineers and Administrators using Open Source technologies&amp;quot;&lt;/p&gt;&#xA;&lt;p&gt;More details on the &lt;a href=&#34;http://loadays.org/news/call-presentations&#34;&gt;Linux Open Administration Days site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll probably be there .. given the fact that the event will be 5 minutes from where I live .&lt;/p&gt;</description>
     </item>
     <item>
       <title>T-Dose 2009 CFP,</title>
-      <link>http://localhost:1313/blog/t-dose-2009-cfp/</link>
+      <link>https://krisbuytaert.github.io/blog/t-dose-2009-cfp/</link>
       <pubDate>Sun, 09 Aug 2009 22:44:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/t-dose-2009-cfp/</guid>
+      <guid>https://krisbuytaert.github.io/blog/t-dose-2009-cfp/</guid>
       <description>&lt;p&gt;Dear MySQL and Drupal , Plone and other Open Source folks, you might want to be interrested in giving a talk at T-Dose 2009 ,&lt;/p&gt;&#xA;&lt;p&gt;Jean Paul pinged me with the following mail :&lt;/p&gt;&#xA;&lt;p&gt;Maybe it escaped your attention that the Call For Papers for T-DOSE 2009 is already out. It has been announced on 12th of June 2009. Below you will find the original announcement.&lt;/p&gt;&#xA;&lt;p&gt;Call for Papers and Projects&lt;br&gt;&#xA;Fri, 06/12/2009 - 13:57 — jpsaman&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bugs on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/bugs/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/bugs/</link>
     <description>Recent content in Bugs on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Sep 2009 08:31:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/bugs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/bugs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dual Battery Support</title>
-      <link>http://localhost:1313/blog/dual-battery-support/</link>
+      <link>https://krisbuytaert.github.io/blog/dual-battery-support/</link>
       <pubDate>Sat, 12 Sep 2009 08:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/dual-battery-support/</guid>
+      <guid>https://krisbuytaert.github.io/blog/dual-battery-support/</guid>
       <description>&lt;p&gt;About 2.5 months ago while I was on a highspeed Belnet connection at UZA after Amber got born I ran in to some annoyancies with my fresh Fedora 11 and multiple batteries, upon replacing the CD drive with an empty battery (to be charged) while I was on AC power the machine shut down.&lt;/p&gt;&#xA;&lt;p&gt;I filed a &lt;a href=&#34;https://bugzilla.redhat.com/show_bug.cgi?id=509157&#34;&gt;bug&lt;/a&gt; , while going trough my post holliday inbox backlog I noticed &lt;a href=&#34;http://blogs.gnome.org/hughsie/2009/06/16/gnome-power-manager-and-multiple-batteries/&#34;&gt;it got fixed .&lt;/a&gt; Thnx Richard !&lt;/p&gt;</description>
     </item>
   </channel>

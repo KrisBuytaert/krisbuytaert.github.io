@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network Monitoring on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/network-monitoring/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/network-monitoring/</link>
     <description>Recent content in Network Monitoring on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Jul 2009 22:01:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/network-monitoring/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/network-monitoring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Djagios</title>
-      <link>http://localhost:1313/blog/djagios/</link>
+      <link>https://krisbuytaert.github.io/blog/djagios/</link>
       <pubDate>Thu, 30 Jul 2009 22:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/djagios/</guid>
+      <guid>https://krisbuytaert.github.io/blog/djagios/</guid>
       <description>&lt;p&gt;Probably every day there&amp;rsquo;s a new Open Source project popping up left or right, sometimes they dissapear quickly , others are here to stay.&lt;/p&gt;&#xA;&lt;p&gt;Enter &lt;a href=&#34;http://djagios.org/&#34;&gt;Djagios&lt;/a&gt;, a Nagios configuration tool written in Django. At this time it&amp;rsquo;s in development phase but development is going pretty good now, Djagios has been incepted by fellow &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuit&lt;/a&gt;  &lt;a href=&#34;http://sejo.be/&#34;&gt;Jochen Maes&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;It aims at filling the gap between the vi and emacs Nagios guru&amp;rsquo;s and the manegerial type who just wants to and make Nagios usable for them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RiverMuse</title>
-      <link>http://localhost:1313/blog/rivermuse/</link>
+      <link>https://krisbuytaert.github.io/blog/rivermuse/</link>
       <pubDate>Thu, 30 Jul 2009 21:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/rivermuse/</guid>
+      <guid>https://krisbuytaert.github.io/blog/rivermuse/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.rivermuse.org/&#34;&gt;Rivermuse&lt;/a&gt; is the new Fault Management platform tool on the market, their initial relase was lurking around the corner for a while now but since earlier this week it finally arrived&lt;/p&gt;&#xA;&lt;p&gt;Eager to see what all the fuzz was about I jumped to their dowload page to find an yum repository for Fedora Core 9, that&amp;rsquo;s right .. it&amp;rsquo;s july 2009 and RiverMuse released their platform for a Linux distribution that got it&amp;rsquo;s End Of Life notice last month.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Santa Came Early</title>
-      <link>http://localhost:1313/blog/santa-came-early/</link>
+      <link>https://krisbuytaert.github.io/blog/santa-came-early/</link>
       <pubDate>Tue, 25 Nov 2008 13:52:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/santa-came-early/</guid>
+      <guid>https://krisbuytaert.github.io/blog/santa-came-early/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://socializedsoftware.com/&#34;&gt;Santa&lt;/a&gt; delivered his goods early at &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; this year&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://pics.inuits.be/d/1640-3/Image022.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Sorry &lt;a href=&#34;http://www.johnmwillis.com/&#34;&gt;John&lt;/a&gt;, but we figured the Girls in Your shirt trick would be better than the tags on your Fedora one :)&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.verwilst.be/2008/11/25/monitorial-goodies/&#34;&gt;Bort&lt;/a&gt; has another pic, and &lt;a href=&#34;http://www.addiktid.be/content/i-suddenly-feel-attracted-zenoss&#34;&gt;Dieter&lt;/a&gt; suddenly wants to test Zenoss too :)&lt;/p&gt;</description>
     </item>
   </channel>

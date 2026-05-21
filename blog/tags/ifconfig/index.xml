@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ifconfig on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/ifconfig/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/ifconfig/</link>
     <description>Recent content in Ifconfig on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Sep 2008 17:27:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/ifconfig/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/ifconfig/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bug in ifconfig ?</title>
-      <link>http://localhost:1313/blog/bug-ifconfig/</link>
+      <link>https://krisbuytaert.github.io/blog/bug-ifconfig/</link>
       <pubDate>Wed, 24 Sep 2008 17:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/bug-ifconfig/</guid>
+      <guid>https://krisbuytaert.github.io/blog/bug-ifconfig/</guid>
       <description>&lt;p&gt;So earlier this week I ran into the weirdest problem with Linux-HA. Heartbeat was happily adding an IP address as an active resource so one of my nodes when needed, but upon removal it failed to remove the IP from the stack. Further debugging learned that the Heartbeat scripts claimed the ip wasn&amp;rsquo;t on the actual stack.&lt;/p&gt;&#xA;&lt;p&gt;It was.. but it the output from ifconfig was different from what it expected it to be.&lt;/p&gt;</description>
     </item>
   </channel>

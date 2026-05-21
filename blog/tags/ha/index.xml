@@ -2,136 +2,136 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ha on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/ha/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/ha/</link>
     <description>Recent content in Ha on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Nov 2010 01:07:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/ha/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/ha/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>High Availability MySQL Cookbook , the review</title>
-      <link>http://localhost:1313/blog/high-availability-mysql-cookbook-review/</link>
+      <link>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</link>
       <pubDate>Thu, 04 Nov 2010 01:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/high-availability-mysql-cookbook-review/</guid>
+      <guid>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</guid>
       <description>&lt;p&gt;When I read on the internetz that Alex Davies was about the publish a &lt;a href=&#34;https://www.packtpub.com/high-availability-mysql-cookbook/book&#34;&gt;Packt book on MySQL HA&lt;/a&gt; I pinged my contacts at Packt and suggested that I&amp;rsquo;d review the book .&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve ran into &lt;a href=&#34;https://sites.google.com/a/davz.net/alex-davies/&#34;&gt;Alex&lt;/a&gt; at some UKUUG conferences before and he&amp;rsquo;s got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.&lt;/p&gt;&#xA;&lt;p&gt;Alex starts of with a couple of indepth chapters on MySQL Cluster, he does mention that it&amp;rsquo;s not a fit for all problems, but I&amp;rsquo;d hoped he did it a bit more prominently &amp;hellip; an upfront chapter outlining the different approaches and when which approach is a match could have been better. The avid reader now might be 80 pages into MySQL cluster before he realizes it&amp;rsquo;s not going to be a match for his problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MySQL HA , an alternative approach</title>
-      <link>http://localhost:1313/blog/mysql-ha-alternative-approach/</link>
+      <link>https://krisbuytaert.github.io/blog/mysql-ha-alternative-approach/</link>
       <pubDate>Wed, 28 Apr 2010 23:17:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/mysql-ha-alternative-approach/</guid>
+      <guid>https://krisbuytaert.github.io/blog/mysql-ha-alternative-approach/</guid>
       <description>&lt;p&gt;For those who&amp;rsquo;ve seen my presentation on MySQL HA, you already know that I often use a multimaster setup with a meta OCF resource that groups my favoured MySQL instance with the service ip , using a meta resource means that pacemaker monitors mysql, but it doesn&amp;rsquo;t actually manage it. It&amp;rsquo;s an approach that works for us.&lt;/p&gt;&#xA;&lt;p&gt;One of the other approaches I will be looking at soon is the freshly released OCF resource that &lt;a href=&#34;http://fghaas.wordpress.com/2010/04/21/mysql-masterslave-support-now-merged-into-linux-ha/&#34;&gt;Florian&lt;/a&gt; announced last week.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux Open Administration Days 2010</title>
-      <link>http://localhost:1313/blog/linux-open-administration-days-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</link>
       <pubDate>Tue, 20 Apr 2010 21:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/linux-open-administration-days-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</guid>
       <description>&lt;p&gt;So about 4 monts ago &lt;a href=&#34;http://blog.bdesmet.be/?p=272&#34;&gt;there was the crazy idea&lt;/a&gt; to start a new FOSS event in Belgium targeted at sysadmins.&lt;/p&gt;&#xA;&lt;p&gt;What started out as an event for local people to meet local people with some local speakers actually ended up being a small local event with some top international speakers on onfiguration mananagement and system administration mixed with a bunch of good local ones !&lt;/p&gt;&#xA;&lt;p&gt;I had the honour to open the conference with an extremely short version of the Devops talk I gave earlier last year.. extremely short as I knew that over the course of the weekend the topic would reoccur a lot.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UKUUG Spring Conference 2010</title>
-      <link>http://localhost:1313/blog/ukuug-spring-conference-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/ukuug-spring-conference-2010/</link>
       <pubDate>Wed, 07 Apr 2010 19:16:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/ukuug-spring-conference-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-conference-2010/</guid>
       <description>&lt;p&gt;Last week I was in Manchester for the 2010 UKUUG Spring Conference, right .. make that 2 weeks ago , :)&lt;/p&gt;&#xA;&lt;p&gt;The UKUUG usually hosts the more interesting conferences around &amp;hellip; , it&amp;rsquo;s not just the schedule that attrackts me , yes there&amp;rsquo;s the strong focus towards Larger Scale Unix (and mostly Linux) deployments and how to manage them, but there&amp;rsquo;s also the opportunity to chat in real life with the Devops from across the chunnel.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Better days Arrive when Dev Meet Ops</title>
-      <link>http://localhost:1313/blog/better-days-arrive-when-dev-meet-ops/</link>
+      <link>https://krisbuytaert.github.io/blog/better-days-arrive-when-dev-meet-ops/</link>
       <pubDate>Sat, 06 Mar 2010 15:03:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/better-days-arrive-when-dev-meet-ops/</guid>
+      <guid>https://krisbuytaert.github.io/blog/better-days-arrive-when-dev-meet-ops/</guid>
       <description>&lt;p&gt;A couple of weeks a go &lt;a href=&#34;http://twitter.com/LinuxScribe&#34;&gt;Brian Profitt&lt;/a&gt; pinged me for a chat about Devops , the result of that chat , his article can now be found on the Zenoss blog, it&amp;rsquo;s titled &lt;a href=&#34;http://community.zenoss.org/blogs/zenossblog/2010/03/05/datacenter-barometer-better-days-arrive-when-dev-meets-ops&#34;&gt;Datacenter Barometer: Better days arrive when dev meets ops&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s a very nice read with some pointers to places regular readers of my blog should already know ;)&lt;br&gt;&#xA;So with lots of leading Open Source infrastructure companies on different levels, such as config management (OpsCode and Reductive Labs) , monitoring (Zenoss) , deployment (openQRM, RPath, and obviously &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Consultancy&lt;/a&gt; companies , the upcoming Devops conferences around the planet promise to be a lot of fun ! ;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Disabling DHCP on a LibVirt setup</title>
-      <link>http://localhost:1313/blog/disabling-dhcp-libvirt-setup/</link>
+      <link>https://krisbuytaert.github.io/blog/disabling-dhcp-libvirt-setup/</link>
       <pubDate>Fri, 04 Dec 2009 20:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/disabling-dhcp-libvirt-setup/</guid>
+      <guid>https://krisbuytaert.github.io/blog/disabling-dhcp-libvirt-setup/</guid>
       <description>&lt;p&gt;So you have this libvirt setup and you want to have a dhcp server on the virtual machines you are playing with , or you want to have all static IP&amp;rsquo;s.&lt;/p&gt;&#xA;&lt;p&gt;Libvirt uses dnsmasq to provide dhcp services etc and when you generate a config from the gui it will look like\&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. &amp;lt;network&amp;gt;&#xA;2. &amp;lt;name&amp;gt;piponet&amp;lt;/name&amp;gt;&#xA;3. &amp;lt;uuid&amp;gt;e87d3bf1-a2e7-96ca-e131-7ae51ac033f9&amp;lt;/uuid&amp;gt;&#xA;4. &amp;lt;bridge name=&amp;#39;virbr2&amp;#39; stp=&amp;#39;on&amp;#39; delay=&amp;#39;0&amp;#39; /&amp;gt;&#xA;5. &amp;lt;ip address=&amp;#39;192.168.100.1&amp;#39; netmask=&amp;#39;255.255.255.0&amp;#39;&amp;gt;&#xA;6. &amp;lt;dhcp&amp;gt;&#xA;7. &amp;lt;range start=&amp;#39;192.168.100.128&amp;#39; end=&amp;#39;192.168.100.254&amp;#39; /&amp;gt;&#xA;8. &amp;lt;/dhcp&amp;gt;&#xA;9. &amp;lt;/ip&amp;gt;&#xA;10. &amp;lt;/network&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you fully remove the dhcp section, then restart libvirt you&amp;rsquo;ll notice dnsmasq running with no dhcpd on that subnet so you&amp;rsquo;ll have full control again :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Got Interviewed</title>
-      <link>http://localhost:1313/blog/got-interviewed/</link>
+      <link>https://krisbuytaert.github.io/blog/got-interviewed/</link>
       <pubDate>Wed, 18 Nov 2009 22:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/got-interviewed/</guid>
+      <guid>https://krisbuytaert.github.io/blog/got-interviewed/</guid>
       <description>&lt;p&gt;by &lt;a href=&#34;http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/&#34;&gt;@botchagalupe&lt;/a&gt;&lt;br&gt;&#xA;on Virtualization, Open Source tools and DNS Problems&lt;/p&gt;</description>
     </item>
     <item>
       <title>Yet Another DNS Issue</title>
-      <link>http://localhost:1313/blog/yet-another-dns-issue/</link>
+      <link>https://krisbuytaert.github.io/blog/yet-another-dns-issue/</link>
       <pubDate>Thu, 12 Nov 2009 23:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/yet-another-dns-issue/</guid>
+      <guid>https://krisbuytaert.github.io/blog/yet-another-dns-issue/</guid>
       <description>&lt;p&gt;While browsing trough my enormous mailinglist backlog I ran into the following message from Gianluca Cecchi on the DRBD-user mailing list&lt;/p&gt;&#xA;&lt;p&gt;guess I`ll have to give Lars a T-Shirt when we next meet ;)&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. From: Gianluca Cecchi&#xA;2. To: drbd-user@lists.linbit.com&#xA;3. Subject: [DRBD-user] notes on 8.3.2&#xA;&#xA;&#xA;6. - drbdadm create-md r0 segfaults when the command &amp;#34;hostname&amp;#34; on the&#xA;7. server contains the fully qualified domain name but you have put only&#xA;8. the hostname part in drbd.conf&#xA;9. Instead, the command &amp;#34;drbdadm dump&amp;#34; correctly gives you a warning in&#xA;10. this case (suggesting how to correct the error you made....):&#xA;&#xA;12. suppose complete hostname is virtfed.domainname.com and you put&#xA;13. virtfed alone in drbd.conf&#xA;14. [root@virtfed ~]# drbdadm dump&#xA;15. WARN: no normal resources defined for this host (virtfed.domainname.com)!?&#xA;&#xA;17. while&#xA;18. [root@virtfed ~]# drbdadm create-md r0&#xA;19. Segmentation fault&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Guess I`ll have to give the Linbit crowd a T-Shirt when we next meet ;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nines , Damn Nines  and More Nines</title>
-      <link>http://localhost:1313/blog/nines-damn-nines-and-more-nines/</link>
+      <link>https://krisbuytaert.github.io/blog/nines-damn-nines-and-more-nines/</link>
       <pubDate>Mon, 19 Oct 2009 23:46:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/nines-damn-nines-and-more-nines/</guid>
+      <guid>https://krisbuytaert.github.io/blog/nines-damn-nines-and-more-nines/</guid>
       <description>&lt;p&gt;Funny how different experiences lead to different evaluations of tools. The MySQL HA solutions &lt;a href=&#34;http://www.mysqlperformanceblog.com/2009/10/16/finding-your-mysql-high-availability-solution-%E2%80%93-the-questions/&#34;&gt;the MySQL Performanceblog&lt;/a&gt; list, are almost listed in the complete opposited order of what my impressions are.&lt;/p&gt;&#xA;&lt;p&gt;Ok agreed, I should probably not put my MySQL NDB experiences from 2-3 years ago with multiple Query of deaths and more problems than you into account anymore , but back then went in the list Less stable than a single node. I&amp;rsquo;ve had NDB POC setups going down for much more than 05:16 minutes&lt;br&gt;&#xA;Ndb comes with a lot of restrictions, there are&lt;/p&gt;</description>
     </item>
     <item>
       <title>Heartbeat 2 OpenAIS</title>
-      <link>http://localhost:1313/blog/heartbeat-2-openais/</link>
+      <link>https://krisbuytaert.github.io/blog/heartbeat-2-openais/</link>
       <pubDate>Fri, 16 Oct 2009 20:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/heartbeat-2-openais/</guid>
+      <guid>https://krisbuytaert.github.io/blog/heartbeat-2-openais/</guid>
       <description>&lt;p&gt;While upgrading a pretty recent Heartbeat cluster to OpenAis earlier today I ran into the following weird situation\&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. Last updated: Fri Oct 16 08:50:03 2009&#xA;2. Stack: openais&#xA;3. Current DC: CO_NMS-1 - partition with quorum&#xA;4. Version: 1.0.5-462f1569a43740667daf7b0f6b521742e9eb8fa7&#xA;5. 4 Nodes configured, 2 expected votes&#xA;6. 1 Resources configured.&#xA;7. ============&#xA;&#xA;9. Online: [ CO_NMS-1 CO_NMS-2 ]&#xA;10. OFFLINE: [ co_nms-1 co_nms-2 ]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. crm(live)node# show&#xA;2. co_nms-1(5c48ab4f-767f-e2dc-20ec-5969cddad152): normal&#xA;3. co_nms-2(922ff786-eca9-bed0-d79d-8222727a2c5b): normal&#xA;4. CO_NMS-1: normal&#xA;5. CO_NMS-2: normal&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Whohoo.. OpenAIS must have realized I have upperase and lowercase cores :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monitoring MySQL</title>
-      <link>http://localhost:1313/blog/monitoring-mysql-0/</link>
+      <link>https://krisbuytaert.github.io/blog/monitoring-mysql-0/</link>
       <pubDate>Sun, 11 Oct 2009 20:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monitoring-mysql-0/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monitoring-mysql-0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://ronaldbradford.com/blog/what-alert-monitoring-do-you-use-2009-10-07/&#34;&gt;Ronald Bradford&lt;/a&gt; wants to know what kind of Monitoring you use..&lt;br&gt;&#xA;He specifically wants to know about Alerting tools&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s different cases , looking at it from a full infrastructure point my current favourite is Zabbix or good old Nagios,&lt;/p&gt;&#xA;&lt;p&gt;But when looking at it from a debugging perspective you have MySQLAR or Hyperic, but those aren&amp;rsquo;t in the alerting list.&lt;/p&gt;&#xA;&lt;p&gt;However, when you are building HA clusters, you have custom scripts running either from mon or from pacemaker ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why learn to type ?</title>
-      <link>http://localhost:1313/blog/why-learn-type/</link>
+      <link>https://krisbuytaert.github.io/blog/why-learn-type/</link>
       <pubDate>Fri, 09 Oct 2009 12:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/why-learn-type/</guid>
+      <guid>https://krisbuytaert.github.io/blog/why-learn-type/</guid>
       <description>&lt;p&gt;When your machine knows what you mean ..&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. [s3p-root@XMS-1 tomcat6]# crm configure&#xA;2. crm(live)configure# bye&#xA;3. [s3p-root@XMS-1 tomcat6]# crm confiure&#xA;4. crm(live)configure# bye&#xA;5. [s3p-root@XMS-1 tomcat6]# crm confiture&#xA;6. crm(live)configure# bye&#xA;7. [s3p-root@XMS-1 tomcat6]#&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I&amp;rsquo;d better\&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. apt-get install coffee&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>DRBD2, OCFS2,  Unexplained crashes</title>
-      <link>http://localhost:1313/blog/drbd2-ocfs2-unexplained-crashes/</link>
+      <link>https://krisbuytaert.github.io/blog/drbd2-ocfs2-unexplained-crashes/</link>
       <pubDate>Wed, 01 Jul 2009 16:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/drbd2-ocfs2-unexplained-crashes/</guid>
+      <guid>https://krisbuytaert.github.io/blog/drbd2-ocfs2-unexplained-crashes/</guid>
       <description>&lt;p&gt;I was trying to setup a dual-primary DRBD environment, with a shared disk with either OCFS2 or GFS. The environment is a Centos 5.3 with DRBD82 (but also tried with DRBD83 from testing) .&lt;/p&gt;&#xA;&lt;p&gt;Setting up a single primary disk and running bonnie++ on it worked Setting up a dual-primary disk, only mounting it on one node (ext3) and running bonnie++ worked&lt;/p&gt;&#xA;&lt;p&gt;When setting up ocfs2 on the /dev/drbd0 disk and mounting it on both nodes, basic functionality seemed in place but usually less than 5-10 minutes after I start bonnie++ as a test on one of the nodes , both nodes power cycle with no errors in the logfiles, just a crash.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Everything is a fine whitespace problem ...</title>
-      <link>http://localhost:1313/blog/everything-fine-whitespace-problem/</link>
+      <link>https://krisbuytaert.github.io/blog/everything-fine-whitespace-problem/</link>
       <pubDate>Mon, 02 Feb 2009 23:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/everything-fine-whitespace-problem/</guid>
+      <guid>https://krisbuytaert.github.io/blog/everything-fine-whitespace-problem/</guid>
       <description>&lt;p&gt;Couple of days ago I was working on a Linux Heartbeat v2 setup.&lt;br&gt;&#xA;Upon inserting an XML snippet into the cib cib-adm started eating memory fast until the oom killer kicked in.&lt;/p&gt;&#xA;&lt;p&gt;The environment was running a fairly old heartbeat-2.0.8 version so I upgraded to heartbeat-2.1.4-2.1 and there I got a nice warning that my XML sintax wasn&amp;rsquo;t correct.&lt;/p&gt;&#xA;&lt;p&gt;There was a whitespace in the XML syntax.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. &amp;lt;expression attribute=&amp;#34;#replicationvalue&amp;#34; id=&amp;#34;is_lagged&amp;#34; operation =&amp;#34;gt&amp;#34;  ... &amp;gt;&amp;lt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Removing the whitespace solves the problem, also on the older version. So the problem is already fixed upstream.. but you might run into it anyhow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bug in ifconfig ?</title>
-      <link>http://localhost:1313/blog/bug-ifconfig/</link>
+      <link>https://krisbuytaert.github.io/blog/bug-ifconfig/</link>
       <pubDate>Wed, 24 Sep 2008 17:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/bug-ifconfig/</guid>
+      <guid>https://krisbuytaert.github.io/blog/bug-ifconfig/</guid>
       <description>&lt;p&gt;So earlier this week I ran into the weirdest problem with Linux-HA. Heartbeat was happily adding an IP address as an active resource so one of my nodes when needed, but upon removal it failed to remove the IP from the stack. Further debugging learned that the Heartbeat scripts claimed the ip wasn&amp;rsquo;t on the actual stack.&lt;/p&gt;&#xA;&lt;p&gt;It was.. but it the output from ifconfig was different from what it expected it to be.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MySQL and DRBD, Often say NO :)</title>
-      <link>http://localhost:1313/blog/mysql-and-drbd-often-say-no/</link>
+      <link>https://krisbuytaert.github.io/blog/mysql-and-drbd-often-say-no/</link>
       <pubDate>Mon, 28 Apr 2008 19:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/mysql-and-drbd-often-say-no/</guid>
+      <guid>https://krisbuytaert.github.io/blog/mysql-and-drbd-often-say-no/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://fghaas.wordpress.com/2008/04/27/drbd-and-mysql-just-say-yes/&#34;&gt;Florian&lt;/a&gt; is replying to &lt;a href=&#34;http://www.jebriggs.com/blog/mysql/drbd-and-mysql-just-say-no.html&#34;&gt;James&lt;/a&gt; on the subject of using DRBD for MySQL HA. A discussion started earlier &lt;a href=&#34;http://ebergen.net/wordpress/2007/04/02/drbd-in-the-real-world/&#34;&gt;by Eric&lt;/a&gt; Florian is refuting most of the arguments that James has against using MySQL and DRBD together.&lt;/p&gt;&#xA;&lt;p&gt;I`m also saying NO to MySQL and DRBD in most of the cases.. but not for any of the reasons James mentions.&lt;/p&gt;&#xA;&lt;p&gt;I must say upfront I love DRBD and I have been using it in production for a long time but not for MySQL HA.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Scaling Drupal</title>
-      <link>http://localhost:1313/blog/scaling-drupal/</link>
+      <link>https://krisbuytaert.github.io/blog/scaling-drupal/</link>
       <pubDate>Sat, 10 Nov 2007 17:54:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/scaling-drupal/</guid>
+      <guid>https://krisbuytaert.github.io/blog/scaling-drupal/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.johnandcailin.com/usernode/john&#34;&gt;John Quinn&lt;/a&gt; writes about &lt;a href=&#34;http://www.johnandcailin.com/blog/john/scaling-drupal-open-source-infrastructure-high-traffic-drupal-sites&#34;&gt;Scaling Drupal&lt;/a&gt; he is taking a one step at a time approach and is still writing his 4th and 5 stages.&lt;/p&gt;&#xA;&lt;p&gt;His first step obviously is separating the drupal from a separate database server, and he chooses mysql for this purpose, moving your DB to a different machine is a good thing to do.&lt;/p&gt;&#xA;&lt;p&gt;However then he gets this crazy idea of using NFS to share his his drupal shared files :(&lt;br&gt;&#xA;(he even dares to mention that the setup ease is good) Folks, we abandonned NFS in the late nineties. NFS is still a recipe for disaster, it has performance issues , it as stability issues (stale locks), and no security admin in his right mind will tolerate portmap to be running in his DMZ.&lt;br&gt;&#xA;(Also think about the IO path that one has to follow to serve a static file to a surfer when the file is stored on a remote NFS volume)&lt;/p&gt;</description>
     </item>
     <item>
       <title>On the Future of Lustre</title>
-      <link>http://localhost:1313/blog/future-lustre/</link>
+      <link>https://krisbuytaert.github.io/blog/future-lustre/</link>
       <pubDate>Fri, 14 Sep 2007 11:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/future-lustre/</guid>
+      <guid>https://krisbuytaert.github.io/blog/future-lustre/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.prnewswire.com/cgi-bin/stories.pl?ACCT=104&amp;amp;STORY=/www/story/09-12-2007/0004661104&amp;amp;EDATE&#34;&gt;&lt;br&gt;&#xA;So Sun bought ClusterFS&lt;/a&gt;. I&lt;code&gt;m wondering what their focus will be now. What will be the prime platform on which Lustre will be developed Solaris or Linux ? Will other efforts in the open source cluster filesystem area react on this ? Will Lustre development speed up ? Will management become less complex ?\ Time will tell .. I&lt;/code&gt;m keeping an eye on it&lt;/p&gt;</description>
     </item>
   </channel>

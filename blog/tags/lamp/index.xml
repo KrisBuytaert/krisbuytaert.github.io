@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lamp on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/lamp/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/lamp/</link>
     <description>Recent content in Lamp on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Apr 2009 01:27:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/lamp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/lamp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>We are rebranding !</title>
-      <link>http://localhost:1313/blog/we-are-rebranding/</link>
+      <link>https://krisbuytaert.github.io/blog/we-are-rebranding/</link>
       <pubDate>Wed, 01 Apr 2009 01:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/we-are-rebranding/</guid>
+      <guid>https://krisbuytaert.github.io/blog/we-are-rebranding/</guid>
       <description>&lt;p&gt;So the cat is out of the bag,&lt;/p&gt;&#xA;&lt;p&gt;As of today Inuits is rebranding to Pinuits,&lt;br&gt;&#xA;The press release is &lt;a href=&#34;http://www.pinuits.be/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ve had good feedback on the new name so far. Different people told me the name matched better to what we are doing . Actually my wife thinks our new name is much better as at least the Pin in Pinuits refers to our favourite Tux again ..&lt;/p&gt;&#xA;&lt;p&gt;Finding an appropriate name for an Open Source consultancy company, with focus on Linux, Open Source Monitoring, MySQL, Open Source Virtualization , Large Scale Deployments , High Availability and Drupal, isn&amp;rsquo;t easy .. you want to show both community involvement and professionality. And find a domain that&amp;rsquo;s still available.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hyperic on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/hyperic/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/hyperic/</link>
     <description>Recent content in Hyperic on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Sep 2009 21:20:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/hyperic/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/hyperic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MonitoringForge</title>
-      <link>http://localhost:1313/blog/monitoringforge/</link>
+      <link>https://krisbuytaert.github.io/blog/monitoringforge/</link>
       <pubDate>Wed, 23 Sep 2009 21:20:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monitoringforge/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monitoringforge/</guid>
       <description>&lt;p&gt;I found the initial announcement in my Spambox, thats where I send all the mails from GroundWork as unsubscribing from their marketing lists doesn&amp;rsquo;t seem to work ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.adventuresinoss.com/?p=1117&#34;&gt;Tarus&lt;/a&gt; pointed it out.. he already mentionned Marketing, low community imput etc..&lt;/p&gt;&#xA;&lt;p&gt;Nevertheles I had a look, and my first and last impression was, NagiosForge, no active community, and empty pages on other imvho more relevant Monitoring Projects created by GroundWork employees.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Slides updated</title>
-      <link>http://localhost:1313/blog/slides-updated/</link>
+      <link>https://krisbuytaert.github.io/blog/slides-updated/</link>
       <pubDate>Tue, 31 Mar 2009 19:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/slides-updated/</guid>
+      <guid>https://krisbuytaert.github.io/blog/slides-updated/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve updated the slidedeck of my Open Source Virtualization talk, with the 2009 edition as I gave it last week at the UKUUG Spring conference.&lt;/p&gt;&#xA;&lt;p&gt;Talk is up, both on &lt;a href=&#34;http://www.krisbuytaert.be/presentations/OSSVirt2009.odp&#34;&gt;my page&lt;/a&gt; as on &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/open-source-virtualization&#34;&gt;SlideShare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/open-source-virtualization?type=powerpoint&#34; title=&#34;open source virtualization&#34;&gt;open source virtualization&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Tom also updated our set of Open Source Monitoring Tool Shootout slides .&lt;br&gt;&#xA;They are also on &lt;a href=&#34;http://www.slideshare.net/tomdc/open-source-monitoring-tools-shootout&#34;&gt;SlideShare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/tomdc/open-source-monitoring-tools-shootout?type=presentation&#34; title=&#34;Open Source Monitoring Tools Shootout&#34;&gt;Open Source Monitoring Tools Shootout&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/tomdc&#34;&gt;tomdc&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monitoring MySQL</title>
-      <link>http://localhost:1313/blog/monitoring-mysql/</link>
+      <link>https://krisbuytaert.github.io/blog/monitoring-mysql/</link>
       <pubDate>Sun, 08 Feb 2009 16:16:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monitoring-mysql/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monitoring-mysql/</guid>
       <description>&lt;p&gt;The slides for my Monitoring MySQL talk , which I gave earlier today in an overcrowded MySQl Developersroom at Fosdem are now online, both at &lt;a href=&#34;http://www.krisbuytaert.be/presentations/MySQLMonitoringShootOut.odp&#34;&gt;my site&lt;/a&gt; and at &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out&#34;&gt;Slideshare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;As of now I actually expect people to use those slides for schoolwork or next year in a main Fosdem track :)&lt;br&gt;&#xA;As afterall that is the goal of Open Source and spreading the word ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out?type=presentation&#34; title=&#34;MySQL Monitoring Shoot Out&#34;&gt;MySQL Monitoring Shoot Out&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Do we want an Open Source MySQL Monitoring tool  ?</title>
-      <link>http://localhost:1313/blog/do-we-want-open-source-mysql-monitoring-tool/</link>
+      <link>https://krisbuytaert.github.io/blog/do-we-want-open-source-mysql-monitoring-tool/</link>
       <pubDate>Tue, 18 Nov 2008 00:44:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/do-we-want-open-source-mysql-monitoring-tool/</guid>
+      <guid>https://krisbuytaert.github.io/blog/do-we-want-open-source-mysql-monitoring-tool/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://themattreid.com/wordpress/?p=77&#34;&gt;Matt Reid&lt;/a&gt; wants to know what we want in an Open Source MySQL monitoring solution ?&lt;/p&gt;&#xA;&lt;p&gt;He is working on the second incarnation of Monolith and wants input from the MySQL community.&lt;/p&gt;&#xA;&lt;p&gt;Now for me the bigger question is if we want an isolated tool that runs stand alone, or a tool which we can integrate it in something we already have.&lt;/p&gt;&#xA;&lt;p&gt;To me there is a difference between a tool that I want to use to debug my environment, such as Mytop or MySQL Activity Report, in that case I need some tool that quickly installs with little dependencies and little impact.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unix Is Sexy on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/unix-is-sexy/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/unix-is-sexy/</link>
     <description>Recent content in Unix Is Sexy on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Nov 2008 13:52:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/unix-is-sexy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/unix-is-sexy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Santa Came Early</title>
-      <link>http://localhost:1313/blog/santa-came-early/</link>
+      <link>https://krisbuytaert.github.io/blog/santa-came-early/</link>
       <pubDate>Tue, 25 Nov 2008 13:52:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/santa-came-early/</guid>
+      <guid>https://krisbuytaert.github.io/blog/santa-came-early/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://socializedsoftware.com/&#34;&gt;Santa&lt;/a&gt; delivered his goods early at &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; this year&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://pics.inuits.be/d/1640-3/Image022.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Sorry &lt;a href=&#34;http://www.johnmwillis.com/&#34;&gt;John&lt;/a&gt;, but we figured the Girls in Your shirt trick would be better than the tags on your Fedora one :)&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.verwilst.be/2008/11/25/monitorial-goodies/&#34;&gt;Bort&lt;/a&gt; has another pic, and &lt;a href=&#34;http://www.addiktid.be/content/i-suddenly-feel-attracted-zenoss&#34;&gt;Dieter&lt;/a&gt; suddenly wants to test Zenoss too :)&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mesa on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/mesa/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/mesa/</link>
     <description>Recent content in Mesa on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Jan 2010 21:34:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/mesa/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/mesa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>F12 Dependency failure</title>
-      <link>http://localhost:1313/blog/f12-dependency-failure/</link>
+      <link>https://krisbuytaert.github.io/blog/f12-dependency-failure/</link>
       <pubDate>Tue, 19 Jan 2010 21:34:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/f12-dependency-failure/</guid>
+      <guid>https://krisbuytaert.github.io/blog/f12-dependency-failure/</guid>
       <description>&lt;p&gt;Fresh laptop arrived, obviously the first thing to do is to install the latest fedora. then do a full yum update.&lt;/p&gt;&#xA;&lt;p&gt;However that failed with the following failed dependency\&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. mesa-libGL-7.7-2.fc12.i686 from updates has depsolving problems&#xA;2. --&amp;gt; Missing Dependency: libdrm &amp;gt;= 2.4.17-1 is needed by package mesa-libGL-7.7-2.fc12.i686 (updates)&#xA;3. Error: Missing Dependency: libdrm &amp;gt;= 2.4.17-1 is needed by package mesa-libGL-7.7-2.fc12.i686 (updates)&#xA;4. You could try using --skip-broken to work around the problem&#xA;5. You could try running: package-cleanup --problems&#xA;6. package-cleanup --dupes&#xA;7. rpm -Va --nofiles --nodigest&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now I don&amp;rsquo;t really use all the fancy compiz stuff so for now I can just solve it by running&lt;/p&gt;</description>
     </item>
   </channel>

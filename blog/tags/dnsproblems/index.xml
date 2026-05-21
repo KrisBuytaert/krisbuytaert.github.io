@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dnsproblems on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/dnsproblems/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/dnsproblems/</link>
     <description>Recent content in Dnsproblems on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Jun 2009 23:36:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/dnsproblems/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/dnsproblems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Told Ya sooo</title>
-      <link>http://localhost:1313/blog/told-ya-sooo/</link>
+      <link>https://krisbuytaert.github.io/blog/told-ya-sooo/</link>
       <pubDate>Tue, 02 Jun 2009 23:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/told-ya-sooo/</guid>
+      <guid>https://krisbuytaert.github.io/blog/told-ya-sooo/</guid>
       <description>&lt;p&gt;By now everybody and their neigbour has realized that indeed Everything is a funky dns problem, Frank is giving talks about it at ZooCamp, and &lt;a href=&#34;#&#34;&gt;Serge&lt;/a&gt; figured out the hard way the downtime of planet.geekdinner.be was due to a dns problem :)&lt;/p&gt;&#xA;&lt;p&gt;But I told you different things before &amp;hellip; and some of you listened others are still reinventing the wheel as we go &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://news.cnet.com/8301-13505_3-10249201-16.html?part=rss&amp;amp;tag=feed&amp;amp;subj=TheOpenRoad&#34;&gt;Matt A.&lt;/a&gt; points out that the OpenBravo folks &lt;a href=&#34;http://paolojuvara.blogspot.com/2009/05/extend-dont-customize.html&#34;&gt;realized&lt;/a&gt; that one should try to build on top of Open Source projects rather than modify core code ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sushi and DNS Problems</title>
-      <link>http://localhost:1313/blog/sushi-and-dns-problems/</link>
+      <link>https://krisbuytaert.github.io/blog/sushi-and-dns-problems/</link>
       <pubDate>Thu, 30 Apr 2009 23:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/sushi-and-dns-problems/</guid>
+      <guid>https://krisbuytaert.github.io/blog/sushi-and-dns-problems/</guid>
       <description>&lt;p&gt;There seem to be different repeating topics within the Open Source and Geek community.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://delvauxkoen.blogspot.com/2009/04/how-belgian-firewall-would-block-naked.html&#34;&gt;Koen&lt;/a&gt; did a good job explaining how the Great Belgian Firewall reall can&amp;rsquo;t be solved using DNS tricks.&lt;/p&gt;&#xA;&lt;p&gt;And &lt;a href=&#34;http://datacharmer.blogspot.com/2009/04/mysql-community-and-sushi.html&#34;&gt;Giuseppe&lt;/a&gt; tackles the ever recurring Sushi. It has to be said &amp;hellip; Geeks love Sushi and not just the MySQl geeks , every conference we go to we try to squeeze in at least 1 Sushi visit.. sometimes more &amp;hellip;.. Nurenberg, Manchester, Cambridge, Ottawa , &amp;hellip; and there&amp;rsquo;s more to come .. :)&lt;/p&gt;</description>
     </item>
   </channel>

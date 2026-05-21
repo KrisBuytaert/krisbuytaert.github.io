@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devoxx on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/devoxx/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/devoxx/</link>
     <description>Recent content in Devoxx on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 02 Oct 2010 21:11:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/devoxx/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/devoxx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Busy weeks coming up ..</title>
-      <link>http://localhost:1313/blog/busy-weeks-coming/</link>
+      <link>https://krisbuytaert.github.io/blog/busy-weeks-coming/</link>
       <pubDate>Sat, 02 Oct 2010 21:11:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/busy-weeks-coming/</guid>
+      <guid>https://krisbuytaert.github.io/blog/busy-weeks-coming/</guid>
       <description>&lt;p&gt;The next 2 months promise to be the more busier of the year for me .&lt;/p&gt;&#xA;&lt;p&gt;On october 11th I`ll be giving a presentation ab out Linux and High Availability at the &lt;a href=&#34;http://eduserv.kahosl.be/celiak/2010/09/22/techmonday-1-11-oktober/&#34;&gt;KAHO Sint Lieven in Gent&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Just 2 days later I`ll be leaving to Hamburg for the next European version of &lt;a href=&#34;http://www.devopsdays.org/&#34;&gt;DevopsDays 2010&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Between Devopsdays Hamburg and Leaving for Malaga I`ll visit &lt;a href=&#34;http://www.cloudcamp.org/ghent&#34;&gt;CloudCamp Ghent&lt;/a&gt; om October 20th.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll be in Malaga for the &lt;a href=&#34;http://www.opensourceworldconference.com/malaga10/&#34;&gt;Software Libre Open Source World Conference&lt;/a&gt; which will take place on 27 and 28 october&lt;/p&gt;</description>
     </item>
   </channel>

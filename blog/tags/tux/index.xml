@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tux on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/tux/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/tux/</link>
     <description>Recent content in Tux on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Jan 2009 21:28:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/tux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/tux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tux is Tasty</title>
-      <link>http://localhost:1313/blog/tux-tasty/</link>
+      <link>https://krisbuytaert.github.io/blog/tux-tasty/</link>
       <pubDate>Sat, 17 Jan 2009 21:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/tux-tasty/</guid>
+      <guid>https://krisbuytaert.github.io/blog/tux-tasty/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/tuxies.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Found in a local bakery &amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>

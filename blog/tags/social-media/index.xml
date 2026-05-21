@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Social Media on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/social-media/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/social-media/</link>
     <description>Recent content in Social Media on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Feb 2010 22:15:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/social-media/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/social-media/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Irc vs Twitter err.. Identi.ca</title>
-      <link>http://localhost:1313/blog/irc-vs-twitter-err-identica/</link>
+      <link>https://krisbuytaert.github.io/blog/irc-vs-twitter-err-identica/</link>
       <pubDate>Fri, 12 Feb 2010 22:15:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/irc-vs-twitter-err-identica/</guid>
+      <guid>https://krisbuytaert.github.io/blog/irc-vs-twitter-err-identica/</guid>
       <description>&lt;p&gt;Over 1.5 decade ago, a bunch of us were addicted to irc, I lived on channels such as #coders, #nlcoders, #demoscene, sneaked in on #vlaanderen to see when the Leuven locals were heading to the pub, then started joining multiple Linux and Open Source related channels around 94&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Then some weirdos had an alternative way of chatting ICQ, then the folks from Redmond reinvented the wheel&amp;hellip; Luckily XMPP arrived and Jabber became the open alternative, but still all of this time irc stayed&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Inception on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/inception/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/inception/</link>
     <description>Recent content in Inception on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Jun 2016 21:04:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/inception/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/inception/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jenkins DSL and Heisenbugs</title>
-      <link>http://localhost:1313/blog/jenkins-dsl-and-heisenbugs/</link>
+      <link>https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/</link>
       <pubDate>Mon, 13 Jun 2016 21:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/jenkins-dsl-and-heisenbugs/</guid>
+      <guid>https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/</guid>
       <description>&lt;p&gt;I`m working on getting even more moving parts automated, those who use Jenkins frequently probably also have Love - Hate relationship with it.&lt;/p&gt;&#xA;&lt;p&gt;The love coming from the flexibility , stability and the power you get from it, the hate from it&amp;rsquo;s UI. If you&amp;rsquo;ve ever had to create a new Jenkins job or even pipeline based on one that already existed you&amp;rsquo;ve gone trough the horror of click and paste errors , and you know where the hate breeds.&lt;/p&gt;</description>
     </item>
   </channel>

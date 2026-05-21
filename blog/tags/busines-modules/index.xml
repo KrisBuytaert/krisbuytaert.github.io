@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Busines Modules on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/busines-modules/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/busines-modules/</link>
     <description>Recent content in Busines Modules on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Jul 2013 22:27:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/busines-modules/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/busines-modules/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open Business Models</title>
-      <link>http://localhost:1313/blog/open-business-models/</link>
+      <link>https://krisbuytaert.github.io/blog/open-business-models/</link>
       <pubDate>Wed, 10 Jul 2013 22:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/open-business-models/</guid>
+      <guid>https://krisbuytaert.github.io/blog/open-business-models/</guid>
       <description>&lt;p&gt;When I started writing this I wrote &amp;ldquo;Last week Opscode came&amp;rdquo; obviously now that is &amp;ldquo;A couple of months ago Opscode came with a bunch of announcements &amp;hellip; one of them being that they are also going to &lt;a href=&#34;http://www.opscode.com/blog/2013/02/04/announcing-commercial-support-for-open-source-chef/&#34;&gt;support the Open Source Chef&lt;/a&gt; .. rather than only their own platform.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;d love to see more companies formally do this .. Over the past couple of years I&amp;rsquo;ve had numerous situations where organizations where happy to pay for support to an commercial backer of Open Source software&amp;hellip; but they were not interested in , software updates, fancy dashboards , unneeded features.&lt;/p&gt;</description>
     </item>
   </channel>

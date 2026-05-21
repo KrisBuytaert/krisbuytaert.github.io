@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bcg3 on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/bcg3/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/bcg3/</link>
     <description>Recent content in Bcg3 on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Dec 2009 15:24:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/bcg3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/bcg3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Devops , a Barcamp Gent 3 Talk</title>
-      <link>http://localhost:1313/blog/devops-barcamp-gent-3-talk/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-barcamp-gent-3-talk/</link>
       <pubDate>Sun, 20 Dec 2009 15:24:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-barcamp-gent-3-talk/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-barcamp-gent-3-talk/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/devops-2749587&#34; title=&#34;Devops&#34;&gt;Devops&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Too bad the majority of the audience already knew what I was a bout to say &amp;hellip;.&lt;/p&gt;</description>
     </item>
   </channel>

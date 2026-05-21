@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Comments on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/comments/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/comments/</link>
     <description>Recent content in Comments on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Aug 2010 00:06:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/comments/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/comments/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mollom and Views</title>
-      <link>http://localhost:1313/blog/mollom-and-views/</link>
+      <link>https://krisbuytaert.github.io/blog/mollom-and-views/</link>
       <pubDate>Wed, 04 Aug 2010 00:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/mollom-and-views/</guid>
+      <guid>https://krisbuytaert.github.io/blog/mollom-and-views/</guid>
       <description>&lt;p&gt;You might have noticed that this blog stopped accepting comments about a month ago.. well. stopped accepting is a big word.. I was still accepting comments, only they were never submitted to the database and after entering a comment to my blog people ended up on a white page.&lt;/p&gt;&#xA;&lt;p&gt;So upon returning from holliday I set out to debug the issue together with one of our Inuits Drupal geeks and quickly ran into the following error.\&lt;/p&gt;</description>
     </item>
   </channel>

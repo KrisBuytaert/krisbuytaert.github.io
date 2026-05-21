@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/linux/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/linux/</link>
     <description>Recent content in Linux on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 Oct 2010 20:57:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Le Tablet nouveau est arrivee</title>
-      <link>http://localhost:1313/blog/le-tablet-nouveau-est-arrivee/</link>
+      <link>https://krisbuytaert.github.io/blog/le-tablet-nouveau-est-arrivee/</link>
       <pubDate>Mon, 18 Oct 2010 20:57:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/le-tablet-nouveau-est-arrivee/</guid>
+      <guid>https://krisbuytaert.github.io/blog/le-tablet-nouveau-est-arrivee/</guid>
       <description>&lt;p&gt;So I bought myselve a new gadget, a tablet. I wanted a couple of things, first of all I love the mythdroid app as a remote control for my MythTV, but as it runs on my phone and kids don&amp;rsquo;t have a phone it was pretty much a blocking issue when I wasn&amp;rsquo;t at home.&lt;br&gt;&#xA;The second thing I wanted was a device for the kids to play small games on &amp;hellip; and I also want to use it for the kids to watch some movies while we travel. On top of that it would be handy if I could use it to surf the web from my couch while not having to open up my laptop.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Implementing Raid Monitoring on a 3Ware 3w-9xxx based controller.</title>
-      <link>http://localhost:1313/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</link>
+      <link>https://krisbuytaert.github.io/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</link>
       <pubDate>Thu, 28 Jan 2010 20:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</guid>
+      <guid>https://krisbuytaert.github.io/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</guid>
       <description>&lt;p&gt;When you pull out a disk from your Raid setup it shows a warning in syslog&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: WARNING (0x04:0x0019): Drive&#xA;2. removed:port=1.&#xA;3. Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: ERROR (0x04:0x0002): Degraded&#xA;4. unit:unit=0, port=1.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;However if no one is looking at syslog that won&amp;rsquo;t really be helpfull.&lt;/p&gt;&#xA;&lt;p&gt;3Ware provides a tool from their site called tw_cli which can be used to manage&lt;br&gt;&#xA;the raid setup from the command line.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Life with an Android</title>
-      <link>http://localhost:1313/blog/life-android/</link>
+      <link>https://krisbuytaert.github.io/blog/life-android/</link>
       <pubDate>Thu, 05 Nov 2009 20:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/life-android/</guid>
+      <guid>https://krisbuytaert.github.io/blog/life-android/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve have never been a really an HTC fan, because of the platform they used before, I have been a Ericsson GA628, SH888, then Sony Ericsson fanboy for all my life T39m, K700, K800i , so this is my first attempt into using a different brand of phone , I&amp;rsquo;ve been wanting an Open Phone for ages.. but I&amp;rsquo;ve been waiting for Godot, er the openMoko, for way to long now so with the introduction of the HTC and my K800i being long overdue for a replacement.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The machine that vanished.</title>
-      <link>http://localhost:1313/blog/machine-vanished/</link>
+      <link>https://krisbuytaert.github.io/blog/machine-vanished/</link>
       <pubDate>Fri, 15 May 2009 20:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/machine-vanished/</guid>
+      <guid>https://krisbuytaert.github.io/blog/machine-vanished/</guid>
       <description>&lt;p&gt;Today I lost a machine, a physical one, I couldn&amp;rsquo;t find it back in my rack anymore. One moment I was logged on to it, and when I instructed it to boot off the network again for a fresh installation I couldn&amp;rsquo;t find it back anymore, it was gone.&lt;/p&gt;&#xA;&lt;p&gt;When you have different ad hoc build development environments, you often grab whatever hardware is available to add to your pool and hope it doesn&amp;rsquo;t kick you back, time always works against you when you have to build a fresh platform from a pool of hardware ready to be reused.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Happy 15th Birthday Linux ??</title>
-      <link>http://localhost:1313/blog/happy-15th-birthday-linux/</link>
+      <link>https://krisbuytaert.github.io/blog/happy-15th-birthday-linux/</link>
       <pubDate>Tue, 17 Mar 2009 22:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/happy-15th-birthday-linux/</guid>
+      <guid>https://krisbuytaert.github.io/blog/happy-15th-birthday-linux/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://i.gizmodo.com/5169216/happy-15th-birthday-linux?skyline=true&amp;amp;s=x&#34;&gt;Last Friday&lt;/a&gt; that&amp;rsquo;s march 13th, Gizmodo wanted us to celebrated the 15th birthday of Linux. Kinda weird&amp;hellip; as about 15 years ago I was already using Linux &amp;hellip;.&lt;/p&gt;&#xA;&lt;p&gt;Fact is that the 1.0 release of Linux just had it&amp;rsquo;s 15th birthday , but Linux itself is heading towards its 18th in september.&lt;/p&gt;&#xA;&lt;p&gt;Getting old ..both of us :)&lt;/p&gt;&#xA;&lt;p&gt;So when trying to catch up on my Linux Journal reading I ran into the &lt;a href=&#34;http://www.linuxjournal.com/article/10370&#34;&gt;15 years of Linux Journal&lt;/a&gt; article, which makes a lot more sense than 15 year of Linux.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Geekdinner Antwerp Edition 2</title>
-      <link>http://localhost:1313/blog/geekdinner-antwerp-edition-2/</link>
+      <link>https://krisbuytaert.github.io/blog/geekdinner-antwerp-edition-2/</link>
       <pubDate>Sun, 01 Mar 2009 21:14:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/geekdinner-antwerp-edition-2/</guid>
+      <guid>https://krisbuytaert.github.io/blog/geekdinner-antwerp-edition-2/</guid>
       <description>&lt;p&gt;Last Wednesday after the LSec event with Bruce Schneier and the R ans S from RSA , we already had a mini AdHoc GeekDinner in Leuven, one that pretty would have matched Philips requirements for having it called Geek dinner&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.paeps.cx/weblog/life/proliferation_of_geek_events.html&#34;&gt;Philip&lt;/a&gt; has been ranting this week about different events titled &amp;ldquo;Geek&amp;rdquo; not attrackting real geeks. that know hex and binary is but merely atrackting the Startup/Web crowd, now there&amp;rsquo;s nothing wrong with both crowds, and I happen to be part of both but it can cause strange situations&lt;br&gt;&#xA;&lt;a href=&#34;http://www.geekdinner.be/&#34;&gt;Geekdinner.be&lt;/a&gt;Tom K arranged a nice deal with &lt;a href=&#34;http://detroubadour.be/&#34;&gt;De Troubadour&lt;/a&gt; so foodwise it promises to be great.&lt;/p&gt;</description>
     </item>
     <item>
       <title>On the Future of Lustre</title>
-      <link>http://localhost:1313/blog/future-lustre/</link>
+      <link>https://krisbuytaert.github.io/blog/future-lustre/</link>
       <pubDate>Fri, 14 Sep 2007 11:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/future-lustre/</guid>
+      <guid>https://krisbuytaert.github.io/blog/future-lustre/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.prnewswire.com/cgi-bin/stories.pl?ACCT=104&amp;amp;STORY=/www/story/09-12-2007/0004661104&amp;amp;EDATE&#34;&gt;&lt;br&gt;&#xA;So Sun bought ClusterFS&lt;/a&gt;. I&lt;code&gt;m wondering what their focus will be now. What will be the prime platform on which Lustre will be developed Solaris or Linux ? Will other efforts in the open source cluster filesystem area react on this ? Will Lustre development speed up ? Will management become less complex ?\ Time will tell .. I&lt;/code&gt;m keeping an eye on it&lt;/p&gt;</description>
     </item>
   </channel>

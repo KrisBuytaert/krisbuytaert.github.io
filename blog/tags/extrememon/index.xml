@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Extrememon on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/extrememon/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/extrememon/</link>
     <description>Recent content in Extrememon on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Feb 2012 01:03:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/extrememon/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/extrememon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>We didn&#39;t fix it</title>
-      <link>http://localhost:1313/blog/we-didnt-fix-it/</link>
+      <link>https://krisbuytaert.github.io/blog/we-didnt-fix-it/</link>
       <pubDate>Fri, 10 Feb 2012 01:03:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/we-didnt-fix-it/</guid>
+      <guid>https://krisbuytaert.github.io/blog/we-didnt-fix-it/</guid>
       <description>&lt;p&gt;MonitoringSucks and we didn&amp;rsquo;t fix it.&lt;/p&gt;&#xA;&lt;p&gt;Earlier this week &lt;a href=&#34;http://www.inuits.eu/&#34;&gt;Inuits&lt;/a&gt; hosted a 2 day hackfest titled #MonitoringSucks. A good number of people with a variety of backgrounds showed up on monday morning. I don&amp;rsquo;t know why but people had high expectations for this event , did they really expect us to fix the #monitoringsucks problem in a mere 2 days ?&lt;/p&gt;&#xA;&lt;p&gt;Next to myselve we had Patrick Debois , &lt;a href=&#34;https://twitter.com/#!/gkarekinian&#34;&gt;Grégory Karékinian&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/#!/sjourdan&#34;&gt;Stefan Jourdan&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/#!/hatofmonkeys&#34;&gt;Colin Humphreys&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/#!/acrmp&#34;&gt;Andrew Crump&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/#!/ohadlevy/&#34;&gt;Ohad Levy&lt;/a&gt; , Frank Marien, Toshaan Bharvani, Devdas Bhagat,  &lt;a href=&#34;https://twitter.com/#!/mpasternacki/&#34;&gt;Maciej Pasternacki&lt;/a&gt;  &lt;a href=&#34;https://twitter.com/xtaran&#34;&gt;Axel Beckert&lt;/a&gt; &lt;a href=&#34;https://twitter.com/#!/smetj/&#34;&gt;Jelle Smet&lt;/a&gt;, Noa Resare @blippie , John John Tedro @udoprog, Christian Trabold @ctrabold and obviously some people I missed&lt;br&gt;&#xA;A good mixture of Fosdem visitors that stayed a litte longer in our cold country and locals with ideas. We had people from TomTom, RedHat , Spotify, Booking.com, Inuits, Atlassian, coming from Belgium, The Netherlands France, Israel, the UK, Sweden, Germany, Poland and Switzerland if I`m not mistaken.&lt;/p&gt;</description>
     </item>
   </channel>

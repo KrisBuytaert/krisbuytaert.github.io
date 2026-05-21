@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Inuits Day on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/inuits-day/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/inuits-day/</link>
     <description>Recent content in Inuits Day on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Jun 2010 21:14:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/inuits-day/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/inuits-day/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inuits Day</title>
-      <link>http://localhost:1313/blog/inuits-day/</link>
+      <link>https://krisbuytaert.github.io/blog/inuits-day/</link>
       <pubDate>Mon, 21 Jun 2010 21:14:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/inuits-day/</guid>
+      <guid>https://krisbuytaert.github.io/blog/inuits-day/</guid>
       <description>&lt;p&gt;Couple of Fridays ago we had one of our @Inuits days again. Rather than having some people give talks and presentations about what they have been doing for the past couple of months this time we set out to research, test, and build stuff.&lt;/p&gt;&#xA;&lt;p&gt;We split up in 3 different groups, one focusing on CI and testing freshly build stuff with cucumber, a second one setup and tested &lt;a href=&#34;http://www.codership.com/products/galera_replication&#34;&gt;Galera&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;We setup a 3 node Galera cluster , not really as smooth as we&amp;rsquo;d like to ..&lt;/p&gt;</description>
     </item>
   </channel>

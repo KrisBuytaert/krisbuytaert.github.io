@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Way It Is on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/the-way-it-is/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/the-way-it-is/</link>
     <description>Recent content in The Way It Is on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Apr 2009 10:41:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/the-way-it-is/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/the-way-it-is/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Way it is !</title>
-      <link>http://localhost:1313/blog/way-it/</link>
+      <link>https://krisbuytaert.github.io/blog/way-it/</link>
       <pubDate>Fri, 17 Apr 2009 10:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/way-it/</guid>
+      <guid>https://krisbuytaert.github.io/blog/way-it/</guid>
       <description>&lt;p&gt;(thnx &lt;a href=&#34;http://blogs.opennms.org/?p=807&#34;&gt;Tarus&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

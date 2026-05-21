@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ffmpeg on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/ffmpeg/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/ffmpeg/</link>
     <description>Recent content in Ffmpeg on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Jan 2011 22:39:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fedora Annoyancies Resolved (Hopefully)</title>
-      <link>http://localhost:1313/blog/fedora-annoyancies-resolved-hopefully/</link>
+      <link>https://krisbuytaert.github.io/blog/fedora-annoyancies-resolved-hopefully/</link>
       <pubDate>Fri, 07 Jan 2011 22:39:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fedora-annoyancies-resolved-hopefully/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fedora-annoyancies-resolved-hopefully/</guid>
       <description>&lt;p&gt;A couple of weeks ago I ranted about being able to crash about any available music player on Fedora, and the gazillion bugs I filed for that ..&lt;/p&gt;&#xA;&lt;p&gt;At last the the problem is solved, as mentioned in &lt;a href=&#34;https://bugzilla.redhat.com/show_bug.cgi?id=657971#c17&#34;&gt;https://bugzilla.redhat.com/show_bug.cgi?id=657971#c17&lt;/a&gt;&lt;br&gt;&#xA;this is most probably a bug in ffmpeg which is provided by rpmfusion. and which is solved by installing gstreamer-plugins-ugly&lt;/p&gt;&#xA;&lt;p&gt;At least it works for me :)&lt;/p&gt;</description>
     </item>
   </channel>

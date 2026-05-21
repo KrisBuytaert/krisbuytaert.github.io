@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/ruby/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/ruby/</link>
     <description>Recent content in Ruby on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Mar 2011 20:11:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vagrant &amp; Rubylibs</title>
-      <link>http://localhost:1313/blog/vagrant-rubylibs/</link>
+      <link>https://krisbuytaert.github.io/blog/vagrant-rubylibs/</link>
       <pubDate>Tue, 29 Mar 2011 20:11:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/vagrant-rubylibs/</guid>
+      <guid>https://krisbuytaert.github.io/blog/vagrant-rubylibs/</guid>
       <description>&lt;p&gt;I was testing some MySQL puppet modules on my Vagrant box earlier this week and one of them required augeas.&lt;br&gt;&#xA;I kept running into &amp;ldquo;Could not find a default provider for augeas&amp;rdquo;, however all the appropriate augeas , augeas-lib and ruby-augeas packages were installed. I inspected the different ruby directories and the files were perfectly in /usr/lib/ruby/site_ruby/1.8 where I expected them.&lt;/p&gt;&#xA;&lt;p&gt;With all the files seemd to be in the right place, my next option was to strace a small ruby script that included augeas, guess what that showed ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>24 hours of Puppet Drama</title>
-      <link>http://localhost:1313/blog/24-hours-puppet-drama/</link>
+      <link>https://krisbuytaert.github.io/blog/24-hours-puppet-drama/</link>
       <pubDate>Fri, 04 Mar 2011 01:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/24-hours-puppet-drama/</guid>
+      <guid>https://krisbuytaert.github.io/blog/24-hours-puppet-drama/</guid>
       <description>&lt;p&gt;Over the past couple of days I&amp;rsquo;ve been fighting with a weird puppet problem , we eventually cracked it , but I promised a bunch of you to fully explain it here ;)&lt;/p&gt;&#xA;&lt;p&gt;So we were deploying 2 Blade chassis at a pretty remote location with a mix of phyisical and virtual machines, some 48 instances in total. This is a pretty standard rollout, we&amp;rsquo;ve got a bunch of similar platforms in our lab , so we knew about a couple of glitches, what to expect etc.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PuppetCamp Europe  2010</title>
-      <link>http://localhost:1313/blog/puppetcamp-europe-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/puppetcamp-europe-2010/</link>
       <pubDate>Tue, 01 Jun 2010 21:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/puppetcamp-europe-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/puppetcamp-europe-2010/</guid>
       <description>&lt;p&gt;Last week was pretty heavy on conferences for me. On wednesday I had to give my &lt;a href=&#34;http://www.krisbuytaert.be/blog/building-virtual-apliances&#34;&gt;Building Virtual Appliances&lt;/a&gt; talk at the at the Sizing Server event on Advanced Virtualization and Hybrid Cloud Computing , but the most important part of the week was the first edition of Puppetcamp Europe.&lt;/p&gt;&#xA;&lt;p&gt;When the first ideas about PuppetCamp Europe started I asked Luke when and where it&amp;rsquo;d be held. He replied that I should know as I was supposed to organise it&amp;hellip; I thanked for the honour , he went on to ask &lt;a href=&#34;http://jedi.be/blog/&#34;&gt;Patrick&lt;/a&gt; , he accepted &amp;hellip; I hope I helped him out enough :) I even handed out a personal invitation to some of the most famous configuration mgmt people on this planet and &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; sponsored the event too&lt;/p&gt;</description>
     </item>
     <item>
       <title>#Devops / Ruby  Meetup  , Antwerp, April 8, 2010</title>
-      <link>http://localhost:1313/blog/devops-ruby-meetup-antwerp-april-8-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-ruby-meetup-antwerp-april-8-2010/</link>
       <pubDate>Tue, 30 Mar 2010 22:57:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-ruby-meetup-antwerp-april-8-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-ruby-meetup-antwerp-april-8-2010/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://twitter.com/jtimberman&#34;&gt;Joshua Timberman&lt;/a&gt; will be in town, (Antwerpen) that is, for &lt;a href=&#34;http://loadays.org/&#34;&gt;Loadays&lt;/a&gt; as he is arriving on thursday Botchagalupe suggested we should have a Devops / Ruby get together.&lt;/p&gt;&#xA;&lt;p&gt;So I&amp;rsquo;m dutyfully announcing the Devops/Ruby meetup next thursday april 8th, in Antwerp&lt;/p&gt;&#xA;&lt;p&gt;The plan is to meet up for beers and chatter in our favourite Antwerp geek pub in , Kulminator , Vleminckveld 32 , Antwerp , around 20h00 ish..&lt;/p&gt;&#xA;&lt;p&gt;Topics will be devops, ruby and much more :)&lt;/p&gt;</description>
     </item>
   </channel>

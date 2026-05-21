@@ -2,332 +2,332 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open Source on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/open-source/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/open-source/</link>
     <description>Recent content in Open Source on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Dec 2013 22:04:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FOSDEM 2014 is coming</title>
-      <link>http://localhost:1313/blog/fosdem-2014-coming/</link>
+      <link>https://krisbuytaert.github.io/blog/fosdem-2014-coming/</link>
       <pubDate>Sun, 22 Dec 2013 22:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fosdem-2014-coming/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fosdem-2014-coming/</guid>
       <description>&lt;p&gt;and with that almost a full week of side events.&lt;br&gt;&#xA;For those who don&amp;rsquo;t know FOSDEM, (where have you been hiding for the past 13 years ? ) Fosdem is the annual Free and Open Source Developers European meeting. If you are into open source , you just can&amp;rsquo;t mis this event where thousands of likeminded people will meet.&lt;/p&gt;&#xA;&lt;p&gt;And if 2 days of FOSDEM madness isn&amp;rsquo;t enough people organise events around it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drupal and Configuration Mgmt, we&#39;re getting there ...</title>
-      <link>http://localhost:1313/blog/drupal-and-configuration-mgmt-were-getting-there/</link>
+      <link>https://krisbuytaert.github.io/blog/drupal-and-configuration-mgmt-were-getting-there/</link>
       <pubDate>Sun, 17 Jul 2011 22:39:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/drupal-and-configuration-mgmt-were-getting-there/</guid>
+      <guid>https://krisbuytaert.github.io/blog/drupal-and-configuration-mgmt-were-getting-there/</guid>
       <description>&lt;p&gt;For those who haven&amp;rsquo;t noticed yet .. I&lt;code&gt;m into devops .. I&lt;/code&gt;m also a little bit into Drupal, (blame my last name..) , so one of the frustrations I&amp;rsquo;ve been having with Drupal (an much other software) is the automation of deployment and upgrades of Drupal sites &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;So for the past couple of days I&amp;rsquo;ve been trying to catch up to the ongoing discussion regarding the results of the &lt;a href=&#34;http://groups.drupal.org/node/155559&#34;&gt;configuration mgmt sprint&lt;/a&gt; , I&amp;rsquo;ve been looking at it mainly from a systems point of view , being with the use of Puppet/ Chef or similar tools in mind .. I know I`m late to the discussion but hey , some people take holidays in this season :) So below you can read a bunch of my comments &amp;hellip; and thoughts on the topic ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>The New devops Audience, Drupalistas !</title>
-      <link>http://localhost:1313/blog/new-devops-audience-drupalistas/</link>
+      <link>https://krisbuytaert.github.io/blog/new-devops-audience-drupalistas/</link>
       <pubDate>Tue, 21 Dec 2010 23:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/new-devops-audience-drupalistas/</guid>
+      <guid>https://krisbuytaert.github.io/blog/new-devops-audience-drupalistas/</guid>
       <description>&lt;p&gt;When I first started out giving talks about devops , I realized that I was preaching to the choir, some Barcamps, the Keynote at Loadays , the Dutch Unix Usergroup etc .. lots of people in the audiences knew about the pains we were trying to solve, lots of them already knew some of the tools we use and lots of them already talk a lot with their developers or are part of the deveoplment teams&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bug Zapper</title>
-      <link>http://localhost:1313/blog/bug-zapper/</link>
+      <link>https://krisbuytaert.github.io/blog/bug-zapper/</link>
       <pubDate>Wed, 03 Nov 2010 22:46:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/bug-zapper/</guid>
+      <guid>https://krisbuytaert.github.io/blog/bug-zapper/</guid>
       <description>&lt;p&gt;Dear Fedoracommunity,&lt;/p&gt;&#xA;&lt;p&gt;Over the course of the day I recieved 22^H3 mails from your friendly Bug Zapper.&lt;/p&gt;&#xA;&lt;p&gt;Most of those bugs where bugs I had reported upon crashes using bug-buddy. Bugs on different desktop tools such as .. synergy, evolution, gwibber , gnome-settings and probably some others&lt;/p&gt;&#xA;&lt;p&gt;I do understand that I development goes on and on .. and your fancy devs don&amp;rsquo;t care anymore about bugs I reported on Fedora 12 as they are all hacking on Fedora 15 and that I should update more frequently &amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>A parallel universe</title>
-      <link>http://localhost:1313/blog/parallel-universe/</link>
+      <link>https://krisbuytaert.github.io/blog/parallel-universe/</link>
       <pubDate>Mon, 21 Jun 2010 21:19:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/parallel-universe/</guid>
+      <guid>https://krisbuytaert.github.io/blog/parallel-universe/</guid>
       <description>&lt;p&gt;What happens when you mention &lt;a href=&#34;http://www.youtube.com/watch?v=ph6ZeEDnFmc&#34;&gt;Open Office and Firewall&lt;/a&gt; in once sentence, in public ?&lt;/p&gt;&#xA;&lt;p&gt;People start actually building &lt;a href=&#34;http://www.wzdftpd.net/blog/index.php?2010/06/16/46-le-pare-feu-openoffice&#34;&gt;it&lt;/a&gt; (French Article)&lt;/p&gt;&#xA;&lt;p&gt;Then add to that list that there&amp;rsquo;s also people out there that think that running MySQL over NFS is providing them High Availability, or that using DNS Round Robin will provide them a scalable setup,&lt;/p&gt;&#xA;&lt;p&gt;So yes .. apparently there is indeed a parallel universe out there.&lt;/p&gt;&#xA;&lt;p&gt;And no .. I don&amp;rsquo;t want to see &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/building-appliances&#34;&gt;Webmin&lt;/a&gt; in any Appliance .. that is a joke&amp;hellip;, or rather a rant ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>11 days till Loadays</title>
-      <link>http://localhost:1313/blog/11-days-till-loadays/</link>
+      <link>https://krisbuytaert.github.io/blog/11-days-till-loadays/</link>
       <pubDate>Tue, 30 Mar 2010 22:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/11-days-till-loadays/</guid>
+      <guid>https://krisbuytaert.github.io/blog/11-days-till-loadays/</guid>
       <description>&lt;p&gt;That&amp;rsquo;s right .. only 11 more &amp;hellip;&lt;br&gt;&#xA;The &lt;a href=&#34;http://www.loadays.org/schedule&#34;&gt;schedule&lt;/a&gt; looks promising, there will be some devops juice, some open spaces, some tutorials, som regular talks .. it really looks promising &amp;hellip; the schedule is packed ,&lt;/p&gt;&#xA;&lt;p&gt;Apart from the talks, tutorials and open spaces there&amp;rsquo;s also the&lt;br&gt;&#xA;Pizza party and the Beer event on saturday &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;No need to register .. just show up ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fosdem 2010</title>
-      <link>http://localhost:1313/blog/fosdem-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/fosdem-2010/</link>
       <pubDate>Tue, 09 Feb 2010 22:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fosdem-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fosdem-2010/</guid>
       <description>&lt;p&gt;Fosdem 2010 was my 10th fosdem Edition (including the first OSDEM)&lt;br&gt;&#xA;As every year Fosdem suffered even more from it&amp;rsquo;s own success.&lt;/p&gt;&#xA;&lt;p&gt;On Friday evening ther was the obligatory Beer event&amp;hellip; however as people need to eat to .. the Devops crowd fled the scene&lt;/p&gt;&#xA;&lt;p&gt;I had made reservations for a 20 something group and with the CentOS crowd joining us (as there was some overlap anyhow) we were 25 when we arrived in the restaurant .&lt;br&gt;&#xA;&lt;img src=&#34;http://www.krisbuytaert.be/images/DevopsMeet.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Planet , Drupal Style</title>
-      <link>http://localhost:1313/blog/planet-drupal-style/</link>
+      <link>https://krisbuytaert.github.io/blog/planet-drupal-style/</link>
       <pubDate>Fri, 15 Jan 2010 21:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/planet-drupal-style/</guid>
+      <guid>https://krisbuytaert.github.io/blog/planet-drupal-style/</guid>
       <description>&lt;p&gt;So when you setup an aggregator there&amp;rsquo;s this one thing you miss from a regular planet &amp;hellip;the list of blogs with their individual Feeds.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to use this for planet.loadays.org again and realized I don&amp;rsquo;t know where I got this snippet from or if I wrote it myselve or whatever .. but I do realize that unless I document it here I won&amp;rsquo;t be able to point other people to it again :) So just create a block like this one :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Option D</title>
-      <link>http://localhost:1313/blog/option-d/</link>
+      <link>https://krisbuytaert.github.io/blog/option-d/</link>
       <pubDate>Mon, 14 Dec 2009 22:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/option-d/</guid>
+      <guid>https://krisbuytaert.github.io/blog/option-d/</guid>
       <description>&lt;p&gt;Lots of people writing about Snorkle again today ,Monty &lt;a href=&#34;http://monty-says.blogspot.com/2009/12/help-saving-mysql.html&#34;&gt;Says, help saving MySQL&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;He gives us different options, a , b or c .. but I , and some others, want an option d&lt;/p&gt;&#xA;&lt;p&gt;No I don&amp;rsquo;t trust Oracle, it&amp;rsquo;s not like they have been a very good Open Source Citizen, yes they contribute to the kernel and other projects but my feeling says it&amp;rsquo;s only because they have to (Kernel, Xen and others ) not because they Want to (thinking about Unfakable etc) , if they would really want to they probably would work with the CentOS community more etc, and as Monty mentions their InnoDB track record could be better.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Life with an Android</title>
-      <link>http://localhost:1313/blog/life-android/</link>
+      <link>https://krisbuytaert.github.io/blog/life-android/</link>
       <pubDate>Thu, 05 Nov 2009 20:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/life-android/</guid>
+      <guid>https://krisbuytaert.github.io/blog/life-android/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve have never been a really an HTC fan, because of the platform they used before, I have been a Ericsson GA628, SH888, then Sony Ericsson fanboy for all my life T39m, K700, K800i , so this is my first attempt into using a different brand of phone , I&amp;rsquo;ve been wanting an Open Phone for ages.. but I&amp;rsquo;ve been waiting for Godot, er the openMoko, for way to long now so with the introduction of the HTC and my K800i being long overdue for a replacement.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open Source, Open Core, Open ScoreCards</title>
-      <link>http://localhost:1313/blog/open-source-open-core-open-scorecards/</link>
+      <link>https://krisbuytaert.github.io/blog/open-source-open-core-open-scorecards/</link>
       <pubDate>Tue, 13 Oct 2009 22:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/open-source-open-core-open-scorecards/</guid>
+      <guid>https://krisbuytaert.github.io/blog/open-source-open-core-open-scorecards/</guid>
       <description>&lt;p&gt;There is this constant discussion about Open Core vs Open Source vs Proprietary Software , Fauxpen Source, Open Source Business models etc.. you probably know all the usual suspects involved, first up lets agree that nobody will ever agree on what&amp;rsquo;s best, (off course it&amp;rsquo;s pure open source.. ) , but one of the important aspects is to know what values are important for you and your customers&lt;/p&gt;&#xA;&lt;p&gt;Simon Phipps thinks we should &lt;a href=&#34;http://blogs.sun.com/webmink/entry/building_a_scorecard_for_open&#34;&gt;build&lt;/a&gt; a scorecard that lists the different values we attach to a certain level of openness&lt;/p&gt;</description>
     </item>
     <item>
       <title>Enterprise Open Source Adoption at BT, London</title>
-      <link>http://localhost:1313/blog/enterprise-open-source-adoption-bt-london/</link>
+      <link>https://krisbuytaert.github.io/blog/enterprise-open-source-adoption-bt-london/</link>
       <pubDate>Mon, 12 Oct 2009 21:24:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/enterprise-open-source-adoption-bt-london/</guid>
+      <guid>https://krisbuytaert.github.io/blog/enterprise-open-source-adoption-bt-london/</guid>
       <description>&lt;p&gt;Repost from our &lt;a href=&#34;http://www.inuits.be/news/enterprise-open-source-adoption-conference-bt-london&#34;&gt;corporate blog&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Last monday some &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; quickly crossed the channel for a day of speeches and talks regarding Open Source and its Adoption, the event organised at BT brought together a mixture of techies, legal persons and management to listen to and discuss about the current state of Enterprise Open Source adoption&lt;/p&gt;&#xA;&lt;p&gt;The short introduction was done by JP of Confused In Calcutta , who mainly introduced Mark &amp;ldquo;I`m from outer space&amp;rdquo; Shuttleworth. Mark keynoted about Ubuntu .. he talked about Aubergine being the new Brown &amp;hellip; ranted (as everybody) about the Cloud , talked about a stronger focus to services rather than product building , talked about the ecosystem of &amp;ldquo;people close to you&amp;rdquo; for supporting solutions .&lt;/p&gt;</description>
     </item>
     <item>
       <title>What Kind of Open Source Fanboy are you ?</title>
-      <link>http://localhost:1313/blog/what-kind-open-source-fanboy-are-you/</link>
+      <link>https://krisbuytaert.github.io/blog/what-kind-open-source-fanboy-are-you/</link>
       <pubDate>Sun, 11 Oct 2009 20:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/what-kind-open-source-fanboy-are-you/</guid>
+      <guid>https://krisbuytaert.github.io/blog/what-kind-open-source-fanboy-are-you/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://jamesdixon.wordpress.com/2009/10/07/misunderstanding-open-source-4-not-knowing-your-own-alignment/&#34;&gt;James Dixon&lt;/a&gt; has some polls on his blog, they let you choose between being a free software junkie, an open source hacker or what I&amp;rsquo;d call a an incompetent moron ;)&lt;/p&gt;&#xA;&lt;p&gt;I had mostly 2&amp;rsquo;s , no 3 in case you&amp;rsquo;d wonder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>It&#39;s the solutions you build with it !</title>
-      <link>http://localhost:1313/blog/its-solutions-you-build-it/</link>
+      <link>https://krisbuytaert.github.io/blog/its-solutions-you-build-it/</link>
       <pubDate>Thu, 01 Oct 2009 19:50:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/its-solutions-you-build-it/</guid>
+      <guid>https://krisbuytaert.github.io/blog/its-solutions-you-build-it/</guid>
       <description>&lt;p&gt;I`m gonna have to quote &lt;a href=&#34;http://www.adventuresinoss.com/?p=1141&#34;&gt;Tarus&lt;/a&gt; once again :&lt;/p&gt;&#xA;&lt;p&gt;For years now I’ve been struggling to educate the market on the fact that the business around open source software is not about software. It’s about solutions.&lt;/p&gt;&#xA;&lt;p&gt;Let me repeat that .. it&amp;rsquo;s not about selling software &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;It&amp;rsquo;s about solutions&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;And obviously FLOSS is the Ideal platform to build value for your customers&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open Source  Business Models</title>
-      <link>http://localhost:1313/blog/open-source-business-models/</link>
+      <link>https://krisbuytaert.github.io/blog/open-source-business-models/</link>
       <pubDate>Wed, 23 Sep 2009 21:17:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/open-source-business-models/</guid>
+      <guid>https://krisbuytaert.github.io/blog/open-source-business-models/</guid>
       <description>&lt;p&gt;There is once again a lot of fuzz going on about Open Source Business models,&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.openlogic.com/blogs/2009/09/customers-not-thrilled-with-open-source-business-models-preferred-by-many-vcs-open-source-companies/&#34;&gt;First on my eyballs was the article that Customers don&amp;rsquo;t seem to like openCore&lt;/a&gt; what a big &lt;a href=&#34;http://www.adventuresinoss.com/?p=611&#34;&gt;surprise ..&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;So that&amp;rsquo;s not the one that makes the customers happy ,&lt;/p&gt;&#xA;&lt;p&gt;Then there is the other side of the coin, the people that create open source&lt;br&gt;&#xA;&lt;a href=&#34;http://blogs.the451group.com/opensource/2009/09/15/oracle-could-kill-off-mysql-but-probably-wont/&#34;&gt;Authors realize the dual licensing model comes hunting back at you&lt;/a&gt;  after a merger or a hostile acquisition, yes they still have the source code to build on but they can&amp;rsquo;t sell commercial licenses to their customers anymore they way they used to.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dual Battery Support</title>
-      <link>http://localhost:1313/blog/dual-battery-support/</link>
+      <link>https://krisbuytaert.github.io/blog/dual-battery-support/</link>
       <pubDate>Sat, 12 Sep 2009 08:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/dual-battery-support/</guid>
+      <guid>https://krisbuytaert.github.io/blog/dual-battery-support/</guid>
       <description>&lt;p&gt;About 2.5 months ago while I was on a highspeed Belnet connection at UZA after Amber got born I ran in to some annoyancies with my fresh Fedora 11 and multiple batteries, upon replacing the CD drive with an empty battery (to be charged) while I was on AC power the machine shut down.&lt;/p&gt;&#xA;&lt;p&gt;I filed a &lt;a href=&#34;https://bugzilla.redhat.com/show_bug.cgi?id=509157&#34;&gt;bug&lt;/a&gt; , while going trough my post holliday inbox backlog I noticed &lt;a href=&#34;http://blogs.gnome.org/hughsie/2009/06/16/gnome-power-manager-and-multiple-batteries/&#34;&gt;it got fixed .&lt;/a&gt; Thnx Richard !&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Conferences</title>
-      <link>http://localhost:1313/blog/conferences/</link>
+      <link>https://krisbuytaert.github.io/blog/conferences/</link>
       <pubDate>Thu, 20 Aug 2009 21:52:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/conferences/</guid>
+      <guid>https://krisbuytaert.github.io/blog/conferences/</guid>
       <description>&lt;p&gt;Somehow this year my schedule really isn&amp;rsquo;t going to get filled with conferences,unlike my 13 speaking engagements last year this year I decided to go for a lot less :)&lt;/p&gt;&#xA;&lt;p&gt;Froscon together with OpenSQLCamp is convienently scheduled during an already long planned family weekend .. but I really hope to go there nex year&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been wanting to go south for conferences for ages, Spain, France, Portugal, Italy , Greece are all places I&amp;rsquo;d love to go and see how the different Open Sourcen conferences play out there. This summer there actually were some different conferences tha took place in Spain, Gran Canaria etc . but I coouldn&amp;rsquo;t make it there for the &lt;a href=&#34;http://www.babietje.be/&#34;&gt;obvious reasons..&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>T-Dose 2009 CFP,</title>
-      <link>http://localhost:1313/blog/t-dose-2009-cfp/</link>
+      <link>https://krisbuytaert.github.io/blog/t-dose-2009-cfp/</link>
       <pubDate>Sun, 09 Aug 2009 22:44:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/t-dose-2009-cfp/</guid>
+      <guid>https://krisbuytaert.github.io/blog/t-dose-2009-cfp/</guid>
       <description>&lt;p&gt;Dear MySQL and Drupal , Plone and other Open Source folks, you might want to be interrested in giving a talk at T-Dose 2009 ,&lt;/p&gt;&#xA;&lt;p&gt;Jean Paul pinged me with the following mail :&lt;/p&gt;&#xA;&lt;p&gt;Maybe it escaped your attention that the Call For Papers for T-DOSE 2009 is already out. It has been announced on 12th of June 2009. Below you will find the original announcement.&lt;/p&gt;&#xA;&lt;p&gt;Call for Papers and Projects&lt;br&gt;&#xA;Fri, 06/12/2009 - 13:57 — jpsaman&lt;/p&gt;</description>
     </item>
     <item>
       <title>RiverMuse</title>
-      <link>http://localhost:1313/blog/rivermuse/</link>
+      <link>https://krisbuytaert.github.io/blog/rivermuse/</link>
       <pubDate>Thu, 30 Jul 2009 21:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/rivermuse/</guid>
+      <guid>https://krisbuytaert.github.io/blog/rivermuse/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.rivermuse.org/&#34;&gt;Rivermuse&lt;/a&gt; is the new Fault Management platform tool on the market, their initial relase was lurking around the corner for a while now but since earlier this week it finally arrived&lt;/p&gt;&#xA;&lt;p&gt;Eager to see what all the fuzz was about I jumped to their dowload page to find an yum repository for Fedora Core 9, that&amp;rsquo;s right .. it&amp;rsquo;s july 2009 and RiverMuse released their platform for a Linux distribution that got it&amp;rsquo;s End Of Life notice last month.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Told Ya sooo</title>
-      <link>http://localhost:1313/blog/told-ya-sooo/</link>
+      <link>https://krisbuytaert.github.io/blog/told-ya-sooo/</link>
       <pubDate>Tue, 02 Jun 2009 23:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/told-ya-sooo/</guid>
+      <guid>https://krisbuytaert.github.io/blog/told-ya-sooo/</guid>
       <description>&lt;p&gt;By now everybody and their neigbour has realized that indeed Everything is a funky dns problem, Frank is giving talks about it at ZooCamp, and &lt;a href=&#34;#&#34;&gt;Serge&lt;/a&gt; figured out the hard way the downtime of planet.geekdinner.be was due to a dns problem :)&lt;/p&gt;&#xA;&lt;p&gt;But I told you different things before &amp;hellip; and some of you listened others are still reinventing the wheel as we go &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://news.cnet.com/8301-13505_3-10249201-16.html?part=rss&amp;amp;tag=feed&amp;amp;subj=TheOpenRoad&#34;&gt;Matt A.&lt;/a&gt; points out that the OpenBravo folks &lt;a href=&#34;http://paolojuvara.blogspot.com/2009/05/extend-dont-customize.html&#34;&gt;realized&lt;/a&gt; that one should try to build on top of Open Source projects rather than modify core code ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dear Oracle,</title>
-      <link>http://localhost:1313/blog/dear-oracle/</link>
+      <link>https://krisbuytaert.github.io/blog/dear-oracle/</link>
       <pubDate>Thu, 30 Apr 2009 23:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/dear-oracle/</guid>
+      <guid>https://krisbuytaert.github.io/blog/dear-oracle/</guid>
       <description>&lt;p&gt;A couple of weeks ago I wrote a post titled &lt;a href=&#34;http://www.krisbuytaert.be/blog/dear-ibm&#34;&gt;Dear IBM&lt;/a&gt; , I was too late .. I was on holliday last week when people started sending me text messages , such as .. &amp;ldquo;Game Over MySQL , Long live Ingress&amp;rdquo; or &amp;ldquo;No Eclipse for IBM&amp;rdquo;, etc &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;I had ideas regarding the future of certain Sun products at IBM, now the game has changed .. it&amp;rsquo;ss how they will live on at Oracle :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Way it is !</title>
-      <link>http://localhost:1313/blog/way-it/</link>
+      <link>https://krisbuytaert.github.io/blog/way-it/</link>
       <pubDate>Fri, 17 Apr 2009 10:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/way-it/</guid>
+      <guid>https://krisbuytaert.github.io/blog/way-it/</guid>
       <description>&lt;p&gt;(thnx &lt;a href=&#34;http://blogs.opennms.org/?p=807&#34;&gt;Tarus&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Open Source &#34;Channel&#34;</title>
-      <link>http://localhost:1313/blog/open-source-channel/</link>
+      <link>https://krisbuytaert.github.io/blog/open-source-channel/</link>
       <pubDate>Wed, 15 Apr 2009 23:55:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/open-source-channel/</guid>
+      <guid>https://krisbuytaert.github.io/blog/open-source-channel/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.redhat.com/about/news/prarchive/2009/open-source-channel-alliance.html&#34;&gt;RedHat&lt;/a&gt; announced the launch of the Open Source Channel Alliance, and &lt;a href=&#34;http://opendotdotdot.blogspot.com/2009/04/channelling-power-of-open-source.html&#34;&gt;different folks&lt;/a&gt; already commented on it ..&lt;/p&gt;&#xA;&lt;p&gt;Frankly I think the Open Source &amp;ldquo;Channel&amp;rdquo; shouldn&amp;rsquo;t exist ..&lt;/p&gt;&#xA;&lt;p&gt;So let&amp;rsquo;s take a step back and see what the &amp;ldquo;Channel&amp;rdquo; actually means.&lt;/p&gt;&#xA;&lt;p&gt;It used to mean that a vendor didn&amp;rsquo;t want to manage the logistics of shipping and delivering his product to the end user, you know .. like the big boxen used 3rd parties to provide the logistics, often that &amp;ldquo;enduser&amp;rdquo; being a local system integrator that wasn&amp;rsquo;t allowed, and still isn&amp;rsquo;t, to order his stuff from the actual vendor, either because he is ordering in too small quantities or any other reasons. Logistics became marketing support , offering training and sometimes presales support.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dear IBM</title>
-      <link>http://localhost:1313/blog/dear-ibm/</link>
+      <link>https://krisbuytaert.github.io/blog/dear-ibm/</link>
       <pubDate>Mon, 06 Apr 2009 21:48:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/dear-ibm/</guid>
+      <guid>https://krisbuytaert.github.io/blog/dear-ibm/</guid>
       <description>&lt;p&gt;When you eventually will buy Sun ..&lt;/p&gt;&#xA;&lt;p&gt;Oh nooos.. I started this post last week and now it al seems in vain :(&lt;/p&gt;&#xA;&lt;p&gt;Steven has some clues on what could have &lt;a href=&#34;http://blogs.computerworld.com/good_bye_solaris_the_fate_of_suns_top_5_technologies&#34;&gt;happened&lt;/a&gt;, I think he is right on the spot on with his Solaris prediction ..&lt;/p&gt;&#xA;&lt;p&gt;He wonders why IBM would spend even another dime on Solaris, actually even today I can&amp;rsquo;t even see why Sun is spending any more money on developing Solaris. But even with no acquisition his prediction of the future of Open Solaris imvho is spot on:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Happy 15th Birthday Linux ??</title>
-      <link>http://localhost:1313/blog/happy-15th-birthday-linux/</link>
+      <link>https://krisbuytaert.github.io/blog/happy-15th-birthday-linux/</link>
       <pubDate>Tue, 17 Mar 2009 22:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/happy-15th-birthday-linux/</guid>
+      <guid>https://krisbuytaert.github.io/blog/happy-15th-birthday-linux/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://i.gizmodo.com/5169216/happy-15th-birthday-linux?skyline=true&amp;amp;s=x&#34;&gt;Last Friday&lt;/a&gt; that&amp;rsquo;s march 13th, Gizmodo wanted us to celebrated the 15th birthday of Linux. Kinda weird&amp;hellip; as about 15 years ago I was already using Linux &amp;hellip;.&lt;/p&gt;&#xA;&lt;p&gt;Fact is that the 1.0 release of Linux just had it&amp;rsquo;s 15th birthday , but Linux itself is heading towards its 18th in september.&lt;/p&gt;&#xA;&lt;p&gt;Getting old ..both of us :)&lt;/p&gt;&#xA;&lt;p&gt;So when trying to catch up on my Linux Journal reading I ran into the &lt;a href=&#34;http://www.linuxjournal.com/article/10370&#34;&gt;15 years of Linux Journal&lt;/a&gt; article, which makes a lot more sense than 15 year of Linux.&lt;/p&gt;</description>
     </item>
     <item>
       <title>FAT</title>
-      <link>http://localhost:1313/blog/fat/</link>
+      <link>https://krisbuytaert.github.io/blog/fat/</link>
       <pubDate>Mon, 02 Mar 2009 21:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fat/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fat/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://laforge.gnumonks.org/weblog/2009/02/27/#20090227-microsoft_patent_lawsuit&#34;&gt;Harald&lt;/a&gt; has a nice overview of the FUD that is being spread again by some company from RedMond ..&lt;/p&gt;&#xA;&lt;p&gt;Now why are they targeting TomTom ? Surely because Canon and Sony and different others are to big to sue, Both my EOS400D, Ixus400 and K800i , are using a way to FAT filesystem to store files on,&lt;br&gt;&#xA;I tried putting ext2 formatted disks in them but that failed :)&lt;br&gt;&#xA;(Not running Linux or already having paid up might be another reason)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Conference Time</title>
-      <link>http://localhost:1313/blog/conference-time/</link>
+      <link>https://krisbuytaert.github.io/blog/conference-time/</link>
       <pubDate>Sun, 01 Mar 2009 22:22:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/conference-time/</guid>
+      <guid>https://krisbuytaert.github.io/blog/conference-time/</guid>
       <description>&lt;p&gt;Grab your calendars and mark the following dates :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.t-dose.org/t-dose/node/122&#34;&gt;T-Dose 2009&lt;/a&gt; will be held on 3 and 4 october in Eindhoven again.&lt;/p&gt;&#xA;&lt;p&gt;Last year we had a nice Drupal track, some great MySQL talks and , a great unplanned Cloud talk , and different other interesting talks, so this year promises also to be very interesting.&lt;br&gt;&#xA;(PS. Drupal Themers.. you might want to propose a new theme for the T-Dose site, who knows you&amp;rsquo;ll even win something)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Geekdinner Antwerp Edition 2</title>
-      <link>http://localhost:1313/blog/geekdinner-antwerp-edition-2/</link>
+      <link>https://krisbuytaert.github.io/blog/geekdinner-antwerp-edition-2/</link>
       <pubDate>Sun, 01 Mar 2009 21:14:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/geekdinner-antwerp-edition-2/</guid>
+      <guid>https://krisbuytaert.github.io/blog/geekdinner-antwerp-edition-2/</guid>
       <description>&lt;p&gt;Last Wednesday after the LSec event with Bruce Schneier and the R ans S from RSA , we already had a mini AdHoc GeekDinner in Leuven, one that pretty would have matched Philips requirements for having it called Geek dinner&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.paeps.cx/weblog/life/proliferation_of_geek_events.html&#34;&gt;Philip&lt;/a&gt; has been ranting this week about different events titled &amp;ldquo;Geek&amp;rdquo; not attrackting real geeks. that know hex and binary is but merely atrackting the Startup/Web crowd, now there&amp;rsquo;s nothing wrong with both crowds, and I happen to be part of both but it can cause strange situations&lt;br&gt;&#xA;&lt;a href=&#34;http://www.geekdinner.be/&#34;&gt;Geekdinner.be&lt;/a&gt;Tom K arranged a nice deal with &lt;a href=&#34;http://detroubadour.be/&#34;&gt;De Troubadour&lt;/a&gt; so foodwise it promises to be great.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tarus for president !</title>
-      <link>http://localhost:1313/blog/tarus-president/</link>
+      <link>https://krisbuytaert.github.io/blog/tarus-president/</link>
       <pubDate>Thu, 12 Feb 2009 14:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/tarus-president/</guid>
+      <guid>https://krisbuytaert.github.io/blog/tarus-president/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://blogs.opennms.org/?p=611&#34;&gt;Just read it !&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The only unrealistic part about the scenario is that I fear that most purchasers within a government agency won&amp;rsquo;t be asking these questions, yet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open Source does not mean Customization Heaven..</title>
-      <link>http://localhost:1313/blog/open-source-does-not-mean-customization-heaven/</link>
+      <link>https://krisbuytaert.github.io/blog/open-source-does-not-mean-customization-heaven/</link>
       <pubDate>Wed, 11 Feb 2009 18:09:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/open-source-does-not-mean-customization-heaven/</guid>
+      <guid>https://krisbuytaert.github.io/blog/open-source-does-not-mean-customization-heaven/</guid>
       <description>&lt;p&gt;Unless you are doing it wrong.&lt;/p&gt;&#xA;&lt;p&gt;And sadly I`m seeing more and more people doing it wrong.&lt;br&gt;&#xA;To a lot of people Open Source means that they have a piece of software that does almost what they want and which they can modify to their best wishes and use internally.&lt;/p&gt;&#xA;&lt;p&gt;So they fork locally,, they don&amp;rsquo;t redistribute their code , but they aren&amp;rsquo;t contributing their changes back upstream, chances are these changes wouldn&amp;rsquo;t be accepted upstream anyhow as they are really customizing the code for their specific cases. At first sight this doesn&amp;rsquo;t look so bad , at second sight ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monitoring MySQL</title>
-      <link>http://localhost:1313/blog/monitoring-mysql/</link>
+      <link>https://krisbuytaert.github.io/blog/monitoring-mysql/</link>
       <pubDate>Sun, 08 Feb 2009 16:16:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monitoring-mysql/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monitoring-mysql/</guid>
       <description>&lt;p&gt;The slides for my Monitoring MySQL talk , which I gave earlier today in an overcrowded MySQl Developersroom at Fosdem are now online, both at &lt;a href=&#34;http://www.krisbuytaert.be/presentations/MySQLMonitoringShootOut.odp&#34;&gt;my site&lt;/a&gt; and at &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out&#34;&gt;Slideshare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;As of now I actually expect people to use those slides for schoolwork or next year in a main Fosdem track :)&lt;br&gt;&#xA;As afterall that is the goal of Open Source and spreading the word ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out?type=presentation&#34; title=&#34;MySQL Monitoring Shoot Out&#34;&gt;MySQL Monitoring Shoot Out&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Image Sprawl , and the new cure ..</title>
-      <link>http://localhost:1313/blog/image-sprawl-and-new-cure/</link>
+      <link>https://krisbuytaert.github.io/blog/image-sprawl-and-new-cure/</link>
       <pubDate>Fri, 06 Feb 2009 00:24:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/image-sprawl-and-new-cure/</guid>
+      <guid>https://krisbuytaert.github.io/blog/image-sprawl-and-new-cure/</guid>
       <description>&lt;p&gt;When I tell people that the concept of copying VM&amp;rsquo;s around as frequently done in the VMWare world is one of the most stupid ideas on this planet, I get the weirdest looks.&lt;/p&gt;&#xA;&lt;p&gt;In my world it is, I want my infrastructure to be reproducible , I want to be able to throw any machine in my infrastructure out of the 10th floor of a building and be up and running again in no time. If I spread a bunch of VM copies around who knows what kind of life they start leading. Some will get upgrades, some won&amp;rsquo;t ..&lt;br&gt;&#xA;If I get an image from someone, how did he get there ? Nobody knows ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Monty Leaving Sun</title>
-      <link>http://localhost:1313/blog/monty-leaving-sun/</link>
+      <link>https://krisbuytaert.github.io/blog/monty-leaving-sun/</link>
       <pubDate>Fri, 06 Feb 2009 00:19:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monty-leaving-sun/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monty-leaving-sun/</guid>
       <description>&lt;p&gt;When I read &lt;a href=&#34;http://monty-says.blogspot.com/2009/02/time-to-move-on.html&#34;&gt;Monty&amp;rsquo;s&lt;/a&gt;  post on leaving this passage struck me the most.&lt;/p&gt;&#xA;&lt;p&gt;The main reason for leaving was that I am not satisfied with the way the MySQL server has been developed, as can be seen on my previous blog post. In particular I would have like to see the server development to be moved to a true open development environment that would encourage outside participation and without any need of differentiation on the source code. Sun has been considering opening up the server development, but the pace has been too slow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What does your BOFH want ? :)</title>
-      <link>http://localhost:1313/blog/what-does-your-bofh-want/</link>
+      <link>https://krisbuytaert.github.io/blog/what-does-your-bofh-want/</link>
       <pubDate>Thu, 29 Jan 2009 00:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/what-does-your-bofh-want/</guid>
+      <guid>https://krisbuytaert.github.io/blog/what-does-your-bofh-want/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.garfieldtech.com/blog/drupal-system-tools&#34;&gt;Larry&lt;/a&gt;, I`m glad you asked ..&lt;/p&gt;&#xA;&lt;p&gt;With the risk of receiving a flood of comments pointing me to already existing tools here&amp;rsquo;s my go at what I as a sysadmin of often large deployments am looking for in Drupalland .&lt;/p&gt;&#xA;&lt;p&gt;You suggest LDAP and syslog integration .. guess we already have that don&amp;rsquo;t we ?&lt;/p&gt;&#xA;&lt;p&gt;But what I haven&amp;rsquo;t found yet ..&lt;br&gt;&#xA;An rpm/deb repository of Drupal modules So we can do an apt-get install drupal-package , yes I know about Drush, but I want the files on my system to be in a package and clearly identified, it helps me keeping my system uncluttered.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stop stupid Software Patents</title>
-      <link>http://localhost:1313/blog/stop-stupid-software-patents/</link>
+      <link>https://krisbuytaert.github.io/blog/stop-stupid-software-patents/</link>
       <pubDate>Mon, 26 Jan 2009 11:25:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/stop-stupid-software-patents/</guid>
+      <guid>https://krisbuytaert.github.io/blog/stop-stupid-software-patents/</guid>
       <description>&lt;p&gt;If you read this blog, you should probably sign the petition !&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://stopsoftwarepatents.eu/&#34;&gt;&lt;img src=&#34;http://stopsoftwarepatents.eu/media/ssp-336-280.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Is anybody else confused about Chef ?</title>
-      <link>http://localhost:1313/blog/anybody-else-confused-about-chef/</link>
+      <link>https://krisbuytaert.github.io/blog/anybody-else-confused-about-chef/</link>
       <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/anybody-else-confused-about-chef/</guid>
+      <guid>https://krisbuytaert.github.io/blog/anybody-else-confused-about-chef/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://wiki.opscode.com/display/chef/Home&#34;&gt;Chef&lt;/a&gt; absolutely confuses me..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://madstop.com/2009/01/16/opscode-announces-chef-a-puppet-competitor/&#34;&gt;Luke&lt;/a&gt; is confused too ..&lt;br&gt;&#xA;I’m clearly disappointed that someone who has been a high-profile user of Puppet but has never contributed much in the way of code (Ohloh claims 2 commits) would decide to start a whole new project rather than attempt to contribute to Puppet&lt;/p&gt;&#xA;&lt;p&gt;Now , if you know me a bit you know that reinventing the wheel, or creating identical projects with no clear reasons is something I dislike .&lt;/p&gt;</description>
     </item>
     <item>
       <title>New interesting open Source releases</title>
-      <link>http://localhost:1313/blog/new-interesting-open-source-releases/</link>
+      <link>https://krisbuytaert.github.io/blog/new-interesting-open-source-releases/</link>
       <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/new-interesting-open-source-releases/</guid>
+      <guid>https://krisbuytaert.github.io/blog/new-interesting-open-source-releases/</guid>
       <description>&lt;p&gt;In case you haven&amp;rsquo;t noticed them yet ..&lt;br&gt;&#xA;&lt;a href=&#34;http://jan.kneschke.de/2009/1/13/mysql-proxy-public-repo-moved-to-launchpad&#34;&gt;MySQL Proxy&lt;/a&gt; has a new release and moved it&amp;rsquo;s public repo to Launchpad.&lt;/p&gt;&#xA;&lt;p&gt;(Still Launchpad isn&amp;rsquo;t open source yet .. a matter of time .. but in the meanwhile Jira and Confluence are sadly gaining adoption in the market)&lt;/p&gt;&#xA;&lt;p&gt;In the devministration area there is a new Puppet module that automagically populates puppet managed machines in &lt;a href=&#34;http://blog.zenoss.com/2009/01/13/new-zenoss-module-for-puppet/&#34;&gt;Zenoss&lt;/a&gt; , I&amp;rsquo;ve seen different people using Puppet to populate their Nagios configs, but adding Zenoss to the list is new.. so when will we see the Zabbix and Hyperic plugins ?&lt;/p&gt;</description>
     </item>
     <item>
       <title>How popular  is an Open Source project ?</title>
-      <link>http://localhost:1313/blog/how-popular-open-source-project/</link>
+      <link>https://krisbuytaert.github.io/blog/how-popular-open-source-project/</link>
       <pubDate>Thu, 15 Jan 2009 19:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/how-popular-open-source-project/</guid>
+      <guid>https://krisbuytaert.github.io/blog/how-popular-open-source-project/</guid>
       <description>&lt;p&gt;There is a really easy way to figure out &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Look at the size of of the devrooms , if at all , a project gets at Fosdem&lt;br&gt;&#xA;It&amp;rsquo;s really interresting to see the Embedded room move to a 500 seat room which it really needed when the first openMoko talk was held there in a previous edition.&lt;/p&gt;&#xA;&lt;p&gt;The FDO , Drupal, Mozilla, Centos/Fedora and Suse rooms stay in similar size rooms as last year.. But it seems lik the BSD and PostgreSQL room which was pretty crowded moved to a bigger location.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contributing Back</title>
-      <link>http://localhost:1313/blog/contributing-back/</link>
+      <link>https://krisbuytaert.github.io/blog/contributing-back/</link>
       <pubDate>Wed, 14 Jan 2009 21:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/contributing-back/</guid>
+      <guid>https://krisbuytaert.github.io/blog/contributing-back/</guid>
       <description>&lt;p&gt;A while ago &lt;a href=&#34;http://buytaert.net/contributing-back-to-drupal&#34;&gt;Dries&lt;/a&gt; wondered about Contributing back to Drupal .&lt;/p&gt;&#xA;&lt;p&gt;Now &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; is not a Webshop, we are an Open Source shop, so you won&amp;rsquo;t see a zillion Drupal modules being contributed by us in the near future (albeit there are a couple) , we are company assisting other organisations in their adoption of Open Source, and Drupal is amongst the projects we care for. You&amp;rsquo;ll notice code from us in the different other Open Source projects, including the Linux Kernel and other core infrastructure. And not all of it was code, there is a lot of published documentation, methodologies, bughunting and also spreading the words, or talking about our experiences around different topics such as MySQL Cluster and Drupal, or different alternatives to Monitor , or to Monitor MySQL etc ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Free Beer, planet.grep.be Meetup</title>
-      <link>http://localhost:1313/blog/free-beer-planetgrepbe-meetup/</link>
+      <link>https://krisbuytaert.github.io/blog/free-beer-planetgrepbe-meetup/</link>
       <pubDate>Thu, 18 Dec 2008 23:14:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/free-beer-planetgrepbe-meetup/</guid>
+      <guid>https://krisbuytaert.github.io/blog/free-beer-planetgrepbe-meetup/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://planet.grep.be/&#34;&gt;planet.grep.be&lt;/a&gt; today has a lot of active open source users and contributors.&lt;br&gt;&#xA;The weird thing is that we never meet apart from Fosdem.&lt;br&gt;&#xA;Yes, we occasionally run into eachother at other events but there&amp;rsquo;s not enough beer involved.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve had different people ask me what and where are the Open Source gatherings in Belgium, and we must admit that apart&lt;br&gt;&#xA;from Fosdem there isn&amp;rsquo;t that much in our little country.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Puppy FUD</title>
-      <link>http://localhost:1313/blog/puppy-fud/</link>
+      <link>https://krisbuytaert.github.io/blog/puppy-fud/</link>
       <pubDate>Sun, 07 Dec 2008 21:13:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/puppy-fud/</guid>
+      <guid>https://krisbuytaert.github.io/blog/puppy-fud/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://buytaert.net/open-source-and-free-puppies&#34;&gt;Dries&lt;/a&gt;  commented on &lt;a href=&#34;http://blog.contenthere.net/2008/12/interwoven-foss-fud.html&#34;&gt;Seth&lt;/a&gt; reporting about the puppyfud some proprietary company not understanding open source was uttering.&lt;/p&gt;&#xA;&lt;p&gt;It was a pretty lousy comparison actually .. they compared Open Source software to a Free Puppy.. it looks nice and cheap at first but it will cost you anyhow as it needs food and shots etc so it isn&amp;rsquo;t really free after all.&lt;/p&gt;&#xA;&lt;p&gt;Now the fact is that with the proprietary stuff they are trying to shove down their customers throats, their CMS&amp;rsquo;s also need configuration, updates, and styling left and right, probably just as much as the Open Source alternative out there.&lt;br&gt;&#xA;Now as they have a proprietary platform the chance that they have an equally big expert group around their product is small, people don&amp;rsquo;t just buy software to learn it, however they will download a piece of interesting open source software to get aquanted with it.. There probably won&amp;rsquo;t be that much free examples and tips and hints a round, or even free themes to base a site on ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Eclipse of Sun</title>
-      <link>http://localhost:1313/blog/eclipse-sun/</link>
+      <link>https://krisbuytaert.github.io/blog/eclipse-sun/</link>
       <pubDate>Sat, 06 Dec 2008 11:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/eclipse-sun/</guid>
+      <guid>https://krisbuytaert.github.io/blog/eclipse-sun/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;ve been reading this blog for a while you&amp;rsquo;ll know that&lt;br&gt;&#xA;for the past decade I&amp;rsquo;ve had a love-hate relation ship with Sun.&lt;/p&gt;&#xA;&lt;p&gt;Sun has done a lot of good things in their open source journey such as MySQL, openOffice , Virtualbox and opensourcing Java. But on the other hand they had troubles with creating really organic opensource.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve always wondered why a company that bought StarDivision because it was cheaper than buying the MS Office license keeps wasting money on building it&amp;rsquo;s own operating systems, albeit in a pretty open model, but with zero to no relevant community.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upgrading to Fedora 10</title>
-      <link>http://localhost:1313/blog/upgrading-fedora-10/</link>
+      <link>https://krisbuytaert.github.io/blog/upgrading-fedora-10/</link>
       <pubDate>Mon, 01 Dec 2008 22:14:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/upgrading-fedora-10/</guid>
+      <guid>https://krisbuytaert.github.io/blog/upgrading-fedora-10/</guid>
       <description>&lt;p&gt;As some of you know I run Fedora on my main Laptop, and Ubuntu on my EEE and my office Desktop. My Ubuntu installs were pretty fresh, but my fedora was long due for an upgrade. As after years of abuse (&amp;ndash;force &amp;ndash;nodeps) it usually is impossible to do a regular upgrade, so my best way out was a quick and fresh install on an isolated root partition. (my /home/ etc live on separate volumes)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Do we want an Open Source MySQL Monitoring tool  ?</title>
-      <link>http://localhost:1313/blog/do-we-want-open-source-mysql-monitoring-tool/</link>
+      <link>https://krisbuytaert.github.io/blog/do-we-want-open-source-mysql-monitoring-tool/</link>
       <pubDate>Tue, 18 Nov 2008 00:44:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/do-we-want-open-source-mysql-monitoring-tool/</guid>
+      <guid>https://krisbuytaert.github.io/blog/do-we-want-open-source-mysql-monitoring-tool/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://themattreid.com/wordpress/?p=77&#34;&gt;Matt Reid&lt;/a&gt; wants to know what we want in an Open Source MySQL monitoring solution ?&lt;/p&gt;&#xA;&lt;p&gt;He is working on the second incarnation of Monolith and wants input from the MySQL community.&lt;/p&gt;&#xA;&lt;p&gt;Now for me the bigger question is if we want an isolated tool that runs stand alone, or a tool which we can integrate it in something we already have.&lt;/p&gt;&#xA;&lt;p&gt;To me there is a difference between a tool that I want to use to debug my environment, such as Mytop or MySQL Activity Report, in that case I need some tool that quickly installs with little dependencies and little impact.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Defining Open Source</title>
-      <link>http://localhost:1313/blog/defining-open-source/</link>
+      <link>https://krisbuytaert.github.io/blog/defining-open-source/</link>
       <pubDate>Sun, 02 Nov 2008 20:45:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/defining-open-source/</guid>
+      <guid>https://krisbuytaert.github.io/blog/defining-open-source/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://bbbart.internationalgeneration.be/archives/2008/11/02/index.html#e2008-11-02T00_30_19.txt&#34;&gt;Bart&lt;/a&gt; wonders why my definition of Open Source is.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://opensource.org/docs/osd&#34;&gt;The Open Source Definition&lt;/a&gt; pretty much defines what Open Source is to me.&lt;/p&gt;&#xA;&lt;p&gt;But it&amp;rsquo;s mostly because of that definition that you get a lot of other things for free.&lt;/p&gt;&#xA;&lt;p&gt;It gives you freedom to learn, to improve, it gives you an ecosystem in which you can solve problems rather than having to tell your customer that your hands are tied and you can&amp;rsquo;t help them&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Want to be Social Network</title>
-      <link>http://localhost:1313/blog/want-be-social-network/</link>
+      <link>https://krisbuytaert.github.io/blog/want-be-social-network/</link>
       <pubDate>Sat, 01 Nov 2008 13:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/want-be-social-network/</guid>
+      <guid>https://krisbuytaert.github.io/blog/want-be-social-network/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://blogs.mysql.com/kaj/2008/10/31/dopplr-joining-the-social-network-for-travellers/&#34;&gt;Kaj&lt;/a&gt; wrote about using &lt;a href=&#34;http://www.dopplr.com/traveller/KrisBuytaert&#34;&gt;Dopplr&lt;/a&gt; to keep track of where colegues and friends are traveling and finding out about accidental meetups. (I even use it to track where one of the Inuits collegues work plans)&lt;br&gt;&#xA;Now I have never met &lt;a href=&#34;http://datacharmer.blogspot.com/&#34;&gt;Giuseppe&lt;/a&gt; , but we shared slides before so I&amp;rsquo;d love to meet him one day .. connecting to him via Dopplr gives me that opportunity .. who knows one day Dopplr will tell me we have matching travel schedules.&lt;/p&gt;</description>
     </item>
   </channel>
