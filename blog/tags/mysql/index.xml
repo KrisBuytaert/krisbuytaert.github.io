@@ -97,7 +97,7 @@
       <link>https://krisbuytaert.github.io/blog/loadays-cfp/</link>
       <pubDate>Thu, 11 Feb 2010 22:55:00 +0100</pubDate>
       <guid>https://krisbuytaert.github.io/blog/loadays-cfp/</guid>
-      <description>&lt;p&gt;I would like to point the crowd to the Call For Presentaions of Loadays. , the Linux Open Administration Days .&lt;/p&gt;&#xA;&lt;p&gt;&lt;br&gt;&#xA;The Linux Open Administration days 2010 will be the first edition of a new conference focusing on Linux and Open Administration, we are trying to fill a gap for System Engineers and Administrators using Open Source technologies&amp;quot;&lt;/p&gt;&#xA;&lt;p&gt;More details on the &lt;a href=&#34;http://loadays.org/news/call-presentations&#34;&gt;Linux Open Administration Days site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll probably be there .. given the fact that the event will be 5 minutes from where I live .&lt;/p&gt;</description>
+      <description>&lt;p&gt;I would like to point the crowd to the Call For Presentaions of Loadays. , the Linux Open Administration Days .&lt;/p&gt;&#xA;&lt;p&gt;The Linux Open Administration days 2010 will be the first edition of a new conference focusing on Linux and Open Administration, we are trying to fill a gap for System Engineers and Administrators using Open Source technologies&amp;quot;&lt;/p&gt;&#xA;&lt;p&gt;More details on the &lt;a href=&#34;http://loadays.org/news/call-presentations&#34;&gt;Linux Open Administration Days site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll probably be there .. given the fact that the event will be 5 minutes from where I live .&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fosdem 2010</title>
@@ -139,7 +139,7 @@
       <link>https://krisbuytaert.github.io/blog/nosql-vs-mysql/</link>
       <pubDate>Mon, 23 Nov 2009 22:17:00 +0100</pubDate>
       <guid>https://krisbuytaert.github.io/blog/nosql-vs-mysql/</guid>
-      <description>&lt;p&gt;No I did NOT post the following &lt;a href=&#34;http://www.ruturaj.net/redis-memcached-tokyo-tyrant-mysql-comparison#comment-22565&#34;&gt;comment&lt;/a&gt;&lt;br&gt;&#xA;&lt;br&gt;&#xA;This is ridiculous. You didn&amp;rsquo;t test MySQL, you tested a failing DNS lookup on authentication.&lt;/p&gt;&#xA;&lt;p&gt;resulting in the follow up &lt;a href=&#34;http://www.ruturaj.net/myisam-innodb&#34;&gt;post&lt;/a&gt; :&lt;/p&gt;&#xA;&lt;p&gt;&lt;br&gt;&#xA;My previous post Redis, Memcache, Tokyp Tyrant, MySQL comparison had a flaw as pointed out by this comment. The MySQL was taking a huge time for doing a reverse DNS lookup.\&lt;/p&gt;&#xA;&lt;p&gt;But as always &amp;hellip; Everything is just a Freaking dns problem :)&lt;/p&gt;</description>
+      <description>&lt;p&gt;No I did NOT post the following &lt;a href=&#34;http://www.ruturaj.net/redis-memcached-tokyo-tyrant-mysql-comparison#comment-22565&#34;&gt;comment&lt;/a&gt;&lt;br&gt;&#xA;This is ridiculous. You didn&amp;rsquo;t test MySQL, you tested a failing DNS lookup on authentication.&lt;/p&gt;&#xA;&lt;p&gt;resulting in the follow up &lt;a href=&#34;http://www.ruturaj.net/myisam-innodb&#34;&gt;post&lt;/a&gt; :&lt;/p&gt;&#xA;&lt;p&gt;My previous post Redis, Memcache, Tokyp Tyrant, MySQL comparison had a flaw as pointed out by this comment. The MySQL was taking a huge time for doing a reverse DNS lookup.\&lt;/p&gt;&#xA;&lt;p&gt;But as always &amp;hellip; Everything is just a Freaking dns problem :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Got Interviewed</title>

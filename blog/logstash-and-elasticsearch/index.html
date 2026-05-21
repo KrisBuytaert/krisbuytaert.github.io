@@ -34,7 +34,6 @@ Niels Bohr</p>
 wget -q -S -O - <a href="http://localhost:9200/_status?pretty=true" title="http://localhost:9200/_status?pretty=true">http://localhost:9200/_status?pretty=true</a></p>
 <p>But the web interface kept showing no results ;(</p>
 <p>While nagging about it on irc .. Jordan gave me the insight :<br>
-<br>
 2012-01-31.194347+0100CET.txt:(07:55:36 PM) whack: slight caveat that elasticsearch clients also join the cluster, so if you point everyone at 127.0.0.1:9300, that :9300 could be one of your clients, not the server\</p>
 <p>Indeed when you by accident start any of the logstash instances (server/shipper/web) before you start your ElasticSearch instance you can be in trouble.<br>
 Ordering really matters , you really need to start ElasticSearch before you start the clients.</p>

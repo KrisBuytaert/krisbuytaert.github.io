@@ -28,8 +28,6 @@
     <p>MonitoringSucks and we didn&rsquo;t fix it.</p>
 <p>Earlier this week <a href="http://www.inuits.eu/">Inuits</a> hosted a 2 day hackfest titled #MonitoringSucks. A good number of people with a variety of backgrounds showed up on monday morning. I don&rsquo;t know why but people had high expectations for this event , did they really expect us to fix the #monitoringsucks problem in a mere 2 days ?</p>
 <p>Next to myselve we had Patrick Debois , <a href="https://twitter.com/#!/gkarekinian">Grégory Karékinian</a>, <a href="https://twitter.com/#!/sjourdan">Stefan Jourdan</a>, <a href="https://twitter.com/#!/hatofmonkeys">Colin Humphreys</a>, <a href="https://twitter.com/#!/acrmp">Andrew Crump</a>, <a href="https://twitter.com/#!/ohadlevy/">Ohad Levy</a> , Frank Marien, Toshaan Bharvani, Devdas Bhagat,  <a href="https://twitter.com/#!/mpasternacki/">Maciej Pasternacki</a>  <a href="https://twitter.com/xtaran">Axel Beckert</a> <a href="https://twitter.com/#!/smetj/">Jelle Smet</a>, Noa Resare @blippie , John John Tedro @udoprog, Christian Trabold @ctrabold and obviously some people I missed<br>
-<br>
-<br>
 A good mixture of Fosdem visitors that stayed a litte longer in our cold country and locals with ideas. We had people from TomTom, RedHat , Spotify, Booking.com, Inuits, Atlassian, coming from Belgium, The Netherlands France, Israel, the UK, Sweden, Germany, Poland and Switzerland if I`m not mistaken.</p>
 <p>The format was pretty open, much of the first day was spend around the drawingboard.</p>
 <p><img src="http://www.krisbuytaert.be/images/drawingboard.jpg" alt="people around the drawingboard"><br>
@@ -47,16 +45,10 @@ A good mixture of Fosdem visitors that stayed a litte longer in our cold country
 </ul>
 <p>Obviously above list is far from complete.</p>
 <p><img src="http://www.krisbuytaert.be/images/morediscussions.jpg" alt=""><br>
-<br>
-<br>
 The afternoon discussion continued where we left of before lunch, just after the powercut. Only now we started refocussing on filtering and aggregating values using Logstash<br>
 @patrickdebois had been talking about the idea to use Logstash as a way to collect data , transform it and throw it either to another tool, or onto a Queue before.<br>
 Looking at Logstash it makes kind of sense. Logstash already has a zillion of input types, filters and outputs. Including popular queues such as amqp and zeromq. Yes, the default behaviour for a lot of people is to get data from different inputs, filter it and then send it to ElasticSearch, but much more is possible with the available outputs.</p>
-<p><br>
-<br>
-<img src="http://www.krisbuytaert.be/images/logstash.jpg" alt=""><br>
-<br>
-<br>
+<p><img src="http://www.krisbuytaert.be/images/logstash.jpg" alt=""><br>
 It was only on tuesday that people really started writing code<br>
 So what did really come out of the #monitoringsucks hackfest. ?</p>
 <p>A couple of people were working on packaging existing tools for their favourite distro. Others were working on integrating a number of other already existing tools (e.g Patrick working on more inputs for Logstash., me working on replacing logster with Logstash, setting up Kibana etc. New tools were learned, items were added to todolists (Kibana, (doesn&rsquo;t work on older Firefox instances) Tattle, statsd) and items were scratched from todolists (Graylog2 (Kibana replaces that as a good Frontend for Logstash) )</p>

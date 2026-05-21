@@ -20,7 +20,7 @@
       <link>https://krisbuytaert.github.io/blog/nosql-vs-mysql/</link>
       <pubDate>Mon, 23 Nov 2009 22:17:00 +0100</pubDate>
       <guid>https://krisbuytaert.github.io/blog/nosql-vs-mysql/</guid>
-      <description>&lt;p&gt;No I did NOT post the following &lt;a href=&#34;http://www.ruturaj.net/redis-memcached-tokyo-tyrant-mysql-comparison#comment-22565&#34;&gt;comment&lt;/a&gt;&lt;br&gt;&#xA;&lt;br&gt;&#xA;This is ridiculous. You didn&amp;rsquo;t test MySQL, you tested a failing DNS lookup on authentication.&lt;/p&gt;&#xA;&lt;p&gt;resulting in the follow up &lt;a href=&#34;http://www.ruturaj.net/myisam-innodb&#34;&gt;post&lt;/a&gt; :&lt;/p&gt;&#xA;&lt;p&gt;&lt;br&gt;&#xA;My previous post Redis, Memcache, Tokyp Tyrant, MySQL comparison had a flaw as pointed out by this comment. The MySQL was taking a huge time for doing a reverse DNS lookup.\&lt;/p&gt;&#xA;&lt;p&gt;But as always &amp;hellip; Everything is just a Freaking dns problem :)&lt;/p&gt;</description>
+      <description>&lt;p&gt;No I did NOT post the following &lt;a href=&#34;http://www.ruturaj.net/redis-memcached-tokyo-tyrant-mysql-comparison#comment-22565&#34;&gt;comment&lt;/a&gt;&lt;br&gt;&#xA;This is ridiculous. You didn&amp;rsquo;t test MySQL, you tested a failing DNS lookup on authentication.&lt;/p&gt;&#xA;&lt;p&gt;resulting in the follow up &lt;a href=&#34;http://www.ruturaj.net/myisam-innodb&#34;&gt;post&lt;/a&gt; :&lt;/p&gt;&#xA;&lt;p&gt;My previous post Redis, Memcache, Tokyp Tyrant, MySQL comparison had a flaw as pointed out by this comment. The MySQL was taking a huge time for doing a reverse DNS lookup.\&lt;/p&gt;&#xA;&lt;p&gt;But as always &amp;hellip; Everything is just a Freaking dns problem :)&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

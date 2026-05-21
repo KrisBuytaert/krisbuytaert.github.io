@@ -36,8 +36,7 @@ Setting up a dual-primary disk , with ocfs2 only mounting it on one node and sta
 3. pdsk(UpToDate -&gt; DUnknown )
 4. drbd0: asender terminated
 5. drbd0: Terminating asender thread
-</code></pre><p><br>
-That however is an expected error because of the reboot.</p>
+</code></pre><p>That however is an expected error because of the reboot.</p>
 <p>At first I assumed OCFS2 to be the root of this problem ..so I moved forward and setup an ISCSI target on a 3rd node, and used that device with the same OCFS2 setup. There no crashes occured and bonnie++ flawlessly completed it test run.</p>
 <p>So my attention went back to the combination of DRBD and OCFS<br>
 I tried both DRBD 8.2 drbd82-8.2.6-1.el5.centos kmod-drbd82-8.2.6-2 and the 83 variant from Centos Testing</p>

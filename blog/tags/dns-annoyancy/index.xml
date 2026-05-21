@@ -13,7 +13,7 @@
       <link>https://krisbuytaert.github.io/blog/week-dns-problems/</link>
       <pubDate>Wed, 21 Jan 2009 20:29:00 +0100</pubDate>
       <guid>https://krisbuytaert.github.io/blog/week-dns-problems/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://isc.sans.org/diary.html?storyid=5713&#34;&gt;SANS&lt;/a&gt; notes a weird DOS atack on different namesevers. People quering for &amp;ldquo;.&amp;rdquo; a lot.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://ward.vandewege.net/blog/2009/01/whats-going-on-with-the-org-nameservers/&#34;&gt;Ward&lt;/a&gt; wondering what&amp;rsquo;s going on with the .org nameservers&lt;/p&gt;&#xA;&lt;p&gt;And &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; migrating his site.&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;img src=&#34;http://www.krisbuytaert.be/images/buytaert.net.dns.png&#34; alt=&#34;&#34;&gt;\&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://isc.sans.org/diary.html?storyid=5713&#34;&gt;SANS&lt;/a&gt; notes a weird DOS atack on different namesevers. People quering for &amp;ldquo;.&amp;rdquo; a lot.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://ward.vandewege.net/blog/2009/01/whats-going-on-with-the-org-nameservers/&#34;&gt;Ward&lt;/a&gt; wondering what&amp;rsquo;s going on with the .org nameservers&lt;/p&gt;&#xA;&lt;p&gt;And &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; migrating his site.&lt;br&gt;&#xA;&lt;img src=&#34;http://www.krisbuytaert.be/images/buytaert.net.dns.png&#34; alt=&#34;&#34;&gt;\&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
