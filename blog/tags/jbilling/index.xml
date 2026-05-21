@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jbilling on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/jbilling/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/jbilling/</link>
     <description>Recent content in Jbilling on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Feb 2009 18:09:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/jbilling/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/jbilling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open Source does not mean Customization Heaven..</title>
-      <link>http://localhost:1313/blog/open-source-does-not-mean-customization-heaven/</link>
+      <link>https://krisbuytaert.github.io/blog/open-source-does-not-mean-customization-heaven/</link>
       <pubDate>Wed, 11 Feb 2009 18:09:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/open-source-does-not-mean-customization-heaven/</guid>
+      <guid>https://krisbuytaert.github.io/blog/open-source-does-not-mean-customization-heaven/</guid>
       <description>&lt;p&gt;Unless you are doing it wrong.&lt;/p&gt;&#xA;&lt;p&gt;And sadly I`m seeing more and more people doing it wrong.&lt;br&gt;&#xA;To a lot of people Open Source means that they have a piece of software that does almost what they want and which they can modify to their best wishes and use internally.&lt;/p&gt;&#xA;&lt;p&gt;So they fork locally,, they don&amp;rsquo;t redistribute their code , but they aren&amp;rsquo;t contributing their changes back upstream, chances are these changes wouldn&amp;rsquo;t be accepted upstream anyhow as they are really customizing the code for their specific cases. At first sight this doesn&amp;rsquo;t look so bad , at second sight ..&lt;/p&gt;</description>
     </item>
   </channel>

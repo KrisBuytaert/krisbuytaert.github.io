@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Squashfs on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/squashfs/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/squashfs/</link>
     <description>Recent content in Squashfs on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Jul 2009 16:08:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/squashfs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/squashfs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SquashFS errors during FC11 install</title>
-      <link>http://localhost:1313/blog/squashfs-errors-during-fc11-install/</link>
+      <link>https://krisbuytaert.github.io/blog/squashfs-errors-during-fc11-install/</link>
       <pubDate>Wed, 01 Jul 2009 16:08:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/squashfs-errors-during-fc11-install/</guid>
+      <guid>https://krisbuytaert.github.io/blog/squashfs-errors-during-fc11-install/</guid>
       <description>&lt;p&gt;My FC10 to FC11 yum upgrade got stuck on a zillion dependencies .. well actually libssl and mysql from Remi .. but from there it&amp;rsquo;s a whole chain of other things. So I had the great idea to go for the F11 Live CD, the LiveCD works like a charm,, only upon trying to install the live CD to my OS partition it started failing on me with a bunch of squashfs errors ,&lt;/p&gt;</description>
     </item>
   </channel>

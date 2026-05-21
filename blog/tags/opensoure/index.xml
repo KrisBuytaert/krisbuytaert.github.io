@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opensoure on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/opensoure/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/opensoure/</link>
     <description>Recent content in Opensoure on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Jan 2009 15:08:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/opensoure/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/opensoure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New interesting open Source releases</title>
-      <link>http://localhost:1313/blog/new-interesting-open-source-releases/</link>
+      <link>https://krisbuytaert.github.io/blog/new-interesting-open-source-releases/</link>
       <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/new-interesting-open-source-releases/</guid>
+      <guid>https://krisbuytaert.github.io/blog/new-interesting-open-source-releases/</guid>
       <description>&lt;p&gt;In case you haven&amp;rsquo;t noticed them yet ..&lt;br&gt;&#xA;&lt;a href=&#34;http://jan.kneschke.de/2009/1/13/mysql-proxy-public-repo-moved-to-launchpad&#34;&gt;MySQL Proxy&lt;/a&gt; has a new release and moved it&amp;rsquo;s public repo to Launchpad.&lt;/p&gt;&#xA;&lt;p&gt;(Still Launchpad isn&amp;rsquo;t open source yet .. a matter of time .. but in the meanwhile Jira and Confluence are sadly gaining adoption in the market)&lt;/p&gt;&#xA;&lt;p&gt;In the devministration area there is a new Puppet module that automagically populates puppet managed machines in &lt;a href=&#34;http://blog.zenoss.com/2009/01/13/new-zenoss-module-for-puppet/&#34;&gt;Zenoss&lt;/a&gt; , I&amp;rsquo;ve seen different people using Puppet to populate their Nagios configs, but adding Zenoss to the list is new.. so when will we see the Zabbix and Hyperic plugins ?&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lens on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/lens/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/lens/</link>
     <description>Recent content in Lens on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Jun 2011 16:26:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/lens/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/lens/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The case for Augeas</title>
-      <link>http://localhost:1313/blog/case-augeas/</link>
+      <link>https://krisbuytaert.github.io/blog/case-augeas/</link>
       <pubDate>Fri, 10 Jun 2011 16:26:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/case-augeas/</guid>
+      <guid>https://krisbuytaert.github.io/blog/case-augeas/</guid>
       <description>&lt;p&gt;Ever since I met David Lutterkort over steaks at OLS 2007 augeas was this tool in the back of my mind that I couldn&amp;rsquo;t place&amp;hellip; I never saw the need for it&amp;hellip; or it seemed to be huge overkill for the problem that needed solving .&lt;/p&gt;&#xA;&lt;p&gt;Till I ran into sipxecs rewriting XML files on the fly .. and putting values in their XML that I could not trace back to an original source. As of Augeas 0.8.x there&amp;rsquo;s an XML lens out there.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clementine on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/clementine/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/clementine/</link>
     <description>Recent content in Clementine on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Nov 2010 15:01:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/clementine/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/clementine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Musical Fedora Annoyancies.</title>
-      <link>http://localhost:1313/blog/musical-fedora-annoyancies/</link>
+      <link>https://krisbuytaert.github.io/blog/musical-fedora-annoyancies/</link>
       <pubDate>Thu, 11 Nov 2010 15:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/musical-fedora-annoyancies/</guid>
+      <guid>https://krisbuytaert.github.io/blog/musical-fedora-annoyancies/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://poke152.blogspot.com/&#34;&gt;Karl&lt;/a&gt; has been jokingly calling Fedora the Distribution if you don&amp;rsquo;t want sound.&lt;br&gt;&#xA;And I`m starting to believe him ..&lt;/p&gt;&#xA;&lt;p&gt;Over the past 3 days that I&amp;rsquo;m using Fedora 14 I&amp;rsquo;ve had random crashes&lt;br&gt;&#xA;Given that all my podcast feeds are configured in my favourite rhytmbox .. that&amp;rsquo;s what I started out with.. On my F12 setup it used to be pretty stable&amp;hellip; however it took me less than 15 minutes&lt;br&gt;&#xA;for the first crash&amp;hellip; and then another one .. and another one..&lt;br&gt;&#xA;So I started looking at other clients ..&lt;/p&gt;</description>
     </item>
   </channel>

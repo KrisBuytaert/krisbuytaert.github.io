@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Loadays on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/loadays/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/loadays/</link>
     <description>Recent content in Loadays on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Mar 2013 14:28:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/loadays/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/loadays/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Initial  loadays speakers announced</title>
-      <link>http://localhost:1313/blog/initial-loadays-speakers-announced/</link>
+      <link>https://krisbuytaert.github.io/blog/initial-loadays-speakers-announced/</link>
       <pubDate>Tue, 19 Mar 2013 14:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/initial-loadays-speakers-announced/</guid>
+      <guid>https://krisbuytaert.github.io/blog/initial-loadays-speakers-announced/</guid>
       <description>&lt;p&gt;Loadays is coming up soon .. 6 and 7 april ..&lt;br&gt;&#xA;Loadays is the Linux and Open Administration conference of the low lands , held in Antwerp, Belgium&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ve just published &lt;a href=&#34;http://loadays.org/pages/talks.html&#34;&gt;the initial&lt;/a&gt; batch of speakers&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Being a Sysadmin at a company full of Sysadmins&lt;/strong&gt; (Cody Herriges)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;OpenNebula Fundamentals&lt;/strong&gt; (Jaime Melis)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Integrate UEFI into REAR&lt;/strong&gt; (Gratien D&amp;rsquo;haese)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Puppet v3 and Hiera&lt;/strong&gt; (Garrett Honeycutt)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Integrating Linux into an Active Directory domain&lt;/strong&gt; (Gábor Nyers)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Normalised instance provisioning for dev, on-premise and public clouds&lt;/strong&gt; (Karanbir Singh)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;C.R.E.A.M : Cache Rules Everything Around Me&lt;/strong&gt; (Thijs Feryn)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;OpenLDAP&amp;rsquo;s Lightning Memory-Mapped DB&lt;/strong&gt; (Howard Chu)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;What&amp;rsquo;s new in syslog-ng&lt;/strong&gt; (Peter Czanik)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Introduction to Ansible&lt;/strong&gt; (Jan Piet Mens)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Network Block Device: network-based block storage for Linux systems&lt;/strong&gt; (Wouter Verhelst)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Tutorials&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux Open Administration Days 2010</title>
-      <link>http://localhost:1313/blog/linux-open-administration-days-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</link>
       <pubDate>Tue, 20 Apr 2010 21:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/linux-open-administration-days-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</guid>
       <description>&lt;p&gt;So about 4 monts ago &lt;a href=&#34;http://blog.bdesmet.be/?p=272&#34;&gt;there was the crazy idea&lt;/a&gt; to start a new FOSS event in Belgium targeted at sysadmins.&lt;/p&gt;&#xA;&lt;p&gt;What started out as an event for local people to meet local people with some local speakers actually ended up being a small local event with some top international speakers on onfiguration mananagement and system administration mixed with a bunch of good local ones !&lt;/p&gt;&#xA;&lt;p&gt;I had the honour to open the conference with an extremely short version of the Devops talk I gave earlier last year.. extremely short as I knew that over the course of the weekend the topic would reoccur a lot.&lt;/p&gt;</description>
     </item>
     <item>
       <title>11 days till Loadays</title>
-      <link>http://localhost:1313/blog/11-days-till-loadays/</link>
+      <link>https://krisbuytaert.github.io/blog/11-days-till-loadays/</link>
       <pubDate>Tue, 30 Mar 2010 22:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/11-days-till-loadays/</guid>
+      <guid>https://krisbuytaert.github.io/blog/11-days-till-loadays/</guid>
       <description>&lt;p&gt;That&amp;rsquo;s right .. only 11 more &amp;hellip;&lt;br&gt;&#xA;The &lt;a href=&#34;http://www.loadays.org/schedule&#34;&gt;schedule&lt;/a&gt; looks promising, there will be some devops juice, some open spaces, some tutorials, som regular talks .. it really looks promising &amp;hellip; the schedule is packed ,&lt;/p&gt;&#xA;&lt;p&gt;Apart from the talks, tutorials and open spaces there&amp;rsquo;s also the&lt;br&gt;&#xA;Pizza party and the Beer event on saturday &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;No need to register .. just show up ..&lt;/p&gt;</description>
     </item>
   </channel>

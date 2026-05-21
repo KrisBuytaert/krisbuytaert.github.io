@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogging on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/blogging/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/blogging/</link>
     <description>Recent content in Blogging on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Sep 2009 21:25:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#34;Idle&#34;</title>
-      <link>http://localhost:1313/blog/idle/</link>
+      <link>https://krisbuytaert.github.io/blog/idle/</link>
       <pubDate>Wed, 23 Sep 2009 21:25:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/idle/</guid>
+      <guid>https://krisbuytaert.github.io/blog/idle/</guid>
       <description>&lt;p&gt;For those who wonder why my blogging is so low these days (apart from today) .. I`m actually writing more Lines of Code than Blog Entries the last couple of weeks:)&lt;/p&gt;&#xA;&lt;p&gt;And when I&lt;code&gt;m not writing code I&lt;/code&gt;m reading :) Either proofreading an upcoming book on &lt;a href=&#34;http://www.packtpub.com/zabbix-1-6-network-monitoring/book&#34;&gt;Zabbix&lt;/a&gt; or reading &lt;a href=&#34;http://www.packtpub.com/build-social-networking-website-with-drupal-6/book&#34;&gt;some&lt;/a&gt; of the &lt;a href=&#34;http://www.packtpub.com/building-enterprise-ready-telephony-systems-with-sipxecs-4-0/book&#34;&gt;other&lt;/a&gt; books Packt sent me.&lt;/p&gt;&#xA;&lt;p&gt;Next to that I`m busy preparing &lt;a href=&#34;http://www.t-dose.org/2009/talk/virtsec&#34;&gt;my T-Dose&lt;/a&gt; presentation&lt;/p&gt;&#xA;&lt;p&gt;Oh and did I mention a 40 something questions questionnaire about some merger ?&lt;/p&gt;</description>
     </item>
   </channel>

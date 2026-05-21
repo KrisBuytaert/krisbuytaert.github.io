@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marketeers on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/marketeers/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/marketeers/</link>
     <description>Recent content in Marketeers on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Apr 2009 21:21:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/marketeers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/marketeers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CloudCamp Antwerp</title>
-      <link>http://localhost:1313/blog/cloudcamp-antwerp-0/</link>
+      <link>https://krisbuytaert.github.io/blog/cloudcamp-antwerp-0/</link>
       <pubDate>Fri, 10 Apr 2009 21:21:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/cloudcamp-antwerp-0/</guid>
+      <guid>https://krisbuytaert.github.io/blog/cloudcamp-antwerp-0/</guid>
       <description>&lt;p&gt;So yesterday a 100+ crowd met in the Antwerp Zoo.&lt;br&gt;&#xA;I heard different comments from that crowd&amp;hellip; some of them liked the event, good networking, interresting topics , a broad overview, meeting new vendors active in the Cloud, others of them didn&amp;rsquo;t .. it wasn&amp;rsquo;t a real camp , just some vendors pitching, they didn&amp;rsquo;t hear any new stuff , or we didn&amp;rsquo;t touch the real stuff.&lt;/p&gt;&#xA;&lt;p&gt;So different opinions from different expectations&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>

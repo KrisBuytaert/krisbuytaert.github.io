@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sun on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/sun/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/sun/</link>
     <description>Recent content in Sun on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Sep 2009 21:25:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/sun/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/sun/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#34;Idle&#34;</title>
-      <link>http://localhost:1313/blog/idle/</link>
+      <link>https://krisbuytaert.github.io/blog/idle/</link>
       <pubDate>Wed, 23 Sep 2009 21:25:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/idle/</guid>
+      <guid>https://krisbuytaert.github.io/blog/idle/</guid>
       <description>&lt;p&gt;For those who wonder why my blogging is so low these days (apart from today) .. I`m actually writing more Lines of Code than Blog Entries the last couple of weeks:)&lt;/p&gt;&#xA;&lt;p&gt;And when I&lt;code&gt;m not writing code I&lt;/code&gt;m reading :) Either proofreading an upcoming book on &lt;a href=&#34;http://www.packtpub.com/zabbix-1-6-network-monitoring/book&#34;&gt;Zabbix&lt;/a&gt; or reading &lt;a href=&#34;http://www.packtpub.com/build-social-networking-website-with-drupal-6/book&#34;&gt;some&lt;/a&gt; of the &lt;a href=&#34;http://www.packtpub.com/building-enterprise-ready-telephony-systems-with-sipxecs-4-0/book&#34;&gt;other&lt;/a&gt; books Packt sent me.&lt;/p&gt;&#xA;&lt;p&gt;Next to that I`m busy preparing &lt;a href=&#34;http://www.t-dose.org/2009/talk/virtsec&#34;&gt;my T-Dose&lt;/a&gt; presentation&lt;/p&gt;&#xA;&lt;p&gt;Oh and did I mention a 40 something questions questionnaire about some merger ?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dear IBM</title>
-      <link>http://localhost:1313/blog/dear-ibm/</link>
+      <link>https://krisbuytaert.github.io/blog/dear-ibm/</link>
       <pubDate>Mon, 06 Apr 2009 21:48:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/dear-ibm/</guid>
+      <guid>https://krisbuytaert.github.io/blog/dear-ibm/</guid>
       <description>&lt;p&gt;When you eventually will buy Sun ..&lt;/p&gt;&#xA;&lt;p&gt;Oh nooos.. I started this post last week and now it al seems in vain :(&lt;/p&gt;&#xA;&lt;p&gt;Steven has some clues on what could have &lt;a href=&#34;http://blogs.computerworld.com/good_bye_solaris_the_fate_of_suns_top_5_technologies&#34;&gt;happened&lt;/a&gt;, I think he is right on the spot on with his Solaris prediction ..&lt;/p&gt;&#xA;&lt;p&gt;He wonders why IBM would spend even another dime on Solaris, actually even today I can&amp;rsquo;t even see why Sun is spending any more money on developing Solaris. But even with no acquisition his prediction of the future of Open Solaris imvho is spot on:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Conspiracy Theory</title>
-      <link>http://localhost:1313/blog/conspiracy-theory/</link>
+      <link>https://krisbuytaert.github.io/blog/conspiracy-theory/</link>
       <pubDate>Sun, 08 Mar 2009 14:13:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/conspiracy-theory/</guid>
+      <guid>https://krisbuytaert.github.io/blog/conspiracy-theory/</guid>
       <description>&lt;p&gt;&lt;code&gt;&amp;lt;conspiracy mode&amp;gt;&lt;/code&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://nxadm.wordpress.com/2009/03/03/still-no-javafx-for-linux/&#34;&gt;Claudio&lt;/a&gt; , Isn&amp;rsquo;t it obvious, Sun doesn&amp;rsquo;t want you to use Linux, they will do everything in their power to prevent that , such as slowing down releases of software for our preferred platform, so that you might even start to consider choosing for Slowaris&lt;br&gt;&#xA;&lt;code&gt;&amp;lt;/conspiracy mode&amp;gt;&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open Source does not mean Customization Heaven..</title>
-      <link>http://localhost:1313/blog/open-source-does-not-mean-customization-heaven/</link>
+      <link>https://krisbuytaert.github.io/blog/open-source-does-not-mean-customization-heaven/</link>
       <pubDate>Wed, 11 Feb 2009 18:09:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/open-source-does-not-mean-customization-heaven/</guid>
+      <guid>https://krisbuytaert.github.io/blog/open-source-does-not-mean-customization-heaven/</guid>
       <description>&lt;p&gt;Unless you are doing it wrong.&lt;/p&gt;&#xA;&lt;p&gt;And sadly I`m seeing more and more people doing it wrong.&lt;br&gt;&#xA;To a lot of people Open Source means that they have a piece of software that does almost what they want and which they can modify to their best wishes and use internally.&lt;/p&gt;&#xA;&lt;p&gt;So they fork locally,, they don&amp;rsquo;t redistribute their code , but they aren&amp;rsquo;t contributing their changes back upstream, chances are these changes wouldn&amp;rsquo;t be accepted upstream anyhow as they are really customizing the code for their specific cases. At first sight this doesn&amp;rsquo;t look so bad , at second sight ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Eclipse of Sun</title>
-      <link>http://localhost:1313/blog/eclipse-sun/</link>
+      <link>https://krisbuytaert.github.io/blog/eclipse-sun/</link>
       <pubDate>Sat, 06 Dec 2008 11:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/eclipse-sun/</guid>
+      <guid>https://krisbuytaert.github.io/blog/eclipse-sun/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;ve been reading this blog for a while you&amp;rsquo;ll know that&lt;br&gt;&#xA;for the past decade I&amp;rsquo;ve had a love-hate relation ship with Sun.&lt;/p&gt;&#xA;&lt;p&gt;Sun has done a lot of good things in their open source journey such as MySQL, openOffice , Virtualbox and opensourcing Java. But on the other hand they had troubles with creating really organic opensource.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve always wondered why a company that bought StarDivision because it was cheaper than buying the MS Office license keeps wasting money on building it&amp;rsquo;s own operating systems, albeit in a pretty open model, but with zero to no relevant community.&lt;/p&gt;</description>
     </item>
     <item>
       <title>On the Future of Lustre</title>
-      <link>http://localhost:1313/blog/future-lustre/</link>
+      <link>https://krisbuytaert.github.io/blog/future-lustre/</link>
       <pubDate>Fri, 14 Sep 2007 11:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/future-lustre/</guid>
+      <guid>https://krisbuytaert.github.io/blog/future-lustre/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.prnewswire.com/cgi-bin/stories.pl?ACCT=104&amp;amp;STORY=/www/story/09-12-2007/0004661104&amp;amp;EDATE&#34;&gt;&lt;br&gt;&#xA;So Sun bought ClusterFS&lt;/a&gt;. I&lt;code&gt;m wondering what their focus will be now. What will be the prime platform on which Lustre will be developed Solaris or Linux ? Will other efforts in the open source cluster filesystem area react on this ? Will Lustre development speed up ? Will management become less complex ?\ Time will tell .. I&lt;/code&gt;m keeping an eye on it&lt;/p&gt;</description>
     </item>
   </channel>

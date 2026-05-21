@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>History on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/history/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/history/</link>
     <description>Recent content in History on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Apr 2010 23:15:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/history/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/history/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Devops and Cloud</title>
-      <link>http://localhost:1313/blog/devops-and-cloud/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-and-cloud/</link>
       <pubDate>Wed, 28 Apr 2010 23:15:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-and-cloud/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-and-cloud/</guid>
       <description>&lt;p&gt;Whenever I give my Cloud security talk there&amp;rsquo;s a slide in there talking about the most scary idea about Cloud and Security, the fact that Marketing people will build things on their own while IT, or any other departement isn&amp;rsquo;t involved, and as we all know marketing people have no clue about security, it&amp;rsquo;s not on their mind they won&amp;rsquo;t even think about adding some sort of security to their application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Happy 15th Birthday Linux ??</title>
-      <link>http://localhost:1313/blog/happy-15th-birthday-linux/</link>
+      <link>https://krisbuytaert.github.io/blog/happy-15th-birthday-linux/</link>
       <pubDate>Tue, 17 Mar 2009 22:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/happy-15th-birthday-linux/</guid>
+      <guid>https://krisbuytaert.github.io/blog/happy-15th-birthday-linux/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://i.gizmodo.com/5169216/happy-15th-birthday-linux?skyline=true&amp;amp;s=x&#34;&gt;Last Friday&lt;/a&gt; that&amp;rsquo;s march 13th, Gizmodo wanted us to celebrated the 15th birthday of Linux. Kinda weird&amp;hellip; as about 15 years ago I was already using Linux &amp;hellip;.&lt;/p&gt;&#xA;&lt;p&gt;Fact is that the 1.0 release of Linux just had it&amp;rsquo;s 15th birthday , but Linux itself is heading towards its 18th in september.&lt;/p&gt;&#xA;&lt;p&gt;Getting old ..both of us :)&lt;/p&gt;&#xA;&lt;p&gt;So when trying to catch up on my Linux Journal reading I ran into the &lt;a href=&#34;http://www.linuxjournal.com/article/10370&#34;&gt;15 years of Linux Journal&lt;/a&gt; article, which makes a lot more sense than 15 year of Linux.&lt;/p&gt;</description>
     </item>
   </channel>

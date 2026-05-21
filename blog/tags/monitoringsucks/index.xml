@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Monitoringsucks on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/monitoringsucks/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/monitoringsucks/</link>
     <description>Recent content in Monitoringsucks on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Feb 2013 19:10:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/monitoringsucks/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/monitoringsucks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Love, MonitoringLove</title>
-      <link>http://localhost:1313/blog/love-monitoringlove/</link>
+      <link>https://krisbuytaert.github.io/blog/love-monitoringlove/</link>
       <pubDate>Wed, 13 Feb 2013 19:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/love-monitoringlove/</guid>
+      <guid>https://krisbuytaert.github.io/blog/love-monitoringlove/</guid>
       <description>&lt;p&gt;Last year we were pretty negative about Monitoring, We shouted out that MonitoringSucked &amp;hellip; A year has passed and a lot has changed &amp;hellip; most importantly our new found love for monitoring, thanks to an inspirational Ignite talk by &lt;a href=&#34;https://twitter.com/ulfmansson&#34;&gt;Ulf Mansson&lt;/a&gt; at devopsdays Rome.&lt;/p&gt;&#xA;&lt;p&gt;Right after Fosdem about 20 people showed up at the #monitoringlove hacksessions hosted at the &lt;a href=&#34;http://www.inuits.eu/&#34;&gt;Inuits.eu&lt;/a&gt; offices to work on Open Source monitoring projects and exchange ideas. Some completely new people, some people with already a lot of experience.&lt;/p&gt;</description>
     </item>
     <item>
       <title>check_graphite</title>
-      <link>http://localhost:1313/blog/checkgraphite/</link>
+      <link>https://krisbuytaert.github.io/blog/checkgraphite/</link>
       <pubDate>Tue, 05 Feb 2013 11:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/checkgraphite/</guid>
+      <guid>https://krisbuytaert.github.io/blog/checkgraphite/</guid>
       <description>&lt;p&gt;During my Puppetcamp Gent talk last week, I explained how to get alerts based on trends from graphite. A number of people asked ,e how to do that.&lt;/p&gt;&#xA;&lt;p&gt;First lets quickly explain why you might want to do that .&lt;br&gt;&#xA;Sometimes you don&amp;rsquo;t care about the current value of a metric..as an example take a Queing system .. there is no problem if there are messages added to the queue, not even if there are a lot of messages on the queue, there might however be a problem if over a certain period the number of messages on a queue stays to high.&lt;/p&gt;</description>
     </item>
     <item>
       <title>#monitoringlove hackfest</title>
-      <link>http://localhost:1313/blog/monitoringlove-hackfest/</link>
+      <link>https://krisbuytaert.github.io/blog/monitoringlove-hackfest/</link>
       <pubDate>Tue, 13 Nov 2012 22:54:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monitoringlove-hackfest/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monitoringlove-hackfest/</guid>
       <description>&lt;p&gt;The age of #monitoringsucks is over, we&amp;rsquo;re now transitioning into a #monitoringlove period.&lt;/p&gt;&#xA;&lt;p&gt;That however doesn&amp;rsquo;t mean al the work is done, we still need to do a lot of work and a lot of people are working on a lot of stuff.&lt;/p&gt;&#xA;&lt;p&gt;Therefore like last year we are opening up our offices again right after Fosdem for a #monitoringlove hackfest&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s right on february 4 and 5 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp. In short a #monitoringlove hackathon&lt;/p&gt;</description>
     </item>
     <item>
       <title>Our #monitoringsucks rpm is repository available</title>
-      <link>http://localhost:1313/blog/our-monitoringsucks-rpm-repository-available/</link>
+      <link>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</link>
       <pubDate>Sat, 11 Aug 2012 21:49:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/our-monitoringsucks-rpm-repository-available/</guid>
+      <guid>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</guid>
       <description>&lt;p&gt;Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.&lt;/p&gt;&#xA;&lt;p&gt;You might have noticed a variety of vagrant- projects on my github acount&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-ganglia&#34;&gt;http://github.com/KrisBuytaert/vagrant-ganglia&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-graphite&#34;&gt;http://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-puppet-logstash&#34;&gt;http://github.com/KrisBuytaert/vagrant-puppet-logstash,&lt;/a&gt;&lt;br&gt;&#xA;Being the #monitoringsucks part of them. All of those Vagrant projects are basically my test setups to play with those new tools.&lt;/p&gt;&#xA;&lt;p&gt;They contain a bunch of puppet modules that install and configure these tools. (Note that they mostly consist of&lt;br&gt;&#xA;of git submodules to other puppet module repositories.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The ultimate 2012 open source and devops conference</title>
-      <link>http://localhost:1313/blog/ultimate-2012-open-source-and-devops-conference/</link>
+      <link>https://krisbuytaert.github.io/blog/ultimate-2012-open-source-and-devops-conference/</link>
       <pubDate>Sat, 11 Feb 2012 00:15:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/ultimate-2012-open-source-and-devops-conference/</guid>
+      <guid>https://krisbuytaert.github.io/blog/ultimate-2012-open-source-and-devops-conference/</guid>
       <description>&lt;p&gt;Kent Skaar pinged me last week , asking for feedback on Lisa&#39;11 and input for Lisa 2012.&lt;/p&gt;&#xA;&lt;p&gt;Thought I should share my advise to him with the rest of the world&lt;/p&gt;&#xA;&lt;p&gt;So If I were to host an event similar to Lisa I&amp;rsquo;d had either&lt;br&gt;&#xA;Jordan Sissel or Mitchell Hashimoto give the keynote because over the past 24 months those people have written more relevant tools for me than anyone else :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>We didn&#39;t fix it</title>
-      <link>http://localhost:1313/blog/we-didnt-fix-it/</link>
+      <link>https://krisbuytaert.github.io/blog/we-didnt-fix-it/</link>
       <pubDate>Fri, 10 Feb 2012 01:03:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/we-didnt-fix-it/</guid>
+      <guid>https://krisbuytaert.github.io/blog/we-didnt-fix-it/</guid>
       <description>&lt;p&gt;MonitoringSucks and we didn&amp;rsquo;t fix it.&lt;/p&gt;&#xA;&lt;p&gt;Earlier this week &lt;a href=&#34;http://www.inuits.eu/&#34;&gt;Inuits&lt;/a&gt; hosted a 2 day hackfest titled #MonitoringSucks. A good number of people with a variety of backgrounds showed up on monday morning. I don&amp;rsquo;t know why but people had high expectations for this event , did they really expect us to fix the #monitoringsucks problem in a mere 2 days ?&lt;/p&gt;&#xA;&lt;p&gt;Next to myselve we had Patrick Debois , &lt;a href=&#34;https://twitter.com/#!/gkarekinian&#34;&gt;Grégory Karékinian&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/#!/sjourdan&#34;&gt;Stefan Jourdan&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/#!/hatofmonkeys&#34;&gt;Colin Humphreys&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/#!/acrmp&#34;&gt;Andrew Crump&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/#!/ohadlevy/&#34;&gt;Ohad Levy&lt;/a&gt; , Frank Marien, Toshaan Bharvani, Devdas Bhagat,  &lt;a href=&#34;https://twitter.com/#!/mpasternacki/&#34;&gt;Maciej Pasternacki&lt;/a&gt;  &lt;a href=&#34;https://twitter.com/xtaran&#34;&gt;Axel Beckert&lt;/a&gt; &lt;a href=&#34;https://twitter.com/#!/smetj/&#34;&gt;Jelle Smet&lt;/a&gt;, Noa Resare @blippie , John John Tedro @udoprog, Christian Trabold @ctrabold and obviously some people I missed&lt;br&gt;&#xA;A good mixture of Fosdem visitors that stayed a litte longer in our cold country and locals with ideas. We had people from TomTom, RedHat , Spotify, Booking.com, Inuits, Atlassian, coming from Belgium, The Netherlands France, Israel, the UK, Sweden, Germany, Poland and Switzerland if I`m not mistaken.&lt;/p&gt;</description>
     </item>
     <item>
       <title>#monitoringsucks hackathon  6&amp;7 february  Practical details:</title>
-      <link>http://localhost:1313/blog/monitoringsucks-hackathon-67-february-practical-details/</link>
+      <link>https://krisbuytaert.github.io/blog/monitoringsucks-hackathon-67-february-practical-details/</link>
       <pubDate>Wed, 01 Feb 2012 09:48:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monitoringsucks-hackathon-67-february-practical-details/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monitoringsucks-hackathon-67-february-practical-details/</guid>
       <description>&lt;p&gt;As announced &lt;a href=&#34;http://www.krisbuytaert.be/blog/monitoringsucks-and-well-fix-it&#34;&gt;earlier&lt;/a&gt; next monday and tuesday we&amp;rsquo;re opening up the Inuits offices for everybody working on monitoring problems.&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s already a &lt;a href=&#34;https://github.com/monitoringsucks/werefixingit/wiki&#34;&gt;good number of people&lt;/a&gt; that have confirmed their presence and some people have asked&lt;/p&gt;&#xA;&lt;p&gt;As for practical details .. the plan is simple.&lt;br&gt;&#xA;I`m going to be at the place somewhere between 8:30 and 9:00 on monday. ( Hey .. it&amp;rsquo;s the day after Fosdem you know :))&lt;/p&gt;&#xA;&lt;p&gt;The only thing I&amp;rsquo;ve planned is to do a get to know eachother round around 10:30 after that I`m expecting the hackathon to be self organising,&lt;/p&gt;</description>
     </item>
     <item>
       <title>Graphite, JMXTrans, Ganglia, Logster, Collectd,  say what  ?</title>
-      <link>http://localhost:1313/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</link>
+      <link>https://krisbuytaert.github.io/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</link>
       <pubDate>Tue, 03 Jan 2012 22:46:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</guid>
+      <guid>https://krisbuytaert.github.io/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</guid>
       <description>&lt;p&gt;Given that @patrickdebois is working on improving data collection I thought it would be a good idea to describe the setup I currently have hacked together.&lt;/p&gt;&#xA;&lt;p&gt;(Something which can be used as a starting point to improve stuff, and I have to write documentation anyhow)&lt;/p&gt;&#xA;&lt;p&gt;I currently have 3 sources , and one target, which will eventually expand to at least another target and most probably more sources too.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/VagrantGraphite.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>#monitoringsucks and we&#39;ll fix it !</title>
-      <link>http://localhost:1313/blog/monitoringsucks-and-well-fix-it/</link>
+      <link>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</link>
       <pubDate>Tue, 03 Jan 2012 20:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monitoringsucks-and-well-fix-it/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</guid>
       <description>&lt;p&gt;If you are hacking on monitoring solutions, and want to talk to your peers solving the problem&lt;br&gt;&#xA;Block the monday and tuesday after fosdem in your calendar !&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp&lt;/p&gt;&#xA;&lt;p&gt;In short a #monitoringsucks hackathon&lt;/p&gt;&#xA;&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp&lt;/p&gt;</description>
     </item>
   </channel>

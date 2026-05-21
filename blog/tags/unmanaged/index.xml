@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unmanaged on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/unmanaged/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/unmanaged/</link>
     <description>Recent content in Unmanaged on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 10 Feb 2011 21:20:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/unmanaged/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/unmanaged/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ensure Running</title>
-      <link>http://localhost:1313/blog/ensure-running/</link>
+      <link>https://krisbuytaert.github.io/blog/ensure-running/</link>
       <pubDate>Thu, 10 Feb 2011 21:20:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/ensure-running/</guid>
+      <guid>https://krisbuytaert.github.io/blog/ensure-running/</guid>
       <description>&lt;p&gt;Has anyone noticed that pretty much every puppet module one finds on the internet by default enables the service they try to configure in the module&lt;/p&gt;&#xA;&lt;p&gt;When looking at it from a single machine point of view it makes sense to include the module , have it configure your service and directly enable it by default.&lt;/p&gt;&#xA;&lt;p&gt;So I started wondering .. isn&amp;rsquo;t there anybody out there who is building clusters ? Where services have to configured on multiple nodes but should NOT be running acitvely on all nodes by default because there is an external tool which manages that for you (Pacemaker framework eg.)&lt;/p&gt;</description>
     </item>
   </channel>

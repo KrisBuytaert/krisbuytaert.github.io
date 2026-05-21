@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gent on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/gent/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/gent/</link>
     <description>Recent content in Gent on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Nov 2009 21:32:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/gent/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/gent/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A long overdue report of DevopsDays</title>
-      <link>http://localhost:1313/blog/long-overdue-report-devopsdays/</link>
+      <link>https://krisbuytaert.github.io/blog/long-overdue-report-devopsdays/</link>
       <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/long-overdue-report-devopsdays/</guid>
+      <guid>https://krisbuytaert.github.io/blog/long-overdue-report-devopsdays/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s how it started :&lt;/p&gt;&#xA;&lt;p&gt;So I used to be a software developer, writing perl for the web, then C, then Java, then PHP, till I realized nobody ever configured my servers correctly and I changed trades becoming a system engineer, while teaching new developers the basics of their trade, whom grew into doing Infrastructure Architecture .. familiar story for much of the crowd at DevopsDays &amp;hellip; a crowd that wants to stopping the war between developers and system engineering , a crowd that wants to automate builds, integrate testing, deploy, deploy on very large scale, deploy in the cloud and much more.&lt;/p&gt;</description>
     </item>
   </channel>

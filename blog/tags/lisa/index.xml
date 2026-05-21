@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lisa on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/lisa/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/lisa/</link>
     <description>Recent content in Lisa on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Dec 2011 20:10:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/lisa/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/lisa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lisa 2011</title>
-      <link>http://localhost:1313/blog/lisa-2011/</link>
+      <link>https://krisbuytaert.github.io/blog/lisa-2011/</link>
       <pubDate>Wed, 14 Dec 2011 20:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/lisa-2011/</guid>
+      <guid>https://krisbuytaert.github.io/blog/lisa-2011/</guid>
       <description>&lt;p&gt;Last week I was in Boston for my 1st and their 25th Edition of the Large Infrastructure System Administration Conferences&lt;br&gt;&#xA;Lisa was pretty much all I expected from it. Old Unix wizards with long hair and white beards, the usual suspects, and a mix of devops practitioners on a devops themed conference with on one side awesome and well positioned content and on the other side absolutely basic stuff.&lt;/p&gt;&#xA;&lt;p&gt;On tuesday I had a devops bof scheduled for 2 hours.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UKUUG Spring 2009 Conference,  the after post</title>
-      <link>http://localhost:1313/blog/ukuug-spring-2009-conference-after-post/</link>
+      <link>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-after-post/</link>
       <pubDate>Tue, 31 Mar 2009 19:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/ukuug-spring-2009-conference-after-post/</guid>
+      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-after-post/</guid>
       <description>&lt;p&gt;Last week the &lt;a href=&#34;http://www.ukuug.org/events/spring2009/&#34;&gt;UKUUG Spring , Large Scale Infrastructure conference&lt;/a&gt; took place in London,&lt;/p&gt;&#xA;&lt;p&gt;Altough only 1 track was scheduled, the content was very good, some talks were a bit short, others were a bit too long. And luckily the talks that didn&amp;rsquo;t really bring me new content were entertaining :) Also the after conf chatter in the pub across the street was so much fun we almost failed to catch our plane back to Antwerp.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What does your BOFH want ? :)</title>
-      <link>http://localhost:1313/blog/what-does-your-bofh-want/</link>
+      <link>https://krisbuytaert.github.io/blog/what-does-your-bofh-want/</link>
       <pubDate>Thu, 29 Jan 2009 00:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/what-does-your-bofh-want/</guid>
+      <guid>https://krisbuytaert.github.io/blog/what-does-your-bofh-want/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.garfieldtech.com/blog/drupal-system-tools&#34;&gt;Larry&lt;/a&gt;, I`m glad you asked ..&lt;/p&gt;&#xA;&lt;p&gt;With the risk of receiving a flood of comments pointing me to already existing tools here&amp;rsquo;s my go at what I as a sysadmin of often large deployments am looking for in Drupalland .&lt;/p&gt;&#xA;&lt;p&gt;You suggest LDAP and syslog integration .. guess we already have that don&amp;rsquo;t we ?&lt;/p&gt;&#xA;&lt;p&gt;But what I haven&amp;rsquo;t found yet ..&lt;br&gt;&#xA;An rpm/deb repository of Drupal modules So we can do an apt-get install drupal-package , yes I know about Drush, but I want the files on my system to be in a package and clearly identified, it helps me keeping my system uncluttered.&lt;/p&gt;</description>
     </item>
   </channel>

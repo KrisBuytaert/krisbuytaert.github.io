@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Openais on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/openais/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/openais/</link>
     <description>Recent content in Openais on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Oct 2009 20:53:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/openais/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/openais/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Heartbeat 2 OpenAIS</title>
-      <link>http://localhost:1313/blog/heartbeat-2-openais/</link>
+      <link>https://krisbuytaert.github.io/blog/heartbeat-2-openais/</link>
       <pubDate>Fri, 16 Oct 2009 20:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/heartbeat-2-openais/</guid>
+      <guid>https://krisbuytaert.github.io/blog/heartbeat-2-openais/</guid>
       <description>&lt;p&gt;While upgrading a pretty recent Heartbeat cluster to OpenAis earlier today I ran into the following weird situation\&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. Last updated: Fri Oct 16 08:50:03 2009&#xA;2. Stack: openais&#xA;3. Current DC: CO_NMS-1 - partition with quorum&#xA;4. Version: 1.0.5-462f1569a43740667daf7b0f6b521742e9eb8fa7&#xA;5. 4 Nodes configured, 2 expected votes&#xA;6. 1 Resources configured.&#xA;7. ============&#xA;&#xA;9. Online: [ CO_NMS-1 CO_NMS-2 ]&#xA;10. OFFLINE: [ co_nms-1 co_nms-2 ]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. crm(live)node# show&#xA;2. co_nms-1(5c48ab4f-767f-e2dc-20ec-5969cddad152): normal&#xA;3. co_nms-2(922ff786-eca9-bed0-d79d-8222727a2c5b): normal&#xA;4. CO_NMS-1: normal&#xA;5. CO_NMS-2: normal&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Whohoo.. OpenAIS must have realized I have upperase and lowercase cores :)&lt;/p&gt;</description>
     </item>
   </channel>

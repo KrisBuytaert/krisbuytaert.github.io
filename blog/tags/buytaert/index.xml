@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Buytaert on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/buytaert/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/buytaert/</link>
     <description>Recent content in Buytaert on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 14 Jun 2010 21:32:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/buytaert/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/buytaert/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FAQ:</title>
-      <link>http://localhost:1313/blog/faq/</link>
+      <link>https://krisbuytaert.github.io/blog/faq/</link>
       <pubDate>Mon, 14 Jun 2010 21:32:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/faq/</guid>
+      <guid>https://krisbuytaert.github.io/blog/faq/</guid>
       <description>&lt;p&gt;Q: Is &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; your Brother ?&lt;br&gt;&#xA;A: No he isn&amp;rsquo;t.&lt;/p&gt;&#xA;&lt;p&gt;Q: Are you related to &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; ?&lt;br&gt;&#xA;A: No we aren&amp;rsquo;t (as far as we know)&lt;/p&gt;&#xA;&lt;p&gt;Q: Do you know &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; ?&lt;br&gt;&#xA;A: Yeah .. I&amp;rsquo;ve known him since before he started his work on Drupal, now can you stop asking about Dries and refocus on me ?&lt;/p&gt;&#xA;&lt;p&gt;Q: Are you related to Thomas Buytaert&lt;br&gt;&#xA;A: No.&lt;/p&gt;&#xA;&lt;p&gt;Q: Why are you sdog on irc ?&lt;br&gt;&#xA;A: Back in my DemoScene days my nick was Sleeping Dog , whch was too long for a unix account name , sleeping didn&amp;rsquo;t feel like a good choice and neither did dog, so the abbrev became sdog&lt;/p&gt;</description>
     </item>
     <item>
       <title>Over 2 years of #mollom satisfaction</title>
-      <link>http://localhost:1313/blog/over-2-years-mollom-satisfaction/</link>
+      <link>https://krisbuytaert.github.io/blog/over-2-years-mollom-satisfaction/</link>
       <pubDate>Sat, 22 May 2010 20:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/over-2-years-mollom-satisfaction/</guid>
+      <guid>https://krisbuytaert.github.io/blog/over-2-years-mollom-satisfaction/</guid>
       <description>&lt;p&gt;Following up on &lt;a href=&#34;http://mostrey.be/two-years-mollom-satisfaction&#34;&gt;Wim&lt;/a&gt;&amp;rsquo;s example&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/MollomRules.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Diaper Needs Service Problem</title>
-      <link>http://localhost:1313/blog/diaper-needs-service-problem/</link>
+      <link>https://krisbuytaert.github.io/blog/diaper-needs-service-problem/</link>
       <pubDate>Mon, 29 Jun 2009 20:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/diaper-needs-service-problem/</guid>
+      <guid>https://krisbuytaert.github.io/blog/diaper-needs-service-problem/</guid>
       <description>&lt;p&gt;Last Saturday late, Sandy gave birth to our 2nd daughter&lt;br&gt;&#xA;Amber, pics etc are on &lt;a href=&#34;http://www.babietje.be/&#34;&gt;her own site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;So we&amp;rsquo;ll be changing diapers of 2 little Buytaert kids for a while )&lt;/p&gt;&#xA;&lt;p&gt;PS. Craig from &lt;a href=&#34;http://www.oreillygmt.co.uk/&#34;&gt;O&amp;rsquo;ReillyGMT&lt;/a&gt; gets the credit for inventing the new DNS acronym,&lt;/p&gt;</description>
     </item>
   </channel>

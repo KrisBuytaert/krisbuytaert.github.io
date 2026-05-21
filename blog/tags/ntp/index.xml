@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ntp on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/ntp/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/ntp/</link>
     <description>Recent content in Ntp on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Jun 2016 09:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/ntp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/ntp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Troubleshooting 101 , 2016 Edition</title>
-      <link>http://localhost:1313/blog/linux-troubleshooting-101-2016-edition/</link>
+      <link>https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/</link>
       <pubDate>Wed, 01 Jun 2016 09:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/linux-troubleshooting-101-2016-edition/</guid>
+      <guid>https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/</guid>
       <description>&lt;p&gt;Back in 2006 I wrote a &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/177&#34;&gt;blog post&lt;/a&gt; about linux troubleshoooting. &lt;a href=&#34;https://twitter.com/bertvanvreckem/status/737761421879054336&#34;&gt;Bert Van Vreckem&lt;/a&gt; pointed out that it might be time for an update ..&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s not that much that has changed .. however :)&lt;/p&gt;&#xA;&lt;p&gt;Everything is a DNS Problem&lt;/p&gt;&#xA;&lt;p&gt;Everything is a Fscking DNS Problem&lt;br&gt;&#xA;No really, Everything is a Fscking DNS Problem&lt;br&gt;&#xA;If it&amp;rsquo;s not a fucking DNS Problem ..&lt;br&gt;&#xA;It&amp;rsquo;s a Full Filesystem Problem&lt;br&gt;&#xA;If your filesystem isn&amp;rsquo;t full&lt;br&gt;&#xA;It is a SELinux problem&lt;br&gt;&#xA;If you have SELinux disabled&lt;br&gt;&#xA;It might be an ntp problem&lt;br&gt;&#xA;If it&amp;rsquo;s not an ntp problem&lt;br&gt;&#xA;It&amp;rsquo;s an arp problem&lt;br&gt;&#xA;If it&amp;rsquo;s not an arp problem&amp;hellip;&lt;br&gt;&#xA;It is a Java Garbage Collection problem&lt;br&gt;&#xA;If you ain&amp;rsquo;t running Java&lt;br&gt;&#xA;It&amp;rsquo;s a natting problem&lt;br&gt;&#xA;If you are already on IPv6&lt;br&gt;&#xA;It&amp;rsquo;s a Spanning Tree problem&lt;br&gt;&#xA;If it&amp;rsquo;s not a spanning Tree problem&amp;hellip;&lt;br&gt;&#xA;It&amp;rsquo;s a USB problem&lt;br&gt;&#xA;If it&amp;rsquo;s not a USB Problem&lt;br&gt;&#xA;It&amp;rsquo;s a sharing IRQ Problem&lt;br&gt;&#xA;If it&amp;rsquo;s not a sharing IRQ Problem&lt;br&gt;&#xA;But most often .. its a Freaking Dns Problem !&lt;/p&gt;</description>
     </item>
   </channel>

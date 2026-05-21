@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Community on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/community/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/community/</link>
     <description>Recent content in Community on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Dec 2013 22:04:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/community/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FOSDEM 2014 is coming</title>
-      <link>http://localhost:1313/blog/fosdem-2014-coming/</link>
+      <link>https://krisbuytaert.github.io/blog/fosdem-2014-coming/</link>
       <pubDate>Sun, 22 Dec 2013 22:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fosdem-2014-coming/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fosdem-2014-coming/</guid>
       <description>&lt;p&gt;and with that almost a full week of side events.&lt;br&gt;&#xA;For those who don&amp;rsquo;t know FOSDEM, (where have you been hiding for the past 13 years ? ) Fosdem is the annual Free and Open Source Developers European meeting. If you are into open source , you just can&amp;rsquo;t mis this event where thousands of likeminded people will meet.&lt;/p&gt;&#xA;&lt;p&gt;And if 2 days of FOSDEM madness isn&amp;rsquo;t enough people organise events around it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Monty Leaving Sun</title>
-      <link>http://localhost:1313/blog/monty-leaving-sun/</link>
+      <link>https://krisbuytaert.github.io/blog/monty-leaving-sun/</link>
       <pubDate>Fri, 06 Feb 2009 00:19:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monty-leaving-sun/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monty-leaving-sun/</guid>
       <description>&lt;p&gt;When I read &lt;a href=&#34;http://monty-says.blogspot.com/2009/02/time-to-move-on.html&#34;&gt;Monty&amp;rsquo;s&lt;/a&gt;  post on leaving this passage struck me the most.&lt;/p&gt;&#xA;&lt;p&gt;The main reason for leaving was that I am not satisfied with the way the MySQL server has been developed, as can be seen on my previous blog post. In particular I would have like to see the server development to be moved to a true open development environment that would encourage outside participation and without any need of differentiation on the source code. Sun has been considering opening up the server development, but the pace has been too slow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Want to be Social Network</title>
-      <link>http://localhost:1313/blog/want-be-social-network/</link>
+      <link>https://krisbuytaert.github.io/blog/want-be-social-network/</link>
       <pubDate>Sat, 01 Nov 2008 13:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/want-be-social-network/</guid>
+      <guid>https://krisbuytaert.github.io/blog/want-be-social-network/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://blogs.mysql.com/kaj/2008/10/31/dopplr-joining-the-social-network-for-travellers/&#34;&gt;Kaj&lt;/a&gt; wrote about using &lt;a href=&#34;http://www.dopplr.com/traveller/KrisBuytaert&#34;&gt;Dopplr&lt;/a&gt; to keep track of where colegues and friends are traveling and finding out about accidental meetups. (I even use it to track where one of the Inuits collegues work plans)&lt;br&gt;&#xA;Now I have never met &lt;a href=&#34;http://datacharmer.blogspot.com/&#34;&gt;Giuseppe&lt;/a&gt; , but we shared slides before so I&amp;rsquo;d love to meet him one day .. connecting to him via Dopplr gives me that opportunity .. who knows one day Dopplr will tell me we have matching travel schedules.&lt;/p&gt;</description>
     </item>
   </channel>

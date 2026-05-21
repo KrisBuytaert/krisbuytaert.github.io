@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux-Ha on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/linux-ha/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/linux-ha/</link>
     <description>Recent content in Linux-Ha on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 10 Feb 2011 21:20:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/linux-ha/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/linux-ha/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ensure Running</title>
-      <link>http://localhost:1313/blog/ensure-running/</link>
+      <link>https://krisbuytaert.github.io/blog/ensure-running/</link>
       <pubDate>Thu, 10 Feb 2011 21:20:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/ensure-running/</guid>
+      <guid>https://krisbuytaert.github.io/blog/ensure-running/</guid>
       <description>&lt;p&gt;Has anyone noticed that pretty much every puppet module one finds on the internet by default enables the service they try to configure in the module&lt;/p&gt;&#xA;&lt;p&gt;When looking at it from a single machine point of view it makes sense to include the module , have it configure your service and directly enable it by default.&lt;/p&gt;&#xA;&lt;p&gt;So I started wondering .. isn&amp;rsquo;t there anybody out there who is building clusters ? Where services have to configured on multiple nodes but should NOT be running acitvely on all nodes by default because there is an external tool which manages that for you (Pacemaker framework eg.)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upcoming 2011 Speaking Engagements</title>
-      <link>http://localhost:1313/blog/upcoming-2011-speaking-engagements/</link>
+      <link>https://krisbuytaert.github.io/blog/upcoming-2011-speaking-engagements/</link>
       <pubDate>Mon, 24 Jan 2011 00:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/upcoming-2011-speaking-engagements/</guid>
+      <guid>https://krisbuytaert.github.io/blog/upcoming-2011-speaking-engagements/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.lenzg.net/&#34;&gt;Lenz&lt;/a&gt; gave the good example so I`ll follow :)&lt;/p&gt;&#xA;&lt;p&gt;Next weekend saturday I`ll be giving a talk about devops at &lt;a href=&#34;http://brussels.startupweekend.org/speakers/&#34;&gt;StartUp Weekend Brussels&lt;/a&gt;, from what I&amp;rsquo;ve read so far it promises to be an audience that needs the talk,&lt;/p&gt;&#xA;&lt;p&gt;The week after I`ll be speaking at the &lt;a href=&#34;http://bxl2011.drupaldays.org/node/233&#34;&gt;DrupalDevDays&lt;/a&gt;, again about devops , however this time with a touch of Drupal , giving a devops talk at Devoxx last year to a Java audience learned me that the devops evangelist need to go outside of their usual conference audiences and als talk to the people that are usually in the other silos.&lt;/p&gt;</description>
     </item>
     <item>
       <title>High Availability MySQL Cookbook , the review</title>
-      <link>http://localhost:1313/blog/high-availability-mysql-cookbook-review/</link>
+      <link>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</link>
       <pubDate>Thu, 04 Nov 2010 01:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/high-availability-mysql-cookbook-review/</guid>
+      <guid>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</guid>
       <description>&lt;p&gt;When I read on the internetz that Alex Davies was about the publish a &lt;a href=&#34;https://www.packtpub.com/high-availability-mysql-cookbook/book&#34;&gt;Packt book on MySQL HA&lt;/a&gt; I pinged my contacts at Packt and suggested that I&amp;rsquo;d review the book .&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve ran into &lt;a href=&#34;https://sites.google.com/a/davz.net/alex-davies/&#34;&gt;Alex&lt;/a&gt; at some UKUUG conferences before and he&amp;rsquo;s got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.&lt;/p&gt;&#xA;&lt;p&gt;Alex starts of with a couple of indepth chapters on MySQL Cluster, he does mention that it&amp;rsquo;s not a fit for all problems, but I&amp;rsquo;d hoped he did it a bit more prominently &amp;hellip; an upfront chapter outlining the different approaches and when which approach is a match could have been better. The avid reader now might be 80 pages into MySQL cluster before he realizes it&amp;rsquo;s not going to be a match for his problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UKUUG Spring Conference 2010</title>
-      <link>http://localhost:1313/blog/ukuug-spring-conference-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/ukuug-spring-conference-2010/</link>
       <pubDate>Wed, 07 Apr 2010 19:16:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/ukuug-spring-conference-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-conference-2010/</guid>
       <description>&lt;p&gt;Last week I was in Manchester for the 2010 UKUUG Spring Conference, right .. make that 2 weeks ago , :)&lt;/p&gt;&#xA;&lt;p&gt;The UKUUG usually hosts the more interesting conferences around &amp;hellip; , it&amp;rsquo;s not just the schedule that attrackts me , yes there&amp;rsquo;s the strong focus towards Larger Scale Unix (and mostly Linux) deployments and how to manage them, but there&amp;rsquo;s also the opportunity to chat in real life with the Devops from across the chunnel.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Got Interviewed</title>
-      <link>http://localhost:1313/blog/got-interviewed/</link>
+      <link>https://krisbuytaert.github.io/blog/got-interviewed/</link>
       <pubDate>Wed, 18 Nov 2009 22:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/got-interviewed/</guid>
+      <guid>https://krisbuytaert.github.io/blog/got-interviewed/</guid>
       <description>&lt;p&gt;by &lt;a href=&#34;http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/&#34;&gt;@botchagalupe&lt;/a&gt;&lt;br&gt;&#xA;on Virtualization, Open Source tools and DNS Problems&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nines , Damn Nines  and More Nines</title>
-      <link>http://localhost:1313/blog/nines-damn-nines-and-more-nines/</link>
+      <link>https://krisbuytaert.github.io/blog/nines-damn-nines-and-more-nines/</link>
       <pubDate>Mon, 19 Oct 2009 23:46:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/nines-damn-nines-and-more-nines/</guid>
+      <guid>https://krisbuytaert.github.io/blog/nines-damn-nines-and-more-nines/</guid>
       <description>&lt;p&gt;Funny how different experiences lead to different evaluations of tools. The MySQL HA solutions &lt;a href=&#34;http://www.mysqlperformanceblog.com/2009/10/16/finding-your-mysql-high-availability-solution-%E2%80%93-the-questions/&#34;&gt;the MySQL Performanceblog&lt;/a&gt; list, are almost listed in the complete opposited order of what my impressions are.&lt;/p&gt;&#xA;&lt;p&gt;Ok agreed, I should probably not put my MySQL NDB experiences from 2-3 years ago with multiple Query of deaths and more problems than you into account anymore , but back then went in the list Less stable than a single node. I&amp;rsquo;ve had NDB POC setups going down for much more than 05:16 minutes&lt;br&gt;&#xA;Ndb comes with a lot of restrictions, there are&lt;/p&gt;</description>
     </item>
     <item>
       <title>Everything is a fine whitespace problem ...</title>
-      <link>http://localhost:1313/blog/everything-fine-whitespace-problem/</link>
+      <link>https://krisbuytaert.github.io/blog/everything-fine-whitespace-problem/</link>
       <pubDate>Mon, 02 Feb 2009 23:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/everything-fine-whitespace-problem/</guid>
+      <guid>https://krisbuytaert.github.io/blog/everything-fine-whitespace-problem/</guid>
       <description>&lt;p&gt;Couple of days ago I was working on a Linux Heartbeat v2 setup.&lt;br&gt;&#xA;Upon inserting an XML snippet into the cib cib-adm started eating memory fast until the oom killer kicked in.&lt;/p&gt;&#xA;&lt;p&gt;The environment was running a fairly old heartbeat-2.0.8 version so I upgraded to heartbeat-2.1.4-2.1 and there I got a nice warning that my XML sintax wasn&amp;rsquo;t correct.&lt;/p&gt;&#xA;&lt;p&gt;There was a whitespace in the XML syntax.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. &amp;lt;expression attribute=&amp;#34;#replicationvalue&amp;#34; id=&amp;#34;is_lagged&amp;#34; operation =&amp;#34;gt&amp;#34;  ... &amp;gt;&amp;lt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Removing the whitespace solves the problem, also on the older version. So the problem is already fixed upstream.. but you might run into it anyhow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bug in ifconfig ?</title>
-      <link>http://localhost:1313/blog/bug-ifconfig/</link>
+      <link>https://krisbuytaert.github.io/blog/bug-ifconfig/</link>
       <pubDate>Wed, 24 Sep 2008 17:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/bug-ifconfig/</guid>
+      <guid>https://krisbuytaert.github.io/blog/bug-ifconfig/</guid>
       <description>&lt;p&gt;So earlier this week I ran into the weirdest problem with Linux-HA. Heartbeat was happily adding an IP address as an active resource so one of my nodes when needed, but upon removal it failed to remove the IP from the stack. Further debugging learned that the Heartbeat scripts claimed the ip wasn&amp;rsquo;t on the actual stack.&lt;/p&gt;&#xA;&lt;p&gt;It was.. but it the output from ifconfig was different from what it expected it to be.&lt;/p&gt;</description>
     </item>
   </channel>

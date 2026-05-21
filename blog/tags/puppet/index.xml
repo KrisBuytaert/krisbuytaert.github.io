@@ -2,339 +2,339 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Puppet on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/puppet/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/puppet/</link>
     <description>Recent content in Puppet on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Mar 2016 23:28:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/puppet/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/puppet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lies, Damn Lies and Statistics, 2016 Edition</title>
-      <link>http://localhost:1313/blog/lies-damn-lies-and-statistics-2016-edition/</link>
+      <link>https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/</link>
       <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/lies-damn-lies-and-statistics-2016-edition/</guid>
+      <guid>https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/</guid>
       <description>&lt;p&gt;When people sign up for Configuration Management Camp, we ask them what community room they are mostly interested in.&lt;br&gt;&#xA;We ask this question because we have rooms in different sizes and we don&amp;rsquo;t want to put communities with 20 people showing interest in a 120 seat room and we don&amp;rsquo;t want to put a community with 200 people in a 60 seat room.&lt;/p&gt;&#xA;&lt;p&gt;But it also gives us to opportunity to build some very interesting graph over the potential evolution of the communities.&lt;/p&gt;</description>
     </item>
     <item>
       <title>2014 vs 2015 interest in Open Source Configuration Management</title>
-      <link>http://localhost:1313/blog/2014-vs-2015-interest-open-source-configuration-management/</link>
+      <link>https://krisbuytaert.github.io/blog/2014-vs-2015-interest-open-source-configuration-management/</link>
       <pubDate>Mon, 09 Feb 2015 22:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/2014-vs-2015-interest-open-source-configuration-management/</guid>
+      <guid>https://krisbuytaert.github.io/blog/2014-vs-2015-interest-open-source-configuration-management/</guid>
       <description>&lt;p&gt;A couple of people asked me to results of the survey of the 2015 vs 2014 Configuration Management Camp room interrests.&lt;/p&gt;&#xA;&lt;p&gt;This is a bunch of 350 last year and 420 people telling us what tools they are interested in so we can map the right roomsizes to the communities.&lt;/p&gt;&#xA;&lt;p&gt;2014 :&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://krisbuytaert.be/pics/2014.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;2015:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://krisbuytaert.be/pics/2015.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Enjoy.. but remember there&amp;rsquo;s Lies, Damn Lies and Statistics ..&lt;br&gt;&#xA;PS. this is a mostly European Audience .&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jenkins, Puppet, Graphite, Logstash and YOU</title>
-      <link>http://localhost:1313/blog/jenkins-puppet-graphite-logstash-and-you/</link>
+      <link>https://krisbuytaert.github.io/blog/jenkins-puppet-graphite-logstash-and-you/</link>
       <pubDate>Wed, 04 Jun 2014 16:55:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/jenkins-puppet-graphite-logstash-and-you/</guid>
+      <guid>https://krisbuytaert.github.io/blog/jenkins-puppet-graphite-logstash-and-you/</guid>
       <description>&lt;p&gt;This is a repost of an article I wrote for the Acquia Blog some time ago.&lt;/p&gt;&#xA;&lt;p&gt;As mentioned before, devops can be summarized by talking about culture, automation, monitoring metrics and sharing. Although devops is not about tooling, there are a number of open source tools out there that will be able to help you achieve your goals. Some of those tools will also enable better communication between your development and operations teams.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker vs Reality , 0 - 1</title>
-      <link>http://localhost:1313/blog/docker-vs-reality-0-1/</link>
+      <link>https://krisbuytaert.github.io/blog/docker-vs-reality-0-1/</link>
       <pubDate>Wed, 27 Nov 2013 23:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/docker-vs-reality-0-1/</guid>
+      <guid>https://krisbuytaert.github.io/blog/docker-vs-reality-0-1/</guid>
       <description>&lt;p&gt;(aka the opinionated summary of the #devopsdays London November OpenSpace on , Containers and the new flood of Image Sprawl)&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a bunch of people out there that think I don&amp;rsquo;t like docker, they are wrong.&lt;/p&gt;&#xA;&lt;p&gt;I just never understood the hype about it since I didn&amp;rsquo;t see, (and still don&amp;rsquo;t) see it being used at large and people seem to understand that as being against it.&lt;/p&gt;&#xA;&lt;p&gt;So let me put a couple of things straight :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why you shouldn&#39;t hire a devops</title>
-      <link>http://localhost:1313/blog/why-you-shouldnt-hire-devops/</link>
+      <link>https://krisbuytaert.github.io/blog/why-you-shouldnt-hire-devops/</link>
       <pubDate>Wed, 22 May 2013 23:11:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/why-you-shouldnt-hire-devops/</guid>
+      <guid>https://krisbuytaert.github.io/blog/why-you-shouldnt-hire-devops/</guid>
       <description>&lt;p&gt;Lately there have been a lot of organisations trying to hire a devops engineer.&lt;br&gt;&#xA;I myselve have been asked to fill in devops roles ..&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a number of issues with that.&lt;/p&gt;&#xA;&lt;p&gt;The biggest problem is that I always have to ask what exactly the organisation is looking for.&lt;/p&gt;&#xA;&lt;p&gt;So you want a devops engineer with experience in Linux, MongoDB, MySQL and Java , does that mean you want a Java developer who is familiar with MySQL and Linux and breaths a devops Culture.&lt;br&gt;&#xA;Or a Linux expert who understands Java developers and knows how to tune Mongo and MySQL ?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Initial  loadays speakers announced</title>
-      <link>http://localhost:1313/blog/initial-loadays-speakers-announced/</link>
+      <link>https://krisbuytaert.github.io/blog/initial-loadays-speakers-announced/</link>
       <pubDate>Tue, 19 Mar 2013 14:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/initial-loadays-speakers-announced/</guid>
+      <guid>https://krisbuytaert.github.io/blog/initial-loadays-speakers-announced/</guid>
       <description>&lt;p&gt;Loadays is coming up soon .. 6 and 7 april ..&lt;br&gt;&#xA;Loadays is the Linux and Open Administration conference of the low lands , held in Antwerp, Belgium&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ve just published &lt;a href=&#34;http://loadays.org/pages/talks.html&#34;&gt;the initial&lt;/a&gt; batch of speakers&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Being a Sysadmin at a company full of Sysadmins&lt;/strong&gt; (Cody Herriges)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;OpenNebula Fundamentals&lt;/strong&gt; (Jaime Melis)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Integrate UEFI into REAR&lt;/strong&gt; (Gratien D&amp;rsquo;haese)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Puppet v3 and Hiera&lt;/strong&gt; (Garrett Honeycutt)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Integrating Linux into an Active Directory domain&lt;/strong&gt; (Gábor Nyers)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Normalised instance provisioning for dev, on-premise and public clouds&lt;/strong&gt; (Karanbir Singh)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;C.R.E.A.M : Cache Rules Everything Around Me&lt;/strong&gt; (Thijs Feryn)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;OpenLDAP&amp;rsquo;s Lightning Memory-Mapped DB&lt;/strong&gt; (Howard Chu)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;What&amp;rsquo;s new in syslog-ng&lt;/strong&gt; (Peter Czanik)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Introduction to Ansible&lt;/strong&gt; (Jan Piet Mens)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Network Block Device: network-based block storage for Linux systems&lt;/strong&gt; (Wouter Verhelst)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Tutorials&lt;/p&gt;</description>
     </item>
     <item>
       <title>Love, MonitoringLove</title>
-      <link>http://localhost:1313/blog/love-monitoringlove/</link>
+      <link>https://krisbuytaert.github.io/blog/love-monitoringlove/</link>
       <pubDate>Wed, 13 Feb 2013 19:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/love-monitoringlove/</guid>
+      <guid>https://krisbuytaert.github.io/blog/love-monitoringlove/</guid>
       <description>&lt;p&gt;Last year we were pretty negative about Monitoring, We shouted out that MonitoringSucked &amp;hellip; A year has passed and a lot has changed &amp;hellip; most importantly our new found love for monitoring, thanks to an inspirational Ignite talk by &lt;a href=&#34;https://twitter.com/ulfmansson&#34;&gt;Ulf Mansson&lt;/a&gt; at devopsdays Rome.&lt;/p&gt;&#xA;&lt;p&gt;Right after Fosdem about 20 people showed up at the #monitoringlove hacksessions hosted at the &lt;a href=&#34;http://www.inuits.eu/&#34;&gt;Inuits.eu&lt;/a&gt; offices to work on Open Source monitoring projects and exchange ideas. Some completely new people, some people with already a lot of experience.&lt;/p&gt;</description>
     </item>
     <item>
       <title>check_graphite</title>
-      <link>http://localhost:1313/blog/checkgraphite/</link>
+      <link>https://krisbuytaert.github.io/blog/checkgraphite/</link>
       <pubDate>Tue, 05 Feb 2013 11:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/checkgraphite/</guid>
+      <guid>https://krisbuytaert.github.io/blog/checkgraphite/</guid>
       <description>&lt;p&gt;During my Puppetcamp Gent talk last week, I explained how to get alerts based on trends from graphite. A number of people asked ,e how to do that.&lt;/p&gt;&#xA;&lt;p&gt;First lets quickly explain why you might want to do that .&lt;br&gt;&#xA;Sometimes you don&amp;rsquo;t care about the current value of a metric..as an example take a Queing system .. there is no problem if there are messages added to the queue, not even if there are a lot of messages on the queue, there might however be a problem if over a certain period the number of messages on a queue stays to high.&lt;/p&gt;</description>
     </item>
     <item>
       <title>#devops Conference Season heating up...</title>
-      <link>http://localhost:1313/blog/devops-conference-season-heating/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</link>
       <pubDate>Sun, 13 Jan 2013 12:21:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-conference-season-heating/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</guid>
       <description>&lt;p&gt;My last post has been a while &amp;hellip; in that I announced that there would be another event right before FOSDEM &amp;hellip; I totally forgot to announce it here but I`m sure that most of you already know. Yes. PuppetCamp Europe is coming back to it&amp;rsquo;s roots&amp;hellip; it&amp;rsquo;s coming back to the city where we hosted it for the first time on this side of the ocean.. Gent. (that&amp;rsquo;s 31/1 and 1/2 )&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linuxcon Europe, Barcelona</title>
-      <link>http://localhost:1313/blog/linuxcon-europe-barcelona/</link>
+      <link>https://krisbuytaert.github.io/blog/linuxcon-europe-barcelona/</link>
       <pubDate>Tue, 06 Nov 2012 10:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/linuxcon-europe-barcelona/</guid>
+      <guid>https://krisbuytaert.github.io/blog/linuxcon-europe-barcelona/</guid>
       <description>&lt;p&gt;I&lt;code&gt;m in Barcelona this week for LinuxCon Europe ..\ I&lt;/code&gt;ll be hosting 3 sessions this week.&lt;/p&gt;&#xA;&lt;p&gt;Today I&lt;code&gt;ll be helping [Sebastien Goasguen](https://twitter.com/sebgoa) with his session [Building Foss Clouds](http://linuxconeurope2012.sched.org/event/8816c31538f6278779459b3337a45559#.UJi--tHtBrc), I&lt;/code&gt;ll be talking about how to use tools such as Puppet, Graphite and Icinga to monitor your clouds. Sebastian inherited the Building FOSS Clouds tutorial last week and asked me to help out.&lt;/p&gt;&#xA;&lt;p&gt;Tomorrow I`ll be giving my &lt;a href=&#34;http://linuxconeurope2012.sched.org/event/cd9a06295026ac8d17fb51cc26ff2ff2#.UJjD2NHtBrc&#34;&gt;11 Open Source Tools for your Devops Stack&lt;/a&gt;  talking.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gentwerpen Devops Meetup  &amp; Conference Season Update</title>
-      <link>http://localhost:1313/blog/gentwerpen-devops-meetup-conference-season-update/</link>
+      <link>https://krisbuytaert.github.io/blog/gentwerpen-devops-meetup-conference-season-update/</link>
       <pubDate>Thu, 13 Sep 2012 22:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/gentwerpen-devops-meetup-conference-season-update/</guid>
+      <guid>https://krisbuytaert.github.io/blog/gentwerpen-devops-meetup-conference-season-update/</guid>
       <description>&lt;p&gt;A couple of us have been taking about it a lot already .. we wanted to host a one day #devops event in .be already last year.. then talks about starting a meetup group started again with @wonko_be but it was @fs111 pushing the final button and calling the rest of the .be community to order, we&amp;rsquo;ve set a date&lt;br&gt;&#xA;and the first session will take place (agenda still needs to be detirmined)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vagrant and Drupal, a winning team</title>
-      <link>http://localhost:1313/blog/vagrant-and-drupal-winning-team/</link>
+      <link>https://krisbuytaert.github.io/blog/vagrant-and-drupal-winning-team/</link>
       <pubDate>Sat, 25 Aug 2012 23:51:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/vagrant-and-drupal-winning-team/</guid>
+      <guid>https://krisbuytaert.github.io/blog/vagrant-and-drupal-winning-team/</guid>
       <description>&lt;p&gt;While heading back home from DrupalCon Munich after 4 days of good interaction with lots of Drupal folks.&lt;br&gt;&#xA;I realized to my big suprise that there are a lot of people using Vagrant to make sure that developers are not working on platforms they invented their own. Lots of people have realized that &amp;ldquo;It works on my computer&amp;rdquo; is not something they want to hear from a developer and are reaching out to give them viable solutions to work on shared and reproducible solutions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open Source Certification , Friend or Foe</title>
-      <link>http://localhost:1313/blog/open-source-certification-friend-or-foe/</link>
+      <link>https://krisbuytaert.github.io/blog/open-source-certification-friend-or-foe/</link>
       <pubDate>Sat, 25 Aug 2012 15:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/open-source-certification-friend-or-foe/</guid>
+      <guid>https://krisbuytaert.github.io/blog/open-source-certification-friend-or-foe/</guid>
       <description>&lt;p&gt;With 2 of the bigger Open Source projects I care about talking about certifications programs questions pop up again &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Should we certify ourselves ?&lt;/p&gt;&#xA;&lt;p&gt;So let me tell you about my experiences in getting Open Source related Certifications ..&lt;/p&gt;&#xA;&lt;p&gt;Over a decade ago, (2001) when RedHat was still Redhat and not yet Fedora the company I was working for was about to partner with RedHat and needed to get a number of people certified for that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Our #monitoringsucks rpm is repository available</title>
-      <link>http://localhost:1313/blog/our-monitoringsucks-rpm-repository-available/</link>
+      <link>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</link>
       <pubDate>Sat, 11 Aug 2012 21:49:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/our-monitoringsucks-rpm-repository-available/</guid>
+      <guid>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</guid>
       <description>&lt;p&gt;Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.&lt;/p&gt;&#xA;&lt;p&gt;You might have noticed a variety of vagrant- projects on my github acount&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-ganglia&#34;&gt;http://github.com/KrisBuytaert/vagrant-ganglia&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-graphite&#34;&gt;http://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-puppet-logstash&#34;&gt;http://github.com/KrisBuytaert/vagrant-puppet-logstash,&lt;/a&gt;&lt;br&gt;&#xA;Being the #monitoringsucks part of them. All of those Vagrant projects are basically my test setups to play with those new tools.&lt;/p&gt;&#xA;&lt;p&gt;They contain a bunch of puppet modules that install and configure these tools. (Note that they mostly consist of&lt;br&gt;&#xA;of git submodules to other puppet module repositories.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Breaking the Silence.</title>
-      <link>http://localhost:1313/blog/breaking-silence/</link>
+      <link>https://krisbuytaert.github.io/blog/breaking-silence/</link>
       <pubDate>Mon, 06 Aug 2012 08:51:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/breaking-silence/</guid>
+      <guid>https://krisbuytaert.github.io/blog/breaking-silence/</guid>
       <description>&lt;p&gt;3+ months is probably the biggest timeout I&amp;rsquo;ve taken from blogging in a while..&lt;br&gt;&#xA;Not that I didn&amp;rsquo;t have anything to write ..but more that I was prioritizing writing different content over&lt;br&gt;&#xA;over writing blogposts.&lt;/p&gt;&#xA;&lt;p&gt;Blogging tech snippets and contributing documentation used to be one now all of that has evolved.&lt;br&gt;&#xA;Anyhow ..&lt;/p&gt;&#xA;&lt;p&gt;So to get things going here&amp;rsquo;s my preliminary Conference schedule for the next couple of months.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;First up, in about one week (august 20-24) I&lt;code&gt;ll be chairing the #devops track at [DrupalCon Munich](http://munich2012.drupal.org/)\ Next to talking there myselve explaining the [Drupal Crowd what devops is](http://munich2012.drupal.org/program/sessions/whats-devops-thing-anyhow)\ Plenty of interresting content there ranging from culture over to tooling and back. I&lt;/code&gt;m really looking forward to this one.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Devops in Munich</title>
-      <link>http://localhost:1313/blog/devops-munich/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-munich/</link>
       <pubDate>Tue, 01 May 2012 21:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-munich/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-munich/</guid>
       <description>&lt;p&gt;Devopsdays Mountainview sold out in a short 3 hours .. but there&amp;rsquo;s other events that will breath devops this summer.&lt;br&gt;&#xA;DrupalCon in Munich will be one of them ..&lt;/p&gt;&#xA;&lt;p&gt;Some of you might have noticed that I`m cochairing the devops track for DrupalCon Munich,&lt;br&gt;&#xA;The CFP is open till the 11th of this month and we are still actively looking for speakers.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;re trying to bridge the gap between drupal developers and the people that put their code to production, at scale.&lt;br&gt;&#xA;But also enhancing the knowledge of infrastructure components Drupal developers depend on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>FlossUK and Puppetcamp Edinburgh</title>
-      <link>http://localhost:1313/blog/flossuk-and-puppetcamp-edinburgh/</link>
+      <link>https://krisbuytaert.github.io/blog/flossuk-and-puppetcamp-edinburgh/</link>
       <pubDate>Fri, 23 Mar 2012 16:49:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/flossuk-and-puppetcamp-edinburgh/</guid>
+      <guid>https://krisbuytaert.github.io/blog/flossuk-and-puppetcamp-edinburgh/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve just finished presenting my talk on how I currently work on Puppet modules at Puppetcamp here in Edinburgh where I&amp;rsquo;ve been for the week talking on both FlossUK 2012 and Puppetcamp.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/7-tools-for-your-devops-stack&#34; title=&#34;7 tools for your devops stack&#34;&gt;7 tools for your devops stack&lt;/a&gt;&lt;/strong&gt; \&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Earlier this week I opened FlossUK 2012 with my talk on 7 tools for your devops stack&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/how-ihackonpuppetmodules&#34; title=&#34;How I hack on puppet modules&#34;&gt;How I hack on puppet modules&lt;/a&gt;&lt;/strong&gt; \&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fall , Winter and Spring Conference Season 2011 - 2012</title>
-      <link>http://localhost:1313/blog/fall-winter-and-spring-conference-season-2011-2012/</link>
+      <link>https://krisbuytaert.github.io/blog/fall-winter-and-spring-conference-season-2011-2012/</link>
       <pubDate>Sat, 24 Sep 2011 14:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fall-winter-and-spring-conference-season-2011-2012/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fall-winter-and-spring-conference-season-2011-2012/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.jedi.be/blog/2011/09/06/what-conferences-to-attend/&#34;&gt;Patrick&lt;/a&gt; posted his upcoming conference schedule for the next couple of months.&lt;br&gt;&#xA;as you can see there are a comple of overlapping conferences :)&lt;/p&gt;&#xA;&lt;p&gt;Conferences I&amp;rsquo;m speaking at or likely to attend are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The first week of October I&lt;code&gt;ll be in the Valley , I&lt;/code&gt;ll be late for Jenkinsconf but I hope to pick up some events while I&lt;code&gt;m there.. suggestions are welcome , I&lt;/code&gt;m also heading back to Europe earlier than planned so I will miss BadCamp :( &amp;hellip;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://devopsdays.org/events/2011-goteborg/&#34;&gt;Devopsdays Goteborg, Sweden&lt;/a&gt; : &lt;em&gt;October 14,15&lt;/em&gt; - The yearly Europe devops event is happening in Goteborg this time. It&amp;rsquo;s going to be really exciting this time , as the theme is inclusive. Eploring the boundaries of devops, I`m once again in the organization of this conference.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://t-dose.org/&#34;&gt;T-Dose 2011&lt;/a&gt;, The Technical Dutch Open Source Event, on 5 and 6 november 2011 , I will be talking again about my experiences with complex Puppet setups&lt;/li&gt;&#xA;&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://citconf.com/&#34;&gt;Citconf , London&lt;/a&gt;: &lt;em&gt;November 11-12&lt;/em&gt; - All you ever wanted to know about Continuous Integration. Period, registered, haven&amp;rsquo;t booked flights yet.&lt;/del&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.cloudcamp.org/ghent&#34;&gt;Cloudcamp Belgium&lt;/a&gt;: &lt;em&gt;November 21&lt;/em&gt; - I&amp;rsquo;m looking forward to this year&amp;rsquo;s event, as there will likely more practioners and less marketing folks.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.usenix.org/events/lisa11/tech/tech.html#Buytaert&#34;&gt;Lisa 2011&lt;/a&gt;, Boston, US, I&lt;code&gt;m giving an Invited talk titled , Devops: The past and futre are here, It&#39;s just not evenly distributed (yet), and I&lt;/code&gt;ll be on a panel titled What Will Be HOt Next Year, really looking forward to this one :)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://fosdem.org/&#34;&gt;Fosdem.org&lt;/a&gt; will take place on 4 and 5 February 2012 , and as every year since it inception I&amp;rsquo;ll be there&lt;/li&gt;&#xA;&lt;li&gt;The UKUUG rebranded to &lt;a href=&#34;http://www.flossuk.org/Events/Spring2012/&#34;&gt;FlossUK&lt;/a&gt; , they are hosting their Annual Spring conference from 20th to 22nd March in Edinburgh , given their refound focus it will be even more interresting !&lt;/li&gt;&#xA;&lt;li&gt;And as announced earlier this week &lt;a href=&#34;http://loadays.org/&#34;&gt;Loadays.org&lt;/a&gt; will take place in Antwerp again this year on 31/3/2012 and 1/4/2012 , as the previous years I`m co organizing this conference&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;And yes, I do work from time to time. Just that these conferences are a great way to capture and share new ideas. All worth it!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using Veewee</title>
-      <link>http://localhost:1313/blog/using-veewee/</link>
+      <link>https://krisbuytaert.github.io/blog/using-veewee/</link>
       <pubDate>Wed, 24 Aug 2011 10:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/using-veewee/</guid>
+      <guid>https://krisbuytaert.github.io/blog/using-veewee/</guid>
       <description>&lt;p&gt;With @dancarley and @patrickebois just discussing the origin of the name of Veewee I figured I still had that piece of documentation I wrote up for myselve flying around &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;So with no other reason than having my docs mirrored on the internet .&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. gem install veewee&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. veewee templates&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;shows you what templates we have around ..&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. $veewee init natty ubuntu-11.04-server-amd64&#xA;2. Init a new box natty, starting from template ubuntu-11.04-server-amd64&#xA;3. The basebox &amp;#39;natty&amp;#39; has been successfully created from the template &amp;#39;&amp;#39;ubuntu-11.04-server-amd64&amp;#39;&#xA;4. You can now edit the definition files stored in definitions/natty&#xA;5. or build the box with:&#xA;6. vagrant basebox build &amp;#39;natty&amp;#39;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As noted this will generate the definition for your natty box,&lt;br&gt;&#xA;It will create a definition.rb file which describes your box.&lt;br&gt;&#xA;A preseed (or kickstart or similar file) and a postinstall file&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drupal and Configuration Mgmt, we&#39;re getting there ...</title>
-      <link>http://localhost:1313/blog/drupal-and-configuration-mgmt-were-getting-there/</link>
+      <link>https://krisbuytaert.github.io/blog/drupal-and-configuration-mgmt-were-getting-there/</link>
       <pubDate>Sun, 17 Jul 2011 22:39:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/drupal-and-configuration-mgmt-were-getting-there/</guid>
+      <guid>https://krisbuytaert.github.io/blog/drupal-and-configuration-mgmt-were-getting-there/</guid>
       <description>&lt;p&gt;For those who haven&amp;rsquo;t noticed yet .. I&lt;code&gt;m into devops .. I&lt;/code&gt;m also a little bit into Drupal, (blame my last name..) , so one of the frustrations I&amp;rsquo;ve been having with Drupal (an much other software) is the automation of deployment and upgrades of Drupal sites &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;So for the past couple of days I&amp;rsquo;ve been trying to catch up to the ongoing discussion regarding the results of the &lt;a href=&#34;http://groups.drupal.org/node/155559&#34;&gt;configuration mgmt sprint&lt;/a&gt; , I&amp;rsquo;ve been looking at it mainly from a systems point of view , being with the use of Puppet/ Chef or similar tools in mind .. I know I`m late to the discussion but hey , some people take holidays in this season :) So below you can read a bunch of my comments &amp;hellip; and thoughts on the topic ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>The case for Augeas</title>
-      <link>http://localhost:1313/blog/case-augeas/</link>
+      <link>https://krisbuytaert.github.io/blog/case-augeas/</link>
       <pubDate>Fri, 10 Jun 2011 16:26:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/case-augeas/</guid>
+      <guid>https://krisbuytaert.github.io/blog/case-augeas/</guid>
       <description>&lt;p&gt;Ever since I met David Lutterkort over steaks at OLS 2007 augeas was this tool in the back of my mind that I couldn&amp;rsquo;t place&amp;hellip; I never saw the need for it&amp;hellip; or it seemed to be huge overkill for the problem that needed solving .&lt;/p&gt;&#xA;&lt;p&gt;Till I ran into sipxecs rewriting XML files on the fly .. and putting values in their XML that I could not trace back to an original source. As of Augeas 0.8.x there&amp;rsquo;s an XML lens out there.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Beyond Configuration Mgmt</title>
-      <link>http://localhost:1313/blog/beyond-configuration-mgmt/</link>
+      <link>https://krisbuytaert.github.io/blog/beyond-configuration-mgmt/</link>
       <pubDate>Wed, 25 May 2011 23:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/beyond-configuration-mgmt/</guid>
+      <guid>https://krisbuytaert.github.io/blog/beyond-configuration-mgmt/</guid>
       <description>&lt;p&gt;(This post has been sitting in the drafts folder for way to long, I decided to push the publish button anyhow .. some people might get ideas from it..)&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ve all run in to the problem, you&amp;rsquo;ve puppetized, or euh .. cooked , about every part of your infrastructure and then there&amp;rsquo;s this one service which has no config files, a broken api that doesn&amp;rsquo;t allow you to configure antyhing, but a magnificent web gui to configure all aspects of the service. Magnificent for the eye , full of AJAX and other fancy stuff which wget isn&amp;rsquo;t really keen on. Off course before it even starts working you need to set it&amp;rsquo;s password , from that webgui.&lt;/p&gt;</description>
     </item>
     <item>
       <title>And then vagrant gave up ...  for a while</title>
-      <link>http://localhost:1313/blog/and-then-vagrant-gave-while/</link>
+      <link>https://krisbuytaert.github.io/blog/and-then-vagrant-gave-while/</link>
       <pubDate>Mon, 02 May 2011 22:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/and-then-vagrant-gave-while/</guid>
+      <guid>https://krisbuytaert.github.io/blog/and-then-vagrant-gave-while/</guid>
       <description>&lt;p&gt;Don&amp;rsquo;t you just love Ruby errors &amp;hellip; like the one below ?&lt;/p&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t they almost make Java stack traces look readable ?&lt;br&gt;&#xA;57 lines of jibberish &amp;hellip; where all I wanted to read was &amp;ldquo;VirtualBox in error state, check gui&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;People like &lt;a href=&#34;https://twitter.com/#!/sonofhans&#34;&gt;Randall Hanssen&lt;/a&gt; deserve much more visibility .. they do understand how to write a good error message and there are lots of projects that need improvement there.&lt;/p&gt;&#xA;&lt;p&gt;Anywhow&amp;hellip; vagrant had suddenly stopped working on me with the error below&lt;/p&gt;</description>
     </item>
     <item>
       <title>The 4158 second catalog run.</title>
-      <link>http://localhost:1313/blog/4158-second-catalog-run/</link>
+      <link>https://krisbuytaert.github.io/blog/4158-second-catalog-run/</link>
       <pubDate>Wed, 20 Apr 2011 22:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/4158-second-catalog-run/</guid>
+      <guid>https://krisbuytaert.github.io/blog/4158-second-catalog-run/</guid>
       <description>&lt;p&gt;Two of my tweets , sorry dents, earlier today caused some people to ask me what on earth I was doing :)&lt;/p&gt;&#xA;&lt;p&gt;You don&amp;rsquo;t exist, go away!&lt;/p&gt;&#xA;&lt;p&gt;Was the first one, indeed .. it was a long time since I had actually seen that one.. this actually happens when you delete the user you are logged in with on a host, when the host notices you don&amp;rsquo;t exist anymore it will tell you.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vagrant &amp; Rubylibs</title>
-      <link>http://localhost:1313/blog/vagrant-rubylibs/</link>
+      <link>https://krisbuytaert.github.io/blog/vagrant-rubylibs/</link>
       <pubDate>Tue, 29 Mar 2011 20:11:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/vagrant-rubylibs/</guid>
+      <guid>https://krisbuytaert.github.io/blog/vagrant-rubylibs/</guid>
       <description>&lt;p&gt;I was testing some MySQL puppet modules on my Vagrant box earlier this week and one of them required augeas.&lt;br&gt;&#xA;I kept running into &amp;ldquo;Could not find a default provider for augeas&amp;rdquo;, however all the appropriate augeas , augeas-lib and ruby-augeas packages were installed. I inspected the different ruby directories and the files were perfectly in /usr/lib/ruby/site_ruby/1.8 where I expected them.&lt;/p&gt;&#xA;&lt;p&gt;With all the files seemd to be in the right place, my next option was to strace a small ruby script that included augeas, guess what that showed ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>24 hours of Puppet Drama</title>
-      <link>http://localhost:1313/blog/24-hours-puppet-drama/</link>
+      <link>https://krisbuytaert.github.io/blog/24-hours-puppet-drama/</link>
       <pubDate>Fri, 04 Mar 2011 01:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/24-hours-puppet-drama/</guid>
+      <guid>https://krisbuytaert.github.io/blog/24-hours-puppet-drama/</guid>
       <description>&lt;p&gt;Over the past couple of days I&amp;rsquo;ve been fighting with a weird puppet problem , we eventually cracked it , but I promised a bunch of you to fully explain it here ;)&lt;/p&gt;&#xA;&lt;p&gt;So we were deploying 2 Blade chassis at a pretty remote location with a mix of phyisical and virtual machines, some 48 instances in total. This is a pretty standard rollout, we&amp;rsquo;ve got a bunch of similar platforms in our lab , so we knew about a couple of glitches, what to expect etc.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ensure Running</title>
-      <link>http://localhost:1313/blog/ensure-running/</link>
+      <link>https://krisbuytaert.github.io/blog/ensure-running/</link>
       <pubDate>Thu, 10 Feb 2011 21:20:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/ensure-running/</guid>
+      <guid>https://krisbuytaert.github.io/blog/ensure-running/</guid>
       <description>&lt;p&gt;Has anyone noticed that pretty much every puppet module one finds on the internet by default enables the service they try to configure in the module&lt;/p&gt;&#xA;&lt;p&gt;When looking at it from a single machine point of view it makes sense to include the module , have it configure your service and directly enable it by default.&lt;/p&gt;&#xA;&lt;p&gt;So I started wondering .. isn&amp;rsquo;t there anybody out there who is building clusters ? Where services have to configured on multiple nodes but should NOT be running acitvely on all nodes by default because there is an external tool which manages that for you (Pacemaker framework eg.)&lt;/p&gt;</description>
     </item>
     <item>
       <title>At Fosdem</title>
-      <link>http://localhost:1313/blog/fosdem/</link>
+      <link>https://krisbuytaert.github.io/blog/fosdem/</link>
       <pubDate>Sun, 06 Feb 2011 22:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fosdem/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fosdem/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;on Friday evening , apparently having a confirmed reservation in a resto is not enough to actually be welcome at that restaurant.&lt;/li&gt;&#xA;&lt;li&gt;at DrupalDevdays, only 2 laptops were open during our presentation&lt;/li&gt;&#xA;&lt;li&gt;at DrupalDevdays, almost nobody in the room was already using CI&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , the parking lot is full before 11:30 on a saturday&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , much less Macs than last years .&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , way too much rooms are already at full capacity so you need to have 2-3 backup alternatives ..&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , people expect me to be in certain rooms, at the same time&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , even with too much rooms already full one still misses a bunch of interresting talks&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , one doesn&amp;rsquo;t even realize friends are speaking there too ..&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , Android is the standard &amp;hellip;&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , you are confronted with the fact you probably forgot more names of people than you remember ;(&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , you are surrounded by famous open source people, that aren&amp;rsquo;t even on the schedule&lt;/li&gt;&#xA;&lt;li&gt;at the MySQL Meetup Dinner, Monty brings &lt;a href=&#34;http://en.wikipedia.org/wiki/Salmiakki_Koskenkorva&#34;&gt;Salmiakki&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , you wonder how many other people have survived their 11th edition&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , you can&amp;rsquo;t get into any devroom on sunday morning&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , begging on Twitter to get in to a devroom from the other side of the door works (at least for me :))&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , netbooks are much less popular as opposed to 2-3 years ago ..&lt;/li&gt;&#xA;&lt;li&gt;after fosdem &amp;hellip; you crash ..\&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Devops  Meetups before Fosdem , 2011 Edition</title>
-      <link>http://localhost:1313/blog/devops-meetups-fosdem-2011-edition/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-meetups-fosdem-2011-edition/</link>
       <pubDate>Sun, 16 Jan 2011 21:45:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-meetups-fosdem-2011-edition/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-meetups-fosdem-2011-edition/</guid>
       <description>&lt;p&gt;Just last last year we&amp;rsquo;ll have a Devops meetup just before Fosdem,&lt;br&gt;&#xA;I&amp;rsquo;ve setup a &lt;a href=&#34;http://devopsfosdem2011.eventbrite.com/&#34;&gt;page&lt;/a&gt; for registrations , that way we&amp;rsquo;ll know how many people to make reservations for.&lt;/p&gt;&#xA;&lt;p&gt;If possible we&amp;rsquo;ll go to the same place as last year .. walking distance from the Fosdem Beer event.&lt;/p&gt;&#xA;&lt;p&gt;Feel free to spread the news !&lt;/p&gt;</description>
     </item>
     <item>
       <title>Appliance or Not Appliance</title>
-      <link>http://localhost:1313/blog/appliance-or-not-appliance/</link>
+      <link>https://krisbuytaert.github.io/blog/appliance-or-not-appliance/</link>
       <pubDate>Wed, 12 Jan 2011 22:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/appliance-or-not-appliance/</guid>
+      <guid>https://krisbuytaert.github.io/blog/appliance-or-not-appliance/</guid>
       <description>&lt;p&gt;That&amp;rsquo;s the question &lt;a href=&#34;http://blog.rootshell.be/2011/01/05/security-diy-or-plugnplay/&#34;&gt;Xavier&lt;/a&gt; asks in his blog entry titled&lt;br&gt;&#xA;Security: DIY or Plug’n&amp;rsquo;Play&lt;/p&gt;&#xA;&lt;p&gt;To me the answer is simple, most of the appliances I ran into so far have no way of configuring them apart from the ugly webgui they ship with their device. That means that I can&amp;rsquo;t integrate them with the configuration management framework I have in place for the rest of the infrastructure. There is no way to automatically modify e.g firewall rules together with the relocation of a service which does happen automatically, and there is always some kind of manual interaction required. Applicances tend to sit on a island, either stay un managed ( be honest when&amp;rsquo;s the last time you upgraded the firmware of that terminal server ? ) , or take a lot of additional efort to manage manually. They require yet another set of tools than the set you are already using to manage your network.&lt;br&gt;&#xA;They don&amp;rsquo;t integrate with your backup strategy, and don&amp;rsquo;t tell me they all come with perfect MIB&amp;rsquo;s.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Guest Post Season</title>
-      <link>http://localhost:1313/blog/guest-post-season/</link>
+      <link>https://krisbuytaert.github.io/blog/guest-post-season/</link>
       <pubDate>Sat, 18 Dec 2010 23:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/guest-post-season/</guid>
+      <guid>https://krisbuytaert.github.io/blog/guest-post-season/</guid>
       <description>&lt;p&gt;Apparently December is the month where everybody starts writing guest posts for other blogs.&lt;/p&gt;&#xA;&lt;p&gt;Earlier this month I wrote an article with the title of this blog for Sysadvent ,&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s a sysadmin relative of the Perl Advent Calendar: One article for each day of December, ending on the 25th article. With the goals of of sharing, openness, and mentoring, we aim to provide great articles about systems administration topics written by fellow sysadmins\&lt;/p&gt;</description>
     </item>
     <item>
       <title>High Availability MySQL Cookbook , the review</title>
-      <link>http://localhost:1313/blog/high-availability-mysql-cookbook-review/</link>
+      <link>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</link>
       <pubDate>Thu, 04 Nov 2010 01:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/high-availability-mysql-cookbook-review/</guid>
+      <guid>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</guid>
       <description>&lt;p&gt;When I read on the internetz that Alex Davies was about the publish a &lt;a href=&#34;https://www.packtpub.com/high-availability-mysql-cookbook/book&#34;&gt;Packt book on MySQL HA&lt;/a&gt; I pinged my contacts at Packt and suggested that I&amp;rsquo;d review the book .&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve ran into &lt;a href=&#34;https://sites.google.com/a/davz.net/alex-davies/&#34;&gt;Alex&lt;/a&gt; at some UKUUG conferences before and he&amp;rsquo;s got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.&lt;/p&gt;&#xA;&lt;p&gt;Alex starts of with a couple of indepth chapters on MySQL Cluster, he does mention that it&amp;rsquo;s not a fit for all problems, but I&amp;rsquo;d hoped he did it a bit more prominently &amp;hellip; an upfront chapter outlining the different approaches and when which approach is a match could have been better. The avid reader now might be 80 pages into MySQL cluster before he realizes it&amp;rsquo;s not going to be a match for his problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Puppet broke my Xen</title>
-      <link>http://localhost:1313/blog/puppet-broke-my-xen/</link>
+      <link>https://krisbuytaert.github.io/blog/puppet-broke-my-xen/</link>
       <pubDate>Sat, 30 Oct 2010 16:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/puppet-broke-my-xen/</guid>
+      <guid>https://krisbuytaert.github.io/blog/puppet-broke-my-xen/</guid>
       <description>&lt;p&gt;Actually it didn&amp;rsquo;t , but now I got your attention.&lt;br&gt;&#xA;We just adopted the use of adding headers to all of our files that are managed by puppet so people will know not to touch it&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. file {&#xA;2. &amp;#34;/etc/xen/scripts/network-custom-vlan-bridges&amp;#34;:&#xA;3. owner =&amp;gt; &amp;#34;root&amp;#34;,&#xA;4. group =&amp;gt; &amp;#34;root&amp;#34;,&#xA;5. mode =&amp;gt; &amp;#34;0755&amp;#34;,&#xA;6. content =&amp;gt; template(&#xA;7. &amp;#34;headers/header-hash.erb&amp;#39;,&#xA;8. &amp;#34;xen/co-mmx-network-custom-vlan-bridges.erb&amp;#34;);&#xA;9. }&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;All worked nice however upon bootstrapping our Xen host the bridges stopped working .. running the network-custom-vlan-bridges script manually solved everything and created the appropriate bridges. But at boottime it didn&amp;rsquo;t..&lt;/p&gt;</description>
     </item>
     <item>
       <title>@Beaker on #Devops</title>
-      <link>http://localhost:1313/blog/beaker-devops/</link>
+      <link>https://krisbuytaert.github.io/blog/beaker-devops/</link>
       <pubDate>Tue, 01 Jun 2010 23:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/beaker-devops/</guid>
+      <guid>https://krisbuytaert.github.io/blog/beaker-devops/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.rationalsurvivability.com/blog/?p=1890&#34;&gt;Yesterday&lt;/a&gt; @beaker posted his ideas on the #devops movement &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Apparently we haven&amp;rsquo;t been stressing enough on the fact that it isn&amp;rsquo;t just about Devs and Ops,&lt;br&gt;&#xA;So let me &lt;a href=&#34;http://www.krisbuytaert.be/blog/devops-secops-dbaops-netops&#34;&gt;repeat&lt;/a&gt; it&amp;rsquo;s not just about Devs and Ops, it&amp;rsquo;s about breaking silo&amp;rsquo;s , about being good at our jobs, about getting conversation started, about talking to different stakeholders in the processes . We are absolutely trying to include all groups, not exclude some.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PuppetCamp Europe  2010</title>
-      <link>http://localhost:1313/blog/puppetcamp-europe-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/puppetcamp-europe-2010/</link>
       <pubDate>Tue, 01 Jun 2010 21:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/puppetcamp-europe-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/puppetcamp-europe-2010/</guid>
       <description>&lt;p&gt;Last week was pretty heavy on conferences for me. On wednesday I had to give my &lt;a href=&#34;http://www.krisbuytaert.be/blog/building-virtual-apliances&#34;&gt;Building Virtual Appliances&lt;/a&gt; talk at the at the Sizing Server event on Advanced Virtualization and Hybrid Cloud Computing , but the most important part of the week was the first edition of Puppetcamp Europe.&lt;/p&gt;&#xA;&lt;p&gt;When the first ideas about PuppetCamp Europe started I asked Luke when and where it&amp;rsquo;d be held. He replied that I should know as I was supposed to organise it&amp;hellip; I thanked for the honour , he went on to ask &lt;a href=&#34;http://jedi.be/blog/&#34;&gt;Patrick&lt;/a&gt; , he accepted &amp;hellip; I hope I helped him out enough :) I even handed out a personal invitation to some of the most famous configuration mgmt people on this planet and &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; sponsored the event too&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux Open Administration Days 2010</title>
-      <link>http://localhost:1313/blog/linux-open-administration-days-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</link>
       <pubDate>Tue, 20 Apr 2010 21:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/linux-open-administration-days-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</guid>
       <description>&lt;p&gt;So about 4 monts ago &lt;a href=&#34;http://blog.bdesmet.be/?p=272&#34;&gt;there was the crazy idea&lt;/a&gt; to start a new FOSS event in Belgium targeted at sysadmins.&lt;/p&gt;&#xA;&lt;p&gt;What started out as an event for local people to meet local people with some local speakers actually ended up being a small local event with some top international speakers on onfiguration mananagement and system administration mixed with a bunch of good local ones !&lt;/p&gt;&#xA;&lt;p&gt;I had the honour to open the conference with an extremely short version of the Devops talk I gave earlier last year.. extremely short as I knew that over the course of the weekend the topic would reoccur a lot.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UKUUG Spring Conference 2010</title>
-      <link>http://localhost:1313/blog/ukuug-spring-conference-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/ukuug-spring-conference-2010/</link>
       <pubDate>Wed, 07 Apr 2010 19:16:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/ukuug-spring-conference-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-conference-2010/</guid>
       <description>&lt;p&gt;Last week I was in Manchester for the 2010 UKUUG Spring Conference, right .. make that 2 weeks ago , :)&lt;/p&gt;&#xA;&lt;p&gt;The UKUUG usually hosts the more interesting conferences around &amp;hellip; , it&amp;rsquo;s not just the schedule that attrackts me , yes there&amp;rsquo;s the strong focus towards Larger Scale Unix (and mostly Linux) deployments and how to manage them, but there&amp;rsquo;s also the opportunity to chat in real life with the Devops from across the chunnel.&lt;/p&gt;</description>
     </item>
     <item>
       <title>11 days till Loadays</title>
-      <link>http://localhost:1313/blog/11-days-till-loadays/</link>
+      <link>https://krisbuytaert.github.io/blog/11-days-till-loadays/</link>
       <pubDate>Tue, 30 Mar 2010 22:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/11-days-till-loadays/</guid>
+      <guid>https://krisbuytaert.github.io/blog/11-days-till-loadays/</guid>
       <description>&lt;p&gt;That&amp;rsquo;s right .. only 11 more &amp;hellip;&lt;br&gt;&#xA;The &lt;a href=&#34;http://www.loadays.org/schedule&#34;&gt;schedule&lt;/a&gt; looks promising, there will be some devops juice, some open spaces, some tutorials, som regular talks .. it really looks promising &amp;hellip; the schedule is packed ,&lt;/p&gt;&#xA;&lt;p&gt;Apart from the talks, tutorials and open spaces there&amp;rsquo;s also the&lt;br&gt;&#xA;Pizza party and the Beer event on saturday &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;No need to register .. just show up ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Apparently Devops is not a JobTitle</title>
-      <link>http://localhost:1313/blog/apparently-devops-not-jobtitle/</link>
+      <link>https://krisbuytaert.github.io/blog/apparently-devops-not-jobtitle/</link>
       <pubDate>Wed, 03 Mar 2010 22:55:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/apparently-devops-not-jobtitle/</guid>
+      <guid>https://krisbuytaert.github.io/blog/apparently-devops-not-jobtitle/</guid>
       <description>&lt;p&gt;Devops, Devops, Devops, everybody talks about it but we&amp;rsquo;re still defining it &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s so many different interpretations possible for the term Devops , It&amp;rsquo;s automated infrastructure, it&amp;rsquo;s agile infrastucture, it&amp;rsquo;s getting devs and ops closer to eachother, it&amp;rsquo;s briding the gap between devs and ops , it&amp;rsquo;s agile system administration, it&amp;rsquo;s the movement , it&amp;rsquo;s the mindset , it&amp;rsquo;s the spirit.&lt;/p&gt;&#xA;&lt;p&gt;Lots of people, lots of opinions .. Indeed some people have been doing this kind of work for ages, some claim the cloud is what makes devops become visible (but we&amp;rsquo;ve been doing cloud since before the cloud marketeers called it cloud)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Packaging Drupal Modules  or not ?</title>
-      <link>http://localhost:1313/blog/packaging-drupal-modules-or-not/</link>
+      <link>https://krisbuytaert.github.io/blog/packaging-drupal-modules-or-not/</link>
       <pubDate>Tue, 16 Feb 2010 22:20:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/packaging-drupal-modules-or-not/</guid>
+      <guid>https://krisbuytaert.github.io/blog/packaging-drupal-modules-or-not/</guid>
       <description>&lt;p&gt;So &lt;a href=&#34;http://bitfieldconsulting.com/puppet-drupal&#34;&gt;John&lt;/a&gt; wrote down his experiences on deploying Drupal sites with Puppet .&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s not a secret that I&amp;rsquo;ve been thinking about similar stuff and how I could get to the best possible setup.&lt;/p&gt;&#xA;&lt;p&gt;John starts of with using Puppet to download Drush&amp;hellip; while I want to use &lt;a href=&#34;http://repo.inuits.be/centos/5/os/noarch/drush-All-Versions-2.1-1.noarch.rpm&#34;&gt;rpm&lt;/a&gt; for that &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;I want my core infrastructure to be fully packaged&amp;hellip; not downloaded and untarred. I want to be able to reproduce my platform in a couple of months , with the exact same versions I`m using now .. not with the version that happens to be on ftp.drupal.org at that point in time, or with ftp.drupal.org being down.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Got Interviewed</title>
-      <link>http://localhost:1313/blog/got-interviewed/</link>
+      <link>https://krisbuytaert.github.io/blog/got-interviewed/</link>
       <pubDate>Wed, 18 Nov 2009 22:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/got-interviewed/</guid>
+      <guid>https://krisbuytaert.github.io/blog/got-interviewed/</guid>
       <description>&lt;p&gt;by &lt;a href=&#34;http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/&#34;&gt;@botchagalupe&lt;/a&gt;&lt;br&gt;&#xA;on Virtualization, Open Source tools and DNS Problems&lt;/p&gt;</description>
     </item>
     <item>
       <title>A long overdue report of DevopsDays</title>
-      <link>http://localhost:1313/blog/long-overdue-report-devopsdays/</link>
+      <link>https://krisbuytaert.github.io/blog/long-overdue-report-devopsdays/</link>
       <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/long-overdue-report-devopsdays/</guid>
+      <guid>https://krisbuytaert.github.io/blog/long-overdue-report-devopsdays/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s how it started :&lt;/p&gt;&#xA;&lt;p&gt;So I used to be a software developer, writing perl for the web, then C, then Java, then PHP, till I realized nobody ever configured my servers correctly and I changed trades becoming a system engineer, while teaching new developers the basics of their trade, whom grew into doing Infrastructure Architecture .. familiar story for much of the crowd at DevopsDays &amp;hellip; a crowd that wants to stopping the war between developers and system engineering , a crowd that wants to automate builds, integrate testing, deploy, deploy on very large scale, deploy in the cloud and much more.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Puppet Meetup Leuven</title>
-      <link>http://localhost:1313/blog/puppet-meetup-leuven/</link>
+      <link>https://krisbuytaert.github.io/blog/puppet-meetup-leuven/</link>
       <pubDate>Tue, 19 May 2009 12:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/puppet-meetup-leuven/</guid>
+      <guid>https://krisbuytaert.github.io/blog/puppet-meetup-leuven/</guid>
       <description>&lt;p&gt;As &lt;a href=&#34;http://www.reductivelabs.com/training/&#34;&gt;Teyo&lt;/a&gt; will be in Leuven (Belgium) next week for the training , some folks had the idea to meetup after the training for a Puppet Users Meetup.&lt;/p&gt;&#xA;&lt;p&gt;So the plan is to meet for Drinks and Puppettalk, next week wednesday as of 20u00 in the Domus in Leuven&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.domusleuven.be/&#34; title=&#34;http://www.domusleuven.be/&#34;&gt;http://www.domusleuven.be/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I hope to meet a bunch of you there !&lt;/p&gt;&#xA;&lt;p&gt;PS. Feel free to spread the news.&lt;br&gt;&#xA;PPS. There is a chances I won&amp;rsquo;t make it myselve which shouldn&amp;rsquo;t keep you folks back :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upcoming Training opportunities</title>
-      <link>http://localhost:1313/blog/upcoming-training-opportunities/</link>
+      <link>https://krisbuytaert.github.io/blog/upcoming-training-opportunities/</link>
       <pubDate>Thu, 16 Apr 2009 23:45:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/upcoming-training-opportunities/</guid>
+      <guid>https://krisbuytaert.github.io/blog/upcoming-training-opportunities/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.kuleuven-kortrijk.be/nl/PAV/Opleidingsaanbod/Meerdaagse/Opleiding/?code=1534&#34;&gt;Next month&lt;/a&gt; I`ll be teaching a course on Virtualization at the KULAK.&lt;/p&gt;&#xA;&lt;p&gt;Apart from my training there is also a &lt;a href=&#34;http://reductivelabs.com/training/&#34;&gt;Puppet training&lt;/a&gt; planned in Belgium.&lt;/p&gt;&#xA;&lt;p&gt;As I assisted Luke in finding a location for the training I tought it might be a good idea to have a Puppet Users meetup while some people are already gathering in Leuven&lt;/p&gt;&#xA;&lt;p&gt;Current plan is to meet up somewhere in Leuven on the evening of the 25th , more announcements later ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Image Sprawl , and the new cure ..</title>
-      <link>http://localhost:1313/blog/image-sprawl-and-new-cure/</link>
+      <link>https://krisbuytaert.github.io/blog/image-sprawl-and-new-cure/</link>
       <pubDate>Fri, 06 Feb 2009 00:24:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/image-sprawl-and-new-cure/</guid>
+      <guid>https://krisbuytaert.github.io/blog/image-sprawl-and-new-cure/</guid>
       <description>&lt;p&gt;When I tell people that the concept of copying VM&amp;rsquo;s around as frequently done in the VMWare world is one of the most stupid ideas on this planet, I get the weirdest looks.&lt;/p&gt;&#xA;&lt;p&gt;In my world it is, I want my infrastructure to be reproducible , I want to be able to throw any machine in my infrastructure out of the 10th floor of a building and be up and running again in no time. If I spread a bunch of VM copies around who knows what kind of life they start leading. Some will get upgrades, some won&amp;rsquo;t ..&lt;br&gt;&#xA;If I get an image from someone, how did he get there ? Nobody knows ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Is anybody else confused about Chef ?</title>
-      <link>http://localhost:1313/blog/anybody-else-confused-about-chef/</link>
+      <link>https://krisbuytaert.github.io/blog/anybody-else-confused-about-chef/</link>
       <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/anybody-else-confused-about-chef/</guid>
+      <guid>https://krisbuytaert.github.io/blog/anybody-else-confused-about-chef/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://wiki.opscode.com/display/chef/Home&#34;&gt;Chef&lt;/a&gt; absolutely confuses me..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://madstop.com/2009/01/16/opscode-announces-chef-a-puppet-competitor/&#34;&gt;Luke&lt;/a&gt; is confused too ..&lt;br&gt;&#xA;I’m clearly disappointed that someone who has been a high-profile user of Puppet but has never contributed much in the way of code (Ohloh claims 2 commits) would decide to start a whole new project rather than attempt to contribute to Puppet&lt;/p&gt;&#xA;&lt;p&gt;Now , if you know me a bit you know that reinventing the wheel, or creating identical projects with no clear reasons is something I dislike .&lt;/p&gt;</description>
     </item>
     <item>
       <title>New interesting open Source releases</title>
-      <link>http://localhost:1313/blog/new-interesting-open-source-releases/</link>
+      <link>https://krisbuytaert.github.io/blog/new-interesting-open-source-releases/</link>
       <pubDate>Sun, 18 Jan 2009 15:08:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/new-interesting-open-source-releases/</guid>
+      <guid>https://krisbuytaert.github.io/blog/new-interesting-open-source-releases/</guid>
       <description>&lt;p&gt;In case you haven&amp;rsquo;t noticed them yet ..&lt;br&gt;&#xA;&lt;a href=&#34;http://jan.kneschke.de/2009/1/13/mysql-proxy-public-repo-moved-to-launchpad&#34;&gt;MySQL Proxy&lt;/a&gt; has a new release and moved it&amp;rsquo;s public repo to Launchpad.&lt;/p&gt;&#xA;&lt;p&gt;(Still Launchpad isn&amp;rsquo;t open source yet .. a matter of time .. but in the meanwhile Jira and Confluence are sadly gaining adoption in the market)&lt;/p&gt;&#xA;&lt;p&gt;In the devministration area there is a new Puppet module that automagically populates puppet managed machines in &lt;a href=&#34;http://blog.zenoss.com/2009/01/13/new-zenoss-module-for-puppet/&#34;&gt;Zenoss&lt;/a&gt; , I&amp;rsquo;ve seen different people using Puppet to populate their Nagios configs, but adding Zenoss to the list is new.. so when will we see the Zabbix and Hyperic plugins ?&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Everything on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/everything/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/everything/</link>
     <description>Recent content in Everything on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Oct 2009 22:52:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/everything/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/everything/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DNS Tools</title>
-      <link>http://localhost:1313/blog/dns-tools/</link>
+      <link>https://krisbuytaert.github.io/blog/dns-tools/</link>
       <pubDate>Wed, 28 Oct 2009 22:52:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/dns-tools/</guid>
+      <guid>https://krisbuytaert.github.io/blog/dns-tools/</guid>
       <description>&lt;p&gt;In my latest DNS Problem related post I mentionned that don&amp;rsquo;t know all the answers, I however know about some good tools to help you setup a clean DNS server.&lt;/p&gt;&#xA;&lt;p&gt;Ages ago via &lt;a href=&#34;http://planet.fedoraproject.org/&#34;&gt;Planet Fedora&lt;/a&gt; I ran into an article from &lt;a href=&#34;http://www.alphatek.info/2008/11/29/dnsknifecom-meet-the-online-dig/&#34;&gt;Steven Moix&lt;/a&gt; about a tool he and his fellow students build for a summer project.&lt;/p&gt;&#xA;&lt;p&gt;The tool is &lt;a href=&#34;http://www.dnsknife.com/&#34;&gt;DNSKnife&lt;/a&gt; and it&amp;rsquo;s really interresting.&lt;/p&gt;&#xA;&lt;p&gt;DNS Knife is a good tool to check if your DNS setup is ok, it checks the parent servers, it checks for if your nameservers are listed on the parent server, checks if all your nameservers are reachable and are authorative .&lt;br&gt;&#xA;And so on and so on &amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>

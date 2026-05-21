@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dnssec on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/dnssec/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/dnssec/</link>
     <description>Recent content in Dnssec on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 May 2010 19:28:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/dnssec/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/dnssec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Today everything could have been  a freaking dnssec problem</title>
-      <link>http://localhost:1313/blog/today-everything-could-have-been-freaking-dnssec-problem/</link>
+      <link>https://krisbuytaert.github.io/blog/today-everything-could-have-been-freaking-dnssec-problem/</link>
       <pubDate>Wed, 05 May 2010 19:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/today-everything-could-have-been-freaking-dnssec-problem/</guid>
+      <guid>https://krisbuytaert.github.io/blog/today-everything-could-have-been-freaking-dnssec-problem/</guid>
       <description>&lt;p&gt;You might have read about it .. al over the internets. but today a big step for the implementation of global DnsSec implementation is being made .&lt;/p&gt;&#xA;&lt;p&gt;You might want to &lt;a href=&#34;http://etherealmind.com/dnssec-and-why-the-internet-probably-wont-break-today/&#34;&gt;read up&lt;/a&gt; about the impact.&lt;/p&gt;&#xA;&lt;p&gt;And &lt;a href=&#34;https://www.dns-oarc.net/oarc/services/replysizetest&#34;&gt;test here&lt;/a&gt; if you are unsure about your situation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Starting a Collection</title>
-      <link>http://localhost:1313/blog/starting-collection/</link>
+      <link>https://krisbuytaert.github.io/blog/starting-collection/</link>
       <pubDate>Fri, 02 Apr 2010 19:38:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/starting-collection/</guid>
+      <guid>https://krisbuytaert.github.io/blog/starting-collection/</guid>
       <description>&lt;p&gt;Apparently I started a collection ..&lt;br&gt;&#xA;Of DNS books signed by their author &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/AlternativeDNS.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;As already mentioned on twitter, &lt;a href=&#34;http://blog.fupps.com/&#34;&gt;Jan-Piet Mens&lt;/a&gt; kindly gave me a signed copy of his alternative DNS Servers book, last week at the UKUUG 2010 Spring Conference&lt;/p&gt;&#xA;&lt;p&gt;When I got that book I didn&amp;rsquo;t even know yet that this morning I was going to be at a seminar on DNS sec by &lt;a href=&#34;http://www.cricketondns.com/%22&#34;&gt;Cricket Liu&lt;/a&gt;&lt;br&gt;&#xA;and because of having registered so late for the event I certainly wasn&amp;rsquo;t expecting to get one of the books that were going to be handed out to the first 50 people that signed up &amp;hellip; but I was lucky ..&lt;/p&gt;</description>
     </item>
   </channel>

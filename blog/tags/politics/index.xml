@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Politics on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/politics/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/politics/</link>
     <description>Recent content in Politics on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Dec 2009 22:39:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/politics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/politics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Drupal 6 for EPEL</title>
-      <link>http://localhost:1313/blog/drupal-6-epel/</link>
+      <link>https://krisbuytaert.github.io/blog/drupal-6-epel/</link>
       <pubDate>Sun, 20 Dec 2009 22:39:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/drupal-6-epel/</guid>
+      <guid>https://krisbuytaert.github.io/blog/drupal-6-epel/</guid>
       <description>&lt;p&gt;Some of you might have noticed that Fedora 11 and up already have an up to date Drupal6 version, but EPEL , which is what a lot of people are using on their CentOS or RHEL builds only has a Drupal5. I asked Jon Ciesla, who is maintaing the Drupal packages in Fedora why :&lt;/p&gt;&#xA;&lt;p&gt;Because when Drupal was initially built for EL-5 and EL-5, the 5.x&lt;br&gt;&#xA;branch was the current release. It&amp;rsquo;s up to date, 5.20 is the most&lt;br&gt;&#xA;recent release, and is still supported upstream in terms of security&lt;br&gt;&#xA;fixes. 6 is out, and has been for awhile, but we have the following:&lt;/p&gt;</description>
     </item>
   </channel>

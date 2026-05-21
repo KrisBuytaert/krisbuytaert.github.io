@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Serialnr on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/serialnr/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/serialnr/</link>
     <description>Recent content in Serialnr on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Nov 2009 21:16:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/serialnr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/serialnr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Serial typo</title>
-      <link>http://localhost:1313/blog/serial-typo/</link>
+      <link>https://krisbuytaert.github.io/blog/serial-typo/</link>
       <pubDate>Tue, 24 Nov 2009 21:16:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/serial-typo/</guid>
+      <guid>https://krisbuytaert.github.io/blog/serial-typo/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.vanginderachter.be/&#34;&gt;Serge&lt;/a&gt; pinged me today over Jabber asking hot to tackle an accidental typo in the serial number of a zonefile.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. dig +short SOA ibbt.be&#xA;2. dns1.ibbt.be. admin.ibbt.be. 2009141017 7200 3600 1209600 432000&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;No really we don&amp;rsquo;t need no 13th and 14th month. Given the fact that lots of us use the YYYYMMDDID format That would mean that we&amp;rsquo;d have to wait for 20100101 to happen before we can update in a readable fashion again ..&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Skip_name_resolve on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/skip_name_resolve/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/skip_name_resolve/</link>
     <description>Recent content in Skip_name_resolve on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Feb 2009 23:55:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/skip_name_resolve/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/skip_name_resolve/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Story Repeats</title>
-      <link>http://localhost:1313/blog/story-repeats/</link>
+      <link>https://krisbuytaert.github.io/blog/story-repeats/</link>
       <pubDate>Tue, 10 Feb 2009 23:55:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/story-repeats/</guid>
+      <guid>https://krisbuytaert.github.io/blog/story-repeats/</guid>
       <description>&lt;p&gt;I covered this one &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/702&#34;&gt;before&lt;/a&gt; .. but as it struck twiced today .. I think it&amp;rsquo;s worth repeating. Both my &lt;a href=&#34;http://poke152.blogspot.com/&#34;&gt;collegue Karl&lt;/a&gt; and &lt;a href=&#34;http://blogs.sun.com/trentlloyd/entry/this_week_s_tip_the&#34;&gt;Trent&lt;/a&gt; ran into the same problem , within hours hours of eachother, a missing or failing reverse dns mapping that caused performance issues .. and a lot of log entries..&lt;/p&gt;&#xA;&lt;p&gt;Karl denies having a second life in Perth but I`m not really sure about that &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;But I guess they both have to agree&amp;hellip; Everything is a fscking DNS problem.&lt;br&gt;&#xA;(I noticed other people using that spelling this weekend, on stage in the Janson)&lt;/p&gt;</description>
     </item>
   </channel>

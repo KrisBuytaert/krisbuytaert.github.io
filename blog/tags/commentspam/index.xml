@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Commentspam on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/commentspam/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/commentspam/</link>
     <description>Recent content in Commentspam on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Sep 2008 10:25:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/commentspam/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/commentspam/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The new comment spam :(</title>
-      <link>http://localhost:1313/blog/new-comment-spam/</link>
+      <link>https://krisbuytaert.github.io/blog/new-comment-spam/</link>
       <pubDate>Wed, 24 Sep 2008 10:25:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/new-comment-spam/</guid>
+      <guid>https://krisbuytaert.github.io/blog/new-comment-spam/</guid>
       <description>&lt;p&gt;The past couple of weeks my blog is being annoyed by different comment spams, the content of the comment seems perfectly relevant, often even correctly tackling the topic, or sometimes even almost insightful follow up questions.&lt;/p&gt;&#xA;&lt;p&gt;However the link to the author site is totally bogus.&lt;/p&gt;&#xA;&lt;p&gt;If talking about drupal and high availability , a question on GFS or OCFS2 is obviously on topic. However I don&amp;rsquo;t want my blog to link to lot of irrelevant sites.&lt;/p&gt;</description>
     </item>
   </channel>

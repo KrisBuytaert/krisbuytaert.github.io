@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Incompetent Marketeers on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/incompetent-marketeers/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/incompetent-marketeers/</link>
     <description>Recent content in Incompetent Marketeers on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Dec 2008 21:13:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/incompetent-marketeers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/incompetent-marketeers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Puppy FUD</title>
-      <link>http://localhost:1313/blog/puppy-fud/</link>
+      <link>https://krisbuytaert.github.io/blog/puppy-fud/</link>
       <pubDate>Sun, 07 Dec 2008 21:13:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/puppy-fud/</guid>
+      <guid>https://krisbuytaert.github.io/blog/puppy-fud/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://buytaert.net/open-source-and-free-puppies&#34;&gt;Dries&lt;/a&gt;  commented on &lt;a href=&#34;http://blog.contenthere.net/2008/12/interwoven-foss-fud.html&#34;&gt;Seth&lt;/a&gt; reporting about the puppyfud some proprietary company not understanding open source was uttering.&lt;/p&gt;&#xA;&lt;p&gt;It was a pretty lousy comparison actually .. they compared Open Source software to a Free Puppy.. it looks nice and cheap at first but it will cost you anyhow as it needs food and shots etc so it isn&amp;rsquo;t really free after all.&lt;/p&gt;&#xA;&lt;p&gt;Now the fact is that with the proprietary stuff they are trying to shove down their customers throats, their CMS&amp;rsquo;s also need configuration, updates, and styling left and right, probably just as much as the Open Source alternative out there.&lt;br&gt;&#xA;Now as they have a proprietary platform the chance that they have an equally big expert group around their product is small, people don&amp;rsquo;t just buy software to learn it, however they will download a piece of interesting open source software to get aquanted with it.. There probably won&amp;rsquo;t be that much free examples and tips and hints a round, or even free themes to base a site on ..&lt;/p&gt;</description>
     </item>
   </channel>

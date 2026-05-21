@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Twitter on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/twitter/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/twitter/</link>
     <description>Recent content in Twitter on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Sep 2010 20:53:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pidgin and OAUth</title>
-      <link>http://localhost:1313/blog/pidgin-and-oauth/</link>
+      <link>https://krisbuytaert.github.io/blog/pidgin-and-oauth/</link>
       <pubDate>Wed, 01 Sep 2010 20:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/pidgin-and-oauth/</guid>
+      <guid>https://krisbuytaert.github.io/blog/pidgin-and-oauth/</guid>
       <description>&lt;p&gt;So earlier today the nice folks over at twitter figured it was a good time to change all the authentication to oauth &amp;hellip; they might have announced it all over the place .. but it never catched my attention&lt;/p&gt;&#xA;&lt;p&gt;The onlything that did catch my attention was that after not having ued pidgin for about 2 weeks I didn&amp;rsquo;t have access to twitter anymore.&lt;/p&gt;&#xA;&lt;p&gt;I`m using the &lt;a href=&#34;http://code.google.com/p/microblog-purple/&#34;&gt;purple-microblog plugin&lt;/a&gt; and the default version of that plugin in Fedora 12 wasn&amp;rsquo;t really up2date. The plugin supports OAuth as of 3.0 which was released ages ago.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Irc vs Twitter err.. Identi.ca</title>
-      <link>http://localhost:1313/blog/irc-vs-twitter-err-identica/</link>
+      <link>https://krisbuytaert.github.io/blog/irc-vs-twitter-err-identica/</link>
       <pubDate>Fri, 12 Feb 2010 22:15:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/irc-vs-twitter-err-identica/</guid>
+      <guid>https://krisbuytaert.github.io/blog/irc-vs-twitter-err-identica/</guid>
       <description>&lt;p&gt;Over 1.5 decade ago, a bunch of us were addicted to irc, I lived on channels such as #coders, #nlcoders, #demoscene, sneaked in on #vlaanderen to see when the Leuven locals were heading to the pub, then started joining multiple Linux and Open Source related channels around 94&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Then some weirdos had an alternative way of chatting ICQ, then the folks from Redmond reinvented the wheel&amp;hellip; Luckily XMPP arrived and Jabber became the open alternative, but still all of this time irc stayed&lt;/p&gt;</description>
     </item>
     <item>
       <title>Twitter Woes</title>
-      <link>http://localhost:1313/blog/twitter-woes/</link>
+      <link>https://krisbuytaert.github.io/blog/twitter-woes/</link>
       <pubDate>Mon, 15 Jun 2009 20:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/twitter-woes/</guid>
+      <guid>https://krisbuytaert.github.io/blog/twitter-woes/</guid>
       <description>&lt;p&gt;This one has been sitting in the drafts for too long, but frankly there&amp;rsquo;s not much I have to add.&lt;br&gt;&#xA;Twitter is acting weird , we all know that .. but the following movie really beats everything.&lt;/p&gt;&#xA;&lt;p&gt;Yes that&amp;rsquo;s right what you are seeing is me logging into my twitter account, checking my @krisbuytaert&lt;br&gt;&#xA;messages and seeing the @vti messages and then even taking full control of their (in the mean while deleted) account.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Identi.ca</title>
-      <link>http://localhost:1313/blog/identica/</link>
+      <link>https://krisbuytaert.github.io/blog/identica/</link>
       <pubDate>Mon, 23 Mar 2009 23:11:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/identica/</guid>
+      <guid>https://krisbuytaert.github.io/blog/identica/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.foo.be/cgi-bin/wiki.pl/2008-10-19_Why_You_Should_Use_Identica_and_not_Twitter&#34;&gt;Alexandre&lt;/a&gt; urges us too microblog on &lt;a href=&#34;http://identi.ca/krisbuytaert&#34;&gt;Identica&lt;/a&gt; rather than on &lt;a href=&#34;http://twitter.com/krisbuytaert&#34;&gt;Twitter&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;As an opensource evangelist I probably should do so .. Crossposting from Identi.ca to Twitter works&amp;hellip; but there is one big thing that&amp;rsquo;s blocking me to do this by default and that&amp;rsquo;s &lt;a href=&#34;http://code.google.com/p/microblog-purple/issues/detail?id=73&amp;amp;q=laconi&#34;&gt;a bug in microblog-purple&lt;/a&gt; which currently blocks me from using Identi.ca in Pidgin. Which is what I use to Tweet ..&lt;/p&gt;&#xA;&lt;p&gt;As afteral .. Twitter is nothing more than world wide searchable irc , isn&amp;rsquo;t it ? And I want them all from 1 interface, irc, jabber, twitter, &amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drupal Twitter module</title>
-      <link>http://localhost:1313/blog/drupal-twitter-module/</link>
+      <link>https://krisbuytaert.github.io/blog/drupal-twitter-module/</link>
       <pubDate>Thu, 15 Jan 2009 19:52:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/drupal-twitter-module/</guid>
+      <guid>https://krisbuytaert.github.io/blog/drupal-twitter-module/</guid>
       <description>&lt;p&gt;As I don&amp;rsquo;t really use twitter apart to microblog but rather as an Instatn Messaging tool (why those people don&amp;rsquo;t use IRC or Jabber remains a mistery to me wheel.reinvent :( )&lt;/p&gt;&#xA;&lt;p&gt;I figured I could abuse it to announce posts on my blog, lots of people seem to be doing this so there had to be an easy way to auto publish them ..&lt;/p&gt;&#xA;&lt;p&gt;The wonderful Drupal community seemed to have the same idea and therefore created the &lt;a href=&#34;http://drupal.org/project/twitter&#34;&gt;Twitter Module&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Everything is a funky Twitter problem ..</title>
-      <link>http://localhost:1313/blog/everything-funky-twitter-problem/</link>
+      <link>https://krisbuytaert.github.io/blog/everything-funky-twitter-problem/</link>
       <pubDate>Mon, 05 Jan 2009 14:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/everything-funky-twitter-problem/</guid>
+      <guid>https://krisbuytaert.github.io/blog/everything-funky-twitter-problem/</guid>
       <description>&lt;p&gt;When your favourite ex yahoo employee and mysql guru blogs about a &amp;ldquo;dns problem&amp;rdquo; and how &lt;a href=&#34;http://jeremy.zawodny.com/blog/archives/010835.html&#34;&gt;he solved it using Twitter&lt;/a&gt; you can only smile ;) At last some useful use for Twitter .. when it&amp;rsquo;s up at least ..&lt;/p&gt;</description>
     </item>
   </channel>

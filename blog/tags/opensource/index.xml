@@ -2,297 +2,297 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opensource on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/opensource/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/opensource/</link>
     <description>Recent content in Opensource on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Jul 2013 22:27:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open Business Models</title>
-      <link>http://localhost:1313/blog/open-business-models/</link>
+      <link>https://krisbuytaert.github.io/blog/open-business-models/</link>
       <pubDate>Wed, 10 Jul 2013 22:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/open-business-models/</guid>
+      <guid>https://krisbuytaert.github.io/blog/open-business-models/</guid>
       <description>&lt;p&gt;When I started writing this I wrote &amp;ldquo;Last week Opscode came&amp;rdquo; obviously now that is &amp;ldquo;A couple of months ago Opscode came with a bunch of announcements &amp;hellip; one of them being that they are also going to &lt;a href=&#34;http://www.opscode.com/blog/2013/02/04/announcing-commercial-support-for-open-source-chef/&#34;&gt;support the Open Source Chef&lt;/a&gt; .. rather than only their own platform.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;d love to see more companies formally do this .. Over the past couple of years I&amp;rsquo;ve had numerous situations where organizations where happy to pay for support to an commercial backer of Open Source software&amp;hellip; but they were not interested in , software updates, fancy dashboards , unneeded features.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using broken development frameworks , or why we don&#39;t use Zurmo</title>
-      <link>http://localhost:1313/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</link>
+      <link>https://krisbuytaert.github.io/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</link>
       <pubDate>Wed, 10 Jul 2013 22:08:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</guid>
+      <guid>https://krisbuytaert.github.io/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</guid>
       <description>&lt;p&gt;People often wonder why DBA&amp;rsquo;s used to hate developers, and with DBA&amp;rsquo;s also the System Engineers,&lt;br&gt;&#xA;(note that I just expanded devops by adding dba&amp;rsquo;s to the picture..)&lt;/p&gt;&#xA;&lt;p&gt;So let me tell you a story ..&lt;/p&gt;&#xA;&lt;p&gt;A couple of weeks ago one of our customers wanted to start experimenting with a new type of CRM. A gamified CRM.&lt;br&gt;&#xA;Zurmo &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;So we set this thing up in a dev environment and started playing with it , while at first it looks nice ..&lt;br&gt;&#xA;the application actually felt pretty slow.. however given that is a low resource development environment we looked no further.&lt;/p&gt;</description>
     </item>
     <item>
       <title>#monitoringlove hackfest</title>
-      <link>http://localhost:1313/blog/monitoringlove-hackfest/</link>
+      <link>https://krisbuytaert.github.io/blog/monitoringlove-hackfest/</link>
       <pubDate>Tue, 13 Nov 2012 22:54:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monitoringlove-hackfest/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monitoringlove-hackfest/</guid>
       <description>&lt;p&gt;The age of #monitoringsucks is over, we&amp;rsquo;re now transitioning into a #monitoringlove period.&lt;/p&gt;&#xA;&lt;p&gt;That however doesn&amp;rsquo;t mean al the work is done, we still need to do a lot of work and a lot of people are working on a lot of stuff.&lt;/p&gt;&#xA;&lt;p&gt;Therefore like last year we are opening up our offices again right after Fosdem for a #monitoringlove hackfest&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s right on february 4 and 5 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp. In short a #monitoringlove hackathon&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open Source Certification , Friend or Foe</title>
-      <link>http://localhost:1313/blog/open-source-certification-friend-or-foe/</link>
+      <link>https://krisbuytaert.github.io/blog/open-source-certification-friend-or-foe/</link>
       <pubDate>Sat, 25 Aug 2012 15:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/open-source-certification-friend-or-foe/</guid>
+      <guid>https://krisbuytaert.github.io/blog/open-source-certification-friend-or-foe/</guid>
       <description>&lt;p&gt;With 2 of the bigger Open Source projects I care about talking about certifications programs questions pop up again &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Should we certify ourselves ?&lt;/p&gt;&#xA;&lt;p&gt;So let me tell you about my experiences in getting Open Source related Certifications ..&lt;/p&gt;&#xA;&lt;p&gt;Over a decade ago, (2001) when RedHat was still Redhat and not yet Fedora the company I was working for was about to partner with RedHat and needed to get a number of people certified for that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is devops ?</title>
-      <link>http://localhost:1313/blog/what-devops/</link>
+      <link>https://krisbuytaert.github.io/blog/what-devops/</link>
       <pubDate>Sat, 31 Dec 2011 17:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/what-devops/</guid>
+      <guid>https://krisbuytaert.github.io/blog/what-devops/</guid>
       <description>&lt;p&gt;I`m parsing the responses of the Deploying Drupal survey I started a couple of months ago (more on that later)&lt;/p&gt;&#xA;&lt;p&gt;One of the questions in the survey is &amp;ldquo;What is devops&amp;rdquo; , apparently when you ask a zillion people (ok ok, just a large bunch of Tweeps..), you get a large amount of different answers ranging from totally wrong to spot on.&lt;/p&gt;&#xA;&lt;p&gt;So let&amp;rsquo;s go over them and see what we can learn from them ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fall , Winter and Spring Conference Season 2011 - 2012</title>
-      <link>http://localhost:1313/blog/fall-winter-and-spring-conference-season-2011-2012/</link>
+      <link>https://krisbuytaert.github.io/blog/fall-winter-and-spring-conference-season-2011-2012/</link>
       <pubDate>Sat, 24 Sep 2011 14:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fall-winter-and-spring-conference-season-2011-2012/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fall-winter-and-spring-conference-season-2011-2012/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.jedi.be/blog/2011/09/06/what-conferences-to-attend/&#34;&gt;Patrick&lt;/a&gt; posted his upcoming conference schedule for the next couple of months.&lt;br&gt;&#xA;as you can see there are a comple of overlapping conferences :)&lt;/p&gt;&#xA;&lt;p&gt;Conferences I&amp;rsquo;m speaking at or likely to attend are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The first week of October I&lt;code&gt;ll be in the Valley , I&lt;/code&gt;ll be late for Jenkinsconf but I hope to pick up some events while I&lt;code&gt;m there.. suggestions are welcome , I&lt;/code&gt;m also heading back to Europe earlier than planned so I will miss BadCamp :( &amp;hellip;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://devopsdays.org/events/2011-goteborg/&#34;&gt;Devopsdays Goteborg, Sweden&lt;/a&gt; : &lt;em&gt;October 14,15&lt;/em&gt; - The yearly Europe devops event is happening in Goteborg this time. It&amp;rsquo;s going to be really exciting this time , as the theme is inclusive. Eploring the boundaries of devops, I`m once again in the organization of this conference.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://t-dose.org/&#34;&gt;T-Dose 2011&lt;/a&gt;, The Technical Dutch Open Source Event, on 5 and 6 november 2011 , I will be talking again about my experiences with complex Puppet setups&lt;/li&gt;&#xA;&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://citconf.com/&#34;&gt;Citconf , London&lt;/a&gt;: &lt;em&gt;November 11-12&lt;/em&gt; - All you ever wanted to know about Continuous Integration. Period, registered, haven&amp;rsquo;t booked flights yet.&lt;/del&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.cloudcamp.org/ghent&#34;&gt;Cloudcamp Belgium&lt;/a&gt;: &lt;em&gt;November 21&lt;/em&gt; - I&amp;rsquo;m looking forward to this year&amp;rsquo;s event, as there will likely more practioners and less marketing folks.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.usenix.org/events/lisa11/tech/tech.html#Buytaert&#34;&gt;Lisa 2011&lt;/a&gt;, Boston, US, I&lt;code&gt;m giving an Invited talk titled , Devops: The past and futre are here, It&#39;s just not evenly distributed (yet), and I&lt;/code&gt;ll be on a panel titled What Will Be HOt Next Year, really looking forward to this one :)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://fosdem.org/&#34;&gt;Fosdem.org&lt;/a&gt; will take place on 4 and 5 February 2012 , and as every year since it inception I&amp;rsquo;ll be there&lt;/li&gt;&#xA;&lt;li&gt;The UKUUG rebranded to &lt;a href=&#34;http://www.flossuk.org/Events/Spring2012/&#34;&gt;FlossUK&lt;/a&gt; , they are hosting their Annual Spring conference from 20th to 22nd March in Edinburgh , given their refound focus it will be even more interresting !&lt;/li&gt;&#xA;&lt;li&gt;And as announced earlier this week &lt;a href=&#34;http://loadays.org/&#34;&gt;Loadays.org&lt;/a&gt; will take place in Antwerp again this year on 31/3/2012 and 1/4/2012 , as the previous years I`m co organizing this conference&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;And yes, I do work from time to time. Just that these conferences are a great way to capture and share new ideas. All worth it!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upcoming 2011 Speaking Engagements</title>
-      <link>http://localhost:1313/blog/upcoming-2011-speaking-engagements/</link>
+      <link>https://krisbuytaert.github.io/blog/upcoming-2011-speaking-engagements/</link>
       <pubDate>Mon, 24 Jan 2011 00:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/upcoming-2011-speaking-engagements/</guid>
+      <guid>https://krisbuytaert.github.io/blog/upcoming-2011-speaking-engagements/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.lenzg.net/&#34;&gt;Lenz&lt;/a&gt; gave the good example so I`ll follow :)&lt;/p&gt;&#xA;&lt;p&gt;Next weekend saturday I`ll be giving a talk about devops at &lt;a href=&#34;http://brussels.startupweekend.org/speakers/&#34;&gt;StartUp Weekend Brussels&lt;/a&gt;, from what I&amp;rsquo;ve read so far it promises to be an audience that needs the talk,&lt;/p&gt;&#xA;&lt;p&gt;The week after I`ll be speaking at the &lt;a href=&#34;http://bxl2011.drupaldays.org/node/233&#34;&gt;DrupalDevDays&lt;/a&gt;, again about devops , however this time with a touch of Drupal , giving a devops talk at Devoxx last year to a Java audience learned me that the devops evangelist need to go outside of their usual conference audiences and als talk to the people that are usually in the other silos.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Appliance or Not Appliance</title>
-      <link>http://localhost:1313/blog/appliance-or-not-appliance/</link>
+      <link>https://krisbuytaert.github.io/blog/appliance-or-not-appliance/</link>
       <pubDate>Wed, 12 Jan 2011 22:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/appliance-or-not-appliance/</guid>
+      <guid>https://krisbuytaert.github.io/blog/appliance-or-not-appliance/</guid>
       <description>&lt;p&gt;That&amp;rsquo;s the question &lt;a href=&#34;http://blog.rootshell.be/2011/01/05/security-diy-or-plugnplay/&#34;&gt;Xavier&lt;/a&gt; asks in his blog entry titled&lt;br&gt;&#xA;Security: DIY or Plug’n&amp;rsquo;Play&lt;/p&gt;&#xA;&lt;p&gt;To me the answer is simple, most of the appliances I ran into so far have no way of configuring them apart from the ugly webgui they ship with their device. That means that I can&amp;rsquo;t integrate them with the configuration management framework I have in place for the rest of the infrastructure. There is no way to automatically modify e.g firewall rules together with the relocation of a service which does happen automatically, and there is always some kind of manual interaction required. Applicances tend to sit on a island, either stay un managed ( be honest when&amp;rsquo;s the last time you upgraded the firmware of that terminal server ? ) , or take a lot of additional efort to manage manually. They require yet another set of tools than the set you are already using to manage your network.&lt;br&gt;&#xA;They don&amp;rsquo;t integrate with your backup strategy, and don&amp;rsquo;t tell me they all come with perfect MIB&amp;rsquo;s.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fedora Annoyancies Resolved (Hopefully)</title>
-      <link>http://localhost:1313/blog/fedora-annoyancies-resolved-hopefully/</link>
+      <link>https://krisbuytaert.github.io/blog/fedora-annoyancies-resolved-hopefully/</link>
       <pubDate>Fri, 07 Jan 2011 22:39:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fedora-annoyancies-resolved-hopefully/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fedora-annoyancies-resolved-hopefully/</guid>
       <description>&lt;p&gt;A couple of weeks ago I ranted about being able to crash about any available music player on Fedora, and the gazillion bugs I filed for that ..&lt;/p&gt;&#xA;&lt;p&gt;At last the the problem is solved, as mentioned in &lt;a href=&#34;https://bugzilla.redhat.com/show_bug.cgi?id=657971#c17&#34;&gt;https://bugzilla.redhat.com/show_bug.cgi?id=657971#c17&lt;/a&gt;&lt;br&gt;&#xA;this is most probably a bug in ffmpeg which is provided by rpmfusion. and which is solved by installing gstreamer-plugins-ugly&lt;/p&gt;&#xA;&lt;p&gt;At least it works for me :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Guest Post Season</title>
-      <link>http://localhost:1313/blog/guest-post-season/</link>
+      <link>https://krisbuytaert.github.io/blog/guest-post-season/</link>
       <pubDate>Sat, 18 Dec 2010 23:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/guest-post-season/</guid>
+      <guid>https://krisbuytaert.github.io/blog/guest-post-season/</guid>
       <description>&lt;p&gt;Apparently December is the month where everybody starts writing guest posts for other blogs.&lt;/p&gt;&#xA;&lt;p&gt;Earlier this month I wrote an article with the title of this blog for Sysadvent ,&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s a sysadmin relative of the Perl Advent Calendar: One article for each day of December, ending on the 25th article. With the goals of of sharing, openness, and mentoring, we aim to provide great articles about systems administration topics written by fellow sysadmins\&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mollom and Views</title>
-      <link>http://localhost:1313/blog/mollom-and-views/</link>
+      <link>https://krisbuytaert.github.io/blog/mollom-and-views/</link>
       <pubDate>Wed, 04 Aug 2010 00:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/mollom-and-views/</guid>
+      <guid>https://krisbuytaert.github.io/blog/mollom-and-views/</guid>
       <description>&lt;p&gt;You might have noticed that this blog stopped accepting comments about a month ago.. well. stopped accepting is a big word.. I was still accepting comments, only they were never submitted to the database and after entering a comment to my blog people ended up on a white page.&lt;/p&gt;&#xA;&lt;p&gt;So upon returning from holliday I set out to debug the issue together with one of our Inuits Drupal geeks and quickly ran into the following error.\&lt;/p&gt;</description>
     </item>
     <item>
       <title>Over 2 years of #mollom satisfaction</title>
-      <link>http://localhost:1313/blog/over-2-years-mollom-satisfaction/</link>
+      <link>https://krisbuytaert.github.io/blog/over-2-years-mollom-satisfaction/</link>
       <pubDate>Sat, 22 May 2010 20:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/over-2-years-mollom-satisfaction/</guid>
+      <guid>https://krisbuytaert.github.io/blog/over-2-years-mollom-satisfaction/</guid>
       <description>&lt;p&gt;Following up on &lt;a href=&#34;http://mostrey.be/two-years-mollom-satisfaction&#34;&gt;Wim&lt;/a&gt;&amp;rsquo;s example&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/MollomRules.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Devops and Cloud</title>
-      <link>http://localhost:1313/blog/devops-and-cloud/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-and-cloud/</link>
       <pubDate>Wed, 28 Apr 2010 23:15:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-and-cloud/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-and-cloud/</guid>
       <description>&lt;p&gt;Whenever I give my Cloud security talk there&amp;rsquo;s a slide in there talking about the most scary idea about Cloud and Security, the fact that Marketing people will build things on their own while IT, or any other departement isn&amp;rsquo;t involved, and as we all know marketing people have no clue about security, it&amp;rsquo;s not on their mind they won&amp;rsquo;t even think about adding some sort of security to their application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Better days Arrive when Dev Meet Ops</title>
-      <link>http://localhost:1313/blog/better-days-arrive-when-dev-meet-ops/</link>
+      <link>https://krisbuytaert.github.io/blog/better-days-arrive-when-dev-meet-ops/</link>
       <pubDate>Sat, 06 Mar 2010 15:03:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/better-days-arrive-when-dev-meet-ops/</guid>
+      <guid>https://krisbuytaert.github.io/blog/better-days-arrive-when-dev-meet-ops/</guid>
       <description>&lt;p&gt;A couple of weeks a go &lt;a href=&#34;http://twitter.com/LinuxScribe&#34;&gt;Brian Profitt&lt;/a&gt; pinged me for a chat about Devops , the result of that chat , his article can now be found on the Zenoss blog, it&amp;rsquo;s titled &lt;a href=&#34;http://community.zenoss.org/blogs/zenossblog/2010/03/05/datacenter-barometer-better-days-arrive-when-dev-meets-ops&#34;&gt;Datacenter Barometer: Better days arrive when dev meets ops&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s a very nice read with some pointers to places regular readers of my blog should already know ;)&lt;br&gt;&#xA;So with lots of leading Open Source infrastructure companies on different levels, such as config management (OpsCode and Reductive Labs) , monitoring (Zenoss) , deployment (openQRM, RPath, and obviously &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Consultancy&lt;/a&gt; companies , the upcoming Devops conferences around the planet promise to be a lot of fun ! ;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Loadays CFP</title>
-      <link>http://localhost:1313/blog/loadays-cfp/</link>
+      <link>https://krisbuytaert.github.io/blog/loadays-cfp/</link>
       <pubDate>Thu, 11 Feb 2010 22:55:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/loadays-cfp/</guid>
+      <guid>https://krisbuytaert.github.io/blog/loadays-cfp/</guid>
       <description>&lt;p&gt;I would like to point the crowd to the Call For Presentaions of Loadays. , the Linux Open Administration Days .&lt;/p&gt;&#xA;&lt;p&gt;The Linux Open Administration days 2010 will be the first edition of a new conference focusing on Linux and Open Administration, we are trying to fill a gap for System Engineers and Administrators using Open Source technologies&amp;quot;&lt;/p&gt;&#xA;&lt;p&gt;More details on the &lt;a href=&#34;http://loadays.org/news/call-presentations&#34;&gt;Linux Open Administration Days site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll probably be there .. given the fact that the event will be 5 minutes from where I live .&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upcoming Conference Talks</title>
-      <link>http://localhost:1313/blog/upcoming-conference-talks/</link>
+      <link>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</link>
       <pubDate>Mon, 01 Feb 2010 22:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/upcoming-conference-talks/</guid>
+      <guid>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</guid>
       <description>&lt;p&gt;I know the biggest part of my fanclub already booked tickets for my upcoming presentations, but the other 2 might want to check their calendars to see if they aren&amp;rsquo;t missing out on the good stuff :)&lt;/p&gt;&#xA;&lt;p&gt;Next Sunday I`ll giving a shortish overview of &lt;a href=&#34;http://www.fosdem.org/2010/schedule/events/mysql_ha&#34;&gt;MySQL HA alternatives&lt;/a&gt; in the MySQL and Friends devroom at Fosdem.&lt;/p&gt;&#xA;&lt;p&gt;March will bring me to Manchester again for the &lt;a href=&#34;http://spring2010.ukuug.org/Timetable&#34;&gt;UKUUG Spring conference&lt;/a&gt; where I`ll be giving a longer version of that presentation with a strong focus on integrating with PaceMaker, and automating the whole boostrap procedure of a HA setup.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Implementing Raid Monitoring on a 3Ware 3w-9xxx based controller.</title>
-      <link>http://localhost:1313/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</link>
+      <link>https://krisbuytaert.github.io/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</link>
       <pubDate>Thu, 28 Jan 2010 20:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</guid>
+      <guid>https://krisbuytaert.github.io/blog/implementing-raid-monitoring-3ware-3w-9xxx-based-controller/</guid>
       <description>&lt;p&gt;When you pull out a disk from your Raid setup it shows a warning in syslog&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: WARNING (0x04:0x0019): Drive&#xA;2. removed:port=1.&#xA;3. Jan 27 10:18:22 EL860 kernel: 3w-9xxx: scsi0: AEN: ERROR (0x04:0x0002): Degraded&#xA;4. unit:unit=0, port=1.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;However if no one is looking at syslog that won&amp;rsquo;t really be helpfull.&lt;/p&gt;&#xA;&lt;p&gt;3Ware provides a tool from their site called tw_cli which can be used to manage&lt;br&gt;&#xA;the raid setup from the command line.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MySQL &amp; Friends Meetup @ Fosdem</title>
-      <link>http://localhost:1313/blog/mysql-friends-meetup-fosdem/</link>
+      <link>https://krisbuytaert.github.io/blog/mysql-friends-meetup-fosdem/</link>
       <pubDate>Fri, 15 Jan 2010 22:38:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/mysql-friends-meetup-fosdem/</guid>
+      <guid>https://krisbuytaert.github.io/blog/mysql-friends-meetup-fosdem/</guid>
       <description>&lt;p&gt;Fosdem is coming up again .. It&amp;rsquo;s going to be the 10th edition already So it&amp;rsquo;s going to be 2 days and nights of fun, tech and geek stuff&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blogs.sun.com/MySQL/entry/mysql_friends_devroom_schedule_published&#34;&gt;Lenz&lt;/a&gt; already posted the announcement , but allow me to recapitulate.&lt;/p&gt;&#xA;&lt;p&gt;The MySQL &amp;amp; Friends meetup is on saturday evening , we&amp;rsquo;ll meet around 1900 in front of the under the big tree in front of the AW building&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;del&gt;As with the &lt;a href=&#34;http://www.krisbuytaert.be/blog/devops-meetup-fosdem&#34;&gt;Devops Meetup&lt;/a&gt; you can once again vote for your preferred &lt;a href=&#34;http://www.doodle.com/v8emakg77bdgk4it&#34;&gt;food&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Devops Meetup @ Fosdem</title>
-      <link>http://localhost:1313/blog/devops-meetup-fosdem/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-meetup-fosdem/</link>
       <pubDate>Fri, 15 Jan 2010 22:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-meetup-fosdem/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-meetup-fosdem/</guid>
       <description>&lt;p&gt;The Devops crowd does not have it&amp;rsquo;s own devroom at Fosdem but will be meeting on Friday evening for food in a location close to the BeerEvent.&lt;/p&gt;&#xA;&lt;p&gt;&lt;del&gt;If you want to join us please let us know by voting on your favourite choice of Food. Using &lt;a href=&#34;http://www.doodle.com/8p35w92p7cs9gg7i&#34;&gt;this&lt;/a&gt; doodle.&lt;/del&gt;&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s already about 15 people that are voting for the food selection &amp;hellip;.&lt;/p&gt;&#xA;&lt;p&gt;Plan is to meet outside of the &lt;a href=&#34;http://www.fosdem.org/2010/beerevent&#34;&gt;BeerEvent&lt;/a&gt; around 2000 and&lt;br&gt;&#xA;then move to a preferred food location.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A long overdue report of DevopsDays</title>
-      <link>http://localhost:1313/blog/long-overdue-report-devopsdays/</link>
+      <link>https://krisbuytaert.github.io/blog/long-overdue-report-devopsdays/</link>
       <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/long-overdue-report-devopsdays/</guid>
+      <guid>https://krisbuytaert.github.io/blog/long-overdue-report-devopsdays/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s how it started :&lt;/p&gt;&#xA;&lt;p&gt;So I used to be a software developer, writing perl for the web, then C, then Java, then PHP, till I realized nobody ever configured my servers correctly and I changed trades becoming a system engineer, while teaching new developers the basics of their trade, whom grew into doing Infrastructure Architecture .. familiar story for much of the crowd at DevopsDays &amp;hellip; a crowd that wants to stopping the war between developers and system engineering , a crowd that wants to automate builds, integrate testing, deploy, deploy on very large scale, deploy in the cloud and much more.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What Kind of Open Source Fanboy are you ?</title>
-      <link>http://localhost:1313/blog/what-kind-open-source-fanboy-are-you/</link>
+      <link>https://krisbuytaert.github.io/blog/what-kind-open-source-fanboy-are-you/</link>
       <pubDate>Sun, 11 Oct 2009 20:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/what-kind-open-source-fanboy-are-you/</guid>
+      <guid>https://krisbuytaert.github.io/blog/what-kind-open-source-fanboy-are-you/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://jamesdixon.wordpress.com/2009/10/07/misunderstanding-open-source-4-not-knowing-your-own-alignment/&#34;&gt;James Dixon&lt;/a&gt; has some polls on his blog, they let you choose between being a free software junkie, an open source hacker or what I&amp;rsquo;d call a an incompetent moron ;)&lt;/p&gt;&#xA;&lt;p&gt;I had mostly 2&amp;rsquo;s , no 3 in case you&amp;rsquo;d wonder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Racketeering in 2009</title>
-      <link>http://localhost:1313/blog/racketeering-2009/</link>
+      <link>https://krisbuytaert.github.io/blog/racketeering-2009/</link>
       <pubDate>Mon, 28 Sep 2009 19:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/racketeering-2009/</guid>
+      <guid>https://krisbuytaert.github.io/blog/racketeering-2009/</guid>
       <description>&lt;p&gt;With the fresh launch of &lt;a href=&#34;http://www.inuits.be/&#34;&gt;inuits.be&lt;/a&gt; this long overdue &lt;a href=&#34;http://www.inuits.be/news/bsa-viseert-open-source-sector&#34;&gt;post&lt;/a&gt; popped up again , Earlier this year we got this very nice letter from the BSA That&amp;rsquo;s right the Business Software Alliance.&lt;/p&gt;&#xA;&lt;p&gt;The letter pictured below is in dutch, so allow me to translate&lt;br&gt;&#xA;some parts :) (Although I`m pretty sure you&amp;rsquo;ve seen variations of this letter in different languages before..)&lt;/p&gt;&#xA;&lt;p&gt;In short they are warning us about using software with no licenses.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Some people just don&#39;t get it</title>
-      <link>http://localhost:1313/blog/some-people-just-dont-get-it/</link>
+      <link>https://krisbuytaert.github.io/blog/some-people-just-dont-get-it/</link>
       <pubDate>Wed, 23 Sep 2009 21:14:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/some-people-just-dont-get-it/</guid>
+      <guid>https://krisbuytaert.github.io/blog/some-people-just-dont-get-it/</guid>
       <description>&lt;p&gt;I mean, we are heading towards 2010 , some of us have been using Open Source for decades, the Open Source vs Free Software discussion was like last millenium, and we&amp;rsquo;ve been doing open source consultancy for over a decade, yet today companies still think their customers are stupid,&lt;/p&gt;&#xA;&lt;p&gt;Fancy this story on &lt;a href=&#34;http://news.zdnet.co.uk/itmanagement/0,1000000308,39760362,00.htm?s_cid=260&#34;&gt;ZDNet&lt;/a&gt; today .. there&amp;rsquo;s actually companies out there claiming that &amp;ldquo;Bind&amp;rdquo; because of it&amp;rsquo;s FreeWare nature , yes that&amp;rsquo;s right you&amp;rsquo;ve Read FREEWARE , (hadn&amp;rsquo;t heard that word for over 5 years..) , is less secure than their proprietary offering in the Cloud. So the very nature of their Secure product is offering Security by Obscurity in an insecure environment .&lt;/p&gt;</description>
     </item>
     <item>
       <title>Centos, a fine DNS problem</title>
-      <link>http://localhost:1313/blog/centos-fine-dns-problem/</link>
+      <link>https://krisbuytaert.github.io/blog/centos-fine-dns-problem/</link>
       <pubDate>Mon, 03 Aug 2009 23:14:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/centos-fine-dns-problem/</guid>
+      <guid>https://krisbuytaert.github.io/blog/centos-fine-dns-problem/</guid>
       <description>&lt;p&gt;You must have noticed the fuzz around CentOS, &lt;a href=&#34;http://lists.centos.org/pipermail/centos/2009-July/079767.html&#34;&gt;the open Letter&lt;/a&gt; , and luckily Lance &lt;a href=&#34;http://www.centos.org/&#34;&gt;showing up&lt;/a&gt; again ..&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been a long time CentOS user , so this kind of events are pretty close to my heart, I never really worried about the future of the project , the CentOS community is was standing behind their message as one group. If Lance wouldn&amp;rsquo;t have shown up again quoting &lt;a href=&#34;http://www.arrfab.net/blog/&#34;&gt;Arrfab&lt;/a&gt;:&lt;br&gt;&#xA;&amp;ldquo;The worst would be to switch to another domain name .. but you already know that everything is a fscking DNS problem&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rivermuse First Impressions</title>
-      <link>http://localhost:1313/blog/rivermuse-first-impressions/</link>
+      <link>https://krisbuytaert.github.io/blog/rivermuse-first-impressions/</link>
       <pubDate>Thu, 30 Jul 2009 21:37:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/rivermuse-first-impressions/</guid>
+      <guid>https://krisbuytaert.github.io/blog/rivermuse-first-impressions/</guid>
       <description>&lt;p&gt;First of all, I don&amp;rsquo;t come from a Tivoli, OpenView background , I have never touched the commercial network monitoring tools and I`m not a network guy . I&amp;rsquo;m an infrastructure guy whith a focus on Open Source platforms so I have been using Nagios and more recently Zabbix, Zenoss etc for the better part of the last 2 decades in large to very large environments.&lt;br&gt;&#xA;My syslogs go to a central (r)syslog)-ng) server where I frequently abuse grep. So If my experience with RiverMuse is not what it should be , there&amp;rsquo;s work to be done on both sides ;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Way it is !</title>
-      <link>http://localhost:1313/blog/way-it/</link>
+      <link>https://krisbuytaert.github.io/blog/way-it/</link>
       <pubDate>Fri, 17 Apr 2009 10:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/way-it/</guid>
+      <guid>https://krisbuytaert.github.io/blog/way-it/</guid>
       <description>&lt;p&gt;(thnx &lt;a href=&#34;http://blogs.opennms.org/?p=807&#34;&gt;Tarus&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dear IBM</title>
-      <link>http://localhost:1313/blog/dear-ibm/</link>
+      <link>https://krisbuytaert.github.io/blog/dear-ibm/</link>
       <pubDate>Mon, 06 Apr 2009 21:48:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/dear-ibm/</guid>
+      <guid>https://krisbuytaert.github.io/blog/dear-ibm/</guid>
       <description>&lt;p&gt;When you eventually will buy Sun ..&lt;/p&gt;&#xA;&lt;p&gt;Oh nooos.. I started this post last week and now it al seems in vain :(&lt;/p&gt;&#xA;&lt;p&gt;Steven has some clues on what could have &lt;a href=&#34;http://blogs.computerworld.com/good_bye_solaris_the_fate_of_suns_top_5_technologies&#34;&gt;happened&lt;/a&gt;, I think he is right on the spot on with his Solaris prediction ..&lt;/p&gt;&#xA;&lt;p&gt;He wonders why IBM would spend even another dime on Solaris, actually even today I can&amp;rsquo;t even see why Sun is spending any more money on developing Solaris. But even with no acquisition his prediction of the future of Open Solaris imvho is spot on:&lt;/p&gt;</description>
     </item>
     <item>
       <title>We are rebranding !</title>
-      <link>http://localhost:1313/blog/we-are-rebranding/</link>
+      <link>https://krisbuytaert.github.io/blog/we-are-rebranding/</link>
       <pubDate>Wed, 01 Apr 2009 01:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/we-are-rebranding/</guid>
+      <guid>https://krisbuytaert.github.io/blog/we-are-rebranding/</guid>
       <description>&lt;p&gt;So the cat is out of the bag,&lt;/p&gt;&#xA;&lt;p&gt;As of today Inuits is rebranding to Pinuits,&lt;br&gt;&#xA;The press release is &lt;a href=&#34;http://www.pinuits.be/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ve had good feedback on the new name so far. Different people told me the name matched better to what we are doing . Actually my wife thinks our new name is much better as at least the Pin in Pinuits refers to our favourite Tux again ..&lt;/p&gt;&#xA;&lt;p&gt;Finding an appropriate name for an Open Source consultancy company, with focus on Linux, Open Source Monitoring, MySQL, Open Source Virtualization , Large Scale Deployments , High Availability and Drupal, isn&amp;rsquo;t easy .. you want to show both community involvement and professionality. And find a domain that&amp;rsquo;s still available.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Slides updated</title>
-      <link>http://localhost:1313/blog/slides-updated/</link>
+      <link>https://krisbuytaert.github.io/blog/slides-updated/</link>
       <pubDate>Tue, 31 Mar 2009 19:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/slides-updated/</guid>
+      <guid>https://krisbuytaert.github.io/blog/slides-updated/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve updated the slidedeck of my Open Source Virtualization talk, with the 2009 edition as I gave it last week at the UKUUG Spring conference.&lt;/p&gt;&#xA;&lt;p&gt;Talk is up, both on &lt;a href=&#34;http://www.krisbuytaert.be/presentations/OSSVirt2009.odp&#34;&gt;my page&lt;/a&gt; as on &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/open-source-virtualization&#34;&gt;SlideShare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/open-source-virtualization?type=powerpoint&#34; title=&#34;open source virtualization&#34;&gt;open source virtualization&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Tom also updated our set of Open Source Monitoring Tool Shootout slides .&lt;br&gt;&#xA;They are also on &lt;a href=&#34;http://www.slideshare.net/tomdc/open-source-monitoring-tools-shootout&#34;&gt;SlideShare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/tomdc/open-source-monitoring-tools-shootout?type=presentation&#34; title=&#34;Open Source Monitoring Tools Shootout&#34;&gt;Open Source Monitoring Tools Shootout&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/tomdc&#34;&gt;tomdc&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UKUUG Spring 2009 Conference,  the after post</title>
-      <link>http://localhost:1313/blog/ukuug-spring-2009-conference-after-post/</link>
+      <link>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-after-post/</link>
       <pubDate>Tue, 31 Mar 2009 19:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/ukuug-spring-2009-conference-after-post/</guid>
+      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-after-post/</guid>
       <description>&lt;p&gt;Last week the &lt;a href=&#34;http://www.ukuug.org/events/spring2009/&#34;&gt;UKUUG Spring , Large Scale Infrastructure conference&lt;/a&gt; took place in London,&lt;/p&gt;&#xA;&lt;p&gt;Altough only 1 track was scheduled, the content was very good, some talks were a bit short, others were a bit too long. And luckily the talks that didn&amp;rsquo;t really bring me new content were entertaining :) Also the after conf chatter in the pub across the street was so much fun we almost failed to catch our plane back to Antwerp.&lt;/p&gt;</description>
     </item>
     <item>
       <title>FAT</title>
-      <link>http://localhost:1313/blog/fat/</link>
+      <link>https://krisbuytaert.github.io/blog/fat/</link>
       <pubDate>Mon, 02 Mar 2009 21:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fat/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fat/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://laforge.gnumonks.org/weblog/2009/02/27/#20090227-microsoft_patent_lawsuit&#34;&gt;Harald&lt;/a&gt; has a nice overview of the FUD that is being spread again by some company from RedMond ..&lt;/p&gt;&#xA;&lt;p&gt;Now why are they targeting TomTom ? Surely because Canon and Sony and different others are to big to sue, Both my EOS400D, Ixus400 and K800i , are using a way to FAT filesystem to store files on,&lt;br&gt;&#xA;I tried putting ext2 formatted disks in them but that failed :)&lt;br&gt;&#xA;(Not running Linux or already having paid up might be another reason)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Image Sprawl , and the new cure ..</title>
-      <link>http://localhost:1313/blog/image-sprawl-and-new-cure/</link>
+      <link>https://krisbuytaert.github.io/blog/image-sprawl-and-new-cure/</link>
       <pubDate>Fri, 06 Feb 2009 00:24:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/image-sprawl-and-new-cure/</guid>
+      <guid>https://krisbuytaert.github.io/blog/image-sprawl-and-new-cure/</guid>
       <description>&lt;p&gt;When I tell people that the concept of copying VM&amp;rsquo;s around as frequently done in the VMWare world is one of the most stupid ideas on this planet, I get the weirdest looks.&lt;/p&gt;&#xA;&lt;p&gt;In my world it is, I want my infrastructure to be reproducible , I want to be able to throw any machine in my infrastructure out of the 10th floor of a building and be up and running again in no time. If I spread a bunch of VM copies around who knows what kind of life they start leading. Some will get upgrades, some won&amp;rsquo;t ..&lt;br&gt;&#xA;If I get an image from someone, how did he get there ? Nobody knows ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Monty Leaving Sun</title>
-      <link>http://localhost:1313/blog/monty-leaving-sun/</link>
+      <link>https://krisbuytaert.github.io/blog/monty-leaving-sun/</link>
       <pubDate>Fri, 06 Feb 2009 00:19:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monty-leaving-sun/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monty-leaving-sun/</guid>
       <description>&lt;p&gt;When I read &lt;a href=&#34;http://monty-says.blogspot.com/2009/02/time-to-move-on.html&#34;&gt;Monty&amp;rsquo;s&lt;/a&gt;  post on leaving this passage struck me the most.&lt;/p&gt;&#xA;&lt;p&gt;The main reason for leaving was that I am not satisfied with the way the MySQL server has been developed, as can be seen on my previous blog post. In particular I would have like to see the server development to be moved to a true open development environment that would encourage outside participation and without any need of differentiation on the source code. Sun has been considering opening up the server development, but the pace has been too slow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What does your BOFH want ? :)</title>
-      <link>http://localhost:1313/blog/what-does-your-bofh-want/</link>
+      <link>https://krisbuytaert.github.io/blog/what-does-your-bofh-want/</link>
       <pubDate>Thu, 29 Jan 2009 00:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/what-does-your-bofh-want/</guid>
+      <guid>https://krisbuytaert.github.io/blog/what-does-your-bofh-want/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.garfieldtech.com/blog/drupal-system-tools&#34;&gt;Larry&lt;/a&gt;, I`m glad you asked ..&lt;/p&gt;&#xA;&lt;p&gt;With the risk of receiving a flood of comments pointing me to already existing tools here&amp;rsquo;s my go at what I as a sysadmin of often large deployments am looking for in Drupalland .&lt;/p&gt;&#xA;&lt;p&gt;You suggest LDAP and syslog integration .. guess we already have that don&amp;rsquo;t we ?&lt;/p&gt;&#xA;&lt;p&gt;But what I haven&amp;rsquo;t found yet ..&lt;br&gt;&#xA;An rpm/deb repository of Drupal modules So we can do an apt-get install drupal-package , yes I know about Drush, but I want the files on my system to be in a package and clearly identified, it helps me keeping my system uncluttered.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stop stupid Software Patents</title>
-      <link>http://localhost:1313/blog/stop-stupid-software-patents/</link>
+      <link>https://krisbuytaert.github.io/blog/stop-stupid-software-patents/</link>
       <pubDate>Mon, 26 Jan 2009 11:25:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/stop-stupid-software-patents/</guid>
+      <guid>https://krisbuytaert.github.io/blog/stop-stupid-software-patents/</guid>
       <description>&lt;p&gt;If you read this blog, you should probably sign the petition !&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://stopsoftwarepatents.eu/&#34;&gt;&lt;img src=&#34;http://stopsoftwarepatents.eu/media/ssp-336-280.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How popular  is an Open Source project ?</title>
-      <link>http://localhost:1313/blog/how-popular-open-source-project/</link>
+      <link>https://krisbuytaert.github.io/blog/how-popular-open-source-project/</link>
       <pubDate>Thu, 15 Jan 2009 19:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/how-popular-open-source-project/</guid>
+      <guid>https://krisbuytaert.github.io/blog/how-popular-open-source-project/</guid>
       <description>&lt;p&gt;There is a really easy way to figure out &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Look at the size of of the devrooms , if at all , a project gets at Fosdem&lt;br&gt;&#xA;It&amp;rsquo;s really interresting to see the Embedded room move to a 500 seat room which it really needed when the first openMoko talk was held there in a previous edition.&lt;/p&gt;&#xA;&lt;p&gt;The FDO , Drupal, Mozilla, Centos/Fedora and Suse rooms stay in similar size rooms as last year.. But it seems lik the BSD and PostgreSQL room which was pretty crowded moved to a bigger location.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contributing Back</title>
-      <link>http://localhost:1313/blog/contributing-back/</link>
+      <link>https://krisbuytaert.github.io/blog/contributing-back/</link>
       <pubDate>Wed, 14 Jan 2009 21:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/contributing-back/</guid>
+      <guid>https://krisbuytaert.github.io/blog/contributing-back/</guid>
       <description>&lt;p&gt;A while ago &lt;a href=&#34;http://buytaert.net/contributing-back-to-drupal&#34;&gt;Dries&lt;/a&gt; wondered about Contributing back to Drupal .&lt;/p&gt;&#xA;&lt;p&gt;Now &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; is not a Webshop, we are an Open Source shop, so you won&amp;rsquo;t see a zillion Drupal modules being contributed by us in the near future (albeit there are a couple) , we are company assisting other organisations in their adoption of Open Source, and Drupal is amongst the projects we care for. You&amp;rsquo;ll notice code from us in the different other Open Source projects, including the Linux Kernel and other core infrastructure. And not all of it was code, there is a lot of published documentation, methodologies, bughunting and also spreading the words, or talking about our experiences around different topics such as MySQL Cluster and Drupal, or different alternatives to Monitor , or to Monitor MySQL etc ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>MythTV recover Lost&#43;Found</title>
-      <link>http://localhost:1313/blog/mythtv-recover-lostfound/</link>
+      <link>https://krisbuytaert.github.io/blog/mythtv-recover-lostfound/</link>
       <pubDate>Fri, 19 Dec 2008 20:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/mythtv-recover-lostfound/</guid>
+      <guid>https://krisbuytaert.github.io/blog/mythtv-recover-lostfound/</guid>
       <description>&lt;p&gt;My MythTV store lives on an LVM volume that is spread over 2 disks, one of them is an external USB disk. So the cleaninglady seems to have touched a cable and after coming back from holiday I had a read-only filesystem that afer a remount had about 350Gb in lost+found with irrelevant filenames.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. total 337407844&#xA;2. drwx------   2 tv   tv         4096 Dec 17 22:47 .&#xA;3. drwxrwxrwx  15 tv   tv         4096 Dec 17 22:44 ..&#xA;4. -rw-r--r--   1 root root  423343556 Dec 14 07:10 I303109.RCN&#xA;5. -rw-r--r--   1 root root 2990538924 Dec 13 19:05 I303107.RCN&#xA;6. -rw-r--r--   1 root root 1023691768 Dec 13 08:10 I319494.RCN&#xA;7. -rw-r--r--   1 root root 1023622348 Dec 13 07:45 I327684.RCN&#xA;8. -rw-r--r--   1 root root  423735892 Dec 13 07:10 I327682.RCN&#xA;9. -rw-r--r--   1 root root  466749476 Dec 12 15:43 I135169.RCN&#xA;10. -rw-r--r--   1 root root 1023314212 Dec 12 07:45 I098309.RCN&#xA;11. -rw-r--r--   1 root root 1022459928 Dec 12 06:35 I098306.RCN&#xA;12. -rw-r--r--   1 root root 2458822948 Dec  9 22:50 I139264.RCN&#xA;13. -rw-r--r--   1 root root 2129683736 Dec  9 21:30 I323592.RCN&#xA;14. -rw-r--r--   1 root root  466735992 Dec  9 15:43 I323590.RCN&#xA;15. -rw-r--r--   1 root root 1022747296 Dec  9 07:45 I323588.RCN&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Obviously I wanted to recover my data.&lt;br&gt;&#xA;So I had files with a wrong filename on a filesystem but with a correct timestamp and probably the right filesize.&lt;br&gt;&#xA;Luckily the mythconverg.recorded table also gives me lots of information about the files that mythtv had originally stored the content in.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MySQL 5.1 on Fedora 10</title>
-      <link>http://localhost:1313/blog/mysql-51-fedora-10/</link>
+      <link>https://krisbuytaert.github.io/blog/mysql-51-fedora-10/</link>
       <pubDate>Fri, 19 Dec 2008 20:38:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/mysql-51-fedora-10/</guid>
+      <guid>https://krisbuytaert.github.io/blog/mysql-51-fedora-10/</guid>
       <description>&lt;p&gt;So I wanted a fresh MySQL 5.1 release on my Fedora 10 box.&lt;br&gt;&#xA;Fedora comes with a mysql 5.0 package and the MySQL community packages for 5.1 conflict with that in different ways. (to start with MySQL vs mysql)&lt;/p&gt;&#xA;&lt;p&gt;For some weird reason libmysqlclient (in mysql-libs) is required by redland, which is required by openoffice.org-core. I probaly never need the RDF funtionalities that redland provides me but I`m stuck with them anyhow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bug in ifconfig ?</title>
-      <link>http://localhost:1313/blog/bug-ifconfig/</link>
+      <link>https://krisbuytaert.github.io/blog/bug-ifconfig/</link>
       <pubDate>Wed, 24 Sep 2008 17:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/bug-ifconfig/</guid>
+      <guid>https://krisbuytaert.github.io/blog/bug-ifconfig/</guid>
       <description>&lt;p&gt;So earlier this week I ran into the weirdest problem with Linux-HA. Heartbeat was happily adding an IP address as an active resource so one of my nodes when needed, but upon removal it failed to remove the IP from the stack. Further debugging learned that the Heartbeat scripts claimed the ip wasn&amp;rsquo;t on the actual stack.&lt;/p&gt;&#xA;&lt;p&gt;It was.. but it the output from ifconfig was different from what it expected it to be.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The new comment spam :(</title>
-      <link>http://localhost:1313/blog/new-comment-spam/</link>
+      <link>https://krisbuytaert.github.io/blog/new-comment-spam/</link>
       <pubDate>Wed, 24 Sep 2008 10:25:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/new-comment-spam/</guid>
+      <guid>https://krisbuytaert.github.io/blog/new-comment-spam/</guid>
       <description>&lt;p&gt;The past couple of weeks my blog is being annoyed by different comment spams, the content of the comment seems perfectly relevant, often even correctly tackling the topic, or sometimes even almost insightful follow up questions.&lt;/p&gt;&#xA;&lt;p&gt;However the link to the author site is totally bogus.&lt;/p&gt;&#xA;&lt;p&gt;If talking about drupal and high availability , a question on GFS or OCFS2 is obviously on topic. However I don&amp;rsquo;t want my blog to link to lot of irrelevant sites.&lt;/p&gt;</description>
     </item>
   </channel>

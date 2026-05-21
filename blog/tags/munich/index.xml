@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Munich on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/munich/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/munich/</link>
     <description>Recent content in Munich on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Aug 2012 21:28:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/munich/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/munich/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Devops Meeting Munich</title>
-      <link>http://localhost:1313/blog/devops-meeting-munich/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-meeting-munich/</link>
       <pubDate>Fri, 17 Aug 2012 21:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-meeting-munich/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-meeting-munich/</guid>
       <description>&lt;p&gt;Quick Note :&lt;/p&gt;&#xA;&lt;p&gt;With Drupalcon going on next week in Munich , the nice folks of the local Devops Meetup are organising an &lt;a href=&#34;http://www.meetup.com/Puppet/Munchen/767092/&#34;&gt;evening event&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Next tuesday at 1900 at Skoobe Gmbh&lt;/p&gt;&#xA;&lt;p&gt;More details on the Meetup page !&lt;/p&gt;</description>
     </item>
   </channel>

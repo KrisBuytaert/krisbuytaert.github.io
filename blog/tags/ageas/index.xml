@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ageas on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/ageas/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/ageas/</link>
     <description>Recent content in Ageas on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Mar 2011 20:11:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/ageas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/ageas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vagrant &amp; Rubylibs</title>
-      <link>http://localhost:1313/blog/vagrant-rubylibs/</link>
+      <link>https://krisbuytaert.github.io/blog/vagrant-rubylibs/</link>
       <pubDate>Tue, 29 Mar 2011 20:11:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/vagrant-rubylibs/</guid>
+      <guid>https://krisbuytaert.github.io/blog/vagrant-rubylibs/</guid>
       <description>&lt;p&gt;I was testing some MySQL puppet modules on my Vagrant box earlier this week and one of them required augeas.&lt;br&gt;&#xA;I kept running into &amp;ldquo;Could not find a default provider for augeas&amp;rdquo;, however all the appropriate augeas , augeas-lib and ruby-augeas packages were installed. I inspected the different ruby directories and the files were perfectly in /usr/lib/ruby/site_ruby/1.8 where I expected them.&lt;/p&gt;&#xA;&lt;p&gt;With all the files seemd to be in the right place, my next option was to strace a small ruby script that included augeas, guess what that showed ..&lt;/p&gt;</description>
     </item>
   </channel>

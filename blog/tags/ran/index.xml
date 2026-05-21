@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ran on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/ran/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/ran/</link>
     <description>Recent content in Ran on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Dec 2011 20:31:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/ran/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/ran/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing Vagrant, on Ubuntu Natty</title>
-      <link>http://localhost:1313/blog/installing-vagrant-ubuntu-natty/</link>
+      <link>https://krisbuytaert.github.io/blog/installing-vagrant-ubuntu-natty/</link>
       <pubDate>Thu, 29 Dec 2011 20:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/installing-vagrant-ubuntu-natty/</guid>
+      <guid>https://krisbuytaert.github.io/blog/installing-vagrant-ubuntu-natty/</guid>
       <description>&lt;p&gt;(Warning some Ubuntu ranting ahead)&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. apt-get install virtualbox-ose&#xA;2. apt-get install rubygems&#xA;3. gem install vagrant&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That&amp;rsquo;s what I assumed it would take me to install vagrant on a spare Ubuntu (Natty) laptop.&lt;/p&gt;&#xA;&lt;p&gt;Well it&amp;rsquo;s not. after that I was greeted with some weirdness.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. $vagrant&#xA;2. vagrant: command not found...&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Yet gem list &amp;ndash;local showed the vagrant gem installed.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. $ruby&#xA;2. ruby:  command not found&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I looked twice, checked again and indeed it seems you can install rubygems on natty with no ruby installed #dazedandconfused&lt;/p&gt;</description>
     </item>
   </channel>

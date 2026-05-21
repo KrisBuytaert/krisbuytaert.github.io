@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Packt on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/packt/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/packt/</link>
     <description>Recent content in Packt on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Apr 2010 23:14:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/packt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/packt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zabbix, the book</title>
-      <link>http://localhost:1313/blog/zabbix-book/</link>
+      <link>https://krisbuytaert.github.io/blog/zabbix-book/</link>
       <pubDate>Wed, 28 Apr 2010 23:14:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/zabbix-book/</guid>
+      <guid>https://krisbuytaert.github.io/blog/zabbix-book/</guid>
       <description>&lt;p&gt;Ages ago the folks over at &lt;a href=&#34;https://www.packtpub.com/&#34;&gt;Packt&lt;/a&gt; asked me if I was interested in writing a book about Zabbix, I kindly declined, I didn&amp;rsquo;t have time to write a book ,&lt;/p&gt;&#xA;&lt;p&gt;Months later we got back in touch and I got involved in reviewing the &lt;a href=&#34;https://www.packtpub.com/zabbix-1-8-network-monitoring/book&#34;&gt;book&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/ZabbixCover.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&#xA;It just arrived in the mail .&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/ZabbixReviewer.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a couple of things I&amp;rsquo;d have done different , but overall it&amp;rsquo;s a good read if you are interrested in Zabbix.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drupal 6 , Social Networking</title>
-      <link>http://localhost:1313/blog/drupal-6-social-networking/</link>
+      <link>https://krisbuytaert.github.io/blog/drupal-6-social-networking/</link>
       <pubDate>Fri, 04 Dec 2009 00:09:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/drupal-6-social-networking/</guid>
+      <guid>https://krisbuytaert.github.io/blog/drupal-6-social-networking/</guid>
       <description>&lt;p&gt;As &lt;a href=&#34;http://www.krisbuytaert.be/blog/idle&#34;&gt;posted earlier&lt;/a&gt; Packt was so kind to send me their &lt;a href=&#34;http://www.packtpub.com/build-social-networking-websitewith-drupal-6/book&#34;&gt;Drupal 6 , Social Networking&lt;/a&gt; for review.&lt;/p&gt;&#xA;&lt;p&gt;My hopes were high, I was hoping for some info on how to integrate with different existing networks, content about existing frameworks, maybe some mentioning of &lt;a href=&#34;http://openatrium.com/&#34;&gt;openAtrium&lt;/a&gt; or so, or integrating with Twitter or other existing platforms.&lt;/p&gt;&#xA;&lt;p&gt;Sadly the book only briefly touches similar content, the Google API , in Chapter 7&lt;/p&gt;&#xA;&lt;p&gt;While a good read, and a good introduction to Drupal for new users I didn&amp;rsquo;t learn anything till chapter 7 and anything after Chapter 7 ;( And I don&amp;rsquo;t consider myselve as a Drupal Expert&lt;/p&gt;</description>
     </item>
   </channel>
