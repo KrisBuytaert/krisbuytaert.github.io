@@ -1,0 +1,34 @@
+<html>
+
+<title>The Natives Distribution Site Application Form</title>
+<center>
+<h3>The Natives Distribution Site Application Form </h3>
+</center>
+<hr>
+Under Construction <p>
+<FORM METHOD="POST" 
+action="cgi-bin/subscribe"    >
+If you want to become a distribution site for our group, please fill in 
+this form<p>
+
+<table>
+<tr>Sysop Information</tr>
+<tr><td>Name:</td><td><input name="name" size=60></td>
+<tr><td>Handle:</td><td><input name="handle" size=60></td> 
+<tr valign=top><td>Adres:</td><td>
+     <input name="street" size = 60<br>
+     <input name="city" size = 60<br>
+     <input name="postcode" size = 15>, <input name="country" size = 42></td>
+<tr><td>E-Mail:</td><td><input name="email" size = 60></td>
+</table>
+<table>
+<tr>BBS Information</tr>
+<tr><td>Name:</td><td><input name='bbsname' size=60></td>
+<tr><td>PhoneNrs:</td><td><input name='phone' size=30>,<input 
+name='phone2' size = 30></td>
+</table>
+<input type="submit" value="Send">
+<input type="reset" value="Clear">
+</form>
+</html>
+

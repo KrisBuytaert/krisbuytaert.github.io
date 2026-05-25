@@ -1,0 +1,268 @@
+<html>
+<head>
+<title>Introduction to JavaScript - Part3</title>
+<script language="JavaScript">
+<!-- Hide
+function WinOpen(url) {
+   msg=open(url,"DisplayWindow","toolbar=yes,directories=no,menubar=no");
+}
+     function stat(txt) {
+        window.status = txt;
+        setTimeout("erase()",1500);
+      }
+     function erase() {
+       window.status="";
+     }
+// -->
+</script>
+</head>
+<BODY bgcolor="ffffff" text=#000000 link=#ff0000 vlink=#4444dd alink=#9999dd>
+<font size=+4 color=#FF0000>
+<center>
+<img src="jascr.gif" alt="" width=397 height=118><br>
+Introduction to JavaScript</font><font size=+2 color=#FF0000><br>Part 3</center>
+</a>
+</font>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<br>
+<font size=+1>
+Many people asked me how JavaScript and frames work together. To use
+frames with JavaScript you got to have Netscape Navigator 2.0 at the 
+moment. There are some other browsers which support frames by now- but 
+they usually do not support JavaScript. But I think that it won't take
+too long until there are further browsers which support frames and JavaScript.<br> 
+
+First, I want to tell you a little bit about frames. Many documentations
+for HTML do not contain anything about frames because frames are quite new.
+Using frames you can 'divide' your window which displays the HTML- pages
+into several parts. So you have some independent parts in your window.
+You can load different pages to the frames. A nice thing is that these
+frames can interact. That means they can exchange information between
+each other. For example you could create 2 frames. One with your normal
+HTML- page and one with a toolbar. The toolbar could contain buttons for
+navigating through your normal HTML- page. The toolbar will always be
+visible even when another HTML- page is loaded in the other frame. At
+first I want to show to you what this will look like. Just 
+push the button and look what frames are like. (If you look at this
+page online you have to wait some time when pushing the buttons in this
+part of the tutorial because the scripts are loaded from the server)
+<p>
+<form><input type="button" name="Button1" value="Push me" onclick="WinOpen('frtest.htm')">
+</form>
+<p>
+Here is the HTML- script for frames:
+<p>
+<pre>
+&lt;HTML>
+&lt;HEAD>
+&lt;title>Frames&lt;/title>
+&lt;/HEAD>
+    &lt;FRAMESET ROWS="50%,50%"> 
+    &lt;FRAME SRC="frtest1.htm" name="fr1"> 
+    &lt;FRAME SRC="frtest2.htm" name="fr2"> 
+  &lt;/FRAMESET> 
+&lt;/HTML>  
+</pre>
+<p>
+At first you tell the browser how many frames you want to have. This 
+is defined in the &lt;frameset...> tag. Writing rows to it the browser
+will divide the given space into rows. You can create different columns 
+by using <i>cols</i> instead of <i>rows</i>. You can use several 
+&lt;frameset...> tags as well. Here is an example provided by Netscape:
+<p>
+<pre>
+&lt;FRAMESET COLS="50%,50%"> 
+  &lt;FRAMESET ROWS="50%,50%"> 
+    &lt;FRAME SRC="cell.html"> 
+    &lt;FRAME SRC="cell.html"> 
+  &lt;/FRAMESET> 
+  &lt;FRAMESET ROWS="33%,33%,33%"> 
+    &lt;FRAME SRC="cell.html"> 
+    &lt;FRAME SRC="cell.html"> 
+    &lt;FRAME SRC="cell.html"> 
+  &lt;/FRAMESET> 
+&lt;/FRAMESET> 
+</pre>
+<p>
+<form><input type="button" name="Button2" value="Try this script" onclick="WinOpen('nsexmpl.htm')">
+</form>
+<p>
+This will create two columns and the second column is divided into 3 equal
+parts. The 50%,50% in the first &lt;frameset> tag tells the browser how big
+the frames shall be.<br>
+You can give names to your frames. This is important for the use with 
+JavaScript. In the first example above you can see how frames get their 
+names. Using the &lt;frame> tag you tell the browser which HTML- page to
+load. <p><br>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+I think the basic elements of frames are easy to understand. Now have a
+look at our next example:
+<p>
+<form><input type="button" name="Button3" value="Frames'n'Scripts" onclick="WinOpen('frames.htm')">
+</form>
+<p>
+This will show a 
+window where you can click on some buttons in order to write some text 
+to the other frame. <br>
+Here goes the source:
+<p>
+<i>To create the frames you'll need (frames.htm):</i>
+<p>
+<pre>
+&lt;HTML>
+&lt;HEAD>
+&lt;title>Frames&lt;/title>
+&lt;/HEAD>
+    &lt;FRAMESET ROWS="50%,50%"> 
+    &lt;FRAME SRC="frame1.htm" name="fr1" noresize> 
+    &lt;FRAME SRC="frame2.htm" name="fr2"> 
+  &lt;/FRAMESET> 
+&lt;/HTML>
+</pre>
+<p>
+<i>Here is the source for frame1.htm:</i>
+<p>
+<pre>
+&lt;HTML>
+&lt;HEAD>
+&lt;script language="JavaScript">
+&lt;!-- Hiding
+     function hi() {
+       document.write("Hi!&lt;br>");
+     }
+     function yo() {
+       document.write("Yo!&lt;br>");
+     }
+     function bla() {
+       document.write("bla bla bla&lt;br>");
+     }
+// -->
+&lt;/script>
+&lt;/HEAD>
+&lt;BODY>
+This is our first frame!
+&lt;/BODY>
+&lt;/HTML>
+</pre>
+<p>
+<i>And now frame2.htm:</i>
+<p>
+<pre>
+&lt;HTML>
+&lt;body>
+This is our second frame!
+&lt;p>
+&lt;FORM NAME="buttonbar">
+     &lt;INPUT TYPE="button" VALUE="Hi" onClick="parent.fr1.hi()">
+     &lt;INPUT TYPE="button" VALUE="Yo" onClick="parent.fr1.yo()">
+     &lt;INPUT TYPE="button" VALUE="Bla" onCLick="parent.fr1.bla()">
+&lt;/FORM>
+&lt;/BODY>
+&lt;/HTML>
+</pre>
+<p>
+Wow! These scripts get longer and longer! 
+What is done here? The user loads the first file (frames.htm). This
+creates the frames and loads the HTML- file frame1.htm to the first
+frame (named 'fr1') and frame2.htm to the second frame (called 'fr2').
+This is plain HTML until here. As you can see the first script frame1.htm
+contains some JavaScript functions. But they are not called in the 
+first script. Are these functions not needed at all? Am I just too lazy
+to delete the useless functions? Although I'm certainly the lazy type of
+guy these functions are needed in fact. They are called by the second 
+script frame2.htm! We create some buttons in this second script like
+the way we did in the first part of this introduction. The onClick- property
+is familiar as well. But what does the parent.fr1... mean? <p>
+If you are familiar with objects then this is not new to you. As you 
+have seen above the frame1.htm and frame2.htm are called by the file
+frames.htm. Frames.htm is called the parent of the other two frames. 
+Consequently the two new frames are called child- frames of the frames.htm.
+You can see there is a kind of hierarchy which gives a certain 
+interrelation between the different frames. 
+I try to show this idea to you with the help of a small 'graphic' (ASCII- art
+would describe it much better...):
+<p>
+<pre>
+              frames.htm                parent
+               /      \
+              /        \
+             /          \
+  fr1(frame1.htm)     fr2(frame2.htm)   children
+</pre>
+<p>
+You can extend this concept of course. You can create some 'grandchildren'
+(if you want to call it like this- it is not the official expression!). 
+It looks like this:
+<p>
+<pre>
+              frames.htm                parent
+               /      \
+              /        \
+             /          \
+  fr1(frame1.htm)     fr2(frame2.htm)   children
+          /  \
+         /    \
+        /      \
+    gchild1  gchild2                    'grandchildren'      
+</pre>
+<p>
+If you want to index anything in the parent- frame from frame2.htm 
+you just put <i>parent.</i> before the function you call. Addressing
+the functions defined in frame1.htm from the parent- frame can be
+done by putting <i>fr1</i> before the function- call. Why <i>fr1</i>? In
+your script for the parent- frame (frames.htm) you created the different
+frames and gave them different names. I chose <i>fr1</i> for the first
+frame. The next step is easy. How is the first frame called if you
+want to address it from frame2.htm (which is kept in the second frame 
+called <i>fr2</i>)? As you can see in my awesome graphic there is no 
+direct connection between frame1.htm and frame2.htm. So you cannot call
+functions directly from frame2.htm defined in frame1.htm. You have to address it
+via the parent- frame. So the right index is parent.fr1. If you want 
+to call the function hi() from frame2.htm you just write parent.fr1.hi().
+This is what is done in the second script in the onClick- property.
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+If you have created some frames and
+someone takes a link the frames do not disappear. This is ok if the 
+user 'stays on' your page. You could create a menubar which
+is shown in one frame all the time for example. But if the 
+user jumps to another page in the Internet your menubar might not be
+wanted anymore. So how can you delete the frames once created?<p>
+Just add TARGET="_top" to your &lt;a href...> tag. This looks like this then:<br>
+<pre>&lt;a href="goaway.html" TARGET="_top">if you don't want to stare at my page anymore&lt;/a></pre>  
+<p>
+Of course, you have to add TARGET="_top" to every link that leads 'outside'.
+If every link in your page leads 'outside' you can also write &lt;base target="_top">
+to the head of your HTML- page. This means that every link in the page
+erases the frames.
+<p>
+<br>
+<h4>
+<center>
+<a href="script.htm" onMouseOver="stat('My JavaScript-Homepage');return true">Index</a> - 
+<a href="javascr.htm" onMouseOver="stat('JavaScript - Introduction Part 1');
+ return true">Part 1</a> - 
+<a href="javascr2.htm" onMouseOver="stat('JavaScript - Introduction Part 2');
+ return true">Part 2</a> - 
+<a href="javascr4.htm" onMouseOver="stat('JavaScript - Introduction Part 4');
+ return true">Part 4</a> - 
+<a href="javascr5.htm" onMouseOver="stat('JavaScript - Introduction Part 5');
+ return true">Part 5</a> -
+<a href="javascr6.htm" onMouseOver="stat('JavaScript - Introduction Part 6');
+ return true">Part 6</a> -
+<a href="javascr7.htm" onMouseOver="stat('JavaScript - Introduction Part 7');
+ return true">Part 7</a>
+</h4>
+</center>
+<p>
+<br><i>
+Last changed: 11.May'96<br>
+&#169 1996 by Stefan Koch</i>
+
+</body>
+</html>

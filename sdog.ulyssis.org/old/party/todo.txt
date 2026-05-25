@@ -1,0 +1,9 @@
+
+- addform script afwerken 
+  = analyse input string (eindigt op |)
+
+- pagina's uit de database updaten 
+
+- error handling
+
+

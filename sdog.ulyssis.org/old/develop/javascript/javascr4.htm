@@ -1,0 +1,260 @@
+<html>
+<head>
+<title>Introduction to JavaScript - Part4</title>
+<script language="JavaScript">
+<!-- Hide
+function WinOpen(url) {
+   msg=open(url,"DisplayWindow","toolbar=no,directories=no,menubar=no,status=yes");
+}
+function statbar(txt) {
+   window.status = txt;
+}
+function moveover(txt) {
+   window.status = txt;
+   setTimeout("erase()",1000);
+}
+function erase() {
+   window.status="";
+}
+function stat(txt) {
+   window.status = txt;
+   setTimeout("erase()",1500);
+}
+// -->
+</script>
+</head>
+<BODY bgcolor="ffffff" text=#000000 link=#ff0000 vlink=#4444dd alink=#9999dd>
+<font size=+4 color=#FF0000>
+<center>
+<a name="status"></a>
+<img src="jascr.gif" alt="" width=397 height=118><br>
+Introduction to JavaScript<br></font><font size=+2 color=#FF0000>Part 4</center>
+</a>
+</font>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<br>
+<font size=+1>
+Now I want to show you how to write text to the statusbar (the bar on the
+bottom of your browser where the URLs are shown) and of course 
+I will explain how a scroller works- although they are already hated in the 
+JavaScript scene (I tell you why later on).<br>
+At first how is the statusbar 'addressed' ? This script shows you how 
+one can write a simple text to the statusbar: 
+<p>
+<form><input type="button" name="look" value="Write!" onclick="statbar('Hi! This is the statusbar!');">
+<input type="button" name="erase" value="Erase!" onclick="statbar('');">
+</form>
+Isn't this nice? Here's the script:
+<p>
+<pre>
+&lt;html>
+&lt;head>
+&lt;script language="JavaScript">
+&lt;!-- Hide
+function statbar(txt) {
+   window.status = txt;
+}
+// -->
+&lt;/script>
+&lt;/head>
+&lt;body>
+&lt;form>
+&lt;input type="button" name="look" value="Write!" onclick="statbar('Hi! This is the statusbar!');">
+&lt;input type="button" name="erase" value="Erase!" onclick="statbar('');">
+&lt;/form>
+&lt;/body>
+&lt;/html>
+</pre>
+<p>
+We create two buttons which call both the function statbar(txt). The txt
+in the brackets shows that the function gets a variable passed over from
+the function call. (I called this just <i>txt</i>- it could as well be
+anything totaly different.) When you look at the &lt;form> tag where the 
+buttons are created you can see that the function <i>statbar(txt)</i> is called.
+But we don't write <i>txt</i> there. We just put the text there we want
+the browser to show in the statusbar. You can see it this way: The
+function is called and defines the variable <i>txt</i>- it gets the 'value'
+you passed over by the function call. So when pressing the 'Write!' button
+the statbar(txt) function is called and <i>txt</i> stores the string 'Hi! This is 
+the statusbar'. You can now use the variable <i>txt</i> as usual. This method
+of passing variables to a function makes the function very flexible.
+Look at the second button. It calls the same function. Without variable
+passing we would need 2 different functions.<br>
+Now what does the function <i>statbar(txt)</i> do? Well this is simple. You just
+write the contents of <i>txt</i> to the variable window.status. This is done by
+<i>window.status = txt;</i>. Writing an empty string ('') to the statusbar
+erases it. Notice that we have to use these single quotes ' because we use
+double quotes " for defining onClick. The browser needs to know which quotes
+belong together- so you have to alternate with single and double quotes.
+I think this is quite clear.<p> 
+<a name="erase"></a>
+You know already the onMouseOver- property from part 2 of my
+tutorial: <br>
+&lt;a href="stupid.htm" onMouseOver="window.status='Just another stupid link...';
+ return true">
+<br>
+Don't you hate it that the statusbar does not erase the text when the
+mousepointer does not point on the link any longer? I have quite a
+simple solution. We just write a small function which uses the same technique
+to erase the statusbar as shown above. But how can the erase- function be
+called? We don't have a method or property which we can use for detecting
+if the mouse pointer is moving from a link. Setting a timer is the solution.
+<p>
+Try the following script 
+<a href="dontclck.htm" onMouseOver="moveover('Disappearing!'); return true;">here</a>. 
+Just move your pointer over it- don't click it! 
+<p>
+This is really neat, isn't it? Just have a look at the source and you'll see
+that it is easier than it seems on the first glance.
+<p>
+<pre>
+&lt;html>
+&lt;head>
+&lt;script language="JavaScript">
+&lt;!-- Hide
+function moveover(txt) {
+   window.status = txt;
+   setTimeout("erase()",1000);
+}
+function erase() {
+   window.status="";
+}
+// -->
+&lt;/script>
+&lt;/head>
+&lt;body>
+&lt;a href="dontclck.htm" onMouseOver="moveover('Disappearing!');return true;">
+link&lt;/a>
+&lt;/body>
+&lt;/html>
+</pre>
+<p>
+You will recognize many parts of this script. The moveover(txt) function
+is just the statbar(txt) function after some copy/paste work
+on it! Nearly the same happend to the erase() function. In the <body> of
+the HTML- page we create a link with the known onMouseOver- property.
+Our moveover(txt) function is called with the string 'Disappearing!' being
+passed over to the txt variable. The window.status gets the contents of
+txt. This the same thing as in the statbar(txt) function. The setTimeout(...)
+function call is new though. This function sets a timeout. Who was
+expecting this? The setTimeout(...) function defines how long the timer
+is going to run and what will happen when the time is over. In our
+example the erase() function is called after 1000 milliseconds (that's
+a second for all math- cracks out there). This is a phantastic feature!
+Your function moveover(txt) function is finished after the timer is set.
+The browser calls the function erase() automatically after 1 second. 
+(Already thinking of a page telling the user: <i>If you don't do this 
+your harddrive is going to be destroyed in 10 seconds!</i> ???)
+<br>
+After the timeout is finished the timer does not restart again. But you
+could of course call it again in the erase() function. This leads us directly
+to the all-over liked scrollers.
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<a name="scroller"></a>
+As you already know how to write to the statusbar and how the setTimeout- function
+works the scroller will be easy for you to understand.
+<p>
+Push this button to see my scroller. The script has to be loaded from 
+the server so please be patient if you won't see the scroller 
+immediately. 
+<p>
+<form><input type="button" name="Button" value="Scroller" onclick="WinOpen('scroller.htm')">
+</form>
+<p>
+Have a look at the script:
+<p>
+<pre>
+&lt;html>
+&lt;head>
+&lt;script language="JavaScript">
+&lt;!-- Hide
+
+var scrtxt="Here goes your message the visitors to your page will "+
+"look at for hours in pure fascination...";
+var lentxt=scrtxt.length;
+var width=100;
+var pos=1-width;
+
+function scroll() {
+  pos++;
+  var scroller="";
+  if (pos==lentxt) {
+    pos=1-width;
+  }
+  if (pos&lt;0) {
+    for (var i=1; i<=Math.abs(pos); i++) {
+      scroller=scroller+" ";}
+    scroller=scroller+scrtxt.substring(0,width-i+1);
+  }
+  else {
+    scroller=scroller+scrtxt.substring(pos,width+pos);
+  }
+  window.status = scroller;
+  setTimeout("scroll()",150);
+  }
+//-->
+&lt;/script>
+&lt;/head>
+&lt;body onLoad="scroll();return true;">
+Here goes your cool page!
+&lt;/body>
+&lt;/html>
+</pre>
+<p>
+This script uses the same functions (or parts of it) we already used above. 
+The setTimeout(...) 'tells' the timer to call the scroll() function when the 
+time is up. The scroller will move one step further. At the beginning 
+there are a lot of calculations but these are not too important for understanding 
+how the script works. The calculations are there for getting the position where
+the scroller ought to start. If it is just at the start the script has to
+add some spaces in order to place the text right.<p>
+I told you at the beginning of this part of my introduction that scrollers
+are not very popular or if they are still popular they won't be it very long 
+anymore. There are some reasons. I list several here but there are certainly 
+more. <br>
+If you see this effect for the first time it might be quite nice but looking
+at it the 1 million and second time it is not that fun anymore. Well, this is
+no good argument indeed because this affects nearly every cool trick used in 
+your pages. <br>
+There are more severe problems. What I don't like is that it changes the speed
+when you move the mouse (It gets faster!). At least it does that for me. 
+This effect gets a lot stronger when you want to make the scroller little 
+bit faster by changing the setTimeout- value. Maybe there is a way around this
+problem. But the worst is that if you let this script run some time you get
+an <i>Out of memory error</i>. And this is really ugly. It seems to be a problem
+of the Netscape Navigator 2.0. Maybe a higher version will have this bug fixed.
+<p>
+There are many other routines out there on the Net. I've seen some scrollers 
+writing the text to a frame. Programming this shouldn't be too difficult. 
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<h4>
+<center>
+<a href="script.htm" onMouseOver="stat('My JavaScript-Homepage');return true">Index</a> - 
+<a href="javascr.htm" onMouseOver="stat('JavaScript - Introduction Part 1');
+ return true">Part 1</a> - 
+<a href="javascr2.htm" onMouseOver="stat('JavaScript - Introduction Part 2');
+ return true">Part 2</a> - 
+<a href="javascr3.htm" onMouseOver="stat('JavaScript - Introduction Part 3');
+ return true">Part 3</a> -
+<a href="javascr5.htm" onMouseOver="stat('JavaScript - Introduction Part 5');
+ return true">Part 5</a> -
+<a href="javascr6.htm" onMouseOver="stat('JavaScript - Introduction Part 6');
+ return true">Part 6</a> -
+<a href="javascr7.htm" onMouseOver="stat('JavaScript - Introduction Part 7');
+ return true">Part 7</a>
+</h4>
+</center>
+<p>
+<br><i>
+Last changed: 11.May'96<br>
+&#169 1996 by Stefan Koch</i>
+
+</body>
+</html>

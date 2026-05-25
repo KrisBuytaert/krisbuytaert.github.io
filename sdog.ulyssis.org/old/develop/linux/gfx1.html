@@ -1,0 +1,99 @@
+<html>
+<body bgcolor="#ffffff">
+
+<table>
+
+<tr><td bgcolor="#f0f0f0">
+
+<a name="graph">
+
+
+<h3><center>Graphics</center></h3>
+<h2>X / Svgalib / ...</h2>
+The diffucult part is making the decision between svgalib and X.
+<ul>
+<li><b>Svgalib</b>: This is a low level graphics library for Linux, based
+on VGAlib 1.2
+by
+Tommy Frandsen. VGAlib supported a number of standard VGA graphics modes,
+as
+well as Tseng ET4000 high resolution 256-color modes. 
+It also provides ET4000
+hicolor/truecolor DAC support. There's also an ATI mach32 driver
+by Michael Weller.
+<p>
+When the library is first used by a program at run-time, the chipset is
+detected and the appropriate driver is used. This means that a graphics
+program will work on any card that is supported by svgalib, if the mode it
+uses is supported by the chipset driver for that card. The library is
+upwardly compatible with VGAlib.
+<p>
+Getting started with svgalib is rather easy, the best thing you can do is
+read the instructions that come with the src.  Mabye somebody should write
+a faq someday ;-)
+ <li><b>X</b>: Probably by Using XLib
+<li><b><a href="http://synergy.caltech.edu/~ggi/">GGI</A></b>: This
+is probably the future, some of you hardware freaks
+might even be interrested in joining the project.<br>
+The Linux-GGI project wants to set up a General Graphics Interface for
+Linux that will allow
+       easy use of graphic hardware and input facilities under the Linux
+OS. One might argue that there
+       are already existing solutions and standards like X or OpenGL to
+deal with graphic issues, but
+       the current implementations under Linux have several (sometimes
+serious) drawbacks. GGI does not
+       want to substitute these existing standards nor does it want to
+implement these services
+       completely inside the kernel. 
+</ul>
+
+<center><h1>Libraries</h1></center>
+<ul>
+<li><a href="http://www.cs.nmsu.edu/~joshagam" target=_top> Pascal Quenten
+Porcupine's Quill v1.0</A>, easy-to-use
+linux/X graphics interface, has been released. The interface features the
+following aspects : - easy to use (even easier than mode13 in some
+respects)<ul>
+<li> lets you setup multiple windows of arbitrary size
+<li> easy to use
+<li> easily-ported (designed as an API rather than an actual interface;
+  rewrite the innards for mode13 or BeOS or Win'95 or what have you)
+<li> faster than mode13 or VESA LFBs (takes advantage of any hardware
+<li> easy to use (even easier than mode13 in some respects)
+<li> lets you setup multiple windows of arbitrary size
+<li> easy to use
+<li> easily-ported (designed as an API rather than an actual interface;
+  rewrite the innards for mode13 or BeOS or Win'95 or what have you)
+<li> faster than mode13 or VESA LFBs (takes advantage of any hardware
+  acceleration X offers, and even a cheap Cirrus 542x has a hardware
+  blitter :)
+<li> did he mention easy to use? :) (the entire API is 6 functions) 
+</ul>
+
+<li><a href="http://www.zip.com.au/~gaffer/ptc/" target=_top >Prometheus
+True Color</A> is a realtime truecolor graphics system designed mainly for
+use in
+games, demos and other realtime graphical applications. ptc is currently
+in beta testing and
+will be released to the public soon. ptc is free for non-commercial use
+and comes with full
+source code.  He is planning versions for SVGALIB,
+       XFree86 DGA ,
+       XWindows  and
+       OpenGL.  But , he is also looking for people to help him.
+
+</p>
+
+The best thing you can do is write your routines in plain C, 
+Using 2 different libraries for svgalib and X. Or use one of the above
+libs.
+
+
+</ul>
+
+</tr>
+</table>
+<p align=right>
+[<a href="midi.html" target=_top>Prev</A>]
+[<a href="image.html" target=_top>Next</A>]

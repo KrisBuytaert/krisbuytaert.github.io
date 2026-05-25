@@ -1,0 +1,1 @@
+select * from partylist where endmonth=3  and year=1997 \g\p

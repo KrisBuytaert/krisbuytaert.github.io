@@ -1,0 +1,5 @@
+rect http://tristan.arts.kuleuven.ac.be/~gatzby/test/index.html 100,3 -13,20 
+rect http://tristan.arts.kuleuven.ac.be/~gatzby/test/me.html 98,54 0,71 
+rect http://tristan.arts.kuleuven.ac.be/~gatzby/test/hobbies.html 100,80 0,97 
+rect http://tristan.arts.kuleuven.ac.be/~gatzby/test/computers.html 100,104 0,120 
+rect http://tristan.arts.kuleuven.ac.be/~gatzby/test/links.html 99,130 0,146 

@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<TITLE>Linux Network Computer HOWTO: Requirements</TITLE>
+</HEAD>
+<BODY>
+<A HREF="NC-HOWTO-1.html"><IMG SRC="prev.gif" ALT="Previous"></a>
+<A HREF="NC-HOWTO-3.html"><IMG SRC="next.gif" ALT="Next"></A>
+<A HREF="NC-HOWTO.html"><IMG SRC="toc.gif" ALT="Contents"></A>
+<HR>
+<H1><A NAME="s2">2. Requirements</A></H1>
+
+<h4>2.1 Hardware</h4>
+<a name="ss2.1">
+
+ <li>An NC, connected to your local Network, most likely by UTP, thus
+by a cross-cable or HUB connecting to an X Server. Herafter called the
+Linux Box. Basically the NC is Made to work with either AS/400 , Windows
+NT or AIX Servers. These are all expensive solutions,  however working
+with thin clients doesnt have to cost that much.
+
+The model I have at my disposal is an IBM Network Station model 8361-100,
+On the inside you can find an 403PPC chip, some S3 vga components, an
+PCMCIA slot, and normal 72pins (parity ??) sims.
+I found 8+32 Mb in my edition.
+<p>
+Actually those 40Mb were major overkill.  In
+full operation modus the NC only uses about with lot's of configuration
+panels a couple of telnet sessions and a X -query open only took up
+about 4Mb of ram.  )   So taking out the 32Mb showed absolutely no
+significant loss of speed.  <p>
+
+
+We proved it was no problem setting it up on a
+Linux only network.  You`ll need a server that can provide you both with
+about 25Mb of free diskspace for the software, and the capacities to run
+a X -query.   In the setup overhere we used a 486DX50 with 8Mb as a
+fileserver and I switch between another  486DX266 (PS/2 85) with 32Mb,
+and my Multia with 48Mb as the X server
+Off course, the fatster machines the better. 
+
+
+<p>
+
+<h4>2.2 Software</h4>
+<a name="ss2.2">
+<li>IBM Software, NC Kernel, fonts etc. 
+<br>
+In order to boot the NC you will need its Kernel and fonts.
+About 25Mb of files are needed on the server. 
+They can be found on an AIX 4.X with the Netstation modules installed.
+Or from the <a href="http://service.boulder.ibm.com/nc/rs6000/index.html">
+IBM Netstation Download Page</a> 
+<li>NFS Server
+<br>A working NFS server, like in every default Linux distribution.
+Approx 85Mb of diskspace has to be exported to the NC.
+
+<li>X Server,
+<br>
+Any machine running XDM with enough memory, processor power will do.
+You don't need to have X configured on the machine itselve, it can
+perfectly be a monitorless server. Basic X Windows install will provide
+you with the necessary deamons.
+
+<p>
+
+Optionally
+<li>DHCP Server
+<br>If you have multiple NC's, you may wish to distribute the IP Adresses
+by using a DHCP Server
+how to obtain and configure a DHCP server can be read in the 
+
+<a href="http://sunsite.unc.edu/LDP/HOWTO/mini/DHCPd/">
+DHCP Mini Howto on sunsite </a>
+
+<HR> <A HREF="NC-HOWTO-1.html"><IMG SRC="prev.gif" ALT="Previous"></a>
+<A HREF="NC-HOWTO-3.html"><IMG SRC="next.gif" ALT="Next"></A>
+<A HREF="NC-HOWTO.html"><IMG SRC="toc.gif" ALT="Contents"></A>
+
+</BODY>
+</HTML>

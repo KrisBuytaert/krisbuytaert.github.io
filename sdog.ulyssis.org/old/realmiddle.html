@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<body bgcolor="#ffffff">
+
+<script language="JavaScript">
+function randomNumber() {
+  today = new Date();
+  limits=9;
+  num = today.getTime();
+  num = Math.round(Math.abs(Math.sin (num)*1000000)) % limits +1; 
+  return num;  
+}
+
+function initArray() {
+      this.length = initArray.arguments.length
+      for (var i = 0; i < this.length; i++)
+      this[i+1] = initArray.arguments[i]
+  }
+
+
+
+<!-- Hide
+
+
+var table= new initArray("<a href=\"http://hal.ulyssis.student.kuleuven.ac.be/~sdog/wired/\">Let us our world</A><br>",
+			 "<a href=\"http://hal.ulyssis.student.kuleuven.ac.be/~sdog/syndes.html\">It's better to be dead and remembered than alive and forgotten<br>",
+			 "<a href=\"http://www.kuleuven.ac.be/\">It's better to have tried and failed than never to have tried at all</A><br>",
+			 "<a href=\"http://mato.mpoli.fi/~fc\">It's better to burn out than to fade away ;-)</A><br>",
+			 "<a href=\"http://www.freenetproject.be/\">It's better to regret something you have done than to regret something you haven't  done</A><br>",
+			 "<a href=\"http://hal.ulyssis.student.kuleuven.ac.be/~sdog/wired/\">Wired'96 The True Scene Spirit</A><br>",
+			 "<a href=\"http://people.pctrading.be/wired/\">Wired'97 , Where Else to Go</A><br>",
+			 "<a href=\"http://hal.ulyssis.student.kuleuven.ac.be/~sdog/party/\">To All tomorrow's parties</A><br>",
+      			 "<a href=\"http://key.ulyssis.student.kuleuven.ac.be/~sdog/linux\">Are you ready for a better scene ?</a><br>");
+			 randomnr = randomNumber();
+      			 document.write ("<table height=100% width=100%><tr><td valign=center><center><h4>",table[randomnr],"</h4></center></td></tr></table>");
+
+
+
+// -->  
+
+</script>
+</head>
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,22 @@
+
+create table partylist (name char(60) primary key,
+			place char(25),
+			country char (25),
+			url char(60),
+			startday int,
+			startmonth int,
+			endday int,
+			endmonth int,
+			year int,
+			contact char(30)) \p\g
+
+insert into partylist values ('Movement','Ashkelon','Israel','',9,12,11,12,1996,'')\p\g
+insert into partylist values ('The Party, The End of an Era','Aars','Denmark','www.theparty.dk',27,12,29,12,1996,'')\p\g
+insert into partylist values ('Fusion Zone','Dublin','Ireland','aoife.indigo.ie/~fuzion/fuzion.html',0,1,0,1,1997,'')\p\g
+insert into partylist values ('Mekka & Symposium','Hittfeld','Germany','134.28.37.10/~frank/Sym97/',28,3,31,3,1997,'')\p\g
+insert into partylist values ('The Gathering','Hamar','Norway','www.crusaders.no',26,3,30,3,1997,'')\p\g
+insert into partylist values ('X-97 - TakeOver','Eindhoven','The Netherlands','',4,4,6,4,1997,'')\p\g
+insert into partylist values ('Scream','Gareau','Canada','scream97.educ.infinit.net/',13,6,15,6,1997,'')\p\g
+insert into partylist values ('Eclipse','Montreal','Canada','eclipse.micro-intel.com/',0,7,0,7,1997,'')\p\g"
+
+

@@ -1,0 +1,256 @@
+/usr/local/bin/webcopy -v -i -r -l -m http://people.pctrading.be/wired/
+date Sat, 28 Jun 1997 11:21:54 GMT
+server people.pctrading.be port 80 (/wired/)
+reference /wired/ accept
+getting http://people.pctrading.be:80/wired/ 304 Not Modified
+parsing /index.html
+reference winfo.jpg accept
+reference w-info.htm accept
+reference w97info.jpg accept
+reference w-mail.htm accept
+reference w-mail.jpg accept
+reference w-files.htm accept
+reference w-files.jpg accept
+reference w-prev.htm accept
+reference preveven.jpg accept
+reference w-news.htm accept
+reference lastnews.jpg accept
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+reference http://www.pctrading.be reject-full
+getting http://people.pctrading.be:80/wired/winfo.jpg 304 Not Modified
+storing /winfo.jpg
+getting http://people.pctrading.be:80/wired/w-info.htm 200 OK
+parsing /w-info.htm
+reference wired.htm accept
+reference winfo.jpg previous-ref
+reference #how2 reject-same
+reference mailto:Pascal.Massimino@ens.fr reject-full
+reference mailto:sdog@ace.ulyssis.student.kuleuven.ac.be reject-full
+reference mailto:zarkof@ccim.be reject-full
+reference map_car.gif accept
+reference map_bus.gif accept
+reference mailto:darkness.Imphobia@interweb.be reject-full
+reference mailto:access@pctrading.be reject-full
+reference mailto:mfred@cubic.pctrading.be reject-full
+reference http://people.pctrading.be/wired reject-full
+reference ftp://ftp.arosnet.se/demo/partyinfo/ reject-full
+reference ftp://ftp.cdrom.com/pub/demos/incoming/party/ reject-full
+reference w-mail.htm previous-ref
+reference impwir97.zip accept
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/w97info.jpg 304 Not Modified
+storing /w97info.jpg
+getting http://people.pctrading.be:80/wired/w-mail.htm 304 Not Modified
+parsing /w-mail.htm
+reference wired.htm previous-ref
+reference winfo.jpg previous-ref
+reference mailto:wired-request@cubic.pctrading.be?subject=subscribe reject-full
+reference mailto:wired-request@cubic.pctrading.be?subject=unsubscribe reject-full
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/w-mail.jpg 304 Not Modified
+storing /w-mail.jpg
+getting http://people.pctrading.be:80/wired/w-files.htm 200 OK
+parsing /w-files.htm
+reference wired.htm previous-ref
+reference winfo.jpg previous-ref
+reference w97nfo21.zip accept
+reference impwir97.zip previous-ref
+reference w97_inv2.zip accept
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/w-files.jpg 304 Not Modified
+storing /w-files.jpg
+getting http://people.pctrading.be:80/wired/w-prev.htm 304 Not Modified
+parsing /w-prev.htm
+reference wired.htm previous-ref
+reference winfo.jpg previous-ref
+reference w94.htm accept
+reference w94.jpg accept
+reference line.gif accept
+reference w95.htm accept
+reference w95.jpg accept
+reference line.gif previous-ref
+reference w96.htm accept
+reference w96.jpg accept
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/preveven.jpg 304 Not Modified
+storing /preveven.jpg
+getting http://people.pctrading.be:80/wired/w-news.htm 200 OK
+parsing /w-news.htm
+reference wired.htm previous-ref
+reference winfo.jpg previous-ref
+reference impwir97.zip previous-ref
+reference w97_inv2.zip previous-ref
+reference w97nfo21.zip previous-ref
+reference trips.txt accept
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/lastnews.jpg 304 Not Modified
+storing /lastnews.jpg
+getting http://people.pctrading.be:80/wired/wired.htm 304 Not Modified
+parsing /wired.htm
+reference winfo.jpg previous-ref
+reference w-info.htm previous-ref
+reference w97info.jpg previous-ref
+reference w-mail.htm previous-ref
+reference w-mail.jpg previous-ref
+reference w-files.htm previous-ref
+reference w-files.jpg previous-ref
+reference w-prev.htm previous-ref
+reference preveven.jpg previous-ref
+reference w-news.htm previous-ref
+reference lastnews.jpg previous-ref
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+reference http://www.pctrading.be reject-full
+getting http://people.pctrading.be:80/wired/map_car.gif 304 Not Modified
+storing /map_car.gif
+getting http://people.pctrading.be:80/wired/map_bus.gif 304 Not Modified
+storing /map_bus.gif
+getting http://people.pctrading.be:80/wired/impwir97.zip 200 OK
+storing /impwir97.zip
+getting http://people.pctrading.be:80/wired/w97nfo21.zip 200 OK
+storing /w97nfo21.zip
+getting http://people.pctrading.be:80/wired/w97_inv2.zip 200 OK
+storing /w97_inv2.zip
+getting http://people.pctrading.be:80/wired/w94.htm 304 Not Modified
+parsing /w94.htm
+reference wired.htm previous-ref
+reference winfo.jpg previous-ref
+reference w-prev.htm previous-ref
+reference w94.jpg previous-ref
+reference w94-res.htm accept
+reference presults.jpg accept
+reference XXXXXXXX.ZIP accept
+reference dreport.jpg accept
+reference line.gif previous-ref
+reference w95.htm previous-ref
+reference w95.jpg previous-ref
+reference line.gif previous-ref
+reference w96.htm previous-ref
+reference w96.jpg previous-ref
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/w94.jpg 304 Not Modified
+storing /w94.jpg
+getting http://people.pctrading.be:80/wired/line.gif 304 Not Modified
+storing /line.gif
+getting http://people.pctrading.be:80/wired/w95.htm 304 Not Modified
+parsing /w95.htm
+reference wired.htm previous-ref
+reference winfo.jpg previous-ref
+reference w94.htm previous-ref
+reference w94.jpg previous-ref
+reference line.gif previous-ref
+reference w-prev.htm previous-ref
+reference w95.jpg previous-ref
+reference w95-res.htm accept
+reference presults.jpg previous-ref
+reference w95-rep.htm accept
+reference dreport.jpg previous-ref
+reference line.gif previous-ref
+reference w96.htm previous-ref
+reference w96.jpg previous-ref
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/w95.jpg 304 Not Modified
+storing /w95.jpg
+getting http://people.pctrading.be:80/wired/w96.htm 304 Not Modified
+parsing /w96.htm
+reference wired.htm previous-ref
+reference winfo.jpg previous-ref
+reference w94.htm previous-ref
+reference w94.jpg previous-ref
+reference line.gif previous-ref
+reference w95.htm previous-ref
+reference w95.jpg previous-ref
+reference line.gif previous-ref
+reference w-prev.htm previous-ref
+reference w96.jpg previous-ref
+reference w96-res.htm accept
+reference presults.jpg previous-ref
+reference w96-rep.htm accept
+reference dreport.jpg previous-ref
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/w96.jpg 304 Not Modified
+storing /w96.jpg
+getting http://people.pctrading.be:80/wired/trips.txt 200 OK
+storing /trips.txt
+getting http://people.pctrading.be:80/wired/w94-res.htm 304 Not Modified
+parsing /w94-res.htm
+reference w94.htm previous-ref
+reference winfo.jpg previous-ref
+reference w94.jpg previous-ref
+reference presults.jpg previous-ref
+reference wir94res.txt accept
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/presults.jpg 304 Not Modified
+storing /presults.jpg
+getting http://people.pctrading.be:80/wired/XXXXXXXX.ZIP 404 File Not Found
+getting http://people.pctrading.be:80/wired/dreport.jpg 304 Not Modified
+storing /dreport.jpg
+getting http://people.pctrading.be:80/wired/w95-res.htm 304 Not Modified
+parsing /w95-res.htm
+reference w95.htm previous-ref
+reference winfo.jpg previous-ref
+reference w95.jpg previous-ref
+reference presults.jpg previous-ref
+reference wir95res.txt accept
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/w95-rep.htm 304 Not Modified
+parsing /w95-rep.htm
+reference w95.htm previous-ref
+reference winfo.jpg previous-ref
+reference w95.jpg previous-ref
+reference Dreport.jpg accept
+reference XXXXXXXX.ZIP previous-ref
+reference XXXXXXXXXX.ZIP accept
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/w96-res.htm 304 Not Modified
+parsing /w96-res.htm
+reference w96.htm previous-ref
+reference winfo.jpg previous-ref
+reference w96.jpg previous-ref
+reference presults.jpg previous-ref
+reference wir96res.zip accept
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/w96-rep.htm 304 Not Modified
+parsing /w96-rep.htm
+reference w96.htm previous-ref
+reference winfo.jpg previous-ref
+reference w96.jpg previous-ref
+reference dreport.jpg previous-ref
+reference http://www.infomaniak.ch/~Imphobia reject-full
+reference http://www.rz.uni-frankfurt.de/~molitor reject-full
+reference w96_rep1.zip accept
+reference w96_rep2.zip accept
+reference w96_rep3.zip accept
+reference w96_rep4.zip accept
+reference mailto:darkness.imphobia@interweb.be reject-full
+reference mailto:ploef@di_novell.ulb.ac.be reject-full
+getting http://people.pctrading.be:80/wired/wir94res.txt 304 Not Modified
+storing /wir94res.txt
+getting http://people.pctrading.be:80/wired/wir95res.txt 304 Not Modified
+storing /wir95res.txt
+getting http://people.pctrading.be:80/wired/Dreport.jpg 404 File Not Found
+getting http://people.pctrading.be:80/wired/XXXXXXXXXX.ZIP 404 File Not Found
+getting http://people.pctrading.be:80/wired/wir96res.zip 200 OK
+storing /wir96res.zip
+getting http://people.pctrading.be:80/wired/w96_rep1.zip 200 OK
+storing /w96_rep1.zip
+getting http://people.pctrading.be:80/wired/w96_rep2.zip 200 OK
+storing /w96_rep2.zip
+getting http://people.pctrading.be:80/wired/w96_rep3.zip 200 OK
+storing /w96_rep3.zip
+getting http://people.pctrading.be:80/wired/w96_rep4.zip 200 OK
+storing /w96_rep4.zip
+end

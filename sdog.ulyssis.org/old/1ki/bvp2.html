@@ -1,0 +1,347 @@
+<title>Practicum 2: Selectiebureau</title>
+<h1>Practcium Beginselen Van Programmeren  2: Selectiebureau</h1>
+<h1>
+<a href=final.pas>De Oplossing</A></h1>
+<h2>1. Inleiding</h2>
+
+
+Een selectiebureau staat in voor de selectie van sollicitanten voor bepaalde
+bedrijven.  Om de selectie eenvoudiger en sneller te kunnen laten verlopen,
+wil men ze automatiseren.  Hierbij zal het bedrijf, dat een werknemer wil 
+aannemen, een aantal criteria doorspelen aan het selectiebureau. Het 
+selectiebureau overhandigt een vragenlijst over deze criterian aan de 
+kandidaten die ze moeten invullen.  Een kandiadaat beantwoordt de 
+vragen.  De antwoorden worden gekwoteerd door het selectiebureau.  De 
+resultaten zijn scores van 1 tot 5 (resp. minder goed tot zeer goed)
+of een socre 0 als een kandidaat een vraag onbeantwoord laat.  De 
+computer zal de gegevens van elke kandidaat verwerken en aan de hand 
+daarvan een rangschikking maken van de kandidaten, zodat enkel de meest 
+geschikte kandidaten moeten uitgenodigd worden voor een persoonlijk 
+gesprek.<p>
+
+Er wordt gevraagd dat je een programma schrijft dat de verwerking van de 
+gegevens voor elke kandidaat doorvoert en per bedrijf een rangschikking 
+geeft van de kandidaten..<p>
+
+<h2>2. Opgave</h2>
+De invoer voor het programma bestaat uit de volgende onderdelen:
+Alles wat hier op een nieuwe regel staatm zal in de invoer ook op een nieuwe
+regel staan.<p>
+<ol>
+<li> Een getal dat het aantal criteria aangeeft;<br>
+     Er zijn maximum 15 criteria en de nummer liggen tussen 1 en 15;<br>
+     Gevolgd door:<br>
+     Per criterium:<br>
+     <ol><li type=a>Een uniek nummer voor het criterium;
+	 <li> Een omschrijving van het criterium;	
+	</ol>
+<li>Het aantal bedrijven dat een werknemer in dienst wil nemen;
+<li>Per Bedrijf
+    <ol><li type=a>Een identificatieletter, gaande A tot Z 
+(hoofdletters);<br>
+                   Er zijn maximum 26 bedrijven;<br>
+        <li>De Bedrijfsnaam;
+        <li>Het aantal criteria dat het bedrijf belangrijk vindt;
+	<li>Voor elk criterium dat het bedrijf belangrijk vindt: het 
+unieke identificatienummer, een gewichtsfactor en een minimumscore;<br>
+Als het bedrijf een criterium niet belangrijk vindt wordt voor dit 
+criterium geen invoer gegeven;
+        <li>Voorkeur voor de oudste of de jongste kandidaat in geval ex 
+aequo's: oudste = 0, jongste = 1;
+	</ol>
+<li>V&oacute&oacuter de invoer van de kandidaten staat het aantal 
+kandidaten dat heeft deelgenomen aan de testen (een getal tussen 1 en 10).
+<li>Voor elke kandidaat die in aanmerking wil komen voor een baan bij een 
+bedrijf:
+  <ol><li type=a>De naam van de kandidaat;
+      <li> De leeftijd van de kandidaat;
+      <li> Aantal beantwoorde vragen;
+      <li> Voor elke beantwoorde vraag een regel met: het nummer van de 
+vraag (dit komt overeen met het unieke nummer van een criterium) en een 
+beoordeling van 1 tot 5;
+</ol></ol>  
+<h2>3. Invoer </h2>
+
+Hetgeen volgt kan dienen als invoer voor het programma:
+
+<pre>
+5
+1
+Diploma
+3
+Talenkennis
+4
+Beoordeling snoepgoed
+2
+Motivatie
+5
+Groepsgeest
+2
+A
+De Wereldberoemde Dropjesfabriek
+5
+1 4 2
+3 3 1
+2 8 3
+5 4 2
+4 1 2
+1
+B
+De Naamloze Vennootschap
+5
+1 4 2
+2 5 2
+3 3 2
+5 3 0
+4 1 2
+0 
+3 
+T.Wix
+25
+1 2
+2 5
+3 2
+4 4
+5 3
+Peeters
+32
+1 3 
+2 3
+3 5
+4 4
+5 2
+S.Noeper
+23
+1 2
+2 3
+3 5
+4 5
+
+</pre>
+
+Bij de invoer mag je ervan uitgaan dat een naam niet langer is dan 50 
+symbolen en dat na een naam geen invoer meer volgt op dezelfde 
+invoerregel. Er kunnen wel verschillende getallen op eenzelfde regel 
+voorkomen.<p>
+
+<h2>4. Verwerking </h2>
+
+De invoer uit de vorige paragraaf kunnen we als volgt samenvatten:<br>
+!!! Merk op: dit is niet de uitvoer van het programma !!!<p>
+
+<table border>
+<tr><th colspan=7> <center> Scores van de verschillende 
+kandidaten</center></th>
+<tr><th>Kandidaat</th>
+   <th>Leeftijd</th>
+   <th>Diploma</th>
+   <th>Motivatie</th>
+   <th>Talen-<br>kennis</th>
+   <th>Beoordeling<br>dropjes</th>
+   <th>Groeps-<br>geest</th>
+<tr align=center><td>T.Wix<br>Peeters<br>S.Noeper</td>
+  <td>25<br>32<br>23</td>
+  <td>2<br>3<br>2</td> 
+  <td>5<br>3<br>3</td>
+  <td>2<br>5<br>5</td>
+  <td>4<br>4<br>5</td>
+  <td>3<br>2<br>0</td>
+</table>
+
+
+Als we de gewichten in rekening brengen, levert dat volgend resultaat op:<p>
+
+<table border>
+<tr><th colspan=8> <center> Scores voor bedrijf A</center></th>
+<tr><th>Kandidaat</th>
+   <th>Leeftijd</th>
+   <th>Diploma</th>
+   <th>Motivatie</th>
+   <th>Talen-<br>kennis</th>
+   <th>Beoordeling<br>dropjes</th>
+   <th>Groeps-<br>geest</th>
+   <th>Totaal</th>
+<tr align=center><td>T.Wix<br>Peeters<br>S.Noeper</td>
+  <td>25<br>32<br>23</td>
+  <td>8<br>12<br>8</td> 
+  <td>40<br>24<br>24</td>
+  <td>6<br>15<br>15</td>
+  <td>4<br>4<br>5</td>
+  <td>12<br>8<br>0</td>
+  <td>70<br>63<br>52</td>
+</table>
+
+<table border>
+<tr><th colspan=8> <center> Scores voor bedrijf B</center></th>
+<tr><th>Kandidaat</th>
+   <th>Leeftijd</th>
+   <th>Diploma</th>
+   <th>Motivatie</th>
+   <th>Talen-<br>kennis</th>
+   <th>Beoordeling<br>dropjes</th>
+   <th>Groeps-<br>geest</th>
+   <th>Totaal</th>
+<p>
+<tr align=center><td>T.Wix<br>Peeters<br>S.Noeper</td>
+  <td>25<br>32<br>23</td>
+  <td>8<br>12<br>8</td> 
+  <td>25<br>15<br>15</td>
+  <td>6<br>15<br>15</td>
+  <td>4<br>4<br>5</td>
+  <td>9<br>6<br>0</td>
+  <td>52<br>52<br>43</td>
+</table>
+<p>
+
+
+Als een kandidaat op een bepaalde vraag niet de minimumscore voor het 
+bedrijf heeft behaald, komt hij voor het verdere verloop niet meer in 
+aanmerking voor de betrekking bij dat bedrijf.  Deze kandidaat zal dus 
+niet voorkomen in de rangschikking. In het voorbeeld uit de vorige 
+paragraaf geldt dit voor kandidaat S.Noeper, die niet de minimum-score 
+voor de groepsgeest behaald heeft voor bedrijf A.<p>
+
+
+<h2>5. Uitvoer </h2>
+
+De gevraagde uitvoer bestaat per bedrijf uit een rangschikking van alle 
+kandidaten, die in aanmerking komen voor de betrekking, op basis van het 
+totaal van de gewogen scores.  Wanneer er twee kandidaten zijn met een 
+gelijke score, word gekeken naar de voorkeur van het bedrijf voor ofwel 
+de jongste ofwel de oudste kandidaat, aan de hand hiervan wordt de 
+rangschikking opgemaakt.  De criteria worden voor het bedrijf weergegeven 
+in orde van belangrijkheid (hoogste gewicht eerst).  Indien er toch nog 
+ex aequo's zijn in de rangschikking, dan krijgen die uiteraard hetzelfde 
+rangnummer.  Je mag ze dan afdrukken in eender welke volgorde.<p>
+
+Schematisch moet de uitvoer er als volgt uitzien:<br>
+
+<xmp>
+Kandidatenlijst voor het bedrijf <Naam van het bedrijf1>
+--------------------------------------------------------
+1. Kandidaat:  <Naam van de kandidaat>
+   Leeftijd:   <Leeftijd>
+   <Omschrijving vraag 1>: <Score op vraag 1><Gewogen score op vraag 1>
+   <Omschrijving vraag 2>: <Score op vraag 2><Gewogen score op vraag 2>
+   ...
+   <Omschrijving vraag N>: <Score op vraag N><Gewogen score op vraag N>
+   Totaal:		                     <Gewogen totaalscore>
+2. Kandidaat:  <Naam van de kandidaat>
+   Leeftijd:   <Leeftijd>
+   <Omschrijving vraag 1>: <Score op vraag 1><Gewogen score op vraag 1>
+   <Omschrijving vraag 2>: <Score op vraag 2><Gewogen score op vraag 2>
+   ...
+   <Omschrijving vraag N>: <Score op vraag N><Gewogen score op vraag N>
+   Totaal:				     <Gewogen totaalscore>
+...
+
+Kandidatenlijst voor het bedrijf <Naam van het bedrijf2>
+--------------------------------------------------------
+1. Kandidaat:  <Naam van de kandidaat>
+   Leeftijd:   <Leeftijd>
+   <Omschrijving vraag 1>: <Score op vraag 1><Gewogen score op vraag 1>
+   <Omschrijving vraag 2>: <Score op vraag 2><Gewogen score op vraag 2>
+   ...
+   <Omschrijving vraag N>: <Score op vraag N><Gewogen score op vraag N>
+   Totaal:		                     <Gewogen totaalscore>
+2. Kandidaat:  <Naam van de kandidaat>
+   Leeftijd:   <Leeftijd>
+   <Omschrijving vraag 1>: <Score op vraag 1><Gewogen score op vraag 1>
+   <Omschrijving vraag 2>: <Score op vraag 2><Gewogen score op vraag 2>
+   ...
+   <Omschrijving vraag N>: <Score op vraag N><Gewogen score op vraag N>
+   Totaal:				     <Gewogen totaalscore>
+...
+
+...
+
+</xmp>
+De uitvoer voor het voorbeeld zal dus zijn:
+
+<xmp>
+Kandidatenlijst voor het bedrijf de Wereldberoemde Dropjesfabriek
+-----------------------------------------------------------------
+1. Kandidaat: T.Wix
+   Leeftijd: 25
+   Motivatie: 			5	40
+   Diploma:			2	 8
+   Groepsgeest:			3	12
+   Talenkennis:			2	 6
+   Beoordeling dropjes : 	4 	 4
+   Totaal:				70
+2. Kandidaat: Peeters
+   Leeftijd: 32
+   Motivatie: 			3	24
+   Diploma:			3	12
+   Groepsgeest:			2	 8
+   Talenkennis:			5	15
+   Beoordeling dropjes : 	4	 4
+   Totaal:				63
+
+Kandidatenlijst voor het bedrijf De Naamloze Vennootschap
+---------------------------------------------------------
+1. Kandidaat: Peeters
+   Leeftijd: 32
+   Motivatie: 			5	15
+   Diploma:			4	12
+   Groepsgeest:			3	15
+   Talenkennis:			3	 6
+   Beoordeling dropjes : 	1	 4
+   Totaal:				52
+2. Kandidaat: T.Wix
+   Leeftijd: 25
+   Motivatie: 			5	25
+   Diploma:			4	 8
+   Groepsgeest:			3	 6 
+   Talenkennis:			3	 9
+   Beoordeling dropjes : 	4	 4
+   Totaal:				52
+3. Kandidaat: S.Noeper
+   Leeftijd: 23
+   Motivatie: 			5	15
+   Diploma:			4	 8
+   Groepsgeest:			3	15 
+   Talenkennis:			3	 0
+   Beoordeling dropjes : 	4	 5
+   Totaal:				43
+
+</xmp>
+
+<h2>6 Opgave</h2>
+
+Je moet een Pascal-programma ontwerpen dat de gevraagde gegevens als 
+uitvoer produceert.  Natuurlijk moet het programma werken voor elke 
+invoer die aan de voorwaarden uit paragraaf 2 voldoet.  Je mag wel
+veronderstellen dat de invoer correct is, d.w.z. dat er geen regels 
+zullen voorkomen die niet aan de vermelde voorwaarden voldoen.<p>
+
+Je moet er zeker rekening mee houden dat je programma moet gelezen 
+worden: een duidelijke naamkeuze, voldoende commentaar (zonder echter te 
+overdrijven), gebruik van indentatie voor een duidelijke schikking,
+enz. zijn dus erg belangrijk en zullen een belangrijke invloed hebben op 
+de uiteindelijke beoordeling.  
+
+De evaluatie van het practicum bestaat uit een demonstratie van het 
+programma en een controle van de programmacode.  De gegevens die je nodig
+hebt als invoer kan je interactief (tijdens de uitvoering van je 
+programma) invoeren, ofwel kan je ze in een bestand plaatsen.  Dit doe je 
+op de manier die besproken is in de informatiebrochure voor practicum 1.  
+Voor het evalueren van het practicum zullen een aantal bestanden met 
+inover gebruikt worden: voorzie dus de mogelijkheid de invoer uit een 
+bestand te halen<br>
+<br>
+<br>
+
+
+Veel succes!<br>
+<br>
+Prof. H. Olivi&eacute,<br>
+H. Ad&eacute,<br>
+H. Blockdeel,<br>
+K. Cardinaels,<br>
+M. Denecker<br>
+</html>
+
+
+
+

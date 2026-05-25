@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<TITLE>Linux Network Computer HOWTO
+</TITLE>
+</HEAD>
+<BODY>
+<A HREF="NC-HOWTO-5.html"><IMG SRC="prev.gif" ALT="Previous"></A>
+<IMG SRC="next.gif" ALT="Next">
+<A HREF="NC-HOWTO.html"><IMG SRC="toc.gif" ALT="Contents"></A>
+<HR>
+<h4>TroubleShooting</h4>
+Q:  I get an Invalid Kernel Type while tryng to boot 
+the NC.
+<br>
+A: You didn't run the agree script.
+<br>
+Q: I log in at the remote host and my keyboard settings fuck up.
+<br>
+A: I use no .Xmodap when working on the NC.  This keeps my
+keyboardsettings perfect. 
+
+
+<p>
+
+<h4>Experciences</h4>
+<li>Using the NC as a plain terminal with multiple consoles.
+<li>The Built-in Motiv extensions are a lot easier to use than the
+default setup ;-)
+<li>Pressing the Pause/Break key will pop up the NC Menu at any time.
+<p>
+<h4>Port 5978</h4>
+<i>Remote Logging</i><br>
+It`s the same as the messages console in your CLE.
+
+<h4>Port 5999</h4>
+<i>Remote managment for the NC</i><br>
+This is acutally a call for help.
+
+Strobing the NC , I found some usefull ports.
+<br>Among them 5999,  I still haven't found the exact way how to deal with
+it.  However here are some commands that showed me to be usefull.
+You can apparently configure the NC remotely.
+<ul><li>
+help
+<li>get boot
+<li>get tcpip
+<li>get file
+<li>get nfs
+<li>get tftp
+
+</ul>
+If somebody has more info on these, help is welcome. They seem to be some
+SNMP thing but I have no expericience at all on that matter.
+
+<h4>Credits</h4>
+Lots of thanks must go out to Wouter Cloetens,
+wcloeten@raleigh.ibm.com
+for getting me started 
+and to Bart Geens ,Bart.Geens@advalvas.be for rereading this howto and
+findin uot lost of splelling errosr
+<HR>
+<A HREF="NC-HOWTO-5.html"><IMG SRC="prev.gif" ALT="Previous"></A>
+<IMG SRC="next.gif" ALT="Next">
+<A HREF="NC-HOWTO.html"><IMG SRC="toc.gif" ALT="Contents"></A>
+</BODY>
+</HTML>

@@ -1,0 +1,13 @@
+<title>XPaint</title><h1>XPaint</h1><ul>
+<li><strong>Version:</strong>        2.4.3
+<li><strong>Entered-date:</strong>   12JUN96
+<li><strong>Description:</strong>    Update of David Koblas' X paint program. Many new features and bug fixes.
+<li><strong>Keywords:</strong>       X11, paint, graphics, image processing
+<li><strong>Author:</strong>         David Koblas (version 2.1.1)
+		bullestock@dk-online.dk (Torsten Martinsen) (later versions)
+<li><a href="ftp://sunsite.unc.edu/pub/Linux/X11/xapps/graphics/draw/xpaint-2.4.3.tar.gz"><strong>Primary-site:</strong> sunsite.unc.edu /pub/Linux/X11/xapps/graphics/draw xpaint-2.4.3.tar.gz   244551</a>
+<li><strong>Alternate-site:</strong> http://www2.dk-online.dk/Users/Torsten_Martinsen/xpaint.html
+<li><strong>Platforms:</strong>      X11, libXpm
+<li><strong>Copying-policy:</strong> Freely redistributable
+</ul>
+<em>Note: Not all entries contain correct, complete filenames. FTP sites often refuse connections due to excessive traffic. If you have difficulty with the provided FTP links, open an FTP connection yourself.</em>

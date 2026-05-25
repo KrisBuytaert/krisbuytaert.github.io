@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>Introduction to JavaScript - Part7</title>
+<script language="JavaScript">
+<!-- Hide
+function erase() {
+   window.status="";
+}
+function stat(txt) {
+   window.status = txt;
+   setTimeout("erase()",1500);
+}
+function test(form, button) {
+  if (button.name == "button1") test1(form);
+  if (button.name == "button2") test2(form);
+}
+function test1(form) {
+  if (form.text1.value == "")
+    alert("Please enter a string!")
+  else { 
+   alert("Hi "+form.text1.value+"! Form input ok!");
+  }
+}
+function test2(form) {
+  if (form.text2.value == "" || 
+      form.text2.value.indexOf('@', 0) == -1) 
+        alert("No valid e-mail address!");
+  else alert("OK!");
+}
+// -->
+</script>
+</head>
+<BODY bgcolor="ffffff" text=#000000 link=#ff0000 vlink=#4444dd alink=#9999dd>
+<a name="valforms"></a>
+<font size=+4 color=#FF0000>
+<center>
+<a name="status"></a>
+<img src="jascr.gif" alt="" width=397 height=118><br>
+Introduction to JavaScript<br></font><font size=+2 color=#FF0000>Part 7</center>
+</a>
+</font>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<br>
+<font size=+1>
+Form input is very important for some Web- pages. The form input
+is often sent back to the server again. JavaScript has got the
+functionality to validate the form input before sending it to the
+server. First I want to show you how forms can be validated. Then
+we will have a look at the possibilties for sending information 
+back with JavaScript or HTML.<p>
+
+First of all we want to create a simple script. The HTML- page shall
+contain two text- elements. The user has to write his name into the
+first and an e-mail address into the second element. You can enter
+anything into the form elements and then push the button. Also try to
+enter nothing and then push the button.
+
+<form name="first">
+Enter your name:<br>
+<input type="text" name="text1">
+<input type="button" name="button1" value="Test Input" onClick="test1(this.form)">
+<P>
+Enter your e-mail address:<br>
+<input type="text" name="text2">
+<input type="button" name="button2" value="Test Input" onClick="test2(this.form)">
+<P>
+</form>
+Concerning the first input element you will receive an error message 
+when not entering anything. Any input is seen as valid input. Of course,
+this does not prevent the user from entering any wrong name. The
+browser even accepts numbers. So if you enter '17' you will get 'Hi 17!'.
+<br>
+The second form is a little bit more sophisticated. Try to enter a simple
+string - your name for example. It won't work (unless you have a @ in
+your name...). The criteria for accepting the input as a valid e-mail
+address is the @. A single @ will do it - but this is certainly not 
+very meaningful. Every Internet e-mail address contains a @
+so it seems appropriate to check for a @ here.<p>
+What does the script for those two form elements and for the validating
+look like? Here it goes:<p>
+<pre>
+&lt;html>
+&lt;head>
+&lt;script language="JavaScript">
+&lt;!-- Hide
+
+function test1(form) {
+  if (form.text1.value == "")
+    alert("Please enter a string!")
+  else { 
+   alert("Hi "+form.text1.value+"! Form input ok!");
+  }
+}
+
+function test2(form) {
+  if (form.text2.value == "" || 
+      form.text2.value.indexOf('@', 0) == -1) 
+        alert("No valid e-mail address!");
+  else alert("OK!");
+}
+// -->
+&lt;/script>
+&lt;/head>
+
+&lt;body>
+&lt;form name="first">
+Enter your name:&lt;br>
+&lt;input type="text" name="text1">
+&lt;input type="button" name="button1" value="Test Input" onClick="test1(this.form)">
+&lt;P>
+Enter your e-mail address:&lt;br>
+&lt;input type="text" name="text2">
+&lt;input type="button" name="button2" value="Test Input" onClick="test2(this.form)">
+&lt;/body>
+</pre>
+<p>
+First have a look at the HTML- code in the body- section. We just create
+two text elements and two buttons. The buttons call the functions test1(...)
+or test2(...) depending on which button is pressed. We pass <i>this.form</i> to
+the functions in order to be able to address the right elements in the 
+functions later on.<br>
+The function test1(form) tests if the string is empty. This is done 
+via <i>if (form.text1.value == "")...</i> . 'form' is the variable
+which receives the 'this.form' value in the function call. We can get the
+value of the input element through using 'value' in combination with 
+<i>form.text1</i>. In order to look if the string is empty we compare it with
+"". 
+If the input string equals "" then no input was done. The user will get
+an error message. If something is entered the user will get an ok.<br>
+The problem here is that the user might enter only spaces. This is seen
+as a valid input! If you want to, you can of course check for these
+possibilities and exclude them. I think this is quite easy with the
+information given here.<br>
+Now have a look at the <i>test2(form)</i> function. This function again compares 
+the input string with the empty string "" to make sure that something has
+been entered. But we have added something to the if- command. The || is called
+the OR- operator. You have learned about it in part 6 of this introduction.<br>
+The if- command checks if either the first or the second comparison is true.
+If at least one of them is true the whole if- command gets true and the
+following command will be executed. This means that you will get an 
+error message either if your string is empty or if there isn't a @ in
+your string. The second operation in the if- command looks if the
+entered string contains a @.
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<a name="submit"></a>
+What different possibilities do exist for submitting the contents of
+a form? The easiest way is to submit the form input via e-mail. This
+is the method we are going to look at a little closer. If you want to
+get feedback without e-mail and want the server to handle the input
+automatically you have to use CGI at the moment. You would need CGI for
+example if you wanted to make a search engine like Yahoo- where the 
+user gets a result quickly after the form input. He does not have to
+wait until the people maintaining this server read the input and then
+look up the information requested. This is done automatically by the 
+server. JavaScript does not have the functionality to do things
+like this. Even if you want to create a guestbook you can't make
+the server to add the information automatically to an existing HTML- page
+with JavaScript. Only CGI can do this at the moment. Of course you
+can create a guestbook with the people answering via e-mail. You
+have to enter the feedback manually though. This is ok if you don't
+expect to get 1000 feedback mails a day.<br>
+This script here is plain HTML. So no JavaScript is needed here!
+Only, of course, if you want to check the input before the form is
+submitted you will need JavaScript. I have to add that the
+mailto- command does not work for every browser- but the newer 
+browsers support it. 
+<p>
+<pre>
+&lt;FORM METHOD=POST ACTION="mailto:your_email@goes.here">
+&lt;H3>Do you like this page?&lt;/H3>
+  &lt;INPUT NAME="choice" TYPE="RADIO" VALUE="1">Not at all.&lt;BR>
+  &lt;INPUT NAME="choice" TYPE="RADIO" VALUE="2" CHECKED>Waste of time.&lt;BR>
+  &lt;INPUT NAME="choice" TYPE="RADIO" VALUE="3">Worst site of the Net.&lt;BR>
+  &lt;INPUT NAME="submit" TYPE="SUBMIT" VALUE="Send">
+&lt;/FORM>
+</pre>
+You will get the feedback through e-mail by doing this. The only 
+problem is that you will receive a mail that might seem very 
+cryptic at the first glance. Sometimes all spaces are filled up with
+'+' and sometimes they are filled up with '%20'. So+this+might+look+like+this.
+There are some parser programms out on the Net, I believe, which 
+will put the received mail in to a nicer format.<p>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<a name="focus"></a>
+There is another nice thing so you can make your form elements a little
+bit more user-friendly. You can define which element is in 
+focus at the beginning. Or you could tell the browser to focus on
+the form where the user- input was done wrong. This means that the
+browser will set the cursor into the specified form- element so the
+user does not have to click on the form before entering anything.
+You can do this with the following piece of script:<p>
+<pre>
+function setfocus() {
+        document.first.text1.focus();
+        return;
+}
+</pre>
+<p>
+This script would set the focus to the first text- element in the
+script I have shown above. You have to specify the name of the whole form -
+which is here called <i>first</i> - and the name of the single form element - 
+here <i>text1</i>. If you want to put the focus on this element when the page
+is being loaded you can add an onLoad- property to your &lt;body> tag.
+This looks like this for example:<p>
+<pre>
+&lt;body onLoad="setfocus()"><p>
+</pre>
+<p>
+<br>
+</font>
+<h4>
+<center>
+<a href="script.htm" onMouseOver="stat('My JavaScript-Homepage');return true">Index</a> - 
+<a href="javascr.htm" onMouseOver="stat('JavaScript - Introduction Part 1');
+ return true">Part 1</a> - 
+<a href="javascr2.htm" onMouseOver="stat('JavaScript - Introduction Part 2');
+ return true">Part 2</a> - 
+<a href="javascr3.htm" onMouseOver="stat('JavaScript - Introduction Part 3');
+ return true">Part 3</a> -
+<a href="javascr4.htm" onMouseOver="stat('JavaScript - Introduction Part 4');
+ return true">Part 4</a> - 
+<a href="javascr5.htm" onMouseOver="stat('JavaScript - Introduction Part 5');
+ return true">Part 5</a> -
+<a href="javascr6.htm" onMouseOver="stat('JavaScript - Introduction Part 6');
+ return true">Part 6</a>
+</h4>
+</center>
+<p>
+<br><i>
+Last changed: 11.May'96<br>
+&#169 1996 by Stefan Koch</i>
+
+</body>
+</html>
+
+

@@ -1,0 +1,65 @@
+
+txtmerge is a quick program that reads the GIFs listed in a txt91 
+file(see xanim.doc) and produces a single gif file comprised of 
+those images. The frame info at the end of the txt file is ignored for now,
+but I'd like to work it into a GIF ! extension for XAnim playback.
+
+Usage:
+	txtmerge [-v] anim.txt  > anim.gifanim
+
+options:
+		-v   verbose mode    
+
+This is basically the GIF decode routine I wrote for XAnim, but it writes
+out the bytes as they come in. 
+
+TODO
+
+   + Only save colormaps that are different from preceeding ones.
+
+   + have an option that compares current image with previous and then
+     only save the smallest rectangle that encompasses changes.
+
+   + option for luma sorting of colormaps
+
+   + define extension block in order to have frame lists.
+
+---------------
+Here's the relevant portion from xanim.doc
+--------------
+TXT files
+
+  Probably should be called something else. Basically it is a ascii text
+  file that lists a number of GIF files to be displayed. Optionally, you
+  can specify the sequence the files are displayed in.  Comments aren't
+  supported. I need to put a lot of work and thought into improving this
+  one.
+
+  TXT format needs to have txt91 as the 1st 5 characters in the file.
+  Following that there are a series of fields. Fields just have to be
+  separated from each other by white space. No extraneous characters
+  (ie comments) are supported, yet.
+
+     txt91    <--- header so XAnim knows what kind of file it is
+     4        <--- number of GIF filenames that follow
+     a.gif    <--- gif file to be read in. 1st file is number 0.
+     b.gif    
+     c.gif
+     d.gif    
+     6	  <--- number of frames that follow. 
+     0 1 2 3  <--- display images in this order.
+     2 1
+
+  The sequence will be a.gif b.gif c.gif d.gif c.gif b.gif. Most likely
+  this anim will be looped and the last b.gif will flow smoothly into
+  a.gif as it starts over.
+
+  NOTE: txtmerge currently ignores frame information.
+
+--------------------------
+
+Mark Podlipec  podlipec@wellfleet.com
+
+
+
+

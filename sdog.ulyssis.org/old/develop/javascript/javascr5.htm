@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>Introduction to JavaScript - Part5</title>
+<script language="JavaScript">
+<!-- Hide
+   function initArray() {
+      this.length = initArray.arguments.length
+      for (var i = 0; i < this.length; i++)
+      this[i+1] = initArray.arguments[i]
+   }
+     function stat(txt) {
+        window.status = txt;
+        setTimeout("erase()",1500);
+      }
+     function erase() {
+       window.status="";
+     }
+// -->
+</script>
+</head>
+<BODY bgcolor="ffffff" text=#000000 link=#ff0000 vlink=#4444dd alink=#9999dd>
+<font size=+4 color=#FF0000>
+<center>
+<a name="arrays"></a>
+<img src="jascr.gif" alt="" width=397 height=118><br>
+Introduction to JavaScript<br></font><font size=+2 color=#FF0000>Part 5</center>
+</a>
+</font>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<br>
+<font size=+1>
+One important programming technique is the use of arrays. Most programming
+language support them in a certain manner. Maybe you have already come to a
+point where arrays would help you further. But if you looked through
+the documentation provided by Netscape you realized that nothing is 
+said about arrays. The problem is that arrays do not exist in JavaScript!
+But I can show you a work around of course!<br>
+First, what are arrays? You could say that arrays are many variables 
+bound together. Let's say that you want 10 variables. You could begin
+with the variables a, b, c ... But this is really complicated. Especially
+if you want to store 100 or more variables. If you have an array which is
+called 'MyArray' and it has got 10 elements, you could address the 
+different elements with MyArray[1], MyArray[2], MyArray[3]... (many
+programming languages start with the 0 as the first element- but 
+we want to have the 1 as first element because this is the way we use it
+later in JavaScript). So if you want to keep the number 17 in the first
+element you have to write <i>MyArray[1]=17</i>. You see that you can
+work with arrays the same way as with normal variables. But there are 
+some more features. If you want to store the number 17 in every element 
+you can write it this way: <br>
+<i>for (var i=1;i<11;i++) MyArray[i]=17</i><br>
+The for- command tells the computer how often the next command 
+is going to be executed. The for- loop starts with i= 1. First the 
+computer gets the command MyArray[1]= 17. After this i is incremented by
+1 and then the command is MyArray[2]= 17. i is incremented until it
+has the value 10. (The expression i<11 in the for loop has to be true-
+if i is 11 this expression isn't 'true' anymore).<br>
+Now I will show you a function to initialize arrays. This function
+was discussed in the JavaScript Mailing list.
+<p>
+<pre>
+function initArray() {
+      this.length = initArray.arguments.length
+      for (var i = 0; i < this.length; i++)
+      this[i+1] = initArray.arguments[i]
+   }
+<p>
+</pre>
+You don't need to understand this function. You only have to know how to
+use this function. If you want to create an array with three elements 
+you just write: <i>var MyArray= new initArray(17,18,19)</i>. 17,18,19 are
+assigned to the elements 1,2,3. You could as well write strings to your
+array. So you don't have to matter which type is used! 
+<i>var heyho= new initArray("This","is","cool")</i>. Mixing different
+types is no problem at all: <i>var Mixedup= new initArray(17,"yo",103)</i>.
+<p>
+I will now initialize the array 'Mixedup' and then show the output:
+<p>
+<script language="JavaScript">
+<!-- Hide
+  var Mixedup= new initArray(17,"yo",103);
+  document.write("Element No. 1: "+Mixedup[1]+"<br>");
+  document.write("Element No. 2: "+Mixedup[2]+"<br>");
+  document.write("Element No. 3: "+Mixedup[3]+"<br>");
+// -->  
+</script>
+<p>
+This is the script for the output:
+<p>
+<pre>
+&lt;script language="JavaScript">
+&lt;!-- Hide
+  var Mixedup= new initArray(17,"yo",103);
+  document.write("Element No. 1: "+Mixedup[1]+"&lt;br>");
+  document.write("Element No. 2: "+Mixedup[2]+"&lt;br>");
+  document.write("Element No. 3: "+Mixedup[3]+"&lt;br>");
+// -->  
+&lt;/script>
+</pre>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<a name="clear"></a>
+I have written a small game yesterday. I have encountered a problem you 
+might have got as well. If you
+want to clear a window or frame you look into the documentation
+by Netscape and see that JavaScript knows the function
+'document.clear()'. But if you implement this function nothing happens!
+The function document.clear() seems to be broken on every platform. 
+Gordon McComb gave me the following script which clears the window as I 
+wanted it.
+<p>
+<pre>
+     document.close();
+     document.open();
+     document.write("&lt;P>");
+</pre>
+<p>
+You don't have to write <i>document.write("&lt;P>");</i>. It is only 
+important that you send anything to the window. This works fine with frames
+as well.
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<a name="back"></a>
+Now we're looking at a script which lets you navigate through different
+documents. What I'm talking about is the back() and forward()- function.
+If you have a back- link on your page this isn't the same as the back-
+button in the Netscape- Navigator. For example I have got some back-
+links which work like normal links but I know that the user probably
+comes from that certain page I'm linking to. The back- button provided
+by the Netscape Navigator goes one step back in your history list. You
+can do this with JavaScript as well. Just <a href="backtest.htm">
+take this link</a> in order to get back again! The script I used here
+is shown below:
+<p>
+<pre>
+&lt;html>
+&lt;body>
+&lt;FORM NAME="buttonbar">
+     &lt;INPUT TYPE="button" VALUE="Back" onClick="history.back()">
+     &lt;INPUT TYPE="button" VALUE="JS- Home" onClick="location='script.htm'">
+     &lt;INPUT TYPE="button" VALUE="Next" onCLick="history.forward()">
+&lt;/FORM>
+&lt;/body>
+&lt;/html>
+</pre>
+You could also write <i>history.go(-1)</i> and <i>history.go(1)</i>.
+<p>
+<br>
+<h4>
+<center>
+<a href="script.htm" onMouseOver="stat('My JavaScript-Homepage');return true">Index</a> - 
+<a href="javascr.htm" onMouseOver="stat('JavaScript - Introduction Part 1');
+ return true">Part 1</a> - 
+<a href="javascr2.htm" onMouseOver="stat('JavaScript - Introduction Part 2');
+ return true">Part 2</a> - 
+<a href="javascr3.htm" onMouseOver="stat('JavaScript - Introduction Part 3');
+ return true">Part 3</a> -
+<a href="javascr4.htm" onMouseOver="stat('JavaScript - Introduction Part 4');
+ return true">Part 4</a> -
+<a href="javascr6.htm" onMouseOver="stat('JavaScript - Introduction Part 6');
+ return true">Part 6</a> -
+<a href="javascr7.htm" onMouseOver="stat('JavaScript - Introduction Part 7');
+ return true">Part 7</a>
+</h4>
+</center>
+<p>
+<br><i>
+Last changed: 11.May'96<br>
+&#169 1996 by Stefan Koch</i>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<html>
+<title>Socs Practicum 2</title>
+<body>
+<center>
+<h4>Structuur en Organisatie Van Computersystemen</h4>
+<h3>Practicum 2 - 1KI</h3>
+</center>
+<h4>Pascal-programma</h4>
+
+Gegeven is het volgende pascalprogramma. Dit programma leest 2 getallen <i>
+n</i> en <i> diff </i> in en berekent en drukt alle permutaties van de 
+getallen 1 tot en met n waarvoor elke 2 opeenvolgende getallen minstens
+<i> diff </i> verschillen.
+<pre>     program pract(input,output);
+     	  type rij=array[1..20] of integer;
+	  var p: rij;
+              n: integer;
+	      i,diff : integer;
+
+	  procedure wissel(var x: integer, var y:integer);
+	  var h: integer;
+          begin
+             h := x;
+             x := y;
+             y := h
+          end;
+
+
+	  procedure druk(var r:rij; n:integer);
+          var i:integer;
+	  begin
+            for i:= 1 to n do 
+			write(r[i]);
+ 	    writeln;
+          end;
+
+ 	  procedure perm (r: rij, n:integer; pos:integer);
+          var i: integer;
+ 	  begin
+              if (n&ltpos) then 
+ 		  druk (r,n)
+              else
+                 for i:= pos to n do begin
+                         wissel (r[i], r[pos]);
+			 if (pos=1) || (abs(r[pos]-r[pos-1]) &gt= diff) then
+			      perm (r,n,pos+1)
+	         end
+	  end;
+
+          begin
+ 		read (n,diff);
+		for i := 1 to n do
+			p[i] := i;
+		perm (p,n,1)
+	  end.
+</pre>
+</P>
+Opmerking : de dubbele vertikale streep in de procedure perm is de C-notatie
+voor de zognaamde 'consecutive or'.  Bij dergelijke or wordt de tweede 
+operand niet meer geevalueerd als de eerste al de waarde <i>true</i> heeft.
+
+Dit is hier nodig : als pos=1, dan mag r[pos-1] niet berekend worden. </P>
+
+<h4>Opgave</h4>
+
+
+Zet het bovenstaande Pascal-Programma om naar het overeenkomstige 
+Drama-Programma.  Houd je hierbij aan de volgende conventies :
+<ul><li>
+ Parameters en lokale veranderlijken: <br>
+ procedure wissel: alle parameters en lokale veranderlijken in 
+accumulatoren<br>
+ procedure druk : r wordt in accumulator R1 doorgegeven, n via de 
+stapel.  De lokale veranderlijke i wordt in een accumulator bijgehouden<br>
+ procedure perm : alle parameters via de stapel doorgeven. Alle lokale 
+verandelrijken in accumulatoren bewaren. <br>
+<li> hoofdprogramma : i in een accumulator, de overige verandezrlijken in 
+het geheugen.
+<li> Schrijf commentaar bij je programma ! Zorg ervoor dat naast elke 
+relevante Drama opdracht de overeenkomstige Pascal-opdracht staat.
+</ul>
+<h4>Testvoorbeelden</h4>
+Voer je programm uit met elk van de volgende testgegevens.  Geef de 
+uitvoer mee af bij het indienen (zie volgende paragraaf).<p>
+
+<dl compact>
+<dt>Invoer: <dd>3 1<br>
+<dt>Invoer: <dd>5 2<br>
+<dt>Invoer: <dd>6 3<br>
+</dl>
+
+<h4> Afdrukken van programma en testvoorbeelden</h4>
+<ul>
+<li> Start de Drama-simulator op met de naam van je programma (bvb. DRAMA 
+PR.DRA).
+<li>Vertaal je programma met de opdracht <i>vertaal</i> en verbeter 
+eventuele fouten met behulp van <i>editeer</i>.  Met <i>voeruit</i>
+kun je je programma uitvoeren met enkele voorbeeldjes.<p>
+<li>Cre&eumler een invoerbestandje met <i>editeer geg</i> Je typt een 
+testvoorbeel din, beweert het bestand en verlaat de editor.  Vervolgens 
+kun je met het <i>voeruit bestand</i> het programma laten uitvoeren.  
+Deze uitvoering genereert een resultaatbestand met extensie LIS.
+
+<li>Druk dit resultaat-bestand af, bv met PRINT   PR.LIS.  Doe dit voor 
+elk van de testvoorbeelden.
+<li>Druk ook je eigenlijke Drama-programma af, bvb. met PRINT PR.DRA
+</ul>
+
+<h4>Indienen</h4>
+<ul>
+<li>Je oplossing, samen met de resultaten van de testvoorbeelden, dien je in
+ten laatste op <b>vrijdag 16 februari, om 16u</b> in de brievenbus aan
+het secretariaat van Computerwetenschappen (lokaal A.01.16).
+<li>Schrijf duidelijk je naam, richting en reeks op je oplossingen, alsook
+de vermelding "SOCS Practicum 2 - 1KI".
+</ul>
+
+Succes !
+
+</html>
+</body>

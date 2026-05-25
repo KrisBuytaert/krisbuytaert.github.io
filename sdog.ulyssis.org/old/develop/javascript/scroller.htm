@@ -1,0 +1,34 @@
+<html>
+<head>
+<script language="JavaScript">
+<!-- Hide
+
+var scrtxt="Here goes your message the visitors to your page will "+
+"look at for hours in pure fascination...";
+var lentxt=scrtxt.length;
+var width=100;
+var pos=1-width;
+
+function scroll() {
+  pos++;
+  var scroller="";
+  if (pos==lentxt) {
+    pos=1-width;
+  }
+  if (pos<0) {
+    for (var i=1; i<=Math.abs(pos); i++) {
+      scroller=scroller+" ";}
+    scroller=scroller+scrtxt.substring(0,width-i+1);
+  }
+  else {
+    scroller=scroller+scrtxt.substring(pos,width+pos);
+  }
+  window.status = scroller;
+  setTimeout("scroll()",150);
+  }
+//-->
+</script>
+<body onLoad="scroll();return true;">
+Here goes your cool page!
+</body>
+</html>

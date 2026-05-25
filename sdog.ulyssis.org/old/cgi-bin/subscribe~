@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+require "/services/www/pages/org/ulyssis/cgi-bin/cgilib.pl" ;
+&ReadParse;
+#open (FILE,">> /services/www/pages/org/ulyssis/subscibe/subscribe.out");
+open (FILE,"| /usr/bin/sendmail -t");
+print FILE "To: sdog@ruby.arts.kuleuven.ac.be\n";
+print FILE "From: webmaster@hagar.arts.kuleuven.ac.be\n";
+print FILE "Subject: nieuwe distsiteform\n\n";  
+print FILE "** OPEN ***********\n";
+foreach $key (keys %in) { 
+	print FILE "$key:$in{$key}\n";
+}
+print FILE "** CLOSE **********\n";
+close (FILE);
+print "Content-Type: text/html \n\n";
+print "test";
+open (FILE,"/home/user/sdog/www/natives.html");
+while (<FILE>) {
+  print;
+}
+close (FILE);
+

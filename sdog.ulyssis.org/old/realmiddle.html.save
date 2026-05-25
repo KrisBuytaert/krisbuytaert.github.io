@@ -1,0 +1,56 @@
+
+<html>
+<head>
+<script language="JavaScript">
+function RandomNumber() {
+  today = new Date();
+  limits=6;
+  num = today.getTime();
+  num = Math.round(Math.abs(Math.sin (num)*1000000)) % limits;
+  return num;  
+}
+
+function initArray() {
+      this.length = initArray.arguments.length
+      for (var i = 0; i < this.length; i++)
+      this[i+1] = initArray.arguments[i]
+   }
+
+
+function WriteRandom() {
+
+var table= new initArray("Let us our world<br>",
+			 "It's better to be dead and remembered than alive and forgotten<br>",
+			 "It's better to have tried and failed than never to have tried at all<br>",
+			 "It's better to burn out than to fade away<br>",
+			 "It's better to regret something you have do than to regret something you 
+haven't done<br>",
+			 "Wired'96 The True Scene Spirit<br>"
+			);
+      randomnr = randomNumber();
+      ducument.write (table[randomnr],"<br>");
+
+}
+
+</script>
+</head>
+<body>
+<script language="JavaScript">
+<!--
+
+  WriteRandom;
+// -->
+</script>
+</body>
+</html>
+
+
+
+
+<h4>
+
+
+
+</html>
+
+

@@ -1,0 +1,325 @@
+<h3> Practicum  3  :  Abstract  gegevenstype  voor  inhoudstafels       
+    '95-'96   
+</h3>
+<ol>
+<li> <h4> Inleiding</h4>
+In  een  tekstverwerkingsprogramma  is  meestal  de  mogelijkheid  voorzien  om  inhoudstafels  te  produceren.
+Zo'n inhoudstafel bevat dan titels van o.a.  delen, hoofdstukken en paragrafen met een verwijzing naar een
+paginanummer.<p>
+
+
+
+In essentie bestaat zo'n inhoudstafel uit ingeneste niveaus, die een bepaalde nummering meekrijgen.  Deze
+nummering kunnen we herleiden tot de vorm a:b:c:d::: waarbij a; b; c; d; ::: natuurlijke getallen voorstellen.  a
+stelt een onderdeel op het hoogste niveau voor.  b is een subniveau van a, c een subniveau van b enz.
+<p>
+
+Bijvoorbeeld:<br>
+Inhoudstafel<br>
+
+<p>
+1  Inleidend  Hoofdstuk..............................  1<br>
+ 1.1  Voorwoord.....................................  1<br>
+   1.1.1  van  de  auteur..............................  1<br>
+   1.1.2  van  de  redactie............................  4<br>
+ 1.2  Inhoudsbeschrijving...........................  9<br>
+2  Middendeel.......................................17<br>
+ ...<p>
+
+Concreet bestaat een item in de inhoudstafel uit:
+<br>
+	<ul><li type = circle>
+
+    <li>   een nummering:  a.b.c.d...;
+
+
+    <li>   een titel:  rij van tekens;
+
+
+    <li>   een paginanummer.
+	</ul>
+
+<p>
+Tijdens het schrijven van een tekst is het opbouwen van een inhoudstafel een dynamisch gebeuren, onderdelen
+komen erbij, verdwijnen en worden verplaatst.  Het paginanummer waarop een bepaalde titel voorkomt, kan
+veranderen.<p>
+
+
+
+Natuurlijk moet de inhoudstafel ook afgedrukt kunnen worden.
+<p>
+
+
+<li><h4>Opgave</h4>
+
+
+
+Gevraagd wordt een abstract gegevenstype te ontwikkelen dat de mogelijkheid biedt om een inhoudstafel
+voor te stellen en te onderhouden.<p>
+
+
+
+Er mag gebruik gemaakt worden van volgende types:<br>
+<pre>
+CONST  titellengte  =  25;   (*maximale  lengte  van  de  titels  voor hoofdstukken, paragrafen,  onderdelen,  ... *)
+       nummeringlengte  =  20;  (* maximale  lengte  van  de  nummering  in  tekens inclusief  de  punten*)<br>
+
+TYPE  Ttitel  =  PACKED  ARRAY[1..titellengte]  OF  char;
+      Tnummer  =  0..MAXINT;
+      Tnummering  =  PACKED  ARRAY[1..nummeringlengte]  OF  char;
+      Tinhoudstafel  =  ?;  (*Een  zelf  te  definieren  DYNAMISCHE  gegevensstructuur *)
+</pre>
+
+In plaats van een PACKED  ARRAY  OF  CHAR mag je in Turbo-Pascal ook het type STRING gebruiken.
+
+
+Ten minste volgende bewerkingen moeten uitgevoerd kunnen worden:
+
+<pre>
+PROCEDURE  Initialiseer(VAR  inhoud:  Tinhoudstafel);
+EFFECT:   Deze procedure initialiseert de inhoudstafel.
+
+PROCEDURE  Voegin(VAR  inhoud   :  Tinhoudstafel;
+                           nummering     :  Tnummering;
+                           titel           :  Ttitel;
+                           pagnr           :  Tnummer;
+                           VAR  geslaagd:  boolean);
+EFFECT:   Deze procedure voegt een onderdeel met nummering op pagina pagnr in in de inhoudstafel.
+Geslaagd is false wanneer getracht wordt iets in te voegen op een niveau waarvoor de nummering op een
+hoger niveau niet bestaat.  Bijvoorbeeld als 1.3.4 ingevoegd wanneer 1.3 niet bestaat.  Het is echter niet
+noodzakelijk dat opeenvolgende nummering gebruikt wordt, 1.2.3 en 1.2.5 zonder 1.2.4 is toegelaten.
+
+
+PROCEDURE  Laatweg(VAR  inhoud:  Tinhoudstafel;
+                            nummering  :  Tnummering);
+EFFECT:   Deze procedure laat een onderdeel weg uit de inhoudstafel als het bestaat.  Tevens worden alle
+subniveaus van dat onderdeel weggelaten.
+
+
+PROCEDURE  Veranderpaginanummer(inhoud          :  Tinhoudstafel;
+                                                nummering     :  Tnummering;
+
+                                                nieuwpagnr   :  Tnummer;
+                                                VAR  geslaagd:  boolean);
+EFFECT:   Deze procedure verandert het paginanummer van het onderdeel met nummering.  Geslaagd is
+false als de nummering niet bestaat.
+
+
+PROCEDURE  Verplaats(VAR  inhoud     :  Tinhoudstafel;
+                               vannummering,
+                               naarnummering:  Tnummering;
+                               VAR  geslaagd  :  boolean);
+EFFECT:   Deze procedure verplaatst een onderdeel met alle subonderdelen van vannummering naar naar-
+nummering.  Geslaagd is false als vannummering niet bestaat of als naarnummering al bestaat of niet kan
+vanwege een ontbrekende nummering op een hoger niveau. Merk op dat de nummering van de subonderdelen
+ook aangepast moet worden!
+
+
+PROCEDURE  Druk(inhoud:  Tinhoudstafel);
+EFFECT:   Deze procedure drukt de inhoudstafel in de volgende vorm:
+
+
+Inhoudstafel
+
+
+1  Inleidend  Hoofdstuk..............................................   1
+ 1.1  Voorwoord.....................................................   1
+   1.1.1  van  de  auteur..............................................   1
+   1.1.3  van  de  redactie............................................   4
+ 1.4  Inhoudsbeschrijving...........................................   9
+3  Middendeel.......................................................  17
+ ...
+
+</pre>
+
+Men begint per verandering van niveau 1 spatie meer naar rechts te drukken.  De paginanummers worden
+rechts uitgelijnd, zodat er 3 cijfers kunnen afgedrukt worden vanaf de 75e positie.  Posities 75,76,77 bevatten
+dus het paginanummer.<p>
+
+
+De afdrukroutine moet er op voorzien zijn dat men in de toekomst eenvoudig kan omschakelen naar een
+ander soort nummering, b.v.  1.2.1 wordt I.2.a.<p>
+
+
+<pre>
+
+PROCEDURE  Fout(nr:  integer);
+BEGIN
+
+ CASE  nr  OF
+   1:  writeln('Fout  in  toevoeging!');
+   2:  writeln('Fout  in  weglating!');
+   3:  writeln('Fout  in  verplaatsing!');
+   4:  writeln('Fout  in  hernummering!');
+ END;
+END;
+Is een procedure die toelaat om foutenboodschappen af te drukken.
+</pre>
+
+
+Gevraagd wordt om het programma zo te maken dat het volgende hoofdprogramma ge"implementeerd en
+uitgevoerd kan worden.  (Let op, als je met packed arrays werkt is het aantal spaties in de constanten van
+belang!)<p>
+
+<pre>
+VAR  inhoudstafel:  T`inhoudstafel;
+       geslaagd:  boolean;
+
+BEGIN
+Initialiseer(inhoudstafel);
+Voegin(inhoudstafel,'1                              '        
+                      ,
+'Inleiding                         '
+
+                              ,1                              ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(1);
+Voegin(inhoudstafel,'2                              '
+                              ,'Hoofdstuk  twee                 '
+                              ,10
+                              ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(1);
+Voegin(inhoudstafel,'4                              '
+                              ,'Hoofdstuk  vier                 '
+                              ,24
+                              ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(1);
+Voegin(inhoudstafel,'1.2.1                       '
+                              ,'Paragraaf  twee  punt  een   '
+                              ,34
+                              ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(1);
+Voegin(inhoudstafel,'1.1                          '
+                              ,'Onderdeel  een                   '
+                              ,3
+                              ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(1);
+Voegin(inhoudstafel,'2.2                          '
+                              ,'Gedeelte  twee                   '
+                              ,14
+                              ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(1);
+
+
+Druk(inhoudstafel)
+
+
+Voegin(inhoudstafel,'2.2.3                       '
+                              ,'Derde  onderdeel  van  twee  '
+                              ,16
+                              ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(1);
+Voegin(inhoudstafel,'2.2.1                       '
+                              ,Veralgemening                    '
+                              ,15
+                              ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(1);
+Voegin(inhoudstafel,'1.2                          '
+                              ,'Tweede  onderdeel  van  een  '
+                              ,5
+                              ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(1);
+
+
+
+                                                                     5
+Voegin(inhoudstafel,'1.2.5                       '
+                              ,'Ten  vijfde                       '
+
+                              ,6
+                              ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(1);
+
+
+-Teken  nu  de  huidige  toestand  van  de  gegevensstructuur  op  een  apart  blad"
+
+
+Druk(inhoudstafel);
+
+
+Verplaats(inhoudstafel,'2.2                          '
+                                  ,'2.1                          '
+                                  ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(3);
+Verplaats(inhoudstafel,'2.1                          '
+                                  ,'1.2                          '
+                                  ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(3);
+
+
+Druk(inhoudstafel);
+
+
+LaatWeg(inhoudstafel,'2.2                          '
+                               ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(2);
+LaatWeg(inhoudstafel,'1.2                          '
+                               ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(2);
+
+
+Druk(inhoudstafel);
+
+
+Veranderpaginanummer(inhoudstafel,'2.1                          '
+                                                   ,13
+                                                   ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(4);
+Veranderpaginanummer(inhoudstafel,'2.2                          '
+                                                   ,13
+                                                   ,geslaagd);
+IF  NOT  geslaagd  THEN  Fout(4);
+
+
+Druk(inhoudstafel);
+
+
+END.
+
+</pre>
+
+Zoals je wellicht merkt in het hoofdprogramma wordt er tevens gevraagd om de gegevensstructuur te tekenen
+zoals hij is op dat moment.  Zorg dat de tekening een duidelijk beeld 
+weergeeft van je gegevensstructuur.<p>
+
+<li><h4> Praktisch</h4>
+Nuttige wenken
+ <ul> <li type=circle>
+
+    <li>   Is het noodzakelijk om op elk niveau de volledige nummering te 
+bewaren?
+
+
+
+<li>    Let erop dat je gegevensstructuur dynamisch is!
+
+
+
+</ul>
+
+Je moet er zeker rekening mee houden dat je programma moet gelezen worden:  een duidelijke naamkeuze,
+voldoende commentaar (zonder echter te overdrijven), gebruik van indentatie voor een duidelijke schikking,
+enz.  zijn dus erg belangrijk en zullen een belangrijke invloed hebben op 
+de uiteindelijke beoordeling.<p>
+
+
+Je programma zal zoals de vorige keren gedemonstreerd moeten worden op een PC in de PC-klassen.  Zorg
+ervoor dat je het voldoende getest hebt in de PC-klassen zelf!  Als het niet correct werkt op een van de
+Pascal-versies die daar ge"installeerd zijn, wordt het beschouwd als niet werkend; "het werkte bij mij thuis"
+is geen excuus.<p>
+
+
+Op die demonstratie toon je ook je programmatekst, en de tekening van de gegevensstructuur die je gemaakt
+hebt.<p>
+
+
+
+Veel succes!<p>
+
+
+
+
+Prof.  H. Olivie<br>
+H. Blockeel,<br>
+M. Denecker,<br>
+E. Duval,<br>
+R. Maelbrancke<br>

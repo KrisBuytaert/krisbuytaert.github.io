@@ -1,0 +1,204 @@
+<html>
+<head>
+<title>Introduction to JavaScript - Part6</title>
+<script language="JavaScript">
+<!-- Hide
+function WinOpen(url) {
+   msg=open(url,"DisplayWindow","toolbar=yes,directories=no,menubar=no,status=yes");
+}
+     function stat(txt) {
+        window.status = txt;
+        setTimeout("erase()",1500);
+      }
+     function erase() {
+       window.status="";
+     }
+// -->
+</script>
+</head>
+<BODY bgcolor="ffffff" text=#000000 link=#ff0000 vlink=#4444dd alink=#9999dd>
+<font size=+4 color=#FF0000>
+<a name="twoinone"></a>
+<center>
+<a name="status"></a>
+<img src="jascr.gif" alt="" width=397 height=118><br>
+Introduction to JavaScript<br></font><font size=+2 color=#FF0000>Part 6</center>
+</a>
+</font>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<br>
+<font size=+1>
+I receive a lot of mails about the problem how two pages can be loaded
+with only one mouse click. Basically there are three different solutions
+to this problem. The first possiblity is to create a button which calls
+a function when the user presses it. This function loads the two pages
+into different frames or opens new windows. This is not too difficult 
+if you have a look at our examples in the other parts of this 
+introduction. We have all elements we already need. 
+<p>
+<form><input type="button" name="Button" value="Try me!" onclick="WinOpen('frames2.htm')">
+</form>
+<p>
+We create three frames. The first one is used for the button.
+The first html-page is just needed for openening the frames and giving 
+names to them. This is nothing new since we used this technique in part 
+3 in order to work with frames. I'll show it to you anyway.
+(I don't know whether this happens to you as well-
+but everytime an author of a computer book thinks that something hasn't
+got to be printed because it is so easy - this is exactly the part I'm
+having trouble with. So here we go:)<p>
+<h3>frames2.htm</h3><p>
+<pre>
+&lt;HTML>
+&lt;HEAD>
+&lt;title>Frames&lt;/title>
+&lt;/HEAD>
+    &lt;FRAMESET COLS="295,*"> 
+  &lt;FRAMESET ROWS="100%,*"> 
+    &lt;FRAME SRC="loadtwo.htm" NAME="fr1"> 
+      &lt;/FRAMESET> 
+  &lt;FRAMESET ROWS="75%,25%"> 
+    &lt;FRAME SRC="cell.htm" NAME="fr2"> 
+    &lt;FRAME SRC="cell.htm" NAME="fr3"> 
+      &lt;/FRAMESET> 
+&lt;/FRAMESET> 
+&lt;/HTML>
+</pre>
+<p><i>loadtwo.htm</i> is loaded to the first frame. This is the frame
+with the button.<p>
+<h3>loadtwo.htm</h3>
+<pre>
+&lt;HTML>
+&lt;HEAD>
+&lt;script language="JavaScript">
+&lt;!-- Hiding
+  function loadtwo(page2, page3) {
+     parent.fr2.location.href=page2;
+     parent.fr3.location.href=page3;
+}
+// -->
+&lt;/script>
+&lt;/HEAD>
+&lt;BODY>
+&lt;FORM NAME="buttons">
+     &lt;INPUT TYPE="button" VALUE="2 in a row" onClick="loadtwo('frtest1.htm','frtest2.htm')">
+&lt;/FORM>
+&lt;/BODY>
+&lt;/HTML>
+</pre>
+<p>
+The function loadtwo() is called when the button is pressed. Two strings
+are passed to the function. If you look at the loadtwo() function you
+see that the second frame <i>fr2</i> loads the page that is defined by the
+first string in the function call. If you have different buttons opening
+different pages you can reuse this function. You only have to pass the
+different URLs (addresses) of the pages.<p><br>
+The second technique uses hyperlinks. Some examples floating around
+the Internet have something like this:<br><i>&lt;a href="yourlink.htm onCLick="yourfunction()"></i><br>
+This technique seems not to work on all platforms. So you better don't use
+it. I'm not sure if it is supposed to work at all - but we don't have to
+worry because there is another method how we can implement this. We can call
+a JavaScript- function the following way:
+<pre>
+&lt;a href="javascript:myfunction()">My Link&lt;/a>
+</pre>
+This is really easy and seems to work fine on all browsers. You just have
+to write <i>javascript:</i> and then the name of your function as your 'link'.
+If you call the 'loadtwo()'- function from the example above you can update 
+two frames with one single click on a hyperlink.
+<p><br>
+The third technique for loading two pages on one mouse click can be 
+combined either with buttons or normal hyperlinks. We could do this 
+with the second technique shown above but this approach here might be
+more appropriate sometimes. What we can do is to load one HTML- page to
+one frame. This is done by<br>
+&lt;a href="getfr2.htm" target"fr2">Click here!&lt;/a><br>
+We know this already. What we do now is to add a onLoad property
+to the loaded file. The getfr2.htm file could look like this:<p>
+<pre>
+&lt;HTML>
+&lt;BODY onLoad="parent.fr3.location.href='getfr3.htm'; return true;">
+bla bla bla
+&lt;/body>
+&lt;/html>
+</pre>  
+<p>Of course you have to add this to every document that is loaded into
+the second frame.
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<a name="newwin"></a>
+Another often seen problem is how new pages can be loaded to a new 
+window. The window shall pop up when the user clicks on a link. 
+You just have to add the target- 
+property to your <a href...>tag again. This looks like this:<br>
+&lt;a href="goanywhere.html" target="Resource Window">Go!&lt;/a>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<a name="operators"></a>
+Now we will have a look at different operators you might use in 
+JavaScript. Operators are a powerful technique to shorten and 
+improve your script. For example you want to test if a variable <i>x</i> is
+larger than 3 and you want to see if it is smaller than 10. You
+might want to write it this way:<p>
+<pre>
+if (x>3) 
+  if (x<10)
+    doanything();
+</pre>
+<p>
+The function doanything() is called if x>3 <i>and</i> x&lt;10. There
+is a faster way to write this though:
+<p>
+<pre>
+if (x>3 &amp;&amp; x&lt;10) doanything();
+</pre>
+The &amp;&amp; is called AND- operator. Then there is an OR- operator.
+You can use this for example if you want to check if one variable <i>x</i> is
+equal 5 or another variable <i>y</i> is equal 17:<p>
+<pre>
+if (x==5 || y==17) doanything();
+</pre>
+The function doanything() is called when x==5 <i>or</i> y==17. It 
+is also called if both comparisons are true. <br>
+Comparisons are done via the == operator in JavaScript (Of course
+there are also &lt;,>,&lt;= and >=). If you know
+C/C++, this is the same. A single = is used to store a value in a variable.
+(If you know Pascal this may be a little bit confusing. Assigning a value
+to a variable is done in Pascal via := and comparisons with a single =)<p>
+If you want to see if a variable does not equal a certain number, this
+might get a little bit complicated without operators. This is done
+with a simple !=. So this would look like this for example:
+<i>x != 17</i>.<p>
+There are many more interesting operators which can make your 
+programs more efficiently. Look at the documentation provided 
+by Netscape to get a full overview of all operators you can use in 
+JavaScript.
+<p>
+<br>
+</font>
+<h4>
+<center>
+<a href="script.htm" onMouseOver="stat('My JavaScript-Homepage');return true">Index</a> - 
+<a href="javascr.htm" onMouseOver="stat('JavaScript - Introduction Part 1');
+ return true">Part 1</a> - 
+<a href="javascr2.htm" onMouseOver="stat('JavaScript - Introduction Part 2');
+ return true">Part 2</a> -
+<a href="javascr3.htm" onMouseOver="stat('JavaScript - Introduction Part 3');
+ return true">Part 3</a> - 
+<a href="javascr4.htm" onMouseOver="stat('JavaScript - Introduction Part 4');
+ return true">Part 4</a> - 
+<a href="javascr5.htm" onMouseOver="stat('JavaScript - Introduction Part 5');
+ return true">Part 5</a> -
+<a href="javascr7.htm" onMouseOver="stat('JavaScript - Introduction Part 7');
+ return true">Part 7</a>
+</h4>
+</center>
+<p>
+<br><i>
+Last changed: 11.May'96<br>
+&#169 1996 by Stefan Koch</i>

@@ -1,0 +1,152 @@
+<HTML>
+<HEAD>
+<TITLE>Linux Network Computer HOWTO: Introduction</TITLE>
+</HEAD>
+<BODY>
+<A HREF="NC-HOWTO-4.html"><IMG SRC="prev.gif" ALT="Previous"></a>
+<A HREF="NC-HOWTO-6.html"><IMG SRC="next.gif" ALT="Next"></A>
+<A HREF="NC-HOWTO.html"><IMG SRC="toc.gif" ALT="Contents"></A>
+<HR>
+<h4>5. Configuring the Thin Client</h4>
+<br>
+Unplug the network cable from the NC. Then boot it up.
+<br>
+It will boot after checking its Memory, VGA etc, in a screen IBM Network
+Station Setup Utility.  Basically you can manage everything from this menu
+system.  The main parts will be described here.
+
+<li>Setting up TCP/IP
+<br>
+Section 5 (F5) :<br>
+Your network setup should look something like this :
+<table width=100%>
+	
+
+<tr><td>
+IP Addressed From	
+</td><td>	
+Network
+<b>NVRAM</b>
+</td></tr>
+<tr><td>
+
+Network Station IP Adress	</td><td>	
+	10.0.0.50
+</td></tr>
+<tr><td>
+
+First Boot Host IP Adress		</td><td>	
+	10.0.0.1
+</td></tr>
+<tr><td>
+
+Second Boot Host IP Adress	</td><td>	
+	10.0.0.11
+</td></tr>
+<tr><td>
+
+Third Boot Host IP Adress	</td><td>	
+	0.0.0.0
+</td></tr>
+<tr><td>
+
+Gateway IP Adress		</td><td>	
+	10.0.0.1
+</td></tr>
+<tr><td>
+
+Subnet Mask		</td><td>	
+			255.255.255.0
+</td></tr>
+<tr><td>
+
+Broadcast IP Adress			10.0.0.255
+</td></tr>
+<tr><td>
+<br>
+Ethernet Standard	</td><td>	
+		<b>Version 2</b>  IEEE 802.3
+</td></tr>
+
+</table>
+Resembles my setup.  The NC itselve has 10.0.0.50
+While 10.0.0.1 is the NFS Server, 10.0.0.11 is a secondary NFS server,
+just in case.
+
+<p>
+
+<li>Setting Up the Boot Parameters
+<br>
+Section 6 (F6):<br>
+Looks like this in my setup.
+<table width=100%>
+<tr><td>Boot file </td>
+<td>kernel</td></tr>
+<tr><td>TFTP Boot Directory</td>
+<td>/usr/netstation/</td>
+<tr>
+<tr>
+<td> NFS Boot Directory</td>
+<td>/usr/netstation/<td/></tr>
+<tr><td>Configuration File</td>
+<td>/usr/netstation/configs/standard.nsm</td>
+</tr>
+<tr><td>Configuration Directory</td><td>
+/usr/netstation/configs</td>
+</tr>
+<tr><td>TFTP Order</td><td>2</td></tr>
+<tr><td>NFS Order</td><td>1</td></tr>
+<tr><td>MOP Order</td><td>Disabled</td></tr>
+<tr><td>Local Order</td><td>Disabled</td></tr>
+</table>
+Where /usr/netstation is the directory export on 10.0.0.1
+
+<li>Setting Up the Monitor
+<br>
+Section 7 (F7):<br>
+You can choos the right resolution / Refresh rate from a nice menu.  I
+have mine running on an old 14" VGA Screen running in 1024x768 @60Hz
+
+<p>
+
+Basically thats all you need to install.
+<p>
+Just plug in your Network cable again. And Reboot the NC.
+After testing the  Video / DRAM, the NC will search the 
+Host system and request the startup information, download the Kernel
+from the NFS and boot up.<br>
+  
+<font size=-4>It might occur that the NC first gets a new FirmWare  and
+upgrades it</font size>
+
+<p>
+When starting the graphical Console you should get a menu bar and a screen
+where you can select the X Hosts. 
+You are now
+in the CLE (Common Login Environment): it's a desktop from where you can
+start all sessions, either telnet or X .  It uses a local window
+manager which is a small window manager based on Motiv.
+ <p>
+Your NC is setup now. Congratulations <p>
+
+<h4>Further Configuration</h4>
+Further configuration of the NC can e.g. be setting the colors, window
+sizes, default keymaps etc.  I'm not going to describe these in detail.
+If you have troubles finding your way through the menu system. The <i>IBM
+Network Station Runtime Environment for RS/6000 User's Guide </i> which
+can be found in either .pdf or .ps at
+<a href="
+http://www.as400.ibm.com/networkstation/rs600/">
+http://www.as400.ibm.com/networkstation/rs600/</a> and will provide you
+with detailed information.
+
+
+
+
+<HR>
+<A HREF="NC-HOWTO-4.html"><IMG SRC="prev.gif" ALT="Previous"></a>
+<A HREF="NC-HOWTO-6.html"><IMG SRC="next.gif" ALT="Next"></A>
+<A HREF="NC-HOWTO.html"><IMG SRC="toc.gif" ALT="Contents"></A>
+
+</BODY>
+</HTML>

@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<TITLE>Linux Network Computer HOWTO: Setting Up the Serverside</TITLE>
+</HEAD>
+<BODY>
+<A HREF="NC-HOWTO-3.html"><IMG SRC="prev.gif" ALT="Previous"></a>
+<A HREF="NC-HOWTO-5.html"><IMG SRC="next.gif" ALT="Next"></A>
+<A HREF="NC-HOWTO.html"><IMG SRC="toc.gif" ALT="Contents"></A>
+<HR>
+<h4>4. Setting Up the ServerSide</h4>
+You found all the software you needed.  Now let's install them.
+<p>
+<a name="ss4.1">
+
+<b>4.1 AIX License</b>
+<br>
+Before making the tarball on the aix machine, make sure you run
+/usr/netstation/bin/agree in order to make the kernel in a usable format.
+Probably you will have to do the same thing with the tarball you get from 
+the IBM website.  So finding the kernel separatly might be another
+solution.  
+<br>
+Find some drive with about 25Mb of free diskspace, I use /usr/netstation/,
+and unpack the tarbal either from the IBM website or from an AIX machine.
+<br>
+There is no need in leaving the approx 60Mb from /usr/netstation/doc on
+the disk if you don't have enough diskspace.
+
+<p>
+
+<a name="ss4.2">
+<b>4.2 The Real Operating System</b>
+<br>
+<i>Setting up the nfs server</i><br>
+Edit your /etc/exports, 
+add the line 
+<dd><i>/usr/netstation   10.0.0.50(rw)</i><br>
+Where 10.0.0.50 is the ipnr you want to give to the NC.
+Restart your nfs deamon.<br>
+<i>
+[root@velvet sdog]# ps auxf |grep rpc<br>
+sdog      4145  0.0  5.8   828   384  p1 S   03:55   0:00          \_ grep
+rpc<br>
+root      3120  0.0  5.7   944   380  ?  S  Feb 27   0:00 rpc.mountd <br>
+root      3129  0.0  1.5   880   100  ?  S  Feb 27   0:10 rpc.nfsd <br>
+[root@velvet sdog]# kill -9 3120 3129 ; /usr/sbin/rpc.mountd ; /usr/sbin/rpc.nfsd
+</i><br>
+or on a RedHat alike system easier
+<i><br>
+[root@velvet init.d]# pwd<br>
+/etc/rc.d/init.d<br>
+[root@velvet init.d]# ./nfs restart<br>
+Restarting NFS services: rpc.nfsd rpc.mountd done.<br>
+[root@velvet init.d]# <br></i>
+<br>
+Your NC should now be able to mount the /usr/netsation by NFS.
+<p>
+Bascially if you don`t need X-Windows this is as far as it gets.
+You can easily telnet from your NC with nothing more installed.
+Hoever the beauty of this thing is it`s X capacities
+<p>
+<i>Setting up the X server</i>
+<br>
+Next we have to set up the X server.
+Basically I didn`t need to set up anything, all of my machines that ran
+X-Windows were configured to accept connections.  I just started up the NC for
+the first time and it showed me
+all the machines that ran an XDM (cfr running an X -indirect).  
+So any machine that can run xdm can be used as X Server.  Just make sure XDM is
+started.
+<p>
+Everything on the server side should be setup now.  Lets try the NC side.
+<HR>
+<A HREF="NC-HOWTO-3.html"><IMG SRC="prev.gif" ALT="Previous"></a>
+<A HREF="NC-HOWTO-5.html"><IMG SRC="next.gif" ALT="Next"></A>
+<A HREF="NC-HOWTO.html"><IMG SRC="toc.gif" ALT="Contents"></A>
+
+</BODY>
+</HTML>

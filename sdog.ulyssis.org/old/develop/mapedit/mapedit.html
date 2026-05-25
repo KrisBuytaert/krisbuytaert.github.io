@@ -1,0 +1,439 @@
+<HTML>
+<HEAD>
+<TITLE>mapedit 1.5 for the X Window System</TITLE>
+</HEAD>
+<BODY>
+<H1>mapedit 1.5 for the X Window System</H1>
+<H2>A WYSIWYG editor for imagemaps </H2>
+<H2><A HREF="http://sunsite.unc.edu/boutell/mapedit/">
+Fetch the LATEST information about Mapedit</A></H2>
+<H3>Table of Contents</H3>
+<UL>
+<LI><A HREF="#notice">Credits and license terms</A>
+<LI><A HREF="#new1.5">What's new in version 1.5</A>
+<LI><A HREF="#new1.1.2">What's new in version 1.1.2</A>
+<LI><A HREF="#new1.1.1">What's new in version 1.1.1</A>
+<LI><A HREF="#new1.1">What's new in version 1.1</A>
+<LI><A HREF="#whatis">What is mapedit?</A>
+<LI><A HREF="#required">What else do I need to use mapedit?</A>
+<LI><A HREF="#getmapedit">How do I get mapedit?</A>
+<LI><A HREF="#buildmapedit">How do I build mapedit?</A>
+<LI><A HREF="#starting">How do I get started editing an image map?</A>
+<LI><A HREF="#colors">How come my GIF is being dithered (sometimes)?</A>
+<LI><A HREF="#regions">How do I make "hot spots"?</A>
+<LI><A HREF="#testing">How do I test my hot spots?</A>
+<LI><A HREF="#editing">How do I go back and edit URLs?</A>
+<LI><A HREF="#deleting">How do I delete unwanted hot spots?</A>
+<LI><A HREF="#setdefault">How do I set a default URL?</A>
+<LI><A HREF="#saving">How do I save my work?</A>
+<LI><A HREF="#loading">Can I edit my own imagemap files?</A>
+<LI><A HREF="#problems">If you have problems</A>
+</UL>
+<A NAME="notice"><H3>Credits and license terms</H3>
+<P>
+Copyright 1994 by Thomas Boutell. THIS IS NOT PUBLIC DOMAIN SOFTWARE. 
+Commercial users must pay for it to continue using it after 30 days. 
+You need not register again when new versions are released.
+See the file LICENSE for details. For a single-user license, 
+send a check for $25 in US funds drawn on a US bank to:
+<PRE>
+Thomas Boutell
+PO Box 20837 
+Seattle, WA 98102 USA
+</PRE>
+Nonprofit and educational organizations are required to send a postcard
+or a brief note on the organization's letterhead.
+<p>
+See the file LICENSE for more information about site and
+volume pricing. Because there are many Unix/X architectures
+and boutell.com is a small company, we cannot provide customized 
+binaries for all architectures but will provide registered users with 
+information on customizing the license notice in the software.
+<A NAME="new1.5"><H3>What's new in version 1.5</H3>
+"Why did you bump the version number to 1.5?"
+<p>
+To be consistent with the latest release of the Windows version.
+The differences between the two versions stem primarily from the 
+fact that certain features are dramatically easier to provide 
+under Windows.
+<p>
+"What's changed?"
+<p>
+Version 1.5 is strictly a bug-fixing release:
+<ul>
+<li>Because the CERN server does not support them, version 1.5 does not 
+attempt to store comments in CERN-format imagemaps.
+<li>Absent URLs in maps no longer prevent Mapedit from loading maps.
+<li>Defective GIFs produced by certain art programs are read
+successfully by Mapedit.
+</ul>
+<A NAME="new1.1.2"><H3>What's new in version 1.1.2</H3>
+Mapedit now works on monochrome systems. In addition, Floyd-Steinberg
+dithering is now employed, which translates into much better results
+when all the desired colors are not available. I don't know if this
+version will work on TrueColor / 24 bit displays or not. 
+Let me know what results you get.
+<A NAME="new1.1.1"><H3>What's new in version 1.1.1</H3>
+A small but annoying bug in 1.1: parentheses in comments would
+cause an imagemap file to be erroneously identified as a CERN-format 
+file. Fixed.
+<A NAME="new1.1"><H3>What's new in version 1.1</H3>
+<strong>Comment editing!</strong> Not only does version 1.1 preserve
+your comments (lines beginning with #), it allows you to edit them
+in the URL window! Comments are associated with the object
+that <em>follows</em> them; in addition, any comments at the end
+are silently preserved (although there's no editing window for them).
+<P>
+<strong>CERN support!</strong> Version 1.1 has complete support
+for both CERN and NCSA imagemap formats. Mapedit can now
+automatically recognize either format during loading,
+and you can save as either format (note that this allows you
+to convert from one to the other). You can use resources
+to set CERN to be the default.
+<P>
+Many small fixes and enhancements.
+<A NAME="new1.0.1"><H3>What's new in version 1.0.1</H3>
+A stabilizing release:
+<P>
+The Imakefile should now be more broadly compatible, particularly
+with SunOS 4.1.3. 
+<P>
+The crash when clicking the left mouse button at inappropriate
+times has been fixed.
+<P>
+The URL window no longer pops up when the middle mouse button
+is used too early in drawing a polygon (<3 points).
+<A NAME="whatis"><H3>What is mapedit?</H3>
+<P>
+mapedit is a WYSIWYG (What You See Is What You Get) editor for
+imagemap files.
+<P>
+Imagemap files are a feature of both NCSA and CERN
+httpd servers; they allow you to turn a GIF into a clickable map
+by designating polygons, circles and rectangles within the GIF
+and specifying a URL for each to link to.
+<P>
+Unfortunately, creating good image maps by hand is a lot of
+work, because the points must be located using an editor not
+explicitly designed for the purpose.
+<P>
+mapedit allows you to load your GIF image into a scrollable, resizable
+window and then draw polygons, circles and rectangles on
+top of it, specifying a URL for each. It also allows you to
+go back and delete these "hot spots", set a default URL
+for clicks outside of the "hot" areas, and so on. In addition,
+it allows you to associate comments of arbitrary length with
+each object if you have a server that accepts the NCSA
+imagemap format.
+<A NAME="required"><H3>What else do I need to use mapedit?</H3>
+<P>
+To use mapedit, you will need the following:
+<UL>
+<LI>The X Window System (popularly known as "X"), release 5
+or better, or Microsoft Windows 3.1 or better (yes,
+win95 and winNT are supported). If you have Microsoft Windows,
+get the Microsoft Windows version of this program! See
+<a href="http://sunsite.unc.edu/boutell/mapedit/mapedit.html">
+the Mapedit home page</a> for more information.
+<p>
+(NOTE: if you have a version of X older than
+X11R5, it's time your site upgraded at least to R5. X11R6 is 
+out now, and X11R5 is several years old.)
+<LI><strong>If a binary is not available for your
+system</strong>, you will need an <strong>ANSI C</strong> 
+compiler. If you do not have an ANSI C compiler, install gcc, 
+which is available for free.  You will probably run into this 
+if you have only the stock compiler that comes with SunOS 4.1.3. 
+Get gcc or use the provided SunOS binary of Mapedit. (Sun's 
+separately-sold acc will work fine also.)
+<LI>The NCSA or CERN World Wide Web server, or another server allowing
+cgi-bin scripts, and the imagemap program from the NCSA or CERN
+server distribution. (Why else would you want mapedit?) 
+<LI>Imake. This should be standard in your X distribution.
+<LI>The Athena widgets. These are also a free part of the
+standard MIT X distribution, but some vendors have,
+for no apparent reason, removed them. They can be found
+separately, however. This program would be a great deal
+less user-friendly without them.
+<P>
+You can get an attractive 3D look using the alternative
+"Xaw3d" widgets, which provide a Motif-like appearance.
+mapedit works fine with or without Xaw3d. To use Xaw3d
+instead, change "-lXaw" to "-lXaw3d" in the Makefile that
+is produced after you run xmkmf (see the section on building
+mapedit). Of course, you must get and install Xaw3d first to do this.
+</UL>
+<A NAME="getmapedit"><H3>How do I get mapedit?</H3>
+<P>
+You can 
+<A HREF="http://www.boutell.com/mapedit/">
+download Mapedit from www.boutell.com</a> or
+<A HREF="ftp://sunsite.unc.edu/pub/packages/infosystems/WWW/tools/mapedit/">
+FTP mapedit from Sunsite</a>
+</A>, or FTP it by hand from sunsite.unc.edu in the
+subdirectory pub/packages/infosystems/WWW/tools/mapedit. If you
+see a version specifically for your platform, download that version;
+if not, download the source distribution. If your web browser
+prompts you for a filename when saving the document, specify
+mapedit1.5.tar.Z or the filename you selected on the site.
+<A NAME="buildmapedit"><H3>How do I build mapedit?</H3>
+<P>
+In order to build mapedit, first untar the mapedit.tar file with the
+following commands:
+
+<PRE>
+uncompress mapedit1.5.tar.Z
+tar -xf mapedit1.5.tar
+</PRE>
+
+This will create the directory "mapedit1.5" beneath the current
+directory.
+
+<P>
+If you downloaded a binary distribution for your particular system,
+the file "mapedit" in that directory is the Mapedit program.
+Please skip to the <a href="#starting">next section</a>.
+<p>
+If you downloaded the source distribution,
+cd to the mapedit1.5 directory and examine the Imakefile, which you 
+may need to change slightly. Specifically, if your default C compiler
+(the one that executes when you type "cc") does not accept
+ANSI standard C, you will need to add a line specifying your
+ANSI C compiler instead. For instance:
+<PRE>
+CC=gcc
+</PRE>
+If you have gcc, the freely available ANSI C compiler.
+<P>
+Now, type "xmkmf". If all goes well, you will now have a Makefile.
+If this doesn't work, find out how to run Imake on your system
+from your system's documentation.
+<P>
+Finally, type "make". This will compile and link mapedit.
+<P>
+If you get compilation errors, PLEASE verify that you have the
+required tools listed above, especially ANSI C and X11R5. If your
+compiler reports that bad arguments to the compiler were used, or
+if libraries are not found, your Imake utility is probably not 
+installed properly; please ask your local system administrator for 
+help. If you still have problems, feel free to contact me.
+<H3><A NAME="starting">How do I get started editing an image map?</H3>
+To start the program, just type "mapedit" (you may need to move
+the mapedit binary to a directory somewhere on your path first). 
+<P>
+The initial mapedit screen has a <strong>File</strong> menu at
+the top left and a palette of toggle buttons on the row
+beneath it. Initially the palette is disabled, since you have
+not yet opened an image and a map.
+<P>
+Using the mouse, pull down the <strong>File</strong> menu and
+select <strong>Open/Create Map...</strong>. A dialog box will
+appear, probably in the upper left corner, depending on your
+window manager.
+<P>
+In this dialog box you should enter the filename you would like
+to give to your map, which need not already exist, and the
+filename of a .gif image the map will be <em>of</em>, which
+<em>must</em> exist. (mapedit is not a paint program. To create
+your own GIFs, try David Koblas' xpaint; use archie to locate 
+a copy near you.)
+<P>
+Type in a map filename, such as "test.map", and also enter
+the location of a GIF image for which you want to create a map.
+(Give paths in the file system, of course, not URLs!) The
+characters you type will appear in the field in which 
+you have placed the mouse pointer.
+<P>
+Also set the <strong>Style</strong> menu to the appropriate
+style for your server (CERN or NCSA). <strong>NOTE:</strong>
+you can change the default by placing the following
+line in your .Xdefaults file:
+<PRE>
+Mapedit*cern: True
+</PRE>
+This change makes CERN the default. If you do not set this
+resource, NCSA is the default.
+<P>
+Press RETURN or click on <strong>OK</strong> when you have
+entered the filenames.
+<P>
+If the map file does not already exist, you will be asked if you
+want to create it. Click on <strong>OK</strong> to continue. If
+the map does exist, mapedit will automatically determine the
+correct server type regardless of the <strong>Style</strong>
+menu setting.
+<P>
+mapedit will now load your GIF image into memory. This will
+take a few moments, depending on the size of the image.
+<P>
+When the image has been loaded, it will appear in the main
+mapedit window, which should expand or shrink to suit the image.
+If the image is large, scrollbars for horizontal and vertical
+movement may appear. 
+<P>
+You can navigate the image using the scrollbars. If you are using
+vanilla Athena widgets, you will recognize them as the same
+type you see in your xterms. If you are using Xaw3d, they will
+be considerably more Motif-like. 
+<H3><A NAME="colors">How come my GIF is being dithered (sometimes)?</H3>
+If you have a black and white screen, the answer is obvious: mapedit
+is using black and white dots to approximate shades of gray. If
+you have a color screen and see color dithering or a black and
+white display, this is because there are too many colors already
+in use on your screen and the image also calls for many colors.
+In this case, mapedit does the best it can with the remaining
+colors. Your GIF image is <strong>not</strong> actually changed.
+If you find this behavior annoying on your 8-bit color display,
+try reducing the number of colors in your image using the
+"save with reduced color" feature of xv, the well-known
+image viewer by John Bradley. xv's dithering is much
+more sophisticated than mapedit's. (As a rule of thumb, images that
+have enough colors to force mapedit to dither them will often
+prove frustrating for Mosaic users to view as inline images,
+especially when there are several on a page.)
+<H3><A NAME="regions">How do I make "hot spots"?</H3>
+Image maps consist of areas that have been designated as
+"hot spots" which users can click on to fetch particular
+URLs. Mapedit allows you to draw these graphically on the
+screen.
+<P>
+Click on <strong>Poly</strong> to begin drawing a polygonal
+hot spot. Now click the <strong>left</strong> mouse button at some 
+point on the edge of an area of interest in the image.
+<P>
+Move the mouse pointer to another point on the edge of the
+area of interest, tracing its outline. Note that a "rubber-band"
+line follows you from the point of the initial click.
+<P>
+Click again at this second point. Continue clicking points until
+you have outlined all but the final connection back to the first
+point. (You do <em>not</em> need to hold down the mouse button.)
+<P>
+(Note that if you don't like the way your polygon is turning out,
+you can click the <strong>right</strong> mouse button to
+cancel it; then start over with the left mouse button.)
+<P>
+To complete the polygon, click the <strong>middle</strong>
+mouse button. 
+<P>
+Another window will pop up, prompting you for the URL that
+this polygon should link to. If you don't yet know the
+URL, type in a name that is meaningful to you so you will
+be able to recognize it later. 
+Also, if you are creating an NCSA-format map, add any comments 
+you wish in the comments window. 
+Click on <strong>OK</strong> or press RETURN to continue. 
+(The RETURN key only has
+this effect in the URL window, since multiple-line
+comments are allowed in the comments window.)
+<P>
+The polygon will now be traced in solid white,
+and a final side between the last point and the first point
+will be automatically added.
+<P>
+Now select <strong>Rect</strong> from the palette. Click
+the left mouse button in one corner of a
+rectangular region of interest in the image. Now move the
+mouse pointer to the opposite corner, tracing out a
+rectangle. (You do not need to hold down the mouse button.) 
+<P>
+Click the <strong>middle</strong> mouse button to accept the rectangle, and
+enter a URL for it as you did for the polygon. (Just as for
+polygons, the <strong>right</strong> mouse button can be used
+to cancel the rectangle while you are tracing it out.)
+<P>
+Now select <strong>Circle</strong> from the palette. Circles
+work just like rectangles, except that the left mouse click
+positions the <em>center</em> of the circle, and you can then
+move the mouse pointer to any point on the edge of the desired
+circle and click the middle mouse button to accept it. As
+before, the right button cancels.
+<H3><A NAME="testing">How do I test my hot spots?</H3>
+Click on <strong>Test</strong> in the palette. Now click
+at various points in the image. When you click in a
+hot spot, such as a polygon, rectangle or circle you have
+designated, the URL window will pop up, showing the
+URL assocated with that hot spot. Also, the region within
+the hot spot will be displayed in reverse video.
+<P>
+<em>Important note:</em> when hot spots overlap, the oldest
+gets the click. This is important because this is how the
+actual NCSA imagemap program will behave when your users click
+on your map in practice.
+<P>
+<H3><A NAME="editing">How do I go back and edit URLs and comments?</H3>
+Often you will not know the final URL for each hot spot
+at first, or you will want to change it. You can do so
+by selecting <strong>Test</strong> as described above
+and clicking in the hot spot in question, editing the URL
+that appears, and then clicking on <strong>OK</strong>
+or pressing RETURN. You can also edit in the comments
+window at this time. (The RETURN key does not dismiss
+the popup while in the comments window; click on
+the <strong>OK</strong> button instead.)
+<H3><A NAME="deleting">How do I delete unwanted hot spots?</H3>
+Select <strong>Delete</strong> from the palette. The deletion
+tool is identical to the testing tool in every respect; you
+can use it to select hot spots and edit URLs, for instance.
+But in addition, note that a <strong>Delete</strong> button
+appears in the URL window when you select a hot spot. By clicking
+this button, you can remove that hot spot from the map.
+You can also use the middle mouse button to remove the
+selected hot spot. 
+<P>
+<strong>NOTE:</strong> When you delete a hot spot (object),
+comments associated with that hot spot are also deleted.
+<H3><A NAME="setdefault">How do I set a default URL?</H3>
+There is one more component in an imagemap file: a default URL
+to be loaded if the click is not in any region. To set a
+default URL, pull down the file menu and select
+<strong>Edit Default URL...</strong>. Enter 
+a default URL in the window that appears, and click
+on <strong>OK</strong> or press RETURN to accept it.
+<P>
+You may also, on the other hand, want to get rid of the
+default URL completely. Once you have set a default URL,
+a <strong>Delete</strong> button will appear in the
+<strong>Edit Default URL</strong> window. Click this button
+to remove the default URL.
+<P>
+<em>Note:</em> The testing tool does not indicate when the
+default URL would be used. It was felt that not popping up
+anything indicates clearly that the click is not in any hot spot,
+and displaying the default URL might be misleading.
+<H3><A NAME="saving">How do I save my work?</H3>
+Pull down the file menu and select <strong>Save</strong>.
+mapedit will write your map to the file you specified
+when you opened it.
+<P>
+If a problem is encountered while writing this file (if you entered
+a bad path when you first created the map, for instance),
+use the <strong>Save As</strong> file menu option to
+enter a new name for the map file. 
+<H3><A NAME="converting">Can I convert from NCSA to CERN or vice versa?</H3>
+Yes. Use the <strong>Save As</strong> file menu option and
+change the setting of the <strong>Style</strong> menu that appears 
+in the Save As dialog box, then click <strong>OK</strong> to save
+your map in the new format. That's all there is to it!
+<H3><A NAME="loading">Can I edit my own imagemap files?</H3>
+Yes! mapedit can read existing imagemap files without
+difficulty. In addition, mapedit now preserves comments
+in your imagemap file (as of version 1.1)! <strong>However,</strong>
+keep in mind that when you delete a hot spot, comments
+associated with it are also deleted. Also note that
+<strong>comments are associated with the object that
+follows them.</strong> Also note that <strong>Mapedit
+does not store comments in CERN-format imagemaps</strong>
+as the standard CERN imagemap program does not support
+comments and rejects maps that contain them.
+<P>
+However, mapedit will also silently preserve any comments placed
+at the very end of the imagemap file, and will not delete
+these comments under any circumstances.  
+<A NAME="problems"><H3>If you have problems</H3>
+If you have any difficulties with mapedit, feel free to contact
+the author, <A HREF="http://sunsite.unc.edu/boutell/">
+Thomas Boutell</A> (boutell@boutell.com). PLEASE verify that you have the 
+required tools first (X11R5, the Athena widgets, and an ANSI C compiler).
+</BODY>
+</HTML>

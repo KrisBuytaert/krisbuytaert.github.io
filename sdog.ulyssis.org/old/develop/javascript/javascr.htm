@@ -1,0 +1,326 @@
+<html>
+<head>
+<title>Introduction to JavaScript - Part1</title>
+<script language="JavaScript">
+<!-- Hiding
+     function pushbutton() {
+       alert("Hello!");
+     }
+     function getname(str) {
+       alert("Hi, "+ str+"!");
+     }
+     function stat(txt) {
+        window.status = txt;
+        setTimeout("erase()",1500);
+      }
+     function erase() {
+       window.status="";
+     }
+// -->
+</script>
+</head>
+<BODY bgcolor="ffffff" text=#000000 link=#ff0000 vlink=#4444dd alink=#9999dd>
+<font size=+4 color=#FF0000>
+<a name="what">
+<center>
+<img src="jascr.gif" alt="" width=397 height=118><br>
+Introduction to JavaScript</font><font size=+2 color=#FF0000><br>Part 1</center>
+</a>
+</font>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<br>
+<h2>
+What is JavaScript?
+</h2>
+<p>
+<font size=+1>
+JavaScript is a new scripting language for Web- pages. Scripts written
+with JavaScript can be embedded into your HTML- pages. With JavaScript 
+you have very many possibilities for enhancing your HTML- page with 
+interesting elements. For example you are able to respond to user- 
+initiated events quite easily. Some effects that are now possible with 
+JavaScript were some time ago only possible with CGI. So you can create 
+really sophisitcated pages with the help of JavaScript. You can see many 
+examples for JavaScript scripts on the Internet. Best you have a look at 
+some JavaScript enhanced pages. You can find many links at 
+<a href="http://www.gamelan.com">Gamelan</a> (in the JavaScript section).
+You will find the documentation provided by Netscape at 
+<a href="http://home.netscape.com">http://home.netscape.com</a>.
+<p>
+<h2>What is the difference between Java and JavaScript?</h2>
+<p>
+Although the names are almost the same Java is not the same as 
+JavaScript! These are two different techniques for Internet programming. 
+Java is a programming language. JavaScript is a scripting language 
+(as the name implies). The difference is that you can create real 
+programs with Java. But often you just want to make a nice effect 
+without having to bother about real programming. So JavaScript is meant 
+to be easy to understand and easy to use. JavaScript authors should not 
+have to care too much about programming. You could say that JavaSript is 
+rather an extension to HTML than a separate computer language. Of course 
+this is not the 'official' definition but I think this makes it easier 
+to understand the difference between Java and JavaScript. You can find 
+further information about both Java and JavaScript at 
+<a href="http://www.gamelan.com">Gamelan</a>.
+<p>
+For further information about this topic please read the introduction
+provided by <a href="http://home.netscape.com">Netscape</a>.
+<p>
+<br>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<br>
+<h2>
+<a name="run">
+How can JavaScript scripts be run?
+</a>
+</h2>
+<p>
+The first browser to support JavaScript was the Netscape Navigator 2.0.
+Of course the higher versions do have JavaScript as well. You might know 
+that Java does not run on all Netscape Navigator 2.0 (or higher) versions. 
+But this is not true for JavaScript - although there are some problems 
+with the different versions. The Mac- version for example seems to have 
+many bugs. In the near future there are going to be some other browsers 
+which support JavaScript. The Microsoft Internet Explorer 3.0 is going 
+to support JavaScript. JavaScript- enabled  browsers are going to be 
+wide spread soon - so it is worth learning this new technique now. You might 
+realize that is really easy to write JavaScript scripts. All you have to 
+know is some basic techniques and some work- arounds for problems you 
+might encounter.<br>
+Of course you need a basic understanding of HTML before reading this tutorial. 
+You can find many really good online ressources about HTML. Best you 
+make an online search about 'html' at <a href="http://www.yahoo.com">Yahoo</a> if 
+you want to get informed about HTML. (These online- documents are often 
+more up-to-date than books. The Internet is moving quite fast these days...)<br>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<br>
+<a name="ex1"></a>
+Now I want to show some small scripts so you can learn how they are
+implemented into HTML- documents and to show which possibilities you have with
+the new scripting language. I will begin with a very small script which will
+only print a text into an HTML- document.
+
+<pre>
+&lt;html>
+&lt;head>
+My first JavaScript!
+&lt;/head>
+&lt;body>
+&lt;br>
+This is a normal HTML document.
+&lt;br>
+  &lt;script language="JavaScript">
+    document.write("This is JavaScript!")
+  &lt;/script>
+&lt;br>
+Back in HTML again.
+&lt;/body>
+&lt;/html>
+</pre>
+<p>
+If you are using a JavaScript - enabled browser at the moment then you 
+will have the possibility
+to see this script working. If your browser doesn't support JavaScript then this
+output might be some kind of strange...
+<p>
+<i>
+This is a normal HTML document.
+<br>
+  <script language="JavaScript">
+<!-- Hiding
+    document.write("This is JavaScript!")
+// -->
+  </script>
+<br>
+Back in HTML again.
+<p>
+</i>
+I must admit that this script is not very useful. You could write that in HTML
+much faster and shorter. But what I wanted to show is how you have to use the
+&lt;script> tags. You can use these tags in your document wherever you want. <br>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<br>
+<a name="ex2"></a>
+I don't want to bother you with such stupid scripts. So we will procede to
+functions. This is not hard to understand either but, believe me, it is much
+more useful! Functions are best declared between the &lt;head> tags of your HTML-
+page. Functions are called by user-initiated events. So it seems reasonable
+to keep the functions between the &lt;head> tags. They are loaded first before
+a user can do anything that might call a function. Scripts can be placed
+between inside comment fields to ensure that older browsers do not display the
+script itself.
+<p>
+<pre>
+&lt;html>
+&lt;head>
+  &lt;script language="JavaScript">
+     function pushbutton() {
+       alert("Hello!");
+  }
+ &lt;/script>
+&lt;/head>
+&lt;body>
+&lt;form>
+  &lt;input type="button" name="Button1" value="Push me" onclick="pushbutton()">
+  &lt;/form>
+&lt;/body>
+&lt;/html>
+<p>
+</pre>
+<br>
+If you want to test this one immediately and you are using a 
+JavaScript- enabled browser then
+please go ahead and push the button.
+<p>
+<form>
+<input type="button" name="Button1" value="Push me" onclick="pushbutton()">
+</form>
+<p>
+This script will create a button and when you press it a window will pop up
+saying 'Hello!'. Isn't that great? So, what is going on on this script? At
+first the function is loaded and kept in memory. Then a button is created with
+the normal &lt;form> tag (HTML). There is something quite new with the &lt;input>
+tag. There you can see 'onclick'. This tells the browser which function it has
+to call when this button is pressed (of course, only if the browser supports
+JavaScript). The function 'pushbutton()' is declared in the header. When the
+button is pressed this function is executed. There is another new thing in
+this script- the 'alert' method. This method is already declared in JavaScript
+- so you only have to call it. There are many different methods which you can
+call. I will show you some here. You can find a complete description at the
+Netscape- Site. I think that this list is getting a lot longer in the near
+future. But right at the moment there are already some cool things we can do
+with the given methods. <br>
+(I don't think the alert- Method is thought to be used in this way - but we're
+only learning. And this way it is quite easy to understand. I hope you will
+excuse me...)
+<br>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<br>
+<a name="ex3"></a>
+We got quite far by now. In fact we have a lot of possibilities just by adding
+functions to our scripts. Now I will show you how you can read something a
+user has inserted into a form.
+<p>
+<pre>
+&lt;html>
+&lt;head>
+&lt;script language="JavaScript">
+&lt;!--  hide script from old browsers
+  function getname(str) {
+    alert("Hi, "+ str+"!");
+  }
+// end hiding contents -->
+&lt;/script>
+&lt;/head>
+&lt;body>
+Please enter your name:
+&lt;form>
+  &lt;input type="text" name="name" onBlur="getname(this.value)" value="">
+&lt;/form>
+&lt;/body>
+&lt;/html>
+<p>
+</pre>
+<br>
+Now you can test this script again:
+<i>
+<br>
+<br>
+Please enter your name:
+<form>
+<input type="text" name="name" onBlur="getname(this.value)" value="">
+</form>
+<p>
+</i>
+We have some new elements implemented in this script again. At first you have
+certainly noticed the comment in the script. This way you can hide the script
+from old browser- which cannot run scripts. You have to keep to the shown
+order! The beginning of the comment must be just after the first &lt;script> tag.
+The comment ends just before the &lt;/script>  tag. In this HTML- document you
+have got a form element where a user can enter his name. The 'onBlur' in the
+&lt;input> tag tells the client which function it has to call when something is
+entered into the form. The function 'getname(str)' will be called when you
+'leave' this form element or press enter after entering something. The
+function will get the string you entered through the command
+'getname(this.value)'. 'This.value' means the value you entered into this
+form element. 
+<br>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<br>
+<a name="ex4"></a>
+I think the next thing is quite nice as well. We're going to implement a date
+function into our script. So if you creat a HTML- page you can make the client
+print the last change of the document. You do not have to write the date to
+the document though. You simply write a small script program. When you make
+some changes in the future, the date changes automatically.
+<p>
+<pre>
+&lt;html>
+&lt;body>
+This is a simple HTML- page.
+&lt;br>
+Last changes:
+  &lt;script language="JavaScript">
+  &lt;!--  hide script from old browsers
+    document.write(document.lastModified)
+  // end hiding contents -->
+  &lt;/script>
+&lt;/body>
+&lt;/html>
+<p>
+</pre>
+<p>
+At the moment this property seems not to function on every machine. Some servers 
+show only the date 1/1/1970. There seem to be some problems with this function. 
+We have to wait for the next update and hope that it works then properly on 
+every machine. But you have to test this on your own machine - on some it seems 
+to work fine.<p>
+As I already said things are moving really fast today. So it would not be 
+amazing if next week there was a major change to JavaScript! So you always 
+have to watch out for further changes as this language is quite young. 
+Please understand that some things told here might change as well. But I think 
+that the basic principles are going to stay the same. 
+<p>
+</font>
+<br>
+<center>
+<h4>
+<a href="script.htm" onMouseOver="stat('My JavaScript-Homepage');return true">Index</a> - 
+<a href="javascr2.htm" onMouseOver="stat('JavaScript - Introduction Part 2');
+ return true">Part 2</a> - 
+<a href="javascr3.htm" onMouseOver="stat('JavaScript - Introduction Part 3');
+ return true">Part 3</a> -
+<a href="javascr4.htm" onMouseOver="stat('JavaScript - Introduction Part 4');
+ return true">Part 4</a> - 
+<a href="javascr5.htm" onMouseOver="stat('JavaScript - Introduction Part 5');
+ return true">Part 5</a> -
+<a href="javascr6.htm" onMouseOver="stat('JavaScript - Introduction Part 6');
+ return true">Part 6</a> -
+<a href="javascr7.htm" onMouseOver="stat('JavaScript - Introduction Part 7');
+ return true">Part 7</a>
+</h4>
+</center>
+<p>
+<br><i>
+Last changed: 11.May'96<br>
+&#169 1996 by Stefan Koch</i>
+
+</body>
+</html>

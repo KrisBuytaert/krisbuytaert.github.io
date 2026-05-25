@@ -1,0 +1,257 @@
+Content-type: text/html
+
+<html>
+ <title>Voorbereidselen van ftpweb</title>
+<body bgcolor=#ffffff>Here it is..!<br>
+
+<h3>The first trials of the FtpWeb</h3>
+
+<a href=http://uly2.arts.kuleuven.ac.be/~sdog/develop/ftpwww/>Terug</A>
+
+
+
+<br>
+
+<table width=100% border=1><tr>
+		<td valign=top width=50>Filename</td>
+		<td valign=top width=40>Date</td>
+		<td width=60 valign=top>Size</td>
+		<td width=200>Description (File_id.diz)</td>
+		</tr><tr><td valign=top>Makefile</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr><tr><td valign=top>Makefile</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr>Makefile le 
+<br>
+<tr><td valign=top>alphasort.c</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr><tr><td valign=top>alphasort.c</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr>alphasort.c .c 
+<br>
+<tr><td valign=top>dummy.txt</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr><tr><td valign=top>dummy.txt</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr>dummy.txt xt 
+<br>
+<tr><td valign=top>file_id.diz</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr><tr><td valign=top>file_id.diz</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr>file_id.diz iz 
+<br>
+<tr><td valign=top>fileio.c</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr><tr><td valign=top>fileio.c</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr>fileio.c .c 
+<br>
+<tr><td valign=top>index.html</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr><tr><td valign=top>index.html</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr>index.html ml 
+<br>
+<tr><td valign=top>stringtst.c</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr><tr><td valign=top>stringtst.c</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr>stringtst.c .c 
+<br>
+<tr><td valign=top>tryout.c</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr><tr><td valign=top>tryout.c</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr>tryout.c .c 
+<br>
+<tr><td valign=top>tryout.cgi</td><td valign=top>date</td><td 
+ valign=top>size</td><td><pre>
+   
+        
+     
+        
+     
+      
+           
+    FR
+               BLOK by Antony
+           came #1 at Volcanic II
+             *Official package*
+</pre></td></tr><tr><td valign

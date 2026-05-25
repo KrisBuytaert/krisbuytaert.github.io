@@ -1,0 +1,487 @@
+<html>
+<body bgcolor="#ffffff">
+<P><SCRIPT language="JavaScript">
+<!--
+// Hide for old browser>
+     /*************************************************************
+      * fade script ver0.1 by Kouichirou@Eto.com 1996/02/20
+      * Copyright (c) 1996 Kouichirou Eto. All Rights Reserved.
+      * You can freely copy, use, modify this script,
+      * if the credit is given in the source.
+      * If you would like to get information for this script,
+      * please access 
+      */
+
+     function makearray(n) {
+         this.length = n;
+         for(var i = 1; i <= n; i++)
+             this[i] = 0;
+         return this;
+     }
+     hexa = new makearray(16);
+     for(var i = 0; i < 10; i++)
+         hexa[i] = i;
+     hexa[10]="a"; hexa[11]="b"; hexa[12]="c";
+     hexa[13]="d"; hexa[14]="e"; hexa[15]="f";
+     function hex(i) {
+         if (i < 0)
+             return "00";
+         else if (i > 255)
+             return "ff";
+         else
+             return "" + hexa[Math.floor(i/16)] + hexa[i%16];
+     }
+     function setbgColor(r, g, b) {
+         var hr = hex(r); var hg = hex(g); var hb = hex(b);
+         document.bgColor = "#"+hr+hg+hb;
+     }
+     function fade(sr, sg, sb, er, eg, eb, step) {
+         for(var i = 0; i <= step; i++) {
+             setbgColor(
+             Math.floor(sr * ((step-i)/step) + er * (i/step)),
+             Math.floor(sg * ((step-i)/step) + eg * (i/step)),
+             Math.floor(sb * ((step-i)/step) + eb * (i/step)));
+         }
+     }
+     /* Usage:
+      *   fade(inr,ing,inb, outr,outg,outb, step);
+      * example.
+      *   fade(0,0,0, 255,255,255, 255);
+      * fade from black to white with very slow speed.
+      *   fade(255,0,0, 0,0,255, 50);
+      *   fade(0xff,0x00,0x00, 0x00,0x00,0xff, 50); // same as above
+      * fade from red to blue with fast speed.
+      * step 2 is very fast and step 255 is very slow.
+      */
+     function fadein() {
+         fade(255,255,255, 0,0,0, 64);
+     }
+     function fadeout() {
+         /*fade(0,0,0, 255,255,255, 64); */
+     }
+     /* do fadein */
+     /*  fade(0,0,0, 255,255,255, 100);*/
+     /***** end fade script *****/
+     /************************************************************/
+// End hide 
+// -->
+</SCRIPT></P>
+
+
+<title>Linux & Demos, a future for the DemoScene</title>
+
+
+<center><img src="lsp.jpg"></center>
+</font size>
+<table>
+<tr><td><img src="penguin.gif" hspace=10 align=left>  
+</td>
+<td> <a href="http://people.pctrading.be/wired/"> Wired'97 </a>, was the
+first party that had a Linux demo competition, it was <a
+href="ftp/xdemo4.bin.tgz">won</a> by the Hungarian
+group  <a href="http://makosteszta.sote.hu/linux/index-e.htm" target=_top>
+Lame Over</A>, (guess the lame part has something to do with some
+operating system most of the people with iQ's less than 95 use)
+Anyway.  
+ </td> <td>
+<b><i>
+With OVER SIX MILLION USERS, up from only ten or so a very few years 
+ago, Linux has taken it's place as the world's #3 computer operating 
+system overall.  And Linux is breathing down the neck of #2 for very 
+good reasons.  If growth rate to date continues, Linux will be the #1 
+computer operating system by late '98 or '99. Are YOU ready?
+<p align=right>		 &#169 Linux Newsletter
+<p>
+
+</i>
+</b>
+</td>
+</tr>
+
+</table>
+<table>
+<tr><td>I'm working on a new version of this site it will be online with
+more actual info in the course of August, I will also try to move the site
+to another server during september.  </table>
+
+<table>
+<tr><td bgcolor="#fffff2">
+
+First of all .. this page is not really finished yet.  I'm looking
+for
+all kind of texts, opinions and links about Linux & Demos, therefore I
+need your help.  I want to make this page to be the startplace for
+everybody who's interrested in Demos & Linux.  So I need FEEDBACK !
+And Graphics too.  ;-) (Oh yes.. somebody please fix the typo's)
+</td>
+</tr>
+</tr>
+<p>
+<tr>
+<td>
+<br clear=all>
+
+<b> Hot Topics -*- News Flash -*_ Hot Topics -*- News Flash </b>
+<p>
+<li>The <a
+href="http://www.cs.bham.ac.uk/~pld/opentracker.html">OpenTracker</A>
+procject is alive and well, <a href=" http://www.cs.bham.ac.uk/~pld
+" target=_top> Phil Dawes </A>has finished writing the system
+kernel for his final year dissertation, OpenTracker has a working kernel,
+and a demonstration front end If anybody is interested in helping with the
+development of this project, please give<a href="mailto:
+P.L.Dawes-CSSE94@cs.bham.ac.uk">
+ him </A> a mail.
+
+
+<li><a href="http://www.dcs.warwick.ac.uk/~jules/nasm1.html"
+target=_top>Nasm 0.94 released </A>
+"NASM is an 80x86 assembler designed for portability and modularity.
+It supports a range of object file formats including Linux a.out and
+ELF, COFF, Microsoft 16-bit OBJ and Win32. It will also output plain
+binary files. Its syntax is designed to be simple and easy to
+understand, similar to Intel's but less complex. It supports
+Pentium, P6 and MMX opcodes, and has macro capability. It includes a
+disassembler as well."  Was the announce message that we could read on
+alt.lang.asm and comp.lang.asm recently.
+
+
+<li><a href="http://www.cs.nmsu.edu/~joshagam" target=_top> Pascal Quenten
+Porcupine's Quill v1.0</A>, easy-to-use
+linux/X graphics interface, has been released. The interface features the
+following aspects : - easy to use (even easier than mode13 in some
+respects)<ul>
+<li> lets you setup multiple windows of arbitrary size
+<li> easy to use
+<li> easily-ported (designed as an API rather than an actual interface;
+  rewrite the innards for mode13 or BeOS or Win'95 or what have you)
+<li> faster than mode13 or VESA LFBs (takes advantage of any hardware
+<li> easy to use (even easier than mode13 in some respects)
+<li> lets you setup multiple windows of arbitrary size
+<li> easy to use
+<li> easily-ported (designed as an API rather than an actual interface;
+  rewrite the innards for mode13 or BeOS or Win'95 or what have you)
+<li> faster than mode13 or VESA LFBs (takes advantage of any hardware
+  acceleration X offers, and even a cheap Cirrus 542x has a hardware
+  blitter :)
+<li> did he mention easy to use? :) (the entire API is 6 functions)
+</ul>
+ 
+<li><a href="http://www.zip.com.au/~gaffer/ptc/" target=_top >Prometheus
+True Color</A> is a realtime truecolor graphics system designed mainly for
+use in
+games, demos and other realtime graphical applications. ptc is currently
+in beta testing and
+will be released to the public soon. ptc is free for non-commercial use
+and comes with full
+source code.  He is planning versions for SVGALIB, 
+       XFree86 DGA ,
+       XWindows  and 
+       OpenGL.  But , he is also looking for people to help him.
+
+</P>
+
+</td>
+
+</tr>
+</p>
+
+<tr><td bgcolor="#f0ffff">
+<a name="demos">
+<h3>Demos</h3>
+The demoscene has been quite active on lots of different platforms in
+the past decade.  However now it's time for a change.  
+<a href="http://microsoft.is.lame.org">Micke$soft</a> is trying to force
+everybody to its oper.. nah.. to it's piece of crappy code and even wants
+people to pay for the product, while there is a simple, almost perfect,
+constantly updated and FREE operating system available.
+You've guessed it ;-) <a href="http://www.linux.org/"><b>Linux</b></A>
+<p></td></tr>
+</table>
+<p>
+<img src="lin-log1.jpg" ALIGN+CENTER>
+<p>
+<br clear=all>
+<table>
+<tr><td bgcolor="#fff0ff">
+Did you acutally liked
+Lasse Reinbong's port to Win'95 ??? 
+Do you think that Win'95 is the future operating system well ok.. nobody
+can blame you .. You're brains obviously originate from <a
+href=/dev/zero>outer space</A><br>
+<a name="linux">
+Ok there are projects going on like 
+<a href="http://pe049.persbraten.vgs.no/demos/">DemOS</A>, and some others
+but why should we rewrite a complete operating system if all what we needs
+is available at our fingertips.  It's a great idea .. but who needs a
+completely new file system when we already have ext2fs.  
+If you want to write something new then maybe the sollution is writing a
+kernel with some nice demospecific features.  But the power of linux is
+way further than the parts that have already been developped.
+It's a multiplatform Operating system.  We have the "normal" Intel linux,
+when I look up from my screen I see a PowerMac booted in Linux PMac..
+And also as Sun running SparcLinux, my PS/2 is running MCA-Linux, and a
+dec Alpha will be running Linux for Alpha.  <p>
+Around this time over 37.000 people are registerred running linux on one
+or another platform.  Probably lot's of people we don't know are also
+using it ;-)
+Thank <a 
+href="http://www.eleves.ens.fr:8080/home/massimin/demo/index.html.en">god,
+euh .. Skal,</A>  for releasing the
+first Linux demo
+before there ever even was the idea of writing a demo for stupid winblows.
+<br>
+<font size=-3>Badvibes told me that at Bizarre'95 there also was some kind
+of text linux demo that got disqualified but he can't find the author
+anymore HELP US !!</font size> <p></td></tr>
+</table>
+PS.  If you still don't know what a demo is check out <a
+href="http://www.cdrom.com/pub/demos/hornet/html/demos.html">Trixter's 
+Demos Explained</A>
+<a name="code">
+<center><h3>Code</h3>
+</center>
+<table>
+<tr><td bgcolor="#f7ffff">
+<img src="../gfx/rox.gif" border=0 align=right>
+
+I really hope that I don't have to explain to anybody who's using Linux
+and interrested in demos that Code is something you have to write
+yourselve (not copy completely from other people) and compile with a thing
+we call a compiler.  In your search for a compiler you might encounter
+some difficulties.  I can imagine that for some people it is really hard
+to find a compiler for their specific language but afterall most of us
+don't use Cobol to write their demos, and almost all the other
+languages are free availble under the GPL.  gcc, gpc , cc etc.. just make
+your choice, most of the time these compilers are installed on every
+complete linux box.
+Don't forget to use <a href="http://linux.cis.nctu.edu.tw/pcg/index.html"
+target=_top> P5 gcc</A> if you happen to be able to.
+<br>
+However some of you assembler freaks will think they don't have the right
+tools available, wrong there is something like <a href
+="http://www.dcs.warwick.ac.uk/~jules/nasm1.html" target=_top >NASM, The
+Netwide Assembler Project</A>, more info on it's own homepage 
+</p></td></tr> <tr><td bgcolor="#ffffe8">
+ <center><h3>Sound</h3> </center>
+<a name="track">
+<h2>Trackers</h2>
+To make music we need trackers, the first sollution might be to use one of 
+the well known dos trackers like FT , IT and ST.  However I just recently
+got track of a Tracker for linux.  It's stil in early beta phase but
+people are working on this project.
+<p>
+<a href="ftp/FunktrackerGOLD-1.0.tgz" >
+FunktrackerGOLD</A> is a Linux Tracker that really is in Beta 
+However feel free to try it ;-)
+
+
+<p>
+<a name="player">
+ <h2>Players</h2>
+The best known player for linux and other unixes will probably be 
+Mikmod however other projects are also available, Perex Mod and Gus
+Player. The best thing a coder can do is check them all out.  
+<br>
+Seems like Sahara Surfers also ported their <a href="http://kalahari.ton.tut.fi/s2/midas/">Midas Sound System</A>
+
+MIDAS Sound System supports the following module formats: 
+
+       FastTracker 2 modules (.XM) with up to 32 channels 
+ ,      Scream Tracker 3 modules (.S3M) with up to 32 channels 
+  ,     Basic Protracker modules (.MOD) with 4 channels, also extended PT-like formats with up to 32 channels
+       are supported. 
+<br>
+<a href="http://www.pf.jcu.cz/~perex/ultra">The Linux Ultrasound
+Project</A> is keeping track of everything interresting about Gravis and
+Linux.  No need for me to cut and past it all again ;-)
+<p>
+<font size=-5>Can someone point me to some good Soundbastard info, or 
+is there somebody who can compare the different players </font size>
+<a name="sample">
+<h2> Samplers</h2>
+I'm not really into this part of music but I know there are some things
+around , Check out Ceres
+Soundstudio, <a
+href="http://rulhmpc38.leidenuniv.nl/private/multitrack/multitrack.html">Multitrack</A>
+, and off course 
+the <a href="http://www.xnet.com/~blatura/linapp3.html#music">Linux
+Applications and Utilities Page</A>
+ 
+<a name="midi">
+<h2>Midi</h2>
+ Only one place to start.. <a
+href="http://www.digiserve.com/ar/linux-snd/">The Linux Midi+Sound
+Page</A> </td></tr>
+<tr><td bgcolor="#f0f0f0">
+<a name="graph">
+<h3><center>Graphics</center></h3>
+<h2>X / Svgalib / ...</h2>
+The diffucult part is making the decision between svgalib and X.
+<ul>
+<li><b>Svgalib</b>: This is a low level graphics library for Linux, based
+on VGAlib 1.2
+by
+Tommy Frandsen. VGAlib supported a number of standard VGA graphics modes,
+as
+well as Tseng ET4000 high resolution 256-color modes. 
+It also provides ET4000
+hicolor/truecolor DAC support. There's also an ATI mach32 driver
+by Michael Weller.
+<p>
+When the library is first used by a program at run-time, the chipset is
+detected and the appropriate driver is used. This means that a graphics
+program will work on any card that is supported by svgalib, if the mode it
+uses is supported by the chipset driver for that card. The library is
+upwardly compatible with VGAlib.
+<p>
+Getting started with svgalib is rather easy, the best thing you can do is
+read the instructions that come with the src.  Mabye somebody should write
+a faq someday ;-)
+ <li><b>X</b>: Probably by Using XLib
+<li><b><a href="http://synergy.caltech.edu/~ggi/">GGI</A></b>: This
+is probably the future, some of you hardware freaks
+might even be interrested in joining the project.<br>
+The Linux-GGI project wants to set up a General Graphics Interface for
+Linux that will allow
+       easy use of graphic hardware and input facilities under the Linux
+OS. One might argue that there
+       are already existing solutions and standards like X or OpenGL to
+deal with graphic issues, but
+       the current implementations under Linux have several (sometimes
+serious) drawbacks. GGI does not
+       want to substitute these existing standards nor does it want to
+implement these services
+       completely inside the kernel. 
+</ul>
+The best thing you can do is write your routines in plain C, 
+Using 2 different libraries for svgalib and X.
+
+
+
+<a name="image">
+<h2>Images</h2>
+Lot's of possible graphics tools around .. among them  AOCP an enhanced
+version of Deluxe Paint IIe for Linux which is till under development
+(sorry lost the url.. :((()
+And a couple of other interresting tools ..
+
+<li><a
+href="http://www.XCF.Berkeley.EDU/~gimp/">Gimp</A>,
+The GIMP is an image manipulation program suitable for
+photo retouching, image composition and image
+authoring. Many people find it extremely useful in
+creating logos and other graphics for web pages. The
+GIMP has many of the tools and filters you would expect
+to find in similar commercial offerings, and some
+interesting extras as well.
+<li><a href="http://www.povray.org"> PovRay</A>, 
+  The Persistance of Vision Ray Tracer (POV-Ray) is an all-round
+  excellent package, but there are two things that particularly make it
+  stand out above the rest of the crowd.  Firstly, it's free, and
+  secondly, the source is distributed so you can compile it on
+  virtually any platform.  It's without doubt the most used package
+  among the comp.graphics.rendering.raytracing crowd and well worth
+  checking out if you  haven't already.
+
+
+<li><a href="http://www.wizards.dupont.com/cristy/ImageMagick.html">Image
+Magic </A>, ImageMagick TM, version 3.8.2, is a package for display and
+interactive manipulation of images for the X
+Window System. It is written in C and interfaces to the X library, and
+therefore does not require any
+proprietary toolkit in order to compile. Although the software is
+copyrighted, it is available for free and
+can be redistributed without fee. 
+<br>
+The ImageMagick image display program can display an image on any
+workstation screen running an X server. It
+can read and write many of the many of the more popular image formats
+including JPEG, TIFF, PNM, GIF, and
+Photo CD. In addition you can interactively resize, rotate, sharpen, color
+reduce, or add special effects to
+an image and save your completed work. 
+<br>
+<li>And lots of other ... <a
+href="http://www.xnet.com/~blatura/linapp3.html#graphics">The
+Linux Applications and Utilities Page</A> is a
+good place to start 
+</td></tr>
+</table>
+<b>Check out the <a href="http://www.ultranet.com/~bjhall/GSDK/">Linux
+Game SDK</A> too.. it has some great features on both <a
+href="http://tychonic.antioch-college.edu/~gsdk/">sound</A>
+and
+<a href="http://web2.airmail.net/sjbaker1/gsdk.html">gfx</A>
+level <table width=100%>
+<tr><td bgcolor="#efffffe">
+<h3>Releases So Far</h3>
+<a name="releases">
+<table>
+<tr>
+<td><b>Filename</b></td><td><b>Info</be></td>
+</tr>
+<tr><td><a href="ftp/rox.zip">rox.zip</A></td>
+<td>
+<pre>- Hard RoX -  by Skal
+1st at Wired' 96
+Archive w/ both DOS & Linux executables
+REAL final version
+</pre></td>
+</tr>
+<tr><td><a href="ftp/HElliZER.tgz">HElliZER.tgz</A></td>
+<td>
+<pre>
+HElliZER demo by Queue Members Group AD 
+         (portable version)
+=======================================
+        C++, X window system
+=======================================
+</pre>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width=100%>
+<tr>
+<td bgcolor="#eefffe">	
+
+<a name="groups">
+<h3>Groups that are working on a Linux Production </h3>
+<li> <a
+href="http://www.eleves.ens.fr:8080/home/massimin/demo/index.html.en">Skal</A>
+<li> <a href="mailto:P.W.M.vanBakel@twi.tudelft.nl">Smoke</A>
+<li> <a
+href="http://ace.ulyssis.student.kuleuven.ac.be/~sdog/natives.html">The Natives</A>
+<li> Lame Over
+<li> New Order
+<li> Japotek
+<li> ArtworX
+<li> <a href="mailto:sdog@ace.ulyssis.student.kuleuven.ac.be">Your group
+
+??</A>
+</p>
+</td>
+<td bgcolor="#ffffdf">
+<h3>Usefull Lsm's </h3>
+<a name="lsm">
+<li> <a href="svgalib.lsm.html">svgalib</a>
+<li> <a href="lup.lsm.html">Linux Ultrasound Project</A>
+<li> <a href="mikmod.lsm.html">Mikmod for Linux</a>
+<li> <a href="perex.lsm.html">Perex 's Player</a>
+<li> <a href="gusmod.lsm.html">GMod Gus Mode File Player </A>
+<li> <a href="xpaint.lsm.html">Xpaint</A>
+</td>
+</tr>
+</table>
+
+
+<center>
+<hr>
+<img src="PBL_small.gif">
+<a href="linux-box-400x100.jpg"><img src="linux-box-256x64.jpg"
+border=0></A>
+</center>
+

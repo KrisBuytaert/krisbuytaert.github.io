@@ -1,0 +1,149 @@
+<title>GIFMerge</title>
+<body background="Images/bground.jpg">
+<center>
+<a href="http://err.ethz.ch/cgi-bin/framer.cgi"><IMG ismap align=right border=0  WIDTH=72 HEIGHT=28 SRC="framer-blue.gif"></a>
+<i><a href="Home.html">Kiwi's Home Page:</a></i><p>
+<IMG pstext="90p fontAuBauerTextInitials bg192,192,192 effectShadow(width5)" alt="GIFMerge"  WIDTH=427 HEIGHT=83 SRC="./ps-inline/label-gifmerge-0.gif"><p>
+<font size=+1><b>Merge single GIFs into an GIF89a Animation</b></font>
+</center>
+<p>
+<hr width=50%>
+
+<h2 align=center>Background</h2>
+
+<b>gifmerge</b> is based on txtmerge written by Mark Podlipec, part of
+<a href="http://www.portal.com/~podlipec/home.html">XANIM distribution</a>. 
+Based on infos Royal Frazier's <a href="http://member.aol.com/royalef/gifanim.htm">GIF89a Animation Page</a>
+I improved txtmerge to <b>gifmerge</b>.
+<p>
+<b>gifmerge</b> uses GIF89a extensions, as well the recent developed application
+extensions supported by Netscape-2.0 with <i>n</i>-loops. For details on
+GIF89a see at the <a href="gifspecs.txt">GIF89a Specifications</a>.
+<p>
+An excerpt of the Application Extension defined by Netscape (from <a href="http://www.reiworld.com/royalef/gifabout.htm">Understanding GIF89a</a>):
+
+<blockquote>
+<hr width=75%>
+Netscape Navigator has an Application Extension Block that tells Navigator to loop the entire
+GIF file. The Netscape block MUST APPEAR IMMEDIATELY AFTER THE GLOBAL
+COLOR TABLE OF THE LOGICAL SCREEN DESCRIPTOR. Only Navigator 2.0 Beta4 or
+better will recognize this Extension block. The block is 19 bytes long composed of: (note:
+hexidecimal equivalent supplied for programmers) 
+<pre>
+<font size=-1>   byte   1       : 33 (hex 0x21) GIF Extension code
+   byte   2       : 255 (hex 0xFF) Application Extension Label
+   byte   3       : 11 (hex (0x0B) Length of Application Block 
+                    (eleven bytes of data to follow)
+   bytes  4 to 11 : "NETSCAPE"
+   bytes 12 to 14 : "2.0"
+   byte  15       : 3 (hex 0x03) Length of Data Sub-Block 
+                    (three bytes of data to follow)
+   byte  16       : 1 (hex 0x01)
+   bytes 17 to 18 : 0 to 65535, an unsigned integer in 
+                    lo-hi byte format. This indicate the 
+                    number of iterations the loop should 
+                    be executed.
+   bytes 19       : 0 (hex 0x00) a Data Sub-block Terminator. 
+</font></pre>
+As of Beta5, the iteration count is ignored and the loop is infinite (an iteration count of zero
+indicates infinite). I strongly suggest you code the count to be accurate, so that when iterations
+begin working your GIF will not need to be modified. Technically that is all that needs to be done
+with this block. More about looping later in the tutorial. 
+<hr width=75%>
+</blockquote>
+
+For more specific infos look at <a href="http://www.reiworld.com/royalef/gifmakg.htm#looping">Royal Frazier's GIF Making: Looping</a>.
+<p>
+For general approaches of animations look at <a href="animation.html">Animations</a>.
+
+<h2 align=center>C-Source</h2>
+
+Get the UNIX tar file: <a href="gifmerge.tar"><b>gifmerge.tar</b></a> V1.3 (Feb 5, 1996).
+
+<h2 align=center>Usage</h2>
+
+<pre><font size=-1>=== GIFMerge Rev 1.30 (C) 1991,1992 by Mark Podlipec
+    Improvements by Rene K. Mueller 1996
+
+Usage: gifmerge [-&lt;r&gt;,&lt;g&gt;,&lt;b&gt;] [-&lt;delay&gt;] [-l&lt;loops&gt;] *.gif &gt; anim.gif
+
+   -&lt;r&gt;,&lt;g&gt;,&lt;b&gt;   set transparency, ie -192,192,192, default: no transparency
+   -&lt;delay&gt;       set delay of between images in 1/100th secs, ie -100
+                  default 50 (0.5secs)
+   -l&lt;loops&gt;      set loop counter, ie -l0 (ever) or -l1000, default no loops
+</font></pre>
+
+You have two images like this: <IMG  WIDTH=13 HEIGHT=13 SRC="Images/perlredb.gif"> <IMG  WIDTH=13 HEIGHT=13 SRC="Images/perlgrey.gif">
+<pre><font size=-1>   gifmerge -192,192,192 -l0 -50 perlredb.gif perlgrey.gif > perlredblink.gif
+</font></pre>
+Gives you <IMG  WIDTH=13 HEIGHT=13 SRC="Images/perlredblink.gif">
+<p>
+<pre><font size=-1>   gifmerge -192,192,192 -l0 -50 perlredb.gif -10 perlgrey.gif > perlredblink2.gif
+</font></pre>
+Gives you <IMG  WIDTH=13 HEIGHT=13 SRC="Images/perlredblink2.gif">
+
+<h2 align=center>Sample Animations</h2>
+
+Sample blinking LEDs:
+<IMG  WIDTH=13 HEIGHT=13 SRC="Images/perlredblink.gif">
+<IMG  WIDTH=13 HEIGHT=13 SRC="Images/perlorangeblink.gif">
+<IMG  WIDTH=13 HEIGHT=13 SRC="Images/perlyellowblink.gif">
+<IMG  WIDTH=13 HEIGHT=13 SRC="Images/perlgreenblink.gif">
+<IMG  WIDTH=13 HEIGHT=13 SRC="Images/perlpurpleblink.gif">
+each has 2 frames 0.5s delay
+<p>
+<img width=582 height=27 src="Images/owl-anim.gif"><br>
+4 frames, delays: 1x 1.0s and 3x 0.1s
+<p>
+<i>more coming soon ...</i>
+
+<h2 align=center>Complex Animations</h2>
+<center>
+<IMG  WIDTH=300 HEIGHT=14 SRC="Images/gif89a-banner-anim.gif"><br>
+46 frames, 0.1s delay
+<p>
+<img src="Images/box-rotate.gif" width=64 height=64><br>
+20 frames, 0.1s delay
+<p>
+<p><a href="Images/mirror.gif">Sphere and Box</a> (450K)<br>50 frames, 0.1s delay
+</center>
+<p>
+<i>more coming soon ...</i>
+<p>
+Let me know if you have programmed some animations with <b>gifmerge</b>.
+
+A gallery with GIF89 animations you find at 
+<a href="http://member.aol.com/royalef/galframe.htm">Royal Frazier's Animation Gallery</a>.
+
+<h2 align=center>Problems</h2>
+
+I noticed that the counter-loop doesn't work at Netscape2.0, has a
+never-ending loop if you set -l<i>num</i>.  Royal Frazier wrote, that
+Netscape-2.0 just ignors the <i>loop</i> counter in their version, but
+maybe next version 2.1 they may support it.
+<p>
+Also, Netscape-2.0 seems to shows the animations as busy (comets on the "N" right
+upper corner of your browser) as well indicates "Reading document ..." on the
+bottom of your browser, which both are quite distracting for readers.
+<p>
+When you go back to a page (using Back-Button) which 
+has GIF89a animations with loops, Netscape2.0 does show only few pictures
+as animations, some are freezed.
+<p>
+Beside, if you leave a page with some GIF89a animations (with loops as well), to another page,
+Netscape-2.0 does <b>not</b> show the page while loading as usual.
+<p>
+And finally, Netscape-2.0 gets problems when two or more windows are open with
+GIF89a animations, you assume right: it crashs in some cases.
+<p>
+.... is your browser busy? I thought so! ;-)
+<p>
+<hr width=75%>
+<center>
+Accesses since Feb 5, 1996: <IMG   WIDTH=90 HEIGHT=20 SRC="http://counter.digits.com/wc?-c&16&-d&6&-r&-z&-f&00ff00&gifmerge" ALIGN=absmiddle vspace=2><p>
+</center>
+
+<p>
+<hr>
+<a href="Home.html"><IMG  WIDTH=75 HEIGHT=53 SRC="Images/Kiwi.gif"></a> <i>kiwi@iis.ee.ethz.ch</i>
+

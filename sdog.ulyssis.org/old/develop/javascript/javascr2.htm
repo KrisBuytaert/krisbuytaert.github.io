@@ -1,0 +1,314 @@
+<html>
+<head>
+<title>Introduction to JavaScript - Part2</title>
+<script language="JavaScript">
+<!-- Hiding
+     function hello() {
+       alert("Hello!");
+     }
+     function RandomNumber() {
+       timenow = new Date();
+       num= Math.abs(Math.sin(timenow.getTime()));
+       return num;  
+     }
+     function WinOpen() {
+       msg=open("","DisplayWindow","toolbar=no,directories=no,menubar=no");
+       msg.document.write("<HEAD><TITLE>Yo!</TITLE></HEAD>");
+       msg.document.write("<CENTER><h1><B>This is really cool!</B></h1></CENTER>");
+     }
+     function stat(txt) {
+        window.status = txt;
+        setTimeout("erase()",1500);
+      }
+     function erase() {
+       window.status="";
+     }
+// -->
+</script>
+</head>
+<BODY bgcolor="ffffff" text=#000000 link=#ff0000 vlink=#4444dd alink=#9999dd>
+<font size=+4 color=#FF0000>
+<center>
+<img src="jascr.gif" alt="" width=397 height=118><br>
+Introduction to JavaScript</font><font size=+2 color=#FF0000><br>Part 2</center>
+</font>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<br>
+<br>
+<font size=+1>
+<a name="status"></a>
+<h2>The onMouseOver- property</h2><br>
+You can see the next feature of JavaScript by moving your mouse pointer 
+over this <a href="tpage.htm" onMouseOver="window.status='Just another stupid link...';
+ return true">link</a>. Just look at the statusbar at the bottom of this browser.
+You can combine this with other JavaScript functions as well. If 
+you move over this
+<a href="" onMouseOver="hello()">link</a> a window will pop up. Now I will show you
+the source of these two effects:
+<br>
+<pre>
+&lt;a href="stupid.htm" onMouseOver="window.status='Just another stupid link...';
+ return true">
+</pre>
+<br>
+The only thing you have to do is to add the onMouseOver- property to your &lt;a>- tag.
+The 'window.status' will allow you to write things to the statusbar of your web-browser.
+As you can see you have to alter with the quotes. You cannot use &quot; all the time,
+because otherwise JavaScript is not able to identify the string you want to print to the 
+statusbar. After the string you have to write <i>;return true</i>. <br>
+The second example uses JavaScript by calling the alert-
+function. Here is the code:
+<br>
+<pre>
+&lt;html>
+&lt;head>
+&lt;script language="JavaScript">
+&lt;!-- Hiding
+     function hello() {
+       alert("Hello!");
+     }
+// -->
+&lt;/script>
+&lt;/head>
+&lt;body>
+&lt;a href="" onMouseOver="hello()">link&lt;/a>
+&lt;/body>
+&lt;/html>
+</pre>
+<br>
+This is quite easy. It uses the onMouseOver- method and the function <i>hello()</i> is
+called when this event occurs. 
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<a name="date"></a>
+<h2>More date- functions</h2><br>
+Now I want to show another example to you using the time and date methods. You
+already saw the <i>lastModified</i> property working. Now we are going to
+print the local time to our document. This method uses the time and date 
+of your machine- so if you got the machine- date set to 5/17/1983 you will get the 
+wrong date by this method as well. So this is not a time and date kept by the
+Internet (or something like that).<br>
+<br>
+<script language="JavaScript">
+<!-- Hiding
+  today = new Date()
+  document.write("The time now is: ",today.getHours(),":",today.getMinutes())
+  document.write("<br>The date is: ", today.getMonth()+1,"/",today.getDate(),"/",today.getYear());
+// end hiding contents -->
+</script>
+<p>
+Here is the code:
+<br>
+<pre>
+&lt;script language="JavaScript">
+&lt;!-- Hiding
+  today = new Date()
+  document.write("The time now is: ",today.getHours(),":",today.getMinutes())
+  document.write("<br>The date is: ", today.getMonth()+1,"/",today.getDate(),"/",today.getYear());
+// end hiding contents -->
+&lt;/script>
+</pre>
+<br>
+At first we are creating a date variable. This is done by <i>today=new Date()</i>.
+If we do not specify a certain time and date the browser uses the local time and
+puts it into the variable <i>today</i>. Notice that we do not have to declare the variable
+<i>today</i> anywhere. This is a difference to Java and most other programming languages where
+you have to specify your types you want to use before you use them. We have created
+a time object which keeps the local time and date. Now we can simply write its contents
+to the document. You have to write <i>today</i> before each get...- method. Otherwise
+the browser would not know which object to refer to. The getMonth() method returns a number
+between 0 and 11 (0 standing for january and 11 for december). So we have to add 1 to the
+number returned to get the right month. <br>
+An interesting thing you could think of is to create a date - for example the date
+when you created a document. Then you could calculate how many days later somebody is
+reading your document. And if it is more than 10 days old you could tell him: Hey, this 
+is really old- don't read it!<br>
+For this you will need the date of today as shown in the example above and the creation
+date. You can set a date while creating a date object. This would look like this: <i>
+  docStarted= new Date(96,0,13)</i>
+<br>
+You have to specify the year first, then the month (remember to decrease the month by one!) and 
+then the day. You can also specify the time:
+<i>  docStarted= new Date(96,0,13,10,50,0)</i>
+<br>
+The first numbers are still the date. They are followed by the hour, the minutes and the seconds.<p>
+I have to tell you that JavaScript does not have a real date type. But as you see you
+can work with dates quite nice. This works because dates are represented by the 
+number of milliseconds since 1/1/1970 0:0h. This sounds quite complicated but this is
+a common method for representing dates on computers. But you don't have to bother about this.
+You just have to care about the functions and this is not difficult at all. I just wanted to tell
+you so you don't think I tell you anything wrong.
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<a name="random"></a>
+<h2>Random numbers</h2>
+<p>
+
+A common problem is how you can use random numbers in programming and scripting 
+languages. At the moment the random- function in JavaScript does not work but it soon
+going to be implemented, I believe. But at the moment you have to work with some
+tricks. Well, it is not really a trick. This is a really common way almost any compiler
+I can think of uses to calculate random numbers. Yes, it <i>calculates</i> it. You
+take the time and date of your machine and manipulate it somehow. I believe the final
+JavaScript language will use this method (or a kind of it) as well. As I told you above the 
+time is just a large number. You can use this number and make some calculations with it. 
+For example
+you could calculate the sine from it and take the absolute value. This will get a number
+between 0 and 1. As the time changes every millisecond you won't risk to get the same number
+twice (when calculating them fast behind each other). If you want to calculate many
+random numbers in a short time you should not use sin() alone. Then you would get numbers
+following a sine- curve! This is not really random. But if you want to calculate a random
+number and let's say in 20 seconds again- this is a great function to do this.
+<p>
+This is a random number: 
+<script language="JavaScript">
+<!--
+  document.write(RandomNumber());
+// -->
+</script>
+<p>
+Here is the code for this example:
+<pre>
+&lt;html>
+&lt;head>
+&lt;script language="JavaScript">
+function RandomNumber() {
+  today = new Date();
+  num= Math.abs(Math.sin(today.getTime()));
+  return num;  
+}
+&lt;/script>
+&lt;/head>
+&lt;body>
+&lt;script language="JavaScript">
+&lt;!--
+  document.write("This is a random number:", RandomNumber());
+// -->
+&lt;/script>
+&lt;/body>
+&lt;/html>
+
+</pre>
+<p>
+Of course the random- function shown here isn't great for all puposes. It is just that 
+you get a basic idea about how they work. Here I will present a function which I got from
+Maynard Demmon. You just have to set the limits variable to the value you need - 100 for 
+example. And you will get a 'good' random value between 0 and 99. Here is the code:<p>
+<pre>
+  function random() {
+     today = new Date();
+     num = today.getTime();
+     num = Math.round(Math.abs(Math.sin (num)*1000000)) % limits;
+     return num;
+  }
+</pre>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<a name="win"></a>
+<h2>Creating windows</h2>
+<p>
+Creating windows is a great feature of JavaScript. You can build new windows. Load a 
+HTML- document. Navigate through the Internet- all with JavaScript. I'm going
+to show you how we can open a window and write something to it. If you push this button
+you will get to see what I'm going to explain to you next.<p>
+<form>
+<input type="button" name="Button1" value="Push me" onclick="WinOpen()">
+</form>
+<p>
+Breaking up with traditions I didn't write <i>Hello world!</i> to the page...<br>
+Here is the source:
+<pre>
+&lt;html>
+&lt;head>
+&lt;script language="JavaScript">
+function WinOpen() {
+   msg=open("","DisplayWindow","toolbar=no,directories=no,menubar=no");
+   msg.document.write("&lt;HEAD>&lt;TITLE>Yo!&lt;/TITLE>&lt;/HEAD>");
+   msg.document.write("&lt;CENTER>&lt;h1>&lt;B>This is really cool!&lt;/B>&lt;/h1>&lt;/CENTER><br>");
+}
+&lt;/script>
+&lt;/head>
+&lt;body>
+&lt;form>
+&lt;input type="button" name="Button1" value="Push me" onclick="WinOpen()">
+&lt;/form>
+&lt;/body>
+&lt;/html>
+</pre>
+As always you can see the button which calles a function. The function WinOpen() creates a new
+window by calling the method open. The first quotes contain the URL of the page. Here you
+can put the address of a HTML- document which you want to load. If you leave it blank no page
+is loaded and you can write to it with JavaScript! The next quotes specify the name of the window.
+Here you can write nearly anything- this has no effect on our examples right know. But you will
+get an error message if you write <i>Display Window</i> (with a space between the two words - 
+Netscape tells you something different in their information- but I sat half an hour because I could
+not find an error!) The next quotes specify the properties of the window. This is really interesting.
+You can tell if you want a toolbar, scrollbars... If you write <i>toolbar=yes</i> then you will get
+a toolbar in your window. There are some different properties listed below which you can change. You can 
+specify every possible property. You have to write them the way shown above. And with <b>no</b>
+spaces between! Here is what you can change on your page:<p>
+ toolbar<br>
+ location<br>
+ directories<br>
+ status<br>
+ menubar<br>
+ scrollbars<br>
+ resizable<br>
+ copyhistory<br>
+ width=<i>pixels</i><br>
+ height=<i>pixels</i><br>
+<p>
+For <i>pixels</i> you have to write the number of pixels. This way you can tell the browser
+how large your window should be.<br>
+After you have opened your window and called it msg (stands in front of the <i>open</i>- method), 
+you can
+now write to your window. Here you can write normal HTML- code! This is really a great thing.
+You could build a HTML- document using the form input a user gave you in the document before.
+You could make a page where a user has to write his name to a form and then a new HTML- document
+is created containing his name! Some months ago this was only possible with CGI- Scripts! 
+<p>
+<b>Please note this:</b> When writing something to a window
+you should always put a &lt;br> after the last text you write to a window. Otherwise you
+probably don't get to see the last row of your text. This happens because the browser
+only writes out complete lines - and if there is no end of the line it waits for more to come.<br>
+<b>Another important thing is this:</b>
+If you want to insert any images into a new window be sure to put the <i>height</i> and <i>width</i>
+properties to the &lt;img> tag. Otherwise you won't see any pictures or your
+pages crashes somehow. This may cause some very strange problems where you
+don't expect the image to be 'responsible' for. So always write something like this so you
+won't get any trouble:
+<p>
+&lt;img src="mycool.gif" height=100 width=100>
+<p>
+<HR WIDTH="80%" ALIGN="center" SIZE="2">
+<p>
+<p>
+</font>
+<br>
+<br>
+<center>
+<h4>
+<a href="script.htm" onMouseOver="stat('My JavaScript-Homepage');return true">Index</a> - 
+<a href="javascr.htm" onMouseOver="stat('JavaScript - Introduction Part 1');
+ return true">Part 1</a> - 
+<a href="javascr3.htm" onMouseOver="stat('JavaScript - Introduction Part 3');
+ return true">Part 3</a> -
+<a href="javascr4.htm" onMouseOver="stat('JavaScript - Introduction Part 4');
+ return true">Part 4</a> - 
+<a href="javascr5.htm" onMouseOver="stat('JavaScript - Introduction Part 5');
+ return true">Part 5</a> -
+<a href="javascr6.htm" onMouseOver="stat('JavaScript - Introduction Part 6');
+ return true">Part 6</a> -
+<a href="javascr7.htm" onMouseOver="stat('JavaScript - Introduction Part 7');
+ return true">Part 7</a>
+</h4>
+</center>
+<p>
+<br><i>
+Last changed: 11.May'96<br>
+&#169 1996 by Stefan Koch</i>
+
+</body>
+</html>
