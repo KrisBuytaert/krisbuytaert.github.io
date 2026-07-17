@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eeubuntu on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/eeubuntu/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/eeubuntu/</link>
     <description>Recent content in Eeubuntu on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Dec 2008 20:36:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/eeubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/eeubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JoliCloud</title>
-      <link>http://localhost:1313/blog/jolicloud/</link>
+      <link>https://krisbuytaert.github.io/blog/jolicloud/</link>
       <pubDate>Fri, 19 Dec 2008 20:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/jolicloud/</guid>
+      <guid>https://krisbuytaert.github.io/blog/jolicloud/</guid>
       <description>&lt;p&gt;Am I the only one who thinks &lt;a href=&#34;http://www.techcrunch.com/2008/12/09/netvibes-founder-building-iphone-like-operating-system-for-netbooks/&#34;&gt;the JoliCloud&lt;/a&gt; screenshot on TechCrunch really really looks like a default &lt;a href=&#34;http://www.eeebuntu.org/&#34;&gt;eeebuntu&lt;/a&gt; setup ?&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.techcrunch.com/wp-content/uploads/2008/12/jolicloud.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>

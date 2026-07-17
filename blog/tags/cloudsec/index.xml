@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloudsec on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/cloudsec/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/cloudsec/</link>
     <description>Recent content in Cloudsec on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Apr 2009 20:32:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/cloudsec/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/cloudsec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>To exaggerate , or not ...</title>
-      <link>http://localhost:1313/blog/exaggerate-or-not/</link>
+      <link>https://krisbuytaert.github.io/blog/exaggerate-or-not/</link>
       <pubDate>Mon, 27 Apr 2009 20:32:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/exaggerate-or-not/</guid>
+      <guid>https://krisbuytaert.github.io/blog/exaggerate-or-not/</guid>
       <description>&lt;p&gt;Sometimes you have to &lt;a href=&#34;http://virtualization.com/guest-posts/2009/04/17/on-the-dangers-of-ovf/&#34;&gt;step out of line&lt;/a&gt; to get a message through just write a viewpoint down in totally black, ignoring the white parts.&lt;/p&gt;&#xA;&lt;p&gt;Earlier examples of these tricks were my rants on &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/713&#34;&gt;raid&lt;/a&gt; :)&lt;/p&gt;&#xA;&lt;p&gt;The original work title of the &lt;a href=&#34;http://www.virtualization.com/&#34;&gt;Virtualization.com&lt;/a&gt; post actually was &amp;ldquo;VMWare, the New Microsoft, they gave us point and click and no clue for the user&amp;rdquo; But I selfmoderated that down to a more gentle title, not attacking a vendor :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>VirtSec, and Open Source</title>
-      <link>http://localhost:1313/blog/virtsec-and-open-source/</link>
+      <link>https://krisbuytaert.github.io/blog/virtsec-and-open-source/</link>
       <pubDate>Mon, 16 Mar 2009 20:51:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/virtsec-and-open-source/</guid>
+      <guid>https://krisbuytaert.github.io/blog/virtsec-and-open-source/</guid>
       <description>&lt;p&gt;The slides from the presentation I gave last friday at Lsec are now online, both at &lt;a href=&#34;http://www.krisbuytaert.be/presentations/VirtSec.odp&#34;&gt;My Site&lt;/a&gt; and on &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/virtsec-and-the-open-source-impact&#34;&gt;Slideshare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/virtsec-and-the-open-source-impact?type=powerpoint&#34; title=&#34;VirtSec,  and the Open Source impact&#34;&gt;VirtSec, and the Open Source impact&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I learned a lot last friday , I`ll be talking to some more people about the technical details , but be expecting some of my findings on &lt;a href=&#34;http://virtualization.com/&#34;&gt;Virtualization.com&lt;/a&gt; soon :)&lt;/p&gt;</description>
     </item>
   </channel>

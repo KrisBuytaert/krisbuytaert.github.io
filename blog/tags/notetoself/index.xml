@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notetoself on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/notetoself/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/notetoself/</link>
     <description>Recent content in Notetoself on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Nov 2011 22:31:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/notetoself/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/notetoself/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>QR Encode</title>
-      <link>http://localhost:1313/blog/qr-encode/</link>
+      <link>https://krisbuytaert.github.io/blog/qr-encode/</link>
       <pubDate>Sun, 13 Nov 2011 22:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/qr-encode/</guid>
+      <guid>https://krisbuytaert.github.io/blog/qr-encode/</guid>
       <description>&lt;p&gt;For further reference .. and preventing me from googling it a 3rd time&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. qrencode &amp;#34;http://www.krisbuytaert.be/&amp;#34;  -o qrcode.png  -s 10&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or\&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. cat Kris_Buytaert.vcf  | qrencode  -o vcf.png -s 5&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>

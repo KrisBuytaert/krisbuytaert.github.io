@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Openqrm on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/openqrm/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/openqrm/</link>
     <description>Recent content in Openqrm on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Mar 2009 22:11:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/openqrm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/openqrm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UKUUG Spring 2009 Conference , here we come</title>
-      <link>http://localhost:1313/blog/ukuug-spring-2009-conference-here-we-come/</link>
+      <link>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-here-we-come/</link>
       <pubDate>Tue, 24 Mar 2009 22:11:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/ukuug-spring-2009-conference-here-we-come/</guid>
+      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-2009-conference-here-we-come/</guid>
       <description>&lt;p&gt;I`ll be heading to bed early today as tomorrow will be a busy day. I have to get up early to catch my flight to London where&lt;br&gt;&#xA;&lt;a href=&#34;http://tdc.blogsite.org/index.php&#34;&gt;Tom&lt;/a&gt; and I will be representing Inuits at the UKUUG 2009 Spring Conference.&lt;/p&gt;&#xA;&lt;p&gt;Tom will be giving an updated version of our &lt;a href=&#34;http://www.ukuug.org/events/spring2009/programme/systems-monitoring-shootout.shtml&#34;&gt;Open Source Monitoring Shootout&lt;/a&gt; talk again, I`ll probably be skipping a couple of his slides as right after that &lt;a href=&#34;http://blog.zenoss.com/2009/03/23/jane-curry-zenoss-master/&#34;&gt;Jane Curry&lt;/a&gt; will be covering Zenoss in depth and on thursday there will be an OpenNMS talk too.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open Source does not mean Customization Heaven..</title>
-      <link>http://localhost:1313/blog/open-source-does-not-mean-customization-heaven/</link>
+      <link>https://krisbuytaert.github.io/blog/open-source-does-not-mean-customization-heaven/</link>
       <pubDate>Wed, 11 Feb 2009 18:09:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/open-source-does-not-mean-customization-heaven/</guid>
+      <guid>https://krisbuytaert.github.io/blog/open-source-does-not-mean-customization-heaven/</guid>
       <description>&lt;p&gt;Unless you are doing it wrong.&lt;/p&gt;&#xA;&lt;p&gt;And sadly I`m seeing more and more people doing it wrong.&lt;br&gt;&#xA;To a lot of people Open Source means that they have a piece of software that does almost what they want and which they can modify to their best wishes and use internally.&lt;/p&gt;&#xA;&lt;p&gt;So they fork locally,, they don&amp;rsquo;t redistribute their code , but they aren&amp;rsquo;t contributing their changes back upstream, chances are these changes wouldn&amp;rsquo;t be accepted upstream anyhow as they are really customizing the code for their specific cases. At first sight this doesn&amp;rsquo;t look so bad , at second sight ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>openQRM.com</title>
-      <link>http://localhost:1313/blog/openqrmcom/</link>
+      <link>https://krisbuytaert.github.io/blog/openqrmcom/</link>
       <pubDate>Tue, 18 Nov 2008 10:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/openqrmcom/</guid>
+      <guid>https://krisbuytaert.github.io/blog/openqrmcom/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://virtualization.com/guest-posts/2008/11/16/openqrm-4.2-released-includes-cloud-sauce/&#34;&gt;Last weekend&lt;/a&gt; I blogged about openQRM 4.2 being released.&lt;/p&gt;&#xA;&lt;p&gt;This morning Matt finally let me know the long waiting fresh and new Drupal based &lt;a href=&#34;http://openqrm.com/&#34;&gt;openQRM.com&lt;/a&gt; is live !&lt;/p&gt;&#xA;&lt;p&gt;Feed Added!&lt;/p&gt;</description>
     </item>
   </channel>

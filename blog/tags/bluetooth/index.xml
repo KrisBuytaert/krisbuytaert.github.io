@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bluetooth on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/bluetooth/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/bluetooth/</link>
     <description>Recent content in Bluetooth on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Nov 2009 20:06:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/bluetooth/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/bluetooth/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Life with an Android</title>
-      <link>http://localhost:1313/blog/life-android/</link>
+      <link>https://krisbuytaert.github.io/blog/life-android/</link>
       <pubDate>Thu, 05 Nov 2009 20:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/life-android/</guid>
+      <guid>https://krisbuytaert.github.io/blog/life-android/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve have never been a really an HTC fan, because of the platform they used before, I have been a Ericsson GA628, SH888, then Sony Ericsson fanboy for all my life T39m, K700, K800i , so this is my first attempt into using a different brand of phone , I&amp;rsquo;ve been wanting an Open Phone for ages.. but I&amp;rsquo;ve been waiting for Godot, er the openMoko, for way to long now so with the introduction of the HTC and my K800i being long overdue for a replacement.&lt;/p&gt;</description>
     </item>
   </channel>

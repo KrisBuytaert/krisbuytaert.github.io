@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Selinux on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/selinux/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/selinux/</link>
     <description>Recent content in Selinux on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Jun 2016 09:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/selinux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/selinux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Troubleshooting 101 , 2016 Edition</title>
-      <link>http://localhost:1313/blog/linux-troubleshooting-101-2016-edition/</link>
+      <link>https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/</link>
       <pubDate>Wed, 01 Jun 2016 09:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/linux-troubleshooting-101-2016-edition/</guid>
+      <guid>https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/</guid>
       <description>&lt;p&gt;Back in 2006 I wrote a &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/177&#34;&gt;blog post&lt;/a&gt; about linux troubleshoooting. &lt;a href=&#34;https://twitter.com/bertvanvreckem/status/737761421879054336&#34;&gt;Bert Van Vreckem&lt;/a&gt; pointed out that it might be time for an update ..&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s not that much that has changed .. however :)&lt;/p&gt;&#xA;&lt;p&gt;Everything is a DNS Problem&lt;/p&gt;&#xA;&lt;p&gt;Everything is a Fscking DNS Problem&lt;br&gt;&#xA;No really, Everything is a Fscking DNS Problem&lt;br&gt;&#xA;If it&amp;rsquo;s not a fucking DNS Problem ..&lt;br&gt;&#xA;It&amp;rsquo;s a Full Filesystem Problem&lt;br&gt;&#xA;If your filesystem isn&amp;rsquo;t full&lt;br&gt;&#xA;It is a SELinux problem&lt;br&gt;&#xA;If you have SELinux disabled&lt;br&gt;&#xA;It might be an ntp problem&lt;br&gt;&#xA;If it&amp;rsquo;s not an ntp problem&lt;br&gt;&#xA;It&amp;rsquo;s an arp problem&lt;br&gt;&#xA;If it&amp;rsquo;s not an arp problem&amp;hellip;&lt;br&gt;&#xA;It is a Java Garbage Collection problem&lt;br&gt;&#xA;If you ain&amp;rsquo;t running Java&lt;br&gt;&#xA;It&amp;rsquo;s a natting problem&lt;br&gt;&#xA;If you are already on IPv6&lt;br&gt;&#xA;It&amp;rsquo;s a Spanning Tree problem&lt;br&gt;&#xA;If it&amp;rsquo;s not a spanning Tree problem&amp;hellip;&lt;br&gt;&#xA;It&amp;rsquo;s a USB problem&lt;br&gt;&#xA;If it&amp;rsquo;s not a USB Problem&lt;br&gt;&#xA;It&amp;rsquo;s a sharing IRQ Problem&lt;br&gt;&#xA;If it&amp;rsquo;s not a sharing IRQ Problem&lt;br&gt;&#xA;But most often .. its a Freaking Dns Problem !&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker and volumes hell</title>
-      <link>http://localhost:1313/blog/docker-and-volumes-hell/</link>
+      <link>https://krisbuytaert.github.io/blog/docker-and-volumes-hell/</link>
       <pubDate>Sat, 28 May 2016 13:16:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/docker-and-volumes-hell/</guid>
+      <guid>https://krisbuytaert.github.io/blog/docker-and-volumes-hell/</guid>
       <description>&lt;p&gt;We&amp;rsquo;re increasingly using Docker to build packages, a fresh chroot in which we prepare a number of packages, builds typically for ruby (rvm) , or python (virtualenv) or node stuf where the language ecosystem fails on us &amp;hellip; and fpm the whole tree as a working artifact.&lt;/p&gt;&#xA;&lt;p&gt;An example of such a build is my work on packaging Dashing. &lt;a href=&#34;https://github.com/KrisBuytaert/build-dashing&#34;&gt;https://github.com/KrisBuytaert/build-dashing&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Now part of that build is running the actual build script in docker with a local volume mounted inside the container This is your typical -v=/home/src/dashing-docker/package-scripts:/scripts param.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upgrading to Fedora 10</title>
-      <link>http://localhost:1313/blog/upgrading-fedora-10/</link>
+      <link>https://krisbuytaert.github.io/blog/upgrading-fedora-10/</link>
       <pubDate>Mon, 01 Dec 2008 22:14:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/upgrading-fedora-10/</guid>
+      <guid>https://krisbuytaert.github.io/blog/upgrading-fedora-10/</guid>
       <description>&lt;p&gt;As some of you know I run Fedora on my main Laptop, and Ubuntu on my EEE and my office Desktop. My Ubuntu installs were pretty fresh, but my fedora was long due for an upgrade. As after years of abuse (&amp;ndash;force &amp;ndash;nodeps) it usually is impossible to do a regular upgrade, so my best way out was a quick and fresh install on an isolated root partition. (my /home/ etc live on separate volumes)&lt;/p&gt;</description>
     </item>
   </channel>

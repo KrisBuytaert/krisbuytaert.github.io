@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Collectd on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/collectd/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/collectd/</link>
     <description>Recent content in Collectd on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Jan 2012 22:46:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/collectd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/collectd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Graphite, JMXTrans, Ganglia, Logster, Collectd,  say what  ?</title>
-      <link>http://localhost:1313/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</link>
+      <link>https://krisbuytaert.github.io/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</link>
       <pubDate>Tue, 03 Jan 2012 22:46:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</guid>
+      <guid>https://krisbuytaert.github.io/blog/graphite-jmxtrans-ganglia-logster-collectd-say-what/</guid>
       <description>&lt;p&gt;Given that @patrickdebois is working on improving data collection I thought it would be a good idea to describe the setup I currently have hacked together.&lt;/p&gt;&#xA;&lt;p&gt;(Something which can be used as a starting point to improve stuff, and I have to write documentation anyhow)&lt;/p&gt;&#xA;&lt;p&gt;I currently have 3 sources , and one target, which will eventually expand to at least another target and most probably more sources too.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.krisbuytaert.be/images/VagrantGraphite.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>#monitoringsucks and we&#39;ll fix it !</title>
-      <link>http://localhost:1313/blog/monitoringsucks-and-well-fix-it/</link>
+      <link>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</link>
       <pubDate>Tue, 03 Jan 2012 20:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monitoringsucks-and-well-fix-it/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monitoringsucks-and-well-fix-it/</guid>
       <description>&lt;p&gt;If you are hacking on monitoring solutions, and want to talk to your peers solving the problem&lt;br&gt;&#xA;Block the monday and tuesday after fosdem in your calendar !&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s right on february 6 and 7 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp&lt;/p&gt;&#xA;&lt;p&gt;In short a #monitoringsucks hackathon&lt;/p&gt;&#xA;&lt;p&gt;Inuits is opening up their offices for everybody who wants to join the effort Please let us (@KrisBuytaert and @patrickdebois) know if you want to join us in Antwerp&lt;/p&gt;</description>
     </item>
   </channel>

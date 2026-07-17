@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apt-Get on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/apt-get/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/apt-get/</link>
     <description>Recent content in Apt-Get on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 16 Feb 2010 22:20:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/apt-get/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/apt-get/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Packaging Drupal Modules  or not ?</title>
-      <link>http://localhost:1313/blog/packaging-drupal-modules-or-not/</link>
+      <link>https://krisbuytaert.github.io/blog/packaging-drupal-modules-or-not/</link>
       <pubDate>Tue, 16 Feb 2010 22:20:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/packaging-drupal-modules-or-not/</guid>
+      <guid>https://krisbuytaert.github.io/blog/packaging-drupal-modules-or-not/</guid>
       <description>&lt;p&gt;So &lt;a href=&#34;http://bitfieldconsulting.com/puppet-drupal&#34;&gt;John&lt;/a&gt; wrote down his experiences on deploying Drupal sites with Puppet .&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s not a secret that I&amp;rsquo;ve been thinking about similar stuff and how I could get to the best possible setup.&lt;/p&gt;&#xA;&lt;p&gt;John starts of with using Puppet to download Drush&amp;hellip; while I want to use &lt;a href=&#34;http://repo.inuits.be/centos/5/os/noarch/drush-All-Versions-2.1-1.noarch.rpm&#34;&gt;rpm&lt;/a&gt; for that &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;I want my core infrastructure to be fully packaged&amp;hellip; not downloaded and untarred. I want to be able to reproduce my platform in a couple of months , with the exact same versions I`m using now .. not with the version that happens to be on ftp.drupal.org at that point in time, or with ftp.drupal.org being down.&lt;/p&gt;</description>
     </item>
     <item>
       <title>To not yum or to not apt-get, that&#39;s NOT the question.</title>
-      <link>http://localhost:1313/blog/not-yum-or-not-apt-get-thats-not-question/</link>
+      <link>https://krisbuytaert.github.io/blog/not-yum-or-not-apt-get-thats-not-question/</link>
       <pubDate>Tue, 16 Feb 2010 22:13:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/not-yum-or-not-apt-get-thats-not-question/</guid>
+      <guid>https://krisbuytaert.github.io/blog/not-yum-or-not-apt-get-thats-not-question/</guid>
       <description>&lt;p&gt;Over at the &lt;a href=&#34;http://code.openark.org/blog/mysql/to-not-yum-or-to-not-apt-get&#34;&gt;OPenARK blog&lt;/a&gt; Shlomi Noach argues that using apt-get or yum to install your MySQL instance will one day most likeley break your MySQL setup. Depdendencies, distros not shipping the MySQL version you want to use and on some distro&amp;rsquo;s indeed the mysql vs MySQL issue, agreed, it all makes things less trivial.&lt;/p&gt;&#xA;&lt;p&gt;However why give up a clean packaged system if there are other ways out ?&lt;/p&gt;&#xA;&lt;p&gt;First of all by claiming that such an installation can break a working production environment looks to me like admitting you don&amp;rsquo;t have a split development, production environment and that rather than testing stuff upfront indeed you just hack a long in production.&lt;/p&gt;</description>
     </item>
   </channel>

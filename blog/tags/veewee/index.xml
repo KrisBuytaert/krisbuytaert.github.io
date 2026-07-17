@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Veewee on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/veewee/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/veewee/</link>
     <description>Recent content in Veewee on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Aug 2011 10:41:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/veewee/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/veewee/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Veewee</title>
-      <link>http://localhost:1313/blog/using-veewee/</link>
+      <link>https://krisbuytaert.github.io/blog/using-veewee/</link>
       <pubDate>Wed, 24 Aug 2011 10:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/using-veewee/</guid>
+      <guid>https://krisbuytaert.github.io/blog/using-veewee/</guid>
       <description>&lt;p&gt;With @dancarley and @patrickebois just discussing the origin of the name of Veewee I figured I still had that piece of documentation I wrote up for myselve flying around &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;So with no other reason than having my docs mirrored on the internet .&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. gem install veewee&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. veewee templates&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;shows you what templates we have around ..&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. $veewee init natty ubuntu-11.04-server-amd64&#xA;2. Init a new box natty, starting from template ubuntu-11.04-server-amd64&#xA;3. The basebox &amp;#39;natty&amp;#39; has been successfully created from the template &amp;#39;&amp;#39;ubuntu-11.04-server-amd64&amp;#39;&#xA;4. You can now edit the definition files stored in definitions/natty&#xA;5. or build the box with:&#xA;6. vagrant basebox build &amp;#39;natty&amp;#39;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As noted this will generate the definition for your natty box,&lt;br&gt;&#xA;It will create a definition.rb file which describes your box.&lt;br&gt;&#xA;A preseed (or kickstart or similar file) and a postinstall file&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Drbd on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/drbd/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/drbd/</link>
     <description>Recent content in Drbd on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Nov 2010 01:07:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/drbd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/drbd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>High Availability MySQL Cookbook , the review</title>
-      <link>http://localhost:1313/blog/high-availability-mysql-cookbook-review/</link>
+      <link>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</link>
       <pubDate>Thu, 04 Nov 2010 01:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/high-availability-mysql-cookbook-review/</guid>
+      <guid>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</guid>
       <description>&lt;p&gt;When I read on the internetz that Alex Davies was about the publish a &lt;a href=&#34;https://www.packtpub.com/high-availability-mysql-cookbook/book&#34;&gt;Packt book on MySQL HA&lt;/a&gt; I pinged my contacts at Packt and suggested that I&amp;rsquo;d review the book .&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve ran into &lt;a href=&#34;https://sites.google.com/a/davz.net/alex-davies/&#34;&gt;Alex&lt;/a&gt; at some UKUUG conferences before and he&amp;rsquo;s got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.&lt;/p&gt;&#xA;&lt;p&gt;Alex starts of with a couple of indepth chapters on MySQL Cluster, he does mention that it&amp;rsquo;s not a fit for all problems, but I&amp;rsquo;d hoped he did it a bit more prominently &amp;hellip; an upfront chapter outlining the different approaches and when which approach is a match could have been better. The avid reader now might be 80 pages into MySQL cluster before he realizes it&amp;rsquo;s not going to be a match for his problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Yet Another DNS Issue</title>
-      <link>http://localhost:1313/blog/yet-another-dns-issue/</link>
+      <link>https://krisbuytaert.github.io/blog/yet-another-dns-issue/</link>
       <pubDate>Thu, 12 Nov 2009 23:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/yet-another-dns-issue/</guid>
+      <guid>https://krisbuytaert.github.io/blog/yet-another-dns-issue/</guid>
       <description>&lt;p&gt;While browsing trough my enormous mailinglist backlog I ran into the following message from Gianluca Cecchi on the DRBD-user mailing list&lt;/p&gt;&#xA;&lt;p&gt;guess I`ll have to give Lars a T-Shirt when we next meet ;)&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. From: Gianluca Cecchi&#xA;2. To: drbd-user@lists.linbit.com&#xA;3. Subject: [DRBD-user] notes on 8.3.2&#xA;&#xA;&#xA;6. - drbdadm create-md r0 segfaults when the command &amp;#34;hostname&amp;#34; on the&#xA;7. server contains the fully qualified domain name but you have put only&#xA;8. the hostname part in drbd.conf&#xA;9. Instead, the command &amp;#34;drbdadm dump&amp;#34; correctly gives you a warning in&#xA;10. this case (suggesting how to correct the error you made....):&#xA;&#xA;12. suppose complete hostname is virtfed.domainname.com and you put&#xA;13. virtfed alone in drbd.conf&#xA;14. [root@virtfed ~]# drbdadm dump&#xA;15. WARN: no normal resources defined for this host (virtfed.domainname.com)!?&#xA;&#xA;17. while&#xA;18. [root@virtfed ~]# drbdadm create-md r0&#xA;19. Segmentation fault&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Guess I`ll have to give the Linbit crowd a T-Shirt when we next meet ;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nines , Damn Nines  and More Nines</title>
-      <link>http://localhost:1313/blog/nines-damn-nines-and-more-nines/</link>
+      <link>https://krisbuytaert.github.io/blog/nines-damn-nines-and-more-nines/</link>
       <pubDate>Mon, 19 Oct 2009 23:46:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/nines-damn-nines-and-more-nines/</guid>
+      <guid>https://krisbuytaert.github.io/blog/nines-damn-nines-and-more-nines/</guid>
       <description>&lt;p&gt;Funny how different experiences lead to different evaluations of tools. The MySQL HA solutions &lt;a href=&#34;http://www.mysqlperformanceblog.com/2009/10/16/finding-your-mysql-high-availability-solution-%E2%80%93-the-questions/&#34;&gt;the MySQL Performanceblog&lt;/a&gt; list, are almost listed in the complete opposited order of what my impressions are.&lt;/p&gt;&#xA;&lt;p&gt;Ok agreed, I should probably not put my MySQL NDB experiences from 2-3 years ago with multiple Query of deaths and more problems than you into account anymore , but back then went in the list Less stable than a single node. I&amp;rsquo;ve had NDB POC setups going down for much more than 05:16 minutes&lt;br&gt;&#xA;Ndb comes with a lot of restrictions, there are&lt;/p&gt;</description>
     </item>
     <item>
       <title>DRBD2, OCFS2,  Unexplained crashes</title>
-      <link>http://localhost:1313/blog/drbd2-ocfs2-unexplained-crashes/</link>
+      <link>https://krisbuytaert.github.io/blog/drbd2-ocfs2-unexplained-crashes/</link>
       <pubDate>Wed, 01 Jul 2009 16:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/drbd2-ocfs2-unexplained-crashes/</guid>
+      <guid>https://krisbuytaert.github.io/blog/drbd2-ocfs2-unexplained-crashes/</guid>
       <description>&lt;p&gt;I was trying to setup a dual-primary DRBD environment, with a shared disk with either OCFS2 or GFS. The environment is a Centos 5.3 with DRBD82 (but also tried with DRBD83 from testing) .&lt;/p&gt;&#xA;&lt;p&gt;Setting up a single primary disk and running bonnie++ on it worked Setting up a dual-primary disk, only mounting it on one node (ext3) and running bonnie++ worked&lt;/p&gt;&#xA;&lt;p&gt;When setting up ocfs2 on the /dev/drbd0 disk and mounting it on both nodes, basic functionality seemed in place but usually less than 5-10 minutes after I start bonnie++ as a test on one of the nodes , both nodes power cycle with no errors in the logfiles, just a crash.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MySQL and DRBD, Often say NO :)</title>
-      <link>http://localhost:1313/blog/mysql-and-drbd-often-say-no/</link>
+      <link>https://krisbuytaert.github.io/blog/mysql-and-drbd-often-say-no/</link>
       <pubDate>Mon, 28 Apr 2008 19:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/mysql-and-drbd-often-say-no/</guid>
+      <guid>https://krisbuytaert.github.io/blog/mysql-and-drbd-often-say-no/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://fghaas.wordpress.com/2008/04/27/drbd-and-mysql-just-say-yes/&#34;&gt;Florian&lt;/a&gt; is replying to &lt;a href=&#34;http://www.jebriggs.com/blog/mysql/drbd-and-mysql-just-say-no.html&#34;&gt;James&lt;/a&gt; on the subject of using DRBD for MySQL HA. A discussion started earlier &lt;a href=&#34;http://ebergen.net/wordpress/2007/04/02/drbd-in-the-real-world/&#34;&gt;by Eric&lt;/a&gt; Florian is refuting most of the arguments that James has against using MySQL and DRBD together.&lt;/p&gt;&#xA;&lt;p&gt;I`m also saying NO to MySQL and DRBD in most of the cases.. but not for any of the reasons James mentions.&lt;/p&gt;&#xA;&lt;p&gt;I must say upfront I love DRBD and I have been using it in production for a long time but not for MySQL HA.&lt;/p&gt;</description>
     </item>
   </channel>

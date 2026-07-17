@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Puppetzie on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/puppetzie/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/puppetzie/</link>
     <description>Recent content in Puppetzie on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Jan 2013 12:21:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/puppetzie/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/puppetzie/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>#devops Conference Season heating up...</title>
-      <link>http://localhost:1313/blog/devops-conference-season-heating/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</link>
       <pubDate>Sun, 13 Jan 2013 12:21:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-conference-season-heating/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</guid>
       <description>&lt;p&gt;My last post has been a while &amp;hellip; in that I announced that there would be another event right before FOSDEM &amp;hellip; I totally forgot to announce it here but I`m sure that most of you already know. Yes. PuppetCamp Europe is coming back to it&amp;rsquo;s roots&amp;hellip; it&amp;rsquo;s coming back to the city where we hosted it for the first time on this side of the ocean.. Gent. (that&amp;rsquo;s 31/1 and 1/2 )&lt;/p&gt;</description>
     </item>
   </channel>

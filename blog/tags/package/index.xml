@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Package on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/package/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/package/</link>
     <description>Recent content in Package on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Nov 2010 21:20:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/package/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/package/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>To Package,  and what to package</title>
-      <link>http://localhost:1313/blog/package-and-what-package/</link>
+      <link>https://krisbuytaert.github.io/blog/package-and-what-package/</link>
       <pubDate>Mon, 01 Nov 2010 21:20:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/package-and-what-package/</guid>
+      <guid>https://krisbuytaert.github.io/blog/package-and-what-package/</guid>
       <description>&lt;p&gt;One of the open sessions last week (corr: last month) at Devopsdays 2010 Hamburg was the one on packaging software. It&amp;rsquo;s always a big question on wether you package the software that runs in your infrastructure or not. And if you package it .. what do you package ..&lt;/p&gt;&#xA;&lt;p&gt;The general consensus of the open space was pretty much that you always package the software you deploy, unless you have some very good reasons not to. Pretty much the way I&amp;rsquo;ve been doing for ages ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drupal6 in EPEL</title>
-      <link>http://localhost:1313/blog/drupal6-epel/</link>
+      <link>https://krisbuytaert.github.io/blog/drupal6-epel/</link>
       <pubDate>Wed, 06 Jan 2010 00:48:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/drupal6-epel/</guid>
+      <guid>https://krisbuytaert.github.io/blog/drupal6-epel/</guid>
       <description>&lt;p&gt;Dear Drupal Community,&lt;/p&gt;&#xA;&lt;p&gt;If any of you are interrested in getting a packaged version of Drupal 6 into Fedora&amp;rsquo;s EPEL repository (Extra Packages for Enterprise Linux) and therefore usable in RHEL and Centos,&lt;br&gt;&#xA;please comment on the &lt;a href=&#34;https://bugzilla.redhat.com/show_bug.cgi?id=552717&#34;&gt;Bug&lt;/a&gt; I filed to get it&amp;rsquo;s introduction started.&lt;/p&gt;&#xA;&lt;p&gt;Any pitfalls, benefits etc are welcome ..&lt;/p&gt;&#xA;&lt;p&gt;thnx in advance !&lt;/p&gt;</description>
     </item>
   </channel>

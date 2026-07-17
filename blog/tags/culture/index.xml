@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Culture on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/culture/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/culture/</link>
     <description>Recent content in Culture on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 31 Dec 2011 17:59:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/culture/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/culture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is devops ?</title>
-      <link>http://localhost:1313/blog/what-devops/</link>
+      <link>https://krisbuytaert.github.io/blog/what-devops/</link>
       <pubDate>Sat, 31 Dec 2011 17:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/what-devops/</guid>
+      <guid>https://krisbuytaert.github.io/blog/what-devops/</guid>
       <description>&lt;p&gt;I`m parsing the responses of the Deploying Drupal survey I started a couple of months ago (more on that later)&lt;/p&gt;&#xA;&lt;p&gt;One of the questions in the survey is &amp;ldquo;What is devops&amp;rdquo; , apparently when you ask a zillion people (ok ok, just a large bunch of Tweeps..), you get a large amount of different answers ranging from totally wrong to spot on.&lt;/p&gt;&#xA;&lt;p&gt;So let&amp;rsquo;s go over them and see what we can learn from them ..&lt;/p&gt;</description>
     </item>
   </channel>

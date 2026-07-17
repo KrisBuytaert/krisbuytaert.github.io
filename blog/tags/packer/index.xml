@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Packer on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/packer/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/packer/</link>
     <description>Recent content in Packer on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Nov 2013 23:36:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/packer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/packer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker vs Reality , 0 - 1</title>
-      <link>http://localhost:1313/blog/docker-vs-reality-0-1/</link>
+      <link>https://krisbuytaert.github.io/blog/docker-vs-reality-0-1/</link>
       <pubDate>Wed, 27 Nov 2013 23:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/docker-vs-reality-0-1/</guid>
+      <guid>https://krisbuytaert.github.io/blog/docker-vs-reality-0-1/</guid>
       <description>&lt;p&gt;(aka the opinionated summary of the #devopsdays London November OpenSpace on , Containers and the new flood of Image Sprawl)&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a bunch of people out there that think I don&amp;rsquo;t like docker, they are wrong.&lt;/p&gt;&#xA;&lt;p&gt;I just never understood the hype about it since I didn&amp;rsquo;t see, (and still don&amp;rsquo;t) see it being used at large and people seem to understand that as being against it.&lt;/p&gt;&#xA;&lt;p&gt;So let me put a couple of things straight :&lt;/p&gt;</description>
     </item>
   </channel>

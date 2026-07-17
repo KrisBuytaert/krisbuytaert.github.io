@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux-Cluster on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/linux-cluster/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/linux-cluster/</link>
     <description>Recent content in Linux-Cluster on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Nov 2009 23:01:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/linux-cluster/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/linux-cluster/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Yet Another DNS Issue</title>
-      <link>http://localhost:1313/blog/yet-another-dns-issue/</link>
+      <link>https://krisbuytaert.github.io/blog/yet-another-dns-issue/</link>
       <pubDate>Thu, 12 Nov 2009 23:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/yet-another-dns-issue/</guid>
+      <guid>https://krisbuytaert.github.io/blog/yet-another-dns-issue/</guid>
       <description>&lt;p&gt;While browsing trough my enormous mailinglist backlog I ran into the following message from Gianluca Cecchi on the DRBD-user mailing list&lt;/p&gt;&#xA;&lt;p&gt;guess I`ll have to give Lars a T-Shirt when we next meet ;)&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. From: Gianluca Cecchi&#xA;2. To: drbd-user@lists.linbit.com&#xA;3. Subject: [DRBD-user] notes on 8.3.2&#xA;&#xA;&#xA;6. - drbdadm create-md r0 segfaults when the command &amp;#34;hostname&amp;#34; on the&#xA;7. server contains the fully qualified domain name but you have put only&#xA;8. the hostname part in drbd.conf&#xA;9. Instead, the command &amp;#34;drbdadm dump&amp;#34; correctly gives you a warning in&#xA;10. this case (suggesting how to correct the error you made....):&#xA;&#xA;12. suppose complete hostname is virtfed.domainname.com and you put&#xA;13. virtfed alone in drbd.conf&#xA;14. [root@virtfed ~]# drbdadm dump&#xA;15. WARN: no normal resources defined for this host (virtfed.domainname.com)!?&#xA;&#xA;17. while&#xA;18. [root@virtfed ~]# drbdadm create-md r0&#xA;19. Segmentation fault&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Guess I`ll have to give the Linbit crowd a T-Shirt when we next meet ;)&lt;/p&gt;</description>
     </item>
   </channel>

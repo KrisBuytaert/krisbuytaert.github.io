@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nosql on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/nosql/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/nosql/</link>
     <description>Recent content in Nosql on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Feb 2010 22:30:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fosdem 2010</title>
-      <link>http://localhost:1313/blog/fosdem-2010/</link>
+      <link>https://krisbuytaert.github.io/blog/fosdem-2010/</link>
       <pubDate>Tue, 09 Feb 2010 22:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fosdem-2010/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fosdem-2010/</guid>
       <description>&lt;p&gt;Fosdem 2010 was my 10th fosdem Edition (including the first OSDEM)&lt;br&gt;&#xA;As every year Fosdem suffered even more from it&amp;rsquo;s own success.&lt;/p&gt;&#xA;&lt;p&gt;On Friday evening ther was the obligatory Beer event&amp;hellip; however as people need to eat to .. the Devops crowd fled the scene&lt;/p&gt;&#xA;&lt;p&gt;I had made reservations for a 20 something group and with the CentOS crowd joining us (as there was some overlap anyhow) we were 25 when we arrived in the restaurant .&lt;br&gt;&#xA;&lt;img src=&#34;http://www.krisbuytaert.be/images/DevopsMeet.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>NoSQL vs MySQL</title>
-      <link>http://localhost:1313/blog/nosql-vs-mysql/</link>
+      <link>https://krisbuytaert.github.io/blog/nosql-vs-mysql/</link>
       <pubDate>Mon, 23 Nov 2009 22:17:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/nosql-vs-mysql/</guid>
+      <guid>https://krisbuytaert.github.io/blog/nosql-vs-mysql/</guid>
       <description>&lt;p&gt;No I did NOT post the following &lt;a href=&#34;http://www.ruturaj.net/redis-memcached-tokyo-tyrant-mysql-comparison#comment-22565&#34;&gt;comment&lt;/a&gt;&lt;br&gt;&#xA;This is ridiculous. You didn&amp;rsquo;t test MySQL, you tested a failing DNS lookup on authentication.&lt;/p&gt;&#xA;&lt;p&gt;resulting in the follow up &lt;a href=&#34;http://www.ruturaj.net/myisam-innodb&#34;&gt;post&lt;/a&gt; :&lt;/p&gt;&#xA;&lt;p&gt;My previous post Redis, Memcache, Tokyp Tyrant, MySQL comparison had a flaw as pointed out by this comment. The MySQL was taking a huge time for doing a reverse DNS lookup.\&lt;/p&gt;&#xA;&lt;p&gt;But as always &amp;hellip; Everything is just a Freaking dns problem :)&lt;/p&gt;</description>
     </item>
   </channel>

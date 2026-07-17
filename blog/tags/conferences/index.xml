@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conferences on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/conferences/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/conferences/</link>
     <description>Recent content in Conferences on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Aug 2012 08:51:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Breaking the Silence.</title>
-      <link>http://localhost:1313/blog/breaking-silence/</link>
+      <link>https://krisbuytaert.github.io/blog/breaking-silence/</link>
       <pubDate>Mon, 06 Aug 2012 08:51:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/breaking-silence/</guid>
+      <guid>https://krisbuytaert.github.io/blog/breaking-silence/</guid>
       <description>&lt;p&gt;3+ months is probably the biggest timeout I&amp;rsquo;ve taken from blogging in a while..&lt;br&gt;&#xA;Not that I didn&amp;rsquo;t have anything to write ..but more that I was prioritizing writing different content over&lt;br&gt;&#xA;over writing blogposts.&lt;/p&gt;&#xA;&lt;p&gt;Blogging tech snippets and contributing documentation used to be one now all of that has evolved.&lt;br&gt;&#xA;Anyhow ..&lt;/p&gt;&#xA;&lt;p&gt;So to get things going here&amp;rsquo;s my preliminary Conference schedule for the next couple of months.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;First up, in about one week (august 20-24) I&lt;code&gt;ll be chairing the #devops track at [DrupalCon Munich](http://munich2012.drupal.org/)\ Next to talking there myselve explaining the [Drupal Crowd what devops is](http://munich2012.drupal.org/program/sessions/whats-devops-thing-anyhow)\ Plenty of interresting content there ranging from culture over to tooling and back. I&lt;/code&gt;m really looking forward to this one.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fall , Winter and Spring Conference Season 2011 - 2012</title>
-      <link>http://localhost:1313/blog/fall-winter-and-spring-conference-season-2011-2012/</link>
+      <link>https://krisbuytaert.github.io/blog/fall-winter-and-spring-conference-season-2011-2012/</link>
       <pubDate>Sat, 24 Sep 2011 14:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fall-winter-and-spring-conference-season-2011-2012/</guid>
+      <guid>https://krisbuytaert.github.io/blog/fall-winter-and-spring-conference-season-2011-2012/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.jedi.be/blog/2011/09/06/what-conferences-to-attend/&#34;&gt;Patrick&lt;/a&gt; posted his upcoming conference schedule for the next couple of months.&lt;br&gt;&#xA;as you can see there are a comple of overlapping conferences :)&lt;/p&gt;&#xA;&lt;p&gt;Conferences I&amp;rsquo;m speaking at or likely to attend are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The first week of October I&lt;code&gt;ll be in the Valley , I&lt;/code&gt;ll be late for Jenkinsconf but I hope to pick up some events while I&lt;code&gt;m there.. suggestions are welcome , I&lt;/code&gt;m also heading back to Europe earlier than planned so I will miss BadCamp :( &amp;hellip;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://devopsdays.org/events/2011-goteborg/&#34;&gt;Devopsdays Goteborg, Sweden&lt;/a&gt; : &lt;em&gt;October 14,15&lt;/em&gt; - The yearly Europe devops event is happening in Goteborg this time. It&amp;rsquo;s going to be really exciting this time , as the theme is inclusive. Eploring the boundaries of devops, I`m once again in the organization of this conference.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://t-dose.org/&#34;&gt;T-Dose 2011&lt;/a&gt;, The Technical Dutch Open Source Event, on 5 and 6 november 2011 , I will be talking again about my experiences with complex Puppet setups&lt;/li&gt;&#xA;&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://citconf.com/&#34;&gt;Citconf , London&lt;/a&gt;: &lt;em&gt;November 11-12&lt;/em&gt; - All you ever wanted to know about Continuous Integration. Period, registered, haven&amp;rsquo;t booked flights yet.&lt;/del&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.cloudcamp.org/ghent&#34;&gt;Cloudcamp Belgium&lt;/a&gt;: &lt;em&gt;November 21&lt;/em&gt; - I&amp;rsquo;m looking forward to this year&amp;rsquo;s event, as there will likely more practioners and less marketing folks.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.usenix.org/events/lisa11/tech/tech.html#Buytaert&#34;&gt;Lisa 2011&lt;/a&gt;, Boston, US, I&lt;code&gt;m giving an Invited talk titled , Devops: The past and futre are here, It&#39;s just not evenly distributed (yet), and I&lt;/code&gt;ll be on a panel titled What Will Be HOt Next Year, really looking forward to this one :)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://fosdem.org/&#34;&gt;Fosdem.org&lt;/a&gt; will take place on 4 and 5 February 2012 , and as every year since it inception I&amp;rsquo;ll be there&lt;/li&gt;&#xA;&lt;li&gt;The UKUUG rebranded to &lt;a href=&#34;http://www.flossuk.org/Events/Spring2012/&#34;&gt;FlossUK&lt;/a&gt; , they are hosting their Annual Spring conference from 20th to 22nd March in Edinburgh , given their refound focus it will be even more interresting !&lt;/li&gt;&#xA;&lt;li&gt;And as announced earlier this week &lt;a href=&#34;http://loadays.org/&#34;&gt;Loadays.org&lt;/a&gt; will take place in Antwerp again this year on 31/3/2012 and 1/4/2012 , as the previous years I`m co organizing this conference&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;And yes, I do work from time to time. Just that these conferences are a great way to capture and share new ideas. All worth it!&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Conferences</title>
-      <link>http://localhost:1313/blog/conferences/</link>
+      <link>https://krisbuytaert.github.io/blog/conferences/</link>
       <pubDate>Thu, 20 Aug 2009 21:52:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/conferences/</guid>
+      <guid>https://krisbuytaert.github.io/blog/conferences/</guid>
       <description>&lt;p&gt;Somehow this year my schedule really isn&amp;rsquo;t going to get filled with conferences,unlike my 13 speaking engagements last year this year I decided to go for a lot less :)&lt;/p&gt;&#xA;&lt;p&gt;Froscon together with OpenSQLCamp is convienently scheduled during an already long planned family weekend .. but I really hope to go there nex year&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been wanting to go south for conferences for ages, Spain, France, Portugal, Italy , Greece are all places I&amp;rsquo;d love to go and see how the different Open Sourcen conferences play out there. This summer there actually were some different conferences tha took place in Spain, Gran Canaria etc . but I coouldn&amp;rsquo;t make it there for the &lt;a href=&#34;http://www.babietje.be/&#34;&gt;obvious reasons..&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open Conference Organizing</title>
-      <link>http://localhost:1313/blog/open-conference-organizing/</link>
+      <link>https://krisbuytaert.github.io/blog/open-conference-organizing/</link>
       <pubDate>Wed, 25 Mar 2009 16:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/open-conference-organizing/</guid>
+      <guid>https://krisbuytaert.github.io/blog/open-conference-organizing/</guid>
       <description>&lt;p&gt;There are a lot of great Open Source conferences out there, some of them organized by volunteers, some of them oranized by user groups, some by commecial entities, but none of them is so open as the last DrupalCon,&lt;/p&gt;&#xA;&lt;p&gt;In all its awesomeness the DrupalCon DC organization actually&lt;br&gt;&#xA;&lt;a href=&#34;http://dc2009.drupalcon.org/news/drupalcon-dc-numbers-community-profit-and-sustainability&#34;&gt;published&lt;/a&gt; it&amp;rsquo;s internal financial details for everybody to view.&lt;/p&gt;&#xA;&lt;p&gt;Try beating that :)&lt;/p&gt;&#xA;&lt;p&gt;Oh and while we are talking about conferences .. Fosdem has a &lt;a href=&#34;http://www.youtube.com/profile?user=fosdemtalks&amp;amp;view=videos&amp;amp;start=40&#34;&gt;YouTube&lt;/a&gt; channel with a lot of recorded fosdem talks available.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Conference Time</title>
-      <link>http://localhost:1313/blog/conference-time/</link>
+      <link>https://krisbuytaert.github.io/blog/conference-time/</link>
       <pubDate>Sun, 01 Mar 2009 22:22:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/conference-time/</guid>
+      <guid>https://krisbuytaert.github.io/blog/conference-time/</guid>
       <description>&lt;p&gt;Grab your calendars and mark the following dates :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.t-dose.org/t-dose/node/122&#34;&gt;T-Dose 2009&lt;/a&gt; will be held on 3 and 4 october in Eindhoven again.&lt;/p&gt;&#xA;&lt;p&gt;Last year we had a nice Drupal track, some great MySQL talks and , a great unplanned Cloud talk , and different other interesting talks, so this year promises also to be very interesting.&lt;br&gt;&#xA;(PS. Drupal Themers.. you might want to propose a new theme for the T-Dose site, who knows you&amp;rsquo;ll even win something)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monitoring MySQL</title>
-      <link>http://localhost:1313/blog/monitoring-mysql/</link>
+      <link>https://krisbuytaert.github.io/blog/monitoring-mysql/</link>
       <pubDate>Sun, 08 Feb 2009 16:16:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/monitoring-mysql/</guid>
+      <guid>https://krisbuytaert.github.io/blog/monitoring-mysql/</guid>
       <description>&lt;p&gt;The slides for my Monitoring MySQL talk , which I gave earlier today in an overcrowded MySQl Developersroom at Fosdem are now online, both at &lt;a href=&#34;http://www.krisbuytaert.be/presentations/MySQLMonitoringShootOut.odp&#34;&gt;my site&lt;/a&gt; and at &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out&#34;&gt;Slideshare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;As of now I actually expect people to use those slides for schoolwork or next year in a main Fosdem track :)&lt;br&gt;&#xA;As afterall that is the goal of Open Source and spreading the word ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out?type=presentation&#34; title=&#34;MySQL Monitoring Shoot Out&#34;&gt;MySQL Monitoring Shoot Out&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

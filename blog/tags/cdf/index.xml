@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cdf on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/cdf/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/cdf/</link>
     <description>Recent content in Cdf on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 May 2026 18:15:05 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/cdf/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/cdf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CDF Top Ambassador 2026</title>
-      <link>http://localhost:1313/blog/cdf-top-ambassador-2026/</link>
+      <link>https://krisbuytaert.github.io/blog/cdf-top-ambassador-2026/</link>
       <pubDate>Thu, 21 May 2026 18:15:05 +0200</pubDate>
-      <guid>http://localhost:1313/blog/cdf-top-ambassador-2026/</guid>
+      <guid>https://krisbuytaert.github.io/blog/cdf-top-ambassador-2026/</guid>
       <description>&lt;p&gt;Last year in San Diego I was invited to join the CD Foundation Ambassador program&#xA;Once you get involved in this kind of community you start to realize how much work there is left to be done&#xA;for organisations to really start doing Continuous Delivery.&lt;/p&gt;&#xA;&lt;p&gt;I was however quite surprised to actually be nominated for the 2026 Top Ambassador, (thnx to &lt;a href=&#34;https://www.linkedin.com/in/yair-etziony/&#34;&gt;Yair Etziony&lt;/a&gt; for nominating me.,&#xA;and therefore even more surprised to learn that I actually won the 2026 Top Ambassador Award.&lt;/p&gt;</description>
     </item>
   </channel>

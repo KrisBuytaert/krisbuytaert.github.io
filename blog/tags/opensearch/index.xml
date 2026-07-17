@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opensearch on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/opensearch/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/opensearch/</link>
     <description>Recent content in Opensearch on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/opensearch/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/opensearch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Opensearch Cli</title>
-      <link>http://localhost:1313/blog/opensearch-cli/</link>
+      <link>https://krisbuytaert.github.io/blog/opensearch-cli/</link>
       <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/opensearch-cli/</guid>
+      <guid>https://krisbuytaert.github.io/blog/opensearch-cli/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been busy doing some OpenSearch upgrades and migrations the past couple of months, and I was tired of running curl with different parameters to get the default health and other OpenSearch statuses.&#xA;Apart from that my muscle memory failed to get the right variety of parameters once in a while so I figured I just write a wrapper around  curl that would do a bunch of these things&#xA;easier for me.&lt;/p&gt;</description>
     </item>
   </channel>

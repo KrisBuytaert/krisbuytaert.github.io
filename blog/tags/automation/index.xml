@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Automation on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/automation/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/automation/</link>
     <description>Recent content in Automation on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Apr 2011 22:36:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The 4158 second catalog run.</title>
-      <link>http://localhost:1313/blog/4158-second-catalog-run/</link>
+      <link>https://krisbuytaert.github.io/blog/4158-second-catalog-run/</link>
       <pubDate>Wed, 20 Apr 2011 22:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/4158-second-catalog-run/</guid>
+      <guid>https://krisbuytaert.github.io/blog/4158-second-catalog-run/</guid>
       <description>&lt;p&gt;Two of my tweets , sorry dents, earlier today caused some people to ask me what on earth I was doing :)&lt;/p&gt;&#xA;&lt;p&gt;You don&amp;rsquo;t exist, go away!&lt;/p&gt;&#xA;&lt;p&gt;Was the first one, indeed .. it was a long time since I had actually seen that one.. this actually happens when you delete the user you are logged in with on a host, when the host notices you don&amp;rsquo;t exist anymore it will tell you.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Appliance or Not Appliance</title>
-      <link>http://localhost:1313/blog/appliance-or-not-appliance/</link>
+      <link>https://krisbuytaert.github.io/blog/appliance-or-not-appliance/</link>
       <pubDate>Wed, 12 Jan 2011 22:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/appliance-or-not-appliance/</guid>
+      <guid>https://krisbuytaert.github.io/blog/appliance-or-not-appliance/</guid>
       <description>&lt;p&gt;That&amp;rsquo;s the question &lt;a href=&#34;http://blog.rootshell.be/2011/01/05/security-diy-or-plugnplay/&#34;&gt;Xavier&lt;/a&gt; asks in his blog entry titled&lt;br&gt;&#xA;Security: DIY or Plug’n&amp;rsquo;Play&lt;/p&gt;&#xA;&lt;p&gt;To me the answer is simple, most of the appliances I ran into so far have no way of configuring them apart from the ugly webgui they ship with their device. That means that I can&amp;rsquo;t integrate them with the configuration management framework I have in place for the rest of the infrastructure. There is no way to automatically modify e.g firewall rules together with the relocation of a service which does happen automatically, and there is always some kind of manual interaction required. Applicances tend to sit on a island, either stay un managed ( be honest when&amp;rsquo;s the last time you upgraded the firmware of that terminal server ? ) , or take a lot of additional efort to manage manually. They require yet another set of tools than the set you are already using to manage your network.&lt;br&gt;&#xA;They don&amp;rsquo;t integrate with your backup strategy, and don&amp;rsquo;t tell me they all come with perfect MIB&amp;rsquo;s.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building Virtual Appliances</title>
-      <link>http://localhost:1313/blog/building-virtual-appliances/</link>
+      <link>https://krisbuytaert.github.io/blog/building-virtual-appliances/</link>
       <pubDate>Thu, 27 May 2010 10:03:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/building-virtual-appliances/</guid>
+      <guid>https://krisbuytaert.github.io/blog/building-virtual-appliances/</guid>
       <description>&lt;p&gt;Johan from &lt;a href=&#34;http://sizingservers.be/&#34;&gt;Sizing Servers&lt;/a&gt; asked me if I could talk about my experiences on building (virtual) appliances at their Advanced Virtualization and Hybrid Cloud seminar . Off course I said yes ..&lt;/p&gt;&#xA;&lt;p&gt;Slides are below &amp;hellip; Enjoy ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/building-appliances&#34; title=&#34;Building appliances&#34;&gt;Building appliances&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What does your BOFH want ? :)</title>
-      <link>http://localhost:1313/blog/what-does-your-bofh-want/</link>
+      <link>https://krisbuytaert.github.io/blog/what-does-your-bofh-want/</link>
       <pubDate>Thu, 29 Jan 2009 00:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/what-does-your-bofh-want/</guid>
+      <guid>https://krisbuytaert.github.io/blog/what-does-your-bofh-want/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.garfieldtech.com/blog/drupal-system-tools&#34;&gt;Larry&lt;/a&gt;, I`m glad you asked ..&lt;/p&gt;&#xA;&lt;p&gt;With the risk of receiving a flood of comments pointing me to already existing tools here&amp;rsquo;s my go at what I as a sysadmin of often large deployments am looking for in Drupalland .&lt;/p&gt;&#xA;&lt;p&gt;You suggest LDAP and syslog integration .. guess we already have that don&amp;rsquo;t we ?&lt;/p&gt;&#xA;&lt;p&gt;But what I haven&amp;rsquo;t found yet ..&lt;br&gt;&#xA;An rpm/deb repository of Drupal modules So we can do an apt-get install drupal-package , yes I know about Drush, but I want the files on my system to be in a package and clearly identified, it helps me keeping my system uncluttered.&lt;/p&gt;</description>
     </item>
   </channel>

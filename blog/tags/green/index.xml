@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Green on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/green/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/green/</link>
     <description>Recent content in Green on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Apr 2009 20:50:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/green/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/green/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On ugly clothing :)</title>
-      <link>http://localhost:1313/blog/ugly-clothing/</link>
+      <link>https://krisbuytaert.github.io/blog/ugly-clothing/</link>
       <pubDate>Wed, 15 Apr 2009 20:50:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/ugly-clothing/</guid>
+      <guid>https://krisbuytaert.github.io/blog/ugly-clothing/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://blogs.opennms.org/?p=774&#34;&gt;Tarus&lt;/a&gt; , when at the UKUUG conference a member of the order of the Green Polo was &lt;a href=&#34;http://www.krisbuytaert.be/blog/ukuug-spring-2009-conference-here-we-come#comment-3581&#34;&gt;presenting&lt;/a&gt; last month , I was wondering why he wasn&amp;rsquo;t wearing his Green Polo.&lt;/p&gt;&#xA;&lt;p&gt;Now I know&amp;hellip; it&amp;rsquo;s just like these ugly Green Jackets at the Masters, you have to return them to Augusta after one year :)&lt;/p&gt;</description>
     </item>
   </channel>

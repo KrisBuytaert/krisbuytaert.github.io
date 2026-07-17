@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SecOPS on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/secops/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/secops/</link>
     <description>Recent content in SecOPS on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jun 2010 23:10:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/secops/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/secops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>@Beaker on #Devops</title>
-      <link>http://localhost:1313/blog/beaker-devops/</link>
+      <link>https://krisbuytaert.github.io/blog/beaker-devops/</link>
       <pubDate>Tue, 01 Jun 2010 23:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/beaker-devops/</guid>
+      <guid>https://krisbuytaert.github.io/blog/beaker-devops/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.rationalsurvivability.com/blog/?p=1890&#34;&gt;Yesterday&lt;/a&gt; @beaker posted his ideas on the #devops movement &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Apparently we haven&amp;rsquo;t been stressing enough on the fact that it isn&amp;rsquo;t just about Devs and Ops,&lt;br&gt;&#xA;So let me &lt;a href=&#34;http://www.krisbuytaert.be/blog/devops-secops-dbaops-netops&#34;&gt;repeat&lt;/a&gt; it&amp;rsquo;s not just about Devs and Ops, it&amp;rsquo;s about breaking silo&amp;rsquo;s , about being good at our jobs, about getting conversation started, about talking to different stakeholders in the processes . We are absolutely trying to include all groups, not exclude some.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Call For Abstracts : NLUUG Fall Conference on Security</title>
-      <link>http://localhost:1313/blog/call-abstracts-nluug-fall-conference-security/</link>
+      <link>https://krisbuytaert.github.io/blog/call-abstracts-nluug-fall-conference-security/</link>
       <pubDate>Tue, 01 Jun 2010 19:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/call-abstracts-nluug-fall-conference-security/</guid>
+      <guid>https://krisbuytaert.github.io/blog/call-abstracts-nluug-fall-conference-security/</guid>
       <description>&lt;p&gt;For all the security experts : the NLUUG has published it&amp;rsquo;s &lt;a href=&#34;http://www.nluug.nl/activiteiten/events/nj10/cfp-en.html&#34;&gt;Call For Abstracts&lt;/a&gt; for it&amp;rsquo;s Fall conference.. as you might have guessed the topic is Security, we welcome all abstracts tackling security in a broad sense.&lt;/p&gt;&#xA;&lt;p&gt;Possible topics include:&lt;/p&gt;&#xA;&lt;p&gt;* cloud security&lt;br&gt;&#xA;* online privacy&lt;br&gt;&#xA;* rfid hacking&lt;br&gt;&#xA;* secure programming&lt;br&gt;&#xA;* programma-analysis-tools&lt;br&gt;&#xA;* web services security&lt;br&gt;&#xA;* web browser security&lt;br&gt;&#xA;* embedded hardware hacking&lt;br&gt;&#xA;* incident response and forensics&lt;br&gt;&#xA;* malware and rootkits&lt;br&gt;&#xA;* responsible disclosure&lt;br&gt;&#xA;* legal response&lt;br&gt;&#xA;* fighting spam&lt;br&gt;&#xA;* patch policies&lt;br&gt;&#xA;* identity management&lt;br&gt;&#xA;* central point of administration&lt;br&gt;&#xA;* DNSsec&lt;br&gt;&#xA;* VPN based WANs&lt;br&gt;&#xA;* etc.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DevOPS, SecOPS, DBAOps, NetOps</title>
-      <link>http://localhost:1313/blog/devops-secops-dbaops-netops/</link>
+      <link>https://krisbuytaert.github.io/blog/devops-secops-dbaops-netops/</link>
       <pubDate>Tue, 09 Mar 2010 23:39:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/devops-secops-dbaops-netops/</guid>
+      <guid>https://krisbuytaert.github.io/blog/devops-secops-dbaops-netops/</guid>
       <description>&lt;p&gt;This post is long overdue, as the idea struck me when dicussing with &lt;a href=&#34;http://lefred.be/&#34;&gt;Lefred&lt;/a&gt; while preparing his &lt;a href=&#34;http://www.lefred.be/?q=node/113&#34;&gt;Fosdem talk&lt;/a&gt; on Maintaining too big tables&lt;/p&gt;&#xA;&lt;p&gt;I got triggered finishing this post by &lt;a href=&#34;http://www.build-doctor.com/2010/03/09/devops-is-a-good-cause-but-what-about-opsops/&#34;&gt;Mr BuidlDoctor&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fred has been struggling with a typical DevOps problem resulting in the most unmanageable database setup possible, there&amp;rsquo;s little room for him to move but he managed is way out .. because he is &lt;a href=&#34;http://www.krisbuytaert.be/blog/apparently-devops-not-jobtitle#comment-3992&#34;&gt;good at his job&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;It set the mark for me that because in different organisations even the Opsteam is fragmented `in different groups that there also we need to get the Devops idea going.&lt;/p&gt;</description>
     </item>
   </channel>

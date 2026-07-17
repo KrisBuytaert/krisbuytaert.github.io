@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>False Feeling of Security on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/false-feeling-of-security/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/false-feeling-of-security/</link>
     <description>Recent content in False Feeling of Security on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Jan 2009 15:05:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/false-feeling-of-security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/false-feeling-of-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to suck at Security</title>
-      <link>http://localhost:1313/blog/how-suck-security/</link>
+      <link>https://krisbuytaert.github.io/blog/how-suck-security/</link>
       <pubDate>Sun, 18 Jan 2009 15:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/how-suck-security/</guid>
+      <guid>https://krisbuytaert.github.io/blog/how-suck-security/</guid>
       <description>&lt;p&gt;There is this great post over at &lt;a href=&#34;http://isc.sans.org/diary.html?storyid=5644&#34;&gt;sans.org&lt;/a&gt; Teaching people how to to suck at Security, (actually a reprint of &lt;a href=&#34;http://www.zeltser.com/security-management/suck-at-security-cheat-sheet.html&#34;&gt;this post&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Especially the remarks about security tools ..&lt;br&gt;&#xA;On how not to implement them or how to neglect configuring, afterall the default values must be secure enough.&lt;/p&gt;&#xA;&lt;p&gt;However My favorite&lt;br&gt;&#xA;Hire somebody just because he or she has a lot of certifications.&lt;br&gt;&#xA;I&amp;rsquo;d write Vendor Certifications however .. as independent certifications might have some use.. but if I`m looking for a security guy and he starts talking to me about his product certificatins, something is wrong..&lt;/p&gt;</description>
     </item>
   </channel>

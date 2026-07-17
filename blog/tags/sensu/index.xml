@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sensu on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/sensu/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/sensu/</link>
     <description>Recent content in Sensu on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Feb 2013 19:10:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/sensu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/sensu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Love, MonitoringLove</title>
-      <link>http://localhost:1313/blog/love-monitoringlove/</link>
+      <link>https://krisbuytaert.github.io/blog/love-monitoringlove/</link>
       <pubDate>Wed, 13 Feb 2013 19:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/love-monitoringlove/</guid>
+      <guid>https://krisbuytaert.github.io/blog/love-monitoringlove/</guid>
       <description>&lt;p&gt;Last year we were pretty negative about Monitoring, We shouted out that MonitoringSucked &amp;hellip; A year has passed and a lot has changed &amp;hellip; most importantly our new found love for monitoring, thanks to an inspirational Ignite talk by &lt;a href=&#34;https://twitter.com/ulfmansson&#34;&gt;Ulf Mansson&lt;/a&gt; at devopsdays Rome.&lt;/p&gt;&#xA;&lt;p&gt;Right after Fosdem about 20 people showed up at the #monitoringlove hacksessions hosted at the &lt;a href=&#34;http://www.inuits.eu/&#34;&gt;Inuits.eu&lt;/a&gt; offices to work on Open Source monitoring projects and exchange ideas. Some completely new people, some people with already a lot of experience.&lt;/p&gt;</description>
     </item>
   </channel>

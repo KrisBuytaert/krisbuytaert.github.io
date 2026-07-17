@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ansible on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/ansible/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/ansible/</link>
     <description>Recent content in Ansible on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Mar 2016 23:28:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lies, Damn Lies and Statistics, 2016 Edition</title>
-      <link>http://localhost:1313/blog/lies-damn-lies-and-statistics-2016-edition/</link>
+      <link>https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/</link>
       <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/lies-damn-lies-and-statistics-2016-edition/</guid>
+      <guid>https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/</guid>
       <description>&lt;p&gt;When people sign up for Configuration Management Camp, we ask them what community room they are mostly interested in.&lt;br&gt;&#xA;We ask this question because we have rooms in different sizes and we don&amp;rsquo;t want to put communities with 20 people showing interest in a 120 seat room and we don&amp;rsquo;t want to put a community with 200 people in a 60 seat room.&lt;/p&gt;&#xA;&lt;p&gt;But it also gives us to opportunity to build some very interesting graph over the potential evolution of the communities.&lt;/p&gt;</description>
     </item>
     <item>
       <title>2014 vs 2015 interest in Open Source Configuration Management</title>
-      <link>http://localhost:1313/blog/2014-vs-2015-interest-open-source-configuration-management/</link>
+      <link>https://krisbuytaert.github.io/blog/2014-vs-2015-interest-open-source-configuration-management/</link>
       <pubDate>Mon, 09 Feb 2015 22:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/2014-vs-2015-interest-open-source-configuration-management/</guid>
+      <guid>https://krisbuytaert.github.io/blog/2014-vs-2015-interest-open-source-configuration-management/</guid>
       <description>&lt;p&gt;A couple of people asked me to results of the survey of the 2015 vs 2014 Configuration Management Camp room interrests.&lt;/p&gt;&#xA;&lt;p&gt;This is a bunch of 350 last year and 420 people telling us what tools they are interested in so we can map the right roomsizes to the communities.&lt;/p&gt;&#xA;&lt;p&gt;2014 :&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://krisbuytaert.be/pics/2014.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;2015:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://krisbuytaert.be/pics/2015.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Enjoy.. but remember there&amp;rsquo;s Lies, Damn Lies and Statistics ..&lt;br&gt;&#xA;PS. this is a mostly European Audience .&lt;/p&gt;</description>
     </item>
   </channel>

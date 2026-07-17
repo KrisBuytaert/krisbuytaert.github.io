@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Standardize on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/standardize/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/standardize/</link>
     <description>Recent content in Standardize on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 14 Jun 2010 22:51:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/standardize/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/standardize/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Giving Devs a Dev platform</title>
-      <link>http://localhost:1313/blog/giving-devs-dev-platform/</link>
+      <link>https://krisbuytaert.github.io/blog/giving-devs-dev-platform/</link>
       <pubDate>Mon, 14 Jun 2010 22:51:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/giving-devs-dev-platform/</guid>
+      <guid>https://krisbuytaert.github.io/blog/giving-devs-dev-platform/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s a typical situation, the developers develop on their own boxen, they only start to integrate their code on on the production platform 3 hours before the deadline. And then the problems start, the typical &amp;ldquo;But it works on my system&amp;rdquo; , &amp;ldquo;its your problem now&amp;rdquo; is something nobody really likes to hear .&lt;/p&gt;&#xA;&lt;p&gt;So how do you tackle this problem ? &lt;a href=&#34;http://devops-abyss.blogspot.com/2010/03/application-is-only-running-on.html&#34;&gt;As Christian already mentions Talking&lt;/a&gt; is the first step of the solution,&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stability on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/stability/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/stability/</link>
     <description>Recent content in Stability on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jun 2009 20:30:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/stability/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/stability/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Twitter Woes</title>
-      <link>http://localhost:1313/blog/twitter-woes/</link>
+      <link>https://krisbuytaert.github.io/blog/twitter-woes/</link>
       <pubDate>Mon, 15 Jun 2009 20:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/twitter-woes/</guid>
+      <guid>https://krisbuytaert.github.io/blog/twitter-woes/</guid>
       <description>&lt;p&gt;This one has been sitting in the drafts for too long, but frankly there&amp;rsquo;s not much I have to add.&lt;br&gt;&#xA;Twitter is acting weird , we all know that .. but the following movie really beats everything.&lt;/p&gt;&#xA;&lt;p&gt;Yes that&amp;rsquo;s right what you are seeing is me logging into my twitter account, checking my @krisbuytaert&lt;br&gt;&#xA;messages and seeing the @vti messages and then even taking full control of their (in the mean while deleted) account.&lt;/p&gt;</description>
     </item>
   </channel>

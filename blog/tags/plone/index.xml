@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Plone on Everything is a Freaking DNS problem</title>
-    <link>http://localhost:1313/blog/tags/plone/</link>
+    <link>https://krisbuytaert.github.io/blog/tags/plone/</link>
     <description>Recent content in Plone on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Aug 2009 22:44:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/plone/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/plone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>T-Dose 2009 CFP,</title>
-      <link>http://localhost:1313/blog/t-dose-2009-cfp/</link>
+      <link>https://krisbuytaert.github.io/blog/t-dose-2009-cfp/</link>
       <pubDate>Sun, 09 Aug 2009 22:44:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/t-dose-2009-cfp/</guid>
+      <guid>https://krisbuytaert.github.io/blog/t-dose-2009-cfp/</guid>
       <description>&lt;p&gt;Dear MySQL and Drupal , Plone and other Open Source folks, you might want to be interrested in giving a talk at T-Dose 2009 ,&lt;/p&gt;&#xA;&lt;p&gt;Jean Paul pinged me with the following mail :&lt;/p&gt;&#xA;&lt;p&gt;Maybe it escaped your attention that the Call For Papers for T-DOSE 2009 is already out. It has been announced on 12th of June 2009. Below you will find the original announcement.&lt;/p&gt;&#xA;&lt;p&gt;Call for Papers and Projects&lt;br&gt;&#xA;Fri, 06/12/2009 - 13:57 — jpsaman&lt;/p&gt;</description>
     </item>
   </channel>
