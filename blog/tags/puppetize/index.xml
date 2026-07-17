@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Puppetize on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/puppetize/</link>
+    <link>http://localhost:1313/blog/tags/puppetize/</link>
     <description>Recent content in Puppetize on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Dec 2013 22:04:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/puppetize/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/puppetize/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FOSDEM 2014 is coming</title>
-      <link>https://krisbuytaert.github.io/blog/fosdem-2014-coming/</link>
+      <link>http://localhost:1313/blog/fosdem-2014-coming/</link>
       <pubDate>Sun, 22 Dec 2013 22:04:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/fosdem-2014-coming/</guid>
+      <guid>http://localhost:1313/blog/fosdem-2014-coming/</guid>
       <description>&lt;p&gt;and with that almost a full week of side events.&lt;br&gt;&#xA;For those who don&amp;rsquo;t know FOSDEM, (where have you been hiding for the past 13 years ? ) Fosdem is the annual Free and Open Source Developers European meeting. If you are into open source , you just can&amp;rsquo;t mis this event where thousands of likeminded people will meet.&lt;/p&gt;&#xA;&lt;p&gt;And if 2 days of FOSDEM madness isn&amp;rsquo;t enough people organise events around it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker vs Reality , 0 - 1</title>
-      <link>https://krisbuytaert.github.io/blog/docker-vs-reality-0-1/</link>
+      <link>http://localhost:1313/blog/docker-vs-reality-0-1/</link>
       <pubDate>Wed, 27 Nov 2013 23:36:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/docker-vs-reality-0-1/</guid>
+      <guid>http://localhost:1313/blog/docker-vs-reality-0-1/</guid>
       <description>&lt;p&gt;(aka the opinionated summary of the #devopsdays London November OpenSpace on , Containers and the new flood of Image Sprawl)&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a bunch of people out there that think I don&amp;rsquo;t like docker, they are wrong.&lt;/p&gt;&#xA;&lt;p&gt;I just never understood the hype about it since I didn&amp;rsquo;t see, (and still don&amp;rsquo;t) see it being used at large and people seem to understand that as being against it.&lt;/p&gt;&#xA;&lt;p&gt;So let me put a couple of things straight :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why you shouldn&#39;t hire a devops</title>
-      <link>https://krisbuytaert.github.io/blog/why-you-shouldnt-hire-devops/</link>
+      <link>http://localhost:1313/blog/why-you-shouldnt-hire-devops/</link>
       <pubDate>Wed, 22 May 2013 23:11:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/why-you-shouldnt-hire-devops/</guid>
+      <guid>http://localhost:1313/blog/why-you-shouldnt-hire-devops/</guid>
       <description>&lt;p&gt;Lately there have been a lot of organisations trying to hire a devops engineer.&lt;br&gt;&#xA;I myselve have been asked to fill in devops roles ..&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a number of issues with that.&lt;/p&gt;&#xA;&lt;p&gt;The biggest problem is that I always have to ask what exactly the organisation is looking for.&lt;/p&gt;&#xA;&lt;p&gt;So you want a devops engineer with experience in Linux, MongoDB, MySQL and Java , does that mean you want a Java developer who is familiar with MySQL and Linux and breaths a devops Culture.&lt;br&gt;&#xA;Or a Linux expert who understands Java developers and knows how to tune Mongo and MySQL ?&lt;/p&gt;</description>
     </item>
   </channel>

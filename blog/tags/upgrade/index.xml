@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Upgrade on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/upgrade/</link>
+    <link>http://localhost:1313/blog/tags/upgrade/</link>
     <description>Recent content in Upgrade on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 Jun 2010 22:50:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/upgrade/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/upgrade/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTC Hero Upgrade</title>
-      <link>https://krisbuytaert.github.io/blog/htc-hero-upgrade/</link>
+      <link>http://localhost:1313/blog/htc-hero-upgrade/</link>
       <pubDate>Fri, 18 Jun 2010 22:50:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/htc-hero-upgrade/</guid>
+      <guid>http://localhost:1313/blog/htc-hero-upgrade/</guid>
       <description>&lt;p&gt;This morning my HTC Hero told me it had an upgrade available.&lt;br&gt;&#xA;It wasn&amp;rsquo;t really the moment to do the upgrade.&lt;/p&gt;&#xA;&lt;p&gt;So when tonight I wanted to perform the upgrade I couldn&amp;rsquo;t really find out how to initiate it again .&lt;/p&gt;&#xA;&lt;p&gt;Apparently the trick is to put the date of your phone one month forward and you get the update request again.&lt;/p&gt;&#xA;&lt;p&gt;So my phone has been updated &amp;hellip; so let&amp;rsquo;s hope this indeed was the preparation for a real upgrade ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Migrate, MultiSite and Restyle</title>
-      <link>https://krisbuytaert.github.io/blog/migrate-multisite-and-restyle/</link>
+      <link>http://localhost:1313/blog/migrate-multisite-and-restyle/</link>
       <pubDate>Fri, 14 Nov 2008 20:56:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/migrate-multisite-and-restyle/</guid>
+      <guid>http://localhost:1313/blog/migrate-multisite-and-restyle/</guid>
       <description>&lt;p&gt;Done&lt;/p&gt;&#xA;&lt;p&gt;Some of my lower traffic sites were still on an old Drupal 5, others were at 6.4 and lots of modules were outdated. So I set out to migrate all the sites to a multisite setup. I now have a set of shared modules , shared themes and some specific ones .. just as it is meant to be. And I only have 1 central Drupal instance to upgrade. Next step is figuring out how to trigger the database upgrades from 1 central place.&lt;/p&gt;</description>
     </item>
   </channel>

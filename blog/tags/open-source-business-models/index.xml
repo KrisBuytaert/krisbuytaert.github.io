@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open Source Business Models on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/open-source-business-models/</link>
+    <link>http://localhost:1313/blog/tags/open-source-business-models/</link>
     <description>Recent content in Open Source Business Models on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Jul 2013 22:27:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/open-source-business-models/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/open-source-business-models/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open Business Models</title>
-      <link>https://krisbuytaert.github.io/blog/open-business-models/</link>
+      <link>http://localhost:1313/blog/open-business-models/</link>
       <pubDate>Wed, 10 Jul 2013 22:27:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/open-business-models/</guid>
+      <guid>http://localhost:1313/blog/open-business-models/</guid>
       <description>&lt;p&gt;When I started writing this I wrote &amp;ldquo;Last week Opscode came&amp;rdquo; obviously now that is &amp;ldquo;A couple of months ago Opscode came with a bunch of announcements &amp;hellip; one of them being that they are also going to &lt;a href=&#34;http://www.opscode.com/blog/2013/02/04/announcing-commercial-support-for-open-source-chef/&#34;&gt;support the Open Source Chef&lt;/a&gt; .. rather than only their own platform.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;d love to see more companies formally do this .. Over the past couple of years I&amp;rsquo;ve had numerous situations where organizations where happy to pay for support to an commercial backer of Open Source software&amp;hellip; but they were not interested in , software updates, fancy dashboards , unneeded features.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open Source, Open Core, Open ScoreCards</title>
-      <link>https://krisbuytaert.github.io/blog/open-source-open-core-open-scorecards/</link>
+      <link>http://localhost:1313/blog/open-source-open-core-open-scorecards/</link>
       <pubDate>Tue, 13 Oct 2009 22:06:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/open-source-open-core-open-scorecards/</guid>
+      <guid>http://localhost:1313/blog/open-source-open-core-open-scorecards/</guid>
       <description>&lt;p&gt;There is this constant discussion about Open Core vs Open Source vs Proprietary Software , Fauxpen Source, Open Source Business models etc.. you probably know all the usual suspects involved, first up lets agree that nobody will ever agree on what&amp;rsquo;s best, (off course it&amp;rsquo;s pure open source.. ) , but one of the important aspects is to know what values are important for you and your customers&lt;/p&gt;&#xA;&lt;p&gt;Simon Phipps thinks we should &lt;a href=&#34;http://blogs.sun.com/webmink/entry/building_a_scorecard_for_open&#34;&gt;build&lt;/a&gt; a scorecard that lists the different values we attach to a certain level of openness&lt;/p&gt;</description>
     </item>
     <item>
       <title>It&#39;s the solutions you build with it !</title>
-      <link>https://krisbuytaert.github.io/blog/its-solutions-you-build-it/</link>
+      <link>http://localhost:1313/blog/its-solutions-you-build-it/</link>
       <pubDate>Thu, 01 Oct 2009 19:50:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/its-solutions-you-build-it/</guid>
+      <guid>http://localhost:1313/blog/its-solutions-you-build-it/</guid>
       <description>&lt;p&gt;I`m gonna have to quote &lt;a href=&#34;http://www.adventuresinoss.com/?p=1141&#34;&gt;Tarus&lt;/a&gt; once again :&lt;/p&gt;&#xA;&lt;p&gt;For years now I’ve been struggling to educate the market on the fact that the business around open source software is not about software. It’s about solutions.&lt;/p&gt;&#xA;&lt;p&gt;Let me repeat that .. it&amp;rsquo;s not about selling software &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;It&amp;rsquo;s about solutions&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;And obviously FLOSS is the Ideal platform to build value for your customers&lt;/p&gt;</description>
     </item>
     <item>
       <title>Told Ya sooo</title>
-      <link>https://krisbuytaert.github.io/blog/told-ya-sooo/</link>
+      <link>http://localhost:1313/blog/told-ya-sooo/</link>
       <pubDate>Tue, 02 Jun 2009 23:36:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/told-ya-sooo/</guid>
+      <guid>http://localhost:1313/blog/told-ya-sooo/</guid>
       <description>&lt;p&gt;By now everybody and their neigbour has realized that indeed Everything is a funky dns problem, Frank is giving talks about it at ZooCamp, and &lt;a href=&#34;#&#34;&gt;Serge&lt;/a&gt; figured out the hard way the downtime of planet.geekdinner.be was due to a dns problem :)&lt;/p&gt;&#xA;&lt;p&gt;But I told you different things before &amp;hellip; and some of you listened others are still reinventing the wheel as we go &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://news.cnet.com/8301-13505_3-10249201-16.html?part=rss&amp;amp;tag=feed&amp;amp;subj=TheOpenRoad&#34;&gt;Matt A.&lt;/a&gt; points out that the OpenBravo folks &lt;a href=&#34;http://paolojuvara.blogspot.com/2009/05/extend-dont-customize.html&#34;&gt;realized&lt;/a&gt; that one should try to build on top of Open Source projects rather than modify core code ..&lt;/p&gt;</description>
     </item>
   </channel>

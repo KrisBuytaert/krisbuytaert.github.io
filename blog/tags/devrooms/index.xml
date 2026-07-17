@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devrooms on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/devrooms/</link>
+    <link>http://localhost:1313/blog/tags/devrooms/</link>
     <description>Recent content in Devrooms on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Dec 2009 20:52:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/devrooms/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/devrooms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fosdem 2010 is getting closer</title>
-      <link>https://krisbuytaert.github.io/blog/fosdem-2010-getting-closer/</link>
+      <link>http://localhost:1313/blog/fosdem-2010-getting-closer/</link>
       <pubDate>Wed, 09 Dec 2009 20:52:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/fosdem-2010-getting-closer/</guid>
+      <guid>http://localhost:1313/blog/fosdem-2010-getting-closer/</guid>
       <description>&lt;p&gt;The 10th edition of Fosdem is getting closer, yes .. I said 10 ,10 decimal that means ten, not two :)&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s kinda hard to imagine that this is actually going to be my 10th fosdem , it feels weird ..&lt;/p&gt;&#xA;&lt;p&gt;Anyhow.. &lt;a href=&#34;http://www.lenzg.net/&#34;&gt;Lenz&lt;/a&gt; just &lt;a href=&#34;http://blogs.sun.com/MySQL/entry/call_for_papers_for_mysql&#34;&gt;announced&lt;/a&gt; a call for participation for the MySQL and Friends devroom.&lt;/p&gt;&#xA;&lt;p&gt;I`m guessing a talk on &lt;a href=&#34;http://www.aaronbassett.com/tag/lolsql/&#34;&gt;.LolSQL&lt;/a&gt; might be a good fit for the &amp;ldquo;and Friends&amp;rdquo; part.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.fosdem.org/&#34;&gt;&lt;img src=&#34;http://www.fosdem.org/promo/fosdem&#34; alt=&#34;FOSDEM, the Free and Open Source Software Developers&amp;rsquo; European Meeting&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stupidme on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/stupidme/</link>
+    <link>http://localhost:1313/blog/tags/stupidme/</link>
     <description>Recent content in Stupidme on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Jul 2009 21:33:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/stupidme/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/stupidme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KVM vs Virtualbox</title>
-      <link>https://krisbuytaert.github.io/blog/kvm-vs-virtualbox/</link>
+      <link>http://localhost:1313/blog/kvm-vs-virtualbox/</link>
       <pubDate>Thu, 30 Jul 2009 21:33:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/kvm-vs-virtualbox/</guid>
+      <guid>http://localhost:1313/blog/kvm-vs-virtualbox/</guid>
       <description>&lt;p&gt;So you need that old FC9 instance on your fresh F11 install.&lt;/p&gt;&#xA;&lt;p&gt;Obviously I started a KVM instance on my desktop and installed FC9 in a Virtual Machine,&lt;br&gt;&#xA;It took long to install, too long, so I looked if KVM was working correctly&lt;br&gt;&#xA;Kvm was loaded but not in use ..&lt;br&gt;&#xA;And then you remember why you had VirtualBox on that machine before it&amp;rsquo;s upgrade . indeed, this machine was to old it was not a VT Capable machine . VirtualBox performs much better there ..&lt;/p&gt;</description>
     </item>
   </channel>

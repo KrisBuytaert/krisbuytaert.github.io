@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Presentation on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/presentation/</link>
+    <link>http://localhost:1313/blog/tags/presentation/</link>
     <description>Recent content in Presentation on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Jun 2010 21:19:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A parallel universe</title>
-      <link>https://krisbuytaert.github.io/blog/parallel-universe/</link>
+      <link>http://localhost:1313/blog/parallel-universe/</link>
       <pubDate>Mon, 21 Jun 2010 21:19:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/parallel-universe/</guid>
+      <guid>http://localhost:1313/blog/parallel-universe/</guid>
       <description>&lt;p&gt;What happens when you mention &lt;a href=&#34;http://www.youtube.com/watch?v=ph6ZeEDnFmc&#34;&gt;Open Office and Firewall&lt;/a&gt; in once sentence, in public ?&lt;/p&gt;&#xA;&lt;p&gt;People start actually building &lt;a href=&#34;http://www.wzdftpd.net/blog/index.php?2010/06/16/46-le-pare-feu-openoffice&#34;&gt;it&lt;/a&gt; (French Article)&lt;/p&gt;&#xA;&lt;p&gt;Then add to that list that there&amp;rsquo;s also people out there that think that running MySQL over NFS is providing them High Availability, or that using DNS Round Robin will provide them a scalable setup,&lt;/p&gt;&#xA;&lt;p&gt;So yes .. apparently there is indeed a parallel universe out there.&lt;/p&gt;&#xA;&lt;p&gt;And no .. I don&amp;rsquo;t want to see &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/building-appliances&#34;&gt;Webmin&lt;/a&gt; in any Appliance .. that is a joke&amp;hellip;, or rather a rant ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Loadays CFP</title>
-      <link>https://krisbuytaert.github.io/blog/loadays-cfp/</link>
+      <link>http://localhost:1313/blog/loadays-cfp/</link>
       <pubDate>Thu, 11 Feb 2010 22:55:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/loadays-cfp/</guid>
+      <guid>http://localhost:1313/blog/loadays-cfp/</guid>
       <description>&lt;p&gt;I would like to point the crowd to the Call For Presentaions of Loadays. , the Linux Open Administration Days .&lt;/p&gt;&#xA;&lt;p&gt;The Linux Open Administration days 2010 will be the first edition of a new conference focusing on Linux and Open Administration, we are trying to fill a gap for System Engineers and Administrators using Open Source technologies&amp;quot;&lt;/p&gt;&#xA;&lt;p&gt;More details on the &lt;a href=&#34;http://loadays.org/news/call-presentations&#34;&gt;Linux Open Administration Days site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll probably be there .. given the fact that the event will be 5 minutes from where I live .&lt;/p&gt;</description>
     </item>
     <item>
       <title>VirtSec, and Open Source</title>
-      <link>https://krisbuytaert.github.io/blog/virtsec-and-open-source/</link>
+      <link>http://localhost:1313/blog/virtsec-and-open-source/</link>
       <pubDate>Mon, 16 Mar 2009 20:51:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/virtsec-and-open-source/</guid>
+      <guid>http://localhost:1313/blog/virtsec-and-open-source/</guid>
       <description>&lt;p&gt;The slides from the presentation I gave last friday at Lsec are now online, both at &lt;a href=&#34;http://www.krisbuytaert.be/presentations/VirtSec.odp&#34;&gt;My Site&lt;/a&gt; and on &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/virtsec-and-the-open-source-impact&#34;&gt;Slideshare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/virtsec-and-the-open-source-impact?type=powerpoint&#34; title=&#34;VirtSec,  and the Open Source impact&#34;&gt;VirtSec, and the Open Source impact&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I learned a lot last friday , I`ll be talking to some more people about the technical details , but be expecting some of my findings on &lt;a href=&#34;http://virtualization.com/&#34;&gt;Virtualization.com&lt;/a&gt; soon :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>MySQL Presentation on Slideshare</title>
-      <link>https://krisbuytaert.github.io/blog/mysql-presentation-slideshare/</link>
+      <link>http://localhost:1313/blog/mysql-presentation-slideshare/</link>
       <pubDate>Mon, 09 Feb 2009 10:04:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/mysql-presentation-slideshare/</guid>
+      <guid>http://localhost:1313/blog/mysql-presentation-slideshare/</guid>
       <description>&lt;p&gt;I just got mail that my presentation on &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out&#34;&gt;MySQL Monitoring ShootOut&lt;/a&gt; is currently being showcased on the &lt;a href=&#34;http://www.slideshare.net/category/technology&#34;&gt;&amp;lsquo;Technology&amp;rsquo; page&lt;/a&gt; by the slideshare editorial team.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s likely to be there for the next 16-20 hours&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Thnx folks !&lt;/p&gt;</description>
     </item>
   </channel>

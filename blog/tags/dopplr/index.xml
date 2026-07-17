@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dopplr on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/dopplr/</link>
+    <link>http://localhost:1313/blog/tags/dopplr/</link>
     <description>Recent content in Dopplr on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 18 Feb 2009 21:54:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/dopplr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/dopplr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Social Network “Friend” Policy (Updated again)</title>
-      <link>https://krisbuytaert.github.io/blog/policy/</link>
+      <link>http://localhost:1313/blog/policy/</link>
       <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/policy/</guid>
+      <guid>http://localhost:1313/blog/policy/</guid>
       <description>&lt;p&gt;Over the past few years I have joined several social networking sites and continue to use a few of them regularly. These sites serve different purposes for me and I have started to come up with strategies of whom to connect with where. Here are the general guidelines that I have developed (subject to spontaneous change and arbitrary override).&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;On &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;LinkedIn&lt;/a&gt; I only link with people that I know in person , worked with in real life or have worked with online intensively in different open source projects. , have communicated with over different media. there are couple of exceptions in my connections from my early days when I didn&amp;rsquo;t have my own set of rules yet. (Some of them have been unlinked now actually)&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Social Network “Friend” Policy (Updated again)</title>
-      <link>https://krisbuytaert.github.io/blog/social/</link>
+      <link>http://localhost:1313/blog/social/</link>
       <pubDate>Wed, 18 Feb 2009 21:54:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/social/</guid>
+      <guid>http://localhost:1313/blog/social/</guid>
       <description>&lt;p&gt;Over the past few years I have joined several social networking sites and continue to use a few of them regularly. These sites serve different purposes for me and I have started to come up with strategies of whom to connect with where. Here are the general guidelines that I have developed (subject to spontaneous change and arbitrary override).&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;On &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;LinkedIn&lt;/a&gt; I only link with people that I know in person , worked with in real life or have worked with online intensively in different open source projects. , have communicated with over different media. there are couple of exceptions in my connections from my early days when I didn&amp;rsquo;t have my own set of rules yet. (Some of them have been unlinked now actually)&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Want to be Social Network</title>
-      <link>https://krisbuytaert.github.io/blog/want-be-social-network/</link>
+      <link>http://localhost:1313/blog/want-be-social-network/</link>
       <pubDate>Sat, 01 Nov 2008 13:00:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/want-be-social-network/</guid>
+      <guid>http://localhost:1313/blog/want-be-social-network/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://blogs.mysql.com/kaj/2008/10/31/dopplr-joining-the-social-network-for-travellers/&#34;&gt;Kaj&lt;/a&gt; wrote about using &lt;a href=&#34;http://www.dopplr.com/traveller/KrisBuytaert&#34;&gt;Dopplr&lt;/a&gt; to keep track of where colegues and friends are traveling and finding out about accidental meetups. (I even use it to track where one of the Inuits collegues work plans)&lt;br&gt;&#xA;Now I have never met &lt;a href=&#34;http://datacharmer.blogspot.com/&#34;&gt;Giuseppe&lt;/a&gt; , but we shared slides before so I&amp;rsquo;d love to meet him one day .. connecting to him via Dopplr gives me that opportunity .. who knows one day Dopplr will tell me we have matching travel schedules.&lt;/p&gt;</description>
     </item>
   </channel>

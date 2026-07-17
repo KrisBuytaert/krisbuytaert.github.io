@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rpm on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/rpm/</link>
+    <link>http://localhost:1313/blog/tags/rpm/</link>
     <description>Recent content in Rpm on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Jul 2015 08:35:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/rpm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/rpm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The power of packaging software, package all the things</title>
-      <link>https://krisbuytaert.github.io/blog/power-packaging-software-package-all-things/</link>
+      <link>http://localhost:1313/blog/power-packaging-software-package-all-things/</link>
       <pubDate>Tue, 28 Jul 2015 08:35:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/power-packaging-software-package-all-things/</guid>
+      <guid>http://localhost:1313/blog/power-packaging-software-package-all-things/</guid>
       <description>&lt;p&gt;Software delivery is hard, plenty of people all over this planet are struggling with delivering software in their own controlled environment. They have invented great patterns that will build an artifact, then do some magic and the application is up and running.&lt;/p&gt;&#xA;&lt;p&gt;When talking about continuous delivery, people invariably discus their delivery pipeline and the different components that need to be in that pipeline.&lt;br&gt;&#xA;Often, the focus on getting the application deployed or upgraded from that pipeline is so strong that teams&lt;br&gt;&#xA;forget how to deploy their environment from scratch.&lt;/p&gt;</description>
     </item>
     <item>
       <title>To Package,  and what to package</title>
-      <link>https://krisbuytaert.github.io/blog/package-and-what-package/</link>
+      <link>http://localhost:1313/blog/package-and-what-package/</link>
       <pubDate>Mon, 01 Nov 2010 21:20:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/package-and-what-package/</guid>
+      <guid>http://localhost:1313/blog/package-and-what-package/</guid>
       <description>&lt;p&gt;One of the open sessions last week (corr: last month) at Devopsdays 2010 Hamburg was the one on packaging software. It&amp;rsquo;s always a big question on wether you package the software that runs in your infrastructure or not. And if you package it .. what do you package ..&lt;/p&gt;&#xA;&lt;p&gt;The general consensus of the open space was pretty much that you always package the software you deploy, unless you have some very good reasons not to. Pretty much the way I&amp;rsquo;ve been doing for ages ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Packaging Drupal Modules  or not ?</title>
-      <link>https://krisbuytaert.github.io/blog/packaging-drupal-modules-or-not/</link>
+      <link>http://localhost:1313/blog/packaging-drupal-modules-or-not/</link>
       <pubDate>Tue, 16 Feb 2010 22:20:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/packaging-drupal-modules-or-not/</guid>
+      <guid>http://localhost:1313/blog/packaging-drupal-modules-or-not/</guid>
       <description>&lt;p&gt;So &lt;a href=&#34;http://bitfieldconsulting.com/puppet-drupal&#34;&gt;John&lt;/a&gt; wrote down his experiences on deploying Drupal sites with Puppet .&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s not a secret that I&amp;rsquo;ve been thinking about similar stuff and how I could get to the best possible setup.&lt;/p&gt;&#xA;&lt;p&gt;John starts of with using Puppet to download Drush&amp;hellip; while I want to use &lt;a href=&#34;http://repo.inuits.be/centos/5/os/noarch/drush-All-Versions-2.1-1.noarch.rpm&#34;&gt;rpm&lt;/a&gt; for that &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;I want my core infrastructure to be fully packaged&amp;hellip; not downloaded and untarred. I want to be able to reproduce my platform in a couple of months , with the exact same versions I`m using now .. not with the version that happens to be on ftp.drupal.org at that point in time, or with ftp.drupal.org being down.&lt;/p&gt;</description>
     </item>
     <item>
       <title>To not yum or to not apt-get, that&#39;s NOT the question.</title>
-      <link>https://krisbuytaert.github.io/blog/not-yum-or-not-apt-get-thats-not-question/</link>
+      <link>http://localhost:1313/blog/not-yum-or-not-apt-get-thats-not-question/</link>
       <pubDate>Tue, 16 Feb 2010 22:13:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/not-yum-or-not-apt-get-thats-not-question/</guid>
+      <guid>http://localhost:1313/blog/not-yum-or-not-apt-get-thats-not-question/</guid>
       <description>&lt;p&gt;Over at the &lt;a href=&#34;http://code.openark.org/blog/mysql/to-not-yum-or-to-not-apt-get&#34;&gt;OPenARK blog&lt;/a&gt; Shlomi Noach argues that using apt-get or yum to install your MySQL instance will one day most likeley break your MySQL setup. Depdendencies, distros not shipping the MySQL version you want to use and on some distro&amp;rsquo;s indeed the mysql vs MySQL issue, agreed, it all makes things less trivial.&lt;/p&gt;&#xA;&lt;p&gt;However why give up a clean packaged system if there are other ways out ?&lt;/p&gt;&#xA;&lt;p&gt;First of all by claiming that such an installation can break a working production environment looks to me like admitting you don&amp;rsquo;t have a split development, production environment and that rather than testing stuff upfront indeed you just hack a long in production.&lt;/p&gt;</description>
     </item>
     <item>
       <title>F12 Dependency failure</title>
-      <link>https://krisbuytaert.github.io/blog/f12-dependency-failure/</link>
+      <link>http://localhost:1313/blog/f12-dependency-failure/</link>
       <pubDate>Tue, 19 Jan 2010 21:34:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/f12-dependency-failure/</guid>
+      <guid>http://localhost:1313/blog/f12-dependency-failure/</guid>
       <description>&lt;p&gt;Fresh laptop arrived, obviously the first thing to do is to install the latest fedora. then do a full yum update.&lt;/p&gt;&#xA;&lt;p&gt;However that failed with the following failed dependency\&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. mesa-libGL-7.7-2.fc12.i686 from updates has depsolving problems&#xA;2. --&amp;gt; Missing Dependency: libdrm &amp;gt;= 2.4.17-1 is needed by package mesa-libGL-7.7-2.fc12.i686 (updates)&#xA;3. Error: Missing Dependency: libdrm &amp;gt;= 2.4.17-1 is needed by package mesa-libGL-7.7-2.fc12.i686 (updates)&#xA;4. You could try using --skip-broken to work around the problem&#xA;5. You could try running: package-cleanup --problems&#xA;6. package-cleanup --dupes&#xA;7. rpm -Va --nofiles --nodigest&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now I don&amp;rsquo;t really use all the fancy compiz stuff so for now I can just solve it by running&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drupal6 in EPEL</title>
-      <link>https://krisbuytaert.github.io/blog/drupal6-epel/</link>
+      <link>http://localhost:1313/blog/drupal6-epel/</link>
       <pubDate>Wed, 06 Jan 2010 00:48:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/drupal6-epel/</guid>
+      <guid>http://localhost:1313/blog/drupal6-epel/</guid>
       <description>&lt;p&gt;Dear Drupal Community,&lt;/p&gt;&#xA;&lt;p&gt;If any of you are interrested in getting a packaged version of Drupal 6 into Fedora&amp;rsquo;s EPEL repository (Extra Packages for Enterprise Linux) and therefore usable in RHEL and Centos,&lt;br&gt;&#xA;please comment on the &lt;a href=&#34;https://bugzilla.redhat.com/show_bug.cgi?id=552717&#34;&gt;Bug&lt;/a&gt; I filed to get it&amp;rsquo;s introduction started.&lt;/p&gt;&#xA;&lt;p&gt;Any pitfalls, benefits etc are welcome ..&lt;/p&gt;&#xA;&lt;p&gt;thnx in advance !&lt;/p&gt;</description>
     </item>
     <item>
       <title>Packaging Djagios</title>
-      <link>https://krisbuytaert.github.io/blog/packaging-djagios/</link>
+      <link>http://localhost:1313/blog/packaging-djagios/</link>
       <pubDate>Sun, 20 Dec 2009 22:42:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/packaging-djagios/</guid>
+      <guid>http://localhost:1313/blog/packaging-djagios/</guid>
       <description>&lt;p&gt;After all the politics involved in getting a package in a distro, or not it was time for a nice small and clean package of a fresh and promising open source project. &lt;a href=&#34;http://www.djagios.org/&#34;&gt;Djagios&lt;/a&gt; was an easy choice.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve uploade the &lt;a href=&#34;http://repo.inuits.be/centos/5/os/noarch/djagios-0.1.3-1.noarch.rpm&#34;&gt;rpm&lt;/a&gt; and &lt;a href=&#34;http://repo.inuits.be/centos/5/os/SRPMS/djagios-0.1.3-1.src.rpm&#34;&gt;Source RPM&lt;/a&gt; to repo.inuits.be and getting the SPEC file in the upstream repo was 10 minutes work.&lt;/p&gt;&#xA;&lt;p&gt;Next step is to get it into Fedora , and EPEL :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Packaging Drush</title>
-      <link>https://krisbuytaert.github.io/blog/packaging-drush/</link>
+      <link>http://localhost:1313/blog/packaging-drush/</link>
       <pubDate>Sun, 20 Dec 2009 22:41:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/packaging-drush/</guid>
+      <guid>http://localhost:1313/blog/packaging-drush/</guid>
       <description>&lt;p&gt;A couple of weeks ago I was once again manually installing Drush as there were no packages for CentOS / EPEL or whatever, apart from the &lt;a href=&#34;http://drupal.org/node/502452&#34;&gt;needed patch&lt;/a&gt;  to get it running on a 5.1.X RHEL php&lt;/p&gt;&#xA;&lt;p&gt;I had found &lt;a href=&#34;http://drupal.org/node/508086&#34;&gt;this&lt;/a&gt; thread on Drupal.org mentioning that a package already exists&lt;br&gt;&#xA;however David had not answered the exact location yet&lt;br&gt;&#xA;So I created a drush package with a with the above mentionned patch and sent it to Jon Ciesla again he gave some suprising feedback ;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drupal 6 for EPEL</title>
-      <link>https://krisbuytaert.github.io/blog/drupal-6-epel/</link>
+      <link>http://localhost:1313/blog/drupal-6-epel/</link>
       <pubDate>Sun, 20 Dec 2009 22:39:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/drupal-6-epel/</guid>
+      <guid>http://localhost:1313/blog/drupal-6-epel/</guid>
       <description>&lt;p&gt;Some of you might have noticed that Fedora 11 and up already have an up to date Drupal6 version, but EPEL , which is what a lot of people are using on their CentOS or RHEL builds only has a Drupal5. I asked Jon Ciesla, who is maintaing the Drupal packages in Fedora why :&lt;/p&gt;&#xA;&lt;p&gt;Because when Drupal was initially built for EL-5 and EL-5, the 5.x&lt;br&gt;&#xA;branch was the current release. It&amp;rsquo;s up to date, 5.20 is the most&lt;br&gt;&#xA;recent release, and is still supported upstream in terms of security&lt;br&gt;&#xA;fixes. 6 is out, and has been for awhile, but we have the following:&lt;/p&gt;</description>
     </item>
   </channel>

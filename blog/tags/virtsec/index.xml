@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Virtsec on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/virtsec/</link>
+    <link>http://localhost:1313/blog/tags/virtsec/</link>
     <description>Recent content in Virtsec on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 16 Mar 2009 20:51:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/virtsec/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/virtsec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VirtSec, and Open Source</title>
-      <link>https://krisbuytaert.github.io/blog/virtsec-and-open-source/</link>
+      <link>http://localhost:1313/blog/virtsec-and-open-source/</link>
       <pubDate>Mon, 16 Mar 2009 20:51:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/virtsec-and-open-source/</guid>
+      <guid>http://localhost:1313/blog/virtsec-and-open-source/</guid>
       <description>&lt;p&gt;The slides from the presentation I gave last friday at Lsec are now online, both at &lt;a href=&#34;http://www.krisbuytaert.be/presentations/VirtSec.odp&#34;&gt;My Site&lt;/a&gt; and on &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/virtsec-and-the-open-source-impact&#34;&gt;Slideshare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/virtsec-and-the-open-source-impact?type=powerpoint&#34; title=&#34;VirtSec,  and the Open Source impact&#34;&gt;VirtSec, and the Open Source impact&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I learned a lot last friday , I`ll be talking to some more people about the technical details , but be expecting some of my findings on &lt;a href=&#34;http://virtualization.com/&#34;&gt;Virtualization.com&lt;/a&gt; soon :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Conference Time</title>
-      <link>https://krisbuytaert.github.io/blog/conference-time/</link>
+      <link>http://localhost:1313/blog/conference-time/</link>
       <pubDate>Sun, 01 Mar 2009 22:22:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/conference-time/</guid>
+      <guid>http://localhost:1313/blog/conference-time/</guid>
       <description>&lt;p&gt;Grab your calendars and mark the following dates :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.t-dose.org/t-dose/node/122&#34;&gt;T-Dose 2009&lt;/a&gt; will be held on 3 and 4 october in Eindhoven again.&lt;/p&gt;&#xA;&lt;p&gt;Last year we had a nice Drupal track, some great MySQL talks and , a great unplanned Cloud talk , and different other interesting talks, so this year promises also to be very interesting.&lt;br&gt;&#xA;(PS. Drupal Themers.. you might want to propose a new theme for the T-Dose site, who knows you&amp;rsquo;ll even win something)&lt;/p&gt;</description>
     </item>
   </channel>

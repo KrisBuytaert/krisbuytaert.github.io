@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open Core on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/open-core/</link>
+    <link>http://localhost:1313/blog/tags/open-core/</link>
     <description>Recent content in Open Core on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Oct 2009 22:06:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/open-core/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/open-core/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open Source, Open Core, Open ScoreCards</title>
-      <link>https://krisbuytaert.github.io/blog/open-source-open-core-open-scorecards/</link>
+      <link>http://localhost:1313/blog/open-source-open-core-open-scorecards/</link>
       <pubDate>Tue, 13 Oct 2009 22:06:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/open-source-open-core-open-scorecards/</guid>
+      <guid>http://localhost:1313/blog/open-source-open-core-open-scorecards/</guid>
       <description>&lt;p&gt;There is this constant discussion about Open Core vs Open Source vs Proprietary Software , Fauxpen Source, Open Source Business models etc.. you probably know all the usual suspects involved, first up lets agree that nobody will ever agree on what&amp;rsquo;s best, (off course it&amp;rsquo;s pure open source.. ) , but one of the important aspects is to know what values are important for you and your customers&lt;/p&gt;&#xA;&lt;p&gt;Simon Phipps thinks we should &lt;a href=&#34;http://blogs.sun.com/webmink/entry/building_a_scorecard_for_open&#34;&gt;build&lt;/a&gt; a scorecard that lists the different values we attach to a certain level of openness&lt;/p&gt;</description>
     </item>
     <item>
       <title>It&#39;s the solutions you build with it !</title>
-      <link>https://krisbuytaert.github.io/blog/its-solutions-you-build-it/</link>
+      <link>http://localhost:1313/blog/its-solutions-you-build-it/</link>
       <pubDate>Thu, 01 Oct 2009 19:50:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/its-solutions-you-build-it/</guid>
+      <guid>http://localhost:1313/blog/its-solutions-you-build-it/</guid>
       <description>&lt;p&gt;I`m gonna have to quote &lt;a href=&#34;http://www.adventuresinoss.com/?p=1141&#34;&gt;Tarus&lt;/a&gt; once again :&lt;/p&gt;&#xA;&lt;p&gt;For years now I’ve been struggling to educate the market on the fact that the business around open source software is not about software. It’s about solutions.&lt;/p&gt;&#xA;&lt;p&gt;Let me repeat that .. it&amp;rsquo;s not about selling software &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;It&amp;rsquo;s about solutions&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;And obviously FLOSS is the Ideal platform to build value for your customers&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Open Source &#34;Channel&#34;</title>
-      <link>https://krisbuytaert.github.io/blog/open-source-channel/</link>
+      <link>http://localhost:1313/blog/open-source-channel/</link>
       <pubDate>Wed, 15 Apr 2009 23:55:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/open-source-channel/</guid>
+      <guid>http://localhost:1313/blog/open-source-channel/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.redhat.com/about/news/prarchive/2009/open-source-channel-alliance.html&#34;&gt;RedHat&lt;/a&gt; announced the launch of the Open Source Channel Alliance, and &lt;a href=&#34;http://opendotdotdot.blogspot.com/2009/04/channelling-power-of-open-source.html&#34;&gt;different folks&lt;/a&gt; already commented on it ..&lt;/p&gt;&#xA;&lt;p&gt;Frankly I think the Open Source &amp;ldquo;Channel&amp;rdquo; shouldn&amp;rsquo;t exist ..&lt;/p&gt;&#xA;&lt;p&gt;So let&amp;rsquo;s take a step back and see what the &amp;ldquo;Channel&amp;rdquo; actually means.&lt;/p&gt;&#xA;&lt;p&gt;It used to mean that a vendor didn&amp;rsquo;t want to manage the logistics of shipping and delivering his product to the end user, you know .. like the big boxen used 3rd parties to provide the logistics, often that &amp;ldquo;enduser&amp;rdquo; being a local system integrator that wasn&amp;rsquo;t allowed, and still isn&amp;rsquo;t, to order his stuff from the actual vendor, either because he is ordering in too small quantities or any other reasons. Logistics became marketing support , offering training and sometimes presales support.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tarus for president !</title>
-      <link>https://krisbuytaert.github.io/blog/tarus-president/</link>
+      <link>http://localhost:1313/blog/tarus-president/</link>
       <pubDate>Thu, 12 Feb 2009 14:12:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/tarus-president/</guid>
+      <guid>http://localhost:1313/blog/tarus-president/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://blogs.opennms.org/?p=611&#34;&gt;Just read it !&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The only unrealistic part about the scenario is that I fear that most purchasers within a government agency won&amp;rsquo;t be asking these questions, yet.&lt;/p&gt;</description>
     </item>
   </channel>

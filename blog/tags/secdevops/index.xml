@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Secdevops on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/secdevops/</link>
+    <link>http://localhost:1313/blog/tags/secdevops/</link>
     <description>Recent content in Secdevops on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jun 2010 19:53:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/secdevops/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/secdevops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Call For Abstracts : NLUUG Fall Conference on Security</title>
-      <link>https://krisbuytaert.github.io/blog/call-abstracts-nluug-fall-conference-security/</link>
+      <link>http://localhost:1313/blog/call-abstracts-nluug-fall-conference-security/</link>
       <pubDate>Tue, 01 Jun 2010 19:53:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/call-abstracts-nluug-fall-conference-security/</guid>
+      <guid>http://localhost:1313/blog/call-abstracts-nluug-fall-conference-security/</guid>
       <description>&lt;p&gt;For all the security experts : the NLUUG has published it&amp;rsquo;s &lt;a href=&#34;http://www.nluug.nl/activiteiten/events/nj10/cfp-en.html&#34;&gt;Call For Abstracts&lt;/a&gt; for it&amp;rsquo;s Fall conference.. as you might have guessed the topic is Security, we welcome all abstracts tackling security in a broad sense.&lt;/p&gt;&#xA;&lt;p&gt;Possible topics include:&lt;/p&gt;&#xA;&lt;p&gt;* cloud security&lt;br&gt;&#xA;* online privacy&lt;br&gt;&#xA;* rfid hacking&lt;br&gt;&#xA;* secure programming&lt;br&gt;&#xA;* programma-analysis-tools&lt;br&gt;&#xA;* web services security&lt;br&gt;&#xA;* web browser security&lt;br&gt;&#xA;* embedded hardware hacking&lt;br&gt;&#xA;* incident response and forensics&lt;br&gt;&#xA;* malware and rootkits&lt;br&gt;&#xA;* responsible disclosure&lt;br&gt;&#xA;* legal response&lt;br&gt;&#xA;* fighting spam&lt;br&gt;&#xA;* patch policies&lt;br&gt;&#xA;* identity management&lt;br&gt;&#xA;* central point of administration&lt;br&gt;&#xA;* DNSsec&lt;br&gt;&#xA;* VPN based WANs&lt;br&gt;&#xA;* etc.&lt;/p&gt;</description>
     </item>
   </channel>

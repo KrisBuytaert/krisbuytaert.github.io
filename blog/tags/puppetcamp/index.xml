@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Puppetcamp on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/puppetcamp/</link>
+    <link>http://localhost:1313/blog/tags/puppetcamp/</link>
     <description>Recent content in Puppetcamp on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Jan 2013 12:21:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/puppetcamp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/puppetcamp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>#devops Conference Season heating up...</title>
-      <link>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</link>
+      <link>http://localhost:1313/blog/devops-conference-season-heating/</link>
       <pubDate>Sun, 13 Jan 2013 12:21:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</guid>
+      <guid>http://localhost:1313/blog/devops-conference-season-heating/</guid>
       <description>&lt;p&gt;My last post has been a while &amp;hellip; in that I announced that there would be another event right before FOSDEM &amp;hellip; I totally forgot to announce it here but I`m sure that most of you already know. Yes. PuppetCamp Europe is coming back to it&amp;rsquo;s roots&amp;hellip; it&amp;rsquo;s coming back to the city where we hosted it for the first time on this side of the ocean.. Gent. (that&amp;rsquo;s 31/1 and 1/2 )&lt;/p&gt;</description>
     </item>
     <item>
       <title>FlossUK and Puppetcamp Edinburgh</title>
-      <link>https://krisbuytaert.github.io/blog/flossuk-and-puppetcamp-edinburgh/</link>
+      <link>http://localhost:1313/blog/flossuk-and-puppetcamp-edinburgh/</link>
       <pubDate>Fri, 23 Mar 2012 16:49:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/flossuk-and-puppetcamp-edinburgh/</guid>
+      <guid>http://localhost:1313/blog/flossuk-and-puppetcamp-edinburgh/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve just finished presenting my talk on how I currently work on Puppet modules at Puppetcamp here in Edinburgh where I&amp;rsquo;ve been for the week talking on both FlossUK 2012 and Puppetcamp.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/7-tools-for-your-devops-stack&#34; title=&#34;7 tools for your devops stack&#34;&gt;7 tools for your devops stack&lt;/a&gt;&lt;/strong&gt; \&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Earlier this week I opened FlossUK 2012 with my talk on 7 tools for your devops stack&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/how-ihackonpuppetmodules&#34; title=&#34;How I hack on puppet modules&#34;&gt;How I hack on puppet modules&lt;/a&gt;&lt;/strong&gt; \&lt;/p&gt;</description>
     </item>
     <item>
       <title>Beyond Configuration Mgmt</title>
-      <link>https://krisbuytaert.github.io/blog/beyond-configuration-mgmt/</link>
+      <link>http://localhost:1313/blog/beyond-configuration-mgmt/</link>
       <pubDate>Wed, 25 May 2011 23:18:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/beyond-configuration-mgmt/</guid>
+      <guid>http://localhost:1313/blog/beyond-configuration-mgmt/</guid>
       <description>&lt;p&gt;(This post has been sitting in the drafts folder for way to long, I decided to push the publish button anyhow .. some people might get ideas from it..)&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ve all run in to the problem, you&amp;rsquo;ve puppetized, or euh .. cooked , about every part of your infrastructure and then there&amp;rsquo;s this one service which has no config files, a broken api that doesn&amp;rsquo;t allow you to configure antyhing, but a magnificent web gui to configure all aspects of the service. Magnificent for the eye , full of AJAX and other fancy stuff which wget isn&amp;rsquo;t really keen on. Off course before it even starts working you need to set it&amp;rsquo;s password , from that webgui.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PuppetCamp Europe  2010</title>
-      <link>https://krisbuytaert.github.io/blog/puppetcamp-europe-2010/</link>
+      <link>http://localhost:1313/blog/puppetcamp-europe-2010/</link>
       <pubDate>Tue, 01 Jun 2010 21:59:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/puppetcamp-europe-2010/</guid>
+      <guid>http://localhost:1313/blog/puppetcamp-europe-2010/</guid>
       <description>&lt;p&gt;Last week was pretty heavy on conferences for me. On wednesday I had to give my &lt;a href=&#34;http://www.krisbuytaert.be/blog/building-virtual-apliances&#34;&gt;Building Virtual Appliances&lt;/a&gt; talk at the at the Sizing Server event on Advanced Virtualization and Hybrid Cloud Computing , but the most important part of the week was the first edition of Puppetcamp Europe.&lt;/p&gt;&#xA;&lt;p&gt;When the first ideas about PuppetCamp Europe started I asked Luke when and where it&amp;rsquo;d be held. He replied that I should know as I was supposed to organise it&amp;hellip; I thanked for the honour , he went on to ask &lt;a href=&#34;http://jedi.be/blog/&#34;&gt;Patrick&lt;/a&gt; , he accepted &amp;hellip; I hope I helped him out enough :) I even handed out a personal invitation to some of the most famous configuration mgmt people on this planet and &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; sponsored the event too&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upcoming Conference Talks</title>
-      <link>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</link>
+      <link>http://localhost:1313/blog/upcoming-conference-talks/</link>
       <pubDate>Mon, 01 Feb 2010 22:04:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</guid>
+      <guid>http://localhost:1313/blog/upcoming-conference-talks/</guid>
       <description>&lt;p&gt;I know the biggest part of my fanclub already booked tickets for my upcoming presentations, but the other 2 might want to check their calendars to see if they aren&amp;rsquo;t missing out on the good stuff :)&lt;/p&gt;&#xA;&lt;p&gt;Next Sunday I`ll giving a shortish overview of &lt;a href=&#34;http://www.fosdem.org/2010/schedule/events/mysql_ha&#34;&gt;MySQL HA alternatives&lt;/a&gt; in the MySQL and Friends devroom at Fosdem.&lt;/p&gt;&#xA;&lt;p&gt;March will bring me to Manchester again for the &lt;a href=&#34;http://spring2010.ukuug.org/Timetable&#34;&gt;UKUUG Spring conference&lt;/a&gt; where I`ll be giving a longer version of that presentation with a strong focus on integrating with PaceMaker, and automating the whole boostrap procedure of a HA setup.&lt;/p&gt;</description>
     </item>
   </channel>

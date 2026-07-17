@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hpc on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/hpc/</link>
+    <link>http://localhost:1313/blog/tags/hpc/</link>
     <description>Recent content in Hpc on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Nov 2007 17:54:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/hpc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/tags/hpc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mattx Brings Back Openmosix Vibes</title>
+      <link>http://localhost:1313/blog/mattx-brings-back-openmosix-vibes/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/mattx-brings-back-openmosix-vibes/</guid>
+      <description>&lt;p&gt;Some weeks ago  Matt Rechenburg posted about MattX , A Modern openMosix Re-Implementation for Linux 6.x&lt;br&gt;&#xA;he tagged me in the post and obviously I was triggered,  having spent years in the openMosix community , first writing the Howto, then later being the release manager , testing and getting rid of the&#xA;openMosixFS ,   I wanted to see how things would work again today.&lt;/p&gt;&#xA;&lt;p&gt;My first attempts at getting things to work were a quick failure,  Matt had been bitten by the Works on My machine bug &amp;hellip; it worked on his Debian setup, but not on my Fedora testbed,&#xA;and while there is nothing wrong with Debian, that&amp;rsquo;s kinda a really small scope,  so obviously I reached out ,  we&amp;rsquo;ve been chatting on and off.  And I`m happy to&#xA;see that I have now seen the first processes migrate in my Lab setup on my AlmaLinux boxen :)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Scaling Drupal</title>
-      <link>https://krisbuytaert.github.io/blog/scaling-drupal/</link>
+      <link>http://localhost:1313/blog/scaling-drupal/</link>
       <pubDate>Sat, 10 Nov 2007 17:54:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/scaling-drupal/</guid>
+      <guid>http://localhost:1313/blog/scaling-drupal/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.johnandcailin.com/usernode/john&#34;&gt;John Quinn&lt;/a&gt; writes about &lt;a href=&#34;http://www.johnandcailin.com/blog/john/scaling-drupal-open-source-infrastructure-high-traffic-drupal-sites&#34;&gt;Scaling Drupal&lt;/a&gt; he is taking a one step at a time approach and is still writing his 4th and 5 stages.&lt;/p&gt;&#xA;&lt;p&gt;His first step obviously is separating the drupal from a separate database server, and he chooses mysql for this purpose, moving your DB to a different machine is a good thing to do.&lt;/p&gt;&#xA;&lt;p&gt;However then he gets this crazy idea of using NFS to share his his drupal shared files :(&lt;br&gt;&#xA;(he even dares to mention that the setup ease is good) Folks, we abandonned NFS in the late nineties. NFS is still a recipe for disaster, it has performance issues , it as stability issues (stale locks), and no security admin in his right mind will tolerate portmap to be running in his DMZ.&lt;br&gt;&#xA;(Also think about the IO path that one has to follow to serve a static file to a surfer when the file is stored on a remote NFS volume)&lt;/p&gt;</description>
     </item>
   </channel>

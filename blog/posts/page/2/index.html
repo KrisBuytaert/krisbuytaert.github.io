@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Posts | Everything is a Freaking DNS problem</title>
   <link rel="stylesheet" href="/blog/css/style.css">
-  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="http://localhost:1313/blog/index.xml">
 </head>
 <body>
   <header>
-    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <h1><a href="http://localhost:1313/blog/">Everything is a Freaking DNS problem</a></h1>
     <p class="tagline">Devops Needs Sushi</p>
   </header>
   <div class="layout">
     <main>
       
 <h2>Posts</h2>
+
+<article class="summary">
+  <h3><a href="/blog/docker-and-volumes-hell/">Docker and volumes hell</a></h3>
+  <p class="meta"><time datetime="2016-05-28">May 28, 2016</time></p>
+  <p><p>We&rsquo;re increasingly using Docker to build packages, a fresh chroot in which we prepare a number of packages, builds typically for ruby (rvm) , or python (virtualenv) or node stuf where the language ecosystem fails on us &hellip; and fpm the whole tree as a working artifact.</p>
+<p>An example of such a build is my work on packaging Dashing. <a href="https://github.com/KrisBuytaert/build-dashing">https://github.com/KrisBuytaert/build-dashing</a></p>
+<p>Now part of that build is running the actual build script in docker with a local volume mounted inside the container This is your typical -v=/home/src/dashing-docker/package-scripts:/scripts param.</p></p>
+</article>
 
 <article class="summary">
   <h3><a href="/blog/its-just-rubber-some-air-it/">It&#39;s just rubber , with some air in it.</a></h3>
@@ -100,14 +108,6 @@ Complexity is the enemy of reliability.</p>
 <p>Are some of the more frequently heard arguments in the systemd discussion. Indeed I see and hear a lot of senior Linux people react openly and probably way to late against the introduction of systemd in a lot of our favorite Linux distributions.</p>
 <p>To me this is a typical example of the devops gap. The gap between developers writing code and operations needing to manage that code on production platforms at scale.<br>
 Often developers writing code that they think is useful and relevant while they are not listening to their target audience , in this case not the end users of the systems but the people that are maintaining the platforms. The people that work on a daily base with these tools.</p></p>
-</article>
-
-<article class="summary">
-  <h3><a href="/blog/upcoming-conferences/">Upcoming Conferences</a></h3>
-  <p class="meta"><time datetime="2014-08-12">August 12, 2014</time></p>
-  <p><p>After not being able to give my planned Ignite at #devopsdays Amsterdam because I was down with the flu here&rsquo;s some fresh opportunities to listen to my rants :)</p>
-<p>In September I`ll be talking at PuppetConf 2014, San Francisco , USA about some of the horror stories we went trough over the past couple of years when deploying infrastructure the automated fasion.</p>
-<p>Just one week later I`ll be opening the #devops track at DrupalCon Amsterdam together with @cyberswat (Kevin Bridges) where we&rsquo;ll talk about the current state of #drupal and #devops , We&rsquo;ll be reopening the #drupal and #devops survey shortly, more info about that later here..</p></p>
 </article>
 
 
@@ -258,6 +258,10 @@ Often developers writing code that they think is useful and relevant while they 
     about the same subjects in different books, papers and articles.</p>
   </section>
 
+  
+  
+  
+
   <section class="nav-links">
     <h3>Links</h3>
     <ul>
@@ -268,7 +272,7 @@ Often developers writing code that they think is useful and relevant while they 
       <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a></li>
 
 
-      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+      <li><a href="http://localhost:1313/blog/index.xml">RSS Feed</a></li>
 
 
       <li><a href="https://devopsdays.org">devopsdays.org</a></li>
@@ -281,25 +285,25 @@ Often developers writing code that they think is useful and relevant while they 
     <h3>Recent Posts</h3>
     <ul>
       
-      <li><a href="https://krisbuytaert.github.io/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></li>
+      <li><a href="http://localhost:1313/blog/opensearch-cli/">Opensearch Cli</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/cdf-top-ambassador-2026/">CDF Top Ambassador 2026</a></li>
+      <li><a href="http://localhost:1313/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      <li><a href="http://localhost:1313/blog/cdf-top-ambassador-2026/">CDF Top Ambassador 2026</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      <li><a href="http://localhost:1313/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      <li><a href="http://localhost:1313/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      <li><a href="http://localhost:1313/blog/115-factor-apps/">11.5 Factor apps</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      <li><a href="http://localhost:1313/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      <li><a href="http://localhost:1313/blog/will-containers-take-over/">Will containers take over ?</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
+      <li><a href="http://localhost:1313/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/docker-and-volumes-hell/">Docker and volumes hell</a></li>
+      <li><a href="http://localhost:1313/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
       
     </ul>
   </section>
@@ -1500,46 +1504,58 @@ Often developers writing code that they think is useful and relevant while they 
       
         
       
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/devops/">devops</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/drupal/">drupal</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/mysql/">mysql</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/puppet/">puppet</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/open-source/">open source</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/opensource/">opensource</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/dnsproblem/">dnsproblem</a></li>
+      <li><a href="http://localhost:1313/blog/tags/devops/">devops</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/ha/">ha</a></li>
+      <li><a href="http://localhost:1313/blog/tags/drupal/">drupal</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/fosdem/">fosdem</a></li>
+      <li><a href="http://localhost:1313/blog/tags/mysql/">mysql</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/chef/">chef</a></li>
+      <li><a href="http://localhost:1313/blog/tags/open-source/">open source</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/dns/">dns</a></li>
+      <li><a href="http://localhost:1313/blog/tags/puppet/">puppet</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/fedora/">fedora</a></li>
+      <li><a href="http://localhost:1313/blog/tags/opensource/">opensource</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/virtualization/">virtualization</a></li>
+      <li><a href="http://localhost:1313/blog/tags/dnsproblem/">dnsproblem</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/xen/">xen</a></li>
+      <li><a href="http://localhost:1313/blog/tags/ha/">ha</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/centos/">centos</a></li>
+      <li><a href="http://localhost:1313/blog/tags/fosdem/">fosdem</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/conference/">conference</a></li>
+      <li><a href="http://localhost:1313/blog/tags/chef/">chef</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/monitoringsucks/">monitoringsucks</a></li>
+      <li><a href="http://localhost:1313/blog/tags/dns/">dns</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/rpm/">rpm</a></li>
+      <li><a href="http://localhost:1313/blog/tags/fedora/">fedora</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/zenoss/">zenoss</a></li>
+      <li><a href="http://localhost:1313/blog/tags/virtualization/">virtualization</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/kvm/">kvm</a></li>
+      <li><a href="http://localhost:1313/blog/tags/xen/">xen</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/centos/">centos</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/conference/">conference</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/monitoringsucks/">monitoringsucks</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/rpm/">rpm</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/kvm/">kvm</a></li>
       
     </ul>
   </section>

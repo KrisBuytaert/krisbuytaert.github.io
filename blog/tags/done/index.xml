@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Done on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/done/</link>
+    <link>http://localhost:1313/blog/tags/done/</link>
     <description>Recent content in Done on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 May 2015 19:05:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/done/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/done/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What done REALLY looks like in devops</title>
-      <link>https://krisbuytaert.github.io/blog/what-done-really-looks-devops/</link>
+      <link>http://localhost:1313/blog/what-done-really-looks-devops/</link>
       <pubDate>Sun, 03 May 2015 19:05:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/what-done-really-looks-devops/</guid>
+      <guid>http://localhost:1313/blog/what-done-really-looks-devops/</guid>
       <description>&lt;p&gt;Steve Ropa blogged about &lt;a href=&#34;http://blogs.versionone.com/agile_management/2015/04/30/what-done-looks-like-in-devops/&#34;&gt;What done looks like in devops&lt;/a&gt; , I must say I respecfullly , but fully disagree with Steve here.&lt;/p&gt;&#xA;&lt;p&gt;For those of you that remember I gave an Ignite about my views on the use of the Definition of Done back ad #deovpsdays 2013 in Amsterdam.&lt;/p&gt;&#xA;&lt;p&gt;In the early days we talked about the #devops movement partly being a reaction against the late friday night deployments where the ops people got a tarball with some minimalistic notes and were supposed to put stuff in production. The work of the development team was Done, but the operations team work just started.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Done  Ignite</title>
-      <link>https://krisbuytaert.github.io/blog/done-ignite/</link>
+      <link>http://localhost:1313/blog/done-ignite/</link>
       <pubDate>Wed, 03 Jul 2013 00:05:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/done-ignite/</guid>
+      <guid>http://localhost:1313/blog/done-ignite/</guid>
       <description>&lt;p&gt;Last month I gave an 5 minute Ignite talk at #devopsdays Amsterdam.&lt;/p&gt;&#xA;&lt;p&gt;To summarize .. it was a rant against people that think that the end of a sprint their work is done, an idea they might have gotten from a broken definition of done.&lt;/p&gt;&#xA;&lt;p&gt;Both the video recording and the slides are embedded below.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/do-disnot-done&#34; title=&#34;Dod is not done&#34;&gt;Dod is not done&lt;/a&gt;&lt;/strong&gt;  from &lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

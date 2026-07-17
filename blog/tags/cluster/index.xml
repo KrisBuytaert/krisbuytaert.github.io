@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cluster on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/cluster/</link>
+    <link>http://localhost:1313/blog/tags/cluster/</link>
     <description>Recent content in Cluster on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Apr 2010 23:17:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/cluster/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/cluster/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MySQL HA , an alternative approach</title>
-      <link>https://krisbuytaert.github.io/blog/mysql-ha-alternative-approach/</link>
+      <link>http://localhost:1313/blog/mysql-ha-alternative-approach/</link>
       <pubDate>Wed, 28 Apr 2010 23:17:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/mysql-ha-alternative-approach/</guid>
+      <guid>http://localhost:1313/blog/mysql-ha-alternative-approach/</guid>
       <description>&lt;p&gt;For those who&amp;rsquo;ve seen my presentation on MySQL HA, you already know that I often use a multimaster setup with a meta OCF resource that groups my favoured MySQL instance with the service ip , using a meta resource means that pacemaker monitors mysql, but it doesn&amp;rsquo;t actually manage it. It&amp;rsquo;s an approach that works for us.&lt;/p&gt;&#xA;&lt;p&gt;One of the other approaches I will be looking at soon is the freshly released OCF resource that &lt;a href=&#34;http://fghaas.wordpress.com/2010/04/21/mysql-masterslave-support-now-merged-into-linux-ha/&#34;&gt;Florian&lt;/a&gt; announced last week.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nines , Damn Nines  and More Nines</title>
-      <link>https://krisbuytaert.github.io/blog/nines-damn-nines-and-more-nines/</link>
+      <link>http://localhost:1313/blog/nines-damn-nines-and-more-nines/</link>
       <pubDate>Mon, 19 Oct 2009 23:46:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/nines-damn-nines-and-more-nines/</guid>
+      <guid>http://localhost:1313/blog/nines-damn-nines-and-more-nines/</guid>
       <description>&lt;p&gt;Funny how different experiences lead to different evaluations of tools. The MySQL HA solutions &lt;a href=&#34;http://www.mysqlperformanceblog.com/2009/10/16/finding-your-mysql-high-availability-solution-%E2%80%93-the-questions/&#34;&gt;the MySQL Performanceblog&lt;/a&gt; list, are almost listed in the complete opposited order of what my impressions are.&lt;/p&gt;&#xA;&lt;p&gt;Ok agreed, I should probably not put my MySQL NDB experiences from 2-3 years ago with multiple Query of deaths and more problems than you into account anymore , but back then went in the list Less stable than a single node. I&amp;rsquo;ve had NDB POC setups going down for much more than 05:16 minutes&lt;br&gt;&#xA;Ndb comes with a lot of restrictions, there are&lt;/p&gt;</description>
     </item>
     <item>
       <title>On the Future of Lustre</title>
-      <link>https://krisbuytaert.github.io/blog/future-lustre/</link>
+      <link>http://localhost:1313/blog/future-lustre/</link>
       <pubDate>Fri, 14 Sep 2007 11:53:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/future-lustre/</guid>
+      <guid>http://localhost:1313/blog/future-lustre/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.prnewswire.com/cgi-bin/stories.pl?ACCT=104&amp;amp;STORY=/www/story/09-12-2007/0004661104&amp;amp;EDATE&#34;&gt;&lt;br&gt;&#xA;So Sun bought ClusterFS&lt;/a&gt;. I&lt;code&gt;m wondering what their focus will be now. What will be the prime platform on which Lustre will be developed Solaris or Linux ? Will other efforts in the open source cluster filesystem area react on this ? Will Lustre development speed up ? Will management become less complex ?\ Time will tell .. I&lt;/code&gt;m keeping an eye on it&lt;/p&gt;</description>
     </item>
   </channel>

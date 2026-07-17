@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linuxconf on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/linuxconf/</link>
+    <link>http://localhost:1313/blog/tags/linuxconf/</link>
     <description>Recent content in Linuxconf on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 13 Sep 2012 22:27:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/linuxconf/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/linuxconf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gentwerpen Devops Meetup  &amp; Conference Season Update</title>
-      <link>https://krisbuytaert.github.io/blog/gentwerpen-devops-meetup-conference-season-update/</link>
+      <link>http://localhost:1313/blog/gentwerpen-devops-meetup-conference-season-update/</link>
       <pubDate>Thu, 13 Sep 2012 22:27:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/gentwerpen-devops-meetup-conference-season-update/</guid>
+      <guid>http://localhost:1313/blog/gentwerpen-devops-meetup-conference-season-update/</guid>
       <description>&lt;p&gt;A couple of us have been taking about it a lot already .. we wanted to host a one day #devops event in .be already last year.. then talks about starting a meetup group started again with @wonko_be but it was @fs111 pushing the final button and calling the rest of the .be community to order, we&amp;rsquo;ve set a date&lt;br&gt;&#xA;and the first session will take place (agenda still needs to be detirmined)&lt;/p&gt;</description>
     </item>
   </channel>

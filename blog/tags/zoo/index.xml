@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zoo on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/zoo/</link>
+    <link>http://localhost:1313/blog/tags/zoo/</link>
     <description>Recent content in Zoo on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 May 2009 12:06:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/zoo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/zoo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ZooCamp</title>
-      <link>https://krisbuytaert.github.io/blog/zoocamp/</link>
+      <link>http://localhost:1313/blog/zoocamp/</link>
       <pubDate>Tue, 19 May 2009 12:06:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/zoocamp/</guid>
+      <guid>http://localhost:1313/blog/zoocamp/</guid>
       <description>&lt;p&gt;Less than 1 week till ZooCamp, you know .. Barcamp Antwerp 2, but then in the Antwerp Zoo.&lt;/p&gt;&#xA;&lt;p&gt;Register &lt;a href=&#34;http://register.zoocamp.be/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>CloudCamp Antwerp</title>
-      <link>https://krisbuytaert.github.io/blog/cloudcamp-antwerp-0/</link>
+      <link>http://localhost:1313/blog/cloudcamp-antwerp-0/</link>
       <pubDate>Fri, 10 Apr 2009 21:21:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/cloudcamp-antwerp-0/</guid>
+      <guid>http://localhost:1313/blog/cloudcamp-antwerp-0/</guid>
       <description>&lt;p&gt;So yesterday a 100+ crowd met in the Antwerp Zoo.&lt;br&gt;&#xA;I heard different comments from that crowd&amp;hellip; some of them liked the event, good networking, interresting topics , a broad overview, meeting new vendors active in the Cloud, others of them didn&amp;rsquo;t .. it wasn&amp;rsquo;t a real camp , just some vendors pitching, they didn&amp;rsquo;t hear any new stuff , or we didn&amp;rsquo;t touch the real stuff.&lt;/p&gt;&#xA;&lt;p&gt;So different opinions from different expectations&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>CloudCamp Antwerp</title>
-      <link>https://krisbuytaert.github.io/blog/cloudcamp-antwerp/</link>
+      <link>http://localhost:1313/blog/cloudcamp-antwerp/</link>
       <pubDate>Tue, 17 Mar 2009 22:28:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/cloudcamp-antwerp/</guid>
+      <guid>http://localhost:1313/blog/cloudcamp-antwerp/</guid>
       <description>&lt;p&gt;After CloudCamp London , having approx 5-600 visitors according to certain &lt;a href=&#34;http://www.cloudave.com/link/cloudcamp-gets-big-in-london&#34;&gt;blog posts&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;One of the next up is line is &lt;a href=&#34;http://cloudcamp-antwerp-09.eventbrite.com/&#34;&gt;CloudCamp Antwerp&lt;/a&gt; , I`m pretty sure there won&amp;rsquo;t be 500-600 showing up at the Zoo to watch the penguins , great location &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;For those of you travelling from abroad, note that London City Airport is less than an hour from Antwerp , so no excuses there.. that and we have much better beer !&lt;/p&gt;</description>
     </item>
   </channel>

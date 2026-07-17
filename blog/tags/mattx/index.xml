@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mattx on Everything is a Freaking DNS problem</title>
+    <link>http://localhost:1313/blog/tags/mattx/</link>
+    <description>Recent content in Mattx on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/tags/mattx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mattx Brings Back Openmosix Vibes</title>
+      <link>http://localhost:1313/blog/mattx-brings-back-openmosix-vibes/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/mattx-brings-back-openmosix-vibes/</guid>
+      <description>&lt;p&gt;Some weeks ago  Matt Rechenburg posted about MattX , A Modern openMosix Re-Implementation for Linux 6.x&lt;br&gt;&#xA;he tagged me in the post and obviously I was triggered,  having spent years in the openMosix community , first writing the Howto, then later being the release manager , testing and getting rid of the&#xA;openMosixFS ,   I wanted to see how things would work again today.&lt;/p&gt;&#xA;&lt;p&gt;My first attempts at getting things to work were a quick failure,  Matt had been bitten by the Works on My machine bug &amp;hellip; it worked on his Debian setup, but not on my Fedora testbed,&#xA;and while there is nothing wrong with Debian, that&amp;rsquo;s kinda a really small scope,  so obviously I reached out ,  we&amp;rsquo;ve been chatting on and off.  And I`m happy to&#xA;see that I have now seen the first processes migrate in my Lab setup on my AlmaLinux boxen :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Posts | Everything is a Freaking DNS problem</title>
   <link rel="stylesheet" href="/blog/css/style.css">
-  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="http://localhost:1313/blog/index.xml">
 </head>
 <body>
   <header>
-    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <h1><a href="http://localhost:1313/blog/">Everything is a Freaking DNS problem</a></h1>
     <p class="tagline">Devops Needs Sushi</p>
   </header>
   <div class="layout">
     <main>
       
 <h2>Posts</h2>
+
+<article class="summary">
+  <h3><a href="/blog/opensearch-cli/">Opensearch Cli</a></h3>
+  <p class="meta"><time datetime="2026-07-17">July 17, 2026</time></p>
+  <p><p>I&rsquo;ve been busy doing some OpenSearch upgrades and migrations the past couple of months, and I was tired of running curl with different parameters to get the default health and other OpenSearch statuses.
+Apart from that my muscle memory failed to get the right variety of parameters once in a while so I figured I just write a wrapper around  curl that would do a bunch of these things
+easier for me.</p></p>
+</article>
 
 <article class="summary">
   <h3><a href="/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></h3>
@@ -114,14 +122,6 @@ If it&rsquo;s not a USB Problem<br>
 It&rsquo;s a sharing IRQ Problem<br>
 If it&rsquo;s not a sharing IRQ Problem<br>
 But most often .. its a Freaking Dns Problem !</p></p>
-</article>
-
-<article class="summary">
-  <h3><a href="/blog/docker-and-volumes-hell/">Docker and volumes hell</a></h3>
-  <p class="meta"><time datetime="2016-05-28">May 28, 2016</time></p>
-  <p><p>We&rsquo;re increasingly using Docker to build packages, a fresh chroot in which we prepare a number of packages, builds typically for ruby (rvm) , or python (virtualenv) or node stuf where the language ecosystem fails on us &hellip; and fpm the whole tree as a working artifact.</p>
-<p>An example of such a build is my work on packaging Dashing. <a href="https://github.com/KrisBuytaert/build-dashing">https://github.com/KrisBuytaert/build-dashing</a></p>
-<p>Now part of that build is running the actual build script in docker with a local volume mounted inside the container This is your typical -v=/home/src/dashing-docker/package-scripts:/scripts param.</p></p>
 </article>
 
 
@@ -272,6 +272,10 @@ But most often .. its a Freaking Dns Problem !</p></p>
     about the same subjects in different books, papers and articles.</p>
   </section>
 
+  
+  
+  
+
   <section class="nav-links">
     <h3>Links</h3>
     <ul>
@@ -282,7 +286,7 @@ But most often .. its a Freaking Dns Problem !</p></p>
       <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a></li>
 
 
-      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+      <li><a href="http://localhost:1313/blog/index.xml">RSS Feed</a></li>
 
 
       <li><a href="https://devopsdays.org">devopsdays.org</a></li>
@@ -295,25 +299,25 @@ But most often .. its a Freaking Dns Problem !</p></p>
     <h3>Recent Posts</h3>
     <ul>
       
-      <li><a href="https://krisbuytaert.github.io/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></li>
+      <li><a href="http://localhost:1313/blog/opensearch-cli/">Opensearch Cli</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/cdf-top-ambassador-2026/">CDF Top Ambassador 2026</a></li>
+      <li><a href="http://localhost:1313/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      <li><a href="http://localhost:1313/blog/cdf-top-ambassador-2026/">CDF Top Ambassador 2026</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      <li><a href="http://localhost:1313/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      <li><a href="http://localhost:1313/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      <li><a href="http://localhost:1313/blog/115-factor-apps/">11.5 Factor apps</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      <li><a href="http://localhost:1313/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      <li><a href="http://localhost:1313/blog/will-containers-take-over/">Will containers take over ?</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
+      <li><a href="http://localhost:1313/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/docker-and-volumes-hell/">Docker and volumes hell</a></li>
+      <li><a href="http://localhost:1313/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
       
     </ul>
   </section>
@@ -1514,46 +1518,58 @@ But most often .. its a Freaking Dns Problem !</p></p>
       
         
       
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/devops/">devops</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/drupal/">drupal</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/mysql/">mysql</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/puppet/">puppet</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/open-source/">open source</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/opensource/">opensource</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/dnsproblem/">dnsproblem</a></li>
+      <li><a href="http://localhost:1313/blog/tags/devops/">devops</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/ha/">ha</a></li>
+      <li><a href="http://localhost:1313/blog/tags/drupal/">drupal</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/fosdem/">fosdem</a></li>
+      <li><a href="http://localhost:1313/blog/tags/mysql/">mysql</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/chef/">chef</a></li>
+      <li><a href="http://localhost:1313/blog/tags/open-source/">open source</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/dns/">dns</a></li>
+      <li><a href="http://localhost:1313/blog/tags/puppet/">puppet</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/fedora/">fedora</a></li>
+      <li><a href="http://localhost:1313/blog/tags/opensource/">opensource</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/virtualization/">virtualization</a></li>
+      <li><a href="http://localhost:1313/blog/tags/dnsproblem/">dnsproblem</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/xen/">xen</a></li>
+      <li><a href="http://localhost:1313/blog/tags/ha/">ha</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/centos/">centos</a></li>
+      <li><a href="http://localhost:1313/blog/tags/fosdem/">fosdem</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/conference/">conference</a></li>
+      <li><a href="http://localhost:1313/blog/tags/chef/">chef</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/monitoringsucks/">monitoringsucks</a></li>
+      <li><a href="http://localhost:1313/blog/tags/dns/">dns</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/rpm/">rpm</a></li>
+      <li><a href="http://localhost:1313/blog/tags/fedora/">fedora</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/zenoss/">zenoss</a></li>
+      <li><a href="http://localhost:1313/blog/tags/virtualization/">virtualization</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/kvm/">kvm</a></li>
+      <li><a href="http://localhost:1313/blog/tags/xen/">xen</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/centos/">centos</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/conference/">conference</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/monitoringsucks/">monitoringsucks</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/rpm/">rpm</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/kvm/">kvm</a></li>
       
     </ul>
   </section>

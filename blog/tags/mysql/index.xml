@@ -2,353 +2,353 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mysql on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/mysql/</link>
+    <link>http://localhost:1313/blog/tags/mysql/</link>
     <description>Recent content in Mysql on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Jul 2013 22:08:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using broken development frameworks , or why we don&#39;t use Zurmo</title>
-      <link>https://krisbuytaert.github.io/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</link>
+      <link>http://localhost:1313/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</link>
       <pubDate>Wed, 10 Jul 2013 22:08:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</guid>
+      <guid>http://localhost:1313/blog/using-broken-development-frameworks-or-why-we-dont-use-zurmo/</guid>
       <description>&lt;p&gt;People often wonder why DBA&amp;rsquo;s used to hate developers, and with DBA&amp;rsquo;s also the System Engineers,&lt;br&gt;&#xA;(note that I just expanded devops by adding dba&amp;rsquo;s to the picture..)&lt;/p&gt;&#xA;&lt;p&gt;So let me tell you a story ..&lt;/p&gt;&#xA;&lt;p&gt;A couple of weeks ago one of our customers wanted to start experimenting with a new type of CRM. A gamified CRM.&lt;br&gt;&#xA;Zurmo &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;So we set this thing up in a dev environment and started playing with it , while at first it looks nice ..&lt;br&gt;&#xA;the application actually felt pretty slow.. however given that is a low resource development environment we looked no further.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gentwerpen Devops Meetup  &amp; Conference Season Update</title>
-      <link>https://krisbuytaert.github.io/blog/gentwerpen-devops-meetup-conference-season-update/</link>
+      <link>http://localhost:1313/blog/gentwerpen-devops-meetup-conference-season-update/</link>
       <pubDate>Thu, 13 Sep 2012 22:27:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/gentwerpen-devops-meetup-conference-season-update/</guid>
+      <guid>http://localhost:1313/blog/gentwerpen-devops-meetup-conference-season-update/</guid>
       <description>&lt;p&gt;A couple of us have been taking about it a lot already .. we wanted to host a one day #devops event in .be already last year.. then talks about starting a meetup group started again with @wonko_be but it was @fs111 pushing the final button and calling the rest of the .be community to order, we&amp;rsquo;ve set a date&lt;br&gt;&#xA;and the first session will take place (agenda still needs to be detirmined)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Devops in Munich</title>
-      <link>https://krisbuytaert.github.io/blog/devops-munich/</link>
+      <link>http://localhost:1313/blog/devops-munich/</link>
       <pubDate>Tue, 01 May 2012 21:02:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/devops-munich/</guid>
+      <guid>http://localhost:1313/blog/devops-munich/</guid>
       <description>&lt;p&gt;Devopsdays Mountainview sold out in a short 3 hours .. but there&amp;rsquo;s other events that will breath devops this summer.&lt;br&gt;&#xA;DrupalCon in Munich will be one of them ..&lt;/p&gt;&#xA;&lt;p&gt;Some of you might have noticed that I`m cochairing the devops track for DrupalCon Munich,&lt;br&gt;&#xA;The CFP is open till the 11th of this month and we are still actively looking for speakers.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;re trying to bridge the gap between drupal developers and the people that put their code to production, at scale.&lt;br&gt;&#xA;But also enhancing the knowledge of infrastructure components Drupal developers depend on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>At Fosdem</title>
-      <link>https://krisbuytaert.github.io/blog/fosdem/</link>
+      <link>http://localhost:1313/blog/fosdem/</link>
       <pubDate>Sun, 06 Feb 2011 22:06:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/fosdem/</guid>
+      <guid>http://localhost:1313/blog/fosdem/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;on Friday evening , apparently having a confirmed reservation in a resto is not enough to actually be welcome at that restaurant.&lt;/li&gt;&#xA;&lt;li&gt;at DrupalDevdays, only 2 laptops were open during our presentation&lt;/li&gt;&#xA;&lt;li&gt;at DrupalDevdays, almost nobody in the room was already using CI&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , the parking lot is full before 11:30 on a saturday&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , much less Macs than last years .&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , way too much rooms are already at full capacity so you need to have 2-3 backup alternatives ..&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , people expect me to be in certain rooms, at the same time&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , even with too much rooms already full one still misses a bunch of interresting talks&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , one doesn&amp;rsquo;t even realize friends are speaking there too ..&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , Android is the standard &amp;hellip;&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , you are confronted with the fact you probably forgot more names of people than you remember ;(&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , you are surrounded by famous open source people, that aren&amp;rsquo;t even on the schedule&lt;/li&gt;&#xA;&lt;li&gt;at the MySQL Meetup Dinner, Monty brings &lt;a href=&#34;http://en.wikipedia.org/wiki/Salmiakki_Koskenkorva&#34;&gt;Salmiakki&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , you wonder how many other people have survived their 11th edition&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , you can&amp;rsquo;t get into any devroom on sunday morning&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , begging on Twitter to get in to a devroom from the other side of the door works (at least for me :))&lt;/li&gt;&#xA;&lt;li&gt;at Fosdem , netbooks are much less popular as opposed to 2-3 years ago ..&lt;/li&gt;&#xA;&lt;li&gt;after fosdem &amp;hellip; you crash ..\&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>MySQL &amp; Friends Meetup at Fosdem 2011</title>
-      <link>https://krisbuytaert.github.io/blog/mysql-friends-meetup-fosdem-2011/</link>
+      <link>http://localhost:1313/blog/mysql-friends-meetup-fosdem-2011/</link>
       <pubDate>Tue, 01 Feb 2011 13:28:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/mysql-friends-meetup-fosdem-2011/</guid>
+      <guid>http://localhost:1313/blog/mysql-friends-meetup-fosdem-2011/</guid>
       <description>&lt;p&gt;I admit .. I`m lazy &amp;hellip; unlike last year I did not organize MySQL and Friends meetup at Fosdem.&lt;/p&gt;&#xA;&lt;p&gt;I outsourced it to &lt;a href=&#34;http://twitter.com/#!/gryp/&#34;&gt;Kenny&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;More info and registration &lt;a href=&#34;http://www.eventbrite.com/event/1267253389/efbnen&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>High Availability MySQL Cookbook , the review</title>
-      <link>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</link>
+      <link>http://localhost:1313/blog/high-availability-mysql-cookbook-review/</link>
       <pubDate>Thu, 04 Nov 2010 01:07:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/high-availability-mysql-cookbook-review/</guid>
+      <guid>http://localhost:1313/blog/high-availability-mysql-cookbook-review/</guid>
       <description>&lt;p&gt;When I read on the internetz that Alex Davies was about the publish a &lt;a href=&#34;https://www.packtpub.com/high-availability-mysql-cookbook/book&#34;&gt;Packt book on MySQL HA&lt;/a&gt; I pinged my contacts at Packt and suggested that I&amp;rsquo;d review the book .&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve ran into &lt;a href=&#34;https://sites.google.com/a/davz.net/alex-davies/&#34;&gt;Alex&lt;/a&gt; at some UKUUG conferences before and he&amp;rsquo;s got a solid background on MySQL Cluster and other HA alternatives so I was looking forward to reading the book.&lt;/p&gt;&#xA;&lt;p&gt;Alex starts of with a couple of indepth chapters on MySQL Cluster, he does mention that it&amp;rsquo;s not a fit for all problems, but I&amp;rsquo;d hoped he did it a bit more prominently &amp;hellip; an upfront chapter outlining the different approaches and when which approach is a match could have been better. The avid reader now might be 80 pages into MySQL cluster before he realizes it&amp;rsquo;s not going to be a match for his problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>yum install mariadb</title>
-      <link>https://krisbuytaert.github.io/blog/yum-install-mariadb/</link>
+      <link>http://localhost:1313/blog/yum-install-mariadb/</link>
       <pubDate>Mon, 19 Jul 2010 20:55:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/yum-install-mariadb/</guid>
+      <guid>http://localhost:1313/blog/yum-install-mariadb/</guid>
       <description>&lt;p&gt;I`m not the biggest fan of openSUSE but this weeks &lt;a href=&#34;http://www.bytebot.net/blog/archives/2010/07/17/opensuse-users-have-a-choice-of-database-now?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+ColinCharles+%28colin+charles+blog%29&#34;&gt;post by Colin Charles&lt;/a&gt; makes me happy ..&lt;/p&gt;&#xA;&lt;p&gt;openSUSE users can now do a mariadb install from their default repositories.&lt;/p&gt;&#xA;&lt;p&gt;With all the fuzz about Snoracle and MySQL&amp;rsquo;s future last year to me it became clear that we would end up having different MySQL based distributions, probably with different names, and that it would be up to the Linux distributions to provide the users with what they preferred, working with those Linux distributions&lt;br&gt;&#xA;therefore would be very important for the MySQL distributions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Inuits Day</title>
-      <link>https://krisbuytaert.github.io/blog/inuits-day/</link>
+      <link>http://localhost:1313/blog/inuits-day/</link>
       <pubDate>Mon, 21 Jun 2010 21:14:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/inuits-day/</guid>
+      <guid>http://localhost:1313/blog/inuits-day/</guid>
       <description>&lt;p&gt;Couple of Fridays ago we had one of our @Inuits days again. Rather than having some people give talks and presentations about what they have been doing for the past couple of months this time we set out to research, test, and build stuff.&lt;/p&gt;&#xA;&lt;p&gt;We split up in 3 different groups, one focusing on CI and testing freshly build stuff with cucumber, a second one setup and tested &lt;a href=&#34;http://www.codership.com/products/galera_replication&#34;&gt;Galera&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;We setup a 3 node Galera cluster , not really as smooth as we&amp;rsquo;d like to ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>MySQL HA , an alternative approach</title>
-      <link>https://krisbuytaert.github.io/blog/mysql-ha-alternative-approach/</link>
+      <link>http://localhost:1313/blog/mysql-ha-alternative-approach/</link>
       <pubDate>Wed, 28 Apr 2010 23:17:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/mysql-ha-alternative-approach/</guid>
+      <guid>http://localhost:1313/blog/mysql-ha-alternative-approach/</guid>
       <description>&lt;p&gt;For those who&amp;rsquo;ve seen my presentation on MySQL HA, you already know that I often use a multimaster setup with a meta OCF resource that groups my favoured MySQL instance with the service ip , using a meta resource means that pacemaker monitors mysql, but it doesn&amp;rsquo;t actually manage it. It&amp;rsquo;s an approach that works for us.&lt;/p&gt;&#xA;&lt;p&gt;One of the other approaches I will be looking at soon is the freshly released OCF resource that &lt;a href=&#34;http://fghaas.wordpress.com/2010/04/21/mysql-masterslave-support-now-merged-into-linux-ha/&#34;&gt;Florian&lt;/a&gt; announced last week.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux Open Administration Days 2010</title>
-      <link>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</link>
+      <link>http://localhost:1313/blog/linux-open-administration-days-2010/</link>
       <pubDate>Tue, 20 Apr 2010 21:43:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/linux-open-administration-days-2010/</guid>
+      <guid>http://localhost:1313/blog/linux-open-administration-days-2010/</guid>
       <description>&lt;p&gt;So about 4 monts ago &lt;a href=&#34;http://blog.bdesmet.be/?p=272&#34;&gt;there was the crazy idea&lt;/a&gt; to start a new FOSS event in Belgium targeted at sysadmins.&lt;/p&gt;&#xA;&lt;p&gt;What started out as an event for local people to meet local people with some local speakers actually ended up being a small local event with some top international speakers on onfiguration mananagement and system administration mixed with a bunch of good local ones !&lt;/p&gt;&#xA;&lt;p&gt;I had the honour to open the conference with an extremely short version of the Devops talk I gave earlier last year.. extremely short as I knew that over the course of the weekend the topic would reoccur a lot.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UKUUG Spring Conference 2010</title>
-      <link>https://krisbuytaert.github.io/blog/ukuug-spring-conference-2010/</link>
+      <link>http://localhost:1313/blog/ukuug-spring-conference-2010/</link>
       <pubDate>Wed, 07 Apr 2010 19:16:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/ukuug-spring-conference-2010/</guid>
+      <guid>http://localhost:1313/blog/ukuug-spring-conference-2010/</guid>
       <description>&lt;p&gt;Last week I was in Manchester for the 2010 UKUUG Spring Conference, right .. make that 2 weeks ago , :)&lt;/p&gt;&#xA;&lt;p&gt;The UKUUG usually hosts the more interesting conferences around &amp;hellip; , it&amp;rsquo;s not just the schedule that attrackts me , yes there&amp;rsquo;s the strong focus towards Larger Scale Unix (and mostly Linux) deployments and how to manage them, but there&amp;rsquo;s also the opportunity to chat in real life with the Devops from across the chunnel.&lt;/p&gt;</description>
     </item>
     <item>
       <title>To not yum or to not apt-get, that&#39;s NOT the question.</title>
-      <link>https://krisbuytaert.github.io/blog/not-yum-or-not-apt-get-thats-not-question/</link>
+      <link>http://localhost:1313/blog/not-yum-or-not-apt-get-thats-not-question/</link>
       <pubDate>Tue, 16 Feb 2010 22:13:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/not-yum-or-not-apt-get-thats-not-question/</guid>
+      <guid>http://localhost:1313/blog/not-yum-or-not-apt-get-thats-not-question/</guid>
       <description>&lt;p&gt;Over at the &lt;a href=&#34;http://code.openark.org/blog/mysql/to-not-yum-or-to-not-apt-get&#34;&gt;OPenARK blog&lt;/a&gt; Shlomi Noach argues that using apt-get or yum to install your MySQL instance will one day most likeley break your MySQL setup. Depdendencies, distros not shipping the MySQL version you want to use and on some distro&amp;rsquo;s indeed the mysql vs MySQL issue, agreed, it all makes things less trivial.&lt;/p&gt;&#xA;&lt;p&gt;However why give up a clean packaged system if there are other ways out ?&lt;/p&gt;&#xA;&lt;p&gt;First of all by claiming that such an installation can break a working production environment looks to me like admitting you don&amp;rsquo;t have a split development, production environment and that rather than testing stuff upfront indeed you just hack a long in production.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Loadays CFP</title>
-      <link>https://krisbuytaert.github.io/blog/loadays-cfp/</link>
+      <link>http://localhost:1313/blog/loadays-cfp/</link>
       <pubDate>Thu, 11 Feb 2010 22:55:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/loadays-cfp/</guid>
+      <guid>http://localhost:1313/blog/loadays-cfp/</guid>
       <description>&lt;p&gt;I would like to point the crowd to the Call For Presentaions of Loadays. , the Linux Open Administration Days .&lt;/p&gt;&#xA;&lt;p&gt;The Linux Open Administration days 2010 will be the first edition of a new conference focusing on Linux and Open Administration, we are trying to fill a gap for System Engineers and Administrators using Open Source technologies&amp;quot;&lt;/p&gt;&#xA;&lt;p&gt;More details on the &lt;a href=&#34;http://loadays.org/news/call-presentations&#34;&gt;Linux Open Administration Days site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll probably be there .. given the fact that the event will be 5 minutes from where I live .&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fosdem 2010</title>
-      <link>https://krisbuytaert.github.io/blog/fosdem-2010/</link>
+      <link>http://localhost:1313/blog/fosdem-2010/</link>
       <pubDate>Tue, 09 Feb 2010 22:30:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/fosdem-2010/</guid>
+      <guid>http://localhost:1313/blog/fosdem-2010/</guid>
       <description>&lt;p&gt;Fosdem 2010 was my 10th fosdem Edition (including the first OSDEM)&lt;br&gt;&#xA;As every year Fosdem suffered even more from it&amp;rsquo;s own success.&lt;/p&gt;&#xA;&lt;p&gt;On Friday evening ther was the obligatory Beer event&amp;hellip; however as people need to eat to .. the Devops crowd fled the scene&lt;/p&gt;&#xA;&lt;p&gt;I had made reservations for a 20 something group and with the CentOS crowd joining us (as there was some overlap anyhow) we were 25 when we arrived in the restaurant .&lt;br&gt;&#xA;&lt;img src=&#34;http://www.krisbuytaert.be/images/DevopsMeet.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upcoming Conference Talks</title>
-      <link>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</link>
+      <link>http://localhost:1313/blog/upcoming-conference-talks/</link>
       <pubDate>Mon, 01 Feb 2010 22:04:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/upcoming-conference-talks/</guid>
+      <guid>http://localhost:1313/blog/upcoming-conference-talks/</guid>
       <description>&lt;p&gt;I know the biggest part of my fanclub already booked tickets for my upcoming presentations, but the other 2 might want to check their calendars to see if they aren&amp;rsquo;t missing out on the good stuff :)&lt;/p&gt;&#xA;&lt;p&gt;Next Sunday I`ll giving a shortish overview of &lt;a href=&#34;http://www.fosdem.org/2010/schedule/events/mysql_ha&#34;&gt;MySQL HA alternatives&lt;/a&gt; in the MySQL and Friends devroom at Fosdem.&lt;/p&gt;&#xA;&lt;p&gt;March will bring me to Manchester again for the &lt;a href=&#34;http://spring2010.ukuug.org/Timetable&#34;&gt;UKUUG Spring conference&lt;/a&gt; where I`ll be giving a longer version of that presentation with a strong focus on integrating with PaceMaker, and automating the whole boostrap procedure of a HA setup.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MySQL &amp; Friends Meetup @ Fosdem</title>
-      <link>https://krisbuytaert.github.io/blog/mysql-friends-meetup-fosdem/</link>
+      <link>http://localhost:1313/blog/mysql-friends-meetup-fosdem/</link>
       <pubDate>Fri, 15 Jan 2010 22:38:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/mysql-friends-meetup-fosdem/</guid>
+      <guid>http://localhost:1313/blog/mysql-friends-meetup-fosdem/</guid>
       <description>&lt;p&gt;Fosdem is coming up again .. It&amp;rsquo;s going to be the 10th edition already So it&amp;rsquo;s going to be 2 days and nights of fun, tech and geek stuff&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blogs.sun.com/MySQL/entry/mysql_friends_devroom_schedule_published&#34;&gt;Lenz&lt;/a&gt; already posted the announcement , but allow me to recapitulate.&lt;/p&gt;&#xA;&lt;p&gt;The MySQL &amp;amp; Friends meetup is on saturday evening , we&amp;rsquo;ll meet around 1900 in front of the under the big tree in front of the AW building&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;del&gt;As with the &lt;a href=&#34;http://www.krisbuytaert.be/blog/devops-meetup-fosdem&#34;&gt;Devops Meetup&lt;/a&gt; you can once again vote for your preferred &lt;a href=&#34;http://www.doodle.com/v8emakg77bdgk4it&#34;&gt;food&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Option D</title>
-      <link>https://krisbuytaert.github.io/blog/option-d/</link>
+      <link>http://localhost:1313/blog/option-d/</link>
       <pubDate>Mon, 14 Dec 2009 22:30:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/option-d/</guid>
+      <guid>http://localhost:1313/blog/option-d/</guid>
       <description>&lt;p&gt;Lots of people writing about Snorkle again today ,Monty &lt;a href=&#34;http://monty-says.blogspot.com/2009/12/help-saving-mysql.html&#34;&gt;Says, help saving MySQL&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;He gives us different options, a , b or c .. but I , and some others, want an option d&lt;/p&gt;&#xA;&lt;p&gt;No I don&amp;rsquo;t trust Oracle, it&amp;rsquo;s not like they have been a very good Open Source Citizen, yes they contribute to the kernel and other projects but my feeling says it&amp;rsquo;s only because they have to (Kernel, Xen and others ) not because they Want to (thinking about Unfakable etc) , if they would really want to they probably would work with the CentOS community more etc, and as Monty mentions their InnoDB track record could be better.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fosdem 2010 is getting closer</title>
-      <link>https://krisbuytaert.github.io/blog/fosdem-2010-getting-closer/</link>
+      <link>http://localhost:1313/blog/fosdem-2010-getting-closer/</link>
       <pubDate>Wed, 09 Dec 2009 20:52:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/fosdem-2010-getting-closer/</guid>
+      <guid>http://localhost:1313/blog/fosdem-2010-getting-closer/</guid>
       <description>&lt;p&gt;The 10th edition of Fosdem is getting closer, yes .. I said 10 ,10 decimal that means ten, not two :)&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s kinda hard to imagine that this is actually going to be my 10th fosdem , it feels weird ..&lt;/p&gt;&#xA;&lt;p&gt;Anyhow.. &lt;a href=&#34;http://www.lenzg.net/&#34;&gt;Lenz&lt;/a&gt; just &lt;a href=&#34;http://blogs.sun.com/MySQL/entry/call_for_papers_for_mysql&#34;&gt;announced&lt;/a&gt; a call for participation for the MySQL and Friends devroom.&lt;/p&gt;&#xA;&lt;p&gt;I`m guessing a talk on &lt;a href=&#34;http://www.aaronbassett.com/tag/lolsql/&#34;&gt;.LolSQL&lt;/a&gt; might be a good fit for the &amp;ldquo;and Friends&amp;rdquo; part.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.fosdem.org/&#34;&gt;&lt;img src=&#34;http://www.fosdem.org/promo/fosdem&#34; alt=&#34;FOSDEM, the Free and Open Source Software Developers&amp;rsquo; European Meeting&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>NoSQL vs MySQL</title>
-      <link>https://krisbuytaert.github.io/blog/nosql-vs-mysql/</link>
+      <link>http://localhost:1313/blog/nosql-vs-mysql/</link>
       <pubDate>Mon, 23 Nov 2009 22:17:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/nosql-vs-mysql/</guid>
+      <guid>http://localhost:1313/blog/nosql-vs-mysql/</guid>
       <description>&lt;p&gt;No I did NOT post the following &lt;a href=&#34;http://www.ruturaj.net/redis-memcached-tokyo-tyrant-mysql-comparison#comment-22565&#34;&gt;comment&lt;/a&gt;&lt;br&gt;&#xA;This is ridiculous. You didn&amp;rsquo;t test MySQL, you tested a failing DNS lookup on authentication.&lt;/p&gt;&#xA;&lt;p&gt;resulting in the follow up &lt;a href=&#34;http://www.ruturaj.net/myisam-innodb&#34;&gt;post&lt;/a&gt; :&lt;/p&gt;&#xA;&lt;p&gt;My previous post Redis, Memcache, Tokyp Tyrant, MySQL comparison had a flaw as pointed out by this comment. The MySQL was taking a huge time for doing a reverse DNS lookup.\&lt;/p&gt;&#xA;&lt;p&gt;But as always &amp;hellip; Everything is just a Freaking dns problem :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Got Interviewed</title>
-      <link>https://krisbuytaert.github.io/blog/got-interviewed/</link>
+      <link>http://localhost:1313/blog/got-interviewed/</link>
       <pubDate>Wed, 18 Nov 2009 22:05:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/got-interviewed/</guid>
+      <guid>http://localhost:1313/blog/got-interviewed/</guid>
       <description>&lt;p&gt;by &lt;a href=&#34;http://www.johnmwillis.com/devopsdays/devopsdays-09-interview-with-kris-buytaert/&#34;&gt;@botchagalupe&lt;/a&gt;&lt;br&gt;&#xA;on Virtualization, Open Source tools and DNS Problems&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nines , Damn Nines  and More Nines</title>
-      <link>https://krisbuytaert.github.io/blog/nines-damn-nines-and-more-nines/</link>
+      <link>http://localhost:1313/blog/nines-damn-nines-and-more-nines/</link>
       <pubDate>Mon, 19 Oct 2009 23:46:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/nines-damn-nines-and-more-nines/</guid>
+      <guid>http://localhost:1313/blog/nines-damn-nines-and-more-nines/</guid>
       <description>&lt;p&gt;Funny how different experiences lead to different evaluations of tools. The MySQL HA solutions &lt;a href=&#34;http://www.mysqlperformanceblog.com/2009/10/16/finding-your-mysql-high-availability-solution-%E2%80%93-the-questions/&#34;&gt;the MySQL Performanceblog&lt;/a&gt; list, are almost listed in the complete opposited order of what my impressions are.&lt;/p&gt;&#xA;&lt;p&gt;Ok agreed, I should probably not put my MySQL NDB experiences from 2-3 years ago with multiple Query of deaths and more problems than you into account anymore , but back then went in the list Less stable than a single node. I&amp;rsquo;ve had NDB POC setups going down for much more than 05:16 minutes&lt;br&gt;&#xA;Ndb comes with a lot of restrictions, there are&lt;/p&gt;</description>
     </item>
     <item>
       <title>&#34;Idle&#34;</title>
-      <link>https://krisbuytaert.github.io/blog/idle/</link>
+      <link>http://localhost:1313/blog/idle/</link>
       <pubDate>Wed, 23 Sep 2009 21:25:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/idle/</guid>
+      <guid>http://localhost:1313/blog/idle/</guid>
       <description>&lt;p&gt;For those who wonder why my blogging is so low these days (apart from today) .. I`m actually writing more Lines of Code than Blog Entries the last couple of weeks:)&lt;/p&gt;&#xA;&lt;p&gt;And when I&lt;code&gt;m not writing code I&lt;/code&gt;m reading :) Either proofreading an upcoming book on &lt;a href=&#34;http://www.packtpub.com/zabbix-1-6-network-monitoring/book&#34;&gt;Zabbix&lt;/a&gt; or reading &lt;a href=&#34;http://www.packtpub.com/build-social-networking-website-with-drupal-6/book&#34;&gt;some&lt;/a&gt; of the &lt;a href=&#34;http://www.packtpub.com/building-enterprise-ready-telephony-systems-with-sipxecs-4-0/book&#34;&gt;other&lt;/a&gt; books Packt sent me.&lt;/p&gt;&#xA;&lt;p&gt;Next to that I`m busy preparing &lt;a href=&#34;http://www.t-dose.org/2009/talk/virtsec&#34;&gt;my T-Dose&lt;/a&gt; presentation&lt;/p&gt;&#xA;&lt;p&gt;Oh and did I mention a 40 something questions questionnaire about some merger ?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open Source  Business Models</title>
-      <link>https://krisbuytaert.github.io/blog/open-source-business-models/</link>
+      <link>http://localhost:1313/blog/open-source-business-models/</link>
       <pubDate>Wed, 23 Sep 2009 21:17:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/open-source-business-models/</guid>
+      <guid>http://localhost:1313/blog/open-source-business-models/</guid>
       <description>&lt;p&gt;There is once again a lot of fuzz going on about Open Source Business models,&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.openlogic.com/blogs/2009/09/customers-not-thrilled-with-open-source-business-models-preferred-by-many-vcs-open-source-companies/&#34;&gt;First on my eyballs was the article that Customers don&amp;rsquo;t seem to like openCore&lt;/a&gt; what a big &lt;a href=&#34;http://www.adventuresinoss.com/?p=611&#34;&gt;surprise ..&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;So that&amp;rsquo;s not the one that makes the customers happy ,&lt;/p&gt;&#xA;&lt;p&gt;Then there is the other side of the coin, the people that create open source&lt;br&gt;&#xA;&lt;a href=&#34;http://blogs.the451group.com/opensource/2009/09/15/oracle-could-kill-off-mysql-but-probably-wont/&#34;&gt;Authors realize the dual licensing model comes hunting back at you&lt;/a&gt;  after a merger or a hostile acquisition, yes they still have the source code to build on but they can&amp;rsquo;t sell commercial licenses to their customers anymore they way they used to.&lt;/p&gt;</description>
     </item>
     <item>
       <title>T-Dose 2009 CFP,</title>
-      <link>https://krisbuytaert.github.io/blog/t-dose-2009-cfp/</link>
+      <link>http://localhost:1313/blog/t-dose-2009-cfp/</link>
       <pubDate>Sun, 09 Aug 2009 22:44:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/t-dose-2009-cfp/</guid>
+      <guid>http://localhost:1313/blog/t-dose-2009-cfp/</guid>
       <description>&lt;p&gt;Dear MySQL and Drupal , Plone and other Open Source folks, you might want to be interrested in giving a talk at T-Dose 2009 ,&lt;/p&gt;&#xA;&lt;p&gt;Jean Paul pinged me with the following mail :&lt;/p&gt;&#xA;&lt;p&gt;Maybe it escaped your attention that the Call For Papers for T-DOSE 2009 is already out. It has been announced on 12th of June 2009. Below you will find the original announcement.&lt;/p&gt;&#xA;&lt;p&gt;Call for Papers and Projects&lt;br&gt;&#xA;Fri, 06/12/2009 - 13:57 — jpsaman&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oracle, MySQL and the EU</title>
-      <link>https://krisbuytaert.github.io/blog/oracle-mysql-and-eu/</link>
+      <link>http://localhost:1313/blog/oracle-mysql-and-eu/</link>
       <pubDate>Mon, 03 Aug 2009 22:54:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/oracle-mysql-and-eu/</guid>
+      <guid>http://localhost:1313/blog/oracle-mysql-and-eu/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://identi.ca/notice/7477327&#34;&gt;Jan Wildeboer&lt;/a&gt; pointed us to the &lt;a href=&#34;http://blog.thinkphp.de/archives/416-A-letter-from-the-European-commission-regarding-the-OracleSun-merger.html&#34;&gt;Mayflower post&lt;/a&gt; about their letter from the European Commission.&lt;/p&gt;&#xA;&lt;p&gt;It seems like the the European Commision , more specifically the Directorate General for Competition , really is interested in our input regarding the matter, I mailed them and also got a questionnaire to fill in.&lt;/p&gt;&#xA;&lt;p&gt;So if you have something interesting to tell them don&amp;rsquo;t hesitate to &lt;a href=&#34;mailto:Vera.POZZATO@ec.europa.eu&#34;&gt;contact them&lt;/a&gt; too.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sushi and DNS Problems</title>
-      <link>https://krisbuytaert.github.io/blog/sushi-and-dns-problems/</link>
+      <link>http://localhost:1313/blog/sushi-and-dns-problems/</link>
       <pubDate>Thu, 30 Apr 2009 23:02:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/sushi-and-dns-problems/</guid>
+      <guid>http://localhost:1313/blog/sushi-and-dns-problems/</guid>
       <description>&lt;p&gt;There seem to be different repeating topics within the Open Source and Geek community.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://delvauxkoen.blogspot.com/2009/04/how-belgian-firewall-would-block-naked.html&#34;&gt;Koen&lt;/a&gt; did a good job explaining how the Great Belgian Firewall reall can&amp;rsquo;t be solved using DNS tricks.&lt;/p&gt;&#xA;&lt;p&gt;And &lt;a href=&#34;http://datacharmer.blogspot.com/2009/04/mysql-community-and-sushi.html&#34;&gt;Giuseppe&lt;/a&gt; tackles the ever recurring Sushi. It has to be said &amp;hellip; Geeks love Sushi and not just the MySQl geeks , every conference we go to we try to squeeze in at least 1 Sushi visit.. sometimes more &amp;hellip;.. Nurenberg, Manchester, Cambridge, Ottawa , &amp;hellip; and there&amp;rsquo;s more to come .. :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dear Oracle,</title>
-      <link>https://krisbuytaert.github.io/blog/dear-oracle/</link>
+      <link>http://localhost:1313/blog/dear-oracle/</link>
       <pubDate>Thu, 30 Apr 2009 23:00:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/dear-oracle/</guid>
+      <guid>http://localhost:1313/blog/dear-oracle/</guid>
       <description>&lt;p&gt;A couple of weeks ago I wrote a post titled &lt;a href=&#34;http://www.krisbuytaert.be/blog/dear-ibm&#34;&gt;Dear IBM&lt;/a&gt; , I was too late .. I was on holliday last week when people started sending me text messages , such as .. &amp;ldquo;Game Over MySQL , Long live Ingress&amp;rdquo; or &amp;ldquo;No Eclipse for IBM&amp;rdquo;, etc &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;I had ideas regarding the future of certain Sun products at IBM, now the game has changed .. it&amp;rsquo;ss how they will live on at Oracle :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dear IBM</title>
-      <link>https://krisbuytaert.github.io/blog/dear-ibm/</link>
+      <link>http://localhost:1313/blog/dear-ibm/</link>
       <pubDate>Mon, 06 Apr 2009 21:48:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/dear-ibm/</guid>
+      <guid>http://localhost:1313/blog/dear-ibm/</guid>
       <description>&lt;p&gt;When you eventually will buy Sun ..&lt;/p&gt;&#xA;&lt;p&gt;Oh nooos.. I started this post last week and now it al seems in vain :(&lt;/p&gt;&#xA;&lt;p&gt;Steven has some clues on what could have &lt;a href=&#34;http://blogs.computerworld.com/good_bye_solaris_the_fate_of_suns_top_5_technologies&#34;&gt;happened&lt;/a&gt;, I think he is right on the spot on with his Solaris prediction ..&lt;/p&gt;&#xA;&lt;p&gt;He wonders why IBM would spend even another dime on Solaris, actually even today I can&amp;rsquo;t even see why Sun is spending any more money on developing Solaris. But even with no acquisition his prediction of the future of Open Solaris imvho is spot on:&lt;/p&gt;</description>
     </item>
     <item>
       <title>We are rebranding !</title>
-      <link>https://krisbuytaert.github.io/blog/we-are-rebranding/</link>
+      <link>http://localhost:1313/blog/we-are-rebranding/</link>
       <pubDate>Wed, 01 Apr 2009 01:27:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/we-are-rebranding/</guid>
+      <guid>http://localhost:1313/blog/we-are-rebranding/</guid>
       <description>&lt;p&gt;So the cat is out of the bag,&lt;/p&gt;&#xA;&lt;p&gt;As of today Inuits is rebranding to Pinuits,&lt;br&gt;&#xA;The press release is &lt;a href=&#34;http://www.pinuits.be/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ve had good feedback on the new name so far. Different people told me the name matched better to what we are doing . Actually my wife thinks our new name is much better as at least the Pin in Pinuits refers to our favourite Tux again ..&lt;/p&gt;&#xA;&lt;p&gt;Finding an appropriate name for an Open Source consultancy company, with focus on Linux, Open Source Monitoring, MySQL, Open Source Virtualization , Large Scale Deployments , High Availability and Drupal, isn&amp;rsquo;t easy .. you want to show both community involvement and professionality. And find a domain that&amp;rsquo;s still available.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Conference Time</title>
-      <link>https://krisbuytaert.github.io/blog/conference-time/</link>
+      <link>http://localhost:1313/blog/conference-time/</link>
       <pubDate>Sun, 01 Mar 2009 22:22:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/conference-time/</guid>
+      <guid>http://localhost:1313/blog/conference-time/</guid>
       <description>&lt;p&gt;Grab your calendars and mark the following dates :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.t-dose.org/t-dose/node/122&#34;&gt;T-Dose 2009&lt;/a&gt; will be held on 3 and 4 october in Eindhoven again.&lt;/p&gt;&#xA;&lt;p&gt;Last year we had a nice Drupal track, some great MySQL talks and , a great unplanned Cloud talk , and different other interesting talks, so this year promises also to be very interesting.&lt;br&gt;&#xA;(PS. Drupal Themers.. you might want to propose a new theme for the T-Dose site, who knows you&amp;rsquo;ll even win something)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tarus for president !</title>
-      <link>https://krisbuytaert.github.io/blog/tarus-president/</link>
+      <link>http://localhost:1313/blog/tarus-president/</link>
       <pubDate>Thu, 12 Feb 2009 14:12:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/tarus-president/</guid>
+      <guid>http://localhost:1313/blog/tarus-president/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://blogs.opennms.org/?p=611&#34;&gt;Just read it !&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The only unrealistic part about the scenario is that I fear that most purchasers within a government agency won&amp;rsquo;t be asking these questions, yet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open Source does not mean Customization Heaven..</title>
-      <link>https://krisbuytaert.github.io/blog/open-source-does-not-mean-customization-heaven/</link>
+      <link>http://localhost:1313/blog/open-source-does-not-mean-customization-heaven/</link>
       <pubDate>Wed, 11 Feb 2009 18:09:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/open-source-does-not-mean-customization-heaven/</guid>
+      <guid>http://localhost:1313/blog/open-source-does-not-mean-customization-heaven/</guid>
       <description>&lt;p&gt;Unless you are doing it wrong.&lt;/p&gt;&#xA;&lt;p&gt;And sadly I`m seeing more and more people doing it wrong.&lt;br&gt;&#xA;To a lot of people Open Source means that they have a piece of software that does almost what they want and which they can modify to their best wishes and use internally.&lt;/p&gt;&#xA;&lt;p&gt;So they fork locally,, they don&amp;rsquo;t redistribute their code , but they aren&amp;rsquo;t contributing their changes back upstream, chances are these changes wouldn&amp;rsquo;t be accepted upstream anyhow as they are really customizing the code for their specific cases. At first sight this doesn&amp;rsquo;t look so bad , at second sight ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Story Repeats</title>
-      <link>https://krisbuytaert.github.io/blog/story-repeats/</link>
+      <link>http://localhost:1313/blog/story-repeats/</link>
       <pubDate>Tue, 10 Feb 2009 23:55:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/story-repeats/</guid>
+      <guid>http://localhost:1313/blog/story-repeats/</guid>
       <description>&lt;p&gt;I covered this one &lt;a href=&#34;http://www.krisbuytaert.be/blog/node/702&#34;&gt;before&lt;/a&gt; .. but as it struck twiced today .. I think it&amp;rsquo;s worth repeating. Both my &lt;a href=&#34;http://poke152.blogspot.com/&#34;&gt;collegue Karl&lt;/a&gt; and &lt;a href=&#34;http://blogs.sun.com/trentlloyd/entry/this_week_s_tip_the&#34;&gt;Trent&lt;/a&gt; ran into the same problem , within hours hours of eachother, a missing or failing reverse dns mapping that caused performance issues .. and a lot of log entries..&lt;/p&gt;&#xA;&lt;p&gt;Karl denies having a second life in Perth but I`m not really sure about that &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;But I guess they both have to agree&amp;hellip; Everything is a fscking DNS problem.&lt;br&gt;&#xA;(I noticed other people using that spelling this weekend, on stage in the Janson)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monitoring MySQL</title>
-      <link>https://krisbuytaert.github.io/blog/monitoring-mysql/</link>
+      <link>http://localhost:1313/blog/monitoring-mysql/</link>
       <pubDate>Sun, 08 Feb 2009 16:16:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoring-mysql/</guid>
+      <guid>http://localhost:1313/blog/monitoring-mysql/</guid>
       <description>&lt;p&gt;The slides for my Monitoring MySQL talk , which I gave earlier today in an overcrowded MySQl Developersroom at Fosdem are now online, both at &lt;a href=&#34;http://www.krisbuytaert.be/presentations/MySQLMonitoringShootOut.odp&#34;&gt;my site&lt;/a&gt; and at &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out&#34;&gt;Slideshare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;As of now I actually expect people to use those slides for schoolwork or next year in a main Fosdem track :)&lt;br&gt;&#xA;As afterall that is the goal of Open Source and spreading the word ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out?type=presentation&#34; title=&#34;MySQL Monitoring Shoot Out&#34;&gt;MySQL Monitoring Shoot Out&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Monty Leaving Sun</title>
-      <link>https://krisbuytaert.github.io/blog/monty-leaving-sun/</link>
+      <link>http://localhost:1313/blog/monty-leaving-sun/</link>
       <pubDate>Fri, 06 Feb 2009 00:19:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monty-leaving-sun/</guid>
+      <guid>http://localhost:1313/blog/monty-leaving-sun/</guid>
       <description>&lt;p&gt;When I read &lt;a href=&#34;http://monty-says.blogspot.com/2009/02/time-to-move-on.html&#34;&gt;Monty&amp;rsquo;s&lt;/a&gt;  post on leaving this passage struck me the most.&lt;/p&gt;&#xA;&lt;p&gt;The main reason for leaving was that I am not satisfied with the way the MySQL server has been developed, as can be seen on my previous blog post. In particular I would have like to see the server development to be moved to a true open development environment that would encourage outside participation and without any need of differentiation on the source code. Sun has been considering opening up the server development, but the pace has been too slow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open Source Database Poll</title>
-      <link>https://krisbuytaert.github.io/blog/open-source-database-poll/</link>
+      <link>http://localhost:1313/blog/open-source-database-poll/</link>
       <pubDate>Mon, 02 Feb 2009 22:52:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/open-source-database-poll/</guid>
+      <guid>http://localhost:1313/blog/open-source-database-poll/</guid>
       <description>&lt;p&gt;So &lt;a href=&#34;http://www.lefred.be/&#34;&gt;Fred&lt;/a&gt; and I were wondering what people were planning to use as a Database the next couple of months / years or now.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.inuits.be/&#34;&gt;We&lt;/a&gt; mostly see MySQL deployments and a little PostgreSQL&lt;/p&gt;&#xA;&lt;p&gt;But there&amp;rsquo;s other stuff around ..&lt;/p&gt;&#xA;&lt;p&gt;So what are you using, , or planning on using ?&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.krisbuytaert.be/blog/node/867&#34;&gt;Vote Here !&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stop stupid Software Patents</title>
-      <link>https://krisbuytaert.github.io/blog/stop-stupid-software-patents/</link>
+      <link>http://localhost:1313/blog/stop-stupid-software-patents/</link>
       <pubDate>Mon, 26 Jan 2009 11:25:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/stop-stupid-software-patents/</guid>
+      <guid>http://localhost:1313/blog/stop-stupid-software-patents/</guid>
       <description>&lt;p&gt;If you read this blog, you should probably sign the petition !&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://stopsoftwarepatents.eu/&#34;&gt;&lt;img src=&#34;http://stopsoftwarepatents.eu/media/ssp-336-280.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How popular  is an Open Source project ?</title>
-      <link>https://krisbuytaert.github.io/blog/how-popular-open-source-project/</link>
+      <link>http://localhost:1313/blog/how-popular-open-source-project/</link>
       <pubDate>Thu, 15 Jan 2009 19:36:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/how-popular-open-source-project/</guid>
+      <guid>http://localhost:1313/blog/how-popular-open-source-project/</guid>
       <description>&lt;p&gt;There is a really easy way to figure out &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Look at the size of of the devrooms , if at all , a project gets at Fosdem&lt;br&gt;&#xA;It&amp;rsquo;s really interresting to see the Embedded room move to a 500 seat room which it really needed when the first openMoko talk was held there in a previous edition.&lt;/p&gt;&#xA;&lt;p&gt;The FDO , Drupal, Mozilla, Centos/Fedora and Suse rooms stay in similar size rooms as last year.. But it seems lik the BSD and PostgreSQL room which was pretty crowded moved to a bigger location.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contributing Back</title>
-      <link>https://krisbuytaert.github.io/blog/contributing-back/</link>
+      <link>http://localhost:1313/blog/contributing-back/</link>
       <pubDate>Wed, 14 Jan 2009 21:02:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/contributing-back/</guid>
+      <guid>http://localhost:1313/blog/contributing-back/</guid>
       <description>&lt;p&gt;A while ago &lt;a href=&#34;http://buytaert.net/contributing-back-to-drupal&#34;&gt;Dries&lt;/a&gt; wondered about Contributing back to Drupal .&lt;/p&gt;&#xA;&lt;p&gt;Now &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; is not a Webshop, we are an Open Source shop, so you won&amp;rsquo;t see a zillion Drupal modules being contributed by us in the near future (albeit there are a couple) , we are company assisting other organisations in their adoption of Open Source, and Drupal is amongst the projects we care for. You&amp;rsquo;ll notice code from us in the different other Open Source projects, including the Linux Kernel and other core infrastructure. And not all of it was code, there is a lot of published documentation, methodologies, bughunting and also spreading the words, or talking about our experiences around different topics such as MySQL Cluster and Drupal, or different alternatives to Monitor , or to Monitor MySQL etc ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>MythTV recover Lost&#43;Found</title>
-      <link>https://krisbuytaert.github.io/blog/mythtv-recover-lostfound/</link>
+      <link>http://localhost:1313/blog/mythtv-recover-lostfound/</link>
       <pubDate>Fri, 19 Dec 2008 20:41:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/mythtv-recover-lostfound/</guid>
+      <guid>http://localhost:1313/blog/mythtv-recover-lostfound/</guid>
       <description>&lt;p&gt;My MythTV store lives on an LVM volume that is spread over 2 disks, one of them is an external USB disk. So the cleaninglady seems to have touched a cable and after coming back from holiday I had a read-only filesystem that afer a remount had about 350Gb in lost+found with irrelevant filenames.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. total 337407844&#xA;2. drwx------   2 tv   tv         4096 Dec 17 22:47 .&#xA;3. drwxrwxrwx  15 tv   tv         4096 Dec 17 22:44 ..&#xA;4. -rw-r--r--   1 root root  423343556 Dec 14 07:10 I303109.RCN&#xA;5. -rw-r--r--   1 root root 2990538924 Dec 13 19:05 I303107.RCN&#xA;6. -rw-r--r--   1 root root 1023691768 Dec 13 08:10 I319494.RCN&#xA;7. -rw-r--r--   1 root root 1023622348 Dec 13 07:45 I327684.RCN&#xA;8. -rw-r--r--   1 root root  423735892 Dec 13 07:10 I327682.RCN&#xA;9. -rw-r--r--   1 root root  466749476 Dec 12 15:43 I135169.RCN&#xA;10. -rw-r--r--   1 root root 1023314212 Dec 12 07:45 I098309.RCN&#xA;11. -rw-r--r--   1 root root 1022459928 Dec 12 06:35 I098306.RCN&#xA;12. -rw-r--r--   1 root root 2458822948 Dec  9 22:50 I139264.RCN&#xA;13. -rw-r--r--   1 root root 2129683736 Dec  9 21:30 I323592.RCN&#xA;14. -rw-r--r--   1 root root  466735992 Dec  9 15:43 I323590.RCN&#xA;15. -rw-r--r--   1 root root 1022747296 Dec  9 07:45 I323588.RCN&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Obviously I wanted to recover my data.&lt;br&gt;&#xA;So I had files with a wrong filename on a filesystem but with a correct timestamp and probably the right filesize.&lt;br&gt;&#xA;Luckily the mythconverg.recorded table also gives me lots of information about the files that mythtv had originally stored the content in.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MySQL 5.1 on Fedora 10</title>
-      <link>https://krisbuytaert.github.io/blog/mysql-51-fedora-10/</link>
+      <link>http://localhost:1313/blog/mysql-51-fedora-10/</link>
       <pubDate>Fri, 19 Dec 2008 20:38:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/mysql-51-fedora-10/</guid>
+      <guid>http://localhost:1313/blog/mysql-51-fedora-10/</guid>
       <description>&lt;p&gt;So I wanted a fresh MySQL 5.1 release on my Fedora 10 box.&lt;br&gt;&#xA;Fedora comes with a mysql 5.0 package and the MySQL community packages for 5.1 conflict with that in different ways. (to start with MySQL vs mysql)&lt;/p&gt;&#xA;&lt;p&gt;For some weird reason libmysqlclient (in mysql-libs) is required by redland, which is required by openoffice.org-core. I probaly never need the RDF funtionalities that redland provides me but I`m stuck with them anyhow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Free Beer, planet.grep.be Meetup</title>
-      <link>https://krisbuytaert.github.io/blog/free-beer-planetgrepbe-meetup/</link>
+      <link>http://localhost:1313/blog/free-beer-planetgrepbe-meetup/</link>
       <pubDate>Thu, 18 Dec 2008 23:14:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/free-beer-planetgrepbe-meetup/</guid>
+      <guid>http://localhost:1313/blog/free-beer-planetgrepbe-meetup/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://planet.grep.be/&#34;&gt;planet.grep.be&lt;/a&gt; today has a lot of active open source users and contributors.&lt;br&gt;&#xA;The weird thing is that we never meet apart from Fosdem.&lt;br&gt;&#xA;Yes, we occasionally run into eachother at other events but there&amp;rsquo;s not enough beer involved.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve had different people ask me what and where are the Open Source gatherings in Belgium, and we must admit that apart&lt;br&gt;&#xA;from Fosdem there isn&amp;rsquo;t that much in our little country.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CCK &amp; Views, My First Experiences</title>
-      <link>https://krisbuytaert.github.io/blog/cck-views-my-first-experiences/</link>
+      <link>http://localhost:1313/blog/cck-views-my-first-experiences/</link>
       <pubDate>Sun, 07 Dec 2008 23:44:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/cck-views-my-first-experiences/</guid>
+      <guid>http://localhost:1313/blog/cck-views-my-first-experiences/</guid>
       <description>&lt;p&gt;and probably my last one ..&lt;/p&gt;&#xA;&lt;p&gt;I &lt;a href=&#34;http://www.krisbuytaert.be/blog/migrate-multisite-and-restyle&#34;&gt;mentioned&lt;/a&gt;  a couple of weeks ago that I was looking into a way of converting my static page with published papers, articles and presentations in a more dynamic page where I could create RSS feeds from the updates and feed them into &lt;a href=&#34;http://www.inuits.be/&#34;&gt;another site&lt;/a&gt; for everybody to use.&lt;/p&gt;&#xA;&lt;p&gt;Some people suggested that I&amp;rsquo;d have a look at CCK &amp;amp; Views for this. While up till now when creating an app I had usually written my own Drupal module with my own database schema and manually written SQL Queries. This indeed looked like the perfect opportunity to dig into the CCK and Views thingie.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Eclipse of Sun</title>
-      <link>https://krisbuytaert.github.io/blog/eclipse-sun/</link>
+      <link>http://localhost:1313/blog/eclipse-sun/</link>
       <pubDate>Sat, 06 Dec 2008 11:42:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/eclipse-sun/</guid>
+      <guid>http://localhost:1313/blog/eclipse-sun/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;ve been reading this blog for a while you&amp;rsquo;ll know that&lt;br&gt;&#xA;for the past decade I&amp;rsquo;ve had a love-hate relation ship with Sun.&lt;/p&gt;&#xA;&lt;p&gt;Sun has done a lot of good things in their open source journey such as MySQL, openOffice , Virtualbox and opensourcing Java. But on the other hand they had troubles with creating really organic opensource.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve always wondered why a company that bought StarDivision because it was cheaper than buying the MS Office license keeps wasting money on building it&amp;rsquo;s own operating systems, albeit in a pretty open model, but with zero to no relevant community.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tab Dump , Drupal Performance</title>
-      <link>https://krisbuytaert.github.io/blog/tab-dump-drupal-performance/</link>
+      <link>http://localhost:1313/blog/tab-dump-drupal-performance/</link>
       <pubDate>Mon, 01 Dec 2008 22:55:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/tab-dump-drupal-performance/</guid>
+      <guid>http://localhost:1313/blog/tab-dump-drupal-performance/</guid>
       <description>&lt;p&gt;Have to close some tabs .. what more can I say ..&lt;/p&gt;&#xA;&lt;p&gt;2 interresting articles about Drupal and MySQL performance tuning&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://marksitblog.blogspot.com/2008/11/improving-drupal-performance-part-iii.html&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://www.pronovix.com/blog/my-favorite-drupal-performance-hacks&#34;&gt;here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Enjoy&lt;/p&gt;</description>
     </item>
     <item>
       <title>Do we want an Open Source MySQL Monitoring tool  ?</title>
-      <link>https://krisbuytaert.github.io/blog/do-we-want-open-source-mysql-monitoring-tool/</link>
+      <link>http://localhost:1313/blog/do-we-want-open-source-mysql-monitoring-tool/</link>
       <pubDate>Tue, 18 Nov 2008 00:44:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/do-we-want-open-source-mysql-monitoring-tool/</guid>
+      <guid>http://localhost:1313/blog/do-we-want-open-source-mysql-monitoring-tool/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://themattreid.com/wordpress/?p=77&#34;&gt;Matt Reid&lt;/a&gt; wants to know what we want in an Open Source MySQL monitoring solution ?&lt;/p&gt;&#xA;&lt;p&gt;He is working on the second incarnation of Monolith and wants input from the MySQL community.&lt;/p&gt;&#xA;&lt;p&gt;Now for me the bigger question is if we want an isolated tool that runs stand alone, or a tool which we can integrate it in something we already have.&lt;/p&gt;&#xA;&lt;p&gt;To me there is a difference between a tool that I want to use to debug my environment, such as Mytop or MySQL Activity Report, in that case I need some tool that quickly installs with little dependencies and little impact.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Want to be Social Network</title>
-      <link>https://krisbuytaert.github.io/blog/want-be-social-network/</link>
+      <link>http://localhost:1313/blog/want-be-social-network/</link>
       <pubDate>Sat, 01 Nov 2008 13:00:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/want-be-social-network/</guid>
+      <guid>http://localhost:1313/blog/want-be-social-network/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://blogs.mysql.com/kaj/2008/10/31/dopplr-joining-the-social-network-for-travellers/&#34;&gt;Kaj&lt;/a&gt; wrote about using &lt;a href=&#34;http://www.dopplr.com/traveller/KrisBuytaert&#34;&gt;Dopplr&lt;/a&gt; to keep track of where colegues and friends are traveling and finding out about accidental meetups. (I even use it to track where one of the Inuits collegues work plans)&lt;br&gt;&#xA;Now I have never met &lt;a href=&#34;http://datacharmer.blogspot.com/&#34;&gt;Giuseppe&lt;/a&gt; , but we shared slides before so I&amp;rsquo;d love to meet him one day .. connecting to him via Dopplr gives me that opportunity .. who knows one day Dopplr will tell me we have matching travel schedules.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MySQL and DRBD, Often say NO :)</title>
-      <link>https://krisbuytaert.github.io/blog/mysql-and-drbd-often-say-no/</link>
+      <link>http://localhost:1313/blog/mysql-and-drbd-often-say-no/</link>
       <pubDate>Mon, 28 Apr 2008 19:33:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/mysql-and-drbd-often-say-no/</guid>
+      <guid>http://localhost:1313/blog/mysql-and-drbd-often-say-no/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://fghaas.wordpress.com/2008/04/27/drbd-and-mysql-just-say-yes/&#34;&gt;Florian&lt;/a&gt; is replying to &lt;a href=&#34;http://www.jebriggs.com/blog/mysql/drbd-and-mysql-just-say-no.html&#34;&gt;James&lt;/a&gt; on the subject of using DRBD for MySQL HA. A discussion started earlier &lt;a href=&#34;http://ebergen.net/wordpress/2007/04/02/drbd-in-the-real-world/&#34;&gt;by Eric&lt;/a&gt; Florian is refuting most of the arguments that James has against using MySQL and DRBD together.&lt;/p&gt;&#xA;&lt;p&gt;I`m also saying NO to MySQL and DRBD in most of the cases.. but not for any of the reasons James mentions.&lt;/p&gt;&#xA;&lt;p&gt;I must say upfront I love DRBD and I have been using it in production for a long time but not for MySQL HA.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Scaling Drupal</title>
-      <link>https://krisbuytaert.github.io/blog/scaling-drupal/</link>
+      <link>http://localhost:1313/blog/scaling-drupal/</link>
       <pubDate>Sat, 10 Nov 2007 17:54:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/scaling-drupal/</guid>
+      <guid>http://localhost:1313/blog/scaling-drupal/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.johnandcailin.com/usernode/john&#34;&gt;John Quinn&lt;/a&gt; writes about &lt;a href=&#34;http://www.johnandcailin.com/blog/john/scaling-drupal-open-source-infrastructure-high-traffic-drupal-sites&#34;&gt;Scaling Drupal&lt;/a&gt; he is taking a one step at a time approach and is still writing his 4th and 5 stages.&lt;/p&gt;&#xA;&lt;p&gt;His first step obviously is separating the drupal from a separate database server, and he chooses mysql for this purpose, moving your DB to a different machine is a good thing to do.&lt;/p&gt;&#xA;&lt;p&gt;However then he gets this crazy idea of using NFS to share his his drupal shared files :(&lt;br&gt;&#xA;(he even dares to mention that the setup ease is good) Folks, we abandonned NFS in the late nineties. NFS is still a recipe for disaster, it has performance issues , it as stability issues (stale locks), and no security admin in his right mind will tolerate portmap to be running in his DMZ.&lt;br&gt;&#xA;(Also think about the IO path that one has to follow to serve a static file to a surfer when the file is stored on a remote NFS volume)&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sarcasm on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/sarcasm/</link>
+    <link>http://localhost:1313/blog/tags/sarcasm/</link>
     <description>Recent content in Sarcasm on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Mar 2009 14:13:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/sarcasm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/sarcasm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conspiracy Theory</title>
-      <link>https://krisbuytaert.github.io/blog/conspiracy-theory/</link>
+      <link>http://localhost:1313/blog/conspiracy-theory/</link>
       <pubDate>Sun, 08 Mar 2009 14:13:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/conspiracy-theory/</guid>
+      <guid>http://localhost:1313/blog/conspiracy-theory/</guid>
       <description>&lt;p&gt;&lt;code&gt;&amp;lt;conspiracy mode&amp;gt;&lt;/code&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://nxadm.wordpress.com/2009/03/03/still-no-javafx-for-linux/&#34;&gt;Claudio&lt;/a&gt; , Isn&amp;rsquo;t it obvious, Sun doesn&amp;rsquo;t want you to use Linux, they will do everything in their power to prevent that , such as slowing down releases of software for our preferred platform, so that you might even start to consider choosing for Slowaris&lt;br&gt;&#xA;&lt;code&gt;&amp;lt;/conspiracy mode&amp;gt;&lt;/code&gt;&lt;/p&gt;</description>
     </item>
   </channel>

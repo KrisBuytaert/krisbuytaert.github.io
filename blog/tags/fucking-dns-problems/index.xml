@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fucking Dns Problems on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/fucking-dns-problems/</link>
+    <link>http://localhost:1313/blog/tags/fucking-dns-problems/</link>
     <description>Recent content in Fucking Dns Problems on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 May 2009 22:57:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/fucking-dns-problems/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/fucking-dns-problems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ZooCamp</title>
-      <link>https://krisbuytaert.github.io/blog/zoocamp-0/</link>
+      <link>http://localhost:1313/blog/zoocamp-0/</link>
       <pubDate>Tue, 26 May 2009 22:57:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/zoocamp-0/</guid>
+      <guid>http://localhost:1313/blog/zoocamp-0/</guid>
       <description>&lt;p&gt;Last saturday was ZooCamp , also known as Barcamp Antwerp II&lt;/p&gt;&#xA;&lt;p&gt;The location , the Antwerp Zoo, was the same as for the last CloudCamp Antwerp edition, so I was already pretty familiar with the location.&lt;/p&gt;&#xA;&lt;p&gt;Lots of new people at ZooCamp and also a bunch of regulars..&lt;/p&gt;&#xA;&lt;p&gt;My 4th barcamp and the 2nd where I didn&amp;rsquo;t do a presentation, I hope the fact that &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; was sponsoring ZooCamp made up for that.. contributions can be done in different forms, and you can&amp;rsquo;t always keep coming up with new topics.&lt;/p&gt;</description>
     </item>
   </channel>

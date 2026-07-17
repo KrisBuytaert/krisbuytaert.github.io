@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Antwerpen on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/antwerpen/</link>
+    <link>http://localhost:1313/blog/tags/antwerpen/</link>
     <description>Recent content in Antwerpen on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Feb 2010 22:55:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/antwerpen/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/antwerpen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Loadays CFP</title>
-      <link>https://krisbuytaert.github.io/blog/loadays-cfp/</link>
+      <link>http://localhost:1313/blog/loadays-cfp/</link>
       <pubDate>Thu, 11 Feb 2010 22:55:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/loadays-cfp/</guid>
+      <guid>http://localhost:1313/blog/loadays-cfp/</guid>
       <description>&lt;p&gt;I would like to point the crowd to the Call For Presentaions of Loadays. , the Linux Open Administration Days .&lt;/p&gt;&#xA;&lt;p&gt;The Linux Open Administration days 2010 will be the first edition of a new conference focusing on Linux and Open Administration, we are trying to fill a gap for System Engineers and Administrators using Open Source technologies&amp;quot;&lt;/p&gt;&#xA;&lt;p&gt;More details on the &lt;a href=&#34;http://loadays.org/news/call-presentations&#34;&gt;Linux Open Administration Days site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll probably be there .. given the fact that the event will be 5 minutes from where I live .&lt;/p&gt;</description>
     </item>
     <item>
       <title>CloudCamp Antwerp</title>
-      <link>https://krisbuytaert.github.io/blog/cloudcamp-antwerp-0/</link>
+      <link>http://localhost:1313/blog/cloudcamp-antwerp-0/</link>
       <pubDate>Fri, 10 Apr 2009 21:21:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/cloudcamp-antwerp-0/</guid>
+      <guid>http://localhost:1313/blog/cloudcamp-antwerp-0/</guid>
       <description>&lt;p&gt;So yesterday a 100+ crowd met in the Antwerp Zoo.&lt;br&gt;&#xA;I heard different comments from that crowd&amp;hellip; some of them liked the event, good networking, interresting topics , a broad overview, meeting new vendors active in the Cloud, others of them didn&amp;rsquo;t .. it wasn&amp;rsquo;t a real camp , just some vendors pitching, they didn&amp;rsquo;t hear any new stuff , or we didn&amp;rsquo;t touch the real stuff.&lt;/p&gt;&#xA;&lt;p&gt;So different opinions from different expectations&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>CloudCamp Antwerp</title>
-      <link>https://krisbuytaert.github.io/blog/cloudcamp-antwerp/</link>
+      <link>http://localhost:1313/blog/cloudcamp-antwerp/</link>
       <pubDate>Tue, 17 Mar 2009 22:28:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/cloudcamp-antwerp/</guid>
+      <guid>http://localhost:1313/blog/cloudcamp-antwerp/</guid>
       <description>&lt;p&gt;After CloudCamp London , having approx 5-600 visitors according to certain &lt;a href=&#34;http://www.cloudave.com/link/cloudcamp-gets-big-in-london&#34;&gt;blog posts&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;One of the next up is line is &lt;a href=&#34;http://cloudcamp-antwerp-09.eventbrite.com/&#34;&gt;CloudCamp Antwerp&lt;/a&gt; , I`m pretty sure there won&amp;rsquo;t be 500-600 showing up at the Zoo to watch the penguins , great location &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;For those of you travelling from abroad, note that London City Airport is less than an hour from Antwerp , so no excuses there.. that and we have much better beer !&lt;/p&gt;</description>
     </item>
     <item>
       <title>Geekdinner Antwerp Edition 2</title>
-      <link>https://krisbuytaert.github.io/blog/geekdinner-antwerp-edition-2/</link>
+      <link>http://localhost:1313/blog/geekdinner-antwerp-edition-2/</link>
       <pubDate>Sun, 01 Mar 2009 21:14:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/geekdinner-antwerp-edition-2/</guid>
+      <guid>http://localhost:1313/blog/geekdinner-antwerp-edition-2/</guid>
       <description>&lt;p&gt;Last Wednesday after the LSec event with Bruce Schneier and the R ans S from RSA , we already had a mini AdHoc GeekDinner in Leuven, one that pretty would have matched Philips requirements for having it called Geek dinner&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.paeps.cx/weblog/life/proliferation_of_geek_events.html&#34;&gt;Philip&lt;/a&gt; has been ranting this week about different events titled &amp;ldquo;Geek&amp;rdquo; not attrackting real geeks. that know hex and binary is but merely atrackting the Startup/Web crowd, now there&amp;rsquo;s nothing wrong with both crowds, and I happen to be part of both but it can cause strange situations&lt;br&gt;&#xA;&lt;a href=&#34;http://www.geekdinner.be/&#34;&gt;Geekdinner.be&lt;/a&gt;Tom K arranged a nice deal with &lt;a href=&#34;http://detroubadour.be/&#34;&gt;De Troubadour&lt;/a&gt; so foodwise it promises to be great.&lt;/p&gt;</description>
     </item>
   </channel>

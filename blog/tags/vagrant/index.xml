@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vagrant on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/vagrant/</link>
+    <link>http://localhost:1313/blog/tags/vagrant/</link>
     <description>Recent content in Vagrant on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Aug 2012 23:51:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vagrant and Drupal, a winning team</title>
-      <link>https://krisbuytaert.github.io/blog/vagrant-and-drupal-winning-team/</link>
+      <link>http://localhost:1313/blog/vagrant-and-drupal-winning-team/</link>
       <pubDate>Sat, 25 Aug 2012 23:51:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/vagrant-and-drupal-winning-team/</guid>
+      <guid>http://localhost:1313/blog/vagrant-and-drupal-winning-team/</guid>
       <description>&lt;p&gt;While heading back home from DrupalCon Munich after 4 days of good interaction with lots of Drupal folks.&lt;br&gt;&#xA;I realized to my big suprise that there are a lot of people using Vagrant to make sure that developers are not working on platforms they invented their own. Lots of people have realized that &amp;ldquo;It works on my computer&amp;rdquo; is not something they want to hear from a developer and are reaching out to give them viable solutions to work on shared and reproducible solutions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Our #monitoringsucks rpm is repository available</title>
-      <link>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</link>
+      <link>http://localhost:1313/blog/our-monitoringsucks-rpm-repository-available/</link>
       <pubDate>Sat, 11 Aug 2012 21:49:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/our-monitoringsucks-rpm-repository-available/</guid>
+      <guid>http://localhost:1313/blog/our-monitoringsucks-rpm-repository-available/</guid>
       <description>&lt;p&gt;Not only our Rubygems Builds have changed, but also my internal #monitoringsucks repository.&lt;/p&gt;&#xA;&lt;p&gt;You might have noticed a variety of vagrant- projects on my github acount&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-ganglia&#34;&gt;http://github.com/KrisBuytaert/vagrant-ganglia&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-graphite&#34;&gt;http://github.com/KrisBuytaert/vagrant-graphite&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://github.com/KrisBuytaert/vagrant-puppet-logstash&#34;&gt;http://github.com/KrisBuytaert/vagrant-puppet-logstash,&lt;/a&gt;&lt;br&gt;&#xA;Being the #monitoringsucks part of them. All of those Vagrant projects are basically my test setups to play with those new tools.&lt;/p&gt;&#xA;&lt;p&gt;They contain a bunch of puppet modules that install and configure these tools. (Note that they mostly consist of&lt;br&gt;&#xA;of git submodules to other puppet module repositories.&lt;/p&gt;</description>
     </item>
     <item>
       <title>FlossUK and Puppetcamp Edinburgh</title>
-      <link>https://krisbuytaert.github.io/blog/flossuk-and-puppetcamp-edinburgh/</link>
+      <link>http://localhost:1313/blog/flossuk-and-puppetcamp-edinburgh/</link>
       <pubDate>Fri, 23 Mar 2012 16:49:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/flossuk-and-puppetcamp-edinburgh/</guid>
+      <guid>http://localhost:1313/blog/flossuk-and-puppetcamp-edinburgh/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve just finished presenting my talk on how I currently work on Puppet modules at Puppetcamp here in Edinburgh where I&amp;rsquo;ve been for the week talking on both FlossUK 2012 and Puppetcamp.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/7-tools-for-your-devops-stack&#34; title=&#34;7 tools for your devops stack&#34;&gt;7 tools for your devops stack&lt;/a&gt;&lt;/strong&gt; \&lt;/p&gt;&#xA;&lt;p&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Earlier this week I opened FlossUK 2012 with my talk on 7 tools for your devops stack&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/how-ihackonpuppetmodules&#34; title=&#34;How I hack on puppet modules&#34;&gt;How I hack on puppet modules&lt;/a&gt;&lt;/strong&gt; \&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing Vagrant, on Ubuntu Natty</title>
-      <link>https://krisbuytaert.github.io/blog/installing-vagrant-ubuntu-natty/</link>
+      <link>http://localhost:1313/blog/installing-vagrant-ubuntu-natty/</link>
       <pubDate>Thu, 29 Dec 2011 20:31:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/installing-vagrant-ubuntu-natty/</guid>
+      <guid>http://localhost:1313/blog/installing-vagrant-ubuntu-natty/</guid>
       <description>&lt;p&gt;(Warning some Ubuntu ranting ahead)&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. apt-get install virtualbox-ose&#xA;2. apt-get install rubygems&#xA;3. gem install vagrant&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That&amp;rsquo;s what I assumed it would take me to install vagrant on a spare Ubuntu (Natty) laptop.&lt;/p&gt;&#xA;&lt;p&gt;Well it&amp;rsquo;s not. after that I was greeted with some weirdness.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. $vagrant&#xA;2. vagrant: command not found...&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Yet gem list &amp;ndash;local showed the vagrant gem installed.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. $ruby&#xA;2. ruby:  command not found&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I looked twice, checked again and indeed it seems you can install rubygems on natty with no ruby installed #dazedandconfused&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using Veewee</title>
-      <link>https://krisbuytaert.github.io/blog/using-veewee/</link>
+      <link>http://localhost:1313/blog/using-veewee/</link>
       <pubDate>Wed, 24 Aug 2011 10:41:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/using-veewee/</guid>
+      <guid>http://localhost:1313/blog/using-veewee/</guid>
       <description>&lt;p&gt;With @dancarley and @patrickebois just discussing the origin of the name of Veewee I figured I still had that piece of documentation I wrote up for myselve flying around &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;So with no other reason than having my docs mirrored on the internet .&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. gem install veewee&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. veewee templates&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;shows you what templates we have around ..&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. $veewee init natty ubuntu-11.04-server-amd64&#xA;2. Init a new box natty, starting from template ubuntu-11.04-server-amd64&#xA;3. The basebox &amp;#39;natty&amp;#39; has been successfully created from the template &amp;#39;&amp;#39;ubuntu-11.04-server-amd64&amp;#39;&#xA;4. You can now edit the definition files stored in definitions/natty&#xA;5. or build the box with:&#xA;6. vagrant basebox build &amp;#39;natty&amp;#39;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As noted this will generate the definition for your natty box,&lt;br&gt;&#xA;It will create a definition.rb file which describes your box.&lt;br&gt;&#xA;A preseed (or kickstart or similar file) and a postinstall file&lt;/p&gt;</description>
     </item>
     <item>
       <title>And then vagrant gave up ...  for a while</title>
-      <link>https://krisbuytaert.github.io/blog/and-then-vagrant-gave-while/</link>
+      <link>http://localhost:1313/blog/and-then-vagrant-gave-while/</link>
       <pubDate>Mon, 02 May 2011 22:31:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/and-then-vagrant-gave-while/</guid>
+      <guid>http://localhost:1313/blog/and-then-vagrant-gave-while/</guid>
       <description>&lt;p&gt;Don&amp;rsquo;t you just love Ruby errors &amp;hellip; like the one below ?&lt;/p&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t they almost make Java stack traces look readable ?&lt;br&gt;&#xA;57 lines of jibberish &amp;hellip; where all I wanted to read was &amp;ldquo;VirtualBox in error state, check gui&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;People like &lt;a href=&#34;https://twitter.com/#!/sonofhans&#34;&gt;Randall Hanssen&lt;/a&gt; deserve much more visibility .. they do understand how to write a good error message and there are lots of projects that need improvement there.&lt;/p&gt;&#xA;&lt;p&gt;Anywhow&amp;hellip; vagrant had suddenly stopped working on me with the error below&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vagrant &amp; Rubylibs</title>
-      <link>https://krisbuytaert.github.io/blog/vagrant-rubylibs/</link>
+      <link>http://localhost:1313/blog/vagrant-rubylibs/</link>
       <pubDate>Tue, 29 Mar 2011 20:11:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/vagrant-rubylibs/</guid>
+      <guid>http://localhost:1313/blog/vagrant-rubylibs/</guid>
       <description>&lt;p&gt;I was testing some MySQL puppet modules on my Vagrant box earlier this week and one of them required augeas.&lt;br&gt;&#xA;I kept running into &amp;ldquo;Could not find a default provider for augeas&amp;rdquo;, however all the appropriate augeas , augeas-lib and ruby-augeas packages were installed. I inspected the different ruby directories and the files were perfectly in /usr/lib/ruby/site_ruby/1.8 where I expected them.&lt;/p&gt;&#xA;&lt;p&gt;With all the files seemd to be in the right place, my next option was to strace a small ruby script that included augeas, guess what that showed ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Converting KVM to VirtualBox</title>
-      <link>https://krisbuytaert.github.io/blog/converting-kvm-virtualbox/</link>
+      <link>http://localhost:1313/blog/converting-kvm-virtualbox/</link>
       <pubDate>Wed, 23 Feb 2011 00:01:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/converting-kvm-virtualbox/</guid>
+      <guid>http://localhost:1313/blog/converting-kvm-virtualbox/</guid>
       <description>&lt;p&gt;I have had most of my test environment, aka puppetmasters, test mysql setups etc running in KVM for the past couple of years .. (yes I`m still using a lot of Xen in production environments, but we&amp;rsquo;ve also been using KVM for a while already .. it&amp;rsquo;s a good mix) , Virtual box has always been the lesser loved Virtualization platform , however while playing more and more with Vagrant Up I realized I needed to convirt some boxen (e.g my PuppetMaster) to Virtualbox, and google was really no good help(most people seem to go the other way , or want to use some proprietary tools )&lt;/p&gt;</description>
     </item>
   </channel>

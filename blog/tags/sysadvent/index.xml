@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sysadvent on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/sysadvent/</link>
+    <link>http://localhost:1313/blog/tags/sysadvent/</link>
     <description>Recent content in Sysadvent on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Dec 2010 23:23:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/sysadvent/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/sysadvent/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Guest Post Season</title>
-      <link>https://krisbuytaert.github.io/blog/guest-post-season/</link>
+      <link>http://localhost:1313/blog/guest-post-season/</link>
       <pubDate>Sat, 18 Dec 2010 23:23:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/guest-post-season/</guid>
+      <guid>http://localhost:1313/blog/guest-post-season/</guid>
       <description>&lt;p&gt;Apparently December is the month where everybody starts writing guest posts for other blogs.&lt;/p&gt;&#xA;&lt;p&gt;Earlier this month I wrote an article with the title of this blog for Sysadvent ,&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s a sysadmin relative of the Perl Advent Calendar: One article for each day of December, ending on the 25th article. With the goals of of sharing, openness, and mentoring, we aim to provide great articles about systems administration topics written by fellow sysadmins\&lt;/p&gt;</description>
     </item>
   </channel>

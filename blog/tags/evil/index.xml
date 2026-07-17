@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Evil on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/evil/</link>
+    <link>http://localhost:1313/blog/tags/evil/</link>
     <description>Recent content in Evil on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 03 Dec 2009 22:39:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/evil/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/evil/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Changing the title of my Blog</title>
-      <link>https://krisbuytaert.github.io/blog/changing-title-my-blog/</link>
+      <link>http://localhost:1313/blog/changing-title-my-blog/</link>
       <pubDate>Thu, 03 Dec 2009 22:39:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/changing-title-my-blog/</guid>
+      <guid>http://localhost:1313/blog/changing-title-my-blog/</guid>
       <description>&lt;p&gt;After what &lt;a href=&#34;http://googlecode.blogspot.com/2009/12/introducing-google-public-dns-new-dns.html&#34;&gt;google announced today&lt;/a&gt; it&amp;rsquo;s pretty clear who to blame as of now, no it&amp;rsquo;s not Dim0 anymore,, it&amp;rsquo;s not a Freaking DNS Problem anymore its just plain old google.&lt;/p&gt;&#xA;&lt;p&gt;Yep Google announced they will be providing a public open DNS server . So rather than claiming that Everything is a Freaking DNS Problem, now everything is a Freaking Google Problem.&lt;/p&gt;&#xA;&lt;p&gt;Google tracking which sites you visits while not using earch, it&amp;rsquo;s a DNS Problem , Google tracking different Google Profiles you have and matching them together indeed, another Fine DNS Proble, Google tracking what different users are working the same computer and mapping them it&amp;rsquo;s a DNS Problem,&lt;/p&gt;</description>
     </item>
   </channel>

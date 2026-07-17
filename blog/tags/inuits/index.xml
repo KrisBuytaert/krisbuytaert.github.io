@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Inuits on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/inuits/</link>
+    <link>http://localhost:1313/blog/tags/inuits/</link>
     <description>Recent content in Inuits on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Nov 2012 22:54:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/inuits/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/inuits/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>#monitoringlove hackfest</title>
-      <link>https://krisbuytaert.github.io/blog/monitoringlove-hackfest/</link>
+      <link>http://localhost:1313/blog/monitoringlove-hackfest/</link>
       <pubDate>Tue, 13 Nov 2012 22:54:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoringlove-hackfest/</guid>
+      <guid>http://localhost:1313/blog/monitoringlove-hackfest/</guid>
       <description>&lt;p&gt;The age of #monitoringsucks is over, we&amp;rsquo;re now transitioning into a #monitoringlove period.&lt;/p&gt;&#xA;&lt;p&gt;That however doesn&amp;rsquo;t mean al the work is done, we still need to do a lot of work and a lot of people are working on a lot of stuff.&lt;/p&gt;&#xA;&lt;p&gt;Therefore like last year we are opening up our offices again right after Fosdem for a #monitoringlove hackfest&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s right on february 4 and 5 a bunch of people interrested to fix the problem will be meeting , discussing and hacking stuff together in Antwerp. In short a #monitoringlove hackathon&lt;/p&gt;</description>
     </item>
     <item>
       <title>Inuits Day</title>
-      <link>https://krisbuytaert.github.io/blog/inuits-day/</link>
+      <link>http://localhost:1313/blog/inuits-day/</link>
       <pubDate>Mon, 21 Jun 2010 21:14:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/inuits-day/</guid>
+      <guid>http://localhost:1313/blog/inuits-day/</guid>
       <description>&lt;p&gt;Couple of Fridays ago we had one of our @Inuits days again. Rather than having some people give talks and presentations about what they have been doing for the past couple of months this time we set out to research, test, and build stuff.&lt;/p&gt;&#xA;&lt;p&gt;We split up in 3 different groups, one focusing on CI and testing freshly build stuff with cucumber, a second one setup and tested &lt;a href=&#34;http://www.codership.com/products/galera_replication&#34;&gt;Galera&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;We setup a 3 node Galera cluster , not really as smooth as we&amp;rsquo;d like to ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>FAQ:</title>
-      <link>https://krisbuytaert.github.io/blog/faq/</link>
+      <link>http://localhost:1313/blog/faq/</link>
       <pubDate>Mon, 14 Jun 2010 21:32:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/faq/</guid>
+      <guid>http://localhost:1313/blog/faq/</guid>
       <description>&lt;p&gt;Q: Is &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; your Brother ?&lt;br&gt;&#xA;A: No he isn&amp;rsquo;t.&lt;/p&gt;&#xA;&lt;p&gt;Q: Are you related to &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; ?&lt;br&gt;&#xA;A: No we aren&amp;rsquo;t (as far as we know)&lt;/p&gt;&#xA;&lt;p&gt;Q: Do you know &lt;a href=&#34;http://buytaert.net/&#34;&gt;Dries&lt;/a&gt; ?&lt;br&gt;&#xA;A: Yeah .. I&amp;rsquo;ve known him since before he started his work on Drupal, now can you stop asking about Dries and refocus on me ?&lt;/p&gt;&#xA;&lt;p&gt;Q: Are you related to Thomas Buytaert&lt;br&gt;&#xA;A: No.&lt;/p&gt;&#xA;&lt;p&gt;Q: Why are you sdog on irc ?&lt;br&gt;&#xA;A: Back in my DemoScene days my nick was Sleeping Dog , whch was too long for a unix account name , sleeping didn&amp;rsquo;t feel like a good choice and neither did dog, so the abbrev became sdog&lt;/p&gt;</description>
     </item>
     <item>
       <title>Racketeering in 2009</title>
-      <link>https://krisbuytaert.github.io/blog/racketeering-2009/</link>
+      <link>http://localhost:1313/blog/racketeering-2009/</link>
       <pubDate>Mon, 28 Sep 2009 19:59:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/racketeering-2009/</guid>
+      <guid>http://localhost:1313/blog/racketeering-2009/</guid>
       <description>&lt;p&gt;With the fresh launch of &lt;a href=&#34;http://www.inuits.be/&#34;&gt;inuits.be&lt;/a&gt; this long overdue &lt;a href=&#34;http://www.inuits.be/news/bsa-viseert-open-source-sector&#34;&gt;post&lt;/a&gt; popped up again , Earlier this year we got this very nice letter from the BSA That&amp;rsquo;s right the Business Software Alliance.&lt;/p&gt;&#xA;&lt;p&gt;The letter pictured below is in dutch, so allow me to translate&lt;br&gt;&#xA;some parts :) (Although I`m pretty sure you&amp;rsquo;ve seen variations of this letter in different languages before..)&lt;/p&gt;&#xA;&lt;p&gt;In short they are warning us about using software with no licenses.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ZooCamp</title>
-      <link>https://krisbuytaert.github.io/blog/zoocamp-0/</link>
+      <link>http://localhost:1313/blog/zoocamp-0/</link>
       <pubDate>Tue, 26 May 2009 22:57:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/zoocamp-0/</guid>
+      <guid>http://localhost:1313/blog/zoocamp-0/</guid>
       <description>&lt;p&gt;Last saturday was ZooCamp , also known as Barcamp Antwerp II&lt;/p&gt;&#xA;&lt;p&gt;The location , the Antwerp Zoo, was the same as for the last CloudCamp Antwerp edition, so I was already pretty familiar with the location.&lt;/p&gt;&#xA;&lt;p&gt;Lots of new people at ZooCamp and also a bunch of regulars..&lt;/p&gt;&#xA;&lt;p&gt;My 4th barcamp and the 2nd where I didn&amp;rsquo;t do a presentation, I hope the fact that &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; was sponsoring ZooCamp made up for that.. contributions can be done in different forms, and you can&amp;rsquo;t always keep coming up with new topics.&lt;/p&gt;</description>
     </item>
     <item>
       <title>April Fools</title>
-      <link>https://krisbuytaert.github.io/blog/april-fools/</link>
+      <link>http://localhost:1313/blog/april-fools/</link>
       <pubDate>Mon, 06 Apr 2009 19:09:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/april-fools/</guid>
+      <guid>http://localhost:1313/blog/april-fools/</guid>
       <description>&lt;p&gt;In case you hadn&amp;rsquo;t noticed.. the previous &lt;a href=&#34;http://www.krisbuytaert.be/blog/we-are-rebranding&#34;&gt;post&lt;/a&gt; was an Aprils Fool joke ..&lt;/p&gt;&#xA;&lt;p&gt;We had a good laugh at different people actually believing that we planned on rebranding to &lt;a href=&#34;http://www.pinuits.be/&#34;&gt;Pinuits&lt;/a&gt;, but we&amp;rsquo;ll stay &lt;a href=&#34;http://www.inuits.be/&#34;&gt;Inuits&lt;/a&gt; , But maybe next year we&amp;rsquo;ll rebrand to Linuits :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>We are rebranding !</title>
-      <link>https://krisbuytaert.github.io/blog/we-are-rebranding/</link>
+      <link>http://localhost:1313/blog/we-are-rebranding/</link>
       <pubDate>Wed, 01 Apr 2009 01:27:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/we-are-rebranding/</guid>
+      <guid>http://localhost:1313/blog/we-are-rebranding/</guid>
       <description>&lt;p&gt;So the cat is out of the bag,&lt;/p&gt;&#xA;&lt;p&gt;As of today Inuits is rebranding to Pinuits,&lt;br&gt;&#xA;The press release is &lt;a href=&#34;http://www.pinuits.be/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ve had good feedback on the new name so far. Different people told me the name matched better to what we are doing . Actually my wife thinks our new name is much better as at least the Pin in Pinuits refers to our favourite Tux again ..&lt;/p&gt;&#xA;&lt;p&gt;Finding an appropriate name for an Open Source consultancy company, with focus on Linux, Open Source Monitoring, MySQL, Open Source Virtualization , Large Scale Deployments , High Availability and Drupal, isn&amp;rsquo;t easy .. you want to show both community involvement and professionality. And find a domain that&amp;rsquo;s still available.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>#Future on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/%23future/</link>
+    <link>http://localhost:1313/blog/tags/%23future/</link>
     <description>Recent content in #Future on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Nov 2013 17:16:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/%23future/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/%23future/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apache CloudStack Collaboration Summit Slides</title>
-      <link>https://krisbuytaert.github.io/blog/apache-cloudstack-collaboration-summit-slides/</link>
+      <link>http://localhost:1313/blog/apache-cloudstack-collaboration-summit-slides/</link>
       <pubDate>Wed, 27 Nov 2013 17:16:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/apache-cloudstack-collaboration-summit-slides/</guid>
+      <guid>http://localhost:1313/blog/apache-cloudstack-collaboration-summit-slides/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/KrisBuytaert/the-future-of-sysadmin&#34; title=&#34;The Future of System Administration&#34;&gt;The Future of System Administration&lt;/a&gt;&lt;/strong&gt;  from &lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert&#34;&gt;Kris Buytaert&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

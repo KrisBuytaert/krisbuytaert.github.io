@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Security on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/security/</link>
+    <link>http://localhost:1313/blog/tags/security/</link>
     <description>Recent content in Security on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Jan 2011 22:28:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Appliance or Not Appliance</title>
-      <link>https://krisbuytaert.github.io/blog/appliance-or-not-appliance/</link>
+      <link>http://localhost:1313/blog/appliance-or-not-appliance/</link>
       <pubDate>Wed, 12 Jan 2011 22:28:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/appliance-or-not-appliance/</guid>
+      <guid>http://localhost:1313/blog/appliance-or-not-appliance/</guid>
       <description>&lt;p&gt;That&amp;rsquo;s the question &lt;a href=&#34;http://blog.rootshell.be/2011/01/05/security-diy-or-plugnplay/&#34;&gt;Xavier&lt;/a&gt; asks in his blog entry titled&lt;br&gt;&#xA;Security: DIY or Plug’n&amp;rsquo;Play&lt;/p&gt;&#xA;&lt;p&gt;To me the answer is simple, most of the appliances I ran into so far have no way of configuring them apart from the ugly webgui they ship with their device. That means that I can&amp;rsquo;t integrate them with the configuration management framework I have in place for the rest of the infrastructure. There is no way to automatically modify e.g firewall rules together with the relocation of a service which does happen automatically, and there is always some kind of manual interaction required. Applicances tend to sit on a island, either stay un managed ( be honest when&amp;rsquo;s the last time you upgraded the firmware of that terminal server ? ) , or take a lot of additional efort to manage manually. They require yet another set of tools than the set you are already using to manage your network.&lt;br&gt;&#xA;They don&amp;rsquo;t integrate with your backup strategy, and don&amp;rsquo;t tell me they all come with perfect MIB&amp;rsquo;s.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Call For Abstracts : NLUUG Fall Conference on Security</title>
-      <link>https://krisbuytaert.github.io/blog/call-abstracts-nluug-fall-conference-security/</link>
+      <link>http://localhost:1313/blog/call-abstracts-nluug-fall-conference-security/</link>
       <pubDate>Tue, 01 Jun 2010 19:53:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/call-abstracts-nluug-fall-conference-security/</guid>
+      <guid>http://localhost:1313/blog/call-abstracts-nluug-fall-conference-security/</guid>
       <description>&lt;p&gt;For all the security experts : the NLUUG has published it&amp;rsquo;s &lt;a href=&#34;http://www.nluug.nl/activiteiten/events/nj10/cfp-en.html&#34;&gt;Call For Abstracts&lt;/a&gt; for it&amp;rsquo;s Fall conference.. as you might have guessed the topic is Security, we welcome all abstracts tackling security in a broad sense.&lt;/p&gt;&#xA;&lt;p&gt;Possible topics include:&lt;/p&gt;&#xA;&lt;p&gt;* cloud security&lt;br&gt;&#xA;* online privacy&lt;br&gt;&#xA;* rfid hacking&lt;br&gt;&#xA;* secure programming&lt;br&gt;&#xA;* programma-analysis-tools&lt;br&gt;&#xA;* web services security&lt;br&gt;&#xA;* web browser security&lt;br&gt;&#xA;* embedded hardware hacking&lt;br&gt;&#xA;* incident response and forensics&lt;br&gt;&#xA;* malware and rootkits&lt;br&gt;&#xA;* responsible disclosure&lt;br&gt;&#xA;* legal response&lt;br&gt;&#xA;* fighting spam&lt;br&gt;&#xA;* patch policies&lt;br&gt;&#xA;* identity management&lt;br&gt;&#xA;* central point of administration&lt;br&gt;&#xA;* DNSsec&lt;br&gt;&#xA;* VPN based WANs&lt;br&gt;&#xA;* etc.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Some people just don&#39;t get it</title>
-      <link>https://krisbuytaert.github.io/blog/some-people-just-dont-get-it/</link>
+      <link>http://localhost:1313/blog/some-people-just-dont-get-it/</link>
       <pubDate>Wed, 23 Sep 2009 21:14:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/some-people-just-dont-get-it/</guid>
+      <guid>http://localhost:1313/blog/some-people-just-dont-get-it/</guid>
       <description>&lt;p&gt;I mean, we are heading towards 2010 , some of us have been using Open Source for decades, the Open Source vs Free Software discussion was like last millenium, and we&amp;rsquo;ve been doing open source consultancy for over a decade, yet today companies still think their customers are stupid,&lt;/p&gt;&#xA;&lt;p&gt;Fancy this story on &lt;a href=&#34;http://news.zdnet.co.uk/itmanagement/0,1000000308,39760362,00.htm?s_cid=260&#34;&gt;ZDNet&lt;/a&gt; today .. there&amp;rsquo;s actually companies out there claiming that &amp;ldquo;Bind&amp;rdquo; because of it&amp;rsquo;s FreeWare nature , yes that&amp;rsquo;s right you&amp;rsquo;ve Read FREEWARE , (hadn&amp;rsquo;t heard that word for over 5 years..) , is less secure than their proprietary offering in the Cloud. So the very nature of their Secure product is offering Security by Obscurity in an insecure environment .&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fun with Google Docs  Urls</title>
-      <link>https://krisbuytaert.github.io/blog/fun-google-docs-urls/</link>
+      <link>http://localhost:1313/blog/fun-google-docs-urls/</link>
       <pubDate>Fri, 15 May 2009 20:16:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/fun-google-docs-urls/</guid>
+      <guid>http://localhost:1313/blog/fun-google-docs-urls/</guid>
       <description>&lt;p&gt;I`m not a big user of docs.google.com , but occasionally I use it sharing a public document to work on with friends or collegues.&lt;/p&gt;&#xA;&lt;p&gt;So we have this spreadsheet we&amp;rsquo;re sharing with some family and friends to swap Disney stickers. Google Docs has the option to publish that document publicly as html for others to view.&lt;/p&gt;&#xA;&lt;p&gt;So I tried , and it generated me a very nice url&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://spreadsheets.google.com/pub?key=rtlvf2-JSU1Pw-oPtuIZBPg&amp;amp;output=html&amp;amp;gid=0&amp;amp;single=true&amp;amp;range=A1:C300&#34; title=&#34;http://spreadsheets.google.com/pub?key=rtlvf2-JSU1Pw-oPtuIZBPg&amp;amp;output=html&amp;amp;gid=0&amp;amp;single=true&amp;amp;range=A1:C300&#34;&gt;http://spreadsheets.google.com/pub?key=rtlvf2-JSU1Pw-oPtuIZBPg&amp;amp;output=ht&amp;hellip;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;My sleepy eye catched the A1:C300 ending part .. which was generated by the friendly popup that asked me if I wanted to show all Sheets, or just a range of the page.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Security in Belgium</title>
-      <link>https://krisbuytaert.github.io/blog/security-belgium/</link>
+      <link>http://localhost:1313/blog/security-belgium/</link>
       <pubDate>Mon, 16 Mar 2009 23:14:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/security-belgium/</guid>
+      <guid>http://localhost:1313/blog/security-belgium/</guid>
       <description>&lt;p&gt;With &lt;a href=&#34;http://bart.vanherreweghe.com/&#34;&gt;reports&lt;/a&gt; about Belgium being the 3rd most insecure country in the world, only being beaten by Russia and China and our nice country featuring &lt;a href=&#34;http://www.wired.com/politics/law/magazine/17-04/ff_diamonds?currentPage=1&#34;&gt;in Wired&lt;/a&gt; with what could be the plot for Oceans 17 &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Maybe it&amp;rsquo;s time to refocus my career a bit more on security again &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Just maybe &amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Conference Time</title>
-      <link>https://krisbuytaert.github.io/blog/conference-time/</link>
+      <link>http://localhost:1313/blog/conference-time/</link>
       <pubDate>Sun, 01 Mar 2009 22:22:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/conference-time/</guid>
+      <guid>http://localhost:1313/blog/conference-time/</guid>
       <description>&lt;p&gt;Grab your calendars and mark the following dates :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.t-dose.org/t-dose/node/122&#34;&gt;T-Dose 2009&lt;/a&gt; will be held on 3 and 4 october in Eindhoven again.&lt;/p&gt;&#xA;&lt;p&gt;Last year we had a nice Drupal track, some great MySQL talks and , a great unplanned Cloud talk , and different other interesting talks, so this year promises also to be very interesting.&lt;br&gt;&#xA;(PS. Drupal Themers.. you might want to propose a new theme for the T-Dose site, who knows you&amp;rsquo;ll even win something)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Codebreakers</title>
-      <link>https://krisbuytaert.github.io/blog/codebreakers/</link>
+      <link>http://localhost:1313/blog/codebreakers/</link>
       <pubDate>Wed, 11 Feb 2009 16:38:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/codebreakers/</guid>
+      <guid>http://localhost:1313/blog/codebreakers/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://twitter.com/fredegre&#34;&gt;@fredegre&lt;/a&gt; sent me a mail to tell me about the &lt;a href=&#34;http://www.lsec.be/index.php/whats_happening/event/codebreakers_and_enigmas_special_event/&#34;&gt;L-SEC Codebreakers and Enigmas&amp;rsquo;s - Special Event&lt;/a&gt; , given the lineup I couldn&amp;rsquo;t resist to register for the event ..&lt;/p&gt;&#xA;&lt;p&gt;Security heroes like &lt;a href=&#34;http://www.schneier.com/&#34;&gt;Bruce Schneier&lt;/a&gt; , &lt;a href=&#34;http://en.wikipedia.org/wiki/Adi_Shamir&#34;&gt;Adi Shamir&lt;/a&gt; , &lt;a href=&#34;http://en.wikipedia.org/wiki/Ron_Rivest&#34;&gt;Ron Rivest&lt;/a&gt; and off course our &lt;a href=&#34;http://en.wikipedia.org/wiki/Bart_Preneel&#34;&gt;local experts&lt;/a&gt;&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Should be interresting&lt;/p&gt;&#xA;&lt;p&gt;Cya there ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to suck at Security</title>
-      <link>https://krisbuytaert.github.io/blog/how-suck-security/</link>
+      <link>http://localhost:1313/blog/how-suck-security/</link>
       <pubDate>Sun, 18 Jan 2009 15:05:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/how-suck-security/</guid>
+      <guid>http://localhost:1313/blog/how-suck-security/</guid>
       <description>&lt;p&gt;There is this great post over at &lt;a href=&#34;http://isc.sans.org/diary.html?storyid=5644&#34;&gt;sans.org&lt;/a&gt; Teaching people how to to suck at Security, (actually a reprint of &lt;a href=&#34;http://www.zeltser.com/security-management/suck-at-security-cheat-sheet.html&#34;&gt;this post&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Especially the remarks about security tools ..&lt;br&gt;&#xA;On how not to implement them or how to neglect configuring, afterall the default values must be secure enough.&lt;/p&gt;&#xA;&lt;p&gt;However My favorite&lt;br&gt;&#xA;Hire somebody just because he or she has a lot of certifications.&lt;br&gt;&#xA;I&amp;rsquo;d write Vendor Certifications however .. as independent certifications might have some use.. but if I`m looking for a security guy and he starts talking to me about his product certificatins, something is wrong..&lt;/p&gt;</description>
     </item>
   </channel>

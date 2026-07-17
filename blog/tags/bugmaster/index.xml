@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bugmaster on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/bugmaster/</link>
+    <link>http://localhost:1313/blog/tags/bugmaster/</link>
     <description>Recent content in Bugmaster on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Nov 2010 22:46:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/bugmaster/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/bugmaster/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bug Zapper</title>
-      <link>https://krisbuytaert.github.io/blog/bug-zapper/</link>
+      <link>http://localhost:1313/blog/bug-zapper/</link>
       <pubDate>Wed, 03 Nov 2010 22:46:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/bug-zapper/</guid>
+      <guid>http://localhost:1313/blog/bug-zapper/</guid>
       <description>&lt;p&gt;Dear Fedoracommunity,&lt;/p&gt;&#xA;&lt;p&gt;Over the course of the day I recieved 22^H3 mails from your friendly Bug Zapper.&lt;/p&gt;&#xA;&lt;p&gt;Most of those bugs where bugs I had reported upon crashes using bug-buddy. Bugs on different desktop tools such as .. synergy, evolution, gwibber , gnome-settings and probably some others&lt;/p&gt;&#xA;&lt;p&gt;I do understand that I development goes on and on .. and your fancy devs don&amp;rsquo;t care anymore about bugs I reported on Fedora 12 as they are all hacking on Fedora 15 and that I should update more frequently &amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>

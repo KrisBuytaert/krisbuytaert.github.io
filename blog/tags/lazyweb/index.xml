@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lazyweb on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/lazyweb/</link>
+    <link>http://localhost:1313/blog/tags/lazyweb/</link>
     <description>Recent content in Lazyweb on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 Jan 2009 20:45:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/lazyweb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/lazyweb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Buddylist, Buddlist2, Friendlist</title>
-      <link>https://krisbuytaert.github.io/blog/buddylist-buddlist2-friendlist/</link>
+      <link>http://localhost:1313/blog/buddylist-buddlist2-friendlist/</link>
       <pubDate>Tue, 06 Jan 2009 20:45:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/buddylist-buddlist2-friendlist/</guid>
+      <guid>http://localhost:1313/blog/buddylist-buddlist2-friendlist/</guid>
       <description>&lt;p&gt;Dear LazyWeb&lt;/p&gt;&#xA;&lt;p&gt;Buddylist is aimed at Drupal 5, so when porting to a site to Drupal 6, you need Buddylist2. However the BuddyList page mentions one should look at FriendList as that project is supposed finished ..&lt;/p&gt;&#xA;&lt;p&gt;At first sight it seems like FriendList indeed most advanced in its efforts&lt;br&gt;&#xA;As I was also using Invite, which also is still under development for 6,&lt;br&gt;&#xA;I was assuming that upon installing it the dependencies would tell me which one to use.. however it seems none of them already hooks into Invite&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zenos on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/zenos/</link>
+    <link>http://localhost:1313/blog/tags/zenos/</link>
     <description>Recent content in Zenos on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Oct 2009 20:18:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/zenos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/zenos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monitoring MySQL</title>
-      <link>https://krisbuytaert.github.io/blog/monitoring-mysql-0/</link>
+      <link>http://localhost:1313/blog/monitoring-mysql-0/</link>
       <pubDate>Sun, 11 Oct 2009 20:18:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoring-mysql-0/</guid>
+      <guid>http://localhost:1313/blog/monitoring-mysql-0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://ronaldbradford.com/blog/what-alert-monitoring-do-you-use-2009-10-07/&#34;&gt;Ronald Bradford&lt;/a&gt; wants to know what kind of Monitoring you use..&lt;br&gt;&#xA;He specifically wants to know about Alerting tools&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s different cases , looking at it from a full infrastructure point my current favourite is Zabbix or good old Nagios,&lt;/p&gt;&#xA;&lt;p&gt;But when looking at it from a debugging perspective you have MySQLAR or Hyperic, but those aren&amp;rsquo;t in the alerting list.&lt;/p&gt;&#xA;&lt;p&gt;However, when you are building HA clusters, you have custom scripts running either from mon or from pacemaker ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>MonitoringForge</title>
-      <link>https://krisbuytaert.github.io/blog/monitoringforge/</link>
+      <link>http://localhost:1313/blog/monitoringforge/</link>
       <pubDate>Wed, 23 Sep 2009 21:20:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoringforge/</guid>
+      <guid>http://localhost:1313/blog/monitoringforge/</guid>
       <description>&lt;p&gt;I found the initial announcement in my Spambox, thats where I send all the mails from GroundWork as unsubscribing from their marketing lists doesn&amp;rsquo;t seem to work ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.adventuresinoss.com/?p=1117&#34;&gt;Tarus&lt;/a&gt; pointed it out.. he already mentionned Marketing, low community imput etc..&lt;/p&gt;&#xA;&lt;p&gt;Nevertheles I had a look, and my first and last impression was, NagiosForge, no active community, and empty pages on other imvho more relevant Monitoring Projects created by GroundWork employees.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monitoring MySQL</title>
-      <link>https://krisbuytaert.github.io/blog/monitoring-mysql/</link>
+      <link>http://localhost:1313/blog/monitoring-mysql/</link>
       <pubDate>Sun, 08 Feb 2009 16:16:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/monitoring-mysql/</guid>
+      <guid>http://localhost:1313/blog/monitoring-mysql/</guid>
       <description>&lt;p&gt;The slides for my Monitoring MySQL talk , which I gave earlier today in an overcrowded MySQl Developersroom at Fosdem are now online, both at &lt;a href=&#34;http://www.krisbuytaert.be/presentations/MySQLMonitoringShootOut.odp&#34;&gt;my site&lt;/a&gt; and at &lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out&#34;&gt;Slideshare&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;As of now I actually expect people to use those slides for schoolwork or next year in a main Fosdem track :)&lt;br&gt;&#xA;As afterall that is the goal of Open Source and spreading the word ..&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/KrisBuytaert/my-sql-monitoring-shoot-out?type=presentation&#34; title=&#34;MySQL Monitoring Shoot Out&#34;&gt;MySQL Monitoring Shoot Out&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
