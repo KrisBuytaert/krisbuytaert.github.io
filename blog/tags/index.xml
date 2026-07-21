@@ -6,8 +6,57 @@
     <description>Recent content in Tags on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 10:06:23 +0200</lastBuildDate>
     <atom:link href="https://krisbuytaert.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible</title>
+      <link>https://krisbuytaert.github.io/blog/tags/ansible/</link>
+      <pubDate>Tue, 21 Jul 2026 10:06:23 +0200</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/ansible/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cfgmgmtcamp</title>
+      <link>https://krisbuytaert.github.io/blog/tags/cfgmgmtcamp/</link>
+      <pubDate>Tue, 21 Jul 2026 10:06:23 +0200</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/cfgmgmtcamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conference</title>
+      <link>https://krisbuytaert.github.io/blog/tags/conference/</link>
+      <pubDate>Tue, 21 Jul 2026 10:06:23 +0200</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/conference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fosdem</title>
+      <link>https://krisbuytaert.github.io/blog/tags/fosdem/</link>
+      <pubDate>Tue, 21 Jul 2026 10:06:23 +0200</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/fosdem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gent</title>
+      <link>https://krisbuytaert.github.io/blog/tags/gent/</link>
+      <pubDate>Tue, 21 Jul 2026 10:06:23 +0200</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/gent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Puppet</title>
+      <link>https://krisbuytaert.github.io/blog/tags/puppet/</link>
+      <pubDate>Tue, 21 Jul 2026 10:06:23 +0200</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/puppet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tofu</title>
+      <link>https://krisbuytaert.github.io/blog/tags/tofu/</link>
+      <pubDate>Tue, 21 Jul 2026 10:06:23 +0200</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/tags/tofu/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Ai</title>
       <link>https://krisbuytaert.github.io/blog/tags/ai/</link>
@@ -226,24 +275,10 @@
       <description></description>
     </item>
     <item>
-      <title>Ansible</title>
-      <link>https://krisbuytaert.github.io/blog/tags/ansible/</link>
-      <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/tags/ansible/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Cfengine</title>
       <link>https://krisbuytaert.github.io/blog/tags/cfengine/</link>
       <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
       <guid>https://krisbuytaert.github.io/blog/tags/cfengine/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cfgmgmtcamp</title>
-      <link>https://krisbuytaert.github.io/blog/tags/cfgmgmtcamp/</link>
-      <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/tags/cfgmgmtcamp/</guid>
       <description></description>
     </item>
     <item>
@@ -265,13 +300,6 @@
       <link>https://krisbuytaert.github.io/blog/tags/juju/</link>
       <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
       <guid>https://krisbuytaert.github.io/blog/tags/juju/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Puppet</title>
-      <link>https://krisbuytaert.github.io/blog/tags/puppet/</link>
-      <pubDate>Wed, 23 Mar 2016 23:28:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/tags/puppet/</guid>
       <description></description>
     </item>
     <item>
@@ -688,13 +716,6 @@
       <description></description>
     </item>
     <item>
-      <title>Fosdem</title>
-      <link>https://krisbuytaert.github.io/blog/tags/fosdem/</link>
-      <pubDate>Sun, 13 Jan 2013 12:21:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/tags/fosdem/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Phpbenelux</title>
       <link>https://krisbuytaert.github.io/blog/tags/phpbenelux/</link>
       <pubDate>Sun, 13 Jan 2013 12:21:00 +0100</pubDate>
@@ -846,13 +867,6 @@
       <link>https://krisbuytaert.github.io/blog/tags/testing/</link>
       <pubDate>Tue, 01 May 2012 21:02:00 +0100</pubDate>
       <guid>https://krisbuytaert.github.io/blog/tags/testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Conference</title>
-      <link>https://krisbuytaert.github.io/blog/tags/conference/</link>
-      <pubDate>Fri, 23 Mar 2012 16:49:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/tags/conference/</guid>
       <description></description>
     </item>
     <item>
@@ -2330,13 +2344,6 @@
       <link>https://krisbuytaert.github.io/blog/tags/eucalyptus/</link>
       <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
       <guid>https://krisbuytaert.github.io/blog/tags/eucalyptus/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Gent</title>
-      <link>https://krisbuytaert.github.io/blog/tags/gent/</link>
-      <pubDate>Thu, 05 Nov 2009 21:32:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/tags/gent/</guid>
       <description></description>
     </item>
     <item>

@@ -2,10 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://krisbuytaert.github.io/blog/tags/ai/</loc>
-    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+    <loc>https://krisbuytaert.github.io/blog/tags/ansible/</loc>
+    <lastmod>2026-07-21T10:06:23+02:00</lastmod>
+  </url><url>
+    <loc>https://krisbuytaert.github.io/blog/tags/cfgmgmtcamp/</loc>
+    <lastmod>2026-07-21T10:06:23+02:00</lastmod>
+  </url><url>
+    <loc>https://krisbuytaert.github.io/blog/cfgmgmtcamp-2027/</loc>
+    <lastmod>2026-07-21T10:06:23+02:00</lastmod>
+  </url><url>
+    <loc>https://krisbuytaert.github.io/blog/tags/conference/</loc>
+    <lastmod>2026-07-21T10:06:23+02:00</lastmod>
   </url><url>
     <loc>https://krisbuytaert.github.io/blog/</loc>
+    <lastmod>2026-07-21T10:06:23+02:00</lastmod>
+  </url><url>
+    <loc>https://krisbuytaert.github.io/blog/tags/fosdem/</loc>
+    <lastmod>2026-07-21T10:06:23+02:00</lastmod>
+  </url><url>
+    <loc>https://krisbuytaert.github.io/blog/tags/gent/</loc>
+    <lastmod>2026-07-21T10:06:23+02:00</lastmod>
+  </url><url>
+    <loc>https://krisbuytaert.github.io/blog/posts/</loc>
+    <lastmod>2026-07-21T10:06:23+02:00</lastmod>
+  </url><url>
+    <loc>https://krisbuytaert.github.io/blog/tags/puppet/</loc>
+    <lastmod>2026-07-21T10:06:23+02:00</lastmod>
+  </url><url>
+    <loc>https://krisbuytaert.github.io/blog/tags/</loc>
+    <lastmod>2026-07-21T10:06:23+02:00</lastmod>
+  </url><url>
+    <loc>https://krisbuytaert.github.io/blog/tags/tofu/</loc>
+    <lastmod>2026-07-21T10:06:23+02:00</lastmod>
+  </url><url>
+    <loc>https://krisbuytaert.github.io/blog/tags/ai/</loc>
     <lastmod>2026-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://krisbuytaert.github.io/blog/tags/llm/</loc>
@@ -18,12 +48,6 @@
     <lastmod>2026-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://krisbuytaert.github.io/blog/opensearch-cli/</loc>
-    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://krisbuytaert.github.io/blog/posts/</loc>
-    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://krisbuytaert.github.io/blog/tags/</loc>
     <lastmod>2026-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://krisbuytaert.github.io/blog/tags/hpc/</loc>
@@ -140,13 +164,7 @@
     <loc>https://krisbuytaert.github.io/blog/tags/virtualization/</loc>
     <lastmod>2016-03-23T23:38:00+01:00</lastmod>
   </url><url>
-    <loc>https://krisbuytaert.github.io/blog/tags/ansible/</loc>
-    <lastmod>2016-03-23T23:28:00+01:00</lastmod>
-  </url><url>
     <loc>https://krisbuytaert.github.io/blog/tags/cfengine/</loc>
-    <lastmod>2016-03-23T23:28:00+01:00</lastmod>
-  </url><url>
-    <loc>https://krisbuytaert.github.io/blog/tags/cfgmgmtcamp/</loc>
     <lastmod>2016-03-23T23:28:00+01:00</lastmod>
   </url><url>
     <loc>https://krisbuytaert.github.io/blog/tags/chef/</loc>
@@ -159,9 +177,6 @@
     <lastmod>2016-03-23T23:28:00+01:00</lastmod>
   </url><url>
     <loc>https://krisbuytaert.github.io/blog/lies-damn-lies-and-statistics-2016-edition/</loc>
-    <lastmod>2016-03-23T23:28:00+01:00</lastmod>
-  </url><url>
-    <loc>https://krisbuytaert.github.io/blog/tags/puppet/</loc>
     <lastmod>2016-03-23T23:28:00+01:00</lastmod>
   </url><url>
     <loc>https://krisbuytaert.github.io/blog/tags/salt/</loc>
@@ -434,9 +449,6 @@
     <loc>https://krisbuytaert.github.io/blog/devops-conference-season-heating/</loc>
     <lastmod>2013-01-13T12:21:00+01:00</lastmod>
   </url><url>
-    <loc>https://krisbuytaert.github.io/blog/tags/fosdem/</loc>
-    <lastmod>2013-01-13T12:21:00+01:00</lastmod>
-  </url><url>
     <loc>https://krisbuytaert.github.io/blog/tags/phpbenelux/</loc>
     <lastmod>2013-01-13T12:21:00+01:00</lastmod>
   </url><url>
@@ -532,9 +544,6 @@
   </url><url>
     <loc>https://krisbuytaert.github.io/blog/tags/testing/</loc>
     <lastmod>2012-05-01T21:02:00+01:00</lastmod>
-  </url><url>
-    <loc>https://krisbuytaert.github.io/blog/tags/conference/</loc>
-    <lastmod>2012-03-23T16:49:00+01:00</lastmod>
   </url><url>
     <loc>https://krisbuytaert.github.io/blog/flossuk-and-puppetcamp-edinburgh/</loc>
     <lastmod>2012-03-23T16:49:00+01:00</lastmod>
@@ -1488,9 +1497,6 @@
     <lastmod>2009-11-05T21:32:00+01:00</lastmod>
   </url><url>
     <loc>https://krisbuytaert.github.io/blog/tags/eucalyptus/</loc>
-    <lastmod>2009-11-05T21:32:00+01:00</lastmod>
-  </url><url>
-    <loc>https://krisbuytaert.github.io/blog/tags/gent/</loc>
     <lastmod>2009-11-05T21:32:00+01:00</lastmod>
   </url><url>
     <loc>https://krisbuytaert.github.io/blog/tags/ibbt/</loc>

@@ -18,6 +18,25 @@
       
 
 <article class="summary">
+  <h3><a href="/blog/using-veewee/">Using Veewee</a></h3>
+  <p class="meta"><time datetime="2011-08-24">August 24, 2011</time></p>
+  <p><p>With @dancarley and @patrickebois just discussing the origin of the name of Veewee I figured I still had that piece of documentation I wrote up for myselve flying around &hellip;</p>
+<p>So with no other reason than having my docs mirrored on the internet .</p>
+<pre tabindex="0"><code>1. gem install veewee
+</code></pre><pre tabindex="0"><code>1. veewee templates
+</code></pre><p>shows you what templates we have around ..</p>
+<pre tabindex="0"><code>1. $veewee init natty ubuntu-11.04-server-amd64
+2. Init a new box natty, starting from template ubuntu-11.04-server-amd64
+3. The basebox &#39;natty&#39; has been successfully created from the template &#39;&#39;ubuntu-11.04-server-amd64&#39;
+4. You can now edit the definition files stored in definitions/natty
+5. or build the box with:
+6. vagrant basebox build &#39;natty&#39;
+</code></pre><p>As noted this will generate the definition for your natty box,<br>
+It will create a definition.rb file which describes your box.<br>
+A preseed (or kickstart or similar file) and a postinstall file</p></p>
+</article>
+
+<article class="summary">
   <h3><a href="/blog/devops-drupal-survey/">Devops for Drupal, the survey,</a></h3>
   <p class="meta"><time datetime="2011-08-21">August 21, 2011</time></p>
   <p><p>Devops is gaining momentum, the idea that developers and operations should work much closer together , the idea that one should automate as much as possible in both their infrastructure and their release process brings along a lot of questions, ideas and tools that need to be integrated in your daily way of working.</p>
@@ -89,13 +108,6 @@ when virtualbox acts up again .</p>
   <p><p>I was testing some MySQL puppet modules on my Vagrant box earlier this week and one of them required augeas.<br>
 I kept running into &ldquo;Could not find a default provider for augeas&rdquo;, however all the appropriate augeas , augeas-lib and ruby-augeas packages were installed. I inspected the different ruby directories and the files were perfectly in /usr/lib/ruby/site_ruby/1.8 where I expected them.</p>
 <p>With all the files seemd to be in the right place, my next option was to strace a small ruby script that included augeas, guess what that showed ..</p></p>
-</article>
-
-<article class="summary">
-  <h3><a href="/blog/watching-guards/">Watching the Guards</a></h3>
-  <p class="meta"><time datetime="2011-03-10">March 10, 2011</time></p>
-  <p><p>A couple of weeks ago I noticed a weird drop in web usage stats on the site you are browsing now. Kinda weird as the drop was right around Fosdem when usually there is a spike in traffic. <img src="http://www.krisbuytaert.be/images/PiwiwFail.png" alt=""></p>
-<p>So before you start.. no I don&rsquo;t preach on practice on my own blog, it&rsquo;s a blog dammit, so I do the occasional upgrades on the actual platform , with backups available, do some sanity tests and move on, yes I break the theme pretty often but ya&rsquo;ll reading this trough RSS anyhow.</p></p>
 </article>
 
 
@@ -226,9 +238,13 @@ I kept running into &ldquo;Could not find a default provider for augeas&rdquo;, 
       <a href="/blog/page/30/">30</a>
     
   
+    
+      <a href="/blog/page/31/">31</a>
+    
+  
   
     <a href="/blog/page/9/" aria-label="Next">&raquo;</a>
-    <a href="/blog/page/30/" aria-label="Last">&raquo;&raquo;</a>
+    <a href="/blog/page/31/" aria-label="Last">&raquo;&raquo;</a>
   
 </nav>
 
@@ -273,6 +289,8 @@ I kept running into &ldquo;Could not find a default provider for augeas&rdquo;, 
     <h3>Recent Posts</h3>
     <ul>
       
+      <li><a href="https://krisbuytaert.github.io/blog/cfgmgmtcamp-2027/">Cfgmgmtcamp 2027</a></li>
+      
       <li><a href="https://krisbuytaert.github.io/blog/opensearch-cli/">Opensearch Cli</a></li>
       
       <li><a href="https://krisbuytaert.github.io/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></li>
@@ -291,8 +309,6 @@ I kept running into &ldquo;Could not find a default provider for augeas&rdquo;, 
       
       <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
-      
     </ul>
   </section>
 
@@ -301,6 +317,8 @@ I kept running into &ldquo;Could not find a default provider for augeas&rdquo;, 
     <h3>Tags</h3>
     <ul class="tags">
       
+      
+        
       
         
       
@@ -1525,6 +1543,8 @@ I kept running into &ldquo;Could not find a default provider for augeas&rdquo;, 
       
       <li><a href="https://krisbuytaert.github.io/blog/tags/chef/">chef</a></li>
       
+      <li><a href="https://krisbuytaert.github.io/blog/tags/conference/">conference</a></li>
+      
       <li><a href="https://krisbuytaert.github.io/blog/tags/dns/">dns</a></li>
       
       <li><a href="https://krisbuytaert.github.io/blog/tags/fedora/">fedora</a></li>
@@ -1534,8 +1554,6 @@ I kept running into &ldquo;Could not find a default provider for augeas&rdquo;, 
       <li><a href="https://krisbuytaert.github.io/blog/tags/xen/">xen</a></li>
       
       <li><a href="https://krisbuytaert.github.io/blog/tags/centos/">centos</a></li>
-      
-      <li><a href="https://krisbuytaert.github.io/blog/tags/conference/">conference</a></li>
       
       <li><a href="https://krisbuytaert.github.io/blog/tags/monitoringsucks/">monitoringsucks</a></li>
       

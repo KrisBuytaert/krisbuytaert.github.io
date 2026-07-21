@@ -18,6 +18,15 @@
 <h2>Puppet</h2>
 
 <article class="summary">
+  <h3><a href="/blog/appliance-or-not-appliance/">Appliance or Not Appliance</a></h3>
+  <p class="meta"><time datetime="2011-01-12">January 12, 2011</time></p>
+  <p><p>That&rsquo;s the question <a href="http://blog.rootshell.be/2011/01/05/security-diy-or-plugnplay/">Xavier</a> asks in his blog entry titled<br>
+Security: DIY or Plug’n&rsquo;Play</p>
+<p>To me the answer is simple, most of the appliances I ran into so far have no way of configuring them apart from the ugly webgui they ship with their device. That means that I can&rsquo;t integrate them with the configuration management framework I have in place for the rest of the infrastructure. There is no way to automatically modify e.g firewall rules together with the relocation of a service which does happen automatically, and there is always some kind of manual interaction required. Applicances tend to sit on a island, either stay un managed ( be honest when&rsquo;s the last time you upgraded the firmware of that terminal server ? ) , or take a lot of additional efort to manage manually. They require yet another set of tools than the set you are already using to manage your network.<br>
+They don&rsquo;t integrate with your backup strategy, and don&rsquo;t tell me they all come with perfect MIB&rsquo;s.</p></p>
+</article>
+
+<article class="summary">
   <h3><a href="/blog/guest-post-season/">Guest Post Season</a></h3>
   <p class="meta"><time datetime="2010-12-18">December 18, 2010</time></p>
   <p><p>Apparently December is the month where everybody starts writing guest posts for other blogs.</p>
@@ -98,15 +107,6 @@ Pizza party and the Beer event on saturday &hellip;</p>
 <p>Lots of people, lots of opinions .. Indeed some people have been doing this kind of work for ages, some claim the cloud is what makes devops become visible (but we&rsquo;ve been doing cloud since before the cloud marketeers called it cloud)</p></p>
 </article>
 
-<article class="summary">
-  <h3><a href="/blog/packaging-drupal-modules-or-not/">Packaging Drupal Modules  or not ?</a></h3>
-  <p class="meta"><time datetime="2010-02-16">February 16, 2010</time></p>
-  <p><p>So <a href="http://bitfieldconsulting.com/puppet-drupal">John</a> wrote down his experiences on deploying Drupal sites with Puppet .</p>
-<p>It&rsquo;s not a secret that I&rsquo;ve been thinking about similar stuff and how I could get to the best possible setup.</p>
-<p>John starts of with using Puppet to download Drush&hellip; while I want to use <a href="http://repo.inuits.be/centos/5/os/noarch/drush-All-Versions-2.1-1.noarch.rpm">rpm</a> for that &hellip;</p>
-<p>I want my core infrastructure to be fully packaged&hellip; not downloaded and untarred. I want to be able to reproduce my platform in a couple of months , with the exact same versions I`m using now .. not with the version that happens to be on ftp.drupal.org at that point in time, or with ftp.drupal.org being down.</p></p>
-</article>
-
 
 
 <nav class="pagination">
@@ -182,6 +182,8 @@ Pizza party and the Beer event on saturday &hellip;</p>
     <h3>Recent Posts</h3>
     <ul>
       
+      <li><a href="https://krisbuytaert.github.io/blog/cfgmgmtcamp-2027/">Cfgmgmtcamp 2027</a></li>
+      
       <li><a href="https://krisbuytaert.github.io/blog/opensearch-cli/">Opensearch Cli</a></li>
       
       <li><a href="https://krisbuytaert.github.io/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></li>
@@ -200,8 +202,6 @@ Pizza party and the Beer event on saturday &hellip;</p>
       
       <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/linux-troubleshooting-101-2016-edition/">Linux Troubleshooting 101 , 2016 Edition</a></li>
-      
     </ul>
   </section>
 
@@ -210,6 +210,8 @@ Pizza party and the Beer event on saturday &hellip;</p>
     <h3>Tags</h3>
     <ul class="tags">
       
+      
+        
       
         
       
@@ -1434,6 +1436,8 @@ Pizza party and the Beer event on saturday &hellip;</p>
       
       <li><a href="https://krisbuytaert.github.io/blog/tags/chef/">chef</a></li>
       
+      <li><a href="https://krisbuytaert.github.io/blog/tags/conference/">conference</a></li>
+      
       <li><a href="https://krisbuytaert.github.io/blog/tags/dns/">dns</a></li>
       
       <li><a href="https://krisbuytaert.github.io/blog/tags/fedora/">fedora</a></li>
@@ -1443,8 +1447,6 @@ Pizza party and the Beer event on saturday &hellip;</p>
       <li><a href="https://krisbuytaert.github.io/blog/tags/xen/">xen</a></li>
       
       <li><a href="https://krisbuytaert.github.io/blog/tags/centos/">centos</a></li>
-      
-      <li><a href="https://krisbuytaert.github.io/blog/tags/conference/">conference</a></li>
       
       <li><a href="https://krisbuytaert.github.io/blog/tags/monitoringsucks/">monitoringsucks</a></li>
       

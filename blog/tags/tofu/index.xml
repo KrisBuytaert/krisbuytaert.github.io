@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tofu on Everything is a Freaking DNS problem</title>
+    <link>https://krisbuytaert.github.io/blog/tags/tofu/</link>
+    <description>Recent content in Tofu on Everything is a Freaking DNS problem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jul 2026 10:06:23 +0200</lastBuildDate>
+    <atom:link href="https://krisbuytaert.github.io/blog/tags/tofu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cfgmgmtcamp 2027</title>
+      <link>https://krisbuytaert.github.io/blog/cfgmgmtcamp-2027/</link>
+      <pubDate>Tue, 21 Jul 2026 10:06:23 +0200</pubDate>
+      <guid>https://krisbuytaert.github.io/blog/cfgmgmtcamp-2027/</guid>
+      <description>&lt;p&gt;&lt;figure class=&#34;right&#34;&gt;&lt;img src=&#34;https://krisbuytaert.github.io/blog/cfgmgmtcamp-2027/logo_full.png&#34;&#xA;    alt=&#34;CfgMgmtCamp Logo&#34;&gt;&#xA;&lt;/figure&gt;&#xA; We are halfway 2026 already so it is time to think about what you will be doing next February.&lt;/p&gt;&#xA;&lt;p&gt;Start with blocking your calendar for 1-3  February .   As usual we&amp;rsquo;ll be meeting in Ghent&#xA;for 3 days of Infrastructure Automation Geekery.   It will be a fun mix of 2 days of conference with new and old&#xA;communities, followed by a day of workshops hackathons and tutorials.   You know you can&amp;rsquo;t mis this.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
