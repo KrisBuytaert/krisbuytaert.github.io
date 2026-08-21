@@ -44,13 +44,6 @@
       <description>&lt;p&gt;In my latest DNS Problem related post I mentionned that don&amp;rsquo;t know all the answers, I however know about some good tools to help you setup a clean DNS server.&lt;/p&gt;&#xA;&lt;p&gt;Ages ago via &lt;a href=&#34;http://planet.fedoraproject.org/&#34;&gt;Planet Fedora&lt;/a&gt; I ran into an article from &lt;a href=&#34;http://www.alphatek.info/2008/11/29/dnsknifecom-meet-the-online-dig/&#34;&gt;Steven Moix&lt;/a&gt; about a tool he and his fellow students build for a summer project.&lt;/p&gt;&#xA;&lt;p&gt;The tool is &lt;a href=&#34;http://www.dnsknife.com/&#34;&gt;DNSKnife&lt;/a&gt; and it&amp;rsquo;s really interresting.&lt;/p&gt;&#xA;&lt;p&gt;DNS Knife is a good tool to check if your DNS setup is ok, it checks the parent servers, it checks for if your nameservers are listed on the parent server, checks if all your nameservers are reachable and are authorative .&lt;br&gt;&#xA;And so on and so on &amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Diaper Needs Service Problem</title>
-      <link>https://krisbuytaert.github.io/blog/diaper-needs-service-problem/</link>
-      <pubDate>Mon, 29 Jun 2009 20:53:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/diaper-needs-service-problem/</guid>
-      <description>&lt;p&gt;Last Saturday late, Sandy gave birth to our 2nd daughter&lt;br&gt;&#xA;Amber, pics etc are on &lt;a href=&#34;http://www.babietje.be/&#34;&gt;her own site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;So we&amp;rsquo;ll be changing diapers of 2 little Buytaert kids for a while )&lt;/p&gt;&#xA;&lt;p&gt;PS. Craig from &lt;a href=&#34;http://www.oreillygmt.co.uk/&#34;&gt;O&amp;rsquo;ReillyGMT&lt;/a&gt; gets the credit for inventing the new DNS acronym,&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>The Story Repeats</title>
       <link>https://krisbuytaert.github.io/blog/story-repeats/</link>
       <pubDate>Tue, 10 Feb 2009 23:55:00 +0100</pubDate>
