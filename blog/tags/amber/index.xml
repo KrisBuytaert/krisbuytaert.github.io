@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Amber on Everything is a Freaking DNS problem</title>
-    <link>https://krisbuytaert.github.io/blog/tags/amber/</link>
+    <link>http://localhost:1313/blog/tags/amber/</link>
     <description>Recent content in Amber on Everything is a Freaking DNS problem</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Jun 2009 20:53:00 +0100</lastBuildDate>
-    <atom:link href="https://krisbuytaert.github.io/blog/tags/amber/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/amber/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Diaper Needs Service Problem</title>
-      <link>https://krisbuytaert.github.io/blog/diaper-needs-service-problem/</link>
+      <link>http://localhost:1313/blog/diaper-needs-service-problem/</link>
       <pubDate>Mon, 29 Jun 2009 20:53:00 +0100</pubDate>
-      <guid>https://krisbuytaert.github.io/blog/diaper-needs-service-problem/</guid>
+      <guid>http://localhost:1313/blog/diaper-needs-service-problem/</guid>
       <description>&lt;p&gt;Last Saturday late, Sandy gave birth to our 2nd daughter&lt;br&gt;&#xA;Amber, pics etc are on &lt;a href=&#34;http://www.babietje.be/&#34;&gt;her own site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;So we&amp;rsquo;ll be changing diapers of 2 little Buytaert kids for a while )&lt;/p&gt;&#xA;&lt;p&gt;PS. Craig from &lt;a href=&#34;http://www.oreillygmt.co.uk/&#34;&gt;O&amp;rsquo;ReillyGMT&lt;/a&gt; gets the credit for inventing the new DNS acronym,&lt;/p&gt;</description>
     </item>
   </channel>
