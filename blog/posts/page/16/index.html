@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Posts | Everything is a Freaking DNS problem</title>
   <link rel="stylesheet" href="/blog/css/style.css">
-  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="http://localhost:1313/blog/index.xml">
 </head>
 <body>
   <header>
-    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <h1><a href="http://localhost:1313/blog/">Everything is a Freaking DNS problem</a></h1>
     <p class="tagline">Devops Needs Sushi</p>
   </header>
   <div class="layout">
     <main>
       
 <h2>Posts</h2>
+
+<article class="summary">
+  <h3><a href="/blog/fosdem-2010-getting-closer/">Fosdem 2010 is getting closer</a></h3>
+  <p class="meta"><time datetime="2009-12-09">December 9, 2009</time></p>
+  <p><p>The 10th edition of Fosdem is getting closer, yes .. I said 10 ,10 decimal that means ten, not two :)</p>
+<p>It&rsquo;s kinda hard to imagine that this is actually going to be my 10th fosdem , it feels weird ..</p>
+<p>Anyhow.. <a href="http://www.lenzg.net/">Lenz</a> just <a href="http://blogs.sun.com/MySQL/entry/call_for_papers_for_mysql">announced</a> a call for participation for the MySQL and Friends devroom.</p>
+<p>I`m guessing a talk on <a href="http://www.aaronbassett.com/tag/lolsql/">.LolSQL</a> might be a good fit for the &ldquo;and Friends&rdquo; part.</p>
+<p><a href="http://www.fosdem.org/"><img src="http://www.fosdem.org/promo/fosdem" alt="FOSDEM, the Free and Open Source Software Developers&rsquo; European Meeting"></a></p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/disabling-dhcp-libvirt-setup/">Disabling DHCP on a LibVirt setup</a></h3>
+  <p class="meta"><time datetime="2009-12-04">December 4, 2009</time></p>
+  <p><p>So you have this libvirt setup and you want to have a dhcp server on the virtual machines you are playing with , or you want to have all static IP&rsquo;s.</p>
+<p>Libvirt uses dnsmasq to provide dhcp services etc and when you generate a config from the gui it will look like\</p>
+<pre tabindex="0"><code>1. &lt;network&gt;
+2. &lt;name&gt;piponet&lt;/name&gt;
+3. &lt;uuid&gt;e87d3bf1-a2e7-96ca-e131-7ae51ac033f9&lt;/uuid&gt;
+4. &lt;bridge name=&#39;virbr2&#39; stp=&#39;on&#39; delay=&#39;0&#39; /&gt;
+5. &lt;ip address=&#39;192.168.100.1&#39; netmask=&#39;255.255.255.0&#39;&gt;
+6. &lt;dhcp&gt;
+7. &lt;range start=&#39;192.168.100.128&#39; end=&#39;192.168.100.254&#39; /&gt;
+8. &lt;/dhcp&gt;
+9. &lt;/ip&gt;
+10. &lt;/network&gt;
+</code></pre><p>If you fully remove the dhcp section, then restart libvirt you&rsquo;ll notice dnsmasq running with no dhcpd on that subnet so you&rsquo;ll have full control again :)</p></p>
+</article>
 
 <article class="summary">
   <h3><a href="/blog/drupal-6-social-networking/">Drupal 6 , Social Networking</a></h3>
@@ -82,42 +110,6 @@ on Virtualization, Open Source tools and DNS Problems</p></p>
 <p>I would like to be able to report a comment as URL Spam , you know the case where the content of a comment is perfectly OK, but the URL the commenter uses is a link to a NSF, pure spamming or absolutely unrelated site.</p>
 <p>There&rsquo;s nofollow etc , but to keep my site clean I&rsquo;d have to report these commen<br>
 ts as spam, however when you start analysing the content of the message and comparing that content to other posts you will eventually get false positives.</p></p>
-</article>
-
-<article class="summary">
-  <h3><a href="/blog/yet-another-dns-issue/">Yet Another DNS Issue</a></h3>
-  <p class="meta"><time datetime="2009-11-12">November 12, 2009</time></p>
-  <p><p>While browsing trough my enormous mailinglist backlog I ran into the following message from Gianluca Cecchi on the DRBD-user mailing list</p>
-<p>guess I`ll have to give Lars a T-Shirt when we next meet ;)</p>
-<pre tabindex="0"><code>1. From: Gianluca Cecchi
-2. To: drbd-user@lists.linbit.com
-3. Subject: [DRBD-user] notes on 8.3.2
-
-
-6. - drbdadm create-md r0 segfaults when the command &#34;hostname&#34; on the
-7. server contains the fully qualified domain name but you have put only
-8. the hostname part in drbd.conf
-9. Instead, the command &#34;drbdadm dump&#34; correctly gives you a warning in
-10. this case (suggesting how to correct the error you made....):
-
-12. suppose complete hostname is virtfed.domainname.com and you put
-13. virtfed alone in drbd.conf
-14. [root@virtfed ~]# drbdadm dump
-15. WARN: no normal resources defined for this host (virtfed.domainname.com)!?
-
-17. while
-18. [root@virtfed ~]# drbdadm create-md r0
-19. Segmentation fault
-</code></pre><p>Guess I`ll have to give the Linbit crowd a T-Shirt when we next meet ;)</p></p>
-</article>
-
-<article class="summary">
-  <h3><a href="/blog/what-dns-not/">What DNS is Not</a></h3>
-  <p class="meta"><time datetime="2009-11-09">November 9, 2009</time></p>
-  <p><p><a href="http://queue.acm.org/detail.cfm?id=1647302">This article</a> by Paul Vixie is a must read if you want to know what DNS is not about .. and how people abuse it for the sake of extorting money from morons.</p>
-<p>Ah well.. nothing we didn&rsquo;t already know.. just more proof that<br>
-Everything is a Freaking DNS problem.</p>
-<p>Not sure on which layer the problem is.. must be on a layer even above the religious one.. the &ldquo;Greed&rdquo; one.</p></p>
 </article>
 
 
@@ -248,9 +240,13 @@ Everything is a Freaking DNS problem.</p>
       <a href="/blog/posts/page/30/">30</a>
     
   
+    
+      <a href="/blog/posts/page/31/">31</a>
+    
+  
   
     <a href="/blog/posts/page/17/" aria-label="Next">&raquo;</a>
-    <a href="/blog/posts/page/30/" aria-label="Last">&raquo;&raquo;</a>
+    <a href="/blog/posts/page/31/" aria-label="Last">&raquo;&raquo;</a>
   
 </nav>
 
@@ -322,7 +318,7 @@ Everything is a Freaking DNS problem.</p>
       <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a></li>
 
 
-      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+      <li><a href="http://localhost:1313/blog/index.xml">RSS Feed</a></li>
 
 
       <li><a href="https://devopsdays.org">devopsdays.org</a></li>
@@ -335,25 +331,25 @@ Everything is a Freaking DNS problem.</p>
     <h3>Recent Posts</h3>
     <ul>
       
-      <li><a href="https://krisbuytaert.github.io/blog/cfgmgmtcamp-2027/">Cfgmgmtcamp 2027</a></li>
+      <li><a href="http://localhost:1313/blog/osoday-2027/">Osoday 2027</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/opensearch-cli/">Opensearch Cli</a></li>
+      <li><a href="http://localhost:1313/blog/new-job/">Joining Percona</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></li>
+      <li><a href="http://localhost:1313/blog/cfgmgmtcamp-2027/">Cfgmgmtcamp 2027</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/cdf-top-ambassador-2026/">CDF Top Ambassador 2026</a></li>
+      <li><a href="http://localhost:1313/blog/opensearch-cli/">Opensearch Cli</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      <li><a href="http://localhost:1313/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      <li><a href="http://localhost:1313/blog/cdf-top-ambassador-2026/">CDF Top Ambassador 2026</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      <li><a href="http://localhost:1313/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      <li><a href="http://localhost:1313/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      <li><a href="http://localhost:1313/blog/115-factor-apps/">11.5 Factor apps</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      <li><a href="http://localhost:1313/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
       
     </ul>
   </section>
@@ -1566,46 +1562,50 @@ Everything is a Freaking DNS problem.</p>
       
         
       
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/devops/">devops</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/drupal/">drupal</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/mysql/">mysql</a></li>
+      <li><a href="http://localhost:1313/blog/tags/devops/">devops</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/open-source/">open source</a></li>
+      <li><a href="http://localhost:1313/blog/tags/drupal/">drupal</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/puppet/">puppet</a></li>
+      <li><a href="http://localhost:1313/blog/tags/mysql/">mysql</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/opensource/">opensource</a></li>
+      <li><a href="http://localhost:1313/blog/tags/open-source/">open source</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/dnsproblem/">dnsproblem</a></li>
+      <li><a href="http://localhost:1313/blog/tags/puppet/">puppet</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/ha/">ha</a></li>
+      <li><a href="http://localhost:1313/blog/tags/opensource/">opensource</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/fosdem/">fosdem</a></li>
+      <li><a href="http://localhost:1313/blog/tags/dnsproblem/">dnsproblem</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/chef/">chef</a></li>
+      <li><a href="http://localhost:1313/blog/tags/fosdem/">fosdem</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/conference/">conference</a></li>
+      <li><a href="http://localhost:1313/blog/tags/ha/">ha</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/fedora/">fedora</a></li>
+      <li><a href="http://localhost:1313/blog/tags/chef/">chef</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/virtualization/">virtualization</a></li>
+      <li><a href="http://localhost:1313/blog/tags/conference/">conference</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/xen/">xen</a></li>
+      <li><a href="http://localhost:1313/blog/tags/fedora/">fedora</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/centos/">centos</a></li>
+      <li><a href="http://localhost:1313/blog/tags/virtualization/">virtualization</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/dns/">dns</a></li>
+      <li><a href="http://localhost:1313/blog/tags/xen/">xen</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/monitoringsucks/">monitoringsucks</a></li>
+      <li><a href="http://localhost:1313/blog/tags/centos/">centos</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/rpm/">rpm</a></li>
+      <li><a href="http://localhost:1313/blog/tags/dns/">dns</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/zenoss/">zenoss</a></li>
+      <li><a href="http://localhost:1313/blog/tags/monitoringsucks/">monitoringsucks</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/kvm/">kvm</a></li>
+      <li><a href="http://localhost:1313/blog/tags/rpm/">rpm</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/kvm/">kvm</a></li>
       
     </ul>
   </section>

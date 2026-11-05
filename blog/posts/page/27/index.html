@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Posts | Everything is a Freaking DNS problem</title>
   <link rel="stylesheet" href="/blog/css/style.css">
-  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="http://localhost:1313/blog/index.xml">
 </head>
 <body>
   <header>
-    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <h1><a href="http://localhost:1313/blog/">Everything is a Freaking DNS problem</a></h1>
     <p class="tagline">Devops Needs Sushi</p>
   </header>
   <div class="layout">
     <main>
       
 <h2>Posts</h2>
+
+<article class="summary">
+  <h3><a href="/blog/how-popular-open-source-project/">How popular  is an Open Source project ?</a></h3>
+  <p class="meta"><time datetime="2009-01-15">January 15, 2009</time></p>
+  <p><p>There is a really easy way to figure out &hellip;</p>
+<p>Look at the size of of the devrooms , if at all , a project gets at Fosdem<br>
+It&rsquo;s really interresting to see the Embedded room move to a 500 seat room which it really needed when the first openMoko talk was held there in a previous edition.</p>
+<p>The FDO , Drupal, Mozilla, Centos/Fedora and Suse rooms stay in similar size rooms as last year.. But it seems lik the BSD and PostgreSQL room which was pretty crowded moved to a bigger location.</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/contributing-back/">Contributing Back</a></h3>
+  <p class="meta"><time datetime="2009-01-14">January 14, 2009</time></p>
+  <p><p>A while ago <a href="http://buytaert.net/contributing-back-to-drupal">Dries</a> wondered about Contributing back to Drupal .</p>
+<p>Now <a href="http://www.inuits.be/">Inuits</a> is not a Webshop, we are an Open Source shop, so you won&rsquo;t see a zillion Drupal modules being contributed by us in the near future (albeit there are a couple) , we are company assisting other organisations in their adoption of Open Source, and Drupal is amongst the projects we care for. You&rsquo;ll notice code from us in the different other Open Source projects, including the Linux Kernel and other core infrastructure. And not all of it was code, there is a lot of published documentation, methodologies, bughunting and also spreading the words, or talking about our experiences around different topics such as MySQL Cluster and Drupal, or different alternatives to Monitor , or to Monitor MySQL etc ..</p></p>
+</article>
 
 <article class="summary">
   <h3><a href="/blog/shareomatic-drupal6/">ShareoMatic Drupal6</a></h3>
@@ -82,38 +98,6 @@ Q: Can you pass me the floppy.</p></p>
 <p>The plan is to meet from 20:00 onwards in the <a href="http://letmegooglethatforyou.com/?q=Kulminator&amp;l=1">Kulminator</a> in Antwerpen.</p>
 <p>I already got feedback from over a dozen PGB readers and posters that they will show up !</p>
 <p>But feel free to abuse the comments to let us know you are coming too !</p></p>
-</article>
-
-<article class="summary">
-  <h3><a href="/blog/mythtv-recover-lostfound/">MythTV recover Lost&#43;Found</a></h3>
-  <p class="meta"><time datetime="2008-12-19">December 19, 2008</time></p>
-  <p><p>My MythTV store lives on an LVM volume that is spread over 2 disks, one of them is an external USB disk. So the cleaninglady seems to have touched a cable and after coming back from holiday I had a read-only filesystem that afer a remount had about 350Gb in lost+found with irrelevant filenames.</p>
-<pre tabindex="0"><code>1. total 337407844
-2. drwx------   2 tv   tv         4096 Dec 17 22:47 .
-3. drwxrwxrwx  15 tv   tv         4096 Dec 17 22:44 ..
-4. -rw-r--r--   1 root root  423343556 Dec 14 07:10 I303109.RCN
-5. -rw-r--r--   1 root root 2990538924 Dec 13 19:05 I303107.RCN
-6. -rw-r--r--   1 root root 1023691768 Dec 13 08:10 I319494.RCN
-7. -rw-r--r--   1 root root 1023622348 Dec 13 07:45 I327684.RCN
-8. -rw-r--r--   1 root root  423735892 Dec 13 07:10 I327682.RCN
-9. -rw-r--r--   1 root root  466749476 Dec 12 15:43 I135169.RCN
-10. -rw-r--r--   1 root root 1023314212 Dec 12 07:45 I098309.RCN
-11. -rw-r--r--   1 root root 1022459928 Dec 12 06:35 I098306.RCN
-12. -rw-r--r--   1 root root 2458822948 Dec  9 22:50 I139264.RCN
-13. -rw-r--r--   1 root root 2129683736 Dec  9 21:30 I323592.RCN
-14. -rw-r--r--   1 root root  466735992 Dec  9 15:43 I323590.RCN
-15. -rw-r--r--   1 root root 1022747296 Dec  9 07:45 I323588.RCN
-</code></pre><p>Obviously I wanted to recover my data.<br>
-So I had files with a wrong filename on a filesystem but with a correct timestamp and probably the right filesize.<br>
-Luckily the mythconverg.recorded table also gives me lots of information about the files that mythtv had originally stored the content in.</p></p>
-</article>
-
-<article class="summary">
-  <h3><a href="/blog/mysql-51-fedora-10/">MySQL 5.1 on Fedora 10</a></h3>
-  <p class="meta"><time datetime="2008-12-19">December 19, 2008</time></p>
-  <p><p>So I wanted a fresh MySQL 5.1 release on my Fedora 10 box.<br>
-Fedora comes with a mysql 5.0 package and the MySQL community packages for 5.1 conflict with that in different ways. (to start with MySQL vs mysql)</p>
-<p>For some weird reason libmysqlclient (in mysql-libs) is required by redland, which is required by openoffice.org-core. I probaly never need the RDF funtionalities that redland provides me but I`m stuck with them anyhow.</p></p>
 </article>
 
 
@@ -244,9 +228,13 @@ Fedora comes with a mysql 5.0 package and the MySQL community packages for 5.1 c
       <a href="/blog/posts/page/30/">30</a>
     
   
+    
+      <a href="/blog/posts/page/31/">31</a>
+    
+  
   
     <a href="/blog/posts/page/28/" aria-label="Next">&raquo;</a>
-    <a href="/blog/posts/page/30/" aria-label="Last">&raquo;&raquo;</a>
+    <a href="/blog/posts/page/31/" aria-label="Last">&raquo;&raquo;</a>
   
 </nav>
 
@@ -318,7 +306,7 @@ Fedora comes with a mysql 5.0 package and the MySQL community packages for 5.1 c
       <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a></li>
 
 
-      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+      <li><a href="http://localhost:1313/blog/index.xml">RSS Feed</a></li>
 
 
       <li><a href="https://devopsdays.org">devopsdays.org</a></li>
@@ -331,25 +319,25 @@ Fedora comes with a mysql 5.0 package and the MySQL community packages for 5.1 c
     <h3>Recent Posts</h3>
     <ul>
       
-      <li><a href="https://krisbuytaert.github.io/blog/cfgmgmtcamp-2027/">Cfgmgmtcamp 2027</a></li>
+      <li><a href="http://localhost:1313/blog/osoday-2027/">Osoday 2027</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/opensearch-cli/">Opensearch Cli</a></li>
+      <li><a href="http://localhost:1313/blog/new-job/">Joining Percona</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></li>
+      <li><a href="http://localhost:1313/blog/cfgmgmtcamp-2027/">Cfgmgmtcamp 2027</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/cdf-top-ambassador-2026/">CDF Top Ambassador 2026</a></li>
+      <li><a href="http://localhost:1313/blog/opensearch-cli/">Opensearch Cli</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      <li><a href="http://localhost:1313/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      <li><a href="http://localhost:1313/blog/cdf-top-ambassador-2026/">CDF Top Ambassador 2026</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      <li><a href="http://localhost:1313/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      <li><a href="http://localhost:1313/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      <li><a href="http://localhost:1313/blog/115-factor-apps/">11.5 Factor apps</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      <li><a href="http://localhost:1313/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
       
     </ul>
   </section>
@@ -1562,46 +1550,50 @@ Fedora comes with a mysql 5.0 package and the MySQL community packages for 5.1 c
       
         
       
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/devops/">devops</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/drupal/">drupal</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/mysql/">mysql</a></li>
+      <li><a href="http://localhost:1313/blog/tags/devops/">devops</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/open-source/">open source</a></li>
+      <li><a href="http://localhost:1313/blog/tags/drupal/">drupal</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/puppet/">puppet</a></li>
+      <li><a href="http://localhost:1313/blog/tags/mysql/">mysql</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/opensource/">opensource</a></li>
+      <li><a href="http://localhost:1313/blog/tags/open-source/">open source</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/dnsproblem/">dnsproblem</a></li>
+      <li><a href="http://localhost:1313/blog/tags/puppet/">puppet</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/ha/">ha</a></li>
+      <li><a href="http://localhost:1313/blog/tags/opensource/">opensource</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/fosdem/">fosdem</a></li>
+      <li><a href="http://localhost:1313/blog/tags/dnsproblem/">dnsproblem</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/chef/">chef</a></li>
+      <li><a href="http://localhost:1313/blog/tags/fosdem/">fosdem</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/conference/">conference</a></li>
+      <li><a href="http://localhost:1313/blog/tags/ha/">ha</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/fedora/">fedora</a></li>
+      <li><a href="http://localhost:1313/blog/tags/chef/">chef</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/virtualization/">virtualization</a></li>
+      <li><a href="http://localhost:1313/blog/tags/conference/">conference</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/xen/">xen</a></li>
+      <li><a href="http://localhost:1313/blog/tags/fedora/">fedora</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/centos/">centos</a></li>
+      <li><a href="http://localhost:1313/blog/tags/virtualization/">virtualization</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/dns/">dns</a></li>
+      <li><a href="http://localhost:1313/blog/tags/xen/">xen</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/monitoringsucks/">monitoringsucks</a></li>
+      <li><a href="http://localhost:1313/blog/tags/centos/">centos</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/rpm/">rpm</a></li>
+      <li><a href="http://localhost:1313/blog/tags/dns/">dns</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/zenoss/">zenoss</a></li>
+      <li><a href="http://localhost:1313/blog/tags/monitoringsucks/">monitoringsucks</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/kvm/">kvm</a></li>
+      <li><a href="http://localhost:1313/blog/tags/rpm/">rpm</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/kvm/">kvm</a></li>
       
     </ul>
   </section>

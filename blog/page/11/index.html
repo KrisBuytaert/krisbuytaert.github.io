@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="generator" content="Hugo 0.161.1">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Everything is a Freaking DNS problem</title>
   <link rel="stylesheet" href="/blog/css/style.css">
-  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="https://krisbuytaert.github.io/blog/index.xml">
+  <link rel="alternate" type="application/rss+xml" title="Everything is a Freaking DNS problem" href="http://localhost:1313/blog/index.xml">
+	<meta name="generator" content="Hugo 0.169.0">
 </head>
 <body>
   <header>
-    <h1><a href="https://krisbuytaert.github.io/blog/">Everything is a Freaking DNS problem</a></h1>
+    <h1><a href="http://localhost:1313/blog/">Everything is a Freaking DNS problem</a></h1>
     <p class="tagline">Devops Needs Sushi</p>
   </header>
   <div class="layout">
     <main>
       
+
+<article class="summary">
+  <h3><a href="/blog/puppet-broke-my-xen/">Puppet broke my Xen</a></h3>
+  <p class="meta"><time datetime="2010-10-30">October 30, 2010</time></p>
+  <p><p>Actually it didn&rsquo;t , but now I got your attention.<br>
+We just adopted the use of adding headers to all of our files that are managed by puppet so people will know not to touch it</p>
+<pre tabindex="0"><code>1. file {
+2. &#34;/etc/xen/scripts/network-custom-vlan-bridges&#34;:
+3. owner =&gt; &#34;root&#34;,
+4. group =&gt; &#34;root&#34;,
+5. mode =&gt; &#34;0755&#34;,
+6. content =&gt; template(
+7. &#34;headers/header-hash.erb&#39;,
+8. &#34;xen/co-mmx-network-custom-vlan-bridges.erb&#34;);
+9. }
+</code></pre><p>All worked nice however upon bootstrapping our Xen host the bridges stopped working .. running the network-custom-vlan-bridges script manually solved everything and created the appropriate bridges. But at boottime it didn&rsquo;t..</p></p>
+</article>
+
+<article class="summary">
+  <h3><a href="/blog/le-tablet-nouveau-est-arrivee/">Le Tablet nouveau est arrivee</a></h3>
+  <p class="meta"><time datetime="2010-10-18">October 18, 2010</time></p>
+  <p><p>So I bought myselve a new gadget, a tablet. I wanted a couple of things, first of all I love the mythdroid app as a remote control for my MythTV, but as it runs on my phone and kids don&rsquo;t have a phone it was pretty much a blocking issue when I wasn&rsquo;t at home.<br>
+The second thing I wanted was a device for the kids to play small games on &hellip; and I also want to use it for the kids to watch some movies while we travel. On top of that it would be handy if I could use it to surf the web from my couch while not having to open up my laptop.</p></p>
+</article>
 
 <article class="summary">
   <h3><a href="/blog/busy-weeks-coming/">Busy weeks coming up ..</a></h3>
@@ -84,29 +108,6 @@ It wasn&rsquo;t really the moment to do the upgrade.</p>
   <p class="meta"><time datetime="2010-06-14">June 14, 2010</time></p>
   <p><p>It&rsquo;s a typical situation, the developers develop on their own boxen, they only start to integrate their code on on the production platform 3 hours before the deadline. And then the problems start, the typical &ldquo;But it works on my system&rdquo; , &ldquo;its your problem now&rdquo; is something nobody really likes to hear .</p>
 <p>So how do you tackle this problem ? <a href="http://devops-abyss.blogspot.com/2010/03/application-is-only-running-on.html">As Christian already mentions Talking</a> is the first step of the solution,</p></p>
-</article>
-
-<article class="summary">
-  <h3><a href="/blog/faq/">FAQ:</a></h3>
-  <p class="meta"><time datetime="2010-06-14">June 14, 2010</time></p>
-  <p><p>Q: Is <a href="http://buytaert.net/">Dries</a> your Brother ?<br>
-A: No he isn&rsquo;t.</p>
-<p>Q: Are you related to <a href="http://buytaert.net/">Dries</a> ?<br>
-A: No we aren&rsquo;t (as far as we know)</p>
-<p>Q: Do you know <a href="http://buytaert.net/">Dries</a> ?<br>
-A: Yeah .. I&rsquo;ve known him since before he started his work on Drupal, now can you stop asking about Dries and refocus on me ?</p>
-<p>Q: Are you related to Thomas Buytaert<br>
-A: No.</p>
-<p>Q: Why are you sdog on irc ?<br>
-A: Back in my DemoScene days my nick was Sleeping Dog , whch was too long for a unix account name , sleeping didn&rsquo;t feel like a good choice and neither did dog, so the abbrev became sdog</p></p>
-</article>
-
-<article class="summary">
-  <h3><a href="/blog/beaker-devops/">@Beaker on #Devops</a></h3>
-  <p class="meta"><time datetime="2010-06-01">June 1, 2010</time></p>
-  <p><p><a href="http://www.rationalsurvivability.com/blog/?p=1890">Yesterday</a> @beaker posted his ideas on the #devops movement &hellip;</p>
-<p>Apparently we haven&rsquo;t been stressing enough on the fact that it isn&rsquo;t just about Devs and Ops,<br>
-So let me <a href="http://www.krisbuytaert.be/blog/devops-secops-dbaops-netops">repeat</a> it&rsquo;s not just about Devs and Ops, it&rsquo;s about breaking silo&rsquo;s , about being good at our jobs, about getting conversation started, about talking to different stakeholders in the processes . We are absolutely trying to include all groups, not exclude some.</p></p>
 </article>
 
 
@@ -237,9 +238,13 @@ So let me <a href="http://www.krisbuytaert.be/blog/devops-secops-dbaops-netops">
       <a href="/blog/page/30/">30</a>
     
   
+    
+      <a href="/blog/page/31/">31</a>
+    
+  
   
     <a href="/blog/page/12/" aria-label="Next">&raquo;</a>
-    <a href="/blog/page/30/" aria-label="Last">&raquo;&raquo;</a>
+    <a href="/blog/page/31/" aria-label="Last">&raquo;&raquo;</a>
   
 </nav>
 
@@ -311,7 +316,7 @@ So let me <a href="http://www.krisbuytaert.be/blog/devops-secops-dbaops-netops">
       <li><a href="https://mastodon.social/@krisbuytaert">Kris on Mastodon</a></li>
 
 
-      <li><a href="https://krisbuytaert.github.io/blog/index.xml">RSS Feed</a></li>
+      <li><a href="http://localhost:1313/blog/index.xml">RSS Feed</a></li>
 
 
       <li><a href="https://devopsdays.org">devopsdays.org</a></li>
@@ -324,25 +329,25 @@ So let me <a href="http://www.krisbuytaert.be/blog/devops-secops-dbaops-netops">
     <h3>Recent Posts</h3>
     <ul>
       
-      <li><a href="https://krisbuytaert.github.io/blog/cfgmgmtcamp-2027/">Cfgmgmtcamp 2027</a></li>
+      <li><a href="http://localhost:1313/blog/osoday-2027/">Osoday 2027</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/opensearch-cli/">Opensearch Cli</a></li>
+      <li><a href="http://localhost:1313/blog/new-job/">Joining Percona</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></li>
+      <li><a href="http://localhost:1313/blog/cfgmgmtcamp-2027/">Cfgmgmtcamp 2027</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/cdf-top-ambassador-2026/">CDF Top Ambassador 2026</a></li>
+      <li><a href="http://localhost:1313/blog/opensearch-cli/">Opensearch Cli</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
+      <li><a href="http://localhost:1313/blog/mattx-brings-back-openmosix-vibes/">Mattx Brings Back Openmosix Vibes</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
+      <li><a href="http://localhost:1313/blog/cdf-top-ambassador-2026/">CDF Top Ambassador 2026</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
+      <li><a href="http://localhost:1313/blog/welcome-to-the-revival/">Welcome to the Revival</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
+      <li><a href="http://localhost:1313/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/will-containers-take-over/">Will containers take over ?</a></li>
+      <li><a href="http://localhost:1313/blog/115-factor-apps/">11.5 Factor apps</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/jenkins-dsl-and-heisenbugs/">Jenkins DSL and Heisenbugs</a></li>
+      <li><a href="http://localhost:1313/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
       
     </ul>
   </section>
@@ -1555,46 +1560,50 @@ So let me <a href="http://www.krisbuytaert.be/blog/devops-secops-dbaops-netops">
       
         
       
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/devops/">devops</a></li>
+        
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/drupal/">drupal</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/mysql/">mysql</a></li>
+      <li><a href="http://localhost:1313/blog/tags/devops/">devops</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/open-source/">open source</a></li>
+      <li><a href="http://localhost:1313/blog/tags/drupal/">drupal</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/puppet/">puppet</a></li>
+      <li><a href="http://localhost:1313/blog/tags/mysql/">mysql</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/opensource/">opensource</a></li>
+      <li><a href="http://localhost:1313/blog/tags/open-source/">open source</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/dnsproblem/">dnsproblem</a></li>
+      <li><a href="http://localhost:1313/blog/tags/puppet/">puppet</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/ha/">ha</a></li>
+      <li><a href="http://localhost:1313/blog/tags/opensource/">opensource</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/fosdem/">fosdem</a></li>
+      <li><a href="http://localhost:1313/blog/tags/dnsproblem/">dnsproblem</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/chef/">chef</a></li>
+      <li><a href="http://localhost:1313/blog/tags/fosdem/">fosdem</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/conference/">conference</a></li>
+      <li><a href="http://localhost:1313/blog/tags/ha/">ha</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/fedora/">fedora</a></li>
+      <li><a href="http://localhost:1313/blog/tags/chef/">chef</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/virtualization/">virtualization</a></li>
+      <li><a href="http://localhost:1313/blog/tags/conference/">conference</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/xen/">xen</a></li>
+      <li><a href="http://localhost:1313/blog/tags/fedora/">fedora</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/centos/">centos</a></li>
+      <li><a href="http://localhost:1313/blog/tags/virtualization/">virtualization</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/dns/">dns</a></li>
+      <li><a href="http://localhost:1313/blog/tags/xen/">xen</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/monitoringsucks/">monitoringsucks</a></li>
+      <li><a href="http://localhost:1313/blog/tags/centos/">centos</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/rpm/">rpm</a></li>
+      <li><a href="http://localhost:1313/blog/tags/dns/">dns</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/zenoss/">zenoss</a></li>
+      <li><a href="http://localhost:1313/blog/tags/monitoringsucks/">monitoringsucks</a></li>
       
-      <li><a href="https://krisbuytaert.github.io/blog/tags/kvm/">kvm</a></li>
+      <li><a href="http://localhost:1313/blog/tags/rpm/">rpm</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/zenoss/">zenoss</a></li>
+      
+      <li><a href="http://localhost:1313/blog/tags/kvm/">kvm</a></li>
       
     </ul>
   </section>
