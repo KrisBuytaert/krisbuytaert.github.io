@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>O11y on Everything is a Freaking DNS problem</title>
-		<link>http://localhost:1313/blog/tags/o11y/</link>
+		<link>https://krisbuytaert.github.io/blog/tags/o11y/</link>
 		<description>Recent content in O11y on Everything is a Freaking DNS problem</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,19 +12,19 @@
 		
 			<lastBuildDate>Wed, 04 Nov 2026 12:54:48 +0100</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/blog/tags/o11y/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://krisbuytaert.github.io/blog/tags/o11y/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Osoday 2027</title>
-				<link>http://localhost:1313/blog/osoday-2027/</link>
+				<link>https://krisbuytaert.github.io/blog/osoday-2027/</link>
 				<pubDate>Wed, 04 Nov 2026 12:54:48 +0100</pubDate>
-				<guid>http://localhost:1313/blog/osoday-2027/</guid>
+				<guid>https://krisbuytaert.github.io/blog/osoday-2027/</guid>
 				<description>&lt;p&gt;Back in 2024   I was asked to give a talk for the back then online only Open Source Observability Day.   While I`m not a big fan of online only events, there really was a gap&#xA;that needed to be filled.   Sure,  we  have  OSMC,  there used to be Monitorama which happened iirc 2x in Europe,  and there is the (close to impossible to attend) o11yday before Kubecon.&#xA;But there is no event where the Open Source observabilty  community meets.    While chatting with Peter Zaitsev about Coroot,   I already hinted  that maybe we could do  an in person OSoday in Ghent as a Fringe event to CfgMgmtCamp.   It would be an ideal fit as a number of people with this interest would already be around for Fosdem or CfgMgmtCamp so it would be&#xA;only one trip for multiple events .&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Joining Percona</title>
-				<link>http://localhost:1313/blog/new-job/</link>
+				<link>https://krisbuytaert.github.io/blog/new-job/</link>
 				<pubDate>Tue, 06 Oct 2026 21:03:16 +0200</pubDate>
-				<guid>http://localhost:1313/blog/new-job/</guid>
+				<guid>https://krisbuytaert.github.io/blog/new-job/</guid>
 				<description>&lt;p&gt;I&amp;rsquo;ve spent the past 25 years doing open source consultancy and engineering management for&#xA;Stone-IT, X-Tend and Inuits/o11y.  I&amp;rsquo;ve built infrastructures with open source tooling that could&#xA;survive the 10th floor test, or rather the OVH Fire.&lt;/p&gt;&#xA;&lt;p&gt;More recently I&amp;rsquo;ve coached different organizations, ranging from startups to large international banks  to adopt devops practices, and thus also agile practices.  While changing organizations is a  very interesting challenge, I was always happier on the days I was building or debugging technology  with a team.&lt;/p&gt;</description>
 			</item>
 	</channel>
