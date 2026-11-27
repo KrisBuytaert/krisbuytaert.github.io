@@ -10,14 +10,28 @@
 		
 		
 		
-			<lastBuildDate>Wed, 04 Nov 2026 12:54:48 +0100</lastBuildDate>
+			<lastBuildDate>Fri, 27 Nov 2026 07:00:00 +0100</lastBuildDate>
 		
 			<atom:link href="https://krisbuytaert.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Cfgmgmtcamp</title>
 				<link>https://krisbuytaert.github.io/blog/tags/cfgmgmtcamp/</link>
-				<pubDate>Wed, 04 Nov 2026 12:54:48 +0100</pubDate>
+				<pubDate>Fri, 27 Nov 2026 07:00:00 +0100</pubDate>
 				<guid>https://krisbuytaert.github.io/blog/tags/cfgmgmtcamp/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Conference</title>
+				<link>https://krisbuytaert.github.io/blog/tags/conference/</link>
+				<pubDate>Fri, 27 Nov 2026 07:00:00 +0100</pubDate>
+				<guid>https://krisbuytaert.github.io/blog/tags/conference/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Gent</title>
+				<link>https://krisbuytaert.github.io/blog/tags/gent/</link>
+				<pubDate>Fri, 27 Nov 2026 07:00:00 +0100</pubDate>
+				<guid>https://krisbuytaert.github.io/blog/tags/gent/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -46,20 +60,6 @@
 				<link>https://krisbuytaert.github.io/blog/tags/ansible/</link>
 				<pubDate>Tue, 21 Jul 2026 10:06:23 +0200</pubDate>
 				<guid>https://krisbuytaert.github.io/blog/tags/ansible/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Conference</title>
-				<link>https://krisbuytaert.github.io/blog/tags/conference/</link>
-				<pubDate>Tue, 21 Jul 2026 10:06:23 +0200</pubDate>
-				<guid>https://krisbuytaert.github.io/blog/tags/conference/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Gent</title>
-				<link>https://krisbuytaert.github.io/blog/tags/gent/</link>
-				<pubDate>Tue, 21 Jul 2026 10:06:23 +0200</pubDate>
-				<guid>https://krisbuytaert.github.io/blog/tags/gent/</guid>
 				<description></description>
 			</item>
 			<item>

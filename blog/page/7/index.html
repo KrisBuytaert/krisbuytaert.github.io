@@ -18,6 +18,18 @@
       
 
 <article class="summary">
+  <h3><a href="/blog/logstash-and-elasticsearch/">Logstash and ElasticSearch</a></h3>
+  <p class="meta"><time datetime="2012-02-15">February 15, 2012</time></p>
+  <p><p>&ldquo;An expert is a man who has made all the mistakes which can be made, in a narrow field.&rdquo;<br>
+Niels Bohr</p>
+<p>When I setup Logstash for the very first time I got bitten by an empty search, aparently no logs were indexed. Reading the log files indeed told me about\</p>
+<pre tabindex="0"><code>1. WARN: org.elasticsearch.discovery.zen.ping.unicast: [Blaire, Allison] failed to send ping to [[#zen_unicast_1#][inet[/127.0.0.1:9300]]]
+2. INFO   | jvm 1    | 2012/02/06 22:45:55 | org.elasticsearch.transport.RemoteTransportException: [Page, Karen][inet[/127 .0.0.1:9300]][discovery/zen/unicast]
+3. INFO   | jvm 1    | 2012/02/06 22:45:55 | Caused by: java.io.EOFException
+</code></pre><p>The above is the typical error when the ElasticSearch version you are using externally is not in sync with the one Logstash is using, yes those versions need to match.</p></p>
+</article>
+
+<article class="summary">
   <h3><a href="/blog/ultimate-2012-open-source-and-devops-conference/">The ultimate 2012 open source and devops conference</a></h3>
   <p class="meta"><time datetime="2012-02-11">February 11, 2012</time></p>
   <p><p>Kent Skaar pinged me last week , asking for feedback on Lisa'11 and input for Lisa 2012.</p>
@@ -104,16 +116,6 @@ Block the monday and tuesday after fosdem in your calendar !</p>
   <p><p>Last week I was in Boston for my 1st and their 25th Edition of the Large Infrastructure System Administration Conferences<br>
 Lisa was pretty much all I expected from it. Old Unix wizards with long hair and white beards, the usual suspects, and a mix of devops practitioners on a devops themed conference with on one side awesome and well positioned content and on the other side absolutely basic stuff.</p>
 <p>On tuesday I had a devops bof scheduled for 2 hours.</p></p>
-</article>
-
-<article class="summary">
-  <h3><a href="/blog/qr-encode/">QR Encode</a></h3>
-  <p class="meta"><time datetime="2011-11-13">November 13, 2011</time></p>
-  <p><p>For further reference .. and preventing me from googling it a 3rd time</p>
-<pre tabindex="0"><code>1. qrencode &#34;http://www.krisbuytaert.be/&#34;  -o qrcode.png  -s 10
-</code></pre><p>or\</p>
-<pre tabindex="0"><code>1. cat Kris_Buytaert.vcf  | qrencode  -o vcf.png -s 5
-</code></pre></p>
 </article>
 
 
@@ -322,6 +324,8 @@ Lisa was pretty much all I expected from it. Old Unix wizards with long hair and
     <h3>Recent Posts</h3>
     <ul>
       
+      <li><a href="https://krisbuytaert.github.io/blog/black-friday-sale-cfgmgmtcam-2027/">CfgMgmtCamp 2027 Black Friday Sale</a></li>
+      
       <li><a href="https://krisbuytaert.github.io/blog/osoday-2027/">Osoday 2027</a></li>
       
       <li><a href="https://krisbuytaert.github.io/blog/new-job/">Joining Percona</a></li>
@@ -339,8 +343,6 @@ Lisa was pretty much all I expected from it. Old Unix wizards with long hair and
       <li><a href="https://krisbuytaert.github.io/blog/return-dull-stack-engineer/">The return of the Dull Stack Engineer.</a></li>
       
       <li><a href="https://krisbuytaert.github.io/blog/115-factor-apps/">11.5 Factor apps</a></li>
-      
-      <li><a href="https://krisbuytaert.github.io/blog/decomissioning-my-drupal-blog/">Decomissioning my Drupal blog</a></li>
       
     </ul>
   </section>
